@@ -1,0 +1,226 @@
+item,value,n,source
+Indian simple average | rev_cc | mean FY16-FY20,8.698,5,output/final/table_A.csv
+Indian simple average | rev_cc | FY22,16.696,1,output/final/table_A.csv
+Indian simple average | rev_cc | FY23,12.811,1,output/final/table_A.csv
+Indian simple average | rev_cc | FY24,0.742,1,output/final/table_A.csv
+Indian simple average | rev_cc | FY25,2.619,1,output/final/table_A.csv
+Indian simple average | rev_cc | FY26,1.424,1,output/final/table_A.csv
+Indian simple average | rev_cc | FY27 Q1 (one quarter),3.597,1,output/final/table_A.csv
+Indian simple average | rev_cc | mean FY24-FY26,1.595,3,output/final/table_A.csv
+Indian simple average | rev_usd | mean FY16-FY20,7.894,5,output/final/table_A.csv
+Indian simple average | rev_usd | FY22,18.343,1,output/final/table_A.csv
+Indian simple average | rev_usd | FY23,10.368,1,output/final/table_A.csv
+Indian simple average | rev_usd | FY24,1.094,1,output/final/table_A.csv
+Indian simple average | rev_usd | FY25,2.234,1,output/final/table_A.csv
+Indian simple average | rev_usd | FY26,2.86,1,output/final/table_A.csv
+Indian simple average | rev_usd | FY27 Q1 (one quarter),3.556,1,output/final/table_A.csv
+Indian simple average | rev_usd | mean FY24-FY26,2.063,3,output/final/table_A.csv
+Indian simple average | headcount | mean FY16-FY20,7.373,5,output/final/table_A.csv
+Indian simple average | headcount | FY22,18.481,1,output/final/table_A.csv
+Indian simple average | headcount | FY23,14.302,1,output/final/table_A.csv
+Indian simple average | headcount | FY24,-3.613,1,output/final/table_A.csv
+Indian simple average | headcount | FY25,-0.495,1,output/final/table_A.csv
+Indian simple average | headcount | FY26,1.198,1,output/final/table_A.csv
+Indian simple average | headcount | FY27 Q1 (one quarter),1.006,1,output/final/table_A.csv
+Indian simple average | headcount | mean FY24-FY26,-0.97,3,output/final/table_A.csv
+Indian simple average | headcount_yearend | mean FY16-FY20,6.772,5,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY22,22.259,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY23,5.583,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY24,-4.684,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY25,1.164,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY26,1.077,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | FY27 Q1 (one quarter),1.006,1,output/final/table_A.csv
+Indian simple average | headcount_yearend | mean FY24-FY26,-0.814,3,output/final/table_A.csv
+Indian simple average | rpe_cc | mean FY16-FY20,2.474,5,output/final/table_A.csv
+Indian simple average | rpe_cc | FY22,0.044,1,output/final/table_A.csv
+Indian simple average | rpe_cc | FY23,-0.824,1,output/final/table_A.csv
+Indian simple average | rpe_cc | FY24,4.355,1,output/final/table_A.csv
+Indian simple average | rpe_cc | FY25,3.115,1,output/final/table_A.csv
+Indian simple average | rpe_cc | FY26,0.227,1,output/final/table_A.csv
+Indian simple average | rpe_cc | FY27 Q1 (one quarter),2.591,1,output/final/table_A.csv
+Indian simple average | rpe_cc | mean FY24-FY26,2.566,3,output/final/table_A.csv
+Indian simple average | rpe_usd | mean FY16-FY20,1.273,5,output/final/table_A.csv
+Indian simple average | rpe_usd | FY22,-0.138,1,output/final/table_A.csv
+Indian simple average | rpe_usd | FY23,-3.934,1,output/final/table_A.csv
+Indian simple average | rpe_usd | FY24,4.707,1,output/final/table_A.csv
+Indian simple average | rpe_usd | FY25,2.73,1,output/final/table_A.csv
+Indian simple average | rpe_usd | FY26,1.662,1,output/final/table_A.csv
+Indian simple average | rpe_usd | FY27 Q1 (one quarter),2.551,1,output/final/table_A.csv
+Indian simple average | rpe_usd | mean FY24-FY26,3.033,3,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | mean FY16-FY20,8.731,5,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY22,16.274,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY23,12.947,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY24,1.541,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY25,3.15,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY26,0.645,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | FY27 Q1 (one quarter),3.019,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_cc | mean FY24-FY26,1.779,3,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | mean FY16-FY20,7.465,5,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY22,17.064,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY23,9.526,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY24,2.037,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY25,2.764,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY26,2.259,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | FY27 Q1 (one quarter),2.991,1,output/final/table_A.csv
+Indian revenue-weighted average | rev_usd | mean FY24-FY26,2.353,3,output/final/table_A.csv
+Indian revenue-weighted average | headcount | mean FY16-FY20,7.177,5,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY22,17.236,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY23,13.85,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY24,-2.811,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY25,-0.813,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY26,0.605,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | FY27 Q1 (one quarter),-0.091,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount | mean FY24-FY26,-1.006,3,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | mean FY16-FY20,6.673,5,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY22,20.511,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY23,5.761,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY24,-4.364,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY25,0.91,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY26,-0.097,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | FY27 Q1 (one quarter),-0.091,1,output/final/table_A.csv
+Indian revenue-weighted average | headcount_yearend | mean FY24-FY26,-1.184,3,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | mean FY16-FY20,2.2,5,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY22,-0.439,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY23,-0.7,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY24,4.352,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY25,3.963,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY26,0.04,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | FY27 Q1 (one quarter),3.11,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_cc | mean FY24-FY26,2.785,3,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | mean FY16-FY20,0.847,5,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY22,-0.172,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY23,-4.325,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY24,4.847,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY25,3.577,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY26,1.655,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | FY27 Q1 (one quarter),3.082,1,output/final/table_A.csv
+Indian revenue-weighted average | rpe_usd | mean FY24-FY26,3.36,3,output/final/table_A.csv
+Accenture | rev_cc | mean FY16-FY20,8.355,4,output/final/table_A.csv
+Accenture | rev_cc | FY22,20.859,1,output/final/table_A.csv
+Accenture | rev_cc | FY23,16.443,1,output/final/table_A.csv
+Accenture | rev_cc | FY24,2.475,1,output/final/table_A.csv
+Accenture | rev_cc | FY25,5.434,1,output/final/table_A.csv
+Accenture | rev_cc | FY26,4.993,1,output/final/table_A.csv
+Accenture | rev_cc | FY27 Q1 (one quarter),2.956,1,output/final/table_A.csv
+Accenture | rev_cc | mean FY24-FY26,4.301,3,output/final/table_A.csv
+Accenture | rev_usd | mean FY16-FY20,7.736,4,output/final/table_A.csv
+Accenture | rev_usd | FY22,21.609,1,output/final/table_A.csv
+Accenture | rev_usd | FY23,10.774,1,output/final/table_A.csv
+Accenture | rev_usd | FY24,2.238,1,output/final/table_A.csv
+Accenture | rev_usd | FY25,4.019,1,output/final/table_A.csv
+Accenture | rev_usd | FY26,7.02,1,output/final/table_A.csv
+Accenture | rev_usd | FY27 Q1 (one quarter),5.436,1,output/final/table_A.csv
+Accenture | rev_usd | mean FY24-FY26,4.426,3,output/final/table_A.csv
+Accenture | headcount | mean FY16-FY20,8.071,4,output/final/table_A.csv
+Accenture | headcount | FY22,21.194,1,output/final/table_A.csv
+Accenture | headcount | FY23,12.803,1,output/final/table_A.csv
+Accenture | headcount | FY24,1.457,1,output/final/table_A.csv
+Accenture | headcount | FY25,5.709,1,output/final/table_A.csv
+Accenture | headcount | FY26,0.535,1,output/final/table_A.csv
+Accenture | headcount | FY27 Q1 (one quarter),1.045,1,output/final/table_A.csv
+Accenture | headcount | mean FY24-FY26,2.567,3,output/final/table_A.csv
+Accenture | headcount_yearend | mean FY16-FY20,9.062,5,output/final/table_A.csv
+Accenture | headcount_yearend | FY22,26.359,1,output/final/table_A.csv
+Accenture | headcount_yearend | FY23,5.52,1,output/final/table_A.csv
+Accenture | headcount_yearend | FY24,0.564,1,output/final/table_A.csv
+Accenture | headcount_yearend | FY25,7.621,1,output/final/table_A.csv
+Accenture | headcount_yearend | FY26,-1.848,1,output/final/table_A.csv
+Accenture | headcount_yearend | FY27 Q1 (one quarter),1.045,1,output/final/table_A.csv
+Accenture | headcount_yearend | mean FY24-FY26,2.112,3,output/final/table_A.csv
+Accenture | rpe_cc | mean FY16-FY20,0.284,4,output/final/table_A.csv
+Accenture | rpe_cc | FY22,-0.335,1,output/final/table_A.csv
+Accenture | rpe_cc | FY23,3.64,1,output/final/table_A.csv
+Accenture | rpe_cc | FY24,1.018,1,output/final/table_A.csv
+Accenture | rpe_cc | FY25,-0.275,1,output/final/table_A.csv
+Accenture | rpe_cc | FY26,4.458,1,output/final/table_A.csv
+Accenture | rpe_cc | FY27 Q1 (one quarter),1.911,1,output/final/table_A.csv
+Accenture | rpe_cc | mean FY24-FY26,1.734,3,output/final/table_A.csv
+Accenture | rpe_usd | mean FY16-FY20,-0.334,4,output/final/table_A.csv
+Accenture | rpe_usd | FY22,0.415,1,output/final/table_A.csv
+Accenture | rpe_usd | FY23,-2.029,1,output/final/table_A.csv
+Accenture | rpe_usd | FY24,0.781,1,output/final/table_A.csv
+Accenture | rpe_usd | FY25,-1.69,1,output/final/table_A.csv
+Accenture | rpe_usd | FY26,6.485,1,output/final/table_A.csv
+Accenture | rpe_usd | FY27 Q1 (one quarter),4.39,1,output/final/table_A.csv
+Accenture | rpe_usd | mean FY24-FY26,1.859,3,output/final/table_A.csv
+Cognizant | rev_cc | mean FY16-FY20,6.919,3,output/final/table_A.csv
+Cognizant | rev_cc | FY22,11.406,1,output/final/table_A.csv
+Cognizant | rev_cc | FY23,4.994,1,output/final/table_A.csv
+Cognizant | rev_cc | FY24,-0.976,1,output/final/table_A.csv
+Cognizant | rev_cc | FY25,4.145,1,output/final/table_A.csv
+Cognizant | rev_cc | FY26,5.187,1,output/final/table_A.csv
+Cognizant | rev_cc | FY27 Q1 (one quarter),4.018,1,output/final/table_A.csv
+Cognizant | rev_cc | mean FY24-FY26,2.785,3,output/final/table_A.csv
+Cognizant | rev_usd | mean FY16-FY20,9.043,5,output/final/table_A.csv
+Cognizant | rev_usd | FY22,11.781,1,output/final/table_A.csv
+Cognizant | rev_usd | FY23,2.514,1,output/final/table_A.csv
+Cognizant | rev_usd | FY24,-0.584,1,output/final/table_A.csv
+Cognizant | rev_usd | FY25,4.012,1,output/final/table_A.csv
+Cognizant | rev_usd | FY26,6.34,1,output/final/table_A.csv
+Cognizant | rev_usd | FY27 Q1 (one quarter),4.401,1,output/final/table_A.csv
+Cognizant | rev_usd | mean FY24-FY26,3.256,3,output/final/table_A.csv
+Cognizant | headcount | mean FY16-FY20,7.1,5,output/final/table_A.csv
+Cognizant | headcount | FY22,11.426,1,output/final/table_A.csv
+Cognizant | headcount | FY23,8.051,1,output/final/table_A.csv
+Cognizant | headcount | FY24,-0.939,1,output/final/table_A.csv
+Cognizant | headcount | FY25,-2.547,1,output/final/table_A.csv
+Cognizant | headcount | FY26,3.865,1,output/final/table_A.csv
+Cognizant | headcount | FY27 Q1 (one quarter),3.683,1,output/final/table_A.csv
+Cognizant | headcount | mean FY24-FY26,0.126,3,output/final/table_A.csv
+Cognizant | headcount_yearend | mean FY16-FY20,5.852,5,output/final/table_A.csv
+Cognizant | headcount_yearend | FY22,13.807,1,output/final/table_A.csv
+Cognizant | headcount_yearend | FY23,3.209,1,output/final/table_A.csv
+Cognizant | headcount_yearend | FY24,-2.041,1,output/final/table_A.csv
+Cognizant | headcount_yearend | FY25,-2.38,1,output/final/table_A.csv
+Cognizant | headcount_yearend | FY26,6.141,1,output/final/table_A.csv
+Cognizant | headcount_yearend | FY27 Q1 (one quarter),3.683,1,output/final/table_A.csv
+Cognizant | headcount_yearend | mean FY24-FY26,0.573,3,output/final/table_A.csv
+Cognizant | rpe_cc | mean FY16-FY20,2.603,3,output/final/table_A.csv
+Cognizant | rpe_cc | FY22,-0.02,1,output/final/table_A.csv
+Cognizant | rpe_cc | FY23,-3.057,1,output/final/table_A.csv
+Cognizant | rpe_cc | FY24,-0.037,1,output/final/table_A.csv
+Cognizant | rpe_cc | FY25,6.692,1,output/final/table_A.csv
+Cognizant | rpe_cc | FY26,1.322,1,output/final/table_A.csv
+Cognizant | rpe_cc | FY27 Q1 (one quarter),0.335,1,output/final/table_A.csv
+Cognizant | rpe_cc | mean FY24-FY26,2.659,3,output/final/table_A.csv
+Cognizant | rpe_usd | mean FY16-FY20,1.943,5,output/final/table_A.csv
+Cognizant | rpe_usd | FY22,0.355,1,output/final/table_A.csv
+Cognizant | rpe_usd | FY23,-5.537,1,output/final/table_A.csv
+Cognizant | rpe_usd | FY24,0.355,1,output/final/table_A.csv
+Cognizant | rpe_usd | FY25,6.558,1,output/final/table_A.csv
+Cognizant | rpe_usd | FY26,2.475,1,output/final/table_A.csv
+Cognizant | rpe_usd | FY27 Q1 (one quarter),0.718,1,output/final/table_A.csv
+Cognizant | rpe_usd | mean FY24-FY26,3.129,3,output/final/table_A.csv
+Indian entities with negative headcount growth in FY24 (count of 6),5.0,6,output/final/table_A_firms.csv
+tcs | headcount | FY24,-0.908,1,output/final/table_A_firms.csv
+infosys | headcount | FY24,-4.914,1,output/final/table_A_firms.csv
+hcltech | headcount | FY24,2.089,1,output/final/table_A_firms.csv
+wipro | headcount | FY24,-7.851,1,output/final/table_A_firms.csv
+techm | headcount | FY24,-6.657,1,output/final/table_A_firms.csv
+lti_group | headcount | FY24,-3.439,1,output/final/table_A_firms.csv
+subcontracting % rev | tcs | FY23,9.46,1,output/final/fig2_data.csv
+subcontracting % rev | tcs | FY24,6.57,1,output/final/fig2_data.csv
+subcontracting % rev | tcs | FY26,5.5,1,output/final/fig2_data.csv
+subcontracting % rev | tcs | change FY23->FY24 (pp),-2.89,1,output/final/fig2_data.csv
+subcontracting % rev | infosys | FY23,9.58,1,output/final/fig2_data.csv
+subcontracting % rev | infosys | FY24,7.96,1,output/final/fig2_data.csv
+subcontracting % rev | infosys | FY26,8.63,1,output/final/fig2_data.csv
+subcontracting % rev | infosys | change FY23->FY24 (pp),-1.62,1,output/final/fig2_data.csv
+subcontracting % rev | hcltech | FY23,14.74,1,output/final/fig2_data.csv
+subcontracting % rev | hcltech | FY24,13.26,1,output/final/fig2_data.csv
+subcontracting % rev | hcltech | FY26,14.16,1,output/final/fig2_data.csv
+subcontracting % rev | hcltech | change FY23->FY24 (pp),-1.48,1,output/final/fig2_data.csv
+subcontracting % rev | wipro | FY23,12.74,1,output/final/fig2_data.csv
+subcontracting % rev | wipro | FY24,11.48,1,output/final/fig2_data.csv
+subcontracting % rev | wipro | FY26,11.62,1,output/final/fig2_data.csv
+subcontracting % rev | wipro | change FY23->FY24 (pp),-1.26,1,output/final/fig2_data.csv
+subcontracting % rev | techm | FY23,15.01,1,output/final/fig2_data.csv
+subcontracting % rev | techm | FY24,12.86,1,output/final/fig2_data.csv
+subcontracting % rev | techm | FY26,10.74,1,output/final/fig2_data.csv
+subcontracting % rev | techm | change FY23->FY24 (pp),-2.15,1,output/final/fig2_data.csv
+subcontracting % rev | ltim | FY23,8.52,1,output/final/fig2_data.csv
+subcontracting % rev | ltim | FY24,7.21,1,output/final/fig2_data.csv
+subcontracting % rev | ltim | FY26,7.65,1,output/final/fig2_data.csv
+subcontracting % rev | ltim | change FY23->FY24 (pp),-1.31,1,output/final/fig2_data.csv
+subcontracting: firms whose share fell FY23->FY24,6.0,6,output/final/fig2_data.csv
+subcontracting: firms with FY26 share below FY23,6.0,6,output/final/fig2_data.csv

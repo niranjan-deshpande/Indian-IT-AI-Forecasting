@@ -1,0 +1,171 @@
+metric,firm,first,last,n_quarters_FY16on,share_FY16on,share_recent
+Revenue USD (total),tcs,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),infosys,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),hcltech,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),wipro,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),techm,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),ltim,2021Q2,2026Q2,21,1.0,1.0
+Revenue USD (total),lti,2015Q2,2022Q3,30,1.0,
+Revenue USD (total),mindtree,2015Q2,2022Q3,30,1.0,
+Revenue USD (total),cognizant,2007Q1,2026Q2,45,1.0,1.0
+Revenue USD (total),accenture,2007Q1,2026Q2,45,1.0,1.0
+Revenue growth cc (YoY),tcs,2015Q2,2026Q2,45,1.0,1.0
+Revenue growth cc (YoY),infosys,2007Q2,2026Q2,45,1.0,1.0
+Revenue growth cc (YoY),hcltech,2007Q4,2026Q2,45,1.0,1.0
+Revenue growth cc (YoY),wipro,2008Q4,2026Q2,45,1.0,1.0
+Revenue growth cc (YoY),techm,2016Q3,2026Q2,33,0.73,1.0
+Revenue growth cc (YoY),ltim,2022Q4,2026Q2,15,0.71,1.0
+Revenue growth cc (YoY),lti,2016Q2,2022Q3,26,0.87,
+Revenue growth cc (YoY),mindtree,2015Q2,2015Q2,1,0.03,
+Revenue growth cc (YoY),cognizant,2017Q1,2026Q2,38,0.84,1.0
+Revenue growth cc (YoY),accenture,2007Q1,2026Q2,45,1.0,1.0
+Revenue growth cc (QoQ),tcs,2011Q4,2026Q2,24,0.53,0.44
+Revenue growth cc (QoQ),infosys,2007Q2,2026Q2,45,1.0,1.0
+Revenue growth cc (QoQ),hcltech,2007Q4,2026Q2,45,1.0,1.0
+Revenue growth cc (QoQ),wipro,2008Q3,2026Q2,45,1.0,1.0
+Revenue growth cc (QoQ),techm,2016Q3,2026Q2,36,0.8,1.0
+Revenue growth cc (QoQ),ltim,2021Q2,2026Q2,21,1.0,1.0
+Revenue growth cc (QoQ),lti,2016Q2,2022Q3,26,0.87,
+Revenue growth cc (QoQ),mindtree,2015Q2,2021Q3,12,0.4,
+Revenue growth cc (QoQ),cognizant,,,0,0.0,0.0
+Revenue growth cc (QoQ),accenture,,,0,0.0,0.0
+Revenue by vertical,tcs,2007Q1,2026Q2,45,1.0,1.0
+Revenue by vertical,infosys,2007Q1,2026Q2,45,1.0,1.0
+Revenue by vertical,hcltech,2007Q1,2026Q2,45,1.0,1.0
+Revenue by vertical,wipro,2007Q1,2026Q2,45,1.0,1.0
+Revenue by vertical,techm,2007Q2,2026Q2,45,1.0,1.0
+Revenue by vertical,ltim,2021Q2,2026Q2,21,1.0,1.0
+Revenue by vertical,lti,2015Q2,2022Q3,30,1.0,
+Revenue by vertical,mindtree,2015Q3,2022Q3,29,0.97,
+Revenue by vertical,cognizant,2007Q1,2026Q2,45,1.0,1.0
+Revenue by vertical,accenture,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,tcs,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,infosys,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,hcltech,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,wipro,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,techm,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,ltim,2021Q2,2026Q2,21,1.0,1.0
+Revenue by geography,lti,2015Q2,2022Q3,30,1.0,
+Revenue by geography,mindtree,2015Q3,2022Q3,29,0.97,
+Revenue by geography,cognizant,2007Q1,2026Q2,45,1.0,1.0
+Revenue by geography,accenture,2007Q1,2026Q2,45,1.0,1.0
+Revenue by service line,tcs,2007Q1,2017Q1,8,0.18,0.0
+Revenue by service line,infosys,2007Q1,2023Q1,32,0.71,0.0
+Revenue by service line,hcltech,2007Q1,2026Q2,45,1.0,1.0
+Revenue by service line,wipro,2013Q2,2023Q1,32,0.71,0.0
+Revenue by service line,techm,2015Q2,2026Q2,45,1.0,1.0
+Revenue by service line,ltim,,,0,0.0,0.0
+Revenue by service line,lti,2015Q2,2022Q3,30,1.0,
+Revenue by service line,mindtree,2015Q3,2022Q3,29,0.97,
+Revenue by service line,cognizant,2015Q1,2026Q2,42,0.93,1.0
+Revenue by service line,accenture,2007Q1,2026Q2,45,1.0,1.0
+Headcount,tcs,2007Q1,2026Q2,45,1.0,1.0
+Headcount,infosys,2007Q1,2026Q2,45,1.0,1.0
+Headcount,hcltech,2007Q1,2026Q2,45,1.0,1.0
+Headcount,wipro,2007Q1,2026Q2,42,0.93,1.0
+Headcount,techm,2007Q1,2026Q2,45,1.0,1.0
+Headcount,ltim,2021Q2,2026Q2,21,1.0,1.0
+Headcount,lti,2015Q2,2022Q3,30,1.0,
+Headcount,mindtree,2015Q2,2022Q3,30,1.0,
+Headcount,cognizant,2007Q4,2026Q2,45,1.0,1.0
+Headcount,accenture,2007Q3,2026Q2,45,1.0,1.0
+Net additions,tcs,2011Q2,2025Q2,38,0.84,0.33
+Net additions,infosys,2010Q2,2019Q1,16,0.36,0.0
+Net additions,hcltech,2019Q2,2026Q2,25,0.56,1.0
+Net additions,wipro,,,0,0.0,0.0
+Net additions,techm,,,0,0.0,0.0
+Net additions,ltim,,,0,0.0,0.0
+Net additions,lti,,,0,0.0,
+Net additions,mindtree,2015Q3,2020Q1,19,0.63,
+Net additions,cognizant,2013Q4,2026Q2,17,0.38,0.78
+Net additions,accenture,,,0,0.0,0.0
+Fresher hires,tcs,2011Q2,2017Q4,11,0.24,0.0
+Fresher hires,infosys,,,0,0.0,0.0
+Fresher hires,hcltech,2021Q3,2026Q2,20,0.44,1.0
+Fresher hires,wipro,,,0,0.0,0.0
+Fresher hires,techm,,,0,0.0,0.0
+Fresher hires,ltim,,,0,0.0,0.0
+Fresher hires,lti,,,0,0.0,
+Fresher hires,mindtree,,,0,0.0,
+Fresher hires,cognizant,,,0,0.0,0.0
+Fresher hires,accenture,,,0,0.0,0.0
+Attrition,tcs,2007Q1,2026Q2,45,1.0,1.0
+Attrition,infosys,2007Q1,2026Q2,45,1.0,1.0
+Attrition,hcltech,2007Q1,2026Q2,45,1.0,1.0
+Attrition,wipro,2007Q1,2026Q2,45,1.0,1.0
+Attrition,techm,2007Q1,2026Q2,45,1.0,1.0
+Attrition,ltim,2021Q2,2026Q2,21,1.0,1.0
+Attrition,lti,2015Q2,2022Q3,30,1.0,
+Attrition,mindtree,2015Q2,2022Q3,30,1.0,
+Attrition,cognizant,2007Q1,2026Q2,30,0.67,1.0
+Attrition,accenture,2007Q1,2026Q2,45,1.0,1.0
+Utilization excl. trainees,tcs,2007Q1,2015Q4,3,0.07,0.0
+Utilization excl. trainees,infosys,2007Q1,2026Q2,45,1.0,1.0
+Utilization excl. trainees,hcltech,2007Q1,2012Q1,0,0.0,0.0
+Utilization excl. trainees,wipro,2007Q2,2026Q2,45,1.0,1.0
+Utilization excl. trainees,techm,2015Q2,2025Q1,40,0.89,0.44
+Utilization excl. trainees,ltim,2021Q2,2026Q2,21,1.0,1.0
+Utilization excl. trainees,lti,2015Q2,2022Q3,30,1.0,
+Utilization excl. trainees,mindtree,2015Q3,2020Q1,19,0.63,
+Utilization excl. trainees,cognizant,2023Q1,2026Q2,14,0.31,1.0
+Utilization excl. trainees,accenture,,,0,0.0,0.0
+Utilization incl. trainees,tcs,2007Q1,2015Q4,3,0.07,0.0
+Utilization incl. trainees,infosys,2007Q1,2026Q2,45,1.0,1.0
+Utilization incl. trainees,hcltech,2007Q1,2019Q1,16,0.36,0.0
+Utilization incl. trainees,wipro,2007Q2,2012Q1,0,0.0,0.0
+Utilization incl. trainees,techm,2007Q1,2026Q2,45,1.0,1.0
+Utilization incl. trainees,ltim,,,0,0.0,0.0
+Utilization incl. trainees,lti,2015Q2,2022Q3,30,1.0,
+Utilization incl. trainees,mindtree,2015Q3,2022Q3,29,0.97,
+Utilization incl. trainees,cognizant,2017Q1,2023Q4,28,0.62,0.0
+Utilization incl. trainees,accenture,2008Q1,2026Q2,45,1.0,1.0
+Subcontracting cost,tcs,2010Q2,2026Q2,45,1.0,1.0
+Subcontracting cost,infosys,2009Q4,2026Q2,45,1.0,1.0
+Subcontracting cost,hcltech,2016Q1,2026Q2,42,0.93,1.0
+Subcontracting cost,wipro,2014Q2,2026Q2,45,1.0,1.0
+Subcontracting cost,techm,2007Q4,2026Q2,45,1.0,1.0
+Subcontracting cost,ltim,,,0,0.0,0.0
+Subcontracting cost,lti,,,0,0.0,
+Subcontracting cost,mindtree,2021Q1,2022Q3,7,0.23,
+Subcontracting cost,cognizant,,,0,0.0,0.0
+Subcontracting cost,accenture,,,0,0.0,0.0
+TCV / bookings,tcs,2018Q2,2026Q2,33,0.73,1.0
+TCV / bookings,infosys,2015Q2,2026Q2,45,1.0,1.0
+TCV / bookings,hcltech,2021Q1,2026Q2,22,0.49,1.0
+TCV / bookings,wipro,2020Q4,2026Q2,21,0.47,1.0
+TCV / bookings,techm,2018Q2,2026Q2,33,0.73,1.0
+TCV / bookings,ltim,2022Q4,2026Q2,15,0.71,1.0
+TCV / bookings,lti,,,0,0.0,
+TCV / bookings,mindtree,2015Q3,2022Q3,29,0.97,
+TCV / bookings,cognizant,2020Q4,2026Q2,23,0.51,1.0
+TCV / bookings,accenture,2008Q3,2026Q2,45,1.0,1.0
+Client buckets,tcs,2011Q1,2026Q2,45,1.0,1.0
+Client buckets,infosys,2010Q2,2026Q2,45,1.0,1.0
+Client buckets,hcltech,2013Q3,2026Q2,45,1.0,1.0
+Client buckets,wipro,2013Q2,2026Q2,45,1.0,1.0
+Client buckets,techm,2007Q1,2026Q2,45,1.0,1.0
+Client buckets,ltim,2021Q2,2026Q2,21,1.0,1.0
+Client buckets,lti,2015Q2,2022Q3,30,1.0,
+Client buckets,mindtree,2015Q2,2022Q3,30,1.0,
+Client buckets,cognizant,2013Q4,2016Q3,6,0.13,0.0
+Client buckets,accenture,2023Q2,2026Q2,13,0.29,1.0
+Onsite/offshore mix,tcs,,,0,0.0,0.0
+Onsite/offshore mix,infosys,2010Q2,2026Q2,45,1.0,1.0
+Onsite/offshore mix,hcltech,,,0,0.0,0.0
+Onsite/offshore mix,wipro,2013Q2,2026Q2,45,1.0,1.0
+Onsite/offshore mix,techm,2007Q1,2026Q2,45,1.0,1.0
+Onsite/offshore mix,ltim,2021Q2,2026Q2,21,1.0,1.0
+Onsite/offshore mix,lti,2015Q2,2022Q3,30,1.0,
+Onsite/offshore mix,mindtree,2015Q3,2022Q3,24,0.8,
+Onsite/offshore mix,cognizant,,,0,0.0,0.0
+Onsite/offshore mix,accenture,,,0,0.0,0.0
+AI disclosure,tcs,2025Q4,2026Q2,3,0.07,0.33
+AI disclosure,infosys,2023Q2,2026Q2,3,0.07,0.22
+AI disclosure,hcltech,2025Q3,2026Q2,4,0.09,0.44
+AI disclosure,wipro,2023Q2,2025Q2,7,0.16,0.44
+AI disclosure,techm,2025Q4,2026Q1,2,0.04,0.22
+AI disclosure,ltim,,,0,0.0,0.0
+AI disclosure,lti,,,0,0.0,
+AI disclosure,mindtree,,,0,0.0,
+AI disclosure,cognizant,2023Q2,2026Q1,3,0.07,0.22
+AI disclosure,accenture,2023Q3,2025Q4,10,0.22,0.78

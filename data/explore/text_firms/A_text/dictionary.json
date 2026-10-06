@@ -1,0 +1,8 @@
+{
+  "_note": "PRE-SPECIFIED dictionary, written 2026-09-27 BEFORE any counting. Matching: case-insensitive, whole-word, hyphen/space/newline-insensitive (regex \\s|- between tokens), simple plural 's' allowed where marked. Unit: matches per 10,000 words of the whole document (transcript incl. Q&A). No terms added after seeing results.",
+  "pricing": ["pricing pressure", "price reduction(s)", "deflation", "deflationary", "rate cut(s)", "discount(s)"],
+  "productivity": ["productivity commitment(s)", "productivity pass", "pass on productivity", "productivity benefits to clients", "give-back", "AI-led productivity", "efficiency commitment(s)"],
+  "demand": ["discretionary spend", "macro uncertainty", "demand environment", "deal deferral(s)", "decision-making cycle(s)"],
+  "gcc": ["GCC", "global capability center(s)", "captive(s)", "insourcing", "in-house"],
+  "_implementation_notes": ["'discretionary spend' also matches 'discretionary spending'", "'global capability center' also matches British 'centre'", "'GCC' matched case-sensitive uppercase only (avoid words); 'productivity pass' matches 'productivity pass-through'", "'give-back' matches 'giveback'/'give back'"]
+}

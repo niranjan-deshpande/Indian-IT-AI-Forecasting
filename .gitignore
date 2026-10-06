@@ -1,0 +1,8 @@
+# Downloaded source documents (filings, transcripts, PDFs): 2.3 GB, third-party material.
+# Every source URL is recorded in the data and audit files.
+data/sources/
+
+.claude/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,27 @@
+measure,firm_group,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,note
+certified_positions,accenture,17501,12302,7535,7509,7173,6225,3817,3104,3498,3353,2907,1528,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,capgemini,51312,47800,16828,13020,9355,5877,3213,4365,3364,2761,2607,1495,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,coforge,546,798,708,1375,2297,1526,434,328,406,397,455,247,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,cognizant,72522,96024,50833,47132,28563,29173,12550,13529,12949,11285,11319,5804,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,hcltech,15763,12628,39588,42430,9235,4280,14300,4027,3839,4051,2931,1256,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,hexaware,1149,1062,994,1945,1109,1144,635,646,511,705,618,362,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,infosys,33437,25488,20728,11681,21545,25792,93225,105258,40000,16924,16494,9005,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,ltim,27258,15357,13223,6825,5043,3357,2705,2968,2673,2835,3617,1331,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,mphasis,19665,16229,21823,16672,4192,1228,1993,1622,1260,1249,1390,1016,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,persistent,760,565,455,515,424,388,268,293,458,793,493,290,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,tcs,43230,17097,18981,20734,15792,12753,12729,11873,8511,9951,8154,2881,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,techm,10075,8292,8260,6370,4070,2754,1967,1500,1385,1455,1289,540,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_positions,wipro,32290,30529,11067,8916,12596,7194,13263,9614,11000,5665,5183,1593,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,accenture,9464,9371,6618,6113,5512,6104,3771,2985,3458,3311,2883,1513,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,capgemini,7236,18906,9516,6461,8373,5877,3213,4365,3364,2761,2607,1495,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,coforge,269,270,265,317,394,420,317,266,346,300,380,241,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,cognizant,3006,4147,2442,12202,28563,29173,12550,13529,12949,11285,11144,5804,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,hcltech,6100,4909,4234,2474,4591,4280,4304,4027,3839,4051,2931,1256,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,hexaware,1149,1062,994,935,1029,1048,614,646,511,705,618,362,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,infosys,33437,25488,20728,11681,21545,9565,5659,7741,7825,5949,5822,4605,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,ltim,4761,3768,2636,3858,4401,3289,2637,2968,2502,2835,2645,1117,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,mphasis,1000,773,1011,782,1394,1228,1369,1622,1260,1249,1390,1016,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,persistent,760,565,455,491,424,388,268,293,458,793,493,290,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,tcs,16434,13072,13436,14492,11837,11941,9797,11126,8488,9611,7797,2881,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,techm,5621,8291,8260,6370,4070,2754,1967,1500,1385,1455,1289,540,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014
+certified_cases,wipro,10240,9528,4919,6088,4155,2381,2781,2422,2841,2153,1941,1544,DOL fiscal year by decision date (Oct-Sep); FY2026 = Oct 2025-Jun 2026 only; FY2015 file begins Oct 2014

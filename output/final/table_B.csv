@@ -1,0 +1,13 @@
+window,metric,mean_firm_years,n_firm_years,n_firms,firms,mean_of_yearly_simple_avg
+FY16-FY23,residual,1.098,18,4,HCLTech;Infosys;Tech Mahindra;Wipro,1.335
+FY16-FY23,util_change,0.771,33,5,HCLTech;Infosys;LTI group;Tech Mahindra;Wipro,0.718
+FY16-FY23 excl. FY21 (COVID),residual,2.103,15,4,HCLTech;Infosys;Tech Mahindra;Wipro,2.087
+FY16-FY23 excl. FY21 (COVID),util_change,0.489,29,5,HCLTech;Infosys;LTI group;Tech Mahindra;Wipro,0.417
+FY24-FY26,residual,1.318,12,4,Infosys;LTI group;Tech Mahindra;Wipro,1.318
+FY24-FY26,util_change,0.972,12,4,Infosys;LTI group;Tech Mahindra;Wipro,0.972
+"FY16-FY23, same firms",residual,0.521,14,3,Infosys;Tech Mahindra;Wipro,0.769
+"FY16-FY23, same firms",util_change,0.288,14,3,Infosys;Tech Mahindra;Wipro,0.478
+"FY16-FY23 excl. FY21, same firms",residual,1.734,11,3,Infosys;Tech Mahindra;Wipro,1.44
+"FY16-FY23 excl. FY21, same firms",util_change,-0.421,11,3,Infosys;Tech Mahindra;Wipro,0.133
+"FY24-FY26, same firms",residual,0.892,9,3,Infosys;Tech Mahindra;Wipro,0.892
+"FY24-FY26, same firms",util_change,0.734,9,3,Infosys;Tech Mahindra;Wipro,0.734

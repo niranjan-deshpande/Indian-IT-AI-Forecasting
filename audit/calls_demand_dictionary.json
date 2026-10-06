@@ -1,0 +1,26 @@
+{
+  "_about": "Keyword screen for the demand pass over the 183 transcripts in audit/calls_transcripts.csv. Case-insensitive regexes, word-boundary anchored. A hit opens a +/-900-character reading window (overlapping windows merged), the same window rule as the price pass. Hits are only a screen: every kept statement was read in context, speaker-confirmed, and must explain revenue / headcount / growth / hiring / deals through demand. Used by scripts/audit/calls_demand_extract.py.",
+  "families": {
+    "discretionary": ["discretionary"],
+    "demand": ["demand(s)?", "demand[\\s-]+environment", "demand[\\s-]+(?:side|softness|weakness|slowdown)"],
+    "spending": ["spend(s|ing)?", "budget(s|ed|ing|ary)?", "wallet[\\s-]+share", "tech(nology)?[\\s-]+spend"],
+    "caution": ["caution(s|ary)?", "cautious(ly|ness)?", "wait[\\s-]+and[\\s-]+(see|watch)", "hesitan(t|cy|ce)", "prudent", "conservativ(e|eness|ism)", "wariness|wary"],
+    "macro": ["macro(s)?", "macro[\\s-]?economic(s)?", "recession(ary)?", "geopolitic(s|al)", "tariff(s)?", "uncertain(ty|ties)?", "volatil(e|ity)", "economic[\\s-]+(?:slowdown|downturn|conditions|environment|headwinds)", "environment"],
+    "delay": ["defer(s|red|ring|ral|rals|ment)?", "delay(s|ed|ing)?", "postpone(d|ment|ments)?", "push(ed)?[\\s-]+out", "decision[\\s-]+making", "slow(er)?[\\s-]+decision(s)?", "elongat(ed|ion|ing)", "longer[\\s-]+(?:sales|decision|deal)[\\s-]+cycle(s)?", "deal[\\s-]+(?:closure|conversion)s?", "on[\\s-]+hold"],
+    "rampdown": ["ramp[\\s-]?down(s)?", "ramping[\\s-]+down", "ramped[\\s-]+down", "scope[\\s-]+reduction(s)?", "insourc(e|ed|ing)", "vendor[\\s-]+consolidation"],
+    "cancel": ["cancel(s|led|ed|ling|ing|lation|lations)?", "termination(s)?", "project[\\s-]+closure(s)?"],
+    "slowdown": ["slowdown(s)?", "slow(ing|ed|er|ness)?[\\s-]+(?:down|growth|demand|spend|spending|pace)?", "weak(er|ness|ening|ened)?", "soft(er|ness|ening)?", "headwind(s)?", "sluggish", "muted", "subdued", "challeng(ing|es)", "decline(s|d)?", "contraction"],
+    "furlough_pause": ["furlough(s|ed)?", "pause(s|d)?", "freez(e|es|ing)", "shutdown(s)?", "holiday[\\s-]+season"],
+    "vertical_geo": ["BFSI", "financial[\\s-]+services", "banking", "mortgage(s)?", "capital[\\s-]+markets", "hi[\\s-]?tech", "high[\\s-]?tech", "telecom(s|munications)?", "communications", "retail", "manufacturing", "automotive", "europe(an)?", "\\bUK\\b", "north[\\s-]+america", "\\bUS\\b"],
+    "headcount": ["headcount", "head[\\s-]+count", "hiring", "fresher(s)?", "utilization|utilisation", "net[\\s-]+addition(s)?"],
+    "strength": ["strong[\\s-]+demand", "robust", "healthy", "pipeline(s)?", "tailwind(s)?", "momentum", "record[\\s-]+(?:bookings|deal|TCV|order)", "accelerat(e|ed|ing|ion)", "resilien(t|ce)", "revival", "recover(y|ing|ed)", "pick[\\s-]?up", "buoyan(t|cy)"]
+  },
+  "exclusions_applied_by_reader": [
+    "analyst questions and moderator lines",
+    "'environment' in the ESG / climate sense",
+    "'spend' meaning the firm's own investment or capex",
+    "'challenging' about talent supply / attrition only",
+    "'decline' of margin, attrition or currency with no demand claim",
+    "client case studies (what a client achieved) with no statement about the firm's demand"
+  ]
+}

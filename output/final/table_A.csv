@@ -1,0 +1,385 @@
+period,group,metric,value,n_firms,firms
+FY16,Indian simple average,rev_usd,6.507,4,TCS;Infosys;HCLTech;Wipro
+FY16,Indian revenue-weighted average,rev_usd,6.687,4,TCS;Infosys;HCLTech;Wipro
+FY16,Indian simple average,rev_cc,10.512,4,TCS;Infosys;HCLTech;Wipro
+FY16,Indian revenue-weighted average,rev_cc,10.783,4,TCS;Infosys;HCLTech;Wipro
+FY16,Indian simple average,headcount,8.824,3,TCS;Infosys;HCLTech
+FY16,Indian revenue-weighted average,headcount,8.754,3,TCS;Infosys;HCLTech
+FY16,Indian simple average,headcount_yearend,6.832,3,TCS;Infosys;HCLTech
+FY16,Indian revenue-weighted average,headcount_yearend,8.18,3,TCS;Infosys;HCLTech
+FY16,Indian simple average,rpe_usd,-1.37,3,TCS;Infosys;HCLTech
+FY16,Indian revenue-weighted average,rpe_usd,-1.38,3,TCS;Infosys;HCLTech
+FY16,Indian simple average,rpe_cc,2.738,3,TCS;Infosys;HCLTech
+FY16,Indian revenue-weighted average,rpe_cc,2.807,3,TCS;Infosys;HCLTech
+FY16,Indian simple average,util_change,0.705,3,Infosys;HCLTech;Wipro
+FY16,Indian revenue-weighted average,util_change,0.554,3,Infosys;HCLTech;Wipro
+FY16,Indian simple average,residual,1.737,2,Infosys;HCLTech
+FY16,Indian revenue-weighted average,residual,1.634,2,Infosys;HCLTech
+FY17,Indian simple average,rev_usd,7.601,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY17,Indian revenue-weighted average,rev_usd,7.054,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY17,Indian simple average,rev_cc,8.846,4,TCS;Infosys;HCLTech;Wipro
+FY17,Indian revenue-weighted average,rev_cc,8.524,4,TCS;Infosys;HCLTech;Wipro
+FY17,Indian simple average,headcount,5.714,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY17,Indian revenue-weighted average,headcount,7.371,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY17,Indian simple average,headcount_yearend,6.797,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY17,Indian revenue-weighted average,headcount_yearend,7.293,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY17,Indian simple average,rpe_usd,2.455,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY17,Indian revenue-weighted average,rpe_usd,0.116,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY17,Indian simple average,rpe_cc,2.554,3,TCS;Infosys;HCLTech
+FY17,Indian revenue-weighted average,rpe_cc,1.199,3,TCS;Infosys;HCLTech
+FY17,Indian simple average,util_change,1.823,4,Infosys;HCLTech;Wipro;Tech Mahindra
+FY17,Indian revenue-weighted average,util_change,1.818,4,Infosys;HCLTech;Wipro;Tech Mahindra
+FY17,Indian simple average,residual,3.457,2,Infosys;HCLTech
+FY17,Indian revenue-weighted average,residual,3.01,2,Infosys;HCLTech
+FY18,Indian simple average,rev_usd,9.672,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian revenue-weighted average,rev_usd,8.81,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian simple average,rev_cc,6.244,4,TCS;Infosys;HCLTech;Wipro
+FY18,Indian revenue-weighted average,rev_cc,6.256,4,TCS;Infosys;HCLTech;Wipro
+FY18,Indian simple average,headcount,4.6,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian revenue-weighted average,headcount,3.708,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian simple average,headcount_yearend,2.82,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian revenue-weighted average,headcount_yearend,1.951,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian simple average,rpe_usd,5.072,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian revenue-weighted average,rpe_usd,5.102,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY18,Indian simple average,rpe_cc,3.492,3,TCS;Infosys;HCLTech
+FY18,Indian revenue-weighted average,rpe_cc,3.292,3,TCS;Infosys;HCLTech
+FY18,Indian simple average,util_change,2.098,5,Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY18,Indian revenue-weighted average,util_change,2.07,5,Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY18,Indian simple average,residual,1.968,2,Infosys;HCLTech
+FY18,Indian revenue-weighted average,residual,1.884,2,Infosys;HCLTech
+FY19,Indian simple average,rev_usd,8.411,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY19,Indian revenue-weighted average,rev_usd,7.874,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY19,Indian simple average,rev_cc,8.985,4,TCS;Infosys;HCLTech;Wipro
+FY19,Indian revenue-weighted average,rev_cc,9.458,4,TCS;Infosys;HCLTech;Wipro
+FY19,Indian simple average,headcount,8.303,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian revenue-weighted average,headcount,7.352,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian simple average,headcount_yearend,10.739,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian revenue-weighted average,headcount_yearend,9.655,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian simple average,rpe_usd,1.227,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian revenue-weighted average,rpe_usd,1.367,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY19,Indian simple average,rpe_cc,2.158,3,TCS;Infosys;HCLTech
+FY19,Indian revenue-weighted average,rpe_cc,2.799,3,TCS;Infosys;HCLTech
+FY19,Indian simple average,util_change,1.091,5,Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY19,Indian revenue-weighted average,util_change,0.814,5,Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY19,Indian simple average,residual,0.785,2,Infosys;HCLTech
+FY19,Indian revenue-weighted average,residual,0.606,2,Infosys;HCLTech
+FY20,Indian simple average,rev_usd,7.281,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY20,Indian revenue-weighted average,rev_usd,6.902,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY20,Indian simple average,rev_cc,8.904,4,TCS;Infosys;HCLTech;Wipro
+FY20,Indian revenue-weighted average,rev_cc,8.633,4,TCS;Infosys;HCLTech;Wipro
+FY20,Indian simple average,headcount,9.425,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY20,Indian revenue-weighted average,headcount,8.7,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY20,Indian simple average,headcount_yearend,6.672,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY20,Indian revenue-weighted average,headcount_yearend,6.288,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY20,Indian simple average,rpe_usd,-1.017,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY20,Indian revenue-weighted average,rpe_usd,-0.972,5,TCS;Infosys;HCLTech;Tech Mahindra;LTI group
+FY20,Indian simple average,rpe_cc,1.429,3,TCS;Infosys;HCLTech
+FY20,Indian revenue-weighted average,rpe_cc,0.902,3,TCS;Infosys;HCLTech
+FY20,Indian simple average,util_change,-0.616,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY20,Indian revenue-weighted average,util_change,-0.899,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY20,Indian simple average,residual,2.167,1,Infosys
+FY20,Indian revenue-weighted average,residual,2.167,1,Infosys
+FY21,Indian simple average,rev_usd,1.848,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian revenue-weighted average,rev_usd,1.836,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian simple average,rev_cc,0.053,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY21,Indian revenue-weighted average,rev_cc,0.457,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY21,Indian simple average,headcount,3.416,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian revenue-weighted average,headcount,3.771,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian simple average,headcount_yearend,7.127,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian revenue-weighted average,headcount_yearend,7.736,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian simple average,rpe_usd,-1.568,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian revenue-weighted average,rpe_usd,-1.935,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY21,Indian simple average,rpe_cc,-2.695,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY21,Indian revenue-weighted average,rpe_cc,-3.175,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY21,Indian simple average,util_change,2.82,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY21,Indian revenue-weighted average,util_change,2.415,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY21,Indian simple average,residual,-3.926,3,Infosys;Wipro;Tech Mahindra
+FY21,Indian revenue-weighted average,residual,-3.345,3,Infosys;Wipro;Tech Mahindra
+FY22,Indian simple average,rev_usd,18.343,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian revenue-weighted average,rev_usd,17.064,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian simple average,rev_cc,16.696,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY22,Indian revenue-weighted average,rev_cc,16.274,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY22,Indian simple average,headcount,18.481,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian revenue-weighted average,headcount,17.236,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian simple average,headcount_yearend,22.259,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian revenue-weighted average,headcount_yearend,20.511,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian simple average,rpe_usd,-0.138,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian revenue-weighted average,rpe_usd,-0.172,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY22,Indian simple average,rpe_cc,0.044,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY22,Indian revenue-weighted average,rpe_cc,-0.439,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY22,Indian simple average,util_change,1.773,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY22,Indian revenue-weighted average,util_change,2.372,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY22,Indian simple average,residual,1.569,3,Infosys;Wipro;Tech Mahindra
+FY22,Indian revenue-weighted average,residual,0.998,3,Infosys;Wipro;Tech Mahindra
+FY23,Indian simple average,rev_usd,10.368,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian revenue-weighted average,rev_usd,9.526,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian simple average,rev_cc,12.811,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY23,Indian revenue-weighted average,rev_cc,12.947,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY23,Indian simple average,headcount,14.302,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian revenue-weighted average,headcount,13.85,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian simple average,headcount_yearend,5.583,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian revenue-weighted average,headcount_yearend,5.761,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian simple average,rpe_usd,-3.934,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian revenue-weighted average,rpe_usd,-4.325,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY23,Indian simple average,rpe_cc,-0.824,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY23,Indian revenue-weighted average,rpe_cc,-0.7,5,TCS;Infosys;HCLTech;Wipro;Tech Mahindra
+FY23,Indian simple average,util_change,-3.953,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY23,Indian revenue-weighted average,util_change,-5.198,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY23,Indian simple average,residual,2.927,3,Infosys;Wipro;Tech Mahindra
+FY23,Indian revenue-weighted average,residual,3.224,3,Infosys;Wipro;Tech Mahindra
+FY24,Indian simple average,rev_usd,1.094,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,rev_usd,2.037,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,rev_cc,0.742,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,rev_cc,1.541,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,headcount,-3.613,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,headcount,-2.811,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,headcount_yearend,-4.684,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,headcount_yearend,-4.364,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,rpe_usd,4.707,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,rpe_usd,4.847,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,rpe_cc,4.355,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,rpe_cc,4.352,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,util_change,2.53,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,util_change,1.788,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY24,Indian simple average,residual,2.246,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY24,Indian revenue-weighted average,residual,3.167,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,rev_usd,2.234,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,rev_usd,2.764,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,rev_cc,2.619,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,rev_cc,3.15,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,headcount,-0.495,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,headcount,-0.813,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,headcount_yearend,1.164,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,headcount_yearend,0.91,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,rpe_usd,2.73,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,rpe_usd,3.577,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,rpe_cc,3.115,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,rpe_cc,3.963,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,util_change,1.091,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,util_change,1.995,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY25,Indian simple average,residual,1.06,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY25,Indian revenue-weighted average,residual,1.263,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,rev_usd,2.86,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,rev_usd,2.259,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,rev_cc,1.424,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,rev_cc,0.645,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,headcount,1.198,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,headcount,0.605,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,headcount_yearend,1.077,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,headcount_yearend,-0.097,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,rpe_usd,1.662,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,rpe_usd,1.655,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,rpe_cc,0.227,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,rpe_cc,0.04,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,util_change,-0.706,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,util_change,-1.027,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY26,Indian simple average,residual,0.647,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY26,Indian revenue-weighted average,residual,0.492,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,rev_usd,3.556,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,rev_usd,2.991,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,rev_cc,3.597,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,rev_cc,3.019,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,headcount,1.006,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,headcount,-0.091,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,headcount_yearend,1.006,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,headcount_yearend,-0.091,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,rpe_usd,2.551,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,rpe_usd,3.082,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,rpe_cc,2.591,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,rpe_cc,3.11,6,TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,util_change,-0.389,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,util_change,-0.427,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian simple average,residual,2.13,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY27 Q1 (one quarter),Indian revenue-weighted average,residual,1.509,4,Infosys;Wipro;Tech Mahindra;LTI group
+FY16,Accenture,rev_usd,,0,Accenture
+FY16,Accenture,rev_cc,,0,Accenture
+FY16,Accenture,headcount,,0,Accenture
+FY16,Accenture,headcount_yearend,14.194,1,Accenture
+FY16,Accenture,rpe_usd,,0,Accenture
+FY16,Accenture,rpe_cc,,0,Accenture
+FY16,Accenture,util_change,,0,Accenture
+FY16,Accenture,residual,,0,Accenture
+FY17,Accenture,rev_usd,6.548,1,Accenture
+FY17,Accenture,rev_cc,7.682,1,Accenture
+FY17,Accenture,headcount,7.715,1,Accenture
+FY17,Accenture,headcount_yearend,7.341,1,Accenture
+FY17,Accenture,rpe_usd,-1.167,1,Accenture
+FY17,Accenture,rpe_cc,-0.032,1,Accenture
+FY17,Accenture,util_change,1.651,1,Accenture
+FY17,Accenture,residual,-1.684,1,Accenture
+FY18,Accenture,rev_usd,9.511,1,Accenture
+FY18,Accenture,rev_cc,8.386,1,Accenture
+FY18,Accenture,headcount,9.742,1,Accenture
+FY18,Accenture,headcount_yearend,9.653,1,Accenture
+FY18,Accenture,rpe_usd,-0.23,1,Accenture
+FY18,Accenture,rpe_cc,-1.356,1,Accenture
+FY18,Accenture,util_change,-0.273,1,Accenture
+FY18,Accenture,residual,-1.083,1,Accenture
+FY19,Accenture,rev_usd,9.369,1,Accenture
+FY19,Accenture,rev_cc,9.607,1,Accenture
+FY19,Accenture,headcount,7.862,1,Accenture
+FY19,Accenture,headcount_yearend,7.617,1,Accenture
+FY19,Accenture,rpe_usd,1.507,1,Accenture
+FY19,Accenture,rpe_cc,1.745,1,Accenture
+FY19,Accenture,util_change,0.0,1,Accenture
+FY19,Accenture,residual,1.745,1,Accenture
+FY20,Accenture,rev_usd,5.517,1,Accenture
+FY20,Accenture,rev_cc,7.744,1,Accenture
+FY20,Accenture,headcount,6.965,1,Accenture
+FY20,Accenture,headcount_yearend,6.505,1,Accenture
+FY20,Accenture,rpe_usd,-1.447,1,Accenture
+FY20,Accenture,rpe_cc,0.78,1,Accenture
+FY20,Accenture,util_change,-0.273,1,Accenture
+FY20,Accenture,residual,1.053,1,Accenture
+FY21,Accenture,rev_usd,2.261,1,Accenture
+FY21,Accenture,rev_cc,1.742,1,Accenture
+FY21,Accenture,headcount,4.088,1,Accenture
+FY21,Accenture,headcount_yearend,5.374,1,Accenture
+FY21,Accenture,rpe_usd,-1.827,1,Accenture
+FY21,Accenture,rpe_cc,-2.346,1,Accenture
+FY21,Accenture,util_change,0.24,1,Accenture
+FY21,Accenture,residual,-2.586,1,Accenture
+FY22,Accenture,rev_usd,21.609,1,Accenture
+FY22,Accenture,rev_cc,20.859,1,Accenture
+FY22,Accenture,headcount,21.194,1,Accenture
+FY22,Accenture,headcount_yearend,26.359,1,Accenture
+FY22,Accenture,rpe_usd,0.415,1,Accenture
+FY22,Accenture,rpe_cc,-0.335,1,Accenture
+FY22,Accenture,util_change,1.123,1,Accenture
+FY22,Accenture,residual,-1.458,1,Accenture
+FY23,Accenture,rev_usd,10.774,1,Accenture
+FY23,Accenture,rev_cc,16.443,1,Accenture
+FY23,Accenture,headcount,12.803,1,Accenture
+FY23,Accenture,headcount_yearend,5.52,1,Accenture
+FY23,Accenture,rpe_usd,-2.029,1,Accenture
+FY23,Accenture,rpe_cc,3.64,1,Accenture
+FY23,Accenture,util_change,-1.363,1,Accenture
+FY23,Accenture,residual,5.003,1,Accenture
+FY24,Accenture,rev_usd,2.238,1,Accenture
+FY24,Accenture,rev_cc,2.475,1,Accenture
+FY24,Accenture,headcount,1.457,1,Accenture
+FY24,Accenture,headcount_yearend,0.564,1,Accenture
+FY24,Accenture,rpe_usd,0.781,1,Accenture
+FY24,Accenture,rpe_cc,1.018,1,Accenture
+FY24,Accenture,util_change,0.273,1,Accenture
+FY24,Accenture,residual,0.745,1,Accenture
+FY25,Accenture,rev_usd,4.019,1,Accenture
+FY25,Accenture,rev_cc,5.434,1,Accenture
+FY25,Accenture,headcount,5.709,1,Accenture
+FY25,Accenture,headcount_yearend,7.621,1,Accenture
+FY25,Accenture,rpe_usd,-1.69,1,Accenture
+FY25,Accenture,rpe_cc,-0.275,1,Accenture
+FY25,Accenture,util_change,0.273,1,Accenture
+FY25,Accenture,residual,-0.548,1,Accenture
+FY26,Accenture,rev_usd,7.02,1,Accenture
+FY26,Accenture,rev_cc,4.993,1,Accenture
+FY26,Accenture,headcount,0.535,1,Accenture
+FY26,Accenture,headcount_yearend,-1.848,1,Accenture
+FY26,Accenture,rpe_usd,6.485,1,Accenture
+FY26,Accenture,rpe_cc,4.458,1,Accenture
+FY26,Accenture,util_change,1.357,1,Accenture
+FY26,Accenture,residual,3.101,1,Accenture
+FY27 Q1 (one quarter),Accenture,rev_usd,5.436,1,Accenture
+FY27 Q1 (one quarter),Accenture,rev_cc,2.956,1,Accenture
+FY27 Q1 (one quarter),Accenture,headcount,1.045,1,Accenture
+FY27 Q1 (one quarter),Accenture,headcount_yearend,1.045,1,Accenture
+FY27 Q1 (one quarter),Accenture,rpe_usd,4.39,1,Accenture
+FY27 Q1 (one quarter),Accenture,rpe_cc,1.911,1,Accenture
+FY27 Q1 (one quarter),Accenture,util_change,1.081,1,Accenture
+FY27 Q1 (one quarter),Accenture,residual,0.83,1,Accenture
+FY16,Cognizant,rev_usd,16.705,1,Cognizant
+FY16,Cognizant,rev_cc,,0,Cognizant
+FY16,Cognizant,headcount,8.997,1,Cognizant
+FY16,Cognizant,headcount_yearend,6.792,1,Cognizant
+FY16,Cognizant,rpe_usd,7.708,1,Cognizant
+FY16,Cognizant,rpe_cc,,0,Cognizant
+FY16,Cognizant,util_change,,0,Cognizant
+FY16,Cognizant,residual,,0,Cognizant
+FY17,Cognizant,rev_usd,8.48,1,Cognizant
+FY17,Cognizant,rev_cc,,0,Cognizant
+FY17,Cognizant,headcount,13.556,1,Cognizant
+FY17,Cognizant,headcount_yearend,11.425,1,Cognizant
+FY17,Cognizant,rpe_usd,-5.076,1,Cognizant
+FY17,Cognizant,rpe_cc,,0,Cognizant
+FY17,Cognizant,util_change,,0,Cognizant
+FY17,Cognizant,residual,,0,Cognizant
+FY18,Cognizant,rev_usd,9.28,1,Cognizant
+FY18,Cognizant,rev_cc,8.608,1,Cognizant
+FY18,Cognizant,headcount,1.277,1,Cognizant
+FY18,Cognizant,headcount_yearend,0.077,1,Cognizant
+FY18,Cognizant,rpe_usd,8.003,1,Cognizant
+FY18,Cognizant,rpe_cc,7.331,1,Cognizant
+FY18,Cognizant,util_change,,0,Cognizant
+FY18,Cognizant,residual,,0,Cognizant
+FY19,Cognizant,rev_usd,7.286,1,Cognizant
+FY19,Cognizant,rev_cc,7.871,1,Cognizant
+FY19,Cognizant,headcount,7.084,1,Cognizant
+FY19,Cognizant,headcount_yearend,8.924,1,Cognizant
+FY19,Cognizant,rpe_usd,0.202,1,Cognizant
+FY19,Cognizant,rpe_cc,0.786,1,Cognizant
+FY19,Cognizant,util_change,1.223,1,Cognizant
+FY19,Cognizant,residual,-0.437,1,Cognizant
+FY20,Cognizant,rev_usd,3.462,1,Cognizant
+FY20,Cognizant,rev_cc,4.278,1,Cognizant
+FY20,Cognizant,headcount,4.585,1,Cognizant
+FY20,Cognizant,headcount_yearend,2.043,1,Cognizant
+FY20,Cognizant,rpe_usd,-1.123,1,Cognizant
+FY20,Cognizant,rpe_cc,-0.307,1,Cognizant
+FY20,Cognizant,util_change,0.895,1,Cognizant
+FY20,Cognizant,residual,-1.201,1,Cognizant
+FY21,Cognizant,rev_usd,-0.415,1,Cognizant
+FY21,Cognizant,rev_cc,-0.954,1,Cognizant
+FY21,Cognizant,headcount,-1.058,1,Cognizant
+FY21,Cognizant,headcount_yearend,1.632,1,Cognizant
+FY21,Cognizant,rpe_usd,0.643,1,Cognizant
+FY21,Cognizant,rpe_cc,0.104,1,Cognizant
+FY21,Cognizant,util_change,0.552,1,Cognizant
+FY21,Cognizant,residual,-0.448,1,Cognizant
+FY22,Cognizant,rev_usd,11.781,1,Cognizant
+FY22,Cognizant,rev_cc,11.406,1,Cognizant
+FY22,Cognizant,headcount,11.426,1,Cognizant
+FY22,Cognizant,headcount_yearend,13.807,1,Cognizant
+FY22,Cognizant,rpe_usd,0.355,1,Cognizant
+FY22,Cognizant,rpe_cc,-0.02,1,Cognizant
+FY22,Cognizant,util_change,-1.151,1,Cognizant
+FY22,Cognizant,residual,1.131,1,Cognizant
+FY23,Cognizant,rev_usd,2.514,1,Cognizant
+FY23,Cognizant,rev_cc,4.994,1,Cognizant
+FY23,Cognizant,headcount,8.051,1,Cognizant
+FY23,Cognizant,headcount_yearend,3.209,1,Cognizant
+FY23,Cognizant,rpe_usd,-5.537,1,Cognizant
+FY23,Cognizant,rpe_cc,-3.057,1,Cognizant
+FY23,Cognizant,util_change,-2.14,1,Cognizant
+FY23,Cognizant,residual,-0.916,1,Cognizant
+FY24,Cognizant,rev_usd,-0.584,1,Cognizant
+FY24,Cognizant,rev_cc,-0.976,1,Cognizant
+FY24,Cognizant,headcount,-0.939,1,Cognizant
+FY24,Cognizant,headcount_yearend,-2.041,1,Cognizant
+FY24,Cognizant,rpe_usd,0.355,1,Cognizant
+FY24,Cognizant,rpe_cc,-0.037,1,Cognizant
+FY24,Cognizant,util_change,-3.068,1,Cognizant
+FY24,Cognizant,residual,3.031,1,Cognizant
+FY25,Cognizant,rev_usd,4.012,1,Cognizant
+FY25,Cognizant,rev_cc,4.145,1,Cognizant
+FY25,Cognizant,headcount,-2.547,1,Cognizant
+FY25,Cognizant,headcount_yearend,-2.38,1,Cognizant
+FY25,Cognizant,rpe_usd,6.558,1,Cognizant
+FY25,Cognizant,rpe_cc,6.692,1,Cognizant
+FY25,Cognizant,util_change,0.906,1,Cognizant
+FY25,Cognizant,residual,5.786,1,Cognizant
+FY26,Cognizant,rev_usd,6.34,1,Cognizant
+FY26,Cognizant,rev_cc,5.187,1,Cognizant
+FY26,Cognizant,headcount,3.865,1,Cognizant
+FY26,Cognizant,headcount_yearend,6.141,1,Cognizant
+FY26,Cognizant,rpe_usd,2.475,1,Cognizant
+FY26,Cognizant,rpe_cc,1.322,1,Cognizant
+FY26,Cognizant,util_change,1.194,1,Cognizant
+FY26,Cognizant,residual,0.128,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,rev_usd,4.401,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,rev_cc,4.018,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,headcount,3.683,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,headcount_yearend,3.683,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,rpe_usd,0.718,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,rpe_cc,0.335,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,util_change,0.0,1,Cognizant
+FY27 Q1 (one quarter),Cognizant,residual,0.335,1,Cognizant

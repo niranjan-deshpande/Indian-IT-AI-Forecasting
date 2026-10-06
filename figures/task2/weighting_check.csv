@@ -1,0 +1,13 @@
+metric,freq,mean_abs_diff_all,max_abs_diff,mean_diff_2023on,n_periods
+gR_usd,quarterly,0.99,6.15,-0.2,74
+gR_usd,annual,0.71,3.68,-0.33,18
+gR,quarterly,0.79,4.23,-0.13,77
+gR,annual,0.75,3.4,-0.25,18
+gL,quarterly,1.15,5.88,0.1,74
+gL,annual,0.86,3.52,-0.07,18
+gRPE_usd,quarterly,1.07,6.87,-0.3,74
+gRPE_usd,annual,0.94,3.74,-0.26,18
+du,quarterly,0.66,2.72,0.18,74
+du,annual,0.46,1.45,0.17,18
+resid,quarterly,0.47,2.95,-0.26,74
+resid,annual,0.29,0.94,-0.32,18

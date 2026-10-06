@@ -1,0 +1,9 @@
+category,n_coder1,n_coder2,n_both,percent_agreement,positive_agreement,cohen_kappa
+overall,2087,2087,1923,92.142,,0.867
+A,796,743,724,90.955,94.087,0.906
+B,47,54,41,87.234,81.188,0.807
+C,72,83,55,76.389,70.968,0.699
+D,117,91,82,70.085,78.846,0.778
+E,1055,1116,1021,96.777,94.058,0.876
+"overall, price pass only",389,389,317,81.491,,
+"overall, demand pass only",1698,1698,1606,94.582,,

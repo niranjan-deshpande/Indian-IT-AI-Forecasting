@@ -1,0 +1,43 @@
+firm,fiscal_year,aligned_fy,period_end,revenue_usd_mn,revenue_basis,revenue_inr_mn,rev_prior_same_basis,rev_growth_logx100,cc_growth_reported_pct,headcount,headcount_basis,hc_prior_same_basis,hc_growth_logx100,revenue_usd_mn_firms,rev_growth_firms,headcount_firms,hc_growth_firms
+persistent,FY20,FY20,2020-03-31,501.61,reported_consolidated,,480.97,4.202,,10632,total_employees,9962.0,6.509,,,,
+persistent,FY21,FY21,2021-03-31,566.08,reported_consolidated,,501.61,12.091,,13680,total_employees,10632.0,25.207,,,,
+persistent,FY22,FY22,2022-03-31,765.59,reported_consolidated,,566.08,30.191,,18599,total_employees,13680.0,30.717,,,,
+persistent,FY23,FY23,2023-03-31,1035.98,reported_consolidated,,765.59,30.246,,22889,total_employees,18599.0,20.755,,,,
+persistent,FY24,FY24,2024-03-31,1186.05,reported_consolidated,,1035.98,13.528,,23850,total_employees,22889.0,4.113,,,,
+persistent,FY25,FY25,2025-03-31,1409.1,reported_consolidated,,1186.05,17.232,,24594,total_employees,23850.0,3.072,,,,
+persistent,FY26,FY26,2026-03-31,1654.4,reported_consolidated,,1409.1,16.049,,27502,total_employees,24594.0,11.176,,,,
+coforge,FY20,FY20,2020-03-31,,,41839.0,,,,11156,grand_total,10263.0,8.343,,,,
+coforge,FY21,FY21,2021-03-31,627.7,reported_consolidated,,,,6.0,12391,grand_total,11156.0,10.499,,,,
+coforge,FY22,FY22,2022-03-31,866.5,reported_consolidated,,627.7,32.24,,22500,grand_total,12391.0,59.654,,,,
+coforge,FY23,FY23,2023-03-31,1001.7,reported_consolidated,,866.5,14.499,22.4,23224,grand_total,22500.0,3.167,,,,
+coforge,FY24,FY24,2024-03-31,1118.7,reported_consolidated,,1001.7,11.047,13.3,24726,grand_total,23224.0,6.267,,,,
+coforge,FY25,FY25,2025-03-31,1468.0,reported_consolidated_incl_AdvantageGo,,1119.0,27.147,32.0,33497,grand_total,24726.0,30.36,,,,
+coforge,FY26,FY26,2026-03-31,1870.0,continuing_ex_AdvantageGo,,1448.0,25.576,,35777,grand_total_restated_FY26,33023.0,8.01,,,,
+mphasis,FY20,FY20,2020-03-31,1239.6,gross_revenue,,,,11.7,26398,total_incl_billable_contractors,,,,,,
+mphasis,FY21,FY21,2021-03-31,1308.9,gross_revenue,,1239.6,5.44,4.9,29473,total_incl_billable_contractors,26398.0,11.019,,,,
+mphasis,FY22,FY22,2022-03-31,1593.0,gross_revenue,,1308.9,19.643,21.2,36534,total_incl_billable_contractors,29473.0,21.477,,,,
+mphasis,FY23,FY23,2023-03-31,1717.7,gross_revenue,,1593.0,7.537,9.7,34042,total_incl_billable_contractors,36534.0,-7.065,,,,
+mphasis,FY24,FY24,2024-03-31,1609.5,gross_revenue,,1717.7,-6.506,-6.5,32664,total_incl_billable_contractors,34042.0,-4.132,,,,
+mphasis,FY25,FY25,2025-03-31,1680.8,gross_revenue,,1609.5,4.335,4.6,31442,total_incl_billable_contractors,32664.0,-3.813,,,,
+mphasis,FY26,FY26,2026-03-31,1796.4,gross_revenue,,1680.8,6.651,6.7,31179,total_incl_billable_contractors,31442.0,-0.84,,,,
+hexaware,CY2019,FY20,2019-12-31,793.26,consolidated,,677.67,15.749,18.2,19999,incl_contractors,16205.0,21.036,,,,
+hexaware,CY2020,FY21,2020-12-31,845.04,consolidated,,793.26,6.323,5.4,19833,incl_contractors,19999.0,-0.834,,,,
+hexaware,CY2021,FY22,2021-12-31,971.2,consolidated,,845.04,13.915,15.1,24166,incl_contractors,19833.0,19.76,,,,
+hexaware,CY2022,FY23,2022-12-31,1165.0,consolidated,,971.2,18.194,,28608,incl_contractors,24166.0,16.874,,,,
+hexaware,CY2023,FY24,2023-12-31,1256.4,consolidated,,1165.0,7.553,,28292,incl_contractors,28608.0,-1.111,,,,
+hexaware,CY2024,FY25,2024-12-31,1428.9,consolidated,,1256.4,12.865,13.5,32309,incl_contractors,28292.0,13.277,,,,
+hexaware,CY2025,FY26,2025-12-31,1537.4,consolidated,,1428.9,7.319,7.1,33844,incl_contractors,32309.0,4.642,,,,
+combined_4 (Hexaware CY(t-1) as FY t),FY20,FY20,,2534.4700000000003,,,,11.116,,68185,,,13.719,persistent+mphasis+hexaware,persistent+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY21,FY21,,3347.7200000000003,,,,7.065,,75377,,,10.028,persistent+coforge+mphasis+hexaware,persistent+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY22,FY22,,4196.29,,,,22.592,,101799,,,30.05,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY23,FY23,,4920.38,,,,15.918,,108763,,,6.617,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY24,FY24,,5170.65,,,,4.961,,109532,,,0.705,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY25,FY25,,5986.799999999999,,,,14.65,,121842,,,10.651,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_4 (Hexaware CY(t-1) as FY t),FY26,FY26,,6858.200000000001,,,,13.923,,128302,,,5.556,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware,persistent+coforge+mphasis+hexaware
+combined_3_indianFY (ex-Hexaware),FY20,FY20,,1741.21,,,,4.202,,48186,,,7.444,persistent+mphasis,persistent,persistent+coforge+mphasis,persistent+coforge
+combined_3_indianFY (ex-Hexaware),FY21,FY21,,2502.6800000000003,,,,7.402,,55544,,,14.211,persistent+coforge+mphasis,persistent+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis
+combined_3_indianFY (ex-Hexaware),FY22,FY22,,3225.09,,,,25.36,,77633,,,33.482,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis
+combined_3_indianFY (ex-Hexaware),FY23,FY23,,3755.38,,,,15.223,,80155,,,3.197,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis
+combined_3_indianFY (ex-Hexaware),FY24,FY24,,3914.25,,,,4.143,,81240,,,1.345,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis
+combined_3_indianFY (ex-Hexaware),FY25,FY25,,4557.9,,,,15.216,,89533,,,9.72,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis
+combined_3_indianFY (ex-Hexaware),FY26,FY26,,5320.8,,,,15.916,,94458,,,5.886,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis,persistent+coforge+mphasis

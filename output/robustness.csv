@@ -1,0 +1,217 @@
+config,metric_set,pair,acc_T12,T80
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S1-S2,0.9225,2.0
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S1-S3,0.61975,
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S1-S4,0.7967500000000001,9.0
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S2-S3,0.9055,3.0
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S2-S4,0.91475,2.0
+AR(1) persistence +0.07 (small-sample bias),revenue + headcount,S3-S4,0.79,
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S1-S2,0.93425,2.0
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S1-S3,0.68125,
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S1-S4,0.83325,4.0
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S2-S3,0.91725,3.0
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S2-S4,0.931,3.0
+AR(1) persistence +0.07 (small-sample bias),rev + heads + util + TCV,S3-S4,0.81225,6.0
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S1-S2,0.9445,2.0
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S1-S3,0.7382500000000001,
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S1-S4,0.837,3.0
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S2-S3,0.92625,3.0
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S2-S4,0.9395,2.0
+AR(1) persistence +0.07 (small-sample bias),all incl. service-line,S3-S4,0.8285,4.0
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S1-S2,0.959,1.0
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S1-S3,0.5875,
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S1-S4,0.823,3.0
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S2-S3,0.955,1.0
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S2-S4,0.95425,1.0
+Part-4 timing: observe from quarter 6 after onset,revenue + headcount,S3-S4,0.8075,8.0
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S1-S2,0.965,1.0
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S1-S3,0.60875,
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S1-S4,0.8472500000000001,1.0
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S2-S3,0.9585,1.0
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S2-S4,0.9615,1.0
+Part-4 timing: observe from quarter 6 after onset,rev + heads + util + TCV,S3-S4,0.81525,4.0
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S1-S2,0.96475,1.0
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S1-S3,0.734,
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S1-S4,0.84325,1.0
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S2-S3,0.96675,1.0
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S2-S4,0.96725,1.0
+Part-4 timing: observe from quarter 6 after onset,all incl. service-line,S3-S4,0.8425,2.0
+baseline,revenue + headcount,S1-S2,0.96125,2.0
+baseline,revenue + headcount,S1-S3,0.6515,
+baseline,revenue + headcount,S1-S4,0.8394999999999999,4.0
+baseline,revenue + headcount,S2-S3,0.9475,3.0
+baseline,revenue + headcount,S2-S4,0.95475,2.0
+baseline,revenue + headcount,S3-S4,0.81325,7.0
+baseline,rev + heads + util + TCV,S1-S2,0.962,2.0
+baseline,rev + heads + util + TCV,S1-S3,0.7005,
+baseline,rev + heads + util + TCV,S1-S4,0.85375,3.0
+baseline,rev + heads + util + TCV,S2-S3,0.94925,3.0
+baseline,rev + heads + util + TCV,S2-S4,0.95925,2.0
+baseline,rev + heads + util + TCV,S3-S4,0.8285,4.0
+baseline,all incl. service-line,S1-S2,0.95175,2.0
+baseline,all incl. service-line,S1-S3,0.7725,
+baseline,all incl. service-line,S1-S4,0.8532500000000001,3.0
+baseline,all incl. service-line,S2-S3,0.9595,2.0
+baseline,all incl. service-line,S2-S4,0.9665,2.0
+baseline,all incl. service-line,S3-S4,0.857,4.0
+effect 2.0%/yr,revenue + headcount,S1-S2,0.796,9.0
+effect 2.0%/yr,revenue + headcount,S1-S3,0.5607500000000001,
+effect 2.0%/yr,revenue + headcount,S1-S4,0.6785,
+effect 2.0%/yr,revenue + headcount,S2-S3,0.7855000000000001,
+effect 2.0%/yr,revenue + headcount,S2-S4,0.7927500000000001,9.0
+effect 2.0%/yr,revenue + headcount,S3-S4,0.6665,
+effect 2.0%/yr,rev + heads + util + TCV,S1-S2,0.80325,8.0
+effect 2.0%/yr,rev + heads + util + TCV,S1-S3,0.58925,
+effect 2.0%/yr,rev + heads + util + TCV,S1-S4,0.70375,
+effect 2.0%/yr,rev + heads + util + TCV,S2-S3,0.7907500000000001,
+effect 2.0%/yr,rev + heads + util + TCV,S2-S4,0.8107500000000001,9.0
+effect 2.0%/yr,rev + heads + util + TCV,S3-S4,0.6872499999999999,
+effect 2.0%/yr,all incl. service-line,S1-S2,0.8195,8.0
+effect 2.0%/yr,all incl. service-line,S1-S3,0.63625,
+effect 2.0%/yr,all incl. service-line,S1-S4,0.70275,
+effect 2.0%/yr,all incl. service-line,S2-S3,0.81375,9.0
+effect 2.0%/yr,all incl. service-line,S2-S4,0.82175,5.0
+effect 2.0%/yr,all incl. service-line,S3-S4,0.7,
+effect 6.0%/yr,revenue + headcount,S1-S2,0.99325,2.0
+effect 6.0%/yr,revenue + headcount,S1-S3,0.6965,
+effect 6.0%/yr,revenue + headcount,S1-S4,0.915,2.0
+effect 6.0%/yr,revenue + headcount,S2-S3,0.98775,2.0
+effect 6.0%/yr,revenue + headcount,S2-S4,0.99375,2.0
+effect 6.0%/yr,revenue + headcount,S3-S4,0.903,3.0
+effect 6.0%/yr,rev + heads + util + TCV,S1-S2,0.9955,1.0
+effect 6.0%/yr,rev + heads + util + TCV,S1-S3,0.7895,
+effect 6.0%/yr,rev + heads + util + TCV,S1-S4,0.936,2.0
+effect 6.0%/yr,rev + heads + util + TCV,S2-S3,0.991,2.0
+effect 6.0%/yr,rev + heads + util + TCV,S2-S4,0.997,2.0
+effect 6.0%/yr,rev + heads + util + TCV,S3-S4,0.92725,2.0
+effect 6.0%/yr,all incl. service-line,S1-S2,0.99475,2.0
+effect 6.0%/yr,all incl. service-line,S1-S3,0.86625,4.0
+effect 6.0%/yr,all incl. service-line,S1-S4,0.94475,2.0
+effect 6.0%/yr,all incl. service-line,S2-S3,0.9965,2.0
+effect 6.0%/yr,all incl. service-line,S2-S4,0.998,2.0
+effect 6.0%/yr,all incl. service-line,S3-S4,0.9435,2.0
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S1-S2,0.9475,3.0
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S1-S3,0.5802499999999999,
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S1-S4,0.823,5.0
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S2-S3,0.9455,3.0
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S2-S4,0.947,3.0
+labor cut also sluggish (lam_labor=0.5),revenue + headcount,S3-S4,0.80975,9.0
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S1-S2,0.95625,2.0
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S1-S3,0.5934999999999999,
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S1-S4,0.85175,3.0
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S2-S3,0.9535,2.0
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S2-S4,0.95725,3.0
+labor cut also sluggish (lam_labor=0.5),rev + heads + util + TCV,S3-S4,0.81775,4.0
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S1-S2,0.95975,2.0
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S1-S3,0.7225,
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S1-S4,0.8500000000000001,3.0
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S2-S3,0.9615,3.0
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S2-S4,0.968,2.0
+labor cut also sluggish (lam_labor=0.5),all incl. service-line,S3-S4,0.8394999999999999,4.0
+no nuisance drifts (tau=0),revenue + headcount,S1-S2,0.9875,2.0
+no nuisance drifts (tau=0),revenue + headcount,S1-S3,0.6595,
+no nuisance drifts (tau=0),revenue + headcount,S1-S4,0.937,3.0
+no nuisance drifts (tau=0),revenue + headcount,S2-S3,0.97825,2.0
+no nuisance drifts (tau=0),revenue + headcount,S2-S4,0.9815,2.0
+no nuisance drifts (tau=0),revenue + headcount,S3-S4,0.91975,4.0
+no nuisance drifts (tau=0),rev + heads + util + TCV,S1-S2,0.99325,2.0
+no nuisance drifts (tau=0),rev + heads + util + TCV,S1-S3,0.7395,
+no nuisance drifts (tau=0),rev + heads + util + TCV,S1-S4,0.973,2.0
+no nuisance drifts (tau=0),rev + heads + util + TCV,S2-S3,0.987,2.0
+no nuisance drifts (tau=0),rev + heads + util + TCV,S2-S4,0.9855,2.0
+no nuisance drifts (tau=0),rev + heads + util + TCV,S3-S4,0.95,3.0
+no nuisance drifts (tau=0),all incl. service-line,S1-S2,0.99325,2.0
+no nuisance drifts (tau=0),all incl. service-line,S1-S3,0.8067500000000001,11.0
+no nuisance drifts (tau=0),all incl. service-line,S1-S4,0.983,2.0
+no nuisance drifts (tau=0),all incl. service-line,S2-S3,0.9895,2.0
+no nuisance drifts (tau=0),all incl. service-line,S2-S4,0.98875,2.0
+no nuisance drifts (tau=0),all incl. service-line,S3-S4,0.9655,3.0
+noise x0.5,revenue + headcount,S1-S2,0.99475,1.0
+noise x0.5,revenue + headcount,S1-S3,0.727,
+noise x0.5,revenue + headcount,S1-S4,0.87225,2.0
+noise x0.5,revenue + headcount,S2-S3,0.98975,2.0
+noise x0.5,revenue + headcount,S2-S4,0.9945,2.0
+noise x0.5,revenue + headcount,S3-S4,0.87625,3.0
+noise x0.5,rev + heads + util + TCV,S1-S2,0.994,1.0
+noise x0.5,rev + heads + util + TCV,S1-S3,0.82125,6.0
+noise x0.5,rev + heads + util + TCV,S1-S4,0.87925,2.0
+noise x0.5,rev + heads + util + TCV,S2-S3,0.99225,2.0
+noise x0.5,rev + heads + util + TCV,S2-S4,0.99675,1.0
+noise x0.5,rev + heads + util + TCV,S3-S4,0.9035,2.0
+noise x0.5,all incl. service-line,S1-S2,0.9935,1.0
+noise x0.5,all incl. service-line,S1-S3,0.916,3.0
+noise x0.5,all incl. service-line,S1-S4,0.8795,2.0
+noise x0.5,all incl. service-line,S2-S3,0.998,2.0
+noise x0.5,all incl. service-line,S2-S4,0.99725,1.0
+noise x0.5,all incl. service-line,S3-S4,0.94825,2.0
+noise x2.0,revenue + headcount,S1-S2,0.8382499999999999,4.0
+noise x2.0,revenue + headcount,S1-S3,0.5702499999999999,
+noise x2.0,revenue + headcount,S1-S4,0.7335,
+noise x2.0,revenue + headcount,S2-S3,0.8215,8.0
+noise x2.0,revenue + headcount,S2-S4,0.8314999999999999,4.0
+noise x2.0,revenue + headcount,S3-S4,0.73075,
+noise x2.0,rev + heads + util + TCV,S1-S2,0.8545,4.0
+noise x2.0,rev + heads + util + TCV,S1-S3,0.6054999999999999,
+noise x2.0,rev + heads + util + TCV,S1-S4,0.7867500000000001,
+noise x2.0,rev + heads + util + TCV,S2-S3,0.8360000000000001,7.0
+noise x2.0,rev + heads + util + TCV,S2-S4,0.85475,4.0
+noise x2.0,rev + heads + util + TCV,S3-S4,0.7545,
+noise x2.0,all incl. service-line,S1-S2,0.86425,4.0
+noise x2.0,all incl. service-line,S1-S3,0.6485,
+noise x2.0,all incl. service-line,S1-S4,0.7867500000000001,
+noise x2.0,all incl. service-line,S2-S3,0.84575,5.0
+noise x2.0,all incl. service-line,S2-S4,0.86175,4.0
+noise x2.0,all incl. service-line,S3-S4,0.7637499999999999,
+partial pass-through (kappa=0.5),revenue + headcount,S1-S2,0.9575,2.0
+partial pass-through (kappa=0.5),revenue + headcount,S1-S3,0.827,4.0
+partial pass-through (kappa=0.5),revenue + headcount,S1-S4,0.823,5.0
+partial pass-through (kappa=0.5),revenue + headcount,S2-S3,0.77875,
+partial pass-through (kappa=0.5),revenue + headcount,S2-S4,0.95325,2.0
+partial pass-through (kappa=0.5),revenue + headcount,S3-S4,0.8654999999999999,4.0
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S1-S2,0.96525,2.0
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S1-S3,0.844,4.0
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S1-S4,0.85175,3.0
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S2-S3,0.7909999999999999,
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S2-S4,0.9645,2.0
+partial pass-through (kappa=0.5),rev + heads + util + TCV,S3-S4,0.88,3.0
+partial pass-through (kappa=0.5),all incl. service-line,S1-S2,0.96875,2.0
+partial pass-through (kappa=0.5),all incl. service-line,S1-S3,0.856,4.0
+partial pass-through (kappa=0.5),all incl. service-line,S1-S4,0.8500000000000001,3.0
+partial pass-through (kappa=0.5),all incl. service-line,S2-S3,0.80975,10.0
+partial pass-through (kappa=0.5),all incl. service-line,S2-S4,0.969,2.0
+partial pass-through (kappa=0.5),all incl. service-line,S3-S4,0.8867499999999999,3.0
+pre-COVID calibration,revenue + headcount,S1-S2,0.955,3.0
+pre-COVID calibration,revenue + headcount,S1-S3,0.61875,
+pre-COVID calibration,revenue + headcount,S1-S4,0.8672500000000001,3.0
+pre-COVID calibration,revenue + headcount,S2-S3,0.9515,3.0
+pre-COVID calibration,revenue + headcount,S2-S4,0.95525,2.0
+pre-COVID calibration,revenue + headcount,S3-S4,0.851,4.0
+pre-COVID calibration,rev + heads + util + TCV,S1-S2,0.95875,2.0
+pre-COVID calibration,rev + heads + util + TCV,S1-S3,0.72325,
+pre-COVID calibration,rev + heads + util + TCV,S1-S4,0.88575,3.0
+pre-COVID calibration,rev + heads + util + TCV,S2-S3,0.95825,3.0
+pre-COVID calibration,rev + heads + util + TCV,S2-S4,0.9635,2.0
+pre-COVID calibration,rev + heads + util + TCV,S3-S4,0.872,3.0
+pre-COVID calibration,all incl. service-line,S1-S2,0.96425,2.0
+pre-COVID calibration,all incl. service-line,S1-S3,0.77225,
+pre-COVID calibration,all incl. service-line,S1-S4,0.88825,2.0
+pre-COVID calibration,all incl. service-line,S2-S3,0.964,3.0
+pre-COVID calibration,all incl. service-line,S2-S4,0.96625,2.0
+pre-COVID calibration,all incl. service-line,S3-S4,0.8767499999999999,3.0
+wide common-drift prior (tau_b=4),revenue + headcount,S1-S2,0.91025,3.0
+wide common-drift prior (tau_b=4),revenue + headcount,S1-S3,0.6327499999999999,
+wide common-drift prior (tau_b=4),revenue + headcount,S1-S4,0.8165,5.0
+wide common-drift prior (tau_b=4),revenue + headcount,S2-S3,0.8975,4.0
+wide common-drift prior (tau_b=4),revenue + headcount,S2-S4,0.9335,2.0
+wide common-drift prior (tau_b=4),revenue + headcount,S3-S4,0.808,9.0
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S1-S2,0.91925,3.0
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S1-S3,0.6915,
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S1-S4,0.84875,4.0
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S2-S3,0.9105,3.0
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S2-S4,0.94125,3.0
+wide common-drift prior (tau_b=4),rev + heads + util + TCV,S3-S4,0.8294999999999999,5.0
+wide common-drift prior (tau_b=4),all incl. service-line,S1-S2,0.9315,3.0
+wide common-drift prior (tau_b=4),all incl. service-line,S1-S3,0.7595000000000001,
+wide common-drift prior (tau_b=4),all incl. service-line,S1-S4,0.84275,3.0
+wide common-drift prior (tau_b=4),all incl. service-line,S2-S3,0.93825,3.0
+wide common-drift prior (tau_b=4),all incl. service-line,S2-S4,0.9515,2.0
+wide common-drift prior (tau_b=4),all incl. service-line,S3-S4,0.855,4.0

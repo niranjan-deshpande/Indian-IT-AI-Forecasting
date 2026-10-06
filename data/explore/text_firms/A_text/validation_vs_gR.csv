@@ -1,0 +1,9 @@
+family,target,n,within_corr
+pricing,gR,185,-0.06
+pricing,gR_lead2,175,-0.16
+productivity,gR,185,-0.15
+productivity,gR_lead2,175,-0.1
+demand,gR,185,-0.17
+demand,gR_lead2,175,-0.31
+gcc,gR,185,-0.13
+gcc,gR_lead2,175,0.0
