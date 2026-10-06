@@ -10,12 +10,14 @@ Chart data and the generated tables are read from the repo CSVs (nothing hand-ty
   Table 3 (residual) output/final/table_B.csv
   Appendix table    output/final/calls_agreement.csv
   BLS sparkline     data/explore/prices/final_bls/ppi_518210_monthly.csv
-Numbers in the prose are typed; they are checked by scripts/final/note_number_check.py (-> note_number_check.md).
+The text of the note lives in note_text.md (see the comment at its top for the conventions); numbers in the
+prose are typed there and checked by scripts/final/note_number_check.py (-> note_number_check.md).
 External resources load only from CDNs: Plotly, KaTeX (cdnjs) and Google Fonts.
 """
 import csv
 import html
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -115,17 +117,13 @@ def residual_table():
         cells = "".join(f'<td>{fmt(b.loc[w, "mean_firm_years"])}<span class="fy">'
                         f'{int(b.loc[w, "n_firm_years"])}</span></td>' for w in wins)
         body += f'<tr><th scope="row">{label}</th>{cells}</tr>'
-    same = b.loc["FY24-FY26, same firms", "firms"].replace(";", ", ")
-    after = b.loc["FY24-FY26", "firms"].replace(";", ", ")
-    before = b.loc["FY16-FY23", "firms"].replace(";", ", ")
     return (f"<table><thead><tr><th>Firm set</th><th>FY16–23</th><th>FY16–23<br>excl. FY21</th>"
-            f"<th>FY24–26</th></tr></thead><tbody>{body}</tbody></table>",
-            before, after, same)
+            f"<th>FY24–26</th></tr></thead><tbody>{body}</tbody></table>")
 
 
 def agreement_table():
     a = pd.read_csv(FINAL / "calls_agreement.csv").set_index("category")
-    names = {"A": "Demand weakness", "B": "Pricing stable", "C": "Pricing pressure, no AI link",
+    names = {"A": "Demand weakness", "B": "Pricing stable", "C": "Pricing pressure without AI",
              "D": "AI savings passed to clients", "E": "Other or unclear"}
     body = ""
     for c in "ABCDE":
@@ -135,8 +133,8 @@ def agreement_table():
     o = a.loc["overall"]
     body += (f'<tr class="tot"><th scope="row">All statements</th><td>{int(o.n_coder1):,}</td><td>{int(o.n_coder2):,}</td>'
              f"<td>{o.percent_agreement:.1f}%</td><td>{o.cohen_kappa:.2f}</td></tr>")
-    return ("<table><thead><tr><th>Category</th><th>Coder 1</th><th>Coder 2</th>"
-            "<th>Coder 1 codes matched</th><th>κ</th></tr></thead>"
+    return ("<table><thead><tr><th>Category</th><th>Model 1</th><th>Model 2</th>"
+            "<th>Model 1 codes matched</th><th>κ</th></tr></thead>"
             f"<tbody>{body}</tbody></table>")
 
 
@@ -200,12 +198,209 @@ def quote(key):
             f"<a href=\"{q['url']}\">{q['src']}</a></footer></blockquote>")
 
 
+FIGURES = {
+    "1": """<figure class="wide" id="fig1">
+  <div class="fig-panel">
+    <div class="fig-top">
+      <div class="legend" aria-hidden="true">
+        <span><i style="border-color:var(--accent);border-top-width:3px"></i>Top six (average)</span>
+        <span><i style="border-color:var(--acn);border-top-style:dashed"></i>Accenture</span>
+        <span><i style="border-color:var(--cog);border-top-style:dotted;border-top-width:3px"></i>Cognizant</span>
+      </div>
+      <div class="toggle-wrap"><span class="toggle-label">Average</span><span class="toggle" role="group" aria-label="Top-six average">
+        <button type="button" data-avg="rw" aria-pressed="true">Revenue-weighted</button><button type="button" data-avg="simple" aria-pressed="false">Simple</button>
+      </span></div>
+    </div>
+    <div id="chart1" class="chart" role="img" aria-label="Three panels: revenue growth, headcount growth and revenue-per-employee growth for the top-six average, Accenture and Cognizant, FY16 to FY26."></div>
+  </div>
+  <figcaption>{caption}</figcaption>
+</figure>""",
+    "2": """<figure class="wide" id="fig2">
+  <div class="fig-panel">
+    <div class="fig-top"><div class="fig-title">Subcontracting cost, % of revenue</div></div>
+    <div id="chart2" class="chart" role="img" aria-label="Line chart: subcontracting cost as a share of revenue for six firms, FY20 to FY26. All six fall from FY23 to FY24."></div>
+  </div>
+  <figcaption>{caption}</figcaption>
+</figure>""",
+    "3": """<figure class="wide" id="fig3">
+  <div class="fig-panel">
+    <div class="fig-top">
+      <div class="fig-title">Statements per transcript</div>
+      <div class="toggle-wrap"><span class="toggle-label">Codes from</span><span class="toggle" role="group" aria-label="Which model's codes">
+        <button type="button" data-coder="c1" aria-pressed="true">Model 1</button><button type="button" data-coder="c2" aria-pressed="false">Model 2</button>
+      </span></div>
+    </div>
+    <div id="chart3" class="chart" role="img" aria-label="Two bar-chart panels by half-year, 2021 to 2026: demand-weakness statements per transcript, and AI pass-through statements per transcript."></div>
+  </div>
+  <figcaption>{caption}</figcaption>
+</figure>""",
+}
+
+GENERATED_TABLES = {"midtier": midtier_table, "residual": residual_table, "agreement": agreement_table}
+
+
+def smarten(text):
+    """Curly quotes in text, leaving HTML tags alone."""
+    out = []
+    for part in re.split(r"(<[^>]+>)", text):
+        if part.startswith("<"):
+            out.append(part)
+            continue
+        part = re.sub(r'(^|[\s(\[—–])"', "\\1“", part)
+        part = part.replace('"', "”")
+        part = re.sub(r"(^|[\s(\[—–])'", "\\1‘", part)
+        out.append(part.replace("'", "’"))
+    return "".join(out)
+
+
+def inline(s, tokens):
+    s = s.replace("\\*", "\x00")
+    s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
+    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
+    s = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<i>\1</i>", s)
+    s = smarten(s).replace("\x00", "*")
+    return re.sub(r"\{\{(\w+)\}\}", lambda m: tokens[m.group(1)], s)
+
+
+def cell(c, tokens):
+    h = inline(c.strip(), tokens)
+    h = re.sub(r"([↓↑])", r'<span class="arr">\1</span>', h)
+    h = re.sub(r"(\([^)]*\))", r'<span class="dim">\1</span>', h)
+    return '<span class="dim">—</span>' if h == "—" else h
+
+
+def pipe_table(lines, tokens):
+    rows = [[c for c in l.strip().strip("|").split("|")] for l in lines if not re.match(r"^\|?\s*:?-{3,}", l)]
+    head, body = rows[0], rows[1:]
+    arrows = any("↓" in c or "↑" in c for r in body for c in r)
+    h = "".join(f"<th>{cell(c, tokens)}</th>" for c in head)
+    b = "".join("<tr>" + f'<th scope="row">{cell(r[0], tokens)}</th>' +
+                "".join(f"<td>{cell(c, tokens)}</td>" for c in r[1:]) + "</tr>" for r in body)
+    return f'<table class="{"pred" if arrows else "items"}"><thead><tr>{h}</tr></thead><tbody>{b}</tbody></table>'
+
+
+def block(kind, name, lines, tokens):
+    if kind == "figure":
+        cap = " ".join(l.strip() for l in lines if l.strip())
+        return FIGURES[name].replace("{caption}", inline(cap, tokens))
+    if "---" in [l.strip() for l in lines]:
+        i = [l.strip() for l in lines].index("---")
+        top, note_lines = lines[:i], lines[i + 1:]
+    else:
+        top, note_lines = lines, []
+    cap = [l for l in top if l.strip() and not l.strip().startswith("|")]
+    tbl = [l for l in top if l.strip().startswith("|")]
+    table = GENERATED_TABLES[name]() if name else pipe_table(tbl, tokens)
+    note = " ".join(l.strip() for l in note_lines if l.strip())
+    return ('<div class="table-wrap">' + f'<p class="table-cap">{inline(" ".join(cap), tokens)}</p>' + table +
+            (f'<p class="table-note">{inline(note, tokens)}</p>' if note else "") + "</div>")
+
+
+def render_md(text, tokens):
+    """Small Markdown renderer for note_text.md; returns (front matter dict, body HTML)."""
+    front = {}
+    if text.startswith("---"):
+        fm, text = text[3:].split("\n---", 1)
+        for line in fm.strip().splitlines():
+            k, v = line.split(":", 1)
+            front[k.strip()] = v.strip()
+    lines = text.splitlines()
+    out, para, i = [], [], 0
+    in_appendix = details_open = False
+
+    def flush():
+        if para:
+            out.append(f"<p>{inline(' '.join(para), tokens)}</p>")
+            para.clear()
+
+    while i < len(lines):
+        line = lines[i]
+        st = line.strip()
+        if not st:
+            flush(); i += 1; continue
+        if st.startswith("<!--"):
+            flush()
+            j = i
+            while "-->" not in lines[j]:
+                j += 1
+            if "HOW THIS FILE WORKS" not in "\n".join(lines[i:j + 1]):  # the editing guide stays out of the page
+                out.append("\n".join(lines[i:j + 1]))
+            i = j + 1; continue
+        if st.startswith("## "):
+            flush()
+            title = st[3:]
+            if title.lower().startswith("appendix"):
+                in_appendix = True
+                out.append(f'<section class="appendix" id="appendix">\n<h2>{inline(title, tokens)}</h2>')
+            else:
+                m = re.match(r"(\d+)\.\s+(.*)", title)
+                num, t = (m.group(1), m.group(2)) if m else ("", title)
+                slug = re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
+                out.append(f'<h2 id="{slug}">' + (f'<span class="num">{num}</span>' if num else "") +
+                           f"{inline(t, tokens)}</h2>")
+            i += 1; continue
+        if st.startswith("### "):
+            flush()
+            if in_appendix:
+                if details_open:
+                    out.append("</div>\n</details>")
+                out.append(f"<details>\n<summary>{inline(st[4:], tokens)}</summary>\n<div>")
+                details_open = True
+            else:
+                out.append(f"<h3>{inline(st[4:], tokens)}</h3>")
+            i += 1; continue
+        if st == "$$":
+            flush()
+            j = i + 1
+            while lines[j].strip() != "$$":
+                j += 1
+            tex = " ".join(l.strip() for l in lines[i + 1:j])
+            out.append(f'<div class="math" data-tex="{html.escape(tex)}"><span class="math-fallback">{html.escape(tex)}</span></div>')
+            i = j + 1; continue
+        if st.startswith(":::"):
+            flush()
+            parts = st[3:].split()
+            j = i + 1
+            while lines[j].strip() != ":::":
+                j += 1
+            out.append(block(parts[0], parts[1] if len(parts) > 1 else None, lines[i + 1:j], tokens))
+            i = j + 1; continue
+        m = re.fullmatch(r"\{\{quote (\w+)\}\}", st)
+        if m:
+            flush(); out.append(quote(m.group(1))); i += 1; continue
+        if re.match(r"^(- |\d+\. )", st):
+            flush()
+            ordered = bool(re.match(r"^\d+\. ", st))
+            items = []
+            while i < len(lines) and (re.match(r"^(- |\d+\. )", lines[i].strip()) or lines[i].strip().startswith("<!--")):
+                l = lines[i].strip()
+                items.append(l if l.startswith("<!--") else re.sub(r"^(- |\d+\. )", "", l))
+                i += 1
+            if not ordered and all(re.match(r"^\*\*S\d\*\*", it) for it in items):
+                lis = "".join(f"<li><b>{it[2:4]}</b>{inline(it[6:].strip(), tokens)}</li>" for it in items)
+                out.append(f'<ul class="scen">{lis}</ul>')
+            else:
+                lis = "".join(it if it.startswith("<!--") else f"<li>{inline(it, tokens)}</li>" for it in items)
+                out.append(f'<ol class="lim">{lis}</ol>' if ordered else f"<ul>{lis}</ul>")
+            continue
+        para.append(st)
+        i += 1
+    flush()
+    if details_open:
+        out.append("</div>\n</details>")
+    if in_appendix:
+        out.append('<p class="footer">Built from <code>note_text.md</code> and the repository CSVs by '
+                   "<code>scripts/final/build_note.py</code>.</p>\n</section>")
+    return front, "\n\n".join(out)
+
+
 TEMPLATE = r"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Is AI hitting Indian IT services?</title>
+<title>%%TITLE%%</title>
 <meta name="description" content="Pilot note: what public data can and can't tell us about AI and the headcount slowdown at India's largest IT services firms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -337,248 +532,7 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 </head>
 <body>
 <main>
-
-<header>
-  <h1>Is AI hitting Indian IT services? What public data can and can’t tell us</h1>
-  <p class="byline">Niranjan Deshpande · October 2026 · <span class="tag">Pilot note</span></p>
-  <p class="thanks">Written as part of SPAR (Fall 2026). Thanks to Andrei Potlogea for supervision. Data and code: %%REPO%%.</p>
-</header>
-
-<h2 id="summary"><span class="num">1</span>Summary</h2>
-
-<p>Headcount at the six largest Indian IT services firms went from +14% growth in FY23 to −4% in FY24, and has been roughly flat since. Smaller Indian rivals kept growing. Is AI the cause, or weaker client demand, or work moving elsewhere? Public data cannot separate weaker demand from AI savings passed on to clients as lower prices, because no one measures output prices for these firms. The data do show three things. At the four firms where it can be tested, there is no sign that firms kept AI savings for themselves. There is no evidence of a shift to contractors. And from mid-2024, management began to say it was passing AI savings to clients, while it kept citing weak demand. An output price index for IT services, plus two firm disclosures, would settle the question.</p>
-
-<h2 id="fact"><span class="num">2</span>The fact</h2>
-
-<p>The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and the LTI group (LTI and Mindtree, merged as LTIMindtree). Growth rates are log changes ×100, which are close to percent changes, over Indian fiscal years (April–March).</p>
-
-<p>On a simple average across the six, headcount grew 7.4% a year in FY16–20. It grew 18.5% in FY22 and 14.3% in FY23, then fell 3.6% in FY24. It changed by −0.5% in FY25 and +1.2% in FY26. Revenue in constant currency grew 8.7% a year in FY16–20, and only 0.7%, 2.6% and 1.4% in FY24, FY25 and FY26.</p>
-
-<figure class="wide" id="fig1">
-  <div class="fig-panel">
-    <div class="fig-top">
-      <div class="legend" aria-hidden="true">
-        <span><i style="border-color:var(--accent);border-top-width:3px"></i>Top six (average)</span>
-        <span><i style="border-color:var(--acn);border-top-style:dashed"></i>Accenture</span>
-        <span><i style="border-color:var(--cog);border-top-style:dotted;border-top-width:3px"></i>Cognizant</span>
-      </div>
-      <div class="toggle-wrap"><span class="toggle-label">Average</span><span class="toggle" role="group" aria-label="Top-six average">
-        <button type="button" data-avg="rw" aria-pressed="true">Revenue-weighted</button><button type="button" data-avg="simple" aria-pressed="false">Simple</button>
-      </span></div>
-    </div>
-    <div id="chart1" class="chart" role="img" aria-label="Three panels: revenue growth, headcount growth and revenue-per-employee growth for the top-six average, Accenture and Cognizant, FY16 to FY26."></div>
-  </div>
-  <figcaption><b>Figure 1.</b> Top-six average against Accenture and Cognizant, FY16–FY26. Annual growth, log change ×100; revenue and revenue per employee in constant currency. The shaded band is FY24. Accenture and Cognizant are aggregated to Indian fiscal years (April–March); Accenture’s quarters end a month earlier, so 11 of 12 months overlap. Before FY24 some firms lack constant-currency revenue, so the average covers four or five firms (hover for counts).</figcaption>
-</figure>
-
-<p>Three qualifiers apply. First, FY22–23 was a hiring boom, so part of the FY24 drop is a correction. Second, the drop was broad: headcount fell at five of the six firms in FY24. HCLTech, at +2.1%, was the exception. Third, the comparators slowed too. Accenture’s headcount grew 1.5% in FY24. Cognizant’s fell 0.9% in FY24 and 2.5% in FY25.</p>
-
-<p>Smaller Indian firms did not follow. Table 1 compares four mid-tier firms (Persistent, Coforge, Mphasis and Hexaware) with the top six.</p>
-
-<div class="table-wrap">
-  <p class="table-cap"><b>Table 1.</b> Top six against the mid-tier four, growth in % (log ×100)</p>
-  %%MIDTIER_TABLE%%
-  <p class="table-note">Growth of summed USD revenue and of summed year-end headcount. Acquisitions included. Hexaware reports calendar years, each aligned to the Indian fiscal year ending three months later.</p>
-</div>
-
-<p>So this is not a uniform hit to Indian IT. Any explanation has to account for the largest vendors specifically. Four caveats apply. The mid-tier figures include acquisitions, though without Coforge the other three still grew revenue 10.9% in FY25. Mphasis and Hexaware count contractors in headcount. The mid-tier firms specialize in different segments from the top six. And they are small: their share of combined revenue rose only from 5.1% in FY21 to 7.3% in FY26, so they absorb a small part of the top six’s shortfall.</p>
-
-<h2 id="explanations"><span class="num">3</span>Four explanations</h2>
-
-<p>Four explanations could produce these facts. Each is defined by its mechanism.</p>
-
-<ul class="scen">
-  <li><b>S1</b>Client demand fell.</li>
-  <li><b>S2</b>Labor per unit of work fell, and prices held. The firms kept the savings.</li>
-  <li><b>S3</b>Labor per unit of work fell, and the savings went to clients as lower prices.</li>
-  <li><b>S4</b>Work moved to other providers: clients’ own India offices (global capability centres, or GCCs), smaller vendors, or contractors.</li>
-</ul>
-
-<p>AI can drive S1 as well as S2 and S3, for example when clients use AI to do work in-house. It can also drive S4. So the question “is it AI?” does not map onto any one scenario. The useful question is which mechanism is at work. Table 2 lists what each predicts.</p>
-
-<div class="table-wrap">
-  <p class="table-cap"><b>Table 2.</b> What each explanation predicts</p>
-  <table class="pred">
-    <thead><tr><th></th><th>Revenue</th><th>Headcount</th><th>Residual*</th><th>Subcontracting share</th><th>Other providers</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">S1 · demand fell</th><td><span class="arr dn" aria-label="down">↓</span></td><td><span class="arr dn" aria-label="down">↓</span></td><td>flat</td><td><span class="arr dn" aria-label="down">↓</span> or flat</td><td>slow too</td></tr>
-      <tr><th scope="row">S2 · savings kept</th><td>flat</td><td><span class="arr dn" aria-label="down">↓</span></td><td><span class="arr up" aria-label="up">↑</span></td><td class="dim">—</td><td class="dim">—</td></tr>
-      <tr><th scope="row">S3 · savings passed on</th><td><span class="arr dn" aria-label="down">↓</span></td><td><span class="arr dn" aria-label="down">↓</span></td><td>flat <span class="dim">(full pass-through)</span></td><td class="dim">—</td><td class="dim">—</td></tr>
-      <tr><th scope="row">S4 · work moved</th><td><span class="arr dn" aria-label="down">↓</span></td><td><span class="arr dn" aria-label="down">↓</span></td><td>flat</td><td><span class="arr up" aria-label="up">↑</span> <span class="dim">(contractor variant)</span></td><td>grow</td></tr>
-    </tbody>
-  </table>
-  <p class="table-note">* Revenue per employee, net of utilization (§4). A dash means no specific prediction.</p>
-</div>
-
-<h2 id="identity"><span class="num">4</span>What the identity can and can’t show</h2>
-
-<p>Growth in revenue per employee splits into two parts:</p>
-
-<div class="math" id="identity-eq"><span class="math-fallback"><i>g</i><sub>R/L</sub> = <i>g</i><sub>u</sub> + (<i>g</i><sub>p</sub> − <i>g</i><sub>a</sub>)</span></div>
-
-<p>Here <i>g</i> is a growth rate, <i>R</i> is revenue, <i>L</i> is headcount, <i>u</i> is utilization (the share of staff billed to clients), <i>p</i> is the price per unit of work, and <i>a</i> is labor per unit of work. The term in brackets is the residual: revenue-per-employee growth net of utilization.</p>
-
-<p>We observe <i>R</i> and <i>L</i> for all firms, and <i>u</i> for some. We do not observe <i>p</i>, <i>a</i> or the volume of work. Even so, the identity has content. Suppose AI cuts labor per unit by <i>e·d</i> and firms pass a share <i>φ</i> of the savings to clients. Then the AI part of the residual equals <span class="nw">(1 − <i>φ</i>)·<i>e·d</i></span>. If firms keep the savings (S2, <span class="nw"><i>φ</i> = 0</span>), the residual should rise by several points. If they pass all of it on (S3 with <span class="nw"><i>φ</i> = 1</span>), the residual does not move, and the observables match S1 exactly.</p>
-
-<p>Table 3 shows the mean residual before and after FY24. There is no rise.</p>
-
-<div class="table-wrap">
-  <p class="table-cap"><b>Table 3.</b> Mean residual, % a year</p>
-  %%RESID_TABLE%%
-  <p class="table-note">Mean over firm-years; small grey numbers are firm-years. All firms with data: %%RESID_BEFORE%% before FY24; %%RESID_AFTER%% from FY24. Same firms: %%RESID_SAME%%.</p>
-</div>
-
-<p>Three limits apply. The test covers only Infosys, Wipro, Tech Mahindra and the LTI group; TCS and HCLTech do not report utilization. TCS’s revenue per employee accelerated, to +4.2% and +3.9% in FY24 and FY25 against +1.7% a year in FY16–20, but without utilization this cannot be decomposed. And Infosys’s FY24 residual of +6.6 may be a counting artifact: its utilization excludes trainees, its headcount includes them, and fresher intake collapsed.</p>
-
-<p>The conclusion is therefore weak: there is no sign of retained savings on average at the four firms that can be tested. Separating S1 from S3 requires price data (§6).</p>
-
-<h2 id="other"><span class="num">5</span>Other evidence</h2>
-
-<h3>5a. Contractors</h3>
-
-<p>If work moved to contractors, subcontracting costs should rise as a share of revenue. They fell. The share dropped at all six firms in FY24: at TCS from 9.5% to 6.6%, and at Tech Mahindra from 15.0% to 12.9%. It rose again at five of six in FY26, but it remains below its FY23 level everywhere.</p>
-
-<figure class="wide" id="fig2">
-  <div class="fig-panel">
-    <div class="fig-top"><div class="fig-title">Subcontracting cost, % of revenue</div></div>
-    <div id="chart2" class="chart" role="img" aria-label="Line chart: subcontracting cost as a share of revenue for six firms, FY20 to FY26. All six fall from FY23 to FY24."></div>
-  </div>
-  <figcaption><b>Figure 2.</b> Subcontracting cost as a share of revenue, FY20–FY26, as reported by each firm. LTIMindtree starts in FY22. The shaded band marks the FY23 → FY24 step. TCS’s line is fees to external consultants.</figcaption>
-</figure>
-
-<p>There is no evidence of a shift to contractors. This is a cost ratio, not contractor headcount, so it mixes contractor rates with volume.</p>
-
-<h3>5b. Where the work went</h3>
-
-<p>Beyond the mid-tier firms in §2, three sources bear on S4. RBI’s census of foreign-owned companies shows their information and communication exports rising from ₹6.54 to ₹8.45 lakh crore between FY22 and FY23. The US Bureau of Economic Analysis counts 893,000 people employed in professional services at US-owned affiliates in India in 2023 (preliminary), up from 598,000 in 2019. Naukri’s September 2026 job-postings index shows GCC postings up 4% and IT services postings down 4% on a year earlier. All three are suggestive at best. The first two include foreign-owned vendors as well as clients’ own centres, and postings are not hires. They are consistent with partial S4.</p>
-
-<p>The pilot also compared how closely Indian firms tracked Accenture before and after 2023. That comparison turned out to be driven by the 2021–22 boom and bust, and is dropped.</p>
-
-<h3>5c. What management said</h3>
-
-<p>We extracted 2,087 management statements from 183 earnings-call transcripts of the six firms, Accenture and Cognizant. Two independent LLM coders classified each one; they agreed on 92% (κ = 0.87), and the pattern below holds under either coder.</p>
-
-<figure class="wide" id="fig3">
-  <div class="fig-panel">
-    <div class="fig-top">
-      <div class="fig-title">Statements per transcript</div>
-      <div class="toggle-wrap"><span class="toggle-label">Codes</span><span class="toggle" role="group" aria-label="Coder">
-        <button type="button" data-coder="c1" aria-pressed="true">Coder 1</button><button type="button" data-coder="c2" aria-pressed="false">Coder 2</button>
-      </span></div>
-    </div>
-    <div id="chart3" class="chart" role="img" aria-label="Two bar-chart panels by half-year, 2021H1 to 2026H2: demand-weakness statements per transcript, and AI pass-through statements per transcript."></div>
-  </div>
-  <figcaption><b>Figure 3.</b> Management statements per transcript by calendar half-year, 2021H1–2026H2. Small numbers under the axis are transcript counts. 2026H2 is partial (8 transcripts) and drawn lighter. A and D came from different extraction passes, so compare trends within a panel, not levels across panels.</figcaption>
-</figure>
-
-<p>Demand-weakness statements (category A) peaked at 7.5–7.9 per transcript in 2023 and eased to 4.7–5.7 between 2024H2 and 2026H1. Statements that AI savings were going to clients (category D) were rare before mid-2024, at 0–0.3 per transcript, and rose to 0.6–1.6 after. Pass-through talk was added to demand talk; it did not replace it.</p>
-
-%%Q_INFOSYS%%
-%%Q_SEKSARIA%%
-%%Q_KRITHIVASAN%%
-%%Q_VIJAYAKUMAR%%
-
-<p>Management chooses which explanations to give investors. These statements show what firms said, not what happened.</p>
-
-<h2 id="prices"><span class="num">6</span>The price gap</h2>
-
-<p>No price index covers Indian vendors. India has no IT services price index. The US Bureau of Labor Statistics lists computer systems design (NAICS 5415) among the industries its producer price index does not cover (<a href="https://www.bls.gov/ppi/fd-id/areas-of-noncoverage-in-the-ppi-system.htm">Areas of Noncoverage</a>).</p>
-
-<p>The nearest proxies are weak. The BLS index for US data processing and hosting (PPI 518210) reprices actual contracts with fixed terms. It has grown between +0.3% and +3.2% a year since 2015 %%SPARK%%. It is a US domestic price and serves only as a proxy. ISG, a sourcing adviser, measures unit-price declines for a narrow slice of managed-services contracts, and says these declines have recently accelerated.</p>
-
-<p>Infosys offers a bound for an earlier period. It reported billed person-months through FY20, and revenue per person-month equals <i>p</i>/<i>a</i>. <em>If labor per unit did not rise</em>, price growth was at most about −1% to −2% a year in FY15–17 and about 0% in FY18–20. That is an assumption, not an observation, and the series ends before the period in question.</p>
-
-<p>Analyst estimates of AI deflation, such as those from Kotak and Jefferies, start from an assumed pass-through rate. They cannot test it.</p>
-
-<h2 id="settle"><span class="num">7</span>What would settle it</h2>
-
-<p>Four data items would separate the explanations (Table 4). None is public today in usable form.</p>
-
-<div class="table-wrap">
-  <p class="table-cap"><b>Table 4.</b> Data that would separate the explanations</p>
-  <table class="items">
-    <thead><tr><th>Data item</th><th>Who could collect it</th><th>Separates</th><th>Exists?</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">Output price index for IT services</th><td>National statistics agency or RBI</td><td>S1 vs S3</td><td>No</td></tr>
-      <tr><th scope="row">Billed effort (person-months)</th><td>Firms; SEBI could require it</td><td>S2 vs S1/S3, with revenue<sup>†</sup></td><td>Infosys until FY20, LTI until 2022</td></tr>
-      <tr><th scope="row">GCC headcount by parent company</th><td>RBI census extension</td><td>S1 vs S4</td><td>No</td></tr>
-      <tr><th scope="row">Role-level headcount by firm</th><td>Firms</td><td>S2/S3 vs S1</td><td>No</td></tr>
-    </tbody>
-  </table>
-  <p class="table-note">† Revenue per billed person-month is <i>p</i>/<i>a</i>, the residual. It would extend the §4 test to TCS and HCLTech, but like the residual it cannot separate S1 from S3 under full pass-through.</p>
-</div>
-
-<p>The cheapest high-value step is the price index, since every other inference here is limited by its absence.</p>
-
-<h2 id="limits"><span class="num">8</span>Limitations</h2>
-
-<ol class="lim">
-  <li>The sample is six large firms, plus four mid-tier firms in one comparison.</li>
-  <li>TCS and HCLTech do not report utilization, so their revenue per employee cannot be decomposed.</li>
-  <li>The data were collected with LLMs; a 30-point audit against source documents matched every value.</li>
-  <li>Call statements were coded by two independent LLM coders and have not been validated by hand.</li>
-  <!-- UPDATE after manual spot check of calls_spotcheck.csv -->
-  <li>Management statements reflect management’s incentives.</li>
-  <li>Acquisitions are not adjusted for.</li>
-</ol>
-
-<section class="appendix" id="appendix">
-<h2>Appendix: data and methods</h2>
-
-<details>
-<summary>Sources</summary>
-<div>
-<p>Quarterly fact sheets, investor releases, annual reports, SEC 20-F and 6-K filings, and earnings-call transcripts from company investor-relations sites and SEC EDGAR. Mid-tier figures come from annual reports. External series: RBI Census on Foreign Liabilities and Assets; BEA data on US multinationals’ foreign affiliates; Naukri JobSpeak; BLS PPI. Every number traces to a file in the repository: %%REPO%%.</p>
-</div>
-</details>
-
-<details>
-<summary>Definitions</summary>
-<div>
-<ul>
-  <li><b>Growth</b> is the log change ×100.</li>
-  <li><b>Fiscal years</b> are Indian fiscal years (April–March). Quarterly year-on-year growth is aggregated to fiscal years with prior-year revenue weights; a fiscal-year value needs all four quarters.</li>
-  <li><b>Headcount growth</b> is the mean of the four quarterly year-on-year changes, which approximates growth of average headcount.</li>
-  <li><b>Comparators</b> are mapped to Indian fiscal years. Cognizant aligns exactly. Accenture’s quarters end in May, August, November and February, so 11 of 12 months overlap.</li>
-  <li><b>Residual</b> is revenue-per-employee growth in constant currency minus the change in utilization, within each firm’s own utilization series.</li>
-</ul>
-</div>
-</details>
-
-<details>
-<summary>Audit</summary>
-<div>
-<ul>
-  <li><b>Spot-check:</b> 30 randomly drawn values were checked against the primary documents; 30 of 30 matched.</li>
-  <li><b>Corrections:</b> LTI and Mindtree negative growth rates printed as “(x.x)%” had lost their sign (the parser is now fixed); Cognizant attrition used an annualized quarterly definition in two quarters instead of the trailing-twelve-month one; Accenture’s FY18 USD revenue growth mixed bases across the ASC 606 restatement and was corrected with like-for-like growth from the FY18 releases.</li>
-  <li><b>Decisions:</b> the LTI business is counted once (LTI plus Mindtree through FY22, LTIMindtree from FY23); HCLTech’s divestiture is not adjusted, because no divested revenue figure was disclosed; Wipro growth observations that span level breaks are excluded.</li>
-</ul>
-</div>
-</details>
-
-<details>
-<summary>Call coding</summary>
-<div>
-<p>Each statement gets one primary category:</p>
-<ul>
-  <li><b>A, demand weakness:</b> clients spending less, deferring or cutting discretionary work, for any reason.</li>
-  <li><b>B, pricing stable:</b> management says prices or rates are holding, or denies AI deflation.</li>
-  <li><b>C, pricing pressure, no AI link:</b> renewal discounts, competitive pricing or rate cuts with no AI named.</li>
-  <li><b>D, AI savings passed to clients:</b> AI or automation savings explicitly given to clients through lower prices, smaller deals or productivity commitments.</li>
-  <li><b>E, other or unclear:</b> anything else, including statements of demand strength.</li>
-</ul>
-<div class="table-wrap">
-  <p class="table-cap"><b>Agreement between coders</b>, primary category</p>
-  %%AGREE_TABLE%%
-  <p class="table-note">“Coder 1 codes matched” is the share of coder 1’s codes in that category that coder 2 also assigned. κ is Cohen’s kappa for that category against the rest.</p>
-</div>
-<p><b>Extraction passes.</b> A pricing pass used a keyword screen and kept 389 statements about prices, renewals, deflation or passing productivity to clients (about 2 per call). A demand pass used a 12-family dictionary, read effectively every transcript in full, and kept 1,711 statements explaining revenue, deals or headcount through demand (about 9 per call). Merging and removing 13 cross-pass duplicates gives 2,087. Every quote is machine-checked as verbatim, from management only, with the speaker confirmed. A comes mostly from the demand pass and D from the pricing pass, which is why levels should not be compared across categories.</p>
-</div>
-</details>
-
-<p class="footer">Built from the repository CSVs by <code>scripts/final/build_note.py</code>.</p>
-</section>
-
+%%BODY%%
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
@@ -745,8 +699,8 @@ window.addEventListener("afterprint", () => {
 });
 
 if (window.katex) {
-  katex.render("g_{R/L} = g_u + (g_p - g_a)", document.getElementById("identity-eq"),
-    { displayMode: true, throwOnError: false });
+  document.querySelectorAll(".math[data-tex]").forEach(el =>
+    katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false }));
 }
 </script>
 </body>
@@ -756,26 +710,26 @@ if (window.katex) {
 
 def main():
     data = {"fig1": fig1_data(), "fig2": fig2_data(), "fig3": fig3_data()}
-    resid, before, after, same = residual_table()
     repo = f'<a href="{REPO_URL}">{REPO_URL.replace("https://", "")}</a>' if REPO_URL else "[repository link to be added]"
+    tokens = {"repo": repo, "bls_sparkline": bls_sparkline()}
+    front, body = render_md((ROOT / "note_text.md").read_text(encoding="utf-8"), tokens)
+    header = (f"<header>\n  <h1>{inline(front['title'], tokens)}</h1>\n"
+              f"  <p class=\"byline\">{byline(front['byline'])}</p>\n"
+              f"  <p class=\"thanks\">{inline(front['thanks'], tokens)}</p>\n</header>")
     page = (TEMPLATE
-            .replace("%%DATA%%", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
-            .replace("%%MIDTIER_TABLE%%", midtier_table())
-            .replace("%%RESID_TABLE%%", resid)
-            .replace("%%RESID_BEFORE%%", before)
-            .replace("%%RESID_AFTER%%", after)
-            .replace("%%RESID_SAME%%", same)
-            .replace("%%AGREE_TABLE%%", agreement_table())
-            .replace("%%SPARK%%", bls_sparkline())
-            .replace("%%Q_INFOSYS%%", quote("infosys"))
-            .replace("%%Q_SEKSARIA%%", quote("seksaria"))
-            .replace("%%Q_KRITHIVASAN%%", quote("krithivasan"))
-            .replace("%%Q_VIJAYAKUMAR%%", quote("vijayakumar"))
-            .replace("%%REPO%%", repo))
+            .replace("%%TITLE%%", html.escape(front["title"].split("?")[0] + "?" if "?" in front["title"] else front["title"]))
+            .replace("%%BODY%%", header + "\n\n" + body)
+            .replace("%%DATA%%", json.dumps(data, ensure_ascii=False, separators=(",", ":"))))
     assert "%%" not in page, "unfilled placeholder"
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)} ({len(page) / 1024:.0f} KB)")
+
+
+def byline(text):
+    """Last '·' item of the byline is shown as a tag (e.g. 'Pilot note')."""
+    parts = [p.strip() for p in text.split("·")]
+    return " · ".join(parts[:-1]) + f' · <span class="tag">{html.escape(parts[-1])}</span>'
 
 
 if __name__ == "__main__":
