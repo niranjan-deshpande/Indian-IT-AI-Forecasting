@@ -357,10 +357,11 @@ def inline(s, tokens):
     return re.sub(r"\{\{(\w+)\}\}", lambda m: tokens[m.group(1)], s)
 
 
-def cell(c, tokens):
+def cell(c, tokens, dim_parens=False):
     h = inline(c.strip(), tokens)
     h = re.sub(r"([↓↑])", r'<span class="arr">\1</span>', h)
-    h = re.sub(r"(\([^)]*\))", r'<span class="dim">\1</span>', h)
+    if dim_parens:  # prediction table: "(full pass-through)" etc. are asides
+        h = re.sub(r"(\([^)]*\))", r'<span class="dim">\1</span>', h)
     return '<span class="dim">—</span>' if h == "—" else h
 
 
@@ -370,7 +371,7 @@ def pipe_table(lines, tokens):
     arrows = any("↓" in c or "↑" in c for r in body for c in r)
     h = "".join(f"<th>{cell(c, tokens)}</th>" for c in head)
     b = "".join("<tr>" + f'<th scope="row">{cell(r[0], tokens)}</th>' +
-                "".join(f"<td>{cell(c, tokens)}</td>" for c in r[1:]) + "</tr>" for r in body)
+                "".join(f"<td>{cell(c, tokens, arrows)}</td>" for c in r[1:]) + "</tr>" for r in body)
     return f'<table class="{"pred" if arrows else "items"}"><thead><tr>{h}</tr></thead><tbody>{b}</tbody></table>'
 
 

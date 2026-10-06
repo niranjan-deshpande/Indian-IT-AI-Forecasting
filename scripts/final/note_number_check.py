@@ -271,6 +271,25 @@ txt("prices fell at least 1–2% a year FY15–17; flat or falling FY18–20", "
     "about −1% to −2% a year in FY15–FY17 and about 0% in FY18–FY20")
 txt("LTI until 2022", "Table 4", "price_data.md", "LTI published billed person-months to Sep 2022")
 
+
+# ---- Appendix: price data search
+PD = "price_data.md"
+txt("BLS has never published a 5415 index", "Appendix, price sources", PD, "Confirmed. Also, BLS has never published one.")
+num("+23% in 2024 (BLS WPU4561)", "Appendix, price sources", PD, "WPU4561 2024 annual-average change 22.6", 22.6, 23)
+txt("BLS WPU4561 2024 value (source text)", "Appendix, price sources", PD, "| +7.1 | +22.6 | +3.2 |")
+txt("Infosys revenue per billed person-month FY03–FY20", "Appendix, price sources", PD, "every year FY2003–FY2020 (20-F)")
+txt("Wipro price realization FY09–FY12", "Appendix, price sources", PD, "FY2009–FY2012 only")
+txt("Everest free editions end in 2024", "Appendix, price sources", PD, "Later editions (H2'24 onward) not located")
+txt("about 45 equity research sources", "Appendix, price sources", PD, "Equity research and news (about 45 sources)")
+txt("389 statements about pricing", "Appendix, price sources", PD, "It covers 389 verbatim management statements")
+txt("about 2–4% a year (net AI deflation forecasts)", "Appendix, equity research", PD, "Net: 2–3.5% a year (Kotak, ICICI Sec, CLSA \"2–4%\", HSBC ≤3–4%)")
+txt("from 2025 to 2028", "Appendix, equity research", PD, "| FY2026–FY2028 | Analyst gross deflation")
+txt("Kotak about 16% over three years", "Appendix, equity research", PD, "~16% gross revenue deflation on existing services spend over 3 years")
+txt("Jefferies about 20% over 2025–30", "Appendix, equity research", PD, "~20% revenue deflation over CY25–30")
+txt("Everest India FTE price +3.1% to −0.4% (2023–24)", "Appendix, equity research", PD, "+3.1% (H1'23), +1.3% (H2'23), −0.4% (H1'24)")
+txt("search hit its query limit", "Appendix, gaps", PD, "The session-wide WebSearch cap (200 queries")
+txt("brokers not found", "Appendix, gaps", PD, "Quantified estimates from Nomura, Goldman, BofA, Citi, UBS, Macquarie or Bernstein.")
+
 # ---- §8 and appendix
 txt("30 values / all 30 matched", "§8; appendix", "audit_report.md", "Spot-check: 30 of 30 values match the primary documents")
 for c in "ABCDE":
@@ -298,7 +317,7 @@ body = re.sub(r"<!--.*?-->", " ", body, flags=re.S)
 body = re.sub(r"<(script|style)\b.*?</\1>", " ", body, flags=re.S)
 body = re.sub(r"<(a|div) [^>]*>", r"<\1>", body)
 text = unescape(re.sub(r"<[^>]+>", " ", body))
-STRIP = [r"\b20\d{2}–\d{2}\b", r"\bPPI \d{6}\b", r"\bFY\d{2}(?:–\d{2})?\b", r"\b(?:19|20)\d{2}(?:H[12])?\b", r"’\d{2}\b", r"\bS[1-4]\b", r"\bQ\d\b",
+STRIP = [r"\bNAICS \d{4}\b", r"\b20\d{2}–\d{2}\b", r"\bPPI \d{6}\b", r"\bFY\d{2}(?:–\d{2})?\b", r"\b(?:19|20)\d{2}(?:H[12])?\b", r"’\d{2}\b", r"\bS[1-4]\b", r"\bQ\d\b",
          r"\b(?:Table|Figure|Section)\s+\d\b", r"\b99\.5\b", r"\bp\.\s*\d+\b", r"\b20-F\b", r"\b6-K\b", r"\bASC 606\b",
          r"\b(?:10|11|12|21) (?:Oct|Jan|Apr)\b", r"×100", r"x\.x", r"g_\{R/L\}"]
 for pat in STRIP:

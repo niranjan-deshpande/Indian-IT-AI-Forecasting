@@ -186,7 +186,7 @@ The nearest substitutes are weak. A BLS index for US data processing and hosting
 
 Infosys offers a partial check for an earlier period. Until FY20 it reported billed person-months, and revenue per billed person-month equals *p*/*a*. If labor per unit did not rise (an assumption), Infosys's prices fell by at least 1–2% a year in FY15–17 and were flat or falling in FY18–20. The series ends before the period that matters.
 
-Analysts' estimates of AI price cuts, such as Kotak's and Jefferies', assume a pass-through rate, so they cannot test one.
+Analysts' estimates of AI price cuts, such as Kotak's and Jefferies', assume a pass-through rate, so they cannot test one. The appendix lists every source we checked.
 
 ## 7. What would settle it
 
@@ -254,3 +254,39 @@ Each statement gets one main category:
 :::
 
 **How the statements were collected.** A pricing pass searched for keywords and kept 389 statements about prices, renewals or passing savings to clients (about 2 per call). A demand pass used 12 groups of search terms, read effectively every transcript in full, and kept 1,711 statements that explain revenue, deals or headcount through demand (about 9 per call). Merging the two and removing 13 duplicates gives 2,087. Every quote was checked by machine to be word for word, from a manager, with the speaker confirmed. A comes mostly from the demand pass and D from the pricing pass, so their levels should not be compared.
+
+### Price data: what we looked for
+
+We looked for any measure of the price these firms charge per unit of work (*p*), in any period since 2015, and found none. Most series that exist measure the price of an hour or a person-month of labor. That is *p*/*a*, which rises when AI cuts the labor per unit of work even if the price per unit is unchanged, so it cannot separate the scenarios.
+
+::: table
+**Price sources checked**
+| Source | What it measures | Why it falls short |
+|---|---|---|
+| US BLS producer price index for computer systems design (NAICS 5415) | Nothing: BLS has never published one | — |
+| US BLS index for IT technical support and consulting | Prices of a thin, partial sample of US contracts | US producers only; erratic (+23% in 2024) |
+| US BEA price indices for custom software and computer systems design | Modelled from input costs and an assumed productivity rate | No prices observed; the assumption builds in the answer |
+| US BEA price index for imports of computer services | Built from US domestic producer prices | Does not observe Indian vendors |
+| UK, EU and Japanese producer price indices for IT services | Domestic prices, mostly per hour, day or person-month | Price per unit of labor (*p*/*a*); domestic producers only |
+| India: wholesale prices, new services price indices, national accounts | Goods; finance, telecom and transport services; IT output deflated with goods or consumer prices | No IT services price |
+| Infosys annual reports (20-F) | Revenue per billed person-month, FY03–FY20 | *p*/*a*; one firm; stops in FY20 |
+| Wipro annual reports; LTI fact sheets | Price realization, FY09–FY12; billed person-months to 2022 | *p*/*a*; short series |
+| TCS, HCLTech, Tech Mahindra | No price or billed-effort figure ever disclosed | — |
+| Accenture and Cognizant filings | A sentence on "pricing" each quarter | Direction only; Accenture's "pricing" means contract margin |
+| ISG (sourcing adviser) | Unit prices in managed-services contracts | A true price per unit, but for a narrow, mostly infrastructure slice, across all vendors |
+| Everest Group Pricing Index | Price per full-time worker, by delivery country | *p*/*a*; free editions end in 2024 |
+| Gartner, HFS Research | Surveys of what clients expect to pay | Expectations, not prices |
+| Everest PriceBook, Avasant, Forrester, NelsonHall | Rate cards and benchmarks | Paywalled; not seen |
+| Nasscom | Industry reviews | No price figures |
+| Equity research (about 45 reports and press summaries) | Forecasts of AI "deflation"; revenue per employee | See below |
+| Earnings calls (389 statements about pricing) | What managers say about prices | Claims, not measurements |
+---
+Links, page references and figures for every source are in `price_data.md` in the repository.
+:::
+
+**Equity research.** Brokers do publish industry-wide numbers, but none is a measured price. Kotak, Jefferies, HSBC, ICICI Securities and CLSA forecast that AI will cut industry revenue by about 2–4% a year from 2025 to 2028; Kotak's gross estimate is about 16% over three years, and Jefferies' about 20% over 2025–30. Each is built by multiplying an estimated productivity gain by an assumed share passed on to clients, so it assumes the answer to our question. Other reports compile revenue per employee, which mixes price, labor per unit and utilization. We found no broker that estimates a historical, industry-wide price per unit of work. This is not surprising: since Infosys stopped reporting billed effort in FY20, no public data allow it.
+
+The closest thing to an industry average is Everest's price per full-time worker delivered from India, which changed by between +3.1% and −0.4% a year in 2023–24. But that is a price per unit of labor, not per unit of work.
+
+**Gaps in the search.** We saw only press summaries of the full Kotak, HSBC, Jefferies and CLSA reports, which are paywalled. We found no quantified estimates from Nomura, Goldman Sachs, BofA, Citi, UBS, Macquarie or Bernstein. The web search reached its query limit, so it was not exhaustive: we did not check the mid-tier firms' disclosures, the RBI, or India's earlier pilot service price indices.
+
