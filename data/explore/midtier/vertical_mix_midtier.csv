@@ -1,0 +1,21 @@
+firm,period,vertical_reported,share_pct,source_file,source_loc,notes
+persistent,FY26,BFSI,34.6,data/sources/midtier/persistent/q4fy26_factsheet.pdf,p47 Segment Revenue Mix FY26 column,
+persistent,FY26,Healthcare & Life Sciences,25.6,data/sources/midtier/persistent/q4fy26_factsheet.pdf,p47 Segment Revenue Mix FY26 column,
+persistent,FY26,"Software, Hi-Tech & Emerging Industries",39.8,data/sources/midtier/persistent/q4fy26_factsheet.pdf,p47 Segment Revenue Mix FY26 column,
+coforge,FY26,Banking and Financial Services (BFS),26.5,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,
+coforge,FY26,Insurance,15.0,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,
+coforge,FY26,"Travel, Transportation and Hospitality (TTH)",23.0,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,
+coforge,FY26,Healthcare & HiTech,10.8,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,healthcare and hi-tech reported together
+coforge,FY26,Government outside India,7.0,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,
+coforge,FY26,Others,17.7,data/sources/midtier/coforge/q4fy26_factsheet.pdf,p45 Vertical FY26 column,
+mphasis,FY26,Banking and Financial Services,52.3,data/sources/midtier/mphasis/q4fy26_mda.pdf,p6 FY26 column,
+mphasis,FY26,Insurance,14.6,data/sources/midtier/mphasis/q4fy26_mda.pdf,p6 FY26 column,
+mphasis,FY26,Technology Media and Telecom,18.0,data/sources/midtier/mphasis/q4fy26_mda.pdf,p6 FY26 column,
+mphasis,FY26,Logistics & Transportation,5.4,data/sources/midtier/mphasis/q4fy26_mda.pdf,p6 FY26 column,
+mphasis,FY26,Others,9.7,data/sources/midtier/mphasis/q4fy26_mda.pdf,p6 FY26 column,
+hexaware,CY25,Financial Services,30.0,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,"mortgage and lending, asset management, trade finance, data providers (RHP p338)"
+hexaware,CY25,Healthcare and Insurance,21.1,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,healthcare and insurance reported together
+hexaware,CY25,Manufacturing and Consumer,15.5,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,
+hexaware,CY25,High Tech and Professional Services,16.2,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,
+hexaware,CY25,Banking,8.8,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,
+hexaware,CY25,Travel and Transportation,8.4,data/sources/midtier/hexaware/q4cy25_investor_presentation.pdf,PDF p22 Key Revenue Metrics CY25 % of Revenue,

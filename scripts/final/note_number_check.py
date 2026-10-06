@@ -102,7 +102,7 @@ cond("mid-2024", "§1", "output/final/fig3_data.csv", "first half-year with D pe
      f3.index[f3.per_transcript_D >= 0.5][0], f3.index[f3.per_transcript_D >= 0.5][0] == "2024H2")
 
 # ---- §2 The fact
-num("about 7% a year (FY16–20)", "§2", NN, f"{S} | headcount | mean FY16-FY20", hc("mean FY16-FY20"), 7)
+num("about 7% a year (FY16–20)", "§1, §2", NN, f"{S} | headcount | mean FY16-FY20", hc("mean FY16-FY20"), 7)
 num("18% (FY22)", "§2", NN, f"{S} | headcount | FY22", hc("FY22"), 18)
 num("14% (FY23)", "§2", NN, f"{S} | headcount | FY23", hc("FY23"), 14)
 num("about 4% (FY24 fall)", "§2", NN, f"{S} | headcount | FY24", -hc("FY24"), 4)
@@ -137,7 +137,7 @@ for lab, col in [("Top-six revenue growth (USD)", "top6_rev_growth_logx100"),
                  ("Mid-tier headcount growth (year-end)", "mid4_hc_growth_logx100")]:
     for y in ["FY24", "FY25", "FY26"]:
         v = mid.loc[y, col]
-        num(f"{v:+.1f}".replace("-", MINUS), f"Table 1, {lab}, {y}", MT, f"{y} {col}", v, round(v, 1), 1)
+        num(f"{v:+.1f}".replace("-", MINUS), f"Fig. 2 hover, {lab}, {y}", MT, f"{y} {col}", v, round(v, 1), 1)
 lv = mida.set_index(["firm", "aligned_fy"]).revenue_usd_mn
 three = ("persistent", "mphasis", "hexaware")
 ex_cof = 100 * math.log(sum(lv[(f, "FY25")] for f in three) / sum(lv[(f, "FY24")] for f in three))
@@ -147,20 +147,54 @@ cond("above 10% in FY25 even without Coforge", "§2", "data/explore/midtier/midt
 txt("Coforge bought Cigniti that year (FY25)", "§2", "FINAL_PASS_SUMMARY.md", "Coforge–Cigniti (FY25)")
 num("5% (mid-tier revenue share, FY21)", "§2", MT, "FY21 mid4_rev_share_pct", mid.loc["FY21", "mid4_rev_share_pct"], 5)
 num("7% (mid-tier revenue share, FY26)", "§2", MT, "FY26 mid4_rev_share_pct", mid.loc["FY26", "mid4_rev_share_pct"], 7)
-txt("three months later", "Table 1 note", "FINAL_PASS_SUMMARY.md", "Indian fiscal year ending three months later")
+txt("three months later", "Fig. 2 caption", "FINAL_PASS_SUMMARY.md", "Indian fiscal year ending three months later")
 
-# ---- §4 and Table 3
+
+# ---- §2 additions: mid-tier pattern, robustness, client mix
+top_r, mid_r = mid.loc[["FY22", "FY23", "FY24", "FY25", "FY26"], "top6_rev_growth_logx100"], mid.loc[["FY22", "FY23", "FY24", "FY25", "FY26"], "mid4_rev_growth_logx100"]
+top_h, mid_h = mid.loc[["FY22", "FY23", "FY24", "FY25", "FY26"], "top6_hc_growth_logx100"], mid.loc[["FY22", "FY23", "FY24", "FY25", "FY26"], "mid4_hc_growth_logx100"]
+cond("mid-tier grew faster than the top six throughout FY22–FY26", "§2", MT, "mid4 > top6, revenue and headcount, each year FY22-FY26",
+     f"min gaps {(mid_r - top_r).min():.1f} (rev), {(mid_h - top_h).min():.1f} (hc)", ((mid_r > top_r) & (mid_h > top_h)).all())
+gap = mid_r - top_r
+cond("revenue gap widened sharply from FY25", "§2", MT, "rev gap FY25 and FY26 > 2 × FY24 gap",
+     f"FY24 {gap['FY24']:.1f}, FY25 {gap['FY25']:.1f}, FY26 {gap['FY26']:.1f}", min(gap["FY25"], gap["FY26"]) > 2 * gap["FY24"])
+two = mida[mida.firm.isin(["persistent", "coforge"])]
+r2 = two.pivot(index="aligned_fy", columns="firm", values="revenue_usd_mn").sum(axis=1, min_count=2)
+h2 = two.pivot(index="aligned_fy", columns="firm", values="headcount").sum(axis=1, min_count=2)
+g2r = {y: 100 * math.log(r2[y] / r2[x]) for x, y in [("FY23", "FY24"), ("FY24", "FY25"), ("FY25", "FY26")]}
+g2h = {y: 100 * math.log(h2[y] / h2[x]) for x, y in [("FY23", "FY24"), ("FY24", "FY25"), ("FY25", "FY26")]}
+cond("without Mphasis and Hexaware, Persistent and Coforge grew even faster", "§2", "data/explore/midtier/midtier_annual.csv",
+     "Persistent+Coforge growth > mid-tier four, revenue and headcount, FY24-FY26 (recomputed here)",
+     ", ".join(f"{y} {g2r[y]:.1f}/{g2h[y]:.1f}" for y in g2r),
+     all(g2r[y] > mid.loc[y, "mid4_rev_growth_logx100"] and g2h[y] > mid.loc[y, "mid4_hc_growth_logx100"] for y in g2r))
+import sys
+sys.path.insert(0, str(ROOT / "scripts/final"))
+import build_note
+vf = build_note.verticals_fig_data()
+fin = {f["name"]: v for f, v in zip(vf["firms"], vf["groups"]["fin"])}
+mids = [f["name"] for f in vf["firms"] if f["mid"]]
+tops = [f["name"] for f in vf["firms"] if not f["mid"]]
+cond("mid-tier firms depend more on financial services", "§2", "data/explore/midtier/vertical_mix_midtier.csv; data/tidy/panel_long.csv",
+     "min mid-tier financial-services share >= max top-six share", f"{min(fin[m] for m in mids):.1f} vs {max(fin[t] for t in tops):.1f}",
+     min(fin[m] for m in mids) >= max(fin[t] for t in tops))
+pi = [f["name"] for f in vf["firms"]].index("Persistent")
+pers = vf["groups"]["tech"][pi] + vf["groups"]["health"][pi]
+cond("Persistent earns most of its revenue from software and healthcare clients", "§2", "data/explore/midtier/vertical_mix_midtier.csv",
+     "Persistent FY26: Software, Hi-Tech & Emerging + Healthcare & Life Sciences > 50", f"{pers:.1f}", pers > 50)
+txt("4% labor saving (illustration)", "§4; Fig. 4", "note_inputs.md", "e.g. the pilot's prior of about 4 pp a year")
+
+# ---- §4 and Table 2
 TB = "output/final/table_B.csv"
 for wd, lab in [("FY16-FY23", "all, FY16–23"), ("FY16-FY23 excl. FY21 (COVID)", "all, excl. FY21"),
                 ("FY24-FY26", "all, FY24–26"), ("FY16-FY23, same firms", "same, FY16–23"),
                 ("FY16-FY23 excl. FY21, same firms", "same, excl. FY21"), ("FY24-FY26, same firms", "same, FY24–26")]:
     v = resid(wd)
-    num(f"{v:+.1f}".replace("-", MINUS), f"Table 3, {lab}", TB, f"{wd} residual mean_firm_years", v, round(v, 1), 1)
+    num(f"{v:+.1f}".replace("-", MINUS), f"Table 2, {lab}", TB, f"{wd} residual mean_firm_years", v, round(v, 1), 1)
     n = resid(wd, "n_firm_years")
-    num(f"{int(n)}", f"Table 3, {lab} (firm-years)", TB, f"{wd} residual n_firm_years", n, n)
-txt("firms with data before FY24", "Table 3 note", TB, "FY16-FY23,residual,1.098,18,4,HCLTech;Infosys;Tech Mahindra;Wipro")
-txt("firms with data from FY24", "Table 3 note", TB, "FY24-FY26,residual,1.318,12,4,Infosys;LTI group;Tech Mahindra;Wipro")
-txt("three firms present in both periods", "Table 3 note", TB, "\"FY24-FY26, same firms\",residual,0.892,9,3,Infosys;Tech Mahindra;Wipro")
+    num(f"{int(n)}", f"Table 2, {lab} (firm-years)", TB, f"{wd} residual n_firm_years", n, n)
+txt("firms with data before FY24", "Table 2 note", TB, "FY16-FY23,residual,1.098,18,4,HCLTech;Infosys;Tech Mahindra;Wipro")
+txt("firms with data from FY24", "Table 2 note", TB, "FY24-FY26,residual,1.318,12,4,Infosys;LTI group;Tech Mahindra;Wipro")
+txt("three firms present in both periods", "Table 2 note", TB, "\"FY24-FY26, same firms\",residual,0.892,9,3,Infosys;Tech Mahindra;Wipro")
 rng("about 4% a year (TCS revenue per employee, FY24–25)", "§4", "output/final/table_A_firms.csv",
     "tcs rpe_cc FY24, FY25", [firm("FY24", "tcs", "rpe_cc"), firm("FY25", "tcs", "rpe_cc")], 4, 4)
 tcs_pre = tAf[(tAf.firm == "tcs") & tAf.period.isin([f"FY{y}" for y in range(16, 21)])].rpe_cc.mean()
@@ -229,7 +263,7 @@ cond("risen every year since 2015", "§6", PP, "all annual changes 2015-2026 > 0
 rng("between 0.3% and 3.2%", "§6", PP, "annual-average % change 2015-2025 and 2026 Jan-Aug YoY (2025: 3.245)",
     list(spark.values()), 0.3, 3.2, 1)
 for y, v in spark.items():
-    num(f"{v:+.1f}%".replace("-", MINUS), f"§6 sparkline tooltip, {y}", PP,
+    num(f"{v:+.1f}%".replace("-", MINUS), f"Fig. 7 hover, {y}", PP,
         f"{y} {'Jan-Aug YoY' if y == 2026 else 'annual-average % change'}", v, round(v, 1), 1)
 txt("ISG: prices recently falling faster", "§6", "price_data.md", "\"doubled or even tripling in some cases\"")
 txt("billed person-months until FY20", "§6; Table 4", "price_data.md", "every year FY2003–FY2020 (20-F)")
@@ -264,7 +298,7 @@ body = re.sub(r"<!--.*?-->", " ", body, flags=re.S)
 body = re.sub(r"<(script|style)\b.*?</\1>", " ", body, flags=re.S)
 body = re.sub(r"<(a|div) [^>]*>", r"<\1>", body)
 text = unescape(re.sub(r"<[^>]+>", " ", body))
-STRIP = [r"\bFY\d{2}(?:–\d{2})?\b", r"\b(?:19|20)\d{2}(?:H[12])?\b", r"’\d{2}\b", r"\bS[1-4]\b", r"\bQ\d\b",
+STRIP = [r"\b20\d{2}–\d{2}\b", r"\bPPI \d{6}\b", r"\bFY\d{2}(?:–\d{2})?\b", r"\b(?:19|20)\d{2}(?:H[12])?\b", r"’\d{2}\b", r"\bS[1-4]\b", r"\bQ\d\b",
          r"\b(?:Table|Figure|Section)\s+\d\b", r"\b99\.5\b", r"\bp\.\s*\d+\b", r"\b20-F\b", r"\b6-K\b", r"\bASC 606\b",
          r"\b(?:10|11|12|21) (?:Oct|Jan|Apr)\b", r"×100", r"x\.x", r"g_\{R/L\}"]
 for pat in STRIP:

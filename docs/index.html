@@ -44,10 +44,12 @@ ol.lim { padding-left: 1.4em; } ol.lim li { margin-bottom: 0.35em; padding-left:
 
 /* figures */
 figure { margin: 2em 0 2.2em; }
+figure.narrowfig .fig-panel { padding-bottom: 4px; }
 .fig-panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 16px 8px; }
 .fig-top { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; justify-content: space-between; margin-bottom: 4px; }
 .fig-title { font-family: var(--sans); font-weight: 600; font-size: 15px; color: var(--ink); }
 .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-family: var(--sans); font-size: 13.5px; color: var(--ink); }
+.legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
 .legend i { display: inline-block; width: 20px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: 6px; }
 .toggle { display: inline-flex; border: 1px solid var(--rule-2); border-radius: 5px; overflow: hidden; }
 .toggle button { font-family: var(--sans); font-size: 13.5px; border: 0; background: transparent; color: var(--ink-2);
@@ -93,9 +95,6 @@ table.items td, table.items th { text-align: left; }
 blockquote { margin: 1.5em 0; padding: 2px 0 2px 20px; border-left: 2px solid var(--accent); }
 blockquote p { margin: 0 0 6px; font-size: 1.0rem; }
 blockquote footer { font-family: var(--sans); font-size: 13.5px; color: var(--ink-2); line-height: 1.45; }
-.spark { display: inline-flex; align-items: flex-end; gap: 5px; vertical-align: -4px; margin: 0 2px; }
-.spark svg { display: block; } .spark rect { fill: var(--ink-3); } .spark rect.partial { fill: var(--rule-2); }
-.sp-l { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); line-height: 1; }
 
 /* appendix */
 .appendix { margin-top: 3.2em; padding-top: 0.4em; border-top: 1px solid var(--rule); font-size: 15.5px; color: #3d3427; }
@@ -143,9 +142,9 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 
 <h2 id="summary"><span class="num">1</span>Summary</h2>
 
-<p>Headcount at India’s six largest IT services firms grew 14% in FY23 (the year to March 2023). In FY24 it fell 4%, and it has been roughly flat since. Smaller Indian rivals kept growing.</p>
+<p>Headcount at India’s six largest IT services firms grew for years: by about 7% a year before COVID, and by 14% in FY23 (the year to March 2023). In FY24 it fell 4%, and it has been roughly flat since. Smaller Indian rivals kept growing.</p>
 
-<p>Is AI the cause? Clients may simply have cut spending, or moved work elsewhere. Or AI may have cut the labor each project needs, with the savings passed to clients as lower prices. Public data cannot separate this last explanation from a fall in demand. The two look the same unless you can see prices, and no one measures the prices these firms charge.</p>
+<p>Is AI the cause? Clients may have cut spending or moved work elsewhere. Or AI may have cut the labor each project needs. Using just public data, we cannot distinguish falling demand from AI savings being passed on to clients as lower prices. Observing prices would help, but these data are not public.</p>
 
 <p>The data do show three things. At the four firms where it can be tested, there is no sign that firms kept AI savings for themselves. There is no sign that they replaced staff with contractors. And from mid-2024, managers began to say they were passing AI savings to clients, while still citing weak demand.</p>
 
@@ -153,98 +152,130 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 
 <h2 id="the-fact"><span class="num">2</span>The fact</h2>
 
-<p>The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree (counted as LTI plus Mindtree before they merged). Years are Indian fiscal years, which run from April to March.</p>
+<p>The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree (LTI plus Mindtree before they merged). Years are Indian fiscal years, April to March.</p>
 
-<p>On a simple average across the six firms, headcount grew about 7% a year from FY16 to FY20. In FY22 and FY23 it grew much faster, by 18% and 14%, as the firms hired heavily after COVID. In FY24 it fell by about 4%, the first fall since our data begin in FY16. It has barely grown since. Revenue slowed at the same time. In constant currency, which removes the effect of exchange rates, it grew about 9% a year before COVID but only 1–3% a year from FY24. Figure 1 shows these series alongside two rivals based outside India, Accenture and Cognizant.</p>
+<p>On a simple average across the six, headcount grew about 7% a year from FY16 to FY20, then 18% in FY22 and 14% in FY23 as the firms hired after COVID. In FY24 it fell about 4%, the first fall since our data begin in FY16, and it has barely grown since. Revenue in constant currency, which removes the effect of exchange rates, slowed from about 9% a year before COVID to 1–3% a year from FY24 (Figure 1).</p>
 
-<figure class="wide" id="fig1">
+<figure class="wide" id="fig-fact">
   <div class="fig-panel">
     <div class="fig-top">
-      <div class="legend" aria-hidden="true">
-        <span><i style="border-color:var(--accent);border-top-width:3px"></i>Top six (average)</span>
-        <span><i style="border-color:var(--acn);border-top-style:dashed"></i>Accenture</span>
-        <span><i style="border-color:var(--cog);border-top-style:dotted;border-top-width:3px"></i>Cognizant</span>
-      </div>
+      <div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Top six (average)</span><span><i style="border-color:var(--acn);border-top-style:dashed;border-top-width:2.5px"></i>Accenture</span><span><i style="border-color:var(--cog);border-top-style:dotted;border-top-width:3px"></i>Cognizant</span></div>
       <div class="toggle-wrap"><span class="toggle-label">Average</span><span class="toggle" role="group" aria-label="Top-six average">
         <button type="button" data-avg="rw" aria-pressed="true">Revenue-weighted</button><button type="button" data-avg="simple" aria-pressed="false">Simple</button>
       </span></div>
     </div>
-    <div id="chart1" class="chart" role="img" aria-label="Three panels: revenue growth, headcount growth and revenue-per-employee growth for the top-six average, Accenture and Cognizant, FY16 to FY26."></div>
+    <div id="chart-fact" class="chart" role="img" aria-label="Three panels: revenue growth, headcount growth and revenue-per-employee growth for the top-six average, Accenture and Cognizant, FY16 to FY26."></div>
   </div>
-  <figcaption><b>Figure 1.</b> Annual growth at the top six firms and at Accenture and Cognizant, FY16–FY26. Revenue is in constant currency. The shaded band marks FY24. Growth is the log change ×100, which is close to the percentage change. Accenture and Cognizant are converted to Indian fiscal years (April–March); Accenture’s year ends a month earlier, so 11 of its 12 months overlap. Before FY24 some firms lack constant-currency revenue, so the average covers four or five firms. Hover over a point to see exact values.</figcaption>
+  <figcaption><b>Figure 1.</b> Annual growth at the top six and at Accenture and Cognizant, FY16–FY26. The shaded band marks FY24. Growth is the log change ×100, close to the percentage change. Accenture and Cognizant are converted to Indian fiscal years; Accenture’s year ends a month earlier, so 11 of its 12 months overlap. Before FY24 the average covers four or five firms, because some lack constant-currency revenue.</figcaption>
 </figure>
 
-<p>Three points qualify this picture. First, FY22 and FY23 were boom years, so part of the FY24 fall is a correction. Second, the fall was broad: headcount fell at five of the six firms, all except HCLTech. Third, Accenture and Cognizant slowed too. Accenture’s headcount barely grew in FY24, and Cognizant’s shrank in both FY24 and FY25.</p>
+<p>We should note, however, that FY22 and FY23 were boom years, so part of the FY24 fall is a correction; and that this fall was broad, since headcount fell at five of the six firms (all except HCLTech). Accenture and Cognizant slowed too. Accenture’s headcount barely grew in FY24, and Cognizant’s shrank in both FY24 and FY25.</p>
 
-<p>Smaller Indian firms did not follow the same path. Table 1 compares the top six with four mid-tier firms: Persistent, Coforge, Mphasis and Hexaware. In FY25 and FY26 the mid-tier firms grew revenue by 14–15% a year, against 2–3% for the top six.</p>
+<p>Smaller Indian firms did not follow. Four mid-tier firms (Persistent, Coforge, Mphasis and Hexaware) grew faster than the top six throughout FY22–FY26, and the revenue gap widened sharply from FY25 (Figure 2). In FY25 and FY26 they grew revenue by 14–15% a year, against 2–3% for the top six.</p>
 
-<div class="table-wrap"><p class="table-cap"><b>Table 1.</b> Growth at the top six and at four mid-tier firms (%)</p><table><thead><tr><th></th><th>FY24</th><th>FY25</th><th>FY26</th></tr></thead><tbody><tr><th scope="row"><span class="dot top"></span>Top-six revenue growth (USD)</th><td>+2.0</td><td>+2.7</td><td>+2.2</td></tr><tr><th scope="row"><span class="dot mid"></span>Mid-tier revenue growth (USD)</th><td>+5.0</td><td>+14.7</td><td>+13.9</td></tr><tr class="grp"><th scope="row"><span class="dot top"></span>Top-six headcount growth (year-end)</th><td>−4.5</td><td>+1.0</td><td>−0.2</td></tr><tr><th scope="row"><span class="dot mid"></span>Mid-tier headcount growth (year-end)</th><td>+0.7</td><td>+10.7</td><td>+5.6</td></tr></tbody></table><p class="table-note">Growth of total US-dollar revenue and of total year-end headcount, as log change ×100. Acquisitions are included. Hexaware reports calendar years; each is matched to the Indian fiscal year that ends three months later.</p></div>
+<figure class="wide" id="fig-midtier">
+  <div class="fig-panel">
+    <div class="fig-top">
+      <div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Top six</span><span><i style="border-color:var(--mid);border-top-style:solid;border-top-width:2.5px"></i>Mid-tier four</span><span><i style="border-color:var(--mid);border-top-style:dashed;border-top-width:2px"></i>Persistent and Coforge only</span></div>
+    </div>
+    <div id="chart-midtier" class="chart" role="img" aria-label="Two panels: revenue growth and year-end headcount growth, FY22 to FY26, for the top six, the four mid-tier firms, and Persistent and Coforge alone."></div>
+  </div>
+  <figcaption><b>Figure 2.</b> Growth at the top six and at four mid-tier firms, FY22–FY26 (log change ×100). Growth of total US-dollar revenue and of total year-end headcount. Acquisitions are included. Hexaware reports calendar years, each matched to the Indian fiscal year that ends three months later.</figcaption>
+</figure>
 
-<p>So this is not a uniform hit to Indian IT. Any explanation has to account for why the largest firms in particular stopped growing.</p>
+<p>The contrast does not depend on how firms count staff. Mphasis and Hexaware include contractors in their headcount; without them, Persistent and Coforge grew even faster (dashed line). Nor does it rest on one acquisition: without Coforge, which bought Cigniti in FY25, mid-tier revenue still grew more than 10% that year.</p>
 
-<p>The comparison has limits. The mid-tier figures include acquisitions, although their revenue growth stays above 10% in FY25 even without Coforge, which bought Cigniti that year. Mphasis and Hexaware count contractors as staff. The mid-tier firms also specialize in different kinds of work. Finally, they are small. Their share of the combined revenue of all ten firms rose only from 5% in FY21 to 7% in FY26, so they can account for only a small part of the top six’s slowdown.</p>
+<p>The mid-tier firms also serve a different mix of clients (Figure 3). They depend more on financial services, and Persistent earns most of its revenue from software and healthcare clients.</p>
 
-<h2 id="four-explanations"><span class="num">3</span>Four explanations</h2>
+<figure class="wide" id="fig-verticals">
+  <div class="fig-panel">
+    <div class="fig-top">
+      <div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--accent)"></span>Top six</span><span><span class="sw" style="background:var(--mid)"></span>Mid-tier four</span></div>
+    </div>
+    <div id="chart-verticals" class="chart" role="img" aria-label="Three bar-chart panels: share of revenue from financial services; from technology, media and telecom clients; and from healthcare and life sciences, for each of the ten firms."></div>
+  </div>
+  <figcaption><b>Figure 3.</b> Share of revenue by client industry. Top six: January–March 2026. Mid-tier firms: FY26 (Hexaware: calendar 2025). Financial services includes banking and insurance. Firms group industries differently; “not separate” means the firm reports that industry only combined with another (hover for each firm’s own categories).</figcaption>
+</figure>
 
-<p>Four explanations could produce these facts. Each is defined by what happened, not by whether AI was involved.</p>
+<p>So this is not a uniform hit to Indian IT. Any explanation has to account for why the largest firms in particular stopped growing. But the mid-tier firms are small: their share of the ten firms’ combined revenue rose only from 5% in FY21 to 7% in FY26, so they can account for only a small part of the top six’s slowdown.</p>
 
-<ul class="scen"><li><b>S1</b>Clients cut spending: demand fell.</li><li><b>S2</b>Each unit of work needed less labor, and prices stayed the same. The firms kept the savings.</li><li><b>S3</b>Each unit of work needed less labor, and the firms passed the savings to clients as lower prices.</li><li><b>S4</b>Work moved to other providers: clients’ own offices in India (known as global capability centres, or GCCs), smaller vendors, or contractors.</li></ul>
+<h2 id="four-scenarios"><span class="num">3</span>Four scenarios</h2>
 
-<p>AI could lie behind any of these. It is the obvious cause of S2 and S3. But clients might also cut spending because they use AI to do the work themselves (S1), or move work to providers that use AI more (S4). So the useful question is not whether AI is involved, but which mechanism is at work.</p>
+<p>There are a few scenarios that could produce these descriptive facts:</p>
 
-<p>Revenue and headcount fall under S1, S3 and S4 alike, so they cannot tell these apart. Table 2 lists what each explanation predicts for other measures. The rest of the note takes these measures in turn.</p>
+<ul class="scen"><li><b>S1</b>Demand fell: clients cut spending.</li><li><b>S2</b>Each unit of work needed less labor, prices held, and the firms kept the savings.</li><li><b>S3</b>Each unit of work needed less labor, and the firms passed the savings to clients as lower prices.</li><li><b>S4</b>Work moved to other providers: clients’ own offices in India (global capability centres, or GCCs), smaller vendors, or contractors.</li></ul>
 
-<div class="table-wrap"><p class="table-cap"><b>Table 2.</b> What each explanation predicts</p><table class="pred"><thead><tr><th></th><th>Revenue</th><th>Headcount</th><th>Residual*</th><th>Subcontracting share</th><th>Other providers</th></tr></thead><tbody><tr><th scope="row">S1 · demand fell</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat</td><td><span class="arr">↓</span> or flat</td><td>slow too</td></tr><tr><th scope="row">S2 · savings kept</th><td>flat</td><td><span class="arr">↓</span></td><td><span class="arr">↑</span></td><td><span class="dim">—</span></td><td><span class="dim">—</span></td></tr><tr><th scope="row">S3 · savings passed on</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat <span class="dim">(full pass-through)</span></td><td><span class="dim">—</span></td><td><span class="dim">—</span></td></tr><tr><th scope="row">S4 · work moved</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat</td><td><span class="arr">↑</span> <span class="dim">(contractor version)</span></td><td>grow</td></tr></tbody></table><p class="table-note">* Revenue per employee, after removing changes in utilization (the share of staff time billed to clients). Section 4 explains it. A dash means the explanation makes no specific prediction.</p></div>
+<p>AI could lie behind any of these: not only S2 and S3, but also S1, if clients use AI to do the work themselves, and S4, if they move work to providers that use AI more. So the question is which mechanism is at work, not whether AI is involved.</p>
+
+<p>Revenue and headcount fall under S1, S3 and S4 alike, so they cannot tell these apart. Table 1 adds three measures that can:</p>
+
+<ul><li><b>The residual</b> is the growth in revenue per employee that is not explained by changes in how much of their time staff spend on billable work. Section 4 explains it.</li><li><b>The subcontracting share</b> is spending on subcontractors (outside staff hired to do part of the work) as a share of revenue. If a firm replaced employees with subcontractors, its headcount would fall but this share would rise.</li><li><b>Other providers</b> are smaller vendors and GCCs.</li></ul>
+
+<p>In the rest of this note, we examine each of these measures in turn.</p>
+
+<div class="table-wrap"><p class="table-cap"><b>Table 1.</b> What each scenario predicts</p><table class="pred"><thead><tr><th></th><th>Revenue</th><th>Headcount</th><th>Residual</th><th>Subcontracting share</th><th>Other providers</th></tr></thead><tbody><tr><th scope="row">S1 · demand fell</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat</td><td><span class="arr">↓</span> or flat</td><td>slow too</td></tr><tr><th scope="row">S2 · savings kept</th><td>flat</td><td><span class="arr">↓</span></td><td><span class="arr">↑</span></td><td><span class="dim">—</span></td><td><span class="dim">—</span></td></tr><tr><th scope="row">S3 · savings passed on</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat <span class="dim">(full pass-through)</span></td><td><span class="dim">—</span></td><td><span class="dim">—</span></td></tr><tr><th scope="row">S4 · work moved</th><td><span class="arr">↓</span></td><td><span class="arr">↓</span></td><td>flat</td><td><span class="arr">↑</span> <span class="dim">(contractor version)</span></td><td>grow</td></tr></tbody></table><p class="table-note">A dash means no specific prediction.</p></div>
 
 <h2 id="what-revenue-per-employee-can-and-can-t-show"><span class="num">4</span>What revenue per employee can and can’t show</h2>
 
-<p>Revenue per employee is the measure most likely to separate the explanations. Its growth splits into two parts:</p>
+<p>Growth in revenue per employee splits into two parts:</p>
 
 <div class="math" data-tex="g_{R/L} = g_u + (g_p - g_a)"><span class="math-fallback">g_{R/L} = g_u + (g_p - g_a)</span></div>
 
-<p>Here <i>g</i> means growth. <i>R</i> is revenue and <i>L</i> is headcount, so the left side is growth in revenue per employee. <i>u</i> is utilization, the share of staff time billed to clients. <i>p</i> is the price a firm charges per unit of work, and <i>a</i> is the labor needed per unit of work. The term in brackets is the <i>residual</i>: the part of the growth in revenue per employee that changes in utilization do not explain.</p>
+<p>Here <i>g</i> means growth, <i>R</i> is revenue, <i>L</i> is headcount, <i>u</i> is utilization (the share of staff time billed to clients), <i>p</i> is the price per unit of work, and <i>a</i> is the labor needed per unit of work. In words: revenue per employee rises if staff bill more of their time, if each unit of work sells for more, or if each unit takes less labor. The term in brackets is the residual.</p>
 
-<p>We can measure revenue and headcount for every firm, and utilization for some. We cannot measure price, labor per unit of work, or how much work was done. So we can compute the residual, but we cannot split it into its two parts.</p>
+<p>We observe revenue and headcount for every firm and utilization for some, but not price, labor per unit or the amount of work. So we can compute the residual but not split it into its two parts.</p>
 
-<p>The residual still tells us something. Suppose AI cuts the labor needed per unit of work, and firms pass a share <i>φ</i> of the savings to clients as lower prices. Then the residual rises by (1 − <i>φ</i>) times the labor saving. If firms keep all the savings (S2, where <i>φ</i> = 0), the residual should rise by the full saving, which would be several points a year. If they pass on all of it (S3 with <i>φ</i> = 1), the residual does not move. In that case revenue, headcount and utilization look exactly as they would if demand had fallen (S1), and these data cannot tell the two apart.</p>
+<p>Luckily, the residual is still informative. Suppose AI cuts the labor needed per unit of work by <i>s</i>% a year, so <i>g</i><sub>a</sub> = −<i>s</i>. Suppose firms pass a share <i>φ</i> of this saving to clients by cutting prices, so <i>g</i><sub>p</sub> = −<i>φs</i>. Then the residual is</p>
 
-<p>Table 3 compares the residual before and after FY24. It did not rise.</p>
+<div class="math" data-tex="g_p - g_a = -\varphi s + s = (1 - \varphi)\, s"><span class="math-fallback">g_p - g_a = -\varphi s + s = (1 - \varphi)\, s</span></div>
 
-<div class="table-wrap"><p class="table-cap"><b>Table 3.</b> Average residual, % a year</p><table><thead><tr><th>Firm set</th><th>FY16–23</th><th>FY16–23<br>excl. FY21</th><th>FY24–26</th></tr></thead><tbody><tr><th scope="row">All firms with data</th><td>+1.1<span class="fy">18</span></td><td>+2.1<span class="fy">15</span></td><td>+1.3<span class="fy">12</span></td></tr><tr><th scope="row">Same firms in both windows</th><td>+0.5<span class="fy">14</span></td><td>+1.7<span class="fy">11</span></td><td>+0.9<span class="fy">9</span></td></tr></tbody></table><p class="table-note">Average over firm-years; the small grey numbers count the firm-years. Before FY24 the firms with data are HCLTech, Infosys, Tech Mahindra and Wipro; from FY24 they are Infosys, the LTI group, Tech Mahindra and Wipro. The second row keeps only the three firms present in both periods.</p></div>
+<p>If firms keep all the savings (S2, <i>φ</i> = 0), the residual rises by the full <i>s</i>: a 4% labor saving raises it by 4 points. If they pass on all of it (S3 with <i>φ</i> = 1), the residual does not move. A fall in demand (S1) also leaves it unchanged, because price and labor per unit stay the same. So under full pass-through, S1 and S3 look identical in these data.</p>
 
-<p>Three things limit this test. First, it covers only four firms: Infosys, Wipro, Tech Mahindra and the LTI group. TCS, the largest firm, and HCLTech do not report utilization. Second, TCS’s revenue per employee grew about 4% a year in FY24 and FY25, more than twice its pace in FY16–20, but without utilization data we cannot tell why. Third, Infosys’s residual jumped in FY24, and this may be an accident of counting. Infosys includes trainees in its headcount but not in its utilization, and it hired far fewer trainees that year.</p>
+<p>Figure 4 shows the residual for each firm that reports utilization. It did not rise after FY23. Table 2 shows that this holds if we drop the COVID year, FY21, or keep only the firms with data in both periods.</p>
 
-<p>So the evidence is weak. It shows no sign, on average, that the four firms we can test kept AI savings. To tell S1 from S3 we would need data on prices, which Section 6 discusses.</p>
+<figure class="wide" id="fig-residual">
+  <div class="fig-panel">
+    <div class="fig-top">
+      <div class="legend" aria-hidden="true"><span><span class="sw" style="background:#b8643f"></span>Infosys</span><span><span class="sw" style="background:#5a9370"></span>HCLTech</span><span><span class="sw" style="background:#8f68a6"></span>Wipro</span><span><span class="sw" style="background:#ae8a2c"></span>Tech Mahindra</span><span><span class="sw" style="background:#c0607e"></span>LTI group</span><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Average</span></div>
+    </div>
+    <div id="chart-residual" class="chart" role="img" aria-label="Dot chart of the residual for each firm and year, FY16 to FY26, with the average before and after FY24 and an illustrative line for what S2 would predict."></div>
+  </div>
+  <figcaption><b>Figure 4.</b> The residual (growth in revenue per employee net of utilization), by firm and year, FY16–FY26. Solid lines are averages over firm-years before and from FY24. The dashed line shows what S2 would predict if AI saved 4% of labor a year, an illustrative figure.</figcaption>
+</figure>
+
+<div class="table-wrap"><p class="table-cap"><b>Table 2.</b> Average residual, % a year</p><table><thead><tr><th>Firm set</th><th>FY16–23</th><th>FY16–23<br>excl. FY21</th><th>FY24–26</th></tr></thead><tbody><tr><th scope="row">All firms with data</th><td>+1.1<span class="fy">18</span></td><td>+2.1<span class="fy">15</span></td><td>+1.3<span class="fy">12</span></td></tr><tr><th scope="row">Same firms in both windows</th><td>+0.5<span class="fy">14</span></td><td>+1.7<span class="fy">11</span></td><td>+0.9<span class="fy">9</span></td></tr></tbody></table><p class="table-note">Average over firm-years; small grey numbers count firm-years. Before FY24 the firms with data are HCLTech, Infosys, Tech Mahindra and Wipro; from FY24, Infosys, the LTI group, Tech Mahindra and Wipro. The second row keeps the three firms present in both periods.</p></div>
+
+<p>This test has limits. It covers only four firms, because TCS, the largest, and HCLTech do not report utilization. TCS’s revenue per employee grew about 4% a year in FY24 and FY25, more than twice its FY16–20 pace, and we cannot tell why. And Infosys’s jump in FY24 may be an accident of counting: its headcount includes trainees but its utilization does not, and it hired far fewer trainees that year.</p>
+
+<p>So the evidence is weak: on average, the four firms we can test show no sign of keeping AI savings. Telling S1 from S3 needs price data, which Section 6 discusses.</p>
 
 <h2 id="other-evidence"><span class="num">5</span>Other evidence</h2>
 
 <h3>5a. Contractors</h3>
 
-<p>If the firms had replaced employees with contractors (the contractor version of S4), their spending on subcontractors would have risen as a share of revenue. Instead it fell at all six firms in FY24 (Figure 2). It rose again at five of the six in FY26, but it is still below its FY23 level at every firm.</p>
+<p>If the firms had replaced employees with subcontractors, the subcontracting share would have risen. Instead it fell at all six firms in FY24 (Figure 5). It rose at five of the six in FY26, but it remains below its FY23 level everywhere. So there is no evidence of a shift to contractors, although the share measures spending rather than people, so changes in contractor rates also move it.</p>
 
-<figure class="wide" id="fig2">
+<figure class="wide" id="fig-subcontracting">
   <div class="fig-panel">
     <div class="fig-top"><div class="fig-title">Subcontracting cost, % of revenue</div></div>
-    <div id="chart2" class="chart" role="img" aria-label="Line chart: subcontracting cost as a share of revenue for six firms, FY20 to FY26. All six fall from FY23 to FY24."></div>
+    <div id="chart-subcon" class="chart" role="img" aria-label="Line chart: subcontracting cost as a share of revenue for six firms, FY20 to FY26. All six fall from FY23 to FY24."></div>
   </div>
-  <figcaption><b>Figure 2.</b> Spending on subcontractors as a share of revenue, FY20–FY26, as reported by each firm. LTIMindtree starts in FY22. The shaded band marks the step from FY23 to FY24. For TCS the series is fees paid to outside consultants.</figcaption>
+  <figcaption><b>Figure 5.</b> Spending on subcontractors as a share of revenue, FY20–FY26, as reported by each firm. LTIMindtree starts in FY22. For TCS the series is fees paid to outside consultants.</figcaption>
 </figure>
-
-<p>So there is no evidence of a shift to contractors. One caveat: this measures spending, not the number of contractors, so a change in the rates contractors charge would also move it.</p>
 
 <h3>5b. Where the work went</h3>
 
-<p>Section 2 showed that smaller Indian firms kept growing. Some work may also have moved to GCCs. Three public sources bear on this. Foreign-owned companies in India, as counted by the Reserve Bank of India’s census, raised their exports of information and communication services from ₹6.5 lakh crore in FY22 to ₹8.5 lakh crore in FY23. Indian affiliates of US companies employed about 900,000 people in professional services in 2023, up from about 600,000 in 2019, according to the US Bureau of Economic Analysis. And on the job site Naukri, postings by GCCs in September 2026 were up 4% on a year earlier, while postings by IT services firms were down 4%.</p>
+<p>Some work may also have moved to GCCs. Three public sources bear on this:</p>
 
-<p>These figures fit the idea that some work moved to GCCs, but they are weak evidence. The first two include foreign-owned IT vendors as well as clients’ own offices, and job postings are not hires. At most, they are consistent with a partial shift of this kind.</p>
+<ul><li><b>Foreign-owned companies in India</b> raised their exports of information and communication services from ₹6.5 lakh crore in FY22 to ₹8.5 lakh crore in FY23 (Reserve Bank of India census).</li><li><b>Indian affiliates of US companies</b> employed about 900,000 people in professional services in 2023, up from about 600,000 in 2019 (US Bureau of Economic Analysis).</li><li><b>Job postings</b> by GCCs in September 2026 were up 4% on a year earlier, while postings by IT services firms were down 4% (Naukri).</li></ul>
 
-<p>One piece of evidence from the earlier pilot is dropped here. The pilot compared how closely the Indian firms tracked Accenture before and after 2023. That comparison turned out to rest on a single episode, the boom and bust of 2021–22.</p>
+<p>These fit a partial shift to GCCs, but they are weak evidence: the first two include foreign-owned IT vendors as well as clients’ own offices, and postings are not hires.</p>
 
 <h3>5c. What management said</h3>
 
-<p>Earnings calls show how managers explained the slowdown. We collected 2,087 statements by managers from 183 earnings-call transcripts, covering the six firms plus Accenture and Cognizant from 2021 to 2026. Two large language models (LLMs) each sorted every statement into one of five categories, working independently. They agreed on 92% of statements. Figure 3 tracks two of the categories: statements about weak demand (category A), and statements that AI savings were being passed to clients (category D).</p>
+<p>We collected 2,087 statements by managers from 183 earnings-call transcripts: the six firms plus Accenture and Cognizant, 2021–2026. Two large language models (LLMs) independently sorted each statement into one of five categories, and agreed on 92% of them. Figure 6 tracks two categories: weak demand (A) and AI savings passed to clients (D).</p>
 
-<figure class="wide" id="fig3">
+<figure class="wide" id="fig-calls">
   <div class="fig-panel">
     <div class="fig-top">
       <div class="fig-title">Statements per transcript</div>
@@ -252,14 +283,14 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
         <button type="button" data-coder="c1" aria-pressed="true">Model 1</button><button type="button" data-coder="c2" aria-pressed="false">Model 2</button>
       </span></div>
     </div>
-    <div id="chart3" class="chart" role="img" aria-label="Two bar-chart panels by half-year, 2021 to 2026: demand-weakness statements per transcript, and AI pass-through statements per transcript."></div>
+    <div id="chart-calls" class="chart" role="img" aria-label="Two bar-chart panels by half-year, 2021 to 2026: demand-weakness statements per transcript, and AI pass-through statements per transcript."></div>
   </div>
-  <figcaption><b>Figure 3.</b> Statements per earnings-call transcript, by half-year, 2021–2026. The small numbers under the axis count the transcripts in each half-year. The second half of 2026 is incomplete (8 transcripts) and drawn lighter. Categories A and D were collected in different passes, so compare trends within a panel, not levels across panels.</figcaption>
+  <figcaption><b>Figure 6.</b> Statements per earnings-call transcript, by half-year. Small numbers under the axis count transcripts. The second half of 2026 is incomplete (8 transcripts) and drawn lighter. A and D were collected in different passes, so compare trends within a panel, not levels across panels.</figcaption>
 </figure>
 
-<p>Talk of weak demand peaked in 2023, at nearly eight statements per transcript, and has since settled at about five. Talk of passing AI savings to clients was close to zero before mid-2024 and has risen since. Managers added the AI story to the demand story; they did not swap one for the other. The pattern is the same whichever model’s codes are used.</p>
+<p>Talk of weak demand peaked in 2023 at nearly eight statements per transcript and has since settled at about five. Talk of passing on AI savings was close to zero before mid-2024 and has risen since. Managers added the AI story to the demand story rather than replacing it. The pattern holds under either model’s codes.</p>
 
-<p>The shift shows in the managers’ own words. In late 2023 the explanation was demand:</p>
+<p>In late 2023 the explanation was demand:</p>
 
 <blockquote><p>“We continue to see the overall environment where digital transformation program and discretionary spends are low and decision-making is slow. This is impacting our volumes.”</p><footer>Infosys · Q2 FY24 call · 12 Oct 2023 · Salil Parekh, CEO &amp; MD · <a href="https://www.sec.gov/Archives/edgar/data/1067491/000106749123000057/exv99w05.htm">SEC 6-K, Ex. 99.5</a></footer></blockquote>
 
@@ -267,35 +298,43 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 
 <blockquote><p>“Gaurav, I will distinguish realization from pricing. Pricing environment is stable. Realization is an outcome. You can measure it as revenue per FTE and you will notice that it has been improving”</p><footer>TCS · Q3 FY24 call · 11 Jan 2024 · Samir Seksaria, CFO · <a href="https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/q3/Management%20Commentary/Transcript%20of%20the%20Q3%202023-24%20Earnings%20Conference%20Call%20held%20on%20January%2011,%202023.pdf#page=17">transcript, p. 17</a></footer></blockquote>
 
-<p>By 2025 and 2026, managers were describing AI savings passed to clients:</p>
+<p>By 2025 and 2026, managers described passing AI savings to clients:</p>
 
 <blockquote><p>“AI for IT, I won’t try to call it deflation. … And particularly, if there is AI for IT, because of AI if there is a productivity gain, we will try to share those gains with our customers. So, in that sense, that will be what we did with $100 if we are able to do with $95 or $90.”</p><footer>TCS · Q4 FY25 call · 10 Apr 2025 · K Krithivasan, CEO &amp; MD · <a href="https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2024-25/q4/Management%20Commentary/Transcript%20of%20the%20Q4%202024-25%20Earnings%20Conference%20Call%20held%20at%201900%20hrs%20IST%20on%20Apr%2010,%202025.pdf#page=17">transcript, p. 17</a></footer></blockquote>
 
 <blockquote><p>“$100 million deal would be much lesser today - maybe 80 million, just on a rough ballpark. So, deal TCV is flat. But technically, it does require at least 25%, 30% more effort to convert and get to the same number.”</p><footer>HCLTech · Q4 FY26 call · 21 Apr 2026 · C. Vijayakumar, CEO &amp; MD · <a href="https://www.hcltech.com/sites/default/files/documents/investor-reports/hcltech-earnings-q4-fy26-transcript.pdf#page=21">transcript, p. 21</a></footer></blockquote>
 
-<p>These are claims, not measurements. Managers choose which explanations to give investors.</p>
+<p>These are claims, not measurements: managers choose which explanations to give investors.</p>
 
 <h2 id="the-price-gap"><span class="num">6</span>The price gap</h2>
 
-<p>To tell S1 from S3, we need the prices these firms charge per unit of work. No such measure exists. India has no price index for IT services. The US Bureau of Labor Statistics (BLS) does not cover computer systems design in its producer price index (<a href="https://www.bls.gov/ppi/fd-id/areas-of-noncoverage-in-the-ppi-system.htm">Areas of Noncoverage</a>).</p>
+<p>Telling S1 from S3 needs the prices these firms charge per unit of work, and no such measure exists. India has no price index for IT services, and the US Bureau of Labor Statistics (BLS) does not cover computer systems design (<a href="https://www.bls.gov/ppi/fd-id/areas-of-noncoverage-in-the-ppi-system.htm">Areas of Noncoverage</a>).</p>
 
-<p>The nearest substitutes are weak. A BLS index for US data processing and hosting tracks the price of the same contracts over time. It has risen every year since 2015, by between 0.3% and 3.2% <span class="spark" role="img" aria-label="BLS PPI 518210, annual growth 2015–2026"><span class="sp-l">2015</span><svg viewBox="0 0 141 30" width="141" height="30"><rect x="0" y="27.4" width="9" height="2.6" rx="1.5"><title>2015: +0.3%</title></rect><rect x="12" y="19.1" width="9" height="10.9" rx="1.5"><title>2016: +1.2%</title></rect><rect x="24" y="16.5" width="9" height="13.5" rx="1.5"><title>2017: +1.5%</title></rect><rect x="36" y="27.1" width="9" height="2.9" rx="1.5"><title>2018: +0.3%</title></rect><rect x="48" y="25.9" width="9" height="4.1" rx="1.5"><title>2019: +0.4%</title></rect><rect x="60" y="2.8" width="9" height="27.2" rx="1.5"><title>2020: +2.9%</title></rect><rect x="72" y="21.0" width="9" height="9.0" rx="1.5"><title>2021: +1.0%</title></rect><rect x="84" y="20.5" width="9" height="9.5" rx="1.5"><title>2022: +1.0%</title></rect><rect x="96" y="15.9" width="9" height="14.1" rx="1.5"><title>2023: +1.5%</title></rect><rect x="108" y="18.5" width="9" height="11.5" rx="1.5"><title>2024: +1.2%</title></rect><rect x="120" y="0.0" width="9" height="30.0" rx="1.5"><title>2025: +3.2%</title></rect><rect x="132" y="25.6" width="9" height="4.4" rx="1.5" class="partial"><title>2026 (Jan–Aug, year on year): +0.5%</title></rect></svg><span class="sp-l">2026</span></span>. But it measures prices charged by US firms, so it is a proxy at best. ISG, a sourcing adviser, tracks prices in a narrow set of managed-services contracts, and reports that these prices have recently been falling faster.</p>
+<p>The nearest substitutes are weak. A BLS index for US data processing and hosting, which tracks the price of the same contracts over time, has risen every year since 2015, by 0.3% to 3.2% (Figure 7). But it covers US firms only. ISG, a sourcing adviser, reports that prices in a narrow set of managed-services contracts have recently been falling faster.</p>
 
-<p>Infosys offers a partial check for an earlier period. Until FY20 it reported how many person-months of work it billed. Revenue per billed person-month equals the price per unit of work divided by the labor per unit (<i>p</i>/<i>a</i>). If labor per unit did not rise, which is an assumption rather than a fact, then Infosys’s prices fell by at least 1–2% a year in FY15–17 and were flat or falling in FY18–20. But this series ends before the period that matters.</p>
+<figure class=" narrowfig" id="fig-bls">
+  <div class="fig-panel">
+    <div class="fig-top"><div class="fig-title">US data processing and hosting prices (BLS PPI 518210), % change on a year earlier</div></div>
+    <div id="chart-bls" class="chart" role="img" aria-label="Bar chart: annual change in the BLS producer price index for data processing and hosting, 2015 to 2026. Every year is positive."></div>
+  </div>
+  <figcaption><b>Figure 7.</b> BLS producer price index for data processing and hosting (PPI 518210), change in the annual average. 2026 compares January–August with the same months of 2025.</figcaption>
+</figure>
 
-<p>Analysts at brokers such as Kotak and Jefferies have estimated how far AI will cut prices. Their estimates assume a pass-through rate, so they cannot be used to test one.</p>
+<p>Infosys offers a partial check for an earlier period. Until FY20 it reported billed person-months, and revenue per billed person-month equals <i>p</i>/<i>a</i>. If labor per unit did not rise (an assumption), Infosys’s prices fell by at least 1–2% a year in FY15–17 and were flat or falling in FY18–20. The series ends before the period that matters.</p>
+
+<p>Analysts’ estimates of AI price cuts, such as Kotak’s and Jefferies’, assume a pass-through rate, so they cannot test one.</p>
 
 <h2 id="what-would-settle-it"><span class="num">7</span>What would settle it</h2>
 
-<p>Four kinds of data would separate the explanations (Table 4). None is public today in usable form.</p>
+<p>Four kinds of data would settle the question (Table 3).</p>
 
-<div class="table-wrap"><p class="table-cap"><b>Table 4.</b> Data that would separate the explanations</p><table class="items"><thead><tr><th>Data</th><th>Who could collect it</th><th>Separates</th><th>Available?</th></tr></thead><tbody><tr><th scope="row">A price index for IT services</th><td>India’s national statistics office or the RBI</td><td>S1 from S3</td><td>No</td></tr><tr><th scope="row">Billed effort <span class="dim">(person-months)</span></th><td>The firms; SEBI, India’s market regulator, could require it</td><td>S2 from S1 and S3, with revenue†</td><td>Infosys until FY20, LTI until 2022</td></tr><tr><th scope="row">GCC headcount by parent company</th><td>The RBI, as part of its census of foreign-owned companies</td><td>S1 from S4</td><td>No</td></tr><tr><th scope="row">Headcount by role, for each firm</th><td>The firms</td><td>S2 and S3 from S1</td><td>No</td></tr></tbody></table><p class="table-note">† Revenue per billed person-month is <i>p</i>/<i>a</i>, the same quantity as the residual. It would extend the Section 4 test to TCS and HCLTech, but like the residual it cannot separate S1 from S3 if savings are fully passed on.</p></div>
+<div class="table-wrap"><p class="table-cap"><b>Table 3.</b> Data that would separate the scenarios</p><table class="items"><thead><tr><th>Data</th><th>Who could collect it</th><th>Separates</th><th>Available?</th></tr></thead><tbody><tr><th scope="row">A price index for IT services</th><td>India’s statistics office or the RBI</td><td>S1 from S3</td><td>No</td></tr><tr><th scope="row">Billed effort <span class="dim">(person-months)</span></th><td>The firms; SEBI, the market regulator, could require it</td><td>S2 from S1 and S3†</td><td>Infosys to FY20, LTI to 2022</td></tr><tr><th scope="row">GCC headcount by parent company</th><td>The RBI, in its census of foreign-owned companies</td><td>S1 from S4</td><td>No</td></tr><tr><th scope="row">Headcount by role, for each firm</th><td>The firms</td><td>S2 and S3 from S1</td><td>No</td></tr></tbody></table><p class="table-note">† With revenue, billed effort gives <i>p</i>/<i>a</i>, the same quantity as the residual, for TCS and HCLTech too. Like the residual, it cannot separate S1 from S3 under full pass-through.</p></div>
 
-<p>The cheapest step with the biggest payoff is a price index for IT services, because every other conclusion in this note is limited by its absence.</p>
+<p>The cheapest step with the biggest payoff is a price index for IT services, because every other conclusion here is limited by its absence.</p>
 
 <h2 id="limitations"><span class="num">8</span>Limitations</h2>
 
-<ol class="lim"><li>The sample is six large firms, plus four mid-tier firms in one comparison.</li><li>TCS and HCLTech do not report utilization, so their revenue per employee cannot be broken down.</li><li>The data were collected with the help of LLMs. A check of 30 randomly chosen values against the source documents found no errors.</li><li>The earnings-call statements were coded by two LLMs working independently, and have not been checked by hand.</li><!-- UPDATE after manual spot check of calls_spotcheck.csv --><li>Managers’ statements reflect what they want investors to hear.</li><li>The figures are not adjusted for acquisitions.</li></ol>
+<ol class="lim"><li>The sample is six large firms, plus four mid-tier firms in one comparison.</li><li>TCS and HCLTech do not report utilization, so their revenue per employee cannot be broken down.</li><li>The data were collected with the help of LLMs. A check of 30 random values against the source documents found no errors.</li><li>The call statements were coded by two LLMs working independently and have not been checked by hand.</li><!-- UPDATE after manual spot check of calls_spotcheck.csv --><li>Managers’ statements reflect what they want investors to hear.</li><li>The figures are not adjusted for acquisitions.</li></ol>
 
 <section class="appendix" id="appendix">
 <h2>Appendix: data and methods</h2>
@@ -304,7 +343,7 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 <summary>Sources</summary>
 <div>
 
-<p>Quarterly fact sheets, investor releases, annual reports, filings with the US Securities and Exchange Commission (20-F and 6-K), and earnings-call transcripts from company websites and SEC EDGAR. The mid-tier figures come from annual reports. Other series: the RBI Census on Foreign Liabilities and Assets, BEA data on US multinationals’ foreign affiliates, Naukri JobSpeak and the BLS producer price index. Every number traces to a file in the repository: <a href="https://github.com/niranjan-deshpande/Indian-IT-AI-Forecasting">github.com/niranjan-deshpande/Indian-IT-AI-Forecasting</a>.</p>
+<p>Quarterly fact sheets, investor releases, annual reports, SEC filings (20-F and 6-K) and earnings-call transcripts, from company websites and SEC EDGAR. Other series: the RBI Census on Foreign Liabilities and Assets, BEA data on US multinationals’ foreign affiliates, Naukri JobSpeak and the BLS producer price index. Every number traces to a file in the repository: <a href="https://github.com/niranjan-deshpande/Indian-IT-AI-Forecasting">github.com/niranjan-deshpande/Indian-IT-AI-Forecasting</a>.</p>
 
 </div>
 </details>
@@ -313,7 +352,7 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 <summary>Definitions</summary>
 <div>
 
-<ul><li><b>Growth</b> is the log change ×100, which is close to the percentage change.</li><li><b>Fiscal years</b> are Indian fiscal years, April to March. Quarterly year-on-year growth is combined into fiscal-year growth using the previous year’s revenue as weights. A fiscal-year value needs all four quarters.</li><li><b>Headcount growth</b> is the average of the four quarterly year-on-year changes, which approximates the growth of average headcount.</li><li><b>Comparators</b> are converted to Indian fiscal years. Cognizant’s quarters line up exactly. Accenture’s quarters end in May, August, November and February, so 11 of 12 months overlap.</li><li><b>The residual</b> is growth in revenue per employee in constant currency, minus the change in utilization within each firm’s own series.</li></ul>
+<ul><li><b>Growth</b> is the log change ×100.</li><li><b>Fiscal years</b> run April to March. Quarterly year-on-year growth is combined into fiscal-year growth using the previous year’s revenue as weights; a fiscal year needs all four quarters.</li><li><b>Headcount growth</b> is the average of the four quarterly year-on-year changes, which approximates growth of average headcount.</li><li><b>Comparators</b> are converted to Indian fiscal years. Cognizant’s quarters line up exactly; Accenture’s end in May, August, November and February, so 11 of 12 months overlap.</li><li><b>The residual</b> is revenue-per-employee growth in constant currency minus the change in utilization, within each firm’s own utilization series.</li></ul>
 
 </div>
 </details>
@@ -322,7 +361,7 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 <summary>Audit</summary>
 <div>
 
-<ul><li><b>Spot check.</b> 30 randomly drawn values were checked against the source documents. All 30 matched.</li><li><b>Corrections.</b> Negative growth rates for LTI and Mindtree, printed as “(x.x)%” in their reports, had lost their minus sign; the parser now reads them correctly. Cognizant’s attrition used a different definition in two quarters and now uses the trailing-twelve-month rate throughout. Accenture’s FY18 US-dollar revenue growth mixed figures from before and after an accounting change (ASC 606); it now uses the like-for-like growth from Accenture’s FY18 releases.</li><li><b>Decisions.</b> The LTI business is counted once: LTI plus Mindtree through FY22, LTIMindtree from FY23. HCLTech’s sale of a business is not adjusted for, because HCLTech did not disclose its revenue. Wipro growth figures that span a break in its reporting are left out.</li></ul>
+<ul><li><b>Spot check.</b> 30 random values were checked against the source documents; all 30 matched.</li><li><b>Corrections.</b> LTI and Mindtree negative growth rates, printed as “(x.x)%”, had lost their minus sign; the parser now reads them correctly. Cognizant’s attrition used a different definition in two quarters and now uses the trailing-twelve-month rate throughout. Accenture’s FY18 US-dollar revenue growth mixed figures from before and after an accounting change (ASC 606); it now uses like-for-like growth from Accenture’s FY18 releases.</li><li><b>Decisions.</b> The LTI business is counted once: LTI plus Mindtree through FY22, LTIMindtree from FY23. HCLTech’s sale of a business is not adjusted for, because HCLTech did not disclose its revenue. Wipro growth figures that span a break in its reporting are left out.</li><li><b>Dropped.</b> An earlier version compared how closely the Indian firms tracked Accenture before and after 2023. That comparison rested on a single episode, the boom and bust of 2021–22, and is not used.</li></ul>
 
 </div>
 </details>
@@ -333,11 +372,11 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 
 <p>Each statement gets one main category:</p>
 
-<ul><li><b>A, demand weakness:</b> clients spending less, or delaying or cutting discretionary work, for any reason.</li><li><b>B, pricing stable:</b> managers say prices or rates are holding, or deny that AI is cutting prices.</li><li><b>C, pricing pressure without AI:</b> renewal discounts, competitive pricing or rate cuts, with no link to AI.</li><li><b>D, AI savings passed to clients:</b> savings from AI or automation given to clients through lower prices, smaller deals or productivity commitments.</li><li><b>E, other or unclear:</b> anything else, including statements that demand is strong.</li></ul>
+<ul><li><b>A, demand weakness:</b> clients spending less, or delaying or cutting discretionary work.</li><li><b>B, pricing stable:</b> prices or rates are holding, or AI is not cutting prices.</li><li><b>C, pricing pressure without AI:</b> renewal discounts, competitive pricing or rate cuts, with no link to AI.</li><li><b>D, AI savings passed to clients:</b> savings from AI or automation given to clients through lower prices, smaller deals or productivity commitments.</li><li><b>E, other or unclear:</b> anything else, including statements that demand is strong.</li></ul>
 
-<div class="table-wrap"><p class="table-cap"><b>Agreement between the two models</b>, main category</p><table><thead><tr><th>Category</th><th>Model 1</th><th>Model 2</th><th>Model 1 codes matched</th><th>κ</th></tr></thead><tbody><tr><th scope="row">A · Demand weakness</th><td>796</td><td>743</td><td>91.0%</td><td>0.91</td></tr><tr><th scope="row">B · Pricing stable</th><td>47</td><td>54</td><td>87.2%</td><td>0.81</td></tr><tr><th scope="row">C · Pricing pressure without AI</th><td>72</td><td>83</td><td>76.4%</td><td>0.70</td></tr><tr><th scope="row">D · AI savings passed to clients</th><td>117</td><td>91</td><td>70.1%</td><td>0.78</td></tr><tr><th scope="row">E · Other or unclear</th><td>1,055</td><td>1,116</td><td>96.8%</td><td>0.88</td></tr><tr class="tot"><th scope="row">All statements</th><td>2,087</td><td>2,087</td><td>92.1%</td><td>0.87</td></tr></tbody></table><p class="table-note">“Model 1 codes matched” is the share of the first model’s codes in each category that the second model also gave. κ is Cohen’s kappa, a measure of agreement that allows for chance, for that category against the rest.</p></div>
+<div class="table-wrap"><p class="table-cap"><b>Agreement between the two models</b>, main category</p><table><thead><tr><th>Category</th><th>Model 1</th><th>Model 2</th><th>Model 1 codes matched</th><th>κ</th></tr></thead><tbody><tr><th scope="row">A · Demand weakness</th><td>796</td><td>743</td><td>91.0%</td><td>0.91</td></tr><tr><th scope="row">B · Pricing stable</th><td>47</td><td>54</td><td>87.2%</td><td>0.81</td></tr><tr><th scope="row">C · Pricing pressure without AI</th><td>72</td><td>83</td><td>76.4%</td><td>0.70</td></tr><tr><th scope="row">D · AI savings passed to clients</th><td>117</td><td>91</td><td>70.1%</td><td>0.78</td></tr><tr><th scope="row">E · Other or unclear</th><td>1,055</td><td>1,116</td><td>96.8%</td><td>0.88</td></tr><tr class="tot"><th scope="row">All statements</th><td>2,087</td><td>2,087</td><td>92.1%</td><td>0.87</td></tr></tbody></table><p class="table-note">“Model 1 codes matched” is the share of the first model’s codes in each category that the second model also gave. κ is Cohen’s kappa, which measures agreement beyond chance, for that category against the rest.</p></div>
 
-<p><b>How the statements were collected.</b> The statements come from two passes over the same transcripts. A pricing pass searched for keywords and kept 389 statements about prices, renewals, falling prices, or passing savings to clients (about 2 per call). A demand pass used a list of 12 groups of terms, read effectively every transcript in full, and kept 1,711 statements that explain revenue, deals or headcount through demand (about 9 per call). Merging the two and removing 13 duplicates gives 2,087. Every quote was checked by machine to be word for word, from a manager, with the speaker confirmed. Category A comes mostly from the demand pass and category D from the pricing pass, which is why their levels should not be compared.</p>
+<p><b>How the statements were collected.</b> A pricing pass searched for keywords and kept 389 statements about prices, renewals or passing savings to clients (about 2 per call). A demand pass used 12 groups of search terms, read effectively every transcript in full, and kept 1,711 statements that explain revenue, deals or headcount through demand (about 9 per call). Merging the two and removing 13 duplicates gives 2,087. Every quote was checked by machine to be word for word, from a manager, with the speaker confirmed. A comes mostly from the demand pass and D from the pricing pass, so their levels should not be compared.</p>
 
 </div>
 </details>
@@ -349,14 +388,13 @@ details ul { padding-left: 1.1em; margin: 0 0 0.8em; } details li { margin-botto
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script>
-const DATA = {"fig1":{"rev_cc":{"rw":{"y":[10.783,8.524,6.256,9.458,8.633,0.457,16.274,12.947,1.541,3.15,0.645],"text":["+10.8","+8.5","+6.3","+9.5","+8.6","+0.5","+16.3","+12.9","+1.5","+3.1","+0.6"],"n":[4,4,4,4,4,5,5,5,6,6,6]},"simple":{"y":[10.512,8.846,6.244,8.985,8.904,0.053,16.696,12.811,0.742,2.619,1.424],"text":["+10.5","+8.8","+6.2","+9.0","+8.9","+0.1","+16.7","+12.8","+0.7","+2.6","+1.4"],"n":[4,4,4,4,4,5,5,5,6,6,6]},"acn":{"y":[null,7.682,8.386,9.607,7.744,1.742,20.859,16.443,2.475,5.434,4.993],"text":["–","+7.7","+8.4","+9.6","+7.7","+1.7","+20.9","+16.4","+2.5","+5.4","+5.0"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[null,null,8.608,7.871,4.278,-0.954,11.406,4.994,-0.976,4.145,5.187],"text":["–","–","+8.6","+7.9","+4.3","−1.0","+11.4","+5.0","−1.0","+4.1","+5.2"],"n":[0,0,1,1,1,1,1,1,1,1,1]}},"headcount":{"rw":{"y":[8.754,7.371,3.708,7.352,8.7,3.771,17.236,13.85,-2.811,-0.813,0.605],"text":["+8.8","+7.4","+3.7","+7.4","+8.7","+3.8","+17.2","+13.8","−2.8","−0.8","+0.6"],"n":[3,5,5,5,5,6,6,6,6,6,6]},"simple":{"y":[8.824,5.714,4.6,8.303,9.425,3.416,18.481,14.302,-3.613,-0.495,1.198],"text":["+8.8","+5.7","+4.6","+8.3","+9.4","+3.4","+18.5","+14.3","−3.6","−0.5","+1.2"],"n":[3,5,5,5,5,6,6,6,6,6,6]},"acn":{"y":[null,7.715,9.742,7.862,6.965,4.088,21.194,12.803,1.457,5.709,0.535],"text":["–","+7.7","+9.7","+7.9","+7.0","+4.1","+21.2","+12.8","+1.5","+5.7","+0.5"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[8.997,13.556,1.277,7.084,4.585,-1.058,11.426,8.051,-0.939,-2.547,3.865],"text":["+9.0","+13.6","+1.3","+7.1","+4.6","−1.1","+11.4","+8.1","−0.9","−2.5","+3.9"],"n":[1,1,1,1,1,1,1,1,1,1,1]}},"rpe_cc":{"rw":{"y":[2.807,1.199,3.292,2.799,0.902,-3.175,-0.439,-0.7,4.352,3.963,0.04],"text":["+2.8","+1.2","+3.3","+2.8","+0.9","−3.2","−0.4","−0.7","+4.4","+4.0","+0.0"],"n":[3,3,3,3,3,5,5,5,6,6,6]},"simple":{"y":[2.738,2.554,3.492,2.158,1.429,-2.695,0.044,-0.824,4.355,3.115,0.227],"text":["+2.7","+2.6","+3.5","+2.2","+1.4","−2.7","+0.0","−0.8","+4.4","+3.1","+0.2"],"n":[3,3,3,3,3,5,5,5,6,6,6]},"acn":{"y":[null,-0.032,-1.356,1.745,0.78,-2.346,-0.335,3.64,1.018,-0.275,4.458],"text":["–","−0.0","−1.4","+1.7","+0.8","−2.3","−0.3","+3.6","+1.0","−0.3","+4.5"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[null,null,7.331,0.786,-0.307,0.104,-0.02,-3.057,-0.037,6.692,1.322],"text":["–","–","+7.3","+0.8","−0.3","+0.1","−0.0","−3.1","−0.0","+6.7","+1.3"],"n":[0,0,1,1,1,1,1,1,1,1,1]}}},"fig2":{"x":[2020,2021,2022,2023,2024,2025,2026],"labels":["FY20","FY21","FY22","FY23","FY24","FY25","FY26"],"firms":[{"key":"tcs","name":"TCS","y":[8.24,8.05,9.08,9.46,6.57,4.58,5.5],"text":["8.24%","8.05%","9.08%","9.46%","6.57%","4.58%","5.50%"]},{"key":"infosys","name":"Infosys","y":[7.39,7.05,10.36,9.58,7.96,7.94,8.63],"text":["7.39%","7.05%","10.36%","9.58%","7.96%","7.94%","8.63%"]},{"key":"hcltech","name":"HCLTech","y":[15.14,13.48,14.61,14.74,13.26,12.95,14.16],"text":["15.14%","13.48%","14.61%","14.74%","13.26%","12.95%","14.16%"]},{"key":"wipro","name":"Wipro","y":[14.83,13.5,13.73,12.74,11.48,11.24,11.62],"text":["14.83%","13.50%","13.73%","12.74%","11.48%","11.24%","11.62%"]},{"key":"techm","name":"Tech Mahindra","y":[14.76,13.14,15.58,15.01,12.86,11.02,10.74],"text":["14.76%","13.14%","15.58%","15.01%","12.86%","11.02%","10.74%"]},{"key":"ltim","name":"LTIMindtree","y":[null,null,9.04,8.52,7.21,6.92,7.65],"text":["–","–","9.04%","8.52%","7.21%","6.92%","7.65%"]}]},"fig3":{"c1":{"half":["2021H1","2021H2","2022H1","2022H2","2023H1","2023H2","2024H1","2024H2","2025H1","2025H2","2026H1","2026H2"],"n":[16,16,16,16,15,16,16,16,16,16,16,8],"A":{"per":[1.375,0.438,0.438,3.0,7.533,7.875,6.375,4.688,5.688,4.875,5.0,5.875],"count":[22,7,7,48,113,126,102,75,91,78,80,47]},"D":{"per":[0.062,0.125,0.0,0.0,0.267,0.25,0.125,0.625,1.438,1.312,1.625,3.0],"count":[1,2,0,0,4,4,2,10,23,21,26,24]}},"c2":{"half":["2021H1","2021H2","2022H1","2022H2","2023H1","2023H2","2024H1","2024H2","2025H1","2025H2","2026H1","2026H2"],"n":[16,16,16,16,15,16,16,16,16,16,16,8],"A":{"per":[0.938,0.438,0.5,2.75,6.733,7.75,6.125,4.688,5.688,4.188,4.375,5.375],"count":[15,7,8,44,101,124,98,75,91,67,70,43]},"D":{"per":[0.062,0.125,0.0,0.0,0.2,0.312,0.125,0.438,0.938,1.312,1.062,2.25],"count":[1,2,0,0,3,5,2,7,15,21,17,18]}}}};
+const DATA = {"fact":{"rev_cc":{"rw":{"y":[10.783,8.524,6.256,9.458,8.633,0.457,16.274,12.947,1.541,3.15,0.645],"text":["+10.8","+8.5","+6.3","+9.5","+8.6","+0.5","+16.3","+12.9","+1.5","+3.1","+0.6"],"n":[4,4,4,4,4,5,5,5,6,6,6]},"simple":{"y":[10.512,8.846,6.244,8.985,8.904,0.053,16.696,12.811,0.742,2.619,1.424],"text":["+10.5","+8.8","+6.2","+9.0","+8.9","+0.1","+16.7","+12.8","+0.7","+2.6","+1.4"],"n":[4,4,4,4,4,5,5,5,6,6,6]},"acn":{"y":[null,7.682,8.386,9.607,7.744,1.742,20.859,16.443,2.475,5.434,4.993],"text":["–","+7.7","+8.4","+9.6","+7.7","+1.7","+20.9","+16.4","+2.5","+5.4","+5.0"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[null,null,8.608,7.871,4.278,-0.954,11.406,4.994,-0.976,4.145,5.187],"text":["–","–","+8.6","+7.9","+4.3","−1.0","+11.4","+5.0","−1.0","+4.1","+5.2"],"n":[0,0,1,1,1,1,1,1,1,1,1]}},"headcount":{"rw":{"y":[8.754,7.371,3.708,7.352,8.7,3.771,17.236,13.85,-2.811,-0.813,0.605],"text":["+8.8","+7.4","+3.7","+7.4","+8.7","+3.8","+17.2","+13.8","−2.8","−0.8","+0.6"],"n":[3,5,5,5,5,6,6,6,6,6,6]},"simple":{"y":[8.824,5.714,4.6,8.303,9.425,3.416,18.481,14.302,-3.613,-0.495,1.198],"text":["+8.8","+5.7","+4.6","+8.3","+9.4","+3.4","+18.5","+14.3","−3.6","−0.5","+1.2"],"n":[3,5,5,5,5,6,6,6,6,6,6]},"acn":{"y":[null,7.715,9.742,7.862,6.965,4.088,21.194,12.803,1.457,5.709,0.535],"text":["–","+7.7","+9.7","+7.9","+7.0","+4.1","+21.2","+12.8","+1.5","+5.7","+0.5"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[8.997,13.556,1.277,7.084,4.585,-1.058,11.426,8.051,-0.939,-2.547,3.865],"text":["+9.0","+13.6","+1.3","+7.1","+4.6","−1.1","+11.4","+8.1","−0.9","−2.5","+3.9"],"n":[1,1,1,1,1,1,1,1,1,1,1]}},"rpe_cc":{"rw":{"y":[2.807,1.199,3.292,2.799,0.902,-3.175,-0.439,-0.7,4.352,3.963,0.04],"text":["+2.8","+1.2","+3.3","+2.8","+0.9","−3.2","−0.4","−0.7","+4.4","+4.0","+0.0"],"n":[3,3,3,3,3,5,5,5,6,6,6]},"simple":{"y":[2.738,2.554,3.492,2.158,1.429,-2.695,0.044,-0.824,4.355,3.115,0.227],"text":["+2.7","+2.6","+3.5","+2.2","+1.4","−2.7","+0.0","−0.8","+4.4","+3.1","+0.2"],"n":[3,3,3,3,3,5,5,5,6,6,6]},"acn":{"y":[null,-0.032,-1.356,1.745,0.78,-2.346,-0.335,3.64,1.018,-0.275,4.458],"text":["–","−0.0","−1.4","+1.7","+0.8","−2.3","−0.3","+3.6","+1.0","−0.3","+4.5"],"n":[0,1,1,1,1,1,1,1,1,1,1]},"cog":{"y":[null,null,7.331,0.786,-0.307,0.104,-0.02,-3.057,-0.037,6.692,1.322],"text":["–","–","+7.3","+0.8","−0.3","+0.1","−0.0","−3.1","−0.0","+6.7","+1.3"],"n":[0,0,1,1,1,1,1,1,1,1,1]}}},"midtier":{"x":[2022,2023,2024,2025,2026],"labels":["FY22","FY23","FY24","FY25","FY26"],"rev":{"top":{"y":[16.985,9.493,1.976,2.736,2.222],"text":["+17.0","+9.5","+2.0","+2.7","+2.2"]},"mid4":{"y":[22.592,15.918,4.961,14.65,13.923],"text":["+22.6","+15.9","+5.0","+14.7","+13.9"]},"mid2":{"y":[31.274,22.195,12.316,22.181,20.293],"text":["+31.3","+22.2","+12.3","+22.2","+20.3"]}},"hc":{"top":{"y":[20.529,5.406,-4.475,0.953,-0.206],"text":["+20.5","+5.4","−4.5","+1.0","−0.2"]},"mid4":{"y":[30.05,6.617,0.705,10.651,5.556],"text":["+30.1","+6.6","+0.7","+10.7","+5.6"]},"mid2":{"y":[45.516,11.511,5.203,17.888,8.554],"text":["+45.5","+11.5","+5.2","+17.9","+8.6"]}}},"verticals":{"firms":[{"key":"tcs","name":"TCS","mid":false},{"key":"infosys","name":"Infosys","mid":false},{"key":"hcltech","name":"HCLTech","mid":false},{"key":"wipro","name":"Wipro","mid":false},{"key":"techm","name":"Tech Mahindra","mid":false},{"key":"ltim","name":"LTIMindtree","mid":false},{"key":"persistent","name":"Persistent","mid":true},{"key":"coforge","name":"Coforge","mid":true},{"key":"mphasis","name":"Mphasis","mid":true},{"key":"hexaware","name":"Hexaware","mid":true}],"groups":{"fin":[31.6,28.0,21.4,34.1,16.62,33.0,34.6,41.5,66.9,38.8],"tech":[14.2,20.1,26.9,16.8,46.88,19.4,39.8,null,18.0,16.2],"health":[10.4,7.3,14.2,14.2,7.3,null,25.6,null,null,null]},"note":{"fin":["BFSI 31.6","Financial services 28.0","Financial Services 21.4","Banking, Financial Services and Insurance 34.1","Banking, Financial services & Insurance 16.6","Financial Services 33.0","BFSI 34.6","Banking and Financial Services (BFS) 26.5 + Insurance 15.0","Banking and Financial Services 52.3 + Insurance 14.6","Financial Services 30.0 + Banking 8.8; also in “Healthcare and Insurance”"],"tech":["Communication & Media 5.8 + Technology & Services 8.4","Communication 12.4 + Hi-Tech 7.7","Technology & Services 14.8 + Telecommunications, Media, Publishing & Entertainment 12.1","Technology and Communications 16.8","Communications 33.4 + Hi-Tech and Media 13.5","Technology & Services 19.4","Software, Hi-Tech & Emerging Industries 39.8","also in “Healthcare & HiTech”","Technology Media and Telecom 18.0","High Tech and Professional Services 16.2"],"health":["Life Sciences & Healthcare 10.4","Life Sciences 7.3","Lifesciences & Healthcare 14.2","Health 14.2","Healthcare &  Life Sciences 7.3","not reported separately","Healthcare & Life Sciences 25.6","also in “Healthcare & HiTech”","not reported separately","also in “Healthcare and Insurance”"]}},"residual":{"firms":[{"key":"infosys","name":"Infosys","x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[1.242,1.083,1.459,-0.367,2.167,0.263,-1.574,3.793,6.554,2.118,1.274],"text":["FY16: +1.2","FY17: +1.1","FY18: +1.5","FY19: −0.4","FY20: +2.2","FY21: +0.3","FY22: −1.6","FY23: +3.8","FY24: +6.6","FY25: +2.1","FY26: +1.3"]},{"key":"hcltech","name":"HCLTech","x":[2016,2017,2018,2019],"y":[2.233,5.831,2.477,1.937],"text":["FY16: +2.2","FY17: +5.8","FY18: +2.5","FY19: +1.9"]},{"key":"wipro","name":"Wipro","x":[2021,2022,2023,2024,2025,2026],"y":[-10.478,4.725,3.069,-0.837,0.296,-2.476],"text":["FY21: −10.5","FY22: +4.7","FY23: +3.1","FY24: −0.8","FY25: +0.3","FY26: −2.5"]},{"key":"techm","name":"Tech Mahindra","x":[2021,2022,2023,2024,2025,2026],"y":[-1.563,1.556,1.918,-0.076,-0.522,1.695],"text":["FY21: −1.6","FY22: +1.6","FY23: +1.9","FY24: −0.1","FY25: −0.5","FY26: +1.7"]},{"key":"lti_group","name":"LTI group","x":[2024,2025,2026],"y":[3.344,2.349,2.094],"text":["FY24: +3.3","FY25: +2.3","FY26: +2.1"]}],"pre":1.098,"post":1.318,"s2":5.098,"avgLabel":"Average: +1.1 before FY24,<br>+1.3 from FY24","avgShort":"Avg +1.1 / +1.3","s2Label":"S2 with a 4% labor saving<br>(illustration)","s2Short":"S2 (illustration)"},"subcon":{"x":[2020,2021,2022,2023,2024,2025,2026],"labels":["FY20","FY21","FY22","FY23","FY24","FY25","FY26"],"firms":[{"key":"tcs","name":"TCS","y":[8.24,8.05,9.08,9.46,6.57,4.58,5.5],"text":["8.24%","8.05%","9.08%","9.46%","6.57%","4.58%","5.50%"]},{"key":"infosys","name":"Infosys","y":[7.39,7.05,10.36,9.58,7.96,7.94,8.63],"text":["7.39%","7.05%","10.36%","9.58%","7.96%","7.94%","8.63%"]},{"key":"hcltech","name":"HCLTech","y":[15.14,13.48,14.61,14.74,13.26,12.95,14.16],"text":["15.14%","13.48%","14.61%","14.74%","13.26%","12.95%","14.16%"]},{"key":"wipro","name":"Wipro","y":[14.83,13.5,13.73,12.74,11.48,11.24,11.62],"text":["14.83%","13.50%","13.73%","12.74%","11.48%","11.24%","11.62%"]},{"key":"techm","name":"Tech Mahindra","y":[14.76,13.14,15.58,15.01,12.86,11.02,10.74],"text":["14.76%","13.14%","15.58%","15.01%","12.86%","11.02%","10.74%"]},{"key":"ltim","name":"LTIMindtree","y":[null,null,9.04,8.52,7.21,6.92,7.65],"text":["–","–","9.04%","8.52%","7.21%","6.92%","7.65%"]}]},"calls":{"c1":{"half":["2021H1","2021H2","2022H1","2022H2","2023H1","2023H2","2024H1","2024H2","2025H1","2025H2","2026H1","2026H2"],"n":[16,16,16,16,15,16,16,16,16,16,16,8],"A":{"per":[1.375,0.438,0.438,3.0,7.533,7.875,6.375,4.688,5.688,4.875,5.0,5.875],"count":[22,7,7,48,113,126,102,75,91,78,80,47]},"D":{"per":[0.062,0.125,0.0,0.0,0.267,0.25,0.125,0.625,1.438,1.312,1.625,3.0],"count":[1,2,0,0,4,4,2,10,23,21,26,24]}},"c2":{"half":["2021H1","2021H2","2022H1","2022H2","2023H1","2023H2","2024H1","2024H2","2025H1","2025H2","2026H1","2026H2"],"n":[16,16,16,16,15,16,16,16,16,16,16,8],"A":{"per":[0.938,0.438,0.5,2.75,6.733,7.75,6.125,4.688,5.688,4.188,4.375,5.375],"count":[15,7,8,44,101,124,98,75,91,67,70,43]},"D":{"per":[0.062,0.125,0.0,0.0,0.2,0.312,0.125,0.438,0.938,1.312,1.062,2.25],"count":[1,2,0,0,3,5,2,7,15,21,17,18]}}},"bls":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.281,1.175,1.461,0.311,0.446,2.941,0.978,1.028,1.527,1.247,3.245,0.48],"text":["2015: +0.3%","2016: +1.2%","2017: +1.5%","2018: +0.3%","2019: +0.4%","2020: +2.9%","2021: +1.0%","2022: +1.0%","2023: +1.5%","2024: +1.2%","2025: +3.2%","2026 (Jan–Aug, year on year): +0.5%"]}};
 const C = { accent: "#235fa6", acn: "#7a7268", cog: "#aaa196", a: "#b0702a", d: "#6b4a92",
   ink: "#2a2318", ink2: "#5e5245", ink3: "#8a7d6d", rule: "#e6ddd0", rule2: "#cfc4b4",
-  firms: ["#4d6f91", "#b8643f", "#5a9370", "#8f68a6", "#ae8a2c", "#c0607e"] };
+  mid: "#2f8a57" };
 const FONT = "'Source Sans 3', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
 const CONFIG = { displayModeBar: false, responsive: true, scrollZoom: false };
 const YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
-const FYL = YEARS.map(y => "FY" + String(y % 100).padStart(2, "0"));
 
 function baseLayout(extra) {
   return Object.assign({
@@ -377,79 +415,150 @@ function tint(hex, a) {
 }
 function width(el) { return el.getBoundingClientRect().width; }
 
-/* ---------------- Figure 1 ---------------- */
+const FIRM = { tcs: "#4d6f91", infosys: "#b8643f", hcltech: "#5a9370", wipro: "#8f68a6", techm: "#ae8a2c",
+  ltim: "#c0607e", lti_group: "#c0607e" };
+const FYTICKS = { tickvals: [2016, 2018, 2020, 2022, 2024, 2026], ticktext: ["FY16", "FY18", "FY20", "FY22", "FY24", "FY26"] };
+function band(k, x0, x1) {
+  return { type: "rect", xref: "x" + k, yref: "y" + k + " domain", x0, x1, y0: 0, y1: 1,
+    fillcolor: C.accent, opacity: 0.07, line: { width: 0 }, layer: "below" };
+}
+function zero(k) {
+  return { type: "line", xref: "x" + k + " domain", yref: "y" + k, x0: 0, x1: 1, y0: 0, y1: 0,
+    line: { color: C.rule2, width: 1 }, layer: "below" };
+}
+function panelTitle(k, text) {
+  return { text, xref: "x" + k + " domain", yref: "y" + k + " domain", x: 0, y: 1.02, xanchor: "left",
+    yanchor: "bottom", showarrow: false, font: { family: FONT, size: 13.5, color: C.ink } };
+}
+function domains(n, i, narrow, gap) {
+  if (narrow) { const h = (1 - (n - 1) * gap) / n; return { x: [0, 1], y: [1 - (i + 1) * h - i * gap, 1 - i * (h + gap)] }; }
+  const w = (1 - (n - 1) * gap) / n; return { x: [i * (w + gap), i * (w + gap) + w], y: [0, 0.9] };
+}
+function lineTrace(x, s, name, line, k) {
+  return { x, y: s.y, text: s.text, name, mode: "lines+markers", line, marker: { size: 5, color: line.color },
+    connectgaps: false, xaxis: "x" + k, yaxis: "y" + k, hovertemplate: "%{text}<extra>" + name + "</extra>" };
+}
+
+/* ---------------- The fact: top six vs Accenture and Cognizant ---------------- */
 let avgMode = "rw";
-const F1 = [["rev_cc", "Revenue growth (cc)"], ["headcount", "Headcount growth"], ["rpe_cc", "Revenue per employee (cc)"]];
-function fig1() {
-  const el = document.getElementById("chart1");
-  const narrow = width(el) < 640;
+const FACT = [["rev_cc", "Revenue growth (cc)"], ["headcount", "Headcount growth"], ["rpe_cc", "Revenue per employee (cc)"]];
+function figFact() {
+  const el = document.getElementById("chart-fact");
+  const narrow = width(el) < 640, gap = narrow ? 0.12 : 0.07;
   const traces = [], shapes = [], annotations = [], layout = {};
-  const gap = narrow ? 0.12 : 0.07;
-  F1.forEach(([metric, title], i) => {
-    const k = i === 0 ? "" : String(i + 1);
-    const d = DATA.fig1[metric];
+  FACT.forEach(([metric, title], i) => {
+    const k = i === 0 ? "" : String(i + 1), d = DATA.fact[metric], avg = d[avgMode];
     const avgName = avgMode === "rw" ? "Top six (revenue-weighted)" : "Top six (simple)";
-    const avg = d[avgMode];
-    const series = [
-      { y: avg.y, text: avg.text.map((t, j) => avg.n[j] ? `${t}  <span style="color:${C.ink3}">${avg.n[j]} firms</span>` : t),
-        name: avgName, line: { color: C.accent, width: 2.75 } },
-      { y: d.acn.y, text: d.acn.text, name: "Accenture", line: { color: C.acn, width: 2, dash: "dash" } },
-      { y: d.cog.y, text: d.cog.text, name: "Cognizant", line: { color: C.cog, width: 2.25, dash: "dot" } },
-    ];
-    series.forEach(s => traces.push({ x: YEARS, y: s.y, text: s.text, name: s.name, mode: "lines+markers",
-      line: s.line, marker: { size: 5, color: s.line.color }, connectgaps: false,
-      xaxis: "x" + k, yaxis: "y" + k, hovertemplate: "%{text}<extra>" + s.name + "</extra>" }));
-    let dom;
-    if (narrow) { const h = (1 - 2 * gap) / 3; dom = { x: [0, 1], y: [1 - (i + 1) * h - i * gap, 1 - i * (h + gap)] }; }
-    else { const w = (1 - 2 * gap) / 3; dom = { x: [i * (w + gap), i * (w + gap) + w], y: [0, 0.9] }; }
-    layout["xaxis" + k] = axis({ domain: dom.x, anchor: "y" + k, range: [2015.5, 2026.5],
-      tickvals: [2016, 2018, 2020, 2022, 2024, 2026], ticktext: ["FY16", "FY18", "FY20", "FY22", "FY24", "FY26"] });
-    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, ticksuffix: "", nticks: 6 });
-    shapes.push({ type: "rect", xref: "x" + k, yref: "y" + k + " domain", x0: 2023.5, x1: 2024.5, y0: 0, y1: 1,
-      fillcolor: C.accent, opacity: 0.07, line: { width: 0 }, layer: "below" });
-    shapes.push({ type: "line", xref: "x" + k + " domain", yref: "y" + k, x0: 0, x1: 1, y0: 0, y1: 0,
-      line: { color: C.rule2, width: 1 }, layer: "below" });
-    annotations.push({ text: title, xref: "x" + k + " domain", yref: "y" + k + " domain", x: 0, y: 1.02,
-      xanchor: "left", yanchor: "bottom", showarrow: false, font: { family: FONT, size: 13.5, color: C.ink } });
+    const avgText = { y: avg.y, text: avg.text.map((t, j) => avg.n[j] ? `${t}  <span style="color:${C.ink3}">${avg.n[j]} firms</span>` : t) };
+    traces.push(lineTrace(YEARS, avgText, avgName, { color: C.accent, width: 2.75 }, k));
+    traces.push(lineTrace(YEARS, d.acn, "Accenture", { color: C.acn, width: 2, dash: "dash" }, k));
+    traces.push(lineTrace(YEARS, d.cog, "Cognizant", { color: C.cog, width: 2.25, dash: "dot" }, k));
+    const dom = domains(3, i, narrow, gap);
+    layout["xaxis" + k] = axis(Object.assign({ domain: dom.x, anchor: "y" + k, range: [2015.5, 2026.5] }, FYTICKS));
+    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, nticks: 6 });
+    shapes.push(band(k, 2023.5, 2024.5), zero(k));
+    annotations.push(panelTitle(k, title));
   });
-  const lay = baseLayout(Object.assign(layout, { shapes, annotations, hovermode: "x unified",
-    height: narrow ? 720 : 330, margin: { l: 34, r: 8, t: narrow ? 26 : 10, b: 30 } }));
+  Plotly.react(el, traces, baseLayout(Object.assign(layout, { shapes, annotations, hovermode: "x unified",
+    height: narrow ? 720 : 330, margin: { l: 34, r: 8, t: narrow ? 26 : 10, b: 30 } })), CONFIG);
+  el.dataset.narrow = narrow;
+}
+
+/* ---------------- Mid-tier firms ---------------- */
+function figMidtier() {
+  const el = document.getElementById("chart-midtier"), d = DATA.midtier;
+  const narrow = width(el) < 640, gap = narrow ? 0.16 : 0.09;
+  const traces = [], shapes = [], annotations = [], layout = {};
+  [["rev", "Revenue growth (US dollars)"], ["hc", "Headcount growth (year-end)"]].forEach(([m, title], i) => {
+    const k = i === 0 ? "" : "2";
+    traces.push(lineTrace(d.x, d[m].top, "Top six", { color: C.accent, width: 2.75 }, k));
+    traces.push(lineTrace(d.x, d[m].mid4, "Mid-tier four", { color: C.mid, width: 2.5 }, k));
+    traces.push(lineTrace(d.x, d[m].mid2, "Persistent and Coforge only", { color: C.mid, width: 1.75, dash: "dash" }, k));
+    const dom = domains(2, i, narrow, gap);
+    layout["xaxis" + k] = axis({ domain: dom.x, anchor: "y" + k, range: [2021.6, 2026.4], tickvals: d.x, ticktext: d.labels });
+    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, nticks: 6 });
+    shapes.push(band(k, 2023.5, 2024.5), zero(k));
+    annotations.push(panelTitle(k, title));
+  });
+  Plotly.react(el, traces, baseLayout(Object.assign(layout, { shapes, annotations, hovermode: "x unified",
+    height: narrow ? 560 : 320, margin: { l: 34, r: 8, t: narrow ? 26 : 10, b: 30 } })), CONFIG);
+  el.dataset.narrow = narrow;
+}
+
+/* ---------------- Client industries ---------------- */
+function figVerticals() {
+  const el = document.getElementById("chart-verticals"), d = DATA.verticals;
+  const narrow = width(el) < 640, gap = narrow ? 0.1 : 0.05;
+  const names = d.firms.map(f => f.name).reverse();
+  const colors = d.firms.map(f => f.mid ? C.mid : C.accent).reverse();
+  const traces = [], annotations = [], layout = {};
+  [["fin", "Financial services"], ["tech", "Tech, media and telecom"], ["health", "Healthcare and life sciences"]].forEach(([g, title], i) => {
+    const k = i === 0 ? "" : String(i + 1);
+    const vals = d.groups[g].slice().reverse(), notes = d.note[g].slice().reverse();
+    traces.push({ type: "bar", orientation: "h", x: vals.map(v => v === null ? 0 : v), y: names, xaxis: "x" + k, yaxis: "y" + k,
+      marker: { color: colors }, customdata: notes,
+      hovertemplate: "<b>%{y}</b>: %{x:.1f}%<br><span style='color:" + C.ink3 + "'>%{customdata}</span><extra></extra>" });
+    vals.forEach((v, j) => { if (v === null) annotations.push({ x: 0, y: names[j], xref: "x" + k, yref: "y" + k,
+      text: "not separate", xanchor: "left", xshift: 4, showarrow: false, font: { family: FONT, size: 11, color: C.ink3 } }); });
+    const dom = domains(3, i, narrow, gap);
+    layout["xaxis" + k] = axis({ domain: dom.x, anchor: "y" + k, range: [0, 70], ticksuffix: "%", dtick: 20 });
+    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, showticklabels: narrow || i === 0, ticks: "",
+      automargin: true, showline: false });
+    annotations.push(panelTitle(k, title));
+  });
+  Plotly.react(el, traces, baseLayout(Object.assign(layout, { annotations, bargap: 0.3, hovermode: "closest",
+    height: narrow ? 900 : 360, margin: { l: 96, r: 8, t: narrow ? 26 : 10, b: 30 },
+    shapes: [0, 1, 2].map(i => ({ type: "line", xref: "paper", yref: "y" + (i ? i + 1 : ""), x0: 0, x1: 1,
+      y0: 3.5, y1: 3.5, line: { color: C.rule2, width: 1, dash: "dot" } })) })), CONFIG);
+  el.dataset.narrow = narrow;
+}
+
+/* ---------------- Residual by firm ---------------- */
+function figResidual() {
+  const el = document.getElementById("chart-residual"), d = DATA.residual;
+  const narrow = width(el) < 640;
+  const traces = d.firms.map(f => ({ x: f.x, y: f.y, text: f.text, name: f.name, mode: "markers",
+    marker: { size: 9, color: FIRM[f.key], line: { color: "#fffdf9", width: 1.5 } },
+    hovertemplate: "%{text}<extra>" + f.name + "</extra>" }));
+  const seg = (x0, x1, y, color, w, dash) => ({ type: "line", xref: "x", yref: "y", x0, x1, y0: y, y1: y,
+    line: { color, width: w, dash } });
+  const side = (y, text, color) => ({ x: 1, y, xref: "paper", yref: "y", text, showarrow: false, xanchor: "left",
+    xshift: 8, align: "left", font: { family: FONT, size: narrow ? 11 : 12, color } });
+  const lay = baseLayout({ height: narrow ? 380 : 360, hovermode: "closest", margin: { l: 34, r: narrow ? 96 : 200, t: 10, b: 30 },
+    xaxis: axis(Object.assign({ range: [2015.5, 2026.5] }, FYTICKS)), yaxis: axis({ nticks: 7 }),
+    shapes: [band("", 2023.5, 2026.5), zero(""), seg(2015.6, 2023.4, d.pre, C.accent, 2.5, "solid"),
+      seg(2023.6, 2026.4, d.post, C.accent, 2.5, "solid"), seg(2023.6, 2026.4, d.s2, C.ink3, 1.75, "dash")],
+    annotations: [side((d.pre + d.post) / 2, narrow ? d.avgShort : d.avgLabel, C.ink),
+      side(d.s2, narrow ? d.s2Short : d.s2Label, C.ink2)] });
   Plotly.react(el, traces, lay, CONFIG);
   el.dataset.narrow = narrow;
 }
 
-/* ---------------- Figure 2 ---------------- */
-function fig2() {
-  const el = document.getElementById("chart2");
-  const d = DATA.fig2;
-  const traces = d.firms.map((f, i) => ({ x: d.x, y: f.y, text: f.text, name: f.name, mode: "lines+markers",
-    line: { color: C.firms[i], width: 2 }, marker: { size: 6, color: C.firms[i] },
+/* ---------------- Subcontracting ---------------- */
+function figSubcon() {
+  const el = document.getElementById("chart-subcon"), d = DATA.subcon;
+  const traces = d.firms.map(f => ({ x: d.x, y: f.y, text: f.text, name: f.name, mode: "lines+markers",
+    line: { color: FIRM[f.key], width: 2 }, marker: { size: 6, color: FIRM[f.key] },
     hovertemplate: "%{text}<extra>" + f.name + "</extra>" }));
   const last = d.x[d.x.length - 1];
   const annotations = d.firms.map(f => ({ x: last, y: f.y[f.y.length - 1], xref: "x", yref: "y", text: f.name,
     xanchor: "left", xshift: 9, showarrow: false, font: { family: FONT, size: 12.5, color: C.ink2 } }));
   annotations.push({ x: 2023.5, y: 1, xref: "x", yref: "paper", yanchor: "bottom", text: "FY23 → FY24: fell at all six",
     showarrow: false, font: { family: FONT, size: 12, color: C.ink2 } });
-  const lay = baseLayout({ height: 360, hovermode: "x unified", margin: { l: 34, r: 104, t: 24, b: 30 },
+  Plotly.react(el, traces, baseLayout({ height: 360, hovermode: "x unified", margin: { l: 34, r: 104, t: 24, b: 30 },
     xaxis: axis({ range: [2019.7, 2026.3], tickvals: d.x, ticktext: d.labels }),
     yaxis: axis({ range: [3.5, 16.5], ticksuffix: "%", dtick: 2 }),
     shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 2023, x1: 2024, y0: 0, y1: 1, fillcolor: C.accent,
-      opacity: 0.06, line: { width: 0 }, layer: "below" }],
-    annotations });
-  Plotly.react(el, traces, lay, CONFIG);
+      opacity: 0.06, line: { width: 0 }, layer: "below" }], annotations }), CONFIG);
 }
 
-/* ---------------- Figure 3 ---------------- */
+/* ---------------- Earnings calls ---------------- */
 let coder = "c1";
-function fig3() {
-  const el = document.getElementById("chart3");
-  const d = DATA.fig3[coder];
-  const narrow = width(el) < 640;
-  const last = d.half.length - 1;
-  const ticks = d.half.map((h, i) => {
-    const lab = narrow ? "’" + h.slice(2, 4) + "<br>" + h.slice(4) : h;
-    return lab + "<br><span style='font-size:10.5px;color:" + C.ink3 + "'>" + d.n[i] + "</span>";
-  });
+function figCalls() {
+  const el = document.getElementById("chart-calls"), d = DATA.calls[coder];
+  const narrow = width(el) < 640, last = d.half.length - 1;
+  const ticks = d.half.map((h, i) => (narrow ? "’" + h.slice(2, 4) + "<br>" + h.slice(4) : h) +
+    "<br><span style='font-size:10.5px;color:" + C.ink3 + "'>" + d.n[i] + "</span>");
   const mk = (cat, color, k, name) => ({
     x: d.half, y: d[cat].per, type: "bar", name, xaxis: "x" + k, yaxis: "y" + k,
     marker: { color: d.half.map((_, i) => i === last ? tint(color, 0.3) : color),
@@ -458,11 +567,10 @@ function fig3() {
     hovertemplate: "<b>%{x}%{customdata[2]}</b><br>" + name + ": %{y:.2f} per transcript<br>" +
       "<span style='color:" + C.ink3 + "'>%{customdata[0]} statements / %{customdata[1]} transcripts</span><extra></extra>",
   });
-  const traces = [mk("A", C.a, "", "A · demand weakness"), mk("D", C.d, "2", "D · AI pass-through")];
   const ttl = (t, y) => ({ text: t, xref: "paper", yref: "paper", x: 0, y, xanchor: "left", yanchor: "bottom",
     showarrow: false, font: { family: FONT, size: 13.5, color: C.ink } });
-  const lay = baseLayout({ height: narrow ? 470 : 440, bargap: 0.3, hovermode: "closest",
-    margin: { l: 34, r: 8, t: 24, b: narrow ? 66 : 52 },
+  Plotly.react(el, [mk("A", C.a, "", "A · demand weakness"), mk("D", C.d, "2", "D · AI pass-through")], baseLayout({
+    height: narrow ? 470 : 440, bargap: 0.3, hovermode: "closest", margin: { l: 34, r: 8, t: 24, b: narrow ? 66 : 52 },
     xaxis: axis({ domain: [0, 1], anchor: "y", showticklabels: false, ticks: "", matches: "x2" }),
     yaxis: axis({ domain: [0.56, 1], anchor: "x", nticks: 5, rangemode: "tozero" }),
     xaxis2: axis({ domain: [0, 1], anchor: "y2", tickvals: d.half, ticktext: ticks, tickangle: 0,
@@ -470,43 +578,52 @@ function fig3() {
     yaxis2: axis({ domain: [0, 0.42], anchor: "x2", nticks: 5, rangemode: "tozero" }),
     annotations: [ttl("A · demand weakness", 1.01), ttl("D · AI pass-through", 0.45),
       { x: d.half[last], y: d.D.per[last], xref: "x2", yref: "y2", yanchor: "bottom", yshift: 4,
-        text: "partial", showarrow: false, font: { family: FONT, size: 11, color: C.ink3 } }] });
-  Plotly.react(el, traces, lay, CONFIG);
+        text: "partial", showarrow: false, font: { family: FONT, size: 11, color: C.ink3 } }] }), CONFIG);
   el.dataset.narrow = narrow;
 }
 
+/* ---------------- BLS producer price index ---------------- */
+function figBls() {
+  const el = document.getElementById("chart-bls"), d = DATA.bls, last = d.x.length - 1;
+  Plotly.react(el, [{ x: d.x, y: d.y, text: d.text, textposition: "none", type: "bar", hovertemplate: "%{text}<extra></extra>",
+    marker: { color: d.x.map((_, i) => i === last ? tint(C.acn, 0.35) : C.acn), line: { color: C.acn, width: d.x.map((_, i) => i === last ? 1.5 : 0) } } }],
+    baseLayout({ height: 220, bargap: 0.35, hovermode: "closest", margin: { l: 30, r: 8, t: 8, b: 28 },
+      xaxis: axis({ tickvals: [2015, 2017, 2019, 2021, 2023, 2025], ticktext: ["2015", "2017", "2019", "2021", "2023", "2025"] }),
+      yaxis: axis({ rangemode: "tozero", ticksuffix: "%", nticks: 4 }) }), CONFIG);
+}
+
 /* ---------------- wiring ---------------- */
+const CHARTS = { "chart-fact": figFact, "chart-midtier": figMidtier, "chart-verticals": figVerticals, "chart-residual": figResidual,
+  "chart-subcon": figSubcon, "chart-calls": figCalls, "chart-bls": figBls };
 function press(group, btn) {
   group.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
 }
 document.querySelectorAll("[data-avg]").forEach(b => b.addEventListener("click", () => {
-  avgMode = b.dataset.avg; press(b.parentNode, b); fig1();
+  avgMode = b.dataset.avg; press(b.parentNode, b); figFact();
 }));
 document.querySelectorAll("[data-coder]").forEach(b => b.addEventListener("click", () => {
-  coder = b.dataset.coder; press(b.parentNode, b); fig3();
+  coder = b.dataset.coder; press(b.parentNode, b); figCalls();
 }));
-
-function drawAll() { fig1(); fig2(); fig3(); }
+function drawAll() { Object.entries(CHARTS).forEach(([id, fn]) => document.getElementById(id) && fn()); }
 if (window.Plotly) drawAll();
 let rt;
 window.addEventListener("resize", () => {
   clearTimeout(rt);
-  rt = setTimeout(() => {
-    const n1 = String(width(document.getElementById("chart1")) < 640);
-    if (n1 !== document.getElementById("chart1").dataset.narrow) fig1();
-    const n3 = String(width(document.getElementById("chart3")) < 640);
-    if (n3 !== document.getElementById("chart3").dataset.narrow) fig3();
-  }, 150);
+  rt = setTimeout(() => Object.entries(CHARTS).forEach(([id, fn]) => {
+    const el = document.getElementById(id);
+    if (el && el.dataset.narrow !== undefined && String(width(el) < 640) !== el.dataset.narrow) fn();
+  }), 150);
 });
 
 /* print: open the appendix and fit charts to the page width */
 window.addEventListener("beforeprint", () => {
   document.querySelectorAll("details").forEach(d => { d.dataset.wasOpen = d.open; d.open = true; });
-  ["chart1", "chart2", "chart3"].forEach(id => window.Plotly && Plotly.relayout(id, { width: 660 }));
+  Object.keys(CHARTS).forEach(id => window.Plotly && document.getElementById(id) && Plotly.relayout(id, { width: 660 }));
 });
 window.addEventListener("afterprint", () => {
   document.querySelectorAll("details").forEach(d => { d.open = d.dataset.wasOpen === "true"; });
-  ["chart1", "chart2", "chart3"].forEach(id => window.Plotly && Plotly.relayout(id, { width: null, autosize: true }));
+  Object.keys(CHARTS).forEach(id => window.Plotly && document.getElementById(id) &&
+    Plotly.relayout(id, { width: null, autosize: true }));
 });
 
 if (window.katex) {
