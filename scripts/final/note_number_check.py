@@ -174,9 +174,13 @@ vf = build_note.verticals_fig_data()
 fin = {f["name"]: v for f, v in zip(vf["firms"], vf["groups"]["fin"])}
 mids = [f["name"] for f in vf["firms"] if f["mid"]]
 tops = [f["name"] for f in vf["firms"] if not f["mid"]]
-cond("mid-tier firms depend more on financial services", "§2", "data/explore/midtier/vertical_mix_midtier.csv; data/tidy/panel_long.csv",
-     "min mid-tier financial-services share >= max top-six share", f"{min(fin[m] for m in mids):.1f} vs {max(fin[t] for t in tops):.1f}",
-     min(fin[m] for m in mids) >= max(fin[t] for t in tops))
+mph = fin["Mphasis"]
+cond("Mphasis earns two-thirds of its revenue from financial services", "§2", "data/explore/midtier/vertical_mix_midtier.csv",
+     "Mphasis FY26 Banking and Financial Services + Insurance, between 60 and 70", f"{mph:.1f}", 60 <= mph <= 70)
+others = [fin[n] for n in fin if n != "Mphasis"]
+cond("client mix broadly similar (financial services)", "§2", "data/explore/midtier/vertical_mix_midtier.csv; data/tidy/panel_long.csv",
+     "financial-services share of every firm except Mphasis within 15-45%", f"{min(others):.1f}–{max(others):.1f}",
+     all(15 <= v <= 45 for v in others))
 pi = [f["name"] for f in vf["firms"]].index("Persistent")
 pers = vf["groups"]["tech"][pi] + vf["groups"]["health"][pi]
 cond("Persistent earns most of its revenue from software and healthcare clients", "§2", "data/explore/midtier/vertical_mix_midtier.csv",

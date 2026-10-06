@@ -53,7 +53,7 @@ Smaller Indian firms did not follow. Four mid-tier firms (Persistent, Coforge, M
 
 The contrast does not depend on how firms count staff. Mphasis and Hexaware include contractors in their headcount; without them, Persistent and Coforge grew even faster (dashed line). Nor does it rest on one acquisition: without Coforge, which bought Cigniti in FY25, mid-tier revenue still grew more than 10% that year.
 
-The mid-tier firms also serve a different mix of clients (Figure 3). They depend more on financial services, and Persistent earns most of its revenue from software and healthcare clients.
+Nor do the mid-tier firms appear to have grown faster simply by serving different industries. Their client mix is broadly similar to the top six's (Figure 3). Two firms stand out: Mphasis earns two-thirds of its revenue from financial services, and Persistent earns most of its revenue from software and healthcare clients.
 
 ::: figure verticals
 **Figure 3.** Share of revenue by client industry. Top six: January–March 2026. Mid-tier firms: FY26 (Hexaware: calendar 2025). Financial services includes banking and insurance. Firms group industries differently; "not separate" means the firm reports that industry only combined with another (hover for each firm's own categories).
