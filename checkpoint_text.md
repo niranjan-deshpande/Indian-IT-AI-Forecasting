@@ -40,19 +40,21 @@ $$
 g_L \;=\; \underbrace{d}_{\text{demand shift}} \;-\; \underbrace{s}_{\text{replacement}} \;+\; \underbrace{\varepsilon\,\varphi\, s}_{\text{volume response}} \;=\; d - s\,(1-\varepsilon\varphi)
 $$
 
-where *s* is the replacement rate, *φ* the share of the saving passed on in price, and *ε* the price elasticity of demand. AI raises employment only if *εφ* > 1: firms must pass on most of the saving, and demand must be elastic.
+where *s* is the replacement rate, *φ* the share of the saving passed on in price, and *ε* the price elasticity of demand. The demand shift *d* is already in units of volume: it is how much more or less work clients would buy at an unchanged price, so the elasticity multiplies only the price change. Non-AI productivity growth and non-AI price drift are held at their pre-2023 pace; Section 2 returns to that assumption. AI raises employment only if *εφ* > 1: firms must pass on most of the saving, and demand must be elastic.
 
 ### What happened
 
-The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree. Years are Indian fiscal years, ending in March.
-
-Their headcount grew about 7% a year from FY16 to FY20. It then jumped by 18% in FY22 and 14% in FY23, as the firms hired heavily after COVID. It fell 4% in FY24 and has been roughly flat since. Revenue in constant currency slowed from about 9% a year before COVID to under 2% a year in FY24–26.
-
-The level of each series tells a fuller story than its growth rate (Figure 1). During the boom the firms hired far ahead of their revenue: by FY23 headcount was 14% above its pre-COVID trend, while revenue was only 3.5% above. Since then both have fallen well below that trend. By FY26 headcount was 11% below it and revenue 18% below. Accenture, for comparison, boomed just as much and is now back on its trend.
+The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree. Years are Indian fiscal years, ending in March. For comparison we use Accenture, a US-listed global IT services firm that competes for the same clients and delivers much of its work from India.
 
 ::: figure levels
 **Figure 1.** Headcount and constant-currency revenue at the top six (simple average of growth rates, cumulated) and at Accenture, compared with each series' FY16–20 trend. Values are log points relative to FY20 (×100), so a gap of 10 means about 10% below trend.
 :::
+
+- **Headcount growth:** about 7% a year in FY16–20; +18% in FY22 and +14% in FY23 (post-COVID hiring); −4% in FY24; roughly flat since.
+- **Revenue growth** (constant currency): about 9% a year in FY16–20; under 2% a year in FY24–26.
+- **Against the pre-COVID trend, FY23:** headcount 14% above, revenue only 3.5% above. The firms hired far ahead of revenue.
+- **Against the pre-COVID trend, FY26:** headcount 11% below, revenue 18% below.
+- **Accenture:** boomed as much in FY22–23, and is now back on its trend.
 
 Two features of this picture matter for what follows. First, part of the fall in hiring is the firms working off the extra staff they took on in FY22–23. That is neither AI nor weak demand, so we strip it out by measuring productivity net of how busy staff are.[^util] Second, revenue fell short of its old path by much more than headcount did. That revenue shortfall is the core of Question 2.
 
@@ -64,7 +66,7 @@ We focus on the six largest firms because they are the only ones with long, cons
 **Figure 2.** Employment in IT services (industry codes 62 and 63) in India's Periodic Labour Force Survey, with 90% confidence intervals. Left: all workers. Right: graduates aged 21–30. The survey changed design in 2025, and the 2023-24 and calendar-2024 rounds share half their sample. One very heavily weighted village or block inflates both, by about 5% on the left and about 10% on the right. Source: PLFS unit-level data (MoSPI), our tabulation.
 :::
 
-The work did not leave India. Excluding Ireland, India's share of world computer-services exports was flat from 2022 to 2025 (Figure 17 below).
+The work did not leave India. Excluding Ireland, India's share of world computer-services exports was flat at about 30% from 2022 to 2025.
 
 ## 2. Question 1: How many workers does a piece of work need now?
 
@@ -89,6 +91,11 @@ So the replacement rate is the sum of two things we can measure: the saving kept
 
 **The result.** On this test, revenue per busy employee grew about 1 percentage point a year faster after 2023 than before.
 
+**What this assumes.** Revenue per busy employee speeds up if AI cuts labour per unit of work, but also if prices rise for other reasons, or if productivity grows faster for other reasons. So the test attributes the speed-up to AI only if those two other forces held their pre-2023 pace.
+
+- **Non-AI price drift**, meaning rate rises, wage pass-through and ordinary competitive discounting, we can check. Price indices for comparable services did not slow after 2023: UK computer-programming prices, US management-consulting prices and US labour costs in professional services all grew 0.2 to 1.8 points a year *faster*. These indices mostly price hourly rates, which makes them useless for measuring AI price cuts per unit of work but roughly right for non-AI drift. Managers described pricing as "stable", and one non-AI programme (Infosys's) raised prices, which if anything means part of the speed-up is not AI. Our bound on the change in non-AI price drift is −1.0 to +0.5 points a year, a judgement rather than an estimate.
+- **Non-AI productivity growth** we cannot check directly. The firms are larger than before COVID, face more mid-tier competition and do a different mix of work, and any of these could move productivity growth by a point or two either way. This is the weakest link in the estimate. An independent check from task-level evidence on AI speed-ups is planned.
+
 **A correction.** This understates the saving, for a reason particular to these years. When a firm uses subcontractors, it books their work as revenue but does not count them as employees. In FY24 all six firms cut back on subcontractors and brought that work in-house (Figure 3). Their spending on subcontractors fell by 1.2 to 3.9 percentage points of revenue. That moved work onto the payroll without adding revenue, which pulls down revenue per employee even if no one became less productive.
 
 ::: figure subcon
@@ -111,7 +118,7 @@ There is no price index for IT services in India, and the US statistics office d
 
 **The data.** We searched every earnings-call transcript from January 2023 to October 2026 for the eight firms in our panel, plus investor days, four BPO firms, filings and a few older contracts for the pre-AI baseline, and collected 108 statements about pricing. We checked each quote against the original document.[^m2data]
 
-**The test.** Before AI, these firms already gave clients routine annual "productivity" discounts on long contracts, typically 10–15% over a contract's life. TCS says this is not related to AI. We count only the cut *on top of* that routine discount, and only on the same scope of work. We then turn statements such as a 10–15% cut over a contract's life, or 3–5% a year in the services AI affects, into a percentage of each firm's total revenue per year.[^m2convert]
+**The test.** Before AI, these firms already gave clients routine annual "productivity" discounts on long contracts, typically 10–15% over a contract's life. TCS says this is not related to AI. We count only the cut *on top of* that routine discount, and only on the same scope of work. We then turn statements such as a 10–15% cut over a contract's life, or 3–5% a year in the services AI affects, into a percentage of each firm's total revenue per year. This conversion needs two shares: how much revenue is in the services a statement covers, and how much has been repriced on AI-era terms by a given year. The second depends on contract vintage and is the most uncertain input.[^m2convert]
 
 **The result.** Almost nothing was passed on in FY24–26 (Figure 5). The AI price cut was about 0 in FY24, 0.1% in FY25 and 0.4% in FY26. It rises to about 1.5% in FY27 (0.4 to 2.7), though much of that is still what firms expect rather than what they have booked.
 
@@ -141,13 +148,13 @@ Three points about this number:
 
 ### The strongest objection
 
-Everything above compares *growth rates*: did revenue per employee grow faster after 2023 than before? A different comparison gives a different answer. In *levels*, revenue per employee at the top six is still about 11% below where its FY16–20 trend would have put it, the same gap as in FY23 (Figure 7). On that view the firms are only recovering lost ground, and there is no room for an AI saving at all.[^level]
+Everything above compares *growth rates*: did revenue per employee grow faster after 2023 than before? A different comparison gives a different answer. In *levels*, revenue per employee at the top six is still about 11% below where its FY16–20 trend would have put it, the same gap as in FY23 (Figure 7). If the dip would have reversed by itself, FY24–26 growth should have included about 3.5 points a year of catch-up. Actual growth fell short of that, so on this view the AI estimate shrinks, possibly to zero.[^level]
 
 ::: figure rpelevel
 **Figure 7.** Revenue per employee (constant currency), top six and Accenture, relative to each series' FY16–20 trend (log points ×100). The top six fell well below trend during the boom and have not recovered the gap. Accenture has recovered to above its trend.
 :::
 
-The two views make different assumptions. The growth view treats the FY21–23 dip as a one-off that firms will not make up. The level view expects them to climb back to their old path. We cannot yet tell which is right, and more years of data will help. For now we report the growth-rate estimate and flag that the level view argues for a smaller number.
+Lower levels do not by themselves rule out an AI saving. The two views differ only in what would have happened without AI. The growth view treats the FY21–23 dip as permanent, for example a lower-value mix of work. The level view treats it as temporary, for example a bulge of low-billed boom-era freshers who become more productive as they gain experience, which would lift revenue per employee mechanically. Which is right turns on why the dip happened, and that is testable: the junior-share data below show how big the fresher bulge was. For now we report the growth-rate estimate and flag that the level view argues for a smaller one.
 
 ::: details Juniors: were they replaced faster?
 
@@ -201,7 +208,7 @@ How large a fall depends on what "normal" growth would have been, and there is n
 
 - **Pre-COVID growth rates.** Revenue would have kept growing at its FY16–20 pace of about 9% a year. Against this, revenue growth fell about 7 points a year.
 - **The pre-COVID path.** Revenue would have returned to the level its FY16–20 trend implied by FY26. Against this, it fell about 6 points a year.
-- **Peers.** The top six would have slowed only as much as Accenture and Cognizant did. Against this, they fell about 3 points a year further.
+- **Peers.** The top six would have slowed only as much as Accenture and Cognizant did. Cognizant is another US-listed IT services firm; about 73% of its staff are in India. Against this, they fell about 3 points a year further.
 
 ::: figure yardsticks
 **Figure 11.** How much growth fell in FY24–26, in percentage points a year, under three views of what "normal" would have been. Headcount and constant-currency revenue, top six. The peers yardstick subtracts the slowdown at Accenture and Cognizant.
@@ -355,14 +362,14 @@ This page uses unit-level data from the Periodic Labour Force Survey, Ministry o
 [^model]: In growth rates, employment = volume − replacement rate − other productivity growth; volume = demand shift − elasticity × price change; price change = −(share passed on) × replacement rate + other price drift. Holding the "other" terms at their pre-2023 values and substituting gives the equation shown.
 [^util]: Utilisation is the share of staff time billed to clients. A firm that over-hired has staff on the bench; as it puts them to work, revenue rises with no new hiring. Our measure of productivity removes changes in utilisation, so working off the bench does not count as an AI saving.
 [^plfs]: Usual-status workers in National Industrial Classification divisions 62 (computer programming and consultancy) and 63 (information services). GCC staff may be classified here or under their parent firm's industry; they cannot be identified separately. Our tabulation matches MoSPI's published labour-force figures exactly in seven of nine rounds.
-[^sum]: Strictly, the change in revenue per busy employee measures (1 − share passed on) × replacement rate, and the AI price cut measures (share passed on) × replacement rate. Their sum is the replacement rate. This assumes that price drift and productivity growth unrelated to AI continued at their pre-2023 pace. We checked US and UK service price indices and wage data and found no sign that non-AI price growth fell after 2023 (bound: −1.0 to +0.5 points a year).
+[^sum]: Strictly, the change in revenue per busy employee measures (1 − share passed on) × replacement rate, plus any change in non-AI price drift and non-AI productivity growth. The AI price cut measures (share passed on) × replacement rate. With the non-AI terms unchanged, their sum is the replacement rate.
 [^residual]: Revenue per employee rises when staff bill more of their time, when each unit of work sells for more, or when each unit takes less labour. Subtracting the change in utilisation removes the first. What remains is price per unit divided by labour per unit. For Infosys, whose headcount includes trainees but whose utilisation excludes them, we use the utilisation series that includes trainees.
 [^tcshcl]: The four firms with utilisation data saw changes between about −2 and +1.5 points a year depending on the window. Allowing TCS and HCLTech anywhere in that range moves the six-firm average by up to about half a point either way.
 [^subcon]: Each point of revenue paid to subcontractors corresponds to about 1.0–1.9 points of revenue's worth of own-employee work, because firms pay their own staff about 53–60% of revenue and a subcontractor costs between one and two times an employee (Wipro said "about 30% higher"). We use 1.4. Subcontracting rose again at five of six firms in FY26, and the correction includes that reversal.
 [^subcon_break]: This is for the FY16–20 baseline. With the FY16–23 baseline, over 90% of the fall would need to be lower rates.
 [^noindex]: The US Bureau of Labor Statistics lists computer systems design among its "areas of noncoverage" for producer prices. The UK index for computer programming appears to price charge-out rates, and the nearest US indices cover data processing and software publishers, so none measures price per unit of outsourced IT work.
 [^m2data]: Eight firms: the top six, Accenture and Cognizant. Investor days for TCS, Infosys and LTIMindtree in 2025–26. BPO firms: Sagility, Firstsource, eClerx and HGS. 107 of 108 quotes were confirmed word for word against the source; the other is a text-extraction problem and is used only as context. Only about 16 IT statements give a usable number, and TCS, HCLTech and LTIMindtree supply most of them. Infosys, Wipro and Tech Mahindra (43% of top-six revenue) give no usable rate, so we allow their AI cut to lie anywhere between zero and twice the revenue-weighted average of the other three. Yearly figures in Figure 5 weight firms by revenue; the 0.2 used in the replacement rate weights them equally, as in Figure 4. Both round to 0.2.
-[^m2convert]: A one-off discount on renewals reaches total revenue gradually: about 20–35% of revenue is renewed each year, and about 40–60% of revenue is in services exposed to AI. A cut spread over a contract reaches revenue as contracts roll onto AI-era terms. The pre-AI routine discount (2–5% a year on the 40–55% of revenue under multi-year contracts) is our assumption, because contract percentages are redacted in the filings we found.
+[^m2convert]: A one-off discount on renewals reaches total revenue gradually: about 20–35% of revenue is renewed each year, and about 40–60% of revenue is in services exposed to AI. A cut spread over a contract reaches revenue as contracts roll onto AI-era terms. The pre-AI routine discount (2–5% a year on the 40–55% of revenue under multi-year contracts) is our assumption, because contract percentages are redacted in the filings we found. For the share of revenue on AI-era terms we assume 0–10% in FY25, 15–45% in FY26 and 45–75% in FY27. The conversion matters mostly for FY27: the conclusion that almost nothing was passed on in FY24–26 rests mainly on direct statements (HCLTech's and TCS's, quoted in the text), and HCLTech's 2–3% a year for FY27 is already stated for its whole portfolio.
 [^level]: Indicative only: the firms with data differ across years.
 [^jsplit]: Under-30s were about 45–52% of top-six staff over FY23–26, so we take half. With a junior–experienced gap g, the junior rate is then the average rate (2.3) plus about 0.5g, and the experienced rate the average minus about 0.5g. These ranges hold the average fixed; its own uncertainty (1.5 to 3.6) widens them.
 [^jfirm]: The FY22–23 hiring boom raised the under-30 share above its long-run downward trend. We net out the boom three ways: by assuming the bump decays as staff leave or age; by conditioning on revenue growth; and by comparing firms with bigger and smaller booms. The estimates range from about −2 to +3 points a year, centred near 0 to +1. The boom need only explain about a quarter of the post-2023 decline for the gap to vanish.
