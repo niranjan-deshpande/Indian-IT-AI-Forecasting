@@ -1,0 +1,17 @@
+pre_scenario,pre_adds_k_per_yr,pre_absorption_pct_of_base,post_scenario,post_adds_k_per_yr,post_absorption_pct_of_base,delta_d_gcc
+P1 old basis FY19-23 (1.0m -> 1.66m),165.0,3.35,S3 staffing-firm net hiring FY24-26 (385k),128.3,2.39,0.96
+P1 old basis FY19-23 (1.0m -> 1.66m),165.0,3.35,S4 2024-edition path (282k),94.0,1.75,1.6
+P1 old basis FY19-23 (1.0m -> 1.66m),165.0,3.35,S2 restated chain FY23-26 (540k),180.0,3.35,-0.0
+P1 old basis FY19-23 (1.0m -> 1.66m),165.0,3.35,E26 2026 edition FY24-26 (1.90m -> 2.36m),230.0,4.28,-0.93
+P2 old basis FY21-23 (1.38m -> 1.66m),140.0,2.84,S3 staffing-firm net hiring FY24-26 (385k),128.3,2.39,0.45
+P2 old basis FY21-23 (1.38m -> 1.66m),140.0,2.84,S4 2024-edition path (282k),94.0,1.75,1.09
+P2 old basis FY21-23 (1.38m -> 1.66m),140.0,2.84,S2 restated chain FY23-26 (540k),180.0,3.35,-0.51
+P2 old basis FY21-23 (1.38m -> 1.66m),140.0,2.84,E26 2026 edition FY24-26 (1.90m -> 2.36m),230.0,4.28,-1.44
+"P3 restated FY19-24, +36% (1.40m -> 1.90m; NOT CONFIRMED)",100.6,2.04,S3 staffing-firm net hiring FY24-26 (385k),128.3,2.39,-0.35
+"P3 restated FY19-24, +36% (1.40m -> 1.90m; NOT CONFIRMED)",100.6,2.04,S4 2024-edition path (282k),94.0,1.75,0.29
+"P3 restated FY19-24, +36% (1.40m -> 1.90m; NOT CONFIRMED)",100.6,2.04,S2 restated chain FY23-26 (540k),180.0,3.35,-1.31
+"P3 restated FY19-24, +36% (1.40m -> 1.90m; NOT CONFIRMED)",100.6,2.04,E26 2026 edition FY24-26 (1.90m -> 2.36m),230.0,4.28,-2.24
+"P4 restated FY19-24, count x avg (~1.18m -> 1.90m)",143.1,2.9,S3 staffing-firm net hiring FY24-26 (385k),128.3,2.39,0.52
+"P4 restated FY19-24, count x avg (~1.18m -> 1.90m)",143.1,2.9,S4 2024-edition path (282k),94.0,1.75,1.16
+"P4 restated FY19-24, count x avg (~1.18m -> 1.90m)",143.1,2.9,S2 restated chain FY23-26 (540k),180.0,3.35,-0.45
+"P4 restated FY19-24, count x avg (~1.18m -> 1.90m)",143.1,2.9,E26 2026 edition FY24-26 (1.90m -> 2.36m),230.0,4.28,-1.38

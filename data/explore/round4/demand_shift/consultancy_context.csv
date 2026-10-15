@@ -1,0 +1,6 @@
+series,publisher,type,period,value,status,circular?,source_url,notes
+IT services spending growth,Gartner,consultancy forecast,2025,6.2% (USD 1715.65bn),secondary (search summary of Gartner press release table),YES - equals vendor revenue,https://www.gartner.com/en/newsroom/press-releases/2026-04-22-gartner-forecasts-worldwide-it-spending-to-grow-13-point-5-percent-in-2026-totaling-6-point-31-trillion-dollars,includes IaaS
+IT services spending growth,Gartner,consultancy forecast,2026,9.0% (USD 1870.20bn),secondary,YES,https://www.gartner.com/en/newsroom/press-releases/2026-04-22-gartner-forecasts-worldwide-it-spending-to-grow-13-point-5-percent-in-2026-totaling-6-point-31-trillion-dollars,Feb-2026 vintage 8.7%
+Total IT spending growth,Gartner,consultancy forecast,2026,13.5% (USD 6.31tn),secondary,partly (budget; dominated by data-centre hardware +55.8%),same,
+ISG Index managed-services ACV Americas,ISG,consultancy index,Q2 2026,-12% y/y,secondary (search summary),YES - contract value = p*Q; also mixes cloud,https://ir.isg-one.com/,combined global ACV Q2 2026 USD 42.3bn +43% y/y (XaaS-driven)
+ISG Index managed-services ACV Americas,ISG,consultancy index,2025,crossed USD 23bn (record),secondary,YES,https://ir.isg-one.com/,

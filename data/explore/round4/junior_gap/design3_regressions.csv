@@ -1,0 +1,4 @@
+spec,n,intercept,intercept_se,slope,slope_se,firms
+all firms: raw post change on raw boom,9,-8.453,2.62,-0.353,0.157,"infosys,tcs,hcltech,wipro,techm,ltimindtree,persistent,mphasis,hexaware"
+large firms: dev_post on raw boom,6,-2.77,2.187,0.137,0.177,"infosys,tcs,hcltech,wipro,techm,ltimindtree"
+firms with hires data: raw post change on hires ratio,6,13.878,27.865,-13.994,15.569,"infosys,wipro,techm,persistent,mphasis,hexaware"

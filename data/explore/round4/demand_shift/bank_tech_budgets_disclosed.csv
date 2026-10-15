@@ -1,0 +1,8 @@
+bank,year,total_tech_spend_usd_bn,status,source_type,source_url,notes
+JPM,2021,~12,secondary (press reporting company guidance),press,https://www.theblock.co/linked/130437,"'roughly $12 billion it spent on technology last year', guided up to +20% for 2022"
+JPM,2023,>15,secondary,press,https://www.thestack.technology/jpmorgan-technology-spend-2023/,"'above $15 billion', ~18% of ~$81bn expense"
+JPM,2024,17,secondary (press reporting investor day),press,https://fortune.com/2024/05/20/jpmorgan-nvidia-of-banking-tech-mike-mayo,Zacks: +9.6% y/y; JPM has broadened the definition of tech spend over time (InvestmentNews)
+JPM,2025,~18,NOT CONFIRMED (implied: 19.8/1.10),derived,,
+JPM,2026,19.8 (budget),secondary (press reporting Feb-2026 company update),press,https://www.aol.com/news/jpmorgan-spend-almost-20-billion-000403027.html,"~+10% vs 2025; $1.2bn of new investment incl. AI; part is AI hardware cost inflation"
+BAC,2025,13 (13.5 on fast-facts page),secondary (company annual report per search summary; PDF not opened),company,https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/bofaannualreport2025.pdf,">$4bn on new technology initiatives (2.8bn in 2015)"
+BAC,2026,~14,NOT CONFIRMED (one press report),press,https://www.aol.com/news/jpmorgan-spend-almost-20-billion-000403027.html,

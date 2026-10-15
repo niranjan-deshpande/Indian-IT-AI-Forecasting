@@ -1,0 +1,13 @@
+set,metric,n_firms,agg_cagr_FY23_26,agg_pct_change_FY23_26,note
+mid4,hc,4,5.66,17.96,known acquired heads 4200; agg change ex known acquired heads 14.10%
+mid4,rev_inr_cr,4,15.38,53.6,
+mid4,rev_usd_mn,4,11.7,39.38,
+ERD_5,hc,5,1.32,4.0,known acquired heads 2700; agg change ex known acquired heads 0.24%
+ERD_5,rev_inr_cr,5,10.62,35.37,
+ERD_5,rev_usd_mn,4,7.73,25.02,
+ITservices_ex_mid4_7,hc,7,2.38,7.32,known acquired heads 1350; agg change ex known acquired heads 4.93%
+ITservices_ex_mid4_7,rev_inr_cr,7,8.86,29.0,
+ITservices_ex_mid4_7,rev_usd_mn,5,4.38,13.74,
+ITeS_BPM_5,hc,5,10.83,36.15,known acquired heads 7432; agg change ex known acquired heads 28.72%
+ITeS_BPM_5,rev_inr_cr,5,15.76,55.11,
+ITeS_BPM_5,rev_usd_mn,3,13.89,47.72,

@@ -1,0 +1,347 @@
+firm,cal_q,dimension,g,basis,line
+hcltech,2024Q1,Engineering and R&D Services,6.203539091945264,cc,HCL_ERD
+accenture,2017Q3,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+accenture,2018Q4,Consulting,9.531017980432486,cc,ACN_Consulting
+accenture,2018Q4,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2019Q1,Consulting,8.617769624105232,cc,ACN_Consulting
+accenture,2018Q1,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+accenture,2018Q3,Consulting,11.332868530700317,cc,ACN_Consulting
+accenture,2018Q1,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2018Q3,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2019Q1,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+hcltech,2020Q2,IT and Business Services,-5.7629112836636365,cc,HCL_ITBS
+accenture,2007Q3,Consulting,27.76317365982795,cc,ACN_Consulting
+accenture,2007Q2,Consulting,8.617769624105232,cc,ACN_Consulting
+accenture,2007Q2,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2007Q1,Consulting,8.617769624105232,cc,ACN_Consulting
+accenture,2009Q4,Outsourcing,-5.129329438755054,cc,ACN_ManagedSvcs
+accenture,2007Q4,Outsourcing,13.102826240640411,cc,ACN_ManagedSvcs
+accenture,2009Q4,Consulting,-17.435338714477773,cc,ACN_Consulting
+accenture,2015Q1,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2015Q1,Outsourcing,12.221763272424921,cc,ACN_ManagedSvcs
+accenture,2014Q4,Outsourcing,13.102826240640411,cc,ACN_ManagedSvcs
+accenture,2007Q3,Outsourcing,11.332868530700317,cc,ACN_ManagedSvcs
+hcltech,2020Q2,Engineering and R&D Services,-5.234648037220918,cc,HCL_ERD
+accenture,2020Q3,Outsourcing,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2020Q3,Consulting,-8.338160893905105,cc,ACN_Consulting
+accenture,2023Q4,Consulting,-2.020270731751945,cc,ACN_Consulting
+hcltech,2023Q4,IT and Business Services,4.210117601863539,cc,HCL_ITBS
+hcltech,2023Q3,Engineering and R&D Services,-2.020270731751945,cc,HCL_ERD
+hcltech,2022Q1,IT and Business Services,15.01426584297195,cc,HCL_ITBS
+hcltech,2022Q1,Engineering and R&D Services,21.268909341035084,cc,HCL_ERD
+hcltech,2023Q3,IT and Business Services,4.497336564273115,cc,HCL_ITBS
+accenture,2026Q1,Consulting,2.95588022415444,cc,ACN_Consulting
+hcltech,2020Q1,Engineering and R&D Services,9.712671073072274,cc,HCL_ERD
+hcltech,2020Q1,IT and Business Services,6.015392281974709,cc,HCL_ITBS
+accenture,2020Q1,Consulting,7.696104113612832,cc,ACN_Consulting
+accenture,2020Q1,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+hcltech,2019Q4,Engineering and R&D Services,12.044615307586716,cc,HCL_ERD
+accenture,2018Q2,Consulting,11.332868530700317,cc,ACN_Consulting
+accenture,2018Q2,Outsourcing,9.531017980432486,cc,ACN_ManagedSvcs
+hcltech,2019Q4,IT and Business Services,9.893994785490358,cc,HCL_ITBS
+accenture,2020Q2,Consulting,-2.020270731751945,cc,ACN_Consulting
+accenture,2019Q3,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+hcltech,2019Q2,Engineering and R&D Services,12.486898204586927,cc,HCL_ERD
+hcltech,2019Q2,IT and Business Services,16.636153721522525,cc,HCL_ITBS
+accenture,2019Q3,Consulting,6.765864847381481,cc,ACN_Consulting
+accenture,2020Q2,Outsourcing,4.879016416943201,cc,ACN_ManagedSvcs
+accenture,2012Q1,Consulting,7.696104113612832,cc,ACN_Consulting
+accenture,2023Q4,Managed Services,4.879016416943201,cc,ACN_ManagedSvcs
+accenture,2012Q1,Outsourcing,18.232155679395465,cc,ACN_ManagedSvcs
+accenture,2007Q4,Consulting,11.332868530700317,cc,ACN_Consulting
+accenture,2010Q3,Outsourcing,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2010Q2,Consulting,3.9220713153281297,cc,ACN_Consulting
+accenture,2010Q2,Outsourcing,2.95588022415444,cc,ACN_ManagedSvcs
+accenture,2010Q1,Outsourcing,-6.187540371808747,cc,ACN_ManagedSvcs
+accenture,2011Q3,Consulting,14.842000511827328,cc,ACN_Consulting
+accenture,2014Q4,Consulting,6.765864847381481,cc,ACN_Consulting
+accenture,2015Q4,Outsourcing,4.879016416943201,cc,ACN_ManagedSvcs
+accenture,2019Q4,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+hcltech,2019Q3,Engineering and R&D Services,13.976194237515868,cc,HCL_ERD
+accenture,2010Q3,Consulting,8.617769624105232,cc,ACN_Consulting
+hcltech,2019Q3,IT and Business Services,16.041672140590467,cc,HCL_ITBS
+accenture,2019Q2,Consulting,6.765864847381481,cc,ACN_Consulting
+accenture,2019Q2,Outsourcing,9.531017980432486,cc,ACN_ManagedSvcs
+accenture,2016Q1,Consulting,16.551443847757337,cc,ACN_Consulting
+accenture,2016Q1,Outsourcing,5.826890812397577,cc,ACN_ManagedSvcs
+accenture,2015Q4,Consulting,13.976194237515868,cc,ACN_Consulting
+accenture,2015Q2,Outsourcing,9.531017980432486,cc,ACN_ManagedSvcs
+accenture,2015Q2,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2015Q3,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2015Q3,Consulting,13.102826240640411,cc,ACN_Consulting
+accenture,2019Q4,Consulting,8.617769624105232,cc,ACN_Consulting
+accenture,2010Q4,Consulting,14.842000511827328,cc,ACN_Consulting
+accenture,2011Q1,Outsourcing,13.976194237515868,cc,ACN_ManagedSvcs
+accenture,2011Q1,Consulting,18.232155679395465,cc,ACN_Consulting
+accenture,2008Q1,Outsourcing,10.436001532424278,cc,ACN_ManagedSvcs
+accenture,2008Q1,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2009Q3,Consulting,-12.783337150988489,cc,ACN_Consulting
+accenture,2009Q3,Outsourcing,0.9950330853168083,cc,ACN_ManagedSvcs
+accenture,2009Q2,Consulting,-9.431067947124133,cc,ACN_Consulting
+accenture,2009Q2,Outsourcing,2.95588022415444,cc,ACN_ManagedSvcs
+accenture,2009Q1,Consulting,-1.0050335853501442,cc,ACN_Consulting
+accenture,2009Q1,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2008Q4,Consulting,8.617769624105232,cc,ACN_Consulting
+accenture,2008Q4,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2008Q3,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2008Q3,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2008Q2,Consulting,11.332868530700317,cc,ACN_Consulting
+accenture,2008Q2,Outsourcing,11.332868530700317,cc,ACN_ManagedSvcs
+accenture,2011Q4,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2011Q4,Outsourcing,16.551443847757337,cc,ACN_ManagedSvcs
+accenture,2011Q3,Outsourcing,12.221763272424921,cc,ACN_ManagedSvcs
+accenture,2017Q2,Consulting,5.826890812397577,cc,ACN_Consulting
+accenture,2017Q2,Outsourcing,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2011Q2,Consulting,15.700374880966475,cc,ACN_Consulting
+accenture,2011Q2,Outsourcing,11.332868530700317,cc,ACN_ManagedSvcs
+accenture,2010Q1,Consulting,-9.431067947124133,cc,ACN_Consulting
+accenture,2023Q2,Managed Services,12.221763272424921,cc,ACN_ManagedSvcs
+accenture,2010Q4,Outsourcing,10.436001532424278,cc,ACN_ManagedSvcs
+hcltech,2022Q2,IT and Business Services,16.636153721522525,cc,HCL_ITBS
+accenture,2025Q1,Consulting,5.826890812397577,cc,ACN_Consulting
+accenture,2025Q1,Managed Services,10.436001532424278,cc,ACN_ManagedSvcs
+hcltech,2021Q2,Engineering and R&D Services,10.165365372649983,cc,HCL_ERD
+accenture,2025Q2,Consulting,5.826890812397577,cc,ACN_Consulting
+hcltech,2021Q2,IT and Business Services,12.221763272424921,cc,HCL_ITBS
+hcltech,2024Q4,Engineering and R&D Services,1.0939940038334366,cc,HCL_ERD
+hcltech,2024Q2,IT and Business Services,5.164323315183845,cc,HCL_ITBS
+accenture,2024Q3,Consulting,2.95588022415444,cc,ACN_Consulting
+accenture,2024Q3,Managed Services,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2022Q3,Outsourcing,20.70141693843261,cc,ACN_ManagedSvcs
+accenture,2016Q3,Consulting,12.221763272424921,cc,ACN_Consulting
+accenture,2017Q3,Consulting,6.765864847381481,cc,ACN_Consulting
+accenture,2017Q4,Consulting,10.436001532424278,cc,ACN_Consulting
+accenture,2017Q4,Outsourcing,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2016Q2,Consulting,13.102826240640411,cc,ACN_Consulting
+accenture,2016Q2,Outsourcing,5.826890812397577,cc,ACN_ManagedSvcs
+accenture,2016Q4,Consulting,6.765864847381481,cc,ACN_Consulting
+accenture,2016Q4,Outsourcing,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2007Q1,Outsourcing,11.332868530700317,cc,ACN_ManagedSvcs
+hcltech,2024Q2,Engineering and R&D Services,8.065790301745448,cc,HCL_ERD
+accenture,2016Q3,Outsourcing,5.826890812397577,cc,ACN_ManagedSvcs
+hcltech,2023Q4,Engineering and R&D Services,3.5367143837291324,cc,HCL_ERD
+accenture,2021Q4,Outsourcing,19.06203596086497,cc,ACN_ManagedSvcs
+hcltech,2021Q3,IT and Business Services,12.39859797809912,cc,HCL_ITBS
+hcltech,2022Q2,Engineering and R&D Services,20.70141693843261,cc,HCL_ERD
+accenture,2024Q2,Managed Services,3.9220713153281297,cc,ACN_ManagedSvcs
+hcltech,2021Q4,Engineering and R&D Services,17.98184265758361,cc,HCL_ERD
+accenture,2021Q4,Consulting,27.76317365982795,cc,ACN_Consulting
+accenture,2024Q4,Consulting,5.826890812397577,cc,ACN_Consulting
+hcltech,2024Q4,IT and Business Services,5.638033343610763,cc,HCL_ITBS
+hcltech,2021Q4,IT and Business Services,14.236724128692197,cc,HCL_ITBS
+hcltech,2024Q1,IT and Business Services,6.485097231961631,cc,HCL_ITBS
+hcltech,2024Q3,Engineering and R&D Services,4.210117601863539,cc,HCL_ERD
+accenture,2022Q1,Outsourcing,20.70141693843261,cc,ACN_ManagedSvcs
+accenture,2024Q4,Managed Services,10.436001532424278,cc,ACN_ManagedSvcs
+accenture,2024Q1,Managed Services,2.95588022415444,cc,ACN_ManagedSvcs
+accenture,2024Q1,Consulting,-3.045920748470855,cc,ACN_Consulting
+accenture,2022Q1,Consulting,29.266961396282003,cc,ACN_Consulting
+hcltech,2024Q3,IT and Business Services,6.015392281974709,cc,HCL_ITBS
+accenture,2025Q2,Managed Services,8.617769624105232,cc,ACN_ManagedSvcs
+accenture,2021Q3,Consulting,22.314355131420978,cc,ACN_Consulting
+accenture,2021Q3,Outsourcing,14.842000511827328,cc,ACN_ManagedSvcs
+hcltech,2025Q1,IT and Business Services,1.390290516899142,cc,HCL_ITBS
+hcltech,2021Q3,Engineering and R&D Services,11.955923505763925,cc,HCL_ERD
+hcltech,2025Q1,Engineering and R&D Services,8.157998699242288,cc,HCL_ERD
+accenture,2017Q1,Consulting,4.879016416943201,cc,ACN_Consulting
+accenture,2017Q1,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+accenture,2024Q2,Consulting,-1.0050335853501442,cc,ACN_Consulting
+accenture,2025Q3,Consulting,2.95588022415444,cc,ACN_Consulting
+accenture,2021Q2,Consulting,14.842000511827328,cc,ACN_Consulting
+hcltech,2026Q1,IT and Business Services,4.210117601863539,cc,HCL_ITBS
+hcltech,2022Q3,Engineering and R&D Services,20.13068567050353,cc,HCL_ERD
+hcltech,2022Q4,IT and Business Services,14.236724128692197,cc,HCL_ITBS
+hcltech,2022Q3,IT and Business Services,16.720791898390644,cc,HCL_ITBS
+accenture,2022Q4,Consulting,9.531017980432486,cc,ACN_Consulting
+hcltech,2023Q1,IT and Business Services,10.795714150509228,cc,HCL_ITBS
+accenture,2023Q3,Managed Services,9.531017980432486,cc,ACN_ManagedSvcs
+accenture,2022Q4,Managed Services,18.232155679395465,cc,ACN_ManagedSvcs
+hcltech,2020Q3,IT and Business Services,-1.612938192988363,cc,HCL_ITBS
+accenture,2022Q3,Consulting,19.88508587451652,cc,ACN_Consulting
+hcltech,2022Q4,Engineering and R&D Services,14.842000511827328,cc,HCL_ERD
+accenture,2023Q3,Consulting,-2.020270731751945,cc,ACN_Consulting
+accenture,2022Q2,Outsourcing,20.70141693843261,cc,ACN_ManagedSvcs
+hcltech,2023Q2,IT and Business Services,8.709470685093375,cc,HCL_ITBS
+accenture,2023Q2,Consulting,-1.0050335853501442,cc,ACN_Consulting
+hcltech,2023Q2,Engineering and R&D Services,-1.8163970627671167,cc,HCL_ERD
+hcltech,2023Q1,Engineering and R&D Services,7.045846364856141,cc,HCL_ERD
+accenture,2023Q1,Managed Services,14.842000511827328,cc,ACN_ManagedSvcs
+accenture,2025Q3,Managed Services,5.826890812397577,cc,ACN_ManagedSvcs
+accenture,2023Q1,Consulting,3.9220713153281297,cc,ACN_Consulting
+hcltech,2025Q2,IT and Business Services,2.95588022415444,cc,HCL_ITBS
+accenture,2022Q2,Consulting,26.236426446749107,cc,ACN_Consulting
+hcltech,2025Q3,IT and Business Services,3.7295784743696894,cc,HCL_ITBS
+hcltech,2020Q4,IT and Business Services,1.0939940038334366,cc,HCL_ITBS
+accenture,2026Q2,Consulting,0.9950330853168083,cc,ACN_Consulting
+hcltech,2020Q4,Engineering and R&D Services,-5.234648037220918,cc,HCL_ERD
+hcltech,2026Q1,Engineering and R&D Services,3.7295784743696894,cc,HCL_ERD
+hcltech,2025Q4,Engineering and R&D Services,10.255658832509209,cc,HCL_ERD
+accenture,2025Q4,Managed Services,6.765864847381481,cc,ACN_ManagedSvcs
+accenture,2020Q4,Outsourcing,7.696104113612832,cc,ACN_ManagedSvcs
+hcltech,2021Q1,IT and Business Services,3.633192924739028,cc,HCL_ITBS
+hcltech,2021Q1,Engineering and R&D Services,-2.7371196796131994,cc,HCL_ERD
+accenture,2026Q2,Managed Services,4.879016416943201,cc,ACN_ManagedSvcs
+hcltech,2025Q2,Engineering and R&D Services,11.154137473290742,cc,HCL_ERD
+accenture,2025Q4,Consulting,2.95588022415444,cc,ACN_Consulting
+accenture,2020Q4,Consulting,-2.020270731751945,cc,ACN_Consulting
+accenture,2021Q1,Outsourcing,10.436001532424278,cc,ACN_ManagedSvcs
+accenture,2026Q1,Managed Services,4.879016416943201,cc,ACN_ManagedSvcs
+hcltech,2026Q2,IT and Business Services,4.114194333117518,cc,HCL_ITBS
+accenture,2021Q2,Outsourcing,14.842000511827328,cc,ACN_ManagedSvcs
+hcltech,2025Q3,Engineering and R&D Services,12.575120530556033,cc,HCL_ERD
+hcltech,2026Q2,Engineering and R&D Services,0.2995508979798479,cc,HCL_ERD
+hcltech,2020Q3,Engineering and R&D Services,-7.042246429654588,cc,HCL_ERD
+hcltech,2025Q4,IT and Business Services,3.7295784743696894,cc,HCL_ITBS
+accenture,2021Q1,Consulting,0.9950330853168083,cc,ACN_Consulting
+techm,2022Q3,BPS,28.217093544350032,level_reported_ccy,TECHM_BPS
+techm,2021Q1,BPS,25.123333185721396,level_reported_ccy,TECHM_BPS
+techm,2022Q1,BPS,36.58014924600074,level_reported_ccy,TECHM_BPS
+techm,2021Q4,BPS,31.636941013656195,level_reported_ccy,TECHM_BPS
+techm,2021Q3,BPS,31.52512811383275,level_reported_ccy,TECHM_BPS
+techm,2021Q2,BPS,46.86844793986044,level_reported_ccy,TECHM_BPS
+techm,2018Q4,BPS,19.771387607894088,level_reported_ccy,TECHM_BPS
+techm,2020Q2,BPS,-7.323839847985843,level_reported_ccy,TECHM_BPS
+techm,2020Q3,BPS,11.928021886816644,level_reported_ccy,TECHM_BPS
+techm,2019Q2,BPS,25.805088632838746,level_reported_ccy,TECHM_BPS
+techm,2020Q1,BPS,4.668800838263549,level_reported_ccy,TECHM_BPS
+techm,2019Q4,BPS,22.859142663473925,level_reported_ccy,TECHM_BPS
+techm,2022Q2,BPS,30.69569505858358,level_reported_ccy,TECHM_BPS
+techm,2019Q3,BPS,24.00228474768354,level_reported_ccy,TECHM_BPS
+techm,2020Q4,BPS,10.856247327121963,level_reported_ccy,TECHM_BPS
+techm,2022Q4,BPS,28.8526659817664,level_reported_ccy,TECHM_BPS
+techm,2022Q1,IT,19.994089241365952,level_reported_ccy,TECHM_IT
+techm,2020Q1,IT,6.683539288235059,level_reported_ccy,TECHM_IT
+techm,2024Q1,IT,-7.410145183346985,level_reported_ccy,TECHM_IT
+techm,2023Q4,IT,-5.3660520875762705,level_reported_ccy,TECHM_IT
+techm,2018Q3,BPS,24.81529433972153,level_reported_ccy,TECHM_BPS
+techm,2023Q3,IT,-4.176043186066513,level_reported_ccy,TECHM_IT
+techm,2023Q2,IT,0.9975748556332231,level_reported_ccy,TECHM_IT
+techm,2019Q3,IT,3.2085671338939927,level_reported_ccy,TECHM_IT
+techm,2023Q1,IT,10.77235240943899,level_reported_ccy,TECHM_IT
+techm,2022Q4,IT,16.540596886505945,level_reported_ccy,TECHM_IT
+techm,2022Q3,IT,17.423391218278613,level_reported_ccy,TECHM_IT
+techm,2021Q4,IT,15.20281464744944,level_reported_ccy,TECHM_IT
+techm,2021Q3,IT,12.871239308399154,level_reported_ccy,TECHM_IT
+techm,2021Q2,IT,7.471905217983836,level_reported_ccy,TECHM_IT
+techm,2021Q1,IT,0.05651314080896348,level_reported_ccy,TECHM_IT
+techm,2020Q4,IT,-1.343590269682769,level_reported_ccy,TECHM_IT
+techm,2020Q3,IT,2.3409184876297444,level_reported_ccy,TECHM_IT
+techm,2020Q2,IT,6.282923264745301,level_reported_ccy,TECHM_IT
+techm,2022Q2,IT,20.81016406182182,level_reported_ccy,TECHM_IT
+techm,2018Q2,BPS,26.24130620146106,level_reported_ccy,TECHM_BPS
+cognizant,2024Q2,Consulting and technology services,1.5407615076822587,level_reported_ccy,CTSH_ConsultTech
+techm,2017Q4,BPS,16.19963169935412,level_reported_ccy,TECHM_BPS
+cognizant,2024Q1,Consulting and technology services,-1.043604825893712,level_reported_ccy,CTSH_ConsultTech
+cognizant,2023Q3,Consulting and technology services,-0.8894804155569869,level_reported_ccy,CTSH_ConsultTech
+cognizant,2023Q2,Consulting and technology services,-2.4152610078730286,level_reported_ccy,CTSH_ConsultTech
+cognizant,2022Q3,Consulting and technology services,1.9540280603522593,level_reported_ccy,CTSH_ConsultTech
+cognizant,2022Q2,Consulting and technology services,7.706423897938494,level_reported_ccy,CTSH_ConsultTech
+cognizant,2022Q1,Consulting and technology services,11.729343956337228,level_reported_ccy,CTSH_ConsultTech
+cognizant,2021Q3,Consulting and technology services,12.373718130246147,level_reported_ccy,CTSH_ConsultTech
+cognizant,2021Q2,Consulting and technology services,15.57193075998849,level_reported_ccy,CTSH_ConsultTech
+cognizant,2021Q1,Consulting and technology services,6.718519228994603,level_reported_ccy,CTSH_ConsultTech
+cognizant,2020Q3,Consulting and technology services,4.3316903360704675,level_reported_ccy,CTSH_ConsultTech
+cognizant,2020Q2,Consulting and technology services,0.6533302128218973,level_reported_ccy,CTSH_ConsultTech
+cognizant,2020Q1,Consulting and technology services,5.570447236458565,level_reported_ccy,CTSH_ConsultTech
+cognizant,2019Q3,Consulting and technology services,7.337853318149631,level_reported_ccy,CTSH_ConsultTech
+techm,2024Q2,IT,-3.0313581879056906,level_reported_ccy,TECHM_IT
+cognizant,2019Q2,Consulting and technology services,6.560422603820401,level_reported_ccy,CTSH_ConsultTech
+cognizant,2024Q3,Consulting and technology services,6.532411585246926,level_reported_ccy,CTSH_ConsultTech
+cognizant,2025Q1,Consulting and technology services,8.77443288449556,level_reported_ccy,CTSH_ConsultTech
+cognizant,2025Q2,Consulting and technology services,9.755524750851006,level_reported_ccy,CTSH_ConsultTech
+cognizant,2025Q3,Consulting and technology services,7.980423200884769,level_reported_ccy,CTSH_ConsultTech
+cognizant,2020Q3,Outsourcing services,-7.0532389547486005,level_reported_ccy,CTSH_Outsourcing
+techm,2017Q2,BPS,-3.3089916263427166,level_reported_ccy,TECHM_BPS
+techm,2017Q1,BPS,7.028129730816192,level_reported_ccy,TECHM_BPS
+techm,2016Q4,BPS,-0.48519863201595714,level_reported_ccy,TECHM_BPS
+techm,2016Q3,BPS,-4.699346684414267,level_reported_ccy,TECHM_BPS
+techm,2016Q2,BPS,8.141603079341952,level_reported_ccy,TECHM_BPS
+techm,2019Q1,BPS,28.369648311822743,level_reported_ccy,TECHM_BPS
+techm,2018Q1,BPS,12.911134663243113,level_reported_ccy,TECHM_BPS
+cognizant,2020Q2,Outsourcing services,-9.689967768114666,level_reported_ccy,CTSH_Outsourcing
+techm,2026Q1,IT,11.126838027932989,level_reported_ccy,TECHM_IT
+cognizant,2020Q1,Outsourcing services,-1.3613705368710294,level_reported_ccy,CTSH_Outsourcing
+cognizant,2019Q1,Consulting and technology services,6.031333776722861,level_reported_ccy,CTSH_ConsultTech
+cognizant,2019Q2,Outsourcing services,-1.16960397631913,level_reported_ccy,CTSH_Outsourcing
+cognizant,2019Q1,Outsourcing services,3.408401677973652,level_reported_ccy,CTSH_Outsourcing
+cognizant,2026Q2,Consulting and technology services,3.735775369045221,level_reported_ccy,CTSH_ConsultTech
+cognizant,2026Q1,Consulting and technology services,7.894524841988194,level_reported_ccy,CTSH_ConsultTech
+cognizant,2019Q3,Outsourcing services,-0.522497560247796,level_reported_ccy,CTSH_Outsourcing
+techm,2024Q3,IT,1.745529858408641,level_reported_ccy,TECHM_IT
+cognizant,2025Q2,Outsourcing services,4.40599897940305,level_reported_ccy,CTSH_Outsourcing
+techm,2025Q1,IT,3.346450921656362,level_reported_ccy,TECHM_IT
+techm,2018Q1,IT,6.760998746610632,level_reported_ccy,TECHM_IT
+techm,2018Q2,IT,11.003398175947538,level_reported_ccy,TECHM_IT
+techm,2018Q3,IT,11.669634227175834,level_reported_ccy,TECHM_IT
+techm,2018Q4,IT,13.474797494667182,level_reported_ccy,TECHM_IT
+techm,2017Q3,BPS,7.2031608035262344,level_reported_ccy,TECHM_BPS
+cognizant,2021Q1,Outsourcing services,-0.059612520394269085,level_reported_ccy,CTSH_Outsourcing
+cognizant,2021Q2,Outsourcing services,10.510124679456434,level_reported_ccy,CTSH_Outsourcing
+cognizant,2021Q3,Outsourcing services,9.127045993541365,level_reported_ccy,CTSH_Outsourcing
+cognizant,2022Q1,Outsourcing services,5.001042057466141,level_reported_ccy,CTSH_Outsourcing
+techm,2024Q4,IT,-0.33139601664309154,level_reported_ccy,TECHM_IT
+techm,2017Q4,IT,1.775317167085243,level_reported_ccy,TECHM_IT
+cognizant,2022Q3,Outsourcing services,3.032236801999335,level_reported_ccy,CTSH_Outsourcing
+cognizant,2023Q2,Outsourcing services,2.947811695446279,level_reported_ccy,CTSH_Outsourcing
+cognizant,2023Q3,Outsourcing services,3.638739745238937,level_reported_ccy,CTSH_Outsourcing
+cognizant,2024Q1,Outsourcing services,-1.1567190387932504,level_reported_ccy,CTSH_Outsourcing
+cognizant,2024Q2,Outsourcing services,-4.5675064169328605,level_reported_ccy,CTSH_Outsourcing
+cognizant,2024Q3,Outsourcing services,-3.087166366708703,level_reported_ccy,CTSH_Outsourcing
+cognizant,2025Q1,Outsourcing services,4.548699673452817,level_reported_ccy,CTSH_Outsourcing
+cognizant,2025Q3,Outsourcing services,5.510888803113251,level_reported_ccy,CTSH_Outsourcing
+cognizant,2026Q1,Outsourcing services,1.7318722028728282,level_reported_ccy,CTSH_Outsourcing
+cognizant,2026Q2,Outsourcing services,5.605028093031518,level_reported_ccy,CTSH_Outsourcing
+cognizant,2023Q1,Consulting and technology services,-2.546012873363953,level_reported_ccy,CTSH_ConsultTech
+cognizant,2023Q1,Outsourcing services,3.511087875704359,level_reported_ccy,CTSH_Outsourcing
+techm,2017Q3,IT,5.852762163348247,level_reported_ccy,TECHM_IT
+cognizant,2022Q2,Outsourcing services,5.17307716092563,level_reported_ccy,CTSH_Outsourcing
+techm,2017Q1,IT,8.618548036942533,level_reported_ccy,TECHM_IT
+techm,2025Q2,IT,3.484276453751181,level_reported_ccy,TECHM_IT
+techm,2017Q2,IT,6.486961685756966,level_reported_ccy,TECHM_IT
+techm,2025Q3,IT,5.612264370628553,level_reported_ccy,TECHM_IT
+techm,2025Q4,IT,8.007031192790578,level_reported_ccy,TECHM_IT
+techm,2019Q4,IT,6.123999827641513,level_reported_ccy,TECHM_IT
+techm,2019Q2,IT,2.522252184189027,level_reported_ccy,TECHM_IT
+techm,2023Q1,BPS,23.160017843173446,level_reported_ccy,TECHM_BPS
+techm,2026Q1,BPS,16.086662179269517,level_reported_ccy,TECHM_BPS
+techm,2023Q2,BPS,19.188310289047863,level_reported_ccy,TECHM_BPS
+techm,2023Q3,BPS,10.964339962956359,level_reported_ccy,TECHM_BPS
+techm,2023Q4,BPS,-0.8721438243650601,level_reported_ccy,TECHM_BPS
+techm,2024Q1,BPS,-0.22411600864336495,level_reported_ccy,TECHM_BPS
+techm,2026Q2,IT,16.203495718575223,level_reported_ccy,TECHM_IT
+techm,2024Q3,BPS,12.481593341870244,level_reported_ccy,TECHM_BPS
+techm,2024Q2,BPS,8.906882805964054,level_reported_ccy,TECHM_BPS
+techm,2016Q4,IT,13.028988028947264,level_reported_ccy,TECHM_IT
+techm,2016Q2,IT,9.602046228071504,level_reported_ccy,TECHM_IT
+techm,2019Q1,IT,8.276295760063816,level_reported_ccy,TECHM_IT
+techm,2026Q2,BPS,16.699512391994897,level_reported_ccy,TECHM_BPS
+techm,2016Q3,IT,8.996129571763952,level_reported_ccy,TECHM_IT
+techm,2025Q3,BPS,1.7887944416224624,level_reported_ccy,TECHM_BPS
+techm,2025Q2,BPS,-1.8980403722518697,level_reported_ccy,TECHM_BPS
+techm,2025Q1,BPS,7.0456275360739715,level_reported_ccy,TECHM_BPS
+techm,2024Q4,BPS,10.920108990688787,level_reported_ccy,TECHM_BPS
+techm,2025Q4,BPS,8.010024010746196,level_reported_ccy,TECHM_BPS
+cognizant,2018Q3,Consulting and technology services,6.39133257436528,reported,CTSH_ConsultTech
+cognizant,2015Q3,Outsourcing services,10.526051065749295,reported,CTSH_Outsourcing
+cognizant,2015Q3,Consulting and technology services,29.416103854949004,reported,CTSH_ConsultTech
+cognizant,2015Q2,Outsourcing services,8.80108773227133,reported,CTSH_Outsourcing
+cognizant,2017Q2,Consulting and technology services,10.795714150509228,reported,CTSH_ConsultTech
+cognizant,2017Q2,Outsourcing services,5.448818528406973,reported,CTSH_Outsourcing
+cognizant,2018Q2,Outsourcing services,12.751332029895963,reported,CTSH_Outsourcing
+cognizant,2018Q2,Consulting and technology services,5.826890812397577,reported,CTSH_ConsultTech
+cognizant,2018Q3,Outsourcing services,10.165365372649983,reported,CTSH_Outsourcing
+cognizant,2015Q2,Consulting and technology services,29.862201249011527,reported,CTSH_ConsultTech
+cognizant,2017Q1,Consulting and technology services,10.074990310014305,reported,CTSH_ConsultTech
+cognizant,2018Q1,Consulting and technology services,10.165365372649983,reported,CTSH_ConsultTech
+cognizant,2018Q1,Outsourcing services,9.257918129309319,reported,CTSH_Outsourcing
+cognizant,2017Q3,Consulting and technology services,10.705907229340777,reported,CTSH_ConsultTech
+cognizant,2017Q3,Outsourcing services,5.921185963184608,reported,CTSH_Outsourcing
+cognizant,2016Q3,Outsourcing services,9.803374027136542,reported,CTSH_Outsourcing
+cognizant,2016Q3,Consulting and technology services,6.672363204290818,reported,CTSH_ConsultTech
+cognizant,2016Q2,Outsourcing services,8.709470685093375,reported,CTSH_Outsourcing
+cognizant,2016Q2,Consulting and technology services,8.892620919440152,reported,CTSH_ConsultTech
+cognizant,2016Q1,Outsourcing services,6.015392281974709,reported,CTSH_Outsourcing
+cognizant,2016Q1,Consulting and technology services,12.133228516752496,reported,CTSH_ConsultTech
+cognizant,2015Q1,Consulting and technology services,27.76317365982795,reported,CTSH_ConsultTech
+cognizant,2017Q1,Outsourcing services,10.345870836822998,reported,CTSH_Outsourcing
+cognizant,2015Q1,Outsourcing services,7.510747248680541,reported,CTSH_Outsourcing

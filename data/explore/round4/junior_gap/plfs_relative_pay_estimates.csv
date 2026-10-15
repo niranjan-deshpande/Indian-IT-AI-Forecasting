@@ -1,0 +1,13 @@
+sample,window,pretrend_pp,pretrend_se_pp,change_pp,change_se_pp,deviation_pp,deviation_se_pp
+cws_regular_all_grads,post 2022-23 -> CY2025,-0.755,1.515,-0.103,1.809,0.652,2.36
+cws_regular_all_grads,post 2022-23 -> CY2024,-0.755,1.515,1.794,4.22,2.549,4.484
+cws_regular_all_grads,full cycle 2020-21 -> CY2025,-0.755,1.515,0.814,0.94,1.568,1.783
+cws_regular_nic62_63,post 2022-23 -> CY2025,0.772,2.727,-4.654,3.722,-5.426,4.614
+cws_regular_nic62_63,post 2022-23 -> CY2024,0.772,2.727,-0.474,8.011,-1.247,8.463
+cws_regular_nic62_63,full cycle 2020-21 -> CY2025,0.772,2.727,-4.583,1.593,-5.355,3.158
+cws_regular_nic62_63_grads,post 2022-23 -> CY2025,-0.671,2.695,-4.308,3.711,-3.637,4.587
+cws_regular_nic62_63_grads,post 2022-23 -> CY2024,-0.671,2.695,-0.355,7.805,0.315,8.257
+cws_regular_nic62_63_grads,full cycle 2020-21 -> CY2025,-0.671,2.695,-3.76,1.507,-3.089,3.088
+DiD: nic62_63 minus all_grads,post 2022-23 -> CY2025,,,-4.55,4.138,-6.078,5.182
+DiD: nic62_63 minus all_grads,post 2022-23 -> CY2024,,,-2.268,9.055,-3.796,9.577
+DiD: nic62_63 minus all_grads,full cycle 2020-21 -> CY2025,,,-5.396,1.849,-6.923,3.626

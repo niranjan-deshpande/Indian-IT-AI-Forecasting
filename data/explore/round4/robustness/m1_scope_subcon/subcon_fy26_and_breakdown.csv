@@ -1,0 +1,15 @@
+item,firm,d_subcon_FY24,d_subcon_FY25,d_subcon_FY26,corr_FY24,corr_FY25,corr_FY26,post_mean_per_year,post_mean_ignoring_FY26,delta_vs_FY16_23,delta_vs_FY16_20,window,weighting,m1_uncorrected,m1_corrected,correction,m1_if_FY26_reversal_ignored,fy26_reversal_effect,price_share_of_subcon_fall_needed_for_AI_share_below_20pct,price_share_of_subcon_fall_needed_for_AI_share_below_30pct
+"per-firm correction, k_mid",infosys,-1.623,-0.022,0.696,2.078,0.028,-0.897,0.403,1.053,1.308,1.289,,,,,,,,,
+"per-firm correction, k_mid",wipro,-1.258,-0.237,0.383,1.51,0.287,-0.464,0.445,0.899,-0.378,,,,,,,,,,
+"per-firm correction, k_mid",techm,-2.149,-1.847,-0.281,2.607,2.296,0.354,1.753,2.452,2.016,2.138,,,,,,,,,
+"per-firm correction, k_mid",lti_group,-1.316,-0.285,0.728,1.53,0.334,-0.852,0.337,0.932,0.239,0.337,,,,,,,,,
+"per-firm correction, k_mid",tcs,-2.896,-1.987,0.925,3.631,2.57,-1.204,1.665,3.1,2.047,1.973,,,,,,,,,
+"per-firm correction, k_mid",hcltech,-1.472,-0.31,1.202,1.786,0.38,-1.466,0.233,1.083,-0.327,-0.566,,,,,,,,,
+"top-six M1, k_mid",,,,,,,,,,,,base: FY16-23 vs FY24-26,equal,1.393,2.229,0.836,3.009,-0.78,0.922,0.0
+"top-six M1, k_mid",,,,,,,,,,,,base: FY16-23 vs FY24-26,revenue,1.615,2.696,1.08,3.629,-0.933,1.0,0.353
+"top-six M1, k_mid",,,,,,,,,,,,excl. FY21,equal,0.07,1.077,1.006,1.857,-0.78,0.0,0.0
+"top-six M1, k_mid",,,,,,,,,,,,excl. FY21,revenue,0.419,1.664,1.246,2.597,-0.933,0.144,0.0
+"top-six M1, k_mid",,,,,,,,,,,,excl. FY22-23 (boom),equal,1.968,2.863,0.895,3.709,-0.846,1.0,0.642
+"top-six M1, k_mid",,,,,,,,,,,,excl. FY22-23 (boom),revenue,2.124,3.185,1.061,4.184,-0.999,1.0,0.821
+"top-six M1, k_mid",,,,,,,,,,,,baseline FY16-20 only,equal,1.015,2.095,1.08,2.941,-0.846,0.589,0.0
+"top-six M1, k_mid",,,,,,,,,,,,baseline FY16-20 only,revenue,1.117,2.348,1.231,3.347,-0.999,0.701,0.027

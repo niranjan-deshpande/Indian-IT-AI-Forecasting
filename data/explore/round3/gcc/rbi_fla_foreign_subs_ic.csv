@@ -1,0 +1,7 @@
+census_round,release_date,n_foreign_subsidiaries,prev_fy,cur_fy,ic_exports_prev_rs_cr,ic_exports_cur_rs_cr,all_activity_exports_prev_rs_cr,all_activity_exports_cur_rs_cr,ic_sales_prev_rs_cr,ic_sales_cur_rs_cr,ic_exports_cur_usd_bn_approx,within_round_growth_inr_pct,within_round_growth_usd_pct_approx,source_url
+2019-20,"Apr 01, 2021",18468,2018-19,2019-20,438430.0,500461.0,902179.0,992737.0,590636.0,665456.0,70.4,14.1,12.6,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51367
+2020-21,"Dec 14, 2021",20023,2019-20,2020-21,500458.0,552554.0,1000541.0,1051306.0,656186.0,712892.0,74.6,10.4,5.9,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52719
+2021-22,"Sep 22, 2022",20505,2020-21,2021-22,506176.0,644837.0,1005159.0,1320092.0,679968.0,868560.0,86.5,27.4,26.5,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54408
+2022-23,"Sep 12, 2023",22395,2021-22,2022-23,653856.0,845021.0,1287743.0,1638892.0,939561.0,1185799.0,104.9,29.2,19.6,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=56359
+2023-24,"Oct 11, 2024",25249,2022-23,2023-24,900951.0,1014742.0,1759389.0,1980584.0,1240714.0,1413736.0,122.6,12.6,9.6,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58874
+2024-25,"Oct 29, 2025",26269,2023-24,2024-25,1039829.0,1159637.0,1956625.0,2182335.0,1414635.0,1541022.0,137.2,11.5,9.2,https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61524

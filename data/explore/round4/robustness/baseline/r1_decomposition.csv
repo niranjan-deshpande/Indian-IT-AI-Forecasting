@@ -1,0 +1,46 @@
+cf,label,s_bar_case,s_bar,dg_L,dg_R,dg_Q_from_L,dg_Q_from_R,L_minus_R_route,delta_d,ai_share_of_L_slowdown,m5_used,m5_central,m5_low,m5_high,residual_central_m5,residual_if_m5_low,residual_if_m5_high,residual_R_route_central_m5
+a0,"FY16-20 mean, table_A group rows (synthesis; unmatched firm sets)",low,0.0,-8.343,-7.103,-8.343,-6.903,-1.44,-8.343,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-5.243,-1.023,-8.483,-3.803
+a0,"FY16-20 mean, table_A group rows (synthesis; unmatched firm sets)",central,1.2,-8.343,-7.103,-7.143,-6.903,-0.24,-7.143,0.144,vendor total excl. GCC,-3.1,-7.32,0.14,-4.043,0.177,-7.283,-3.803
+a0,"FY16-20 mean, table_A group rows (synthesis; unmatched firm sets)",high,2.5,-8.343,-7.103,-5.843,-6.903,1.06,-5.843,0.3,vendor total excl. GCC,-3.1,-7.32,0.14,-2.743,1.477,-5.983,-3.803
+b0,"FY16-23 mean, table_A group rows (unmatched firm sets)",low,0.0,-10.103,-7.536,-10.103,-7.336,-2.767,-10.103,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-7.003,-2.783,-10.243,-4.236
+b0,"FY16-23 mean, table_A group rows (unmatched firm sets)",central,1.2,-10.103,-7.536,-8.903,-7.336,-1.567,-8.903,0.119,vendor total excl. GCC,-3.1,-7.32,0.14,-5.803,-1.583,-9.043,-4.236
+b0,"FY16-23 mean, table_A group rows (unmatched firm sets)",high,2.5,-10.103,-7.536,-7.603,-7.336,-0.267,-7.603,0.247,vendor total excl. GCC,-3.1,-7.32,0.14,-4.503,-0.283,-7.743,-4.236
+a,FY16-20 mean (current),low,0.0,-7.772,-7.162,-7.772,-6.962,-0.81,-7.772,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-4.672,-0.452,-7.912,-3.862
+a,FY16-20 mean (current),central,1.2,-7.772,-7.162,-6.572,-6.962,0.39,-6.572,0.154,vendor total excl. GCC,-3.1,-7.32,0.14,-3.472,0.748,-6.712,-3.862
+a,FY16-20 mean (current),high,2.5,-7.772,-7.162,-5.272,-6.962,1.69,-5.272,0.322,vendor total excl. GCC,-3.1,-7.32,0.14,-2.172,2.048,-5.412,-3.862
+b,FY16-23 mean (incl. FY21 dip and FY22-23 boom),low,0.0,-10.615,-8.152,-10.615,-7.952,-2.663,-10.615,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-7.515,-3.295,-10.755,-4.852
+b,FY16-23 mean (incl. FY21 dip and FY22-23 boom),central,1.2,-10.615,-8.152,-9.415,-7.952,-1.463,-9.415,0.113,vendor total excl. GCC,-3.1,-7.32,0.14,-6.315,-2.095,-9.555,-4.852
+b,FY16-23 mean (incl. FY21 dip and FY22-23 boom),high,2.5,-10.615,-8.152,-8.115,-7.952,-0.163,-8.115,0.236,vendor total excl. GCC,-3.1,-7.32,0.14,-5.015,-0.795,-8.255,-4.852
+c,Level trend: FY20 level + FY16-20 mean growth; FY24-26 growth needed to reach trend by FY26,low,0.0,-2.946,-5.711,-2.946,-5.511,2.565,-2.946,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,0.154,4.374,-3.086,-2.411
+c,Level trend: FY20 level + FY16-20 mean growth; FY24-26 growth needed to reach trend by FY26,central,1.2,-2.946,-5.711,-1.746,-5.511,3.765,-1.746,0.407,vendor total excl. GCC,-3.1,-7.32,0.14,1.354,5.574,-1.886,-2.411
+c,Level trend: FY20 level + FY16-20 mean growth; FY24-26 growth needed to reach trend by FY26,high,2.5,-2.946,-5.711,-0.446,-5.511,5.065,-0.446,0.849,vendor total excl. GCC,-3.1,-7.32,0.14,2.654,6.874,-0.586,-2.411
+c_fit,"Level trend: OLS line through FY15/16-FY20 log levels, reach trend by FY26",low,0.0,-3.016,-5.193,-3.016,-4.993,1.976,-3.016,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,0.084,4.304,-3.156,-1.893
+c_fit,"Level trend: OLS line through FY15/16-FY20 log levels, reach trend by FY26",central,1.2,-3.016,-5.193,-1.816,-4.993,3.176,-1.816,0.398,vendor total excl. GCC,-3.1,-7.32,0.14,1.284,5.504,-1.956,-1.893
+c_fit,"Level trend: OLS line through FY15/16-FY20 log levels, reach trend by FY26",high,2.5,-3.016,-5.193,-0.516,-4.993,4.476,-0.516,0.829,vendor total excl. GCC,-3.1,-7.32,0.14,2.584,6.804,-0.656,-1.893
+c21,Level trend anchored at FY21 (COVID dip kept as permanent; only FY22-23 boom treated as pull-forward),low,0.0,-1.648,-3.045,-1.648,-2.845,1.197,-1.648,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,1.452,5.672,-1.788,0.255
+c21,Level trend anchored at FY21 (COVID dip kept as permanent; only FY22-23 boom treated as pull-forward),central,1.2,-1.648,-3.045,-0.448,-2.845,2.397,-0.448,0.728,vendor total excl. GCC,-3.1,-7.32,0.14,2.652,6.872,-0.588,0.255
+c21,Level trend anchored at FY21 (COVID dip kept as permanent; only FY22-23 boom treated as pull-forward),high,2.5,-1.648,-3.045,0.852,-2.845,3.697,0.852,1.517,vendor total excl. GCC,-3.1,-7.32,0.14,3.952,8.172,0.712,0.255
+d,"Decelerating: FY16-20 mean + 7 x slope (slope: FY12-20, TCS+Infosys)",low,0.0,-0.807,0.164,-0.807,0.364,-1.17,-0.807,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,2.293,6.513,-0.947,3.464
+d,"Decelerating: FY16-20 mean + 7 x slope (slope: FY12-20, TCS+Infosys)",central,1.2,-0.807,0.164,0.393,0.364,0.03,0.393,1.488,vendor total excl. GCC,-3.1,-7.32,0.14,3.493,7.713,0.253,3.464
+d,"Decelerating: FY16-20 mean + 7 x slope (slope: FY12-20, TCS+Infosys)",high,2.5,-0.807,0.164,1.693,0.364,1.33,1.693,3.099,vendor total excl. GCC,-3.1,-7.32,0.14,4.793,9.013,1.553,3.464
+d_fe,"Decelerating: slope FY12-20, all Indian firms with data (FE)",low,0.0,-2.07,-0.292,-2.07,-0.092,-1.978,-2.07,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,1.03,5.25,-2.21,3.008
+d_fe,"Decelerating: slope FY12-20, all Indian firms with data (FE)",central,1.2,-2.07,-0.292,-0.87,-0.092,-0.778,-0.87,0.58,vendor total excl. GCC,-3.1,-7.32,0.14,2.23,6.45,-1.01,3.008
+d_fe,"Decelerating: slope FY12-20, all Indian firms with data (FE)",high,2.5,-2.07,-0.292,0.43,-0.092,0.522,0.43,1.208,vendor total excl. GCC,-3.1,-7.32,0.14,3.53,7.75,0.29,3.008
+d13,"Decelerating: slope FY13-20, TCS+Infosys",low,0.0,-4.063,-3.08,-4.063,-2.88,-1.183,-4.063,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-0.963,3.257,-4.203,0.22
+d13,"Decelerating: slope FY13-20, TCS+Infosys",central,1.2,-4.063,-3.08,-2.863,-2.88,0.017,-2.863,0.295,vendor total excl. GCC,-3.1,-7.32,0.14,0.237,4.457,-3.003,0.22
+d13,"Decelerating: slope FY13-20, TCS+Infosys",high,2.5,-4.063,-3.08,-1.563,-2.88,1.317,-1.563,0.615,vendor total excl. GCC,-3.1,-7.32,0.14,1.537,5.757,-1.703,0.22
+d_cc,"Decelerating: as d, but cc revenue uses its own FY12-20 cc slope (Infosys FY12-20 + TCS FY16-20)",low,0.0,-0.807,-4.58,-0.807,-4.38,3.573,-0.807,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,2.293,6.513,-0.947,-1.28
+d_cc,"Decelerating: as d, but cc revenue uses its own FY12-20 cc slope (Infosys FY12-20 + TCS FY16-20)",central,1.2,-0.807,-4.58,0.393,-4.38,4.773,0.393,1.488,vendor total excl. GCC,-3.1,-7.32,0.14,3.493,7.713,0.253,-1.28
+d_cc,"Decelerating: as d, but cc revenue uses its own FY12-20 cc slope (Infosys FY12-20 + TCS FY16-20)",high,2.5,-0.807,-4.58,1.693,-4.38,6.073,1.693,3.099,vendor total excl. GCC,-3.1,-7.32,0.14,4.793,9.013,1.553,-1.28
+d_win,"Decelerating: slope fitted within FY16-20 (top six, FE) [check only: window shows no deceleration]",low,0.0,-12.376,-5.008,-12.376,-4.808,-7.569,-12.376,0.0,vendor total excl. GCC,-3.1,-7.32,0.14,-9.276,-5.056,-12.516,-1.708
+d_win,"Decelerating: slope fitted within FY16-20 (top six, FE) [check only: window shows no deceleration]",central,1.2,-12.376,-5.008,-11.176,-4.808,-6.369,-11.176,0.097,vendor total excl. GCC,-3.1,-7.32,0.14,-8.076,-3.856,-11.316,-1.708
+d_win,"Decelerating: slope fitted within FY16-20 (top six, FE) [check only: window shows no deceleration]",high,2.5,-12.376,-5.008,-9.876,-4.808,-5.069,-9.876,0.202,vendor total excl. GCC,-3.1,-7.32,0.14,-6.776,-2.556,-10.016,-1.708
+e,"DiD: FY16-20 mean + avg(ACN, CTSH) change FY16-20 -> FY24-26",low,0.0,-1.533,-3.068,-1.533,-2.868,1.335,-1.533,0.0,GCC channel only (India-specific),-1.0,-2.5,0.0,-0.533,0.967,-1.533,-1.868
+e,"DiD: FY16-20 mean + avg(ACN, CTSH) change FY16-20 -> FY24-26",central,1.2,-1.533,-3.068,-0.333,-2.868,2.535,-0.333,0.783,GCC channel only (India-specific),-1.0,-2.5,0.0,0.667,2.167,-0.333,-1.868
+e,"DiD: FY16-20 mean + avg(ACN, CTSH) change FY16-20 -> FY24-26",high,2.5,-1.533,-3.068,0.967,-2.868,3.835,0.967,1.63,GCC channel only (India-specific),-1.0,-2.5,0.0,1.967,3.467,0.967,-1.868
+e_acn,DiD with Accenture only,low,0.0,-2.268,-3.108,-2.268,-2.908,0.64,-2.268,0.0,GCC channel only (India-specific),-1.0,-2.5,0.0,-1.268,0.232,-2.268,-1.908
+e_acn,DiD with Accenture only,central,1.2,-2.268,-3.108,-1.068,-2.908,1.84,-1.068,0.529,GCC channel only (India-specific),-1.0,-2.5,0.0,-0.068,1.432,-1.068,-1.908
+e_acn,DiD with Accenture only,high,2.5,-2.268,-3.108,0.232,-2.908,3.14,0.232,1.102,GCC channel only (India-specific),-1.0,-2.5,0.0,1.232,2.732,0.232,-1.908
+e_ctsh,DiD with Cognizant only,low,0.0,-0.799,-3.028,-0.799,-2.828,2.03,-0.799,0.0,GCC channel only (India-specific),-1.0,-2.5,0.0,0.201,1.701,-0.799,-1.828
+e_ctsh,DiD with Cognizant only,central,1.2,-0.799,-3.028,0.401,-2.828,3.23,0.401,1.502,GCC channel only (India-specific),-1.0,-2.5,0.0,1.401,2.901,0.401,-1.828
+e_ctsh,DiD with Cognizant only,high,2.5,-0.799,-3.028,1.701,-2.828,4.53,1.701,3.13,GCC channel only (India-specific),-1.0,-2.5,0.0,2.701,4.201,1.701,-1.828

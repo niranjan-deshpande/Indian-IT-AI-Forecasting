@@ -1,0 +1,8 @@
+series,windows,pre_years,post_years,pre_exports_growth,pre_employment_growth,pre_rpw_growth,post_exports_growth,post_employment_growth,post_rpw_growth,delta,delta_se_plfs,delta_lo95,delta_hi95
+BoP computer services / PLFS NIC 62+63,main: 2017-18->2022-23 vs 2022-23->CY2025,5.0,2.5,12.92,16.9,-3.98,10.83,1.63,9.2,13.18,2.15,8.97,17.4
+BoP computer services / PLFS NIC 62+63,avoid 2025 design break: post 2022-23->CY2024,5.0,1.5,12.92,16.9,-3.98,10.17,3.21,6.96,10.93,5.54,0.08,21.79
+BoP computer services / PLFS NIC 62+63,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",3.0,0.5,9.54,10.46,-0.92,13.17,-7.87,21.05,21.97,20.83,-18.85,62.79
+BoP computer services / PLFS NIC 62+63,"pre within design A, post 2022-23->CY2025",3.0,2.5,9.54,10.46,-0.92,10.83,1.63,9.2,10.12,3.56,3.15,17.1
+BoP computer services / PLFS NIC 62+63,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,4.0,2.5,13.94,19.21,-5.27,10.83,1.63,9.2,14.47,2.28,10.0,18.94
+RBI survey total / PLFS NIC 62+63+822,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,4.0,2.5,10.94,18.81,-7.87,6.04,1.75,4.28,12.15,2.22,7.8,16.5
+RBI survey total / PLFS NIC 62+63,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,4.0,2.5,10.94,19.21,-8.26,6.04,1.63,4.41,12.67,2.28,8.2,17.15

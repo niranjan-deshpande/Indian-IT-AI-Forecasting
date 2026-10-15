@@ -1,0 +1,29 @@
+segment,firm,fy,low,central,high,rule,evidence
+IT,TCS,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,HCLTech,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,LTIMindtree,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,Infosys,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,Wipro,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,TechM,FY24,0.0,0.0,0.25,FY24: no quantified AI give-back by any firm; HCL 'two to three years away'; TCS 'pricing environment is stable',HCLTech-26;Accenture-14
+IT,TCS,FY25,0.0,0.078,0.5,R3: g=G/T (10-15% over 3-5 yrs) x k x c_t,TCS-31;TCS-40;TCS-41;TCS-43;TCS-23
+IT,HCLTech,FY25,0,0,0.25,R1: stated 2-3%/yr net of baseline from FY27; 'very little' in reported numbers to FY26,HCLTech-26;HCLTech-47;HCLTech-52;HCLTech-53;HCLTech-54;HCLTech-55;NEW-HCL-Q4FY26-a;NEW-HCL-Q4FY26-b
+IT,LTIMindtree,FY25,0.25,0.5,1.0,"judgement: single top-client give-backs (TMC -5.5% QoQ Q3FY25; top BFSI account FY26), no % on portfolio",LTIMindtree-19;LTIMindtree-20;LTIMindtree-34;LTIMindtree-38;LTIMindtree-40;LTIMindtree-41
+IT,Infosys,FY25,0,0.096,0.192,R4: mean of quantifying firms (0 to 2x),NEW-INFY-Q4FY26-a;NEW-INFY-Q4FY26-b;NEW-INFY-Q4FY26-c;Infosys-23;Infosys-30
+IT,Wipro,FY25,0,0.096,0.192,R4: mean of quantifying firms (0 to 2x),(no quantified statement 2023-Q1FY27)
+IT,TechM,FY25,0,0.096,0.192,R4: mean of quantifying firms (0 to 2x),TechM-37 (7% AI-only delivery productivity FY26);TechM-43
+IT,TCS,FY26,0.0,0.469,2.25,R3: g=G/T (10-15% over 3-5 yrs) x k x c_t,TCS-31;TCS-40;TCS-41;TCS-43;TCS-23
+IT,HCLTech,FY26,0,0.25,0.5,R1: stated 2-3%/yr net of baseline from FY27; 'very little' in reported numbers to FY26,HCLTech-26;HCLTech-47;HCLTech-52;HCLTech-53;HCLTech-54;HCLTech-55;NEW-HCL-Q4FY26-a;NEW-HCL-Q4FY26-b
+IT,LTIMindtree,FY26,0.25,0.75,1.5,"judgement: single top-client give-backs (TMC -5.5% QoQ Q3FY25; top BFSI account FY26), no % on portfolio",LTIMindtree-19;LTIMindtree-20;LTIMindtree-34;LTIMindtree-38;LTIMindtree-40;LTIMindtree-41
+IT,Infosys,FY26,0,0.431,0.862,R4: mean of quantifying firms (0 to 2x),NEW-INFY-Q4FY26-a;NEW-INFY-Q4FY26-b;NEW-INFY-Q4FY26-c;Infosys-23;Infosys-30
+IT,Wipro,FY26,0,0.431,0.862,R4: mean of quantifying firms (0 to 2x),(no quantified statement 2023-Q1FY27)
+IT,TechM,FY26,0,0.431,0.862,R4: mean of quantifying firms (0 to 2x),TechM-37 (7% AI-only delivery productivity FY26);TechM-43
+IT,TCS,FY27,0.0,0.938,2.0,R3: g=G/T (10-15% over 3-5 yrs) x k x c_t; high capped at 2.0 by Q2FY27 'broadly stable',TCS-31;TCS-40;TCS-41;TCS-43;TCS-23;EXT-TCS-Q2FY27-a;EXT-TCS-Q2FY27-b
+IT,HCLTech,FY27,2.0,2.5,3.0,R1: stated 2-3%/yr net of baseline from FY27; 'very little' in reported numbers to FY26,HCLTech-26;HCLTech-47;HCLTech-52;HCLTech-53;HCLTech-54;HCLTech-55;NEW-HCL-Q4FY26-a;NEW-HCL-Q4FY26-b
+IT,LTIMindtree,FY27,1.2,2.062,3.15,R2: D=15% same scope vs a year earlier x r x a,LTIMindtree-46;NEW-LTIM-Q1FY27-a;LTIMindtree-45
+IT,Infosys,FY27,0,1.51,3.02,R4: mean of quantifying firms (0 to 2x),NEW-INFY-Q4FY26-a;NEW-INFY-Q4FY26-b;NEW-INFY-Q4FY26-c;Infosys-23;Infosys-30
+IT,Wipro,FY27,0,1.51,3.02,R4: mean of quantifying firms (0 to 2x),(no quantified statement 2023-Q1FY27)
+IT,TechM,FY27,0,1.51,3.02,R4: mean of quantifying firms (0 to 2x),TechM-37 (7% AI-only delivery productivity FY26);TechM-43
+BPO,Sagility (only quantifying BPO firm),FY24,0.0,0.0,0.25,gross cannibalisation minus pre-AI 100-150 bps (incl. offshoring),EXT-BPO-00;EXT-BPO-01;EXT-BPO-09;EXT-BPO-12;EXT-BPO-21 (eClerx: no annual pass-back asked)
+BPO,Sagility (only quantifying BPO firm),FY25,0.0,0.5,1.0,gross cannibalisation minus pre-AI 100-150 bps (incl. offshoring),EXT-BPO-00;EXT-BPO-01;EXT-BPO-09;EXT-BPO-12;EXT-BPO-21 (eClerx: no annual pass-back asked)
+BPO,Sagility (only quantifying BPO firm),FY26,0.0,0.5,1.0,gross cannibalisation minus pre-AI 100-150 bps (incl. offshoring),EXT-BPO-00;EXT-BPO-01;EXT-BPO-09;EXT-BPO-12;EXT-BPO-21 (eClerx: no annual pass-back asked)
+BPO,Sagility (only quantifying BPO firm),FY27,0.25,1.0,3.0,gross cannibalisation minus pre-AI 100-150 bps (incl. offshoring),EXT-BPO-00;EXT-BPO-01;EXT-BPO-09;EXT-BPO-12;EXT-BPO-21 (eClerx: no annual pass-back asked)

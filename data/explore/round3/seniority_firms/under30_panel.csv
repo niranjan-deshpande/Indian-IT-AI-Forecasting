@@ -1,0 +1,68 @@
+firm,fy,hc_share_lt30,hires_share_lt30,source,note
+coforge,2024,,,midtier_age_tables.csv,India incl. contract staff
+coforge,2025,36.65,,midtier_age_tables.csv,India incl. contract staff
+coforge,2026,36.59,,midtier_age_tables.csv,India incl. contract staff
+hcltech,2020,40.0,,data/explore/workforce (ESG/GRI annexes),
+hcltech,2021,37.91,56.96,data/explore/workforce (ESG/GRI annexes),
+hcltech,2022,39.71,55.82,data/explore/workforce (ESG/GRI annexes),
+hcltech,2023,41.33,,data/explore/workforce (ESG/GRI annexes),
+hcltech,2024,39.23,58.91,data/explore/workforce (ESG/GRI annexes),
+hcltech,2025,35.61,53.5,data/explore/workforce (ESG/GRI annexes),
+hcltech,2026,34.3,58.3,data/explore/workforce (ESG/GRI annexes),
+hexaware,2021,42.7,56.2,midtier_age_tables.csv,calendar year (CY=fy)
+hexaware,2022,46.94,63.0,midtier_age_tables.csv,calendar year (CY=fy)
+hexaware,2023,42.01,58.77,midtier_age_tables.csv,calendar year (CY=fy)
+hexaware,2024,44.3,63.79,midtier_age_tables.csv,calendar year (CY=fy)
+hexaware,2025,42.54,59.59,midtier_age_tables.csv,calendar year (CY=fy)
+infosys,2019,58.52,77.11,data/explore/workforce (ESG/GRI annexes),
+infosys,2020,57.7,80.36,data/explore/workforce (ESG/GRI annexes),
+infosys,2021,55.39,74.82,data/explore/workforce (ESG/GRI annexes),
+infosys,2022,59.64,78.95,data/explore/workforce (ESG/GRI annexes),
+infosys,2023,59.62,73.21,data/explore/workforce (ESG/GRI annexes),
+infosys,2024,54.73,60.15,data/explore/workforce (ESG/GRI annexes),
+infosys,2025,52.46,70.08,data/explore/workforce (ESG/GRI annexes),
+infosys,2026,50.71,73.37,data/explore/workforce (ESG/GRI annexes),
+lti,2019,48.63,,data/explore/workforce (ESG/GRI annexes),
+lti,2020,46.43,64.64,data/explore/workforce (ESG/GRI annexes),
+lti,2021,,59.1,data/explore/workforce (ESG/GRI annexes),
+ltimindtree,2023,44.48,48.76,data/explore/workforce (ESG/GRI annexes),
+ltimindtree,2024,39.02,49.61,data/explore/workforce (ESG/GRI annexes),
+ltimindtree,2025,35.74,50.9,data/explore/workforce (ESG/GRI annexes),
+ltimindtree,2026,35.04,56.77,data/explore/workforce (ESG/GRI annexes),
+mindtree,2019,48.47,64.01,data/explore/workforce (ESG/GRI annexes),
+mindtree,2020,48.9,66.47,data/explore/workforce (ESG/GRI annexes),
+mindtree,2021,45.81,57.8,data/explore/workforce (ESG/GRI annexes),
+mindtree,2022,51.85,63.03,data/explore/workforce (ESG/GRI annexes),
+mphasis,2020,,,midtier_age_tables.csv,global; FY21 derived from level rows
+mphasis,2021,39.16,47.91,midtier_age_tables.csv,global; FY21 derived from level rows
+mphasis,2022,45.57,55.65,midtier_age_tables.csv,global; FY21 derived from level rows
+mphasis,2023,45.12,55.67,midtier_age_tables.csv,global; FY21 derived from level rows
+mphasis,2024,44.86,62.2,midtier_age_tables.csv,global; FY21 derived from level rows
+mphasis,2025,37.28,51.9,midtier_age_tables.csv,global; FY21 derived from level rows
+persistent,2022,39.97,61.3,midtier_age_tables.csv,global incl. contract staff
+persistent,2023,47.64,62.86,midtier_age_tables.csv,global incl. contract staff
+persistent,2024,40.18,39.46,midtier_age_tables.csv,global incl. contract staff
+persistent,2025,30.1,34.37,midtier_age_tables.csv,global incl. contract staff
+persistent,2026,27.49,37.18,midtier_age_tables.csv,global incl. contract staff
+tcs,2020,52.0,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+tcs,2021,56.0,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+tcs,2022,59.0,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+tcs,2023,52.9,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+tcs,2024,50.3,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+tcs,2025,47.7,,data/explore/workforce (ESG/GRI annexes),"India only, read from charts"
+techm,2019,53.53,,data/explore/workforce (ESG/GRI annexes),
+techm,2020,53.62,80.23,data/explore/workforce (ESG/GRI annexes),
+techm,2021,49.56,69.11,data/explore/workforce (ESG/GRI annexes),
+techm,2022,51.36,65.54,data/explore/workforce (ESG/GRI annexes),
+techm,2023,48.26,67.41,data/explore/workforce (ESG/GRI annexes),
+techm,2024,47.69,69.24,data/explore/workforce (ESG/GRI annexes),
+techm,2025,47.38,73.25,data/explore/workforce (ESG/GRI annexes),
+techm,2026,46.66,71.08,data/explore/workforce (ESG/GRI annexes),
+wipro,2019,54.68,66.6,data/explore/workforce (ESG/GRI annexes),
+wipro,2020,53.47,68.26,data/explore/workforce (ESG/GRI annexes),
+wipro,2021,51.06,63.7,data/explore/workforce (ESG/GRI annexes),
+wipro,2022,52.06,63.49,data/explore/workforce (ESG/GRI annexes),
+wipro,2023,53.28,68.16,data/explore/workforce (ESG/GRI annexes),
+wipro,2024,49.59,68.96,data/explore/workforce (ESG/GRI annexes),
+wipro,2025,48.7,69.6,data/explore/workforce (ESG/GRI annexes),
+wipro,2026,48.43,,data/explore/workforce (ESG/GRI annexes),

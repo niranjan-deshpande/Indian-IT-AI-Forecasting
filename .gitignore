@@ -6,3 +6,7 @@ data/sources/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Raw downloads behind the round-3/round-4 measurements (official files, filings, transcripts; >1 GB).
+# Each FINDINGS.md records the source URLs; scripts re-download into raw/.
+data/explore/**/raw/

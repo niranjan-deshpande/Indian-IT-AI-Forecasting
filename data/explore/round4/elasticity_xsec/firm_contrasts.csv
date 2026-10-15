@@ -1,0 +1,9 @@
+firm,line_k,line_j,y_j,y_k,dy,se_sampling,baseline_window
+accenture,ACN_Consulting,ACN_ManagedSvcs,-3.743,-9.469,5.726,4.384,pre_2016_2022
+cognizant,CTSH_ConsultTech,CTSH_Outsourcing,-3.926,-1.688,-2.239,4.617,pre_2016_2022
+hcltech,HCL_ERD,HCL_ITBS,-9.678,-8.894,-0.783,4.643,pre_2016_2022
+techm,TECHM_IT,TECHM_BPS,-9.608,-5.186,-4.422,8.131,pre_2016_2022
+accenture,ACN_Consulting,ACN_ManagedSvcs,-0.799,-6.117,5.318,2.788,pre_2016_2019
+cognizant,CTSH_ConsultTech,CTSH_Outsourcing,-4.657,-1.864,-2.793,4.81,pre_2016_2019
+hcltech,HCL_ERD,HCL_ITBS,-10.085,-6.22,-3.865,4.965,pre_2016_2019
+techm,TECHM_IT,TECHM_BPS,-5.43,-2.697,-2.733,8.393,pre_2016_2019

@@ -1,0 +1,25 @@
+set,metric,unit,n_firms,FY23,FY24_partial,FY25_partial,FY26,abs_change_FY23_26,agg_pct_change_FY23_26,agg_cagr_FY23_26,median_firm_pct_change,rev_weighted_mean_firm_pct_change,n_firms_falling,firms_missing_FY23_or_FY26,note
+broader_all_21,hc,persons,21,337269.0,356231.0,383447.0,399974.0,62705.0,18.59,5.85,13.68,14.74,7.0,,known acquired heads 15682; agg change ex known acquired heads 13.94%
+broader_all_21,rev_inr_cr,INR crore,21,99415.7,111916.4,125788.2,144023.4,44607.8,44.87,13.15,44.29,44.87,1.0,,
+broader_all_21,rev_usd_mn,USD mn,16,10996.8,11943.5,13235.1,14605.4,3608.6,32.82,9.92,32.19,32.81,0.0,datamatics;hgs;inventurus;sonata;tata_elxsi,
+broader_ex_mid4,hc,persons,17,228506.0,246699.0,261605.0,271672.0,43166.0,18.89,5.94,8.87,13.51,6.0,,known acquired heads 11482; agg change ex known acquired heads 13.87%
+broader_ex_mid4,rev_inr_cr,INR crore,17,60052.4,69257.1,75394.7,83562.3,23509.9,39.15,11.64,37.22,39.15,1.0,,
+broader_ex_mid4,rev_usd_mn,USD mn,12,6076.4,6772.8,7248.3,7747.2,1670.8,27.5,8.43,28.48,27.51,0.0,datamatics;hgs;inventurus;sonata;tata_elxsi,
+mid4,hc,persons,4,108763.0,109532.0,121842.0,128302.0,19539.0,17.96,5.66,19.23,16.61,1.0,,known acquired heads 4200; agg change ex known acquired heads 14.10%
+mid4,rev_inr_cr,INR crore,4,39363.3,42659.4,50393.5,60461.2,21097.9,53.6,15.38,61.31,53.6,0.0,,
+mid4,rev_usd_mn,USD mn,4,4920.4,5170.6,5986.8,6858.2,1937.8,39.38,11.7,45.83,39.39,0.0,,
+ERD_5,hc,persons,5,71898.0,78216.0,76040.0,74772.0,2874.0,4.0,1.32,7.18,4.27,2.0,,known acquired heads 2700; agg change ex known acquired heads 0.24%
+ERD_5,rev_inr_cr,INR crore,5,24033.2,29099.5,30197.8,32532.7,8499.5,35.37,10.62,24.72,35.36,0.0,,
+ERD_5,rev_usd_mn,USD mn,4,2587.4,3083.0,3128.3,3234.8,647.4,25.02,7.73,18.92,25.0,0.0,tata_elxsi,
+ITservices_ex_mid4_7,hc,persons,7,56612.0,56569.0,61108.0,60755.0,4143.0,7.32,2.38,2.04,2.62,3.0,,known acquired heads 1350; agg change ex known acquired heads 4.93%
+ITservices_ex_mid4_7,rev_inr_cr,INR crore,7,18531.1,20773.5,22466.6,23904.7,5373.6,29.0,8.86,36.18,29.0,0.0,,
+ITservices_ex_mid4_7,rev_usd_mn,USD mn,5,1888.1,1998.0,2120.0,2147.5,259.4,13.74,4.38,16.37,13.73,0.0,datamatics;sonata,
+ITeS_BPM_5,hc,persons,5,99996.0,111914.0,124457.0,136145.0,36149.0,36.15,10.83,40.44,37.73,1.0,,known acquired heads 7432; agg change ex known acquired heads 28.72%
+ITeS_BPM_5,rev_inr_cr,INR crore,5,17488.0,19384.0,22730.2,27124.9,9636.8,55.11,15.76,58.68,55.1,1.0,,
+ITeS_BPM_5,rev_usd_mn,USD mn,3,1600.9,1691.8,1999.9,2364.9,764.0,47.72,13.89,44.27,47.78,0.0,hgs;inventurus,
+broader_ex_mid4_ex_ITeS_12,hc,persons,12,128510.0,134785.0,137148.0,135527.0,7017.0,5.46,1.79,4.61,3.55,5.0,,known acquired heads 4050; agg change ex known acquired heads 2.31%
+broader_ex_mid4_ex_ITeS_12,rev_inr_cr,INR crore,12,42564.4,49873.0,52664.5,56437.4,13873.0,32.59,9.86,32.68,32.59,0.0,,
+broader_ex_mid4_ex_ITeS_12,rev_usd_mn,USD mn,9,4475.5,5081.0,5248.4,5382.3,906.8,20.26,6.34,16.37,20.27,0.0,datamatics;sonata;tata_elxsi,
+top6 (repo),hc,persons,6,1679489.0,1605986.0,1621361.0,1618023.0,-61466.0,-3.66,-1.24,,,,,repo: gcc/top6_headcount_fy.csv; revenue = sum of quarters in corrected/core_quarterly_final.csv
+top6 (repo),rev_inr_cr,INR crore,6,650641.8,681749.9,715453.8,767562.0,116920.2,17.97,5.66,,,,,repo: gcc/top6_headcount_fy.csv; revenue = sum of quarters in corrected/core_quarterly_final.csv
+top6 (repo),rev_usd_mn,USD mn,6,80671.1,82281.3,84564.0,86463.8,5792.6,7.18,2.34,,,,,repo: gcc/top6_headcount_fy.csv; revenue = sum of quarters in corrected/core_quarterly_final.csv

@@ -1,0 +1,191 @@
+composition,line,occ,title,weight
+compA,ACN_Consulting,MGMTAN,Management analysts,0.25
+compA,ACN_Consulting,SYSAN,Computer systems analysts,0.2
+compA,ACN_Consulting,DEV,Software developers,0.3
+compA,ACN_Consulting,ITMGR,Computer & IS managers,0.1
+compA,ACN_Consulting,MKTRES,Market research analysts,0.1
+compA,ACN_Consulting,TEST,Software QA analysts & testers,0.05
+compA,ACN_ManagedSvcs,DEV,Software developers,0.24
+compA,ACN_ManagedSvcs,TEST,Software QA analysts & testers,0.09
+compA,ACN_ManagedSvcs,SYSAN,Computer systems analysts,0.06
+compA,ACN_ManagedSvcs,INFRA,Network & computer systems admins,0.09
+compA,ACN_ManagedSvcs,HELP,Computer user support specialists,0.06
+compA,ACN_ManagedSvcs,ITMGR,Computer & IS managers,0.06
+compA,ACN_ManagedSvcs,CSR,Customer service representatives,0.18
+compA,ACN_ManagedSvcs,BOOKK,Bookkeeping/accounting clerks,0.06
+compA,ACN_ManagedSvcs,ACCT,Accountants & auditors,0.04
+compA,ACN_ManagedSvcs,DATAE,Data entry keyers,0.04
+compA,ACN_ManagedSvcs,OFFSUP,Supervisors of office/admin workers,0.04
+compA,ACN_ManagedSvcs,HRAS,HR assistants,0.02
+compA,ACN_ManagedSvcs,MKTRES,Market research analysts,0.02
+compA,CTSH_ConsultTech,MGMTAN,Management analysts,0.25
+compA,CTSH_ConsultTech,SYSAN,Computer systems analysts,0.2
+compA,CTSH_ConsultTech,DEV,Software developers,0.3
+compA,CTSH_ConsultTech,ITMGR,Computer & IS managers,0.1
+compA,CTSH_ConsultTech,MKTRES,Market research analysts,0.1
+compA,CTSH_ConsultTech,TEST,Software QA analysts & testers,0.05
+compA,CTSH_Outsourcing,DEV,Software developers,0.32
+compA,CTSH_Outsourcing,TEST,Software QA analysts & testers,0.12
+compA,CTSH_Outsourcing,SYSAN,Computer systems analysts,0.08
+compA,CTSH_Outsourcing,INFRA,Network & computer systems admins,0.12
+compA,CTSH_Outsourcing,HELP,Computer user support specialists,0.08
+compA,CTSH_Outsourcing,ITMGR,Computer & IS managers,0.08
+compA,CTSH_Outsourcing,CSR,Customer service representatives,0.09
+compA,CTSH_Outsourcing,BOOKK,Bookkeeping/accounting clerks,0.03
+compA,CTSH_Outsourcing,ACCT,Accountants & auditors,0.02
+compA,CTSH_Outsourcing,DATAE,Data entry keyers,0.02
+compA,CTSH_Outsourcing,OFFSUP,Supervisors of office/admin workers,0.02
+compA,CTSH_Outsourcing,HRAS,HR assistants,0.01
+compA,CTSH_Outsourcing,MKTRES,Market research analysts,0.01
+compA,HCL_ITBS,DEV,Software developers,0.36
+compA,HCL_ITBS,TEST,Software QA analysts & testers,0.135
+compA,HCL_ITBS,SYSAN,Computer systems analysts,0.09
+compA,HCL_ITBS,INFRA,Network & computer systems admins,0.135
+compA,HCL_ITBS,HELP,Computer user support specialists,0.09
+compA,HCL_ITBS,ITMGR,Computer & IS managers,0.09
+compA,HCL_ITBS,CSR,Customer service representatives,0.045
+compA,HCL_ITBS,BOOKK,Bookkeeping/accounting clerks,0.015
+compA,HCL_ITBS,ACCT,Accountants & auditors,0.01
+compA,HCL_ITBS,DATAE,Data entry keyers,0.01
+compA,HCL_ITBS,OFFSUP,Supervisors of office/admin workers,0.01
+compA,HCL_ITBS,HRAS,HR assistants,0.005
+compA,HCL_ITBS,MKTRES,Market research analysts,0.005
+compA,HCL_ERD,DEV,Software developers,0.3
+compA,HCL_ERD,MECH,Mechanical engineers,0.2
+compA,HCL_ERD,ELEC,Electronics engineers,0.15
+compA,HCL_ERD,HW,Computer hardware engineers,0.1
+compA,HCL_ERD,DRAFT,Mechanical drafters,0.1
+compA,HCL_ERD,INDENG,Industrial engineers,0.1
+compA,HCL_ERD,TEST,Software QA analysts & testers,0.05
+compA,TECHM_IT,DEV,Software developers,0.4
+compA,TECHM_IT,TEST,Software QA analysts & testers,0.15
+compA,TECHM_IT,SYSAN,Computer systems analysts,0.1
+compA,TECHM_IT,INFRA,Network & computer systems admins,0.15
+compA,TECHM_IT,HELP,Computer user support specialists,0.1
+compA,TECHM_IT,ITMGR,Computer & IS managers,0.1
+compA,TECHM_BPS,CSR,Customer service representatives,0.45
+compA,TECHM_BPS,BOOKK,Bookkeeping/accounting clerks,0.15
+compA,TECHM_BPS,ACCT,Accountants & auditors,0.1
+compA,TECHM_BPS,DATAE,Data entry keyers,0.1
+compA,TECHM_BPS,OFFSUP,Supervisors of office/admin workers,0.1
+compA,TECHM_BPS,HRAS,HR assistants,0.05
+compA,TECHM_BPS,MKTRES,Market research analysts,0.05
+compA,RBI_IT_services,DEV,Software developers,0.4
+compA,RBI_IT_services,TEST,Software QA analysts & testers,0.15
+compA,RBI_IT_services,SYSAN,Computer systems analysts,0.1
+compA,RBI_IT_services,INFRA,Network & computer systems admins,0.15
+compA,RBI_IT_services,HELP,Computer user support specialists,0.1
+compA,RBI_IT_services,ITMGR,Computer & IS managers,0.1
+compA,RBI_BPO,CSR,Customer service representatives,0.45
+compA,RBI_BPO,BOOKK,Bookkeeping/accounting clerks,0.15
+compA,RBI_BPO,ACCT,Accountants & auditors,0.1
+compA,RBI_BPO,DATAE,Data entry keyers,0.1
+compA,RBI_BPO,OFFSUP,Supervisors of office/admin workers,0.1
+compA,RBI_BPO,HRAS,HR assistants,0.05
+compA,RBI_BPO,MKTRES,Market research analysts,0.05
+compA,RBI_Engineering,DEV,Software developers,0.3
+compA,RBI_Engineering,MECH,Mechanical engineers,0.2
+compA,RBI_Engineering,ELEC,Electronics engineers,0.15
+compA,RBI_Engineering,HW,Computer hardware engineers,0.1
+compA,RBI_Engineering,DRAFT,Mechanical drafters,0.1
+compA,RBI_Engineering,INDENG,Industrial engineers,0.1
+compA,RBI_Engineering,TEST,Software QA analysts & testers,0.05
+compA,RBI_SW_products,DEV,Software developers,0.6
+compA,RBI_SW_products,TEST,Software QA analysts & testers,0.1
+compA,RBI_SW_products,SYSAN,Computer systems analysts,0.1
+compA,RBI_SW_products,ITMGR,Computer & IS managers,0.1
+compA,RBI_SW_products,MKTRES,Market research analysts,0.1
+compB,ACN_Consulting,MGMTAN,Management analysts,0.5
+compB,ACN_Consulting,MKTRES,Market research analysts,0.15
+compB,ACN_Consulting,SYSAN,Computer systems analysts,0.15
+compB,ACN_Consulting,DEV,Software developers,0.15
+compB,ACN_Consulting,ITMGR,Computer & IS managers,0.05
+compB,ACN_ManagedSvcs,DEV,Software developers,0.3
+compB,ACN_ManagedSvcs,TEST,Software QA analysts & testers,0.1125
+compB,ACN_ManagedSvcs,SYSAN,Computer systems analysts,0.075
+compB,ACN_ManagedSvcs,INFRA,Network & computer systems admins,0.1125
+compB,ACN_ManagedSvcs,HELP,Computer user support specialists,0.075
+compB,ACN_ManagedSvcs,ITMGR,Computer & IS managers,0.075
+compB,ACN_ManagedSvcs,CSR,Customer service representatives,0.05
+compB,ACN_ManagedSvcs,BOOKK,Bookkeeping/accounting clerks,0.0625
+compB,ACN_ManagedSvcs,ACCT,Accountants & auditors,0.05
+compB,ACN_ManagedSvcs,DATAE,Data entry keyers,0.0375
+compB,ACN_ManagedSvcs,OFFSUP,Supervisors of office/admin workers,0.025
+compB,ACN_ManagedSvcs,HRAS,HR assistants,0.025
+compB,CTSH_ConsultTech,MGMTAN,Management analysts,0.25
+compB,CTSH_ConsultTech,MKTRES,Market research analysts,0.075
+compB,CTSH_ConsultTech,SYSAN,Computer systems analysts,0.125
+compB,CTSH_ConsultTech,DEV,Software developers,0.275
+compB,CTSH_ConsultTech,ITMGR,Computer & IS managers,0.075
+compB,CTSH_ConsultTech,TEST,Software QA analysts & testers,0.075
+compB,CTSH_ConsultTech,INFRA,Network & computer systems admins,0.075
+compB,CTSH_ConsultTech,HELP,Computer user support specialists,0.05
+compB,CTSH_Outsourcing,DEV,Software developers,0.36
+compB,CTSH_Outsourcing,TEST,Software QA analysts & testers,0.135
+compB,CTSH_Outsourcing,SYSAN,Computer systems analysts,0.09
+compB,CTSH_Outsourcing,INFRA,Network & computer systems admins,0.135
+compB,CTSH_Outsourcing,HELP,Computer user support specialists,0.09
+compB,CTSH_Outsourcing,ITMGR,Computer & IS managers,0.09
+compB,CTSH_Outsourcing,CSR,Customer service representatives,0.02
+compB,CTSH_Outsourcing,BOOKK,Bookkeeping/accounting clerks,0.025
+compB,CTSH_Outsourcing,ACCT,Accountants & auditors,0.02
+compB,CTSH_Outsourcing,DATAE,Data entry keyers,0.015
+compB,CTSH_Outsourcing,OFFSUP,Supervisors of office/admin workers,0.01
+compB,CTSH_Outsourcing,HRAS,HR assistants,0.01
+compB,HCL_ITBS,DEV,Software developers,0.38
+compB,HCL_ITBS,TEST,Software QA analysts & testers,0.1425
+compB,HCL_ITBS,SYSAN,Computer systems analysts,0.095
+compB,HCL_ITBS,INFRA,Network & computer systems admins,0.1425
+compB,HCL_ITBS,HELP,Computer user support specialists,0.095
+compB,HCL_ITBS,ITMGR,Computer & IS managers,0.095
+compB,HCL_ITBS,CSR,Customer service representatives,0.01
+compB,HCL_ITBS,BOOKK,Bookkeeping/accounting clerks,0.0125
+compB,HCL_ITBS,ACCT,Accountants & auditors,0.01
+compB,HCL_ITBS,DATAE,Data entry keyers,0.0075
+compB,HCL_ITBS,OFFSUP,Supervisors of office/admin workers,0.005
+compB,HCL_ITBS,HRAS,HR assistants,0.005
+compB,HCL_ERD,DEV,Software developers,0.5
+compB,HCL_ERD,TEST,Software QA analysts & testers,0.1
+compB,HCL_ERD,MECH,Mechanical engineers,0.15
+compB,HCL_ERD,ELEC,Electronics engineers,0.1
+compB,HCL_ERD,HW,Computer hardware engineers,0.1
+compB,HCL_ERD,DRAFT,Mechanical drafters,0.05
+compB,TECHM_IT,DEV,Software developers,0.42
+compB,TECHM_IT,TEST,Software QA analysts & testers,0.14
+compB,TECHM_IT,SYSAN,Computer systems analysts,0.08
+compB,TECHM_IT,INFRA,Network & computer systems admins,0.12
+compB,TECHM_IT,HELP,Computer user support specialists,0.08
+compB,TECHM_IT,ITMGR,Computer & IS managers,0.08
+compB,TECHM_IT,MECH,Mechanical engineers,0.03
+compB,TECHM_IT,ELEC,Electronics engineers,0.02
+compB,TECHM_IT,HW,Computer hardware engineers,0.02
+compB,TECHM_IT,DRAFT,Mechanical drafters,0.01
+compB,TECHM_BPS,CSR,Customer service representatives,0.2
+compB,TECHM_BPS,BOOKK,Bookkeeping/accounting clerks,0.25
+compB,TECHM_BPS,ACCT,Accountants & auditors,0.2
+compB,TECHM_BPS,DATAE,Data entry keyers,0.15
+compB,TECHM_BPS,OFFSUP,Supervisors of office/admin workers,0.1
+compB,TECHM_BPS,HRAS,HR assistants,0.1
+compB,RBI_IT_services,DEV,Software developers,0.4
+compB,RBI_IT_services,TEST,Software QA analysts & testers,0.15
+compB,RBI_IT_services,SYSAN,Computer systems analysts,0.1
+compB,RBI_IT_services,INFRA,Network & computer systems admins,0.15
+compB,RBI_IT_services,HELP,Computer user support specialists,0.1
+compB,RBI_IT_services,ITMGR,Computer & IS managers,0.1
+compB,RBI_BPO,CSR,Customer service representatives,0.2
+compB,RBI_BPO,BOOKK,Bookkeeping/accounting clerks,0.25
+compB,RBI_BPO,ACCT,Accountants & auditors,0.2
+compB,RBI_BPO,DATAE,Data entry keyers,0.15
+compB,RBI_BPO,OFFSUP,Supervisors of office/admin workers,0.1
+compB,RBI_BPO,HRAS,HR assistants,0.1
+compB,RBI_Engineering,DEV,Software developers,0.5
+compB,RBI_Engineering,TEST,Software QA analysts & testers,0.1
+compB,RBI_Engineering,MECH,Mechanical engineers,0.15
+compB,RBI_Engineering,ELEC,Electronics engineers,0.1
+compB,RBI_Engineering,HW,Computer hardware engineers,0.1
+compB,RBI_Engineering,DRAFT,Mechanical drafters,0.05
+compB,RBI_SW_products,DEV,Software developers,0.6
+compB,RBI_SW_products,TEST,Software QA analysts & testers,0.1
+compB,RBI_SW_products,SYSAN,Computer systems analysts,0.1
+compB,RBI_SW_products,ITMGR,Computer & IS managers,0.1
+compB,RBI_SW_products,MKTRES,Market research analysts,0.1

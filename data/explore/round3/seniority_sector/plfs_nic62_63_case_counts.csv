@@ -1,0 +1,4 @@
+catalog,round,variable,description,valid_cases,n_categories_parsed,cases_nic62,cases_nic63,source_url
+213,"PLFS 2023-24 (Jul-Jun), first-visit person file perv1",F4/V206,Usual principal status industry code (NIC),418159,0,0,0,https://microdata.gov.in/NADA/index.php/catalog/213/variable/F4/V206
+213,"PLFS 2023-24 (Jul-Jun), first-visit person file perv1",F4/V305,CWS industry code,418159,0,0,0,https://microdata.gov.in/NADA/index.php/catalog/213/variable/F4/V305
+292,"PLFS quarterly Apr-Jun..Oct-Dec 2025, person file MPER_Q2_Q4_2025",F2/V75,industry code ind16,640926,86,4797,1569,https://microdata.gov.in/NADA/index.php/catalog/292/variable/F2/V75

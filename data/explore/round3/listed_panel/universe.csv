@@ -1,0 +1,38 @@
+firm,status,group,fy25_revenue_inr_cr,fy25_revenue_source,reason
+persistent,included,IT services (mid-4),11938.72,listed_panel_firms.csv (primary basis),in repo mid-tier four
+coforge,included,IT services (mid-4),12250.4,listed_panel_firms.csv (primary basis),in repo mid-tier four; Cigniti consolidated FY25
+mphasis,included,IT services (mid-4),14230.0,listed_panel_firms.csv (primary basis),in repo mid-tier four
+hexaware,included,IT services (mid-4),11974.4,listed_panel_firms.csv (primary basis),in repo mid-tier four; CY reporter (CY2024 aligned to FY25)
+ltts,included,ER&D,9642.2,listed_panel_firms.csv (primary basis),ER&D services
+tata_elxsi,included,ER&D,3729.0,listed_panel_firms.csv (primary basis),ER&D/design services
+kpit,included,ER&D,5842.35,listed_panel_firms.csv (primary basis),automotive ER&D services
+cyient,included,ER&D,5815.8,listed_panel_firms.csv (primary basis),group > threshold; DET (services) segment used for revenue and headcount; Cyient DLM (EMS manufacturing) excluded
+tata_technologies,included,ER&D,5168.5,listed_panel_firms.csv (primary basis),ER&D services; listed Nov-2023 (RHP covers FY23)
+birlasoft,included,IT services,5375.2,listed_panel_firms.csv (primary basis),IT services
+zensar,included,IT services,5280.6,listed_panel_firms.csv (primary basis),IT services
+sonata,included,IT services,2829.7,listed_panel_firms.csv (primary basis),consolidated revenue dominated by domestic software reselling; International IT Services segment revenue used; headcount is group total
+mastek,included,IT services,3455.2,listed_panel_firms.csv (primary basis),IT services
+happiest_minds,included,IT services,2060.84,listed_panel_firms.csv (primary basis),IT services
+datamatics,included,IT services / ITeS,1723.36,listed_panel_firms.csv (primary basis),IT + BPM services; FY25 revenue just above threshold
+r_systems,included,IT services,1741.727,listed_panel_firms.csv (primary basis),CY reporter; CY2024 revenue above threshold
+firstsource,included,ITeS / BPM,7980.3,listed_panel_firms.csv (primary basis),BPM
+eclerx,included,ITeS / KPO,3365.9,listed_panel_firms.csv (primary basis),KPO/BPM
+hgs,included,ITeS / BPM,3150.13,listed_panel_firms.csv (primary basis),BPM segment revenue used (ex digital media); headcount is company total
+sagility,included,ITeS / BPM,5569.9,listed_panel_firms.csv (primary basis),healthcare BPM; listed Nov-2024 (RHP covers FY23-24)
+inventurus,included,ITeS / BPM,2664.0,listed_panel_firms.csv (primary basis),healthcare revenue-cycle services; listed Dec-2024 (RHP covers FY23-24)
+intellect,excluded,software products,2500.0,parts/its2.csv,banking software product company (licence/SaaS) - not IT/ITeS services
+newgen,excluded,software products,1487.0,parts/its2.csv,software product company and FY25 revenue below Rs 1500 cr
+ofss,excluded,software products,6847.0,parts/its2.csv,products Rs 6214 cr of Rs 6847 cr; Oracle subsidiary
+nucleus,excluded,software products,832.3,parts/its2.csv,software products and below threshold
+sasken,excluded,ER&D,550.91,parts/its2.csv,below threshold
+latent_view,excluded,analytics services,847.9,parts/its2.csv,below threshold
+saksoft,excluded,IT services,883.0,parts/its2.csv,below threshold
+digitide,excluded,ITeS / BPM,2875.0,parts/its2.csv,FY25 pro forma only; demerged from Quess in 2025 so no standalone FY23-FY24 history; would need Quess segment data
+quess,excluded,staffing,,,staffing company; technology segment (IT staffing + BPM) not separable on a consistent basis across the 2025 demerger (BPM part now Digitide)
+black_box,excluded,IT infrastructure integration,5967.0,parts/its2.csv,network/IT infrastructure integration with mostly non-India operations; not IT-services delivery
+tanla,excluded,CPaaS product,,,CPaaS messaging platform (per brief)
+route_mobile,excluded,CPaaS product,,,CPaaS messaging platform
+zaggle,excluded,fintech,,,fintech (per brief)
+sify,excluded,data centre / network,,,mainly data-centre and network services; Nasdaq-listed
+startek,excluded,BPM,,,not listed in India (US-listed Startek taken private 2023)
+cigniti,excluded,IT services,,,acquired by Coforge (consolidated from Q2FY25); kept only inside Coforge to avoid double counting

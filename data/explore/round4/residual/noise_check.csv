@@ -1,0 +1,2 @@
+empirical_sd_annual_residual_within_firm_FY16_23,empirical_sd_excl_FY21,d27_implied_sd,scale_used,note
+3.393,2.234,4.189,1.0,SE from D27 simulation is multiplied by scale_used (>=1) when empirical dispersion exceeds the model's

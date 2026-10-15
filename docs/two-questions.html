@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI and jobs in Indian IT services: two questions</title>
+<meta name="description" content="Working draft: how many workers does AI save in Indian IT services, and do clients buy more when the work gets cheaper?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #fbf8f3; --panel: #fffdf9; --ink: #2a2318; --ink-2: #5e5245; --ink-3: #8a7d6d;
+  --rule: #e6ddd0; --rule-2: #cfc4b4;
+  --accent: #235fa6; --mid: #2f8a57; --acn: #7a7268; --cat-a: #b0702a; --soft: #eef3f9;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --toc-w: 250px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif);
+  font-size: 17.5px; line-height: 1.6; font-optical-sizing: auto; }
+.page { padding-left: 0; }
+main { display: grid; grid-template-columns: 1fr min(700px, calc(100% - 32px)) 1fr; padding: 48px 0 72px; }
+main > * { grid-column: 2; min-width: 0; }
+main > .wide, main > details.more figure.wide { grid-column: 1 / -1; }
+main > .wide { width: min(920px, calc(100% - 32px)); justify-self: center; }
+p { margin: 0 0 1.05em; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+h1 { font-size: 2.0rem; line-height: 1.2; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 14px; }
+h2 { font-size: 1.36rem; line-height: 1.3; font-weight: 600; margin: 2.6em 0 0.7em; letter-spacing: -0.01em; }
+h2 .num { color: var(--ink-3); font-weight: 400; margin-right: 0.35em; }
+h3 { font-size: 1.08rem; font-weight: 600; margin: 1.9em 0 0.5em; }
+ul, ol { padding-left: 1.3em; margin: 0 0 1.05em; } li { margin-bottom: 0.35em; }
+header { padding-bottom: 22px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+.crumbs { font-family: var(--sans); font-size: 14px; color: var(--ink-3); margin: 0 0 18px; }
+.crumbs b { color: var(--ink-2); font-weight: 600; }
+.byline { font-family: var(--sans); font-size: 15px; color: var(--ink-2); margin: 0 0 6px; }
+.byline .tag { display: inline-block; border: 1px solid #c9a227; color: #7a6212; background: #fbf3d6; border-radius: 3px;
+  padding: 0 6px; font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 4px; }
+.thanks { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin: 0; }
+code { font-size: 0.86em; background: #f1ebe1; padding: 1px 4px; border-radius: 3px; }
+
+/* table of contents */
+.toc { font-family: var(--sans); font-size: 14px; line-height: 1.35; }
+.toc-head { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin-bottom: 10px; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc > ul > li { margin: 0 0 10px; }
+.toc > ul > li > a { font-weight: 600; color: var(--ink); }
+.toc ul ul { margin: 4px 0 0 0; padding-left: 10px; border-left: 1px solid var(--rule); }
+.toc ul ul li { margin: 3px 0; }
+.toc a { color: var(--ink-2); text-decoration: none; display: block; padding: 1px 0; }
+.toc a:hover { color: var(--accent); }
+.toc a.active { color: var(--accent); }
+.toc li.opt > a::after { content: " +"; color: var(--ink-3); font-size: 12px; }
+@media (min-width: 1180px) {
+  .page { padding-left: calc(var(--toc-w) + 24px); }
+  .toc { position: fixed; top: 0; left: 0; width: var(--toc-w); height: 100vh; overflow-y: auto;
+    padding: 48px 18px 32px 28px; border-right: 1px solid var(--rule); background: var(--bg); }
+  .toc-mobile { display: none; }
+}
+@media (max-width: 1179px) {
+  .page > .toc { display: none; }
+  .toc-mobile { margin: 18px 0 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); padding: 8px 14px; }
+  .toc-mobile > summary { font-family: var(--sans); font-weight: 600; font-size: 15px; cursor: pointer; }
+  .toc-mobile .toc { padding: 8px 0 4px; } .toc-mobile .toc-head { display: none; }
+}
+
+/* answer box */
+.answer { background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 12px 18px 2px;
+  margin: 0.4em 0 1.6em; }
+.answer p { margin-bottom: 0.7em; }
+.answer-tag { display: block; font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+
+/* footnotes: hover (or tap) to read */
+.fn { position: relative; }
+.fn-ref { font-family: var(--sans); font-size: 0.68em; vertical-align: super; line-height: 0; text-decoration: none;
+  color: var(--accent); padding: 0 2px; margin-left: 1px; font-weight: 600; cursor: pointer; }
+.fn-ref::before { content: "["; } .fn-ref::after { content: "]"; }
+.fn-pop { display: none; position: absolute; z-index: 30; left: 0; top: 1.5em; width: 360px; max-width: calc(100vw - 32px);
+  background: #fffdf9; border: 1px solid var(--rule-2); border-radius: 6px; box-shadow: 0 6px 24px rgba(42,35,24,0.14);
+  padding: 10px 13px; font-family: var(--sans); font-size: 14px; line-height: 1.45; color: var(--ink); font-weight: 400;
+  font-style: normal; text-align: left; }
+.fn-n { font-weight: 600; color: var(--accent); margin-right: 2px; }
+.fn.show .fn-pop { display: block; }
+@media (max-width: 700px) {
+  .fn.show .fn-pop { position: fixed; left: 12px; right: 12px; bottom: 12px; top: auto; width: auto; max-width: none; }
+}
+ol.notes { font-family: var(--sans); font-size: 14px; line-height: 1.45; } ol.notes li { margin-bottom: 0.5em; }
+
+/* collapsible detail sections */
+details.more { margin: 2em 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); }
+details.more > summary { cursor: pointer; padding: 12px 16px; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px;
+  align-items: baseline; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before { content: "+"; font-family: var(--sans); color: var(--accent); font-weight: 600; width: 0.9em; }
+details.more[open] > summary::before { content: "−"; }
+.more-title { font-weight: 600; font-size: 1.08rem; }
+.more-hint { font-family: var(--sans); font-size: 13px; color: var(--ink-3); }
+details.more[open] .more-hint { display: none; }
+.more-body { padding: 4px 18px 8px 34px; }
+.more-body figure { margin-left: -16px; margin-right: -16px; }
+details.app { border-bottom: 1px solid var(--rule); padding: 10px 0; }
+details.app > summary { cursor: pointer; font-family: var(--sans); font-weight: 600; font-size: 15px; list-style: none; }
+details.app > summary::-webkit-details-marker { display: none; }
+details.app > summary::before { content: "+"; display: inline-block; width: 1.2em; color: var(--ink-3); }
+details.app[open] > summary::before { content: "−"; }
+details.app > div { padding: 8px 0 4px 1.2em; font-size: 15.5px; }
+h2#appendix { margin-top: 3em; }
+
+/* figures */
+figure { margin: 2em 0 2.2em; }
+.fig-panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px 8px; }
+.fig-top { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.fig-title { font-family: var(--sans); font-weight: 600; font-size: 15px; color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-family: var(--sans); font-size: 13.5px; color: var(--ink); }
+.legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+.legend i { display: inline-block; width: 20px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: 6px; }
+.chart { width: 100%; }
+figcaption { font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--ink-2); margin: 10px 2px 0; max-width: 760px; }
+figcaption b { color: var(--ink); font-weight: 600; }
+
+/* chain diagram */
+.chain-panel { padding: 18px 18px 14px; }
+.chain { display: grid; grid-template-columns: 1fr 22px 1.35fr 22px 1fr 22px 0.9fr; align-items: stretch; }
+.node { font-family: var(--sans); border: 1px solid var(--rule-2); border-radius: 6px; padding: 10px 12px; background: #fff;
+  font-size: 14px; line-height: 1.35; color: var(--ink-2); display: flex; flex-direction: column; gap: 3px; }
+.node b { color: var(--ink); font-size: 15px; }
+.node .tag { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; color: var(--accent); }
+.node.q1, .node.q2 { border-color: var(--accent); background: var(--soft); }
+.node.jobs { border-color: var(--ink-3); }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+.mini { border: 1px dashed var(--rule-2); border-radius: 4px; padding: 5px 7px; color: var(--ink); font-size: 13.5px; }
+.mini span { display: block; color: var(--ink-3); font-size: 12.5px; }
+.mini.hot { border-color: var(--accent); }
+.arrow { position: relative; }
+.arrow::after { content: "→"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--ink-3);
+  font-family: var(--sans); font-size: 18px; }
+.side { display: grid; grid-template-columns: 1fr 22px 1.35fr 22px 1fr 22px 0.9fr; margin-top: 10px; }
+.side .node.d { grid-column: 5 / 8; border-style: dashed; border-color: var(--cat-a); background: #fbf4ec; }
+.side .node.d b { color: var(--cat-a); }
+@media (max-width: 720px) {
+  .chain, .side { grid-template-columns: 1fr; }
+  .arrow { height: 22px; } .arrow::after { content: "↓"; }
+  .side .node.d { grid-column: 1; }
+}
+
+/* tables */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.6em 0 1.9em; }
+.table-cap { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin: 0 0 8px; }
+.table-cap b { color: var(--ink); font-weight: 600; }
+table { border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; line-height: 1.4;
+  font-variant-numeric: tabular-nums lining-nums; width: 100%; }
+th, td { padding: 7px 10px; border-bottom: 1px solid var(--rule); text-align: right; vertical-align: top; }
+th:first-child, td:first-child { padding-left: 0; text-align: left; }
+th:last-child, td:last-child { padding-right: 0; }
+thead th { font-weight: 600; color: var(--ink-2); border-bottom: 1px solid var(--ink-3); vertical-align: bottom; }
+tbody th { font-weight: 400; }
+table.items td, table.items th { text-align: right; } table.items th:first-child, table.items td:first-child { text-align: left; }
+.table-note { font-family: var(--sans); font-size: 13px; color: var(--ink-2); margin: 8px 0 0; }
+
+.math { margin: 1.2em 0 1.4em; text-align: center; font-size: 1.05em; overflow-x: auto; overflow-y: hidden; }
+.footer { font-family: var(--sans); font-size: 13px; color: var(--ink-3); margin-top: 2.5em; }
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  main { padding-top: 28px; }
+  h1 { font-size: 1.6rem; }
+  .fig-panel { padding: 12px 10px 6px; }
+  .more-body { padding: 4px 12px 8px 14px; }
+  .more-body figure { margin-left: -6px; margin-right: -6px; }
+}
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  .page { padding-left: 0; } .page > .toc, .toc-mobile { display: none; }
+  .fn-pop { display: none !important; }
+  .fig-panel { border: 0; padding: 0; }
+  figure, .table-wrap { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#summary" data-target="summary">Summary</a></li><li><a href="#the-idea" data-target="the-idea">1. The idea</a><ul><li><a href="#a-simple-chain" data-target="a-simple-chain">A simple chain</a></li><li><a href="#what-happened" data-target="what-happened">What happened</a></li><li><a href="#why-the-top-six" data-target="why-the-top-six">Why the top six</a></li></ul></li><li><a href="#question-1-how-many-workers-does-a-piece-of-work-need-now" data-target="question-1-how-many-workers-does-a-piece-of-work-need-now">2. Question 1: How many workers does a piece of work need now?</a><ul><li><a href="#where-a-saving-has-to-show-up" data-target="where-a-saving-has-to-show-up">Where a saving has to show up</a></li><li><a href="#the-saving-kept-revenue-per-employee" data-target="the-saving-kept-revenue-per-employee">The saving kept: revenue per employee</a></li><li><a href="#the-saving-passed-on-what-firms-said-about-prices" data-target="the-saving-passed-on-what-firms-said-about-prices">The saving passed on: what firms said about prices</a></li><li><a href="#adding-up" data-target="adding-up">Adding up</a></li><li><a href="#the-strongest-objection" data-target="the-strongest-objection">The strongest objection</a></li><li class="opt"><a href="#juniors-were-they-replaced-faster" data-target="juniors-were-they-replaced-faster">Juniors: were they replaced faster?</a></li><li class="opt"><a href="#vintage-which-ai-are-we-measuring" data-target="vintage-which-ai-are-we-measuring">Vintage: which AI are we measuring?</a></li></ul></li><li><a href="#question-2-when-ai-makes-the-work-cheaper-do-clients-buy-more" data-target="question-2-when-ai-makes-the-work-cheaper-do-clients-buy-more">3. Question 2: When AI makes the work cheaper, do clients buy more?</a><ul><li><a href="#the-test-hasn-t-happened" data-target="the-test-hasn-t-happened">The test hasn’t happened</a></li><li><a href="#but-the-amount-of-work-did-fall" data-target="but-the-amount-of-work-did-fall">But the amount of work did fall</a></li><li><a href="#what-moved-demand" data-target="what-moved-demand">What moved demand</a></li><li><a href="#how-responsive-are-clients-to-price" data-target="how-responsive-are-clients-to-price">How responsive are clients to price?</a></li></ul></li><li><a href="#what-the-two-answers-say-about-fy24-26" data-target="what-the-two-answers-say-about-fy24-26">4. What the two answers say about FY24–26</a></li><li><a href="#looking-ahead-to-2030" data-target="looking-ahead-to-2030">5. Looking ahead to 2030</a></li><li><a href="#what-would-sharpen-each-answer" data-target="what-would-sharpen-each-answer">6. What would sharpen each answer</a></li><li><a href="#appendix" data-target="appendix">Appendix</a></li></ul></nav>
+<main>
+<header><p class="crumbs"><a href="index.html">Pilot note</a> · <b>Two questions (working draft)</b></p><h1>AI and jobs in Indian IT services: two questions</h1><p class="byline">Niranjan Deshpande · October 2026 · <span class="tag">Working draft</span></p><p class="thanks">Written as part of SPAR (Fall 2026), supervised by Andrei Potlogea. A checkpoint, not a finished note: numbers are provisional. Data and code: <a href="https://github.com/niranjan-deshpande/Indian-IT-AI-Forecasting">github.com/niranjan-deshpande/Indian-IT-AI-Forecasting</a>.</p></header><details class="toc-mobile"><summary>Contents</summary><nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#summary" data-target="summary">Summary</a></li><li><a href="#the-idea" data-target="the-idea">1. The idea</a><ul><li><a href="#a-simple-chain" data-target="a-simple-chain">A simple chain</a></li><li><a href="#what-happened" data-target="what-happened">What happened</a></li><li><a href="#why-the-top-six" data-target="why-the-top-six">Why the top six</a></li></ul></li><li><a href="#question-1-how-many-workers-does-a-piece-of-work-need-now" data-target="question-1-how-many-workers-does-a-piece-of-work-need-now">2. Question 1: How many workers does a piece of work need now?</a><ul><li><a href="#where-a-saving-has-to-show-up" data-target="where-a-saving-has-to-show-up">Where a saving has to show up</a></li><li><a href="#the-saving-kept-revenue-per-employee" data-target="the-saving-kept-revenue-per-employee">The saving kept: revenue per employee</a></li><li><a href="#the-saving-passed-on-what-firms-said-about-prices" data-target="the-saving-passed-on-what-firms-said-about-prices">The saving passed on: what firms said about prices</a></li><li><a href="#adding-up" data-target="adding-up">Adding up</a></li><li><a href="#the-strongest-objection" data-target="the-strongest-objection">The strongest objection</a></li><li class="opt"><a href="#juniors-were-they-replaced-faster" data-target="juniors-were-they-replaced-faster">Juniors: were they replaced faster?</a></li><li class="opt"><a href="#vintage-which-ai-are-we-measuring" data-target="vintage-which-ai-are-we-measuring">Vintage: which AI are we measuring?</a></li></ul></li><li><a href="#question-2-when-ai-makes-the-work-cheaper-do-clients-buy-more" data-target="question-2-when-ai-makes-the-work-cheaper-do-clients-buy-more">3. Question 2: When AI makes the work cheaper, do clients buy more?</a><ul><li><a href="#the-test-hasn-t-happened" data-target="the-test-hasn-t-happened">The test hasn’t happened</a></li><li><a href="#but-the-amount-of-work-did-fall" data-target="but-the-amount-of-work-did-fall">But the amount of work did fall</a></li><li><a href="#what-moved-demand" data-target="what-moved-demand">What moved demand</a></li><li><a href="#how-responsive-are-clients-to-price" data-target="how-responsive-are-clients-to-price">How responsive are clients to price?</a></li></ul></li><li><a href="#what-the-two-answers-say-about-fy24-26" data-target="what-the-two-answers-say-about-fy24-26">4. What the two answers say about FY24–26</a></li><li><a href="#looking-ahead-to-2030" data-target="looking-ahead-to-2030">5. Looking ahead to 2030</a></li><li><a href="#what-would-sharpen-each-answer" data-target="what-would-sharpen-each-answer">6. What would sharpen each answer</a></li><li><a href="#appendix" data-target="appendix">Appendix</a></li></ul></nav></details>
+<h2 id="summary">Summary</h2>
+<p>Headcount at India’s six largest IT services firms stopped growing in 2023. We ask two questions about AI’s part in that.</p>
+<ol><li><b>The replacement rate.</b> If a piece of work used to take 100 workers, how many does it take now?</li><li><b>The demand response.</b> When AI makes the work cheaper, do clients buy more of it?</li></ol>
+<p>Our provisional answers:</p>
+<ul><li><b>About 93 instead of 100,</b> after three years (FY24–26). That is a saving of roughly 2% a year in the labour each piece of work needs. The plausible range is 90 to 96. The data cannot rule out no saving at all.</li><li><b>Not yet tested.</b> The firms kept about nine-tenths of the saving instead of cutting prices, so clients had little reason to buy more. Meanwhile the amount of work fell sharply for reasons unrelated to price, and this fall was larger than AI’s direct effect. AI price cuts begin in earnest in FY27, so the real test starts now.</li></ul>
+<p>All of our data predate the jump in coding-agent ability around mid-2026. What follows describes the earlier generation of tools.</p>
+<h2 id="the-idea"><span class="num">1</span>The idea</h2>
+<h3 id="a-simple-chain">A simple chain</h3>
+<p>Think of a firm that writes and maintains software for clients. The number of people it employs depends on two things: how much work clients give it, and how many people each piece of work needs.</p>
+<p>AI acts on the second directly. If a tool lets 93 people do what used to take 100, the firm needs fewer people for the same work. That is our first question.</p>
+<p>But the saving does not stop there. The firm can keep it, as higher profit per worker, or pass it on to clients as a lower price. If it passes it on, the work becomes cheaper, and clients may buy more of it. If they buy enough more, the firm could end up employing more people, not fewer. This happened with bank tellers when ATMs arrived: each branch needed fewer tellers, branches became cheaper to run, banks opened more of them, and teller jobs held up.<span class="fn"><a class="fn-ref" href="#note-atm" aria-label="Note 1">1</a><span class="fn-pop" role="note"><span class="fn-n">1</span> James Bessen, “Toil and Technology,” <i>Finance & Development</i>, March 2015. In urban areas, tellers per branch fell from about 20 to 13 between 1988 and 2004, while the number of branches rose by 43%, so teller employment held up.</span></span> Whether it happens here is our second question.</p>
+<figure class="wide" id="fig-chain"><div class="fig-panel chain-panel">
+<div class="chain">
+  <div class="node q1"><span class="tag">Question 1</span><b>AI saves labour</b><span>Fewer workers needed for each piece of work</span></div>
+  <div class="arrow" aria-hidden="true"></div>
+  <div class="node split"><b>The firm either…</b>
+    <div class="pair"><div class="mini">keeps the saving<span>higher revenue per worker</span></div><div class="mini hot">passes it on<span>a lower price for clients</span></div></div></div>
+  <div class="arrow" aria-hidden="true"></div>
+  <div class="node q2"><span class="tag">Question 2</span><b>Clients buy more?</b><span>If the work is cheaper, more of it may be bought</span></div>
+  <div class="arrow" aria-hidden="true"></div>
+  <div class="node jobs"><b>Jobs</b><span>amount of work × workers per piece of work</span></div>
+</div>
+<div class="side"><div class="node d"><b>Demand shift</b><span>Everything else that changes the amount of work: client budgets, clients doing work themselves, work moving to other firms</span></div></div>
+</div><figcaption><b>Figure 1.</b> The chain from AI to jobs. Question 1 is the first link; Question 2 is the last. A third force, a <i>demand shift</i>, changes the amount of work for reasons that have nothing to do with AI-driven prices: clients’ budgets, clients doing work themselves, or work moving to other firms. We have to measure it and set it aside to see the chain clearly.</figcaption></figure>
+<p>One condition follows directly. AI adds jobs only if clients’ extra purchases outweigh the labour saved. That needs two things at once: firms must pass on most of the saving, and clients must be very responsive to price. If either fails, AI cuts jobs.</p>
+<p>The same chain in symbols, for readers who want it:<span class="fn"><a class="fn-ref" href="#note-model" aria-label="Note 2">2</a><span class="fn-pop" role="note"><span class="fn-n">2</span> In growth rates, employment = volume − replacement rate − other productivity growth; volume = demand shift − elasticity × price change; price change = −(share passed on) × replacement rate + other price drift. Holding the “other” terms at their pre-2023 values and substituting gives the equation shown.</span></span></p>
+<div class="math" data-tex="\text{job growth} \;=\; \underbrace{d}_{\text{demand shift}} \;-\; \underbrace{s}_{\text{replacement}} \;+\; \underbrace{\varepsilon\,\varphi\, s}_{\text{clients buy more}} \;=\; d - s\,(1-\varepsilon\varphi)"><span class="math-fallback">\text{job growth} \;=\; \underbrace{d}_{\text{demand shift}} \;-\; \underbrace{s}_{\text{replacement}} \;+\; \underbrace{\varepsilon\,\varphi\, s}_{\text{clients buy more}} \;=\; d - s\,(1-\varepsilon\varphi)</span></div>
+<p>Here <i>s</i> is the replacement rate, <i>φ</i> is the share of the saving passed on as lower prices, and <i>ε</i> is how strongly clients respond to price. AI adds jobs only if <i>εφ</i> > 1.</p>
+<h3 id="what-happened">What happened</h3>
+<p>The six firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree. Years are Indian fiscal years, ending in March.</p>
+<p>Their headcount grew about 7% a year from FY16 to FY20. It then jumped by 18% in FY22 and 14% in FY23, as the firms hired heavily after COVID. It fell 4% in FY24 and has been roughly flat since. Revenue in constant currency slowed from about 9% a year before COVID to under 2% a year in FY24–26.</p>
+<p>The level of each series tells a fuller story than its growth rate (Figure 2). During the boom the firms hired far ahead of their revenue: by FY23 headcount was 14% above its pre-COVID trend, while revenue was only 3.5% above. Since then both have fallen well below that trend. By FY26 headcount was 11% below it and revenue 18% below. Accenture, for comparison, boomed just as much and is now back on its trend.</p>
+<figure class="wide" id="fig-levels"><div class="fig-panel"><div class="fig-top"><div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Top six</span><span><i style="border-color:var(--acn);border-top-style:dashed;border-top-width:2.5px"></i>Accenture</span><span><i style="border-color:var(--ink-3);border-top-style:dotted;border-top-width:2px"></i>FY16–20 trend</span></div></div><div id="chart-levels" class="chart" role="img" aria-label="levels"></div></div><figcaption><b>Figure 2.</b> Headcount and constant-currency revenue at the top six (simple average of growth rates, cumulated) and at Accenture, compared with each series’ FY16–20 trend. Values are log points relative to FY20 (×100), so a gap of 10 means about 10% below trend.</figcaption></figure>
+<p>Two features of this picture matter for what follows. First, part of the fall in hiring is the firms working off the extra staff they took on in FY22–23. That is neither AI nor weak demand, so we strip it out by measuring productivity net of how busy staff are.<span class="fn"><a class="fn-ref" href="#note-util" aria-label="Note 3">3</a><span class="fn-pop" role="note"><span class="fn-n">3</span> Utilisation is the share of staff time billed to clients. A firm that over-hired has staff on the bench; as it puts them to work, revenue rises with no new hiring. Our measure of productivity removes changes in utilisation, so working off the bench does not count as an AI saving.</span></span> Second, revenue fell short of its old path by much more than headcount did. That revenue shortfall is the core of Question 2.</p>
+<h3 id="why-the-top-six">Why the top six</h3>
+<p>We focus on the six largest firms because they are the only ones with long, consistent company data. The sector as a whole tells a similar story. In India’s official labour-force survey (PLFS), employment in IT has been flat at about 5.7 million since 2022-23, and the number of young graduates working in IT has been flat at about 2.6–3.0 million (Figure 3).<span class="fn"><a class="fn-ref" href="#note-plfs" aria-label="Note 4">4</a><span class="fn-pop" role="note"><span class="fn-n">4</span> Usual-status workers in National Industrial Classification divisions 62 (computer programming and consultancy) and 63 (information services). GCC staff may be classified here or under their parent firm’s industry; they cannot be identified separately. Our tabulation matches MoSPI’s published labour-force figures exactly in seven of nine rounds.</span></span></p>
+<figure class="wide" id="fig-sector"><div class="fig-panel"><div class="fig-top"><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--accent)"></span>Estimate, with 90% interval</span></div></div><div id="chart-sector" class="chart" role="img" aria-label="sector"></div></div><figcaption><b>Figure 3.</b> Employment in IT services (industry codes 62 and 63) in India’s Periodic Labour Force Survey, with 90% confidence intervals. Left: all workers. Right: graduates aged 21–30. The survey changed design in 2025, and the 2023-24 and calendar-2024 rounds share half their sample. One very heavily weighted village or block inflates both, by about 5% on the left and about 10% on the right. Source: PLFS unit-level data (MoSPI), our tabulation.</figcaption></figure>
+<p>The work did not leave India. Excluding Ireland, India’s share of world computer-services exports was flat from 2022 to 2025 (Figure 18 below).</p>
+<h2 id="question-1-how-many-workers-does-a-piece-of-work-need-now"><span class="num">2</span>Question 1: How many workers does a piece of work need now?</h2>
+<div class="answer"><span class="answer-tag">Short answer</span><p>About 2% fewer a year in FY24–26, so about <b>93 workers per 100</b> after three years (plausibly 90–96). Firms kept about nine-tenths of the saving. Sampling noise is large enough that we cannot rule out no saving at all.</p></div>
+<h3 id="where-a-saving-has-to-show-up">Where a saving has to show up</h3>
+<p>Nobody publishes how many people each piece of work needs. But a labour saving cannot simply vanish. If a firm needs 7% fewer people for the same work, one of two things happens:</p>
+<ul><li><b>It keeps the saving.</b> It charges the same price with fewer people, so its revenue per employee rises.</li><li><b>It passes the saving on.</b> It cuts its price, so revenue per employee stays put but clients pay less.</li></ul>
+<p>So the replacement rate is the sum of two things we can measure: the saving kept, seen in revenue per employee, and the saving passed on, seen in prices. We measure each in turn and add them up.<span class="fn"><a class="fn-ref" href="#note-sum" aria-label="Note 5">5</a><span class="fn-pop" role="note"><span class="fn-n">5</span> Strictly, the change in revenue per busy employee measures (1 − share passed on) × replacement rate, and the AI price cut measures (share passed on) × replacement rate. Their sum is the replacement rate. This assumes that price drift and productivity growth unrelated to AI continued at their pre-2023 pace. We checked US and UK service price indices and wage data and found no sign that non-AI price growth fell after 2023 (bound: −1.0 to +0.5 points a year).</span></span></p>
+<h3 id="the-saving-kept-revenue-per-employee">The saving kept: revenue per employee</h3>
+<p><b>The data.</b> For each of the six firms we have quarterly revenue in constant currency and headcount from FY16 to FY26. For four of them we also have utilisation: the share of staff time billed to clients.</p>
+<p><b>The test.</b> For each firm, we take growth in revenue per employee and subtract the change in utilisation. What is left is growth in revenue per <i>busy</i> employee.<span class="fn"><a class="fn-ref" href="#note-residual" aria-label="Note 6">6</a><span class="fn-pop" role="note"><span class="fn-n">6</span> Revenue per employee rises when staff bill more of their time, when each unit of work sells for more, or when each unit takes less labour. Subtracting the change in utilisation removes the first. What remains is price per unit divided by labour per unit. For Infosys, whose headcount includes trainees but whose utilisation excludes them, we use the utilisation series that includes trainees.</span></span> We then ask whether this grew faster in FY24–26 than in the same firm’s own past (FY16–20), and average the answer across the six. TCS and HCLTech do not report utilisation, so for them we allow its change to lie anywhere in the range seen at the other four.<span class="fn"><a class="fn-ref" href="#note-tcshcl" aria-label="Note 7">7</a><span class="fn-pop" role="note"><span class="fn-n">7</span> The four firms with utilisation data saw changes between about −2 and +1.5 points a year depending on the window. Allowing TCS and HCLTech anywhere in that range moves the six-firm average by up to about half a point either way.</span></span></p>
+<p><b>The result.</b> On this test, revenue per busy employee grew about 1 percentage point a year faster after 2023 than before.</p>
+<p><b>A correction.</b> This understates the saving, for a reason particular to these years. When a firm uses subcontractors, it books their work as revenue but does not count them as employees. In FY24 all six firms cut back on subcontractors and brought that work in-house (Figure 4). Their spending on subcontractors fell by 1.2 to 3.9 percentage points of revenue. That moved work onto the payroll without adding revenue, which pulls down revenue per employee even if no one became less productive.</p>
+<figure class="wide" id="fig-subcon"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Subcontracting cost, % of revenue</div></div><div id="chart-subcon" class="chart" role="img" aria-label="Subcontracting cost, % of revenue"></div></div><figcaption><b>Figure 4.</b> Spending on subcontractors as a share of revenue, FY20–FY26, as each firm reports it. It fell at all six firms in FY24. For TCS the series is fees paid to outside consultants.</figcaption></figure>
+<p>We correct for this by asking how many employees the subcontracted work would have needed.<span class="fn"><a class="fn-ref" href="#note-subcon" aria-label="Note 8">8</a><span class="fn-pop" role="note"><span class="fn-n">8</span> Each point of revenue paid to subcontractors corresponds to about 1.0–1.9 points of revenue’s worth of own-employee work, because firms pay their own staff about 53–60% of revenue and a subcontractor costs between one and two times an employee (Wipro said “about 30% higher”). We use 1.4. Subcontracting rose again at five of six firms in FY26, and the correction includes that reversal.</span></span> With the correction, the saving kept is about <b>2.1 points a year</b> (1.5 to 3.0 across the assumptions we cannot pin down).</p>
+<p>The correction is the largest single assumption in this section. It treats the fall in subcontracting spending as fewer subcontractors, not cheaper ones. If more than about 60% of the fall came from lower contractor rates, AI’s share of the slowdown drops below a fifth.<span class="fn"><a class="fn-ref" href="#note-subcon_break" aria-label="Note 9">9</a><span class="fn-pop" role="note"><span class="fn-n">9</span> This is for the FY16–20 baseline. With the FY16–23 baseline, over 90% of the fall would need to be lower rates.</span></span></p>
+<p>The estimate also depends on which years count as “before”. Figure 5 shows it for four choices. Including the COVID year FY21 in the baseline lowers it; leaving out the boom years raises it. The corrected estimate is positive in every case.</p>
+<figure class="wide" id="fig-kept"><div class="fig-panel"><div class="fig-top"><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--ink-3)"></span>Before subcontracting correction</span><span><span class="sw" style="background:var(--accent)"></span>After</span></div></div><div id="chart-kept" class="chart" role="img" aria-label="kept"></div></div><figcaption><b>Figure 5.</b> The saving kept: how much faster revenue per busy employee grew in FY24–26 than in each firm’s own baseline, averaged over the top six. Each row uses a different baseline. Grey: before the subcontracting correction. Blue: after. Thick bars show the range across the assumptions we cannot pin down (how TCS and HCLTech’s utilisation changed, and how much a subcontractor costs relative to an employee). Thin bars add sampling noise (95% intervals). Equal weight on each firm.</figcaption></figure>
+<h3 id="the-saving-passed-on-what-firms-said-about-prices">The saving passed on: what firms said about prices</h3>
+<p>There is no price index for IT services in India, and the US statistics office does not cover the industry.<span class="fn"><a class="fn-ref" href="#note-noindex" aria-label="Note 10">10</a><span class="fn-pop" role="note"><span class="fn-n">10</span> The US Bureau of Labor Statistics lists computer systems design among its “areas of noncoverage” for producer prices. The UK index for computer programming appears to price charge-out rates, and the nearest US indices cover data processing and software publishers, so none measures price per unit of outsourced IT work.</span></span> So we read what the firms told investors.</p>
+<p><b>The data.</b> We searched every earnings-call transcript from January 2023 to October 2026 for the eight firms in our panel, plus investor days, four BPO firms, filings and a few older contracts for the pre-AI baseline, and collected 108 statements about pricing. We checked each quote against the original document.<span class="fn"><a class="fn-ref" href="#note-m2data" aria-label="Note 11">11</a><span class="fn-pop" role="note"><span class="fn-n">11</span> Eight firms: the top six, Accenture and Cognizant. Investor days for TCS, Infosys and LTIMindtree in 2025–26. BPO firms: Sagility, Firstsource, eClerx and HGS. 107 of 108 quotes were confirmed word for word against the source; the other is a text-extraction problem and is used only as context. Only about 16 IT statements give a usable number, and TCS, HCLTech and LTIMindtree supply most of them. Infosys, Wipro and Tech Mahindra (43% of top-six revenue) give no usable rate, so we allow their AI cut to lie anywhere between zero and twice the revenue-weighted average of the other three. Yearly figures in Figure 6 weight firms by revenue; the 0.2 used in the replacement rate weights them equally, as in Figure 5. Both round to 0.2.</span></span></p>
+<p><b>The test.</b> Before AI, these firms already gave clients routine annual “productivity” discounts on long contracts, typically 10–15% over a contract’s life. TCS says this is not related to AI. We count only the cut <i>on top of</i> that routine discount, and only on the same scope of work. We then turn statements such as a 10–15% cut over a contract’s life, or 3–5% a year in the services AI affects, into a percentage of each firm’s total revenue per year.<span class="fn"><a class="fn-ref" href="#note-m2convert" aria-label="Note 12">12</a><span class="fn-pop" role="note"><span class="fn-n">12</span> A one-off discount on renewals reaches total revenue gradually: about 20–35% of revenue is renewed each year, and about 40–60% of revenue is in services exposed to AI. A cut spread over a contract reaches revenue as contracts roll onto AI-era terms. The pre-AI routine discount (2–5% a year on the 40–55% of revenue under multi-year contracts) is our assumption, because contract percentages are redacted in the filings we found.</span></span></p>
+<p><b>The result.</b> Almost nothing was passed on in FY24–26 (Figure 6). The AI price cut was about 0 in FY24, 0.1% in FY25 and 0.4% in FY26. It rises to about 1.5% in FY27 (0.4 to 2.7), though much of that is still what firms expect rather than what they have booked.</p>
+<p>The firms say this themselves. HCLTech’s chief executive said in April 2026 that “very little has really played out in already reported numbers,” and expected it from FY27. In October 2026 TCS’s finance chief said that “at an overall portfolio level, the pricing is broadly stable.”</p>
+<figure class="wide" id="fig-prices"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Price cuts to clients, % of revenue a year</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:#cfc4b4"></span>Routine pre-AI discount</span><span><span class="sw" style="background:var(--accent)"></span>Extra cut from AI</span></div></div><div id="chart-prices" class="chart" role="img" aria-label="Price cuts to clients, % of revenue a year"></div></div><figcaption><b>Figure 6.</b> Price cuts given to clients, % of revenue per year, top six (weighted by revenue). Grey: the routine pre-AI productivity discount, which we assume at about 1.5% a year. Blue: the extra cut attributed to AI, with its range. FY27 is mostly what firms expect, so it is drawn lighter.</figcaption></figure>
+<p>For the AI price cut to have averaged even 1% a year over FY24–26, firms would have had to understate it about five-fold. Some pass-through is hidden from this method, though: on time-and-materials contracts, which are 43–48% of revenue at the firms that report it, savings reach clients as fewer billed hours, which managers never describe as a price cut. So this is probably an underestimate, by an amount we cannot size.</p>
+<h3 id="adding-up">Adding up</h3>
+<p>The replacement rate is the sum: 2.1 kept plus 0.2 passed on, so about <b>2.3 percentage points a year</b>. Across the assumptions we cannot pin down it ranges from 1.5 to 3.6. With sampling noise the range is −0.8 to 7.1 (Figure 7).</p>
+<p>In the terms of our question: over FY24–26, a piece of work that took 100 people came to take about 93 (90 to 96).</p>
+<figure class="wide" id="fig-sbar"><div class="fig-panel"><div class="fig-top"><div class="fig-title">The replacement rate, percentage points a year</div></div><div id="chart-sbar" class="chart" role="img" aria-label="The replacement rate, percentage points a year"></div></div><figcaption><b>Figure 7.</b> The replacement rate and its two parts, percentage points a year, FY24–26 against FY16–20. Dots are central estimates. Thick bars span the assumptions we cannot pin down; thin bars add sampling noise. The axis at the top converts the total into workers needed per 100 after three years.</figcaption></figure>
+<p>Three points about this number:</p>
+<ul><li><b>Firms kept most of it.</b> About nine-tenths of the saving was kept and one-tenth passed on. This reverses a claim in our earlier note that there was “no sign firms kept AI savings.” That claim rested on four firms and no subcontracting correction.</li><li><b>It is an average over everything the firms do.</b> Testing and routine maintenance probably saw much larger savings, and client-facing consulting smaller ones.</li><li><b>It is small next to the slowdown.</b> Headcount growth fell by about 8 points a year against its pre-COVID pace. AI’s direct effect explains about 2 of those 8.</li></ul>
+<h3 id="the-strongest-objection">The strongest objection</h3>
+<p>Everything above compares <i>growth rates</i>: did revenue per employee grow faster after 2023 than before? A different comparison gives a different answer. In <i>levels</i>, revenue per employee at the top six is still about 11% below where its FY16–20 trend would have put it, the same gap as in FY23 (Figure 8). On that view the firms are only recovering lost ground, and there is no room for an AI saving at all.<span class="fn"><a class="fn-ref" href="#note-level" aria-label="Note 13">13</a><span class="fn-pop" role="note"><span class="fn-n">13</span> Indicative only: the firms with data differ across years.</span></span></p>
+<figure class="wide" id="fig-rpelevel"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Revenue per employee, gap to FY16–20 trend (log points ×100)</div><div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Top six</span><span><i style="border-color:var(--acn);border-top-style:dashed;border-top-width:2.5px"></i>Accenture</span></div></div><div id="chart-rpelevel" class="chart" role="img" aria-label="Revenue per employee, gap to FY16–20 trend (log points ×100)"></div></div><figcaption><b>Figure 8.</b> Revenue per employee (constant currency), top six and Accenture, relative to each series’ FY16–20 trend (log points ×100). The top six fell well below trend during the boom and have not recovered the gap. Accenture has recovered to above its trend.</figcaption></figure>
+<p>The two views make different assumptions. The growth view treats the FY21–23 dip as a one-off that firms will not make up. The level view expects them to climb back to their old path. We cannot yet tell which is right, and more years of data will help. For now we report the growth-rate estimate and flag that the level view argues for a smaller number.</p>
+<details class="more" id="juniors-were-they-replaced-faster"><summary><span class="more-title">Juniors: were they replaced faster?</span><span class="more-hint">Optional detail. Click to expand.</span></summary><div class="more-body"><p><b>Short answer: probably, but the evidence is weak.</b> Junior employment grew about 0 to 2 points a year more slowly than experienced employment, relative to the past, depending on the data. If so, the replacement rate for juniors was about 2.3–3.3% a year, against 1.3–2.3% for experienced staff.<span class="fn"><a class="fn-ref" href="#note-jsplit" aria-label="Note 14">14</a><span class="fn-pop" role="note"><span class="fn-n">14</span> Under-30s were about 45–52% of top-six staff over FY23–26, so we take half. With a junior–experienced gap g, the junior rate is then the average rate (2.3) plus about 0.5g, and the experienced rate the average minus about 0.5g. These ranges hold the average fixed; its own uncertainty (1.5 to 3.6) widens them.</span></span></p>
+<p><b>How firms changed: hiring, not firing.</b> Firms did not push juniors out faster. They hired more experienced people instead. At Infosys, whose hiring and exit data by age reconcile exactly with its headcount and go back furthest, under-30 hiring in FY24–26 was about the same as in FY16–21 (42,000 against 43,000 a year), while hiring of people aged 30 and over rose 65% (Figure 9). The share of under-30s among new hires fell from 79% to 68%.</p>
+<figure class="wide" id="fig-infosyshires"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Infosys hires a year, thousands</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--accent)"></span>Under 30</span><span><span class="sw" style="background:var(--cat-a)"></span>30 and over</span></div></div><div id="chart-infosyshires" class="chart" role="img" aria-label="Infosys hires a year, thousands"></div></div><figcaption><b>Figure 9.</b> Infosys hires by age, FY16–FY26. The FY22–23 spike is the post-COVID boom; FY24–26 is shaded. Source: Infosys ESG reports, via our firm panel.</figcaption></figure>
+<p><b>Headcount.</b> The share of under-30s in headcount fell from FY23 at most of the large firms (Figure 10). But much of that is the boom unwinding: firms hired huge numbers of freshers in FY22–23, so the share had to fall back. Once we allow for that, the firm data show a junior gap of about 0 to 1 point a year (range −2 to +3).<span class="fn"><a class="fn-ref" href="#note-jfirm" aria-label="Note 15">15</a><span class="fn-pop" role="note"><span class="fn-n">15</span> The FY22–23 hiring boom raised the under-30 share above its long-run downward trend. We net out the boom three ways: by assuming the bump decays as staff leave or age; by conditioning on revenue growth; and by comparing firms with bigger and smaller booms. The estimates range from about −2 to +3 points a year, centred near 0 to +1. The boom need only explain about a quarter of the post-2023 decline for the gap to vanish.</span></span> In the labour-force survey, which covers the whole sector, the gap is about 1.4 to 1.9 points a year, but its 90% confidence interval includes zero.<span class="fn"><a class="fn-ref" href="#note-jplfs" aria-label="Note 16">16</a><span class="fn-pop" role="note"><span class="fn-n">16</span> Workers aged 21–25 against 31–40: +1.4 (90% interval −2.2 to +5.0). Aged 21–30 against 31–60: +1.9 (−0.7 to +4.4). Average of 2023-24 and 2025 against the average of 2017-18 to 2020-21.</span></span></p>
+<figure class="wide" id="fig-under30"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Share of headcount under 30, %</div></div><div id="chart-under30" class="chart" role="img" aria-label="Share of headcount under 30, %"></div></div><figcaption><b>Figure 10.</b> Share of headcount under 30, by firm, FY16–FY26, from the firms’ voluntary sustainability reports. TCS is India only and read off charts. LTIMindtree before FY23 is Mindtree. Firms differ in scope, so compare trends within a firm.</figcaption></figure>
+<p><b>Pay.</b> In IT, pay for 21–25-year-olds relative to 31–40-year-olds fell from 0.64 in 2020-21 to 0.52 in 2025. Among all graduates the same ratio stayed between 0.53 and 0.58 (Figure 11). Falling relative pay alongside flat junior numbers, while the supply of graduates grows, points to weaker demand for juniors. But 2020-21 was an unusually high year. Measured from 2017-18, the relative decline is about 1.6 points a year rather than 5, so this is suggestive, not firm.<span class="fn"><a class="fn-ref" href="#note-jpay" aria-label="Note 17">17</a><span class="fn-pop" role="note"><span class="fn-n">17</span> The difference between the IT and all-graduate log ratios fell by 5.4 points a year from 2020-21 to 2025 (standard error 1.85), but by about 1.6 points a year on a precision-weighted trend fitted to all rounds from 2017-18 (calendar 2024 left out, as it shares half its sample with 2023-24; including it gives 1.5). That trend is not statistically different from zero. Medians fall somewhat more steeply, by about 2.6 points a year.</span></span></p>
+<figure class="wide" id="fig-juniorpay"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Pay at 21–25 relative to 31–40</div><div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>IT (industry 62–63)</span><span><i style="border-color:var(--acn);border-top-style:dashed;border-top-width:2.5px"></i>All graduates</span></div></div><div id="chart-juniorpay" class="chart" role="img" aria-label="Pay at 21–25 relative to 31–40"></div></div><figcaption><b>Figure 11.</b> Pay of 21–25-year-olds relative to 31–40-year-olds (mean monthly earnings of regular wage workers), in IT and among all graduates, with ±1 standard error. Source: PLFS unit-level data (MoSPI), our tabulation. The 2025 survey has a new design.</figcaption></figure>
+<p><b>Across the sector.</b> Graduate placements at top engineering colleges fell for the class of 2023-24, the first fall in data going back to 2016-17.<span class="fn"><a class="fn-ref" href="#note-nirf" aria-label="Note 18">18</a><span class="fn-pop" role="note"><span class="fn-n">18</span> National Institutional Ranking Framework data for the same institutions in the same edition: undergraduate engineering graduates placed fell about 1.8% while graduates rose about 3.4%; the placement rate fell from 73.8% to 70.1%. These are placements with all employers, including GCCs.</span></span> The number of young graduates working in IT stayed flat while the number employed elsewhere grew, so IT’s share of them fell from 12.8% to 9.9% between 2022-23 and 2025 (part of that growth elsewhere may reflect the 2025 survey redesign). GCCs (global firms’ own offices in India) hire few freshers: on one job portal in July 2026, their rising fresher postings offset only about a fifth of the fall at IT firms.</p>
+<p><b>A warning for the forecast.</b> The freshers hired in the boom turn 30 around FY30–31. That will push down under-30 shares mechanically, and it will not be AI.</p></div></details>
+<details class="more" id="vintage-which-ai-are-we-measuring"><summary><span class="more-title">Vintage: which AI are we measuring?</span><span class="more-hint">Optional detail. Click to expand.</span></summary><div class="more-body"><p>Our outcome data run to March 2026 for the firms and to December 2025 for the labour-force survey. Coding agents improved sharply around mid-2026, and the 2025 trial by METR that found AI slowed experienced developers has since been updated to find speed-ups. So our estimates describe the tools of 2023 to early 2026. They are a floor for what comes next, not a forecast of it.</p></div></details>
+<h2 id="question-2-when-ai-makes-the-work-cheaper-do-clients-buy-more"><span class="num">3</span>Question 2: When AI makes the work cheaper, do clients buy more?</h2>
+<div class="answer"><span class="answer-tag">Short answer</span><p><b>We can’t tell yet, because the work hasn’t got cheaper.</b> AI-driven price cuts were only about 0.2% a year, on top of the routine discounts firms always gave. What we can say is that the amount of work fell sharply for other reasons, and by more than AI’s direct effect. About half of that fall is shared with Accenture and Cognizant. We can explain only a small part of it.</p></div>
+<h3 id="the-test-hasn-t-happened">The test hasn’t happened</h3>
+<p>Clients can only respond to a price cut they receive. With AI price cuts of about 0.2% a year in FY24–26, even very price-sensitive clients would have bought only a fraction of a percent more. So FY24–26 tells us almost nothing about how clients respond to cheaper work.</p>
+<p>This is a finding in itself. Through FY26 the route by which AI could add jobs was switched off, because the firms kept the saving. It switches on in FY27, as contract renewals start to carry AI price cuts.</p>
+<h3 id="but-the-amount-of-work-did-fall">But the amount of work did fall</h3>
+<p>Since prices barely moved, the fall in the amount of work is almost entirely a shift in demand: something other than AI-driven prices made clients buy less from these firms.</p>
+<p>How large a fall depends on what “normal” growth would have been, and there is no single right answer. We use three yardsticks (Figure 12):</p>
+<ul><li><b>Pre-COVID growth rates.</b> Revenue would have kept growing at its FY16–20 pace of about 9% a year. Against this, revenue growth fell about 7 points a year.</li><li><b>The pre-COVID path.</b> Revenue would have returned to the level its FY16–20 trend implied by FY26. Against this, it fell about 6 points a year.</li><li><b>Peers.</b> The top six would have slowed only as much as Accenture and Cognizant did. Against this, they fell about 3 points a year further.</li></ul>
+<figure class="wide" id="fig-yardsticks"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Fall in growth, FY24–26, percentage points a year</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--accent)"></span>Headcount</span><span><span class="sw" style="background:var(--cat-a)"></span>Revenue (constant currency)</span></div></div><div id="chart-yardsticks" class="chart" role="img" aria-label="Fall in growth, FY24–26, percentage points a year"></div></div><figcaption><b>Figure 12.</b> How much growth fell in FY24–26, in percentage points a year, under three views of what “normal” would have been. Headcount and constant-currency revenue, top six. The peers yardstick subtracts the slowdown at Accenture and Cognizant.</figcaption></figure>
+<p>The peer comparison is the most informative. About half of the top six’s revenue slowdown (57%) was shared with Accenture and Cognizant, so much of what hit Indian firms hit global IT services generally. About 3 points a year is specific to the Indian firms.<span class="fn"><a class="fn-ref" href="#note-peers" aria-label="Note 19">19</a><span class="fn-pop" role="note"><span class="fn-n">19</span> Accenture and Cognizant have the bulk of their delivery staff in India too. Their revenue growth fell by about 4 points a year against their own FY16–20 pace, against about 7 for the top six.</span></span></p>
+<h3 id="what-moved-demand">What moved demand</h3>
+<p>We took each plausible cause and measured it with data that do not come from the firms’ own revenue.<span class="fn"><a class="fn-ref" href="#note-circular" aria-label="Note 20">20</a><span class="fn-pop" role="note"><span class="fn-n">20</span> Client spending on outside IT services is the same money as these firms’ revenue, so it cannot be used to explain their revenue. We use measures of clients’ own activity and of in-house work instead.</span></span> Figure 13 puts them side by side.</p>
+<figure class="wide" id="fig-demand"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Demand shift, percentage points a year</div></div><div id="chart-demand" class="chart" role="img" aria-label="Demand shift, percentage points a year"></div></div><figcaption><b>Figure 13.</b> What we can measure of the demand shift, percentage points a year. The three points at the top are the fall in constant-currency revenue growth under each yardstick, which is the total to be explained. Below are the measured causes (comparing 2023–25 with 2016–22) with their plausible ranges, and their sum. The gap between the sum and the totals is what we cannot explain.</figcaption></figure>
+<p><b>Clients’ overall spending: little change.</b> The clients are mostly in the US (about 54% of exports) and Europe (about 32%). In the US, the drivers of IT spending held up after 2023: GDP grew faster, big banks’ technology spending grew about as fast as in 2016–22, and firms’ spending on software built by their own staff kept growing (Figure 14). Europe slowed somewhat, with GDP growth down about 0.7 points. Overall: about −0.5 points a year (range −1.5 to +0.5).<span class="fn"><a class="fn-ref" href="#note-market" aria-label="Note 21">21</a><span class="fn-pop" role="note"><span class="fn-n">21</span> US: real GDP, bank technology expense lines (JPMorgan’s line is partial), and BEA own-account software investment. Europe: EU and UK real GDP, EU investment in intellectual property, and EU employment of ICT specialists. We weight North America and Europe by their shares of India’s exports (55% and 32%) and assume the remaining 13% behaves like the average. Against a 2016–19 baseline, bank technology spending slowed by about 1 point.</span></span></p>
+<figure class="wide" id="fig-clients"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Growth, % a year</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--ink-3)"></span>2016–22</span><span><span class="sw" style="background:var(--accent)"></span>2023–25</span></div></div><div id="chart-clients" class="chart" role="img" aria-label="Growth, % a year"></div></div><figcaption><b>Figure 14.</b> Growth in US drivers of client IT spending, 2016–22 and 2023–25 (% a year). None slowed sharply. Bank technology spending is the sum of reported technology and communications expense at JPMorgan, Bank of America and Citi.</figcaption></figure>
+<p><b>Clients doing the work themselves: some.</b> In the US, the share of computer jobs held by clients’ own staff, rather than by IT service firms, was stable at 64–65% from 2015 to 2022, then rose to 67.5% by 2025 (Figure 15). Employment at US IT service firms fell in the official payroll data too. In continental Europe there is no such shift. In the UK, investment data suggest a large one; we include it, but have not checked those data for method changes, and without it the figure would be about −1.0. Overall: about −1.6 points a year (range −3.7 to +0.1).<span class="fn"><a class="fn-ref" href="#note-inhouse" aria-label="Note 22">22</a><span class="fn-pop" role="note"><span class="fn-n">22</span> Bureau of Labor Statistics Occupational Employment and Wage Statistics: computer occupations in client industries against those in computer systems design (NAICS 5415). The payroll survey (CES) confirms the fall in NAICS 5415 employment: growth fell from 3.6% a year in 2016–22 to −0.6% in 2023–25. The range allows for vendors adopting AI faster than in-house teams, which would exaggerate the shift. In Europe we use Eurostat counts of ICT specialists by industry.</span></span></p>
+<figure class="wide" id="fig-inhouse"><div class="fig-panel"><div class="fig-top"><div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>Occupational survey (OEWS)</span><span><i style="border-color:var(--cat-a);border-top-style:dashed;border-top-width:2.5px"></i>Payroll survey (CES)</span></div></div><div id="chart-inhouse" class="chart" role="img" aria-label="inhouse"></div></div><figcaption><b>Figure 15.</b> Left: share of US computer jobs held by clients’ own staff rather than by IT service firms (BLS occupational survey). Right: employment at US computer-systems-design firms (NAICS 5415), two official sources, index 2022 = 100.</figcaption></figure>
+<p><b>Clients’ own offices in India (GCCs): no extra effect.</b> Global firms’ captive centres in India kept growing fast. But they were already growing fast before 2023. Their estimated hiring absorbed about 2.4% of the vendors’ workforce a year after 2023, against about 2.8% before. Official export data point the same way: foreign-owned firms in India, of which GCCs are a large part, outpaced India’s total exports by a similar margin before and after (Figure 16). What matters for the slowdown is a change in that pace, and we find none: about +0.5 points a year (range −2.2 to +1.6).<span class="fn"><a class="fn-ref" href="#note-gcc" aria-label="Note 23">23</a><span class="fn-pop" role="note"><span class="fn-n">23</span> No official statistic counts GCC staff. Pre-2023 levels come from Nasscom and Zinnov, whose report editions are not comparable; the post-2023 central estimate (about 260,000 tech jobs added from FY23 to FY26) comes from staffing firms’ hiring estimates, which we could not confirm. The RBI census series covers all foreign-owned firms in information and communication, including vendors such as Accenture and Cognizant, and its “before” period is only FY22–23. For captive centres, export values track the wage bill.</span></span></p>
+<figure class="wide" id="fig-gcc"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Export growth, % (US dollars)</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--mid)"></span>Foreign-owned subsidiaries</span><span><span class="sw" style="background:var(--ink-3)"></span>All software exports</span></div></div><div id="chart-gcc" class="chart" role="img" aria-label="Export growth, % (US dollars)"></div></div><figcaption><b>Figure 16.</b> Export growth of foreign-owned firms’ Indian subsidiaries (information and communication services), compared with India’s total software exports, by fiscal year. The gap is similar before and after 2023. Source: RBI census of foreign liabilities and assets and RBI software exports survey. The subsidiary series also includes foreign-owned vendors such as Accenture and Cognizant.</figcaption></figure>
+<p><b>Smaller Indian firms: not measured, but bounded.</b> Four mid-tier firms (Persistent, Coforge, Mphasis and Hexaware) grew fast, but they are a selected set of winners. Across 21 listed firms below the top six, the twelve IT and engineering firms outside those four added only about 2% to their headcount organically over three years (Figure 17). Even if every dollar of the 21 firms’ revenue growth had been taken from the top six, it would account for at most about 1.5 points a year. We leave this out of the measured total below.<span class="fn"><a class="fn-ref" href="#note-midtier" aria-label="Note 24">24</a><span class="fn-pop" role="note"><span class="fn-n">24</span> The 21 firms’ combined US-dollar revenue rose by about $3.6 billion from FY23 to FY26 (16 firms with dollar figures), against top-six revenue of about $81 billion in FY23. That is about 4.5% over three years, or 1.5 points a year, and it includes acquisitions and the firms’ own normal growth.</span></span></p>
+<figure class="wide" id="fig-listed"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Change in headcount, FY23 to FY26, thousands</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:var(--accent)"></span>Organic or not stated</span><span><span class="sw" style="background:#9fb8d6"></span>Acquired (lower bound)</span></div></div><div id="chart-listed" class="chart" role="img" aria-label="Change in headcount, FY23 to FY26, thousands"></div></div><figcaption><b>Figure 17.</b> Change in headcount, FY23 to FY26, at the top six and at 21 smaller listed Indian firms, by group. The lighter part of each bar is staff added through acquisitions (a lower bound). Headcounts are global.</figcaption></figure>
+<p><b>Work leaving India: no.</b> India’s share of world computer-services exports was flat from 2022 to 2025, as was its share of US imports (Figure 18). US IT-services employment fell too, so the work did not move back to the US either.</p>
+<figure class="wide" id="fig-share"><div class="fig-panel"><div class="fig-top"><div class="fig-title">India's share, %</div><div class="legend" aria-hidden="true"><span><i style="border-color:var(--accent);border-top-style:solid;border-top-width:3px"></i>World computer-services exports (excl. Ireland)</span><span><i style="border-color:var(--cat-a);border-top-style:dashed;border-top-width:2.5px"></i>US computer-services imports</span></div></div><div id="chart-share" class="chart" role="img" aria-label="India&#x27;s share, %"></div></div><figcaption><b>Figure 18.</b> India’s share of world computer-services exports (excluding Ireland, whose exports are mostly multinationals’ booking) and of US computer-services imports, 2015–2025. Sources: IMF balance of payments; BEA.</figcaption></figure>
+<p><b>What is left.</b> Adding up client spending, in-housing and GCCs gives about −1.6 points a year. Against the pre-COVID growth yardstick, that leaves about 5 points a year unexplained. Against peers, the Indian-specific 3 points are largely unexplained.<span class="fn"><a class="fn-ref" href="#note-unexplained" aria-label="Note 25">25</a><span class="fn-pop" role="note"><span class="fn-n">25</span> The measured causes come from data on clients, so most of them (US in-sourcing especially) affect Accenture and Cognizant as much as the Indian firms. They therefore explain little of the gap with peers.</span></span> The candidates we have not been able to measure:</p>
+<ul><li><b>The firms’ mix of work.</b> If the top six do more routine maintenance than Accenture, they may be more exposed to clients cutting that work first.</li><li><b>Clients using AI themselves.</b> A client whose own staff now use AI tools may need less outside help. This would not show up in any of the data above.</li><li><b>The hangover from the boom.</b> Clients may have pulled projects forward into FY22–23, leaving less to do now.</li></ul>
+<p><b>One point to note:</b> some of the demand shift may itself be AI, arriving by another route. If clients are doing more in-house with their own AI tools, that is AI cutting demand for these firms, not AI making their work cheaper. We cannot yet separate the two. It matters for the future: if so, demand will keep shifting as the tools improve.</p>
+<h3 id="how-responsive-are-clients-to-price">How responsive are clients to price?</h3>
+<p>We tried to measure this directly by comparing service lines that should be more or less exposed to AI, such as application maintenance against consulting.<span class="fn"><a class="fn-ref" href="#note-m6" aria-label="Note 26">26</a><span class="fn-pop" role="note"><span class="fn-n">26</span> Pairs of business lines within Accenture, Cognizant, HCLTech and Tech Mahindra, and India’s exports of IT services against BPO and engineering services. Exposure to AI comes from occupation-level scores (Eloundou et al.; Felten et al.). Different scores even disagree on whether BPO or IT is more exposed.</span></span> It did not work: the AI price differences between lines are tiny (0.1 to 0.5 points a year), while each line’s demand moves by several points a year for its own reasons. Our estimate’s standard error was about 5, so the data are consistent with almost anything.</p>
+<p>So we take a range from history. When technology made textiles, steel and cars cheaper in their early decades, demand responded strongly, with elasticities above 1; once those industries matured, it responded weakly. The two estimates closest to IT services are of a similar size: about 1.6 for business purchases of computers, and about 1.1 for one country’s imports of computer services.<span class="fn"><a class="fn-ref" href="#note-eps" aria-label="Note 27">27</a><span class="fn-pop" role="note"><span class="fn-n">27</span> Bessen (2019), <i>Economic Policy</i>: price elasticities of 1.3–2.4 for textiles, steel and cars in their early decades, falling to 0.2–0.4 or below by 1950. Tevlin and Whelan (2000): 1.6 for US business investment in computers (an elasticity with respect to their user cost). Nakano and Nishimura (2024): 1.07 for Japan’s imports of computer services, which measures substitution between imported and domestic services and so is an upper reference for the market as a whole. No published estimate exists for outsourced IT services. All elasticities here are stated as positive numbers.</span></span> We use 0.5 to 1.5 for IT services (centre 0.9), and 0.2 to 0.9 for BPO.</p>
+<p><b>What that implies.</b> For AI to add jobs, the share of the saving passed on times clients’ responsiveness must exceed 1 (Section 1). Even if firms passed on the whole saving, that would need an elasticity above 1: just above the centre of the plausible range for IT, and outside the range for BPO. With firms passing on about a tenth of the saving, AI removes jobs almost one-for-one with the labour it saves (Figure 19).</p>
+<figure class="wide" id="fig-jevons"><div class="fig-panel"><div class="fig-top"><div class="fig-title">AI's net effect on job growth, points a year</div></div><div id="chart-jevons" class="chart" role="img" aria-label="AI&#x27;s net effect on job growth, points a year"></div></div><figcaption><b>Figure 19.</b> AI’s net effect on job growth, percentage points a year, for a replacement rate of 2.3 points a year, as a function of the share of the saving passed on to clients. Each line is a different price elasticity. Above zero, AI adds jobs. The marker shows FY24–26.</figcaption></figure>
+<h2 id="what-the-two-answers-say-about-fy24-26"><span class="num">4</span>What the two answers say about FY24–26</h2>
+<div class="answer"><span class="answer-tag">Short answer</span><p>AI took roughly 2 points a year off job growth directly. Cheaper work made almost no difference. On most yardsticks, demand shifting away from these firms did more.</p></div>
+<p>Under the growth-rate yardstick, the pieces add up (Figure 20). Headcount growth fell by about 8.3 points a year. AI replacement explains about 2.3. Clients’ response to the small price cuts adds back about 0.2. Bringing subcontracted work in-house added back about 1.1 to headcount. The demand shift accounts for the remaining 7 points, of which we can measure only about 1.6.<span class="fn"><a class="fn-ref" href="#note-routes" aria-label="Note 28">28</a><span class="fn-pop" role="note"><span class="fn-n">28</span> The volume change can be computed two ways: from headcount plus the replacement rate, or from revenue less the price change. Under this yardstick they agree (about −7) once the in-sourcing of subcontracted work is counted.</span></span></p>
+<figure class="wide" id="fig-decomp"><div class="fig-panel"><div class="fig-top"><div class="fig-title">Fall in headcount growth, FY24–26 against FY16–20, points a year</div></div><div id="chart-decomp" class="chart" role="img" aria-label="Fall in headcount growth, FY24–26 against FY16–20, points a year"></div></div><figcaption><b>Figure 20.</b> The fall in top-six headcount growth, FY24–26 against FY16–20, split into its parts (percentage points a year). Bars below zero lowered job growth; bars above raised it.</figcaption></figure>
+<p>The other yardsticks do not split so neatly (Table 1). Against the pre-COVID path, headcount fell only 3 points below normal while revenue fell 6. Taken at face value, that leaves no room for an AI saving (the objection in Section 2). Against peers, any saving that all IT firms share cancels out, so the comparison only tells us whether Indian firms were hit harder.</p>
+<div class="table-wrap"><p class="table-cap"><b>Table 1.</b> The slowdown in FY24–26 under three yardsticks, percentage points a year</p><table class="items"><thead><tr><th>Yardstick</th><th>Headcount</th><th>Revenue</th><th>AI replacement</th><th>Price response</th><th>Demand shift (measured part)</th></tr></thead><tbody><tr><th scope="row">Pre-COVID growth rates</th><td>−8.3</td><td>−7.1</td><td>−2.3</td><td>+0.2</td><td>−7 (−1.6)</td></tr><tr><th scope="row">Pre-COVID path</th><td>−3.0</td><td>−5.7</td><td>−2.3 or less</td><td>+0.2</td><td>−5.5 (−1.6)</td></tr><tr><th scope="row">Peers (Accenture, Cognizant)</th><td>−1.5</td><td>−3.1</td><td>0 if shared</td><td>≈0</td><td>−3 (≈0)</td></tr></tbody></table><p class="table-note">The demand shift is the fall in revenue less the small price effect. Under the path yardstick, headcount fell less than revenue and AI replacement together imply; this is the level objection of Section 2. Under the peers yardstick, the measured US in-sourcing affects all vendors and so cancels out.</p></div>
+<p>Two conclusions survive every yardstick. The AI replacement rate, about 2 points a year, is smaller than the fall in demand. And the price response was negligible. We report the replacement rate in points a year rather than as a share of the slowdown, because that share swings from about a quarter to more than all of it depending on the yardstick.</p>
+<h2 id="looking-ahead-to-2030"><span class="num">5</span>Looking ahead to 2030</h2>
+<p><i>This section is a placeholder. It will turn the two answers into conditional scenarios, not forecasts.</i></p>
+<p>The scenarios will vary four things:</p>
+<ul><li><b>The replacement rate,</b> starting at about 2% a year and rising after the mid-2026 jump in coding agents. Capability evidence will set how fast it rises: how long a task AI agents can complete (METR), the updated METR developer trial, coding benchmarks, and the cost of AI relative to Indian wages.</li><li><b>The share passed on,</b> rising from about a tenth toward what firms’ FY27 statements imply.</li><li><b>Clients’ responsiveness to price,</b> across the historical range, since our data cannot pin it down.</li><li><b>The demand shift,</b> including the possibility that clients’ own use of AI keeps pulling work in-house.</li></ul>
+<p>Juniors will be modelled separately, with the FY30–31 ageing of the boom cohort netted out. For each scenario we will report total and junior employment in 2030, and the early signs that would tell us we are on that path.</p>
+<h2 id="what-would-sharpen-each-answer"><span class="num">6</span>What would sharpen each answer</h2>
+<p><b>Question 1 (the replacement rate):</b></p>
+<ul><li><b>FY27 results.</b> The first year after the jump in coding agents, and the first with real price cuts, so both halves of the saving should become visible.</li><li><b>Billed effort.</b> Person-months billed to clients would show workers per unit of work directly. Infosys published this until FY20.</li><li><b>Utilisation for TCS and HCLTech.</b> Together they are half of the top six’s revenue.</li><li><b>More years,</b> to settle whether growth rates or levels are the right comparison.</li></ul>
+<p><b>Question 2 (the demand response):</b></p>
+<ul><li><b>A price index for IT services.</b> None exists in India, and the US statistics office does not cover the industry.</li><li><b>Price cuts by service line.</b> If firms reported renewal discounts separately for, say, application maintenance and consulting, gaps of a few points would identify clients’ responsiveness.</li><li><b>GCC employment.</b> The RBI collects employee counts in its software exports survey but does not publish them. Its next census of foreign-owned firms is due in late October 2026.</li><li><b>A UK series on in-house IT work,</b> to check the one large, unverified piece of the demand shift.</li></ul>
+<h2 id="appendix">Appendix</h2>
+<details class="app" id="how-the-four-scenarios-of-our-earlier-note-map-onto-this"><summary>How the four scenarios of our earlier note map onto this</summary><div>
+<p>Our first note asked which of four scenarios explained the slowdown. In this framework they become values of the parameters:</p>
+<ul><li><b>Demand fell</b> (S1) is a fall in the market part of the demand shift.</li><li><b>Savings kept</b> (S2) and <b>savings passed on</b> (S3) are the two halves of the replacement rate. We now estimate both: mostly kept.</li><li><b>Work moved elsewhere</b> (S4) is the share part of the demand shift: in-sourcing, GCCs and smaller firms. Of these, only US in-sourcing is clearly visible.</li></ul>
+</div></details>
+<details class="app" id="methods-in-brief"><summary>Methods in brief</summary><div>
+<p>All growth rates are log changes ×100. “FY24–26 against FY16–20” means the average annual growth in FY24–26 minus the average in FY16–20, computed firm by firm and then averaged with equal weight on the six firms, unless stated. Ranges are of two kinds: <i>bounds</i> span assumptions we cannot pin down (for example, how much a subcontractor costs relative to an employee); <i>sampling</i> intervals add year-to-year noise. Every number has a measurement folder in the repository with a FINDINGS.md file that lists data, code, sources and the point at which each conclusion would break:</p>
+<ul><li>the saving kept: <code>data/explore/round4/residual/</code> and <code>round4/robustness/m1_scope_subcon/</code>;</li><li>the saving passed on: <code>round4/price_statements/</code>;</li><li>juniors: <code>round4/junior_gap/</code>;</li><li>the demand shift: <code>round4/demand_shift/</code> and <code>round4/robustness/demand/</code>;</li><li>responsiveness to price: <code>round4/elasticity_xsec/</code>;</li><li>yardsticks: <code>round4/robustness/baseline/</code>;</li><li>sector, GCCs, smaller firms and trade: <code>data/explore/round3/</code>.</li></ul>
+</div></details>
+<details class="app" id="sources"><summary>Sources</summary><div>
+<p>Company filings, investor presentations and earnings-call transcripts for the eight firms; Reserve Bank of India software exports survey and census of foreign liabilities and assets; IMF balance of payments; US Bureau of Economic Analysis; US Bureau of Labor Statistics (occupational employment, payroll employment, producer prices); Eurostat; UK Office for National Statistics; Nasscom and Zinnov (industry estimates, used with care); NIRF institutional data; job-portal reports (foundit, Naukri).</p>
+<p>This page uses unit-level data from the Periodic Labour Force Survey, Ministry of Statistics and Programme Implementation (MoSPI), Government of India. Only aggregate tabulations are shown. The analysis and conclusions are ours, not MoSPI’s.</p>
+</div></details><details class="app" id="notes"><summary>All notes</summary><div><ol class="notes"><li id="note-atm">James Bessen, “Toil and Technology,” <i>Finance & Development</i>, March 2015. In urban areas, tellers per branch fell from about 20 to 13 between 1988 and 2004, while the number of branches rose by 43%, so teller employment held up.</li><li id="note-model">In growth rates, employment = volume − replacement rate − other productivity growth; volume = demand shift − elasticity × price change; price change = −(share passed on) × replacement rate + other price drift. Holding the “other” terms at their pre-2023 values and substituting gives the equation shown.</li><li id="note-util">Utilisation is the share of staff time billed to clients. A firm that over-hired has staff on the bench; as it puts them to work, revenue rises with no new hiring. Our measure of productivity removes changes in utilisation, so working off the bench does not count as an AI saving.</li><li id="note-plfs">Usual-status workers in National Industrial Classification divisions 62 (computer programming and consultancy) and 63 (information services). GCC staff may be classified here or under their parent firm’s industry; they cannot be identified separately. Our tabulation matches MoSPI’s published labour-force figures exactly in seven of nine rounds.</li><li id="note-sum">Strictly, the change in revenue per busy employee measures (1 − share passed on) × replacement rate, and the AI price cut measures (share passed on) × replacement rate. Their sum is the replacement rate. This assumes that price drift and productivity growth unrelated to AI continued at their pre-2023 pace. We checked US and UK service price indices and wage data and found no sign that non-AI price growth fell after 2023 (bound: −1.0 to +0.5 points a year).</li><li id="note-residual">Revenue per employee rises when staff bill more of their time, when each unit of work sells for more, or when each unit takes less labour. Subtracting the change in utilisation removes the first. What remains is price per unit divided by labour per unit. For Infosys, whose headcount includes trainees but whose utilisation excludes them, we use the utilisation series that includes trainees.</li><li id="note-tcshcl">The four firms with utilisation data saw changes between about −2 and +1.5 points a year depending on the window. Allowing TCS and HCLTech anywhere in that range moves the six-firm average by up to about half a point either way.</li><li id="note-subcon">Each point of revenue paid to subcontractors corresponds to about 1.0–1.9 points of revenue’s worth of own-employee work, because firms pay their own staff about 53–60% of revenue and a subcontractor costs between one and two times an employee (Wipro said “about 30% higher”). We use 1.4. Subcontracting rose again at five of six firms in FY26, and the correction includes that reversal.</li><li id="note-subcon_break">This is for the FY16–20 baseline. With the FY16–23 baseline, over 90% of the fall would need to be lower rates.</li><li id="note-noindex">The US Bureau of Labor Statistics lists computer systems design among its “areas of noncoverage” for producer prices. The UK index for computer programming appears to price charge-out rates, and the nearest US indices cover data processing and software publishers, so none measures price per unit of outsourced IT work.</li><li id="note-m2data">Eight firms: the top six, Accenture and Cognizant. Investor days for TCS, Infosys and LTIMindtree in 2025–26. BPO firms: Sagility, Firstsource, eClerx and HGS. 107 of 108 quotes were confirmed word for word against the source; the other is a text-extraction problem and is used only as context. Only about 16 IT statements give a usable number, and TCS, HCLTech and LTIMindtree supply most of them. Infosys, Wipro and Tech Mahindra (43% of top-six revenue) give no usable rate, so we allow their AI cut to lie anywhere between zero and twice the revenue-weighted average of the other three. Yearly figures in Figure 6 weight firms by revenue; the 0.2 used in the replacement rate weights them equally, as in Figure 5. Both round to 0.2.</li><li id="note-m2convert">A one-off discount on renewals reaches total revenue gradually: about 20–35% of revenue is renewed each year, and about 40–60% of revenue is in services exposed to AI. A cut spread over a contract reaches revenue as contracts roll onto AI-era terms. The pre-AI routine discount (2–5% a year on the 40–55% of revenue under multi-year contracts) is our assumption, because contract percentages are redacted in the filings we found.</li><li id="note-level">Indicative only: the firms with data differ across years.</li><li id="note-jsplit">Under-30s were about 45–52% of top-six staff over FY23–26, so we take half. With a junior–experienced gap g, the junior rate is then the average rate (2.3) plus about 0.5g, and the experienced rate the average minus about 0.5g. These ranges hold the average fixed; its own uncertainty (1.5 to 3.6) widens them.</li><li id="note-jfirm">The FY22–23 hiring boom raised the under-30 share above its long-run downward trend. We net out the boom three ways: by assuming the bump decays as staff leave or age; by conditioning on revenue growth; and by comparing firms with bigger and smaller booms. The estimates range from about −2 to +3 points a year, centred near 0 to +1. The boom need only explain about a quarter of the post-2023 decline for the gap to vanish.</li><li id="note-jplfs">Workers aged 21–25 against 31–40: +1.4 (90% interval −2.2 to +5.0). Aged 21–30 against 31–60: +1.9 (−0.7 to +4.4). Average of 2023-24 and 2025 against the average of 2017-18 to 2020-21.</li><li id="note-jpay">The difference between the IT and all-graduate log ratios fell by 5.4 points a year from 2020-21 to 2025 (standard error 1.85), but by about 1.6 points a year on a precision-weighted trend fitted to all rounds from 2017-18 (calendar 2024 left out, as it shares half its sample with 2023-24; including it gives 1.5). That trend is not statistically different from zero. Medians fall somewhat more steeply, by about 2.6 points a year.</li><li id="note-nirf">National Institutional Ranking Framework data for the same institutions in the same edition: undergraduate engineering graduates placed fell about 1.8% while graduates rose about 3.4%; the placement rate fell from 73.8% to 70.1%. These are placements with all employers, including GCCs.</li><li id="note-peers">Accenture and Cognizant have the bulk of their delivery staff in India too. Their revenue growth fell by about 4 points a year against their own FY16–20 pace, against about 7 for the top six.</li><li id="note-circular">Client spending on outside IT services is the same money as these firms’ revenue, so it cannot be used to explain their revenue. We use measures of clients’ own activity and of in-house work instead.</li><li id="note-market">US: real GDP, bank technology expense lines (JPMorgan’s line is partial), and BEA own-account software investment. Europe: EU and UK real GDP, EU investment in intellectual property, and EU employment of ICT specialists. We weight North America and Europe by their shares of India’s exports (55% and 32%) and assume the remaining 13% behaves like the average. Against a 2016–19 baseline, bank technology spending slowed by about 1 point.</li><li id="note-inhouse">Bureau of Labor Statistics Occupational Employment and Wage Statistics: computer occupations in client industries against those in computer systems design (NAICS 5415). The payroll survey (CES) confirms the fall in NAICS 5415 employment: growth fell from 3.6% a year in 2016–22 to −0.6% in 2023–25. The range allows for vendors adopting AI faster than in-house teams, which would exaggerate the shift. In Europe we use Eurostat counts of ICT specialists by industry.</li><li id="note-gcc">No official statistic counts GCC staff. Pre-2023 levels come from Nasscom and Zinnov, whose report editions are not comparable; the post-2023 central estimate (about 260,000 tech jobs added from FY23 to FY26) comes from staffing firms’ hiring estimates, which we could not confirm. The RBI census series covers all foreign-owned firms in information and communication, including vendors such as Accenture and Cognizant, and its “before” period is only FY22–23. For captive centres, export values track the wage bill.</li><li id="note-midtier">The 21 firms’ combined US-dollar revenue rose by about $3.6 billion from FY23 to FY26 (16 firms with dollar figures), against top-six revenue of about $81 billion in FY23. That is about 4.5% over three years, or 1.5 points a year, and it includes acquisitions and the firms’ own normal growth.</li><li id="note-unexplained">The measured causes come from data on clients, so most of them (US in-sourcing especially) affect Accenture and Cognizant as much as the Indian firms. They therefore explain little of the gap with peers.</li><li id="note-m6">Pairs of business lines within Accenture, Cognizant, HCLTech and Tech Mahindra, and India’s exports of IT services against BPO and engineering services. Exposure to AI comes from occupation-level scores (Eloundou et al.; Felten et al.). Different scores even disagree on whether BPO or IT is more exposed.</li><li id="note-eps">Bessen (2019), <i>Economic Policy</i>: price elasticities of 1.3–2.4 for textiles, steel and cars in their early decades, falling to 0.2–0.4 or below by 1950. Tevlin and Whelan (2000): 1.6 for US business investment in computers (an elasticity with respect to their user cost). Nakano and Nishimura (2024): 1.07 for Japan’s imports of computer services, which measures substitution between imported and domestic services and so is an upper reference for the market as a whole. No published estimate exists for outsourced IT services. All elasticities here are stated as positive numbers.</li><li id="note-routes">The volume change can be computed two ways: from headcount plus the replacement rate, or from revenue less the price change. Under this yardstick they agree (about −7) once the in-sourcing of subcontracted work is counted.</li></ol></div></details><p class="footer">Built from <code>checkpoint_text.md</code> and the repository CSVs by <code>scripts/final/build_checkpoint.py</code>.</p>
+</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script>
+const DATA = {"levels":{"headcount":{"top":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.0,1.45,-0.21,-2.98,-2.05,0.0,-3.96,7.15,14.08,3.09,-4.78,-10.95]},"acn":{"x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[-0.0,-0.36,1.31,1.11,0.0,-3.98,9.14,13.87,7.26,4.9,-2.64]}},"rev_cc":{"top":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.0,1.81,1.96,-0.49,-0.21,0.0,-8.65,-0.65,3.47,-4.49,-10.57,-17.84]},"acn":{"x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.0,-0.67,-0.64,0.61,0.0,-6.61,5.89,13.98,8.1,5.18,1.82]}},"rpe_cc":{"top":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.0,0.26,0.34,1.36,1.05,0.0,-5.17,-7.6,-10.9,-9.02,-8.38,-10.62]},"acn":{"x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[0.0,-0.32,-1.96,-0.5,0.0,-2.63,-3.25,0.11,0.84,0.28,4.45]}}},"sector":{"all":{"x":["2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","CY2024","CY2025"],"y":[2.352,2.54,2.982,3.218,4.583,5.475,5.976,5.745,5.702],"lo":[2.162,2.299,2.693,2.956,4.272,4.981,5.247,5.063,5.335],"hi":[2.541,2.78,3.272,3.48,4.895,5.969,6.705,6.428,6.07]},"young":{"x":["2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","CY2024","CY2025"],"y":[1.121,1.247,1.388,1.688,2.429,2.606,2.994,2.884,2.822],"lo":[0.998,1.073,1.215,1.507,2.204,2.35,2.436,2.362,2.565],"hi":[1.243,1.422,1.561,1.868,2.653,2.863,3.553,3.405,3.079]}},"subcon":{"x":[2020,2021,2022,2023,2024,2025,2026],"labels":["FY20","FY21","FY22","FY23","FY24","FY25","FY26"],"firms":[{"key":"tcs","name":"TCS","y":[8.24,8.05,9.08,9.46,6.57,4.58,5.5],"text":["8.24%","8.05%","9.08%","9.46%","6.57%","4.58%","5.50%"]},{"key":"infosys","name":"Infosys","y":[7.39,7.05,10.36,9.58,7.96,7.94,8.63],"text":["7.39%","7.05%","10.36%","9.58%","7.96%","7.94%","8.63%"]},{"key":"hcltech","name":"HCLTech","y":[15.14,13.48,14.61,14.74,13.26,12.95,14.16],"text":["15.14%","13.48%","14.61%","14.74%","13.26%","12.95%","14.16%"]},{"key":"wipro","name":"Wipro","y":[14.83,13.5,13.73,12.74,11.48,11.24,11.62],"text":["14.83%","13.50%","13.73%","12.74%","11.48%","11.24%","11.62%"]},{"key":"techm","name":"Tech Mahindra","y":[14.76,13.14,15.58,15.01,12.86,11.02,10.74],"text":["14.76%","13.14%","15.58%","15.01%","12.86%","11.02%","10.74%"]},{"key":"ltim","name":"LTIMindtree","y":[null,null,9.04,8.52,7.21,6.92,7.65],"text":["–","–","9.04%","8.52%","7.21%","6.92%","7.65%"]}]},"kept":[{"label":"FY16–20","unc":{"c":1.01,"blo":0.71,"bhi":1.63,"slo":-0.73,"shi":3.08},"cor":{"c":2.1,"blo":1.5,"bhi":2.99,"slo":-0.86,"shi":5.93}},{"label":"FY16–23","unc":{"c":1.39,"blo":1.12,"bhi":1.93,"slo":-2.08,"shi":5.14},"cor":{"c":2.23,"blo":1.73,"bhi":2.98,"slo":-1.65,"shi":6.7}},{"label":"FY16–23 without the boom","unc":{"c":1.97,"blo":1.75,"bhi":2.59,"slo":-1.28,"shi":5.61},"cor":{"c":2.86,"blo":2.4,"bhi":3.72,"slo":-0.54,"shi":6.9}},{"label":"FY16–23 without FY21 (COVID)","unc":{"c":0.07,"blo":-0.28,"bhi":0.6,"slo":-2.42,"shi":2.74},"cor":{"c":1.08,"blo":0.45,"bhi":1.87,"slo":-2.68,"shi":5.53}}],"sbar":{"kept":{"c":2.1,"blo":1.5,"bhi":2.99,"slo":-0.86,"shi":5.93},"passed":{"c":0.2,"blo":0.03,"bhi":0.59,"slo":0.0,"shi":1.19},"total":{"c":2.3,"blo":1.53,"bhi":3.58,"slo":-0.84,"shi":7.12},"m2_rev_weighted_mean":0.18},"prices":{"fy":["FY24","FY25","FY26","FY27"],"base":[1.55,1.55,1.55,1.55],"ai":[0.0,0.1,0.43,1.51],"lo":[0.0,0.01,0.01,0.41],"hi":[0.25,0.35,1.32,2.67]},"infosyshires":{"x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"j":[43095,36595,35135,54287,50637,39011,111765,84085,22304,50606,53937],"e":[9450,7640,8975,16114,12372,13126,29791,30767,14778,21607,19575]},"under30":[{"key":"tcs","name":"TCS","x":[2016,2017,2020,2021,2022,2023,2024,2025],"y":[59.5,65.7,52.0,56.0,59.0,52.9,50.3,47.7]},{"key":"infosys","name":"Infosys","x":[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[69.7,68.5,62.9,63.3,60.4,58.5,57.7,55.4,59.6,59.6,54.7,52.5,50.7]},{"key":"hcltech","name":"HCLTech","x":[2020,2021,2022,2023,2024,2025,2026],"y":[40.0,37.9,39.7,41.3,39.2,35.6,34.3]},{"key":"wipro","name":"Wipro","x":[2016,2017,2019,2020,2021,2022,2023,2024,2025,2026],"y":[60.0,60.0,54.7,53.5,51.1,52.1,53.3,49.6,48.7,48.4]},{"key":"techm","name":"Tech Mahindra","x":[2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[54.1,53.5,53.6,49.6,51.4,48.3,47.7,47.4,46.7]},{"key":"ltim","name":"LTIMindtree","x":[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"y":[52.7,49.2,48.7,48.5,48.9,45.8,51.9,44.5,39.0,35.7,35.0]}],"juniorpay":{"it":{"x":["2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","CY2024","CY2025"],"y":[0.584,0.591,0.479,0.643,0.607,0.588,0.564,0.583,0.523],"lo":[0.547,0.544,0.445,0.61,0.575,0.543,0.516,0.533,0.498],"hi":[0.623,0.642,0.515,0.677,0.64,0.636,0.615,0.639,0.55]},"all":{"x":["2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","CY2024","CY2025"],"y":[0.553,0.532,0.533,0.539,0.572,0.561,0.559,0.576,0.559],"lo":[0.538,0.506,0.516,0.52,0.552,0.539,0.532,0.548,0.547],"hi":[0.569,0.559,0.55,0.559,0.593,0.583,0.588,0.605,0.571]}},"yardsticks":{"labels":["Pre-COVID growth rates","Pre-COVID path","Peers (Accenture, Cognizant)"],"L":[-8.34,-2.95,-1.53],"R":[-7.1,-5.71,-3.07]},"demand":{"implied":[{"label":"Implied by pre-COVID growth rates","c":-7.1},{"label":"Implied by pre-COVID path","c":-5.71},{"label":"Implied by peers (Accenture, Cognizant)","c":-3.07}],"measured":[{"label":"Clients' overall spending","c":-0.51,"lo":-1.5,"hi":0.5},{"label":"Clients doing the work themselves","c":-1.6,"lo":-3.66,"hi":0.1},{"label":"GCCs (change in their pace)","c":0.48,"lo":-2.24,"hi":1.6},{"label":"All measured causes","c":-1.62,"lo":-7.4,"hi":2.2}]},"clients":[{"label":"US real GDP","pre":2.3,"post":2.7},{"label":"Big-bank technology spending","pre":4.7,"post":4.72},{"label":"US in-house software investment (real)","pre":7.18,"post":6.9},{"label":"US computer jobs at client firms","pre":2.5,"post":3.2}],"inhouse":{"share":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[64.08,64.26,64.2,64.2,64.46,64.94,64.73,64.01,65.66,66.95,67.49]},"emp":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"oews":[76.3,79.8,81.6,84.8,88.0,89.0,91.7,100.0,102.5,100.6,99.0,null],"ces":[77.7,80.9,83.2,85.8,89.2,88.3,92.9,100.0,101.0,99.5,98.2,96.6]}},"gcc":{"fy":["FY20","FY21","FY22","FY23","FY24","FY25"],"subs":[12.6,5.9,26.5,19.6,9.6,9.2],"total":[null,null,17.2,18.4,2.8,7.3]},"listed":[{"label":"Top six","total":-61.466,"acq":0.0},{"label":"Mid-tier four","total":19.54,"acq":4.2},{"label":"7 other IT services firms","total":4.14,"acq":1.35},{"label":"5 engineering firms","total":2.87,"acq":2.7},{"label":"5 BPO firms","total":36.15,"acq":7.43}],"share":{"world":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[34.6,31.6,29.5,28.1,27.9,26.5,26.7,29.3,29.5,29.9,30.1]},"us":{"x":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],"y":[46.6,45.3,42.1,43.4,37.6,31.1,26.6,24.4,23.9,25.1,25.1]}},"decomp":{"total":-8.34,"parts":[{"label":"AI replacement","v":-2.3},{"label":"Clients buying more<br>at lower prices","v":0.18},{"label":"Subcontracted work<br>brought in-house","v":1.1},{"label":"Demand shift:<br>measured","v":-1.62},{"label":"Demand shift:<br>unexplained","v":-5.7}]},"jevons":{"s":2.3,"phi_now":0.087,"eps":[0.5,0.9,1.5]}};
+const C = { accent: "#235fa6", acn: "#7a7268", a: "#b0702a", ink: "#2a2318", ink2: "#5e5245", ink3: "#8a7d6d",
+  rule: "#e6ddd0", rule2: "#cfc4b4", mid: "#2f8a57", light: "#9fb8d6", grey: "#cfc4b4" };
+const FONT = "'Source Sans 3', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
+const CONFIG = { displayModeBar: false, responsive: true, scrollZoom: false };
+const FIRM = { tcs: "#4d6f91", infosys: "#b8643f", hcltech: "#5a9370", wipro: "#8f68a6", techm: "#ae8a2c", ltim: "#c0607e" };
+
+function baseLayout(extra) {
+  return Object.assign({ font: { family: FONT, size: 12.5, color: C.ink2 }, paper_bgcolor: "rgba(0,0,0,0)",
+    plot_bgcolor: "rgba(0,0,0,0)", showlegend: false, dragmode: false,
+    hoverlabel: { bgcolor: "#fffdf9", bordercolor: C.rule2, font: { family: FONT, size: 13, color: C.ink } } }, extra);
+}
+function axis(extra) {
+  return Object.assign({ showgrid: false, zeroline: false, fixedrange: true, showline: true, linecolor: C.rule2, linewidth: 1,
+    ticks: "outside", ticklen: 4, tickcolor: C.rule2, tickfont: { family: FONT, size: 12, color: C.ink2 } }, extra);
+}
+function tint(hex, a) { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; }
+function W(el) { return el.getBoundingClientRect().width; }
+function f1(v) { return v === null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1); }
+function zeroLine(xref, yref) { return { type: "line", xref: xref + " domain", yref, x0: 0, x1: 1, y0: 0, y1: 0, line: { color: C.rule2, width: 1 }, layer: "below" }; }
+function vZero(yref) { return { type: "line", xref: "x", yref: yref + " domain", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: C.ink3, width: 1 }, layer: "below" }; }
+function ptitle(k, text) { return { text, xref: "x" + k + " domain", yref: "y" + k + " domain", x: 0, y: 1.03, xanchor: "left", yanchor: "bottom", showarrow: false, font: { family: FONT, size: 13.5, color: C.ink } }; }
+function twoPanels(narrow, i, gap) {
+  if (narrow) { const h = (1 - gap) / 2; return { x: [0, 1], y: i === 0 ? [1 - h, 1] : [0, h] }; }
+  const w = (1 - gap) / 2; return { x: i === 0 ? [0, w] : [w + gap, 1], y: [0, 0.9] };
+}
+function draw(el, traces, layout) { Plotly.react(el, traces, baseLayout(layout), CONFIG); }
+const FYT = (a, b) => { const v = [], t = []; for (let y = a; y <= b; y++) { v.push(y); t.push("FY" + String(y % 100).padStart(2, "0")); } return { tickvals: v, ticktext: t }; };
+
+/* --- Fig 2: levels vs trend --- */
+function figLevels() {
+  const el = document.getElementById("chart-levels"), d = DATA.levels, narrow = W(el) < 640, gap = narrow ? 0.16 : 0.08;
+  const traces = [], layout = { shapes: [], annotations: [] };
+  [["headcount", "Headcount"], ["rev_cc", "Revenue (constant currency)"]].forEach(([m, title], i) => {
+    const k = i ? "2" : "", dom = twoPanels(narrow, i, gap);
+    const tr = (s, name, line) => ({ x: s.x, y: s.y, name, mode: "lines+markers", line, marker: { size: 5, color: line.color },
+      xaxis: "x" + k, yaxis: "y" + k, hovertemplate: "%{x}: %{y:.1f}<extra>" + name + "</extra>" });
+    traces.push(tr(d[m].top, "Top six", { color: C.accent, width: 2.75 }), tr(d[m].acn, "Accenture", { color: C.acn, width: 2, dash: "dash" }));
+    const ft = FYT(2016, 2026);
+    layout["xaxis" + k] = axis({ domain: dom.x, anchor: "y" + k, range: [2015.5, 2026.5], tickvals: [2016, 2018, 2020, 2022, 2024, 2026], ticktext: ["FY16", "FY18", "FY20", "FY22", "FY24", "FY26"] });
+    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, range: [-24, 20], dtick: 10 });
+    layout.shapes.push({ type: "line", xref: "x" + k + " domain", yref: "y" + k, x0: 0, x1: 1, y0: 0, y1: 0, line: { color: C.ink3, width: 1.5, dash: "dot" } },
+      { type: "rect", xref: "x" + k, yref: "y" + k + " domain", x0: 2021.5, x1: 2023.5, y0: 0, y1: 1, fillcolor: C.a, opacity: 0.07, line: { width: 0 }, layer: "below" });
+    layout.annotations.push(ptitle(k, title));
+    const last = d[m].top.y[d[m].top.y.length - 1], fy23 = d[m].top.y[d[m].top.x.indexOf(2023)];
+    layout.annotations.push({ x: 2026, y: last, xref: "x" + k, yref: "y" + k, text: f1(last), showarrow: false, xanchor: "left", xshift: 6, font: { size: 12, color: C.accent } },
+      { x: 2023, y: fy23, xref: "x" + k, yref: "y" + k, text: f1(fy23), showarrow: false, yanchor: "bottom", yshift: 6, font: { size: 12, color: C.accent } });
+    if (i === 0) layout.annotations.push({ x: 2022.5, y: 0, xref: "x", yref: "y domain", text: "boom", showarrow: false, yanchor: "bottom", font: { size: 11.5, color: C.a } });
+  });
+  draw(el, traces, Object.assign(layout, { height: narrow ? 560 : 320, hovermode: "x unified", margin: { l: 34, r: 30, t: 22, b: 30 } }));
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 3: PLFS sector employment --- */
+function figSector() {
+  const el = document.getElementById("chart-sector"), d = DATA.sector, narrow = W(el) < 640, gap = narrow ? 0.16 : 0.08;
+  const traces = [], layout = { annotations: [] };
+  [["all", "All workers in IT, millions"], ["young", "Graduates aged 21–30 in IT, millions"]].forEach(([m, title], i) => {
+    const k = i ? "2" : "", dom = twoPanels(narrow, i, gap), s = d[m];
+    traces.push({ x: s.x, y: s.y, type: "scatter", mode: "markers", marker: { size: 8, color: C.accent },
+      error_y: { type: "data", symmetric: false, array: s.hi.map((h, j) => h - s.y[j]), arrayminus: s.lo.map((l, j) => s.y[j] - l), color: tint(C.accent, 0.45), thickness: 1.5, width: 0 },
+      xaxis: "x" + k, yaxis: "y" + k, hovertemplate: "%{x}: %{y:.2f}m<extra></extra>" });
+    layout["xaxis" + k] = axis({ domain: dom.x, anchor: "y" + k, tickangle: narrow ? -40 : -35, tickfont: { family: FONT, size: 11, color: C.ink2 } });
+    layout["yaxis" + k] = axis({ domain: dom.y, anchor: "x" + k, rangemode: "tozero" });
+    layout.annotations.push(ptitle(k, title));
+  });
+  draw(el, traces, Object.assign(layout, { height: narrow ? 600 : 330, hovermode: "closest", margin: { l: 34, r: 8, t: 22, b: 64 } }));
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 4: subcontracting --- */
+function figSubcon() {
+  const el = document.getElementById("chart-subcon"), d = DATA.subcon, narrow = W(el) < 640;
+  const traces = d.firms.map(f => ({ x: d.x, y: f.y, text: f.text, name: f.name, mode: "lines+markers", line: { color: FIRM[f.key], width: 2 },
+    marker: { size: 6, color: FIRM[f.key] }, hovertemplate: "%{text}<extra>" + f.name + "</extra>" }));
+  const last = d.x[d.x.length - 1];
+  const annotations = d.firms.map(f => ({ x: last, y: f.y[f.y.length - 1], xref: "x", yref: "y", text: f.name, xanchor: "left", xshift: 8,
+    showarrow: false, font: { family: FONT, size: narrow ? 11 : 12.5, color: FIRM[f.key] } }));
+  annotations.push({ x: 2023.5, y: 1, xref: "x", yref: "paper", yanchor: "bottom", text: "FY23 → FY24: fell at all six", showarrow: false, font: { size: 12, color: C.ink2 } });
+  draw(el, traces, { height: 340, hovermode: "x unified", margin: { l: 34, r: narrow ? 92 : 110, t: 24, b: 30 },
+    xaxis: axis({ range: [2019.7, 2026.3], tickvals: d.x, ticktext: d.labels }), yaxis: axis({ range: [3.5, 16.5], ticksuffix: "%", dtick: 2 }),
+    shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 2023, x1: 2024, y0: 0, y1: 1, fillcolor: C.accent, opacity: 0.06, line: { width: 0 }, layer: "below" }], annotations });
+  el.dataset.narrow = narrow;
+}
+
+/* range rows (forest plot): rows = [{label, y, c, blo, bhi, slo, shi, color, nolabel}] */
+function forest(el, rows, opts) {
+  const narrow = W(el) < 640, traces = [], shapes = [], n = rows.length;
+  rows.forEach((r, i) => { if (r.y === undefined) r.y = n - 1 - i; });
+  rows.forEach(r => {
+    const y = r.y, color = r.color || C.accent;
+    if (r.slo !== undefined) shapes.push({ type: "line", x0: r.slo, x1: r.shi, y0: y, y1: y, line: { color: tint(color, 0.45), width: 1.5 } });
+    if (r.blo !== undefined) shapes.push({ type: "line", x0: r.blo, x1: r.bhi, y0: y, y1: y, line: { color: tint(color, 0.75), width: 7 } });
+    traces.push({ x: [r.c], y: [y], mode: "markers+text", type: "scatter", marker: { size: 11, color, line: { color: "#fff", width: 1.5 } },
+      text: [f1(r.c)], textposition: "top center", textfont: { size: 12, color }, cliponaxis: false,
+      hovertemplate: `<b>${r.hover || r.label}</b><br>central ${f1(r.c)}` + (r.blo !== undefined ? `<br>range ${f1(r.blo)} to ${f1(r.bhi)}` : "") +
+        (r.slo !== undefined ? `<br>with sampling noise ${f1(r.slo)} to ${f1(r.shi)}` : "") + "<extra></extra>" });
+  });
+  const lab = rows.filter(r => !r.nolabel), ys = rows.map(r => r.y);
+  shapes.push({ type: "line", x0: 0, x1: 0, yref: "paper", y0: 0, y1: 1, line: { color: C.ink3, width: 1 }, layer: "below" });
+  (opts.seps || []).forEach(y => shapes.push({ type: "line", xref: "paper", x0: 0, x1: 1, y0: y, y1: y, line: { color: C.rule, width: 1 }, layer: "below" }));
+  const lay = Object.assign({ height: opts.height || (60 + 46 * n), hovermode: "closest", shapes, annotations: [],
+    margin: { l: narrow ? (opts.lmN || 130) : (opts.lm || 230), r: 16, t: opts.t || 10, b: 34 },
+    xaxis: axis({ range: opts.range, dtick: opts.dtick || 1 }),
+    yaxis: axis({ tickvals: lab.map(r => r.labelY !== undefined ? r.labelY : r.y), ticktext: lab.map(r => narrow && r.short ? r.short : r.label),
+      range: [Math.min(...ys) - 0.7, Math.max(...ys) + 0.7], showline: false, ticks: "", tickfont: { family: FONT, size: narrow ? 11 : 12.5, color: C.ink } }) }, opts.extra || {});
+  draw(el, traces, lay);
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 5: saving kept by baseline --- */
+function figKept() {
+  const el = document.getElementById("chart-kept"), k = DATA.kept, n = k.length, rows = [];
+  k.forEach((w, i) => {
+    const base = n - 1 - i;
+    rows.push(Object.assign({ label: w.label, short: w.label.replace(" without ", " w/o "), y: base + 0.2, labelY: base, hover: "Baseline " + w.label + ": before correction", color: C.ink3 }, w.unc));
+    rows.push(Object.assign({ label: w.label, nolabel: true, y: base - 0.2, hover: "Baseline " + w.label + ": after correction", color: C.accent }, w.cor));
+  });
+  forest(el, rows, { range: [-3, 7.5], dtick: 1, lm: 210, lmN: 112, height: 330, seps: [0.5, 1.5, 2.5] });
+}
+
+/* --- Fig 6: price cuts --- */
+function figPrices() {
+  const el = document.getElementById("chart-prices"), d = DATA.prices, last = d.fy.length - 1;
+  const op = d.fy.map((_, i) => i === last ? 0.45 : 1);
+  draw(el, [
+    { x: d.fy, y: d.base, type: "bar", name: "Routine pre-AI discount", marker: { color: C.grey, opacity: op }, hovertemplate: "%{x}: routine discount %{y:.2f}%<extra></extra>" },
+    { x: d.fy, y: d.ai, type: "bar", name: "AI", marker: { color: C.accent, opacity: op },
+      error_y: { type: "data", symmetric: false, array: d.hi.map((h, i) => h - d.ai[i]), arrayminus: d.lo.map((l, i) => d.ai[i] - l), color: C.ink2, thickness: 1.5, width: 5 },
+      customdata: d.lo.map((l, i) => [l, d.hi[i]]), hovertemplate: "%{x}: AI cut %{y:.2f}% (range %{customdata[0]:.2f}–%{customdata[1]:.2f})<extra></extra>" }],
+    { barmode: "stack", height: 300, bargap: 0.45, hovermode: "closest", margin: { l: 34, r: 10, t: 10, b: 30 },
+      xaxis: axis({ ticktext: d.fy.map((f, i) => i === last ? f + " (expected)" : f), tickvals: d.fy }), yaxis: axis({ rangemode: "tozero", ticksuffix: "%", dtick: 1 }),
+      annotations: d.fy.map((f, i) => ({ x: f, y: d.base[i] + d.hi[i], text: "AI: " + d.ai[i].toFixed(1), showarrow: false, yanchor: "bottom", yshift: 4, font: { size: 12, color: C.accent } })) });
+}
+
+/* --- Fig 7: replacement rate --- */
+function figSbar() {
+  const el = document.getElementById("chart-sbar"), d = DATA.sbar;
+  forest(el, [Object.assign({ label: "Saving kept (revenue per busy employee)", short: "Kept", color: C.ink2 }, d.kept),
+    Object.assign({ label: "Saving passed on (price cuts)", short: "Passed on", color: C.ink2 }, d.passed),
+    Object.assign({ label: "<b>Replacement rate (sum)</b>", short: "<b>Total</b>", color: C.accent }, d.total)],
+    { range: [-1.5, 7.5], lm: 250, lmN: 80, height: 250, t: 46, seps: [0.5],
+      extra: { xaxis2: axis({ overlaying: "x", side: "top", range: [-1.5, 7.5], tickvals: [-1, 0, 1, 2, 3, 4, 5, 6, 7],
+        ticktext: [-1, 0, 1, 2, 3, 4, 5, 6, 7].map(v => Math.round(100 * Math.exp(-3 * v / 100))), showline: false }),
+        annotations: [{ text: "Workers needed per 100 after three years →", xref: "paper", yref: "paper", x: 1, y: 1.0, yshift: 30, xanchor: "right", yanchor: "bottom", showarrow: false, font: { size: 12, color: C.ink3 } }] } });
+  // the overlaying axis needs a trace to render
+  Plotly.addTraces(el, { x: [0], y: [0], xaxis: "x2", mode: "markers", marker: { opacity: 0 }, hoverinfo: "skip" });
+}
+
+/* --- Fig 8: revenue per employee vs trend --- */
+function figRpe() {
+  const el = document.getElementById("chart-rpelevel"), d = DATA.levels.rpe_cc;
+  const tr = (s, name, line) => ({ x: s.x, y: s.y, name, mode: "lines+markers", line, marker: { size: 5, color: line.color }, hovertemplate: "%{x}: %{y:.1f}<extra>" + name + "</extra>" });
+  const last = d.top.y[d.top.y.length - 1];
+  draw(el, [tr(d.top, "Top six", { color: C.accent, width: 2.75 }), tr(d.acn, "Accenture", { color: C.acn, width: 2, dash: "dash" })],
+    { height: 300, hovermode: "x unified", margin: { l: 34, r: 34, t: 10, b: 30 },
+      xaxis: axis({ range: [2015.5, 2026.5], tickvals: [2016, 2018, 2020, 2022, 2024, 2026], ticktext: ["FY16", "FY18", "FY20", "FY22", "FY24", "FY26"] }),
+      yaxis: axis({ dtick: 5 }), shapes: [{ type: "line", xref: "x domain", yref: "y", x0: 0, x1: 1, y0: 0, y1: 0, line: { color: C.ink3, width: 1.5, dash: "dot" } }],
+      annotations: [{ x: 2026, y: last, text: f1(last), showarrow: false, xanchor: "left", xshift: 6, font: { size: 12, color: C.accent } },
+        { x: 2016, y: 0, text: "FY16–20 trend", showarrow: false, yanchor: "bottom", xanchor: "left", font: { size: 11.5, color: C.ink3 } }] });
+}
+
+/* --- Fig 9: Infosys hires by age --- */
+function figInfosys() {
+  const el = document.getElementById("chart-infosyshires"), d = DATA.infosyshires;
+  const ft = d.x.map(y => "FY" + String(y % 100).padStart(2, "0"));
+  draw(el, [{ x: ft, y: d.j.map(v => v / 1000), type: "bar", name: "Under 30", marker: { color: C.accent }, hovertemplate: "%{x}: %{y:.1f}k under 30<extra></extra>" },
+    { x: ft, y: d.e.map(v => v / 1000), type: "bar", name: "30 and over", marker: { color: C.a }, hovertemplate: "%{x}: %{y:.1f}k aged 30+<extra></extra>" }],
+    { barmode: "group", height: 290, bargap: 0.25, hovermode: "closest", margin: { l: 34, r: 8, t: 10, b: 30 }, xaxis: axis({}), yaxis: axis({ rangemode: "tozero" }),
+      shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 7.5, x1: 10.5, y0: 0, y1: 1, fillcolor: C.accent, opacity: 0.06, line: { width: 0 }, layer: "below" }] });
+}
+
+/* --- Fig 10: under-30 share by firm --- */
+function figUnder30() {
+  const el = document.getElementById("chart-under30"), d = DATA.under30, narrow = W(el) < 640;
+  const traces = d.map(f => ({ x: f.x, y: f.y, name: f.name, mode: "lines+markers", line: { color: FIRM[f.key], width: 2 }, marker: { size: 5, color: FIRM[f.key] },
+    hovertemplate: "FY%{x}: %{y:.1f}%<extra>" + f.name + "</extra>" }));
+  const annotations = d.map(f => ({ x: f.x[f.x.length - 1], y: f.y[f.y.length - 1], text: f.name, xanchor: "left", xshift: 7, showarrow: false, font: { size: narrow ? 10.5 : 12, color: FIRM[f.key] } }));
+  draw(el, traces, { height: 330, hovermode: "closest", margin: { l: 34, r: narrow ? 86 : 104, t: 10, b: 30 },
+    xaxis: axis({ range: [2015.5, 2026.5], tickvals: [2016, 2018, 2020, 2022, 2024, 2026], ticktext: ["FY16", "FY18", "FY20", "FY22", "FY24", "FY26"] }),
+    yaxis: axis({ ticksuffix: "%" }), annotations });
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 11: junior relative pay --- */
+function figJuniorPay() {
+  const el = document.getElementById("chart-juniorpay"), d = DATA.juniorpay;
+  const tr = (s, name, color, dash) => ({ x: s.x, y: s.y, name, mode: "lines+markers", line: { color, width: 2.5, dash }, marker: { size: 6, color },
+    error_y: { type: "data", symmetric: false, array: s.hi.map((h, i) => h - s.y[i]), arrayminus: s.lo.map((l, i) => s.y[i] - l), color: tint(color, 0.4), thickness: 1.2, width: 0 },
+    hovertemplate: "%{x}: %{y:.2f}<extra>" + name + "</extra>" });
+  draw(el, [tr(d.it, "IT", C.accent), tr(d.all, "All graduates", C.acn, "dash")],
+    { height: 300, hovermode: "closest", margin: { l: 40, r: 8, t: 10, b: 52 }, xaxis: axis({ tickangle: -35, tickfont: { family: FONT, size: 11, color: C.ink2 } }), yaxis: axis({ range: [0.4, 0.75], dtick: 0.05 }) });
+}
+
+/* --- Fig 12: yardsticks --- */
+function figYardsticks() {
+  const el = document.getElementById("chart-yardsticks"), d = DATA.yardsticks, narrow = W(el) < 640;
+  const lab = narrow ? ["Growth<br>rates", "Pre-COVID<br>path", "Peers"] : d.labels;
+  const bar = (y, name, color) => ({ x: lab, y, name, type: "bar", marker: { color }, text: y.map(f1), textposition: "outside", cliponaxis: false,
+    textfont: { size: 12, color }, hovertemplate: "%{x}: %{y:.1f}<extra>" + name + "</extra>" });
+  draw(el, [bar(d.L, "Headcount", C.accent), bar(d.R, "Revenue", C.a)], { barmode: "group", height: 300, bargap: 0.35, hovermode: "closest",
+    margin: { l: 34, r: 8, t: 10, b: narrow ? 46 : 30 }, xaxis: axis({ side: "bottom" }), yaxis: axis({ range: [-10, 0.5], dtick: 2 }) });
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 13: demand shift --- */
+function figDemand() {
+  const el = document.getElementById("chart-demand"), d = DATA.demand;
+  const rows = d.implied.map(r => ({ label: r.label, short: r.label.replace("Implied by ", "").replace(" (Accenture, Cognizant)", ""), c: r.c, color: C.a }))
+    .concat(d.measured.map((m, i) => ({ label: i === d.measured.length - 1 ? "<b>" + m.label + "</b>" : m.label, short: m.label.replace("Clients' overall spending", "Client spending").replace("Clients doing the work themselves", "In-housing").replace(" (change in their pace)", "").replace("All measured causes", "<b>All measured</b>"),
+      c: m.c, blo: m.lo, bhi: m.hi, color: i === d.measured.length - 1 ? C.accent : C.ink2 })));
+  forest(el, rows, { range: [-8.5, 3], dtick: 1, lm: 290, lmN: 120, height: 360, seps: [3.5] });
+}
+
+/* --- Fig 14: client drivers --- */
+function figClients() {
+  const el = document.getElementById("chart-clients"), d = DATA.clients, narrow = W(el) < 640, n = d.length;
+  const y = d.map((_, i) => n - 1 - i), shapes = d.map((r, i) => ({ type: "line", x0: r.pre, x1: r.post, y0: y[i], y1: y[i], line: { color: C.rule2, width: 3 } }));
+  draw(el, [{ x: d.map(r => r.pre), y, mode: "markers", marker: { size: 11, color: C.ink3 }, customdata: d.map(r => r.label), hovertemplate: "%{customdata}<br>2016–22: %{x:.1f}%<extra></extra>" },
+    { x: d.map(r => r.post), y, mode: "markers+text", marker: { size: 11, color: C.accent }, text: d.map(r => r.post.toFixed(1)), textposition: "middle right", textfont: { size: 12, color: C.accent },
+      customdata: d.map(r => r.label), hovertemplate: "%{customdata}<br>2023–25: %{x:.1f}%<extra></extra>" }],
+    { height: 240, hovermode: "closest", shapes, margin: { l: narrow ? 150 : 270, r: 16, t: 8, b: 30 }, xaxis: axis({ range: [0, 8.5], ticksuffix: "%", dtick: 1 }),
+      yaxis: axis({ tickvals: y, ticktext: d.map(r => r.label), showline: false, ticks: "", range: [-0.6, n - 0.4], tickfont: { family: FONT, size: narrow ? 11 : 12.5, color: C.ink } }) });
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 15: in-house share and vendor employment --- */
+function figInhouse() {
+  const el = document.getElementById("chart-inhouse"), d = DATA.inhouse, narrow = W(el) < 640, gap = narrow ? 0.18 : 0.09;
+  const d1 = twoPanels(narrow, 0, gap), d2 = twoPanels(narrow, 1, gap);
+  draw(el, [{ x: d.share.x, y: d.share.y, mode: "lines+markers", line: { color: C.accent, width: 2.75 }, marker: { size: 6, color: C.accent }, hovertemplate: "%{x}: %{y:.1f}%<extra>in-house share</extra>" },
+    { x: d.emp.x, y: d.emp.oews, xaxis: "x2", yaxis: "y2", mode: "lines+markers", line: { color: C.accent, width: 2.5 }, marker: { size: 5, color: C.accent }, hovertemplate: "%{x}: %{y:.1f}<extra>OEWS</extra>" },
+    { x: d.emp.x, y: d.emp.ces, xaxis: "x2", yaxis: "y2", mode: "lines+markers", line: { color: C.a, width: 2, dash: "dash" }, marker: { size: 5, color: C.a }, hovertemplate: "%{x}: %{y:.1f}<extra>CES</extra>" }],
+    { height: narrow ? 560 : 320, hovermode: "closest", margin: { l: 38, r: 8, t: 22, b: 30 },
+      xaxis: axis({ domain: d1.x, anchor: "y", dtick: 2 }), yaxis: axis({ domain: d1.y, anchor: "x", ticksuffix: "%", range: [62, 69] }),
+      xaxis2: axis({ domain: d2.x, anchor: "y2", dtick: 2 }), yaxis2: axis({ domain: d2.y, anchor: "x2" }),
+      shapes: [{ type: "rect", xref: "x", yref: "y domain", x0: 2022.5, x1: 2025.5, y0: 0, y1: 1, fillcolor: C.accent, opacity: 0.06, line: { width: 0 }, layer: "below" },
+        { type: "rect", xref: "x2", yref: "y2 domain", x0: 2022.5, x1: 2025.5, y0: 0, y1: 1, fillcolor: C.accent, opacity: 0.06, line: { width: 0 }, layer: "below" }],
+      annotations: [ptitle("", "Clients' own staff, % of US computer jobs"), ptitle("2", "US IT service firms' employment, 2022 = 100")] });
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 16: GCC exports --- */
+function figGcc() {
+  const el = document.getElementById("chart-gcc"), d = DATA.gcc;
+  draw(el, [{ x: d.fy, y: d.subs, type: "bar", marker: { color: C.mid }, hovertemplate: "%{x}: %{y:.1f}%<extra>foreign-owned subsidiaries</extra>" },
+    { x: d.fy, y: d.total, type: "bar", marker: { color: C.grey }, hovertemplate: "%{x}: %{y:.1f}%<extra>all software exports</extra>" }],
+    { barmode: "group", height: 280, bargap: 0.3, hovermode: "closest", margin: { l: 34, r: 8, t: 10, b: 30 }, xaxis: axis({}), yaxis: axis({ ticksuffix: "%", rangemode: "tozero" }),
+      shapes: [{ type: "line", xref: "x", yref: "paper", x0: 3.5, x1: 3.5, y0: 0, y1: 1, line: { color: C.ink3, width: 1, dash: "dot" } }],
+      annotations: [{ x: 3.5, y: 1, xref: "x", yref: "paper", text: "2023", showarrow: false, xanchor: "left", xshift: 4, yanchor: "top", font: { size: 11.5, color: C.ink3 } }] });
+}
+
+/* --- Fig 17: listed firms --- */
+function figListed() {
+  const el = document.getElementById("chart-listed"), d = DATA.listed, narrow = W(el) < 640;
+  const lab = d.map(r => r.label), org = d.map(r => +(r.total - r.acq).toFixed(2)), acq = d.map(r => r.acq);
+  draw(el, [{ y: lab, x: org, type: "bar", orientation: "h", marker: { color: C.accent }, hovertemplate: "%{y}: %{x:.1f}k organic or not stated<extra></extra>" },
+    { y: lab, x: acq, type: "bar", orientation: "h", marker: { color: C.light }, hovertemplate: "%{y}: %{x:.1f}k acquired<extra></extra>" }],
+    { barmode: "relative", height: 280, bargap: 0.35, hovermode: "closest", margin: { l: narrow ? 130 : 190, r: 40, t: 8, b: 30 },
+      xaxis: axis({ ticksuffix: "k" }), yaxis: axis({ autorange: "reversed", showline: false, ticks: "", tickfont: { family: FONT, size: 12.5, color: C.ink } }),
+      shapes: [{ type: "line", x0: 0, x1: 0, yref: "paper", y0: 0, y1: 1, line: { color: C.ink3, width: 1 } }],
+      annotations: d.map(r => ({ x: r.total, y: r.label, text: (r.total > 0 ? "+" : "−") + Math.abs(r.total).toFixed(1) + "k", showarrow: false, xanchor: r.total > 0 ? "left" : "right", xshift: r.total > 0 ? 5 : -5, font: { size: 12, color: C.ink2 } })) });
+  el.dataset.narrow = narrow;
+}
+
+/* --- Fig 18: India's share --- */
+function figShare() {
+  const el = document.getElementById("chart-share"), d = DATA.share;
+  const tr = (s, name, color, dash) => ({ x: s.x, y: s.y, name, mode: "lines+markers", line: { color, width: 2.5, dash }, marker: { size: 5, color }, hovertemplate: "%{x}: %{y:.1f}%<extra>" + name + "</extra>" });
+  draw(el, [tr(d.world, "World exports (excl. Ireland)", C.accent), tr(d.us, "US imports", C.a, "dash")],
+    { height: 290, hovermode: "x unified", margin: { l: 34, r: 8, t: 10, b: 30 }, xaxis: axis({ dtick: 2 }), yaxis: axis({ ticksuffix: "%", rangemode: "tozero" }),
+      shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 2022.5, x1: 2025.5, y0: 0, y1: 1, fillcolor: C.accent, opacity: 0.06, line: { width: 0 }, layer: "below" }] });
+}
+
+/* --- Fig 19: AI's net effect vs share passed on --- */
+function figJevons() {
+  const el = document.getElementById("chart-jevons"), d = DATA.jevons, xs = [];
+  for (let p = 0; p <= 1.0001; p += 0.02) xs.push(+p.toFixed(2));
+  const cols = [C.ink3, C.accent, C.a];
+  const traces = d.eps.map((e, i) => ({ x: xs, y: xs.map(p => -d.s * (1 - e * p)), mode: "lines", line: { color: cols[i], width: i === 1 ? 3 : 2, dash: i === 1 ? "solid" : "dash" },
+    hovertemplate: "passed on %{x:.0%}: %{y:+.2f}<extra>elasticity " + e + "</extra>" }));
+  const annotations = d.eps.map((e, i) => ({ x: 1, y: -d.s * (1 - e), text: "elasticity " + e, xanchor: "left", xshift: 6, showarrow: false, font: { size: 12, color: cols[i] } }));
+  annotations.push({ x: d.phi_now, y: -d.s * (1 - 0.9 * d.phi_now), text: "FY24–26", showarrow: true, arrowhead: 0, ax: 30, ay: -34, font: { size: 12, color: C.ink } },
+    { x: 0.02, y: 0.15, text: "AI adds jobs", xanchor: "left", yanchor: "bottom", showarrow: false, font: { size: 11.5, color: C.mid } },
+    { x: 0.02, y: -0.15, text: "AI removes jobs", xanchor: "left", yanchor: "top", showarrow: false, font: { size: 11.5, color: C.a } });
+  traces.push({ x: [d.phi_now], y: [-d.s * (1 - 0.9 * d.phi_now)], mode: "markers", marker: { size: 11, color: C.ink, line: { color: "#fff", width: 1.5 } }, hoverinfo: "skip" });
+  draw(el, traces, { height: 320, hovermode: "closest", margin: { l: 40, r: 96, t: 10, b: 44 }, annotations,
+    xaxis: axis({ range: [0, 1], tickformat: ".0%", title: { text: "Share of the saving passed on to clients", font: { size: 12.5, color: C.ink2 } } }),
+    yaxis: axis({ range: [-2.6, 1.4], dtick: 0.5 }), shapes: [{ type: "line", xref: "x domain", yref: "y", x0: 0, x1: 1, y0: 0, y1: 0, line: { color: C.ink3, width: 1 } },
+      { type: "rect", xref: "x domain", yref: "y", x0: 0, x1: 1, y0: 0, y1: 1.4, fillcolor: C.mid, opacity: 0.05, line: { width: 0 }, layer: "below" }] });
+}
+
+/* --- Fig 20: decomposition --- */
+function figDecomp() {
+  const el = document.getElementById("chart-decomp"), d = DATA.decomp, narrow = W(el) < 640;
+  const labels = ["<b>Total fall</b>"].concat(d.parts.map(p => p.label));
+  const vals = [d.total].concat(d.parts.map(p => p.v));
+  const colors = [C.ink].concat(d.parts.map((p, i) => p.v > 0 ? C.mid : (i === 0 ? C.accent : (i === 4 ? tint(C.a, 0.55) : C.a))));
+  draw(el, [{ x: labels, y: vals, type: "bar", marker: { color: colors }, text: vals.map(f1), textposition: "outside", cliponaxis: false, textfont: { size: 12.5, color: C.ink },
+    hovertemplate: "%{x}: %{y:+.1f}<extra></extra>" }],
+    { height: narrow ? 360 : 320, bargap: 0.35, hovermode: "closest", margin: { l: 34, r: 8, t: 14, b: narrow ? 90 : 52 },
+      xaxis: axis({ tickfont: { family: FONT, size: narrow ? 10.5 : 12, color: C.ink2 }, tickangle: 0 }), yaxis: axis({ range: [-10, 2.5], dtick: 2 }),
+      shapes: [{ type: "line", xref: "x domain", yref: "y", x0: 0, x1: 1, y0: 0, y1: 0, line: { color: C.ink3, width: 1 } }] });
+  el.dataset.narrow = narrow;
+}
+
+/* --- wiring --- */
+const CHARTS = { "chart-levels": figLevels, "chart-sector": figSector, "chart-subcon": figSubcon, "chart-kept": figKept, "chart-prices": figPrices,
+  "chart-sbar": figSbar, "chart-rpelevel": figRpe, "chart-infosyshires": figInfosys, "chart-under30": figUnder30, "chart-juniorpay": figJuniorPay,
+  "chart-yardsticks": figYardsticks, "chart-demand": figDemand, "chart-clients": figClients, "chart-inhouse": figInhouse, "chart-gcc": figGcc,
+  "chart-listed": figListed, "chart-share": figShare, "chart-jevons": figJevons, "chart-decomp": figDecomp };
+const drawn = new Set();
+function drawOne(id) { const el = document.getElementById(id); if (el && W(el) > 0) { CHARTS[id](); drawn.add(id); } }
+function drawAll() { Object.keys(CHARTS).forEach(drawOne); }
+if (window.Plotly) drawAll();
+document.querySelectorAll("details").forEach(d => d.addEventListener("toggle", () => {
+  if (d.open) d.querySelectorAll(".chart").forEach(c => { if (CHARTS[c.id]) { drawOne(c.id); Plotly.Plots.resize(c); } });
+}));
+let rt;
+window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => Object.keys(CHARTS).forEach(id => {
+  const el = document.getElementById(id); if (el && W(el) > 0 && (!drawn.has(id) || String(W(el) < 640) !== el.dataset.narrow)) drawOne(id);
+}), 150); });
+
+/* footnotes: hover on desktop, tap anywhere */
+const fns = document.querySelectorAll(".fn");
+function place(fn) {
+  const pop = fn.querySelector(".fn-pop"); pop.style.left = "0px";
+  if (window.innerWidth <= 700) return;
+  const r = pop.getBoundingClientRect(), over = r.right - (window.innerWidth - 16);
+  if (over > 0) pop.style.left = (-over) + "px";
+  const r2 = pop.getBoundingClientRect(); if (r2.left < 16) pop.style.left = (parseFloat(pop.style.left) + 16 - r2.left) + "px";
+}
+let hideT;
+fns.forEach(fn => {
+  fn.addEventListener("mouseenter", () => { if (window.matchMedia("(hover: hover)").matches) { clearTimeout(hideT); fns.forEach(f => f !== fn && f.classList.remove("show")); fn.classList.add("show"); place(fn); } });
+  fn.addEventListener("mouseleave", () => { if (window.matchMedia("(hover: hover)").matches) hideT = setTimeout(() => fn.classList.remove("show"), 180); });
+  fn.querySelector(".fn-ref").addEventListener("click", e => { e.preventDefault(); const on = !fn.classList.contains("show");
+    fns.forEach(f => f.classList.remove("show")); if (on) { fn.classList.add("show"); place(fn); } });
+});
+document.addEventListener("click", e => { if (!e.target.closest(".fn")) fns.forEach(f => f.classList.remove("show")); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") fns.forEach(f => f.classList.remove("show")); });
+
+/* table of contents: open collapsed sections when jumped to, highlight the current section */
+document.querySelectorAll(".toc a").forEach(a => a.addEventListener("click", () => {
+  const t = document.getElementById(a.dataset.target); if (t && t.tagName === "DETAILS") t.open = true;
+  const m = a.closest(".toc-mobile"); if (m) m.open = false;
+}));
+const heads = [...document.querySelectorAll("main h2[id], main h3[id], main details.more[id]")];
+function onScroll() {
+  let cur = heads[0]; for (const h of heads) { if (h.getBoundingClientRect().top < 120) cur = h; }
+  document.querySelectorAll(".toc a").forEach(a => a.classList.toggle("active", cur && a.dataset.target === cur.id));
+}
+window.addEventListener("scroll", () => requestAnimationFrame(onScroll), { passive: true }); onScroll();
+
+if (window.katex) document.querySelectorAll(".math[data-tex]").forEach(el => katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false }));
+</script>
+</body>
+</html>

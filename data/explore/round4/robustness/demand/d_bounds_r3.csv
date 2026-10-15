@@ -1,0 +1,21 @@
+component,low,central,high,basis,residual_pp_vs_diag_-7 (= -7 - central)
+M5 original: vendor total excl. GCC scope,-7.32,-3.1,0.14,M5 d_bounds.csv (US proxies applied to all demand),-3.9
+"market, US (M5, unchanged)",-1.5,-0.5,0.5,M5,-6.5
+"market, Europe",-1.5,-0.52,0.5,"central = mean of EU/UK real GDP, real IPP GFCF (EU ex IE, DE+FR), EU ICT-specialist employment changes; band = M5 judgement +/-1",-6.48
+"market, destination-weighted",-1.5,-0.51,0.5,"weights NA 0.634, Europe 0.366 (FY24-26 RBI shares renormalised; other ~13% assumed like the weighted average)",-6.49
+"share, US OEWS (M5: computer occs in 5415)",-3.32,-2.52,-1.72,M5,-4.48
+"share, US OEWS with CES 5415 as vendor series",-3.14,-2.34,-1.54,CES May 5415 employment growth replaces OEWS computer-occ growth,-4.66
+"share, US BEA (M5, unchanged)",-1.01,-0.69,-0.36,M5,-6.31
+"share, US combined (r3)",-3.32,-1.56,-0.36,envelope of OEWS/CES and BEA; central = mean of method centrals,-5.44
+"share, continental EU (LFS ICT specialists)",-0.81,0.04,0.9,"in-house share 2022 x (relative J62-63 vs client shift + [0,2.5]); narrow, broad, ex-DE variants",-7.04
+"share, UK (ONS software GFCF purchased vs own-account)",-8.09,-7.19,-6.29,"own-account share 2022 x (relative nominal shift + [0,2.5]); purchased includes packaged software",0.19
+"share, UK combined",-8.09,-3.58,0.9,envelope of UK GFCF and EU-LFS read-across; central = mean,-3.42
+"share, Europe",-4.24,-1.67,0.9,UK and rest-of-Europe weighted by RBI destination shares,-5.33
+"share, destination-weighted",-3.66,-1.6,0.1,NA and Europe weighted,-5.4
+"GCC, net of pre-2023 GCC growth",-2.24,0.48,1.6,post minus pre GCC tech absorption as % of vendor base; see gcc_baseline_scenarios.csv,-7.48
+"R3 vendor total (top-six-type scope, excl. GCCs)",-7.4,-1.62,2.2,market + share + GCC; ranges added (conservative),-5.38
+R3 sector total (incl. GCCs),-5.16,-2.11,0.6,market + share,-4.89
+sens: GCC central = 0,-7.4,-2.11,2.2,sensitivity,-4.89
+sens: UK share = EU LFS only,-6.14,-1.0,2.2,sensitivity,-6.0
+sens: UK share = ONS GFCF only,-7.4,-2.24,0.96,sensitivity,-4.76
+sens: US-only proxies applied to all demand (M5 convention) + r3 GCC + CES,-7.06,-1.57,1.74,sensitivity,-5.43

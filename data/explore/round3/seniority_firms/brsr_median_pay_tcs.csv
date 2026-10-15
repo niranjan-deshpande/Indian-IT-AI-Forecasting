@@ -1,0 +1,19 @@
+firm,fiscal_year,category,sex,headcount,median_inr_lakh_pa,source_url,page,status
+TCS,FY22,Junior,M,161708,3.6,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY22,Junior,F,112476,3.7,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY22,Middle,M,144162,12.8,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY22,Middle,F,67274,10.2,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY22,Senior,M,19234,34.3,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY22,Senior,F,3195,32.4,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2021-22/ar/annual-report-2021-2022.pdf,214,confirmed
+TCS,FY23,Junior,M,169358,3.8,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY23,Junior,F,118949,3.85,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY23,Middle,M,146469,14.23,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY23,Middle,F,66935,11.62,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY23,Senior,M,18996,35.99,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY23,Senior,F,3131,34.17,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/ar/annual-report-2022-2023.pdf,165,confirmed
+TCS,FY24,All employees other than BoD/KMP,M,387444,14.8,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/ar/annual-report-2023-2024.pdf,147,confirmed
+TCS,FY24,All employees other than BoD/KMP,F,214098,10.4,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2023-24/ar/annual-report-2023-2024.pdf,147,confirmed
+TCS,FY25,All employees other than BoD/KMP,M,393937,16.7,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2024-25/ar/annual-report-2024-2025.pdf,148,confirmed
+TCS,FY26,All employees other than BoD/KMP,M,378966,18.3,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf,130,confirmed
+TCS,FY26,All employees other than BoD/KMP,F,205549,11.9,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf,130,confirmed
+TCS,FY25,All employees other than BoD/KMP,F,,10.6,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2024-25/ar/annual-report-2024-2025.pdf,148,"confirmed (headcount garbled in text extraction: '2,1 ,039')"

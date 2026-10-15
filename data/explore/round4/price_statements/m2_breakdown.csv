@@ -1,0 +1,7 @@
+test,central,uniform_scale_needed,note
+FY24-26 average top-6 phi*s >= 1.0 pp/yr,0.176,5.692,factor by which every firm's central would have to be understated
+FY24-26 average top-6 phi*s >= 2.0 pp/yr,0.176,11.383,factor by which every firm's central would have to be understated
+FY26 top-6 phi*s >= 1.0 pp/yr,0.431,2.319,"or: silent firms (Infosys, Wipro, TechM; 43% of revenue) would need 1.76 pp/yr each, holding quantifying firms at central"
+FY26 top-6 phi*s >= 2.0 pp/yr,0.431,4.638,"or: silent firms (Infosys, Wipro, TechM; 43% of revenue) would need 4.10 pp/yr each, holding quantifying firms at central"
+FY27 top-6 phi*s < 1.0 pp/yr,1.51,0.662,factor by which FY27 statements would have to be overstated
+BPO FY26 AI increment >= 1 pp/yr,0.5,2.0,"equivalently: true pre-AI baseline would have to be <= 0.75 pp (vs 1.0-1.5 stated), or Sagility's gross figure understated by >= 0.5 pp"

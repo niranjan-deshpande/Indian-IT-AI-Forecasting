@@ -1,0 +1,9 @@
+item,weight
+north_america,0.6338
+europe,0.3662
+uk_within_europe,0.4717
+rest_of_europe_within_europe,0.5283
+raw_share_pct_NA,55.03
+raw_share_pct_Europe,31.8
+raw_share_pct_UK,15.0
+raw_share_pct_unmeasured_other,13.17

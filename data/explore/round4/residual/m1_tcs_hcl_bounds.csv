@@ -1,0 +1,9 @@
+window,firm,delta_rpe_cc,delta_rpe_d27_se,n_pre,n_post,peer_delta_util,infosys_delta_util_trainee_incl,peer_delta_util_min,peer_delta_util_max,peer_delta_util_mean,delta_residual_lo,delta_residual_mid,delta_residual_hi,delta_residual_lo95,delta_residual_hi95
+base: FY16-23 vs FY24-26,tcs,2.383,3.796,8,3,infosys:+0.50;wipro:+0.98;techm:-1.43;lti_group:+0.64,1.323,-1.43,0.985,0.175,1.398,2.207,3.812,-6.042,11.251
+base: FY16-23 vs FY24-26,hcltech,2.8,3.202,8,3,infosys:+0.50;wipro:+0.98;techm:-1.43;lti_group:+0.64,1.323,-1.43,0.985,0.175,1.815,2.625,4.23,-4.461,10.506
+excl. FY21,tcs,1.65,3.804,7,3,infosys:+0.59;wipro:+1.55;techm:-1.10;lti_group:+0.96,1.352,-1.103,1.553,0.498,0.097,1.152,2.753,-7.358,10.209
+excl. FY21,hcltech,1.903,3.216,7,3,infosys:+0.59;wipro:+1.55;techm:-1.10;lti_group:+0.96,1.352,-1.103,1.553,0.498,0.35,1.404,3.005,-5.954,9.309
+excl. FY22-23 (boom),tcs,2.124,4.219,6,3,infosys:-0.01;wipro:-0.06;techm:-2.09;lti_group:+0.03,0.396,-2.086,0.025,-0.532,2.099,2.657,4.21,-6.169,12.478
+excl. FY22-23 (boom),hcltech,1.201,3.603,6,3,infosys:-0.01;wipro:-0.06;techm:-2.09;lti_group:+0.03,0.396,-2.086,0.025,-0.532,1.175,1.733,3.287,-5.886,10.348
+baseline FY16-20 only,tcs,1.048,4.382,5,3,infosys:+0.00;wipro:+0.53;techm:-1.76;lti_group:+0.35,0.251,-1.76,0.528,-0.221,0.52,1.269,2.807,-8.069,11.396
+baseline FY16-20 only,hcltech,-0.375,3.762,5,3,infosys:+0.00;wipro:+0.53;techm:-1.76;lti_group:+0.35,0.251,-1.76,0.528,-0.221,-0.903,-0.154,1.384,-8.276,8.757

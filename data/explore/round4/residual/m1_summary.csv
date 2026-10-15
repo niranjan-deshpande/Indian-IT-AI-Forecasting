@@ -1,0 +1,20 @@
+scope,series,window,estimate,lo95,hi95,d27_lo95,d27_hi95,firms,dpi_rho_needed_to_reach_0,dpi_rho_needed_to_reach_4,dpi_rho_needed_for_lo95_above_0,bound_lo,bound_hi,revw_lo,revw_hi
+firm: 4 firms with utilisation,pilot (cc only),base: FY16-23 vs FY24-26,0.6,-2.26,3.46,-5.41,6.69,infosys;techm;wipro,0.6,-3.4,-2.26,,,,
+firm: 4 firms with utilisation,pilot (cc only),excl. FY21,-1.36,-2.73,0.01,-7.48,4.77,infosys;techm;wipro,-1.36,-5.36,-2.73,,,,
+firm: 4 firms with utilisation,pilot (cc only),excl. FY22-23 (boom),2.34,-0.5,5.18,-5.56,10.24,infosys,2.34,-1.66,-0.5,,,,
+firm: 4 firms with utilisation,pilot (cc only),baseline FY16-20 only,2.2,-1.02,5.42,-6.02,10.41,infosys,2.2,-1.8,-1.02,,,,
+firm: 4 firms with utilisation,imputed cc + Infosys trainee-incl. utilisation,base: FY16-23 vs FY24-26,1.27,-1.66,4.21,-4.38,6.77,infosys;lti_group;techm;wipro,1.27,-2.73,-1.66,,,,
+firm: 4 firms with utilisation,imputed cc + Infosys trainee-incl. utilisation,excl. FY21,-0.18,-1.82,1.46,-5.9,5.22,infosys;lti_group;techm;wipro,-0.18,-4.18,-1.82,,,,
+firm: 4 firms with utilisation,imputed cc + Infosys trainee-incl. utilisation,excl. FY22-23 (boom),2.04,0.14,3.94,-4.51,8.5,infosys;lti_group;techm,2.04,-1.96,0.14,,,,
+firm: 4 firms with utilisation,imputed cc + Infosys trainee-incl. utilisation,baseline FY16-20 only,1.43,0.09,2.78,-5.43,8.16,infosys;lti_group;techm,1.43,-2.57,0.09,,,,
+"firm: top six (TCS, HCLTech bounded by peer utilisation range)",imputed cc + Infosys trainee-incl.,base: FY16-23 vs FY24-26,1.6,,,,,hcltech;infosys;lti_group;tcs;techm;wipro,1.6,-2.4,,1.33,2.13,1.31,2.56
+"firm: top six (TCS, HCLTech bounded by peer utilisation range)",imputed cc + Infosys trainee-incl.,excl. FY21,0.2,,,,,hcltech;infosys;lti_group;tcs;techm;wipro,0.2,-3.8,,-0.15,0.73,-0.06,1.32
+"firm: top six (TCS, HCLTech bounded by peer utilisation range)",imputed cc + Infosys trainee-incl.,excl. FY22-23 (boom),2.07,,,,,hcltech;infosys;lti_group;tcs;techm,2.07,-1.93,,1.85,2.7,1.83,3.07
+"firm: top six (TCS, HCLTech bounded by peer utilisation range)",imputed cc + Infosys trainee-incl.,baseline FY16-20 only,1.04,,,,,hcltech;infosys;lti_group;tcs;techm,1.04,-2.96,,0.74,1.66,0.68,2.03
+sector (illustrative only),BoP computer services / PLFS NIC 62+63,main: 2017-18->2022-23 vs 2022-23->CY2025,13.18,8.97,17.4,,,,13.18,,,,,,
+sector (illustrative only),BoP computer services / PLFS NIC 62+63,avoid 2025 design break: post 2022-23->CY2024,10.93,0.08,21.79,,,,10.93,,,,,,
+sector (illustrative only),BoP computer services / PLFS NIC 62+63,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",21.97,-18.85,62.79,,,,21.97,,,,,,
+sector (illustrative only),BoP computer services / PLFS NIC 62+63,"pre within design A, post 2022-23->CY2025",10.12,3.15,17.1,,,,10.12,,,,,,
+sector (illustrative only),BoP computer services / PLFS NIC 62+63,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,14.47,10.0,18.94,,,,14.47,,,,,,
+sector (illustrative only),RBI survey total / PLFS NIC 62+63+822,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,12.15,7.8,16.5,,,,12.15,,,,,,
+sector (illustrative only),RBI survey total / PLFS NIC 62+63,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,12.67,8.2,17.15,,,,12.67,,,,,,

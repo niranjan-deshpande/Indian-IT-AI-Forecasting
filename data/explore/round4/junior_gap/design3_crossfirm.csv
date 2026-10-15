@@ -1,0 +1,10 @@
+firm,tier,base_year,latest,boom_raw_pp,chg_post_raw_pp,pretrend_pp,dev_post_pp,boom_hires_ratio
+infosys,large,2021.0,2026,17.322,-12.042,-8.724,-3.318,1.362
+tcs,large,2021.0,2025,-12.503,-10.41,-7.139,-3.271,
+hcltech,large,2021.0,2026,14.303,-9.987,-8.79,-1.197,
+wipro,large,2021.0,2026,8.898,-6.474,-7.267,0.794,1.421
+techm,large,2021.0,2026,-5.203,-2.139,-5.483,3.344,1.704
+ltimindtree,large,2020.0,2026,-12.091,-13.186,-1.677,-11.509,
+persistent,mid,2022.0,2026,31.225,-29.181,,,2.105
+mphasis,mid,2021.0,2025,24.477,-16.22,,,2.06
+hexaware,mid,2021.0,2025,-2.826,1.086,,,1.942

@@ -1,0 +1,18 @@
+series,label,role,avg_g_2016_19,avg_g_2016_22,avg_g_2023_25,g_2024,g_2025,change_vs_2016_22,change_vs_2016_19
+real_gdp,Client driver: US real GDP,"non-circular driver (market d, real)",2.43,2.3,2.7,2.91,2.32,0.4,0.27
+corp_profits_nom,Client driver: US corporate profits (nominal),"non-circular driver (market d, nominal)",3.21,6.25,5.97,4.25,7.45,-0.27,2.76
+gdp_deflator,US GDP deflator (for nominal->real),deflator,1.66,2.76,2.94,2.53,2.6,0.18,1.28
+bea_ownacct_nom,BEA own-account software (nominal),"non-circular: in-house work, labour-cost based",4.76,5.12,5.67,4.57,2.56,0.55,0.91
+bea_ownacct_real,"BEA own-account software (real, 2017$)",non-circular: in-house work volume (input-cost deflator),6.53,7.18,6.9,5.3,5.61,-0.28,0.38
+bea_custom_nom,BEA purchased custom software (nominal),CIRCULAR: = vendor output p*Q (all vendors incl. imports),8.0,8.61,5.28,4.3,6.91,-3.33,-2.73
+bea_custom_real,BEA purchased custom software (real),CIRCULAR-ish: vendor revenue / input-cost index (same index as own-account),9.77,10.67,6.51,5.04,9.97,-4.16,-3.26
+bea_prepack_nom,BEA prepackaged software/SaaS (nominal),substitute product; not d for services,10.92,11.22,9.68,10.49,12.64,-1.54,-1.24
+oews_comp_client_inhouse,OEWS computer occs in client industries (US),non-circular: in-house tech labour,3.27,2.5,3.2,3.43,1.5,0.71,-0.07
+oews_comp_client_finance,OEWS computer occs in finance & insurance (US),non-circular: in-house tech labour,5.29,3.49,2.86,3.09,3.13,-0.63,-2.43
+oews_comp_5415,OEWS computer occs in NAICS 5415 (US),"vendor-side labour (outcome, not proxy)",2.86,2.54,-1.94,-2.33,-0.94,-4.48,-4.8
+oews_comp_staffing_5613,OEWS computer occs in employment services (US),contract IT labour (vendor-like),2.02,4.73,-8.25,-6.91,-11.05,-12.97,-10.27
+oews_comp_all_industries,"OEWS computer occs, all industries (US)",market labour (includes AI s),3.08,2.77,1.05,-0.38,0.85,-1.71,-2.02
+bank3_comm_it_expense,JPM+BAC+C comms & IT expense line (10-K),client tech budget; partly circular (vendor share w),5.88,4.7,4.72,4.06,6.7,0.02,-1.16
+bank2_comm_it_expense_bac_c,BAC+C comms & IT expense line (10-K),client tech budget; partly circular,1.23,5.24,4.23,2.82,3.68,-1.01,3.0
+oews_comp_5415-oews_comp_client_inhouse,OEWS: 5415 minus client in-house computer-occ growth,vendor vs in-house relative shift,-0.41,0.04,-5.15,-5.76,-2.44,-5.19,-4.73
+bea_custom_nom-bea_ownacct_nom,BEA: custom minus own-account nominal growth,vendor vs in-house relative shift,3.25,3.49,-0.4,-0.27,4.35,-3.88,-3.64

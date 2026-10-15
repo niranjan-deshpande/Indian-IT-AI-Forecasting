@@ -1,0 +1,10 @@
+firm,metric,base_fy16_20,n_base_years,sum_fy21_23,overshoot_vs_trend_by_fy23,actual_fy24_26,delta_vs_a,cf_level_c,delta_vs_c
+accenture,headcount,8.071,4.0,38.085,13.872,2.567,-5.504,3.447,-0.88
+accenture,rev_cc,8.355,4.0,39.044,13.98,4.301,-4.054,3.695,0.606
+accenture,rev_usd,7.736,4.0,34.644,11.435,4.426,-3.311,3.924,0.501
+cognizant,headcount,7.1,5.0,18.419,-2.88,0.126,-6.973,8.06,-7.934
+cognizant,rev_cc,6.919,3.0,15.446,-5.311,2.785,-4.134,8.689,-5.904
+cognizant,rev_usd,9.043,5.0,13.88,-13.248,3.256,-5.787,13.459,-10.203
+indian_matched_avg,headcount,7.226,,36.157,14.479,-0.546,,,
+indian_matched_avg,rev_cc,8.698,,30.447,4.354,1.536,,,
+indian_matched_avg,rev_usd,7.862,,30.559,6.972,2.063,,,

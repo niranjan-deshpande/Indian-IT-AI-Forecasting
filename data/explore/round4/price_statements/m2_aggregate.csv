@@ -1,0 +1,9 @@
+segment,fy,low,central,high,low_bias_widened,high_bias_widened,gross_low,gross_central,gross_high,baseline_central,weight_on_quantifying_firms
+IT top-6,FY24,0.0,0.0,0.25,0.0,0.5,0.8,1.55,3.0,1.55,0.572
+BPO (Sagility),FY24,0.0,0.0,0.25,0.0,0.5,1.0,1.25,1.5,1.25,nan
+IT top-6,FY25,0.014,0.096,0.353,0.007,0.707,0.814,1.646,3.103,1.55,0.572
+BPO (Sagility),FY25,0.0,0.5,1.0,0.0,2.0,1.5,1.75,2.0,1.25,nan
+IT top-6,FY26,0.014,0.431,1.318,0.007,2.635,0.814,1.981,4.068,1.55,0.572
+BPO (Sagility),FY26,0.0,0.5,1.0,0.0,2.0,1.5,1.75,2.0,1.25,nan
+IT top-6,FY27,0.406,1.51,2.67,0.203,5.34,1.206,3.06,5.42,1.55,0.572
+BPO (Sagility),FY27,0.25,1.0,3.0,0.125,6.0,1.75,2.25,4.0,1.25,nan

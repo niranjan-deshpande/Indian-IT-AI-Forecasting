@@ -1,0 +1,57 @@
+activity,fy,inr_crore,usd_bn,source_prid,note
+it_services,2018-19,532863,76.2,51278,
+it_services,2019-20,571712,80.7,52258,same value in 51278
+it_services,2020-21,614678,82.8,54338,same value in 52258
+it_services,2021-22,757352,101.7,56542,same value in 54338
+it_services,2022-23,962229,119.8,58937,same value in 56542; frame/grossing changes this round (see sector_aggregates FINDINGS)
+it_services,2023-24,1038618,125.5,61562,same value in 58937
+it_services,2024-25,1110640,131.3,63625,same value in 61562
+it_services,2025-26,1299085,147.0,63625,
+sw_products,2018-19,25186,3.6,51278,
+sw_products,2019-20,35491,5.0,52258,
+sw_products,2020-21,33230,4.5,54338,
+sw_products,2021-22,33640,4.5,56542,
+sw_products,2022-23,41327,5.1,58937,
+sw_products,2023-24,45743,5.5,61562,
+sw_products,2024-25,57659,6.8,63625,
+sw_products,2025-26,56549,6.4,63625,
+bpo,2018-19,204814,29.3,51278,
+bpo,2019-20,236172,33.3,52258,
+bpo,2020-21,278507,37.5,54338,
+bpo,2021-22,314851,42.3,56542,
+bpo,2022-23,411528,51.2,58937,
+bpo,2023-24,414492,50.1,61562,
+bpo,2024-25,471690,55.8,63625,
+bpo,2025-26,494658,56.0,63625,
+engineering,2018-19,61382,8.8,51278,
+engineering,2019-20,68327,9.6,52258,
+engineering,2020-21,65726,8.9,54338,
+engineering,2021-22,61561,8.2,56542,
+engineering,2022-23,75816,9.4,58937,
+engineering,2023-24,79797,9.6,61562,
+engineering,2024-25,91482,10.8,63625,
+engineering,2025-26,105655,12.0,63625,
+bpo_fin_acct,2018-19,36142,5.2,51278,Table 3 sub-line
+bpo_fin_acct,2019-20,41867,5.9,52258,
+bpo_fin_acct,2020-21,43223,5.8,54338,
+bpo_fin_acct,2021-22,47094,6.3,56542,
+bpo_fin_acct,2022-23,55637,6.9,58937,
+bpo_fin_acct,2023-24,60415,7.3,61562,
+bpo_fin_acct,2024-25,69245,8.2,63625,
+bpo_fin_acct,2025-26,69747,8.0,63625,
+bpo_bus_consulting,2018-19,17555,2.5,51278,Table 3 sub-line
+bpo_bus_consulting,2019-20,30646,4.3,52258,
+bpo_bus_consulting,2020-21,34510,4.6,54338,
+bpo_bus_consulting,2021-22,36110,4.8,56542,
+bpo_bus_consulting,2022-23,20773,2.6,58937,large drop 2021-22 -> 2022-23: likely reclassification
+bpo_bus_consulting,2023-24,27173,3.3,61562,
+bpo_bus_consulting,2024-25,31641,3.8,63625,
+bpo_bus_consulting,2025-26,35121,4.0,63625,
+bpo_other,2018-19,144718,20.7,51278,Table 3 'Other BPO services' (not itemised; presumably incl. customer interaction)
+bpo_other,2019-20,154570,21.8,52258,
+bpo_other,2020-21,190636,25.7,54338,
+bpo_other,2021-22,221104,29.8,56542,
+bpo_other,2022-23,317552,39.5,58937,
+bpo_other,2023-24,307065,37.1,61562,
+bpo_other,2024-25,357634,42.3,63625,
+bpo_other,2025-26,372972,42.2,63625,

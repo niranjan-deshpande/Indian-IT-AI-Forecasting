@@ -1,0 +1,5 @@
+fy,top6_headcount,mid4_headcount,top10_total,top6_pre_covid_trend_from_FY23,source_url
+FY23,1679489,108763,1788252,1679489,repo: data/explore/round3/gcc/top6_headcount_fy.csv + data/explore/midtier/midtier_annual.csv (firm fact sheets; URLs per row in those files)
+FY24,1605986,109532,1715518,1780723,repo: data/explore/round3/gcc/top6_headcount_fy.csv + data/explore/midtier/midtier_annual.csv
+FY25,1621361,121842,1743203,1888060,repo: data/explore/round3/gcc/top6_headcount_fy.csv + data/explore/midtier/midtier_annual.csv
+FY26,1618023,128302,1746325,2001867,repo: data/explore/round3/gcc/top6_headcount_fy.csv + data/explore/midtier/midtier_annual.csv

@@ -1,0 +1,8 @@
+component,low,central,high,basis
+"delta_d_market (US, real)",-1.5,-0.5,0.5,Drivers: real GDP growth +0.40 pp vs 2016-22 (+0.27 vs 2016-19); own-account real -0.28 pp; bank tech lines 0.02 pp nominal; custom+own nominal -2.32 pp is partly circular (custom = vendor revenue): adding back up to 0.73*2.5 = 1.8 pp of AI price pass-through and subtracting inflation change gives -2.5 to -0.4. Range set by judgement across these.
+delta_d_share via OEWS labour (US),-3.32,-2.52,-1.72,(1-sigma)=0.640 x [relative labour shift -5.19 pp + (s_vendor - s_inhouse) in 0..2.5]. Lower bound if vendors adopt AI no faster than in-house teams; offshoring of 5415 US jobs would make it too negative.
+delta_d_share via BEA nominal (US),-1.01,-0.69,-0.36,"(1-sigma)=0.261 x [relative nominal shift -3.88 pp + vendor relative price cut 0..2.5]. Weights are nominal shares; BEA counts only part of programmer time as own-account, so sigma is high and this is a small number."
+"delta_d_share via GCC (India, vendor scope only)",-2.5,-1.0,0.0,"Round-3 synthesis: GCC tech jobs +~260k FY23-26 (range 155-430k), ~87k/yr on a vendor base of roughly 3.5-4m, i.e. 2-3%/yr of vendor volume, but GCCs were also growing before 2023 (pre-2023 GCC growth not confirmed here), so only part is a change vs baseline. Zero at sector scope if GCCs are inside the sector."
+delta_d_share US combined,-3.32,-1.6,-0.36,envelope of OEWS and BEA; central = mean of the two centrals
+"delta_d total: vendor (excl. GCC), US-weighted",-7.32,-3.1,0.14,market + US share shift + GCC channel (ranges added: deliberately conservative)
+"delta_d total: sector incl. GCC, US-weighted",-4.82,-2.1,0.14,market + US share shift + GCC channel (ranges added: deliberately conservative)

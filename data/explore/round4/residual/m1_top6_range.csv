@@ -1,0 +1,9 @@
+series,window,firms,eq_lo,eq_mid,eq_hi,revw_lo,revw_mid,revw_hi,observed_firms_mean
+cc + imputed cc,base: FY16-23 vs FY24-26,hcltech;infosys;lti_group;tcs;techm;wipro,1.467,1.737,2.272,1.503,1.922,2.751,1.397
+cc + imputed cc,excl. FY21,hcltech;infosys;lti_group;tcs;techm;wipro,-0.023,0.328,0.862,0.122,0.667,1.494,-0.147
+cc + imputed cc,excl. FY22-23 (boom),hcltech;infosys;lti_group;tcs;techm,1.931,2.154,2.776,1.941,2.269,3.182,2.127
+cc + imputed cc,baseline FY16-20 only,hcltech;infosys;lti_group;tcs;techm,0.791,1.091,1.706,0.751,1.191,2.096,1.446
+imputed cc + Infosys trainee-incl.,base: FY16-23 vs FY24-26,hcltech;infosys;lti_group;tcs;techm;wipro,1.33,1.6,2.135,1.313,1.731,2.56,1.192
+imputed cc + Infosys trainee-incl.,excl. FY21,hcltech;infosys;lti_group;tcs;techm;wipro,-0.151,0.201,0.734,-0.057,0.488,1.315,-0.338
+imputed cc + Infosys trainee-incl.,excl. FY22-23 (boom),hcltech;infosys;lti_group;tcs;techm,1.85,2.073,2.695,1.833,2.161,3.074,1.992
+imputed cc + Infosys trainee-incl.,baseline FY16-20 only,hcltech;infosys;lti_group;tcs;techm,0.741,1.041,1.656,0.685,1.125,2.03,1.363

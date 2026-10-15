@@ -1,0 +1,13 @@
+metric,sample,slope_pp_per_yr,se,n_obs,firms
+headcount,"FY12-20, TCS+Infosys (continuous series)",-0.995,0.351,18,infosys;tcs
+headcount,"FY12-20, all Indian firms with data (FE)",-0.815,0.29,28,hcltech;infosys;tcs;techm
+headcount,"FY13-20, TCS+Infosys (drops FY12 post-GFC rebound)",-0.53,0.378,16,infosys;tcs
+headcount,"FY16-20, top-six firms (FE, window only)",0.658,0.603,23,hcltech;infosys;lti_group;tcs;techm
+rev_usd,"FY12-20, TCS+Infosys (continuous series)",-1.047,0.302,18,infosys;tcs
+rev_usd,"FY12-20, all Indian firms with data (FE)",-0.981,0.224,33,hcltech;infosys;tcs;techm;wipro
+rev_usd,"FY13-20, TCS+Infosys (drops FY12 post-GFC rebound)",-0.583,0.292,16,infosys;tcs
+rev_usd,"FY16-20, top-six firms (FE, window only)",0.063,0.321,27,hcltech;infosys;lti_group;tcs;techm;wipro
+rev_cc,"FY12-20, TCS+Infosys (continuous series)",-0.369,0.302,14,infosys;tcs
+rev_cc,"FY12-20, all Indian firms with data (FE)",-0.509,0.21,26,hcltech;infosys;tcs;wipro
+rev_cc,"FY13-20, TCS+Infosys (drops FY12 post-GFC rebound)",-0.143,0.34,13,infosys;tcs
+rev_cc,"FY16-20, top-six firms (FE, window only)",-0.308,0.348,20,hcltech;infosys;tcs;wipro

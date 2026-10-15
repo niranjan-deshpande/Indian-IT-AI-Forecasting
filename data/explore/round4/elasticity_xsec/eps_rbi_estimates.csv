@@ -1,0 +1,97 @@
+design,baseline,mapping,phi_s_bar,contrast,dc,dy,eps_minus_1,eps,se_noise_if_sigma3
+rbi_segments,base_FY20_23,compA:E_gpt_raw,2.5,bpo-it_services,-0.518,-5.017,9.694,10.694,5.796
+rbi_segments,base_FY20_23,compA:E_gpt_raw,2.5,engineering-it_services,-0.414,12.341,-29.795,-28.795,7.243
+rbi_segments,base_FY20_23,compA:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.518,,-1.6,-0.6,
+rbi_segments,base_FY20_23,compA:E_human_raw,2.5,bpo-it_services,0.253,-5.017,-19.849,-18.849,11.868
+rbi_segments,base_FY20_23,compA:E_human_raw,2.5,engineering-it_services,-0.295,12.341,-41.791,-40.791,10.159
+rbi_segments,base_FY20_23,compA:E_human_raw,2.5,OLS 3 segments w/ intercept,0.548,,-31.953,-30.953,
+rbi_segments,base_FY20_23,compA:E_gpt,2.5,bpo-it_services,-0.2,-5.017,25.101,26.101,15.008
+rbi_segments,base_FY20_23,compA:E_gpt,2.5,engineering-it_services,-0.264,12.341,-46.731,-45.731,11.36
+rbi_segments,base_FY20_23,compA:E_gpt,2.5,OLS 3 segments w/ intercept,0.264,,-29.614,-28.614,
+rbi_segments,base_FY20_23,compA:E_human,2.5,bpo-it_services,0.12,-5.017,-41.869,-40.869,25.034
+rbi_segments,base_FY20_23,compA:E_human,2.5,engineering-it_services,-0.257,12.341,-48.041,-47.041,11.678
+rbi_segments,base_FY20_23,compA:E_human,2.5,OLS 3 segments w/ intercept,0.377,,-46.389,-45.389,
+rbi_segments,base_FY20_23,compA:F_lm,2.5,bpo-it_services,0.146,-5.017,-34.396,-33.396,20.566
+rbi_segments,base_FY20_23,compA:F_lm,2.5,engineering-it_services,-0.073,12.341,-168.428,-167.428,40.943
+rbi_segments,base_FY20_23,compA:F_lm,2.5,OLS 3 segments w/ intercept,0.219,,-72.855,-71.855,
+rbi_segments,base_FY20_23,compB:E_gpt_raw,2.5,bpo-it_services,-0.356,-5.017,14.105,15.105,8.433
+rbi_segments,base_FY20_23,compB:E_gpt_raw,2.5,engineering-it_services,-0.109,12.341,-113.472,-112.472,27.584
+rbi_segments,base_FY20_23,compB:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.356,,23.724,24.724,
+rbi_segments,base_FY20_23,compB:E_human_raw,2.5,bpo-it_services,-0.097,-5.017,51.582,52.582,30.841
+rbi_segments,base_FY20_23,compB:E_human_raw,2.5,engineering-it_services,-0.346,12.341,-35.683,-34.683,8.674
+rbi_segments,base_FY20_23,compB:E_human_raw,2.5,OLS 3 segments w/ intercept,0.346,,-42.412,-41.412,
+rbi_segments,base_FY20_23,compB:E_gpt,2.5,bpo-it_services,-0.136,-5.017,36.822,37.822,22.016
+rbi_segments,base_FY20_23,compB:E_gpt,2.5,engineering-it_services,-0.125,12.341,-98.906,-97.906,24.043
+rbi_segments,base_FY20_23,compB:E_gpt,2.5,OLS 3 segments w/ intercept,0.136,,-19.164,-18.164,
+rbi_segments,base_FY20_23,compB:E_human,2.5,bpo-it_services,-0.13,-5.017,38.74,39.74,23.163
+rbi_segments,base_FY20_23,compB:E_human,2.5,engineering-it_services,-0.299,12.341,-41.34,-40.34,10.049
+rbi_segments,base_FY20_23,compB:E_human,2.5,OLS 3 segments w/ intercept,0.299,,-44.386,-43.386,
+rbi_segments,base_FY20_23,compB:F_lm,2.5,bpo-it_services,0.105,-5.017,-47.565,-46.565,28.44
+rbi_segments,base_FY20_23,compB:F_lm,2.5,engineering-it_services,0.009,12.341,1356.247,1357.247,329.691
+rbi_segments,base_FY20_23,compB:F_lm,2.5,OLS 3 segments w/ intercept,0.105,,-101.954,-100.954,
+rbi_segments,base_FY20_23,binary_BPO_high,,bpo-it_services,1.0,-5.017,-5.017,-4.017,3.0
+rbi_segments,base_FY20_23,binary_BPO_high,,bpo-it_services,2.5,-5.017,-2.007,-1.007,1.2
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt_raw,2.5,bpo-it_services,-0.518,-2.827,5.461,6.461,5.796
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt_raw,2.5,engineering-it_services,-0.414,11.797,-28.481,-27.481,7.243
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.518,,-4.246,-3.246,
+rbi_segments,base_FY20_23_exFY21,compA:E_human_raw,2.5,bpo-it_services,0.253,-2.827,-11.182,-10.182,11.868
+rbi_segments,base_FY20_23_exFY21,compA:E_human_raw,2.5,engineering-it_services,-0.295,11.797,-39.948,-38.948,10.159
+rbi_segments,base_FY20_23_exFY21,compA:E_human_raw,2.5,OLS 3 segments w/ intercept,0.548,,-27.05,-26.05,
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt,2.5,bpo-it_services,-0.2,-2.827,14.141,15.141,15.008
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt,2.5,engineering-it_services,-0.264,11.797,-44.67,-43.67,11.36
+rbi_segments,base_FY20_23_exFY21,compA:E_gpt,2.5,OLS 3 segments w/ intercept,0.264,,-30.656,-29.656,
+rbi_segments,base_FY20_23_exFY21,compA:E_human,2.5,bpo-it_services,0.12,-2.827,-23.588,-22.588,25.034
+rbi_segments,base_FY20_23_exFY21,compA:E_human,2.5,engineering-it_services,-0.257,11.797,-45.923,-44.923,11.678
+rbi_segments,base_FY20_23_exFY21,compA:E_human,2.5,OLS 3 segments w/ intercept,0.377,,-39.943,-38.943,
+rbi_segments,base_FY20_23_exFY21,compA:F_lm,2.5,bpo-it_services,0.146,-2.827,-19.378,-18.378,20.566
+rbi_segments,base_FY20_23_exFY21,compA:F_lm,2.5,engineering-it_services,-0.073,11.797,-161.001,-160.001,40.943
+rbi_segments,base_FY20_23_exFY21,compA:F_lm,2.5,OLS 3 segments w/ intercept,0.219,,-60.015,-59.015,
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt_raw,2.5,bpo-it_services,-0.356,-2.827,7.946,8.946,8.433
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt_raw,2.5,engineering-it_services,-0.109,11.797,-108.469,-107.469,27.584
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.356,,16.724,17.724,
+rbi_segments,base_FY20_23_exFY21,compB:E_human_raw,2.5,bpo-it_services,-0.097,-2.827,29.06,30.06,30.841
+rbi_segments,base_FY20_23_exFY21,compB:E_human_raw,2.5,engineering-it_services,-0.346,11.797,-34.109,-33.109,8.674
+rbi_segments,base_FY20_23_exFY21,compB:E_human_raw,2.5,OLS 3 segments w/ intercept,0.346,,-38.98,-37.98,
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt,2.5,bpo-it_services,-0.136,-2.827,20.744,21.744,22.016
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt,2.5,engineering-it_services,-0.125,11.797,-94.545,-93.545,24.043
+rbi_segments,base_FY20_23_exFY21,compB:E_gpt,2.5,OLS 3 segments w/ intercept,0.136,,-26.811,-25.811,
+rbi_segments,base_FY20_23_exFY21,compB:E_human,2.5,bpo-it_services,-0.13,-2.827,21.825,22.825,23.163
+rbi_segments,base_FY20_23_exFY21,compB:E_human,2.5,engineering-it_services,-0.299,11.797,-39.518,-38.518,10.049
+rbi_segments,base_FY20_23_exFY21,compB:E_human,2.5,OLS 3 segments w/ intercept,0.299,,-41.851,-40.851,
+rbi_segments,base_FY20_23_exFY21,compB:F_lm,2.5,bpo-it_services,0.105,-2.827,-26.797,-25.797,28.44
+rbi_segments,base_FY20_23_exFY21,compB:F_lm,2.5,engineering-it_services,0.009,11.797,1296.445,1297.445,329.691
+rbi_segments,base_FY20_23_exFY21,compB:F_lm,2.5,OLS 3 segments w/ intercept,0.105,,-78.064,-77.064,
+rbi_segments,base_FY20_23_exFY21,binary_BPO_high,,bpo-it_services,1.0,-2.827,-2.827,-1.827,3.0
+rbi_segments,base_FY20_23_exFY21,binary_BPO_high,,bpo-it_services,2.5,-2.827,-1.131,-0.131,1.2
+rbi_segments,base_FY20_22,compA:E_gpt_raw,2.5,bpo-it_services,-0.518,-4.962,9.587,10.587,5.796
+rbi_segments,base_FY20_22,compA:E_gpt_raw,2.5,engineering-it_services,-0.414,14.468,-34.93,-33.93,7.243
+rbi_segments,base_FY20_22,compA:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.518,,-3.145,-2.145,
+rbi_segments,base_FY20_22,compA:E_human_raw,2.5,bpo-it_services,0.253,-4.962,-19.631,-18.631,11.868
+rbi_segments,base_FY20_22,compA:E_human_raw,2.5,engineering-it_services,-0.295,14.468,-48.993,-47.993,10.159
+rbi_segments,base_FY20_22,compA:E_human_raw,2.5,OLS 3 segments w/ intercept,0.548,,-35.828,-34.828,
+rbi_segments,base_FY20_22,compA:E_gpt,2.5,bpo-it_services,-0.2,-4.962,24.825,25.825,15.008
+rbi_segments,base_FY20_22,compA:E_gpt,2.5,engineering-it_services,-0.264,14.468,-54.784,-53.784,11.36
+rbi_segments,base_FY20_22,compA:E_gpt,2.5,OLS 3 segments w/ intercept,0.264,,-35.814,-34.814,
+rbi_segments,base_FY20_22,compA:E_human,2.5,bpo-it_services,0.12,-4.962,-41.408,-40.408,25.034
+rbi_segments,base_FY20_22,compA:E_human,2.5,engineering-it_services,-0.257,14.468,-56.321,-55.321,11.678
+rbi_segments,base_FY20_22,compA:E_human,2.5,OLS 3 segments w/ intercept,0.377,,-52.328,-51.328,
+rbi_segments,base_FY20_22,compA:F_lm,2.5,bpo-it_services,0.146,-4.962,-34.018,-33.018,20.566
+rbi_segments,base_FY20_22,compA:F_lm,2.5,engineering-it_services,-0.073,14.468,-197.454,-196.454,40.943
+rbi_segments,base_FY20_22,compA:F_lm,2.5,OLS 3 segments w/ intercept,0.219,,-80.914,-79.914,
+rbi_segments,base_FY20_22,compB:E_gpt_raw,2.5,bpo-it_services,-0.356,-4.962,13.95,14.95,8.433
+rbi_segments,base_FY20_22,compB:E_gpt_raw,2.5,engineering-it_services,-0.109,14.468,-133.027,-132.027,27.584
+rbi_segments,base_FY20_22,compB:E_gpt_raw,2.5,OLS 3 segments w/ intercept,0.356,,25.031,26.031,
+rbi_segments,base_FY20_22,compB:E_human_raw,2.5,bpo-it_services,-0.097,-4.962,51.014,52.014,30.841
+rbi_segments,base_FY20_22,compB:E_human_raw,2.5,engineering-it_services,-0.346,14.468,-41.832,-40.832,8.674
+rbi_segments,base_FY20_22,compB:E_human_raw,2.5,OLS 3 segments w/ intercept,0.346,,-48.992,-47.992,
+rbi_segments,base_FY20_22,compB:E_gpt,2.5,bpo-it_services,-0.136,-4.962,36.416,37.416,22.016
+rbi_segments,base_FY20_22,compB:E_gpt,2.5,engineering-it_services,-0.125,14.468,-115.951,-114.951,24.043
+rbi_segments,base_FY20_22,compB:E_gpt,2.5,OLS 3 segments w/ intercept,0.136,,-26.433,-25.433,
+rbi_segments,base_FY20_22,compB:E_human,2.5,bpo-it_services,-0.13,-4.962,38.313,39.313,23.163
+rbi_segments,base_FY20_22,compB:E_human,2.5,engineering-it_services,-0.299,14.468,-48.465,-47.465,10.049
+rbi_segments,base_FY20_22,compB:E_human,2.5,OLS 3 segments w/ intercept,0.299,,-51.766,-50.766,
+rbi_segments,base_FY20_22,compB:F_lm,2.5,bpo-it_services,0.105,-4.962,-47.042,-46.042,28.44
+rbi_segments,base_FY20_22,compB:F_lm,2.5,engineering-it_services,0.009,14.468,1589.98,1590.98,329.691
+rbi_segments,base_FY20_22,compB:F_lm,2.5,OLS 3 segments w/ intercept,0.105,,-110.466,-109.466,
+rbi_segments,base_FY20_22,binary_BPO_high,,bpo-it_services,1.0,-4.962,-4.962,-3.962,3.0
+rbi_segments,base_FY20_22,binary_BPO_high,,bpo-it_services,2.5,-4.962,-1.985,-0.985,1.2

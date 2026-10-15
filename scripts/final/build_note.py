@@ -529,6 +529,8 @@ h3 { font-size: 1.05rem; font-weight: 600; margin: 1.9em 0 0.5em; }
   font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 4px; }
 .thanks { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin: 0; }
 header { padding-bottom: 22px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+.crumbs { font-family: var(--sans); font-size: 14px; color: var(--ink-3); margin: 0 0 18px; }
+.crumbs b { color: var(--ink-2); font-weight: 600; }
 ul.scen { list-style: none; padding: 0; margin: 0 0 1.05em; }
 ul.scen li { padding-left: 2.6em; text-indent: -2.6em; margin-bottom: 0.3em; }
 ul.scen b { display: inline-block; width: 2.6em; text-indent: 0; font-family: var(--sans); font-weight: 600; }
@@ -887,7 +889,8 @@ def main():
     repo = f'<a href="{REPO_URL}">{REPO_URL.replace("https://", "")}</a>' if REPO_URL else "[repository link to be added]"
     tokens = {"repo": repo}
     front, body = render_md((ROOT / "note_text.md").read_text(encoding="utf-8"), tokens)
-    header = (f"<header>\n  <h1>{inline(front['title'], tokens)}</h1>\n"
+    header = (f"<header>\n  <p class=\"crumbs\"><b>Pilot note</b> · <a href=\"two-questions.html\">Two questions (working draft)</a></p>\n"
+              f"  <h1>{inline(front['title'], tokens)}</h1>\n"
               f"  <p class=\"byline\">{byline(front['byline'])}</p>\n"
               f"  <p class=\"thanks\">{inline(front['thanks'], tokens)}</p>\n</header>")
     page = (TEMPLATE

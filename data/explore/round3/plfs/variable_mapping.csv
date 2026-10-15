@@ -1,0 +1,289 @@
+round,file,n_records,std_var,source_var,source_label
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,quarter,quarter_per_fv,quarter
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,month,,
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,visit,visit_per_fv,visit
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,sector,b1q3_per_fv,sector
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,state,state_per_fv,state/ut code
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,district,b1q4_per_fv,district code
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,stratum,b1q5_per_fv,stratum
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,group,,
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,substratum,b1q6_per_fv,sub-stratum
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,subsample,b1q11_per_fv,sub-sample
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,fsu,fsu_per_fv,fsu
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,sgsb,b1q13_per_fv,sample sg/sb no.
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,sss,b1q14_per_fv,second stage stratum no.
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,hhno,b1q15_per_fv,sample household number
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,person,b4q1_per_fv,person serial no.
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,sex,b4q5_per_fv,sex
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,age,b4q6_per_fv,age
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,gedu,b4q8_per_fv,general educaion level
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,tedu,b4q9_per_fv,technical educaion level
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,ps_status,b5pt1q3_per_fv,status code
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,ps_nic,b5pt1q5_per_fv,industry code (nic)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,ps_nco,b5pt1q6_per_fv,occupation code (nco)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,ss_status,b5pt2q3_per_fv,status code
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,ss_nic,b5pt2q5_per_fv,industry code (nic)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,cws_status,b6q5_per_fv,current weekly status (cws)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,cws_nic,b6q6_per_fv,industry code (cws)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,cws_nco,b6q7_per_fv,occupation code (cws)
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,earn_regular,b6q9_per_fv,earnings for regular salarid/wage activity
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,nss,NSS_per_fv,ns count for sector x stratum x substratum x sub-sample
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,nsc,NSC_per_fv,ns count for sector x stratum x substratum
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,mult,MULT_per_fv,sub-sample wise multiplier
+2017-18,2017-18/STATA_PLFS_July2017_June2018/hh_per_fv_2017-18.dta,433339,no_qtr,No_qtr_per_fv,occurance of state x sector x stratum x substratum in 4 quarters
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,quarter,quarter_per_fv,quarter
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,month,,
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,visit,visit_per_fv,visit
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,sector,b1q3_per_fv,sector
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,state,state_per_fv,state/ut code
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,district,b1q4_per_fv,district code
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,stratum,b1q5_per_fv,stratum
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,group,,
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,substratum,b1q6_per_fv,sub-stratum
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,subsample,b1q11_per_fv,sub-sample
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,fsu,fsu_per_fv,fsu
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,sgsb,b1q13_per_fv,sample sg/sb no.
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,sss,b1q14_per_fv,second stage stratum no.
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,hhno,b1q15_per_fv,sample household number
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,person,b4q1_per_fv,person serial no.
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,sex,b4q5_per_fv,sex
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,age,b4q6_per_fv,age
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,gedu,b4q8_per_fv,general educaion level
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,tedu,b4q9_per_fv,technical educaion level
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,ps_status,b5pt1q3_per_fv,status code
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,ps_nic,b5pt1q5_per_fv,industry code (nic)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,ps_nco,b5pt1q6_per_fv,occupation code (nco)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,ss_status,b5pt2q3_per_fv,status code
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,ss_nic,b5pt2q5_per_fv,industry code (nic)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,cws_status,b6q5_per_fv,current weekly status (cws)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,cws_nic,b6q6_per_fv,industry code (cws)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,cws_nco,b6q7_per_fv,occupation code (cws)
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,earn_regular,b6q9_per_fv,earnings for regular salarid/wage activity
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,nss,NSS_per_fv,ns count for sector x stratum x substratum x sub-sample
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,nsc,NSC_per_fv,ns count for sector x stratum x substratum
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,mult,MULT_per_fv,sub-sample wise multiplier
+2018-19,2018-19/PLFS_2028_19_STATA/PerV1_2018-19.dta,420757,no_qtr,No_qtr_per_fv,occurance of state x sector x stratum x substratum in 4 quarters
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,quarter,quarter_per_fv,quarter
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,month,,
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,visit,visit_per_fv,visit
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,sector,b1q3_per_fv,sector
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,state,state_per_fv,state/ut code
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,district,b1q4_per_fv,district code
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,stratum,b1q5_per_fv,stratum
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,group,,
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,substratum,b1q6_per_fv,sub-stratum
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,subsample,b1q11_per_fv,sub-sample
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,fsu,fsu_per_fv,fsu
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,sgsb,b1q13_per_fv,sample sg/sb no.
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,sss,b1q14_per_fv,second stage stratum no.
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,hhno,b1q15_per_fv,sample household number
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,person,b4q1_per_fv,person serial no.
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,sex,b4q5_per_fv,sex
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,age,b4q6_per_fv,age
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,gedu,b4q8_per_fv,general educaion level
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,tedu,b4q9_per_fv,technical educaion level
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,ps_status,b5pt1q3_per_fv,status code
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,ps_nic,b5pt1q5_per_fv,industry code (nic)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,ps_nco,b5pt1q6_per_fv,occupation code (nco)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,ss_status,b5pt2q3_per_fv,status code
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,ss_nic,b5pt2q5_per_fv,industry code (nic)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,cws_status,b6q5_per_fv,current weekly status (cws)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,cws_nic,b6q6_per_fv,industry code (cws)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,cws_nco,b6q7_per_fv,occupation code (cws)
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,earn_regular,b6q9_per_fv,earnings for regular salarid/wage activity
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,nss,NSS_per_fv,ns count for sector x stratum x substratum x sub-sample
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,nsc,NSC_per_fv,ns count for sector x stratum x substratum
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,mult,MULT_per_fv,sub-sample wise multiplier
+2019-20,2019-20/STATA_PLFS_19_20/PERFV_2019-20.dta,418297,no_qtr,No_qtr_per_fv,occurance of state x sector x stratum x substratum in 4 quarters
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,quarter,qtr_perv1,quarter
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,month,,
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,visit,visit_perv1,visit
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,sector,b1q3_perv1,sector
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,state,state_perv1,state/ut code
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,district,distcode_perv1,district code
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,stratum,b1q5_perv1,stratum
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,group,,
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,substratum,b1q6_perv1,sub-stratum
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,subsample,b1q11_perv1,sub-sample
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,fsu,b1q1_perv1,fsu
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,sgsb,b1q13_perv1,sample sg/sb no.
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,sss,b1q14_perv1,second stage stratum no.
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,hhno,b1q15_perv1,sample household number
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,person,b4q1_perv1,person serial no.
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,sex,b4q5_perv1,sex
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,age,b4q6_perv1,age
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,gedu,b4q8_perv1,general educaion level
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,tedu,b4q9_perv1,technical educaion level
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,ps_status,b5pt1q3_perv1,status code
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,ps_nic,b5pt1q5_perv1,industry code (nic)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,ps_nco,b5pt1q6_perv1,occupation code (nco)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,ss_status,b5pt2q3_perv1,status code
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,ss_nic,b5pt2q5_perv1,industry code (nic)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,cws_status,b6q5_perv1,current weekly status (cws)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,cws_nic,b6q6_perv1,industry code (cws)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,cws_nco,b6q7_perv1,occupation code (cws)
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,earn_regular,b6q9_perv1,earnings for regular salaried/wage activity
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,nss,NSS_perv1,ns count for sector x stratum x substratum x sub-sample
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,nsc,NSC_perv1,ns count for sector x stratum x substratum
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,mult,mult_perv1,sub-sample wise multiplier
+2020-21,2020-21/STATA_Unit_level_data_PLFS_July2020_June2021/perv1.dta,413405,no_qtr,no_qtr_perv1,occurance of fsus in state x sector x stratum x substratum in 4 quarters
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,quarter,qtr_perv1,quarter
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,month,,
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,visit,visit_perv1,visit
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,sector,b1q3_perv1,sector
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,state,state_perv1,state/ut code
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,district,distcode_perv1,district code
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,stratum,b1q5_perv1,stratum
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,group,,
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,substratum,b1q6_perv1,sub-stratum
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,subsample,b1q11_perv1,sub-sample
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,fsu,b1q1_perv1,fsu
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,sgsb,b1q13_perv1,sample sg/sb no.
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,sss,b1q14_perv1,second stage stratum no.
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,hhno,b1q15_perv1,sample household number
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,person,b4q1_perv1,person serial no.
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,sex,b4q5_perv1,sex
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,age,b4q6_perv1,age
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,gedu,b4q8_perv1,general educaion level
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,tedu,b4q9_perv1,technical educaion level
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,ps_status,b5pt1q3_perv1,status code
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,ps_nic,b5pt1q5_perv1,industry code (nic)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,ps_nco,b5pt1q6_perv1,occupation code (nco)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,ss_status,b5pt2q3_perv1,status code
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,ss_nic,b5pt2q5_perv1,industry code (nic)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,cws_status,b6q5_perv1,current weekly status (cws)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,cws_nic,b6q6_perv1,industry code (cws)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,cws_nco,b6q7_perv1,occupation code (cws)
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,earn_regular,b6q9_perv1,earnings for regular salaried/wage activity
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,nss,NSS_perv1,ns count for sector x stratum x substratum x sub-sample
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,nsc,NSC_perv1,ns count for sector x stratum x substratum
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,mult,mult_perv1,sub-sample wise multiplier
+2021-22,2021-22/PLFS_Data_2021-22_STATA/perv1.dta,428525,no_qtr,no_qtr_perv1,occurance of fsus in state x sector x stratum x substratum in 4 quarters
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,quarter,qtr_perv1,quarter
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,month,,
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,visit,visit_perv1,visit
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,sector,b1q3_perv1,sector
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,state,state_perv1,state/ut code
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,district,distcode_perv1,district code
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,stratum,b1q5_perv1,stratum
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,group,,
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,substratum,b1q6_perv1,sub-stratum
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,subsample,b1q11_perv1,sub-sample
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,fsu,b1q1_perv1,fsu
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,sgsb,b1q13_perv1,sample sg/sb no.
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,sss,b1q14_perv1,second stage stratum no.
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,hhno,b1q15_perv1,sample household number
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,person,b4q1_perv1,person serial no.
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,sex,b4q5_perv1,sex
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,age,b4q6_perv1,age
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,gedu,b4q8_perv1,general educaion level
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,tedu,b4q9_perv1,technical educaion level
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,ps_status,b5pt1q3_perv1,status code
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,ps_nic,b5pt1q5_perv1,industry code (nic)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,ps_nco,b5pt1q6_perv1,occupation code (nco)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,ss_status,b5pt2q3_perv1,status code
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,ss_nic,b5pt2q5_perv1,industry code (nic)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,cws_status,b6q5_perv1,current weekly status (cws)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,cws_nic,b6q6_perv1,industry code (cws)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,cws_nco,b6q7_perv1,occupation code (cws)
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,earn_regular,b6q9_perv1,earnings for regular salaried/wage activity
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,nss,NSS_perv1,ns count for sector x stratum x substratum x sub-sample
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,nsc,NSC_perv1,ns count for sector x stratum x substratum
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,mult,mult_perv1,sub-sample wise multiplier
+2022-23,2022-23/Data_in_STATA/perv1 (2).dta,419512,no_qtr,no_qtr_perv1,occurence of fsus in state x sector x stratum x substratum in 4 quarters
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,quarter,qtr_perv1,quarter
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,month,,
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,visit,visit_perv1,visit
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,sector,b1q3_perv1,sector
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,state,state_perv1,state/ut code
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,district,distcode_perv1,district code
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,stratum,b1q5_perv1,stratum
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,group,,
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,substratum,b1q6_perv1,sub-stratum
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,subsample,b1q11_perv1,sub-sample
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,fsu,b1q1_perv1,fsu
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,sgsb,b1q13_perv1,sample sg/sb no.
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,sss,b1q14_perv1,second stage stratum no.
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,hhno,b1q15_perv1,sample household number
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,person,b4q1_perv1,person serial no.
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,sex,b4q5_perv1,gender
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,age,b4q6_perv1,age
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,gedu,b4q8_perv1,general educaion level
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,tedu,b4q9_perv1,technical educaion level
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,ps_status,b5pt1q3_perv1,status code
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,ps_nic,b5pt1q5_perv1,industry code (nic)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,ps_nco,b5pt1q6_perv1,occupation code (nco)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,ss_status,b5pt2q3_perv1,status code
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,ss_nic,b5pt2q5_perv1,industry code (nic)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,cws_status,b6q5_perv1,current weekly status (cws)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,cws_nic,b6q6_perv1,industry code (cws)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,cws_nco,b6q7_perv1,occupation code (cws)
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,earn_regular,b6q9_perv1,earnings for regular salaried/wage activity
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,nss,NSS_perv1,ns count for sector x stratum x substratum x sub-sample
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,nsc,NSC_perv1,ns count for sector x stratum x substratum
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,mult,mult_perv1,sub-sample wise multiplier
+2023-24,2023-24/STATA_data_PLFS_2023_2024/perv1.dta,418159,no_qtr,no_qtr_perv1,count of contributing state x sector x stratum x substratum in 4 quarters
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,quarter,Quarter,quarter
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,month,,
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,visit,Visit,visit
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,sector,Sector,sector
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,state,State_UT_Code,state/ut code
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,district,District_Code,district code
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,stratum,Stratum,stratum
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,group,,
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,substratum,Sub_Stratum,sub-stratum
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,subsample,Sub_Sample,sub-sample
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,fsu,FSU,fsu
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,sgsb,Sample_Sg_Sb_No,sample sg/sb no.
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,sss,Second_Stage_Stratum_No,second stage stratum no.
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,hhno,Sample_Household_Number,sample household number
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,person,Person_Serial_No,person serial no.
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,sex,Sex,sex
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,age,Age,age
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,gedu,General_Education_Level,general educaion level
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,tedu,Technical_Education_Level,technical educaion level
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,ps_status,Principal_Status_Code,status code
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,ps_nic,Principal_Industry_Code,industry code (nic)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,ps_nco,Principal_Occupation_Code,occupation code (nco)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,ss_status,Subsidiary_Status_Code,status code
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,ss_nic,Subsidiary_Industry_Code,industry code (nic)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,cws_status,CWS_Status_Code,current weekly status (cws)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,cws_nic,CWS_Industry_Code,industry code (cws)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,cws_nco,CWS_Occupation_Code,occupation code (cws)
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,earn_regular,CWS_Earnings_Salaried,earnings for regular salaried/wage activity
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,nss,Ns_Count_Sector_Subsample,ns count for sector x stratum x substratum x sub-sample
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,nsc,Ns_Count_Sector_Substratum,ns count for sector x stratum x substratum
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,mult,Subsample_Multiplier,sub-sample wise multiplier
+cy2024,cy2024/Data_in_STATA/cperv1.dta,415549,no_qtr,State_Sector_Stratum_Substra,count of contributing samples for state x sector x stratum x sub-stratum in 4 qua
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,quarter,qtr,quarter
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,month,month,month
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,visit,visit,visit
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,sector,sec,sector
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,state,st,state/ut code
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,district,dc,district code
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,stratum,strm,stratum
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,group,grp,group
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,substratum,sstrm,sub-stratum
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,subsample,,
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,fsu,mfsu,fsu
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,sgsb,,
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,sss,sss,second stage stratum no.
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,hhno,ssu,sample household number
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,person,srl,person serial no.
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,sex,sex,gender
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,age,age,age
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,gedu,gedu_lvl,general educaion level
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,tedu,tedu_lvl,technical educaion level
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,ps_status,pas,status code
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,ps_nic,ind_pas,industry code (nic)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,ps_nco,ocu_pas,occupation code (nco)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,ss_status,sas,status code
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,ss_nic,ind_sas,industry code (nic)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,cws_status,acws,current weekly status (cws)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,cws_nic,aind_cws,industry code (cws)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,cws_nco,ocu_cws,occupation code (cws)
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,earn_regular,ern_reg,earnings for regular salaried/wage activity
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,nss,,
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,nsc,nsc,ns count (# of fsus surveyed) for sector x stratum x group x substratum
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,mult,mult,multiplier
+cy2025,cy2025/Data_in_STATA/cperv12025.dta,1148634,no_qtr,,

@@ -1,0 +1,47 @@
+source,age_band,windows,currency,pre_growth,post_growth,delta,delta_se
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,main: 2017-18->2022-23 vs 2022-23->CY2025,INR,8.15,0.97,-7.18,4.18
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,main: 2017-18->2022-23 vs 2022-23->CY2025,USD,3.65,-1.65,-5.3,4.18
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,avoid 2025 design break: post 2022-23->CY2024,INR,8.15,8.81,0.67,6.61
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,avoid 2025 design break: post 2022-23->CY2024,USD,3.65,7.21,3.56,6.61
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",INR,6.62,7.76,1.13,14.55
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",USD,2.6,6.32,3.72,14.55
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,"pre within design A, post 2022-23->CY2025",INR,6.62,0.97,-5.66,3.41
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,"pre within design A, post 2022-23->CY2025",USD,2.6,-1.65,-4.25,3.41
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,INR,8.49,0.97,-7.52,4.73
+"PLFS mean earnings, regular salaried, NIC 62/63",21-25,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,USD,4.82,-1.65,-6.47,4.73
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,main: 2017-18->2022-23 vs 2022-23->CY2025,INR,5.76,6.18,0.42,2.42
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,main: 2017-18->2022-23 vs 2022-23->CY2025,USD,1.26,3.56,2.3,2.42
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,avoid 2025 design break: post 2022-23->CY2024,INR,5.76,11.95,6.19,3.36
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,avoid 2025 design break: post 2022-23->CY2024,USD,1.26,10.34,9.08,3.36
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",INR,5.15,8.19,3.04,8.96
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",USD,1.13,6.74,5.62,8.96
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,"pre within design A, post 2022-23->CY2025",INR,5.15,6.18,1.03,3.07
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,"pre within design A, post 2022-23->CY2025",USD,1.13,3.56,2.43,3.07
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,INR,9.45,6.18,-3.28,2.4
+"PLFS mean earnings, regular salaried, NIC 62/63",26-30,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,USD,5.79,3.56,-2.23,2.4
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,main: 2017-18->2022-23 vs 2022-23->CY2025,INR,8.02,5.62,-2.41,3.23
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,main: 2017-18->2022-23 vs 2022-23->CY2025,USD,3.53,3.0,-0.52,3.23
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,avoid 2025 design break: post 2022-23->CY2024,INR,8.02,9.28,1.26,6.42
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,avoid 2025 design break: post 2022-23->CY2024,USD,3.53,7.68,4.15,6.42
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",INR,3.43,0.84,-2.59,20.73
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,"within-design only: pre 2017-18->2020-21 (A), post 2023-24->CY2024 (C)",USD,-0.6,-0.6,-0.0,20.73
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,"pre within design A, post 2022-23->CY2025",INR,3.43,5.62,2.19,3.15
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,"pre within design A, post 2022-23->CY2025",USD,-0.6,3.0,3.6,3.15
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,INR,8.64,5.62,-3.02,3.47
+"PLFS mean earnings, regular salaried, NIC 62/63",31-40,RBI-compatible: 2018-19->2022-23 vs 2022-23->CY2025,USD,4.97,3.0,-1.97,3.47
+firm employee cost per head (hcltech); composition-affected,all,FY17-23 vs FY24-26,INR,3.37,8.86,5.49,
+firm employee cost per head (hcltech); composition-affected,all,FY17-23 vs FY24-26,USD,0.32,5.68,5.36,
+firm employee cost per head (hcltech); composition-affected,all,FY17-20 vs FY24-26,INR,4.67,8.86,4.19,
+firm employee cost per head (hcltech); composition-affected,all,FY17-20 vs FY24-26,USD,2.77,5.68,2.91,
+firm employee cost per head (tcs); composition-affected,all,FY17-23 vs FY24-26,INR,3.5,7.58,4.08,
+firm employee cost per head (tcs); composition-affected,all,FY17-23 vs FY24-26,USD,0.58,4.41,3.82,
+firm employee cost per head (tcs); composition-affected,all,FY17-20 vs FY24-26,INR,4.22,7.58,3.36,
+firm employee cost per head (tcs); composition-affected,all,FY17-20 vs FY24-26,USD,2.27,4.41,2.14,
+firm employee cost per head (techm); composition-affected,all,FY17-23 vs FY24-26,INR,4.02,4.98,0.96,
+firm employee cost per head (techm); composition-affected,all,FY17-23 vs FY24-26,USD,1.11,1.81,0.7,
+firm employee cost per head (techm); composition-affected,all,FY17-20 vs FY24-26,INR,2.55,4.98,2.44,
+firm employee cost per head (techm); composition-affected,all,FY17-20 vs FY24-26,USD,0.59,1.81,1.22,
+firm employee cost per head (wipro); composition-affected,all,FY17-23 vs FY24-26,INR,3.62,4.2,0.58,
+firm employee cost per head (wipro); composition-affected,all,FY17-23 vs FY24-26,USD,0.57,1.02,0.45,
+firm employee cost per head (wipro); composition-affected,all,FY17-20 vs FY24-26,INR,2.75,4.2,1.44,
+firm employee cost per head (wipro); composition-affected,all,FY17-20 vs FY24-26,USD,0.85,1.02,0.17,
