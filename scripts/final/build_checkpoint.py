@@ -271,22 +271,7 @@ def ln(color, style="solid", w=3):
     return f'<span><i style="border-color:{color};border-top-style:{style};border-top-width:{w}px"></i>'
 
 
-CHAIN = """<figure class="wide" id="fig-chain"><div class="fig-panel chain-panel">
-<div class="chain">
-  <div class="node q1"><span class="tag">Question 1</span><b>AI saves labour</b><span>Fewer workers needed for each piece of work</span></div>
-  <div class="arrow" aria-hidden="true"></div>
-  <div class="node split"><b>The firm either…</b>
-    <div class="pair"><div class="mini">keeps the saving<span>higher revenue per worker</span></div><div class="mini hot">passes it on<span>a lower price for clients</span></div></div></div>
-  <div class="arrow" aria-hidden="true"></div>
-  <div class="node q2"><span class="tag">Question 2</span><b>Clients buy more?</b><span>If the work is cheaper, more of it may be bought</span></div>
-  <div class="arrow" aria-hidden="true"></div>
-  <div class="node jobs"><b>Jobs</b><span>amount of work × workers per piece of work</span></div>
-</div>
-<div class="side"><div class="node d"><b>Demand shift</b><span>Everything else that changes the amount of work: client budgets, clients doing work themselves, work moving to other firms</span></div></div>
-</div><figcaption>{caption}</figcaption></figure>"""
-
 FIGURES = {
-    "chain": CHAIN,
     "levels": fig("levels", legend=ln("var(--accent)") + "Top six</span>" + ln("var(--acn)", "dashed", 2.5) + "Accenture</span>"
                   + ln("var(--ink-3)", "dotted", 2) + "FY16–20 trend</span>"),
     "sector": fig("sector", legend=sw("var(--accent)") + "Estimate, with 90% interval</span>"),
