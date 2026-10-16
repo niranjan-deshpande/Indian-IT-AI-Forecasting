@@ -1,0 +1,122 @@
+# Earnings-call themes by half-year, 8 firms (top-6 + Accenture + Cognizant), 2021H1-2026H2. 2026H2 = 8 calls (Jul-Oct 2026), so treat as partial. A/D are coded statements (coder 1; kappa 0.87); AI counts are keyword counts over full transcripts. Compare each metric over time, not levels across metrics.
+half_year,metric,value,unit,n_calls,source
+2021H1,A: demand weakness,1.375,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2021H1,A: demand weakness,0.75,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2021H1,D: AI productivity passed to clients,0.062,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2021H1,D: AI productivity passed to clients,0.062,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2021H2,A: demand weakness,0.438,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2021H2,A: demand weakness,0.438,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2021H2,D: AI productivity passed to clients,0.125,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2021H2,D: AI productivity passed to clients,0.125,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2022H1,A: demand weakness,0.438,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2022H1,A: demand weakness,0.375,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2022H1,D: AI productivity passed to clients,0.0,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2022H1,D: AI productivity passed to clients,0.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2022H2,A: demand weakness,3.0,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2022H2,A: demand weakness,0.812,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2022H2,D: AI productivity passed to clients,0.0,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2022H2,D: AI productivity passed to clients,0.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2023H1,A: demand weakness,7.533,statements per transcript,15,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2023H1,A: demand weakness,1.0,share of transcripts with any,15,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2023H1,D: AI productivity passed to clients,0.267,statements per transcript,15,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2023H1,D: AI productivity passed to clients,0.267,share of transcripts with any,15,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2023H2,A: demand weakness,7.875,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2023H2,A: demand weakness,1.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2023H2,D: AI productivity passed to clients,0.25,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2023H2,D: AI productivity passed to clients,0.25,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2024H1,A: demand weakness,6.375,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2024H1,A: demand weakness,1.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2024H1,D: AI productivity passed to clients,0.125,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2024H1,D: AI productivity passed to clients,0.062,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2024H2,A: demand weakness,4.688,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2024H2,A: demand weakness,0.938,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2024H2,D: AI productivity passed to clients,0.625,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2024H2,D: AI productivity passed to clients,0.375,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2025H1,A: demand weakness,5.688,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2025H1,A: demand weakness,1.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2025H1,D: AI productivity passed to clients,1.438,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2025H1,D: AI productivity passed to clients,0.688,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2025H2,A: demand weakness,4.875,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2025H2,A: demand weakness,0.938,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2025H2,D: AI productivity passed to clients,1.312,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2025H2,D: AI productivity passed to clients,0.75,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2026H1,A: demand weakness,5.0,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2026H1,A: demand weakness,1.0,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2026H1,D: AI productivity passed to clients,1.625,statements per transcript,16,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2026H1,D: AI productivity passed to clients,0.625,share of transcripts with any,16,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2026H2,A: demand weakness,5.875,statements per transcript,8,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2026H2,A: demand weakness,1.0,share of transcripts with any,8,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2026H2,D: AI productivity passed to clients,3.0,statements per transcript,8,"output/final/fig3_data.csv (coder 1, per_transcript)"
+2026H2,D: AI productivity passed to clients,1.0,share of transcripts with any,8,"output/final/fig3_data.csv (coder 1, share_of_transcripts_with_any)"
+2021H1,AI mentions,2.87,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H1,AI mentions,2.44,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H1,GenAI / generative AI mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H1,GenAI / generative AI mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H1,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H1,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,AI mentions,2.14,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,AI mentions,1.81,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,GenAI / generative AI mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,GenAI / generative AI mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2021H2,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,AI mentions,2.34,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,AI mentions,1.94,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,GenAI / generative AI mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,GenAI / generative AI mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H1,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,AI mentions,2.72,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,AI mentions,2.25,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,GenAI / generative AI mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,GenAI / generative AI mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2022H2,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,AI mentions,12.68,per 10k words,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,AI mentions,10.4,per call,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,GenAI / generative AI mentions,5.12,per 10k words,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,GenAI / generative AI mentions,4.2,per call,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,agentic / AI agent mentions,0.0,per 10k words,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H1,agentic / AI agent mentions,0.0,per call,15,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,AI mentions,30.93,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,AI mentions,26.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,GenAI / generative AI mentions,18.66,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,GenAI / generative AI mentions,15.69,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2023H2,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,AI mentions,35.5,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,AI mentions,31.31,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,GenAI / generative AI mentions,18.71,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,GenAI / generative AI mentions,16.5,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,agentic / AI agent mentions,0.0,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H1,agentic / AI agent mentions,0.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,AI mentions,51.09,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,AI mentions,43.38,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,GenAI / generative AI mentions,23.41,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,GenAI / generative AI mentions,19.88,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,agentic / AI agent mentions,0.07,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2024H2,agentic / AI agent mentions,0.06,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,AI mentions,55.08,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,AI mentions,49.44,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,GenAI / generative AI mentions,11.98,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,GenAI / generative AI mentions,10.75,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,agentic / AI agent mentions,3.97,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H1,agentic / AI agent mentions,3.56,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,AI mentions,77.83,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,AI mentions,67.44,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,GenAI / generative AI mentions,5.77,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,GenAI / generative AI mentions,5.0,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,agentic / AI agent mentions,9.02,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2025H2,agentic / AI agent mentions,7.81,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,AI mentions,88.79,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,AI mentions,76.94,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,GenAI / generative AI mentions,2.67,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,GenAI / generative AI mentions,2.31,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,agentic / AI agent mentions,9.16,per 10k words,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H1,agentic / AI agent mentions,7.94,per call,16,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,AI mentions,108.08,per 10k words,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,AI mentions,97.25,per call,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,GenAI / generative AI mentions,0.83,per 10k words,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,GenAI / generative AI mentions,0.75,per call,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,agentic / AI agent mentions,8.61,per 10k words,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)
+2026H2,agentic / AI agent mentions,7.75,per call,8,charts/ai_mentions_halfyear.csv (count_ai_mentions.py)

@@ -1,0 +1,63 @@
+key,value,unit,period,source_file,how_computed,brief_value,matches_brief,note
+top6_headcount_peak,1694188.0,persons,2022Q3,data/corrected/core_quarterly_final.csv,"max over complete quarters of sum of 6 firms (LTIM from 2021Q2, LTI+Mindtree before)",1694188,yes,
+top6_headcount_2026Q2,1623439.0,persons,2026Q2 (Q1FY27),data/corrected/core_quarterly_final.csv,sum of 6 firms,,,
+top6_headcount_FY23_end,1679489.0,persons,Mar 2023,data/corrected/core_quarterly_final.csv,sum at 2023Q1,1679489,yes,
+top6_headcount_FY26_end,1618023.0,persons,Mar 2026,data/corrected/core_quarterly_final.csv,sum at 2026Q1,1618023,yes,
+top6_headcount_change_FY23_FY26_pct,-3.7,pct,Mar 2023 -> Mar 2026,data/corrected/core_quarterly_final.csv,simple % change,-3.7,yes,
+top6_headcount_change_peak_to_2026Q2_pct,-4.2,pct,2022Q3 -> 2026Q2,data/corrected/core_quarterly_final.csv,simple % change,,,
+q2fy27_net_adds_4_firms,9438.0,persons,Q2FY27 (Jul-Sep 2026),data/explore/health_check/contradictions/q2fy27_update.csv,"sum of QoQ change for TCS, HCLTech, Wipro, TechM vs 2026Q2 panel",9438,yes,
+top6_headcount_2026Q3_partial,1632877.0,persons,2026Q3 (Q2FY27),data/explore/health_check/contradictions/q2fy27_update.csv,4 reported + Infosys and LTIM carried at 2026Q2,,,"partial; Infosys reports 23 Oct, LTM 16 Oct"
+rev_per_employee_2022Q4,48.6,USD k,2022Q4,data/corrected/core_quarterly_final.csv,"annualised quarterly USD revenue / end-quarter headcount, top-6",48.6,yes,
+rev_per_employee_2026Q2,53.8,USD k,2026Q2,data/corrected/core_quarterly_final.csv,as above,53.8,yes,
+rev_per_employee_FY23,48.0,USD k,FY23,data/corrected/core_quarterly_final.csv,FY revenue / FY-end headcount (FY basis; differs from the quarterly measure),,,
+rev_per_employee_FY26,53.4,USD k,FY26,data/corrected/core_quarterly_final.csv,FY revenue / FY-end headcount,,,
+top6_revenue_FY26,86.46,USD bn,FY26,data/corrected/core_quarterly_final.csv,sum of 4 quarters,,,
+top6_revenue_change_FY23_FY26_pct,7.2,pct,FY23 -> FY26,data/corrected/core_quarterly_final.csv,simple % change in USD revenue,,,
+plfs_nic62_63_cy2025,5.7,million persons,CY2025,data/explore/round3/plfs/employment_levels_long.csv,"survey-weighted UPS employment, NIC 62+63, all ages",5.7,yes,90% CI 5.33-6.07m
+plfs_nic62_63_2022_23,5.48,million persons,2022-23,data/explore/round3/plfs/employment_levels_long.csv,as above,,,
+plfs_change_2022_23_to_cy2025_pct,4.1,pct (log x100),2022-23 -> CY2025,data/explore/health_check/contradictions/plfs_change_ci.csv,"log change, rounds treated as independent; CI understates uncertainty across the design break",4.1,yes,90% CI -7.0 to 15.2
+plfs_change_2022_23_to_cy2025_ci90_lo_pct,-7.0,pct,2022-23 -> CY2025,data/explore/health_check/contradictions/plfs_change_ci.csv,,-7.0,yes,
+plfs_change_2022_23_to_cy2025_ci90_hi_pct,15.2,pct,2022-23 -> CY2025,data/explore/health_check/contradictions/plfs_change_ci.csv,,15.2,yes,
+plfs_change_recomputed_from_levels,4.1,pct (log x100),2022-23 -> CY2025,data/explore/round3/plfs/employment_levels_long.csv,ln(CY2025/2022-23)x100 recomputed from levels,4.1,yes,
+plfs_ict_outside_change,188176.0,persons,2022-23 -> CY2025,data/explore/health_check/contradictions/plfs_change_ci.csv,"level change, ICT occupations outside NIC 62-63",188000,yes,326437 -> 514613; 90% CI 79528 to 296824
+plfs_nic62_63_2023_24_excl_cluster,5.67,million persons,2023-24,data/explore/health_check/contradictions/plfs/sensitivity_and_counts.csv,excluding highest-weight FSU,,,
+nasscom_employment_FY26,5.95,million,FY26 (SR Feb 2026),data/explore/round3/sector_aggregates/sector_series_pulled.csv,as published,5.95,yes,
+nasscom_employment_growth_FY26_pct,2.3,pct,"FY25->FY26, SR2026 edition",data/explore/round3/sector_aggregates/sector_series_pulled.csv,"5.95/5.815 - 1 (Nasscom states +2.3%, +135k)",2.3,yes,
+fresher_tcs_infy_hcl_FY22,217782.0,persons,FY22,data/explore/workforce/fresher_hires_annual_best.csv,TCS+Infosys+HCLTech,218000,yes,
+fresher_tcs_infy_hcl_FY23,120734.0,persons,FY23,data/explore/workforce/fresher_hires_annual_best.csv,TCS+Infosys+HCLTech,,,
+fresher_tcs_infy_hcl_FY25,65117.0,persons,FY25,data/explore/workforce/fresher_hires_annual_best.csv,TCS+Infosys+HCLTech,65000,yes,
+fresher_tcs_infy_hcl_FY26,75744.0,persons,FY26,data/explore/workforce/fresher_hires_annual_best.csv,TCS+Infosys+HCLTech,76000,yes,
+fresher_tcs_infy_hcl_change_FY22_FY26_pct,-65.2,pct,FY22 -> FY26,data/explore/workforce/fresher_hires_annual_best.csv,simple % change,-65,yes,
+fresher_top6_FY25,85817.0,persons,FY25,data/explore/workforce/fresher_hires_annual_best.csv; data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,sum of six firms incl. Wipro press figure,,,
+fresher_top6_FY26,90894.0,persons,FY26,data/explore/workforce/fresher_hires_annual_best.csv; data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,sum of six firms incl. Wipro press figure,,,
+fy27_stated_targets_tcs_infy_cognizant,65000.0,persons,FY27 (Cognizant CY2026),data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,TCS 25k offers + Infosys 20k + Cognizant 20k,,,
+plfs_it_share_young_salaried_grads_2022_23,20.4,pct,2022-23,data/explore/health_check/contradictions/plfs/it_shares_of_grad_groups.csv,"IT (NIC 62+63) share of regular-salaried graduates aged 21-25, UPS",20.4,yes,
+plfs_it_share_young_salaried_grads_cy2025,16.0,pct,CY2025,data/explore/health_check/contradictions/plfs/it_shares_of_grad_groups.csv,as above,16.0,yes,
+epfo_it_18_25_change_FY22_FY25_pct,-31.5,pct,FY22 -> FY25,data/explore/health_check/epfo/epfo_it_age_best.csv,"IT heading, net payroll additions ages 18-25",-31,yes,366432 -> 251126
+epfo_it_share_18_25_FY22,5.8,pct,FY22,data/explore/health_check/epfo/epfo_it_age_best.csv,IT 18-25 / all-industry 18-25 net additions,5.8,yes,
+epfo_it_share_18_25_FY25,3.9,pct,FY25,data/explore/health_check/epfo/epfo_it_age_best.csv,as above,3.9,yes,
+epfo_it_share_18_25_FY26_AprJun,3.2,pct,Apr-Jun 2025,data/explore/health_check/epfo/epfo_q1_aug_release.csv,"Apr-Jun, August-release vintage",,,"same window FY22 5.8%, FY25 3.2%"
+xpheno_entry_share_2025_06,16.1,pct,Jun 2025,data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,18k / 112k,16.1,yes,
+xpheno_entry_share_2026_10,12.2,pct,Oct 2026,data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,15k / 123k (123k from Xpheno LinkedIn; 120k in one outlet gives 12.5%),12.2,yes,
+xpheno_entry_share_2026_06_low,10.8,pct,Jun 2026,data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,10k / 93k,,,
+foundit_it_share_fresher_postings_2025_07,32.0,pct,Jul 2025,data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,"as reported (BT, 6 Aug 2026)",32,yes,
+foundit_it_share_fresher_postings_2026_07,24.0,pct,Jul 2026,data/explore/health_check/fresher_thirdparty/fresher_thirdparty_long.csv,"as reported (BT, 6 Aug 2026)",24,yes,foundit's own Jul 2026 release gives 22% by function (press_datapoints.csv); different cut
+under30_share_fell_firms,8.0,firms of 10,FY23 -> latest,data/explore/round3/seniority_firms/under30_panel.csv,count of firms with under-30 headcount share down >=1pp (Coforge from FY25),8,yes,tcs 2023->2025 -5.2pp; infosys 2023->2026 -8.9pp; hcltech 2023->2026 -7.0pp; wipro 2023->2026 -4.9pp; techm 2023->2026 -1.6pp; ltimindtree 2023->2026 -9.4pp; persistent 2023->2026 -20.2pp; mphasis 2023->2025 -7.8pp; hexaware 2023->2025 +0.5pp; coforge 2025->2026 -0.1pp
+infosys_junior_share_FY23,46.0,pct of headcount,FY23,data/explore/workforce/workforce_firm_tidy.csv,"JL3-and-below / (junior+middle+senior incl. top), latest vintage (ESG Databook 2023-24)",46,yes,46.2% using the 2022-23 databook vintage
+infosys_junior_share_FY26,30.0,pct of headcount,FY26,data/explore/workforce/workforce_firm_tidy.csv,as above,30,yes,
+nirf_placement_rate_within_2025_edition_from,73.8,pct,class 2022-23 (NIRF 2025 edition),data/explore/round3/seniority_sector/nirf_within_edition_yoy.csv,"within-edition, 183 institutions",73.8,yes,73.8->70.1 is the within-edition sample; unbalanced all-institution series gives 74.1->70.1; balanced panel 75.2->71.6
+nirf_placement_rate_within_2025_edition_to,70.1,pct,class 2023-24 (NIRF 2025 edition),data/explore/round3/seniority_sector/nirf_within_edition_yoy.csv,within-edition,70.1,yes,
+nirf_dlog_placed_class_2023_24,-1.8,log pts x100,class 2023-24 vs 2022-23,data/explore/round3/seniority_sector/nirf_within_edition_yoy.csv,within-edition,,,graduates +3.3
+nirf_balanced_placement_rate_2022_23,75.2,pct,class 2022-23,data/explore/round3/seniority_sector/nirf_ug4_placement_by_gradyear.csv,"balanced panel, 147 institutions",,,
+nirf_balanced_placement_rate_2023_24,71.6,pct,class 2023-24,data/explore/round3/seniority_sector/nirf_ug4_placement_by_gradyear.csv,"balanced panel, 147 institutions",,,
+it_real_pay_21_25_cy2024,35187.0,"INR/month, CY2025 prices",CY2024,data/explore/health_check/labour_share/plfs_it_real_earnings.csv,"mean, IT all regular wage",,,
+it_real_pay_21_25_cy2025,30904.0,"INR/month, CY2025 prices",CY2025,data/explore/health_check/labour_share/plfs_it_real_earnings.csv,mean,,,
+it_real_pay_21_25_change_pct,-12.2,pct,CY2024 -> CY2025,data/explore/health_check/labour_share/plfs_it_real_earnings.csv,simple % change in real mean,-12,yes,spans the CY2025 survey redesign
+it_real_pay_31_40_change_pct,-2.0,pct,CY2024 -> CY2025,data/explore/health_check/labour_share/plfs_it_real_earnings.csv,simple % change in real mean,,,
+lightcast_0_5yr_effect,-11.86,pct (log pts x100) per +1sd exposure,Dec 2022-Mar 2025 vs before,data/explore/health_check/postings/wb_lightcast_point_estimates.csv,World Bank Fig 2.11F,-11.9,yes,95% CI -16.54 to -7.18
+linkedin_india_2026_vs_2022,-32.2,pct,Jan-May 2026 mean vs 2022 mean,data/explore/health_check/postings/linkedin_hiring_rate_monthly.csv,annual-mean index,,,
+jobspeak_it_2026_vs_2022,-28.5,pct,Jan-Aug 2026 mean vs 2022 mean,data/explore/workforce/jobspeak_monthly.csv,annual-mean index,,,
+grad_ur_15_25_ups_2023_24,41.2,pct,2023-24,data/explore/health_check/contradictions/plfs/grad_unemployment_variants.csv,principal status,,,
+grad_ur_15_25_cws_2023_24,38.2,pct,2023-24,data/explore/health_check/contradictions/plfs/grad_unemployment_variants.csv,weekly status,,,
+grad_ur_21_25_upss_cy2025,28.3,pct,CY2025,data/explore/health_check/contradictions/plfs/grad_unemployment_variants.csv,official ps+ss,,,
+grad_ur_21_25_cws_cy2025,39.2,pct,CY2025,data/explore/health_check/contradictions/plfs/grad_unemployment_variants.csv,weekly status,,,

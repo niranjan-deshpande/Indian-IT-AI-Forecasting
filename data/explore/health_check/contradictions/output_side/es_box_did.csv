@@ -1,0 +1,9 @@
+spec,term,coef,cluster_se,implied_pct
+"Survey spec: Q1FY18-Q2FY26, post from Q2FY23",pt,0.361,0.111,43.5
+"Survey spec, by category",pt_SI2,0.329,0.094,38.9
+"Survey spec, by category",pt_SJ,0.498,0.094,64.5
+"Survey spec, by category",pt_SG,0.257,0.094,29.4
+Control excl. travel (COVID collapse/rebound),pt,0.44,0.098,55.3
+Post from ChatGPT quarter (2022Q4),pt,0.359,0.117,43.2
+Drop 2020Q1-2022Q2 (COVID) from sample,pt,0.476,0.123,60.9
+Extend sample to 2026Q2,pt,0.392,0.123,48.0

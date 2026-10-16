@@ -1,0 +1,151 @@
+# Utilization %, by firm, 2016Q1-2026Q3. Within-firm comparison only. TCS (ends 2015Q4) and HCLTech (ends 2019Q1) no longer report. TechM excl-trainee series ended 2025Q1, so TechM is incl. trainees throughout. 2026Q3 from q2fy27_update.csv (Wipro, TechM).
+firm,cal_q,utilization_pct,definition,basis,mean_2016_19_pct,mean_basis,source
+Infosys,2016Q1,80.1,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2016Q2,80.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2016Q3,82.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2016Q4,81.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2017Q1,82.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2017Q2,84.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2017Q3,84.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2017Q4,84.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2018Q1,84.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2018Q2,85.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2018Q3,85.6,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2018Q4,83.8,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2019Q1,82.3,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2019Q2,83.1,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2019Q3,84.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2019Q4,84.4,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2020Q1,83.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2020Q2,81.2,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2020Q3,83.6,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2020Q4,86.3,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2021Q1,87.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2021Q2,88.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2021Q3,89.2,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2021Q4,88.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2022Q1,87.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2022Q2,84.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2022Q3,83.6,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2022Q4,81.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2023Q1,80.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2023Q2,81.1,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2023Q3,81.8,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2023Q4,82.7,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2024Q1,83.5,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2024Q2,85.3,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2024Q3,85.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2024Q4,86.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2025Q1,84.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2025Q2,85.2,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2025Q3,85.1,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2025Q4,84.1,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2026Q1,83.0,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+Infosys,2026Q2,84.9,excl. trainees,panel,83.4,own series,data/corrected/core_quarterly_final.csv
+LTIMindtree,2021Q2,86.1,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2021Q3,85.2,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2021Q4,84.0,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2022Q1,83.2,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2022Q2,83.5,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2022Q3,83.5,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2022Q4,82.9,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2023Q1,81.7,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2023Q2,84.8,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2023Q3,86.6,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2023Q4,87.4,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2024Q1,86.9,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2024Q2,88.3,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2024Q3,87.7,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2024Q4,85.4,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2025Q1,85.8,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2025Q2,88.1,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2025Q3,88.1,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2025Q4,86.9,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2026Q1,85.7,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+LTIMindtree,2026Q2,86.4,excl. trainees,panel,80.5,"LTI only, excl. trainees (pre-merger; Mindtree def. differs)",data/corrected/core_quarterly_final.csv
+TechM,2016Q1,77.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2016Q2,78.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2016Q3,78.4,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2016Q4,77.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2017Q1,76.865,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2017Q2,77.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2017Q3,80.622,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2017Q4,83.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2018Q1,83.822,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2018Q2,81.3,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2018Q3,81.1,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2018Q4,82.462,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2019Q1,81.8,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2019Q2,80.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2019Q3,81.9,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2019Q4,84.124,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2020Q1,83.161,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2020Q2,81.7,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2020Q3,85.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2020Q4,87.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2021Q1,87.4,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2021Q2,87.994,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2021Q3,86.869,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2021Q4,84.0,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2022Q1,83.1,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2022Q2,82.839,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2022Q3,84.896,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2022Q4,86.38,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2023Q1,86.481,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2023Q2,87.16,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2023Q3,86.14,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2023Q4,87.56,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2024Q1,86.42,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2024Q2,86.13,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2024Q3,86.26,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2024Q4,85.61,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2025Q1,86.35,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2025Q2,84.97,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2025Q3,84.43,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2025Q4,86.55,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2026Q1,86.12,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2026Q2,87.04,incl. trainees,panel,80.3,own series,data/corrected/core_quarterly_final.csv
+TechM,2026Q3,88.85,incl. trainees,Q2FY27 update (q2fy27_update.csv),80.3,own series,data/explore/health_check/contradictions/q2fy27_update.csv
+Wipro,2016Q1,77.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2016Q2,79.7,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2016Q3,82.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2016Q4,81.9,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2017Q1,84.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2017Q2,82.1,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2017Q3,82.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2017Q4,81.9,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2018Q1,83.4,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2018Q2,85.2,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2018Q3,85.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2018Q4,83.2,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2019Q1,85.4,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2019Q2,85.0,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2019Q3,82.1,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2019Q4,79.6,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2020Q1,82.6,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2020Q2,84.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2020Q3,86.9,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2020Q4,86.3,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2021Q1,86.0,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2021Q2,86.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2021Q3,89.2,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2021Q4,85.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2022Q1,85.2,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2022Q2,83.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2022Q3,79.8,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2022Q4,79.7,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2023Q1,81.7,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2023Q2,83.7,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2023Q3,84.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2023Q4,84.0,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2024Q1,86.9,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2024Q2,87.7,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2024Q3,86.4,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2024Q4,83.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2025Q1,84.6,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2025Q2,85.0,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2025Q3,86.4,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2025Q4,83.1,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2026Q1,83.5,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2026Q2,83.6,excl. trainees (IT services),panel,82.7,own series,data/corrected/core_quarterly_final.csv
+Wipro,2026Q3,83.4,excl. trainees (IT services),Q2FY27 update (q2fy27_update.csv),82.7,own series,data/explore/health_check/contradictions/q2fy27_update.csv

@@ -1,0 +1,5 @@
+indicator,value,unit,period,change_value,change_unit,change2_value,change2_unit,direction,source
+Software exports (RBI survey),221.4,USD bn,FY26,8.2,% y/y,19.4,% vs FY23,up,data/explore/trade/rbi_survey_orgtype.csv
+India share of world computer-services exports (ex-Ireland),30.1,%,2025,0.8,pp vs 2022,-4.5,pp vs 2015,flat,data/explore/round3/offshore_competitors/india_share_summary.csv
+Top-6 constant-currency revenue growth (rev-weighted),0.6,log pts x100,FY26,8.7,"FY16-20 mean, log pts x100",3.0,Q1FY27 y/y,down vs pre-COVID,output/final/table_A.csv
+"Mid-tier four revenue growth (USD, incl. acquisitions)",13.9,log pts x100,FY26,14.6,"FY25, log pts x100",2.3,"top-6 USD FY26, log pts x100",up,data/explore/midtier/midtier_vs_top6.csv

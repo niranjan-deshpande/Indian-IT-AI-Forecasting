@@ -1,0 +1,412 @@
+month,country,hiring_rate_idx_2016avg_eq_1,source_url,yoy_pct
+2015-01,India,0.924114798,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-02,India,0.907563702,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-03,India,0.951993468,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-04,India,0.952493657,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-05,India,0.931767793,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-06,India,0.978831635,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-07,India,0.950050813,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-08,India,0.996906513,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-09,India,1.036409772,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-10,India,1.056318758,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-11,India,0.98544573,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-12,India,0.985856672,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2016-01,India,0.994653522,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.633112699056688
+2016-02,India,1.03612187,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",14.165194984847451
+2016-03,India,0.980818567,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.0278673088542707
+2016-04,India,1.018851258,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.966723663966623
+2016-05,India,1.019788349,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.446619282321556
+2016-06,India,1.009706073,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.154213339253187
+2016-07,India,0.969833878,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.0823165171061087
+2016-08,India,1.010825883,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.3962563007149376
+2016-09,India,0.948840534,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.449287180206177
+2016-10,India,0.973793241,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.812558129352087
+2016-11,India,1.020394456,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.5464891607983384
+2016-12,India,1.016372368,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.0953481237889324
+2017-01,India,1.006581359,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.1991951705973003
+2017-02,India,1.0214761,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.4135180835435635
+2017-03,India,1.044533597,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.49610765372064
+2017-04,India,1.146446668,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.523458061039182
+2017-05,India,1.130714373,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.877357454492763
+2017-06,India,1.075594062,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.525462286686667
+2017-07,India,1.108389822,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",14.286564652260992
+2017-08,India,1.054570359,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.327597535410543
+2017-09,India,1.069357323,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.701479825270612
+2017-10,India,1.047977983,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.618120446576393
+2017-11,India,1.157176083,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",13.404779514011778
+2017-12,India,1.137178173,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",11.885978879740634
+2018-01,India,1.159578188,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",15.19964855617797
+2018-02,India,1.157291322,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",13.295976479528004
+2018-03,India,1.175044173,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.49462692007599
+2018-04,India,1.248773999,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",8.925607606196984
+2018-05,India,1.270005201,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.318834121692035
+2018-06,India,1.286218681,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",19.582166399129864
+2018-07,India,1.277975635,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",15.300195800607064
+2018-08,India,1.2650762,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",19.9612893728222
+2018-09,India,1.288438984,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",20.48722688739655
+2018-10,India,1.358595687,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",29.639716581717536
+2018-11,India,1.224212458,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.793100633933523
+2018-12,India,1.321271055,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",16.188569774808737
+2019-01,India,1.314202312,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",13.33451470544562
+2019-02,India,1.295641603,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",11.95466330473356
+2019-03,India,1.324284244,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.700805163688077
+2019-04,India,1.406102927,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.598671026621865
+2019-05,India,1.431586557,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.722889313584783
+2019-06,India,1.42959348,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",11.147000204392143
+2019-07,India,1.413086504,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.572257036809617
+2019-08,India,1.353677419,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.003627054243844
+2019-09,India,1.358823928,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.4628076978459505
+2019-10,India,1.264163935,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.9506883397017605
+2019-11,India,1.458133605,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",19.107888134234297
+2019-12,India,1.463755337,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.783879769469419
+2020-01,India,1.432002651,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",8.963638088623306
+2020-02,India,1.419601882,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.567482142667828
+2020-03,India,1.106139506,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-16.47265222616361
+2020-04,India,0.759006291,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-46.02057385518834
+2020-05,India,0.984919783,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-31.200822040130394
+2020-06,India,0.993807118,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-30.48323653518622
+2020-07,India,1.116712832,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-20.97349816596933
+2020-08,India,1.400840925,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.4841022933544297
+2020-09,India,1.498765588,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.29873386215494
+2020-10,India,1.657365771,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",31.10370618190432
+2020-11,India,1.617868231,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.954731819653807
+2020-12,India,1.621965001,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.808477345965084
+2021-01,India,1.760573758,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",22.944867229858225
+2021-02,India,1.944157637,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",36.95090585967537
+2021-03,India,2.053294281,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",85.627063301001
+2021-04,India,1.946840802,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",156.49863842828148
+2021-05,India,2.201329614,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",123.50344180263053
+2021-06,India,2.299435366,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",131.3764234882447
+2021-07,India,2.413169729,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",116.0958179980867
+2021-08,India,2.773269189,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",97.9717425088791
+2021-09,India,2.824185481,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",88.43410227804085
+2021-10,India,2.88732753,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",74.21184753066798
+2021-11,India,2.793485081,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",72.66456114743993
+2021-12,India,2.879730621,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",77.54579286387452
+2022-01,India,2.945516409,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",67.30434584837201
+2022-02,India,2.895042161,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",48.90984691278921
+2022-03,India,2.887110526,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",40.60870634646256
+2022-04,India,2.675555615,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",37.43063183447703
+2022-05,India,2.739850972,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",24.463458565001627
+2022-06,India,2.670056833,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",16.117933666677374
+2022-07,India,2.578141137,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.836295268313464
+2022-08,India,2.554594122,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.885100655477695
+2022-09,India,2.485415092,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.995330734440524
+2022-10,India,2.327627618,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.384704581817903
+2022-11,India,2.544132984,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.92620113477528
+2022-12,India,2.358339054,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-18.1055673470925
+2023-01,India,2.292036954,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-22.185564914977196
+2023-02,India,2.203817331,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-23.876157636379236
+2023-03,India,2.154597414,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-25.37184168750455
+2023-04,India,2.120106012,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-20.760159119323706
+2023-05,India,2.067909889,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-24.524731084534334
+2023-06,India,2.063767133,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-22.706996064903617
+2023-07,India,2.111068644,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-18.116637847976747
+2023-08,India,2.083940351,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-18.423817973538746
+2023-09,India,2.024945542,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-18.52686706064308
+2023-10,India,2.137633977,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.162544538084271
+2023-11,India,1.877227543,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-26.21346624544214
+2023-12,India,1.934632918,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-17.966294340983257
+2024-01,India,1.971390761,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.989573442104275
+2024-02,India,1.991669552,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.626377650081208
+2024-03,India,1.937061089,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.09637919299944
+2024-04,India,1.953206325,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.8722330890687475
+2024-05,India,1.974817996,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.501738373378417
+2024-06,India,1.964708994,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.799869976415594
+2024-07,India,1.981275917,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.14820021930087
+2024-08,India,1.950533467,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.401665188544536
+2024-09,India,1.967447341,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.8394936953815786
+2024-10,India,2.064173214,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.436545441848571
+2024-11,India,1.966217813,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.740515891738117
+2024-12,India,1.976840672,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.1816931577714582
+2025-01,India,1.940363655,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.573868895695818
+2025-02,India,1.937975816,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.695915893581935
+2025-03,India,1.909318208,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.4322150786851062
+2025-04,India,1.928987535,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.2399504184484877
+2025-05,India,1.905722691,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.4988188855860525
+2025-06,India,1.990743638,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.3251145120985797
+2025-07,India,1.913606625,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.4154400918809613
+2025-08,India,1.901447419,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.5165447725178702
+2025-09,India,1.924409087,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.1875174548826704
+2025-10,India,1.734860446,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-15.953737107258103
+2025-11,India,1.90196374,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.267902089746766
+2025-12,India,1.918941268,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.9288857124445067
+2026-01,India,1.892911801,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.4455134416543234
+2026-02,India,1.836783223,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.221561185880141
+2026-03,India,1.754490416,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.109061724299016
+2026-04,India,1.670163116,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.417630456590802
+2026-05,India,1.785969956,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.283848933821612
+2015-01,United Kingdom,1.141181508,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-02,United Kingdom,1.120190799,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-03,United Kingdom,1.122997217,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-04,United Kingdom,1.108326423,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-05,United Kingdom,1.116058135,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-06,United Kingdom,1.111925528,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-07,United Kingdom,1.095544645,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-08,United Kingdom,1.092194124,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-09,United Kingdom,1.071871709,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-10,United Kingdom,1.055778429,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-11,United Kingdom,1.058979263,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-12,United Kingdom,1.067673558,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2016-01,United Kingdom,1.077187739,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.60767665365991
+2016-02,United Kingdom,1.020548994,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.89507440062448
+2016-03,United Kingdom,0.999862517,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.96482681666343
+2016-04,United Kingdom,1.045833722,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.638474343221544
+2016-05,United Kingdom,1.052816901,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.666482060094491
+2016-06,United Kingdom,1.015756445,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.648878056876475
+2016-07,United Kingdom,0.975009141,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.002336102879672
+2016-08,United Kingdom,0.963137879,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.816236890869769
+2016-09,United Kingdom,0.917870687,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.367486398505191
+2016-10,United Kingdom,0.912208145,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.59852408956539
+2016-11,United Kingdom,0.975278061,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.903950995497433
+2016-12,United Kingdom,1.04448977,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.171430380221151
+2017-01,United Kingdom,1.015240088,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.750868558670053
+2017-02,United Kingdom,1.050063904,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.892062034603282
+2017-03,United Kingdom,1.070047628,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.019476158640714
+2017-04,United Kingdom,1.052910874,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",0.6766995413444832
+2017-05,United Kingdom,1.063776291,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.0409587830125577
+2017-06,United Kingdom,1.045004313,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.879417417824004
+2017-07,United Kingdom,1.06305265,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.030018827279896
+2017-08,United Kingdom,1.057523258,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.799778521637803
+2017-09,United Kingdom,1.029361646,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.146695670650608
+2017-10,United Kingdom,1.056543514,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",15.822635413982166
+2017-11,United Kingdom,1.069916513,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.70374048022391
+2017-12,United Kingdom,1.081418104,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.5355381221206184
+2018-01,United Kingdom,1.066861295,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.084630483976715
+2018-02,United Kingdom,1.094924103,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.272139898259009
+2018-03,United Kingdom,1.099026165,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.708153940228164
+2018-04,United Kingdom,1.098222611,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.303473173171923
+2018-05,United Kingdom,1.095287028,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.962158234451584
+2018-06,United Kingdom,1.082458071,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.5840768821783886
+2018-07,United Kingdom,1.114360823,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.826494059348807
+2018-08,United Kingdom,1.113175456,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.262503455976009
+2018-09,United Kingdom,1.088191093,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.715138817208287
+2018-10,United Kingdom,1.113340811,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.375765053440107
+2018-11,United Kingdom,1.086639816,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.5630474711628262
+2018-12,United Kingdom,1.073226521,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.7574852843410418
+2019-01,United Kingdom,1.109431062,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.99018759041212
+2019-02,United Kingdom,1.11183164,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.5441743362553328
+2019-03,United Kingdom,1.097210704,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.16518815091175476
+2019-04,United Kingdom,1.081203876,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.5496616832996524
+2019-05,United Kingdom,1.084389033,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.9949898721890227
+2019-06,United Kingdom,1.110063532,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.5502568403871217
+2019-07,United Kingdom,1.14221904,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.49992788915554
+2019-08,United Kingdom,1.14534361,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.8897649356724564
+2019-09,United Kingdom,1.144377821,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.16331445473428
+2019-10,United Kingdom,1.126609413,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.1917825942338478
+2019-11,United Kingdom,1.104694554,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.6615200118895723
+2019-12,United Kingdom,1.116954671,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.074456710150565
+2020-01,United Kingdom,1.169287303,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.395219500353221
+2020-02,United Kingdom,1.108862438,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.2670550012410011
+2020-03,United Kingdom,1.019676812,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.066454211332607
+2020-04,United Kingdom,0.646109236,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-40.24168333632574
+2020-05,United Kingdom,0.627888753,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-42.09746374297756
+2020-06,United Kingdom,0.606948986,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-45.32304066358609
+2020-07,United Kingdom,0.873745821,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-23.504530181881755
+2020-08,United Kingdom,0.922735467,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.435926568796248
+2020-09,United Kingdom,1.003328529,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.32541293720162
+2020-10,United Kingdom,1.090782711,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.1800463928841727
+2020-11,United Kingdom,1.146154707,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.753087480143402
+2020-12,United Kingdom,1.144062044,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.4269000080129555
+2021-01,United Kingdom,1.123535179,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.91282141545668
+2021-02,United Kingdom,1.164943658,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.057545289490628
+2021-03,United Kingdom,1.247421083,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",22.334946555595515
+2021-04,United Kingdom,1.280352974,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",98.16354614067147
+2021-05,United Kingdom,1.298742813,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",106.84282156587699
+2021-06,United Kingdom,1.396507404,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",130.0864547453087
+2021-07,United Kingdom,1.378910758,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",57.81600608078903
+2021-08,United Kingdom,1.364381756,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",47.86271957616213
+2021-09,United Kingdom,1.382323063,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",37.77372246932291
+2021-10,United Kingdom,1.381586846,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",26.660134238229617
+2021-11,United Kingdom,1.366788208,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",19.249888313724828
+2021-12,United Kingdom,1.326229162,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",15.922835562578985
+2022-01,United Kingdom,1.411731773,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",25.650874079128407
+2022-02,United Kingdom,1.380079555,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",18.46749373007015
+2022-03,United Kingdom,1.394561506,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",11.795569676129958
+2022-04,United Kingdom,1.406669336,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",9.865745194106147
+2022-05,United Kingdom,1.41520297,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",8.967145445139014
+2022-06,United Kingdom,1.375615761,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.4959922833320038
+2022-07,United Kingdom,1.33683097,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.0516686997955733
+2022-08,United Kingdom,1.359370968,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.36725703623379236
+2022-09,United Kingdom,1.393745983,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",0.8263567544919193
+2022-10,United Kingdom,1.30931234,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.231267669437556
+2022-11,United Kingdom,1.211797924,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.339744013946007
+2022-12,United Kingdom,1.191207773,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.180849046961315
+2023-01,United Kingdom,1.203811082,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.72805918068687
+2023-02,United Kingdom,1.192132692,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.618552808718343
+2023-03,United Kingdom,1.196508903,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.201783295171499
+2023-04,United Kingdom,1.165534481,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-17.14225574047774
+2023-05,United Kingdom,1.133396189,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.912817240625213
+2023-06,United Kingdom,1.154041911,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-16.107248570554866
+2023-07,United Kingdom,1.159881274,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.236504836508988
+2023-08,United Kingdom,1.14423814,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-15.825910149936352
+2023-09,United Kingdom,1.160807615,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-16.713114932077268
+2023-10,United Kingdom,1.124208034,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.137520921860403
+2023-11,United Kingdom,1.095554241,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.59266233237085
+2023-12,United Kingdom,1.089477052,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.54013240224214
+2024-01,United Kingdom,1.033019347,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.187586204659986
+2024-02,United Kingdom,1.043738524,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.447789494896266
+2024-03,United Kingdom,1.049846734,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.257507539833167
+2024-04,United Kingdom,1.049711868,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.937296140790874
+2024-05,United Kingdom,1.029930292,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.128837559555269
+2024-06,United Kingdom,1.016910826,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.88267806332729
+2024-07,United Kingdom,1.01439053,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.543589353611717
+2024-08,United Kingdom,1.00152478,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.472347757958834
+2024-09,United Kingdom,1.005664723,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.36508220615007
+2024-10,United Kingdom,0.991373858,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.815800277406662
+2024-11,United Kingdom,0.990719415,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.569113246671279
+2024-12,United Kingdom,0.975518376,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.459942757931529
+2025-01,United Kingdom,0.939189758,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.083042759314353
+2025-02,United Kingdom,0.975704285,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.518322111870223
+2025-03,United Kingdom,0.956751111,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.867544183835118
+2025-04,United Kingdom,0.926291103,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.757584987121438
+2025-05,United Kingdom,0.93095323,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.610073882553593
+2025-06,United Kingdom,0.920046163,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.525384185456588
+2025-07,United Kingdom,0.938214796,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.509507605517573
+2025-08,United Kingdom,0.915526183,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.586766769764797
+2025-09,United Kingdom,0.868298348,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.659261566839298
+2025-10,United Kingdom,0.891838631,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.040130289576377
+2025-11,United Kingdom,0.931213768,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.006306740238864
+2025-12,United Kingdom,0.923807038,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.3009086524885785
+2026-01,United Kingdom,0.844319108,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.101329277911486
+2026-02,United Kingdom,0.881792563,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.625018916464011
+2026-03,United Kingdom,0.845269913,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.652058379475449
+2026-04,United Kingdom,0.794779378,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.197666864560176
+2026-05,United Kingdom,0.831642352,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.66765491538173
+2015-01,United States,1.112393538,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-02,United States,1.09288534,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-03,United States,1.109976356,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-04,United States,1.088983824,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-05,United States,1.075403041,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-06,United States,1.078167738,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-07,United States,1.112471868,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-08,United States,1.112908136,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-09,United States,1.10107516,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-10,United States,1.092098357,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-11,United States,1.080197368,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2015-12,United States,1.023292663,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",
+2016-01,United States,1.069961193,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.8145084046685818
+2016-02,United States,1.034857,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.30964574929701
+2016-03,United States,1.011124425,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.905769070273784
+2016-04,United States,1.006724658,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.553754627672049
+2016-05,United States,0.990939382,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.854139869407339
+2016-06,United States,1.005895512,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.703245093761112
+2016-07,United States,0.994630827,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.592720983754356
+2016-08,United States,0.99613925,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.492230420714609
+2016-09,United States,0.972845541,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.64585522027397
+2016-10,United States,0.960882056,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.015062577371872
+2016-11,United States,0.961319175,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-11.00522890738983
+2016-12,United States,0.99468098,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.796041057904086
+2017-01,United States,0.983584787,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.07285409649432
+2017-02,United States,1.002655823,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.111654750366466
+2017-03,United States,1.004228327,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.6820226897396808
+2017-04,United States,1.023748022,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.6909652370906691
+2017-05,United States,1.038060693,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.755216298387066
+2017-06,United States,1.014383256,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",0.8437997683401477
+2017-07,United States,1.029541736,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",3.5099363555117336
+2017-08,United States,1.037520488,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.154161980867621
+2017-09,United States,1.06006832,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",8.965737655573026
+2017-10,United States,1.044167176,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",8.667569498248607
+2017-11,United States,1.062409825,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",10.51582581820445
+2017-12,United States,1.073892463,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.963506349543348
+2018-01,United States,1.045651685,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.310274296668239
+2018-02,United States,1.076529396,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.367789754510801
+2018-03,United States,1.06099348,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.652614198762773
+2018-04,United States,1.075070556,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.013199820375336
+2018-05,United States,1.112296343,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.151378575510692
+2018-06,United States,1.085184443,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.979727492662802
+2018-07,United States,1.099393332,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.784726986531786
+2018-08,United States,1.101425143,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.159363187438083
+2018-09,United States,1.112188106,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.916644051772057
+2018-10,United States,1.119234215,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.189178201096813
+2018-11,United States,1.076997005,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.3730275884826115
+2018-12,United States,1.046065696,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.591206099190202
+2019-01,United States,1.1113058,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.278774848433399
+2019-02,United States,1.086084562,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",0.8875898824039163
+2019-03,United States,1.088531798,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.595521887655705
+2019-04,United States,1.096929737,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.033278734870314
+2019-05,United States,1.126411391,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.269000665949327
+2019-06,United States,1.153709533,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.314603055915735
+2019-07,United States,1.148548113,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.471082329613396
+2019-08,United States,1.148401628,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.265063794716739
+2019-09,United States,1.165722446,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",4.81342496931898
+2019-10,United States,1.137625019,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",1.6431595597709459
+2019-11,United States,1.143200042,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",6.147002887904973
+2019-12,United States,1.189798228,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",13.740296861813906
+2020-01,United States,1.169405606,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",5.228066478191695
+2020-02,United States,1.170820112,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",7.801929330802881
+2020-03,United States,0.983707145,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.629911886138576
+2020-04,United States,0.649089136,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-40.82673537730885
+2020-05,United States,0.653587015,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-41.976171386214254
+2020-06,United States,0.789307357,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-31.585261764496487
+2020-07,United States,1.005247901,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.47663988804969
+2020-08,United States,1.010279252,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.027358080338779
+2020-09,United States,1.009158782,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.430612453009239
+2020-10,United States,1.0875262,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.403807771741686
+2020-11,United States,1.128060285,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.3243313894139797
+2020-12,United States,1.162639979,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.2825928263191186
+2021-01,United States,1.13007802,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.3630406591363626
+2021-02,United States,1.197180709,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.251464313759599
+2021-03,United States,1.228072379,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",24.841258421478685
+2021-04,United States,1.226430725,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",88.94642615001341
+2021-05,United States,1.180601787,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",80.63421700628493
+2021-06,United States,1.366154861,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",73.08274766277138
+2021-07,United States,1.329396966,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",32.24568434090172
+2021-08,United States,1.328108031,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",31.459497794378155
+2021-09,United States,1.370304045,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",35.78676313793401
+2021-10,United States,1.433832976,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",31.843534068420574
+2021-11,United States,1.49238968,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",32.296979145932795
+2021-12,United States,1.420716127,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",22.19742591528413
+2022-01,United States,1.40333341,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",24.180223415016954
+2022-02,United States,1.408168868,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",17.623751987804546
+2022-03,United States,1.445448246,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",17.70057455221048
+2022-04,United States,1.434013811,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",16.925789754655728
+2022-05,United States,1.331859667,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",12.811930463391707
+2022-06,United States,1.34599224,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.4758664318071157
+2022-07,United States,1.363592135,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",2.572231611366571
+2022-08,United States,1.315124787,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-0.9775743913109425
+2022-09,United States,1.237503661,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.691307887805278
+2022-10,United States,1.224624659,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-14.590842901635137
+2022-11,United States,1.191801696,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-20.141387201230188
+2022-12,United States,1.129269187,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-20.51408683699696
+2023-01,United States,1.12722323,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.675308663819237
+2023-02,United States,1.094300474,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-22.289116109048933
+2023-03,United States,1.087161755,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-24.787223755086984
+2023-04,United States,1.088572021,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-24.08915362949736
+2023-05,United States,1.070774442,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.603058150119658
+2023-06,United States,1.082299633,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-19.590945561469198
+2023-07,United States,1.074555514,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-21.19670637437344
+2023-08,United States,1.080816245,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-17.81644938306527
+2023-09,United States,1.076092405,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.04329523110801
+2023-10,United States,1.064549268,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-13.071383939852554
+2023-11,United States,1.041560813,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-12.606198120396028
+2023-12,United States,1.035941073,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.264470072714381
+2024-01,United States,1.0190592,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.59561754240994
+2024-02,United States,1.015699415,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.182767518384525
+2024-03,United States,0.994219603,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.549063795938983
+2024-04,United States,0.996609264,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.448017698959397
+2024-05,United States,1.023334264,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.430454831494757
+2024-06,United States,1.027183942,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.092461396039305
+2024-07,United States,0.988550591,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.003767313970533
+2024-08,United States,0.984044513,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.953578598367585
+2024-09,United States,0.995130409,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-7.523702948168287
+2024-10,United States,0.95569992,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-10.224923474373181
+2024-11,United States,0.941030951,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.651847568116988
+2024-12,United States,0.9674113,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.615219222995328
+2025-01,United States,0.984404913,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.4006156855264202
+2025-02,United States,0.96857586,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.639517784895064
+2025-03,United States,0.950804011,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.366801043652324
+2025-04,United States,0.92833389,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.850766540737274
+2025-05,United States,0.963022078,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.893693597657168
+2025-06,United States,0.929184936,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-9.540550819864746
+2025-07,United States,0.932481288,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.671869857796685
+2025-08,United States,0.938607536,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.617370088419969
+2025-09,United States,0.937413372,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.799947070052813
+2025-10,United States,0.920505341,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-3.682597252911768
+2025-11,United States,0.921234079,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-2.103742919291085
+2025-12,United States,0.953919886,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-1.3945892507147617
+2026-01,United States,0.931455716,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-5.378802594415744
+2026-02,United States,0.903083878,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.7616781198738485
+2026-03,United States,0.891260593,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-6.262428146193422
+2026-04,United States,0.849796928,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-8.459990833685938
+2026-05,United States,0.91649645,"https://economicgraph.linkedin.com/ (chart 'Hiring Rate Indexed to Average of 2016', page JS, read 2026-10-15)",-4.831210941354969

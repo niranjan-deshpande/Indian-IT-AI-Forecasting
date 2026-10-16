@@ -1,0 +1,21 @@
+measure,group,n_reporters,usd_bn_2022,usd_bn_2025,growth_2022_25_pct
+dds,India,1,233.2,335.8,44.0
+dds,World balanced panel (reporters with 2022 and 2025),139,4000.4,5282.2,32.0
+dds,World balanced ex India,138,3767.3,4946.4,31.3
+dds,"World balanced ex India, Ireland, Netherlands, Luxembourg",135,3121.9,4049.6,29.7
+dds_strict,India,1,233.2,335.8,44.0
+dds_strict,World balanced panel (reporters with 2022 and 2025),91,2597.9,3439.7,32.4
+dds_strict,World balanced ex India,90,2364.7,3103.8,31.3
+dds_strict,"World balanced ex India, Ireland, Netherlands, Luxembourg",88,1841.2,2366.5,28.5
+SI,India,1,144.8,200.3,38.4
+SI,World balanced panel (reporters with 2022 and 2025),146,1008.0,1433.4,42.2
+SI,World balanced ex India,145,863.2,1233.1,42.8
+SI,"World balanced ex India, Ireland, Netherlands, Luxembourg",142,616.9,835.9,35.5
+SJ,India,1,74.9,120.5,60.9
+SJ,World balanced panel (reporters with 2022 and 2025),145,1675.2,2180.4,30.2
+SJ,World balanced ex India,144,1600.3,2059.9,28.7
+SJ,"World balanced ex India, Ireland, Netherlands, Luxembourg",141,1413.1,1821.1,28.9
+S,India,1,309.4,412.3,33.3
+S,World balanced panel (reporters with 2022 and 2025),151,7025.8,9112.0,29.7
+S,World balanced ex India,150,6716.4,8699.7,29.5
+S,"World balanced ex India, Ireland, Netherlands, Luxembourg",147,5908.5,7640.5,29.3

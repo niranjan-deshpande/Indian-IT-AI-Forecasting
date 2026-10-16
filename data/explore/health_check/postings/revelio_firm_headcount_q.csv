@@ -1,0 +1,157 @@
+firm,slug,year,quarter,headcount,source_url
+TCS,tata-consultancy-services-ltd,2026,Q1,1493260,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2025,Q4,1498691,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2025,Q3,1517829,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2025,Q2,1555767,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2025,Q1,1558580,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2024,Q4,1558919,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2024,Q3,1568383,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2024,Q2,1566337,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2024,Q1,1555214,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2023,Q4,1556529,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2023,Q3,1571252,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,2023,Q2,1578052,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+Infosys,infosys,2026,Q1,330098,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2025,Q4,330174,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2025,Q3,325169,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2025,Q2,319448,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2025,Q1,318378,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2024,Q4,317514,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2024,Q3,313728,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2024,Q2,312179,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2024,Q1,312808,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2023,Q4,315225,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2023,Q3,318168,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,2023,Q2,323222,https://www.reveliolabs.com/companies/infosys/employees
+Wipro,wipro-technologies-ltd,2026,Q1,225798,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2025,Q4,223772,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2025,Q3,223255,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2025,Q2,222309,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2025,Q1,220655,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2024,Q4,219623,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2024,Q3,220445,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2024,Q2,220843,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2024,Q1,219576,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2023,Q4,223151,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2023,Q3,226710,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,2023,Q2,229941,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+HCLTech,hcl,2026,Q1,236594,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2025,Q4,235248,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2025,Q3,235933,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2025,Q2,234044,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2025,Q1,233652,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2024,Q4,232789,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2024,Q3,231665,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2024,Q2,233408,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2024,Q1,235467,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2023,Q4,234077,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2023,Q3,231957,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,2023,Q2,234487,https://www.reveliolabs.com/companies/hcl/employees
+Tech Mahindra,tech-mahindra,2026,Q1,147342,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2025,Q4,147084,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2025,Q3,148691,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2025,Q2,149035,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2025,Q1,147088,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2024,Q4,145389,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2024,Q3,145249,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2024,Q2,143345,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2024,Q1,142113,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2023,Q4,142284,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2023,Q3,143363,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,2023,Q2,141615,https://www.reveliolabs.com/companies/tech-mahindra/employees
+LTIMindtree (LTM),ltm,2026,Q1,196496,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2025,Q4,204222,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2025,Q3,207980,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2025,Q2,207883,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2025,Q1,208773,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2024,Q4,215869,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2024,Q3,216413,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2024,Q2,212691,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2024,Q1,212223,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2023,Q4,215277,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2023,Q3,219258,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,2023,Q2,219254,https://www.reveliolabs.com/companies/ltm/employees
+Cognizant,cognizant-technology-sol,2026,Q1,358785,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2025,Q4,352478,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2025,Q3,348658,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2025,Q2,352148,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2025,Q1,345693,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2024,Q4,343205,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2024,Q3,345308,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2024,Q2,349749,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2024,Q1,357377,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2023,Q4,361635,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2023,Q3,358359,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,2023,Q2,360300,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Persistent,persistent-systems,2026,Q1,27069,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2025,Q4,26325,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2025,Q3,25978,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2025,Q2,25803,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2025,Q1,25221,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2024,Q4,24945,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2024,Q3,24735,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2024,Q2,25233,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2024,Q1,25526,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2023,Q4,25261,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2023,Q3,24780,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,2023,Q2,26278,https://www.reveliolabs.com/companies/persistent-systems/employees
+Mphasis,mphasis,2026,Q1,24391,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2025,Q4,23844,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2025,Q3,23228,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2025,Q2,23527,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2025,Q1,24105,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2024,Q4,23846,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2024,Q3,24106,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2024,Q2,24298,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2024,Q1,24652,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2023,Q4,25360,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2023,Q3,25756,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,2023,Q2,25729,https://www.reveliolabs.com/companies/mphasis/employees
+Hexaware,hexaware,2026,Q1,33386,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2025,Q4,33645,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2025,Q3,33632,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2025,Q2,33428,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2025,Q1,32876,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2024,Q4,33084,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2024,Q3,33381,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2024,Q2,32897,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2024,Q1,32016,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2023,Q4,30978,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2023,Q3,30432,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,2023,Q2,30087,https://www.reveliolabs.com/companies/hexaware/employees
+Coforge,coforge,2026,Q1,35412,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2025,Q4,34949,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2025,Q3,34502,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2025,Q2,34067,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2025,Q1,33838,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2024,Q4,33369,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2024,Q3,33271,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2024,Q2,32718,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2024,Q1,31320,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2023,Q4,30740,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2023,Q3,30856,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,2023,Q2,30888,https://www.reveliolabs.com/companies/coforge/employees
+Accenture,accenture,2026,Q1,791575,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2025,Q4,784643,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2025,Q3,779512,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2025,Q2,782645,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2025,Q1,791082,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2024,Q4,795778,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2024,Q3,789535,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2024,Q2,767462,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2024,Q1,756022,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2023,Q4,755634,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2023,Q3,755026,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,2023,Q2,752567,https://www.reveliolabs.com/companies/accenture/employees
+Capgemini,capgemini,2026,Q1,424518,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2025,Q4,418652,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2025,Q3,415528,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2025,Q2,410174,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2025,Q1,400475,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2024,Q4,393511,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2024,Q3,390587,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2024,Q2,387608,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2024,Q1,386282,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2023,Q4,386778,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2023,Q3,389344,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,2023,Q2,394497,https://www.reveliolabs.com/companies/capgemini/employees

@@ -1,0 +1,320 @@
+cal_q,quarter_end,fiscal_quarter,firm,headcount_persons,status,qoq_change_persons,is_partial,is_peak,source,note
+2015Q1,2015-03-31,Q4FY15,hcltech,104184,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q2,2015-06-30,Q1FY16,hcltech,106107,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q3,2015-09-30,Q2FY16,hcltech,105571,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q4,2015-12-31,Q3FY16,hcltech,103696,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q1,2016-03-31,Q4FY16,hcltech,104896,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q2,2016-06-30,Q1FY17,hcltech,107968,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q3,2016-09-30,Q2FY17,hcltech,109795,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q4,2016-12-31,Q3FY17,hcltech,111092,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q1,2017-03-31,Q4FY17,hcltech,115973,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q2,2017-06-30,Q1FY18,hcltech,117781,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q3,2017-09-30,Q2FY18,hcltech,119040,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q4,2017-12-31,Q3FY18,hcltech,119291,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q1,2018-03-31,Q4FY18,hcltech,120081,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q2,2018-06-30,Q1FY19,hcltech,124121,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q3,2018-09-30,Q2FY19,hcltech,127875,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q4,2018-12-31,Q3FY19,hcltech,132328,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q1,2019-03-31,Q4FY19,hcltech,137965,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q2,2019-06-30,Q1FY20,hcltech,143900,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q3,2019-09-30,Q2FY20,hcltech,147123,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q4,2019-12-31,Q3FY20,hcltech,149173,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q1,2020-03-31,Q4FY20,hcltech,150423,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q2,2020-06-30,Q1FY21,hcltech,150287,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q3,2020-09-30,Q2FY21,hcltech,153085,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q4,2020-12-31,Q3FY21,hcltech,159682,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q1,2021-03-31,Q4FY21,hcltech,168977,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q2,2021-06-30,Q1FY22,hcltech,176499,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q3,2021-09-30,Q2FY22,hcltech,187634,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q4,2021-12-31,Q3FY22,hcltech,197777,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q1,2022-03-31,Q4FY22,hcltech,208877,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q2,2022-06-30,Q1FY23,hcltech,210966,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q3,2022-09-30,Q2FY23,hcltech,219325,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q4,2022-12-31,Q3FY23,hcltech,222270,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q1,2023-03-31,Q4FY23,hcltech,225944,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q2,2023-06-30,Q1FY24,hcltech,223438,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q3,2023-09-30,Q2FY24,hcltech,221139,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q4,2023-12-31,Q3FY24,hcltech,224756,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q1,2024-03-31,Q4FY24,hcltech,227481,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q2,2024-06-30,Q1FY25,hcltech,219401,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q3,2024-09-30,Q2FY25,hcltech,218621,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q4,2024-12-31,Q3FY25,hcltech,220755,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q1,2025-03-31,Q4FY25,hcltech,223420,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q2,2025-06-30,Q1FY26,hcltech,223151,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q3,2025-09-30,Q2FY26,hcltech,226640,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q4,2025-12-31,Q3FY26,hcltech,226379,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q1,2026-03-31,Q4FY26,hcltech,227181,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q2,2026-06-30,Q1FY27,hcltech,223889,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q3,2026-09-30,Q2FY27,hcltech,230339,reported,,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),
+2015Q1,2015-03-31,Q4FY15,infosys,176187,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q2,2015-06-30,Q1FY16,infosys,179523,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q3,2015-09-30,Q2FY16,infosys,187976,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q4,2015-12-31,Q3FY16,infosys,193383,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q1,2016-03-31,Q4FY16,infosys,194044,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q2,2016-06-30,Q1FY17,infosys,197050,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q3,2016-09-30,Q2FY17,infosys,199829,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q4,2016-12-31,Q3FY17,infosys,199763,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q1,2017-03-31,Q4FY17,infosys,200364,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q2,2017-06-30,Q1FY18,infosys,198553,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q3,2017-09-30,Q2FY18,infosys,198440,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q4,2017-12-31,Q3FY18,infosys,201691,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q1,2018-03-31,Q4FY18,infosys,204107,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q2,2018-06-30,Q1FY19,infosys,209905,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q3,2018-09-30,Q2FY19,infosys,217739,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q4,2018-12-31,Q3FY19,infosys,225501,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q1,2019-03-31,Q4FY19,infosys,228123,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q2,2019-06-30,Q1FY20,infosys,229029,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q3,2019-09-30,Q2FY20,infosys,236486,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q4,2019-12-31,Q3FY20,infosys,243454,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q1,2020-03-31,Q4FY20,infosys,242371,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q2,2020-06-30,Q1FY21,infosys,239233,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q3,2020-09-30,Q2FY21,infosys,240208,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q4,2020-12-31,Q3FY21,infosys,249312,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q1,2021-03-31,Q4FY21,infosys,259619,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q2,2021-06-30,Q1FY22,infosys,267953,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q3,2021-09-30,Q2FY22,infosys,279617,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q4,2021-12-31,Q3FY22,infosys,292067,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q1,2022-03-31,Q4FY22,infosys,314015,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q2,2022-06-30,Q1FY23,infosys,335186,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q3,2022-09-30,Q2FY23,infosys,345218,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q4,2022-12-31,Q3FY23,infosys,346845,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q1,2023-03-31,Q4FY23,infosys,343234,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q2,2023-06-30,Q1FY24,infosys,336294,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q3,2023-09-30,Q2FY24,infosys,328764,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q4,2023-12-31,Q3FY24,infosys,322663,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q1,2024-03-31,Q4FY24,infosys,317240,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q2,2024-06-30,Q1FY25,infosys,315332,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q3,2024-09-30,Q2FY25,infosys,317788,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q4,2024-12-31,Q3FY25,infosys,323379,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q1,2025-03-31,Q4FY25,infosys,323578,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q2,2025-06-30,Q1FY26,infosys,323788,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q3,2025-09-30,Q2FY26,infosys,331991,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q4,2025-12-31,Q3FY26,infosys,337034,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q1,2026-03-31,Q4FY26,infosys,328594,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q2,2026-06-30,Q1FY27,infosys,328062,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q3,2026-09-30,Q2FY27,infosys,328062,carried_at_2026Q2 (2026-10-23 (scheduled)),,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),
+2015Q2,2015-06-30,Q1FY16,ltim_group,34758,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2015Q3,2015-09-30,Q2FY16,ltim_group,36753,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2015Q4,2015-12-31,Q3FY16,ltim_group,37316,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2016Q1,2016-03-31,Q4FY16,ltim_group,36695,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2016Q2,2016-06-30,Q1FY17,ltim_group,35402,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2016Q3,2016-09-30,Q2FY17,ltim_group,35970,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2016Q4,2016-12-31,Q3FY17,ltim_group,36704,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2017Q1,2017-03-31,Q4FY17,ltim_group,37493,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2017Q2,2017-06-30,Q1FY18,ltim_group,38882,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2017Q3,2017-09-30,Q2FY18,ltim_group,39464,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2017Q4,2017-12-31,Q3FY18,ltim_group,40594,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2018Q1,2018-03-31,Q4FY18,ltim_group,41862,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2018Q2,2018-06-30,Q1FY19,ltim_group,44140,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2018Q3,2018-09-30,Q2FY19,ltim_group,45816,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2018Q4,2018-12-31,Q3FY19,ltim_group,47421,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2019Q1,2019-03-31,Q4FY19,ltim_group,48373,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2019Q2,2019-06-30,Q1FY20,ltim_group,50282,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2019Q3,2019-09-30,Q2FY20,ltim_group,52246,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2019Q4,2019-12-31,Q3FY20,ltim_group,52980,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2020Q1,2020-03-31,Q4FY20,ltim_group,53428,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2020Q2,2020-06-30,Q1FY21,ltim_group,53432,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2020Q3,2020-09-30,Q2FY21,ltim_group,54282,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2020Q4,2020-12-31,Q3FY21,ltim_group,56178,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2021Q1,2021-03-31,Q4FY21,ltim_group,59805,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2021Q2,2021-06-30,Q1FY22,ltim_group,63696,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2021Q3,2021-09-30,Q2FY22,ltim_group,70133,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2021Q4,2021-12-31,Q3FY22,ltim_group,74173,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2022Q1,2022-03-31,Q4FY22,ltim_group,79594,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2022Q2,2022-06-30,Q1FY23,ltim_group,84030,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2022Q3,2022-09-30,Q2FY23,ltim_group,86936,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2022Q4,2022-12-31,Q3FY23,ltim_group,86462,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2023Q1,2023-03-31,Q4FY23,ltim_group,84546,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2023Q2,2023-06-30,Q1FY24,ltim_group,82738,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2023Q3,2023-09-30,Q2FY24,ltim_group,83532,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2023Q4,2023-12-31,Q3FY24,ltim_group,82471,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2024Q1,2024-03-31,Q4FY24,ltim_group,81650,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2024Q2,2024-06-30,Q1FY25,ltim_group,81934,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2024Q3,2024-09-30,Q2FY25,ltim_group,84438,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2024Q4,2024-12-31,Q3FY25,ltim_group,86800,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2025Q1,2025-03-31,Q4FY25,ltim_group,84307,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2025Q2,2025-06-30,Q1FY26,ltim_group,83889,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2025Q3,2025-09-30,Q2FY26,ltim_group,86447,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2025Q4,2025-12-31,Q3FY26,ltim_group,87958,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2026Q1,2026-03-31,Q4FY26,ltim_group,87950,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2026Q2,2026-06-30,Q1FY27,ltim_group,87886,reported,,False,False,data/corrected/core_quarterly_final.csv,LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2026Q3,2026-09-30,Q2FY27,ltim_group,87886,carried_at_2026Q2 (2026-10-16 (scheduled)),,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),LTI+Mindtree to 2021Q1; LTIM (restated) from 2021Q2
+2015Q1,2015-03-31,Q4FY15,tcs,319656,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q2,2015-06-30,Q1FY16,tcs,324935,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q3,2015-09-30,Q2FY16,tcs,335620,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q4,2015-12-31,Q3FY16,tcs,344691,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q1,2016-03-31,Q4FY16,tcs,353843,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q2,2016-06-30,Q1FY17,tcs,362079,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q3,2016-09-30,Q2FY17,tcs,371519,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q4,2016-12-31,Q3FY17,tcs,378497,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q1,2017-03-31,Q4FY17,tcs,387223,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q2,2017-06-30,Q1FY18,tcs,385809,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q3,2017-09-30,Q2FY18,tcs,389213,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q4,2017-12-31,Q3FY18,tcs,390880,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q1,2018-03-31,Q4FY18,tcs,394998,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q2,2018-06-30,Q1FY19,tcs,400875,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q3,2018-09-30,Q2FY19,tcs,411102,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q4,2018-12-31,Q3FY19,tcs,417929,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q1,2019-03-31,Q4FY19,tcs,424285,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q2,2019-06-30,Q1FY20,tcs,436641,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q3,2019-09-30,Q2FY20,tcs,450738,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q4,2019-12-31,Q3FY20,tcs,446675,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q1,2020-03-31,Q4FY20,tcs,448464,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q2,2020-06-30,Q1FY21,tcs,443676,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q3,2020-09-30,Q2FY21,tcs,453540,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q4,2020-12-31,Q3FY21,tcs,469261,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q1,2021-03-31,Q4FY21,tcs,488649,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q2,2021-06-30,Q1FY22,tcs,509058,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q3,2021-09-30,Q2FY22,tcs,528748,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q4,2021-12-31,Q3FY22,tcs,556986,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q1,2022-03-31,Q4FY22,tcs,592195,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q2,2022-06-30,Q1FY23,tcs,606331,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q3,2022-09-30,Q2FY23,tcs,616171,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q4,2022-12-31,Q3FY23,tcs,613974,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q1,2023-03-31,Q4FY23,tcs,614795,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q2,2023-06-30,Q1FY24,tcs,615318,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q3,2023-09-30,Q2FY24,tcs,608985,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q4,2023-12-31,Q3FY24,tcs,603305,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q1,2024-03-31,Q4FY24,tcs,601546,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q2,2024-06-30,Q1FY25,tcs,606998,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q3,2024-09-30,Q2FY25,tcs,612724,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q4,2024-12-31,Q3FY25,tcs,607354,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q1,2025-03-31,Q4FY25,tcs,607979,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q2,2025-06-30,Q1FY26,tcs,613069,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q3,2025-09-30,Q2FY26,tcs,593314,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q4,2025-12-31,Q3FY26,tcs,582163,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q1,2026-03-31,Q4FY26,tcs,584519,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q2,2026-06-30,Q1FY27,tcs,593798,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q3,2026-09-30,Q2FY27,tcs,598056,reported,,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),
+2015Q2,2015-06-30,Q1FY16,techm,103673,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q3,2015-09-30,Q2FY16,techm,105235,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2015Q4,2015-12-31,Q3FY16,techm,107137,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q1,2016-03-31,Q4FY16,techm,105432,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q2,2016-06-30,Q1FY17,techm,107216,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q3,2016-09-30,Q2FY17,techm,112886,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q4,2016-12-31,Q3FY17,techm,117095,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q1,2017-03-31,Q4FY17,techm,117693,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q2,2017-06-30,Q1FY18,techm,115980,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q3,2017-09-30,Q2FY18,techm,117225,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q4,2017-12-31,Q3FY18,techm,115241,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q1,2018-03-31,Q4FY18,techm,112807,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q2,2018-06-30,Q1FY19,techm,113552,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q3,2018-09-30,Q2FY19,techm,118391,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q4,2018-12-31,Q3FY19,techm,121842,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q1,2019-03-31,Q4FY19,techm,121082,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q2,2019-06-30,Q1FY20,techm,125773,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q3,2019-09-30,Q2FY20,techm,131522,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q4,2019-12-31,Q3FY20,techm,130839,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q1,2020-03-31,Q4FY20,techm,125236,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q2,2020-06-30,Q1FY21,techm,123416,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q3,2020-09-30,Q2FY21,techm,124258,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q4,2020-12-31,Q3FY21,techm,121901,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q1,2021-03-31,Q4FY21,techm,121054,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q2,2021-06-30,Q1FY22,techm,126263,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q3,2021-09-30,Q2FY22,techm,141193,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q4,2021-12-31,Q3FY22,techm,145067,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q1,2022-03-31,Q4FY22,techm,151173,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q2,2022-06-30,Q1FY23,techm,158035,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q3,2022-09-30,Q2FY23,techm,163912,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q4,2022-12-31,Q3FY23,techm,157068,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q1,2023-03-31,Q4FY23,techm,152400,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q2,2023-06-30,Q1FY24,techm,148297,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q3,2023-09-30,Q2FY24,techm,150604,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q4,2023-12-31,Q3FY24,techm,146250,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q1,2024-03-31,Q4FY24,techm,145455,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q2,2024-06-30,Q1FY25,techm,147620,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q3,2024-09-30,Q2FY25,techm,154273,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q4,2024-12-31,Q3FY25,techm,150488,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q1,2025-03-31,Q4FY25,techm,148731,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q2,2025-06-30,Q1FY26,techm,148517,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q3,2025-09-30,Q2FY26,techm,152714,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q4,2025-12-31,Q3FY26,techm,149616,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q1,2026-03-31,Q4FY26,techm,147623,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q2,2026-06-30,Q1FY27,techm,146760,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q3,2026-09-30,Q2FY27,techm,152206,reported,,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),
+2016Q1,2016-03-31,Q4FY16,top6,951741,complete,,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2016Q2,2016-06-30,Q1FY17,top6,967987,complete,16246.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2016Q3,2016-09-30,Q2FY17,top6,989790,complete,21803.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2016Q4,2016-12-31,Q3FY17,top6,1007327,complete,17537.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2017Q1,2017-03-31,Q4FY17,top6,1024227,complete,16900.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2017Q2,2017-06-30,Q1FY18,top6,1018444,complete,-5783.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2017Q3,2017-09-30,Q2FY18,top6,1022682,complete,4238.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2017Q4,2017-12-31,Q3FY18,top6,1026562,complete,3880.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2018Q1,2018-03-31,Q4FY18,top6,1033778,complete,7216.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2018Q2,2018-06-30,Q1FY19,top6,1053439,complete,19661.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2018Q3,2018-09-30,Q2FY19,top6,1092374,complete,38935.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2018Q4,2018-12-31,Q3FY19,top6,1117400,complete,25026.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2019Q1,2019-03-31,Q4FY19,top6,1131253,complete,13853.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2019Q2,2019-06-30,Q1FY20,top6,1160475,complete,29222.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2019Q3,2019-09-30,Q2FY20,top6,1199568,complete,39093.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2019Q4,2019-12-31,Q3FY20,top6,1210439,complete,10871.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2020Q1,2020-03-31,Q4FY20,top6,1202808,complete,-7631.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2020Q2,2020-06-30,Q1FY21,top6,1191848,complete,-10960.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2020Q3,2020-09-30,Q2FY21,top6,1210616,complete,18768.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2020Q4,2020-12-31,Q3FY21,top6,1246642,complete,36026.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2021Q1,2021-03-31,Q4FY21,top6,1295816,complete,49174.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2021Q2,2021-06-30,Q1FY22,top6,1353359,complete,57543.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2021Q3,2021-09-30,Q2FY22,top6,1428690,complete,75331.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2021Q4,2021-12-31,Q3FY22,top6,1497741,complete,69051.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2022Q1,2022-03-31,Q4FY22,top6,1588982,complete,91241.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2022Q2,2022-06-30,Q1FY23,top6,1656597,complete,67615.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2022Q3,2022-09-30,Q2FY23,top6,1694188,complete,37591.0,False,True,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2022Q4,2022-12-31,Q3FY23,top6,1688728,complete,-5460.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2023Q1,2023-03-31,Q4FY23,top6,1679489,complete,-9239.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2023Q2,2023-06-30,Q1FY24,top6,1655843,complete,-23646.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2023Q3,2023-09-30,Q2FY24,top6,1637731,complete,-18112.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2023Q4,2023-12-31,Q3FY24,top6,1619100,complete,-18631.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2024Q1,2024-03-31,Q4FY24,top6,1605986,complete,-13114.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2024Q2,2024-06-30,Q1FY25,top6,1604196,complete,-1790.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2024Q3,2024-09-30,Q2FY25,top6,1621733,complete,17537.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2024Q4,2024-12-31,Q3FY25,top6,1621508,complete,-225.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2025Q1,2025-03-31,Q4FY25,top6,1621361,complete,-147.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2025Q2,2025-06-30,Q1FY26,top6,1625646,complete,4285.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2025Q3,2025-09-30,Q2FY26,top6,1626598,complete,952.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2025Q4,2025-12-31,Q3FY26,top6,1625171,complete,-1427.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2026Q1,2026-03-31,Q4FY26,top6,1618023,complete,-7148.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2026Q2,2026-06-30,Q1FY27,top6,1623439,complete,5416.0,False,False,data/corrected/core_quarterly_final.csv,"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2026Q3,2026-09-30,Q2FY27,top6,1632877,"partial: 4 of 6 reported (TCS, HCLTech, Wipro, TechM); Infosys and LTIM carried at 2026Q2",9438.0,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),"TCS+Infosys+HCLTech+Wipro+TechM+LTI group; global, permanent (TechM incl. direct contractors); Wipro company-wide headcount; complete from 2016Q1 because Wipro's comparable series starts then"
+2016Q1,2016-03-31,Q4FY16,wipro,156831,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q2,2016-06-30,Q1FY17,wipro,158272,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q3,2016-09-30,Q2FY17,wipro,159791,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2016Q4,2016-12-31,Q3FY17,wipro,164176,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q1,2017-03-31,Q4FY17,wipro,165481,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q2,2017-06-30,Q1FY18,wipro,161439,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q3,2017-09-30,Q2FY18,wipro,159300,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2017Q4,2017-12-31,Q3FY18,wipro,158865,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q1,2018-03-31,Q4FY18,wipro,159923,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q2,2018-06-30,Q1FY19,wipro,160846,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q3,2018-09-30,Q2FY19,wipro,171451,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2018Q4,2018-12-31,Q3FY19,wipro,172379,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q1,2019-03-31,Q4FY19,wipro,171425,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q2,2019-06-30,Q1FY20,wipro,174850,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q3,2019-09-30,Q2FY20,wipro,181453,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2019Q4,2019-12-31,Q3FY20,wipro,187318,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q1,2020-03-31,Q4FY20,wipro,182886,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q2,2020-06-30,Q1FY21,wipro,181804,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q3,2020-09-30,Q2FY21,wipro,185243,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2020Q4,2020-12-31,Q3FY21,wipro,190308,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q1,2021-03-31,Q4FY21,wipro,197712,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q2,2021-06-30,Q1FY22,wipro,209890,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q3,2021-09-30,Q2FY22,wipro,221365,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2021Q4,2021-12-31,Q3FY22,wipro,231671,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q1,2022-03-31,Q4FY22,wipro,243128,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q2,2022-06-30,Q1FY23,wipro,262049,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q3,2022-09-30,Q2FY23,wipro,262626,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2022Q4,2022-12-31,Q3FY23,wipro,262109,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q1,2023-03-31,Q4FY23,wipro,258570,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q2,2023-06-30,Q1FY24,wipro,249758,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q3,2023-09-30,Q2FY24,wipro,244707,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2023Q4,2023-12-31,Q3FY24,wipro,239655,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q1,2024-03-31,Q4FY24,wipro,232614,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q2,2024-06-30,Q1FY25,wipro,232911,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q3,2024-09-30,Q2FY25,wipro,233889,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2024Q4,2024-12-31,Q3FY25,wipro,232732,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q1,2025-03-31,Q4FY25,wipro,233346,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q2,2025-06-30,Q1FY26,wipro,233232,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q3,2025-09-30,Q2FY26,wipro,235492,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2025Q4,2025-12-31,Q3FY26,wipro,242021,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q1,2026-03-31,Q4FY26,wipro,242156,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q2,2026-06-30,Q1FY27,wipro,243044,reported,,False,False,data/corrected/core_quarterly_final.csv,
+2026Q3,2026-09-30,Q2FY27,wipro,236328,reported,,True,False,data/explore/health_check/contradictions/q2fy27_update.csv (+ core panel for carried firms),

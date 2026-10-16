@@ -1,0 +1,40 @@
+fy,band,headcount_persons,total_persons,share_pct,source_doc,note,source
+FY14,junior,80593,160405,50.24,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY14,middle,57709,160405,35.98,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY14,senior_incl_top,22103,160405,13.78,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY15,junior,84219,176187,47.8,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY15,middle,67451,176187,38.28,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY15,senior_incl_top,24517,176187,13.92,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY16,junior,92552,194044,47.7,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY16,middle,74225,194044,38.25,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY16,senior_incl_top,27267,194044,14.05,Infosys Sustainability Report 2015-16,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY17,junior,91701,200364,45.77,Infosys Sustainability Report 2016-17,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY17,middle,80815,200364,40.33,Infosys Sustainability Report 2016-17,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY17,senior_incl_top,27848,200364,13.9,Infosys Sustainability Report 2016-17,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY18,junior,88099,204107,43.16,Infosys Sustainability Report 2017-18,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY18,middle,88056,204107,43.14,Infosys Sustainability Report 2017-18,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY18,senior_incl_top,27952,204107,13.69,Infosys Sustainability Report 2017-18,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY19,junior,86558,228123,37.94,Infosys Sustainability Report 2018-19,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY19,middle,110502,228123,48.44,Infosys Sustainability Report 2018-19,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY19,senior_incl_top,31063,228123,13.62,Infosys Sustainability Report 2018-19,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY20,junior,94584,240800,39.28,Infosys Sustainability Report 2019-20,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY20,middle,115277,240800,47.87,Infosys Sustainability Report 2019-20,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY20,senior_incl_top,30939,240800,12.85,Infosys Sustainability Report 2019-20,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY21,junior,104536,258586,40.43,Infosys ESG Databook 2020-21,Top reported separately and folded into Senior; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY21,middle,122451,258586,47.35,Infosys ESG Databook 2020-21,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY21,senior_incl_top,31599,258586,12.22,Infosys ESG Databook 2020-21,Top reported separately and folded into Senior,data/explore/workforce/workforce_firm_tidy.csv
+FY22,junior,145406,314015,46.31,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY22,middle,131962,314015,42.02,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY22,senior_incl_top,36647,314015,11.67,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY23,junior,157913,343234,46.01,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY23,middle,143150,343234,41.71,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY23,senior_incl_top,42171,343234,12.29,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY24,junior,130304,317240,41.07,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY24,middle,143709,317240,45.3,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY24,senior_incl_top,43227,317240,13.63,Infosys ESG Databook 2023-24,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY25,junior,114735,323578,35.46,Infosys ESG Databook 2024-25,Senior already includes Top in this vintage; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY25,middle,162064,323578,50.08,Infosys ESG Databook 2024-25,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY25,senior_incl_top,46779,323578,14.46,Infosys ESG Databook 2024-25,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY26,junior,98703,328594,30.04,Infosys ESG Databook 2025-26,Senior already includes Top in this vintage; junior = job level JL3 and below,data/explore/workforce/workforce_firm_tidy.csv
+FY26,middle,179657,328594,54.67,Infosys ESG Databook 2025-26,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv
+FY26,senior_incl_top,50234,328594,15.29,Infosys ESG Databook 2025-26,Senior already includes Top in this vintage,data/explore/workforce/workforce_firm_tidy.csv

@@ -1,0 +1,15 @@
+# Price give-back, % per year. M2 = coded management statements (top-6 IT). FY24-26 measured, FY27 expected. Reference bands are forecasts on different bases (gross, partial portfolio): not like-for-like with M2 AI-specific.
+series,fy,low_pct_yr,central_pct_yr,high_pct_yr,kind,status,note,source
+M2 AI-specific give-back,FY24,0.0,0.0,0.25,estimate,measured,"same-scope price give-back attributable to AI, top-6 revenue-weighted",data/explore/round4/price_statements/m2_aggregate.csv
+M2 gross give-back (AI + pre-AI baseline 1.55),FY24,0.8,1.55,3.0,estimate,measured,AI increment + assumed pre-AI productivity give-back ~1.55%/yr,data/explore/round4/price_statements/m2_aggregate.csv
+M2 AI-specific give-back,FY25,0.014,0.096,0.353,estimate,measured,"same-scope price give-back attributable to AI, top-6 revenue-weighted",data/explore/round4/price_statements/m2_aggregate.csv
+M2 gross give-back (AI + pre-AI baseline 1.55),FY25,0.814,1.646,3.103,estimate,measured,AI increment + assumed pre-AI productivity give-back ~1.55%/yr,data/explore/round4/price_statements/m2_aggregate.csv
+M2 AI-specific give-back,FY26,0.014,0.431,1.318,estimate,measured,"same-scope price give-back attributable to AI, top-6 revenue-weighted",data/explore/round4/price_statements/m2_aggregate.csv
+M2 gross give-back (AI + pre-AI baseline 1.55),FY26,0.814,1.981,4.068,estimate,measured,AI increment + assumed pre-AI productivity give-back ~1.55%/yr,data/explore/round4/price_statements/m2_aggregate.csv
+M2 AI-specific give-back,FY27,0.406,1.51,2.67,estimate,expected (FY27e),"same-scope price give-back attributable to AI, top-6 revenue-weighted",data/explore/round4/price_statements/m2_aggregate.csv
+M2 gross give-back (AI + pre-AI baseline 1.55),FY27,1.206,3.06,5.42,estimate,expected (FY27e),AI increment + assumed pre-AI productivity give-back ~1.55%/yr,data/explore/round4/price_statements/m2_aggregate.csv
+"Broker deflation range (ICICI 2-3%, Kotak 3.5%)",FY26,2.0,,3.5,reference band,forecast,gross forecasts; ICICI applies to ~30% 'traditional' segment (=0.6-0.9 pp of portfolio); Kotak unit/horizon unstated; ICICI peak FY26-28,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv
+"Broker deflation range (ICICI 2-3%, Kotak 3.5%)",FY27,2.0,,3.5,reference band,forecast,gross forecasts; ICICI applies to ~30% 'traditional' segment (=0.6-0.9 pp of portfolio); Kotak unit/horizon unstated; ICICI peak FY26-28,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv
+HCLTech management: portfolio give-back,FY27,2.0,,3.0,reference band,company expectation,"3-5%/yr in AI-disrupted services = 2-3%/yr of HCL portfolio, from FY27 (Apr 2026)",data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv
+ICICI on whole portfolio (2-3% x ~30%),FY26,0.6,,0.9,reference band,"forecast, rescaled",ICICI 2-3% applied to ~30% of revenue,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv
+ICICI on whole portfolio (2-3% x ~30%),FY27,0.6,,0.9,reference band,"forecast, rescaled",ICICI 2-3% applied to ~30% of revenue,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv

@@ -1,0 +1,98 @@
+key,value,unit,period,source_file,how_computed,quoted_value,check
+exports_fy26_usd_bn,221.4,USD bn,FY26,data/explore/trade/rbi_survey_orgtype.csv,"RBI survey total, excl. Mode 3",221.4,matches
+exports_fy23_usd_bn,185.5,USD bn,FY23,data/explore/trade/rbi_survey_orgtype.csv,RBI survey total,,
+exports_growth_fy23_26_pct,19.4,%,FY23-FY26,data/explore/trade/rbi_survey_orgtype.csv,221.4/185.5-1,19.4,matches
+exports_cagr_fy23_26_pct,6.1,% per yr,FY23-FY26,data/explore/trade/rbi_survey_orgtype.csv,(221.4/185.5)^(1/3)-1,6.0,outline says 'about 6% a year': 6.1
+exports_yoy_fy24_pct,2.8,%,FY24,data/explore/trade/rbi_survey_orgtype.csv,FY24/FY23-1 on USD bn,2.8,matches exports_recomputed yoy_pct
+exports_yoy_fy25_pct,7.3,%,FY25,data/explore/trade/rbi_survey_orgtype.csv,FY25/FY24-1 on USD bn,7.3,matches exports_recomputed yoy_pct
+exports_yoy_fy26_pct,8.2,%,FY26,data/explore/trade/rbi_survey_orgtype.csv,FY26/FY25-1 on USD bn,8.2,matches exports_recomputed yoy_pct
+publtd_share_fy23_pct,41.5,%,FY23,data/explore/trade/rbi_survey_orgtype.csv,as published,41.5,matches
+publtd_share_fy26_pct,36.9,%,FY26,data/explore/trade/rbi_survey_orgtype.csv,as published,36.9,matches
+publtd_share_fy13_pct,64.6,%,FY13,data/explore/trade/rbi_survey_orgtype.csv,as published (early method),64.6,matches
+publtd_share_fy12_pct,58.7,%,FY12,data/explore/trade/rbi_survey_orgtype.csv,as published (early method),,
+publtd_share_fy20_pct,46.6,%,FY20,data/explore/trade/rbi_survey_orgtype.csv,as published,46.6,matches
+privltd_share_fy13_pct,35.3,%,FY13,data/explore/trade/rbi_survey_orgtype.csv,as published,35.3,matches
+privltd_share_fy26_pct,60.8,%,FY26,data/explore/trade/rbi_survey_orgtype.csv,as published,60.8,matches
+privltd_share_pp_per_yr_fy14_22,2.99,pp per yr,FY14-FY22,data/explore/trade/rbi_survey_orgtype.csv,(share FY22 - share FY14)/8,3.0,matches inventory (+3.0pp/yr)
+privltd_share_pp_per_yr_fy23_26,1.57,pp per yr,FY23-FY26,data/explore/trade/rbi_survey_orgtype.csv,(share FY26 - share FY23)/3,1.6,matches inventory (+1.6pp/yr)
+publtd_exports_fy23_26_pct,6.1,%,FY23-FY26,data/explore/trade/rbi_survey_orgtype.csv,81.7/77.0-1,6.0,matches (+6%)
+privltd_exports_fy23_26_pct,29.3,%,FY23-FY26,data/explore/trade/rbi_survey_orgtype.csv,134.6/104.1-1,29.0,matches (+29%)
+publtd_exports_fy23_yoy_pct,31.8,%,FY23,data/explore/trade/rbi_survey_orgtype.csv,77.0/58.4-1; evidence of method break,31.8,matches
+exports_it_services_yoy_fy25_pct,4.6,%,FY25,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,4.6,matches
+exports_it_services_yoy_fy26_pct,12.0,%,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,12.0,matches
+exports_bpo_yoy_fy25_pct,11.4,%,FY25,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,11.4,matches
+exports_bpo_yoy_fy26_pct,0.4,%,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,0.4,matches
+exports_engineering_yoy_fy26_pct,11.1,%,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,,
+exports_software_products_yoy_fy26_pct,-5.9,%,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,y/y on USD bn,,
+exports_it_services_fy26_usd_bn,147.0,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,147.0,matches
+exports_bpo_fy26_usd_bn,56.0,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,56.0,matches
+exports_engineering_fy26_usd_bn,12.0,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,12.0,matches
+exports_software_products_fy26_usd_bn,6.4,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,6.4,matches
+exports_computer_services_subtotal_fy26_usd_bn,153.4,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,153.4,matches
+exports_ites_subtotal_fy26_usd_bn,68.0,USD bn,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,as published / summed,68.0,matches
+exports_inr_yoy_fy26_pct,13.0,%,FY26,data/explore/round3/red_team/rbi_exports_by_activity_type.csv,INR crore y/y,13.0,matches
+top6_cc_growth_fy26_logx100,0.6,log pts x100,FY26,output/final/table_A.csv,revenue-weighted avg of firm-reported cc growth,0.6,matches
+top6_cc_growth_fy24_logx100,1.5,log pts x100,FY24,output/final/table_A.csv,revenue-weighted,1.5,matches
+top6_cc_growth_fy25_logx100,3.2,log pts x100,FY25,output/final/table_A.csv,revenue-weighted,3.2,matches
+top6_cc_growth_q1fy27_logx100,3.0,log pts x100,Q1FY27,output/final/table_A.csv,"revenue-weighted, one quarter y/y",3.0,matches
+top6_cc_growth_prefy16_20_mean_logx100,8.7,log pts x100,FY16-FY20,output/final/table_A.csv,"mean of FY16-20 revenue-weighted cc growth (4 firms: TCS, Infosys, HCL, Wipro)",9.0,outline '~9%': 8.7 log = 9.1% -> ok as '~9%'
+top6_cc_growth_fy24_26_range_logx100,0.65 to 3.15,log pts x100,FY24-FY26,output/final/table_A.csv,min/max of weighted cc growth,1-3,"outline says '1-3% a year', but FY26 is 0.6 (below 1); FY24-26 range is the value shown"
+accenture_cc_growth_fy26_logx100,5.0,log pts x100,FY26,output/final/table_A.csv,table_A,5.0,matches
+cognizant_cc_growth_fy26_logx100,5.2,log pts x100,FY26,output/final/table_A.csv,table_A,5.2,matches
+midtier_usd_growth_fy24_logx100,5.0,log pts x100,FY24,data/explore/midtier/midtier_vs_top6.csv,"USD, incl. acquisitions; pct = 5.1",,
+midtier_usd_growth_fy25_logx100,14.6,log pts x100,FY25,data/explore/midtier/midtier_vs_top6.csv,"USD, incl. acquisitions; pct = 15.8",14.0,"'~14%' holds in log points; as ordinary % it is 15.8% (USD, not cc)"
+midtier_usd_growth_fy26_logx100,13.9,log pts x100,FY26,data/explore/midtier/midtier_vs_top6.csv,"USD, incl. acquisitions; pct = 14.9",14.0,"'~14%' holds in log points; as ordinary % it is 14.9% (USD, not cc)"
+midtier_rev_level_growth_fy26_pct,14.6,%,FY26,data/explore/midtier/midtier_vs_top6.csv,ratio of summed USD levels (unmatched; differs from matched log growth),,
+midtier_rev_share_fy20_pct,4.0,%,FY20,data/explore/midtier/midtier_vs_top6.csv,mid4/(mid4+top6) USD revenue (FY20 excl. Coforge),4.0,matches
+midtier_rev_share_fy26_pct,7.3,%,FY26,data/explore/midtier/midtier_vs_top6.csv,mid4/(mid4+top6) USD revenue,7.3,matches
+top6_simple_rev_cc_gap_vs_trend_fy26_logx100,-17.8,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,-18,'~18% below trend' is 17.8 LOG POINTS; as an ordinary % it is 16.3% below trend. Say 'about 16% below' or '18 log points'
+top6_simple_headcount_gap_vs_trend_fy26_logx100,-11.0,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,,
+top6_weighted_rev_cc_gap_vs_trend_fy26_logx100,-17.4,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,,revenue-weighted variant: 15.9% below
+top6_weighted_headcount_gap_vs_trend_fy26_logx100,-11.2,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,,
+accenture_rev_cc_gap_vs_trend_fy26_logx100,1.8,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,0,"'on trend' holds: +1.8 log pts (+1.8%) at FY26. Note r1 FINDINGS' '-0.9/+0.6' are growth-rate deltas vs counterfactual c, not level gaps"
+accenture_headcount_gap_vs_trend_fy26_logx100,-2.6,log pts x100,FY26,output/final/table_A.csv,cum. log growth FY21-26 minus 6 x FY16-20 mean,,
+top6_simple_rev_cc_gap_vs_trend_fy26_pct,-16.3,%,FY26,output/final/table_A.csv,100*(exp(gap/100)-1),-18,differs: -16.3% in ordinary percent
+top6_simple_headcount_gap_vs_trend_fy23_logx100,14.1,log pts x100,FY23,data/explore/round4/robustness/baseline/r1_level_gaps_group.csv,boom overshoot in staff,14.1,matches r1 FINDINGS
+top6_simple_rev_cc_gap_vs_trend_fy23_logx100,3.5,log pts x100,FY23,data/explore/round4/robustness/baseline/r1_level_gaps_group.csv,boom overshoot in revenue,3.5,matches r1 FINDINGS
+india_share_world_excl_ireland_2015_pct,34.6,%,2015,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,34.6,matches
+india_share_world_excl_ireland_2022_pct,29.3,%,2022,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,29.3,matches
+india_share_world_excl_ireland_2025_pct,30.1,%,2025,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,30.1,matches
+india_share_emerging_delivery_group_2015_pct,75.2,%,2015,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,75.2,matches
+india_share_emerging_delivery_group_2022_pct,65.9,%,2022,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,65.9,matches
+india_share_emerging_delivery_group_2025_pct,65.2,%,2025,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,65.2,matches
+india_share_world_incl_ireland_2015_pct,27.3,%,2015,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,27.3,matches
+india_share_world_incl_ireland_2022_pct,20.4,%,2022,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,20.4,matches
+india_share_world_incl_ireland_2025_pct,19.5,%,2025,data/explore/round3/offshore_competitors/india_share_summary.csv,balanced panel 2015-2025,19.5,matches
+india_h1_2026_yoy_pct,11.1,%,H1 2026,data/explore/round3/offshore_competitors/imf_h1_india_vs_delivery_group.csv,Jan-Jun 2026 vs Jan-Jun 2025,11.1,matches
+others_h1_2026_yoy_pct,11.1,%,H1 2026,data/explore/round3/offshore_competitors/imf_h1_india_vs_delivery_group.csv,24 other delivery countries,11.1,matches
+india_h1_share_of_25_2026_pct,66.55,%,H1 2026,data/explore/round3/offshore_competitors/imf_h1_india_vs_delivery_group.csv,,66.6,matches (66.55)
+seg_top6_rev_usd_change_pct,7.18,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,rev_usd_change_pct,7.2,matches
+seg_top6_hc_change_pct,-3.66,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_pct,-3.7,matches
+seg_top6_hc_change_k,-61.47,thousand,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_k,-61.5,matches
+seg_midtier4_hc_change_pct,17.96,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_pct,18.0,matches
+seg_midtier4_hc_change_excl_acq_pct,14.1,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_excl_acq_pct,14.1,matches
+seg_midtier4_rev_usd_change_pct,39.38,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,rev_usd_change_pct,39.4,matches
+seg_erd_5_hc_change_pct,4.0,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_pct,4.0,matches
+seg_erd_5_hc_change_excl_acq_pct,0.24,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_excl_acq_pct,0.2,matches
+seg_erd_5_rev_usd_change_pct,25.02,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,rev_usd_change_pct,25.0,matches
+seg_other_it_services_7_hc_change_pct,7.32,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_pct,7.3,matches
+seg_other_it_services_7_hc_change_excl_acq_pct,4.93,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_excl_acq_pct,4.9,matches
+seg_other_it_services_7_rev_usd_change_pct,13.74,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,rev_usd_change_pct,13.7,matches
+seg_ites_bpm_5_hc_change_pct,36.15,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_pct,36.2,matches
+seg_ites_bpm_5_hc_change_excl_acq_pct,28.72,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_excl_acq_pct,28.7,matches
+seg_ites_bpm_5_rev_usd_change_pct,47.72,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,rev_usd_change_pct,47.7,matches
+seg_other_it_plus_erd_12_hc_change_excl_acq_pct,2.31,%,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,hc_change_excl_acq_pct,2.3,matches
+seg_other_it_plus_erd_12_n_firms_hc_fell,5.0,firms of 12,FY23-FY26,data/explore/round3/listed_panel/listed_panel_summary.csv,n_firms_hc_fell,5,matches
+seg_gcc_tech_hc_change_k,258.0,thousand,FY23-FY26,data/explore/round3/gcc_reconcile/gcc_scenarios.csv,hc_change_k,260,matches
+seg_gcc_tech_range_low_k,155.0,thousand,FY23-FY26,data/explore/round3/gcc_reconcile/gcc_scenarios.csv,range_low_k,155,matches
+seg_gcc_tech_range_high_k,432.0,thousand,FY23-FY26,data/explore/round3/gcc_reconcile/gcc_scenarios.csv,range_high_k,430,matches
+seg_gcc_all_functions_hc_change_k,385.0,thousand,FY23-FY26,data/explore/round3/gcc_reconcile/gcc_scenarios.csv,hc_change_k,385,matches
+other_it_erd_firms_shrank_list,"Tata Elxsi -3%; Cyient (group, incl. DLM) -6%; Birlasoft -7%; Sonata Software (intl IT services rev) -2%; Mastek -16%",firms,FY23-FY26,data/explore/round3/listed_panel/listed_panel_firms.csv,"hc_FY26 < hc_FY23 among 12 non-mid4, non-ITeS firms",5 of 12,5 of 12
+cc_yoy_tcs_latest_pct,2.8,%,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,firm-reported cc y/y,,
+cc_yoy_infosys_latest_pct,2.4,%,2026Q2,"data/corrected/core_quarterly_final.csv (rev_cc_yoy, firm-reported)",firm-reported cc y/y,,
+cc_yoy_hcltech_latest_pct,2.6,%,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,firm-reported cc y/y,,
+cc_yoy_wipro_latest_pct,0.6,%,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,firm-reported cc y/y,,
+cc_yoy_techm_latest_pct,7.2,%,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,firm-reported cc y/y,,
+cc_yoy_ltim_latest_pct,6.4,%,2026Q2,"data/corrected/core_quarterly_final.csv (rev_cc_yoy, firm-reported)",firm-reported cc y/y,,
+tcs_cc_yoy_2025q2_2026q1,-3.1; -3.3; -2.6; -0.6,%,2025Q2-2026Q1,data/corrected/core_quarterly_final.csv,TCS negative four quarters,"-3.1,-3.3,-2.6,-0.6",matches
+q2fy27_firms_pending,"infosys, ltim",firms,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,status != reported as of 2026-10-15,,

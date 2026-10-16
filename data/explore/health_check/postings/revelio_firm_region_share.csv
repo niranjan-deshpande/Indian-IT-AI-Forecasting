@@ -1,0 +1,131 @@
+firm,slug,region,employees,share_pct,source_url
+TCS,tata-consultancy-services-ltd,South Asia,1310769,88.1,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,North America,51032,3.4,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Northern Europe,33309,2.2,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,South America,22078,1.5,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Central America and the Caribbean,17112,1.2,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Southeast Asia,11939,0.8,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Western Europe,10562,0.7,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,East Asia,9862,0.7,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Pacific Islands,7071,0.5,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+TCS,tata-consultancy-services-ltd,Arab States,5149,0.3,https://www.reveliolabs.com/companies/tata-consultancy-services-ltd/employees
+Infosys,infosys,South Asia,286529,87.3,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,North America,20584,6.3,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Western Europe,4273,1.3,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Northern Europe,4215,1.3,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Pacific Islands,3355,1.0,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Southeast Asia,3237,1.0,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Eastern Europe,1762,0.5,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,East Asia,1422,0.4,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,Central America and the Caribbean,1125,0.3,https://www.reveliolabs.com/companies/infosys/employees
+Infosys,infosys,South America,611,0.2,https://www.reveliolabs.com/companies/infosys/employees
+Wipro,wipro-technologies-ltd,South Asia,206943,91.9,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,North America,6894,3.1,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Southeast Asia,2850,1.3,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Northern Europe,1970,0.9,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,South America,1127,0.5,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Arab States,1036,0.5,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Eastern Europe,991,0.4,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Pacific Islands,783,0.3,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Central America and the Caribbean,752,0.3,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+Wipro,wipro-technologies-ltd,Western Europe,653,0.3,https://www.reveliolabs.com/companies/wipro-technologies-ltd/employees
+HCLTech,hcl,South Asia,203225,86.4,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,North America,12246,5.2,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Southeast Asia,4842,2.1,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Northern Europe,3012,1.3,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Eastern Europe,2583,1.1,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Central America and the Caribbean,2145,0.9,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Western Europe,2119,0.9,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,Pacific Islands,1113,0.5,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,South America,799,0.3,https://www.reveliolabs.com/companies/hcl/employees
+HCLTech,hcl,East Asia,796,0.3,https://www.reveliolabs.com/companies/hcl/employees
+Tech Mahindra,tech-mahindra,South Asia,129039,88.0,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,North America,5922,4.0,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Southeast Asia,2674,1.8,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Northern Europe,2119,1.4,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Pacific Islands,1114,0.8,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Central America and the Caribbean,1095,0.7,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Arab States,1094,0.7,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Western Europe,858,0.6,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Sub-Saharan Africa,804,0.5,https://www.reveliolabs.com/companies/tech-mahindra/employees
+Tech Mahindra,tech-mahindra,Eastern Europe,462,0.3,https://www.reveliolabs.com/companies/tech-mahindra/employees
+LTIMindtree (LTM),ltm,South Asia,180395,92.2,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,North America,8989,4.6,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Northern Europe,1429,0.7,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Eastern Europe,1271,0.6,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Arab States,1024,0.5,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Western Europe,588,0.3,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Central America and the Caribbean,362,0.2,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Southeast Asia,333,0.2,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,East Asia,327,0.2,https://www.reveliolabs.com/companies/ltm/employees
+LTIMindtree (LTM),ltm,Pacific Islands,286,0.1,https://www.reveliolabs.com/companies/ltm/employees
+Cognizant,cognizant-technology-sol,South Asia,288408,80.9,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,North America,32513,9.1,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Southeast Asia,10783,3.0,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Northern Europe,8105,2.3,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Eastern Europe,4240,1.2,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Western Europe,2780,0.8,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,South America,1980,0.6,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Southern Europe,1816,0.5,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,Central America and the Caribbean,1720,0.5,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Cognizant,cognizant-technology-sol,East Asia,1400,0.4,https://www.reveliolabs.com/companies/cognizant-technology-sol/employees
+Persistent,persistent-systems,South Asia,25081,93.5,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,North America,1280,4.8,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Northern Europe,114,0.4,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Central America and the Caribbean,91,0.3,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Western Europe,79,0.3,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Southeast Asia,64,0.2,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Pacific Islands,53,0.2,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Eastern Europe,32,0.1,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Sub-Saharan Africa,10,0.0,https://www.reveliolabs.com/companies/persistent-systems/employees
+Persistent,persistent-systems,Arab States,10,0.0,https://www.reveliolabs.com/companies/persistent-systems/employees
+Mphasis,mphasis,South Asia,21671,89.2,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,North America,2028,8.4,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Northern Europe,264,1.1,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Central America and the Caribbean,85,0.3,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Western Europe,53,0.2,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,East Asia,44,0.2,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Southeast Asia,31,0.1,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Eastern Europe,31,0.1,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Arab States,25,0.1,https://www.reveliolabs.com/companies/mphasis/employees
+Mphasis,mphasis,Pacific Islands,17,0.1,https://www.reveliolabs.com/companies/mphasis/employees
+Hexaware,hexaware,South Asia,28685,86.5,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,North America,2195,6.6,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Central America and the Caribbean,806,2.4,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Northern Europe,532,1.6,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Southeast Asia,382,1.2,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Western Europe,182,0.5,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Arab States,123,0.4,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,North Africa,73,0.2,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Pacific Islands,70,0.2,https://www.reveliolabs.com/companies/hexaware/employees
+Hexaware,hexaware,Eastern Europe,42,0.1,https://www.reveliolabs.com/companies/hexaware/employees
+Coforge,coforge,South Asia,28285,80.6,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,South America,1957,5.6,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,North America,1741,5.0,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Southeast Asia,838,2.4,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Central America and the Caribbean,789,2.2,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Northern Europe,564,1.6,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Eastern Europe,308,0.9,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Pacific Islands,195,0.6,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Southern Europe,159,0.5,https://www.reveliolabs.com/companies/coforge/employees
+Coforge,coforge,Arab States,128,0.4,https://www.reveliolabs.com/companies/coforge/employees
+Accenture,accenture,South Asia,443022,56.4,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Southeast Asia,76689,9.8,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,North America,69918,8.9,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Southern Europe,39045,5.0,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,South America,33208,4.2,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Northern Europe,27467,3.5,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Western Europe,26301,3.3,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,East Asia,19695,2.5,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Eastern Europe,17850,2.3,https://www.reveliolabs.com/companies/accenture/employees
+Accenture,accenture,Pacific Islands,8338,1.1,https://www.reveliolabs.com/companies/accenture/employees
+Capgemini,capgemini,South Asia,296770,70.4,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Western Europe,34142,8.1,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Northern Europe,17715,4.2,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,North America,17392,4.1,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Southern Europe,12565,3.0,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Eastern Europe,11147,2.6,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,South America,6445,1.5,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Southeast Asia,5379,1.3,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,North Africa,4746,1.1,https://www.reveliolabs.com/companies/capgemini/employees
+Capgemini,capgemini,Central America and the Caribbean,4554,1.1,https://www.reveliolabs.com/companies/capgemini/employees

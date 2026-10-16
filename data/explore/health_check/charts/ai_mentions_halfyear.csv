@@ -1,0 +1,14 @@
+# AI mentions on earnings calls (8 firms: TCS, Infosys, HCLTech, Wipro, TechM, LTIMindtree, Cognizant, Accenture). Pooled rate = sum(mentions)/sum(words)*10k. ai_any = 'AI' whole word (case-sensitive) + 'artificial intelligence' + token 'GenAI'; ai_word = same without the single token 'GenAI' (comparable to the earlier read-only pass); genai and agentic are sub-families that overlap ai_any. 2026H2 = Jul-Oct 2026 calls only (8). Built by count_ai_mentions.py
+half_year,n_calls,total_words,ai_any_count,ai_any_per_10k_words,ai_any_per_call,ai_word_count,ai_word_per_10k_words,ai_word_per_call,genai_count,genai_per_10k_words,genai_per_call,agentic_count,agentic_per_10k_words,agentic_per_call,low_n_flag,source
+2021H1,16,135846,39,2.87,2.44,39,2.87,2.44,0,0.0,0.0,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2021H2,16,135533,29,2.14,1.81,29,2.14,1.81,0,0.0,0.0,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2022H1,16,132487,31,2.34,1.94,31,2.34,1.94,0,0.0,0.0,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2022H2,16,132217,36,2.72,2.25,36,2.72,2.25,0,0.0,0.0,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2023H1,15,123038,156,12.68,10.4,133,10.81,8.87,63,5.12,4.2,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2023H2,16,134504,416,30.93,26.0,386,28.7,24.12,251,18.66,15.69,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2024H1,16,141112,501,35.5,31.31,435,30.83,27.19,264,18.71,16.5,0,0.0,0.0,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2024H2,16,135827,694,51.09,43.38,507,37.33,31.69,318,23.41,19.88,1,0.07,0.06,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2025H1,16,143617,791,55.08,49.44,708,49.3,44.25,172,11.98,10.75,57,3.97,3.56,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2025H2,16,138641,1079,77.83,67.44,1054,76.02,65.88,80,5.77,5.0,125,9.02,7.81,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2026H1,16,138639,1231,88.79,76.94,1207,87.06,75.44,37,2.67,2.31,127,9.16,7.94,,audit/calls_transcripts.csv transcripts; count_ai_mentions.py
+2026H2,8,71984,778,108.08,97.25,774,107.52,96.75,6,0.83,0.75,62,8.61,7.75,few calls (partial half-year),audit/calls_transcripts.csv transcripts; count_ai_mentions.py

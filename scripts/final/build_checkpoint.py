@@ -481,7 +481,7 @@ def main():
                   '<p class="footer">Built from <code>checkpoint_text.md</code> and the repository CSVs by '
                   '<code>scripts/final/build_checkpoint.py</code>.</p>')
     byline_parts = [p.strip() for p in front["byline"].split("·")]
-    header = (f'<header><p class="crumbs"><a href="index.html">Pilot note</a> · <b>Two questions (working draft)</b></p>'
+    header = (f'<header><p class="crumbs"><a href="index.html">Pilot note</a> · <b>Two questions (working draft)</b> · <a href="health-check.html">Health check</a></p>'
               f'<h1>{inline(front["title"], {})}</h1>'
               f'<p class="byline">{" · ".join(byline_parts[:-1])} · <span class="tag">{html.escape(byline_parts[-1])}</span></p>'
               f'<p class="thanks">{inline(front["thanks"], doc.tokens)}</p></header>')

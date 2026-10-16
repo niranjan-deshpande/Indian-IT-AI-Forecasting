@@ -1,0 +1,110 @@
+# Numbers the business/demand prose may quote, recomputed from repo files by prep_business.py
+key,value,unit,period,source_file,how_computed
+attrition_2026Q2_min,11.8,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,min across top-6 (TechM)
+attrition_2026Q2_max,13.9,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,max across top-6 (Wipro)
+attrition_2026Q2_HCLTech,12.7,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_HCLTech,23.8,% LTM,2022Q3,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_HCLTech,16.9,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values
+attrition_2026Q2_Infosys,13.0,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_Infosys,28.4,% LTM,2022Q2,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_Infosys,20.3,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values
+attrition_2026Q2_LTIMindtree,13.3,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_LTIMindtree,24.1,% LTM,2022Q3,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_LTIMindtree,15.9,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values (LTI+Mindtree headcount-weighted)
+attrition_2026Q2_TCS,13.6,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_TCS,21.5,% LTM,2022Q3,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_TCS,11.6,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values
+attrition_2026Q2_TechM,11.8,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_TechM,23.5,% LTM,2022Q1,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_TechM,19.1,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values
+attrition_2026Q2_Wipro,13.9,% LTM,2026Q2,data/corrected/core_quarterly_final.csv,as reported
+attrition_peak_2021_23_Wipro,23.8,% LTM,2022Q1,data/corrected/core_quarterly_final.csv,max of quarterly LTM attrition 2021Q1-2023Q4
+attrition_mean_2016_19_Wipro,16.7,% LTM,2016Q1-2019Q4,data/corrected/core_quarterly_final.csv,mean of quarterly values
+attrition_peak_2022_min,21.5,% LTM,2022,data/corrected/core_quarterly_final.csv,"lowest firm peak (TCS, 2022Q3)"
+attrition_peak_2022_max,28.4,% LTM,2022,data/corrected/core_quarterly_final.csv,"highest firm peak (Infosys, 2022Q2)"
+attrition_2026Q3_range_4firms,11.7-13.8,% LTM,2026Q3 (Q2FY27),data/explore/health_check/contradictions/q2fy27_update.csv,"TCS, HCLTech, Wipro, TechM only: HCLTech 12.8, TCS 13.3, TechM 11.7, Wipro 13.8"
+util_2026Q2_Infosys,84.9,%,2026Q2,data/corrected/core_quarterly_final.csv,excl. trainees
+util_mean_2016_19_Infosys,83.4,%,2016-19,data/corrected/core_quarterly_final.csv,mean of quarterly values
+util_peak_since2020_Infosys,89.2,%,2021Q3,data/corrected/core_quarterly_final.csv,max since 2020Q1
+util_2026Q2_LTIMindtree,86.4,%,2026Q2,data/corrected/core_quarterly_final.csv,excl. trainees
+util_mean_2016_19_LTIMindtree,80.5,%,2016-19,data/corrected/core_quarterly_final.csv,"mean of quarterly values (LTI only, pre-merger)"
+util_peak_since2020_LTIMindtree,88.3,%,2024Q2,data/corrected/core_quarterly_final.csv,max since 2020Q1
+util_2026Q2_TechM,87.04,%,2026Q2,data/corrected/core_quarterly_final.csv,incl. trainees
+util_mean_2016_19_TechM,80.3,%,2016-19,data/corrected/core_quarterly_final.csv,mean of quarterly values
+util_2026Q3_TechM,88.85,%,2026Q3 (Q2FY27),data/explore/health_check/contradictions/q2fy27_update.csv,as reported
+util_peak_since2020_TechM,88.85,%,2026Q3,data/explore/health_check/contradictions/q2fy27_update.csv,max since 2020Q1
+util_2026Q2_Wipro,83.6,%,2026Q2,data/corrected/core_quarterly_final.csv,excl. trainees (IT services)
+util_mean_2016_19_Wipro,82.7,%,2016-19,data/corrected/core_quarterly_final.csv,mean of quarterly values
+util_2026Q3_Wipro,83.4,%,2026Q3 (Q2FY27),data/explore/health_check/contradictions/q2fy27_update.csv,as reported
+util_peak_since2020_Wipro,89.2,%,2021Q3,data/corrected/core_quarterly_final.csv,max since 2020Q1
+tcv_ttm_2026Q2_TCS,40.8,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (total TCV)
+tcv_ttm_2025Q2_TCS,40.4,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+tcv_ttm_2026Q2_Infosys,14.7,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (large-deal TCV)
+tcv_ttm_2025Q2_Infosys,11.3,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+tcv_ttm_2026Q2_HCLTech,9.918,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (new deal wins TCV)
+tcv_ttm_2025Q2_HCLTech,9.12,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+tcv_ttm_2026Q2_Wipro,6.79,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (large-deal TCV (>=$30m))
+tcv_ttm_2025Q2_Wipro,6.879,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+tcv_ttm_2026Q2_TechM,4.063,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (net new deal wins)
+tcv_ttm_2025Q2_TechM,2.955,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+tcv_ttm_2026Q2_LTIMindtree,6.65,USD bn,2026Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2025Q3-2026Q2 (order inflow)
+tcv_ttm_2025Q2_LTIMindtree,6.21,USD bn,2025Q2,data/corrected/core_quarterly_final.csv,sum of tcv_q 2024Q3-2025Q2
+labour_share_top6_FY16,0.678,share,FY16,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_top6_FY22,0.69,share,FY22,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_top6_FY23,0.711,share,FY23,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_top6_FY24,0.72,share,FY24,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_top6_FY25,0.713,share,FY25,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_top6_FY26,0.713,share,FY26,chart1_labour_share_measures.csv,firm_top6_sum
+labour_share_rbi_listed_FY26,0.677,share,FY26,chart1_labour_share_measures.csv,rbi_listed_it_op
+labour_share_rbi_listed_FY24,0.687,share,FY24,chart1_labour_share_measures.csv,rbi_listed_it_op
+labour_share_mid3_FY26,0.75,share,FY26,chart1_labour_share_measures.csv,firm_mid3_sum
+giveback_ai_central_FY25,0.1,% per yr,FY25,m2_aggregate.csv,IT top-6 central
+giveback_ai_range_FY25,0.01-0.35,% per yr,FY25,m2_aggregate.csv,IT top-6 low-high
+giveback_gross_central_FY25,1.65,% per yr,FY25,m2_aggregate.csv,IT top-6 gross_central
+giveback_ai_central_FY26,0.43,% per yr,FY26,m2_aggregate.csv,IT top-6 central
+giveback_ai_range_FY26,0.01-1.32,% per yr,FY26,m2_aggregate.csv,IT top-6 low-high
+giveback_gross_central_FY26,1.98,% per yr,FY26,m2_aggregate.csv,IT top-6 gross_central
+giveback_ai_central_FY27,1.51,% per yr,FY27,m2_aggregate.csv,IT top-6 central
+giveback_ai_range_FY27,0.41-2.67,% per yr,FY27,m2_aggregate.csv,IT top-6 low-high
+giveback_gross_central_FY27,3.06,% per yr,FY27,m2_aggregate.csv,IT top-6 gross_central
+broker_deflation_range,2-3.5,% per yr,FY26-FY28 forecasts,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv,ICICI 2-3% (traditional services) to Kotak 3.5% (pricing erosion)
+hcltech_portfolio_giveback,2-3,% per yr,from FY27,data/explore/health_check/contradictions/output_side/broker_deflation_vs_m2.csv,"HCLTech management, Apr 2026"
+us_inhouse_share_2015,64.08,%,May 2015,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2019,64.46,%,May 2019,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2022,64.01,%,May 2022,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2023,65.66,%,May 2023,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2024,66.95,%,May 2024,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2025,67.49,%,May 2025,oews_computer_occ_by_bucket.csv,client/(client+5415)
+us_inhouse_share_2015_22_range,64.01-64.94,%,2015-2022,oews_computer_occ_by_bucket.csv,min-max
+ces5415_peak,2483.5,thousand,2023-03,bls_ces_monthly.csv,max of monthly SA series
+ces5415_latest,2355.4,thousand,2026-09,bls_ces_monthly.csv,last observation
+ces5415_latest_vs_peak_pct,-5.16,%,2023-03 to 2026-09,bls_ces_monthly.csv,latest/peak-1
+ces5415_latest_vs_peak_k,-128.1,thousand,2023-03 to 2026-09,bls_ces_monthly.csv,latest-peak
+ces5415_latest_yoy_pct,-1.35,%,2026-09,bls_ces_monthly.csv,vs same month a year earlier
+check_ces_may_vs_oews_ces_check_maxabsdiff,0.0,thousand,2015-2026,oews_ces_check.csv,max |May value difference| between the two files (0 = consistent)
+ces5415_may2026_yoy_pct,-1.67,%,May 2026,bls_ces_monthly.csv,May 2026 vs May 2025
+calls_A_per_transcript_peak,7.88,per transcript,2023H2,fig3_data.csv,max over half-years
+calls_A_per_transcript_2024H2_2026H1_range,4.69-5.69,per transcript,2024H2-2026H1,fig3_data.csv,min-max
+calls_A_per_transcript_2026H2,5.88,per transcript,2026H2 (8 calls),fig3_data.csv,
+calls_D_per_transcript_2022,"0.00, 0.00",per transcript,"2022H1, 2022H2",fig3_data.csv,
+calls_D_per_transcript_2025H1,1.44,per transcript,2025H1,fig3_data.csv,
+calls_D_per_transcript_2026H1,1.62,per transcript,2026H1,fig3_data.csv,
+calls_D_per_transcript_2026H2,3.0,per transcript,2026H2,fig3_data.csv,
+calls_D_share_with_any_2026H2,1.0,share,2026H2 (8 calls),fig3_data.csv,
+ai_mentions_per_10k_2022H2,2.72,per 10k words,2022H2 (16 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2022H2,2.25,per call,2022H2,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2023H1,12.68,per 10k words,2023H1 (15 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2023H1,10.4,per call,2023H1,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2023H2,30.93,per 10k words,2023H2 (16 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2023H2,26.0,per call,2023H2,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2024H2,51.09,per 10k words,2024H2 (16 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2024H2,43.38,per call,2024H2,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2025H2,77.83,per 10k words,2025H2 (16 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2025H2,67.44,per call,2025H2,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2026H1,88.79,per 10k words,2026H1 (16 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2026H1,76.94,per call,2026H1,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2026H2,108.08,per 10k words,2026H2 (8 calls),ai_mentions_halfyear.csv,ai_any pooled
+ai_mentions_per_call_2026H2,97.25,per call,2026H2,ai_mentions_halfyear.csv,ai_any / n_calls
+ai_mentions_per_10k_2021_22_range,2.14-2.87,per 10k words,2021H1-2022H2,ai_mentions_halfyear.csv,min-max
+genai_per_10k_peak,23.41,per 10k words,2024H2,ai_mentions_halfyear.csv,max
+agentic_per_10k_2026H1,9.16,per 10k words,2026H1,ai_mentions_halfyear.csv,

@@ -1,0 +1,56 @@
+period,series,currency_basis,growth_logx100,growth_pct,n_firms,note,source
+FY16,accenture,cc,,,0,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY17,accenture,cc,7.682,7.985,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY18,accenture,cc,8.386,8.748,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY19,accenture,cc,9.607,10.084,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY20,accenture,cc,7.744,8.052,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY21,accenture,cc,1.742,1.757,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY22,accenture,cc,20.859,23.194,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY23,accenture,cc,16.443,17.872,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY24,accenture,cc,2.475,2.506,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY25,accenture,cc,5.434,5.584,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+FY26,accenture,cc,4.993,5.12,1,Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted,output/final/table_A.csv
+Q1FY27,accenture,cc,2.956,3.0,1,"Accenture quarters mapped to Indian FY (Mar-Feb); Q1FY27 = its quarter to May 2026; acquisitions not adjusted; one quarter (Apr-Jun 2026 vs Apr-Jun 2025), not a fiscal year",output/final/table_A.csv
+FY16,cognizant,cc,,,0,,output/final/table_A.csv
+FY17,cognizant,cc,,,0,,output/final/table_A.csv
+FY18,cognizant,cc,8.608,8.989,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY19,cognizant,cc,7.871,8.189,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY20,cognizant,cc,4.278,4.371,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY21,cognizant,cc,-0.954,-0.949,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY22,cognizant,cc,11.406,12.082,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY23,cognizant,cc,4.994,5.121,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY24,cognizant,cc,-0.976,-0.971,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY25,cognizant,cc,4.145,4.232,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+FY26,cognizant,cc,5.187,5.324,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted",output/final/table_A.csv
+Q1FY27,cognizant,cc,4.018,4.1,1,"Belcan acquisition adds ~4pp in late 2024-mid 2025, not adjusted; one quarter (Apr-Jun 2026 vs Apr-Jun 2025), not a fiscal year",output/final/table_A.csv
+FY20,midtier4,usd,11.116,11.757,2,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY21,midtier4,usd,7.065,7.321,3,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY22,midtier4,usd,22.592,25.348,4,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+coforge+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY23,midtier4,usd,15.918,17.255,4,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+coforge+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY24,midtier4,usd,4.961,5.086,4,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+coforge+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY25,midtier4,usd,14.65,15.777,4,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+coforge+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY26,midtier4,usd,13.923,14.939,4,"USD revenue, NOT constant currency; includes acquisitions (Coforge: Cigniti FY25); Hexaware calendar year t-1 used as FYt; growth on matched same-basis prior-year levels (persistent+coforge+mphasis+hexaware)",data/explore/midtier/midtier_vs_top6.csv
+FY16,top6_weighted,cc,10.783,11.386,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY17,top6_weighted,cc,8.524,8.898,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY18,top6_weighted,cc,6.256,6.456,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY19,top6_weighted,cc,9.458,9.92,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY20,top6_weighted,cc,8.633,9.017,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY21,top6_weighted,cc,0.457,0.458,5,5 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra,output/final/table_A.csv
+FY22,top6_weighted,cc,16.274,17.673,5,5 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra,output/final/table_A.csv
+FY23,top6_weighted,cc,12.947,13.822,5,5 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra,output/final/table_A.csv
+FY24,top6_weighted,cc,1.541,1.553,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY25,top6_weighted,cc,3.15,3.2,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY26,top6_weighted,cc,0.645,0.647,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+Q1FY27,top6_weighted,cc,3.019,3.065,6,"6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group; one quarter (Apr-Jun 2026 vs Apr-Jun 2025), not a fiscal year",output/final/table_A.csv
+FY16,top6_weighted,usd,6.687,6.916,4,4 firms: TCS;Infosys;HCLTech;Wipro,output/final/table_A.csv
+FY17,top6_weighted,usd,7.054,7.309,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY18,top6_weighted,usd,8.81,9.21,5,5 firms: TCS;Infosys;HCLTech;Tech Mahindra;LTI group,output/final/table_A.csv
+FY19,top6_weighted,usd,7.874,8.192,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY20,top6_weighted,usd,6.902,7.146,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY21,top6_weighted,usd,1.836,1.853,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY22,top6_weighted,usd,17.064,18.606,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY23,top6_weighted,usd,9.526,9.994,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY24,top6_weighted,usd,2.037,2.058,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY25,top6_weighted,usd,2.764,2.803,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+FY26,top6_weighted,usd,2.259,2.285,6,6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group,output/final/table_A.csv
+Q1FY27,top6_weighted,usd,2.991,3.036,6,"6 firms: TCS;Infosys;HCLTech;Wipro;Tech Mahindra;LTI group; one quarter (Apr-Jun 2026 vs Apr-Jun 2025), not a fiscal year",output/final/table_A.csv

@@ -1,0 +1,5 @@
+# Business rows for the page scorecard (built by prep_business.py)
+indicator,latest,period,comparison,direction,source
+"Attrition (LTM), top-6",11.8-13.9%,2026Q2 (Q1FY27),2022 peaks 21.5-28.4%; below 2016-19 mean at 5 of 6 (TCS above),normal,data/corrected/core_quarterly_final.csv
+"Labour share of value added, top-6",0.713,FY26,"FY22 0.690, FY24 0.720; RBI listed IT 0.677",flat,data/explore/health_check/labour_share/chart1_labour_share_measures.csv
+"AI price give-back (M2, top-6)",0.43% FY26; 1.51% FY27e,FY26 / FY27e,FY26 range 0.01-1.32; FY27e 0.41-2.67; gross FY27e 3.06,rising from low base,data/explore/round4/price_statements/m2_aggregate.csv

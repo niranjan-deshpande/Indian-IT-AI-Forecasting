@@ -1,0 +1,13 @@
+item,label,group,usd_bn_4q_to_2022Q3,usd_bn_4q_to_2025Q3,growth_pct,usd_bn_4q_to_2026Q2
+SI2,software,treated,135.2,191.4,41.5,207.7
+SJ,business,treated,69.0,118.0,70.9,127.5
+SG,financial,treated,6.7,7.8,16.2,7.5
+SD,travel,control,15.8,31.8,101.0,31.5
+SC,transport,control,37.7,31.9,-15.5,33.7
+SF,insurance,control,3.4,3.6,6.5,3.8
+SL,government,control,0.7,0.6,-15.6,0.6
+SI1,telecom,control,3.3,2.5,-23.5,2.5
+SJ2,prof & mgmt consulting,memo,45.2,87.2,92.7,98.3
+S,total services,memo,293.0,404.5,38.1,430.1
+TREATED,sum of treated,treated,210.89999999999998,317.2,50.4,342.7
+CONTROL,sum of control,control,60.9,70.39999999999999,15.6,72.1

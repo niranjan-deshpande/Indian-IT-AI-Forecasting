@@ -1,0 +1,25 @@
+series,column,fit_window,trend_growth_pct_yr,gap_2022Q4_pct,gap_2025Q4_pct,cagr_2015_22_pct,cagr_2022_25_pct,gap_2026Q2_pct
+WTO OBS (Baldwin's series; incl. ~32% of India's computer line reallocated),wto_SJ_4q,2015Q1-2022Q4,11.5,15.4,27.0,13.5,15.1,
+WTO OBS (Baldwin's series; incl. ~32% of India's computer line reallocated),wto_SJ_4q,2015Q4-2022Q4,12.2,13.6,22.6,13.5,15.1,
+WTO OBS (Baldwin's series; incl. ~32% of India's computer line reallocated),wto_SJ_4q,2010Q4-2019Q4,7.1,42.2,76.6,13.5,15.1,
+WTO OBS (Baldwin's series; incl. ~32% of India's computer line reallocated),wto_SJ_4q,2015Q1-2019Q4,9.5,27.8,48.6,13.5,15.1,
+IMF/RBI OBS as published (SJ),imf_SJ_4q,2015Q1-2022Q4,12.1,18.2,35.1,14.6,17.2,34.9
+IMF/RBI OBS as published (SJ),imf_SJ_4q,2015Q4-2022Q4,12.9,16.3,30.1,14.6,17.2,29.5
+IMF/RBI OBS as published (SJ),imf_SJ_4q,2010Q4-2019Q4,6.7,51.7,100.7,14.6,17.2,105.5
+IMF/RBI OBS as published (SJ),imf_SJ_4q,2015Q1-2019Q4,10.3,29.3,55.2,14.6,17.2,56.3
+IMF/RBI computer services (SI2),imf_SI2_4q,2015Q1-2022Q4,8.3,16.8,28.5,9.6,11.8,30.0
+IMF/RBI computer services (SI2),imf_SI2_4q,2015Q4-2022Q4,9.4,14.1,21.9,9.6,11.8,22.7
+IMF/RBI computer services (SI2),imf_SI2_4q,2010Q4-2019Q4,4.7,40.8,71.5,9.6,11.8,76.5
+IMF/RBI computer services (SI2),imf_SI2_4q,2015Q1-2019Q4,4.2,45.1,79.2,9.6,11.8,84.8
+IMF/RBI computer + OBS (SI2+SJ),imf_SI2_plus_SJ_4q,2015Q1-2022Q4,9.5,17.5,31.8,11.2,13.7,32.9
+IMF/RBI computer + OBS (SI2+SJ),imf_SI2_plus_SJ_4q,2015Q4-2022Q4,10.5,15.0,25.6,11.2,13.7,26.0
+IMF/RBI computer + OBS (SI2+SJ),imf_SI2_plus_SJ_4q,2010Q4-2019Q4,5.3,44.4,81.9,11.2,13.7,87.0
+IMF/RBI computer + OBS (SI2+SJ),imf_SI2_plus_SJ_4q,2015Q1-2019Q4,6.0,40.6,73.5,11.2,13.7,77.8
+WTO computer/telecom/info after reallocation (SI),wto_SI_4q,2015Q1-2022Q4,7.2,19.1,33.4,8.7,11.3,
+WTO computer/telecom/info after reallocation (SI),wto_SI_4q,2015Q4-2022Q4,8.3,16.0,25.9,8.7,11.3,
+WTO computer/telecom/info after reallocation (SI),wto_SI_4q,2010Q4-2019Q4,3.2,46.9,84.4,8.7,11.3,
+WTO computer/telecom/info after reallocation (SI),wto_SI_4q,2015Q1-2019Q4,2.6,52.2,94.4,8.7,11.3,
+IMF/RBI total services (S),imf_S_4q,2015Q1-2022Q4,7.9,16.3,23.3,10.2,10.0,23.9
+IMF/RBI total services (S),imf_S_4q,2015Q4-2022Q4,8.4,14.9,20.1,10.2,10.0,20.3
+IMF/RBI total services (S),imf_S_4q,2010Q4-2019Q4,5.6,27.2,43.7,10.2,10.0,45.9
+IMF/RBI total services (S),imf_S_4q,2015Q1-2019Q4,8.6,11.1,15.6,10.2,10.0,15.7
