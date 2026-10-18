@@ -223,9 +223,8 @@ S = "Summary"
 num("$221 billion", f"{S} 1; §2; Table 1", EO, "FY26 total_exports_usd_bn", tot["FY26"], 221)
 num("19% more than in FY23", f"{S} 1; §2; §3", EO, "FY26/FY23 − 1, % (ordinary)", pct(tot["FY23"], tot["FY26"]), 19)
 num("about 30% (world share)", f"{S} 1", IW, "2025 world_excl_ireland", iw.loc[2025, "world_excl_ireland"], 30)
-cond("has held (world share)", f"{S} 1; §2", IW, "|2025 − 2022| < 1.5 pts, world_excl_ireland",
-     f"{iw.loc[2022, 'world_excl_ireland']:.2f} → {iw.loc[2025, 'world_excl_ireland']:.2f}",
-     abs(iw.loc[2025, "world_excl_ireland"] - iw.loc[2022, "world_excl_ireland"]) < 1.5)
+sh = iw.loc[2022:2025, "world_excl_ireland"]
+cond("stayed at about 30% since 2022 (world share)", f"{S} 1", IW, "world_excl_ireland 2022-2025 each within 29–31", ", ".join(f"{v:.1f}" for v in sh), all(29 <= v <= 31 for v in sh))
 rng("between 0.6% and 3.2% a year (six largest, cc, FY24–26)", f"{S} 2", RG, "top6_weighted cc growth_logx100 FY24-FY26",
     [g("top6_weighted", "cc", y) for y in ("FY24", "FY25", "FY26")], 0.6, 3.2, 1, note="log points (page convention)")
 pre = sum(g("top6_weighted", "cc", f"FY{y}") for y in range(16, 21)) / 5
@@ -244,7 +243,7 @@ cond("IT's share … is lower than before the boom ended (graduates, formal entr
      fsv(PL, "CY2025") < fsv(PL, "2022-23") and fsv(EP, "FY25") < fsv(EP, "FY22") and xp["2026-10"] < xp["2025-06"])
 num("about 0.4% (AI price cuts, FY26)", f"{S} 5; Table 1; §6", GB, "M2 AI-specific FY26 central_pct_yr", gbv("M2 AI-specific", "FY26"), 0.4, 1)
 num("about 1.5% (expected FY27)", f"{S} 5; Table 1; §6; §9", GB, "M2 AI-specific FY27 central_pct_yr", gbv("M2 AI-specific", "FY27"), 1.5, 1)
-txt("mid-2026 jump in coding-agent capability", f"{S}; §9", R4, "before coding agents' step change in summer 2026", kind="repo doc")
+txt("summer of 2026 / mid-2026 jump in coding-agent capability", f"{S}; §9", R4, "before coding agents' step change in summer 2026", kind="repo doc")
 
 # ================================================================== Table 1
 T = "Table 1"
@@ -294,8 +293,7 @@ num("about six million (sector employment)", "§1", SE, "Nasscom FY26 / 1e6", se
 num("about 5½% of GDP (exports)", "§1", ING, "rbi_survey_pct_gdp FY26 (½-point precision: 5.25–5.75)", ing.loc["FY26", "rbi_survey_pct_gdp"], 5.5, 0.30103)
 num("5.7% of GDP in FY26 (RBI survey)", "fn gdp", ING, "rbi_survey_pct_gdp FY26", ing.loc["FY26", "rbi_survey_pct_gdp"], 5.7, 1)
 num("nearer 8½% (BoP incl. business services)", "fn gdp", ING, "computer_plus_obs_pct_gdp FY26 (½-point precision)", ing.loc["FY26", "computer_plus_obs_pct_gdp"], 8.5, 0.30103)
-txt("fell sharply in February (2026 share prices)", "§1; fn selloff", CAT, "Indian IT stocks fell nearly 6% on 4 Feb 2026")
-txt("Rest of World coverage of the sell-off, 6 February 2026", "fn selloff", CAT, "Rest of World, Feb 6")
+txt("in February 2026 … share prices fell sharply", "§1", CAT, "Indian IT stocks fell nearly 6% on 4 Feb 2026")
 num("21 smaller listed firms", "§1; appendix", LP, "rows in listed_panel_firms.csv", len(lp), 21)
 
 # ================================================================== §2
@@ -331,8 +329,15 @@ num("$86 billion in FY26 (six firms)", "§3", RV, "FY revenue_usd FY26 / 1000", 
 num("7% more than in FY23", "§3", RV, "revenue_usd FY26/FY23 − 1, % (log 6.9)", pct(rvf.loc["FY23", "revenue_usd"], rvf.loc["FY26", "revenue_usd"]), 7)
 num("1.5% (FY24)", "§3", RG, "top6_weighted cc FY24 (log)", g("top6_weighted", "cc", "FY24"), 1.5, 1)
 num("3.2% (FY25)", "§3", RG, "top6_weighted cc FY25 (log)", g("top6_weighted", "cc", "FY25"), 3.2, 1)
-num("about 5% (Accenture FY26 cc)", "§3", RG, "accenture cc FY26 (log)", g("accenture", "cc", "FY26"), 5)
-num("about 5% (Cognizant FY26 cc)", "§3", RG, "cognizant cc FY26 (log)", g("cognizant", "cc", "FY26"), 5)
+peer = lambda y: (g("accenture", "cc", y) + g("cognizant", "cc", y)) / 2
+num("Accenture and Cognizant grew about 5% in FY26 (Fig. 4 peer average)", "§3", RG, "mean of accenture, cognizant cc FY26 (log)", peer("FY26"), 5)
+pre_gap = [abs(peer(f"FY{y}") - g("top6_weighted", "cc", f"FY{y}")) for y in range(18, 24)]
+cond("Fig. 4: until FY23 the two groups moved together", "Fig. 4 caption", RG, "|peer avg − top6| FY18-FY23 each < 3 pts",
+     ", ".join(f"{v:.1f}" for v in pre_gap), all(v < 3 for v in pre_gap))
+post_gap = {y: peer(y) - g("top6_weighted", "cc", y) for y in ("FY24", "FY25", "FY26")}
+cond("Fig. 4: since then the Indian firms have grown more slowly", "Fig. 4 caption", RG, "sum of (peer avg − top6) over FY24-FY26 > 0",
+     ", ".join(f"{k} {v:+.1f}" for k, v in post_gap.items()), sum(post_gap.values()) > 0,
+     note="cumulatively true; in FY24 alone the Indian firms grew faster (1.5 vs 0.8)")
 cond("Fig. 4: FY16–FY26", "Fig. 4 caption", RG, "period range", f"{rg.period.min()}–FY26", rg.period.min() == "FY16")
 cond("Accenture's revenue is back on its pre-COVID trend", "§3", RT, "accenture rev_cc gap FY26 within ±3 log pts", gap("accenture", "rev_cc", "gap_vs_trend_logx100"),
      abs(gap("accenture", "rev_cc", "gap_vs_trend_logx100")) < 3)
@@ -346,9 +351,9 @@ last = fc.sort_values("cal_q").groupby("firm").tail(1).set_index("firm")
 rng("6–7% (LTIMindtree, TechM, latest quarter)", "§3", FC, "latest cc_yoy_pct: ltim, techm", [last.loc["ltim", "cc_yoy_pct"], last.loc["techm", "cc_yoy_pct"]], 6, 7)
 cond("Fig. 6: 2022 to September 2026", "Fig. 6 caption", FC, "cal_q range", f"{fc.cal_q.min()}–{fc.cal_q.max()}", fc.cal_q.min().startswith("2022") and fc.cal_q.max() == "2026Q3")
 fsh = [vs.loc["vertical", "share_firm"] * 100, vs.loc["geography", "share_firm"] * 100]
-cond("about 40% (firm differences explain, by industry and by region)", "fn firmspecific", VS, "share_firm vertical, geography both within 38–42",
+cond("about 40% (firm differences explain, by industry and by region)", "§3", VS, "share_firm vertical, geography both within 38–42",
      ", ".join(f"{v:.1f}" for v in fsh), all(38 <= v <= 42 for v in fsh))
-rng("2–6% (industry or region itself)", "fn firmspecific", VS, "share_group vertical, geography", [vs.loc["vertical", "share_group"] * 100, vs.loc["geography", "share_group"] * 100], 2, 6)
+rng("2–6% (industry or region itself)", "§3", VS, "share_group vertical, geography", [vs.loc["vertical", "share_group"] * 100, vs.loc["geography", "share_group"] * 100], 2, 6)
 num("39% (mid-tier four, USD revenue FY23–26)", "§3", SC, "midtier4 rev_usd_change_pct", sc.loc["midtier4", "rev_usd_change_pct"], 39)
 num("48% (three listed BPM firms)", "§3", SC, "ites_bpm_5 rev_usd_change_pct", sc.loc["ites_bpm_5", "rev_usd_change_pct"], 48)
 num("three listed BPM firms (48% revenue)", "§3", SC, "ites_bpm_5 n_firms_rev_usd", sc.loc["ites_bpm_5", "n_firms_rev_usd"], 3)
@@ -429,7 +434,7 @@ num("65,000 in FY25", "§5", FI, "sum_tcs_infosys_hcltech FY25", fsum["FY25"], 6
 rng("400,000 to 600,000 (staffing firms' FY22 peak)", "§5", FI, "FY22 actual: han_digital, xpheno",
     [fv("han_digital_it_bpm_fresher_hiring", "FY22"), fv("xpheno_it_fresher_intake", "FY22", "actual")], 400000, 600000, -5, kind="external (as published)")
 xph = fi[fi.series == "xpheno_it_fresher_intake"].set_index(["fy", "kind"]).value_persons
-cond("counts bottomed in FY24 and have recovered partly", "§5; Summary 4", FI, "Xpheno FY24 < FY25 < FY22; Infosys FY24 is its FY22-26 low",
+cond("hiring bottomed in FY24 / fell to a low in FY24 and has since partly recovered", "§5; Summary 4", FI, "Xpheno FY24 < FY25 < FY22; Infosys FY24 is its FY22-26 low",
      f"Xpheno {xph[('FY22', 'actual')]:.0f} / {xph[('FY24', 'actual')]:.0f} / {xph[('FY25', 'actual')]:.0f}; Infosys FY24 {fv('firm_fresher_hires_infosys', 'FY24'):.0f}",
      xph[("FY24", "actual")] < xph[("FY25", "actual")] < xph[("FY22", "actual")] and
      fv("firm_fresher_hires_infosys", "FY24") == fi[(fi.series == "firm_fresher_hires_infosys") & fi.fy.isin(["FY22", "FY23", "FY24", "FY25", "FY26"])].value_persons.min(),
@@ -604,6 +609,58 @@ num("about 0.3 million lower without the high-weight unit (2023-24)", "data note
 txt("EPFO: ten largest industries; IT visible only for ages 18–28", "data notes", FEP, "IT × age for 18-28 only, with no all-ages IT total", kind="repo doc")
 txt("EPFO: top 10 industries in each age band", "data notes", FEP, "top 10 industries within each age band", kind="repo doc")
 
+# ================================================================== revision of 18 Oct: new Summary, Introduction, §3-5 text, new footnotes
+NH = "data/explore/health_check/charts/nasscom_employment_history.csv"
+nh = rd(NH, comment="#").set_index("fy")
+num("about 4% a year before COVID (sector employment)", f"{S} 3; fn nasscomhist", NH, "(FY20/FY16)^(1/4) − 1, %", 100 * ((nh.loc["FY20", "level_m"] / nh.loc["FY16", "level_m"]) ** 0.25 - 1), 4, kind="external (as published)")
+num("3.7 million in FY16 (Nasscom)", "fn nasscomhist", NH, "FY16 level_m", nh.loc["FY16", "level_m"], 3.7, 1, kind="external (as published)")
+num("4.36 million in FY20", "fn nasscomhist", NH, "FY20 level_m", nh.loc["FY20", "level_m"], 4.36, 2, kind="external (as published)")
+num("about 4.2% a year", "fn nasscomhist", NH, "(FY20/FY16)^(1/4) − 1, % (log 4.1)", 100 * ((nh.loc["FY20", "level_m"] / nh.loc["FY16", "level_m"]) ** 0.25 - 1), 4.2, 1, kind="external (as published)")
+num("net additions averaging about 160,000 a year (FY17–20)", "fn nasscomhist", NH, "mean net_addition_k FY17-FY20 ×1000", nh.loc["FY17":"FY20", "net_addition_k"].mean() * 1000, 160000, -4,
+    kind="external (as published)", note=f"FY16-FY20 mean is {nh.loc['FY16':'FY20', 'net_addition_k'].mean():.0f}k")
+num("in the FY21–23 boom they averaged about 290,000", "fn nasscomhist", NH, "mean net_addition_k FY21-FY23 ×1000", nh.loc["FY21":"FY23", "net_addition_k"].mean() * 1000, 290000, -4, kind="external (as published)")
+rt23 = rt[(rt.fy == "FY23") & (rt.series == "top6_simple")].set_index("metric").gap_vs_trend_pct
+num("in FY23 headcount about 15% above its pre-COVID trend", "§5", RT, "top6_simple headcount gap_vs_trend_pct FY23", rt23["headcount"], 15, note="log 14.1")
+num("revenue only about 3.5% above", "§5", RT, "top6_simple rev_cc gap_vs_trend_pct FY23", rt23["rev_cc"], 3.5, 1, note="log 3.5")
+FB = "data/explore/workforce/fresher_hires_annual_best.csv"
+fb = rd(FB).set_index(["firm", "fy"]).fresher
+num("TCS and Infosys together hired 64,000 freshers in FY26", "§5", FB, "tcs + infosys fresher, fy 2026", fb[("tcs", 2026)] + fb[("infosys", 2026)], 64000, -3)
+num("more than the 50,000 they hired in FY16", "§5", FB, "tcs + infosys fresher, fy 2016", fb[("tcs", 2016)] + fb[("infosys", 2016)], 50000, -3)
+txt("staffing firms' estimates remain below pre-COVID levels: pre-COVID ~200k a year", "§5", FT, "| pre-COVID | ~200k a year |", kind="repo doc")
+cond("… remain below pre-COVID levels (latest sector estimates vs ~200k)", "§5", FI, "HAN FY26 and Xpheno FY25 < 200,000",
+     f"HAN FY26 {fv('han_digital_it_bpm_fresher_hiring', 'FY26'):.0f}; Xpheno FY25 {xph[('FY25', 'actual')]:.0f}",
+     fv("han_digital_it_bpm_fresher_hiring", "FY26") < 200000 and xph[("FY25", "actual")] < 200000, kind="external (as published)")
+txt("Business Today (21 March 2026): deferred offers at Wipro and Tech Mahindra", "fn deferred", CAT, "Business Today, 21 Mar 2026 (Xpheno data)")
+txt("deferred offers (source text)", "fn deferred", CAT, "Offer deferrals: Wipro cut its fresher guidance")
+rng("12 other listed IT and engineering-services firms grew headcount by only 2%, net of acquisitions", "§3", SC, "other_it_plus_erd_12 hc_change_excl_acq_pct",
+    [sc.loc["other_it_plus_erd_12", "hc_change_excl_acq_pct"]], 2, 2)
+num("the 12 other listed firms (count)", "§3", SC, "other_it_plus_erd_12 n_firms_hc", sc.loc["other_it_plus_erd_12", "n_firms_hc"], 12)
+num("IT employed about 20% of salaried graduates aged 21–25 in 2022-23", "fn route", FS, f"{PL} 2022-23", fsv(PL, "2022-23"), 20)
+KS = "data/explore/round3/plfs/key_series_grads_21_30.csv"
+ks = rd(KS)
+eng = ks[ks.series == "nic62_63__engdeg_21_30"].set_index("round").share * 100
+num("about 30% in 2017-18 (IT share of employed engineering grads 21–30)", "fn route", KS, "nic62_63__engdeg_21_30 share 2017-18", eng["2017-18"], 30)
+rng("45–53% from 2021-22", "fn route", KS, "nic62_63__engdeg_21_30 share, 2021-22 onward", eng.loc["2021-22":], 45, 53)
+txt("State of Working India 2026 (young graduates' employers)", "fn route", CAT, "State of Working India 2026")
+ext = lambda printed, where, url_frag, note="": add(printed, where, "health_check_text.md (inline citation)", f'cited URL contains "{url_frag}"',
+                                                   "cited inline; no copy in repo" if url_frag in TEXT.read_text(encoding="utf-8") else "NO CITATION",
+                                                   url_frag in TEXT.read_text(encoding="utf-8"), "external (unverified in repo)", note)
+ext("Upadhya 2007", "fn mobility", "epw.in/journal/2007/20")
+ext("Jensen 2012", "fn mobility", "doi.org/10.1093/qje/qjs002")
+ext("Oster and Steinberg 2013: enrolment up about 5%", "fn mobility", "Oster and Steinberg 2013](", note="number not checked: no repo copy of the paper")
+ext("Reuters, 4 February 2026: sell-off began on 4 February", "fn selloff", "marketscreener.com/news/indian-tech-stocks-slump")
+ext("about $50 billion wiped off by mid-February (Reuters, 24 February 2026)", "fn selloff", "finance.yahoo.com/news/indian-shares-trail-regional-peers",
+    note="the $50bn figure is not in any repo file")
+txt("Rest of World (6 February 2026)", "fn worry", CAT, "Rest of World, Feb 6")
+ext("Jefferies cut price targets (Business Today, 23 February 2026)", "fn worry", "jefferies-cuts-targets-for-indian-it-stocks-by-up-to-33-517481-2026-02-23",
+    note="catalogue IND-08d has the Jefferies downgrade via 5paisa, 24 Feb 2026")
+ext("IDR summary, 12 May 2026", "fn route", "idronline.org/article/livelihoods/the-changing-nature-of-work-in-india")
+at_now = at[at.cal_q == "2026Q2"].set_index("firm")
+cond("attrition close to its pre-COVID norm (Summary)", f"{S} 5", AT, "2026Q2 ≤ 2016-19 mean + 2.5 at every firm",
+     ", ".join(f"{f} {r.attrition_ltm_pct} vs {r.mean_2016_19_pct}" for f, r in at_now.iterrows()), all(r.attrition_ltm_pct <= r.mean_2016_19_pct + 2.5 for _, r in at_now.iterrows()))
+cond("utilisation at or above its pre-COVID average (Summary)", f"{S} 5", UT, "latest >= each firm's 2016-19 mean",
+     ", ".join(f"{f} {last_ut[f]:.1f} vs {mean_ut[f]:.1f}" for f in last_ut.index), all(last_ut[f] >= mean_ut[f] for f in last_ut.index))
+
 # ---------------------------------------------------------------- coverage scan
 raw = TEXT.read_text(encoding="utf-8")
 raw = re.sub(r"\A---\n.*?\n---\n", "", raw, flags=re.S)              # YAML front matter
@@ -616,7 +673,7 @@ raw = re.sub(r"^\d\. ", " ", raw, flags=re.M)                        # numbered 
 STRIP = [r"\bNAICS 5415\b", r"\bFY\d{2}(?:–\d{2})?\b", r"\b20\d{2}–(?:20)?\d{2}\b", r"\b(?:19|20)\d{2}(?:-\d{2})?\b",
          r"\b(?:Table|Figure|Section)\s+\d+\b", r"\bp\.\s*\d+\b", r"A2\.12", r"\bNIC 62–63\b", r"\bdivisions 62\b", r"\band 63 \(",
          r"\b\d{1,2}–\d{1,2} (?:years|staff)\b", r"\baged \d{2}–\d{2}\b", r"\bages \d{2}–\d{2}\b", r"\b\d{2}–\d{2}\b(?= on| and|,|\))",
-         r"\bTable\b", r"\b10,000 words\b", r"\b23 October\b", r"\b6 February\b"]
+         r"\bTable\b", r"\b10,000 words\b", r"\b23 October\b", r"\b6 February\b", r"\b(?:19|20)\d0s\b"]
 for pat in STRIP:
     raw = re.sub(pat, " ", raw)
 tokens = re.findall(r"[+−-]?\d[\d,]*(?:\.\d+)?%?", raw)

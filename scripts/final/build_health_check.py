@@ -109,12 +109,29 @@ def india_world_share_data():
 
 
 def revgrowth_peers_data():
+    """Two constant-currency lines, FY16-FY26, in log points x100 (the measure the text quotes):
+    the six largest Indian firms (revenue-weighted) and the simple average of Accenture and Cognizant,
+    shown only in years where both have data (Cognizant starts FY18)."""
+    from decimal import Decimal, ROUND_HALF_UP
+    h1 = lambda v: None if pd.isna(v) else float(Decimal(str(round(float(v), 6))).quantize(Decimal("0.1"), ROUND_HALF_UP))
     d = R("revgrowth_peers.csv")
-    d = d[d.period.str.match(r"^FY\d\d$") & d.growth_pct.notna()]
-    pick = lambda s, b: d[(d.series == s) & (d.currency_basis == b)]
-    pack = lambda x: {"x": [fynum(v) for v in x.period], "y": L(x.growth_pct, 1), "n": [int(v) for v in x.n_firms]}
-    return {"top6cc": pack(pick("top6_weighted", "cc")), "top6usd": pack(pick("top6_weighted", "usd")),
-            "mid": pack(pick("midtier4", "usd")), "acn": pack(pick("accenture", "cc")), "cog": pack(pick("cognizant", "cc"))}
+    d = d[d.period.str.match(r"^FY\d\d$") & (d.currency_basis == "cc") & d.growth_logx100.notna()]
+    s = lambda name: d[d.series == name].set_index("period").growth_logx100
+    six, nfirm = s("top6_weighted"), d[d.series == "top6_weighted"].set_index("period").n_firms
+    acn, cog = s("accenture"), s("cognizant")
+    fys = [f"FY{y}" for y in range(16, 27)]
+    assert all(f in six.index for f in fys), six.index
+    both = [f for f in fys if f in acn.index and f in cog.index]
+    assert both == [f"FY{y}" for y in range(18, 27)], both
+    peer = (acn[both] + cog[both]) / 2
+    base = six[[f"FY{y}" for y in range(16, 21)]].mean()
+    assert abs(base - 8.7) < 0.05, base  # the text quotes 8.7
+    assert [h1(six[f]) for f in ["FY24", "FY25", "FY26"]] == [1.5, 3.2, 0.6]
+    assert 4.5 <= peer["FY26"] < 5.5, peer["FY26"]  # "about 5%"
+    return {"six": {"x": [fynum(f) for f in fys], "y": [h1(six[f]) for f in fys], "n": [int(nfirm[f]) for f in fys]},
+            "peer": {"x": [fynum(f) for f in both], "y": [h1(peer[f]) for f in both],
+                     "acn": [h1(acn[f]) for f in both], "cog": [h1(cog[f]) for f in both]},
+            "base": h1(base)}
 
 
 def rev_trend_levels_data():
@@ -373,13 +390,14 @@ DATA_FUNCS = {
 
 # ---------------------------------------------------------------- figures (HTML shells)
 
-def fig(name, title="", legend="", wide=True, extra=""):
+def fig(name, title="", legend="", wide=True, extra="", note=""):
     t = f'<div class="fig-title">{title}</div>' if title else ""
     lg = f'<div class="legend" aria-hidden="true">{legend}</div>' if legend else ""
     top = f'<div class="fig-top">{t}{lg}{extra}</div>' if (t or lg or extra) else ""
     return (f'<figure class="{"wide" if wide else ""}" id="fig-{name}"><div class="fig-panel">{top}'
             f'<div id="chart-{name}" class="chart" role="img" aria-label="{html.escape(re.sub("<[^>]+>", "", title or name))}"></div>'
-            '</div><figcaption>{caption}</figcaption></figure>')
+            + (f'<div class="fig-note">{note}</div>' if note else "")
+            + '</div><figcaption>{caption}</figcaption></figure>')
 
 
 def sw(color, hollow=False):
@@ -406,10 +424,10 @@ FIGURES = {
                             legend=sw("#bccde2") + "FY24</span>" + sw("#7b9cc6") + "FY25</span>" + sw("var(--accent)") + "FY26</span>"),
     "india_world_share": fig("india_world_share",
                              legend=sw("var(--accent)") + "India</span>" + sw("var(--rule-2)") + "24 other delivery countries</span>"),
-    "revgrowth_peers": fig("revgrowth_peers", title="Revenue growth, % a year",
-                           legend=ln("var(--accent)") + "Six largest (constant currency)</span>" + ln("var(--accent)", "dotted", 2)
-                           + "Six largest (US$)</span>" + ln("var(--mid)") + "Mid-tier four (US$, incl. acquisitions)</span>"
-                           + ln("var(--acn)") + "Accenture (cc)</span>" + ln("#b3a99c", "dashed", 2) + "Cognizant (cc)</span>"),
+    "revgrowth_peers": fig("revgrowth_peers", title="Revenue growth in constant currency, % a year",
+                           note="Growth is in log points (×100), which is close to % at these rates; the text quotes the same measure. "
+                           "The Accenture–Cognizant line is the simple average of the two and starts in FY18, the first year "
+                           "with Cognizant data. The Indian line covers four firms to FY20 and five in FY21–23 (all six from FY24)."),
     "rev_trend_levels": fig("rev_trend_levels", title="Gap to FY16–20 trend, log points",
                             legend=ln("var(--accent)") + "Six largest</span>" + ln("var(--acn)") + "Accenture</span>"
                             + ln("var(--ink-2)", "solid", 2) + "Revenue (cc)</span>" + ln("var(--ink-2)", "dashed", 2) + "Headcount</span>"),

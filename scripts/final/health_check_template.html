@@ -120,6 +120,7 @@ figure { margin: 2em 0 2.2em; }
 .legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
 .legend .mk { font-weight: 400; margin-right: 5px; font-size: 12px; }
 .legend i { display: inline-block; width: 20px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: 6px; }
+.fig-note { font-family: var(--sans); font-size: 12.5px; line-height: 1.4; color: var(--ink-3); margin-top: 4px; }
 .chart { width: 100%; }
 figcaption { font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--ink-2); margin: 10px 2px 0; max-width: 760px; }
 figcaption b { color: var(--ink); font-weight: 600; }
@@ -276,22 +277,27 @@ function figIndiaShare() {
   el.dataset.narrow = narrow;
 }
 
-/* --- Fig 4: revenue growth, peers --- */
+/* --- Fig 4: revenue growth, constant currency: six largest Indian firms vs Accenture-Cognizant average --- */
 function figRevgrowth() {
   const el = document.getElementById("chart-revgrowth_peers"), d = DATA.revgrowth_peers, narrow = W(el) < 640;
-  const tr = (s, name, line, ms) => ({ x: s.x, y: s.y, name, mode: "lines+markers", line, marker: { size: ms || 5, color: line.color },
-    text: s.x.map((x, i) => FYL(x) + (s.n[i] > 1 && s.n[i] < 6 && name.indexOf("Six") === 0 ? " (" + s.n[i] + " firms)" : s.n[i] < 4 && name.indexOf("Mid") === 0 ? " (" + s.n[i] + " firms)" : "")),
-    hovertemplate: "%{text}: %{y:.1f}%<extra>" + name + "</extra>" });
-  const traces = [tr(d.cog, "Cognizant (cc)", { color: "#b3a99c", width: 2, dash: "dash" }, 4), tr(d.acn, "Accenture (cc)", { color: C.acn, width: 2 }),
-    tr(d.top6usd, "Six largest (US$)", { color: C.accent, width: 1.5, dash: "dot" }, 3), tr(d.mid, "Mid-tier four (US$, incl. acquisitions)", { color: C.mid, width: 2.5 }),
-    tr(d.top6cc, "Six largest (constant currency)", { color: C.accent, width: 3 }, 6)];
-  const lt = d.top6cc.y.length - 1, lm = d.mid.y.length - 1;
-  draw(el, traces, { height: 340, hovermode: "closest", margin: { l: 48, r: 34, t: 10, b: 30 },
-    xaxis: fyAxis(2016, 2026, narrow ? 2 : 1), yaxis: axis({ title: ytitle("% a year"), range: [-3, 27], dtick: 5 }),
-    shapes: [hline("", 0, { line: { color: C.ink3, width: 1 } }), band("", 2023.5, 2026.5)],
-    annotations: [lab("", 2025, 27, "FY24–26", { yanchor: "top", font: { size: 11.5, color: C.ink3 } }),
-      lab("", 2026, d.top6cc.y[lt], d.top6cc.y[lt].toFixed(1), { xanchor: "left", xshift: 7, font: { size: 12, color: C.accent } }),
-      lab("", 2026, d.mid.y[lm], d.mid.y[lm].toFixed(1), { xanchor: "left", xshift: 7, font: { size: 12, color: C.mid } })] });
+  const six = d.six, peer = d.peer, ls = six.y.length - 1, lp = peer.y.length - 1;
+  const traces = [
+    { x: peer.x, y: peer.y, mode: "lines+markers", line: { color: C.acn, width: 2.25 }, marker: { size: 5, color: C.acn },
+      text: peer.x.map((x, i) => FYL(x) + ": " + peer.y[i].toFixed(1) + "%<br>Accenture " + peer.acn[i].toFixed(1) + ", Cognizant " + peer.cog[i].toFixed(1)),
+      hovertemplate: "%{text}<extra>Accenture–Cognizant average</extra>" },
+    { x: six.x, y: six.y, mode: "lines+markers", line: { color: C.accent, width: 3.25 }, marker: { size: 6, color: C.accent },
+      text: six.x.map((x, i) => FYL(x) + ": " + six.y[i].toFixed(1) + "%" + (six.n[i] < 6 ? " (" + six.n[i] + " firms with data)" : "")),
+      hovertemplate: "%{text}<extra>Six largest Indian firms</extra>" }];
+  const endLab = (y, text, color, ya) => lab("", 2026, y, text, { xanchor: "left", yanchor: ya, xshift: 8, align: "left", font: { size: narrow ? 11.5 : 12, color } });
+  draw(el, traces, { height: 340, hovermode: "closest", margin: { l: 48, r: narrow ? 78 : 96, t: 10, b: 30 },
+    xaxis: fyAxis(2016, 2026, narrow ? 2 : 1), yaxis: axis({ title: ytitle("% a year"), range: [-2, 20], dtick: 5 }),
+    shapes: [hline("", 0, { line: { color: C.ink3, width: 1 } }), band("", 2023.5, 2026.5, C.accent, 0.05),
+      hline("", d.base, { line: { color: C.accent, width: 1.5, dash: "dot" } })],
+    annotations: [
+      lab("", 2026.4, d.base, (narrow ? "FY16–20<br>avg: " : "six firms' FY16–20<br>average: ") + d.base.toFixed(1), { xanchor: "right", yanchor: "bottom", align: "right", yshift: 2, font: { size: 11.5, color: C.accent } }),
+      lab("", 2025, 20, "FY24–26", { yanchor: "top", font: { size: 11.5, color: C.ink3 } }),
+      endLab(peer.y[lp], (narrow ? "Accenture &amp;<br>Cognizant " : "Accenture &amp;<br>Cognizant: ") + "<b>" + peer.y[lp].toFixed(1) + "</b>", C.acn, "bottom"),
+      endLab(six.y[ls], (narrow ? "Six Indian<br>firms " : "Six Indian<br>firms: ") + "<b>" + six.y[ls].toFixed(1) + "</b>", C.accent, "top")] });
   el.dataset.narrow = narrow;
 }
 

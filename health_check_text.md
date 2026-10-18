@@ -17,15 +17,23 @@ Every number in the prose is checked by scripts/final/health_check_number_check.
 
 ## Summary
 
-India's IT services sector is still growing, but it no longer adds jobs at its old pace, and it takes a smaller share of each year's young graduates.
+India's IT services industry has long been central to the country's economy and, for many graduates, a path into the urban middle class.[^mobility] Recent advances in LLM capabilities have inspired worry that this sector is collapsing: if agentic tools can do much of the work of companies like Infosys and Wipro, how will the companies survive, and, more importantly, what will happen to employment in them?[^worry]
 
-1. **Output is growing.** Exports of software and IT-enabled services reached $221 billion in FY26, 19% more than in FY23. India's share of world computer-services exports has held at about 30%.
-2. **The largest firms are not.** The six biggest firms grew revenue by between 0.6% and 3.2% a year in constant currency over FY24–26, against about 9% before COVID. Growth has moved to the captive centres of foreign firms (GCCs), mid-sized firms and business-process firms.
-3. **Employment has lagged output.** The six firms employ 3.7% fewer people than in March 2023. Across the sector, employment is growing by at most about 2% a year.
-4. **The entry level has narrowed.** Fresher hiring is far below its FY22 peak. Counts have recovered somewhat since FY24, but IT's share of young graduates, of young formal-sector entrants and of entry-level openings is lower than before the boom ended.
-5. **The firms show little strain, and AI has barely reached prices.** Attrition, utilisation and margins are normal. AI-related price cuts were about 0.4% in FY26; firms expect about 1.5% in FY27.
+But it's not immediately clear that the effects will be negative. On the one hand, AI tools might decrease the demand for IT services because clients can do more work in-house, which would decrease the total number of workers needed. They could also reduce the number of engineers needed for a given level of demand.
 
-Almost all of these data end in FY26 or calendar 2025, before the jump in coding-agent capability around mid-2026. They describe the sector as it entered that change.
+On the other hand, AI tools could make IT services cheaper and thereby *increase* demand. In this world, employment might remain steady or even rise.
+
+In this piece, we look at what publicly available data can tell us about these two scenarios. At present, the evidence weakly suggests that India's IT services sector is still growing, but that it is adding fewer jobs than it did before, disproportionately among young graduates.
+
+More specifically:
+
+1. **Output is growing.** Exports of software and IT-enabled services were $221 billion in FY26, which is 19% more than they were in FY23. Meanwhile, India's share of world computer-services exports has stayed at about 30% since 2022.
+2. **The largest firms are slowing down.** The six biggest IT services firms grew revenue by between 0.6% and 3.2% a year in constant currency over FY24–26, against about 9% before COVID. We suspect this is because growth has moved to the captive centres of foreign firms (GCCs), mid-sized firms and business-process firms.
+3. **Although output has grown, employment has lagged.** The six biggest firms employ 3.7% fewer people than in March 2023. Across the sector, employment is growing by at most about 2% a year, against about 4% a year before COVID.[^nasscomhist]
+4. **The entry level has narrowed.** Fresher hiring is well below its FY22 peak. It fell to a low in FY24, while firms found work for the staff they had hired during the boom, and has since partly recovered. IT's share of young graduates, of young formal-sector entrants and of entry-level openings is lower than before the boom ended.
+5. **Other indicators of firm health are largely normal.** Attrition is back to its pre-COVID level, utilisation is at or above its pre-COVID average, and margins have not changed much. AI-related price cuts, as implied by management statements on earnings calls, were about 0.4% in FY26; firms expect about 1.5% in FY27.
+
+We should note that, regardless of how the industry *currently* looks, things might change rapidly very soon. The summer of 2026 saw a jump in coding-agent capability that could upset this balance, and almost all of our data predate it.
 
 ::: table
 **Table 1.** Summary indicators
@@ -51,11 +59,13 @@ Constant-currency growth removes exchange-rate effects. PLFS 2025 uses a redesig
 
 ## 1. Introduction
 
-For three decades IT services have been one of the main routes into salaried work for India's graduates. The sector employs about six million people, and its exports are worth about 5½% of GDP.[^gdp] In 2026 its prospects became contested. Share prices of the largest firms fell sharply in February, as investors priced in AI coding tools, and headlines since have claimed both that AI is hollowing out Indian IT and that its exports are booming.[^selloff]
+Since the 1990s, IT services have grown into one of the main routes into salaried work for India's graduates, and the main one for engineers.[^route] The sector employs about six million people, and its exports are worth about 5½% of GDP.[^gdp] But in February 2026, as investors priced in AI coding tools, share prices of the largest firms fell sharply. Headlines have since claimed both that AI is hollowing out Indian IT and that its exports are booming.[^selloff]
 
-This piece collects the evidence on how the sector is doing now, drawing on filings of the six largest firms and 21 smaller listed firms, RBI and IMF trade data, the government's labour force survey (PLFS), provident-fund payroll records (EPFO), engineering-college placement data, job-postings indices, earnings-call transcripts and price data. Where other estimates circulate widely, we check them against the same sources (Section 8). We do not try to say how much of what we find is caused by AI.[^twoq]
+Here, we collect evidence on how the sector is doing now. We draw on filings of the six largest firms and 21 smaller listed firms, RBI and IMF trade data, the government's labour force survey (PLFS), provident-fund payroll records (EPFO), engineering-college placement data, job-postings indices, earnings-call transcripts and price data. We also use estimates from industry bodies and private firms; where we cannot check one against public data, we say so, and Section 8 audits the most widely cited.
 
-We read "IT services" broadly, to include IT services firms, business-process management (BPM), engineering services and GCCs. Years are Indian fiscal years ending in March unless stated otherwise.
+Importantly, we don't try to make causal claims about the impact of AI on the sector. This is intended to be a descriptive health check. In a future piece, we'll use these data to back out the key parameters and forecast the sector's trajectory.[^twoq]
+
+We read "IT services" broadly, to include IT services firms, business-process management (BPM), engineering services and GCCs. Unless otherwise stated, years are Indian fiscal years ending in March.
 
 ## 2. Output has kept growing
 
@@ -69,7 +79,7 @@ By the RBI's annual survey, India exported $221 billion of software and IT-enabl
 **Figure 2.** Exports by activity, FY24–FY26, US$ billion. IT services drove the growth in FY26; in FY25, IT services and BPO added similar amounts.
 :::
 
-India is not losing this work to other countries. Its share of world computer-services exports, excluding Ireland, was 29.3% in 2022 and 30.1% in 2025.[^ireland] In the first half of 2026 India's computer-services exports grew 11%, as fast as those of 24 other delivery countries combined. Poland, Romania and the Philippines grew too, but from far smaller bases.
+Next, we consider whether India is losing this work to other countries. This turns out not to be the case: India's share of world computer-services exports, excluding Ireland, was 29.3% in 2022 and 30.1% in 2025.[^ireland] In the first half of 2026 India's computer-services exports grew 11%, as fast as those of 24 other delivery countries combined.
 
 ::: figure india_world_share
 **Figure 3.** India's share of world computer-services exports (excluding Ireland) and of exports from 30 emerging delivery countries, 2015–2025. The share fell before 2022 and has been flat since.
@@ -77,10 +87,12 @@ India is not losing this work to other countries. Its share of world computer-se
 
 ## 3. Growth has moved away from the largest firms
 
-The six largest firms are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree. They earned $86 billion in FY26, 7% more than in FY23, while total exports grew 19%. Their constant-currency growth fell from 8.7% a year in FY16–20 to 1.5%, 3.2% and 0.6% in FY24–26. Accenture and Cognizant, which compete for the same clients and also deliver mostly from India, grew about 5% in FY26.
+The six largest IT services firms in India are TCS, Infosys, HCLTech, Wipro, Tech Mahindra and LTIMindtree. They earned $86 billion in FY26, 7% more than in FY23, while total exports grew 19%. However, their constant-currency growth fell from 8.7% a year in FY16–20 to 1.5%, 3.2% and 0.6% in FY24–26.
+
+We compare them with two international firms, Accenture and Cognizant. Both compete for the same clients as the six Indian firms, and both deliver mostly from India. Accenture and Cognizant grew about 5% in FY26.
 
 ::: figure revgrowth_peers
-**Figure 4.** Annual revenue growth, FY16–FY26: the six largest firms (revenue-weighted, constant currency), four mid-tier firms, Accenture and Cognizant.
+**Figure 4.** Annual revenue growth in constant currency, FY16–FY26: the six largest Indian firms (weighted by revenue) and the average of Accenture and Cognizant. Until FY23 the two groups moved together; since then the Indian firms have grown more slowly.
 :::
 
 All these firms over-hired after COVID. Accenture's revenue is back on its pre-COVID trend; that of the six firms is about 16% below it.
@@ -89,19 +101,25 @@ All these firms over-hired after COVID. Accenture's revenue is back on its pre-C
 **Figure 5.** Revenue and headcount relative to each firm group's FY16–20 trend, log points. Zero means on trend.
 :::
 
-The slowdown is uneven across the six. TCS revenue shrank in constant currency in each of the four quarters to March 2026. LTIMindtree and Tech Mahindra grew 6–7% in the latest quarter. Weakness is concentrated in particular firms rather than in particular client industries or regions.[^firmspecific]
+However, this slowdown is uneven among the six companies. TCS revenue shrank in constant currency in each of the four quarters to March 2026, while LTIMindtree and Tech Mahindra grew 6–7% in the latest quarter. The weakness is concentrated in particular firms rather than in particular client industries or regions: across firms and segments in FY24–26, differences between firms explain about 40% of the variation in growth by client industry and by region, while the client industry or region itself explains 2–6%.
 
 ::: figure firm_cc_quarterly
 **Figure 6.** Year-on-year constant-currency revenue growth by firm, quarterly, 2022 to September 2026.
 :::
 
-The growth went elsewhere. Between FY23 and FY26 the four largest mid-tier firms (Persistent, Coforge, Mphasis and Hexaware) raised dollar revenue by 39%, and three listed BPM firms by 48%. GCCs added roughly 260,000 technology jobs, within a wide range.[^gcc] The rest of the listed IT mid-market did not take up the slack: of 12 other IT and engineering-services firms, five employed fewer people in FY26 than in FY23. In the RBI survey, private-limited exporters' share of exports rose from 35% in FY13 to 61% in FY26. This is a continuation of a long trend, not a break after 2023.[^gccpace]
+We then investigate whether other players in the market took up this slack. This seems to be the case. Between FY23 and FY26, the four largest mid-tier firms (Persistent, Coforge, Mphasis and Hexaware) raised dollar revenue by 39%. Three listed BPM firms raised theirs by 48%. Meanwhile, GCCs added roughly 260,000 technology jobs, within a wide range.[^gcc]
+
+The gains were not shared by every smaller firm, though. We also track 12 other listed IT and engineering-services firms. Together they grew headcount by only 2% over the three years, net of acquisitions, and five of them shrank.
+
+The RBI's export survey shows the same shift from another angle. It splits exporters into publicly listed companies, which include the six largest firms, and privately held ones, which include GCCs, foreign-owned vendors and unlisted Indian firms. The privately held companies' share of exports rose from 35% in FY13 to 61% in FY26 (Figure 1). That shift has been steady for more than a decade; it did not speed up after 2023.[^gccpace]
 
 ::: figure segment_change
 **Figure 7.** Change in headcount and US-dollar revenue, FY23 to FY26, by segment. GCC employment is a range of estimates of technology jobs added. Listed-firm headcounts are global.
 :::
 
 ## 4. Employment has not kept pace
+
+Next, we turn to employment. For the sector's role as a ladder for graduates, jobs matter more than revenue, and they are where a labour-saving technology would show up first.
 
 Headcount at the six firms peaked at 1.69 million in September 2022. It fell about 4% in FY24 and has been roughly flat since, at 1.62 million in March 2026. In the quarter to September 2026, the four firms that have reported added 9,400 people, mostly freshers.
 
@@ -132,7 +150,7 @@ Four estimates circulate. Read like for like, they agree with each other and wit
 
 ## 5. The entry level has narrowed
 
-The FY22 hiring boom was extreme. TCS, Infosys and HCLTech hired about 218,000 freshers that year. By FY25 they hired 65,000, and in FY26 76,000. Staffing firms' estimates for the whole sector have the same shape, though their figures for the peak range from 400,000 to 600,000.[^fresher3p] Counts bottomed in FY24 and have recovered partly. Stated targets for FY27 are lower: 25,000 offers at TCS, 20,000 at Infosys, and none announced at Wipro or HCLTech.
+The FY22 hiring boom was extreme. TCS, Infosys and HCLTech hired about 218,000 freshers that year. By FY25 they hired 65,000, and in FY26 76,000. Staffing firms' estimates for the whole sector have the same shape, though their figures for the peak range from 400,000 to 600,000.[^fresher3p] Hiring bottomed in FY24. In the boom the firms had hired far ahead of their revenue: in FY23 their headcount was about 15% above its pre-COVID trend, but their revenue only about 3.5% above. In FY24 they put those staff to work rather than recruit new ones, and some delayed onboarding offers they had already made.[^deferred] Hiring has picked up since. TCS and Infosys together hired 64,000 freshers in FY26, more than the 50,000 they hired in FY16, though staffing firms' estimates for the whole sector remain below pre-COVID levels. Stated targets for FY27 are lower: 25,000 offers at TCS, 20,000 at Infosys, and none announced at Wipro or HCLTech.
 
 ::: figure fresher_intake
 **Figure 11.** Fresher hires at the largest firms, FY16–FY26, with stated FY27 targets (hollow bars) and third-party estimates for the whole sector (points; hollow points are projections).
@@ -284,11 +302,10 @@ Staffing-firm estimates of sector fresher intake (Xpheno, HAN Digital, TeamLease
 This page uses unit-level data from the Periodic Labour Force Survey, Ministry of Statistics and Programme Implementation (MoSPI), Government of India. Only aggregate tabulations are shown. The analysis and conclusions are ours, not MoSPI's.
 
 [^gdp]: Exports in the RBI survey were 5.7% of GDP in FY26. Balance-of-payments figures, which classify the same exports differently, give a share nearer 8½% when business services are included.
-[^selloff]: See, for example, Rest of World's coverage of the sell-off (6 February 2026).
+[^selloff]: Reuters reported that the sell-off began on 4 February 2026, after Anthropic released plug-ins for its Claude Cowork agent, and that AI fears had wiped about $50 billion off Indian IT stocks by mid-February ([Reuters, 4 February 2026](https://in.marketscreener.com/news/indian-tech-stocks-slump-as-anthropic-s-ai-tool-raises-global-staffing-concerns-ce7e5bd3de8df220); [Reuters, 24 February 2026](https://finance.yahoo.com/news/indian-shares-trail-regional-peers-032238530.html)). The fall was part of a broader sell-off in software stocks.
 [^twoq]: A separate working paper attempts that decomposition, under stated assumptions: [two questions about AI and jobs in Indian IT](two-questions.html).
 [^bop]: Balance-of-payments data grow about twice as fast as the RBI survey over FY23–26 (39% against 19%). The survey is the more conservative measure, and we use it throughout.
 [^ireland]: Ireland's exports are mostly the booked revenue of US technology firms' European headquarters and swamp the world total. Including Ireland, India's share was 20.4% in 2022 and 19.5% in 2025.
-[^firmspecific]: Across firms and segments in FY24–26, differences between firms explain about 40% of the variation in growth by client industry and by region; the client industry or region itself explains 2–6%.
 [^gcc]: No official statistic counts GCC employment. Our central estimate reconciles Nasscom–Zinnov reports, which are not comparable across editions, with staffing firms' hiring estimates. The plausible range is about 155,000 to 430,000 technology jobs.
 [^gccpace]: GCC hiring was about 100,000–165,000 a year before 2023 and 94,000–180,000 after. In the RBI's census of foreign-owned firms, their exports grew about 5 points a year faster than total software exports in FY20–23 and about 4 points faster in FY24–25.
 [^plfs]: Usual-status workers in National Industrial Classification divisions 62 (computer programming and consultancy) and 63 (information services). BPM work is mostly classified elsewhere. All PLFS figures are our tabulations of MoSPI unit-level data.
@@ -304,3 +321,8 @@ This page uses unit-level data from the Periodic Labour Force Survey, Ministry o
 [^labourshare]: Labour share is employee costs divided by employee costs plus operating profit. A widely shared chart showing a falling labour share combines survey take-home pay with national-accounts output; on that basis the six firms' wage bill alone would exceed the whole sector's.
 [^noindex]: The US Bureau of Labor Statistics does not publish a producer price index for computer systems design, and no Indian index exists.
 [^m2]: Coded from 108 statements on earnings calls and at investor days by eight IT firms and four BPO firms, converted to an effect on total revenue. The method and its assumptions are documented in the repository (round4/price_statements). The broker range is from Kotak, ICICI Securities and HCLTech's own guidance, as reported.
+[^deferred]: Business Today (21 March 2026) reports deferred offers at Wipro and Tech Mahindra.
+[^nasscomhist]: Nasscom's estimates of direct employment rose from 3.7 million in FY16 to 4.36 million in FY20, about 4.2% a year, with net additions averaging about 160,000 a year. In the FY21–23 boom they averaged about 290,000. Each Strategic Review restates earlier years, so we compare growth within editions. Sources are listed in data/explore/health_check/charts/nasscom_employment_history.csv.
+[^mobility]: The direct beneficiaries were mostly urban, middle-class graduates ([Upadhya 2007](https://www.epw.in/journal/2007/20/special-articles/employment-exclusion-and-merit-indian-it-industry.html)). The sector's reach was wider, though. When recruiters for business-process firms were sent to villages, more young women took paid work and stayed in school ([Jensen 2012](https://doi.org/10.1093/qje/qjs002)), and a new IT-enabled services centre raised nearby primary-school enrolment by about 5% ([Oster and Steinberg 2013](https://doi.org/10.1016/j.jdeveco.2013.05.006)).
+[^worry]: For example, [Rest of World](https://restofworld.org/2026/indian-it-ai-stock-crash-claude-cowork/) (6 February 2026): "The Indian IT model is now facing existential pressure." Jefferies cut its price targets for Indian IT firms, citing AI-driven price deflation ([Business Today, 23 February 2026](https://www.businesstoday.in/amp/markets/stocks/story/hcl-tech-infosys-tcs-ltim-mphasis-hexaware-jefferies-cuts-targets-for-indian-it-stocks-by-up-to-33-517481-2026-02-23)).
+[^route]: In our PLFS tabulations, IT employed about 20% of salaried graduates aged 21–25 in 2022-23. Among employed engineering graduates aged 21–30, IT's share rose from about 30% in 2017-18 to 45–53% from 2021-22. State of Working India 2026 likewise finds computer and information services among the main employers of young graduates ([IDR summary, 12 May 2026](https://idronline.org/article/livelihoods/the-changing-nature-of-work-in-india/)).
