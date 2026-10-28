@@ -645,7 +645,7 @@ def main():
                   '<code>data/explore/health_check/charts/</code> by <code>scripts/final/build_health_check.py</code>.</p>')
     byline = " · ".join(html.escape(p.strip()) for p in front["byline"].split("·"))
     header = (f'<header><p class="crumbs"><a href="index.html">Pilot note</a> · <a href="two-questions.html">Two questions '
-              f'(working draft)</a> · <b>Health check</b></p>'
+              f'(working draft)</a> · <b>Health check</b> · <a href="theta-model.html">Estimating θ (working draft)</a></p>'
               f'<h1>{inline(front["title"], {})}</h1>'
               f'<p class="byline">{byline}</p>'
               f'<p class="thanks">{inline(front["thanks"], doc.tokens)}</p></header>')

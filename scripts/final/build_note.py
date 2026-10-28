@@ -889,7 +889,7 @@ def main():
     repo = f'<a href="{REPO_URL}">{REPO_URL.replace("https://", "")}</a>' if REPO_URL else "[repository link to be added]"
     tokens = {"repo": repo}
     front, body = render_md((ROOT / "note_text.md").read_text(encoding="utf-8"), tokens)
-    header = (f"<header>\n  <p class=\"crumbs\"><b>Pilot note</b> · <a href=\"two-questions.html\">Two questions (working draft)</a></p>\n"
+    header = (f"<header>\n  <p class=\"crumbs\"><b>Pilot note</b> · <a href=\"two-questions.html\">Two questions (working draft)</a> · <a href=\"theta-model.html\">Estimating θ (working draft)</a></p>\n"
               f"  <h1>{inline(front['title'], tokens)}</h1>\n"
               f"  <p class=\"byline\">{byline(front['byline'])}</p>\n"
               f"  <p class=\"thanks\">{inline(front['thanks'], tokens)}</p>\n</header>")
