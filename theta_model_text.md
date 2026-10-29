@@ -18,13 +18,16 @@ The rough idea is that a human worker can either *delegate* each task to AI, or 
 
 The biggest data gaps are task-length distributions $f_j(h)$ for Indian service lines, review time as a function of task length, and the work left after a rejection.
 
-## The model in brief
+## Overview of the Model
 
-**Why it's structured this way.** Assisting saves a modest, fairly predictable share of a task's time. Delegating saves almost all of it when the AI's output is good enough to accept, and wastes the review time when it isn't. So the value of delegating depends on how often the output gets accepted, and that depends heavily on how long the task is: agents succeed much more often on short tasks than on long ones (METR). That's why we work one task at a time, by task length, and then add up over the mix of task lengths in each service line.
+**Why it's structured this way.** The idea is that assisting saves a modest, fairly predictable share of a task's time, while delegating saves almost all of it when the AI's output is good enough to accept. But when the AI's output is insufficient, delegation wastes the review time. Thus, delegating is much less valuable when outputs are likely to not be accepted, which depends heavily on how long the task is. This is why we work task by task, sorting them by length, then adding up and integrating.
 
-Two things keep this from being a simple conversion from benchmark scores to labor saved. First, METR measures whether an agent passes automated tests on tasks timed by outside contractors. What we need is whether a reviewer at a firm accepts the output, on tasks timed by the firm's own staff. We treat both gaps as making tasks effectively longer, which turns out to be the same as a lag behind the METR frontier. Second, delegating isn't free: someone has to review the output, a rejected attempt leaves work to finish, and agent runs cost money. The firm delegates only when the labor it saves is worth more than these costs.
+I have two contributions here to the existing literature:
 
-**The full model.** For a task that takes a firm employee $h$ hours, in line $j$, with the AI available at date $t$:
+- While capability scores and general savings indices already exist, as far as I know this is the first treatment of the **costs of delegation**, like review time, rejected attempts leaving unfinished work, and agent inference costing money.
+- I also construct a mapping from METR capability scores to the Indian BPO context. The difficulty is that METR measures agent pass rate in a controlled setting timed by external contractors; but we care about reviewers *in a firm* accepting changes *to their own codebases.* For reasons I discuss later, I model this as a shift to METR's frontier.
+
+Here's the full model (will explain parameters below):
 
 $$\theta_j(t) = \int \big[\kappa + \delta_j(h,t)\,\Delta_j(h,t)\big]\, f_j(h)\,dh$$
 
@@ -44,12 +47,13 @@ $$S(t) = \sum_{j \ge 0} w_j\,\theta_j(t), \qquad g_L = d - s + \varepsilon\varph
 
 In words:
 
+- A task takes a firm employee $h$ hours, in service line $j$, with the AI available at date $t$.
 - $\kappa$ is the share of time saved by assisting. $\Delta_j$ is the *extra* share saved by delegating instead, and $\delta_j = 1$ when the firm delegates.
 - $p_j$ is the chance the AI's output passes automated checks, and $\pi_j$ the chance a reviewer accepts it. $\bar\rho$ is the expected review time and $\bar R$ the expected work left after the attempt, both as shares of $h$.
 - $p_{\text{METR}}$ is METR's success curve; $m_j$ (missing context) and $k_j$ (reviewer standards) rescale task length, and $q_0$ covers rejections unrelated to length.
 - $\omega$ is the loaded wage and $c_D(h)$ the cost of an agent run. $f_j(h)$ is the hours-weighted distribution of task lengths, $w_j$ is line $j$'s share of labor hours, and $\bar c$ is AI spend as a share of the labor bill.
 
-The rest of this memo builds these pieces up one at a time.
+In the rest of this memo, I build up each piece of this.
 
 ## One task
 
