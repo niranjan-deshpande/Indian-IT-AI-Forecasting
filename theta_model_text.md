@@ -12,28 +12,58 @@ HOW THIS FILE WORKS
   - ## headings are numbered automatically, except "Sources"; ## and ### headings go in the contents.
 -->
 
-**TL;DR**
+This is my idea for how to model $\theta_j$, the share of labor hours AI saves on service line $j$ at full adoption. A "service line" is a type of work that a BPO firm does: application maintenance, software testing, customer support, etc. Importantly, this does NOT include adoption frictions. But it DOES include the cost of failures and human review (because AI inputs are unreliable).
 
-- $\theta_j$ is the share of labor hours AI saves on service line $j$ at full adoption, net of failures and human review. On each task the firm either has AI *assist* or *delegates* the task and reviews the output, whichever is cheaper.
-- Review cost and the head start from a rejected attempt enter only through two averages, $\bar\rho$ and $\bar R$. Inference cost changes which mode the firm picks, and enters the forecast through prices rather than through θ.
-- We model reviewer standards and missing context as a *horizon shift*, not a flat multiplier. Frictions then act as a lag behind the METR frontier (roughly 1–2.5 years) rather than a permanent cap on savings.
-- The biggest data gaps are task-length distributions $f_j(h)$ for Indian service lines, review time as a function of task length, and the work left after a rejection.
+The rough idea is that a human worker can either *delegate* each task to AI, or complete it with *AI assistance.* We model the firm as choosing the more profitable option for each task. If a human tries to delegate the task to an AI and it fails, the human then completes it with AI assistance.
+
+The biggest data gaps are task-length distributions $f_j(h)$ for Indian service lines, review time as a function of task length, and the work left after a rejection.
+
+## The model in brief
+
+**Why it's structured this way.** Assisting saves a modest, fairly predictable share of a task's time. Delegating saves almost all of it when the AI's output is good enough to accept, and wastes the review time when it isn't. So the value of delegating depends on how often the output gets accepted, and that depends heavily on how long the task is: agents succeed much more often on short tasks than on long ones (METR). That's why we work one task at a time, by task length, and then add up over the mix of task lengths in each service line.
+
+Two things keep this from being a simple conversion from benchmark scores to labor saved. First, METR measures whether an agent passes automated tests on tasks timed by outside contractors. What we need is whether a reviewer at a firm accepts the output, on tasks timed by the firm's own staff. We treat both gaps as making tasks effectively longer, which turns out to be the same as a lag behind the METR frontier. Second, delegating isn't free: someone has to review the output, a rejected attempt leaves work to finish, and agent runs cost money. The firm delegates only when the labor it saves is worth more than these costs.
+
+**The full model.** For a task that takes a firm employee $h$ hours, in line $j$, with the AI available at date $t$:
+
+$$\theta_j(t) = \int \big[\kappa + \delta_j(h,t)\,\Delta_j(h,t)\big]\, f_j(h)\,dh$$
+
+$$\Delta_j(h,t) = (1-\kappa) - \bar\rho(h,t) - \bar R(h,t)\,(1-\kappa)$$
+
+$$\delta_j(h,t) = \mathbb{1}\{\omega h\,\Delta_j(h,t) > c_D(h)\}$$
+
+$$\bar\rho = \pi_j\,\rho_A + (p_j - \pi_j)\,\rho_R + (1 - p_j)\,\rho_F$$
+
+$$\bar R = \pi_j\,R_A + (p_j - \pi_j)\,R_R + (1 - p_j)\,R_F$$
+
+$$p_j(h,t) = p_{\text{METR}}(m_j h,\,t), \qquad \pi_j(h,t) = q_0\,p_{\text{METR}}(m_j k_j h,\,t)$$
+
+$$p_{\text{METR}}(h,t) = \sigma\big(\beta\,[\ln H_{50}(t) - \ln h]\big)$$
+
+$$S(t) = \sum_{j \ge 0} w_j\,\theta_j(t), \qquad g_L = d - s + \varepsilon\varphi\,(s - \bar c), \quad s = S \text{ at full adoption}$$
+
+In words:
+
+- $\kappa$ is the share of time saved by assisting. $\Delta_j$ is the *extra* share saved by delegating instead, and $\delta_j = 1$ when the firm delegates.
+- $p_j$ is the chance the AI's output passes automated checks, and $\pi_j$ the chance a reviewer accepts it. $\bar\rho$ is the expected review time and $\bar R$ the expected work left after the attempt, both as shares of $h$.
+- $p_{\text{METR}}$ is METR's success curve; $m_j$ (missing context) and $k_j$ (reviewer standards) rescale task length, and $q_0$ covers rejections unrelated to length.
+- $\omega$ is the loaded wage and $c_D(h)$ the cost of an agent run. $f_j(h)$ is the hours-weighted distribution of task lengths, $w_j$ is line $j$'s share of labor hours, and $\bar c$ is AI spend as a share of the labor bill.
+
+The rest of this memo builds these pieces up one at a time.
 
 ## One task
 
 Assume a task takes a firm employee $h$ hours. AI can help in two ways.
 
-**Assist.** The human does the task with AI help, taking $(1-\kappa)h$ hours. So the saving is $\kappa$.
+**Assist.** The human does the task with AI help, taking $(1-\kappa)h$ hours, where $\kappa$ is the fraction of time the assistant saves per unit of $h$. So the saving is $\kappa$.
 
-**Delegate.** The AI produces output, which we assume costs no human time. Then one of three things happens:
+**Delegate.** The AI produces output, which we assume costs no human time. Let $p_j$ be the chance the output passes automated checks (tests, linters), and $\pi_j \le p_j$ the chance it passes *and* a human reviewer accepts it. Then one of three things happens:
 
 | Outcome | Probability | Review time (share of $h$) | Work left (share of $h$) |
 |---|---|---|---|
 | Fails automated checks | $1 - p_j$ | $\rho_F \approx 0$ | $R_F \approx 1$ |
 | Passes checks, reviewer rejects | $p_j - \pi_j$ | $\rho_R$ | $R_R$ |
 | Accepted | $\pi_j$ | $\rho_A$ | $R_A \approx 0$ |
-
-Here $p_j$ is the chance the output passes automated checks and $\pi_j$ the chance it's accepted.
 
 - If it fails the checks, nobody needs to read it, but nearly all the work is left.
 - If it passes and the reviewer rejects it, the reviewer can often stop at the first fatal flaw, so $\rho_R$ may be below full review. (But a subtly wrong output can take longer to review than a correct one.) A rejected attempt usually gives a head start, so $R_R$ can be well below 1. It can also be above 1, if the AI's approach sends the human down the wrong path.
@@ -49,17 +79,17 @@ $$\text{saving}_D = 1 - \bar\rho - \bar R\,(1-\kappa)$$
 
 That is, we always pay for review, and whatever is left we do in assist mode. θ depends on the outcome table only through $\bar\rho$ and $\bar R$; the three-way split matters for what data we ask firms for. Our first draft, $\kappa + qp(1-\kappa) - \rho$, is the special case where review costs the same in every outcome, $R_A = 0$, and $R_R = R_F = 1$.
 
-**Choosing a mode.** The extra share of $h$ saved by delegating instead of assisting is
+**Delegate or assist?** For each task, the firm chooses between delegating it and having the human do it with assistance. Delegating saves an extra share of $h$ over assisting of
 
 $$\Delta_j(h,t) = (1-\kappa) - \bar\rho - \bar R\,(1-\kappa).$$
 
-Let $\omega$ be the loaded wage (salary plus benefits and per-head overhead, per hour) and $c_D(h)$ the cost of an agent run on the task (tokens, tool calls, retries). The firm delegates when the labor cost it saves beats the extra inference cost:
+But delegating also costs money: the agent run itself (tokens, tool calls, retries), $c_D(h)$. Let $\omega$ be the loaded wage (salary plus benefits and per-head overhead, per hour). The firm delegates when the labor it saves is worth more than the agent run:
 
 $$\omega h\,\Delta_j(h,t) > c_D(h).$$
 
 This ignores the cost of assistance itself. Assistant tools are mostly per-seat subscriptions, so one more assisted task costs close to nothing. (If it didn't, the right side would be $c_D - (1-\bar R)\,c_A$.)
 
-So θ counts the hours saved under whichever mode is *cheaper*, not whichever saves more hours. With no inference cost the two coincide, and the saving is $\max\{\text{saving}_D, \kappa\}$.
+So θ counts the hours saved under whichever option is cheaper for the firm, which isn't always the one that saves more hours. With no inference cost the two coincide, and the saving is $\max\{\text{saving}_D, \kappa\}$.
 
 ## Capability and acceptance
 
@@ -101,17 +131,11 @@ Two consequences:
 
 This leans on the doubling trend continuing and on $D_j$ being constant. If reviewers get stricter with AI output, or context matters more on long tasks, a single lag is too simple.
 
-## The full model
+## Adding up
 
-Integrating over $f_j(h)$, the hours-weighted distribution of task lengths in line $j$:
+To get $\theta_j$, we integrate the per-task saving over $f_j(h)$, the hours-weighted distribution of task lengths in line $j$ (the first equation in the model above). Every task gets the assist saving, and delegated tasks get $\Delta_j$ on top. With no inference cost this is $\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\,f_j(h)\,dh$.
 
-$$\theta_j(t) = \int \big[\kappa + \delta_j(h,t)\,\Delta_j(h,t)\big]\, f_j(h)\,dh, \qquad \delta_j(h,t) = \mathbb{1}\{\omega h\,\Delta_j(h,t) > c_D(h)\}.$$
-
-Every task gets the assist saving, and delegated tasks get $\Delta_j$ on top. With no inference cost this is $\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\,f_j(h)\,dh$.
-
-$$S(t) = \sum_{j \ge 0} w_j\,\theta_j(t),$$
-
-where $w_j$ is line $j$'s share of labor hours, and $w_0$ is non-task time (bench, training, sales, coordination) with $\theta_0 = 0$. Leaving $w_0$ out overstates $S$.
+To get the sector-wide $S = \sum_{j \ge 0} w_j\,\theta_j$, we weight by $w_j$, line $j$'s share of labor hours. The bucket $w_0$ is non-task time (bench, training, sales, coordination), with $\theta_0 = 0$. Leaving $w_0$ out overstates $S$.
 
 **Where inference cost goes.** θ is a share of hours, so dollars can't go inside it. Inference cost enters through prices instead: what the firm can pass on is the labor cost saved net of AI spend. With $\bar c$ the AI spend as a share of the labor bill,
 
