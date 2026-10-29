@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How much labor can AI save? A model for θ_j in Indian IT and BPO</title>
+<title>Estimating θ_j: model and data requirements</title>
 <meta name="description" content="A model of how much labor AI can save in Indian IT and BPO, by service line and task length, with the best evidence for each parameter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,25 +168,20 @@ table.text td:last-child, table.text th:last-child { padding-right: 0; }
 </head>
 <body>
 <div class="page">
-<nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#the-question" data-target="the-question">1. The question</a></li><li><a href="#the-model" data-target="the-model">2. The model</a><ul><li><a href="#one-task" data-target="one-task">One task</a></li><li><a href="#where-p-j-and-j-come-from" data-target="where-p-j-and-j-come-from">Where <span class="imath" data-tex="p_j">p_j</span> and <span class="imath" data-tex="\pi_j">\pi_j</span> come from</a></li><li><a href="#why-a-horizon-shift-and-not-a-multiplier" data-target="why-a-horizon-shift-and-not-a-multiplier">Why a horizon shift and not a multiplier</a></li><li><a href="#frictions-as-a-lag" data-target="frictions-as-a-lag">Frictions as a lag</a></li><li><a href="#review-cost" data-target="review-cost">Review cost</a></li><li><a href="#putting-it-together" data-target="putting-it-together">Putting it together</a></li><li><a href="#how-this-feeds-the-rest-of-the-project" data-target="how-this-feeds-the-rest-of-the-project">How this feeds the rest of the project</a></li><li><a href="#parameters-at-a-glance" data-target="parameters-at-a-glance">Parameters at a glance</a></li><li><a href="#what-the-model-leaves-out" data-target="what-the-model-leaves-out">What the model leaves out</a></li></ul></li><li><a href="#getting-to-each-parameter" data-target="getting-to-each-parameter">3. Getting to each parameter</a><ul><li><a href="#p-h-t-the-capability-curve" data-target="p-h-t-the-capability-curve"><span class="imath" data-tex="p(h,t)">p(h,t)</span>: the capability curve</a></li><li><a href="#m-j-k-j-q-0-the-discount-d-j" data-target="m-j-k-j-q-0-the-discount-d-j"><span class="imath" data-tex="m_j">m_j</span>, <span class="imath" data-tex="k_j">k_j</span>, <span class="imath" data-tex="q_0">q_0</span>: the discount <span class="imath" data-tex="D_j">D_j</span></a></li><li><a href="#review-cost-2" data-target="review-cost-2"><span class="imath" data-tex="\rho">\rho</span>: review cost</a></li><li><a href="#r-the-head-start-after-a-rejection" data-target="r-the-head-start-after-a-rejection"><span class="imath" data-tex="R">R</span>: the head start after a rejection</a></li><li><a href="#the-assist-speedup" data-target="the-assist-speedup"><span class="imath" data-tex="\kappa">\kappa</span>: the assist speedup</a></li><li><a href="#f-j-h-task-lengths" data-target="f-j-h-task-lengths"><span class="imath" data-tex="f_j(h)">f_j(h)</span>: task lengths</a></li><li><a href="#w-j-and-w-0-hours-weights" data-target="w-j-and-w-0-hours-weights"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span>: hours weights</a></li><li><a href="#c-agent-c-a-and-inference-cost-and-the-loaded-wage" data-target="c-agent-c-a-and-inference-cost-and-the-loaded-wage"><span class="imath" data-tex="c_{\text{agent}}">c_{\text{agent}}</span>, <span class="imath" data-tex="c_A">c_A</span> and <span class="imath" data-tex="\omega">\omega</span>: inference cost and the loaded wage</a></li><li><a href="#cross-checks-on-the-result" data-target="cross-checks-on-the-result">Cross-checks on the result</a></li></ul></li><li><a href="#sources" data-target="sources">Sources</a></li></ul></nav>
+<nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#one-task" data-target="one-task">1. One task</a></li><li><a href="#capability-and-acceptance" data-target="capability-and-acceptance">2. Capability and acceptance</a><ul><li><a href="#passing-checks" data-target="passing-checks">Passing checks</a></li><li><a href="#why-a-horizon-shift-not-a-flat-q" data-target="why-a-horizon-shift-not-a-flat-q">Why a horizon shift, not a flat q</a></li><li><a href="#frictions-as-a-lag" data-target="frictions-as-a-lag">Frictions as a lag</a></li></ul></li><li><a href="#the-full-model" data-target="the-full-model">3. The full model</a></li><li><a href="#parameters" data-target="parameters">4. Parameters</a><ul><li><a href="#p-h-t" data-target="p-h-t"><span class="imath" data-tex="p(h,t)">p(h,t)</span></a></li><li><a href="#m-j" data-target="m-j"><span class="imath" data-tex="m_j">m_j</span></a></li><li><a href="#k-j-and-q-0" data-target="k-j-and-q-0"><span class="imath" data-tex="k_j">k_j</span> and <span class="imath" data-tex="q_0">q_0</span></a></li><li><a href="#a-r-f" data-target="a-r-f"><span class="imath" data-tex="\rho_A">\rho_A</span>, <span class="imath" data-tex="\rho_R">\rho_R</span>, <span class="imath" data-tex="\rho_F">\rho_F</span></a></li><li><a href="#r-a-r-r-r-f" data-target="r-a-r-r-r-f"><span class="imath" data-tex="R_A">R_A</span>, <span class="imath" data-tex="R_R">R_R</span>, <span class="imath" data-tex="R_F">R_F</span></a></li><li><a href="#section-12" data-target="section-12"><span class="imath" data-tex="\kappa">\kappa</span></a></li><li><a href="#f-j-h" data-target="f-j-h"><span class="imath" data-tex="f_j(h)">f_j(h)</span></a></li><li><a href="#w-j-and-w-0" data-target="w-j-and-w-0"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span></a></li><li><a href="#and-c-d" data-target="and-c-d"><span class="imath" data-tex="\omega">\omega</span> and <span class="imath" data-tex="c_D">c_D</span></a></li></ul></li><li><a href="#what-the-model-leaves-out" data-target="what-the-model-leaves-out">5. What the model leaves out</a></li><li><a href="#validation" data-target="validation">6. Validation</a></li><li><a href="#sources" data-target="sources">Sources</a></li></ul></nav>
 <main>
-<header><p class="crumbs"><a href="index.html">Pilot note</a> · <a href="two-questions.html">Two questions (working draft)</a> · <a href="health-check.html">Health check</a> · <b>Estimating θ (working draft)</b></p><h1>How much labor can AI save? A model for θ<sub>j</sub> in Indian IT and BPO</h1><p class="byline">Niranjan Deshpande · October 2026 · <span class="tag">Working draft</span></p><p class="thanks">Written as part of SPAR (Fall 2026), supervised by Andrei Potlogea. Literature summaries below come from our 26 October literature review; anything marked “unverified” there is marked here too.</p></header><details class="toc-mobile"><summary>Contents</summary><nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#the-question" data-target="the-question">1. The question</a></li><li><a href="#the-model" data-target="the-model">2. The model</a><ul><li><a href="#one-task" data-target="one-task">One task</a></li><li><a href="#where-p-j-and-j-come-from" data-target="where-p-j-and-j-come-from">Where <span class="imath" data-tex="p_j">p_j</span> and <span class="imath" data-tex="\pi_j">\pi_j</span> come from</a></li><li><a href="#why-a-horizon-shift-and-not-a-multiplier" data-target="why-a-horizon-shift-and-not-a-multiplier">Why a horizon shift and not a multiplier</a></li><li><a href="#frictions-as-a-lag" data-target="frictions-as-a-lag">Frictions as a lag</a></li><li><a href="#review-cost" data-target="review-cost">Review cost</a></li><li><a href="#putting-it-together" data-target="putting-it-together">Putting it together</a></li><li><a href="#how-this-feeds-the-rest-of-the-project" data-target="how-this-feeds-the-rest-of-the-project">How this feeds the rest of the project</a></li><li><a href="#parameters-at-a-glance" data-target="parameters-at-a-glance">Parameters at a glance</a></li><li><a href="#what-the-model-leaves-out" data-target="what-the-model-leaves-out">What the model leaves out</a></li></ul></li><li><a href="#getting-to-each-parameter" data-target="getting-to-each-parameter">3. Getting to each parameter</a><ul><li><a href="#p-h-t-the-capability-curve" data-target="p-h-t-the-capability-curve"><span class="imath" data-tex="p(h,t)">p(h,t)</span>: the capability curve</a></li><li><a href="#m-j-k-j-q-0-the-discount-d-j" data-target="m-j-k-j-q-0-the-discount-d-j"><span class="imath" data-tex="m_j">m_j</span>, <span class="imath" data-tex="k_j">k_j</span>, <span class="imath" data-tex="q_0">q_0</span>: the discount <span class="imath" data-tex="D_j">D_j</span></a></li><li><a href="#review-cost-2" data-target="review-cost-2"><span class="imath" data-tex="\rho">\rho</span>: review cost</a></li><li><a href="#r-the-head-start-after-a-rejection" data-target="r-the-head-start-after-a-rejection"><span class="imath" data-tex="R">R</span>: the head start after a rejection</a></li><li><a href="#the-assist-speedup" data-target="the-assist-speedup"><span class="imath" data-tex="\kappa">\kappa</span>: the assist speedup</a></li><li><a href="#f-j-h-task-lengths" data-target="f-j-h-task-lengths"><span class="imath" data-tex="f_j(h)">f_j(h)</span>: task lengths</a></li><li><a href="#w-j-and-w-0-hours-weights" data-target="w-j-and-w-0-hours-weights"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span>: hours weights</a></li><li><a href="#c-agent-c-a-and-inference-cost-and-the-loaded-wage" data-target="c-agent-c-a-and-inference-cost-and-the-loaded-wage"><span class="imath" data-tex="c_{\text{agent}}">c_{\text{agent}}</span>, <span class="imath" data-tex="c_A">c_A</span> and <span class="imath" data-tex="\omega">\omega</span>: inference cost and the loaded wage</a></li><li><a href="#cross-checks-on-the-result" data-target="cross-checks-on-the-result">Cross-checks on the result</a></li></ul></li><li><a href="#sources" data-target="sources">Sources</a></li></ul></nav></details>
-<h2 id="the-question"><span class="num">1</span>The question</h2>
-<p>Our health check found that employment in Indian IT and BPO is roughly flat so far. To forecast what happens next, we use</p>
-<div class="math" data-tex="g_L = d - s\,(1 - \varepsilon\varphi),"><span class="math-fallback">g_L = d - s\,(1 - \varepsilon\varphi),</span></div>
-<p>where <span class="imath" data-tex="s">s</span> is the share of labor AI removes at fixed output. So the forecast is only as good as our estimate of <span class="imath" data-tex="s">s</span>, and <span class="imath" data-tex="s">s</span> depends on how much labor AI can save on the work these firms actually do.</p>
-<p>We want to estimate that saving for each service line <span class="imath" data-tex="j">j</span> (application maintenance, testing, infrastructure, BPO, and so on):</p>
+<header><p class="crumbs"><a href="index.html">Pilot note</a> · <a href="two-questions.html">Two questions (working draft)</a> · <a href="health-check.html">Health check</a> · <b>Estimating θ (working draft)</b></p><h1>Estimating θ<sub>j</sub>: model and data requirements</h1><p class="byline">Niranjan Deshpande · October 2026 · <span class="tag">Working draft (internal)</span></p><p class="thanks">Memo for Andrei. Sources and details for every number are in our 26 October literature review (theta_j_literature.md in the repo); anything marked “unverified” there is marked here too.</p></header><details class="toc-mobile"><summary>Contents</summary><nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#one-task" data-target="one-task">1. One task</a></li><li><a href="#capability-and-acceptance" data-target="capability-and-acceptance">2. Capability and acceptance</a><ul><li><a href="#passing-checks" data-target="passing-checks">Passing checks</a></li><li><a href="#why-a-horizon-shift-not-a-flat-q" data-target="why-a-horizon-shift-not-a-flat-q">Why a horizon shift, not a flat q</a></li><li><a href="#frictions-as-a-lag" data-target="frictions-as-a-lag">Frictions as a lag</a></li></ul></li><li><a href="#the-full-model" data-target="the-full-model">3. The full model</a></li><li><a href="#parameters" data-target="parameters">4. Parameters</a><ul><li><a href="#p-h-t" data-target="p-h-t"><span class="imath" data-tex="p(h,t)">p(h,t)</span></a></li><li><a href="#m-j" data-target="m-j"><span class="imath" data-tex="m_j">m_j</span></a></li><li><a href="#k-j-and-q-0" data-target="k-j-and-q-0"><span class="imath" data-tex="k_j">k_j</span> and <span class="imath" data-tex="q_0">q_0</span></a></li><li><a href="#a-r-f" data-target="a-r-f"><span class="imath" data-tex="\rho_A">\rho_A</span>, <span class="imath" data-tex="\rho_R">\rho_R</span>, <span class="imath" data-tex="\rho_F">\rho_F</span></a></li><li><a href="#r-a-r-r-r-f" data-target="r-a-r-r-r-f"><span class="imath" data-tex="R_A">R_A</span>, <span class="imath" data-tex="R_R">R_R</span>, <span class="imath" data-tex="R_F">R_F</span></a></li><li><a href="#section-12" data-target="section-12"><span class="imath" data-tex="\kappa">\kappa</span></a></li><li><a href="#f-j-h" data-target="f-j-h"><span class="imath" data-tex="f_j(h)">f_j(h)</span></a></li><li><a href="#w-j-and-w-0" data-target="w-j-and-w-0"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span></a></li><li><a href="#and-c-d" data-target="and-c-d"><span class="imath" data-tex="\omega">\omega</span> and <span class="imath" data-tex="c_D">c_D</span></a></li></ul></li><li><a href="#what-the-model-leaves-out" data-target="what-the-model-leaves-out">5. What the model leaves out</a></li><li><a href="#validation" data-target="validation">6. Validation</a></li><li><a href="#sources" data-target="sources">Sources</a></li></ul></nav></details>
+<p><strong>TL;DR</strong></p>
 <ul>
-<li><span class="imath" data-tex="\theta_j(t)">\theta_j(t)</span> is the fraction of labor hours saved on service line <span class="imath" data-tex="j">j</span> at full adoption, with the AI available at date <span class="imath" data-tex="t">t</span>, net of failures and human review.</li>
-<li><span class="imath" data-tex="S(t) = \sum_j w_j\,\theta_j(t)">S(t) = \sum_j w_j\,\theta_j(t)</span> is the sector-wide version, where <span class="imath" data-tex="w_j">w_j</span> is line <span class="imath" data-tex="j">j</span>&rsquo;s share of labor hours.</li>
+<li><span class="imath" data-tex="\theta_j">\theta_j</span> is the share of labor hours AI saves on service line <span class="imath" data-tex="j">j</span> at full adoption, net of failures and human review. On each task the firm either has AI <em>assist</em> or <em>delegates</em> the task and reviews the output, whichever is cheaper.</li>
+<li>Review cost and the head start from a rejected attempt enter only through two averages, <span class="imath" data-tex="\bar\rho">\bar\rho</span> and <span class="imath" data-tex="\bar R">\bar R</span>. Inference cost changes which mode the firm picks, and enters the forecast through prices rather than through θ.</li>
+<li>We model reviewer standards and missing context as a <em>horizon shift</em>, not a flat multiplier. Frictions then act as a lag behind the METR frontier (roughly 1–2.5 years) rather than a permanent cap on savings.</li>
+<li>The biggest data gaps are task-length distributions <span class="imath" data-tex="f_j(h)">f_j(h)</span> for Indian service lines, review time as a function of task length, and the work left after a rejection.</li>
 </ul>
-<p>The existing literature doesn&rsquo;t give us this number. Exposure indices (e.g. Eloundou et al.) label whether AI <em>could</em> cut a task&rsquo;s time by at least 50%; those labels are beliefs, never checked against measured times, and nothing is netted out for review or failure. Macro estimates (e.g. Acemoglu) multiply an exposure share by a cost saving of ~27%, taken from a few 2023 experiments and held constant. That saving doesn&rsquo;t move when models get better, which is the thing we most want to forecast.</p>
-<p>So the goal is a θ_j that (1) is tied to measured AI capability, so it moves with <span class="imath" data-tex="t">t</span>, (2) counts the human time spent reviewing and fixing AI output, and (3) depends on how long tasks are, since AI succeeds much more often on short tasks than on long ones.</p>
-<h2 id="the-model"><span class="num">2</span>The model</h2>
-<h3 id="one-task">One task</h3>
-<p>Assume a task takes a firm employee <span class="imath" data-tex="h">h</span> hours. There are two ways AI can help: it can <em>assist</em> (the human does the task with AI help), or it can do the <em>whole task</em> (the human delegates and then reviews).</p>
-<p><strong>Assist.</strong> The task takes <span class="imath" data-tex="(1-\kappa)h">(1-\kappa)h</span> hours, so the saving is <span class="imath" data-tex="\kappa">\kappa</span>.</p>
-<p><strong>Delegate.</strong> The AI produces output, which costs no human time. Then one of three things happens:</p>
+<h2 id="one-task"><span class="num">1</span>One task</h2>
+<p>Assume a task takes a firm employee <span class="imath" data-tex="h">h</span> hours. AI can help in two ways.</p>
+<p><strong>Assist.</strong> The human does the task with AI help, taking <span class="imath" data-tex="(1-\kappa)h">(1-\kappa)h</span> hours. So the saving is <span class="imath" data-tex="\kappa">\kappa</span>.</p>
+<p><strong>Delegate.</strong> The AI produces output, which we assume costs no human time. Then one of three things happens:</p>
 <div class="table-wrap"><table class="text">
 <thead>
 <tr>
@@ -217,315 +212,148 @@ table.text td:last-child, table.text th:last-child { padding-right: 0; }
 </tr>
 </tbody>
 </table></div>
-<p>Here <span class="imath" data-tex="p_j">p_j</span> is the chance the output passes automated checks and <span class="imath" data-tex="\pi_j">\pi_j</span> is the chance it&rsquo;s accepted. A few things are worth saying about the rows:</p>
+<p>Here <span class="imath" data-tex="p_j">p_j</span> is the chance the output passes automated checks and <span class="imath" data-tex="\pi_j">\pi_j</span> the chance it&rsquo;s accepted.</p>
 <ul>
-<li>If the output fails its tests, nobody needs to read it; the human just does the task.</li>
-<li>If a reviewer rejects it, they can often stop at the first fatal flaw, so <span class="imath" data-tex="\rho_R">\rho_R</span> can be below full review. But a subtly wrong output can take <em>longer</em> to diagnose than a correct one takes to approve.</li>
-<li>A rejected attempt usually gives some head start, so <span class="imath" data-tex="R_R">R_R</span> can be well below 1. It can also be above 1, if the AI&rsquo;s approach sends the human down the wrong path.</li>
+<li>If it fails the checks, nobody needs to read it, but nearly all the work is left.</li>
+<li>If it passes and the reviewer rejects it, the reviewer can often stop at the first fatal flaw, so <span class="imath" data-tex="\rho_R">\rho_R</span> may be below full review. (But a subtly wrong output can take longer to review than a correct one.) A rejected attempt usually gives a head start, so <span class="imath" data-tex="R_R">R_R</span> can be well below 1. It can also be above 1, if the AI&rsquo;s approach sends the human down the wrong path.</li>
+<li>If it&rsquo;s accepted, review is full and only small fixes are left.</li>
 </ul>
-<p>Whatever work is left, the human does with AI assistance, so it costs <span class="imath" data-tex="(1-\kappa)">(1-\kappa)</span> per unit. Averaging over the three outcomes:</p>
+<p>Whatever work is left, the human does with assistance, at <span class="imath" data-tex="(1-\kappa)">(1-\kappa)</span> per unit. Averaging over the three outcomes:</p>
 <div class="math" data-tex="\bar\rho = \pi_j\,\rho_A + (p_j - \pi_j)\,\rho_R + (1 - p_j)\,\rho_F"><span class="math-fallback">\bar\rho = \pi_j\,\rho_A + (p_j - \pi_j)\,\rho_R + (1 - p_j)\,\rho_F</span></div>
 <div class="math" data-tex="\bar R = \pi_j\,R_A + (p_j - \pi_j)\,R_R + (1 - p_j)\,R_F"><span class="math-fallback">\bar R = \pi_j\,R_A + (p_j - \pi_j)\,R_R + (1 - p_j)\,R_F</span></div>
 <div class="math" data-tex="\text{saving}_D = 1 - \bar\rho - \bar R\,(1-\kappa)"><span class="math-fallback">\text{saving}_D = 1 - \bar\rho - \bar R\,(1-\kappa)</span></div>
-<p>The intuition: you pay for review (<span class="imath" data-tex="\bar\rho">\bar\rho</span>), and whatever work is left you do in assist mode (<span class="imath" data-tex="\bar R(1-\kappa)">\bar R(1-\kappa)</span>). Importantly, θ depends on the outcome table only through these two averages. Our first draft, <span class="imath" data-tex="\kappa + qp(1-\kappa) - \rho">\kappa + qp(1-\kappa) - \rho</span>, is the special case where review costs the same in every row, <span class="imath" data-tex="R_A = 0">R_A = 0</span>, and every rejection means a full redo. (Every time cost here is proportional to <span class="imath" data-tex="h">h</span>, so <span class="imath" data-tex="h">h</span> cancels when we write savings as a share of <span class="imath" data-tex="h">h</span>. It comes back in two places: <span class="imath" data-tex="p_j">p_j</span> and <span class="imath" data-tex="\pi_j">\pi_j</span> depend on <span class="imath" data-tex="h">h</span>, and review cost doesn&rsquo;t scale one-for-one with <span class="imath" data-tex="h">h</span>; see below.)</p>
-<p><strong>Choosing a mode.</strong> The firm delegates when that&rsquo;s cheaper, counting inference cost. Let <span class="imath" data-tex="\omega">\omega</span> be the loaded wage (what an hour of an employee costs the firm: salary plus benefits, payroll contributions and per-head overhead), <span class="imath" data-tex="c_{\text{agent}}(h)">c_{\text{agent}}(h)</span> the cost of the agent run (tokens, tool calls, retries), and <span class="imath" data-tex="c_A(h)">c_A(h)</span> the cost of assistance when a human does the task. If the AI&rsquo;s output is rejected, the human finishes the remaining work with assistance, so delegating costs <span class="imath" data-tex="c_{\text{agent}}(h) + \bar R\,c_A(h)">c_{\text{agent}}(h) + \bar R\,c_A(h)</span> in AI spend. So the firm delegates if</p>
-<div class="math" data-tex="\omega h\,\big[(1-\kappa) - \bar\rho - \bar R(1-\kappa)\big] &gt; c_{\text{agent}}(h) - (1 - \bar R)\,c_A(h)."><span class="math-fallback">\omega h\,\big[(1-\kappa) - \bar\rho - \bar R(1-\kappa)\big] &gt; c_{\text{agent}}(h) - (1 - \bar R)\,c_A(h).</span></div>
-<p>The left side is the labor cost saved by delegating instead of assisting; the right side is the extra AI spend.</p>
-<p>θ then counts the <em>hours</em> saved under whichever mode wins. Inference cost changes which mode is chosen, but it isn&rsquo;t itself hours, so it doesn&rsquo;t go inside θ (more on where it does go below). With no inference cost, this is just <span class="imath" data-tex="\max\{\text{saving}_D, \kappa\}">\max\{\text{saving}_D, \kappa\}</span>.</p>
-<h3 id="where-p-j-and-j-come-from">Where <span class="imath" data-tex="p_j">p_j</span> and <span class="imath" data-tex="\pi_j">\pi_j</span> come from</h3>
-<p>We take the capability curve from METR&rsquo;s time-horizon work. For a task that takes METR&rsquo;s baseliners <span class="imath" data-tex="h">h</span> hours, the chance an AI agent passes is a logistic in log task length:</p>
+<p>That is, we always pay for review, and whatever is left we do in assist mode. θ depends on the outcome table only through <span class="imath" data-tex="\bar\rho">\bar\rho</span> and <span class="imath" data-tex="\bar R">\bar R</span>; the three-way split matters for what data we ask firms for. Our first draft, <span class="imath" data-tex="\kappa + qp(1-\kappa) - \rho">\kappa + qp(1-\kappa) - \rho</span>, is the special case where review costs the same in every outcome, <span class="imath" data-tex="R_A = 0">R_A = 0</span>, and <span class="imath" data-tex="R_R = R_F = 1">R_R = R_F = 1</span>.</p>
+<p><strong>Choosing a mode.</strong> The extra share of <span class="imath" data-tex="h">h</span> saved by delegating instead of assisting is</p>
+<div class="math" data-tex="\Delta_j(h,t) = (1-\kappa) - \bar\rho - \bar R\,(1-\kappa)."><span class="math-fallback">\Delta_j(h,t) = (1-\kappa) - \bar\rho - \bar R\,(1-\kappa).</span></div>
+<p>Let <span class="imath" data-tex="\omega">\omega</span> be the loaded wage (salary plus benefits and per-head overhead, per hour) and <span class="imath" data-tex="c_D(h)">c_D(h)</span> the cost of an agent run on the task (tokens, tool calls, retries). The firm delegates when the labor cost it saves beats the extra inference cost:</p>
+<div class="math" data-tex="\omega h\,\Delta_j(h,t) &gt; c_D(h)."><span class="math-fallback">\omega h\,\Delta_j(h,t) &gt; c_D(h).</span></div>
+<p>This ignores the cost of assistance itself. Assistant tools are mostly per-seat subscriptions, so one more assisted task costs close to nothing. (If it didn&rsquo;t, the right side would be <span class="imath" data-tex="c_D - (1-\bar R)\,c_A">c_D - (1-\bar R)\,c_A</span>.)</p>
+<p>So θ counts the hours saved under whichever mode is <em>cheaper</em>, not whichever saves more hours. With no inference cost the two coincide, and the saving is <span class="imath" data-tex="\max\{\text{saving}_D, \kappa\}">\max\{\text{saving}_D, \kappa\}</span>.</p>
+<h2 id="capability-and-acceptance"><span class="num">2</span>Capability and acceptance</h2>
+<h3 id="passing-checks">Passing checks</h3>
+<p>We take <span class="imath" data-tex="p">p</span> from METR&rsquo;s time horizons. For a task that takes METR&rsquo;s baseliners <span class="imath" data-tex="h">h</span> hours, the chance an agent passes is a logistic in log task length:</p>
 <div class="math" data-tex="p_{\text{METR}}(h,t) = \sigma\big(\beta\,[\ln H_{50}(t) - \ln h]\big),"><span class="math-fallback">p_{\text{METR}}(h,t) = \sigma\big(\beta\,[\ln H_{50}(t) - \ln h]\big),</span></div>
-<p>where <span class="imath" data-tex="H_{50}(t)">H_{50}(t)</span> is the length at which the best model at <span class="imath" data-tex="t">t</span> succeeds half the time, and <span class="imath" data-tex="\beta">\beta</span> is how steeply success falls with length.</p>
-<p>Two adjustments get us from METR&rsquo;s setting to ours, and both turn out to be rescalings of <span class="imath" data-tex="h">h</span>.</p>
-<p><strong>Context (<span class="imath" data-tex="m_j">m_j</span>).</strong> METR&rsquo;s baseliners are outside contractors with no context on the codebase; they took 5–18× longer than the repositories&rsquo; own maintainers. A firm engineer on a long-running client account is somewhere in between. So a ticket logged at <span class="imath" data-tex="h">h</span> hours is roughly an <span class="imath" data-tex="m_j h">m_j h</span>-hour task in METR&rsquo;s units:</p>
-<div class="math" data-tex="p_j(h,t) = p_{\text{METR}}(m_j h,\ t)."><span class="math-fallback">p_j(h,t) = p_{\text{METR}}(m_j h,\ t).</span></div>
-<p><strong>Reviewer standards (<span class="imath" data-tex="k_j">k_j</span>, <span class="imath" data-tex="q_0">q_0</span>).</strong> Passing tests isn&rsquo;t the same as being accepted. Our first draft modeled this with a flat multiplier, <span class="imath" data-tex="\pi = q\,p">\pi = q\,p</span>. We think a <em>horizon shift</em> is closer to the truth:</p>
-<div class="math" data-tex="\pi_j(h,t) = q_0\; p_{\text{METR}}(m_j k_j\, h,\ t),"><span class="math-fallback">\pi_j(h,t) = q_0\; p_{\text{METR}}(m_j k_j\, h,\ t),</span></div>
-<p>where <span class="imath" data-tex="k_j">k_j</span> is how much longer reviewer standards make a task effectively, and <span class="imath" data-tex="q_0">q_0</span> (close to 1) covers rejections unrelated to task length (e.g. &ldquo;we don&rsquo;t want this feature&rdquo;).</p>
-<h3 id="why-a-horizon-shift-and-not-a-multiplier">Why a horizon shift and not a multiplier</h3>
-<p>The two forms disagree about <em>where</em> review bites. A flat <span class="imath" data-tex="q = 0.5">q = 0.5</span> says half of all agent output gets rejected even on 10-minute tasks, and that acceptance can never exceed 50% however good models get. A shift says short tasks are almost always accepted and long tasks are rejected much more often. We think the shift is more plausible, for three reasons.</p>
-<p><strong>1. A simple mechanism produces it exactly.</strong> Suppose each hour of work carries a constant chance <span class="imath" data-tex="\lambda">\lambda</span> of failing the tests (Ord&rsquo;s constant-hazard model), and a reviewer checks things tests don&rsquo;t (conventions, edge cases, design choices), so each hour also carries a chance <span class="imath" data-tex="\mu">\mu</span> of an objection. Then</p>
-<div class="math" data-tex="\pi(h) = e^{-(\lambda + \mu)h} = e^{-\lambda (k h)} = p(kh), \qquad k = 1 + \frac{\mu}{\lambda}."><span class="math-fallback">\pi(h) = e^{-(\lambda + \mu)h} = e^{-\lambda (k h)} = p(kh), \qquad k = 1 + \frac{\mu}{\lambda}.</span></div>
-<p>A reviewer whose objections pile up with the amount of work <em>is</em> a horizon shift. (Under the logistic curve this holds approximately rather than exactly.) A flat multiplier needs rejections that have nothing to do with the work, like a coin flip; some rejections are like that, which is what <span class="imath" data-tex="q_0">q_0</span> is for, but it&rsquo;s hard to see why most would be.</p>
-<p><strong>2. The one direct measurement looks like a shift.</strong> Whitfill et al. (METR, Mar 2026) had maintainers review agent PRs that had passed SWE-bench Verified&rsquo;s tests. Refitting Sonnet 4.5&rsquo;s horizon on maintainer verdicts gives about 8 minutes instead of about 50, i.e. <span class="imath" data-tex="k \approx 7">k \approx 7</span>. (We don&rsquo;t know whether the slope <span class="imath" data-tex="\beta">\beta</span> was the same under both scorings; if it wasn&rsquo;t, the effect isn&rsquo;t a pure shift.)</p>
-<p><strong>3. Short tasks get accepted at high rates in practice.</strong> In deployment, Claude Code PRs were merged 83.8% of the time vs 91.0% for matched human PRs (Watanabe et al.). That&rsquo;s far from the ~50% a flat <span class="imath" data-tex="q">q</span> predicts. This is weak evidence, though: those PRs weren&rsquo;t conditioned on passing tests, and people choose what to delegate.</p>
-<p>A clean test would be to take agent PRs that pass their tests and check whether the acceptance rate falls with task size. Under a multiplier it stays flat; under a shift it falls.</p>
+<p>where <span class="imath" data-tex="H_{50}(t)">H_{50}(t)</span> is the length at which the frontier model at <span class="imath" data-tex="t">t</span> succeeds half the time, and <span class="imath" data-tex="\beta">\beta</span> is how steeply success falls with length.</p>
+<p>Two things separate METR&rsquo;s setting from ours. Both turn out to be rescalings of <span class="imath" data-tex="h">h</span>.</p>
+<ul>
+<li><strong>Context (<span class="imath" data-tex="m_j">m_j</span>).</strong> METR&rsquo;s baseliners are outside contractors; they took 5–18× longer than the repositories&rsquo; own maintainers. A firm engineer on a long-running account is somewhere in between, so a ticket logged at <span class="imath" data-tex="h">h</span> hours is roughly an <span class="imath" data-tex="m_j h">m_j h</span>-hour task in METR&rsquo;s units: <span class="imath" data-tex="p_j(h,t) = p_{\text{METR}}(m_j h,\,t)">p_j(h,t) = p_{\text{METR}}(m_j h,\,t)</span>.</li>
+<li><strong>Reviewer standards (<span class="imath" data-tex="k_j">k_j</span>, <span class="imath" data-tex="q_0">q_0</span>).</strong> Passing tests isn&rsquo;t the same as being accepted. We write <span class="imath" data-tex="\pi_j(h,t) = q_0\,p_{\text{METR}}(m_j k_j h,\,t)">\pi_j(h,t) = q_0\,p_{\text{METR}}(m_j k_j h,\,t)</span>, where <span class="imath" data-tex="k_j">k_j</span> is how much longer reviewer standards effectively make the task, and <span class="imath" data-tex="q_0">q_0</span> (close to 1) covers rejections unrelated to length, like &ldquo;we don&rsquo;t want this feature&rdquo;.</li>
+</ul>
+<h3 id="why-a-horizon-shift-not-a-flat-q">Why a horizon shift, not a flat q</h3>
+<p>A flat <span class="imath" data-tex="q = 0.5">q = 0.5</span> says half of agent output gets rejected even on 10-minute tasks. It also caps the delegate saving at <span class="imath" data-tex="q(1-\kappa) + \kappa - \rho \approx 0.28">q(1-\kappa) + \kappa - \rho \approx 0.28</span> (at <span class="imath" data-tex="\kappa = 0.1">\kappa = 0.1</span>, <span class="imath" data-tex="\rho = 0.27">\rho = 0.27</span>), however good models get. A shift says short tasks are almost always accepted and long ones often aren&rsquo;t. We think the shift is closer to the truth, for three reasons:</p>
+<ol>
+<li><strong>A simple mechanism produces it.</strong> If each hour of work carries a constant chance <span class="imath" data-tex="\lambda">\lambda</span> of failing the tests (Ord&rsquo;s constant-hazard model) and a chance <span class="imath" data-tex="\mu">\mu</span> of a reviewer objection, then <span class="imath" data-tex="\pi(h) = e^{-(\lambda+\mu)h} = p(kh)">\pi(h) = e^{-(\lambda+\mu)h} = p(kh)</span> with <span class="imath" data-tex="k = 1 + \mu/\lambda">k = 1 + \mu/\lambda</span>. Objections that pile up with the amount of work <em>are</em> a horizon shift. (Under the logistic this holds only approximately.)</li>
+<li><strong>The one direct measurement looks like a shift.</strong> In Whitfill et al. (METR, Mar 2026), maintainers reviewed SWE-bench-passing PRs. Sonnet 4.5&rsquo;s horizon falls from about 50 minutes under the tests to about 8 under maintainers, so <span class="imath" data-tex="k \approx 7">k \approx 7</span>. We don&rsquo;t know whether the slope changed too.</li>
+<li><strong>Short agent PRs get merged at high rates.</strong> Claude Code PRs were merged 83.8% of the time vs 91.0% for matched human PRs (Watanabe et al.), far above 50%. This is weak evidence: those PRs weren&rsquo;t conditioned on passing tests, and people choose what to delegate.</li>
+</ol>
+<p>The clean test is whether acceptance falls with PR size among agent PRs that pass their tests. Under a multiplier it stays flat; under a shift it falls. AIDev (7.69M agent PRs, public) can probably answer this.</p>
 <h3 id="frictions-as-a-lag">Frictions as a lag</h3>
-<p>Because the curve is a logistic in <span class="imath" data-tex="\ln h">\ln h</span>, rescaling <span class="imath" data-tex="h">h</span> by a constant just divides the horizon: with <span class="imath" data-tex="D_j = m_j k_j">D_j = m_j k_j</span>, the effective horizon for accepted work is <span class="imath" data-tex="H_{50}(t)/D_j">H_{50}(t)/D_j</span>. And since horizons have doubled every <span class="imath" data-tex="T_d \approx 129">T_d \approx 129</span> days since 2023, dividing by <span class="imath" data-tex="D_j">D_j</span> is the same as using the frontier from <span class="imath" data-tex="L_j">L_j</span> days earlier:</p>
-<div class="math" data-tex="\pi_j(h,t) = q_0\; p_{\text{METR}}(h,\ t - L_j), \qquad L_j = T_d \log_2 D_j."><span class="math-fallback">\pi_j(h,t) = q_0\; p_{\text{METR}}(h,\ t - L_j), \qquad L_j = T_d \log_2 D_j.</span></div>
-<div class="table-wrap"><table class="text">
-<thead>
-<tr>
-<th><span class="imath" data-tex="D_j">D_j</span></th>
-<th>Lag <span class="imath" data-tex="L_j">L_j</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7 (reviewer standards only)</td>
-<td>≈ 1.0 year</td>
-</tr>
-<tr>
-<td>20</td>
-<td>≈ 1.5 years</td>
-</tr>
-<tr>
-<td>126 (<span class="imath" data-tex="m_j = 18">m_j = 18</span>, <span class="imath" data-tex="k_j = 7">k_j = 7</span>)</td>
-<td>≈ 2.5 years</td>
-</tr>
-</tbody>
-</table></div>
-<p>That is, &ldquo;Indian AMS work runs about <span class="imath" data-tex="L_j">L_j</span> years behind the METR frontier.&rdquo; The same logic gives a shorter lag for passing checks, <span class="imath" data-tex="T_d \log_2 m_j">T_d \log_2 m_j</span>.</p>
-<p>This has two useful consequences:</p>
+<p>Because <span class="imath" data-tex="p">p</span> is a logistic in <span class="imath" data-tex="\ln h">\ln h</span>, rescaling <span class="imath" data-tex="h">h</span> by <span class="imath" data-tex="D_j = m_j k_j">D_j = m_j k_j</span> just divides the horizon by <span class="imath" data-tex="D_j">D_j</span>. Horizons have doubled every <span class="imath" data-tex="T_d \approx 129">T_d \approx 129</span> days since 2023, so dividing by <span class="imath" data-tex="D_j">D_j</span> is the same as using the frontier from <span class="imath" data-tex="L_j">L_j</span> earlier:</p>
+<div class="math" data-tex="\pi_j(h,t) = q_0\,p_{\text{METR}}(h,\,t - L_j), \qquad L_j = T_d \log_2 D_j."><span class="math-fallback">\pi_j(h,t) = q_0\,p_{\text{METR}}(h,\,t - L_j), \qquad L_j = T_d \log_2 D_j.</span></div>
+<p><span class="imath" data-tex="D_j = 7">D_j = 7</span> (reviewer standards only) gives a lag of about 1 year; <span class="imath" data-tex="D_j = 20">D_j = 20</span> about 1.5 years; <span class="imath" data-tex="D_j = 126">D_j = 126</span> (<span class="imath" data-tex="m_j = 18">m_j = 18</span>, <span class="imath" data-tex="k_j = 7">k_j = 7</span>) about 2.5 years.</p>
+<p>Two consequences:</p>
 <ul>
-<li><strong>Frictions delay savings; they don&rsquo;t cap them.</strong> If the trend continues, <span class="imath" data-tex="\pi_j \to q_0">\pi_j \to q_0</span> for any fixed task length, so the delegate saving approaches roughly <span class="imath" data-tex="1 - \rho_A">1 - \rho_A</span>. Under the flat multiplier it&rsquo;s stuck below <span class="imath" data-tex="q(1-\kappa) + \kappa - \rho \approx 0.28">q(1-\kappa) + \kappa - \rho \approx 0.28</span> at central values, forever. So for the long run, the parameters that matter most are review cost and whether the trend continues, not <span class="imath" data-tex="m_j">m_j</span> or <span class="imath" data-tex="k_j">k_j</span>.</li>
-<li><strong>It matches what the data can identify.</strong> Our top-down series (realized replacement of roughly 2.3 pp/yr over FY24–26) gives about one equation, so it can pin down roughly one composite parameter, and <span class="imath" data-tex="L_j">L_j</span> is that parameter. Separating <span class="imath" data-tex="m_j">m_j</span> from <span class="imath" data-tex="k_j">k_j</span> needs ticket-level data that records whether automated checks passed.</li>
+<li><strong>Frictions delay savings; they don&rsquo;t cap them.</strong> If the trend continues, <span class="imath" data-tex="\pi_j \to q_0">\pi_j \to q_0</span> at any fixed <span class="imath" data-tex="h">h</span>, so the delegate saving approaches roughly <span class="imath" data-tex="1 - \rho_A">1 - \rho_A</span>. For the long run, review cost and the trend matter most, not <span class="imath" data-tex="m_j">m_j</span> or <span class="imath" data-tex="k_j">k_j</span>.</li>
+<li><strong>It matches what the data can identify.</strong> The top-down series (about 2.3 pp/yr over FY24–26) is roughly one equation, so it can pin down roughly one composite parameter, and <span class="imath" data-tex="L_j">L_j</span> is that parameter. Separating <span class="imath" data-tex="m_j">m_j</span> from <span class="imath" data-tex="k_j">k_j</span> needs ticket data that records whether checks passed.</li>
 </ul>
-<p>Of course, this all leans on the doubling trend. If horizons stop doubling, <span class="imath" data-tex="D_j">D_j</span> is still a discount but no longer a fixed delay. And <span class="imath" data-tex="D_j">D_j</span> may not be constant: if reviewers get stricter with AI output, or context matters more on long tasks, a single lag is too simple.</p>
-<h3 id="review-cost">Review cost</h3>
-<p>Review time probably isn&rsquo;t proportional to task length. At Google, a median 24-line change takes a reviewer roughly 45–50 minutes, which suggests a large fixed cost per change. So</p>
-<div class="math" data-tex="\rho_A(h) = \frac{a}{h} + b,"><span class="math-fallback">\rho_A(h) = \frac{a}{h} + b,</span></div>
-<p>with a fixed part <span class="imath" data-tex="a">a</span> (in hours) and a proportional part <span class="imath" data-tex="b">b</span>. We&rsquo;ll report the <span class="imath" data-tex="a = 0">a = 0</span> and <span class="imath" data-tex="b = 0">b = 0</span> corners. For rejections, <span class="imath" data-tex="\rho_R = \tau\,\rho_A">\rho_R = \tau\,\rho_A</span> with <span class="imath" data-tex="\tau \in (0, 1]">\tau \in (0, 1]</span>, and <span class="imath" data-tex="\rho_F \approx 0">\rho_F \approx 0</span>.</p>
-<h3 id="putting-it-together">Putting it together</h3>
-<p>For a task of length <span class="imath" data-tex="h">h</span> in line <span class="imath" data-tex="j">j</span> at date <span class="imath" data-tex="t">t</span>, the extra hours saved by delegating instead of assisting, as a share of <span class="imath" data-tex="h">h</span>, are</p>
-<div class="math" data-tex="\Delta_j(h,t) = (1-\kappa) - \bar\rho(h,t) - \bar R(h,t)\,(1-\kappa),"><span class="math-fallback">\Delta_j(h,t) = (1-\kappa) - \bar\rho(h,t) - \bar R(h,t)\,(1-\kappa),</span></div>
-<p>and the firm delegates (<span class="imath" data-tex="\delta_j = 1">\delta_j = 1</span>) when that saving beats the extra AI spend:</p>
-<div class="math" data-tex="\delta_j(h,t) = \mathbb{1}\Big\{\, \omega h\,\Delta_j(h,t) &gt; c_{\text{agent}}(h) - \big(1-\bar R(h,t)\big)\,c_A(h) \Big\}."><span class="math-fallback">\delta_j(h,t) = \mathbb{1}\Big\{\, \omega h\,\Delta_j(h,t) &gt; c_{\text{agent}}(h) - \big(1-\bar R(h,t)\big)\,c_A(h) \Big\}.</span></div>
-<p>Integrating over the hours-weighted distribution of task lengths in each line gives the share of hours saved:</p>
-<div class="math" data-tex="\theta_j(t) = \int \big[\,\kappa + \delta_j(h,t)\,\Delta_j(h,t)\,\big]\, f_j(h)\, dh."><span class="math-fallback">\theta_j(t) = \int \big[\,\kappa + \delta_j(h,t)\,\Delta_j(h,t)\,\big]\, f_j(h)\, dh.</span></div>
-<p>That is, every task gets the assist saving, and delegated tasks get the extra saving on top. (With no inference cost, <span class="imath" data-tex="\delta_j = 1">\delta_j = 1</span> exactly when <span class="imath" data-tex="\Delta_j &gt; 0">\Delta_j &gt; 0</span>, and this is just <span class="imath" data-tex="\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\, f_j(h)\, dh">\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\, f_j(h)\, dh</span>.)</p>
-<p>θ is pure hours, which is what <span class="imath" data-tex="s">s</span> measures; mixing dollars in would break the units. But the price channel depends on the <em>cost</em> saving: labor cost saved, net of AI spend.</p>
-<div class="math" data-tex="\theta^c_j(t) = \theta_j(t) - \int \frac{c_A(h) + \delta_j(h,t)\,\big[c_{\text{agent}}(h) - (1-\bar R)\,c_A(h)\big]}{\omega h}\, f_j(h)\, dh"><span class="math-fallback">\theta^c_j(t) = \theta_j(t) - \int \frac{c_A(h) + \delta_j(h,t)\,\big[c_{\text{agent}}(h) - (1-\bar R)\,c_A(h)\big]}{\omega h}\, f_j(h)\, dh</span></div>
-<p>The second term is AI spend as a share of the labor cost the task would have had: <span class="imath" data-tex="c_A">c_A</span> if assisted, <span class="imath" data-tex="c_{\text{agent}} + \bar R\,c_A">c_{\text{agent}} + \bar R\,c_A</span> if delegated.</p>
-<p>Summing over lines,</p>
-<div class="math" data-tex="S(t) = \sum_j w_j\,\theta_j(t), \qquad S^c(t) = \sum_j w^c_j\,\theta^c_j(t),"><span class="math-fallback">S(t) = \sum_j w_j\,\theta_j(t), \qquad S^c(t) = \sum_j w^c_j\,\theta^c_j(t),</span></div>
-<p>where <span class="imath" data-tex="w_j">w_j</span> are hours shares and <span class="imath" data-tex="w^c_j">w^c_j</span> are labor-cost shares (they coincide if wages are the same across lines). There&rsquo;s also a non-task bucket (bench, training, sales, coordination) with weight <span class="imath" data-tex="w_0">w_0</span> and <span class="imath" data-tex="\theta_0 = \theta^c_0 = 0">\theta_0 = \theta^c_0 = 0</span>; leaving it out overstates <span class="imath" data-tex="S">S</span>.</p>
-<h3 id="how-this-feeds-the-rest-of-the-project">How this feeds the rest of the project</h3>
-<p>As agreed, adoption is set to 1, so <span class="imath" data-tex="S">S</span> and <span class="imath" data-tex="S^c">S^c</span> are full-adoption ceilings, and <span class="imath" data-tex="s = S">s = S</span>. Adoption only comes back in when we validate against realized data, through <span class="imath" data-tex="s(t) = \sum_j w_j A_j(t)\,\theta_j(t)">s(t) = \sum_j w_j A_j(t)\,\theta_j(t)</span>.</p>
-<p>Inference cost enters the forecast through prices. If <span class="imath" data-tex="\varphi">\varphi</span> is defined relative to labor cost saved, the forecasting equation becomes</p>
-<div class="math" data-tex="g_L = d - S + \varepsilon\varphi\, S^c."><span class="math-fallback">g_L = d - S + \varepsilon\varphi\, S^c.</span></div>
-<p>Since <span class="imath" data-tex="S^c \approx S - \bar c">S^c \approx S - \bar c</span>, where <span class="imath" data-tex="\bar c">\bar c</span> is AI spend as a share of the labor bill, this is the same as <span class="imath" data-tex="g_L = d - s + \varepsilon\varphi\,(s - \bar c)">g_L = d - s + \varepsilon\varphi\,(s - \bar c)</span>. (We still need to check this against how the CES micro-foundation defines <span class="imath" data-tex="\varphi">\varphi</span>.)</p>
-<h3 id="parameters-at-a-glance">Parameters at a glance</h3>
-<div class="table-wrap"><table class="text">
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Meaning</th>
-<th>Current best value</th>
-<th>Main gap</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="imath" data-tex="p_{\text{METR}}(h,t)">p_{\text{METR}}(h,t)</span></td>
-<td>Chance AI passes checks on a task of METR length <span class="imath" data-tex="h">h</span></td>
-<td>Frontier <span class="imath" data-tex="H_{50}">H_{50}</span> ≈ 6–12 h; doubling ≈ 129 days</td>
-<td>Software only; unreliable above 16 h</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="m_j">m_j</span></td>
-<td>Context gap: METR hours per firm hour</td>
-<td>Prior 1–18</td>
-<td>No direct measurement</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="k_j">k_j</span></td>
-<td>Reviewer standards as a horizon shift</td>
-<td>≈ 7</td>
-<td>One model, three repos, four reviewers</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="q_0">q_0</span></td>
-<td>Length-independent rejections</td>
-<td>Close to 1 (prior)</td>
-<td>No direct estimate</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="\rho_A(h)">\rho_A(h)</span></td>
-<td>Review time on accepted output</td>
-<td>0.1–0.33; GDPval 0.27</td>
-<td>Not measured against <span class="imath" data-tex="h">h</span></td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="\rho_R, \rho_F">\rho_R, \rho_F</span></td>
-<td>Review time on rejected / check-failing output</td>
-<td><span class="imath" data-tex="\rho_F \approx 0">\rho_F \approx 0</span>; <span class="imath" data-tex="\rho_R">\rho_R</span> unknown</td>
-<td>Nothing measures time to rejection</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="R_A, R_R, R_F">R_A, R_R, R_F</span></td>
-<td>Work left after each outcome</td>
-<td><span class="imath" data-tex="R_R">R_R</span> ≈ 1/3–1/2 (Rein, n = 4)</td>
-<td>Almost no data; sign of the head start uncertain</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="\kappa">\kappa</span></td>
-<td>Assist speedup</td>
-<td>≈ 0.15–0.25 for 2022–24 coding tools</td>
-<td>Current tools unmeasured</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="f_j(h)">f_j(h)</span></td>
-<td>Hours-weighted task-length distribution</td>
-<td>None for India</td>
-<td>The biggest data gap</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="w_j, w_0, w^c_j">w_j, w_0, w^c_j</span></td>
-<td>Hours shares (and labor-cost shares)</td>
-<td>From revenue splits</td>
-<td>Revenue ≠ hours</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="\omega">\omega</span></td>
-<td>Loaded wage</td>
-<td>≈ $16/h, blended onsite and offshore</td>
-<td>Unverified; offshore probably lower</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="c_{\text{agent}}(h)">c_{\text{agent}}(h)</span></td>
-<td>AI cost of a delegated attempt</td>
-<td>≈ $4 for a 1-hour task</td>
-<td>A single point; growth with <span class="imath" data-tex="h">h</span> unknown</td>
-</tr>
-<tr>
-<td><span class="imath" data-tex="c_A(h)">c_A(h)</span></td>
-<td>AI cost of assistance</td>
-<td>Small at the margin (per-seat pricing)</td>
-<td>No direct estimate</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="what-the-model-leaves-out">What the model leaves out</h3>
+<p>This leans on the doubling trend continuing and on <span class="imath" data-tex="D_j">D_j</span> being constant. If reviewers get stricter with AI output, or context matters more on long tasks, a single lag is too simple.</p>
+<h2 id="the-full-model"><span class="num">3</span>The full model</h2>
+<p>Integrating over <span class="imath" data-tex="f_j(h)">f_j(h)</span>, the hours-weighted distribution of task lengths in line <span class="imath" data-tex="j">j</span>:</p>
+<div class="math" data-tex="\theta_j(t) = \int \big[\kappa + \delta_j(h,t)\,\Delta_j(h,t)\big]\, f_j(h)\,dh, \qquad \delta_j(h,t) = \mathbb{1}\{\omega h\,\Delta_j(h,t) &gt; c_D(h)\}."><span class="math-fallback">\theta_j(t) = \int \big[\kappa + \delta_j(h,t)\,\Delta_j(h,t)\big]\, f_j(h)\,dh, \qquad \delta_j(h,t) = \mathbb{1}\{\omega h\,\Delta_j(h,t) &gt; c_D(h)\}.</span></div>
+<p>Every task gets the assist saving, and delegated tasks get <span class="imath" data-tex="\Delta_j">\Delta_j</span> on top. With no inference cost this is <span class="imath" data-tex="\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\,f_j(h)\,dh">\int \max\{1 - \bar\rho - \bar R(1-\kappa),\ \kappa\}\,f_j(h)\,dh</span>.</p>
+<div class="math" data-tex="S(t) = \sum_{j \ge 0} w_j\,\theta_j(t),"><span class="math-fallback">S(t) = \sum_{j \ge 0} w_j\,\theta_j(t),</span></div>
+<p>where <span class="imath" data-tex="w_j">w_j</span> is line <span class="imath" data-tex="j">j</span>&rsquo;s share of labor hours, and <span class="imath" data-tex="w_0">w_0</span> is non-task time (bench, training, sales, coordination) with <span class="imath" data-tex="\theta_0 = 0">\theta_0 = 0</span>. Leaving <span class="imath" data-tex="w_0">w_0</span> out overstates <span class="imath" data-tex="S">S</span>.</p>
+<p><strong>Where inference cost goes.</strong> θ is a share of hours, so dollars can&rsquo;t go inside it. Inference cost enters through prices instead: what the firm can pass on is the labor cost saved net of AI spend. With <span class="imath" data-tex="\bar c">\bar c</span> the AI spend as a share of the labor bill,</p>
+<div class="math" data-tex="g_L = d - s + \varepsilon\varphi\,(s - \bar c)."><span class="math-fallback">g_L = d - s + \varepsilon\varphi\,(s - \bar c).</span></div>
+<p>With adoption set to 1, <span class="imath" data-tex="s = S">s = S</span>. (We still need to check this against how the CES setup defines <span class="imath" data-tex="\varphi">\varphi</span>.) Adoption comes back only for validation, through realized <span class="imath" data-tex="s(t) = \sum_j w_j A_j(t)\,\theta_j(t)">s(t) = \sum_j w_j A_j(t)\,\theta_j(t)</span>.</p>
+<h2 id="parameters"><span class="num">4</span>Parameters</h2>
+<h3 id="p-h-t"><span class="imath" data-tex="p(h,t)">p(h,t)</span></h3>
 <ul>
-<li><strong>Routing ticket by ticket.</strong> We assume firms choose a mode based on <span class="imath" data-tex="h">h</span> alone. If they can predict which tickets the AI will get right, they do better; if weak reviewers over-delegate, they do worse.</li>
-<li><strong>Task splitting.</strong> We treat <span class="imath" data-tex="f_j(h)">f_j(h)</span> as fixed, but firms can split a long task into chunks that fit the horizon, paying review per chunk (Demirer et al. 2026). This biases θ down for long tasks.</li>
+<li>METR Time Horizon 1.1 (Jan 2026; task-level data public). Frontier 50% horizons are about 6–12 hours (Opus 4.6: 719 min, with an 80% horizon of 70 min). Doubling time about 129 days (95% CI 104–158).</li>
+<li>The slope is shallow: even with a 12-hour <span class="imath" data-tex="H_{50}">H_{50}</span>, models fail roughly 9–18% of 1-hour tasks. Delegation needs 90%+ success, and the curve&rsquo;s shape changes that tail by about 3× (Ord), so we should report a constant-hazard fit too.</li>
+<li>Software only. Computer-use horizons, the closest proxy for BPO and IT ops, are 40–100× shorter (Kwa &amp; Cheng).</li>
+<li>Plan: fit a shared-slope logistic to the task-level data and bootstrap over tasks.</li>
+</ul>
+<h3 id="m-j"><span class="imath" data-tex="m_j">m_j</span></h3>
+<ul>
+<li>The only anchor is METR&rsquo;s 5–18× gap between contractors and maintainers. We use a prior of 1–18 and report <span class="imath" data-tex="m_j = 1, 3, 10">m_j = 1, 3, 10</span>. Nobody has measured where vendor staff sit.</li>
+</ul>
+<h3 id="k-j-and-q-0"><span class="imath" data-tex="k_j">k_j</span> and <span class="imath" data-tex="q_0">q_0</span></h3>
+<ul>
+<li><span class="imath" data-tex="k \approx 7">k \approx 7</span> from Whitfill et al.: 4 maintainers, 3 Python repos, 296 PRs. The agents couldn&rsquo;t respond to feedback, so this is pessimistic for real workflows.</li>
+<li>Maintainer acceptance improved about 9.6 pp/yr more slowly than test scores (significant only at 10%). If real, the gap is widening, which neither form captures.</li>
+<li><span class="imath" data-tex="q_0">q_0</span>: no direct estimate. Deployment merge rates suggest it&rsquo;s close to 1, but they&rsquo;re confounded.</li>
+<li>Indian delivery adds a second review layer (client UAT, change boards), which plausibly raises <span class="imath" data-tex="k_j">k_j</span>. Nothing measures it.</li>
+</ul>
+<h3 id="a-r-f"><span class="imath" data-tex="\rho_A">\rho_A</span>, <span class="imath" data-tex="\rho_R">\rho_R</span>, <span class="imath" data-tex="\rho_F">\rho_F</span></h3>
+<ul>
+<li>Estimates range from 0.1 to 0.33: GDPval grading time (about 0.27; 109 minutes against 404 minutes of expert time), METR&rsquo;s RCT screen recordings (about 9% of time), and Copilot users&rsquo; verification time (22% of session time; CUPS). None is production review of delegated work.</li>
+<li>Review probably has a fixed cost per change: at Google, a median 24-line change takes about 45–50 reviewer-minutes. So <span class="imath" data-tex="\rho_A(h) = a/h + b">\rho_A(h) = a/h + b</span>, and we&rsquo;ll report the <span class="imath" data-tex="a = 0">a = 0</span> and <span class="imath" data-tex="b = 0">b = 0</span> corners.</li>
+<li><span class="imath" data-tex="\rho_R = \tau\rho_A">\rho_R = \tau\rho_A</span> with <span class="imath" data-tex="\tau \in (0, 1]">\tau \in (0, 1]</span>, and <span class="imath" data-tex="\rho_F \approx 0">\rho_F \approx 0</span>. Nothing measures how fast reviewers reject.</li>
+<li>Nothing measures review time against task length in production. METR collected maintainer review times in its 2026 study but hasn&rsquo;t published them.</li>
+</ul>
+<h3 id="r-a-r-r-r-f"><span class="imath" data-tex="R_A">R_A</span>, <span class="imath" data-tex="R_R">R_R</span>, <span class="imath" data-tex="R_F">R_F</span></h3>
+<ul>
+<li>The only anchor is Rein (METR, Aug 2025): estimated fix times of about 1/3 to 1/2 of task length for test-passing agent PRs. That&rsquo;s 4 PRs, the fix times are estimated rather than timed, and we only see fixes for PRs someone chose to fix.</li>
+<li>The sign could flip. Experienced developers in METR&rsquo;s 2025 RCT were 19% slower with AI, which is consistent with AI output sending people down wrong paths (though it mixes assisting and delegating).</li>
+<li>With <span class="imath" data-tex="p">p</span> near 0.5, <span class="imath" data-tex="R_R">R_R</span> alone moves θ a lot.</li>
+</ul>
+<h3 id="section-12"><span class="imath" data-tex="\kappa">\kappa</span></h3>
+<ul>
+<li>Development: about 0.15–0.25, from 2022–24 tools. The best field estimate is Cui et al.: +26% completed tasks across 4,867 developers, i.e. about 21% of labor saved per task.</li>
+<li>Experts on their own code: 19% <em>slower</em> in early 2025 (METR). The 2026 follow-up points to a speedup, but METR calls the data unreliable.</li>
+<li>BPO chat: about 0.04–0.13. Brynjolfsson, Li &amp; Raymond find handle time down 8.5%; at Alibaba, a 32% cut on one step became a 4.2% cut on the whole chat (Ni et al.).</li>
+<li>Current tools are unmeasured. We&rsquo;d index κ by tool vintage; Merali finds about 8% less task time per year of model progress.</li>
+</ul>
+<h3 id="f-j-h"><span class="imath" data-tex="f_j(h)">f_j(h)</span></h3>
+<ul>
+<li>None exists for any Indian service line. This is probably the biggest gap: the slope is shallow, so where hours sit along <span class="imath" data-tex="h">h</span> (especially the long tail) largely sets <span class="imath" data-tex="\theta_j">\theta_j</span>.</li>
+<li>Proxies: SWE-bench Verified (39% of tasks under 15 min, 52% at 15–60 min, 8% at 1–4 h; annotator guesses, count-weighted); JOSSE and the Public Jira Dataset (sparse open-source effort logs); Anthropic Economic Index task times (estimated by Claude).</li>
+<li>We treat <span class="imath" data-tex="f_j">f_j</span> as fixed, but firms can split long tasks into chunks the AI can handle, paying review per chunk (Demirer et al. 2026). This biases θ down for long tasks.</li>
+<li>What we&rsquo;d ask firms for: one row per ticket with logged effort hours, released only as aggregates by line and length bin.</li>
+</ul>
+<h3 id="w-j-and-w-0"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span></h3>
+<ul>
+<li>Firm service-line splits are already in the repo, but they&rsquo;re revenue shares, and revenue isn&rsquo;t hours: Infosys onsite hours bill at about 3× offshore. We convert using the onsite premium and report intervals. Detailed splits end in 2017–19.</li>
+<li>For <span class="imath" data-tex="w_0">w_0</span>, Infosys person-month data (2010–18) are the best public source.</li>
+</ul>
+<h3 id="and-c-d"><span class="imath" data-tex="\omega">\omega</span> and <span class="imath" data-tex="c_D">c_D</span></h3>
+<ul>
+<li><span class="imath" data-tex="\omega \approx">\omega \approx</span> $16/h loaded (unverified; derived from Infosys&rsquo;s FY26 20-F, blending onsite and offshore). The offshore wage is probably lower. At $16/h, a $4 agent run on a 1-hour task is 25% of its labor cost, so inference cost matters more for India than in US-based estimates.</li>
+<li><span class="imath" data-tex="c_D">c_D</span> is billed by usage and probably grows faster than linearly in <span class="imath" data-tex="h">h</span>, since context accumulates and failures get retried. The $4 is a single data point.</li>
+</ul>
+<h2 id="what-the-model-leaves-out"><span class="num">5</span>What the model leaves out</h2>
+<ul>
+<li><strong>Routing ticket by ticket.</strong> We assume firms pick a mode on <span class="imath" data-tex="h">h</span> alone. If they can predict which tickets the AI will get right, they do better; if weak reviewers over-delegate, they do worse.</li>
 <li><strong>Time saved vs. labor removed.</strong> Danish survey data suggest about 80% of saved time goes to other tasks (Humlum &amp; Vestergaard). Some of that is the demand response, which <span class="imath" data-tex="\varepsilon\varphi">\varepsilon\varphi</span> handles; some is reallocation inside the firm, which it doesn&rsquo;t.</li>
-<li><strong>Downstream rework.</strong> AI-written code may cost more to maintain later (the CMU Cursor study finds velocity gains fade within two months while complexity rises). This matters for AMS, which inherits other people&rsquo;s code.</li>
+<li><strong>Downstream rework.</strong> AI-written code may cost more to maintain later: in He et al., velocity gains fade within two months while complexity rises. This matters for application maintenance, which inherits other people&rsquo;s code.</li>
 <li><strong>Whose hours.</strong> Juniors save the most time and seniors do the review, so hours-weighted and cost-weighted θ can differ.</li>
-<li><strong>Large shocks.</strong> <span class="imath" data-tex="S = \sum w_j \theta_j">S = \sum w_j \theta_j</span> is first-order (Hulten). With large savings, the weights themselves shift (Baqaee &amp; Farhi), so we should also report a reweighted <span class="imath" data-tex="S">S</span>.</li>
+<li><strong>Large savings.</strong> <span class="imath" data-tex="S = \sum_j w_j\theta_j">S = \sum_j w_j\theta_j</span> is a first-order (Hulten) approximation. With large savings the weights themselves shift (Baqaee &amp; Farhi), so we should also report a reweighted <span class="imath" data-tex="S">S</span>.</li>
 </ul>
-<h2 id="getting-to-each-parameter"><span class="num">3</span>Getting to each parameter</h2>
-<h3 id="p-h-t-the-capability-curve"><span class="imath" data-tex="p(h,t)">p(h,t)</span>: the capability curve</h3>
-<p><strong>Best source: METR&rsquo;s Time Horizon 1.1 (Jan 2026), with public task-level data.</strong> 228 software, ML and cyber tasks, each timed by human baselines, with agents run several times per task. Frontier 50% / 80% horizons: Claude Opus 4.6 719 / 70 min, Gemini 3.1 Pro 384 / 90 min, GPT-5.2 352 / 66 min. The doubling time since 2023 is 128.7 days (95% CI 104–158). The ratio of the 50% and 80% horizons implies a shallow slope, roughly 0.6–0.95 per natural-log unit of <span class="imath" data-tex="h">h</span> (the literature review&rsquo;s derivation): even with a 12-hour <span class="imath" data-tex="H_{50}">H_{50}</span>, a model fails roughly 9–18% of 1-hour tasks. The dashboard was frozen in September 2026.</p>
-<p><strong>Kwa et al. (2025)</strong> is the original method: fit success against log human time for each model and read off the 50% length.</p>
-<p><strong>Caveats that matter for us:</strong></p>
-<ul>
-<li><strong>Barry (METR, Mar 2026):</strong> reasonable alternative fits cut recent 50% horizons by up to 35% and raise 80% horizons by up to 100%. A single slope shared across models cross-validated best. On private tasks only, Opus 4.6&rsquo;s <span class="imath" data-tex="H_{50}">H_{50}</span> falls from 12 h to 7.2 h.</li>
-<li><strong>Ord (2025):</strong> a constant-hazard curve fits too, and curve shape changes the high-reliability tail by about 3×. Delegation needs 90%+ success, so we should report both shapes.</li>
-<li><strong>Kwa &amp; Cheng (METR, 2025):</strong> computer-use horizons (OSWorld, WebArena) are 40–100× shorter than software horizons. That&rsquo;s the closest proxy for BPO and IT-ops work, and borrowing coding curves for those lines could be off by one to two orders of magnitude.</li>
-<li><strong>Kwa (METR, Jan 2026)</strong> is explicit that a 50% horizon of X hours doesn&rsquo;t mean we can delegate tasks under X hours. That&rsquo;s exactly the gap the rest of this model fills.</li>
-</ul>
-<p><strong>Cross-check:</strong> Anthropic&rsquo;s January 2026 Economic Index report finds API task success falls from about 60% on sub-hour tasks to about 45% at 5+ hours, crossing 50% near 3.5 h. Both success and time are judged by Claude, and users chose which tasks to bring, so it&rsquo;s a check, not a substitute.</p>
-<p><strong>Plan:</strong> fit a shared-slope logistic to <code>task_results_1_1.yaml</code>, bootstrap over tasks, and report a constant-hazard alternative.</p>
-<h3 id="m-j-k-j-q-0-the-discount-d-j"><span class="imath" data-tex="m_j">m_j</span>, <span class="imath" data-tex="k_j">k_j</span>, <span class="imath" data-tex="q_0">q_0</span>: the discount <span class="imath" data-tex="D_j">D_j</span></h3>
-<p><strong>Context, <span class="imath" data-tex="m_j">m_j</span>.</strong> The only anchor is METR&rsquo;s own finding that contractor baseliners took 5–18× longer than repository maintainers on internal PRs. We&rsquo;ll use a prior of 1–18 and report <span class="imath" data-tex="m_j = 1, 3, 10">m_j = 1, 3, 10</span>. Nobody has measured where vendor staff on long-running accounts sit.</p>
-<p><strong>Reviewer standards, <span class="imath" data-tex="k_j">k_j</span>. Best source: Whitfill, Wu, Becker, Rush (METR, Mar 2026).</strong> Four maintainers (scikit-learn, Sphinx, pytest) reviewed 296 agent PRs that had passed SWE-bench Verified&rsquo;s tests:</p>
-<ul>
-<li>They re-approved only 68% of the <em>real</em> merged human patches, which sets the noise floor.</li>
-<li>Relative to that floor, test pass rates exceed maintainer acceptance by 24.2 pp (SE 2.7); roughly half of passing PRs wouldn&rsquo;t be merged.</li>
-<li>Sonnet 4.5&rsquo;s horizon is ~50 min under the tests and ~8 min under maintainers, giving <span class="imath" data-tex="k \approx 7">k \approx 7</span>.</li>
-<li>Agents couldn&rsquo;t respond to feedback, so this is pessimistic for real workflows with iteration.</li>
-<li>Maintainer acceptance improved 9.6 pp/yr more slowly than test scores (SE 5.5, significant only at 10%). If real, the gap is widening, which neither a pure shift nor a flat multiplier captures.</li>
-</ul>
-<p><strong>Deployment merge rates</strong> bracket this from the other side, though they aren&rsquo;t conditioned on passing tests and are shaped by what people choose to delegate. Watanabe et al.: 83.8% for Claude Code PRs vs 91.0% for matched human PRs; about 45% of merged agent PRs were revised before merge, but so were ~41.5% of human PRs. Nakashima et al.: agent PRs merged 55–86% vs 82.6% for humans. <strong>AIDev</strong> (7.69M agent PRs, public) makes it possible to estimate acceptance by PR size and month, which is the test of shift vs multiplier above.</p>
-<p><strong>Length-independent rejections, <span class="imath" data-tex="q_0">q_0</span>.</strong> No direct estimate. The deployment numbers suggest it&rsquo;s close to 1, but they&rsquo;re confounded.</p>
-<p><strong>For Indian delivery,</strong> there&rsquo;s a second review layer: client acceptance (UAT, change boards). Nothing in the literature measures it, and it plausibly raises <span class="imath" data-tex="k_j">k_j</span>.</p>
-<h3 id="review-cost-2"><span class="imath" data-tex="\rho">\rho</span>: review cost</h3>
-<p><strong>Best single figure: GDPval (OpenAI, 2025).</strong> Expert graders took 109 minutes against 404 minutes of expert completion time, so <span class="imath" data-tex="\rho \approx 0.27">\rho \approx 0.27</span> (0.19–0.27 depending on which reported task length is the denominator). This is grading time in an evaluation, not production review.</p>
-<p><strong>Other anchors:</strong></p>
-<ul>
-<li><strong>Rein (METR, Aug 2025):</strong> estimated fix time of ~26 minutes for 4 test-passing agent PRs and ~42 minutes across all reviewed PRs, against tasks averaging 1.3 hours.</li>
-<li><strong>METR&rsquo;s 2025 RCT (screen recordings):</strong> about 9% of AI-allowed time went to reviewing and cleaning AI output, plus 4% waiting.</li>
-<li><strong>CUPS (Mozannar et al., 2024):</strong> Copilot users spent 22.4% of session time verifying suggestions (34.3% including editing). Verification per suggestion was about 5× the naive estimate, because people accept first and check later.</li>
-</ul>
-<p><strong>Evidence for a fixed cost per change.</strong> At Google (Sadowski et al. 2018), reviewers spend about 3.2 hours a week on about 4 changes, with a median change of 24 lines: roughly 45–50 minutes per change. That&rsquo;s far slower per line than inspection norms of 200–500 lines/hour, which suggests a fixed cost dominates for small changes. Hence <span class="imath" data-tex="\rho_A(h) = a/h + b">\rho_A(h) = a/h + b</span>.</p>
-<p><strong>Review and acceptance are chosen together.</strong> Reviewers can trade checking time for false acceptances. Over-reliance rises with task difficulty and falls with higher stakes and cheaper verification (Vasconcelos et al.); AI users wrote less secure code while believing it more secure (Perry et al.). Also, only 14–15% of human review comments concern defects (Bacchelli &amp; Bird; Czerwonka et al.), so passing review is a weak test of correctness.</p>
-<p><strong>Gap:</strong> nothing measures review time against task length in production, and nothing measures how fast reviewers reject. METR collected maintainer review times in its 2026 study but hasn&rsquo;t published them.</p>
-<h3 id="r-the-head-start-after-a-rejection"><span class="imath" data-tex="R">R</span>: the head start after a rejection</h3>
-<p><strong>Best (and nearly only) source: Rein (METR, Aug 2025).</strong> Zero of 15 agent PRs on real repos were mergeable as-is, but estimated fix times were about 1/3 to 1/2 of task length rather than a full redo. That suggests <span class="imath" data-tex="R_R">R_R</span> well below 1. It&rsquo;s 4 test-passing PRs, the fix times are estimated rather than timed, and we only see fixes for PRs someone chose to fix.</p>
-<p><strong>Bounds:</strong> GDPval&rsquo;s workflow redoes every failure from scratch (<span class="imath" data-tex="R = 1">R = 1</span>, and without assistance). Demirer et al. (2026) model retrying and re-verifying instead.</p>
-<p><strong>The sign could be negative.</strong> In METR&rsquo;s 2025 RCT, experienced developers on their own repos were 19% <em>slower</em> with AI tools. That&rsquo;s at least consistent with AI output sending people down wrong paths, though it mixes assisting and delegating.</p>
-<p><strong>Gap:</strong> the fallback after a failed attempt has never been timed against the alternatives. With <span class="imath" data-tex="p">p</span> near 0.5, this choice alone moves θ a lot.</p>
-<h3 id="the-assist-speedup"><span class="imath" data-tex="\kappa">\kappa</span>: the assist speedup</h3>
-<p><strong>Best field estimate for coding: Cui et al. (2025/2026).</strong> Field RCTs at Microsoft, Accenture (Southeast Asia) and a Fortune 100 firm, 4,867 developers, 2022–23 autocomplete: completed tasks +26% (SE 10.3%), so about 21% of labor saved per task. Juniors gained more.</p>
-<p><strong>Others:</strong></p>
-<ul>
-<li><strong>Google RCT (Paradis et al., 2024):</strong> ~21% faster on an &ldquo;extend existing code&rdquo; task; the CI includes zero.</li>
-<li><strong>METR early-2025 RCT:</strong> experts on their own code were 19% slower (CI +2% to +39%), while <em>believing</em> they were 20% faster.</li>
-<li><strong>METR Feb 2026 update:</strong> estimated speedups of 18% and 4% for two groups, both CIs including zero. METR calls the data unreliable, partly because 30–50% of developers withheld tasks they wouldn&rsquo;t do without AI.</li>
-<li><strong>BPO chat:</strong> Brynjolfsson, Li &amp; Raymond find handle time −8.5% (resolutions/hour +15%) for 5,172 support agents; Ni et al. (Alibaba) find a 32% cut on one diagnostic step became a 4.2% cut on the whole chat.</li>
-<li><strong>Trend:</strong> Merali finds roughly 8% less task time per year of model progress for consultants and analysts, which gives a slope for indexing κ by tool vintage.</li>
-</ul>
-<p><strong>Plan:</strong> use κ ≈ 0.15–0.25 for development and ≈ 0.04–0.13 for BPO chat, index it by tool vintage (<span class="imath" data-tex="\kappa_v">\kappa_v</span>), and re-estimate κ by task length from METR&rsquo;s public RCT data. Don&rsquo;t use self-reports: they get even the sign wrong.</p>
-<h3 id="f-j-h-task-lengths"><span class="imath" data-tex="f_j(h)">f_j(h)</span>: task lengths</h3>
-<p><strong>There is no hours-weighted task-length distribution for any Indian service line.</strong> This is probably the single biggest gap, since METR&rsquo;s slope is shallow and where hours sit along <span class="imath" data-tex="h">h</span>, especially the long tail, largely sets θ_j.</p>
-<p><strong>Public proxies:</strong></p>
-<ul>
-<li><strong>JOSSE and the Public Jira Dataset (Zenodo):</strong> effort logs from open-source projects. Sparse, and we need to check JOSSE&rsquo;s units before trusting it.</li>
-<li><strong>SWE-bench Verified (via Epoch):</strong> 39% of tasks under 15 minutes, 52% at 15–60 minutes, 8% at 1–4 hours. These are annotator guesses, count-weighted, for open-source bug fixes, so they&rsquo;re optimistic.</li>
-<li><strong>Anthropic Economic Index:</strong> per-task means of human time, estimated by Claude. Validated on 1,000 open-source Jira tickets, Claude&rsquo;s estimates correlate 0.44 (Spearman) with actual times, vs 0.50 for developers&rsquo; own estimates, and they compress the range.</li>
-<li><strong>Remote Labor Index:</strong> real freelance projects with median 11.5 h and mean 28.9 h, but a mostly creative task mix.</li>
-</ul>
-<p><strong>Why weighting matters:</strong> Hatgis-Kessell et al. (2026) find that weighting by time spent rather than task count reshuffles 11 of the 25 occupations usually reported as most exposed.</p>
-<p><strong>The real fix is firm data:</strong> one row per ticket with logged effort hours, released only as aggregates by line and length bin.</p>
-<h3 id="w-j-and-w-0-hours-weights"><span class="imath" data-tex="w_j">w_j</span> and <span class="imath" data-tex="w_0">w_0</span>: hours weights</h3>
-<p><strong>Best source: firm service-line disclosures, already in the project repo</strong> (<code>data/tidy/panel_long.csv</code>). The problem is that these are revenue shares, and revenue isn&rsquo;t hours: Infosys onsite hours bill at roughly 3× offshore (offshore was 71.3% of effort but 45.4% of revenue at Q4 FY18). We convert using the onsite premium and report intervals. Detailed splits end in 2017–19, so FY26 figures are extrapolated.</p>
-<p><strong>For <span class="imath" data-tex="w_0">w_0</span>,</strong> Infosys person-month data (2010–18) are the best public source for bench, training and other non-task time.</p>
-<p><strong>Context:</strong> HCLTech said on its Q4 FY26 call that about 40% of industry spend (application development and support, traditional infrastructure, customer support) &ldquo;can shrink 3% to 5% CAGR for a few years.&rdquo; ICRIER&rsquo;s survey of 620 Indian IT firms reports which divisions are most affected (software development 72%, infrastructure/cloud 48%), but direction only, no magnitudes.</p>
-<h3 id="c-agent-c-a-and-inference-cost-and-the-loaded-wage"><span class="imath" data-tex="c_{\text{agent}}">c_{\text{agent}}</span>, <span class="imath" data-tex="c_A">c_A</span> and <span class="imath" data-tex="\omega">\omega</span>: inference cost and the loaded wage</h3>
-<p><strong>Best available figure:</strong> the literature review&rsquo;s derivation of ~$16/h loaded labor cost from Infosys&rsquo;s FY26 20-F, under which a $4 agent run on a 1-hour task is 25% of that task&rsquo;s labor cost. This is unverified, and the derivation isn&rsquo;t shown, so we don&rsquo;t know whether it includes subcontractors or overhead, or what hours per year it assumes. It&rsquo;s also a blended average: onsite hours cost several times more than offshore ones, and offshore was 76.8% of Infosys effort in FY26. So the offshore loaded wage is probably below $16/h, and inference cost is a bigger share of the saving for offshore work.</p>
-<p><strong>Which wage.</strong> For the delegation decision, the right wage is the marginal cost of an hour of labor: the costs that fall when the firm needs fewer hours (salary, benefits, per-head overhead), not the ones that don&rsquo;t (headquarters, sales):</p>
-<div class="math" data-tex="\omega = \frac{\text{employee costs} + \text{per-head overhead}}{\text{headcount} \times \text{hours worked per employee per year}}."><span class="math-fallback">\omega = \frac{\text{employee costs} + \text{per-head overhead}}{\text{headcount} \times \text{hours worked per employee per year}}.</span></div>
-<p><strong>How the two costs behave.</strong> <span class="imath" data-tex="c_A">c_A</span> is probably small at the margin: assistant tools are often flat per-seat subscriptions, so once the seat is paid for, one more assisted task costs close to nothing. <span class="imath" data-tex="c_{\text{agent}}">c_{\text{agent}}</span> is billed by usage and grows with <span class="imath" data-tex="h">h</span>, possibly faster than linearly, since context accumulates over long runs and failed attempts get retried. We don&rsquo;t have good numbers on how fast; the $4 figure is a single point.</p>
-<p>Cost comparisons elsewhere use US wages (GDPval) or computer vision (Svanberg et al.), where only 23% of exposed wages were cost-effective to automate at the time.</p>
-<p><strong>Why it matters for India specifically:</strong> lower wages make inference cost a bigger share of the saving, most of all for long, retry-heavy tasks.</p>
-<h3 id="cross-checks-on-the-result">Cross-checks on the result</h3>
-<ul>
-<li><strong>Ordering across lines.</strong> Exposure measures don&rsquo;t give θ, but they can check the <em>ordering</em> of θ_j. ILO Working Paper 140 (Gmyrek et al., 2025) scores 29,753 tasks from 0 to 1 for &ldquo;could be done without a human operator&rdquo; (software developers 0.53, applications programmers 0.57, systems administrators 0.57). It&rsquo;s perceived automatability with nothing netted out, so at best a loose upper bound on gross θ. Eisfeldt, Schubert &amp; Zhang separate exposure through core vs supplemental tasks, which roughly tracks the delegate vs assist distinction.</li>
-<li><strong>A reality check for multi-hour work.</strong> GDPval&rsquo;s try-and-review workflow cuts GPT-5&rsquo;s 90× raw speedup to 1.12–1.39×, i.e. about 11–28% of time saved, mostly because ~61% of failures had to be redone.</li>
-<li><strong>Validation against realized data.</strong> Realized cumulative replacement over FY24–26 (≈ 7 pp, range 4.5–11) should roughly match the change in <span class="imath" data-tex="\sum_j w_j A_j(t)\,\theta_j(t)">\sum_j w_j A_j(t)\,\theta_j(t)</span>, with adoption <span class="imath" data-tex="A_j(t)">A_j(t)</span> built from disclosed tool head-counts. This mostly identifies κ × adoption and the lag <span class="imath" data-tex="L_j">L_j</span>; it has little power over review cost.</li>
-</ul>
+<h2 id="validation"><span class="num">6</span>Validation</h2>
+<p>Realized cumulative replacement over FY24–26 (about 7 pp, range 4.5–11) should roughly match the change in <span class="imath" data-tex="\sum_j w_j A_j(t)\,\theta_j(t)">\sum_j w_j A_j(t)\,\theta_j(t)</span>, with adoption <span class="imath" data-tex="A_j(t)">A_j(t)</span> built from disclosed tool head-counts. This mostly identifies κ × adoption and the lag <span class="imath" data-tex="L_j">L_j</span>. It has little power over review cost.</p>
 <h2 id="sources">Sources</h2>
 <ul>
-<li>Acemoglu (2024/2025), &ldquo;The Simple Macroeconomics of AI&rdquo;. <a href="https://www.nber.org/papers/w32487">https://www.nber.org/papers/w32487</a></li>
-<li>Bacchelli &amp; Bird (2013). <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ICSE202013-codereview.pdf">https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ICSE202013-codereview.pdf</a></li>
-<li>Barry (METR, 2026), modelling assumptions and time horizons. <a href="https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/">https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/</a></li>
 <li>Baqaee &amp; Farhi (2019). <a href="https://econometricsociety.org/publications/econometrica/browse/2019/07/01/macroeconomic-impact-microeconomic-shocks-beyond-hultens">https://econometricsociety.org/publications/econometrica/browse/2019/07/01/macroeconomic-impact-microeconomic-shocks-beyond-hultens</a></li>
-<li>Becker, Rush, Barnes, Rein (METR, 2025), developer RCT. <a href="https://arxiv.org/abs/2507.09089">https://arxiv.org/abs/2507.09089</a> ; data: <a href="https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs">https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs</a></li>
+<li>Becker, Rush, Barnes, Rein (METR, 2025), developer RCT. <a href="https://arxiv.org/abs/2507.09089">https://arxiv.org/abs/2507.09089</a></li>
 <li>Becker et al. (METR, Feb 2026), uplift update. <a href="https://metr.org/blog/2026-02-24-uplift-update/">https://metr.org/blog/2026-02-24-uplift-update/</a></li>
 <li>Brynjolfsson, Li, Raymond (2025). <a href="https://www.nber.org/papers/w31161">https://www.nber.org/papers/w31161</a></li>
 <li>Cui et al. (2025/2026), Copilot field experiments. <a href="https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf">https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf</a></li>
-<li>Czerwonka, Greiler, Tilford (2015). <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2015/05/PID3556473.pdf">https://www.microsoft.com/en-us/research/wp-content/uploads/2015/05/PID3556473.pdf</a></li>
 <li>Demirer, Horton, Immorlica, Lucier, Shahidi (2026), &ldquo;Chaining Tasks&rdquo;. <a href="https://www.nber.org/papers/w34859">https://www.nber.org/papers/w34859</a></li>
-<li>Eisfeldt, Schubert, Zhang (rev. 2026). <a href="https://www.nber.org/papers/w31222">https://www.nber.org/papers/w31222</a></li>
-<li>Eloundou, Manning, Mishkin, Rock (2023/2024). <a href="https://arxiv.org/abs/2303.10130">https://arxiv.org/abs/2303.10130</a></li>
-<li>Gmyrek et al. (2025), ILO WP 140. <a href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure">https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure</a></li>
-<li>Hatgis-Kessell, Aguirre, Wan, Bommasani (2026). <a href="https://arxiv.org/abs/2608.05172">https://arxiv.org/abs/2608.05172</a></li>
-<li>HCLTech Q4 FY26 call. <a href="https://nsearchives.nseindia.com/corporate/HCLTECH_24042026174011_TranscriptEarningsCall.pdf">https://nsearchives.nseindia.com/corporate/HCLTECH_24042026174011_TranscriptEarningsCall.pdf</a></li>
 <li>He et al. (2026), Cursor study. <a href="https://arxiv.org/html/2511.04427v3">https://arxiv.org/html/2511.04427v3</a></li>
 <li>Humlum &amp; Vestergaard (2025/2026). <a href="https://www.nber.org/papers/w33777">https://www.nber.org/papers/w33777</a></li>
-<li>Kwa et al. (2025). <a href="https://arxiv.org/abs/2503.14499">https://arxiv.org/abs/2503.14499</a></li>
-<li>Kwa (METR, 2026), time-horizon limitations. <a href="https://metr.org/notes/2026-01-22-time-horizon-limitations/">https://metr.org/notes/2026-01-22-time-horizon-limitations/</a></li>
 <li>Kwa &amp; Cheng (METR, 2025), horizons across domains. <a href="https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/">https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/</a></li>
 <li>Li, Zhang, Hassan (2025), AIDev. <a href="https://huggingface.co/datasets/hao-li/AIDev">https://huggingface.co/datasets/hao-li/AIDev</a></li>
 <li>Merali (2024). <a href="https://arxiv.org/abs/2409.02391">https://arxiv.org/abs/2409.02391</a></li>
 <li>METR (2026), Time Horizon 1.1. <a href="https://metr.org/blog/2026-1-29-time-horizon-1-1/">https://metr.org/blog/2026-1-29-time-horizon-1-1/</a> ; data: <a href="https://metr.org/assets/task_results_1_1.yaml">https://metr.org/assets/task_results_1_1.yaml</a></li>
-<li>Mishra et al. (2026), ICRIER. <a href="https://icrier.org/pdf/AI-and-Jobs.pdf">https://icrier.org/pdf/AI-and-Jobs.pdf</a></li>
 <li>Montgomery et al. (2022), Public Jira Dataset; Alhamed &amp; Storer (2022), JOSSE. <a href="https://zenodo.org/doi/10.5281/zenodo.5882881">https://zenodo.org/doi/10.5281/zenodo.5882881</a> ; <a href="https://zenodo.org/records/7022735">https://zenodo.org/records/7022735</a></li>
 <li>Mozannar, Bansal, Fourney, Horvitz (2024), CUPS. <a href="https://arxiv.org/abs/2210.14306">https://arxiv.org/abs/2210.14306</a></li>
-<li>Nakashima et al. (2026). <a href="https://arxiv.org/html/2602.04226v1">https://arxiv.org/html/2602.04226v1</a></li>
 <li>Ni et al. (2026), Alibaba. <a href="https://arxiv.org/pdf/2603.29888">https://arxiv.org/pdf/2603.29888</a></li>
 <li>Ord (2025). <a href="https://arxiv.org/abs/2505.05115">https://arxiv.org/abs/2505.05115</a></li>
-<li>Paradis et al. (2024), Google RCT. <a href="https://arxiv.org/html/2410.12944v2">https://arxiv.org/html/2410.12944v2</a></li>
 <li>Patwardhan et al. (2025), GDPval. <a href="https://arxiv.org/abs/2510.04374">https://arxiv.org/abs/2510.04374</a></li>
-<li>Perry et al. (2023). <a href="https://arxiv.org/abs/2211.03622">https://arxiv.org/abs/2211.03622</a></li>
 <li>Rein (METR, 2025), algorithmic vs holistic evaluation. <a href="https://metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons">https://metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons</a></li>
-<li>Remote Labor Index (Mazeika et al., 2025). <a href="https://arxiv.org/abs/2510.26787">https://arxiv.org/abs/2510.26787</a></li>
 <li>Sadowski et al. (2018), code review at Google. <a href="https://sback.it/publications/icse2018seip.pdf">https://sback.it/publications/icse2018seip.pdf</a></li>
-<li>Svanberg et al. (2024). <a href="https://futuretech.mit.edu/2024-01-18+Beyond_AI_Exposure.pdf">https://futuretech.mit.edu/2024-01-18+Beyond_AI_Exposure.pdf</a></li>
 <li>Tamkin &amp; McCrory (2025); Anthropic Economic Index (Jan 2026). <a href="https://www.anthropic.com/research/estimating-productivity-gains">https://www.anthropic.com/research/estimating-productivity-gains</a> ; <a href="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">https://www.anthropic.com/research/anthropic-economic-index-january-2026-report</a></li>
-<li>Vasconcelos et al. (2023). <a href="https://arxiv.org/abs/2212.06823">https://arxiv.org/abs/2212.06823</a></li>
 <li>Watanabe et al. (2025). <a href="https://arxiv.org/html/2509.14745v3">https://arxiv.org/html/2509.14745v3</a></li>
 <li>Whitfill, Wu, Becker, Rush (METR, 2026). <a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/">https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/</a></li>
 </ul>
