@@ -18,6 +18,32 @@ The rough idea is that a human worker can either *delegate* each task to AI, or 
 
 The biggest data gaps are task-length distributions $f_j(h)$ for Indian service lines, review time as a function of task length, and the work left after a rejection.
 
+## Results
+
+We took the model below to the data with rough inputs: METR's horizons, task lengths from open-source work logs, wages from the firms' FY26 filings, and published estimates for everything else. Each input is drawn from a range, and bands show the middle 80% of draws. This is a first pass; code, inputs and sources are in `scripts/theta/` and `data/explore/theta_estimate/`.
+
+**1. The ceiling is about 15% of labor hours, and nearly all of it comes from assisting.** At full adoption, the AI available at the end of FY26 could have saved about 14% of labor hours at the large firms (11.5–17%), and today's AI about 15% (12–19%). The ceiling was flat until 2026. It is now rising, mostly in maintenance and testing, where tasks are short and software-based. If METR's trend continues, it reaches about 19% by November 2027.
+
+<figure class="wide"><div class="fig-panel"><img src="figures/theta/ceiling.svg" alt="Line charts of the full-adoption ceiling over time, for the whole sector and by service line"></div><figcaption><b>Figure 1.</b> Share of labor hours AI could save at full adoption, April 2023 to March 2028. Left: the whole sector, with the middle 80% of draws shaded; the dashed line uses US-like wages (6× higher). Right: each service line (median of draws). After April 2026, METR's frontier is extrapolated.</figcaption></figure>
+
+**2. Delegating barely pays yet, mostly because agents are expensive relative to Indian wages.** At central values, handing whole tasks to AI didn't pay on any line through FY26, and today it pays on about a quarter of maintenance hours. Short tasks lose to the fixed cost of reviewing each change. Long tasks fail too often. In between, cost binds: a coding agent costs about \$2.60 per hour of task, against an offshore wage of about \$12, so delegating has to save over a fifth of the task's hours *beyond* what assisting saves. At US-like wages, the same AI would already delegate 87% of maintenance hours (Figure 1, dashed). BPO and IT ops get no delegation at all: agent horizons there are 10–100× shorter than in software, and for BPO the agent costs more than a \$3-an-hour worker.
+
+<figure class="wide"><div class="fig-panel"><img src="figures/theta/decomposition.svg" alt="Bar charts of θ by service line, split into the assist saving and the extra from delegating"></div><figcaption><b>Figure 2.</b> θ<sub>j</sub> at central values, % of each line's hours. Solid: the saving from assisting (κ). Hatched: the extra from delegating.</figcaption></figure>
+
+**3. The model explains about half of what we see in the filings.** Firms disclose that about 22% of staff actively used AI tools by the end of FY26. At that adoption, the model gives 3.1% less labor per unit of work over FY24–26 (2.4–4.1). Our top-down estimate from the filings is 6.9% (4.5–10.8). We think the most likely reason is that κ, measured on 2022–24 autocomplete tools, is too low for current ones. Tech Mahindra reports a 7% firm-wide AI productivity gain in FY26 with about a fifth of staff using the tools, which is about 30% per user, against our 10–30%. Raising κ by 0.15 on every line closes most of the gap. Two other explanations remain open: the top-down estimate may pick up non-AI efficiency gains, and disclosures may miss informal use.
+
+<figure><div class="fig-panel"><img src="figures/theta/topdown.svg" alt="Interval chart comparing the top-down estimate with two model versions"></div><figcaption><b>Figure 3.</b> Labor saved per unit of work over FY24–26, %. Dots are central estimates; bars span the middle 80% (for the top-down estimate, the range across its assumptions).</figcaption></figure>
+
+**4. How sure we are.** No single input, pushed to either end of its range, moves today's ceiling by more than about 4 points (Figure 4). So the numbers are not fragile to any one guess. But the bands only reflect the ranges we chose, and the larger risks are structural:
+
+- κ for current tools is unmeasured, and the ceiling is almost all κ.
+- METR stopped publishing horizons after May 2026. GPT-5.6 Sol's tentative estimate sits *below* the trend, so "now" and 2027 may be too high.
+- The horizons for IT ops and BPO are guesses; no benchmark records human times for that work.
+
+We trust the shape more than the levels: assisting dominates so far, cost slows delegation in India, and maintenance and testing move first.
+
+<figure><div class="fig-panel"><img src="figures/theta/swings.svg" alt="Bar chart of how far the ceiling moves when each input is set to the ends of its range"></div><figcaption><b>Figure 4.</b> Today's ceiling with one input at the low or high end of its range and everything else central. The nine inputs that move it most are shown.</figcaption></figure>
+
 ## Overview of the Model
 
 **Why it's structured this way.** The idea is that assisting saves a modest, fairly predictable share of a task's time, while delegating saves almost all of it when the AI's output is good enough to accept. But when the AI's output is insufficient, delegation wastes the review time. Thus, delegating is much less valuable when outputs are likely to not be accepted, which depends heavily on how long the task is. This is why we work task by task, sorting them by length, then adding up and integrating.

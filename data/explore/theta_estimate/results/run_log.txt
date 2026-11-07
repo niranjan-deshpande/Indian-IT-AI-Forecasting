@@ -33,6 +33,23 @@ bottom-up realized replacement by FY26 end (share of labor), vs top-down 0.069 (
 p10          0.024                     0.026
 p50          0.031                     0.034
 p90          0.041                     0.045
+               date                        param   lo    hi  S_base  S_at_lo  S_at_hi  swing
+FY26 end (Mar 2026)                           w0 0.15  0.35   0.131    0.149    0.114  0.035
+FY26 end (Mar 2026)            development.kappa 0.15  0.30   0.131    0.117    0.146  0.029
+FY26 end (Mar 2026)         infrastructure.kappa 0.05  0.20   0.131    0.119    0.144  0.026
+FY26 end (Mar 2026)            maintenance.kappa 0.10  0.30   0.131    0.119    0.144  0.025
+FY26 end (Mar 2026)                    bpo.kappa 0.04  0.15   0.131    0.124    0.139  0.014
+FY26 end (Mar 2026)             consulting.kappa 0.10  0.30   0.131    0.125    0.138  0.013
+FY26 end (Mar 2026)                testing.kappa 0.15  0.35   0.131    0.125    0.138  0.012
+FY26 end (Mar 2026) maintenance.agent_cost_per_h 0.70 10.00   0.131    0.143    0.131  0.012
+     Now (Nov 2026)                            m 1.00 10.00   0.141    0.172    0.131  0.040
+     Now (Nov 2026)                           w0 0.15  0.35   0.141    0.160    0.122  0.038
+     Now (Nov 2026)                          R_R 0.33  1.00   0.141    0.165    0.131  0.034
+     Now (Nov 2026)            development.kappa 0.15  0.30   0.141    0.127    0.154  0.027
+     Now (Nov 2026)         infrastructure.kappa 0.05  0.20   0.141    0.128    0.154  0.026
+     Now (Nov 2026)                            k 2.00 10.00   0.141    0.157    0.131  0.025
+     Now (Nov 2026) maintenance.agent_cost_per_h 0.70 10.00   0.141    0.154    0.132  0.022
+     Now (Nov 2026)      maintenance.review_prop 0.05  0.25   0.141    0.149    0.132  0.017
                date                        param  first_order_share  spearman
 FY26 end (Mar 2026)                           w0              0.221    -0.478
 FY26 end (Mar 2026)         infrastructure.kappa              0.112     0.340

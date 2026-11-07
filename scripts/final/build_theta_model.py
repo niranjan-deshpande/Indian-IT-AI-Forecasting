@@ -24,6 +24,7 @@ EXTRA_CSS = """
 table.text th, table.text td { text-align: left; }
 table.text td:last-child, table.text th:last-child { padding-right: 0; }
 .imath { white-space: nowrap; }
+figure img { display: block; width: 100%; height: auto; }
 .math .katex-display { margin: 0; }
 """
 KATEX = "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9"

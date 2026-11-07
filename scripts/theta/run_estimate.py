@@ -161,6 +161,44 @@ def main():
     print("bottom-up realized replacement by FY26 end (share of labor), vs top-down 0.069 (0.045-0.108):")
     print(bu.round(3).to_string())
 
+    # what-ifs: kappa +0.15 on every line (bottom-up check) and US-like wages (x6) over time
+    Pk = {k: v.copy() for k, v in P.items()}
+    for j in PR.LINES:
+        Pk[f"{j}.kappa"] += 0.15
+    rk = run(Pk, TM.year_frac(DATES["FY26 end (Mar 2026)"]), trend)
+    flat_k = (1 - Pk["w0"]) * sum(w[j] * a_all * rk[f"{j}.theta"] for j in PR.LINES)
+    pd.DataFrame({"kappa +0.15": q(flat_k)}, index=["p10", "p50", "p90"]).to_csv(OUT / "bottom_up_kappa_plus.csv")
+    Pu = {k: v.copy() for k, v in Pp.items()}
+    for j in PR.LINES:
+        Pu[f"{j}.wage"] *= 6
+    us = []
+    for d in pd.date_range("2023-04-01", "2028-03-01", freq="MS"):
+        r = run(Pu, TM.year_frac(d.date()), trend)
+        us.append(dict(zip(["month", "S_p10", "S_p50", "S_p90"], [d.date().isoformat(), *q(r["S"])])))
+    pd.DataFrame(us).to_csv(OUT / "theta_path_us_wages.csv", index=False)
+
+    # one-at-a-time swings: each prior at its low and high end, everything else central
+    swings = []
+    for label in ["FY26 end (Mar 2026)", "Now (Nov 2026)"]:
+        ty = TM.year_frac(DATES[label])
+        base = run(Pc, ty, trend)["S"][0]
+        specs = dict(PR.GLOBAL)
+        specs.update({f"{j}.{k}": v for j in PR.LINES for k, v in PR.PER_LINE[j].items()})
+        for k, (kind, *a) in specs.items():
+            if kind == "fix":
+                continue
+            lo, hi = (a[0], a[-1])
+            vals = []
+            for v in (lo, hi):
+                Px = {kk: vv.copy() for kk, vv in Pc.items()}
+                Px[k][:] = v
+                vals.append(run(Px, ty, trend)["S"][0])
+            swings.append({"date": label, "param": k, "lo": lo, "hi": hi, "S_base": base,
+                           "S_at_lo": vals[0], "S_at_hi": vals[1], "swing": abs(vals[1] - vals[0])})
+    swings = pd.DataFrame(swings).sort_values(["date", "swing"], ascending=[True, False])
+    swings.to_csv(OUT / "swings.csv", index=False)
+    print(swings.groupby("date").head(8).round(3).to_string(index=False))
+
     # sensitivity of S now and at FY26 end
     sens = []
     for label in ["FY26 end (Mar 2026)", "Now (Nov 2026)"]:
