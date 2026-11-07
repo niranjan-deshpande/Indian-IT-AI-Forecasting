@@ -1,0 +1,56 @@
+frontier trend: anchor 2026.10, H50 7.0 h, fitted doubling 129 days, n=14
+                      date  H50_h_central  S_central  S_p10  S_p50  S_p90
+     FY24 start (Apr 2023)          0.050      0.131  0.110  0.133  0.159
+     FY25 start (Apr 2024)          0.051      0.131  0.110  0.133  0.159
+     FY26 start (Apr 2025)          0.755      0.131  0.111  0.134  0.160
+       FY26 end (Mar 2026)          6.971      0.131  0.115  0.140  0.172
+Last METR point (Apr 2026)          7.238      0.131  0.115  0.141  0.173
+            Now (Nov 2026)         22.857      0.141  0.121  0.151  0.193
+                  Nov 2027        162.690      0.197  0.141  0.189  0.260
+                      date  maintenance_central  development_central  testing_central  infrastructure_central  bpo_central  consulting_central
+     FY24 start (Apr 2023)                0.200                0.225            0.250                   0.125        0.095                 0.2
+     FY25 start (Apr 2024)                0.200                0.225            0.250                   0.125        0.095                 0.2
+     FY26 start (Apr 2025)                0.200                0.225            0.250                   0.125        0.095                 0.2
+       FY26 end (Mar 2026)                0.200                0.225            0.250                   0.125        0.095                 0.2
+Last METR point (Apr 2026)                0.200                0.225            0.250                   0.125        0.095                 0.2
+            Now (Nov 2026)                0.267                0.228            0.250                   0.125        0.095                 0.2
+                  Nov 2027                0.488                0.291            0.504                   0.125        0.095                 0.2
+                      date  maintenance_deleg_central  development_deleg_central  testing_deleg_central  infrastructure_deleg_central  bpo_deleg_central  consulting_deleg_central
+     FY24 start (Apr 2023)                      0.000                      0.000                  0.000                           0.0                0.0                       0.0
+     FY25 start (Apr 2024)                      0.000                      0.000                  0.000                           0.0                0.0                       0.0
+     FY26 start (Apr 2025)                      0.000                      0.000                  0.000                           0.0                0.0                       0.0
+       FY26 end (Mar 2026)                      0.000                      0.000                  0.000                           0.0                0.0                       0.0
+Last METR point (Apr 2026)                      0.000                      0.000                  0.000                           0.0                0.0                       0.0
+            Now (Nov 2026)                      0.257                      0.013                  0.000                           0.0                0.0                       0.0
+                  Nov 2027                      0.798                      0.204                  0.729                           0.0                0.0                       0.0
+adoption needed at FY26 end to match top-down (rows: quantiles over model draws):
+     central   low  high
+p10     0.40  0.26  0.63
+p50     0.49  0.32  0.77
+p90     0.60  0.39  0.94
+bottom-up realized replacement by FY26 end (share of labor), vs top-down 0.069 (0.045-0.108):
+     flat adoption  software-tilted adoption
+p10          0.024                     0.026
+p50          0.031                     0.034
+p90          0.041                     0.045
+               date                        param  first_order_share  spearman
+FY26 end (Mar 2026)                           w0              0.221    -0.478
+FY26 end (Mar 2026)         infrastructure.kappa              0.112     0.340
+FY26 end (Mar 2026)            development.kappa              0.109     0.341
+FY26 end (Mar 2026)                          R_F              0.088    -0.258
+FY26 end (Mar 2026)            maintenance.kappa              0.074     0.279
+FY26 end (Mar 2026) maintenance.agent_cost_per_h              0.053    -0.193
+FY26 end (Mar 2026)                            m              0.042    -0.172
+FY26 end (Mar 2026)                          R_R              0.034    -0.159
+FY26 end (Mar 2026)             consulting.kappa              0.030     0.165
+FY26 end (Mar 2026)                    bpo.kappa              0.025     0.156
+     Now (Nov 2026)                           w0              0.161    -0.412
+     Now (Nov 2026)                            m              0.107    -0.299
+     Now (Nov 2026) maintenance.agent_cost_per_h              0.087    -0.285
+     Now (Nov 2026)                          R_F              0.078    -0.256
+     Now (Nov 2026)                          R_R              0.074    -0.251
+     Now (Nov 2026)         infrastructure.kappa              0.066     0.266
+     Now (Nov 2026)            development.kappa              0.058     0.260
+     Now (Nov 2026)            maintenance.kappa              0.032     0.191
+     Now (Nov 2026)     testing.agent_cost_per_h              0.028    -0.162
+     Now (Nov 2026) development.agent_cost_per_h              0.025    -0.134
