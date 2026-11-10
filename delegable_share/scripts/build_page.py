@@ -66,6 +66,22 @@ SCEN_LABEL = {  # long label, short label (narrow screens)
     "+12 months (pooled trend)": ("One year ahead (pooled trend)", "+12 months"),
 }
 SHORT_OCC = {
+    "Interpreters and Translators": "Translators",
+    "Proofreaders and Copy Markers": "Proofreaders",
+    "Technical Writers": "Technical writers",
+    "Paralegals and Legal Assistants": "Paralegals",
+    "Tax Preparers": "Tax preparers",
+    "Electricians": "Electricians",
+    "Registered Nurses": "Registered nurses",
+    "Childcare Workers": "Childcare workers",
+    "Janitors and Cleaners, Except Maids and Housekeeping Cleaners": "Janitors",
+    "Heavy and Tractor-Trailer Truck Drivers": "Truck drivers",
+    "Accountants and Auditors": "Accountants",
+    "Lawyers": "Lawyers",
+    "Credit Analysts": "Credit analysts",
+    "Secondary School Teachers, Except Special and Career/Technical Education": "Secondary teachers",
+    "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products": "Wholesale sales reps",
+    "Management Analysts": "Management analysts",
     "Computer User Support Specialists": "User support",
     "Customer Service Representatives": "Customer service",
     "Software Quality Assurance Analysts and Testers": "Software QA",
@@ -296,6 +312,53 @@ def timeline_data(runs):
             dates = list(r1.date)
             series.append({"name": occ_short(o), "S1": [round(100 * v, 2) for v in r1.S],
                            "S5": [round(100 * v, 2) for v in r5.S]})
+    return {"dates": dates, "series": series, "today": TODAY}
+
+
+GROUP_ORDER = [("negative", "Negative controls"), ("white_collar", "Other white-collar"), ("bpo", "IT and BPO"),
+               ("pilot", "Pilot"), ("positive", "Positive controls")]
+GROUP_COL = {"negative": "#7a7268", "white_collar": "#8f68a6", "bpo": "#235fa6", "pilot": "#2f8a57", "positive": "#b0702a"}
+
+
+def group_of(pilot, bpo, comp):
+    g = {o: "pilot" for o in pilot.occs}
+    if bpo:
+        g.update({o: "bpo" for o in bpo.occs})
+    if comp:
+        ct = pd.read_csv(DS / "data" / "comparison_tasks.csv")
+        m = dict(zip(ct.occupation_title, ct.control_group))
+        g.update({o: m[o] for o in comp.occs})
+    return g
+
+
+def groups_data(runs, groups):
+    rows = []
+    for run in runs:
+        for o in run.occs:
+            rows.append({"g": groups[o], "occ": occ_short(o), "S1": round(100 * run.agg[(BASE, o)]["S"], 2),
+                         "S5": round(100 * run.agg[(RHO5, o)]["S"], 2)})
+    order = [k for k, _ in GROUP_ORDER]
+    rows.sort(key=lambda r: (order.index(r["g"]), r["S1"]))
+    return {"rows": rows, "labels": dict(GROUP_ORDER), "cols": GROUP_COL}
+
+
+def group_timeline_data(runs, groups):
+    """Unweighted mean of occupation S within each group, by month."""
+    acc, dates = {}, None
+    for run in runs:
+        tl = pd.read_csv(DS / "coding" / "stage2" / run.name / "delegable" / "timeline.csv")
+        for o in run.occs:
+            for sc, key in ((BASE, "S1"), (RHO5, "S5")):
+                r = tl[(tl.scenario == sc) & (tl.occupation == o)].sort_values("months_from_today")
+                dates = list(r.date)
+                acc.setdefault((groups[o], key), []).append(list(r.S))
+    series = []
+    for k, lab in GROUP_ORDER:
+        if (k, "S1") not in acc:
+            continue
+        mean = lambda L: [round(100 * sum(x) / len(x), 2) for x in zip(*L)]  # noqa: E731
+        series.append({"name": f"{lab} ({len(acc[(k, 'S1')])})", "S1": mean(acc[(k, "S1")]), "S5": mean(acc[(k, "S5")]),
+                       "col": GROUP_COL[k]})
     return {"dates": dates, "series": series, "today": TODAY}
 
 
@@ -549,7 +612,7 @@ def fig(name, title="", legend="", note=""):
             + '</div><figcaption>{caption}</figcaption></figure>')
 
 
-def figure_shells(pilot, bpo):
+def figure_shells(pilot, bpo, comp=None):
     rho = sw("#235fa6") + "ρ = 1</span>" + sw("#9fb8d6") + "ρ = 0.5 for test- and state-graded benchmarks</span>"
     types = "".join(sw(TYPE_CSS[t]) + TYPE_LAB[t] + "</span>" for t in TYPES)
     item_types = (sw(TYPE_CSS["DISCRETE"]) + "Discrete</span>" + sw(TYPE_CSS["LIVE_SERVICE"]) + "Live service</span>"
@@ -576,6 +639,10 @@ def figure_shells(pilot, bpo):
     }
     runs_occs = pilot.occs + (bpo.occs if bpo else [])
     shells["timeline"] = fig("timeline", "S over time, % of unassisted hours (horizons moved along the pooled trend)", occ_legend(runs_occs))
+    grp_leg = "".join(sw(GROUP_COL[k]) + lab + "</span>" for k, lab in GROUP_ORDER) + sw("#8a7d6d", True) + "Hollow: ρ = 0.5</span>"
+    shells["groups"] = fig("groups", "S by occupation, % of unassisted hours (filled: ρ = 1; hollow: ρ = 0.5)", grp_leg)
+    shells["group_timeline"] = fig("group_timeline", "S over time, average of the occupations in each group (pooled trend)",
+                                   "".join(sw(GROUP_COL[k]) + lab + "</span>" for k, lab in GROUP_ORDER))
     shells["trend"] = fig("trend", "Horizon of the best model released so far, by release date (log scale)")
     if bpo:
         shells["bpo_headline"] = fig("bpo_headline", "BPO occupations, % of unassisted hours", rho)
@@ -976,7 +1043,7 @@ function figTimeline(id, d) {
   [["1", "ρ = 1"], ["5", "ρ = 0.5 for test- and state-graded benchmarks"]].forEach(([r, nm], i) => {
     const k = i ? "2" : "", p = twoPanels(narrow, i, gap);
     d.series.forEach((q, j) => traces.push({ type: "scatter", mode: "lines", x: d.dates, y: q["S" + r], xaxis: "x" + k, yaxis: "y" + k,
-      line: { color: OCC_COL[j % OCC_COL.length], width: 2 }, name: q.name,
+      line: { color: q.col || OCC_COL[j % OCC_COL.length], width: q.col ? 3 : 2 }, name: q.name,
       hovertemplate: q.name + ", %{x|%b %Y}: S = %{y:.0f}%<extra></extra>" }));
     lay["xaxis" + k] = axis({ domain: p.x, anchor: "y" + k, type: "date", tickformat: "%b %Y", nticks: narrow ? 4 : 5 });
     lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, range: [0, 70], ticksuffix: "%", dtick: 10 });
@@ -990,6 +1057,26 @@ function figTimeline(id, d) {
 }
 
 const TREND_COL = ["#235fa6", "#b0702a", "#2f8a57", "#c0607e", "#8f68a6", "#ae8a2c", "#4fa3c7", "#5c5c5c"];
+/* S for every occupation, grouped (dot plot); filled = rho 1, hollow = rho 0.5 */
+function figGroups(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, traces = [];
+  const ys = d.rows.map(r => r.occ);
+  Object.keys(d.labels).forEach(g => {
+    const rs = d.rows.filter(r => r.g === g);
+    if (!rs.length) return;
+    traces.push({ type: "scatter", mode: "markers", y: rs.map(r => r.occ), x: rs.map(r => r.S5), name: d.labels[g] + ", ρ = 0.5",
+      marker: { size: 9, color: "rgba(0,0,0,0)", line: { color: d.cols[g], width: 1.8 } }, showlegend: false,
+      hovertemplate: "%{y}: S = %{x:.0f}%<extra>ρ = 0.5</extra>" });
+    traces.push({ type: "scatter", mode: "markers", y: rs.map(r => r.occ), x: rs.map(r => r.S1), name: d.labels[g],
+      marker: { size: 10, color: d.cols[g] }, hovertemplate: "%{y}: S = %{x:.0f}%<extra>ρ = 1</extra>" });
+  });
+  draw(el, traces, { hovermode: "closest", height: 60 + 19 * ys.length, margin: { l: narrow ? 128 : 150, r: 12, t: 8, b: 36 },
+    showlegend: false,
+    xaxis: axis({ range: [0, 45], ticksuffix: "%", dtick: 10 }),
+    yaxis: axis({ type: "category", categoryarray: ys, categoryorder: "array", autorange: "reversed", ticks: "", tickfont: small(11.5) }) });
+  el.dataset.narrow = narrow;
+}
+
 /* record-setting horizon by model release date, per benchmark (log scale) */
 function figTrend(id, d) {
   const el = document.getElementById(id), narrow = W(el) < 640;
@@ -1004,12 +1091,12 @@ function figTrend(id, d) {
   el.dataset.narrow = narrow;
 }
 
-const FIGS = { timeline: figTimeline, trend: figTrend, headline: figHeadline, bpo_headline: figHeadline, mechanism: figMechanism, dvs: figDvS, items: figItems, bpo_items: figItems,
+const FIGS = { groups: figGroups, group_timeline: figTimeline, timeline: figTimeline, trend: figTrend, headline: figHeadline, bpo_headline: figHeadline, mechanism: figMechanism, dvs: figDvS, items: figItems, bpo_items: figItems,
   scenarios: figScenarios, types: figTypes, coverage: figCoverage, horizons: figHorizons, timing: figTiming };
 const CHARTS = {};
 Object.keys(DATA).forEach(k => { CHARTS["chart-" + k] = () => FIGS[k]("chart-" + k, DATA[k]); });
 """
-JS_FIGS = {"timeline", "trend", "headline", "bpo_headline", "mechanism", "dvs", "items", "bpo_items", "scenarios", "types", "coverage", "horizons", "timing"}
+JS_FIGS = {"groups", "group_timeline", "timeline", "trend", "headline", "bpo_headline", "mechanism", "dvs", "items", "bpo_items", "scenarios", "types", "coverage", "horizons", "timing"}
 
 EXTRA_CSS = """
 /* this page */
@@ -1038,6 +1125,9 @@ def main():
             bpo = Run(args[1])
         else:
             print(f"BPO run {args[1]}: {p.relative_to(REPO)} not found; showing the in-progress note")
+    comp = None
+    if len(args) > 2 and (DS / "coding" / "stage2" / args[2] / "delegable" / "items.csv").exists():
+        comp = Run(args[2])
 
     raw = TEXT.read_text(encoding="utf-8")
     fm, body = raw[3:].split("\n---", 1)
@@ -1062,6 +1152,10 @@ def main():
             "items": items_data(pilot), "scenarios": scenarios_data(pilot), "types": types_data(pilot),
             "coverage": coverage_data(pilot), "horizons": horizons_data(pilot), "timing": timing_data()}
     gentables = {"summary": lambda: gt_summary(pilot), "match": lambda: gt_match(pilot), "items": lambda: gt_items(pilot)}
+    runs_all = [pilot] + ([bpo] if bpo else []) + ([comp] if comp else [])
+    groups = group_of(pilot, bpo, comp)
+    data["groups"] = groups_data(runs_all, groups)
+    data["group_timeline"] = group_timeline_data(runs_all, groups)
     data["timeline"] = timeline_data([pilot] + ([bpo] if bpo else []))
     data["trend"] = trend_data([pilot] + ([bpo] if bpo else []))
     if bpo:
@@ -1070,16 +1164,16 @@ def main():
         gentables["bpo_summary"] = lambda: gt_summary(bpo)
 
     repo = f'<a href="{REPO_URL}">{REPO_URL.replace("https://", "")}</a>'
-    doc = Doc({"repo": repo}, notes, figure_shells(pilot, bpo), gentables, bpo is not None)
+    doc = Doc({"repo": repo}, notes, figure_shells(pilot, bpo, comp), gentables, bpo is not None)
     main_html = doc.render(body.splitlines())
     missing = [k for k in doc.order if k not in notes]
     assert not missing, f"undefined footnotes: {missing}"
     unused = [k for k in notes if k not in doc.order]
     assert not unused, f"unused footnotes: {unused}"
     notes_html = "".join(f'<li id="note-{k}">{doc.inl(notes[k])}</li>' for k in doc.order)
-    runs = f"<code>{pilot.name}</code>" + (f" and <code>{bpo.name}</code>" if bpo else "")
+    runs = ", ".join(f"<code>{r.name}</code>" for r in [pilot, bpo, comp] if r)
     main_html += (f'<details class="app" id="notes"><summary>All notes</summary><div><ol class="notes">{notes_html}</ol></div></details>'
-                  f'<p class="footer">Built from <code>delegable_share/page_text.md</code> and the CSVs of run {runs} by '
+                  f'<p class="footer">Built from <code>delegable_share/page_text.md</code> and the CSVs of runs {runs} by '
                   '<code>delegable_share/scripts/build_page.py</code>.</p>')
 
     used = re.findall(r'id="chart-(\w+)"', main_html)

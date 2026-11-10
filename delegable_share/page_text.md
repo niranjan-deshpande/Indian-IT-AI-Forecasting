@@ -91,7 +91,17 @@ Everything else comes from LLMs reading O\*NET. Two Claude models and one GPT mo
 **Figure 4.** S and D for the pilot occupations as one setting changes at a time, as of {{today_long}}.
 :::
 
-Next, I am running sixteen comparison occupations, including some that should come out high (translators, proofreaders) and some that should come out near zero (electricians, janitors).
+## Comparison occupations
+
+To check the measure, I also ran sixteen occupations picked by hand: five that should come out high (translators, proofreaders, technical writers, paralegals, tax preparers), five that should come out near zero (electricians, nurses, childcare workers, janitors, truck drivers), and six other white-collar jobs. The controls separate, and the IT and BPO occupations sit between them.
+
+::: figure groups
+**Figure 5.** S for every occupation, as of {{today_long}}.
+:::
+
+::: figure group_timeline
+**Figure 6.** S over time, averaged within each group, on the same pooled trend as Figure 3.
+:::
 
 [^live]: Nobody checks a call before the customer hears it. So for live work the firm reviews a sample of contacts, and a failed contact adds a cost for the customer's bad experience, set to {{lam}} times the contact's length.
 [^fit]: The slope of success against log length is fixed at METR's estimate. Only the horizon is fitted, so that the predicted success over a sample of 24 items matches each model's overall score.

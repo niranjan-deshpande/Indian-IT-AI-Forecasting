@@ -1,0 +1,121 @@
+[
+ {"task_id": "1839", "reasoning": "Nurses' charting is relied on by the oncoming nurse, physicians and auditors, and is handed over per patient per shift; the patient is not waiting on it as a customer would, so LIVE_SERVICE does not fit bedside entries. Y's single DISCRETE unit matches how documentation is handed over (task_id should be read as the string \"1839\").", "choice": "Y"},
+ {"task_id": "1840", "reasoning": "Monitoring a patient is hands-on bedside observation and assessment, while recording and reporting a change ends in a documented escalation a provider acts on, so the instructions call for a physical/desk split. X has the right PHYSICAL part but divides the charting into LIVE_SERVICE and DISCRETE, though the patient is not a waiting customer. Y has the right deliverable but drops the bedside work. The revision combines X's PHYSICAL part with Y's escalation item.", "choice": "revised",
+  "coding": {
+   "task_id": "1840",
+   "split_reasoning": "Monitoring at the bedside is hands-on work, while recording and reporting a change in condition produces a documented escalation that a provider acts on; the activity is partly physical and partly at a computer or phone.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Observe and assess a patient at the bedside for symptoms or changes in condition.",
+     "time_share": 0.5,
+     "type_reasoning": "Bedside observation and assessment need the nurse physically with the patient.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["1841", "1845", "20413"]
+    },
+    {
+     "part_id": "b",
+     "text": "Record a change in a patient's condition and report it to the responsible provider or charge nurse.",
+     "time_share": 0.5,
+     "type_reasoning": "Each change ends in a charted and reported event that a provider acts on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Changes are documented and escalated one event at a time, by note, page or call.",
+     "work_item": "one change in a patient's condition recorded and reported",
+     "start": "nurse identifies a symptom or change",
+     "end": "provider or charge nurse informed and the event documented",
+     "checked_by": "physician; charge nurse; oncoming nurse",
+     "duplicates": [],
+     "overlaps_with": ["1839", "1841", "1843", "1852"]
+    }
+   ],
+   "notes": "Routine shift charting of findings is covered by 1839; this part covers changes that are escalated."
+  }},
+ {"task_id": "1841", "reasoning": "Recording vital signs in practice includes taking them, which is hands-on work with the patient, so the instructions call for a physical/desk split; Y codes the whole as DISCRETE although its own text includes measuring. X splits the charting into LIVE_SERVICE and DISCRETE, but the patient is not waiting on the entry. The revision keeps the physical measurement and a single charting item.", "choice": "revised",
+  "coding": {
+   "task_id": "1841",
+   "split_reasoning": "Taking vital signs is hands-on work with the patient, while entering them and other medical information in the chart is computer work; the activity is partly physical.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Measure a patient's vital signs with monitoring equipment.",
+     "time_share": 0.4,
+     "type_reasoning": "Taking vital signs needs hands-on use of equipment on the patient.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["1840", "1845", "1847"]
+    },
+    {
+     "part_id": "b",
+     "text": "Enter a patient's vital signs and medical information (history, allergies, admission data) in the record.",
+     "time_share": 0.6,
+     "type_reasoning": "Produces charted values and information the care team relies on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Vitals are charted per patient per round, and admission or history information per patient intake.",
+     "work_item": "one patient's set of vital signs or medical information entered in the chart",
+     "start": "measurements taken or information obtained from the patient",
+     "end": "values and information saved in the record",
+     "checked_by": "care team; physician; oncoming nurse",
+     "duplicates": [],
+     "overlaps_with": ["1839", "1840"]
+    }
+   ],
+   "notes": "Charting is often done at the bedside, but the patient is not waiting on it, so it is coded DISCRETE."
+  }},
+ {"task_id": "1843", "reasoning": "Interdisciplinary rounds and care conferences are live discussions with nothing separately checked, while a nurse's patient-specific consult with a physician ends in an agreed plan or order others rely on. These are different kinds of item, so Y's split is the better fit.", "choice": "Y"},
+ {"task_id": "1845", "reasoning": "Monitoring care is ongoing work, done partly at the bedside (hands-on checks of diet, activity and care) and partly by reviewing charted intake, activity and care records. Y's split into PHYSICAL and DISCRETE parts follows the partly-physical rule; X treats the whole as a documented round.", "choice": "Y"},
+ {"task_id": "1846", "reasoning": "Most direction and supervision is live oversight, but charge nurses also produce a shift assignment sheet that staff follow and managers check. X captures that discrete deliverable; Y folds it into interaction.", "choice": "X"},
+ {"task_id": "1848", "reasoning": "Observing nurses and visiting patients are both supervisory quality rounding, valued in the live observation and feedback rather than hands-on work. X's PHYSICAL label for patient visits misreads them, since talking to and observing patients is not manual work; Y's single INTERPERSONAL part fits.", "choice": "Y"},
+ {"task_id": "1849", "reasoning": "Needs assessments involve on-site visits (examining the person, interviewing, inspecting the home or workplace) and end in a written assessment; community assessments are desk work. X misses the physical visit, and Y codes the interview as LIVE_SERVICE with no written assessment for individuals. The revision splits the on-site visit, the individual write-up and the community assessment.", "choice": "revised",
+  "coding": {
+   "task_id": "1849",
+   "split_reasoning": "Individual and family assessments involve an on-site visit (examination, interview, inspection of the home or work environment) followed by a written assessment; community assessments are a different kind of item done from data at a desk.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Visit a person or family to examine them, interview them and inspect the home or work environment for health and safety problems.",
+     "time_share": 0.4,
+     "type_reasoning": "The visit needs the nurse on site, examining the person and inspecting the environment, away from a computer.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["1840", "1856"]
+    },
+    {
+     "part_id": "b",
+     "text": "Write up an individual or family health and safety needs assessment after the visit.",
+     "time_share": 0.35,
+     "type_reasoning": "Produces a documented assessment the care team and nurse manager plan from.",
+     "type": "DISCRETE",
+     "unit_reasoning": "One assessment is written up per client, family or worksite.",
+     "work_item": "one individual or family needs assessment documented",
+     "start": "visit findings and history gathered",
+     "end": "assessment with identified risks and needs filed and shared",
+     "checked_by": "nurse manager; care team; referring provider",
+     "duplicates": [],
+     "overlaps_with": ["1839", "1863"]
+    },
+    {
+     "part_id": "c",
+     "text": "Assess a community's health and safety needs from available data and report priorities.",
+     "time_share": 0.25,
+     "type_reasoning": "Produces a needs assessment that program planners use.",
+     "type": "DISCRETE",
+     "unit_reasoning": "A needs assessment for one defined community is handed over as a whole.",
+     "work_item": "one community health needs assessment",
+     "start": "assessment scope and data sources identified",
+     "end": "needs and priorities documented and shared",
+     "checked_by": "public health or community program team",
+     "duplicates": [],
+     "overlaps_with": ["1850", "1865"]
+    }
+   ],
+   "notes": "Mostly community, home-health or occupational health nurses; shares vary widely by role."
+  }},
+ {"task_id": "1852", "reasoning": "Each intraoperative status report is information the physician relies on and acts on immediately, like an escalation in 1840, not interaction valued for itself. Y's DISCRETE coding is preferred, though the item is small and closely tied to anesthesia monitoring (1854).", "choice": "Y"},
+ {"task_id": "1857", "reasoning": "Running a lab test is hands-on specimen work, and entering or releasing the result is a separate computer step whose record clinicians rely on. Y follows the instruction to split work that is partly physical and partly at a computer.", "choice": "Y"},
+ {"task_id": "1859", "reasoning": "Advanced practice nurses often prescribe or recommend treatment during the patient visit, and also afterwards from results or messages; both shares are substantial. Y's split by place follows the instructions (Example D).", "choice": "Y"},
+ {"task_id": "1861", "reasoning": "A unit budget and a unit operating or long-range plan are different deliverables on different cycles with different reviewers, and day-to-day staff management is interpersonal. Y's three parts separate them; X merges budget and plans into one item.", "choice": "Y"},
+ {"task_id": "1863", "reasoning": "Referrals are often discussed and placed during the visit with the patient or student present, and also prepared and sent afterwards through forms or EHR orders. X's split by place follows the instructions.", "choice": "X"},
+ {"task_id": "1866", "reasoning": "Nursing research joins distinct activities (protocol development, hands-on data collection, analysis and reporting) with different deliverables, and data collection is often physical. Y's split follows the instructions; X's generic 'one research deliverable' is too vague to time.", "choice": "Y"},
+ {"task_id": "20413", "reasoning": "Giving a medication and watching the patient for reactions are both bedside hands-on work in the same medication pass; charting the administration and reporting reactions are covered by 1839 and 1840. Y codes bedside monitoring as a DISCRETE record, which double counts the documentation, so X is preferred.", "choice": "X"}
+]

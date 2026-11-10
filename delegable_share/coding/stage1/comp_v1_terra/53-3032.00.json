@@ -1,0 +1,650 @@
+[
+ {
+  "task_id": "10635",
+  "split_reasoning": "This is one cross-cutting activity of following dangerous-goods safety procedures during transport.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow required safety procedures when transporting dangerous goods.",
+    "time_share": 1.0,
+    "type_reasoning": "The procedures are applied in hands-on transport work rather than producing a separate deliverable.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641",
+     "10642",
+     "20692",
+     "20693"
+    ]
+   }
+  ],
+  "notes": "Safety procedures vary by cargo and can be embedded in driving, securing loads, inspection and documentation."
+ },
+ {
+  "task_id": "10636",
+  "split_reasoning": "Checking the vehicle and its equipment is one inspection activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect the vehicle and its mechanical, safety and emergency equipment for working condition.",
+    "time_share": 1.0,
+    "type_reasoning": "The inspection requires hands-on checks around the vehicle.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10644",
+     "10658"
+    ]
+   }
+  ],
+  "notes": "Reporting defects is separately covered by task 10644."
+ },
+ {
+  "task_id": "10637",
+  "split_reasoning": "Hours-of-service logs and vehicle service or repair status logs are different records maintained for different purposes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain a compliant log of working hours.",
+    "time_share": 0.8,
+    "type_reasoning": "The driver completes a log record that others rely on for compliance.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A daily hours-of-service record is a practical unit reviewed as a whole.",
+    "work_item": "one daily hours-of-service log",
+    "start": "duty-status information becomes available during the workday",
+    "end": "the day's log is completed and certified",
+    "checked_by": "carrier compliance staff and roadside inspectors",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain a log of vehicle service or repair status.",
+    "time_share": 0.2,
+    "type_reasoning": "Each status entry creates a record for maintenance and compliance staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A service or repair status update is recorded and relied on as an individual entry.",
+    "work_item": "one vehicle service or repair status entry",
+    "start": "service or repair status information becomes available",
+    "end": "the status is entered in the vehicle log",
+    "checked_by": "maintenance staff and carrier compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "10644"
+    ]
+   }
+  ],
+  "notes": "Shares depend on carrier procedures and how much maintenance logging the driver performs."
+ },
+ {
+  "task_id": "10638",
+  "split_reasoning": "Obtaining delivery acknowledgment and collecting payment are different activities performed at delivery.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain a receipt or signature acknowledging delivered goods.",
+    "time_share": 0.7,
+    "type_reasoning": "The acknowledgment is obtained from the recipient during the delivery contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A signed or otherwise acknowledged delivery document is the handoff for one delivery.",
+    "work_item": "one delivery acknowledgment obtained",
+    "start": "the driver presents the delivery document to the recipient",
+    "end": "the recipient signs or provides a receipt and the driver has the acknowledgment",
+    "checked_by": "the recipient and the carrier's delivery or billing staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Collect payment for delivery services when required.",
+    "time_share": 0.3,
+    "type_reasoning": "Payment is collected from the customer during the delivery contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One payment collected and confirmed is the transaction relied on by billing staff.",
+    "work_item": "one delivery payment collected",
+    "start": "payment is requested or presented at delivery",
+    "end": "payment is accepted and acknowledged to the customer",
+    "checked_by": "the customer and the carrier's billing staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The payment share depends on how often the carrier requires payment at delivery."
+ },
+ {
+  "task_id": "10640",
+  "split_reasoning": "Positioning the truck for loading or unloading is one maneuver, using signals and position checks.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maneuver and position the truck for loading or unloading.",
+    "time_share": 1.0,
+    "type_reasoning": "Positioning the vehicle is physical driving work at the loading site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641",
+     "20696"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10641",
+  "split_reasoning": "Driving a heavy truck to transport cargo is one physical transport activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive a heavy truck or tractor-trailer to transport and deliver cargo.",
+    "time_share": 1.0,
+    "type_reasoning": "Driving requires operating the vehicle in the physical environment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10635",
+     "10640",
+     "20694"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10642",
+  "split_reasoning": "The listed ropes, blocks, chains, binders and covers are alternative means of securing cargo.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Secure cargo for transport using suitable restraints or covers.",
+    "time_share": 1.0,
+    "type_reasoning": "Securing cargo requires hands-on work with the load and restraints.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10635",
+     "20692",
+     "20697"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10643",
+  "split_reasoning": "Reading a bill of lading to understand the assignment is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read the bill of lading to determine assignment details.",
+    "time_share": 1.0,
+    "type_reasoning": "Reading the existing document for the driver's own understanding does not itself produce a separate item for others to check.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "10647",
+     "20693"
+    ]
+   }
+  ],
+  "notes": "Checking documentation for completeness and accuracy is separately covered by task 20693."
+ },
+ {
+  "task_id": "10644",
+  "split_reasoning": "Defects, accidents, violations and damage are different report subjects but use the same incident-reporting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Report a vehicle defect, accident, traffic violation or vehicle damage.",
+    "time_share": 1.0,
+    "type_reasoning": "Each reported issue produces information that the carrier uses to act on the event.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual issue or incident is reported and handled as a whole.",
+    "work_item": "one vehicle or driving incident report",
+    "start": "the driver identifies a defect or an incident occurs",
+    "end": "the required details are reported to the carrier or other designated recipient",
+    "checked_by": "supervisor, maintenance staff or carrier safety staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "10636",
+     "10637",
+     "10650"
+    ]
+   }
+  ],
+  "notes": "Reports may be written or transmitted verbally, depending on the carrier and event."
+ },
+ {
+  "task_id": "10645",
+  "split_reasoning": "Reading and interpreting maps are means of determining a route, not separate activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use maps to determine a suitable vehicle route.",
+    "time_share": 1.0,
+    "type_reasoning": "The selected route is a distinct plan that the driver uses for the trip.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A route for one trip or trip segment is the usable result of the map work.",
+    "work_item": "one map-based route for a trip or trip segment",
+    "start": "origin, destination and relevant route constraints are known",
+    "end": "a route is selected for use",
+    "checked_by": "the driver and, when shared, dispatch",
+    "duplicates": [],
+    "overlaps_with": [
+     "10647",
+     "19923"
+    ]
+   }
+  ],
+  "notes": "The route may be a mental or marked-up plan rather than a document sent to dispatch."
+ },
+ {
+  "task_id": "10646",
+  "split_reasoning": "Connecting or disconnecting the listed components are steps in coupling or uncoupling a trailer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Couple or uncouple a trailer, including its landing gear, lines and fifth-wheel lock.",
+    "time_share": 1.0,
+    "type_reasoning": "The task requires hands-on manipulation of the tractor and trailer equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10651"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10647",
+  "split_reasoning": "Collecting and verifying instructions and routes is one activity that produces a usable set of delivery instructions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect and verify delivery instructions and routes from the appropriate sources.",
+    "time_share": 1.0,
+    "type_reasoning": "The resulting verified instructions are a distinct set of information used to make a delivery.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Instructions are gathered and verified for an individual delivery assignment.",
+    "work_item": "one delivery assignment's verified instructions",
+    "start": "a delivery assignment requires instructions or clarification",
+    "end": "the relevant instructions and route are obtained and verified for use",
+    "checked_by": "the driver and dispatch or the delivery site when clarification is needed",
+    "duplicates": [],
+    "overlaps_with": [
+     "10643",
+     "10645",
+     "19923",
+     "20695"
+    ]
+   }
+  ],
+  "notes": "Instructions may be received verbally or in writing; this item concerns obtaining and verifying them rather than a separate route-planning exercise."
+ },
+ {
+  "task_id": "10650",
+  "split_reasoning": "Inspecting an unloaded trailer for damage is one physical inspection activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect an unloaded trailer for damage.",
+    "time_share": 1.0,
+    "type_reasoning": "The driver physically checks the trailer after unloading.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10644"
+    ]
+   }
+  ],
+  "notes": "Reporting any damage is separately covered by task 10644."
+ },
+ {
+  "task_id": "10651",
+  "split_reasoning": "Raising or lowering landing gear are alternative directions of the same equipment operation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Crank trailer landing gear up or down to secure the vehicle.",
+    "time_share": 1.0,
+    "type_reasoning": "Cranking landing gear is hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10646"
+    ]
+   }
+  ],
+  "notes": "Landing-gear operation is also a step in some coupling and uncoupling work."
+ },
+ {
+  "task_id": "10653",
+  "split_reasoning": "Adding fluids, making minor repairs and washing the truck are different kinds of maintenance work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Add fuel, oil or other vehicle fluids.",
+    "time_share": 0.5,
+    "type_reasoning": "Replenishing fluids requires hands-on work at the vehicle.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Perform minor vehicle repairs.",
+    "time_share": 0.3,
+    "type_reasoning": "Minor repairs require hands-on work on vehicle components.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20662"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Wash the truck.",
+    "time_share": 0.2,
+    "type_reasoning": "Washing is physical cleaning work on the vehicle.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary substantially by carrier and vehicle. Task 10662 overlaps with minor repairs when they are performed as emergency roadside repairs."
+ },
+ {
+  "task_id": "10655",
+  "split_reasoning": "Checking quantity and condition are components of the same inspection and inventory of goods to be moved.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inventory and inspect goods to be moved for quantity and condition.",
+    "time_share": 1.0,
+    "type_reasoning": "Counting and inspecting the goods requires physical examination of the load.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20693"
+    ]
+   }
+  ],
+  "notes": "Any separate damage or discrepancy report is not specified by this target."
+ },
+ {
+  "task_id": "10656",
+  "split_reasoning": "Removing debris from loaded trailers is one cleaning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Remove debris from a loaded trailer.",
+    "time_share": 1.0,
+    "type_reasoning": "Removing debris requires hands-on work in or around the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10658",
+  "split_reasoning": "Checking refrigeration equipment and providing food or water to livestock are different cargo-care activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check refrigeration systems for temperature-sensitive cargo.",
+    "time_share": 0.6,
+    "type_reasoning": "Checking the refrigeration system involves physical inspection of equipment on the vehicle.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10636"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Provide food or water to livestock in transit.",
+    "time_share": 0.4,
+    "type_reasoning": "Feeding and watering livestock requires hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on the mix of refrigerated and livestock hauling."
+ },
+ {
+  "task_id": "10659",
+  "split_reasoning": "Giving directions to packing and loading laborers is one supervisory interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct laborers packing goods and moving them onto trailers.",
+    "time_share": 1.0,
+    "type_reasoning": "The work consists of live direction to the laborers rather than a separate deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20696"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10660",
+  "split_reasoning": "Installing and removing the listed special equipment are related hands-on equipment-change activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install or remove special vehicle equipment such as chains, blades or sanders.",
+    "time_share": 1.0,
+    "type_reasoning": "Installing or removing equipment requires physical manipulation of vehicle hardware.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10662"
+    ]
+   }
+  ],
+  "notes": "Installing chains during an emergency roadside repair also falls under task 10662."
+ },
+ {
+  "task_id": "10662",
+  "split_reasoning": "The examples are different methods of performing the same general activity of emergency roadside repair.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform emergency roadside repairs or install needed roadside equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Roadside repair and installation require hands-on work on the vehicle.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10653",
+     "10660"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19922",
+  "split_reasoning": "The listed systems and purposes are alternative uses of the same activity of operating auxiliary or idle-reduction power.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate idle-reduction or auxiliary power equipment for the truck's power or climate needs.",
+    "time_share": 1.0,
+    "type_reasoning": "The driver physically operates vehicle equipment rather than producing a separate deliverable.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19923",
+  "split_reasoning": "Planning and adjusting a route are the same route-selection activity performed at different times, using alternative navigation tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan or adjust a route for changing conditions and fuel efficiency using navigation equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a selected or revised route for the trip.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A route or route revision for one trip segment is the usable planning output.",
+    "work_item": "one planned or adjusted route",
+    "start": "a trip requires a route or changing conditions require a revision",
+    "end": "a suitable route is selected for use",
+    "checked_by": "the driver and, when shared, dispatch",
+    "duplicates": [],
+    "overlaps_with": [
+     "10645",
+     "10647"
+    ]
+   }
+  ],
+  "notes": "The route may remain in the navigation device or be used by the driver without a separate written handoff."
+ },
+ {
+  "task_id": "20692",
+  "split_reasoning": "Inspecting cargo security is one load-checking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect a load to ensure the cargo is secure.",
+    "time_share": 1.0,
+    "type_reasoning": "The driver physically examines the cargo and its restraints.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10635",
+     "10642",
+     "20697"
+    ]
+   }
+  ],
+  "notes": "Securing or correcting the load is separately covered by tasks 10642 and 20697."
+ },
+ {
+  "task_id": "20693",
+  "split_reasoning": "Completeness and accuracy are two checks applied to the same load-documentation review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a load's documentation for completeness and accuracy.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a checked set of documents used for the load.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The documents for one load are checked together for the assignment.",
+    "work_item": "one load's documentation checked",
+    "start": "load-related documents are received for review",
+    "end": "the documents are checked and discrepancies identified for correction",
+    "checked_by": "the driver, dispatch and receiving or compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "10635",
+     "10643",
+     "10655"
+    ]
+   }
+  ],
+  "notes": "The target does not necessarily include correcting discrepancies or submitting a separate report."
+ },
+ {
+  "task_id": "20694",
+  "split_reasoning": "Driving to weigh stations before, after or during a trip is the same compliance-related driving activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive the truck to required weigh stations before and after loading or along the route.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is physical operation of the truck to reach weigh stations.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641"
+    ]
+   }
+  ],
+  "notes": "The target specifies driving to the stations, not preparation of a separate weight report."
+ },
+ {
+  "task_id": "20695",
+  "split_reasoning": "Information is exchanged both in live conversations and through written dispatch messages, which are different work products.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Exchange necessary information with dispatch, supervisors or drivers in live calls or radio conversations.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live operational conversation with colleagues.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10647"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send necessary operational information to dispatch, supervisors or drivers in a written message.",
+    "time_share": 0.4,
+    "type_reasoning": "A written operational message is a distinct item the recipient can rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual operational update or request is sent and read as a whole.",
+    "work_item": "one operational message sent",
+    "start": "the driver has information to transmit or a written request to answer",
+    "end": "the message is sent to the intended recipient",
+    "checked_by": "dispatch, a supervisor or the receiving driver",
+    "duplicates": [],
+    "overlaps_with": [
+     "10647"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the carrier's mix of radio, phone and in-cab messaging."
+ },
+ {
+  "task_id": "20696",
+  "split_reasoning": "Loading and unloading are opposite directions of the same physical cargo-handling activity, with or without assistance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load or unload a truck, or assist others with the work, using appropriate equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Moving cargo and operating loading equipment require hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10640",
+     "10659",
+     "20697"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20697",
+  "split_reasoning": "Wrapping and securing goods are related physical preparation steps for protecting and restraining the load.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wrap and secure goods using protective packing and restraints.",
+    "time_share": 1.0,
+    "type_reasoning": "Wrapping and securing goods require hands-on work with packing materials and restraints.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10642",
+     "20692",
+     "20696"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

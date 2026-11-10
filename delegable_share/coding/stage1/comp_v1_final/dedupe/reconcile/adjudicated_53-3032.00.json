@@ -1,0 +1,1 @@
+[{"a": "10645a", "b": "19923a", "reasoning": "19923a explicitly starts from a new assignment and ends with a route set, which is exactly 10645a's work of choosing a route for a delivery before driving (maps versus GPS is only the tool), so initial route planning would be counted twice.", "duplicate": true}]

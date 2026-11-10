@@ -1,0 +1,132 @@
+{
+ "27-3091.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "9328a",
+    "b": "9335a",
+    "flagged_by": "claude",
+    "reasoning": "Both are one live interpreting session from the first utterance to the end of the session, with the same work done.",
+    "text": "[9328a] LIVE_SERVICE \u2014 one interpreting assignment (a meeting, appointment, hearing or conference session) (start: assignment begins and first utterance is interpreted; end: session ends and parties are finished) \u2014 from statement: Translate messages simultaneously or consecutively into specified languages, orally or by using hand signs, maintaining message content, context, and style as much as possible.\n[9335a] LIVE_SERVICE \u2014 one interpreting assignment (listening component) (start: speaker begins; end: speaker finishes and session ends) \u2014 from statement: Listen to speakers' statements to determine meanings and to prepare translations, using electronic listening systems as necessary."
+   }
+  ]
+ },
+ "43-9081.00": {
+  "agreed": [
+   [
+    "20908c",
+    "5159a"
+   ]
+  ],
+  "disputed": []
+ },
+ "27-3042.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "23-2011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-2082.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "7358a",
+    "b": "7359a",
+    "flagged_by": "claude",
+    "reasoning": "Computing tax and entering it on the forms during the appointment is essentially the whole of preparing the return during the appointment.",
+    "text": "[7358a] LIVE_SERVICE \u2014 One return's tax calculations and form entries made during an appointment (start: Required figures are available during the client appointment; end: Tax owed or overpaid is computed and entered on the forms during the appointment) \u2014 from statement: Compute taxes owed or overpaid, using adding machines or personal computers, and complete entries on forms, following tax form instructions and tax tables.\n[7359a] LIVE_SERVICE \u2014 one return prepared during a client appointment (start: client sits down with documents; end: return completed and client approves) \u2014 from statement: Prepare or assist in preparing simple to complex tax returns for individuals or small businesses."
+   },
+   {
+    "a": "7358b",
+    "b": "7359b",
+    "flagged_by": "claude",
+    "reasoning": "Computing tax and entering it on the forms in the office is essentially the whole of preparing the return from submitted documents.",
+    "text": "[7358b] DISCRETE \u2014 One return's tax calculations and form entries completed in the office (start: Required return figures are available for calculation; end: Tax owed or overpaid is computed and entered on the forms) \u2014 from statement: Compute taxes owed or overpaid, using adding machines or personal computers, and complete entries on forms, following tax form instructions and tax tables.\n[7359b] DISCRETE \u2014 one return prepared from submitted documents (start: documents received; end: return completed and ready for client review/signing) \u2014 from statement: Prepare or assist in preparing simple to complex tax returns for individuals or small businesses."
+   }
+  ]
+ },
+ "47-2111.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "29-1141.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "39-9011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "37-2011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "53-3032.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "10645a",
+    "b": "19923a",
+    "flagged_by": "claude",
+    "reasoning": "Both are choosing or setting a route for a trip from map or navigation tools, so one route determination is the same work as the other.",
+    "text": "[10645a] DISCRETE \u2014 one trip route determined (start: delivery assignment received; end: route chosen and ready to drive) \u2014 from statement: Read and interpret maps to determine vehicle routes.\n[19923a] DISCRETE \u2014 one route plan or adjustment made (start: condition change or new assignment; end: revised route set and ETA updated if needed) \u2014 from statement: Plan or adjust routes based on changing conditions, using computer equipment, global positioning systems (GPS) equipment, or other navigation devices, to minimize fuel consumption and carbon emissions."
+   }
+  ]
+ },
+ "13-2011.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "21514a",
+    "b": "21532a",
+    "flagged_by": "claude",
+    "reasoning": "Both are the preparation of one set of financial statements after period close, so the second is the same work as the first.",
+    "text": "[21514a] DISCRETE \u2014 one set of financial statements or reports (start: period closed; end: statements issued) \u2014 from statement: Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.\n[21532a] DISCRETE \u2014 one annual report or set of financial statements prepared (start: period-end accounting information and reporting requirements are available; end: report or statements are completed and submitted for review) \u2014 from statement: Prepare, analyze, or verify annual reports, financial statements, and other records, using accepted accounting and statistical procedures to assess financial condition and facilitate financial planning."
+   },
+   {
+    "a": "21514b",
+    "b": "21532b",
+    "flagged_by": "claude",
+    "reasoning": "Both are an examination of one set of financial statements or reports for accuracy and conformance, ending in documented conclusions.",
+    "text": "[21514b] DISCRETE \u2014 one set of statements reviewed (start: statements received; end: review signed off) \u2014 from statement: Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.\n[21532b] DISCRETE \u2014 one financial report analysis or verification (start: report or defined record set is received for analysis; end: analysis or verification conclusions are documented and communicated) \u2014 from statement: Prepare, analyze, or verify annual reports, financial statements, and other records, using accepted accounting and statistical procedures to assess financial condition and facilitate financial planning."
+   }
+  ]
+ },
+ "23-1011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-2041.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "25-2031.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "6642c",
+    "b": "6646b",
+    "flagged_by": "claude",
+    "reasoning": "Both are one batch of collected student work graded, with marks recorded and papers returned.",
+    "text": "[6642c] DISCRETE \u2014 one set of tests graded and returned (start: student work collected; end: marks recorded and papers returned) \u2014 from statement: Prepare, administer, and grade tests and assignments to evaluate students' progress.\n[6646b] DISCRETE \u2014 one batch of assignments graded (start: work collected; end: marks recorded and returned) \u2014 from statement: Assign and grade class work and homework."
+   },
+   {
+    "a": "6649a",
+    "b": "6653a",
+    "flagged_by": "claude",
+    "reasoning": "Both are the writing of lesson plans for upcoming instruction, one lesson versus a set, with the same inputs and output.",
+    "text": "[6649a] DISCRETE \u2014 one lesson plan (start: unit scheduled; end: plan complete) \u2014 from statement: Plan and conduct activities for a balanced program of instruction, demonstration, and work time that provides students with opportunities to observe, question, and investigate.\n[6653a] DISCRETE \u2014 one set of lesson plans for a class (start: upcoming unit or week; end: plans complete and filed) \u2014 from statement: Prepare for assigned classes, and show written evidence of preparation upon request of immediate supervisors."
+   }
+  ]
+ },
+ "41-4012.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-1111.00": {
+  "agreed": [],
+  "disputed": []
+ }
+}

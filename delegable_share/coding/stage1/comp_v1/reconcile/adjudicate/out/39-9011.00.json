@@ -1,0 +1,95 @@
+[
+ {"task_id": "2332", "reasoning": "Institutional childcare combines hands-on physical care (feeding, changing, lifting, escorting) with developmental and supportive interaction, which are different kinds of work. X's split shows that mix; Y labels the whole umbrella as PHYSICAL.", "choice": "X"},
+ {"task_id": "2335", "reasoning": "Spotting signs happens during in-person care, while raising the concern with parents happens either in conversation at pickup or a conference, or in a written note. X splits by activity and by where the work is done, as the instructions require; Y's own note concedes the live share.", "choice": "X"},
+ {"task_id": "2336", "reasoning": "Supervising children at play means being physically on the floor or playground and stepping in to keep children safe. It is not a meeting or teaching interaction, so PHYSICAL fits better than INTERPERSONAL, consistent with 2332 and 18762.", "choice": "X"},
+ {"task_id": "2339", "reasoning": "Reading aloud and teaching simple art, crafts and songs are examples of one activity, leading educational activities with children, and both parts would be INTERPERSONAL anyway. Y's single part is preferred.", "choice": "Y"},
+ {"task_id": "2344", "reasoning": "Sterilizing bottles and making formula are one bottle-feeding preparation routine, done together in the kitchen. Splitting two PHYSICAL parts adds nothing.", "choice": "Y"},
+ {"task_id": "2346", "reasoning": "Dressing and diapering are examples of one hands-on personal-care routine, so one PHYSICAL part is right, as in Y. Y's overlap list is empty, though, while the umbrella care statements and toileting instruction clearly overlap. The revision keeps Y's single part and adds those overlaps.", "choice": "revised",
+  "coding": {
+   "task_id": "2346",
+   "split_reasoning": "Dressing children and changing diapers are examples of one hands-on personal-care routine, so no split is needed.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Dress children and change diapers.",
+     "time_share": 1.0,
+     "type_reasoning": "Hands-on personal care of children, away from a computer.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["2332", "2338", "18763"]
+    }
+   ],
+   "notes": "Share of diapering depends on the children's ages."
+  }},
+ {"task_id": "2348", "reasoning": "Laundry, cleaning, dishwashing and changing linens are 'such as' examples of one category, housekeeping, so one PHYSICAL part is right, as in Y. Y's overlap list is empty, but the work overlaps sanitizing toys, keeping the play area safe, and bottle and meal work. The revision keeps Y's single part and adds those overlaps.", "choice": "revised",
+  "coding": {
+   "task_id": "2348",
+   "split_reasoning": "Laundry, cleaning, dishwashing and linen changes are listed examples of one category of housekeeping work, so no split is needed.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Do housekeeping in the childcare setting: laundry, cleaning, dish washing and changing linens.",
+     "time_share": 1.0,
+     "type_reasoning": "Hands-on housework away from a computer.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["2333", "2344", "18756", "18758"]
+    }
+   ],
+   "notes": "In centers some of this is done by janitorial or kitchen staff; in private homes it is a larger share."
+  }},
+ {"task_id": "18758", "reasoning": "Helping prepare and serve meals is one mealtime routine of hands-on food work. Splitting two PHYSICAL parts adds nothing, so Y's single part is preferred.", "choice": "Y"},
+ {"task_id": "18761", "reasoning": "Y rightly separates the attendance record for each session from editing internal documents, which X lumps into a vague daily batch. Calls, mostly with parents and guardians about absences, pickups or a sick child, settle a matter while the other party is on the line, so LIVE_SERVICE fits better than Y's INTERPERSONAL. The revision keeps Y's three parts and recodes the calls.", "choice": "revised",
+  "coding": {
+   "task_id": "18761",
+   "split_reasoning": "Taking attendance, editing internal paperwork and making administrative calls are different kinds of administrative work with different outputs.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Take and record children's attendance for a session.",
+     "time_share": 0.4,
+     "type_reasoning": "Produces an attendance record that staff, the director and licensing rely on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "The attendance record for one group and session is completed and relied on as a whole.",
+     "work_item": "one group attendance record for a session",
+     "start": "children arrive or the attendance check begins",
+     "end": "attendance recorded and filed for the session",
+     "checked_by": "director; licensing inspector",
+     "duplicates": [],
+     "overlaps_with": ["2337"]
+    },
+    {
+     "part_id": "b",
+     "text": "Edit internal childcare paperwork such as forms, logs or notices.",
+     "time_share": 0.35,
+     "type_reasoning": "Each edited document is returned or filed for internal use.",
+     "type": "DISCRETE",
+     "unit_reasoning": "A document is edited and returned or filed as a whole.",
+     "work_item": "one internal document edited",
+     "start": "document needing editing received or identified",
+     "end": "revised document returned or filed",
+     "checked_by": "director or document owner",
+     "duplicates": [],
+     "overlaps_with": []
+    },
+    {
+     "part_id": "c",
+     "text": "Make or take an administrative phone call, mostly with parents or guardians, to settle a practical matter (absence, pickup change, illness, payment question).",
+     "time_share": 0.25,
+     "type_reasoning": "The matter is settled in a live conversation while the other party is on the line.",
+     "type": "LIVE_SERVICE",
+     "unit_reasoning": "Each call handles one matter within the contact.",
+     "work_item": "one administrative call handled",
+     "start": "call placed or answered",
+     "end": "matter settled and any change noted",
+     "checked_by": "parent or guardian; director",
+     "duplicates": [],
+     "overlaps_with": ["18757"]
+    }
+   ],
+   "notes": "Calls about a child's day or behavior overlap with 18757."
+  }},
+ {"task_id": "18762", "reasoning": "Organizing an activity or outing ends in arrangements others rely on, playing games with children is interpersonal, and taking children on outings is in-person supervision away from the center. X separates all three, matching the coding of play supervision (2336) as PHYSICAL.", "choice": "X"},
+ {"task_id": "18763", "reasoning": "Like 2332, caring for children with disabilities combines hands-on assistance (lifting, feeding, toileting) with supportive developmental interaction. X's split shows that mix and gives fuller overlaps; Y codes it as purely physical.", "choice": "X"},
+ {"task_id": "18764", "reasoning": "Supervising staff, training staff and preparing schedules are three different activities joined in one statement. Y splits all three, consistent with splitting train-and-supervise elsewhere; X merges supervision and training.", "choice": "Y"}
+]

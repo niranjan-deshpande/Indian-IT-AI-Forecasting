@@ -1,0 +1,312 @@
+[
+ {
+  "task_id": "5158",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correct or record omissions, errors and inconsistencies found in a proof.",
+    "time_share": 1.0,
+    "type_reasoning": "Each proof ends with errors recorded or corrected for the author.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofs arrive and leave one at a time.",
+    "work_item": "one proof with errors corrected or recorded",
+    "start": "errors found in a proof",
+    "end": "proof with errors recorded or corrected returned",
+    "checked_by": "author or editor",
+    "duplicates": [
+     "5159"
+    ],
+    "overlaps_with": [
+     "5160"
+    ]
+   }
+  ],
+  "notes": "Nearly the same as 5159."
+ },
+ {
+  "task_id": "5159",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mark a proof with standard printers' marks to indicate and correct errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a marked proof that others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofs are marked and returned whole.",
+    "work_item": "one proof marked",
+    "start": "proof received for reading",
+    "end": "marked proof ready to route",
+    "checked_by": "author, editor or typesetter",
+    "duplicates": [
+     "5158"
+    ],
+    "overlaps_with": [
+     "5165",
+     "5163"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5160",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read a corrected copy or proof to confirm all corrections have been made.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a clean-sign-off or a list of misses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per corrected proof.",
+    "work_item": "one corrected proof verified",
+    "start": "corrected proof received",
+    "end": "verified and cleared or returned",
+    "checked_by": "editor or production manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159",
+     "5158"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5161",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare information or figures on a record against other records or the original copy to detect errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a compared document with discrepancies marked.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per document or record.",
+    "work_item": "one record compared and discrepancies noted",
+    "start": "record and source gathered",
+    "end": "discrepancies marked",
+    "checked_by": "author or editor",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5162",
+  "split_reasoning": "Consulting references is a means used during proofreading.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult reference books or secure a reader's aid to check references against rules of grammar and composition.",
+    "time_share": 1.0,
+    "type_reasoning": "Nothing is handed over by itself; results appear in the marked proof.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159",
+     "5165"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5163",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Route a proof with marked corrections to the author, editor, typist or typesetter for correction or reprinting.",
+    "time_share": 1.0,
+    "type_reasoning": "The hand-off is what the next person acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofs are routed individually or in a batch.",
+    "work_item": "one marked proof routed",
+    "start": "proof marking finished",
+    "end": "proof sent to the responsible party",
+    "checked_by": "author, editor, typesetter",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   }
+  ],
+  "notes": "Short, near-clerical step."
+ },
+ {
+  "task_id": "5165",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read proof sheets aloud to a partner, calling out punctuation and spelling unusual words and names, so that errors are caught and marked.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends with errors marked on the proof.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofs are read one at a time.",
+    "work_item": "one proof read aloud with a partner and marked",
+    "start": "reading begins",
+    "end": "proof read through and marks entered",
+    "checked_by": "editor or author",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159",
+     "5162"
+    ]
+   }
+  ],
+  "notes": "A partner is a coworker, not a customer."
+ },
+ {
+  "task_id": "20907",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult authors or editors about manuscript changes and suggestions.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in an agreed decision that is recorded.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions come up per manuscript.",
+    "work_item": "one manuscript query resolved with the author or editor",
+    "start": "query raised",
+    "end": "decision agreed and noted",
+    "checked_by": "author; editor",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158"
+    ]
+   }
+  ],
+  "notes": "Could be a brief meeting rather than a written query."
+ },
+ {
+  "task_id": "20908",
+  "split_reasoning": "Three different activities are joined in one statement.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Archive documents.",
+    "time_share": 0.2,
+    "type_reasoning": "Produces a filed record others retrieve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are filed in batches.",
+    "work_item": "one batch of documents archived",
+    "start": "documents ready for filing",
+    "end": "documents indexed and stored",
+    "checked_by": "records or production staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Research a fact or reference online to verify copy.",
+    "time_share": 0.3,
+    "type_reasoning": "Ends in a verified answer used in the proof.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Research is done per question.",
+    "work_item": "one research question answered",
+    "start": "question arises while reading",
+    "end": "answer found and recorded",
+    "checked_by": "author or editor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Read copy on screen using various programs, to detect errors.",
+    "time_share": 0.5,
+    "type_reasoning": "Same as proofreading itself.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One document read per item.",
+    "work_item": "one document read for errors",
+    "start": "copy received",
+    "end": "errors marked",
+    "checked_by": "author or editor",
+    "duplicates": [
+     "5159"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Part c duplicates 5159."
+ },
+ {
+  "task_id": "20909",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write original content such as headlines, cutlines, captions and cover copy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each piece is a deliverable placed in the publication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Pieces are written individually.",
+    "work_item": "one headline, caption or cover copy piece written",
+    "start": "copy or image and space specified",
+    "end": "text approved for use",
+    "checked_by": "editor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20910",
+  "split_reasoning": "Typesetting and verifying page measurements are different activities, and measurement is performed both in layout software and physically on paper.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Typeset copy and page elements using layout software.",
+    "time_share": 0.5,
+    "type_reasoning": "Typesetting produces an arranged page or assigned layout for production review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or assigned layout is prepared and handed on as a whole.",
+    "work_item": "one page or assigned layout typeset",
+    "start": "copy, illustrations, and layout specifications are received",
+    "end": "typeset layout is saved and submitted for review",
+    "checked_by": "editor or production team",
+    "overlap_reasoning": "The other statements address proofreading and correction rather than creating the typeset layout.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Use layout software to verify page-element dimensions, spacing, and positions against specifications.",
+    "time_share": 0.3,
+    "type_reasoning": "The software-based check produces a verified layout or identified discrepancies.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or assigned layout is checked against its specifications as a whole.",
+    "work_item": "one digital page layout checked against specifications",
+    "start": "layout and specifications are available for checking",
+    "end": "measurements are verified and discrepancies marked or reported",
+    "checked_by": "production team or editor",
+    "overlap_reasoning": "Marking an arrangement error can overlap with marking copy, although this check also covers measurements and positioning.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Measure page elements on a physical proof with a printer's ruler to verify dimensions, spacing, and positioning.",
+    "time_share": 0.2,
+    "type_reasoning": "The measurement requires hands-on use of a ruler on a physical proof away from the computer.",
+    "overlap_reasoning": "A discrepancy found by measurement may be marked on copy, but measuring the physical layout is a distinct activity.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the publication workflow and how often physical proofs are measured."
+ }
+]

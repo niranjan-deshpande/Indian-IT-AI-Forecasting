@@ -1,0 +1,847 @@
+[
+ {
+  "task_id": "6639",
+  "split_reasoning": "Setting classroom rules and enforcing them during student interactions are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Establish classroom behavior rules and procedures.",
+    "time_share": 0.2,
+    "type_reasoning": "The rules are a distinct set of expectations communicated to students.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A classroom rule set is prepared and communicated as a whole.",
+    "work_item": "one classroom rule and procedure set",
+    "start": "teacher determines expectations for a class",
+    "end": "rules and procedures communicated to the class",
+    "checked_by": "students and school administrators",
+    "duplicates": [],
+    "overlaps_with": [
+     "6648"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Enforce classroom rules and procedures to maintain order.",
+    "time_share": 0.8,
+    "type_reasoning": "Maintaining order depends on live interactions with students.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6648"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; schoolwide policies may also form part of the classroom rules."
+ },
+ {
+  "task_id": "6640",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach lessons by lecture, discussion and demonstration.",
+    "time_share": 1.0,
+    "type_reasoning": "Teaching is live interaction; no single deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6649",
+     "6654"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6641",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write clear objectives for a lesson, unit or project and share them with students.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces written objectives that students and administrators rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Objectives are written per unit or project and shared once.",
+    "work_item": "one unit's objectives written and communicated",
+    "start": "unit planned",
+    "end": "objectives posted or given to students",
+    "checked_by": "department head and students",
+    "duplicates": [],
+    "overlaps_with": [
+     "6657"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6642",
+  "split_reasoning": "Three different activities: writing tests, supervising test sittings and grading.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a test or assignment.",
+    "time_share": 0.25,
+    "type_reasoning": "Produces a test paper.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each test is written once and given as a whole.",
+    "work_item": "one test or assignment prepared",
+    "start": "unit content to assess",
+    "end": "final test ready to give",
+    "checked_by": "department head and students",
+    "duplicates": [],
+    "overlaps_with": [
+     "6646"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise students while they sit a test.",
+    "time_share": 0.15,
+    "type_reasoning": "Live proctoring; nothing checked is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Grade a class's tests and assignments.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces graded work and marks returned to students.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each test is graded and returned as a class set.",
+    "work_item": "one set of tests graded and returned",
+    "start": "student work collected",
+    "end": "marks recorded and papers returned",
+    "checked_by": "students, parents, department head",
+    "duplicates": [],
+    "overlaps_with": [
+     "6646"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "6643",
+  "split_reasoning": "Preparing materials is desk work; setting up the room is physical.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare materials for a class activity.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces handouts and materials used in class.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Materials are prepared per lesson.",
+    "work_item": "one lesson's materials prepared",
+    "start": "lesson planned",
+    "end": "materials ready",
+    "checked_by": "the teacher; students who use them",
+    "duplicates": [],
+    "overlaps_with": [
+     "6653",
+     "6644"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Set up the classroom for an activity.",
+    "time_share": 0.4,
+    "type_reasoning": "Arranging furniture and equipment away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6644",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adapt a lesson's teaching method and materials to the students' differing needs and interests.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces adapted lesson materials.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Adaptation is done per lesson or unit.",
+    "work_item": "one lesson adapted for students' needs",
+    "start": "lesson planned and needs identified",
+    "end": "adapted lesson and materials ready",
+    "checked_by": "department head and students",
+    "duplicates": [],
+    "overlaps_with": [
+     "6659",
+     "6649"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6645",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter and keep student records (attendance, grades, notes) as required by law and policy.",
+    "time_share": 1.0,
+    "type_reasoning": "Records are checked by administration and auditors.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Updates are made in batches, e.g. each day or grading period.",
+    "work_item": "one update of student records",
+    "start": "attendance taken or grades ready",
+    "end": "records entered and complete",
+    "checked_by": "school administration, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "6663"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6646",
+  "split_reasoning": "Assigning is quick planning; grading is its own task.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set class work and homework for a lesson.",
+    "time_share": 0.2,
+    "type_reasoning": "Produces an assignment students receive.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assignment per lesson or week.",
+    "work_item": "one assignment set",
+    "start": "lesson planned",
+    "end": "assignment given to students",
+    "checked_by": "students",
+    "duplicates": [],
+    "overlaps_with": [
+     "6642"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Grade class work and homework.",
+    "time_share": 0.8,
+    "type_reasoning": "Produces graded work and marks.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work is graded as a batch per assignment.",
+    "work_item": "one batch of assignments graded",
+    "start": "work collected",
+    "end": "marks recorded and returned",
+    "checked_by": "students and parents",
+    "duplicates": [],
+    "overlaps_with": [
+     "6642"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6647",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe students and write up evaluations of their performance, behavior, social development and health concerns.",
+    "time_share": 1.0,
+    "type_reasoning": "Observation ends in written notes or comments others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Evaluations are written per student in a reporting period.",
+    "work_item": "one student evaluation note",
+    "start": "reporting period or concern arises",
+    "end": "note or comment recorded",
+    "checked_by": "parents, counselor, administration",
+    "duplicates": [],
+    "overlaps_with": [
+     "6663",
+     "6645"
+    ]
+   }
+  ],
+  "notes": "Observation itself is continuous within teaching."
+ },
+ {
+  "task_id": "6648",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply school policies and rules to students.",
+    "time_share": 1.0,
+    "type_reasoning": "Live enforcement; no deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6639"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6649",
+  "split_reasoning": "Planning is desk work; running activities is live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a lesson with instruction, demonstration and work time.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a lesson plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan is written per lesson or week.",
+    "work_item": "one lesson plan",
+    "start": "unit scheduled",
+    "end": "plan complete",
+    "checked_by": "department head",
+    "duplicates": [],
+    "overlaps_with": [
+     "6653",
+     "6661"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Conduct the activities with students.",
+    "time_share": 0.7,
+    "type_reasoning": "Live teaching; nothing checked is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6650",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Encourage students to explore and persevere to prepare them for later grades.",
+    "time_share": 1.0,
+    "type_reasoning": "Live motivating of students; no deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6651",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel students on adjustment, academic problems or interests.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the conversation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6652",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach and supervise students in safe use of equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Live instruction and supervision; no deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6653",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare lesson plans for assigned classes and show them to supervisors on request.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces written plans a supervisor can check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are written per class per week or unit.",
+    "work_item": "one set of lesson plans for a class",
+    "start": "upcoming unit or week",
+    "end": "plans complete and filed",
+    "checked_by": "supervisor or department head",
+    "duplicates": [],
+    "overlaps_with": [
+     "6649",
+     "6657",
+     "6661"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6654",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use computers and audio-visual aids during lessons.",
+    "time_share": 1.0,
+    "type_reasoning": "Support for live presentation; no separate deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6640"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6655",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet parents or guardians to discuss progress and priorities.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6656"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6656",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with parents, teachers, counselors and administrators to resolve student problems.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6655",
+     "6658"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6657",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write objectives and an outline for a course following curriculum requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a course outline others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One outline per course.",
+    "work_item": "one course outline",
+    "start": "course assigned",
+    "end": "outline approved or filed",
+    "checked_by": "department head",
+    "duplicates": [],
+    "overlaps_with": [
+     "6641",
+     "6653"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6658",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet other professionals to discuss individual students' needs.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6656"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6659",
+  "split_reasoning": "Preparing a program is written work; delivering it is live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a remedial program for a student or group.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a written plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One plan per student or group.",
+    "work_item": "one remedial plan",
+    "start": "student needs identified",
+    "end": "plan ready",
+    "checked_by": "student, parents, counselor",
+    "duplicates": [],
+    "overlaps_with": [
+     "6644"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Teach the remedial program to students.",
+    "time_share": 0.7,
+    "type_reasoning": "Live teaching; nothing checked is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6660",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend conferences and workshops to build professional skills.",
+    "time_share": 1.0,
+    "type_reasoning": "Learning for the teacher; nothing others rely on is produced.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6661",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet colleagues to plan and schedule lessons.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the planning meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6649",
+     "6653"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6662",
+  "split_reasoning": "Collaborative discussions and producing or revising a program document are distinct parts of program development.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss the development, evaluation, and revision of school programs with colleagues.",
+    "time_share": 0.5,
+    "type_reasoning": "The work is live collaboration with teachers and administrators.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6661",
+     "6668"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop, evaluate, or revise a secondary school program with colleagues.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces program documentation or a proposed revision for review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program proposal, evaluation, or revision is handed over as a coherent document.",
+    "work_item": "one school program proposal, evaluation, or revision",
+    "start": "program development or review need identified",
+    "end": "document or proposed revision submitted to the responsible team",
+    "checked_by": "teachers and school administrators",
+    "duplicates": [],
+    "overlaps_with": [
+     "6657",
+     "6661"
+    ]
+   }
+  ],
+  "notes": "The balance between meetings and written contributions varies by program and school."
+ },
+ {
+  "task_id": "6663",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write reports on students and activities for administration.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces reports administrators rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are written per request or period.",
+    "work_item": "one report to administration",
+    "start": "report requested or due",
+    "end": "report submitted",
+    "checked_by": "administration",
+    "duplicates": [],
+    "overlaps_with": [
+     "6645",
+     "6647"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6664",
+  "split_reasoning": "Choosing and ordering supplies is desk work; storing, issuing and counting is physical.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pick supplies and place orders.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces supply orders.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Orders are placed per request or term.",
+    "work_item": "one supply order",
+    "start": "need identified",
+    "end": "order placed",
+    "checked_by": "department head or purchasing",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Store, issue and count classroom equipment and supplies.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6665",
+  "split_reasoning": "Arranging is desk work; supervising is live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and arrange a project, field trip or guest visit.",
+    "time_share": 0.35,
+    "type_reasoning": "Produces an approved arrangement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One activity arranged at a time.",
+    "work_item": "one activity arranged",
+    "start": "activity proposed",
+    "end": "arrangements and permissions confirmed",
+    "checked_by": "principal and parents",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise the activity and guide students' learning from it.",
+    "time_share": 0.65,
+    "type_reasoning": "Live supervision; nothing checked is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6666",
+  "split_reasoning": "Giving the test is live; interpreting results is desk work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Proctor a standardized test.",
+    "time_share": 0.4,
+    "type_reasoning": "Live supervision; nothing checked is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Interpret standardized test results to identify strengths and needs.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a written interpretation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One interpretation per class or student set.",
+    "work_item": "one set of results interpreted",
+    "start": "scores received",
+    "end": "strengths and needs recorded or shared",
+    "checked_by": "teachers, parents, administration",
+    "duplicates": [],
+    "overlaps_with": [
+     "6642"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6667",
+  "split_reasoning": "Planning extracurricular activities and leading or supervising them are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan an extracurricular club, organization, or contest activity.",
+    "time_share": 0.35,
+    "type_reasoning": "Planning produces an event or activity plan that participants and school staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A planned meeting, event, or contest is an identifiable unit of coordination.",
+    "work_item": "one extracurricular activity or event plan",
+    "start": "activity or event need identified",
+    "end": "schedule and necessary arrangements communicated",
+    "checked_by": "students, participating staff, and school administrators",
+    "duplicates": [],
+    "overlaps_with": [
+     "6665"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Lead or supervise an extracurricular club, organization, or academic contest.",
+    "time_share": 0.65,
+    "type_reasoning": "Sponsorship during activities involves live guidance and supervision of students.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6665"
+    ]
+   }
+  ],
+  "notes": "The planning share depends on the extracurricular activity."
+ },
+ {
+  "task_id": "6668",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend staff meetings and committees.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in attending.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6662"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "6669",
+  "split_reasoning": "Library assistance, student monitoring, and bus loading involve different work and settings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist students with library services while they are present.",
+    "time_share": 0.2,
+    "type_reasoning": "Library assistance can involve serving a student waiting at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One student's library request is handled during the contact.",
+    "work_item": "one student library request handled at the desk",
+    "start": "student asks for library assistance",
+    "end": "request is handled or referred and the student is informed",
+    "checked_by": "student and library staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Monitor students in halls and cafeterias.",
+    "time_share": 0.5,
+    "type_reasoning": "Monitoring relies on live supervision and intervention with students.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6648"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Assist with student bus loading and unloading.",
+    "time_share": 0.3,
+    "type_reasoning": "This duty requires on-site supervision and direction of students as they board or leave buses.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6648"
+    ]
+   }
+  ],
+  "notes": "The examples and shares vary by assignment; library assistance can also include physical shelving or other back-office work."
+ },
+ {
+  "task_id": "6670",
+  "split_reasoning": "Providing and setting up assistive equipment, configuring supportive technology, and physically assisting students with access are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide and physically set up assistive devices for students with disabilities.",
+    "time_share": 0.3,
+    "type_reasoning": "Providing and positioning devices requires hands-on work with equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "6652"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Configure supportive technology for a student's access needs.",
+    "time_share": 0.3,
+    "type_reasoning": "Technology configuration produces settings or a configured resource that the student uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A configuration for one student and device or application is a usable unit.",
+    "work_item": "one supportive technology configuration",
+    "start": "student's access need and technology identified",
+    "end": "settings or software configured and available for student use",
+    "checked_by": "student and relevant support staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "6644"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Physically assist students with disabilities in accessing facilities.",
+    "time_share": 0.4,
+    "type_reasoning": "Assistance accessing facilities such as restrooms requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The extent of direct physical assistance and technology configuration depends on the teacher's assignment and available support staff."
+ }
+]

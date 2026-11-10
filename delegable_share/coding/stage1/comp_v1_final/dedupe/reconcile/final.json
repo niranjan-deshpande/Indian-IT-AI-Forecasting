@@ -1,0 +1,124 @@
+{
+ "27-3091.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "9328a",
+    "9335a"
+   ]
+  ]
+ },
+ "43-9081.00": {
+  "collapse": [
+   [
+    "20908c",
+    "5159a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "27-3042.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "23-2011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-2082.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "7358a",
+    "7359a"
+   ],
+   [
+    "7358b",
+    "7359b"
+   ]
+  ]
+ },
+ "47-2111.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "29-1141.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "39-9011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "37-2011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "53-3032.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "10645a",
+    "19923a"
+   ]
+  ]
+ },
+ "13-2011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "21514a",
+    "21532a"
+   ],
+   [
+    "21514b",
+    "21532b"
+   ]
+  ]
+ },
+ "23-1011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-2041.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "25-2031.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "6642c",
+    "6646b"
+   ],
+   [
+    "6649a",
+    "6653a"
+   ]
+  ]
+ },
+ "41-4012.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-1111.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ }
+}

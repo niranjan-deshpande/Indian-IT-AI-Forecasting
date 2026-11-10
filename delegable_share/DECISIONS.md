@@ -24,6 +24,18 @@ white-collar work). `data/comparison_tasks.csv` (`control_group` column), 313 ra
 Same protocol as the BPO run, except Stages 2+3 batches ≤34 and Stage 1 groups of 3 occupations.
 Run tags `comp_v1`.
 
+**Result (2026-11-10, S at ρ = 1 / 0.5):** negative controls 3–8% (mean 5%); positive controls
+18–30% (mean 23%); other white-collar 3–32% (mean 15%); IT/BPO 7–29% (mean 15%); pilot mean 23%.
+The controls separate. Three white-collar results are driven by one benchmark each and should be
+read with that in mind: Accountants 3% (APEX-Accounting, 56% of weight: all-criteria pass@1 of
+24%, fitted on only 10 public items), Lawyers 7% (APEX-Agents, 71%), Wholesale Sales Reps 32%
+(CRMArena-Pro, 37%: last scored March 2025, so moved forward 19 months on the pooled trend).
+Stage 1: 313 statements → 448 parts; 127 disputes (41%; Opus chose Terra 67, Sonnet 51, revised 9);
+duplicates 448 → 439. Stages 2+3: 255 coded items, 45 three-way splits adjudicated. Reasoning held
+up at batches of 32 (median 114 → 78 words from first to last item). New benchmarks: JobBench,
+APEX-Agents (public mirror; items not from the gated set), Online-Mind2Web. Pooled doubling 3.4
+months with 34 benchmarks.
+
 ## 2026-11-10 — BPO run: set-up and usage cuts
 
 - **Scope:** the 10 non-pilot BPO occupations, 204 rated statements (`data/bpo_tasks.csv`,

@@ -1,0 +1,9 @@
+[
+  {"task_id": "9538", "reasoning": "The statement names two activities, cleaning restrooms and supplying them, and X separates them with sensible shares. Both are physical, and X's overlap list is more accurate: Y lists the requisition task 9545, which is separate from placing supplies in the restroom.", "choice": "X"},
+  {"task_id": "9541", "reasoning": "Following safe-use procedures is part of hands-on cleaning with chemicals and machines, not continuing education or reading with no output. PHYSICAL describes the work better than NO_DELIVERABLE, and X's overlap list is fuller.", "choice": "X"},
+  {"task_id": "9543", "reasoning": "Stripping, sealing, finishing and polishing are stages of one floor-care job, done with the same equipment and crew, so the statement does not join different activities. Both parts would be PHYSICAL anyway, so Y's single part is the cleaner coding.", "choice": "Y"},
+  {"task_id": "9548", "reasoning": "Setting up and removing event furnishings is one activity, done before and after an event. Splitting it into two physical parts adds nothing, so X's single part is right.", "choice": "X"},
+  {"task_id": "20590", "reasoning": "Locking doors and checking for hazards are done on the same end-of-day round and are one monitoring activity. X's single physical part is enough, and Y's even split is arbitrary.", "choice": "X"},
+  {"task_id": "20591", "reasoning": "Mowing, trimming and clearing debris are all routine grounds upkeep done on the same outdoor round. One physical part suffices, so X is the better coding.", "choice": "X"},
+  {"task_id": "20592", "reasoning": "Driving to reach job sites and operating a vehicle that does the cleaning, such as a plow or sweeper, are different activities. Y separates them and links the second part to snow removal (9552), which is right. X's overlap with moving furniture (9551) is not supported.", "choice": "Y"}
+]

@@ -1,0 +1,407 @@
+[
+ {
+  "task_id": "9538",
+  "split_reasoning": "Cleaning restrooms and replenishing their supplies are distinct activities, with cleaning estimated to take most of the time.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and service restroom fixtures and surfaces.",
+    "time_share": 0.8,
+    "type_reasoning": "Cleaning restrooms requires hands-on work at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Restroom cleaning can include trash removal, floor cleaning, mirror cleaning, and cleaning or dusting fixtures, but these statements also cover other areas.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9539",
+     "9540",
+     "9546",
+     "9549",
+     "9550"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Replenish restroom supplies such as soap, paper towels, and toilet tissue.",
+    "time_share": 0.2,
+    "type_reasoning": "Restocking dispensers and supplies is hands-on work in the restroom.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Requisitioning supplies is separate from placing them in restrooms.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares vary with restroom traffic and the division of cleaning and restocking duties."
+ },
+ {
+  "task_id": 9539,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect and empty trash.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9538
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9540,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sweep, mop, scrub or vacuum floors.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9543,
+     9538
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9541",
+  "split_reasoning": "The statement describes one activity: applying safe-use procedures while using cleaners and power equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use chemical cleaners and power equipment according to procedures that prevent damage to floors and fixtures.",
+    "time_share": 1.0,
+    "type_reasoning": "Following these procedures occurs during hands-on cleaning and equipment use.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Safe-use procedures are embedded in several cleaning and solution-preparation tasks, each of which also covers work beyond following procedures.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9540",
+     "9542",
+     "9543",
+     "9546",
+     "9547"
+    ]
+   }
+  ],
+  "notes": "This is a cross-cutting procedural requirement rather than a separate cleaning assignment."
+ },
+ {
+  "task_id": 9542,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix cleaning solutions to specification.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9543",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Strip, seal, finish and polish floors.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9540,
+     9541
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9544,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tell managers about major repairs needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each notice is relied on by managers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Notices are raised one problem at a time.",
+    "work_item": "one repair notification",
+    "start": "worker finds problem",
+    "end": "manager informed",
+    "checked_by": "building manager",
+    "duplicates": [],
+    "overlaps_with": [
+     9555
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9545,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Order cleaning supplies and equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Each requisition is acted on by purchasing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requisitions are raised per need.",
+    "work_item": "one supply requisition",
+    "start": "stock low",
+    "end": "request submitted",
+    "checked_by": "supervisor, purchasing",
+    "duplicates": [],
+    "overlaps_with": [
+     9538
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9546,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean windows, glass and mirrors.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9547,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Steam-clean or shampoo carpets.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9548",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up or remove tables, chairs and decor for events.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9551
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9549,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and polish furniture and fixtures.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9550
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9550,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dust furniture, walls and equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9549
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9551,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Move heavy furniture, equipment or supplies.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9548
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9552,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clear snow from walkways and lots or spread melting chemicals.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9554,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Spray insecticides or fumigants.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9555,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make minor repairs to building systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     9544
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 9559,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean chimneys, flues and pipes.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20590",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Lock up and check for safety hazards.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on rounds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20591",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mow, trim and clear grounds.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20592",
+  "split_reasoning": "Driving to a work site and operating a vehicle to perform cleaning are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive a vehicle to or between cleaning work sites.",
+    "time_share": 0.5,
+    "type_reasoning": "Driving requires physical operation of a vehicle away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement specifically covers travel between work sites.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Operate a vehicle used to perform cleaning work.",
+    "time_share": 0.5,
+    "type_reasoning": "Operating a cleaning vehicle requires physical control of the vehicle at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Operating a vehicle can include driving a snowplow, while snow removal also covers other methods and vehicle operation also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9552"
+    ]
+   }
+  ],
+  "notes": "The shares depend on whether the job primarily involves travel or vehicle-operated cleaning."
+ }
+]

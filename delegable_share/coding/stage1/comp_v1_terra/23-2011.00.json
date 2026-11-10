@@ -1,0 +1,377 @@
+[
+ {
+  "task_id": "1636",
+  "split_reasoning": "Gathering and analyzing different legal sources serves the same research deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather and analyze legal authorities and other research sources for a legal question.",
+    "time_share": 1.0,
+    "type_reasoning": "The research produces findings that an attorney can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assigned legal question provides a practical boundary for a set of research findings.",
+    "work_item": "one set of legal research findings on an assigned question",
+    "start": "legal research question assigned",
+    "end": "relevant sources and analysis provided to the attorney",
+    "checked_by": "supervising attorney",
+    "overlap_reasoning": "Task 21062 also involves legal research for cases but additionally covers factual investigation and causes of action.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21062"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1638",
+  "split_reasoning": "Calling witnesses to testify is one live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Call witnesses to testify at a hearing.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is a live interaction to bring a witness forward, rather than a separately checkable deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed task specifically describes calling witnesses to testify.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The wording may also be interpreted as contacting witnesses before a hearing; actual responsibilities depend on the proceeding and jurisdiction."
+ },
+ {
+  "task_id": "1639",
+  "split_reasoning": "Directing office activities, including arranging subpoena delivery, is one coordination and supervision activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and coordinate law office activities, including arranging for subpoenas to be delivered.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes directing and coordinating other people's work through interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed task describes directing general office activity or subpoena delivery.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The target describes coordinating delivery, not necessarily personally serving subpoenas."
+ },
+ {
+  "task_id": "1641",
+  "split_reasoning": "Keeping physical library volumes and checking for needed updates involve distinct hands-on and desk work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain physical legal volumes by filing or replacing their updates.",
+    "time_share": 0.6,
+    "type_reasoning": "Updating and organizing bound volumes requires hands-on work in the library.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed task covers maintaining the law library.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Check whether legal library volumes are current and identify needed updates.",
+    "time_share": 0.4,
+    "type_reasoning": "Each review identifies updates to obtain or apply for a title.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A title's currency can be checked and any needed update identified as a unit.",
+    "work_item": "one legal title checked for needed updates",
+    "start": "title or publisher update information selected for review",
+    "end": "title's currency established and any needed update identified",
+    "checked_by": "library staff or supervising attorney",
+    "overlap_reasoning": "No other listed task covers monitoring the currency of library volumes.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The split and shares depend on the size of the physical collection and the firm's subscriptions."
+ },
+ {
+  "task_id": "1642",
+  "split_reasoning": "Inspecting property hands-on and compiling its inventory and valuation at a desk are distinct portions of the work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect real and personal property for an estate inventory and appraisal.",
+    "time_share": 0.4,
+    "type_reasoning": "Identifying and examining property on site requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed task covers inspecting property for estate planning.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Compile an estate property inventory and supporting valuations.",
+    "time_share": 0.6,
+    "type_reasoning": "The compiled inventory and values are a document used in estate planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The inventory for an estate is handed to the attorney as a whole.",
+    "work_item": "one estate property inventory with valuations",
+    "start": "property information and valuation evidence gathered for an estate",
+    "end": "inventory and supporting values provided to the attorney",
+    "checked_by": "supervising attorney and estate client",
+    "overlap_reasoning": "No other listed task describes preparing an estate property inventory.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary with the assets and whether outside appraisers provide valuations."
+ },
+ {
+  "task_id": "18491",
+  "split_reasoning": "Preparing affidavits, preparing correspondence, and maintaining paper and electronic files produce different work or require different physical settings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare an affidavit or similar legal document.",
+    "time_share": 0.35,
+    "type_reasoning": "Each prepared document is a distinct deliverable for attorney review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The document is reviewed and used as a whole.",
+    "work_item": "one affidavit or similar legal document prepared",
+    "start": "document requested and relevant case information provided",
+    "end": "draft document submitted for review or use",
+    "checked_by": "supervising attorney",
+    "overlap_reasoning": "Task 23994 also covers preparing legal documents, but includes other document types and editing and review.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23994"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare legal correspondence.",
+    "time_share": 0.25,
+    "type_reasoning": "Each letter or other correspondence is a distinct communication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A piece of correspondence is reviewed and sent as a whole.",
+    "work_item": "one piece of legal correspondence prepared",
+    "start": "correspondence requested and relevant information available",
+    "end": "correspondence submitted for approval or sent",
+    "checked_by": "supervising attorney and recipient",
+    "overlap_reasoning": "Task 23994 covers legal document preparation more broadly, which can include correspondence, but is not limited to it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23994"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Organize and maintain documents in an electronic filing system.",
+    "time_share": 0.25,
+    "type_reasoning": "Each filing update leaves documents organized for colleagues to retrieve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents received together for a matter can be filed as one batch.",
+    "work_item": "one batch of matter documents organized in the electronic file",
+    "start": "documents received or identified for electronic filing",
+    "end": "documents saved and organized in the matter's electronic file",
+    "checked_by": "attorneys and other legal staff using the file",
+    "overlap_reasoning": "No other listed task describes maintaining electronic matter files.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Organize and maintain documents in paper files.",
+    "time_share": 0.15,
+    "type_reasoning": "Sorting and placing paper documents in physical files requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Task 18492 can include physically organizing exhibits, but that trial-preparation work is distinct from general matter filing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18492"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the practice's document mix and use of paper files."
+ },
+ {
+  "task_id": "18492",
+  "split_reasoning": "Trial preparation includes organizing physical exhibits and preparing electronic trial materials, which are done in different settings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize physical exhibits and other paper materials for trial.",
+    "time_share": 0.5,
+    "type_reasoning": "Sorting, labeling, and assembling physical trial materials requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Task 18491 includes maintaining paper files, some of which may also be organized as trial exhibits.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18491"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Organize electronic exhibits and related materials for trial.",
+    "time_share": 0.5,
+    "type_reasoning": "An organized set of electronic trial materials is a deliverable used by the trial team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of exhibits prepared for a trial or hearing is handed over for use as a whole.",
+    "work_item": "one electronic exhibit set prepared for trial",
+    "start": "trial materials and exhibit instructions received",
+    "end": "electronic exhibits organized and made available to the trial team",
+    "checked_by": "trial attorney",
+    "overlap_reasoning": "Electronic exhibit organization can draw on the electronic filing work in task 18491, but trial preparation and general file maintenance have different purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18491"
+    ]
+   }
+  ],
+  "notes": "The target gives exhibits as an example; trial preparation can include other materials. Shares vary with the case and courtroom."
+ },
+ {
+  "task_id": "18493",
+  "split_reasoning": "Case discussions with clients occur in live client service, while discussions with other professionals are professional meetings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with clients to discuss details of their cases.",
+    "time_share": 0.6,
+    "type_reasoning": "The case discussion takes place live with the client.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One client meeting is a bounded contact in which case details are discussed.",
+    "work_item": "one client case discussion",
+    "start": "client meeting or call begins",
+    "end": "case discussion ends",
+    "checked_by": "client and supervising attorney",
+    "overlap_reasoning": "Task 21062 can involve investigating case facts, but it also covers research and case preparation beyond a client discussion.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21062"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Meet with other professionals to discuss details of cases.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the live professional discussion and coordination.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Task 21062 can include gathering case facts, but it also covers research and case preparation beyond a professional meeting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21062"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how the firm divides client contact and professional coordination."
+ },
+ {
+  "task_id": "18494",
+  "split_reasoning": "Pleadings are filed both electronically and by physically delivering paper filings to a court.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "File pleadings through an electronic court filing system.",
+    "time_share": 0.8,
+    "type_reasoning": "Each electronic submission produces a filing or receipt that the legal team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A pleading submission is processed and accepted or rejected as a unit.",
+    "work_item": "one pleading submitted electronically to the court",
+    "start": "approved pleading and filing instructions received",
+    "end": "submission completed and court acknowledgment or rejection received",
+    "checked_by": "court clerk and supervising attorney",
+    "overlap_reasoning": "Task 23994 covers preparing or reviewing pleadings, whereas this task covers their filing.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Deliver paper pleadings to a court clerk for filing.",
+    "time_share": 0.2,
+    "type_reasoning": "Taking paper pleadings to the courthouse requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Task 23994 covers preparing or reviewing pleadings, not delivering them for filing.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The paper-filing share varies substantially by jurisdiction and court rules."
+ },
+ {
+  "task_id": "18496",
+  "split_reasoning": "Arbitrating disputes and assisting with real estate closings are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arbitrate disputes between parties.",
+    "time_share": 0.3,
+    "type_reasoning": "The stated activity centers on live interaction between the parties.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed task describes arbitrating disputes.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Review title-search results as part of assisting with a real estate closing.",
+    "time_share": 0.7,
+    "type_reasoning": "The review identifies title issues for the closing team to address.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One transaction's title search is reviewed and its findings communicated as a unit.",
+    "work_item": "one title-search review for a real estate closing",
+    "start": "title-search results received for the transaction",
+    "end": "title issues identified and review findings provided to the closing team",
+    "checked_by": "supervising attorney or closing professional",
+    "overlap_reasoning": "Task 23994 includes preparing or reviewing closing statements, but a title-search review is a different closing output.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The authority to arbitrate and the paralegal's role in closing work depend on jurisdiction and supervision. Other closing assistance may extend beyond title review."
+ },
+ {
+  "task_id": "21062",
+  "split_reasoning": "Investigating facts and law through different sources serves the same case-investigation deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate case facts and law using pertinent sources to support causes of action and case preparation.",
+    "time_share": 1.0,
+    "type_reasoning": "The investigation produces case findings and supporting sources for an attorney to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned case issue or investigation is a manageable unit of findings handed to the attorney.",
+    "work_item": "one case issue investigated with supporting findings",
+    "start": "case issue or investigation assigned",
+    "end": "relevant facts, authorities, and findings provided to the attorney",
+    "checked_by": "supervising attorney",
+    "overlap_reasoning": "Task 1636 shares legal-source research, while task 18493 can share fact gathering in case discussions; each also covers work beyond this investigation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1636",
+     "18493"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23994",
+  "split_reasoning": "Preparing, editing, and reviewing the listed legal documents are alternative actions applied to the same kind of deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare, edit, or review a legal document for an attorney or transaction.",
+    "time_share": 1.0,
+    "type_reasoning": "Each document prepared or reviewed is a distinct deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A complete document is submitted for attorney review, filing, execution, or other use.",
+    "work_item": "one legal document prepared, edited, or reviewed",
+    "start": "document assignment or draft and supporting information received",
+    "end": "prepared or reviewed document submitted for attorney review or use",
+    "checked_by": "supervising attorney and, as applicable, the client or receiving party",
+    "overlap_reasoning": "Task 18491 also includes preparing legal documents and correspondence, but additionally covers maintaining files.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18491"
+    ]
+   }
+  ],
+  "notes": "Document complexity varies considerably across the listed types."
+ }
+]

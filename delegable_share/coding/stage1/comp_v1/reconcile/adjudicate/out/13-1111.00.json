@@ -1,0 +1,5 @@
+[
+  {"task_id": "7280", "reasoning": "Conferring with management and users is one of the inputs to the review, alongside examining the forms themselves, and it feeds the same deliverable: findings on one form or report. The instructions say not to split alternative inputs for one deliverable, so X's single DISCRETE item is right.", "choice": "X"},
+  {"task_id": "7281", "reasoning": "Both codings agree that interviews are INTERPERSONAL; the dispute is over observation. Watching work on site is not hands-on PHYSICAL work, and it produces recorded observations that the study team relies on. Y's DISCRETE observation record fits the definitions better.", "choice": "Y"},
+  {"task_id": "7284", "reasoning": "Designing, evaluating, recommending and approving are successive stages of one deliverable, an approved change to a form or report, handed over as a whole. Y makes a separate approval part with a small share that adds little, so X's single item is preferred.", "choice": "X"}
+]

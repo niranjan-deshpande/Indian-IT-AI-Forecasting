@@ -1,0 +1,351 @@
+[
+ {
+  "task_id": "3966",
+  "split_reasoning": "Organizing and writing material are steps in completing the same writing assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize and write assigned technical material to the prescribed standards.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment produces a draft or completed piece of technical writing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned document or section is handed over as a whole for review or publication.",
+    "work_item": "one assigned technical document or section",
+    "start": "writing assignment and applicable standards received",
+    "end": "completed draft submitted for review or publication",
+    "checked_by": "editor, technical reviewer, or publication manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "20243"
+    ]
+   }
+  ],
+  "notes": "Online help writing can also be an assignment under this statement."
+ },
+ {
+  "task_id": "3967",
+  "split_reasoning": "Maintaining records and files of work and revisions is one recordkeeping activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain the records and files for a technical writing assignment and its revisions.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an updated set of files that colleagues can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of updates to an assignment's files can be completed and made available together.",
+    "work_item": "one assignment's work and revision files updated",
+    "start": "new work or revision ready to be recorded and filed",
+    "end": "files and revision records updated in the designated repository",
+    "checked_by": "writers, editors, or publication manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3968",
+  "split_reasoning": "Editing, standardizing, and changing others' material are alternative forms of the same document-editing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Edit and standardize technical material prepared by another writer or employee.",
+    "time_share": 1.0,
+    "type_reasoning": "Each editing assignment produces revised material for review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or assigned section is returned as a whole with its changes.",
+    "work_item": "one document or section edited",
+    "start": "other person's material received for editing",
+    "end": "edited material returned or submitted for review",
+    "checked_by": "original author, editor, or publication manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "3970",
+     "20243"
+    ]
+   }
+  ],
+  "notes": "Editing existing online help can also be covered by task 20243."
+ },
+ {
+  "task_id": "3969",
+  "split_reasoning": "The listed parties are alternative participants in the same requirements discussion.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with stakeholders to establish technical specifications and publication subject matter.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is a live exchange to establish requirements, rather than a specified written deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A separately prepared specification is not explicit in the target."
+ },
+ {
+  "task_id": "3970",
+  "split_reasoning": "Reviewing published material and recommending changes form one review activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a publication and recommend changes to its content, scope, format, or production.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces recommendations for a publication decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recommendations are made for a particular publication or assigned portion and handed to a decision-maker.",
+    "work_item": "one publication review with recommended changes",
+    "start": "published material selected or assigned for review",
+    "end": "revision or production recommendations communicated",
+    "checked_by": "editor, publication manager, or client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3968",
+     "3977",
+     "20243"
+    ]
+   }
+  ],
+  "notes": "The target covers recommending changes, not necessarily implementing them."
+ },
+ {
+  "task_id": "3971",
+  "split_reasoning": "The listed visual forms are alternative illustrations selected for the same purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select illustrations for technical material.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection produces a set of visuals for the material.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The illustrations selected for an assigned document or section are handed over for review and layout together.",
+    "work_item": "one document or section's illustration selection",
+    "start": "material and candidate visuals available for selection",
+    "end": "selected visuals identified or supplied for review and layout",
+    "checked_by": "editor, technical reviewer, or layout specialist",
+    "duplicates": [],
+    "overlaps_with": [
+     "3976"
+    ]
+   }
+  ],
+  "notes": "Selecting visuals may occur during layout, but it does not necessarily include laying out the publication."
+ },
+ {
+  "task_id": "3972",
+  "split_reasoning": "Drawings, specifications, mockups, and samples are inputs to the same study of technical and procedural details.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Study technical inputs to identify technology, operating procedures, and production sequences for documentation.",
+    "time_share": 1.0,
+    "type_reasoning": "The study can produce a documented account of the technical details needed for writing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings for an assigned product, procedure, or section can be collected as one research record for the writing team.",
+    "work_item": "one set of technical research notes for an assigned topic",
+    "start": "drawings, specifications, mockups, or samples made available for study",
+    "end": "relevant technical and procedural details documented for use in writing",
+    "checked_by": "technical writer or technical reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3978"
+    ]
+   }
+  ],
+  "notes": "Research notes may be informal or incorporated directly into a draft rather than handed over separately."
+ },
+ {
+  "task_id": "3973",
+  "split_reasoning": "Interviewing personnel and independently reading background material are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview production or engineering personnel to learn about products and production methods.",
+    "time_share": 0.5,
+    "type_reasoning": "The specified activity is a live information-gathering interaction, not a separately specified deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Read journals and other background material to become familiar with product technologies and production methods.",
+    "time_share": 0.5,
+    "type_reasoning": "Background reading for familiarity does not itself produce a specified item for others to check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "3978"
+    ]
+   }
+  ],
+  "notes": "The time split is an estimate; interview notes or a research summary are not specified by the target."
+ },
+ {
+  "task_id": "3974",
+  "split_reasoning": "Observing production, development, and experiments serves the same purpose of determining procedural details.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe activities to determine operating procedures and details for documentation.",
+    "time_share": 1.0,
+    "type_reasoning": "An observation can produce recorded procedural findings for use in technical material.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings from observing an assigned operation or activity can be collected as one record for the documentation team.",
+    "work_item": "one set of observed procedure notes",
+    "start": "operation or activity selected and made available for observation",
+    "end": "observed sequence and relevant details recorded for documentation",
+    "checked_by": "technical writer, operator, or technical reviewer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The target does not explicitly require written notes; findings may instead be incorporated directly into a draft."
+ },
+ {
+  "task_id": "3975",
+  "split_reasoning": "Arranging typing, duplication, and distribution coordinates the handling of the same material.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange the typing, duplication, and distribution needed for technical material.",
+    "time_share": 1.0,
+    "type_reasoning": "The coordination produces an instruction or order for the people handling the material.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The arrangements for a particular document or batch can be communicated as one production request.",
+    "work_item": "one document production and distribution request",
+    "start": "material and handling requirements available",
+    "end": "necessary arrangements communicated to the responsible staff or vendor",
+    "checked_by": "production or distribution staff, vendor, or publication manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "An arrangement may cover only some of the listed services."
+ },
+ {
+  "task_id": "3976",
+  "split_reasoning": "Assisting with publication layout is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist in laying out technical material for publication.",
+    "time_share": 1.0,
+    "type_reasoning": "Layout work produces a formatted document or section for review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned document or section is formatted and passed on as a whole.",
+    "work_item": "one laid-out document or section",
+    "start": "text, visuals, and layout requirements received",
+    "end": "layout or proof submitted for review",
+    "checked_by": "editor, layout specialist, or publication manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "3971"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3977",
+  "split_reasoning": "Assessing whether developments require revisions or new material is one analysis activity with related possible recommendations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze field developments and recommend whether documentation needs revision or new material.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces an assessment that publication planners can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment of a development or group of developments is communicated as a decision input.",
+    "work_item": "one documentation-needs assessment",
+    "start": "field developments identified for assessment",
+    "end": "assessment of needed revisions or new material communicated",
+    "checked_by": "publication manager, editor, or subject-matter lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "3970"
+    ]
+   }
+  ],
+  "notes": "Some monitoring may be informal; the coded item is the assessment used to make a documentation decision."
+ },
+ {
+  "task_id": "3978",
+  "split_reasoning": "Catalogs, drawings, and other data are alternative sources reviewed for equipment operation, maintenance, and service information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review equipment sources for operation, maintenance, and service information.",
+    "time_share": 1.0,
+    "type_reasoning": "A targeted review can produce research findings for equipment documentation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Information gathered for an assigned equipment topic can be recorded and used as one research set.",
+    "work_item": "one set of equipment-source research notes",
+    "start": "equipment topic and relevant source materials identified",
+    "end": "relevant operation, maintenance, and service information recorded for use",
+    "checked_by": "technical writer or equipment subject-matter expert",
+    "duplicates": [],
+    "overlaps_with": [
+     "3972",
+     "3973"
+    ]
+   }
+  ],
+  "notes": "The target does not explicitly require a separate research record; findings may be used directly in writing."
+ },
+ {
+  "task_id": "3979",
+  "split_reasoning": "Sketches may be drawn by hand away from a computer or created digitally, so the physical and computer work are separated.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draw a sketch by hand to illustrate material or an assembly sequence.",
+    "time_share": 0.4,
+    "type_reasoning": "Hand drawing on paper requires physical work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Create a digital sketch to illustrate material or an assembly sequence.",
+    "time_share": 0.6,
+    "type_reasoning": "A digital sketch is a distinct illustration produced at a computer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each illustration is supplied as a whole for technical review or inclusion in material.",
+    "work_item": "one digital technical sketch",
+    "start": "illustration requirement and technical inputs received",
+    "end": "sketch submitted for review or inclusion",
+    "checked_by": "technical reviewer, editor, or layout specialist",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The hand-versus-digital split and shares depend on the workplace and illustration tools."
+ },
+ {
+  "task_id": "20243",
+  "split_reasoning": "Developing and maintaining online help both produce or update help content; the unit is an assigned help topic or section.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or update online help documentation.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a new or revised help topic for review and publication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned help topic or section can be reviewed and published as a whole.",
+    "work_item": "one online help topic or section created or updated",
+    "start": "documentation request, change requirement, or assigned topic received",
+    "end": "help content submitted for review or published",
+    "checked_by": "editor, product specialist, and end users",
+    "duplicates": [],
+    "overlaps_with": [
+     "3966",
+     "3968",
+     "3970"
+    ]
+   }
+  ],
+  "notes": "A larger help system is normally completed through multiple topics or sections."
+ }
+]

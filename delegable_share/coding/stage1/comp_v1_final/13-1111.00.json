@@ -1,0 +1,312 @@
+[
+ {
+  "task_id": "7276",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather and organize information on problems or procedures for a study.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a fact base the study relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per study.",
+    "work_item": "one fact base compiled",
+    "start": "study scoped",
+    "end": "fact base organized and shared",
+    "checked_by": "engagement lead; client",
+    "duplicates": [],
+    "overlaps_with": [
+     "7281"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7277",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze data and develop solutions or alternative methods.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an analysis with options.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per question.",
+    "work_item": "one analysis with options",
+    "start": "data ready",
+    "end": "options delivered",
+    "checked_by": "engagement lead; client",
+    "duplicates": [],
+    "overlaps_with": [
+     "7282"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7278",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with personnel to ensure newly implemented systems or procedures work.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live follow-up conversations.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "7283"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7279",
+  "split_reasoning": "Developing, implementing and policing a program are three different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a records management program.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per program.",
+    "work_item": "one records management program",
+    "start": "need set",
+    "end": "program approved",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Implement the records program in a unit.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a working setup.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per unit.",
+    "work_item": "one unit rolled out",
+    "start": "approved program",
+    "end": "unit operating",
+    "checked_by": "management; unit head",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Check compliance with the records program.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a finding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per review.",
+    "work_item": "one compliance review",
+    "start": "review scheduled",
+    "end": "findings reported",
+    "checked_by": "management; auditor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7280",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review forms and reports, confer with management and users about format, distribution and purpose, and identify improvements.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces findings the owners act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per form or report.",
+    "work_item": "one form or report reviewed",
+    "start": "form selected",
+    "end": "findings delivered",
+    "checked_by": "management; users",
+    "duplicates": [],
+    "overlaps_with": [
+     "7284"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7281",
+  "split_reasoning": "Interviewing personnel and observing work on site are different activities, even though both inform the study.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview personnel about unit functions, work, methods, equipment, and staffing.",
+    "time_share": 0.6,
+    "type_reasoning": "The specified activity is a live interview with personnel to understand how work is performed.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The interview is one way of gathering study information and may cover the same users consulted about forms, but those tasks have broader or different scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276",
+     "7280"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Observe work on site to ascertain unit functions, methods, equipment, and staffing.",
+    "time_share": 0.4,
+    "type_reasoning": "An observation produces recorded facts about work that the study team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One observation session's recorded findings form a bounded input to the study.",
+    "work_item": "one on-site work observation record",
+    "start": "observation session or work process is selected",
+    "end": "observations are recorded and available to the study team",
+    "checked_by": "study lead or analyst",
+    "overlap_reasoning": "Observation supplies information covered by the broader gathering task, but that task also includes other sources.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276"
+    ]
+   }
+  ],
+  "notes": "On-site observation is not classified as physical work merely because it occurs away from a computer."
+ },
+ {
+  "task_id": "7282",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document findings and prepare recommendations for new systems, procedures or changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a report management decides from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per study.",
+    "work_item": "one study report",
+    "start": "analysis complete",
+    "end": "report delivered",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "7277",
+     "7285"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7283",
+  "split_reasoning": "Writing manuals and training are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a manual for new forms, reports, procedures or equipment.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a manual.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per manual.",
+    "work_item": "one manual",
+    "start": "procedure finalized",
+    "end": "manual issued",
+    "checked_by": "management; workers",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train workers in use of new forms, reports, procedures or equipment.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in the live session.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "7278"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7284",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design, evaluate, recommend and approve a change to a form or report.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an approved design.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per form.",
+    "work_item": "one form or report changed",
+    "start": "change requested",
+    "end": "new design approved",
+    "checked_by": "management; users",
+    "duplicates": [],
+    "overlaps_with": [
+     "7280"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7285",
+  "split_reasoning": "One activity with one kind of deliverable, so no split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a study of work problems and procedures.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a study plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per study.",
+    "work_item": "one study plan",
+    "start": "problem assigned",
+    "end": "plan approved",
+    "checked_by": "management; engagement lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "7282"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7286",
+  "split_reasoning": "Recommending purchase and designing layout are different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend purchase of storage equipment.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a recommendation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per purchase.",
+    "work_item": "one equipment recommendation",
+    "start": "need identified",
+    "end": "recommendation delivered",
+    "checked_by": "management; purchasing",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Design an area layout for equipment in the available space.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a layout plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per layout.",
+    "work_item": "one area layout",
+    "start": "space and equipment known",
+    "end": "layout approved",
+    "checked_by": "management; facilities",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

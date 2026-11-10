@@ -1,0 +1,748 @@
+[
+ {
+  "task_id": "3773",
+  "split_reasoning": "Client advice is provided both in live consultations and in written advice prepared outside a consultation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a client during a live consultation about a transaction, claim, lawsuit, or legal rights and obligations.",
+    "time_share": 0.6,
+    "type_reasoning": "The lawyer provides advice while the client participates in the consultation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A consultation addresses a client's particular legal question.",
+    "work_item": "one client legal-advice consultation",
+    "start": "client presents the question during the consultation",
+    "end": "lawyer explains the advice and the consultation concludes",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3774",
+     "3775",
+     "3780",
+     "3792"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare written advice for a client about a transaction, claim, lawsuit, or legal rights and obligations.",
+    "time_share": 0.4,
+    "type_reasoning": "The written advice is prepared and delivered outside a live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A written response addressing a particular question is delivered to the client as a whole.",
+    "work_item": "one written client advice response",
+    "start": "client's question or request for advice received",
+    "end": "written advice sent to the client",
+    "checked_by": "client and supervising lawyer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3774",
+     "3775",
+     "3780",
+     "3785",
+     "3792"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the practice and how clients receive advice."
+ },
+ {
+  "task_id": "3774",
+  "split_reasoning": "Legal interpretations are communicated both in live client consultations and in written responses prepared afterwards or from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain the interpretation of a law, ruling, or regulation during a client consultation.",
+    "time_share": 0.4,
+    "type_reasoning": "The interpretation is explained to a client who is present in a live consultation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The consultation resolves or frames a particular interpretation question for the client.",
+    "work_item": "one live explanation of a legal interpretation",
+    "start": "client raises the interpretation question during a consultation",
+    "end": "lawyer explains the interpretation to the client",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3783",
+     "3793"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a written interpretation of a law, ruling, or regulation for an individual or business.",
+    "time_share": 0.6,
+    "type_reasoning": "The written interpretation is a deliverable prepared outside the live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A written interpretation addressing one legal question is sent or handed over as a whole.",
+    "work_item": "one written legal interpretation",
+    "start": "interpretation question or assignment received",
+    "end": "written interpretation delivered",
+    "checked_by": "client or supervising lawyer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3783",
+     "3785",
+     "3793"
+    ]
+   }
+  ],
+  "notes": "The boundary between interpretation and broader client advice depends on the assignment."
+ },
+ {
+  "task_id": "3775",
+  "split_reasoning": "One activity: outcome assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze the probable outcome of a case from precedent.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a case assessment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per case.",
+    "work_item": "one case assessment memo",
+    "start": "case facts assembled",
+    "end": "memo delivered",
+    "checked_by": "supervising attorney or client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3777",
+     "3780",
+     "3773"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3776",
+  "split_reasoning": "One activity: advocacy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present and summarize a case to a judge or jury.",
+    "time_share": 1.0,
+    "type_reasoning": "Live advocacy.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3779",
+     "3781",
+     "3782"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3777",
+  "split_reasoning": "One activity: strategy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate findings and develop strategy and arguments for a case.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a strategy memo.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per case.",
+    "work_item": "one case strategy",
+    "start": "findings gathered",
+    "end": "strategy settled",
+    "checked_by": "supervising attorney, client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3775",
+     "3785"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3778",
+  "split_reasoning": "Two activities: interviews and collecting documents.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview clients and witnesses and record the facts.",
+    "time_share": 0.6,
+    "type_reasoning": "Ends in a memo or statement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One at a time.",
+    "work_item": "one interview memo or statement",
+    "start": "interview scheduled",
+    "end": "memo filed",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "3787"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Collect documents and other evidence.",
+    "time_share": 0.4,
+    "type_reasoning": "Ends in an evidence set.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per matter.",
+    "work_item": "one evidence collection",
+    "start": "request made",
+    "end": "evidence indexed",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "3788"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3779",
+  "split_reasoning": "One activity: appearing for clients.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Represent clients in court or before agencies.",
+    "time_share": 1.0,
+    "type_reasoning": "Live appearance.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3776",
+     "3781",
+     "3782"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3780",
+  "split_reasoning": "One activity: evaluating legal data.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine legal data to decide whether to defend or prosecute.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a recommendation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per case.",
+    "work_item": "one litigation advisability memo",
+    "start": "case received",
+    "end": "recommendation delivered",
+    "checked_by": "client or partner",
+    "duplicates": [],
+    "overlaps_with": [
+     "3775",
+     "3773",
+     "3783"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3781",
+  "split_reasoning": "One activity: trial work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select jurors, argue motions, meet judges and question witnesses at trial.",
+    "time_share": 1.0,
+    "type_reasoning": "Live trial work.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3776",
+     "3779",
+     "3782"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3782",
+  "split_reasoning": "One activity: presenting evidence.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present evidence at trial or hearing.",
+    "time_share": 1.0,
+    "type_reasoning": "Live.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3776",
+     "3779",
+     "3781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3783",
+  "split_reasoning": "One activity: legal research.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research constitution, statutes and decisions to see how they affect a case.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a research memo.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per issue.",
+    "work_item": "one research memo",
+    "start": "question set",
+    "end": "memo delivered",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "3788",
+     "3785",
+     "3774"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3785",
+  "split_reasoning": "Preparing briefs, preparing legal opinions, and filing appeals produce different legal outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a legal brief for a court proceeding.",
+    "time_share": 0.45,
+    "type_reasoning": "A brief is a distinct written submission for a court.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complete brief is reviewed and submitted as one document.",
+    "work_item": "one legal brief",
+    "start": "briefing assignment and case materials received",
+    "end": "brief finalized for filing or submitted",
+    "checked_by": "supervising lawyer and court",
+    "duplicates": [],
+    "overlaps_with": [
+     "3777",
+     "3783"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a legal opinion on a specified question.",
+    "time_share": 0.3,
+    "type_reasoning": "An opinion is a written legal conclusion relied on by its recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed opinion is issued as a whole on the assigned question.",
+    "work_item": "one legal opinion",
+    "start": "opinion assignment and relevant facts received",
+    "end": "opinion finalized and delivered",
+    "checked_by": "client or supervising lawyer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3774",
+     "3783",
+     "3788"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "File an appeal in a state or federal appellate court.",
+    "time_share": 0.25,
+    "type_reasoning": "The filing produces a distinct appeal submission received by a court.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An appeal initiation filing is the submitted unit, separate from an appellate brief.",
+    "work_item": "one appeal initiation filing",
+    "start": "decision to appeal and filing requirements established",
+    "end": "required initiation documents submitted to the appellate court",
+    "checked_by": "court clerk and supervising lawyer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3779"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the practice and the mix of briefs, opinions, and appeals."
+ },
+ {
+  "task_id": "3786",
+  "split_reasoning": "Negotiating settlements is one activity across different civil disputes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate a settlement of a civil dispute.",
+    "time_share": 1.0,
+    "type_reasoning": "The central activity is negotiation with the other party or counsel.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "20877",
+     "23992"
+    ]
+   }
+  ],
+  "notes": "Drafting a settlement agreement is a separate document task."
+ },
+ {
+  "task_id": "3787",
+  "split_reasoning": "One activity: confering with colleagues.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with specialist colleagues.",
+    "time_share": 1.0,
+    "type_reasoning": "Live.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3778"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3788",
+  "split_reasoning": "Searching records to establish ownership and searching them for an opinion lead to different immediate research outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Search and examine legal records to establish ownership.",
+    "time_share": 0.55,
+    "type_reasoning": "The search produces ownership findings used in a legal or property matter.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings for a particular property or asset are assembled and handed over together.",
+    "work_item": "one ownership or title search finding",
+    "start": "property or asset and search scope identified",
+    "end": "ownership findings documented or communicated",
+    "checked_by": "client, supervising lawyer, or transaction team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3778",
+     "20877"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Search and examine legal records to support a legal opinion.",
+    "time_share": 0.45,
+    "type_reasoning": "The record search produces findings used in drafting an opinion.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings relevant to one opinion question are a research handoff, distinct from the finished opinion.",
+    "work_item": "one record-search finding for an opinion",
+    "start": "opinion question and record-search scope identified",
+    "end": "relevant record findings documented for the opinion",
+    "checked_by": "lawyer preparing or reviewing the opinion",
+    "duplicates": [],
+    "overlaps_with": [
+     "3783",
+     "3785"
+    ]
+   }
+  ],
+  "notes": "Some ownership searches also support opinions; the split reflects their primary handoff."
+ },
+ {
+  "task_id": "3789",
+  "split_reasoning": "One activity: supervising assistants.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise legal assistants.",
+    "time_share": 1.0,
+    "type_reasoning": "Live direction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3790"
+    ]
+   }
+  ],
+  "notes": "Review of assistants' work product might be DISCRETE."
+ },
+ {
+  "task_id": "3790",
+  "split_reasoning": "Three administrative kinds.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare billing and time records.",
+    "time_share": 0.35,
+    "type_reasoning": "Invoices go to clients.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Cycle.",
+    "work_item": "one billing cycle",
+    "start": "period end",
+    "end": "invoices sent",
+    "checked_by": "clients",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Handle management of the practice.",
+    "time_share": 0.35,
+    "type_reasoning": "Meetings and supervision.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3789"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Open and close matters, run conflict checks, file.",
+    "time_share": 0.3,
+    "type_reasoning": "Records others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per matter.",
+    "work_item": "one matter opened or closed",
+    "start": "new matter",
+    "end": "file complete",
+    "checked_by": "firm",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3791",
+  "split_reasoning": "Two kinds: transactions and reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry out fiduciary actions and record them.",
+    "time_share": 0.6,
+    "type_reasoning": "Each is recorded.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One at a time.",
+    "work_item": "one fiduciary transaction",
+    "start": "need arises",
+    "end": "recorded",
+    "checked_by": "beneficiaries and court",
+    "duplicates": [],
+    "overlaps_with": [
+     "3792"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare accountings or reports to beneficiaries or court.",
+    "time_share": 0.4,
+    "type_reasoning": "Ends in a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Periodic.",
+    "work_item": "one accounting",
+    "start": "period end",
+    "end": "filed",
+    "checked_by": "court and beneficiaries",
+    "duplicates": [],
+    "overlaps_with": [
+     "3792"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3792",
+  "split_reasoning": "Probate filings, representation in proceedings, and advice to estate administrators are different activities; advice can also be live or written.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and submit a probate filing for an estate.",
+    "time_share": 0.4,
+    "type_reasoning": "A probate filing is a distinct submission to the court.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each required petition or other filing is submitted and reviewed as a unit.",
+    "work_item": "one probate filing",
+    "start": "estate filing requirement and supporting information identified",
+    "end": "filing submitted to the probate court",
+    "checked_by": "probate court and executor or administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "3791",
+     "20877"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Represent an executor or administrator in a probate proceeding.",
+    "time_share": 0.2,
+    "type_reasoning": "Representation in a proceeding is live advocacy before the court.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3779"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Advise an executor or administrator during a live consultation.",
+    "time_share": 0.25,
+    "type_reasoning": "Advice is given while the estate representative participates in the consultation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A consultation addresses the estate representative's particular question.",
+    "work_item": "one live estate-advice consultation",
+    "start": "executor or administrator raises a question during a consultation",
+    "end": "lawyer explains the advice and the consultation concludes",
+    "checked_by": "executor or administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3791"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Provide written advice to an executor or administrator about an estate.",
+    "time_share": 0.15,
+    "type_reasoning": "Written advice is prepared outside the live consultation and sent to the estate representative.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A written response to a particular estate question is the client handoff.",
+    "work_item": "one written estate-advice response",
+    "start": "estate representative's question or advice request received",
+    "end": "written advice sent",
+    "checked_by": "executor or administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3791"
+    ]
+   }
+  ],
+  "notes": "The mix depends on the estate and the lawyer's role."
+ },
+ {
+  "task_id": "3793",
+  "split_reasoning": "Program development, legislative drafting, legal interpretation, and establishing enforcement procedures are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help develop a federal or state program.",
+    "time_share": 0.25,
+    "type_reasoning": "Program development produces a proposal or design for review by the responsible agency.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program proposal or defined design component is handed over for review.",
+    "work_item": "one program proposal or design component",
+    "start": "program need or design assignment identified",
+    "end": "proposal or design component submitted for review",
+    "checked_by": "agency leadership or program team",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Draft proposed laws or legislative language.",
+    "time_share": 0.3,
+    "type_reasoning": "The work produces a draft of legislative language.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A draft bill or defined legislative provision is submitted for review as a whole.",
+    "work_item": "one draft bill or legislative provision",
+    "start": "legislative drafting instructions received",
+    "end": "draft language submitted for review",
+    "checked_by": "legislative sponsor or legislative counsel",
+    "duplicates": [],
+    "overlaps_with": [
+     "20877"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Interpret a law or legislative provision for a program or policy question.",
+    "time_share": 0.2,
+    "type_reasoning": "The interpretation produces a case-specific policy or legal finding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An interpretation addressing one program or legislative question is the handoff.",
+    "work_item": "one legislative interpretation",
+    "start": "interpretation question assigned",
+    "end": "interpretation documented or communicated",
+    "checked_by": "agency or legislative staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "3774",
+     "3783"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Establish procedures for enforcing a law or program requirement.",
+    "time_share": 0.25,
+    "type_reasoning": "The work produces procedures that enforcement staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure or defined set of procedures is reviewed and issued together.",
+    "work_item": "one enforcement procedure or procedure set",
+    "start": "enforcement requirement and procedure assignment identified",
+    "end": "procedures finalized for approval or implementation",
+    "checked_by": "agency leadership and enforcement staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares are illustrative and depend on the government or policy assignment."
+ },
+ {
+  "task_id": "20877",
+  "split_reasoning": "Two kinds: drafting and reviewing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draft a new legal document.",
+    "time_share": 0.65,
+    "type_reasoning": "Ends in a document.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per document.",
+    "work_item": "one document drafted",
+    "start": "instruction",
+    "end": "sent",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "23992",
+     "3788"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review another party's legal document.",
+    "time_share": 0.35,
+    "type_reasoning": "Ends in comments.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per document.",
+    "work_item": "one document reviewed",
+    "start": "received",
+    "end": "comments returned",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "23992"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23992",
+  "split_reasoning": "Negotiating contractual agreements is one activity across different contract types.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate the terms of a contractual agreement.",
+    "time_share": 1.0,
+    "type_reasoning": "The central work is negotiation with the other party or counsel.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3773",
+     "3786",
+     "20877"
+    ]
+   }
+  ],
+  "notes": "Drafting or reviewing the contract is coded separately."
+ }
+]

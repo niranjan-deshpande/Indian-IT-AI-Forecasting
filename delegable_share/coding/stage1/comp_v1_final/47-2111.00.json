@@ -1,0 +1,512 @@
+[
+ {
+  "task_id": "2873",
+  "split_reasoning": "Assembly and installation, testing, and maintenance are distinct activities performed on electrical items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble and install electrical wiring, equipment, appliances, apparatus, or fixtures using tools.",
+    "time_share": 0.55,
+    "type_reasoning": "Assembly and installation require hands-on work at the equipment or site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2875",
+     "2883",
+     "2884",
+     "2887",
+     "2888",
+     "2890",
+     "20439"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Test electrical wiring, equipment, appliances, apparatus, or fixtures using tools.",
+    "time_share": 0.15,
+    "type_reasoning": "Testing requires hands-on use of equipment on electrical systems.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2874",
+     "2876",
+     "2878",
+     "2883"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain electrical wiring, equipment, appliances, apparatus, or fixtures using tools.",
+    "time_share": 0.3,
+    "type_reasoning": "Maintenance requires hands-on work on electrical systems.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2874",
+     "2883",
+     "2886",
+     "2887"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate and vary with the electrician's installation and maintenance workload."
+ },
+ {
+  "task_id": "2874",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Diagnose a malfunctioning system with test equipment and correct the fault.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2878",
+     "2886"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2875",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Connect wires to breakers, transformers and other components.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2884"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2876",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect electrical systems on site to find hazards and defects and check code compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2877",
+     "2878"
+    ]
+   }
+  ],
+  "notes": "Written inspection report not split out; may be a small discrete share."
+ },
+ {
+  "task_id": "2877",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise management whether continued equipment operation may be hazardous.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a recommendation management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each hazard question is advised on separately.",
+    "work_item": "one hazard advisory to management",
+    "start": "hazard found or asked about",
+    "end": "advice given and acknowledged",
+    "checked_by": "facility manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "2876"
+    ]
+   }
+  ],
+  "notes": "Often verbal; coded as discrete advice."
+ },
+ {
+  "task_id": "2878",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test circuits and continuity with ohmmeters, voltmeters or oscilloscopes.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2874",
+     "2876"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2879",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Renew and maintain the electrician's license or ID card.",
+    "time_share": 1.0,
+    "type_reasoning": "Each renewal produces a license that regulators rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Renewal cycles recur on a set schedule.",
+    "work_item": "one license renewal",
+    "start": "renewal due",
+    "end": "license renewed",
+    "checked_by": "licensing board",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Small share; includes continuing-education coursework."
+ },
+ {
+  "task_id": "2880",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan the layout and installation of wiring and fixtures from job specs and local codes.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a layout plan used by the crew and inspector.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One plan per job.",
+    "work_item": "one installation layout plan for a job",
+    "start": "job specs received",
+    "end": "layout plan ready for installation",
+    "checked_by": "foreman; code inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     "2882",
+     "2892"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2881",
+  "split_reasoning": "Directing workers and training workers are distinct live activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct workers installing, maintaining, or repairing electrical systems and fixtures.",
+    "time_share": 0.6,
+    "type_reasoning": "Directing workers is live supervision rather than a distinct deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train workers to install, maintain, or repair electrical systems and fixtures.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in live instruction and demonstration to workers.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The relative time spent directing and training varies by role."
+ },
+ {
+  "task_id": "2882",
+  "split_reasoning": "Two activities: drawing sketches, and locating work on site from the blueprints.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a sketch of wiring or equipment locations to meet code.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a sketch used by the crew.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One sketch per job area.",
+    "work_item": "one sketch prepared",
+    "start": "job needs a layout",
+    "end": "sketch ready",
+    "checked_by": "foreman; inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     "2880",
+     "2892"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Read blueprints and mark locations of wiring and equipment on site.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on marking away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2883",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use power construction equipment, measuring devices, power tools and test equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [
+     "2873"
+    ],
+    "overlaps_with": [
+     "2878"
+    ]
+   }
+  ],
+  "notes": "Tool use inside other tasks; largely redundant with 2873."
+ },
+ {
+  "task_id": "2884",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install ground leads and connect power cables to equipment such as motors.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2875"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2885",
+  "split_reasoning": "Two different business tasks: records and reports, and ordering supplies.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain records and prepare reports on jobs.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces records others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One job's paperwork at a time.",
+    "work_item": "one job's records and report completed",
+    "start": "job finished",
+    "end": "records filed or report sent",
+    "checked_by": "owner; customer",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Order supplies or equipment.",
+    "time_share": 0.4,
+    "type_reasoning": "Each order is a deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Orders placed one at a time.",
+    "work_item": "one supply order placed",
+    "start": "need identified",
+    "end": "order confirmed",
+    "checked_by": "owner; supplier",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2886",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Repair or replace wiring, equipment or fixtures with hand or power tools.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2874"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2887",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Work from ladders, scaffolds or roofs to install, maintain or repair electrical work.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2886"
+    ]
+   }
+  ],
+  "notes": "Setting for other tasks."
+ },
+ {
+  "task_id": "2888",
+  "split_reasoning": "Placing conduit and pulling wires through it are distinct hands-on activities in completing circuits.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Place conduit, pipes, or tubing in designated walls, partitions, or other concealed areas.",
+    "time_share": 0.55,
+    "type_reasoning": "Placing conduit requires hands-on work at the installation site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2883",
+     "2887",
+     "2891"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Pull insulated wires or cables through conduit to complete circuits between boxes.",
+    "time_share": 0.45,
+    "type_reasoning": "Pulling wire and cable requires hands-on work at the installation site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873",
+     "2875",
+     "2883",
+     "2884",
+     "2887"
+    ]
+   }
+  ],
+  "notes": "Shares depend on conduit length, routing, and site conditions."
+ },
+ {
+  "task_id": "2890",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Fasten boxes to walls to house switches and outlets.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2891",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform physically demanding work such as trenching and lifting.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2888"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2892",
+  "split_reasoning": "Two outputs: sketches and cost estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide a preliminary sketch for a job.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a sketch the customer reviews.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per job.",
+    "work_item": "one preliminary sketch",
+    "start": "customer requests job",
+    "end": "sketch given",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2882",
+     "2880"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Provide a cost estimate for materials or services.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces a quote the customer relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One estimate per job.",
+    "work_item": "one cost estimate",
+    "start": "customer requests quote",
+    "end": "estimate given",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Estimates are sometimes given live on site."
+ },
+ {
+  "task_id": "2893",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help in emergencies by running floodlights or generators, placing flares or driving vehicles.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20439",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Fabricate parts with hand tools to specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer; nothing but the physical work itself.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2873"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

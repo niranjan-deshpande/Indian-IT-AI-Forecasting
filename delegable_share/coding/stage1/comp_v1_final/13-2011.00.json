@@ -1,0 +1,883 @@
+[
+ {
+  "task_id": "21505",
+  "split_reasoning": "One activity: writing up audit findings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a detailed report of the findings from an audit engagement.",
+    "time_share": 1.0,
+    "type_reasoning": "The report is handed to management or the audit committee and reviewed first by the audit manager or partner.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report per audit or review.",
+    "work_item": "one audit report",
+    "start": "testing complete and findings agreed",
+    "end": "report issued to management",
+    "checked_by": "audit manager and partner, and management or the audit committee",
+    "duplicates": [],
+    "overlaps_with": [
+     "21506",
+     "21520"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21506",
+  "split_reasoning": "Two activities: a written report or presentation to management, and the meeting at which it is discussed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a report or presentation for management on asset use and audit results, with recommended changes.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a document management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report is issued per audit or review.",
+    "work_item": "one management report with recommendations",
+    "start": "audit or review complete",
+    "end": "report delivered to management",
+    "checked_by": "management, and the audit manager who reviews it",
+    "duplicates": [],
+    "overlaps_with": [
+     "21505",
+     "21520",
+     "21510"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Meet with management to walk through results and recommend changes.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the live discussion and nothing separate is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21510"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21507",
+  "split_reasoning": "One activity: testing data for control weaknesses and fraud.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect and analyze data to test for control weaknesses, duplicated effort, fraud or non-compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "Each test ends in a documented workpaper with exceptions that reviewers check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work is organised by test or audit area.",
+    "work_item": "one control or fraud test with exceptions documented",
+    "start": "test area selected",
+    "end": "workpaper completed with exceptions listed",
+    "checked_by": "audit senior or manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21508",
+     "21513",
+     "21511"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21508",
+  "split_reasoning": "One activity: examining books and systems for one area.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect account books and accounting systems for one area and assess whether transactions are recorded properly.",
+    "time_share": 1.0,
+    "type_reasoning": "Each area ends in a workpaper reviewed by the senior.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Audits are broken into areas or accounts.",
+    "work_item": "one audit area (account or process) reviewed and documented",
+    "start": "area assigned",
+    "end": "workpaper signed off",
+    "checked_by": "audit senior or manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21507",
+     "21514",
+     "21511"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21509",
+  "split_reasoning": "Two different activities: setting the scope of the audit, and supervising the team doing it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan the audit and decide the scope of investigation.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces an audit plan that the team and client rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One plan per engagement.",
+    "work_item": "one audit plan or scope memo",
+    "start": "engagement accepted",
+    "end": "plan approved",
+    "checked_by": "audit partner and the engagement team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21529"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise the staff performing the audit.",
+    "time_share": 0.6,
+    "type_reasoning": "Supervising is done through live direction and review rather than producing a deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21529"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21510",
+  "split_reasoning": "One activity: conferring with officials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with company officials on financial and regulatory matters.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live conversation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21506",
+     "21520"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21511",
+  "split_reasoning": "One activity: reviewing systems and recommending controls.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate financial and information systems and recommend controls for reliability and data integrity.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a report that management and IT rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One evaluation per system.",
+    "work_item": "one systems or controls evaluation report",
+    "start": "system selected",
+    "end": "report with recommendations delivered",
+    "checked_by": "IT management and audit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21530",
+     "21521",
+     "21507",
+     "21508"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21512",
+  "split_reasoning": "Inspecting physical cash or instruments requires hands-on work, while examining account and transaction documentation can be done at a desk.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect and count cash or physical negotiable instruments to verify accounting records.",
+    "time_share": 0.4,
+    "type_reasoning": "Counting and inspecting physical assets requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21516"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Examine receivable, payable, security, and check documentation against accounting records.",
+    "time_share": 0.6,
+    "type_reasoning": "The desk review produces documented verification results.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A workpaper for a selected account or group of items is submitted as one audit unit.",
+    "work_item": "one account or group of financial items verified against records",
+    "start": "items and related accounting records are selected",
+    "end": "verification results and exceptions are documented",
+    "checked_by": "audit supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21514",
+     "21516",
+     "21534"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much evidence is held physically rather than electronically."
+ },
+ {
+  "task_id": "21513",
+  "split_reasoning": "Record examination and worker interviews are complementary methods for one transaction-recording and compliance assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine records and interview workers to assess transaction recording and compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces documented evidence and conclusions, including interview evidence.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An audit workpaper for a defined process or compliance test is reviewed as a whole.",
+    "work_item": "one documented transaction-recording or compliance test",
+    "start": "process or compliance requirement is selected for testing",
+    "end": "evidence and conclusions are documented for review",
+    "checked_by": "audit supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21507",
+     "21508",
+     "21523",
+     "21524"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21514",
+  "split_reasoning": "Two activities: preparing statements and reports, and reviewing or analyzing them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare accounting records and financial statements or reports.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces statements others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One set per period.",
+    "work_item": "one set of financial statements or reports",
+    "start": "period closed",
+    "end": "statements issued",
+    "checked_by": "controller, auditors, management",
+    "duplicates": [
+     "21532"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Review and analyze records and statements for accuracy, completeness and conformance to standards.",
+    "time_share": 0.5,
+    "type_reasoning": "Ends in a review sign-off.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One review per set.",
+    "work_item": "one set of statements reviewed",
+    "start": "statements received",
+    "end": "review signed off",
+    "checked_by": "reviewer or partner",
+    "duplicates": [
+     "21532"
+    ],
+    "overlaps_with": [
+     "21508",
+     "21534"
+    ]
+   }
+  ],
+  "notes": "21532 describes nearly the same work."
+ },
+ {
+  "task_id": "21515",
+  "split_reasoning": "One activity: period-end adjusting entries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare adjusting journal entries with support.",
+    "time_share": 1.0,
+    "type_reasoning": "Entries are reviewed before posting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are prepared as a set at period end.",
+    "work_item": "one set of adjusting entries prepared",
+    "start": "period-end close starts",
+    "end": "entries approved and posted",
+    "checked_by": "controller",
+    "duplicates": [],
+    "overlaps_with": [
+     "21516",
+     "21514"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21516",
+  "split_reasoning": "One activity: reconciling an account.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review an account for discrepancies and reconcile differences.",
+    "time_share": 1.0,
+    "type_reasoning": "Each account's reconciliation is reviewed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Accounts are reconciled one at a time.",
+    "work_item": "one account reconciliation",
+    "start": "statement and ledger obtained",
+    "end": "reconciliation signed",
+    "checked_by": "controller or reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "21515",
+     "21512"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21517",
+  "split_reasoning": "Two activities: setting up the chart of accounts (rare), and coding transactions to accounts (routine).",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up or revise the table of accounts.",
+    "time_share": 0.1,
+    "type_reasoning": "Produces a chart others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Set up once or rarely changed.",
+    "work_item": "one chart of accounts created or revised",
+    "start": "need identified",
+    "end": "chart approved",
+    "checked_by": "controller",
+    "duplicates": [],
+    "overlaps_with": [
+     "21521"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Assign transactions to the right accounts.",
+    "time_share": 0.9,
+    "type_reasoning": "Coded entries are posted and relied on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Handled in batches.",
+    "work_item": "one batch of transactions coded",
+    "start": "transactions received",
+    "end": "entries posted",
+    "checked_by": "reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "21533"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21518",
+  "split_reasoning": "Physically examining inventory and comparing the resulting evidence with accounting entries are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Physically examine or count inventory selected for verification.",
+    "time_share": 0.6,
+    "type_reasoning": "Inspecting and counting stock requires hands-on work at the inventory location.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Compare inventory examination results with journal and ledger entries.",
+    "time_share": 0.4,
+    "type_reasoning": "The comparison produces a documented verification and any exceptions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A workpaper for an inventory count or selected sample is reviewed as a whole.",
+    "work_item": "one inventory verification workpaper",
+    "start": "inventory count results and related accounting records are available",
+    "end": "comparison and discrepancies are documented",
+    "checked_by": "audit supervisor or inventory accounting manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21514",
+     "21516"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the inventory and the extent of physical testing."
+ },
+ {
+  "task_id": "21519",
+  "split_reasoning": "Forecasting and providing advice are distinct outputs that may use the same business analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze business information to project future revenues and expenses.",
+    "time_share": 0.6,
+    "type_reasoning": "The analysis produces a forecast for planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A forecast for a defined period or scenario is delivered and reviewed as a whole.",
+    "work_item": "one revenue and expense forecast",
+    "start": "historical data, commitments, and forecast assumptions are gathered",
+    "end": "forecast and assumptions are submitted",
+    "checked_by": "management or finance manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21531",
+     "21532",
+     "21534"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze business information and provide written financial advice.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces advice that management or a client can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation addressing a particular business question is delivered as a unit.",
+    "work_item": "one written business or financial recommendation",
+    "start": "business question and relevant data are received",
+    "end": "analysis and recommendation are communicated",
+    "checked_by": "management or client",
+    "duplicates": [],
+    "overlaps_with": [
+     "21506",
+     "21520",
+     "21527",
+     "21534"
+    ]
+   }
+  ],
+  "notes": "Advice may also be delivered in live discussion; shares are approximate."
+ },
+ {
+  "task_id": "21520",
+  "split_reasoning": "One activity: financial reporting to management.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Report to management on the finances of the establishment.",
+    "time_share": 1.0,
+    "type_reasoning": "Management relies on the report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are periodic.",
+    "work_item": "one financial report to management",
+    "start": "period closed",
+    "end": "report delivered",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21506",
+     "21532",
+     "21531",
+     "21510"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21521",
+  "split_reasoning": "One activity: designing or changing a recordkeeping system.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop, implement and document a recordkeeping or accounting system or change.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in an implemented, documented change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work is by system or change.",
+    "work_item": "one system change implemented and documented",
+    "start": "need approved",
+    "end": "change live and documented",
+    "checked_by": "controller and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21517",
+     "21511"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21522",
+  "split_reasoning": "One activity: working out a taxpayer's liability.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a taxpayer's finances to determine tax liability.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a computation others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per taxpayer and period.",
+    "work_item": "one tax liability analysis",
+    "start": "records received",
+    "end": "computation completed",
+    "checked_by": "reviewer, taxpayer or client",
+    "duplicates": [],
+    "overlaps_with": [
+     "21526"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21523",
+  "split_reasoning": "One activity: review of objectives and management.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine whether objectives are reflected in management activities and understood by staff.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a findings memo.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One review per entity.",
+    "work_item": "one operational review memo",
+    "start": "review scoped",
+    "end": "memo issued",
+    "checked_by": "management and audit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21513"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21524",
+  "split_reasoning": "One activity: payroll audit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Audit payroll and personnel records for premiums, coverage, liabilities and tax compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a payroll audit workpaper and report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per audit.",
+    "work_item": "one payroll audit",
+    "start": "audit started",
+    "end": "report issued",
+    "checked_by": "client or authority",
+    "duplicates": [],
+    "overlaps_with": [
+     "21525"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21525",
+  "split_reasoning": "Taxpayer audits can be conducted while a summoned taxpayer is present or independently from correspondence and on-site records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a taxpayer's account and conduct an audit during an office appointment with the taxpayer.",
+    "time_share": 0.3,
+    "type_reasoning": "The taxpayer is present while the account and evidence are examined and questions are addressed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The live examination during one appointment is a bounded portion of the audit contact.",
+    "work_item": "one taxpayer account examination during an office appointment",
+    "start": "taxpayer presents the account or requested records at the appointment",
+    "end": "examiner communicates the examination's immediate results or next steps before the appointment ends",
+    "checked_by": "taxpayer and audit supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21522",
+     "21524",
+     "21526"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review taxpayer accounts and conduct audits from correspondence or independently at the taxpayer's premises.",
+    "time_share": 0.7,
+    "type_reasoning": "The examiner analyzes records and documents audit conclusions outside a live waiting contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An audit case for a taxpayer and defined period is documented and submitted as a unit.",
+    "work_item": "one taxpayer audit case",
+    "start": "taxpayer account and audit assignment or correspondence are received",
+    "end": "audit conclusions and supporting records are documented and communicated",
+    "checked_by": "tax audit supervisor and taxpayer",
+    "duplicates": [],
+    "overlaps_with": [
+     "21522",
+     "21524",
+     "21526"
+    ]
+   }
+  ],
+  "notes": "An on-site audit may include live interviews but is not necessarily performed while the taxpayer waits; shares vary."
+ },
+ {
+  "task_id": "21526",
+  "split_reasoning": "One activity: preparing a tax return.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute taxes owed and prepare the return.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One return per filer.",
+    "work_item": "one tax return",
+    "start": "documents received",
+    "end": "return filed",
+    "checked_by": "client and tax authority",
+    "duplicates": [],
+    "overlaps_with": [
+     "21522"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21527",
+  "split_reasoning": "Two activities: written advice and advisory meetings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write advice on benefits, systems or tax and estate plans.",
+    "time_share": 0.6,
+    "type_reasoning": "Ends in a memo.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per question.",
+    "work_item": "one advice memo",
+    "start": "question received",
+    "end": "memo sent",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "21519"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Meet clients to advise them.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21510"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21528",
+  "split_reasoning": "Two activities: appearing for clients, and preparing written responses and support analyses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Represent clients in meetings and hearings with taxing authorities.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in live representation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21525"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare written responses to authorities or litigation analyses.",
+    "time_share": 0.5,
+    "type_reasoning": "Ends in a document.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per notice or case.",
+    "work_item": "one written response or support analysis",
+    "start": "notice or request received",
+    "end": "response sent",
+    "checked_by": "client, authority or attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "21526"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21529",
+  "split_reasoning": "One activity: directing staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct personnel who file, record and compile financial records.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision is live direction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21509"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21530",
+  "split_reasoning": "One activity: pre-implementation review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Audit a system under development to see if it will work as planned.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per project.",
+    "work_item": "one pre-implementation audit report",
+    "start": "review requested",
+    "end": "report issued",
+    "checked_by": "project sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21511"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21531",
+  "split_reasoning": "Two kinds of output: the budget, and periodic variance reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or update a budget.",
+    "time_share": 0.4,
+    "type_reasoning": "Ends in a budget.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Annual or periodic.",
+    "work_item": "one budget",
+    "start": "cycle starts",
+    "end": "budget approved",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21519"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare periodic budget-versus-actual reports.",
+    "time_share": 0.6,
+    "type_reasoning": "Ends in a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Periodic.",
+    "work_item": "one variance report",
+    "start": "period closed",
+    "end": "report sent",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21520"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21532",
+  "split_reasoning": "Preparing annual reports or financial statements and analyzing or verifying existing reports produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare annual reports, financial statements, or related financial records.",
+    "time_share": 0.5,
+    "type_reasoning": "Preparation produces a report or set of statements for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A complete report or set of financial statements is submitted as a unit.",
+    "work_item": "one annual report or set of financial statements prepared",
+    "start": "period-end accounting information and reporting requirements are available",
+    "end": "report or statements are completed and submitted for review",
+    "checked_by": "controller, management, or auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21514",
+     "21520"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze or verify annual reports, financial statements, or related records to assess financial condition.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces documented verification or financial analysis for review or planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis or verification of one report or defined record set is handed over as a whole.",
+    "work_item": "one financial report analysis or verification",
+    "start": "report or defined record set is received for analysis",
+    "end": "analysis or verification conclusions are documented and communicated",
+    "checked_by": "finance manager, auditor, or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21514",
+     "21519",
+     "21520",
+     "21531",
+     "21534"
+    ]
+   }
+  ],
+  "notes": "Shares vary by reporting and review responsibilities."
+ },
+ {
+  "task_id": "21533",
+  "split_reasoning": "One activity: invoice processing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process an invoice for payment.",
+    "time_share": 1.0,
+    "type_reasoning": "Each invoice is coded, approved and queued.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One at a time.",
+    "work_item": "one invoice processed",
+    "start": "invoice received",
+    "end": "queued for payment",
+    "checked_by": "AP supervisor and vendor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21517"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21534",
+  "split_reasoning": "One activity: review of financial position data.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review data on assets, net worth, liabilities, capital, income and expenditures.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a review memo.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per entity and period.",
+    "work_item": "one financial position review",
+    "start": "data obtained",
+    "end": "memo issued",
+    "checked_by": "management or client",
+    "duplicates": [],
+    "overlaps_with": [
+     "21514",
+     "21532"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

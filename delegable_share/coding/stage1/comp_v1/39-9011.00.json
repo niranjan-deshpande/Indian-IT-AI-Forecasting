@@ -1,0 +1,524 @@
+[
+ {
+  "task_id": 2331,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Support children's emotional and social growth.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2334,
+     2338
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2332,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Care for children in a group home, nursery or school for people with disabilities.",
+    "time_share": 1.0,
+    "type_reasoning": "General hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2346,
+     2338,
+     2336,
+     18756,
+     18758,
+     18763
+    ]
+   }
+  ],
+  "notes": "Umbrella statement overlapping many specific ones."
+ },
+ {
+  "task_id": 2333,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sanitize toys and play equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2334,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correct children's behavior and set limits.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2331
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2335,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Notice signs of emotional or developmental problems and raise them with parents.",
+    "time_share": 1.0,
+    "type_reasoning": "Each concern ends in communication to the parent.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Concerns are raised one child at a time.",
+    "work_item": "one concern raised with a child's parent",
+    "start": "worker notes a sign",
+    "end": "parent informed",
+    "checked_by": "parent, director",
+    "duplicates": [],
+    "overlaps_with": [
+     2336,
+     18757,
+     2337
+    ]
+   }
+  ],
+  "notes": "May be verbal at pickup; could be LIVE_SERVICE."
+ },
+ {
+  "task_id": 2336,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Watch children at play.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision with nothing produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18756,
+     2332
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2337,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a child's daily record, including observations, meals and medications.",
+    "time_share": 1.0,
+    "type_reasoning": "Records are relied on by parents and licensors.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are made per child per day.",
+    "work_item": "one child's daily record",
+    "start": "day's activities occur",
+    "end": "record completed",
+    "checked_by": "parents, director, licensing inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     2335,
+     18757
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2338,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach children eating, rest and toilet habits.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2331
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2339,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read to children and teach painting, drawing, handicrafts and songs.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live activity.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18762,
+     18759
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2342,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize and store toys and materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on tidying.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2344,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sterilize bottles and prepare formula.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on kitchen work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18758
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2346,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dress children and change diapers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2347,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help children with homework.",
+    "time_share": 1.0,
+    "type_reasoning": "Tutoring is live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2348,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Do laundry, cleaning, dish washing and linen changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on housework.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2349,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Escort children to school, on outings and to medical appointments.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on escort away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18762
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18756,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the play area safe by checking and removing hazards.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2336,
+     2333
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18757,
+  "split_reasoning": "Same activity done in two places: live with the parent at drop-off or pickup, and afterward in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a parent verbally at drop-off or pickup.",
+    "time_share": 0.5,
+    "type_reasoning": "Parent is present while the update is given.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each handoff happens within one arrival or departure.",
+    "work_item": "one parent update at drop-off or pickup",
+    "start": "parent arrives",
+    "end": "parent leaves with the child informed",
+    "checked_by": "parent",
+    "duplicates": [],
+    "overlaps_with": [
+     2337,
+     2335
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a parent a written message, daily report or return a call.",
+    "time_share": 0.5,
+    "type_reasoning": "Done afterward with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Messages are sent one at a time.",
+    "work_item": "one written update or callback to a parent",
+    "start": "need to communicate arises",
+    "end": "message sent",
+    "checked_by": "parent",
+    "duplicates": [],
+    "overlaps_with": [
+     2337,
+     18761
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18758,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help prepare and serve meals and snacks.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on food work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2344
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18759,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a developmentally appropriate lesson plan.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a plan others review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are written per week or theme.",
+    "work_item": "one lesson plan",
+    "start": "planning period begins",
+    "end": "plan finished",
+    "checked_by": "lead teacher, director",
+    "duplicates": [],
+    "overlaps_with": [
+     2339,
+     18762
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18760,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Settle children for naps and oversee rest periods.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on settling away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Could be INTERPERSONAL supervision."
+ },
+ {
+  "task_id": 18761,
+  "split_reasoning": "Two kinds: batch paperwork, and phone calls handled live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take attendance and edit internal paperwork.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces records others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done as a daily batch.",
+    "work_item": "one day's attendance and paperwork",
+    "start": "day begins",
+    "end": "records complete",
+    "checked_by": "director, licensing",
+    "duplicates": [],
+    "overlaps_with": [
+     2337
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Make or take a phone call.",
+    "time_share": 0.3,
+    "type_reasoning": "Done in a live conversation with the other party.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is a complete contact.",
+    "work_item": "one phone call",
+    "start": "call begins",
+    "end": "call ends with matter settled",
+    "checked_by": "caller, director",
+    "duplicates": [],
+    "overlaps_with": [
+     18757
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18762,
+  "split_reasoning": "Two kinds: arranging activities and outings, and running them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and arrange an activity or outing, including permissions and transport.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces an arrangement others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each outing is arranged separately.",
+    "work_item": "one activity or outing arranged",
+    "start": "outing proposed",
+    "end": "arrangements confirmed",
+    "checked_by": "director, parents",
+    "duplicates": [],
+    "overlaps_with": [
+     18759
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Lead and join in games and outings with the children.",
+    "time_share": 0.7,
+    "type_reasoning": "Value is in the live activity.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2339,
+     2349
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18763,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give hands-on care to children with disabilities.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2332,
+     2346
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18764,
+  "split_reasoning": "Two kinds: live supervision and training, and producing schedules.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise and train staff.",
+    "time_share": 0.6,
+    "type_reasoning": "Value is in live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare staff schedules.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a schedule staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One schedule per period.",
+    "work_item": "one staff schedule",
+    "start": "scheduling period begins",
+    "end": "schedule posted",
+    "checked_by": "staff, director",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,662 @@
+[
+ {
+  "task_id": "10635",
+  "split_reasoning": "Two different activities: checking hazmat paperwork and placards at a computer or desk, and following handling and driving procedures on the road.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check hazardous-materials shipping papers, placards and endorsements before departing with a dangerous-goods load.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a verified load paperwork set that the carrier and roadside inspectors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each hazmat load is checked once before it leaves.",
+    "work_item": "one hazmat load's papers and placards verified before departure",
+    "start": "hazmat load assigned or loaded",
+    "end": "papers and placards confirmed correct and truck cleared to depart",
+    "checked_by": "dispatcher, safety officer and roadside inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     "20693",
+     "10643",
+     "10642"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Follow dangerous-goods handling, routing, parking and spill-response procedures while hauling the load.",
+    "time_share": 0.7,
+    "type_reasoning": "Hands-on driving and handling work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641",
+     "10658",
+     "20692"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10636",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Walk around the tractor and trailer to inspect brakes, tires, lights, couplings and safety and emergency equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "A hands-on walk-around inspection done at the truck, away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10644",
+     "10637"
+    ]
+   }
+  ],
+  "notes": "The written pre-trip or post-trip report is covered under 10637 and 10644."
+ },
+ {
+  "task_id": "10637",
+  "split_reasoning": "Two different records: the hours-of-service log and the vehicle service or repair status record.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the daily hours-of-service log (duty status changes, certify the day's record).",
+    "time_share": 0.7,
+    "type_reasoning": "Each day's log is a regulated record that carriers and inspectors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One log is certified per driver per day.",
+    "work_item": "one daily hours-of-service log certified",
+    "start": "start of duty day",
+    "end": "day's log reviewed, edited and certified",
+    "checked_by": "motor carrier compliance staff and DOT roadside or audit inspectors",
+    "duplicates": [],
+    "overlaps_with": [
+     "20694",
+     "20695"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record the vehicle's service and repair status in the inspection report after each trip.",
+    "time_share": 0.3,
+    "type_reasoning": "Each report goes to maintenance, who rely on it.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are filed per vehicle per trip or day.",
+    "work_item": "one vehicle condition report (pre- or post-trip) filed",
+    "start": "end of the day's driving or inspection complete",
+    "end": "report signed and submitted to the carrier",
+    "checked_by": "maintenance shop and next driver",
+    "duplicates": [],
+    "overlaps_with": [
+     "10636",
+     "10644"
+    ]
+   }
+  ],
+  "notes": "Service and repair status logs may be separate from the daily inspection report in some fleets."
+ },
+ {
+  "task_id": "10638",
+  "split_reasoning": "One activity: getting proof of delivery and any payment, done at the dock with the receiver present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Get the receiver's signature on the delivery receipt and collect payment when required, at the delivery point.",
+    "time_share": 1.0,
+    "type_reasoning": "The receiver is present and waiting while the signature and payment are handled.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each delivery stop is closed out in one handover.",
+    "work_item": "one delivery receipt signed and any payment collected at the stop",
+    "start": "unloading finished, driver presents documents",
+    "end": "signed receipt (and payment) obtained, copy retained",
+    "checked_by": "the receiver, and the carrier's billing office",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641",
+     "10640",
+     "20693"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10640",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Back the truck into a loading or unloading position, following the dock crew's signals and checking trailer and equipment alignment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on vehicle maneuvering at the dock.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20696",
+     "10659",
+     "10646"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10641",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive a tractor-trailer or heavy truck over the route to transport and deliver the load.",
+    "time_share": 1.0,
+    "type_reasoning": "Driving is hands-on work with no document produced.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10640",
+     "20694",
+     "10645"
+    ]
+   }
+  ],
+  "notes": "Driving is the bulk of the job; other statements are mostly sub-activities."
+ },
+ {
+  "task_id": "10642",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Secure cargo on the trailer using ropes, blocks, chains, binders or covers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work at the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20692",
+     "20697",
+     "10635"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10643",
+  "split_reasoning": "One activity: reading a bill of lading for one load.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read the bill of lading to determine the pickup, delivery and handling details for a load.",
+    "time_share": 1.0,
+    "type_reasoning": "The driver's reading is what lets the dispatcher and customer rely on the load being handled as documented, though the output is mostly the driver's own understanding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each load comes with its own bill of lading.",
+    "work_item": "one load's bill of lading read and the assignment confirmed (any discrepancy flagged)",
+    "start": "bill of lading received at pickup or dispatch",
+    "end": "assignment details understood, discrepancies raised with dispatcher",
+    "checked_by": "dispatcher and shipper",
+    "duplicates": [],
+    "overlaps_with": [
+     "20693",
+     "10647",
+     "10655"
+    ]
+   }
+  ],
+  "notes": "Borderline NO_DELIVERABLE: little is produced beyond the driver's own understanding."
+ },
+ {
+  "task_id": "10644",
+  "split_reasoning": "Two kinds of report: routine defect and damage reports, and rarer incident reports for accidents or violations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Report vehicle defects or damage to the carrier's maintenance or dispatch.",
+    "time_share": 0.8,
+    "type_reasoning": "Each report starts a repair or is logged by maintenance.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Defects are reported one at a time or in the daily inspection report.",
+    "work_item": "one defect or damage report submitted",
+    "start": "defect or damage found",
+    "end": "report submitted and acknowledged by maintenance",
+    "checked_by": "maintenance shop and dispatcher",
+    "duplicates": [],
+    "overlaps_with": [
+     "10636",
+     "10637",
+     "10650"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "File an accident or traffic-violation report with the carrier.",
+    "time_share": 0.2,
+    "type_reasoning": "Each incident produces a report that safety and insurance staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Incidents are reported one at a time.",
+    "work_item": "one accident or violation report filed",
+    "start": "incident occurs and scene is safe",
+    "end": "report filed with the carrier (and police or insurer as needed)",
+    "checked_by": "safety manager and insurer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10645",
+  "split_reasoning": "One activity: working out the route for a trip.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read maps or route atlases to work out the route for a delivery.",
+    "time_share": 1.0,
+    "type_reasoning": "The route is something the dispatcher and customer rely on for delivery on time, though the driver mostly uses it alone.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One route is worked out per trip.",
+    "work_item": "one trip route determined",
+    "start": "delivery assignment received",
+    "end": "route chosen and ready to drive",
+    "checked_by": "the driver and dispatcher (delivery on time)",
+    "duplicates": [],
+    "overlaps_with": [
+     "19923",
+     "10647"
+    ]
+   }
+  ],
+  "notes": "Borderline NO_DELIVERABLE; overlaps strongly with GPS route planning in 19923."
+ },
+ {
+  "task_id": "10646",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Couple or uncouple a trailer by setting jacks, connecting air and electrical lines and operating fifth-wheel locks.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work at the truck and trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10651"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10647",
+  "split_reasoning": "One activity: gathering and checking delivery instructions for a load.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect and verify delivery instructions and the route for a load from dispatch, the customer or the receiver.",
+    "time_share": 1.0,
+    "type_reasoning": "The verified instructions are relied on by the dispatcher and customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each load has its own instruction set.",
+    "work_item": "one load's delivery instructions collected and verified",
+    "start": "load assigned",
+    "end": "instructions and route confirmed with source",
+    "checked_by": "dispatcher and customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "10643",
+     "10645",
+     "19923"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10650",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Walk around and look inside the empty trailer after unloading to check for damage.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on inspection at the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10644",
+     "10656"
+    ]
+   }
+  ],
+  "notes": "Any damage found is reported under 10644."
+ },
+ {
+  "task_id": "10651",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Crank trailer landing gear up or down to secure the trailer.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work at the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [
+     "10646"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A sub-step of coupling and uncoupling (10646)."
+ },
+ {
+  "task_id": "10653",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Add oil, fuel or radiator fluid, make minor repairs and wash the truck.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on maintenance work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10662",
+     "10660"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10655",
+  "split_reasoning": "One activity: counting and inspecting a load before moving it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and inspect goods being loaded, comparing quantities and condition with the paperwork, and note any exceptions.",
+    "time_share": 1.0,
+    "type_reasoning": "The shipper and consignee rely on the exception notes on the bill of lading.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each load is counted once at pickup.",
+    "work_item": "one load counted and inspected, exceptions noted",
+    "start": "goods staged for loading",
+    "end": "count and condition confirmed and exceptions noted on the paperwork",
+    "checked_by": "shipper and consignee",
+    "duplicates": [],
+    "overlaps_with": [
+     "10643",
+     "20693",
+     "10650",
+     "20692"
+    ]
+   }
+  ],
+  "notes": "Partly a physical count; coded DISCRETE because the exception note on the paperwork is what others rely on."
+ },
+ {
+  "task_id": "10656",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Remove debris from the loaded trailer.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning work at the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10650"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10658",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry out special cargo procedures such as checking refrigeration units or feeding and watering livestock.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on tending of the cargo and its equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10635",
+     "20692"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10659",
+  "split_reasoning": "One activity: instructing the people who load.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct laborers who are packing goods and moving them onto the trailer.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live direction of others and nothing a colleague could check is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20696",
+     "10640",
+     "10642"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10660",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install or remove tire chains, plow or grader blades, sanders or similar special equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on mechanical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10653",
+     "10662"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10662",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make emergency roadside repairs such as changing tires or fitting bulbs, chains or spark plugs.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on repair work at the roadside.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10653",
+     "10660"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19922",
+  "split_reasoning": "One activity: running onboard idle-reduction power systems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate idle-reduction or auxiliary power systems to heat, cool and power the cab.",
+    "time_share": 1.0,
+    "type_reasoning": "Switching onboard systems on and off produces nothing anyone checks or relies on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19923",
+  "split_reasoning": "One activity: route planning or adjusting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan or adjust the route using GPS or fleet software in response to traffic, weather or closures, to save fuel.",
+    "time_share": 1.0,
+    "type_reasoning": "Each change produces a revised route that the driver and dispatcher rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Route changes happen one at a time as conditions change.",
+    "work_item": "one route plan or adjustment made",
+    "start": "condition change or new assignment",
+    "end": "revised route set and ETA updated if needed",
+    "checked_by": "dispatcher and the driver",
+    "duplicates": [],
+    "overlaps_with": [
+     "10645",
+     "10647",
+     "20695"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20692",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check on the trailer that cargo is still tied down and secure, at the start and at stops.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on inspection at the trailer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10642",
+     "10655",
+     "10635"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20693",
+  "split_reasoning": "One activity: checking a load's papers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a load's shipping documents for completeness and accuracy before departing or delivering.",
+    "time_share": 1.0,
+    "type_reasoning": "Carriers, shippers and inspectors rely on accurate paperwork.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each load has its own document set.",
+    "work_item": "one load's documents checked",
+    "start": "documents handed to driver",
+    "end": "documents confirmed complete or errors raised",
+    "checked_by": "dispatcher and shipper",
+    "duplicates": [],
+    "overlaps_with": [
+     "10643",
+     "10655",
+     "10638"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20694",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive to weigh stations and scales before and after loading and on the route as state rules require.",
+    "time_share": 1.0,
+    "type_reasoning": "Driving and stopping at scales is hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10641",
+     "10637"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20695",
+  "split_reasoning": "One activity: exchanging information with base using in-cab devices.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Exchange status and problem messages with dispatch, supervisors or other drivers by in-cab computer, radio or phone.",
+    "time_share": 1.0,
+    "type_reasoning": "Each exchange (check call, ETA update, problem report) is something dispatch acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Messages go one at a time.",
+    "work_item": "one status or problem message exchange with dispatch",
+    "start": "driver sends or receives a message",
+    "end": "message acknowledged and any action agreed",
+    "checked_by": "dispatcher",
+    "duplicates": [],
+    "overlaps_with": [
+     "10637",
+     "19923",
+     "10644"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20696",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load or unload the truck by hand or with pallet jacks, hand trucks or lift gates.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10640",
+     "10659",
+     "20697"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20697",
+  "split_reasoning": "One physical activity with no split by kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wrap and secure goods with pads, paper, containers or straps.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "10642",
+     "20696"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

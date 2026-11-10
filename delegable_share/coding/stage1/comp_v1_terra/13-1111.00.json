@@ -1,0 +1,375 @@
+[
+ {
+  "task_id": "7276",
+  "split_reasoning": "Gathering and organizing information are steps in producing a study's information set, regardless of the source used.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather and organize information about a problem or procedure for a study.",
+    "time_share": 1.0,
+    "type_reasoning": "The organized information is a discrete input that an analyst or study team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A study's assembled information set is a practical handoff, rather than each individual source collected.",
+    "work_item": "one organized information set for a study",
+    "start": "study information needs are identified",
+    "end": "relevant information is collected and organized for analysis",
+    "checked_by": "the study team or lead analyst",
+    "overlap_reasoning": "Interviews and observations can supply this information, while analysis and study planning are related but distinct steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7277",
+     "7281",
+     "7285"
+    ]
+   }
+  ],
+  "notes": "The information set may be handed over incrementally in larger studies."
+ },
+ {
+  "task_id": "7277",
+  "split_reasoning": "Analyzing gathered data and developing alternatives are connected steps in producing solutions to a problem.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze gathered data and develop solutions or alternative methods of proceeding.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces a set of options that management or the study team can consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of alternatives for a defined problem is a usable output of the analysis, distinct from the final study documentation.",
+    "work_item": "one analysis and set of solution alternatives for a defined problem",
+    "start": "relevant study data are available for analysis",
+    "end": "analysis and alternatives are developed for review",
+    "checked_by": "study lead or management",
+    "overlap_reasoning": "Gathering supplies the data, while study documentation and form-change proposals can incorporate the analysis but have their own outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276",
+     "7282",
+     "7284"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7278",
+  "split_reasoning": "The target describes one continuing kind of interaction with personnel about implemented systems or procedures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with personnel about the functioning of newly implemented systems or procedures.",
+    "time_share": 1.0,
+    "type_reasoning": "The work described is consultation with personnel, with the value in the live interaction rather than a specified deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Records-program implementation may involve similar discussions, but neither statement is redundant with the other.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7279"
+    ]
+   }
+  ],
+  "notes": "Any subsequent corrective work or documentation would need separate coding if explicitly specified."
+ },
+ {
+  "task_id": "7279",
+  "split_reasoning": "Developing a records program, implementing its procedures, and checking compliance produce different outputs at different stages.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a records management program covering filing, protection, and retrieval.",
+    "time_share": 0.4,
+    "type_reasoning": "Program development produces documented rules and procedures for organizational use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The program document is the management-level artifact reviewed and adopted as a whole.",
+    "work_item": "one records management program document",
+    "start": "records management requirements are identified",
+    "end": "program rules and procedures are prepared for approval",
+    "checked_by": "management and records management staff",
+    "overlap_reasoning": "The program may draw on study analysis and result in procedures documented in manuals, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7277",
+     "7282",
+     "7283"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement a records management procedure in an organizational unit.",
+    "time_share": 0.35,
+    "type_reasoning": "Implementation produces an operational procedure or configured records process for a unit.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure put into operation in a unit is a bounded implementation handoff rather than the whole program rollout.",
+    "work_item": "one records procedure put into operation in a unit",
+    "start": "approved records procedure and unit requirements are available",
+    "end": "procedure is put into use and handed over to responsible staff",
+    "checked_by": "unit management and records management staff",
+    "overlap_reasoning": "Implementation can include consultations or training, but those activities are also described independently.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7278",
+     "7283"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Review a unit's compliance with the records management program and report exceptions.",
+    "time_share": 0.25,
+    "type_reasoning": "Compliance assurance is ongoing but produces discrete reviews and findings.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One unit or scheduled review yields a set of findings that management can act on.",
+    "work_item": "one records-program compliance review",
+    "start": "unit or review period is selected for compliance checking",
+    "end": "compliance findings and exceptions are reported",
+    "checked_by": "records manager, management, or auditor",
+    "overlap_reasoning": "No other statement specifically describes reviewing compliance with the records program.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares and the implementation handoff vary with the scope and maturity of the records program."
+ },
+ {
+  "task_id": "7280",
+  "split_reasoning": "Reviewing forms and reports produces findings, while conferring with management and users is a distinct live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review forms and reports for problems and potential improvements in format, distribution, and purpose.",
+    "time_share": 0.6,
+    "type_reasoning": "A review produces findings about an existing form or report that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A form or report review is a bounded output that can feed a subsequent change proposal.",
+    "work_item": "one form or report review with identified problems and improvements",
+    "start": "form or report and its usage information are available for review",
+    "end": "review findings and possible improvements are recorded for consideration",
+    "checked_by": "management or the form or report owner",
+    "overlap_reasoning": "The review can inform the design and evaluation of changes, but it can also identify issues without producing an approved change.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7284"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Confer with management and users about the format, distribution, and purpose of forms and reports.",
+    "time_share": 0.4,
+    "type_reasoning": "The specified work is a live discussion to understand needs and problems.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "These discussions gather information, but the broader information-gathering and personnel-interview tasks cover additional subjects and methods.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276",
+     "7281",
+     "7284"
+    ]
+   }
+  ],
+  "notes": "The share of discussion varies with the number of users and stakeholders."
+ },
+ {
+  "task_id": "7281",
+  "split_reasoning": "Interviewing personnel and observing work on site are different activities, even though both inform the study.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview personnel about unit functions, work, methods, equipment, and staffing.",
+    "time_share": 0.6,
+    "type_reasoning": "The specified activity is a live interview with personnel to understand how work is performed.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The interview is one way of gathering study information and may cover the same users consulted about forms, but those tasks have broader or different scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276",
+     "7280"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Observe work on site to ascertain unit functions, methods, equipment, and staffing.",
+    "time_share": 0.4,
+    "type_reasoning": "An observation produces recorded facts about work that the study team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One observation session's recorded findings form a bounded input to the study.",
+    "work_item": "one on-site work observation record",
+    "start": "observation session or work process is selected",
+    "end": "observations are recorded and available to the study team",
+    "checked_by": "study lead or analyst",
+    "overlap_reasoning": "Observation supplies information covered by the broader gathering task, but that task also includes other sources.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276"
+    ]
+   }
+  ],
+  "notes": "On-site observation is not classified as physical work merely because it occurs away from a computer."
+ },
+ {
+  "task_id": "7282",
+  "split_reasoning": "Documenting findings and preparing implementation recommendations are parts of the same study deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document study findings and prepare recommendations for new systems, procedures, or organizational changes.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a study findings and recommendations document for management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings and recommendations are normally submitted together for a defined study or study phase.",
+    "work_item": "one study findings and recommendations report",
+    "start": "study findings and analysis are ready to document",
+    "end": "findings and implementation recommendations are submitted",
+    "checked_by": "management or the study sponsor",
+    "overlap_reasoning": "Analysis develops alternatives that may appear in this report, while form and records recommendations can also be included but are separately scoped.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7277",
+     "7279",
+     "7284"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7283",
+  "split_reasoning": "Preparing manuals and training workers are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare manuals for new forms, reports, procedures, or equipment in accordance with organizational policy.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces a manual that workers and managers can use and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A manual or issued manual section is the document handed over for use.",
+    "work_item": "one manual or issued manual section",
+    "start": "new process or equipment instructions and applicable policy are available",
+    "end": "manual or section is prepared and issued for use",
+    "checked_by": "process owner, management, and workers",
+    "overlap_reasoning": "A records management program may require documented procedures, but manuals also cover other forms, reports, and equipment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7279"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Train workers to use new forms, reports, procedures, or equipment in accordance with organizational policy.",
+    "time_share": 0.4,
+    "type_reasoning": "Training is a live instructional interaction whose value is in workers learning the new practices.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Training can support records-program implementation, but it also covers other kinds of changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7279"
+    ]
+   }
+  ],
+  "notes": "The relative time spent on manuals and training depends on the rollout."
+ },
+ {
+  "task_id": "7284",
+  "split_reasoning": "Developing and recommending a change produces a proposal, while approving a change produces a separate decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design and evaluate changes to forms or reports and recommend a preferred change.",
+    "time_share": 0.8,
+    "type_reasoning": "The work produces a proposed form or report change with an evaluation and recommendation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal for a particular form or report is the unit submitted for a decision.",
+    "work_item": "one form or report change proposal",
+    "start": "a need or opportunity to change a form or report is identified",
+    "end": "proposed change and recommendation are submitted for review",
+    "checked_by": "form or report owner, users, or approving manager",
+    "overlap_reasoning": "Reviewing existing forms and developing study solutions can feed the proposal, while a study report can incorporate its recommendation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7277",
+     "7280",
+     "7282"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Approve a proposed change to a form or report.",
+    "time_share": 0.2,
+    "type_reasoning": "Approval produces a recorded decision that the implementer relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each proposed change can be reviewed and signed off as a distinct decision.",
+    "work_item": "one form or report change approval decision",
+    "start": "change proposal is submitted for approval",
+    "end": "approval decision is recorded and communicated",
+    "checked_by": "change owner, implementer, or management",
+    "overlap_reasoning": "Other statements may inform a decision, but none specifically describes approving a form or report change.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Approval authority may belong to a different person from the analyst who designs the change."
+ },
+ {
+  "task_id": "7285",
+  "split_reasoning": "The listed subjects are alternative study topics; planning the study is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a study of an organizational work problem or procedure.",
+    "time_share": 1.0,
+    "type_reasoning": "Planning produces a study approach that the study team and sponsor can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for one defined study is the bounded output that guides subsequent work.",
+    "work_item": "one work-problem or procedures study plan",
+    "start": "study need or assignment is identified",
+    "end": "scope and study approach are prepared for review or use",
+    "checked_by": "study sponsor or study lead",
+    "overlap_reasoning": "Planning may include identifying needed information, but the separate gathering task covers the actual collection and organization.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7276"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7286",
+  "split_reasoning": "A storage equipment purchase recommendation and a space layout are distinct deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend storage equipment for purchase.",
+    "time_share": 0.45,
+    "type_reasoning": "The work produces a purchase recommendation for a decision maker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation for a defined equipment need is submitted as a whole for purchasing consideration.",
+    "work_item": "one storage equipment purchase recommendation",
+    "start": "storage requirements and constraints are identified",
+    "end": "equipment recommendation is submitted",
+    "checked_by": "management or purchasing",
+    "overlap_reasoning": "Equipment choices can support a records management program, but this recommendation is not limited to that program.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7279"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Design an area layout to locate storage equipment within available space.",
+    "time_share": 0.55,
+    "type_reasoning": "The work produces a layout that managers or facilities staff can review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A layout for a defined area is the artifact handed over for review and implementation.",
+    "work_item": "one storage equipment area layout",
+    "start": "space dimensions, equipment, and placement requirements are available",
+    "end": "layout is prepared and submitted for review",
+    "checked_by": "management or facilities staff",
+    "overlap_reasoning": "The layout can support a records program, but it is a distinct space-planning output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7279"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether equipment selection or space constraints require more analysis."
+ }
+]

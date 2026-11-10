@@ -1,0 +1,44 @@
+[
+  {"task_id": "8114", "reasoning": "Wholesale reps mostly recommend products in live conversation with the buyer, and sometimes follow up with written recommendations. Example D calls for splitting by where the work is done, and Y does this. X treats every recommendation as a sent document.", "choice": "Y"},
+  {"task_id": "8115", "reasoning": "A sales call to demonstrate products and ask for an order is persuasion, and the instructions list persuading under INTERPERSONAL. Nothing a colleague would check is produced; the order form and forwarding are covered by 20267 and 8126. Y is the better fit.", "choice": "Y"},
+  {"task_id": "8116", "reasoning": "Reps quote prices and delivery dates both live on calls and visits and in formal written quotations prepared afterwards. Y splits by where the work is done, as in Example D, with full start, end and overlap details.", "choice": "Y"},
+  {"task_id": "8117", "reasoning": "Post-sale support is partly handled live on calls or visits and partly worked afterwards from written requests or back-office follow-up. Y's live/back-office split follows Example D, while X's single DISCRETE item ignores the live share.", "choice": "Y"},
+  {"task_id": "8118", "reasoning": "For a customer-specific opportunity, drawings and estimates are normally parts of a single bid or proposal package, handed over and judged as a whole. Y's separate standalone-estimate part largely repeats the quotation work in 8116. X's single bid-package item is the right handoff level.", "choice": "X"},
+  {"task_id": "8119", "reasoning": "Physical samples are packed, carried or shipped by hand, while catalogs are now often sent electronically. That is a physical-versus-computer difference the instructions say to split, so Y is better.", "choice": "Y"},
+  {"task_id": "8120", "reasoning": "Directories, referrals, clubs and trade shows are alternative sources for the same output, an identified prospect. The instructions say not to split alternative methods for one deliverable, so Y is correct.", "choice": "Y"},
+  {"task_id": "8121", "reasoning": "For a wholesale rep, arranging and directing delivery and installation means coordinating schedules and instructions with logistics and installers, not doing the installation by hand. Y's single DISCRETE arrangement per order fits. X's PHYSICAL installation part goes beyond the role.", "choice": "Y"},
+  {"task_id": "8122", "reasoning": "Most of a rep's market monitoring is reading to stay current for their own selling, which is NO_DELIVERABLE. Only some ends in an update shared with the sales manager. Y's split matches this better than X, which treats all monitoring as producing shared updates.", "choice": "Y"},
+  {"task_id": "8124", "reasoning": "Budgets, sales reports, record updates and expense reports are distinct administrative outputs. X separates all four with complete start, end and checker fields. Y lumps budgets with reports, uses placeholder fields, and gives expense reports an implausibly large share.", "choice": "X"},
+  {"task_id": "8127", "reasoning": "Physically checking shelves or stockrooms at an account is hands-on, while reviewing stock figures and placing the reorder is desk work. The instructions require that split. X's middle part, a stock review that only the rep checks, is not a handoff item. A two-part coding is cleaner.", "choice": "revised", "coding": {
+    "task_id": "8127",
+    "split_reasoning": "One activity, keeping an account stocked, but partly done by hand in the customer's store or stockroom and partly at a computer when reviewing stock figures and placing the reorder.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Physically check merchandise stock levels on shelves or in the stockroom at a customer account.",
+        "time_share": 0.35,
+        "type_reasoning": "Counting or inspecting stock on site is hands-on work away from a computer.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": ["8128"]
+      },
+      {
+        "part_id": "b",
+        "text": "Review stock levels for an account and place a replenishment order when needed.",
+        "time_share": 0.65,
+        "type_reasoning": "Each review ends in a reorder submitted to the supplier or order system, which the customer and order processing rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Stock is reviewed and reordered per account or store visit, and the reorder is what is handed over.",
+        "work_item": "one account's stock reviewed and replenishment order placed",
+        "start": "stock count or inventory report for the account available",
+        "end": "reorder submitted (or no reorder needed recorded)",
+        "checked_by": "customer and order-processing or inventory team",
+        "duplicates": [],
+        "overlaps_with": ["8126", "8113"]
+      }
+    ],
+    "notes": "The physical share depends on whether the rep services retail accounts in person or works from inventory reports."
+  }},
+  {"task_id": "8128", "reasoning": "Building and stocking displays is hands-on work, while recommending displays and promotions to retailers happens mostly live during store visits and sometimes in writing. X captures all three parts properly. Y's 'start: retailer visit' implies a live contact but codes it as a sent proposal.", "choice": "X"},
+  {"task_id": "20267", "reasoning": "A sales contract and an order form are very different items in effort and review, and order forms are filled in both during the customer contact and afterwards. X's three-part coding follows steps 1 and 4. Y's single thin part lumps them together.", "choice": "X"}
+]

@@ -1,0 +1,387 @@
+You are a coder in a research pipeline. Follow the instructions below exactly.
+
+Use only the information in this file. Do not read any other files and do not
+search the web. Below are 3 occupations. Code each occupation's TARGETS
+independently, in the order given; do not go back and adjust earlier answers to
+make them consistent with later ones, and do not let one occupation's coding
+shape another's.
+
+For each occupation, write ONE JSON array to its own file:
+  Heavy and Tractor-Trailer Truck Drivers (53-3032.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/53-3032.00.json
+  Accountants and Auditors (13-2011.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/13-2011.00.json
+  Lawyers (23-1011.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/23-1011.00.json
+with one element per target, in the order given. Each element is the output
+object described in the instructions, with "task_id" added as its first key.
+Write nothing else to those files. Then reply "done <n> items" per occupation,
+plus at most three sentences on anything you found ambiguous.
+
+
+=== INSTRUCTIONS ===
+You are building a coding schema for occupational tasks. Another team will
+later estimate how long each piece of work takes and how it is checked, so
+your job is only to say what the units of work ARE.
+
+Describe the work as experienced people in this occupation do it today,
+without AI. Do not consider what AI could or could not do.
+
+You will see the occupation's full task list for context, and one TARGET
+statement to code. Code only the target.
+
+STEP 1 — SPLIT. Decide whether the target should be split into parts. Split
+when it joins different activities ("write training materials, or train
+users"), or when it covers very different kinds of item (quick replies and
+long investigations). Give each part a share of the target's working time;
+shares sum to 1. If no split is needed, there is one part with share 1.
+
+Do NOT split when "or"/"and" only lists alternative methods, tools, or
+inputs for the same deliverable. "Check records, call the client, or consult
+the policy manual to settle a billing question" is one activity (settling
+the question) done by different means.
+
+DO split when the same activity is normally done in two different places:
+partly while a customer or user is still on the line or at the desk, and
+partly afterwards from written requests or in the back office (see step 4
+and Example D).
+
+STEP 2 — CLASSIFY each part as exactly one of:
+  - DISCRETE: produces distinct deliverables, one after another.
+    Example: answer a user's emailed question about software.
+  - ONGOING: a continuing activity with no single deliverable, but which
+    produces discrete items (alerts handled, reports written). Name them in
+    step 3.
+  - LIVE_SERVICE: work done in a live conversation (phone, chat, walk-up)
+    with a customer or user, while they wait. This covers the conversation
+    itself AND any work done during it while the customer is still there:
+    looking up an account, entering an order, taking a payment, issuing a
+    refund, booking an appointment.
+    Example: take a customer's call about a billing error.
+    Example: enter a change-of-address order while the customer is on the
+    phone.
+  - INTERPERSONAL: the value is in the live interaction itself, and nothing
+    a colleague could check is produced (meetings, teaching, negotiating,
+    supervising, persuading).
+    Example: meet with staff to set requirements.
+  - PHYSICAL: needs hands-on work away from a computer.
+    Example: install cables.
+  - NO_DELIVERABLE: produces nothing anyone else checks or relies on
+    (keeping up with developments, reading manuals to stay current).
+
+  If one activity is partly physical and partly at a computer, split it in
+  step 1.
+
+STEP 3 — ONGOING parts: replace the activity with the discrete items it
+produces (e.g. "one alert investigated", "one weekly capacity report").
+If there are several kinds, make each kind its own part with its own share
+of time, and classify each as DISCRETE.
+
+STEP 4 — WORK ITEM. For every DISCRETE or LIVE_SERVICE part, name the work
+item: one deliverable, in today's workflow, that a worker finishes and that
+someone else would check or rely on as a whole. Give:
+  - work_item: one line ("one support ticket")
+  - start: where it starts ("customer's first message")
+  - end: where it ends ("customer confirms the fix, ticket closed")
+  - checked_by: who checks or relies on it (supervisor, client, end user,
+    downstream team, auditor)
+  Pick the level at which work is handed over today: the thing that goes
+  into a queue, gets a ticket, gets signed off, or is sent. Not a single
+  keystroke-level step, and not a whole project.
+
+  Many task lists describe one workflow in several statements (talk to the
+  customer; record the interaction; check the fix was made; refer what you
+  can't solve). When the target describes one step of such a workflow, the
+  work item is that step's own output (e.g. "one interaction record written
+  after a call"), not the whole workflow. The other statements cover the
+  other steps.
+
+  Then ask WHERE that step is normally done. If the customer or user is
+  still on the line or at the desk while it is done, the part is
+  LIVE_SERVICE, and its start and end lie inside the contact (e.g. "one
+  refund entered during a customer call": from "customer agrees to the
+  remedy" to "refund confirmed to the customer"). If it is normally done
+  after the contact ends (wrap-up, back office, a queue of written
+  requests), it is DISCRETE. If both happen in substantial shares, split
+  into two parts by where the work is done (Example D).
+
+STEP 5 — OVERLAP. Compare each part with the other statements.
+  - duplicates: IDs of statements that describe the SAME work item (same
+    inputs, actions and output), so that coding both would count the same
+    work twice. Use this only when one of the two would be redundant.
+  - overlaps_with: IDs of statements that share some of the work but each
+    also covers work the other does not.
+  Leave a list empty if there are none. Code the part fully either way.
+
+Before each decision, write one sentence of reasoning. Put the reasoning
+before the value in the JSON.
+
+Output JSON only:
+{
+  "split_reasoning": "...",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "the part of the statement, rewritten as a standalone task",
+      "time_share": 1.0,
+      "type_reasoning": "...",
+      "type": "DISCRETE | LIVE_SERVICE | INTERPERSONAL | PHYSICAL | NO_DELIVERABLE",
+      "unit_reasoning": "... (omit for non-coded types)",
+      "work_item": "...",
+      "start": "...",
+      "end": "...",
+      "checked_by": "...",
+      "duplicates": ["task_id", ...],
+      "overlaps_with": ["task_id", ...]
+    }
+  ],
+  "notes": "anything ambiguous a human reviewer should look at"
+}
+
+=== WORKED EXAMPLES (other occupations) ===
+Drawn from occupations outside both the pilot and the BPO set (examples swapped 2026-11-10;
+the earlier ones came from BPO occupations and would have leaked into the BPO run).
+
+### Example A — DISCRETE, granularity choice
+Executive Secretaries and Executive Administrative Assistants (43-6014.00, task 2797) — "Review
+work done by others to check for correct spelling and grammar, ensure that company format
+policies are followed, and recommend revisions."
+
+```json
+{
+  "split_reasoning": "One activity: checking documents others wrote; documents vary in length but the kind of work is the same.",
+  "parts": [{
+    "part_id": "a",
+    "text": "Check a document written by someone else for spelling, grammar and house format, and mark the revisions needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check produces a marked-up document that the author relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents arrive one at a time and go back to the author as a whole, not page by page.",
+    "work_item": "one document checked and returned with revisions (e.g. a letter, memo or report)",
+    "start": "document received for checking",
+    "end": "marked-up document returned to the author",
+    "checked_by": "the author, and the executive who signs it",
+    "duplicates": [],
+    "overlaps_with": []
+  }],
+  "notes": ""
+}
+```
+
+### Example B — ONGOING recast into items
+Market Research Analysts and Marketing Specialists (13-1161.00, task 5442) — "Monitor industry
+statistics and follow trends in trade literature."
+
+```json
+{
+  "split_reasoning": "Monitoring is continuous, but it produces two different kinds of item: notes on each new release of figures, and periodic trend reports.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Review a new release of industry statistics and send the team a note on the changes that matter.",
+      "time_share": 0.5,
+      "type_reasoning": "Each release ends in a short note that colleagues read and act on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Releases arrive on a schedule and each one is reviewed and reported on once.",
+      "work_item": "one statistics release reviewed and summarised",
+      "start": "new release of industry figures published",
+      "end": "note on the notable changes sent to the team",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Write a periodic trend report drawing on industry statistics and trade literature.",
+      "time_share": 0.5,
+      "type_reasoning": "Produces a report that managers read and plan from.",
+      "type": "DISCRETE",
+      "unit_reasoning": "The report is what is handed over and signed off.",
+      "work_item": "one trend report (monthly or quarterly)",
+      "start": "period's statistics and articles gathered",
+      "end": "report with implications sent to marketing management",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "Time shares are a judgment; they depend on how often figures are released."
+}
+```
+
+### Example C — COMPOUND with an interpersonal part
+Human Resources Specialists (13-1071.00, task 18867) — "Provide management with information or
+training related to interviewing, performance appraisals, counseling techniques, or
+documentation of performance issues."
+
+```json
+{
+  "split_reasoning": "Two different activities joined by 'or': training managers, and answering a manager's question about a specific case.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Train managers on interviewing, appraisals or documenting performance issues.",
+      "time_share": 0.4,
+      "type_reasoning": "The value is in the live session; nothing a colleague would check is produced.",
+      "type": "INTERPERSONAL",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Answer a manager's question about handling a specific case, usually by email.",
+      "time_share": 0.6,
+      "type_reasoning": "Each question produces written guidance the manager relies on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Questions arrive one at a time, by email or the HR ticket queue.",
+      "work_item": "one manager's question answered with written guidance",
+      "start": "question received",
+      "end": "guidance sent and question closed",
+      "checked_by": "the manager who asked; HR lead for sensitive cases",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "If training materials are written as part of this, they belong to a separate statement."
+}
+```
+
+### Example D — one activity done in two places (live and afterwards)
+Receptionists and Information Clerks (43-4171.00, task 751) — "Schedule
+appointments and maintain and update appointment calendars."
+
+```json
+{
+  "split_reasoning": "One activity, keeping the calendar, but done in two places: live with a caller or visitor who is waiting, and afterwards from written requests and staff changes.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Book, move, or cancel an appointment while the caller or visitor is on the line or at the desk.",
+      "time_share": 0.7,
+      "type_reasoning": "The person is waiting while the booking is made, so this is work done during a live contact.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each request is booked and confirmed within one call or visit.",
+      "work_item": "one appointment booked or changed during a call or visit",
+      "start": "caller or visitor asks for an appointment",
+      "end": "slot confirmed to the person and entered in the calendar",
+      "checked_by": "the caller, and the staff member whose calendar it is",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Update calendars from emailed requests, cancellations, and changes in staff availability.",
+      "time_share": 0.3,
+      "type_reasoning": "Done from a queue of written requests with no one waiting, so each update is an ordinary deliverable.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Receptionists work through the day's written requests in a batch and send confirmations.",
+      "work_item": "one batch of calendar updates from the day's written requests",
+      "start": "requests or availability changes received by email or message",
+      "end": "calendars updated and confirmations sent",
+      "checked_by": "staff whose calendars these are",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "The live share depends on how much booking comes in by phone versus online or email."
+}
+```
+
+=== OCCUPATION: Heavy and Tractor-Trailer Truck Drivers (53-3032.00) ===
+Drive a tractor-trailer combination or a truck with a capacity of at least 26,001 pounds Gross Vehicle Weight (GVW). May be required to unload truck. Requires commercial drivers' license. Includes tow truck drivers.
+
+TASK LIST (context; every statement below is also a TARGET):
+[10635] Follow appropriate safety procedures for transporting dangerous goods.
+[10636] Check vehicles to ensure that mechanical, safety, and emergency equipment is in good working order.
+[10637] Maintain logs of working hours or of vehicle service or repair status, following applicable state and federal regulations.
+[10638] Obtain receipts or signatures for delivered goods and collect payment for services when required.
+[10640] Maneuver trucks into loading or unloading positions, following signals from loading crew and checking that vehicle and loading equipment are properly positioned.
+[10641] Drive trucks with capacities greater than 13 tons, including tractor-trailer combinations, to transport and deliver products, livestock, or other materials.
+[10642] Secure cargo for transport, using ropes, blocks, chain, binders, or covers.
+[10643] Read bills of lading to determine assignment details.
+[10644] Report vehicle defects, accidents, traffic violations, or damage to the vehicles.
+[10645] Read and interpret maps to determine vehicle routes.
+[10646] Couple or uncouple trailers by changing trailer jack positions, connecting or disconnecting air or electrical lines, or manipulating fifth-wheel locks.
+[10647] Collect delivery instructions from appropriate sources, verifying instructions and routes.
+[10650] Check conditions of trailers after contents have been unloaded to ensure that there has been no damage.
+[10651] Crank trailer landing gear up or down to safely secure vehicles.
+[10653] Perform basic vehicle maintenance tasks, such as adding oil, fuel, or radiator fluid, performing minor repairs, or washing trucks.
+[10655] Inventory and inspect goods to be moved to determine quantities and conditions.
+[10656] Remove debris from loaded trailers.
+[10658] Follow special cargo-related procedures, such as checking refrigeration systems for frozen foods or providing food or water for livestock.
+[10659] Give directions to laborers who are packing goods and moving them onto trailers.
+[10660] Install or remove special equipment, such as tire chains, grader blades, plow blades, or sanders.
+[10662] Perform emergency roadside repairs, such as changing tires or installing light bulbs, tire chains, or spark plugs.
+[19922] Operate idle reduction systems or auxiliary power systems to generate power from alternative sources, such as fuel cells, to reduce idling time, to heat or cool truck cabins, or to provide power for other equipment.
+[19923] Plan or adjust routes based on changing conditions, using computer equipment, global positioning systems (GPS) equipment, or other navigation devices, to minimize fuel consumption and carbon emissions.
+[20692] Inspect loads to ensure that cargo is secure.
+[20693] Check all load-related documentation for completeness and accuracy.
+[20694] Drive trucks to weigh stations before and after loading and along routes in compliance with state regulations.
+[20695] Operate equipment, such as truck cab computers, CB radios, phones, or global positioning systems (GPS) equipment to exchange necessary information with bases, supervisors, or other drivers.
+[20696] Load or unload trucks or help others with loading or unloading, using special loading-related equipment or other equipment as necessary.
+[20697] Wrap and secure goods using pads, packing paper, containers, or straps.
+
+TARGETS: code all 29 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/53-3032.00.json.
+
+=== OCCUPATION: Accountants and Auditors (13-2011.00) ===
+Examine, analyze, and interpret accounting records to prepare financial statements, give advice, or audit and evaluate statements prepared by others. Install or advise on systems of recording costs or other financial and budgetary data.
+
+TASK LIST (context; every statement below is also a TARGET):
+[21505] Prepare detailed reports on audit findings.
+[21506] Report to management about asset utilization and audit results, and recommend changes in operations and financial activities.
+[21507] Collect and analyze data to detect deficient controls, duplicated effort, extravagance, fraud, or non-compliance with laws, regulations, and management policies.
+[21508] Inspect account books and accounting systems for efficiency, effectiveness, and use of accepted accounting procedures to record transactions.
+[21509] Supervise auditing of establishments, and determine scope of investigation required.
+[21510] Confer with company officials about financial and regulatory matters.
+[21511] Examine and evaluate financial and information systems, recommending controls to ensure system reliability and data integrity.
+[21512] Inspect cash on hand, notes receivable and payable, negotiable securities, and canceled checks to confirm records are accurate.
+[21513] Examine records and interview workers to ensure recording of transactions and compliance with laws and regulations.
+[21514] Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.
+[21515] Prepare adjusting journal entries.
+[21516] Review accounts for discrepancies and reconcile differences.
+[21517] Establish tables of accounts and assign entries to proper accounts.
+[21518] Examine inventory to verify journal and ledger entries.
+[21519] Analyze business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses or to provide advice.
+[21520] Report to management regarding the finances of establishment.
+[21521] Develop, implement, modify, and document recordkeeping and accounting systems, making use of current computer technology.
+[21522] Evaluate taxpayer finances to determine tax liability, using knowledge of interest and discount rates, annuities, valuation of stocks and bonds, and amortization valuation of depletable assets.
+[21523] Examine whether the organization's objectives are reflected in its management activities, and whether employees understand the objectives.
+[21524] Audit payroll and personnel records to determine unemployment insurance premiums, workers' compensation coverage, liabilities, and compliance with tax laws.
+[21525] Review taxpayer accounts, and conduct audits on-site, by correspondence, or by summoning taxpayer to office.
+[21526] Compute taxes owed and prepare tax returns, ensuring compliance with payment, reporting, or other tax requirements.
+[21527] Advise clients in areas such as compensation, employee health care benefits, the design of accounting or data processing systems, or long-range tax or estate plans.
+[21528] Represent clients before taxing authorities and provide support during litigation involving financial issues.
+[21529] Direct activities of personnel engaged in filing, recording, compiling, and transmitting financial records.
+[21530] Conduct pre-implementation audits to determine if systems and programs under development will work as planned.
+[21531] Develop, maintain, or analyze budgets, preparing periodic reports that compare budgeted costs to actual costs.
+[21532] Prepare, analyze, or verify annual reports, financial statements, and other records, using accepted accounting and statistical procedures to assess financial condition and facilitate financial planning.
+[21533] Process invoices for payment.
+[21534] Review data about material assets, net worth, liabilities, capital stock, surplus, income, or expenditures.
+
+TARGETS: code all 30 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/13-2011.00.json.
+
+=== OCCUPATION: Lawyers (23-1011.00) ===
+Represent clients in criminal and civil litigation and other legal proceedings, draw up legal documents, or manage or advise clients on legal transactions. May specialize in a single area or may practice broadly in many areas of law.
+
+TASK LIST (context; every statement below is also a TARGET):
+[3773] Advise clients concerning business transactions, claim liability, advisability of prosecuting or defending lawsuits, or legal rights and obligations.
+[3774] Interpret laws, rulings and regulations for individuals and businesses.
+[3775] Analyze the probable outcomes of cases, using knowledge of legal precedents.
+[3776] Present and summarize cases to judges and juries.
+[3777] Evaluate findings and develop strategies and arguments in preparation for presentation of cases.
+[3778] Gather evidence to formulate defense or to initiate legal actions by such means as interviewing clients and witnesses to ascertain the facts of a case.
+[3779] Represent clients in court or before government agencies.
+[3780] Examine legal data to determine advisability of defending or prosecuting lawsuit.
+[3781] Select jurors, argue motions, meet with judges, and question witnesses during the course of a trial.
+[3782] Present evidence to defend clients or prosecute defendants in criminal or civil litigation.
+[3783] Study Constitution, statutes, decisions, regulations, and ordinances of quasi-judicial bodies to determine ramifications for cases.
+[3785] Prepare legal briefs and opinions, and file appeals in state and federal courts of appeal.
+[3786] Negotiate settlements of civil disputes.
+[3787] Confer with colleagues with specialties in appropriate areas of legal issue to establish and verify bases for legal proceedings.
+[3788] Search for and examine public and other legal records to write opinions or establish ownership.
+[3789] Supervise legal assistants.
+[3790] Perform administrative and management functions related to the practice of law.
+[3791] Act as agent, trustee, guardian, or executor for businesses or individuals.
+[3792] Probate wills and represent and advise executors and administrators of estates.
+[3793] Help develop federal and state programs, draft and interpret laws and legislation, and establish enforcement procedures.
+[20877] Prepare, draft, and review legal documents, such as wills, deeds, patent applications, mortgages, leases, and contracts.
+[23992] Negotiate contractual agreements.
+
+TARGETS: code all 22 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1/23-1011.00.json.

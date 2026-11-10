@@ -1,0 +1,360 @@
+[
+  {
+    "task_id": "3966",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Organize material and write a document to set standards of order, clarity, conciseness, style and terminology.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a document that others review and publish.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Writing is assigned and delivered per document or section.",
+        "work_item": "one document or section written",
+        "start": "assignment accepted with source material",
+        "end": "draft approved and delivered",
+        "checked_by": "editor; engineers; customer",
+        "duplicates": [],
+        "overlaps_with": [
+          "3972",
+          "20243",
+          "3968"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3967",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Maintain records and files of work and revisions.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces updated version records that others rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Records are updated when each revision completes.",
+        "work_item": "one revision filed and logged",
+        "start": "revision completed",
+        "end": "files and revision log updated",
+        "checked_by": "writing team lead; auditor",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Low-volume clerical work."
+  },
+  {
+    "task_id": "3968",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Edit, standardize or change material prepared by other writers or staff.",
+        "time_share": 1.0,
+        "type_reasoning": "Returns a corrected document.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Documents are edited whole.",
+        "work_item": "one document edited and returned",
+        "start": "document received",
+        "end": "edited document returned",
+        "checked_by": "original author; manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3966"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3969",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Confer with customer representatives, vendors, executives or publishers to establish technical specifications and subject matter.",
+        "time_share": 1.0,
+        "type_reasoning": "Value is in the live conferences.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Could produce a scope memo."
+  },
+  {
+    "task_id": "3970",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review a published document and recommend revisions to scope, format, content and reproduction.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces recommendations the team uses.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Reviews are per document.",
+        "work_item": "one published document reviewed with recommendations",
+        "start": "published document selected",
+        "end": "recommendations delivered",
+        "checked_by": "documentation manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3977"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3971",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Select photographs, drawings, diagrams and charts to illustrate a document.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces an illustration set for the document.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Selected per document.",
+        "work_item": "one document's illustrations selected",
+        "start": "draft text ready",
+        "end": "illustrations chosen and placed",
+        "checked_by": "editor; reviewer",
+        "duplicates": [],
+        "overlaps_with": [
+          "3979"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3972",
+    "split_reasoning": "Studying sources is an input to writing.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Study drawings, specifications, mockups and product samples to understand technology, procedure and sequence.",
+        "time_share": 1.0,
+        "type_reasoning": "Nothing handed over by itself; the result appears in the written document.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": [
+          "3966",
+          "3973",
+          "3974",
+          "3978"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3973",
+    "split_reasoning": "Interviewing and reading are separate activities.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Interview production and engineering personnel to learn products and methods.",
+        "time_share": 0.5,
+        "type_reasoning": "Value is in the live conversations.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "3966"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Read journals and other material to learn product technologies.",
+        "time_share": 0.5,
+        "type_reasoning": "Background reading with no output.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": [
+          "3972",
+          "3978"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3974",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Observe production, developmental and experimental activities to learn procedures and detail.",
+        "time_share": 1.0,
+        "type_reasoning": "Done in person on site, away from a computer.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "3972"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3975",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Arrange typing, duplication and distribution of a document.",
+        "time_share": 1.0,
+        "type_reasoning": "Ends with the document sent to readers.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Arranged per release.",
+        "work_item": "one document release arranged",
+        "start": "document approved",
+        "end": "copies produced and distributed",
+        "checked_by": "readers; publisher",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3976",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Assist in laying out material for publication.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a laid-out document.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per document.",
+        "work_item": "one document laid out",
+        "start": "text and art ready",
+        "end": "layout delivered",
+        "checked_by": "editor; publisher",
+        "duplicates": [],
+        "overlaps_with": [
+          "3966"
+        ]
+      }
+    ],
+    "notes": "Occupation notes layout is only assistance."
+  },
+  {
+    "task_id": "3977",
+    "split_reasoning": "Monitoring produces two kinds of item.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review developments in a field and record which published documents need revision.",
+        "time_share": 0.6,
+        "type_reasoning": "Ends in a recorded need.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per review cycle.",
+        "work_item": "one revision-needs assessment",
+        "start": "review cycle begins",
+        "end": "list of documents needing revision delivered",
+        "checked_by": "documentation manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3970"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Propose development of new material because of field developments.",
+        "time_share": 0.4,
+        "type_reasoning": "Ends in a proposal.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per proposal.",
+        "work_item": "one new-material proposal",
+        "start": "development noticed",
+        "end": "proposal sent",
+        "checked_by": "documentation manager",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3978",
+    "split_reasoning": "Reading catalogs and data is background research.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review manufacturer and trade catalogs, drawings and data about operating, maintaining and servicing equipment.",
+        "time_share": 1.0,
+        "type_reasoning": "Nothing handed over by itself.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": [
+          "3972",
+          "3973"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3979",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Draw a sketch to illustrate a specified material or assembly sequence.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a sketch used in the document.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per sketch or set.",
+        "work_item": "one sketch or set of sketches",
+        "start": "illustration need specified",
+        "end": "sketch delivered",
+        "checked_by": "editor; engineer reviewer",
+        "duplicates": [],
+        "overlaps_with": [
+          "3971"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "20243",
+    "split_reasoning": "Creating new help and keeping it current are different work items.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Develop online help topics.",
+        "time_share": 0.5,
+        "type_reasoning": "Produces help content users read.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per topic.",
+        "work_item": "one help topic developed",
+        "start": "topic assigned",
+        "end": "topic published",
+        "checked_by": "product team; users",
+        "duplicates": [],
+        "overlaps_with": []
+      },
+      {
+        "part_id": "b",
+        "text": "Maintain online help by updating topics when the product changes.",
+        "time_share": 0.5,
+        "type_reasoning": "Produces updated topics.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per update release.",
+        "work_item": "one help update released",
+        "start": "product change noted",
+        "end": "updated help published",
+        "checked_by": "product team; users",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  }
+]

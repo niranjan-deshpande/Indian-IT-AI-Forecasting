@@ -1,0 +1,1185 @@
+scenario,months_from_today,date,occupation,S,D
+base,-24,2024-11-09,Interpreters and Translators,0.0133,0.1205
+base,-24,2024-11-09,Proofreaders and Copy Markers,0.0195,0.1593
+base,-24,2024-11-09,Technical Writers,0.0001,0.0019
+base,-24,2024-11-09,Paralegals and Legal Assistants,0.0,0.0
+base,-24,2024-11-09,Tax Preparers,0.0136,0.0825
+base,-24,2024-11-09,Electricians,0.0019,0.0201
+base,-24,2024-11-09,Registered Nurses,0.0001,0.0025
+base,-24,2024-11-09,Childcare Workers,0.0013,0.0278
+base,-24,2024-11-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0002
+base,-24,2024-11-09,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0002
+base,-24,2024-11-09,Accountants and Auditors,0.0,0.0
+base,-24,2024-11-09,Lawyers,0.0001,0.0016
+base,-24,2024-11-09,Credit Analysts,0.0001,0.0033
+base,-24,2024-11-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0019,0.0455
+base,-24,2024-11-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0018,0.0303
+base,-24,2024-11-09,Management Analysts,0.0001,0.0016
+base,-23,2024-12-10,Interpreters and Translators,0.0169,0.1352
+base,-23,2024-12-10,Proofreaders and Copy Markers,0.0242,0.1731
+base,-23,2024-12-10,Technical Writers,0.0001,0.0033
+base,-23,2024-12-10,Paralegals and Legal Assistants,0.0,0.0029
+base,-23,2024-12-10,Tax Preparers,0.0164,0.0942
+base,-23,2024-12-10,Electricians,0.0026,0.025
+base,-23,2024-12-10,Registered Nurses,0.0002,0.0057
+base,-23,2024-12-10,Childcare Workers,0.0021,0.0368
+base,-23,2024-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0005
+base,-23,2024-12-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0004
+base,-23,2024-12-10,Accountants and Auditors,0.0,0.0
+base,-23,2024-12-10,Lawyers,0.0001,0.0034
+base,-23,2024-12-10,Credit Analysts,0.0003,0.0062
+base,-23,2024-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0035,0.0679
+base,-23,2024-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.003,0.0437
+base,-23,2024-12-10,Management Analysts,0.0001,0.0054
+base,-22,2025-01-09,Interpreters and Translators,0.0208,0.1489
+base,-22,2025-01-09,Proofreaders and Copy Markers,0.0293,0.1848
+base,-22,2025-01-09,Technical Writers,0.0002,0.0052
+base,-22,2025-01-09,Paralegals and Legal Assistants,0.0002,0.0093
+base,-22,2025-01-09,Tax Preparers,0.0196,0.1073
+base,-22,2025-01-09,Electricians,0.0035,0.03
+base,-22,2025-01-09,Registered Nurses,0.0004,0.0111
+base,-22,2025-01-09,Childcare Workers,0.0032,0.0446
+base,-22,2025-01-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0011
+base,-22,2025-01-09,Heavy and Tractor-Trailer Truck Drivers,0.0,0.001
+base,-22,2025-01-09,Accountants and Auditors,0.0,0.0
+base,-22,2025-01-09,Lawyers,0.0002,0.006
+base,-22,2025-01-09,Credit Analysts,0.0006,0.0107
+base,-22,2025-01-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0056,0.0925
+base,-22,2025-01-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0046,0.0611
+base,-22,2025-01-09,Management Analysts,0.0003,0.0174
+base,-21,2025-02-09,Interpreters and Translators,0.0252,0.1618
+base,-21,2025-02-09,Proofreaders and Copy Markers,0.0348,0.1947
+base,-21,2025-02-09,Technical Writers,0.0004,0.0094
+base,-21,2025-02-09,Paralegals and Legal Assistants,0.0005,0.019
+base,-21,2025-02-09,Tax Preparers,0.0232,0.1208
+base,-21,2025-02-09,Electricians,0.0046,0.0348
+base,-21,2025-02-09,Registered Nurses,0.0009,0.0171
+base,-21,2025-02-09,Childcare Workers,0.0044,0.0515
+base,-21,2025-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0001,0.002
+base,-21,2025-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0001,0.0019
+base,-21,2025-02-09,Accountants and Auditors,0.0,0.0
+base,-21,2025-02-09,Lawyers,0.0004,0.0094
+base,-21,2025-02-09,Credit Analysts,0.0011,0.0168
+base,-21,2025-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0085,0.1184
+base,-21,2025-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.007,0.0867
+base,-21,2025-02-09,Management Analysts,0.0009,0.0387
+base,-20,2025-03-11,Interpreters and Translators,0.0298,0.1746
+base,-20,2025-03-11,Proofreaders and Copy Markers,0.041,0.2345
+base,-20,2025-03-11,Technical Writers,0.0008,0.0304
+base,-20,2025-03-11,Paralegals and Legal Assistants,0.0012,0.032
+base,-20,2025-03-11,Tax Preparers,0.0274,0.1362
+base,-20,2025-03-11,Electricians,0.0059,0.0398
+base,-20,2025-03-11,Registered Nurses,0.0015,0.0237
+base,-20,2025-03-11,Childcare Workers,0.0059,0.057
+base,-20,2025-03-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0002,0.0037
+base,-20,2025-03-11,Heavy and Tractor-Trailer Truck Drivers,0.0002,0.0037
+base,-20,2025-03-11,Accountants and Auditors,0.0,0.0001
+base,-20,2025-03-11,Lawyers,0.0007,0.0135
+base,-20,2025-03-11,Credit Analysts,0.0018,0.0255
+base,-20,2025-03-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0121,0.144
+base,-20,2025-03-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0104,0.1179
+base,-20,2025-03-11,Management Analysts,0.0018,0.0622
+base,-19,2025-04-11,Interpreters and Translators,0.0349,0.1917
+base,-19,2025-04-11,Proofreaders and Copy Markers,0.0487,0.2775
+base,-19,2025-04-11,Technical Writers,0.0018,0.0538
+base,-19,2025-04-11,Paralegals and Legal Assistants,0.0023,0.0597
+base,-19,2025-04-11,Tax Preparers,0.032,0.1519
+base,-19,2025-04-11,Electricians,0.0073,0.0448
+base,-19,2025-04-11,Registered Nurses,0.0024,0.0309
+base,-19,2025-04-11,Childcare Workers,0.0075,0.0612
+base,-19,2025-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0004,0.006
+base,-19,2025-04-11,Heavy and Tractor-Trailer Truck Drivers,0.0004,0.0061
+base,-19,2025-04-11,Accountants and Auditors,0.0,0.0002
+base,-19,2025-04-11,Lawyers,0.0012,0.0184
+base,-19,2025-04-11,Credit Analysts,0.0028,0.0381
+base,-19,2025-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0164,0.1679
+base,-19,2025-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0149,0.1513
+base,-19,2025-04-11,Management Analysts,0.0032,0.0884
+base,-18,2025-05-11,Interpreters and Translators,0.0405,0.2087
+base,-18,2025-05-11,Proofreaders and Copy Markers,0.058,0.3207
+base,-18,2025-05-11,Technical Writers,0.0033,0.0809
+base,-18,2025-05-11,Paralegals and Legal Assistants,0.0041,0.0857
+base,-18,2025-05-11,Tax Preparers,0.0374,0.1697
+base,-18,2025-05-11,Electricians,0.0089,0.0495
+base,-18,2025-05-11,Registered Nurses,0.0035,0.0384
+base,-18,2025-05-11,Childcare Workers,0.0093,0.0642
+base,-18,2025-05-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0006,0.0095
+base,-18,2025-05-11,Heavy and Tractor-Trailer Truck Drivers,0.0007,0.0095
+base,-18,2025-05-11,Accountants and Auditors,0.0,0.0015
+base,-18,2025-05-11,Lawyers,0.0017,0.0236
+base,-18,2025-05-11,Credit Analysts,0.0044,0.0539
+base,-18,2025-05-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0214,0.1884
+base,-18,2025-05-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0206,0.1854
+base,-18,2025-05-11,Management Analysts,0.0052,0.117
+base,-17,2025-06-11,Interpreters and Translators,0.0466,0.2263
+base,-17,2025-06-11,Proofreaders and Copy Markers,0.0686,0.3623
+base,-17,2025-06-11,Technical Writers,0.0056,0.1094
+base,-17,2025-06-11,Paralegals and Legal Assistants,0.0066,0.1234
+base,-17,2025-06-11,Tax Preparers,0.0434,0.1889
+base,-17,2025-06-11,Electricians,0.0107,0.0541
+base,-17,2025-06-11,Registered Nurses,0.005,0.0462
+base,-17,2025-06-11,Childcare Workers,0.0111,0.0664
+base,-17,2025-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.001,0.0137
+base,-17,2025-06-11,Heavy and Tractor-Trailer Truck Drivers,0.0011,0.0138
+base,-17,2025-06-11,Accountants and Auditors,0.0001,0.0033
+base,-17,2025-06-11,Lawyers,0.0024,0.029
+base,-17,2025-06-11,Credit Analysts,0.0065,0.073
+base,-17,2025-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.027,0.2062
+base,-17,2025-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0277,0.2208
+base,-17,2025-06-11,Management Analysts,0.0077,0.1464
+base,-16,2025-07-11,Interpreters and Translators,0.0531,0.2449
+base,-16,2025-07-11,Proofreaders and Copy Markers,0.0803,0.398
+base,-16,2025-07-11,Technical Writers,0.0086,0.1409
+base,-16,2025-07-11,Paralegals and Legal Assistants,0.0102,0.1612
+base,-16,2025-07-11,Tax Preparers,0.0503,0.2111
+base,-16,2025-07-11,Electricians,0.0126,0.0587
+base,-16,2025-07-11,Registered Nurses,0.0069,0.055
+base,-16,2025-07-11,Childcare Workers,0.0131,0.0678
+base,-16,2025-07-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0016,0.019
+base,-16,2025-07-11,Heavy and Tractor-Trailer Truck Drivers,0.0017,0.0186
+base,-16,2025-07-11,Accountants and Auditors,0.0002,0.0053
+base,-16,2025-07-11,Lawyers,0.0033,0.0343
+base,-16,2025-07-11,Credit Analysts,0.0092,0.0946
+base,-16,2025-07-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.033,0.2206
+base,-16,2025-07-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0362,0.2561
+base,-16,2025-07-11,Management Analysts,0.0109,0.1748
+base,-15,2025-08-10,Interpreters and Translators,0.0601,0.2661
+base,-15,2025-08-10,Proofreaders and Copy Markers,0.093,0.4271
+base,-15,2025-08-10,Technical Writers,0.0125,0.1751
+base,-15,2025-08-10,Paralegals and Legal Assistants,0.0147,0.2
+base,-15,2025-08-10,Tax Preparers,0.0582,0.2364
+base,-15,2025-08-10,Electricians,0.0146,0.063
+base,-15,2025-08-10,Registered Nurses,0.0091,0.0637
+base,-15,2025-08-10,Childcare Workers,0.0151,0.069
+base,-15,2025-08-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0024,0.0247
+base,-15,2025-08-10,Heavy and Tractor-Trailer Truck Drivers,0.0025,0.0241
+base,-15,2025-08-10,Accountants and Auditors,0.0003,0.0075
+base,-15,2025-08-10,Lawyers,0.0043,0.0391
+base,-15,2025-08-10,Credit Analysts,0.0127,0.1178
+base,-15,2025-08-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0395,0.2323
+base,-15,2025-08-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0462,0.2922
+base,-15,2025-08-10,Management Analysts,0.0147,0.2004
+base,-14,2025-09-10,Interpreters and Translators,0.0676,0.288
+base,-14,2025-09-10,Proofreaders and Copy Markers,0.1062,0.4583
+base,-14,2025-09-10,Technical Writers,0.0174,0.2081
+base,-14,2025-09-10,Paralegals and Legal Assistants,0.0203,0.2391
+base,-14,2025-09-10,Tax Preparers,0.0673,0.2642
+base,-14,2025-09-10,Electricians,0.0167,0.0673
+base,-14,2025-09-10,Registered Nurses,0.0117,0.0729
+base,-14,2025-09-10,Childcare Workers,0.0171,0.0698
+base,-14,2025-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0033,0.03
+base,-14,2025-09-10,Heavy and Tractor-Trailer Truck Drivers,0.0034,0.029
+base,-14,2025-09-10,Accountants and Auditors,0.0005,0.0101
+base,-14,2025-09-10,Lawyers,0.0055,0.0442
+base,-14,2025-09-10,Credit Analysts,0.0169,0.1405
+base,-14,2025-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0462,0.2418
+base,-14,2025-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0577,0.3288
+base,-14,2025-09-10,Management Analysts,0.0192,0.2293
+base,-13,2025-10-10,Interpreters and Translators,0.0756,0.311
+base,-13,2025-10-10,Proofreaders and Copy Markers,0.1202,0.4931
+base,-13,2025-10-10,Technical Writers,0.0232,0.241
+base,-13,2025-10-10,Paralegals and Legal Assistants,0.027,0.2762
+base,-13,2025-10-10,Tax Preparers,0.0777,0.2956
+base,-13,2025-10-10,Electricians,0.019,0.0713
+base,-13,2025-10-10,Registered Nurses,0.0146,0.0821
+base,-13,2025-10-10,Childcare Workers,0.0192,0.0707
+base,-13,2025-10-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0045,0.0363
+base,-13,2025-10-10,Heavy and Tractor-Trailer Truck Drivers,0.0046,0.0335
+base,-13,2025-10-10,Accountants and Auditors,0.0008,0.0134
+base,-13,2025-10-10,Lawyers,0.0069,0.0514
+base,-13,2025-10-10,Credit Analysts,0.0218,0.1629
+base,-13,2025-10-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0532,0.2491
+base,-13,2025-10-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0707,0.3659
+base,-13,2025-10-10,Management Analysts,0.0246,0.2576
+base,-12,2025-11-10,Interpreters and Translators,0.0841,0.3326
+base,-12,2025-11-10,Proofreaders and Copy Markers,0.1346,0.5218
+base,-12,2025-11-10,Technical Writers,0.0301,0.2707
+base,-12,2025-11-10,Paralegals and Legal Assistants,0.0347,0.31
+base,-12,2025-11-10,Tax Preparers,0.0896,0.3291
+base,-12,2025-11-10,Electricians,0.0213,0.0748
+base,-12,2025-11-10,Registered Nurses,0.0179,0.0907
+base,-12,2025-11-10,Childcare Workers,0.0212,0.0718
+base,-12,2025-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0059,0.0428
+base,-12,2025-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0058,0.0373
+base,-12,2025-11-10,Accountants and Auditors,0.0012,0.0174
+base,-12,2025-11-10,Lawyers,0.0085,0.0603
+base,-12,2025-11-10,Credit Analysts,0.0275,0.184
+base,-12,2025-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0603,0.2554
+base,-12,2025-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0851,0.4023
+base,-12,2025-11-10,Management Analysts,0.0307,0.2849
+base,-11,2025-12-10,Interpreters and Translators,0.093,0.3545
+base,-11,2025-12-10,Proofreaders and Copy Markers,0.1492,0.5488
+base,-11,2025-12-10,Technical Writers,0.0379,0.299
+base,-11,2025-12-10,Paralegals and Legal Assistants,0.0434,0.3406
+base,-11,2025-12-10,Tax Preparers,0.1029,0.3627
+base,-11,2025-12-10,Electricians,0.0237,0.078
+base,-11,2025-12-10,Registered Nurses,0.0215,0.099
+base,-11,2025-12-10,Childcare Workers,0.0233,0.0735
+base,-11,2025-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0075,0.0497
+base,-11,2025-12-10,Heavy and Tractor-Trailer Truck Drivers,0.0072,0.0406
+base,-11,2025-12-10,Accountants and Auditors,0.0017,0.0247
+base,-11,2025-12-10,Lawyers,0.0104,0.0715
+base,-11,2025-12-10,Credit Analysts,0.0338,0.204
+base,-11,2025-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0674,0.2616
+base,-11,2025-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1011,0.4399
+base,-11,2025-12-10,Management Analysts,0.0377,0.3124
+base,-10,2026-01-10,Interpreters and Translators,0.1022,0.3742
+base,-10,2026-01-10,Proofreaders and Copy Markers,0.1639,0.5727
+base,-10,2026-01-10,Technical Writers,0.0468,0.3395
+base,-10,2026-01-10,Paralegals and Legal Assistants,0.0532,0.3698
+base,-10,2026-01-10,Tax Preparers,0.1175,0.3959
+base,-10,2026-01-10,Electricians,0.0261,0.0807
+base,-10,2026-01-10,Registered Nurses,0.0254,0.1077
+base,-10,2026-01-10,Childcare Workers,0.0254,0.0759
+base,-10,2026-01-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0092,0.0568
+base,-10,2026-01-10,Heavy and Tractor-Trailer Truck Drivers,0.0087,0.0484
+base,-10,2026-01-10,Accountants and Auditors,0.0023,0.034
+base,-10,2026-01-10,Lawyers,0.0126,0.0852
+base,-10,2026-01-10,Credit Analysts,0.0409,0.2231
+base,-10,2026-01-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0746,0.2671
+base,-10,2026-01-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1184,0.4762
+base,-10,2026-01-10,Management Analysts,0.0455,0.3391
+base,-9,2026-02-09,Interpreters and Translators,0.1117,0.3919
+base,-9,2026-02-09,Proofreaders and Copy Markers,0.1786,0.5961
+base,-9,2026-02-09,Technical Writers,0.057,0.3722
+base,-9,2026-02-09,Paralegals and Legal Assistants,0.0638,0.3967
+base,-9,2026-02-09,Tax Preparers,0.1333,0.4286
+base,-9,2026-02-09,Electricians,0.0285,0.0829
+base,-9,2026-02-09,Registered Nurses,0.0294,0.1165
+base,-9,2026-02-09,Childcare Workers,0.0275,0.0786
+base,-9,2026-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0111,0.0636
+base,-9,2026-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0104,0.057
+base,-9,2026-02-09,Accountants and Auditors,0.0033,0.0457
+base,-9,2026-02-09,Lawyers,0.0152,0.1012
+base,-9,2026-02-09,Credit Analysts,0.0486,0.2465
+base,-9,2026-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0816,0.2724
+base,-9,2026-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1368,0.5117
+base,-9,2026-02-09,Management Analysts,0.0541,0.364
+base,-8,2026-03-11,Interpreters and Translators,0.1214,0.4073
+base,-8,2026-03-11,Proofreaders and Copy Markers,0.1931,0.6188
+base,-8,2026-03-11,Technical Writers,0.0682,0.4017
+base,-8,2026-03-11,Paralegals and Legal Assistants,0.0754,0.4213
+base,-8,2026-03-11,Tax Preparers,0.15,0.4599
+base,-8,2026-03-11,Electricians,0.0309,0.0847
+base,-8,2026-03-11,Registered Nurses,0.0335,0.1257
+base,-8,2026-03-11,Childcare Workers,0.0296,0.082
+base,-8,2026-03-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0131,0.0706
+base,-8,2026-03-11,Heavy and Tractor-Trailer Truck Drivers,0.0124,0.0651
+base,-8,2026-03-11,Accountants and Auditors,0.0045,0.0592
+base,-8,2026-03-11,Lawyers,0.0182,0.1219
+base,-8,2026-03-11,Credit Analysts,0.0573,0.2795
+base,-8,2026-03-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0885,0.2786
+base,-8,2026-03-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1563,0.5452
+base,-8,2026-03-11,Management Analysts,0.0635,0.3896
+base,-7,2026-04-11,Interpreters and Translators,0.131,0.4196
+base,-7,2026-04-11,Proofreaders and Copy Markers,0.2073,0.6383
+base,-7,2026-04-11,Technical Writers,0.0803,0.4261
+base,-7,2026-04-11,Paralegals and Legal Assistants,0.0877,0.4448
+base,-7,2026-04-11,Tax Preparers,0.1673,0.4903
+base,-7,2026-04-11,Electricians,0.0332,0.086
+base,-7,2026-04-11,Registered Nurses,0.0379,0.1405
+base,-7,2026-04-11,Childcare Workers,0.0318,0.0852
+base,-7,2026-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0152,0.0776
+base,-7,2026-04-11,Heavy and Tractor-Trailer Truck Drivers,0.0145,0.0728
+base,-7,2026-04-11,Accountants and Auditors,0.0061,0.0745
+base,-7,2026-04-11,Lawyers,0.0219,0.1459
+base,-7,2026-04-11,Credit Analysts,0.0678,0.3422
+base,-7,2026-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0953,0.2847
+base,-7,2026-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1765,0.5747
+base,-7,2026-04-11,Management Analysts,0.0736,0.4143
+base,-6,2026-05-11,Interpreters and Translators,0.1407,0.43
+base,-6,2026-05-11,Proofreaders and Copy Markers,0.2211,0.6544
+base,-6,2026-05-11,Technical Writers,0.0931,0.4471
+base,-6,2026-05-11,Paralegals and Legal Assistants,0.1008,0.4665
+base,-6,2026-05-11,Tax Preparers,0.1852,0.5196
+base,-6,2026-05-11,Electricians,0.0355,0.0871
+base,-6,2026-05-11,Registered Nurses,0.0425,0.1557
+base,-6,2026-05-11,Childcare Workers,0.034,0.0882
+base,-6,2026-05-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0174,0.0836
+base,-6,2026-05-11,Heavy and Tractor-Trailer Truck Drivers,0.0169,0.0901
+base,-6,2026-05-11,Accountants and Auditors,0.0081,0.0913
+base,-6,2026-05-11,Lawyers,0.0262,0.1742
+base,-6,2026-05-11,Credit Analysts,0.0802,0.3986
+base,-6,2026-05-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.102,0.2906
+base,-6,2026-05-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1972,0.6007
+base,-6,2026-05-11,Management Analysts,0.0845,0.438
+base,-5,2026-06-11,Interpreters and Translators,0.1501,0.4382
+base,-5,2026-06-11,Proofreaders and Copy Markers,0.2345,0.6698
+base,-5,2026-06-11,Technical Writers,0.1064,0.4641
+base,-5,2026-06-11,Paralegals and Legal Assistants,0.1145,0.4867
+base,-5,2026-06-11,Tax Preparers,0.2034,0.549
+base,-5,2026-06-11,Electricians,0.0378,0.0878
+base,-5,2026-06-11,Registered Nurses,0.0475,0.1744
+base,-5,2026-06-11,Childcare Workers,0.0362,0.0908
+base,-5,2026-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0196,0.0889
+base,-5,2026-06-11,Heavy and Tractor-Trailer Truck Drivers,0.0196,0.1067
+base,-5,2026-06-11,Accountants and Auditors,0.0106,0.1108
+base,-5,2026-06-11,Lawyers,0.0314,0.2057
+base,-5,2026-06-11,Credit Analysts,0.0946,0.457
+base,-5,2026-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1084,0.2964
+base,-5,2026-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.218,0.6217
+base,-5,2026-06-11,Management Analysts,0.0961,0.4606
+base,-4,2026-07-11,Interpreters and Translators,0.1593,0.4439
+base,-4,2026-07-11,Proofreaders and Copy Markers,0.2474,0.6817
+base,-4,2026-07-11,Technical Writers,0.1201,0.477
+base,-4,2026-07-11,Paralegals and Legal Assistants,0.1286,0.5054
+base,-4,2026-07-11,Tax Preparers,0.222,0.5797
+base,-4,2026-07-11,Electricians,0.0399,0.0883
+base,-4,2026-07-11,Registered Nurses,0.0529,0.1982
+base,-4,2026-07-11,Childcare Workers,0.0384,0.0926
+base,-4,2026-07-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0217,0.0933
+base,-4,2026-07-11,Heavy and Tractor-Trailer Truck Drivers,0.0227,0.1183
+base,-4,2026-07-11,Accountants and Auditors,0.0137,0.1319
+base,-4,2026-07-11,Lawyers,0.0375,0.2374
+base,-4,2026-07-11,Credit Analysts,0.1108,0.5187
+base,-4,2026-07-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1147,0.3022
+base,-4,2026-07-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2387,0.6385
+base,-4,2026-07-11,Management Analysts,0.1083,0.4924
+base,-3,2026-08-11,Interpreters and Translators,0.168,0.4487
+base,-3,2026-08-11,Proofreaders and Copy Markers,0.2597,0.6914
+base,-3,2026-08-11,Technical Writers,0.134,0.487
+base,-3,2026-08-11,Paralegals and Legal Assistants,0.1431,0.522
+base,-3,2026-08-11,Tax Preparers,0.2408,0.6105
+base,-3,2026-08-11,Electricians,0.0419,0.0886
+base,-3,2026-08-11,Registered Nurses,0.0589,0.2231
+base,-3,2026-08-11,Childcare Workers,0.0405,0.0941
+base,-3,2026-08-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0237,0.0963
+base,-3,2026-08-11,Heavy and Tractor-Trailer Truck Drivers,0.0259,0.128
+base,-3,2026-08-11,Accountants and Auditors,0.0175,0.1537
+base,-3,2026-08-11,Lawyers,0.0445,0.2687
+base,-3,2026-08-11,Credit Analysts,0.1289,0.5806
+base,-3,2026-08-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1208,0.308
+base,-3,2026-08-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2591,0.651
+base,-3,2026-08-11,Management Analysts,0.1214,0.5214
+base,-2,2026-09-10,Interpreters and Translators,0.1764,0.4522
+base,-2,2026-09-10,Proofreaders and Copy Markers,0.2714,0.699
+base,-2,2026-09-10,Technical Writers,0.1479,0.494
+base,-2,2026-09-10,Paralegals and Legal Assistants,0.1579,0.5364
+base,-2,2026-09-10,Tax Preparers,0.2599,0.6461
+base,-2,2026-09-10,Electricians,0.0438,0.0888
+base,-2,2026-09-10,Registered Nurses,0.0656,0.2479
+base,-2,2026-09-10,Childcare Workers,0.0425,0.0949
+base,-2,2026-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0257,0.0987
+base,-2,2026-09-10,Heavy and Tractor-Trailer Truck Drivers,0.0292,0.1356
+base,-2,2026-09-10,Accountants and Auditors,0.0218,0.1762
+base,-2,2026-09-10,Lawyers,0.0526,0.3032
+base,-2,2026-09-10,Credit Analysts,0.1487,0.6404
+base,-2,2026-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1267,0.3135
+base,-2,2026-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2788,0.6598
+base,-2,2026-09-10,Management Analysts,0.1351,0.5514
+base,-1,2026-10-11,Interpreters and Translators,0.1843,0.4548
+base,-1,2026-10-11,Proofreaders and Copy Markers,0.2823,0.7047
+base,-1,2026-10-11,Technical Writers,0.1616,0.4995
+base,-1,2026-10-11,Paralegals and Legal Assistants,0.1726,0.5485
+base,-1,2026-10-11,Tax Preparers,0.2794,0.6798
+base,-1,2026-10-11,Electricians,0.0456,0.089
+base,-1,2026-10-11,Registered Nurses,0.0728,0.2728
+base,-1,2026-10-11,Childcare Workers,0.0445,0.0955
+base,-1,2026-10-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0275,0.1002
+base,-1,2026-10-11,Heavy and Tractor-Trailer Truck Drivers,0.0325,0.1416
+base,-1,2026-10-11,Accountants and Auditors,0.0269,0.1995
+base,-1,2026-10-11,Lawyers,0.0616,0.3344
+base,-1,2026-10-11,Credit Analysts,0.17,0.6973
+base,-1,2026-10-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1324,0.319
+base,-1,2026-10-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2976,0.6659
+base,-1,2026-10-11,Management Analysts,0.1495,0.5806
+base,0,2026-11-10,Interpreters and Translators,0.1917,0.4567
+base,0,2026-11-10,Proofreaders and Copy Markers,0.2926,0.7089
+base,0,2026-11-10,Technical Writers,0.1751,0.5031
+base,0,2026-11-10,Paralegals and Legal Assistants,0.1873,0.5589
+base,0,2026-11-10,Tax Preparers,0.2991,0.7148
+base,0,2026-11-10,Electricians,0.0473,0.089
+base,0,2026-11-10,Registered Nurses,0.0806,0.2951
+base,0,2026-11-10,Childcare Workers,0.0463,0.0958
+base,0,2026-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0291,0.1011
+base,0,2026-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0358,0.1464
+base,0,2026-11-10,Accountants and Auditors,0.0327,0.2234
+base,0,2026-11-10,Lawyers,0.0715,0.3637
+base,0,2026-11-10,Credit Analysts,0.1925,0.7481
+base,0,2026-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1379,0.324
+base,0,2026-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3155,0.6701
+base,0,2026-11-10,Management Analysts,0.1645,0.6082
+base,1,2026-12-10,Interpreters and Translators,0.1985,0.4579
+base,1,2026-12-10,Proofreaders and Copy Markers,0.3021,0.7118
+base,1,2026-12-10,Technical Writers,0.1883,0.5055
+base,1,2026-12-10,Paralegals and Legal Assistants,0.2018,0.5672
+base,1,2026-12-10,Tax Preparers,0.319,0.7498
+base,1,2026-12-10,Electricians,0.0489,0.0891
+base,1,2026-12-10,Registered Nurses,0.0889,0.3153
+base,1,2026-12-10,Childcare Workers,0.048,0.0959
+base,1,2026-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0306,0.1017
+base,1,2026-12-10,Heavy and Tractor-Trailer Truck Drivers,0.039,0.1496
+base,1,2026-12-10,Accountants and Auditors,0.0392,0.2518
+base,1,2026-12-10,Lawyers,0.0822,0.3902
+base,1,2026-12-10,Credit Analysts,0.216,0.7923
+base,1,2026-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1432,0.3287
+base,1,2026-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3323,0.673
+base,1,2026-12-10,Management Analysts,0.18,0.6356
+base,2,2027-01-10,Interpreters and Translators,0.2048,0.459
+base,2,2027-01-10,Proofreaders and Copy Markers,0.3109,0.7138
+base,2,2027-01-10,Technical Writers,0.2009,0.507
+base,2,2027-01-10,Paralegals and Legal Assistants,0.2159,0.5739
+base,2,2027-01-10,Tax Preparers,0.3391,0.7845
+base,2,2027-01-10,Electricians,0.0503,0.0891
+base,2,2027-01-10,Registered Nurses,0.0976,0.3327
+base,2,2027-01-10,Childcare Workers,0.0496,0.096
+base,2,2027-01-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0319,0.102
+base,2,2027-01-10,Heavy and Tractor-Trailer Truck Drivers,0.0421,0.1518
+base,2,2027-01-10,Accountants and Auditors,0.0467,0.2816
+base,2,2027-01-10,Lawyers,0.0937,0.4129
+base,2,2027-01-10,Credit Analysts,0.2401,0.8295
+base,2,2027-01-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1484,0.3327
+base,2,2027-01-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3479,0.6752
+base,2,2027-01-10,Management Analysts,0.196,0.6594
+base,3,2027-02-09,Interpreters and Translators,0.2105,0.4597
+base,3,2027-02-09,Proofreaders and Copy Markers,0.3189,0.715
+base,3,2027-02-09,Technical Writers,0.213,0.508
+base,3,2027-02-09,Paralegals and Legal Assistants,0.2295,0.5788
+base,3,2027-02-09,Tax Preparers,0.3594,0.8194
+base,3,2027-02-09,Electricians,0.0516,0.0891
+base,3,2027-02-09,Registered Nurses,0.1066,0.3476
+base,3,2027-02-09,Childcare Workers,0.051,0.096
+base,3,2027-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0331,0.1021
+base,3,2027-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0449,0.1532
+base,3,2027-02-09,Accountants and Auditors,0.0549,0.3134
+base,3,2027-02-09,Lawyers,0.1056,0.437
+base,3,2027-02-09,Credit Analysts,0.2646,0.8593
+base,3,2027-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.1533,0.3363
+base,3,2027-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3623,0.677
+base,3,2027-02-09,Management Analysts,0.2124,0.6809
+base,4,2027-03-12,Interpreters and Translators,0.2157,0.4601
+base,4,2027-03-12,Proofreaders and Copy Markers,0.3263,0.7158
+base,4,2027-03-12,Technical Writers,0.2245,0.5085
+base,4,2027-03-12,Paralegals and Legal Assistants,0.2426,0.5826
+base,4,2027-03-12,Tax Preparers,0.3799,0.8531
+base,4,2027-03-12,Electricians,0.0528,0.0891
+base,4,2027-03-12,Registered Nurses,0.1158,0.3606
+base,4,2027-03-12,Childcare Workers,0.0523,0.096
+base,4,2027-03-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0341,0.1022
+base,4,2027-03-12,Heavy and Tractor-Trailer Truck Drivers,0.0476,0.154
+base,4,2027-03-12,Accountants and Auditors,0.0641,0.3479
+base,4,2027-03-12,Lawyers,0.1181,0.4579
+base,4,2027-03-12,Credit Analysts,0.289,0.882
+base,4,2027-03-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1581,0.3389
+base,4,2027-03-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3756,0.6786
+base,4,2027-03-12,Management Analysts,0.229,0.6994
+base,5,2027-04-11,Interpreters and Translators,0.2204,0.4604
+base,5,2027-04-11,Proofreaders and Copy Markers,0.3329,0.7163
+base,5,2027-04-11,Technical Writers,0.2353,0.5089
+base,5,2027-04-11,Paralegals and Legal Assistants,0.2551,0.5853
+base,5,2027-04-11,Tax Preparers,0.4005,0.8859
+base,5,2027-04-11,Electricians,0.0538,0.0891
+base,5,2027-04-11,Registered Nurses,0.125,0.371
+base,5,2027-04-11,Childcare Workers,0.0535,0.096
+base,5,2027-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.035,0.1023
+base,5,2027-04-11,Heavy and Tractor-Trailer Truck Drivers,0.05,0.1545
+base,5,2027-04-11,Accountants and Auditors,0.0743,0.3837
+base,5,2027-04-11,Lawyers,0.1309,0.4767
+base,5,2027-04-11,Credit Analysts,0.3132,0.8988
+base,5,2027-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1626,0.3411
+base,5,2027-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3877,0.68
+base,5,2027-04-11,Management Analysts,0.2458,0.7152
+base,6,2027-05-12,Interpreters and Translators,0.2246,0.4607
+base,6,2027-05-12,Proofreaders and Copy Markers,0.3389,0.7166
+base,6,2027-05-12,Technical Writers,0.2454,0.5091
+base,6,2027-05-12,Paralegals and Legal Assistants,0.2668,0.5873
+base,6,2027-05-12,Tax Preparers,0.4213,0.9153
+base,6,2027-05-12,Electricians,0.0548,0.0891
+base,6,2027-05-12,Registered Nurses,0.1342,0.3799
+base,6,2027-05-12,Childcare Workers,0.0546,0.096
+base,6,2027-05-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0358,0.1023
+base,6,2027-05-12,Heavy and Tractor-Trailer Truck Drivers,0.0522,0.1546
+base,6,2027-05-12,Accountants and Auditors,0.0854,0.4221
+base,6,2027-05-12,Lawyers,0.144,0.4928
+base,6,2027-05-12,Credit Analysts,0.337,0.9099
+base,6,2027-05-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1668,0.3426
+base,6,2027-05-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3987,0.6814
+base,6,2027-05-12,Management Analysts,0.2627,0.7275
+base,7,2027-06-11,Interpreters and Translators,0.2283,0.4608
+base,7,2027-06-11,Proofreaders and Copy Markers,0.3443,0.7167
+base,7,2027-06-11,Technical Writers,0.2547,0.5092
+base,7,2027-06-11,Paralegals and Legal Assistants,0.2778,0.5885
+base,7,2027-06-11,Tax Preparers,0.442,0.9401
+base,7,2027-06-11,Electricians,0.0556,0.0891
+base,7,2027-06-11,Registered Nurses,0.1433,0.3865
+base,7,2027-06-11,Childcare Workers,0.0556,0.096
+base,7,2027-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0365,0.1023
+base,7,2027-06-11,Heavy and Tractor-Trailer Truck Drivers,0.0542,0.1547
+base,7,2027-06-11,Accountants and Auditors,0.0975,0.4596
+base,7,2027-06-11,Lawyers,0.157,0.5066
+base,7,2027-06-11,Credit Analysts,0.36,0.9179
+base,7,2027-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1708,0.3436
+base,7,2027-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4086,0.6827
+base,7,2027-06-11,Management Analysts,0.2795,0.7377
+base,8,2027-07-12,Interpreters and Translators,0.2316,0.4609
+base,8,2027-07-12,Proofreaders and Copy Markers,0.3491,0.7168
+base,8,2027-07-12,Technical Writers,0.2633,0.5092
+base,8,2027-07-12,Paralegals and Legal Assistants,0.288,0.5894
+base,8,2027-07-12,Tax Preparers,0.4624,0.9603
+base,8,2027-07-12,Electricians,0.0564,0.0891
+base,8,2027-07-12,Registered Nurses,0.152,0.3915
+base,8,2027-07-12,Childcare Workers,0.0565,0.096
+base,8,2027-07-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0371,0.1023
+base,8,2027-07-12,Heavy and Tractor-Trailer Truck Drivers,0.056,0.1548
+base,8,2027-07-12,Accountants and Auditors,0.1106,0.4984
+base,8,2027-07-12,Lawyers,0.1701,0.5183
+base,8,2027-07-12,Credit Analysts,0.3822,0.9229
+base,8,2027-07-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1744,0.3443
+base,8,2027-07-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4176,0.6837
+base,8,2027-07-12,Management Analysts,0.2962,0.7452
+base,9,2027-08-11,Interpreters and Translators,0.2346,0.461
+base,9,2027-08-11,Proofreaders and Copy Markers,0.3533,0.7169
+base,9,2027-08-11,Technical Writers,0.2712,0.5093
+base,9,2027-08-11,Paralegals and Legal Assistants,0.2975,0.5899
+base,9,2027-08-11,Tax Preparers,0.4822,0.9749
+base,9,2027-08-11,Electricians,0.057,0.0891
+base,9,2027-08-11,Registered Nurses,0.1604,0.3952
+base,9,2027-08-11,Childcare Workers,0.0572,0.096
+base,9,2027-08-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0376,0.1023
+base,9,2027-08-11,Heavy and Tractor-Trailer Truck Drivers,0.0576,0.1549
+base,9,2027-08-11,Accountants and Auditors,0.1247,0.5349
+base,9,2027-08-11,Lawyers,0.183,0.529
+base,9,2027-08-11,Credit Analysts,0.4035,0.9261
+base,9,2027-08-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1778,0.3446
+base,9,2027-08-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4256,0.6845
+base,9,2027-08-11,Management Analysts,0.3127,0.7509
+base,10,2027-09-10,Interpreters and Translators,0.2371,0.461
+base,10,2027-09-10,Proofreaders and Copy Markers,0.3571,0.7169
+base,10,2027-09-10,Technical Writers,0.2784,0.5093
+base,10,2027-09-10,Paralegals and Legal Assistants,0.3061,0.5902
+base,10,2027-09-10,Tax Preparers,0.5011,0.9853
+base,10,2027-09-10,Electricians,0.0576,0.0891
+base,10,2027-09-10,Registered Nurses,0.1684,0.3978
+base,10,2027-09-10,Childcare Workers,0.0579,0.096
+base,10,2027-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.038,0.1023
+base,10,2027-09-10,Heavy and Tractor-Trailer Truck Drivers,0.059,0.1549
+base,10,2027-09-10,Accountants and Auditors,0.1396,0.5699
+base,10,2027-09-10,Lawyers,0.1957,0.5373
+base,10,2027-09-10,Credit Analysts,0.4237,0.9279
+base,10,2027-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.181,0.3449
+base,10,2027-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4328,0.6851
+base,10,2027-09-10,Management Analysts,0.3288,0.7551
+base,11,2027-10-11,Interpreters and Translators,0.2393,0.461
+base,11,2027-10-11,Proofreaders and Copy Markers,0.3604,0.7169
+base,11,2027-10-11,Technical Writers,0.2848,0.5093
+base,11,2027-10-11,Paralegals and Legal Assistants,0.314,0.5904
+base,11,2027-10-11,Tax Preparers,0.5188,0.9918
+base,11,2027-10-11,Electricians,0.0581,0.0891
+base,11,2027-10-11,Registered Nurses,0.1759,0.3996
+base,11,2027-10-11,Childcare Workers,0.0585,0.096
+base,11,2027-10-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0384,0.1023
+base,11,2027-10-11,Heavy and Tractor-Trailer Truck Drivers,0.0602,0.155
+base,11,2027-10-11,Accountants and Auditors,0.1555,0.6023
+base,11,2027-10-11,Lawyers,0.208,0.5439
+base,11,2027-10-11,Credit Analysts,0.4427,0.9289
+base,11,2027-10-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1838,0.345
+base,11,2027-10-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4392,0.6856
+base,11,2027-10-11,Management Analysts,0.3444,0.758
+base,12,2027-11-10,Interpreters and Translators,0.2413,0.4611
+base,12,2027-11-10,Proofreaders and Copy Markers,0.3633,0.7169
+base,12,2027-11-10,Technical Writers,0.2907,0.5093
+base,12,2027-11-10,Paralegals and Legal Assistants,0.3211,0.5905
+base,12,2027-11-10,Tax Preparers,0.5353,0.9957
+base,12,2027-11-10,Electricians,0.0586,0.0891
+base,12,2027-11-10,Registered Nurses,0.1829,0.401
+base,12,2027-11-10,Childcare Workers,0.0591,0.096
+base,12,2027-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0387,0.1023
+base,12,2027-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0613,0.155
+base,12,2027-11-10,Accountants and Auditors,0.172,0.6321
+base,12,2027-11-10,Lawyers,0.2199,0.5494
+base,12,2027-11-10,Credit Analysts,0.4606,0.9294
+base,12,2027-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1864,0.345
+base,12,2027-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.4449,0.6859
+base,12,2027-11-10,Management Analysts,0.3596,0.7601
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Interpreters and Translators,0.0133,0.1205
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Proofreaders and Copy Markers,0.0195,0.1593
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Technical Writers,0.0001,0.0019
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Paralegals and Legal Assistants,0.0,0.0
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Tax Preparers,0.0128,0.0772
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Electricians,0.0019,0.0201
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Registered Nurses,0.0,0.0022
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Childcare Workers,0.0013,0.0278
+"base, rho 0.5 (tests/state)",-24,2024-11-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Accountants and Auditors,0.0,0.0
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Lawyers,0.0001,0.0016
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Credit Analysts,0.0001,0.0033
+"base, rho 0.5 (tests/state)",-24,2024-11-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0018,0.0447
+"base, rho 0.5 (tests/state)",-24,2024-11-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0018,0.0303
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Management Analysts,0.0001,0.0016
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Interpreters and Translators,0.0169,0.1352
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Proofreaders and Copy Markers,0.0242,0.1731
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Technical Writers,0.0001,0.0033
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Paralegals and Legal Assistants,0.0,0.0029
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Tax Preparers,0.0151,0.0864
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Electricians,0.0026,0.025
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Registered Nurses,0.0001,0.0051
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Childcare Workers,0.0021,0.0368
+"base, rho 0.5 (tests/state)",-23,2024-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Accountants and Auditors,0.0,0.0
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Lawyers,0.0001,0.0034
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Credit Analysts,0.0003,0.0062
+"base, rho 0.5 (tests/state)",-23,2024-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0033,0.0668
+"base, rho 0.5 (tests/state)",-23,2024-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.003,0.0437
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Management Analysts,0.0001,0.0054
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Interpreters and Translators,0.0208,0.1489
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Proofreaders and Copy Markers,0.0293,0.1848
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Technical Writers,0.0002,0.0052
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Paralegals and Legal Assistants,0.0002,0.0093
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Tax Preparers,0.0176,0.0963
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Electricians,0.0035,0.03
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Registered Nurses,0.0003,0.0099
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Childcare Workers,0.0032,0.0446
+"base, rho 0.5 (tests/state)",-22,2025-01-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Accountants and Auditors,0.0,0.0
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Lawyers,0.0002,0.006
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Credit Analysts,0.0006,0.0107
+"base, rho 0.5 (tests/state)",-22,2025-01-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0053,0.091
+"base, rho 0.5 (tests/state)",-22,2025-01-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0046,0.0611
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Management Analysts,0.0003,0.0174
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Interpreters and Translators,0.0252,0.1618
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Proofreaders and Copy Markers,0.0348,0.1947
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Technical Writers,0.0004,0.0094
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Paralegals and Legal Assistants,0.0005,0.019
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Tax Preparers,0.0203,0.1059
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Electricians,0.0046,0.0348
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Registered Nurses,0.0006,0.0148
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Childcare Workers,0.0044,0.0515
+"base, rho 0.5 (tests/state)",-21,2025-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Accountants and Auditors,0.0,0.0
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Lawyers,0.0004,0.0094
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Credit Analysts,0.0011,0.0168
+"base, rho 0.5 (tests/state)",-21,2025-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0081,0.1164
+"base, rho 0.5 (tests/state)",-21,2025-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.007,0.0851
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Management Analysts,0.0009,0.0387
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Interpreters and Translators,0.0298,0.1746
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Proofreaders and Copy Markers,0.0405,0.2043
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Technical Writers,0.0008,0.0304
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Paralegals and Legal Assistants,0.0012,0.032
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Tax Preparers,0.0233,0.1161
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Electricians,0.0059,0.0398
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Registered Nurses,0.0011,0.0198
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Childcare Workers,0.0059,0.057
+"base, rho 0.5 (tests/state)",-20,2025-03-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Accountants and Auditors,0.0,0.0001
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Lawyers,0.0007,0.0135
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Credit Analysts,0.0018,0.0255
+"base, rho 0.5 (tests/state)",-20,2025-03-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0115,0.1416
+"base, rho 0.5 (tests/state)",-20,2025-03-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0102,0.1122
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Management Analysts,0.0018,0.0622
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Interpreters and Translators,0.0349,0.1917
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Proofreaders and Copy Markers,0.0466,0.2127
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Technical Writers,0.0017,0.0519
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Paralegals and Legal Assistants,0.0023,0.0597
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Tax Preparers,0.0264,0.1256
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Electricians,0.0073,0.0448
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Registered Nurses,0.0016,0.0245
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Childcare Workers,0.0075,0.0612
+"base, rho 0.5 (tests/state)",-19,2025-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Accountants and Auditors,0.0,0.0002
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Lawyers,0.0012,0.0184
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Credit Analysts,0.0028,0.038
+"base, rho 0.5 (tests/state)",-19,2025-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0157,0.165
+"base, rho 0.5 (tests/state)",-19,2025-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0145,0.1426
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Management Analysts,0.0032,0.0884
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Interpreters and Translators,0.0405,0.2087
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Proofreaders and Copy Markers,0.0528,0.2203
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Technical Writers,0.0032,0.0756
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Paralegals and Legal Assistants,0.0041,0.0857
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Tax Preparers,0.0296,0.1346
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Electricians,0.0089,0.0495
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Registered Nurses,0.0023,0.0289
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Childcare Workers,0.0093,0.0642
+"base, rho 0.5 (tests/state)",-18,2025-05-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0001
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Accountants and Auditors,0.0,0.0015
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Lawyers,0.0017,0.0236
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Credit Analysts,0.0044,0.0539
+"base, rho 0.5 (tests/state)",-18,2025-05-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0204,0.1851
+"base, rho 0.5 (tests/state)",-18,2025-05-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0199,0.174
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Management Analysts,0.0052,0.117
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Interpreters and Translators,0.0466,0.2263
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Proofreaders and Copy Markers,0.0591,0.2277
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Technical Writers,0.0051,0.0982
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Paralegals and Legal Assistants,0.0066,0.1234
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Tax Preparers,0.033,0.1429
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Electricians,0.0107,0.0541
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Registered Nurses,0.0031,0.0326
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Childcare Workers,0.0111,0.0663
+"base, rho 0.5 (tests/state)",-17,2025-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0002
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Accountants and Auditors,0.0001,0.0033
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Lawyers,0.0024,0.029
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Credit Analysts,0.0064,0.073
+"base, rho 0.5 (tests/state)",-17,2025-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0258,0.2023
+"base, rho 0.5 (tests/state)",-17,2025-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0265,0.2065
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Management Analysts,0.0077,0.1464
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Interpreters and Translators,0.0531,0.2449
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Proofreaders and Copy Markers,0.0655,0.2346
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Technical Writers,0.0076,0.1219
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Paralegals and Legal Assistants,0.0102,0.1612
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Tax Preparers,0.0365,0.1505
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Electricians,0.0126,0.0587
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Registered Nurses,0.004,0.0362
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Childcare Workers,0.0131,0.0678
+"base, rho 0.5 (tests/state)",-16,2025-07-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0004
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Accountants and Auditors,0.0002,0.0053
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Lawyers,0.0033,0.0343
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Credit Analysts,0.0092,0.0945
+"base, rho 0.5 (tests/state)",-16,2025-07-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0315,0.2156
+"base, rho 0.5 (tests/state)",-16,2025-07-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0344,0.2378
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Management Analysts,0.0109,0.1748
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Interpreters and Translators,0.0601,0.2661
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Proofreaders and Copy Markers,0.0719,0.2404
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Technical Writers,0.0107,0.1454
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Paralegals and Legal Assistants,0.0147,0.2
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Tax Preparers,0.04,0.1578
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Electricians,0.0146,0.063
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Registered Nurses,0.005,0.0398
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Childcare Workers,0.0151,0.0688
+"base, rho 0.5 (tests/state)",-15,2025-08-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0008
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0001
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Accountants and Auditors,0.0003,0.0075
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Lawyers,0.0043,0.0391
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Credit Analysts,0.0126,0.1175
+"base, rho 0.5 (tests/state)",-15,2025-08-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0377,0.2261
+"base, rho 0.5 (tests/state)",-15,2025-08-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0435,0.2684
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Management Analysts,0.0147,0.2004
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Interpreters and Translators,0.0676,0.288
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Proofreaders and Copy Markers,0.0782,0.2455
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Technical Writers,0.0144,0.1671
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Paralegals and Legal Assistants,0.0203,0.2391
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Tax Preparers,0.0436,0.1648
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Electricians,0.0167,0.0673
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Registered Nurses,0.0061,0.0436
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Childcare Workers,0.0171,0.0694
+"base, rho 0.5 (tests/state)",-14,2025-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0,0.0015
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0003
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Accountants and Auditors,0.0005,0.0101
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Lawyers,0.0055,0.0442
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Credit Analysts,0.0168,0.1399
+"base, rho 0.5 (tests/state)",-14,2025-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0441,0.2343
+"base, rho 0.5 (tests/state)",-14,2025-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0539,0.2972
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Management Analysts,0.0192,0.2293
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Interpreters and Translators,0.0756,0.311
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Proofreaders and Copy Markers,0.0844,0.2498
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Technical Writers,0.0185,0.1873
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Paralegals and Legal Assistants,0.027,0.2761
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Tax Preparers,0.0472,0.1722
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Electricians,0.019,0.0713
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Registered Nurses,0.0073,0.0473
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Childcare Workers,0.0191,0.0698
+"base, rho 0.5 (tests/state)",-13,2025-10-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0001,0.0029
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0006
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Accountants and Auditors,0.0008,0.0134
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Lawyers,0.0069,0.0514
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Credit Analysts,0.0217,0.1615
+"base, rho 0.5 (tests/state)",-13,2025-10-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0507,0.2403
+"base, rho 0.5 (tests/state)",-13,2025-10-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0654,0.3263
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Management Analysts,0.0246,0.2576
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Interpreters and Translators,0.0841,0.3326
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Proofreaders and Copy Markers,0.0905,0.2531
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Technical Writers,0.0233,0.2038
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Paralegals and Legal Assistants,0.0347,0.3097
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Tax Preparers,0.0507,0.18
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Electricians,0.0213,0.0748
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Registered Nurses,0.0086,0.0514
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Childcare Workers,0.0211,0.0701
+"base, rho 0.5 (tests/state)",-12,2025-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0001,0.0049
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0014
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Accountants and Auditors,0.0012,0.0174
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Lawyers,0.0085,0.0602
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Credit Analysts,0.0272,0.1812
+"base, rho 0.5 (tests/state)",-12,2025-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0574,0.2449
+"base, rho 0.5 (tests/state)",-12,2025-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.078,0.3539
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Management Analysts,0.0307,0.2849
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Interpreters and Translators,0.093,0.3545
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Proofreaders and Copy Markers,0.0962,0.2559
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Technical Writers,0.0285,0.2196
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Paralegals and Legal Assistants,0.0434,0.3396
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Tax Preparers,0.0544,0.1897
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Electricians,0.0237,0.078
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Registered Nurses,0.0099,0.0556
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Childcare Workers,0.023,0.0703
+"base, rho 0.5 (tests/state)",-11,2025-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0002,0.008
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Heavy and Tractor-Trailer Truck Drivers,0.0,0.0027
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Accountants and Auditors,0.0017,0.0247
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Lawyers,0.0104,0.0712
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Credit Analysts,0.0333,0.199
+"base, rho 0.5 (tests/state)",-11,2025-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0641,0.2482
+"base, rho 0.5 (tests/state)",-11,2025-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.0914,0.3769
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Management Analysts,0.0377,0.3124
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Interpreters and Translators,0.1022,0.3742
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Proofreaders and Copy Markers,0.1017,0.258
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Technical Writers,0.0342,0.2345
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Paralegals and Legal Assistants,0.0531,0.3676
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Tax Preparers,0.0581,0.2009
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Electricians,0.0261,0.0807
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Registered Nurses,0.0114,0.0609
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Childcare Workers,0.0248,0.0704
+"base, rho 0.5 (tests/state)",-10,2026-01-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0004,0.0118
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Heavy and Tractor-Trailer Truck Drivers,0.0001,0.0049
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Accountants and Auditors,0.0023,0.034
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Lawyers,0.0126,0.0846
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Credit Analysts,0.0398,0.2147
+"base, rho 0.5 (tests/state)",-10,2026-01-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.0708,0.2507
+"base, rho 0.5 (tests/state)",-10,2026-01-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1055,0.3961
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Management Analysts,0.0455,0.3391
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Interpreters and Translators,0.1117,0.3919
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Proofreaders and Copy Markers,0.1068,0.2594
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Technical Writers,0.0404,0.2575
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Paralegals and Legal Assistants,0.0637,0.3927
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Tax Preparers,0.0619,0.2147
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Electricians,0.0285,0.0829
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Registered Nurses,0.0129,0.0669
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Childcare Workers,0.0266,0.0704
+"base, rho 0.5 (tests/state)",-9,2026-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0006,0.0168
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0002,0.008
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Accountants and Auditors,0.0033,0.0457
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Lawyers,0.0151,0.1
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Credit Analysts,0.0467,0.2331
+"base, rho 0.5 (tests/state)",-9,2026-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.0772,0.2527
+"base, rho 0.5 (tests/state)",-9,2026-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1199,0.413
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Management Analysts,0.0541,0.364
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Interpreters and Translators,0.1214,0.4073
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Proofreaders and Copy Markers,0.1116,0.2605
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Technical Writers,0.0472,0.279
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Paralegals and Legal Assistants,0.0751,0.4148
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Tax Preparers,0.0659,0.2303
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Electricians,0.0309,0.0847
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Registered Nurses,0.0146,0.0733
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Childcare Workers,0.0282,0.0705
+"base, rho 0.5 (tests/state)",-8,2026-03-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0009,0.022
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Heavy and Tractor-Trailer Truck Drivers,0.0003,0.0121
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Accountants and Auditors,0.0045,0.0592
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Lawyers,0.0181,0.12
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Credit Analysts,0.0542,0.2593
+"base, rho 0.5 (tests/state)",-8,2026-03-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0835,0.2558
+"base, rho 0.5 (tests/state)",-8,2026-03-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1345,0.4297
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Management Analysts,0.0635,0.3896
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Interpreters and Translators,0.131,0.4196
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Proofreaders and Copy Markers,0.116,0.309
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Technical Writers,0.0545,0.3002
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Paralegals and Legal Assistants,0.0872,0.4357
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Tax Preparers,0.0702,0.2479
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Electricians,0.0332,0.086
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Registered Nurses,0.0164,0.08
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Childcare Workers,0.0298,0.0705
+"base, rho 0.5 (tests/state)",-7,2026-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0013,0.0277
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Heavy and Tractor-Trailer Truck Drivers,0.0005,0.0173
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Accountants and Auditors,0.0061,0.0745
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Lawyers,0.0217,0.143
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Credit Analysts,0.0629,0.3134
+"base, rho 0.5 (tests/state)",-7,2026-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0896,0.2589
+"base, rho 0.5 (tests/state)",-7,2026-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1492,0.4454
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Management Analysts,0.0736,0.4143
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Interpreters and Translators,0.1407,0.43
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Proofreaders and Copy Markers,0.1211,0.3857
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Technical Writers,0.0622,0.3209
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Paralegals and Legal Assistants,0.0999,0.4543
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Tax Preparers,0.0748,0.2668
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Electricians,0.0355,0.0871
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Registered Nurses,0.0183,0.0868
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Childcare Workers,0.0312,0.071
+"base, rho 0.5 (tests/state)",-6,2026-05-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0018,0.0331
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Heavy and Tractor-Trailer Truck Drivers,0.0007,0.0228
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Accountants and Auditors,0.0081,0.0913
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Lawyers,0.0259,0.1701
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Credit Analysts,0.0729,0.3602
+"base, rho 0.5 (tests/state)",-6,2026-05-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.0954,0.2623
+"base, rho 0.5 (tests/state)",-6,2026-05-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1636,0.4609
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Management Analysts,0.0845,0.438
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Interpreters and Translators,0.1501,0.4382
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Proofreaders and Copy Markers,0.1262,0.4232
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Technical Writers,0.0703,0.3388
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Paralegals and Legal Assistants,0.1131,0.4716
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Tax Preparers,0.0797,0.2858
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Electricians,0.0378,0.0878
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Registered Nurses,0.0203,0.0937
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Childcare Workers,0.0325,0.0722
+"base, rho 0.5 (tests/state)",-5,2026-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0023,0.0375
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Heavy and Tractor-Trailer Truck Drivers,0.001,0.0283
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Accountants and Auditors,0.0106,0.1108
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Lawyers,0.0309,0.2003
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Credit Analysts,0.0842,0.4083
+"base, rho 0.5 (tests/state)",-5,2026-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.101,0.2673
+"base, rho 0.5 (tests/state)",-5,2026-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1777,0.4763
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Management Analysts,0.0961,0.4606
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Interpreters and Translators,0.1593,0.4439
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Proofreaders and Copy Markers,0.1311,0.4438
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Technical Writers,0.0787,0.3549
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Paralegals and Legal Assistants,0.1267,0.489
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Tax Preparers,0.085,0.3058
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Electricians,0.0399,0.0883
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Registered Nurses,0.0224,0.1001
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Childcare Workers,0.0338,0.0738
+"base, rho 0.5 (tests/state)",-4,2026-07-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0028,0.0413
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Heavy and Tractor-Trailer Truck Drivers,0.0013,0.0335
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Accountants and Auditors,0.0137,0.1319
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Lawyers,0.0368,0.2306
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Credit Analysts,0.0966,0.459
+"base, rho 0.5 (tests/state)",-4,2026-07-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1063,0.2716
+"base, rho 0.5 (tests/state)",-4,2026-07-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.1914,0.4916
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Management Analysts,0.1083,0.4924
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Interpreters and Translators,0.168,0.4487
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Proofreaders and Copy Markers,0.136,0.5034
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Technical Writers,0.0873,0.3905
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Paralegals and Legal Assistants,0.1406,0.5052
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Tax Preparers,0.0906,0.3263
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Electricians,0.0419,0.0886
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Registered Nurses,0.0246,0.1063
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Childcare Workers,0.0349,0.0756
+"base, rho 0.5 (tests/state)",-3,2026-08-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0033,0.0439
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Heavy and Tractor-Trailer Truck Drivers,0.0017,0.0379
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Accountants and Auditors,0.0175,0.1537
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Lawyers,0.0435,0.2607
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Credit Analysts,0.1103,0.5104
+"base, rho 0.5 (tests/state)",-3,2026-08-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1113,0.2757
+"base, rho 0.5 (tests/state)",-3,2026-08-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2047,0.5074
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Management Analysts,0.1214,0.5214
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Interpreters and Translators,0.1764,0.4522
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Proofreaders and Copy Markers,0.141,0.5421
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Technical Writers,0.0965,0.4214
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Paralegals and Legal Assistants,0.1547,0.5205
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Tax Preparers,0.0968,0.3505
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Electricians,0.0438,0.0888
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Registered Nurses,0.0268,0.1116
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Childcare Workers,0.036,0.0776
+"base, rho 0.5 (tests/state)",-2,2026-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0039,0.0458
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Heavy and Tractor-Trailer Truck Drivers,0.002,0.0411
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Accountants and Auditors,0.0218,0.1762
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Lawyers,0.0513,0.2941
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Credit Analysts,0.1252,0.561
+"base, rho 0.5 (tests/state)",-2,2026-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.116,0.2793
+"base, rho 0.5 (tests/state)",-2,2026-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2173,0.5229
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Management Analysts,0.1351,0.5514
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Interpreters and Translators,0.1843,0.4548
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Proofreaders and Copy Markers,0.1458,0.5728
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Technical Writers,0.1059,0.4439
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Paralegals and Legal Assistants,0.1688,0.5346
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Tax Preparers,0.1035,0.3741
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Electricians,0.0456,0.089
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Registered Nurses,0.0292,0.1169
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Childcare Workers,0.037,0.0793
+"base, rho 0.5 (tests/state)",-1,2026-10-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0044,0.0469
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Heavy and Tractor-Trailer Truck Drivers,0.0024,0.0434
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Accountants and Auditors,0.0269,0.1995
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Lawyers,0.06,0.3243
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Credit Analysts,0.1412,0.6105
+"base, rho 0.5 (tests/state)",-1,2026-10-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1204,0.2825
+"base, rho 0.5 (tests/state)",-1,2026-10-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2294,0.5381
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Management Analysts,0.1495,0.5806
+"base, rho 0.5 (tests/state)",0,2026-11-10,Interpreters and Translators,0.1917,0.4567
+"base, rho 0.5 (tests/state)",0,2026-11-10,Proofreaders and Copy Markers,0.1506,0.5976
+"base, rho 0.5 (tests/state)",0,2026-11-10,Technical Writers,0.1154,0.4623
+"base, rho 0.5 (tests/state)",0,2026-11-10,Paralegals and Legal Assistants,0.1829,0.5477
+"base, rho 0.5 (tests/state)",0,2026-11-10,Tax Preparers,0.1108,0.3996
+"base, rho 0.5 (tests/state)",0,2026-11-10,Electricians,0.0473,0.089
+"base, rho 0.5 (tests/state)",0,2026-11-10,Registered Nurses,0.0316,0.1216
+"base, rho 0.5 (tests/state)",0,2026-11-10,Childcare Workers,0.038,0.0809
+"base, rho 0.5 (tests/state)",0,2026-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0049,0.0476
+"base, rho 0.5 (tests/state)",0,2026-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0028,0.045
+"base, rho 0.5 (tests/state)",0,2026-11-10,Accountants and Auditors,0.0327,0.2234
+"base, rho 0.5 (tests/state)",0,2026-11-10,Lawyers,0.0695,0.3543
+"base, rho 0.5 (tests/state)",0,2026-11-10,Credit Analysts,0.1583,0.6553
+"base, rho 0.5 (tests/state)",0,2026-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1245,0.2864
+"base, rho 0.5 (tests/state)",0,2026-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2409,0.5526
+"base, rho 0.5 (tests/state)",0,2026-11-10,Management Analysts,0.1645,0.6082
+"base, rho 0.5 (tests/state)",1,2026-12-10,Interpreters and Translators,0.1985,0.4579
+"base, rho 0.5 (tests/state)",1,2026-12-10,Proofreaders and Copy Markers,0.1551,0.6193
+"base, rho 0.5 (tests/state)",1,2026-12-10,Technical Writers,0.1247,0.4758
+"base, rho 0.5 (tests/state)",1,2026-12-10,Paralegals and Legal Assistants,0.1968,0.5588
+"base, rho 0.5 (tests/state)",1,2026-12-10,Tax Preparers,0.1188,0.4263
+"base, rho 0.5 (tests/state)",1,2026-12-10,Electricians,0.0489,0.0891
+"base, rho 0.5 (tests/state)",1,2026-12-10,Registered Nurses,0.0342,0.1266
+"base, rho 0.5 (tests/state)",1,2026-12-10,Childcare Workers,0.0388,0.082
+"base, rho 0.5 (tests/state)",1,2026-12-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0053,0.0479
+"base, rho 0.5 (tests/state)",1,2026-12-10,Heavy and Tractor-Trailer Truck Drivers,0.0032,0.0577
+"base, rho 0.5 (tests/state)",1,2026-12-10,Accountants and Auditors,0.0392,0.2518
+"base, rho 0.5 (tests/state)",1,2026-12-10,Lawyers,0.0799,0.3816
+"base, rho 0.5 (tests/state)",1,2026-12-10,Credit Analysts,0.1764,0.6953
+"base, rho 0.5 (tests/state)",1,2026-12-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1284,0.291
+"base, rho 0.5 (tests/state)",1,2026-12-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2516,0.5659
+"base, rho 0.5 (tests/state)",1,2026-12-10,Management Analysts,0.18,0.6356
+"base, rho 0.5 (tests/state)",2,2027-01-10,Interpreters and Translators,0.2048,0.459
+"base, rho 0.5 (tests/state)",2,2027-01-10,Proofreaders and Copy Markers,0.1593,0.6363
+"base, rho 0.5 (tests/state)",2,2027-01-10,Technical Writers,0.1339,0.4862
+"base, rho 0.5 (tests/state)",2,2027-01-10,Paralegals and Legal Assistants,0.2104,0.5679
+"base, rho 0.5 (tests/state)",2,2027-01-10,Tax Preparers,0.1276,0.4546
+"base, rho 0.5 (tests/state)",2,2027-01-10,Electricians,0.0503,0.0891
+"base, rho 0.5 (tests/state)",2,2027-01-10,Registered Nurses,0.0367,0.1318
+"base, rho 0.5 (tests/state)",2,2027-01-10,Childcare Workers,0.0396,0.0828
+"base, rho 0.5 (tests/state)",2,2027-01-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0057,0.0481
+"base, rho 0.5 (tests/state)",2,2027-01-10,Heavy and Tractor-Trailer Truck Drivers,0.0037,0.0691
+"base, rho 0.5 (tests/state)",2,2027-01-10,Accountants and Auditors,0.0467,0.2816
+"base, rho 0.5 (tests/state)",2,2027-01-10,Lawyers,0.091,0.405
+"base, rho 0.5 (tests/state)",2,2027-01-10,Credit Analysts,0.1952,0.7297
+"base, rho 0.5 (tests/state)",2,2027-01-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.132,0.2944
+"base, rho 0.5 (tests/state)",2,2027-01-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2617,0.5776
+"base, rho 0.5 (tests/state)",2,2027-01-10,Management Analysts,0.196,0.6594
+"base, rho 0.5 (tests/state)",3,2027-02-09,Interpreters and Translators,0.2105,0.4597
+"base, rho 0.5 (tests/state)",3,2027-02-09,Proofreaders and Copy Markers,0.1634,0.6511
+"base, rho 0.5 (tests/state)",3,2027-02-09,Technical Writers,0.1428,0.4935
+"base, rho 0.5 (tests/state)",3,2027-02-09,Paralegals and Legal Assistants,0.2235,0.5749
+"base, rho 0.5 (tests/state)",3,2027-02-09,Tax Preparers,0.1373,0.4846
+"base, rho 0.5 (tests/state)",3,2027-02-09,Electricians,0.0516,0.0891
+"base, rho 0.5 (tests/state)",3,2027-02-09,Registered Nurses,0.0394,0.1374
+"base, rho 0.5 (tests/state)",3,2027-02-09,Childcare Workers,0.0404,0.0833
+"base, rho 0.5 (tests/state)",3,2027-02-09,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.006,0.0481
+"base, rho 0.5 (tests/state)",3,2027-02-09,Heavy and Tractor-Trailer Truck Drivers,0.0043,0.0756
+"base, rho 0.5 (tests/state)",3,2027-02-09,Accountants and Auditors,0.0549,0.3134
+"base, rho 0.5 (tests/state)",3,2027-02-09,Lawyers,0.1026,0.4288
+"base, rho 0.5 (tests/state)",3,2027-02-09,Credit Analysts,0.2146,0.7576
+"base, rho 0.5 (tests/state)",3,2027-02-09,"Secondary School Teachers, Except Special and Career/Technical Education",0.1353,0.2973
+"base, rho 0.5 (tests/state)",3,2027-02-09,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2711,0.5875
+"base, rho 0.5 (tests/state)",3,2027-02-09,Management Analysts,0.2124,0.6809
+"base, rho 0.5 (tests/state)",4,2027-03-12,Interpreters and Translators,0.2157,0.4601
+"base, rho 0.5 (tests/state)",4,2027-03-12,Proofreaders and Copy Markers,0.1671,0.662
+"base, rho 0.5 (tests/state)",4,2027-03-12,Technical Writers,0.1512,0.4984
+"base, rho 0.5 (tests/state)",4,2027-03-12,Paralegals and Legal Assistants,0.2362,0.5803
+"base, rho 0.5 (tests/state)",4,2027-03-12,Tax Preparers,0.1479,0.5147
+"base, rho 0.5 (tests/state)",4,2027-03-12,Electricians,0.0528,0.0891
+"base, rho 0.5 (tests/state)",4,2027-03-12,Registered Nurses,0.0421,0.1491
+"base, rho 0.5 (tests/state)",4,2027-03-12,Childcare Workers,0.041,0.0836
+"base, rho 0.5 (tests/state)",4,2027-03-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0064,0.0482
+"base, rho 0.5 (tests/state)",4,2027-03-12,Heavy and Tractor-Trailer Truck Drivers,0.0048,0.0798
+"base, rho 0.5 (tests/state)",4,2027-03-12,Accountants and Auditors,0.0641,0.3476
+"base, rho 0.5 (tests/state)",4,2027-03-12,Lawyers,0.1147,0.4495
+"base, rho 0.5 (tests/state)",4,2027-03-12,Credit Analysts,0.2344,0.7793
+"base, rho 0.5 (tests/state)",4,2027-03-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1383,0.2997
+"base, rho 0.5 (tests/state)",4,2027-03-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2798,0.5959
+"base, rho 0.5 (tests/state)",4,2027-03-12,Management Analysts,0.229,0.6994
+"base, rho 0.5 (tests/state)",5,2027-04-11,Interpreters and Translators,0.2204,0.4604
+"base, rho 0.5 (tests/state)",5,2027-04-11,Proofreaders and Copy Markers,0.1706,0.6707
+"base, rho 0.5 (tests/state)",5,2027-04-11,Technical Writers,0.1593,0.5021
+"base, rho 0.5 (tests/state)",5,2027-04-11,Paralegals and Legal Assistants,0.2482,0.5839
+"base, rho 0.5 (tests/state)",5,2027-04-11,Tax Preparers,0.1596,0.5451
+"base, rho 0.5 (tests/state)",5,2027-04-11,Electricians,0.0538,0.0891
+"base, rho 0.5 (tests/state)",5,2027-04-11,Registered Nurses,0.0451,0.1726
+"base, rho 0.5 (tests/state)",5,2027-04-11,Childcare Workers,0.0417,0.0838
+"base, rho 0.5 (tests/state)",5,2027-04-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0066,0.0482
+"base, rho 0.5 (tests/state)",5,2027-04-11,Heavy and Tractor-Trailer Truck Drivers,0.0054,0.0824
+"base, rho 0.5 (tests/state)",5,2027-04-11,Accountants and Auditors,0.0742,0.3831
+"base, rho 0.5 (tests/state)",5,2027-04-11,Lawyers,0.1271,0.4683
+"base, rho 0.5 (tests/state)",5,2027-04-11,Credit Analysts,0.2543,0.7955
+"base, rho 0.5 (tests/state)",5,2027-04-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1412,0.302
+"base, rho 0.5 (tests/state)",5,2027-04-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2878,0.6027
+"base, rho 0.5 (tests/state)",5,2027-04-11,Management Analysts,0.2458,0.7152
+"base, rho 0.5 (tests/state)",6,2027-05-12,Interpreters and Translators,0.2246,0.4607
+"base, rho 0.5 (tests/state)",6,2027-05-12,Proofreaders and Copy Markers,0.1738,0.6775
+"base, rho 0.5 (tests/state)",6,2027-05-12,Technical Writers,0.1668,0.5043
+"base, rho 0.5 (tests/state)",6,2027-05-12,Paralegals and Legal Assistants,0.2596,0.5865
+"base, rho 0.5 (tests/state)",6,2027-05-12,Tax Preparers,0.1722,0.573
+"base, rho 0.5 (tests/state)",6,2027-05-12,Electricians,0.0548,0.0891
+"base, rho 0.5 (tests/state)",6,2027-05-12,Registered Nurses,0.0483,0.192
+"base, rho 0.5 (tests/state)",6,2027-05-12,Childcare Workers,0.0422,0.0838
+"base, rho 0.5 (tests/state)",6,2027-05-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0069,0.0482
+"base, rho 0.5 (tests/state)",6,2027-05-12,Heavy and Tractor-Trailer Truck Drivers,0.0059,0.0845
+"base, rho 0.5 (tests/state)",6,2027-05-12,Accountants and Auditors,0.0853,0.4211
+"base, rho 0.5 (tests/state)",6,2027-05-12,Lawyers,0.1397,0.484
+"base, rho 0.5 (tests/state)",6,2027-05-12,Credit Analysts,0.2742,0.8063
+"base, rho 0.5 (tests/state)",6,2027-05-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1438,0.3043
+"base, rho 0.5 (tests/state)",6,2027-05-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.2951,0.6082
+"base, rho 0.5 (tests/state)",6,2027-05-12,Management Analysts,0.2627,0.7275
+"base, rho 0.5 (tests/state)",7,2027-06-11,Interpreters and Translators,0.2283,0.4608
+"base, rho 0.5 (tests/state)",7,2027-06-11,Proofreaders and Copy Markers,0.1767,0.6816
+"base, rho 0.5 (tests/state)",7,2027-06-11,Technical Writers,0.1738,0.5058
+"base, rho 0.5 (tests/state)",7,2027-06-11,Paralegals and Legal Assistants,0.2703,0.5882
+"base, rho 0.5 (tests/state)",7,2027-06-11,Tax Preparers,0.1855,0.5966
+"base, rho 0.5 (tests/state)",7,2027-06-11,Electricians,0.0556,0.0891
+"base, rho 0.5 (tests/state)",7,2027-06-11,Registered Nurses,0.0516,0.2085
+"base, rho 0.5 (tests/state)",7,2027-06-11,Childcare Workers,0.0427,0.0839
+"base, rho 0.5 (tests/state)",7,2027-06-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0071,0.0482
+"base, rho 0.5 (tests/state)",7,2027-06-11,Heavy and Tractor-Trailer Truck Drivers,0.0064,0.0862
+"base, rho 0.5 (tests/state)",7,2027-06-11,Accountants and Auditors,0.0974,0.4581
+"base, rho 0.5 (tests/state)",7,2027-06-11,Lawyers,0.1524,0.4976
+"base, rho 0.5 (tests/state)",7,2027-06-11,Credit Analysts,0.2938,0.8142
+"base, rho 0.5 (tests/state)",7,2027-06-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1461,0.3066
+"base, rho 0.5 (tests/state)",7,2027-06-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3017,0.6126
+"base, rho 0.5 (tests/state)",7,2027-06-11,Management Analysts,0.2795,0.7377
+"base, rho 0.5 (tests/state)",8,2027-07-12,Interpreters and Translators,0.2316,0.4609
+"base, rho 0.5 (tests/state)",8,2027-07-12,Proofreaders and Copy Markers,0.1793,0.6848
+"base, rho 0.5 (tests/state)",8,2027-07-12,Technical Writers,0.1803,0.5067
+"base, rho 0.5 (tests/state)",8,2027-07-12,Paralegals and Legal Assistants,0.2802,0.5892
+"base, rho 0.5 (tests/state)",8,2027-07-12,Tax Preparers,0.1993,0.6162
+"base, rho 0.5 (tests/state)",8,2027-07-12,Electricians,0.0564,0.0891
+"base, rho 0.5 (tests/state)",8,2027-07-12,Registered Nurses,0.0552,0.2333
+"base, rho 0.5 (tests/state)",8,2027-07-12,Childcare Workers,0.0431,0.0839
+"base, rho 0.5 (tests/state)",8,2027-07-12,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0072,0.0482
+"base, rho 0.5 (tests/state)",8,2027-07-12,Heavy and Tractor-Trailer Truck Drivers,0.0068,0.0881
+"base, rho 0.5 (tests/state)",8,2027-07-12,Accountants and Auditors,0.1105,0.4962
+"base, rho 0.5 (tests/state)",8,2027-07-12,Lawyers,0.165,0.5089
+"base, rho 0.5 (tests/state)",8,2027-07-12,Credit Analysts,0.3129,0.8191
+"base, rho 0.5 (tests/state)",8,2027-07-12,"Secondary School Teachers, Except Special and Career/Technical Education",0.1483,0.3093
+"base, rho 0.5 (tests/state)",8,2027-07-12,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3077,0.6161
+"base, rho 0.5 (tests/state)",8,2027-07-12,Management Analysts,0.2962,0.7452
+"base, rho 0.5 (tests/state)",9,2027-08-11,Interpreters and Translators,0.2346,0.461
+"base, rho 0.5 (tests/state)",9,2027-08-11,Proofreaders and Copy Markers,0.1816,0.6875
+"base, rho 0.5 (tests/state)",9,2027-08-11,Technical Writers,0.1862,0.5073
+"base, rho 0.5 (tests/state)",9,2027-08-11,Paralegals and Legal Assistants,0.2893,0.5898
+"base, rho 0.5 (tests/state)",9,2027-08-11,Tax Preparers,0.2133,0.6305
+"base, rho 0.5 (tests/state)",9,2027-08-11,Electricians,0.057,0.0891
+"base, rho 0.5 (tests/state)",9,2027-08-11,Registered Nurses,0.0588,0.2483
+"base, rho 0.5 (tests/state)",9,2027-08-11,Childcare Workers,0.0435,0.0839
+"base, rho 0.5 (tests/state)",9,2027-08-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0074,0.0482
+"base, rho 0.5 (tests/state)",9,2027-08-11,Heavy and Tractor-Trailer Truck Drivers,0.0072,0.0904
+"base, rho 0.5 (tests/state)",9,2027-08-11,Accountants and Auditors,0.1245,0.5319
+"base, rho 0.5 (tests/state)",9,2027-08-11,Lawyers,0.1775,0.5191
+"base, rho 0.5 (tests/state)",9,2027-08-11,Credit Analysts,0.3314,0.8223
+"base, rho 0.5 (tests/state)",9,2027-08-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1503,0.3122
+"base, rho 0.5 (tests/state)",9,2027-08-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3131,0.6191
+"base, rho 0.5 (tests/state)",9,2027-08-11,Management Analysts,0.3127,0.7509
+"base, rho 0.5 (tests/state)",10,2027-09-10,Interpreters and Translators,0.2371,0.461
+"base, rho 0.5 (tests/state)",10,2027-09-10,Proofreaders and Copy Markers,0.1836,0.6891
+"base, rho 0.5 (tests/state)",10,2027-09-10,Technical Writers,0.1916,0.5076
+"base, rho 0.5 (tests/state)",10,2027-09-10,Paralegals and Legal Assistants,0.2977,0.5902
+"base, rho 0.5 (tests/state)",10,2027-09-10,Tax Preparers,0.2271,0.6407
+"base, rho 0.5 (tests/state)",10,2027-09-10,Electricians,0.0576,0.0891
+"base, rho 0.5 (tests/state)",10,2027-09-10,Registered Nurses,0.0625,0.2593
+"base, rho 0.5 (tests/state)",10,2027-09-10,Childcare Workers,0.0439,0.0839
+"base, rho 0.5 (tests/state)",10,2027-09-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0075,0.0482
+"base, rho 0.5 (tests/state)",10,2027-09-10,Heavy and Tractor-Trailer Truck Drivers,0.0076,0.0933
+"base, rho 0.5 (tests/state)",10,2027-09-10,Accountants and Auditors,0.1394,0.5664
+"base, rho 0.5 (tests/state)",10,2027-09-10,Lawyers,0.1897,0.5271
+"base, rho 0.5 (tests/state)",10,2027-09-10,Credit Analysts,0.3493,0.824
+"base, rho 0.5 (tests/state)",10,2027-09-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1521,0.3157
+"base, rho 0.5 (tests/state)",10,2027-09-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3179,0.6214
+"base, rho 0.5 (tests/state)",10,2027-09-10,Management Analysts,0.3288,0.7551
+"base, rho 0.5 (tests/state)",11,2027-10-11,Interpreters and Translators,0.2393,0.461
+"base, rho 0.5 (tests/state)",11,2027-10-11,Proofreaders and Copy Markers,0.1854,0.6898
+"base, rho 0.5 (tests/state)",11,2027-10-11,Technical Writers,0.1965,0.5078
+"base, rho 0.5 (tests/state)",11,2027-10-11,Paralegals and Legal Assistants,0.3053,0.5904
+"base, rho 0.5 (tests/state)",11,2027-10-11,Tax Preparers,0.2404,0.6471
+"base, rho 0.5 (tests/state)",11,2027-10-11,Electricians,0.0581,0.0891
+"base, rho 0.5 (tests/state)",11,2027-10-11,Registered Nurses,0.066,0.2666
+"base, rho 0.5 (tests/state)",11,2027-10-11,Childcare Workers,0.0442,0.0839
+"base, rho 0.5 (tests/state)",11,2027-10-11,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0076,0.0482
+"base, rho 0.5 (tests/state)",11,2027-10-11,Heavy and Tractor-Trailer Truck Drivers,0.008,0.0971
+"base, rho 0.5 (tests/state)",11,2027-10-11,Accountants and Auditors,0.1551,0.5983
+"base, rho 0.5 (tests/state)",11,2027-10-11,Lawyers,0.2016,0.5363
+"base, rho 0.5 (tests/state)",11,2027-10-11,Credit Analysts,0.3662,0.825
+"base, rho 0.5 (tests/state)",11,2027-10-11,"Secondary School Teachers, Except Special and Career/Technical Education",0.1538,0.3192
+"base, rho 0.5 (tests/state)",11,2027-10-11,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.3222,0.6234
+"base, rho 0.5 (tests/state)",11,2027-10-11,Management Analysts,0.3444,0.758
+"base, rho 0.5 (tests/state)",12,2027-11-10,Interpreters and Translators,0.2413,0.4611
+"base, rho 0.5 (tests/state)",12,2027-11-10,Proofreaders and Copy Markers,0.187,0.6903
+"base, rho 0.5 (tests/state)",12,2027-11-10,Technical Writers,0.2009,0.5079
+"base, rho 0.5 (tests/state)",12,2027-11-10,Paralegals and Legal Assistants,0.3123,0.5905
+"base, rho 0.5 (tests/state)",12,2027-11-10,Tax Preparers,0.253,0.6509
+"base, rho 0.5 (tests/state)",12,2027-11-10,Electricians,0.0586,0.0891
+"base, rho 0.5 (tests/state)",12,2027-11-10,Registered Nurses,0.0694,0.2735
+"base, rho 0.5 (tests/state)",12,2027-11-10,Childcare Workers,0.0445,0.0839
+"base, rho 0.5 (tests/state)",12,2027-11-10,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",0.0077,0.0482
+"base, rho 0.5 (tests/state)",12,2027-11-10,Heavy and Tractor-Trailer Truck Drivers,0.0083,0.1009
+"base, rho 0.5 (tests/state)",12,2027-11-10,Accountants and Auditors,0.1716,0.6277
+"base, rho 0.5 (tests/state)",12,2027-11-10,Lawyers,0.2131,0.5435
+"base, rho 0.5 (tests/state)",12,2027-11-10,Credit Analysts,0.3822,0.8255
+"base, rho 0.5 (tests/state)",12,2027-11-10,"Secondary School Teachers, Except Special and Career/Technical Education",0.1553,0.323
+"base, rho 0.5 (tests/state)",12,2027-11-10,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",0.326,0.625
+"base, rho 0.5 (tests/state)",12,2027-11-10,Management Analysts,0.3596,0.7601

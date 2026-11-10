@@ -1,0 +1,328 @@
+[
+ {
+  "task_id": "5158",
+  "split_reasoning": "Correcting and recording findings are alternative ways of handling errors found in a proof.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correct or record omissions, errors, and inconsistencies found in a proof.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a corrected or annotated proof for someone else to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proof is handled and passed on as a document or assigned section.",
+    "work_item": "one proof corrected or annotated with findings",
+    "start": "a proof and its source material are assigned for checking",
+    "end": "corrections or findings are recorded and the proof is ready for handoff",
+    "checked_by": "editor or typesetter",
+    "overlap_reasoning": "Marking copy covers much of the same correction work, while comparison, reference checking, and routing cover related steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159",
+     "5161",
+     "5162",
+     "5163",
+     "20908"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5159",
+  "split_reasoning": "The listed error types are all handled through the same activity of marking copy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mark copy with standard printers' marks to identify and correct errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each marked proof is a distinct deliverable for correction.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The marked proof or assigned section is handed to the person making the corrections.",
+    "work_item": "one proof marked with correction instructions",
+    "start": "copy or proof is received for marking",
+    "end": "errors are marked and the proof is ready for correction",
+    "checked_by": "typesetter or editor",
+    "overlap_reasoning": "Recording errors overlaps substantially with marking them, and reference checking and routing can be parts of the surrounding workflow.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5162",
+     "5163",
+     "20908"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5160",
+  "split_reasoning": "Checking that corrections were made is one activity, regardless of the kinds of corrections.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a corrected proof to ensure that the requested corrections were made.",
+    "time_share": 1.0,
+    "type_reasoning": "The check produces a verified proof or a record of corrections still needed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The corrected proof is checked against the marked version and then released or returned.",
+    "work_item": "one corrected proof verified",
+    "start": "corrected proof and marked copy are received",
+    "end": "corrections are verified and any remaining problems are reported",
+    "checked_by": "editor or production team",
+    "overlap_reasoning": "Checking corrections can involve comparison with another record, but comparison also covers other data checks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5161"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5161",
+  "split_reasoning": "Comparing against another record or original copy uses different sources for the same checking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare information or figures against another record or original copy to find errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each comparison produces checked material and any discrepancies for correction.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned record or proof section is compared and its discrepancies reported as a whole.",
+    "work_item": "one record or proof section compared against its source",
+    "start": "material and comparison source are received",
+    "end": "comparison is completed and discrepancies are marked or reported",
+    "checked_by": "editor or production team",
+    "overlap_reasoning": "The comparison may contribute to recording errors or checking corrected proofs, but it also covers other record comparisons.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5160",
+     "20908"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5162",
+  "split_reasoning": "Reference books and assistance from readers are alternative means of checking a grammar or composition question.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a grammar or composition question using reference books or assistance from a reader.",
+    "time_share": 1.0,
+    "type_reasoning": "The check resolves or documents a specific question arising in copy.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular question in an assigned proof is checked and a conclusion applied or reported.",
+    "work_item": "one grammar or composition question checked",
+    "start": "a questionable passage is identified",
+    "end": "the applicable guidance is established and the finding applied or reported",
+    "checked_by": "editor or proofreader handling the copy",
+    "overlap_reasoning": "Reference checking supports marking or recording errors, and some such checking may also be research using computer resources.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5159",
+     "20908"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5163",
+  "split_reasoning": "Routing marked proofs is one handoff activity, regardless of recipient.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Route a proof with marked corrections to the appropriate person for correction or reprinting.",
+    "time_share": 1.0,
+    "type_reasoning": "Each routed proof is a distinct handoff that a recipient relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The marked proof is sent as a whole to the person responsible for the next step.",
+    "work_item": "one marked proof routed for correction or reprinting",
+    "start": "marked proof is ready for handoff",
+    "end": "proof is sent to the appropriate recipient",
+    "checked_by": "author, editor, typist, or typesetter receiving it",
+    "overlap_reasoning": "Routing follows and may be bundled with marking or recording corrections, but it is a separate handoff.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5159"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5165",
+  "split_reasoning": "Reading the proof aloud, including punctuation and unusual spellings, is one collaborative reading activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read a proof aloud to a colleague, calling out punctuation and spelling unusual words and proper names.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live interaction with a colleague who listens or follows another copy, rather than a separately produced artifact.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Reading aloud can support comparison of a proof with source copy, but comparison can also be performed without it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5161"
+    ]
+   }
+  ],
+  "notes": "The colleague may mark discrepancies during the reading; those marks are separate from the target's read-aloud activity."
+ },
+ {
+  "task_id": "20907",
+  "split_reasoning": "Consulting authors and editors about manuscript changes is one kind of live discussion.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss manuscript changes and suggestions with authors and editors.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the live consultation rather than a separately specified written deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The discussions may concern marked corrections, but they are not the same work as marking or routing proofs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5159"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20908",
+  "split_reasoning": "Archiving documents, researching questions, and reading copy are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Archive completed documents using computer programs.",
+    "time_share": 0.2,
+    "type_reasoning": "Each archived document is a retrievable record that colleagues can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed document is filed and made retrievable as one record.",
+    "work_item": "one document archived",
+    "start": "completed document is received for filing",
+    "end": "document is stored and identified in the archive",
+    "checked_by": "editor or production staff retrieving the document",
+    "overlap_reasoning": "None of the other statements describes archiving documents.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Research a question arising in copy using the internet and computer programs.",
+    "time_share": 0.3,
+    "type_reasoning": "Each research question produces a finding used in handling the copy.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific question is investigated and its finding applied or communicated.",
+    "work_item": "one copy-related research question resolved",
+    "start": "a fact, reference, or usage question is identified",
+    "end": "sources are checked and the finding is applied or reported",
+    "checked_by": "editor or proofreader handling the copy",
+    "overlap_reasoning": "Some research checks grammar or composition references, while other research concerns different facts or references.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5162"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Read copy using computer programs to identify problems.",
+    "time_share": 0.5,
+    "type_reasoning": "Reading an assigned copy produces checked material and any identified findings.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or assigned section is read and passed on with findings as a whole.",
+    "work_item": "one document or assigned section read and checked",
+    "start": "copy is assigned for reading",
+    "end": "reading is completed and findings are marked or reported",
+    "checked_by": "editor or production team",
+    "overlap_reasoning": "Reading copy can include comparing sources and marking or recording errors, while those statements also specify particular checking actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5158",
+     "5159",
+     "5161"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates and depend on how the workplace divides archiving, research, and proofreading."
+ },
+ {
+  "task_id": "20909",
+  "split_reasoning": "Headlines, captions, cutlines, and cover copy are examples of original publication copy created for an assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write original publication copy such as a headline, caption, cutline, or cover copy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment produces copy submitted for editorial use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assigned piece of copy is submitted as a whole for editorial review.",
+    "work_item": "one assigned piece of original publication copy",
+    "start": "copy assignment and relevant source material are received",
+    "end": "draft copy is submitted to the editor",
+    "checked_by": "editor or publication team",
+    "overlap_reasoning": "The other statements concern checking, routing, discussing, or laying out copy rather than originating it.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20910",
+  "split_reasoning": "Typesetting and verifying page measurements are different activities, and measurement is performed both in layout software and physically on paper.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Typeset copy and page elements using layout software.",
+    "time_share": 0.5,
+    "type_reasoning": "Typesetting produces an arranged page or assigned layout for production review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or assigned layout is prepared and handed on as a whole.",
+    "work_item": "one page or assigned layout typeset",
+    "start": "copy, illustrations, and layout specifications are received",
+    "end": "typeset layout is saved and submitted for review",
+    "checked_by": "editor or production team",
+    "overlap_reasoning": "The other statements address proofreading and correction rather than creating the typeset layout.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Use layout software to verify page-element dimensions, spacing, and positions against specifications.",
+    "time_share": 0.3,
+    "type_reasoning": "The software-based check produces a verified layout or identified discrepancies.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or assigned layout is checked against its specifications as a whole.",
+    "work_item": "one digital page layout checked against specifications",
+    "start": "layout and specifications are available for checking",
+    "end": "measurements are verified and discrepancies marked or reported",
+    "checked_by": "production team or editor",
+    "overlap_reasoning": "Marking an arrangement error can overlap with marking copy, although this check also covers measurements and positioning.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Measure page elements on a physical proof with a printer's ruler to verify dimensions, spacing, and positioning.",
+    "time_share": 0.2,
+    "type_reasoning": "The measurement requires hands-on use of a ruler on a physical proof away from the computer.",
+    "overlap_reasoning": "A discrepancy found by measurement may be marked on copy, but measuring the physical layout is a distinct activity.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "5159"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the publication workflow and how often physical proofs are measured."
+ }
+]

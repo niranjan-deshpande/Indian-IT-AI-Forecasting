@@ -1,0 +1,637 @@
+[
+ {
+  "task_id": 2331,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Support children's emotional and social growth.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2334,
+     2338
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2332",
+  "split_reasoning": "Broad institutional childcare includes both hands-on care and developmental interaction with children.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide hands-on daily care to children in an institutional setting.",
+    "time_share": 0.6,
+    "type_reasoning": "Direct care involves physical work with children away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2346",
+     "2349",
+     "18758",
+     "18760",
+     "18763"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Engage and support children in an institutional childcare setting.",
+    "time_share": 0.4,
+    "type_reasoning": "This part consists of direct supportive and developmental interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2331",
+     "2334",
+     "2338",
+     "2339",
+     "18762",
+     "18763"
+    ]
+   }
+  ],
+  "notes": "This is a broad task that encompasses work described more specifically elsewhere; shares vary by setting."
+ },
+ {
+  "task_id": 2333,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sanitize toys and play equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2334,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correct children's behavior and set limits.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2331
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2335",
+  "split_reasoning": "Recognizing concerns during in-person care is separate from communicating them to parents, which may occur live or in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe children for signs of emotional or developmental problems.",
+    "time_share": 0.4,
+    "type_reasoning": "Recognizing signs occurs during in-person observation and care of children.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2332",
+     "2336",
+     "18763"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Discuss an identified emotional or developmental concern with a parent or guardian.",
+    "time_share": 0.45,
+    "type_reasoning": "The concern is communicated in a live conversation with the parent or guardian.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One discussion conveys the concern about an individual child to the parent.",
+    "work_item": "one concern discussed with a parent or guardian",
+    "start": "discussion with the parent or guardian about the child's observed concern begins",
+    "end": "the concern and relevant observations have been communicated",
+    "checked_by": "the parent or guardian",
+    "duplicates": [],
+    "overlaps_with": [
+     "18757"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Communicate an identified emotional or developmental concern to a parent or guardian in writing.",
+    "time_share": 0.15,
+    "type_reasoning": "A written communication is prepared outside a live contact and sent to the parent.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The parent receives one communication about the identified concern as a whole.",
+    "work_item": "one written concern communicated to a parent or guardian",
+    "start": "observations indicating a concern are available for communication",
+    "end": "written concern is sent to the parent or guardian",
+    "checked_by": "the parent or guardian and childcare supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2337",
+     "18757"
+    ]
+   }
+  ],
+  "notes": "The live and written shares depend on the setting and its parent-communication practices; observation is in-person but not always hands-on."
+ },
+ {
+  "task_id": "2336",
+  "split_reasoning": "Observing and monitoring play are one continuing supervision activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe and supervise children during play.",
+    "time_share": 1.0,
+    "type_reasoning": "Play supervision is performed in person around children, with physical intervention when needed.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2332",
+     "2335",
+     "18756",
+     "18762",
+     "18763"
+    ]
+   }
+  ],
+  "notes": "Much of this supervision is observation rather than hands-on work; the physical category represents in-person supervision."
+ },
+ {
+  "task_id": 2337,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a child's daily record, including observations, meals and medications.",
+    "time_share": 1.0,
+    "type_reasoning": "Records are relied on by parents and licensors.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are made per child per day.",
+    "work_item": "one child's daily record",
+    "start": "day's activities occur",
+    "end": "record completed",
+    "checked_by": "parents, director, licensing inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     2335,
+     18757
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2338,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach children eating, rest and toilet habits.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2331
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2339",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read to children and teach painting, drawing, handicrafts and songs.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live activity.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18762,
+     18759
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2342,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize and store toys and materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on tidying.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2344",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sterilize bottles and prepare formula.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on kitchen work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18758
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2346",
+  "split_reasoning": "Dressing children and changing diapers are examples of one hands-on personal-care routine, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dress children and change diapers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on personal care of children, away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2332",
+     "2338",
+     "18763"
+    ]
+   }
+  ],
+  "notes": "Share of diapering depends on the children's ages."
+ },
+ {
+  "task_id": 2347,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help children with homework.",
+    "time_share": 1.0,
+    "type_reasoning": "Tutoring is live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2348",
+  "split_reasoning": "Laundry, cleaning, dishwashing and linen changes are listed examples of one category of housekeeping work, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Do housekeeping in the childcare setting: laundry, cleaning, dish washing and changing linens.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on housework away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2333",
+     "2344",
+     "18756",
+     "18758"
+    ]
+   }
+  ],
+  "notes": "In centers some of this is done by janitorial or kitchen staff; in private homes it is a larger share."
+ },
+ {
+  "task_id": 2349,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Escort children to school, on outings and to medical appointments.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on escort away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18762
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18756,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the play area safe by checking and removing hazards.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2336,
+     2333
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18757,
+  "split_reasoning": "Same activity done in two places: live with the parent at drop-off or pickup, and afterward in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a parent verbally at drop-off or pickup.",
+    "time_share": 0.5,
+    "type_reasoning": "Parent is present while the update is given.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each handoff happens within one arrival or departure.",
+    "work_item": "one parent update at drop-off or pickup",
+    "start": "parent arrives",
+    "end": "parent leaves with the child informed",
+    "checked_by": "parent",
+    "duplicates": [],
+    "overlaps_with": [
+     2337,
+     2335
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a parent a written message, daily report or return a call.",
+    "time_share": 0.5,
+    "type_reasoning": "Done afterward with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Messages are sent one at a time.",
+    "work_item": "one written update or callback to a parent",
+    "start": "need to communicate arises",
+    "end": "message sent",
+    "checked_by": "parent",
+    "duplicates": [],
+    "overlaps_with": [
+     2337,
+     18761
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18758",
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help prepare and serve meals and snacks.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on food work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2344
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18759,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a developmentally appropriate lesson plan.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a plan others review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are written per week or theme.",
+    "work_item": "one lesson plan",
+    "start": "planning period begins",
+    "end": "plan finished",
+    "checked_by": "lead teacher, director",
+    "duplicates": [],
+    "overlaps_with": [
+     2339,
+     18762
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18760,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Settle children for naps and oversee rest periods.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on settling away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Could be INTERPERSONAL supervision."
+ },
+ {
+  "task_id": "18761",
+  "split_reasoning": "Taking attendance, editing internal paperwork and making administrative calls are different kinds of administrative work with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take and record children's attendance for a session.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces an attendance record that staff, the director and licensing rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The attendance record for one group and session is completed and relied on as a whole.",
+    "work_item": "one group attendance record for a session",
+    "start": "children arrive or the attendance check begins",
+    "end": "attendance recorded and filed for the session",
+    "checked_by": "director; licensing inspector",
+    "duplicates": [],
+    "overlaps_with": [
+     "2337"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Edit internal childcare paperwork such as forms, logs or notices.",
+    "time_share": 0.35,
+    "type_reasoning": "Each edited document is returned or filed for internal use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document is edited and returned or filed as a whole.",
+    "work_item": "one internal document edited",
+    "start": "document needing editing received or identified",
+    "end": "revised document returned or filed",
+    "checked_by": "director or document owner",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Make or take an administrative phone call, mostly with parents or guardians, to settle a practical matter (absence, pickup change, illness, payment question).",
+    "time_share": 0.25,
+    "type_reasoning": "The matter is settled in a live conversation while the other party is on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call handles one matter within the contact.",
+    "work_item": "one administrative call handled",
+    "start": "call placed or answered",
+    "end": "matter settled and any change noted",
+    "checked_by": "parent or guardian; director",
+    "duplicates": [],
+    "overlaps_with": [
+     "18757"
+    ]
+   }
+  ],
+  "notes": "Calls about a child's day or behavior overlap with 18757."
+ },
+ {
+  "task_id": "18762",
+  "split_reasoning": "Planning activities or outings is distinct from participating in them with children.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize a recreational activity or outing for children.",
+    "time_share": 0.35,
+    "type_reasoning": "Planning produces an activity or outing arrangement that other staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One activity or outing is arranged and communicated as a whole.",
+    "work_item": "one recreational activity or outing arranged",
+    "start": "an activity or outing is selected for planning",
+    "end": "arrangements and instructions are ready for staff to use",
+    "checked_by": "childcare supervisor and participating staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "18759"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Participate with children in games and other recreational activities.",
+    "time_share": 0.4,
+    "type_reasoning": "The work centers on live play and interaction with children.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2332",
+     "2339",
+     "18763"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Accompany and supervise children on recreational outings.",
+    "time_share": 0.25,
+    "type_reasoning": "Outings require physical presence and supervision away from the usual activity area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2336",
+     "2349",
+     "18756"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with how often outings occur."
+ },
+ {
+  "task_id": "18763",
+  "split_reasoning": "Care for children with disabilities includes hands-on assistance and supportive interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide hands-on daily care adapted to children with physical, developmental or mental health disabilities.",
+    "time_share": 0.6,
+    "type_reasoning": "This part involves direct physical assistance and care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2332",
+     "2336",
+     "2346",
+     "2349",
+     "18758",
+     "18760"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Engage and support children with physical, developmental or mental health disabilities.",
+    "time_share": 0.4,
+    "type_reasoning": "This part consists of direct supportive and developmental interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2331",
+     "2332",
+     "2334",
+     "2338",
+     "2339",
+     "2347",
+     "18762"
+    ]
+   }
+  ],
+  "notes": "This broad task overlaps with specific childcare tasks; the mix varies with individual needs."
+ },
+ {
+  "task_id": "18764",
+  "split_reasoning": "Supervising and training staff are live personnel interactions, while scheduling produces a staff schedule.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise childcare staff.",
+    "time_share": 0.4,
+    "type_reasoning": "Supervision primarily consists of directing and supporting staff through live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train childcare staff.",
+    "time_share": 0.3,
+    "type_reasoning": "The specified training is delivered through live instruction and interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare staff work schedules.",
+    "time_share": 0.3,
+    "type_reasoning": "Scheduling produces a schedule that staff and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a coverage period is prepared and issued as a whole.",
+    "work_item": "one staff work schedule",
+    "start": "coverage requirements and staff availability are gathered",
+    "end": "the schedule is completed and communicated to staff",
+    "checked_by": "childcare supervisor and scheduled staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on the worker's personnel responsibilities; training materials are not specified."
+ }
+]

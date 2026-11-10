@@ -1,0 +1,691 @@
+[
+ {
+  "task_id": 1839,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete and maintain a patient's chart documentation accurately.",
+    "time_share": 1.0,
+    "type_reasoning": "Charting ends in a record that other clinicians, auditors and billing rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Nurses chart per patient, typically at the end of a shift or after each care episode, and the chart is relied on as a whole.",
+    "work_item": "one patient's chart documentation for a shift",
+    "start": "care episode or shift ends and charting begins",
+    "end": "chart entries completed and signed",
+    "checked_by": "oncoming nurse, physician, charge nurse, auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     1840,
+     1841,
+     20413
+    ]
+   }
+  ],
+  "notes": "Very generic; largely a wrapper over the specific recording statements."
+ },
+ {
+  "task_id": 1840,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Notice a change in a patient's condition, record it and report it to the responsible provider or charge nurse.",
+    "time_share": 1.0,
+    "type_reasoning": "Each noticed change ends in a documented report that a provider acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes are escalated one event at a time, each as its own report.",
+    "work_item": "one change in a patient's condition recorded and reported",
+    "start": "nurse notices a symptom or change",
+    "end": "provider or charge nurse informed and event documented",
+    "checked_by": "physician, charge nurse",
+    "duplicates": [],
+    "overlaps_with": [
+     1841,
+     1845,
+     1839,
+     20413
+    ]
+   }
+  ],
+  "notes": "Monitoring itself is continuous and merged with 1845; item is the escalation."
+ },
+ {
+  "task_id": 1841,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Measure vital signs and enter them and the patient's medical information in the chart.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces charted values that the care team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Vitals are taken and charted per patient per round.",
+    "work_item": "one set of vital signs and medical information charted",
+    "start": "vitals taken or history obtained",
+    "end": "values entered in the record",
+    "checked_by": "care team, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     1839,
+     1840
+    ]
+   }
+  ],
+  "notes": "Taking vitals is hands-on but the statement is about recording, so coded as the charted output."
+ },
+ {
+  "task_id": 1842,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a patient's treatment or care plan based on the patient's response and condition.",
+    "time_share": 1.0,
+    "type_reasoning": "Each revision is a changed plan that others carry out.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are revised per patient when a response warrants.",
+    "work_item": "one care plan revision for a patient",
+    "start": "patient's response or condition indicates plan no longer fits",
+    "end": "revised plan documented and communicated to the team",
+    "checked_by": "physician, charge nurse, care team",
+    "duplicates": [],
+    "overlaps_with": [
+     1843
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1843,
+  "split_reasoning": "Two kinds of work: live team meetings or rounds, and one-off consultations about a specific patient issue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take part in interdisciplinary rounds, huddles or care conferences about patients.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in the live discussion; nothing is separately produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1842,
+     1846
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Consult a physician or other team member about a specific patient issue and agree on a plan.",
+    "time_share": 0.5,
+    "type_reasoning": "Each consult ends in an agreed action or order that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Consults are raised one at a time by call, message or in person.",
+    "work_item": "one patient-specific consult or coordination exchange",
+    "start": "nurse contacts team member",
+    "end": "plan or order agreed and noted",
+    "checked_by": "physician, other team member",
+    "duplicates": [],
+    "overlaps_with": [
+     1842,
+     1840
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1844,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Order tests within protocol, review the results, and act on or report them.",
+    "time_share": 1.0,
+    "type_reasoning": "Each result reviewed ends in a documented interpretation or report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results come back per test or panel and are acted on individually.",
+    "work_item": "one diagnostic result reviewed and acted on or reported",
+    "start": "result returned or test needed",
+    "end": "result interpreted and communicated or action taken",
+    "checked_by": "physician, patient",
+    "duplicates": [],
+    "overlaps_with": [
+     1857,
+     1859,
+     1840
+    ]
+   }
+  ],
+  "notes": "Ordering authority varies by setting."
+ },
+ {
+  "task_id": 1845,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a patient's overall care, including diet and activity, during rounds and note the findings.",
+    "time_share": 1.0,
+    "type_reasoning": "Rounds produce a documented assessment the next shift uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Assessment rounds are done per patient per shift.",
+    "work_item": "one patient's assessment round documented",
+    "start": "start of nurse's patient round",
+    "end": "findings charted",
+    "checked_by": "oncoming nurse, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     1840,
+     1841
+    ]
+   }
+  ],
+  "notes": "Continuous monitoring recast as the documented round."
+ },
+ {
+  "task_id": 1846,
+  "split_reasoning": "Two kinds: live direction and supervision of staff, and a discrete assignment of work at shift start.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and supervise nursing assistants, LPNs or unit staff during the shift.",
+    "time_share": 0.75,
+    "type_reasoning": "Value is in live oversight; nothing checkable is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1848,
+     1861
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Make the shift's patient assignments and delegate tasks to staff.",
+    "time_share": 0.25,
+    "type_reasoning": "An assignment sheet is produced that staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assignment is made per shift.",
+    "work_item": "one shift's assignment sheet",
+    "start": "start-of-shift staffing known",
+    "end": "assignments communicated to staff",
+    "checked_by": "nurse manager, staff",
+    "duplicates": [],
+    "overlaps_with": [
+     1861
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1847,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a patient for an exam or treatment and assist during it.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work with the patient away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1851,
+     20413
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1848,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe nursing staff and visit patients to confirm care is proper.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in live observation and feedback; no separate product.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1846
+    ]
+   }
+  ],
+  "notes": "May involve a rounding log or audit form, in which case it would be DISCRETE."
+ },
+ {
+  "task_id": 1849,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess the health and safety needs of a person, family or community, including their home or work environment.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a documented needs assessment others use to plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each assessment is done per client, family or site.",
+    "work_item": "one needs assessment completed and documented",
+    "start": "assessment visit or referral begins",
+    "end": "assessment written up with identified risks",
+    "checked_by": "nurse manager, care team, client",
+    "duplicates": [],
+    "overlaps_with": [
+     1865,
+     1850
+    ]
+   }
+  ],
+  "notes": "Mostly community or occupational health nurses."
+ },
+ {
+  "task_id": 1850,
+  "split_reasoning": "Two kinds: live teaching of patients and groups, and developing health improvement programs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach patients, families or groups about health, disease prevention or childbirth.",
+    "time_share": 0.7,
+    "type_reasoning": "The value is in the live session.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1862
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a health improvement program or education materials.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a program or materials others deliver.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Programs are developed one at a time.",
+    "work_item": "one health education program or set of materials",
+    "start": "need for program identified",
+    "end": "program plan or materials finished",
+    "checked_by": "nurse manager, program sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     1865
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1851,
+  "split_reasoning": "Two kinds: hands-on room and instrument setup, and stock management at a computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare rooms, sterile instruments and equipment.",
+    "time_share": 0.7,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Check supply levels and order restocking.",
+    "time_share": 0.3,
+    "type_reasoning": "Ends in an order or restock request.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Restocks are done per supply check.",
+    "work_item": "one supply restock order or inventory check",
+    "start": "stock found low",
+    "end": "order placed",
+    "checked_by": "unit manager, supply department",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1852,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Report a patient's condition to the physician during anesthesia.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a communication the physician acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are made one change at a time during a procedure.",
+    "work_item": "one status report to the physician during a case",
+    "start": "patient status changes",
+    "end": "physician acknowledges and acts",
+    "checked_by": "physician",
+    "duplicates": [],
+    "overlaps_with": [
+     1854,
+     1840
+    ]
+   }
+  ],
+  "notes": "Live in-procedure communication; INTERPERSONAL is arguable."
+ },
+ {
+  "task_id": 1854,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Administer local, inhalation or intravenous anesthetics.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on clinical work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1852
+    ]
+   }
+  ],
+  "notes": "Mainly nurse anesthetists."
+ },
+ {
+  "task_id": 1855,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give first aid, immunizations or rehabilitation care in a school, hospital or workplace.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "School visits could be seen as live service, but the work itself is hands-on."
+ },
+ {
+  "task_id": 1856,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine and treat patients en route or at triage sites.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on clinical care in the field.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1840
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1857,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run specified point-of-care laboratory tests.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on specimen handling and testing.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1844
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1859,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prescribe or recommend a drug, device or therapy for a patient.",
+    "time_share": 1.0,
+    "type_reasoning": "Each prescription or recommendation is a document or order that others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Made per patient and need.",
+    "work_item": "one prescription or treatment recommendation",
+    "start": "need identified in assessment",
+    "end": "order or recommendation issued",
+    "checked_by": "patient, pharmacist, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     20413,
+     1842,
+     1844
+    ]
+   }
+  ],
+  "notes": "Prescribing is limited to advanced practice nurses; others recommend."
+ },
+ {
+  "task_id": 1860,
+  "split_reasoning": "Two kinds: surveillance and case work producing reports, and advising staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review infection cases or surveillance data and report on precautions needed.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a report that staff and administrators rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Cases and reports are handled one at a time.",
+    "work_item": "one infection case review or surveillance report",
+    "start": "case or data flagged",
+    "end": "report or recommendation issued",
+    "checked_by": "infection control committee, unit staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Advise and educate personnel on precautions.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in live advice.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1861,
+  "split_reasoning": "Two kinds: budget and planning products, and day-to-day management of staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare unit budgets, staffing plans or goals.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces plans managers approve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Budgets and plans are prepared per cycle.",
+    "work_item": "one unit budget or staffing plan",
+    "start": "planning period begins",
+    "end": "plan submitted",
+    "checked_by": "director of nursing",
+    "duplicates": [],
+    "overlaps_with": [
+     1846
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Manage the unit's staff day to day.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in live management.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1846
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1862,
+  "split_reasoning": "Two kinds: delivering training and arranging it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach or precept auxiliary staff or students.",
+    "time_share": 0.6,
+    "type_reasoning": "Value is in the live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1850
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Arrange training sessions and prepare materials.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a scheduled session or materials.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each session is arranged separately.",
+    "work_item": "one training session arranged",
+    "start": "training need identified",
+    "end": "session scheduled and materials ready",
+    "checked_by": "unit manager, trainees",
+    "duplicates": [],
+    "overlaps_with": [
+     1850
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1863,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a student or patient to a specialist or community agency.",
+    "time_share": 1.0,
+    "type_reasoning": "Each referral is sent and relied on by the receiving party.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Referrals are made one patient at a time.",
+    "work_item": "one referral made",
+    "start": "need identified",
+    "end": "referral sent and patient informed",
+    "checked_by": "receiving agency, patient, physician",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1864,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with institutions or associations on nursing practice issues.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the exchange itself, in meetings and committees.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Could produce position papers."
+ },
+ {
+  "task_id": 1865,
+  "split_reasoning": "Two kinds: planning programs and delivering them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a community health program with groups or families.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a plan others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Programs are planned one at a time.",
+    "work_item": "one community program plan",
+    "start": "community need identified",
+    "end": "plan agreed",
+    "checked_by": "program sponsor, community partners",
+    "duplicates": [],
+    "overlaps_with": [
+     1850,
+     1849
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Run program sessions with community members.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in the live work.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1850
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1866,
+  "split_reasoning": "One activity of a single kind, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry out research tasks on a nursing topic.",
+    "time_share": 1.0,
+    "type_reasoning": "Research ends in deliverables that colleagues review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work is handed over per study component.",
+    "work_item": "one research deliverable (protocol, dataset, abstract or paper)",
+    "start": "component assigned",
+    "end": "component submitted",
+    "checked_by": "principal investigator, reviewers",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Ambiguous granularity; could be a whole study."
+ },
+ {
+  "task_id": 20413,
+  "split_reasoning": "Two kinds: giving the medication at the bedside, and watching for and reporting reactions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give medications to a patient.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1859,
+     1841
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Monitor a patient after a dose and document or report reactions.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a charted observation others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Monitoring is documented per dose or medication pass.",
+    "work_item": "one post-administration monitoring record",
+    "start": "dose given",
+    "end": "response charted or reaction reported",
+    "checked_by": "physician, oncoming nurse",
+    "duplicates": [],
+    "overlaps_with": [
+     1840,
+     1841
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

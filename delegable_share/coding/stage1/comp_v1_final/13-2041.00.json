@@ -1,0 +1,294 @@
+[
+ {
+  "task_id": "1250",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze an applicant's or borrower's credit data and financial statements and conclude how risky it is to extend credit.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis ends in a risk conclusion that lenders rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Applications or accounts are analyzed one at a time and the conclusion is handed over as a whole.",
+    "work_item": "one credit risk assessment for an applicant or borrower",
+    "start": "credit file and financial statements received",
+    "end": "risk conclusion recorded or passed to the decision maker",
+    "checked_by": "loan officer or credit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1251",
+     "1254",
+     "1255",
+     "1257",
+     "1259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1251",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a report stating the credit risk of extending credit or lending to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a written report that decision makers use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is the thing handed over and relied on.",
+    "work_item": "one credit report with risk rating",
+    "start": "completed analysis of the customer",
+    "end": "report delivered to the decision maker",
+    "checked_by": "credit manager or loan committee",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1254"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1252",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a customer's earnings, savings, payment and purchase records and recommend a payment plan.",
+    "time_share": 1.0,
+    "type_reasoning": "Each customer review ends in a recommended plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Customers are reviewed one at a time and each plan is a distinct recommendation.",
+    "work_item": "one payment plan recommendation for a customer",
+    "start": "customer account flagged for a plan",
+    "end": "recommended plan sent to the approver or customer",
+    "checked_by": "credit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1256",
+     "21164"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1253",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Talk with credit association and business contacts to exchange credit information.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is the information exchanged in conversation; no deliverable a colleague would check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Could be coded DISCRETE if each exchange yields a written trade reference."
+ },
+ {
+  "task_id": "1254",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete a loan application with credit analysis and a summary of the request, and submit it to the loan committee.",
+    "time_share": 1.0,
+    "type_reasoning": "Each application package is submitted for approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One package per loan request, signed off as a whole.",
+    "work_item": "one loan application package submitted to committee",
+    "start": "loan request taken up by the analyst",
+    "end": "package submitted to the loan committee",
+    "checked_by": "loan committee",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1251",
+     "1259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1255",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run a customer's financial statements through software to produce financial ratios.",
+    "time_share": 1.0,
+    "type_reasoning": "Each run produces a ratio set used in the evaluation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One set of ratios per customer and period.",
+    "work_item": "one set of financial ratios for a customer",
+    "start": "financial statements entered or loaded",
+    "end": "ratio output checked and attached to the file",
+    "checked_by": "the analyst's credit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1257"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1256",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review customer files and select delinquent accounts to pass to collection.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a list of accounts selected for collection.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reviews happen in periodic batches (e.g. weekly aging review).",
+    "work_item": "one delinquency review producing a list of accounts for collection",
+    "start": "aging report or file set pulled",
+    "end": "accounts selected and referred to collections",
+    "checked_by": "collections team or credit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1252",
+     "21164"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1257",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare an establishment's liquidity, profitability and credit history with similar establishments in its industry and area.",
+    "time_share": 1.0,
+    "type_reasoning": "Each comparison yields a benchmarking result used in the credit decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One comparison per establishment evaluated.",
+    "work_item": "one peer comparison for an establishment",
+    "start": "establishment's figures and peer data gathered",
+    "end": "comparison summary added to the file",
+    "checked_by": "the analyst or credit manager reviewing the file",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1255"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1258",
+  "split_reasoning": "Same activity done in two places: live with the customer, and afterwards in verifying records and writing up outcomes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Resolve a customer's complaint or verify a transaction while the customer is on the phone or at the desk.",
+    "time_share": 0.6,
+    "type_reasoning": "Customer is waiting while the matter is checked and settled.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each contact is resolved within one call or visit.",
+    "work_item": "one complaint or verification handled during a customer contact",
+    "start": "customer raises the complaint or asks for verification",
+    "end": "customer told the outcome",
+    "checked_by": "the customer, and the supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "21164"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Check records and follow up in writing to settle a complaint or verify a transaction after the contact.",
+    "time_share": 0.4,
+    "type_reasoning": "Done afterwards from records with no customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each follow-up is a separate case closed with a note or letter.",
+    "work_item": "one complaint or verification followed up and closed",
+    "start": "case needing records check after contact",
+    "end": "outcome communicated and case closed",
+    "checked_by": "credit manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21164"
+    ]
+   }
+  ],
+  "notes": "Live share is a guess."
+ },
+ {
+  "task_id": "1259",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze income growth, management quality and market share to estimate how profitable a loan will be.",
+    "time_share": 1.0,
+    "type_reasoning": "Each loan gets an expected-profitability judgment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One loan request analyzed at a time.",
+    "work_item": "one loan profitability assessment",
+    "start": "loan request and company data in hand",
+    "end": "expected-profitability conclusion written up",
+    "checked_by": "loan officer or committee",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1254"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21164",
+  "split_reasoning": "Same collection work done live by phone and afterwards by letter or email.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Phone a customer to collect a payment on a delinquent account.",
+    "time_share": 0.7,
+    "type_reasoning": "Customer is on the line while payment is arranged.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is one contact ending in payment or a promise.",
+    "work_item": "one collection call",
+    "start": "customer reached",
+    "end": "payment or promise recorded",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1256",
+     "1258",
+     "1252"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send written payment reminders and log follow-ups on delinquent accounts.",
+    "time_share": 0.3,
+    "type_reasoning": "Done from a queue with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each account's notice is sent and logged separately.",
+    "work_item": "one collection notice sent and logged",
+    "start": "account due for follow-up",
+    "end": "notice sent and account note updated",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1256"
+    ]
+   }
+  ],
+  "notes": "Phone share assumed."
+ }
+]

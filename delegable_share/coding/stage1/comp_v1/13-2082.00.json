@@ -1,0 +1,338 @@
+[
+ {
+  "task_id": "7358",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute tax owed or overpaid for a return and enter the figures on the forms per instructions and tax tables.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces completed forms with a computed balance the client relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Computation is done return by return.",
+    "work_item": "one return's tax computed and forms completed",
+    "start": "income and deduction data ready for entry",
+    "end": "completed forms with balance due or refund",
+    "checked_by": "client; reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7360",
+     "7362"
+    ]
+   }
+  ],
+  "notes": "At storefront firms this is often done with the client at the desk; coded as back-office step."
+ },
+ {
+  "task_id": "7359",
+  "split_reasoning": "Same activity done in two places: with the client present, and from documents left for later.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a return while the client is at the desk or on the phone.",
+    "time_share": 0.4,
+    "type_reasoning": "The client waits during preparation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each return is finished within one appointment.",
+    "work_item": "one return prepared during a client appointment",
+    "start": "client sits down with documents",
+    "end": "return completed and client approves",
+    "checked_by": "client; firm reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7360",
+     "7361"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a return from documents the client dropped off or sent.",
+    "time_share": 0.6,
+    "type_reasoning": "Back-office work with no client present.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Returns are worked from a queue.",
+    "work_item": "one return prepared from submitted documents",
+    "start": "documents received",
+    "end": "return completed and ready for client review/signing",
+    "checked_by": "client; firm reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7360",
+     "7362"
+    ]
+   }
+  ],
+  "notes": "Live share depends on firm model."
+ },
+ {
+  "task_id": "7360",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and apply all appropriate adjustments, deductions and credits on a client's return.",
+    "time_share": 1.0,
+    "type_reasoning": "Part of preparing a return; result is the reduced tax shown on the return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done as one pass per return.",
+    "work_item": "one return's adjustments, deductions and credits determined and applied",
+    "start": "return data assembled",
+    "end": "deductions and credits entered in the return",
+    "checked_by": "client; reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7359"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7361",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a client to obtain missing information on income, expenses and allowances.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the client present or on the phone while they answer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each interview is one contact.",
+    "work_item": "one client interview during an appointment or call",
+    "start": "client begins answering questions",
+    "end": "information obtained and noted for the return",
+    "checked_by": "preparer; reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7362"
+    ]
+   }
+  ],
+  "notes": "Follow-up requests by email are minor."
+ },
+ {
+  "task_id": "7362",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a client's financial records to decide which forms the return needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces the list of forms and missing items used for the return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Records are reviewed client by client.",
+    "work_item": "one client's records reviewed with forms list",
+    "start": "client records received",
+    "end": "forms needed identified and noted",
+    "checked_by": "preparer; reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7361"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7363",
+  "split_reasoning": "Two settings: explaining live to the client, and sending written instructions afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a taxpayer in person or by phone so they can supply what is needed for correct forms.",
+    "time_share": 0.5,
+    "type_reasoning": "The taxpayer is present while advice is given.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each conversation is within one contact.",
+    "work_item": "one taxpayer advised during an appointment or call",
+    "start": "taxpayer asks or preparer starts advising",
+    "end": "taxpayer confirms understanding",
+    "checked_by": "taxpayer",
+    "duplicates": [],
+    "overlaps_with": [
+     "20363",
+     "20364"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send written information or checklists to taxpayers.",
+    "time_share": 0.5,
+    "type_reasoning": "Written, sent afterwards.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Sent individually.",
+    "work_item": "one written advice/checklist message sent",
+    "start": "need identified",
+    "end": "message sent",
+    "checked_by": "taxpayer",
+    "duplicates": [],
+    "overlaps_with": [
+     "20363"
+    ]
+   }
+  ],
+  "notes": "Shares are guesses."
+ },
+ {
+  "task_id": "7364",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult tax handbooks or bulletins to determine the procedure for an atypical return.",
+    "time_share": 1.0,
+    "type_reasoning": "Each look-up settles a procedure used on a return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Triggered by an unusual return and resolved on its own.",
+    "work_item": "one atypical-return question researched and resolved",
+    "start": "unusual item found in a return",
+    "end": "procedure determined and applied/noted",
+    "checked_by": "preparer; reviewer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Time spent reading to keep current would be NO_DELIVERABLE, not covered here."
+ },
+ {
+  "task_id": "7365",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate the fee for preparing a return from its complexity and time.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a quoted fee the client pays.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One fee per return.",
+    "work_item": "one return's fee calculated",
+    "start": "return finished or complexity known",
+    "end": "fee computed and shown on invoice",
+    "checked_by": "client; owner",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Often quoted live at the desk; minor share."
+ },
+ {
+  "task_id": "7366",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a return prepared by someone else for errors in arithmetic, entry or procedure.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review returns a verified return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Returns are reviewed one at a time.",
+    "work_item": "one return reviewed and corrected",
+    "start": "prepared return handed over for review",
+    "end": "return verified with errors corrected or flagged",
+    "checked_by": "preparer; client",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20363",
+  "split_reasoning": "Two different activities: answering questions, and planning for future years.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a client's tax question during a call or visit.",
+    "time_share": 0.5,
+    "type_reasoning": "Client waits for the answer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered in one contact.",
+    "work_item": "one client question answered live",
+    "start": "client asks",
+    "end": "client satisfied with the answer",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "20364"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare tax planning advice for a client's future years.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a plan the client acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One plan per client.",
+    "work_item": "one tax plan for a client",
+    "start": "planning request or year-end review",
+    "end": "plan sent to client",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Planning often delivered at an appointment."
+ },
+ {
+  "task_id": "20364",
+  "split_reasoning": "One activity: explaining.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain federal and state tax law to individuals and companies.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live explanation; no deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "20363"
+    ]
+   }
+  ],
+  "notes": "Close to teaching; could be LIVE_SERVICE if done during returns."
+ },
+ {
+  "task_id": "21165",
+  "split_reasoning": "Same activity done live and afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Book an appointment while the client is on the phone or at the desk.",
+    "time_share": 0.6,
+    "type_reasoning": "Client waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each booking is within one contact.",
+    "work_item": "one appointment booked during a call or visit",
+    "start": "client asks for an appointment",
+    "end": "slot confirmed",
+    "checked_by": "client; preparer",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule appointments from emailed or online requests.",
+    "time_share": 0.4,
+    "type_reasoning": "No one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Handled as a batch.",
+    "work_item": "one batch of appointments scheduled from written requests",
+    "start": "requests received",
+    "end": "confirmations sent",
+    "checked_by": "client; preparer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

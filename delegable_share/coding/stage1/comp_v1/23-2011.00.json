@@ -1,0 +1,310 @@
+[
+ {
+  "task_id": "1636",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather statutes, decisions, articles, codes and documents on a legal question and analyze them for the attorney.",
+    "time_share": 1.0,
+    "type_reasoning": "Each research request ends in findings the attorney relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests come from attorneys one at a time and are answered as a whole.",
+    "work_item": "one research request answered with a research memo or set of annotated authorities",
+    "start": "attorney assigns the research question",
+    "end": "findings memo or collected authorities delivered to the attorney",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "21062"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1638",
+  "split_reasoning": "One activity: getting witnesses to testify, done through live contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact witnesses and have them present and ready to testify at hearings.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live contact with witnesses and at the hearing; no document a colleague checks is the product.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "18492"
+    ]
+   }
+  ],
+  "notes": "Could also be read as subpoenaing/scheduling witnesses (discrete); coded as live contact."
+ },
+ {
+  "task_id": "1639",
+  "split_reasoning": "Two different activities: coordinating the office's work, and physically delivering subpoenas.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and coordinate day-to-day law office activity (assign work, track deadlines, coordinate staff).",
+    "time_share": 0.75,
+    "type_reasoning": "Value is in the live direction of people; no single checkable deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Deliver a subpoena to the person named and record that it was delivered.",
+    "time_share": 0.25,
+    "type_reasoning": "Each subpoena delivery ends in proof of service that the attorney and court rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Subpoenas are issued and delivered one at a time.",
+    "work_item": "one subpoena delivered with proof of service",
+    "start": "signed subpoena ready for delivery",
+    "end": "proof of service returned and filed",
+    "checked_by": "attorney; court",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Subpoena delivery is physical travel but yields a checkable proof of service, so coded DISCRETE."
+ },
+ {
+  "task_id": "1641",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the law library's volumes and updates current: check for and file supplements, replace outdated volumes, track subscriptions.",
+    "time_share": 1.0,
+    "type_reasoning": "Each update round leaves a library that attorneys rely on being current.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Supplements and new volumes arrive in periodic batches and are processed together.",
+    "work_item": "one round of library updates (supplements filed, outdated volumes replaced)",
+    "start": "new supplements or volumes arrive or monthly check is due",
+    "end": "library updated and update log marked",
+    "checked_by": "attorneys; office manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Largely obsolete with online databases; share of time small."
+ },
+ {
+  "task_id": "1642",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Appraise and inventory a client's real and personal property for an estate plan.",
+    "time_share": 1.0,
+    "type_reasoning": "Each inventory yields a valued asset list that the attorney and client use in planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One estate plan at a time gets one inventory.",
+    "work_item": "one estate asset inventory with values",
+    "start": "attorney asks for property inventory for a client's estate plan",
+    "end": "valued inventory delivered to the attorney",
+    "checked_by": "supervising attorney; client",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Includes some site visits to see property; coded as one discrete deliverable."
+ },
+ {
+  "task_id": "18491",
+  "split_reasoning": "Two activities: drafting documents, and filing and maintaining records after the fact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare affidavits and legal correspondence for an attorney's review.",
+    "time_share": 0.6,
+    "type_reasoning": "Each document is handed to the attorney or sent out.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are drafted and handed over one at a time.",
+    "work_item": "one affidavit or letter prepared",
+    "start": "attorney requests the document",
+    "end": "draft signed off by attorney and sent or executed",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "23994"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Organize and maintain the case file in paper or electronic filing systems.",
+    "time_share": 0.4,
+    "type_reasoning": "Done as periodic batches of filing from the day's papers; colleagues rely on the file.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Filing is done in batches after documents accumulate.",
+    "work_item": "one batch of documents filed and indexed",
+    "start": "documents received or created and awaiting filing",
+    "end": "documents filed in the correct case file",
+    "checked_by": "attorneys and staff who use the file",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Statement joins drafting and filing; shares are judgments."
+ },
+ {
+  "task_id": "18492",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble, organize and label exhibits and materials for a trial.",
+    "time_share": 1.0,
+    "type_reasoning": "Each trial's preparation yields an exhibit set the attorney uses in court.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One trial gets one exhibit set handed over to the trial attorney.",
+    "work_item": "one trial exhibit set (binders/lists) prepared",
+    "start": "trial date set and exhibits identified",
+    "end": "exhibit set delivered to trial attorney",
+    "checked_by": "trial attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "1638"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18493",
+  "split_reasoning": "One activity: meeting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with clients and other professionals to discuss case details.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live meeting; nothing separate is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Meeting notes would be a separate record; not coded here."
+ },
+ {
+  "task_id": "18494",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "File a pleading with the court clerk (in person or electronically).",
+    "time_share": 1.0,
+    "type_reasoning": "Each filing ends in a stamped receipt that the attorney relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Pleadings are filed one at a time against deadlines.",
+    "work_item": "one pleading filed with the court",
+    "start": "signed pleading ready for filing",
+    "end": "file-stamped copy or e-filing confirmation received",
+    "checked_by": "supervising attorney; court clerk",
+    "duplicates": [],
+    "overlaps_with": [
+     "23994"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18496",
+  "split_reasoning": "Two different activities: arbitrating disputes, and helping with real estate closings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arbitrate a dispute between parties.",
+    "time_share": 0.15,
+    "type_reasoning": "Value is in the live negotiation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Review title searches and help prepare a real estate closing.",
+    "time_share": 0.85,
+    "type_reasoning": "Each closing task ends in a reviewed summary the attorney relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Closings are processed one transaction at a time.",
+    "work_item": "one title search reviewed and closing support completed",
+    "start": "title search received",
+    "end": "title issues summarized and closing items prepared for attorney",
+    "checked_by": "supervising attorney; closing parties",
+    "duplicates": [],
+    "overlaps_with": [
+     "23994"
+    ]
+   }
+  ],
+  "notes": "Arbitration by paralegals is rare; share is a guess."
+ },
+ {
+  "task_id": "21062",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate the facts and law of a case by searching public records and internet sources to find causes of action and prepare the case.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a findings file attorneys use to decide and prepare the case.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each case investigation is assigned and reported as a whole.",
+    "work_item": "one case investigation (facts and law) written up",
+    "start": "attorney assigns case to investigate",
+    "end": "investigation summary delivered",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "1636"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23994",
+  "split_reasoning": "Two activities: drafting new legal documents, and editing or reviewing existing ones.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draft a legal document (brief, pleading, will, contract, closing statement, appeal).",
+    "time_share": 0.6,
+    "type_reasoning": "Each draft is handed to the attorney.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are drafted one at a time.",
+    "work_item": "one legal document drafted",
+    "start": "attorney assigns document",
+    "end": "draft delivered to attorney",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "18491",
+     "18494"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Edit or review an existing legal document.",
+    "time_share": 0.4,
+    "type_reasoning": "Each review returns a marked-up document.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents arrive and are returned one at a time.",
+    "work_item": "one legal document reviewed or edited",
+    "start": "document received for review",
+    "end": "revised document returned",
+    "checked_by": "supervising attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "18491",
+     "18494"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

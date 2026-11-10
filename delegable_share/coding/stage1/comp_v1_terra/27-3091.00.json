@@ -1,0 +1,457 @@
+[
+ {
+  "task_id": "9326",
+  "split_reasoning": "Confidentiality is one ethical obligation applied across interpreting and translation work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow confidentiality requirements when handling information encountered in interpreting or translation.",
+    "time_share": 1.0,
+    "type_reasoning": "This is a standard of conduct embedded in other work, not a separate deliverable.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Confidentiality applies to interpreting and written translation, but is not the same work item as either.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9328",
+     "9331"
+    ]
+   }
+  ],
+  "notes": "Any separately required confidentiality documentation is not specified in the target."
+ },
+ {
+  "task_id": "9327",
+  "split_reasoning": "Meaning conflicts can be resolved during a live interpreted exchange or separately while preparing a written translation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clarify a conflict in meaning during a live interpreted exchange.",
+    "time_share": 0.4,
+    "type_reasoning": "The participants wait while the interpreter clarifies the meaning.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One clarification resolves a particular ambiguity encountered within the exchange.",
+    "work_item": "one meaning conflict clarified during an interpreted exchange",
+    "start": "an ambiguous word, concept, practice, or behavior arises",
+    "end": "the intended meaning is clarified for the exchange",
+    "checked_by": "the participants in the exchange",
+    "overlap_reasoning": "The clarification can occur within interpreting and involve listening to a speaker, but is more specific than either activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9328",
+     "9335"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Resolve a conflict in meaning encountered in a written translation.",
+    "time_share": 0.6,
+    "type_reasoning": "The resolution is incorporated into translation work without a user waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular disputed meaning is resolved for use in the translation.",
+    "work_item": "one meaning conflict resolved for a written translation",
+    "start": "an ambiguity or conflicting meaning is identified",
+    "end": "the intended meaning and suitable rendering are determined",
+    "checked_by": "the translator or translation reviewer",
+    "overlap_reasoning": "Resolving a conflict may involve reference research or checking with an author, but also covers other sources of ambiguity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9330",
+     "9331",
+     "9332",
+     "9336"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the interpreter's or translator's mix of assignments."
+ },
+ {
+  "task_id": "9328",
+  "split_reasoning": "Simultaneous and consecutive oral or signed interpreting are methods of delivering the same live service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interpret spoken or signed messages into the specified language while preserving their content, context, and style.",
+    "time_share": 1.0,
+    "type_reasoning": "The interpreting is delivered to participants during a live exchange or event.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "An interpreted encounter or session is the service received by the participants as a whole.",
+    "work_item": "one interpreted encounter or session",
+    "start": "the speaker or signer begins communicating",
+    "end": "the assigned exchange or session has been interpreted",
+    "checked_by": "the participants and the client arranging the interpreting",
+    "overlap_reasoning": "The work includes listening and can involve resolving meaning conflicts, but those statements describe particular steps or issues.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9326",
+     "9327",
+     "9335"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9329",
+  "split_reasoning": "Proofreading, editing, and revising are related actions on the same translated material.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Proofread, edit, and revise translated material.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a revised translation for further use or review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A translated document or assigned document section is revised and returned as a unit.",
+    "work_item": "one translated document or section edited",
+    "start": "draft translation received for review",
+    "end": "revised translation returned or submitted",
+    "checked_by": "the translator, editor, or client",
+    "overlap_reasoning": "Editing may include terminology and source-text checks, but those checks can also occur outside a general editing pass.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9330",
+     "9336"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9330",
+  "split_reasoning": "Accuracy and consistency checks are aspects of one terminology review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check technical terminology in a translation for accuracy and consistency across revisions.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a checked translation or terminology corrections for the translator.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The check is performed on an assigned translation or revision as a whole rather than handed over term by term.",
+    "work_item": "one translation or revision checked for technical terminology",
+    "start": "a translation or revised version is ready for terminology review",
+    "end": "terminology issues are corrected or returned to the translator",
+    "checked_by": "the translator, editor, or technical reviewer",
+    "overlap_reasoning": "Terminology checking can be part of editing, reference research, and resolving meaning conflicts, but each also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9327",
+     "9329",
+     "9332",
+     "9333",
+     "9336"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9331",
+  "split_reasoning": "Legal, scientific, and news texts are different inputs to the same written translation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Translate written material into the specified language.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment produces a written translation for a client or downstream reviewer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The document or assigned section is the unit submitted in the translation workflow.",
+    "work_item": "one written document or assigned section translated",
+    "start": "source material and language requirements received",
+    "end": "translated material submitted",
+    "checked_by": "the client, editor, or translation reviewer",
+    "overlap_reasoning": "Translation may include meaning resolution, reference consultation, source checking, or adaptation, while those statements cover specific components or specialized work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9326",
+     "9327",
+     "9332",
+     "9334",
+     "9336",
+     "9337",
+     "9339"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9332",
+  "split_reasoning": "The listed reference materials are alternative sources used for the same accuracy research.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult reference materials to verify a translation choice.",
+    "time_share": 1.0,
+    "type_reasoning": "A reference query produces a verified choice or finding used in a translation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The relevant unit is the resolution of one translation query, not each source consulted.",
+    "work_item": "one translation query researched using reference materials",
+    "start": "a term or passage needing verification is identified",
+    "end": "a supported translation choice is determined for use or review",
+    "checked_by": "the translator or translation reviewer",
+    "overlap_reasoning": "Reference research supports translation, terminology checks, and conflict resolution, but those activities include additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9327",
+     "9330",
+     "9331",
+     "9333"
+    ]
+   }
+  ],
+  "notes": "Reference use here is coded primarily as written-translation work; sources may occasionally be consulted during live interpreting."
+ },
+ {
+  "task_id": "9333",
+  "split_reasoning": "Technical terms and other translation information are compiled for the same preparatory purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile terminology and supporting information for use in translations.",
+    "time_share": 1.0,
+    "type_reasoning": "The compiled terminology or reference material is a reusable output for translation work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A glossary or terminology compilation for an assignment or subject area is the useful handover unit.",
+    "work_item": "one terminology compilation for an assignment or subject area",
+    "start": "translation subject and terminology needs identified",
+    "end": "terms and supporting information compiled for use",
+    "checked_by": "the translator, translation team, or subject-matter reviewer",
+    "overlap_reasoning": "Compilation can draw on reference research and support terminology checking, but it produces a reusable collection rather than just a check or query.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9330",
+     "9332",
+     "9337"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9334",
+  "split_reasoning": "Collaboration with an educational team is a means of adapting a translation, not a separate deliverable specified by the target.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adapt translated material to students' cognitive and grade levels.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces adapted material for educational use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An adapted document or instructional material is the unit provided to the educational team.",
+    "work_item": "one translated educational material adapted for students",
+    "start": "material and students' level requirements identified",
+    "end": "adapted translation provided for educational use",
+    "checked_by": "teachers or other educational team members",
+    "overlap_reasoning": "Adapting a translation can be part of translating written material, but requires attention to the students' particular levels.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9331",
+     "9337"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9335",
+  "split_reasoning": "Listening and determining meaning are connected steps in preparing an interpretation of a speaker's statements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Listen to a speaker and determine the meaning of statements in preparation for interpreting them.",
+    "time_share": 1.0,
+    "type_reasoning": "Listening and preparation occur during the live exchange while participants await interpretation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A speaker's statement or segment is the unit understood and prepared for interpretation during the contact.",
+    "work_item": "one speaker statement understood and prepared for interpretation",
+    "start": "the speaker begins the statement",
+    "end": "the interpreter has determined the meaning and prepared its interpretation",
+    "checked_by": "the interpreter, with participants relying on the subsequent interpretation",
+    "overlap_reasoning": "Listening is integral to live interpreting and may expose meaning conflicts, but the target specifies the preparatory listening step.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9327",
+     "9328"
+    ]
+   }
+  ],
+  "notes": "The prepared meaning is generally not a separately handed-over artifact; it is used immediately in interpretation."
+ },
+ {
+  "task_id": "9336",
+  "split_reasoning": "Checking the source and consulting the author are alternative means of verifying that a translation retains the original's meaning and feeling.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify a translation against the original text or author clarification.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a source-checked translation or identified corrections for the translator.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The verification is performed on an assigned translation or section and returned as a whole.",
+    "work_item": "one translation or section checked against its source",
+    "start": "draft translation and source material available for comparison",
+    "end": "content, meaning, and tone issues corrected or referred to the translator",
+    "checked_by": "the translator, editor, or author",
+    "overlap_reasoning": "Source verification can overlap with editing, terminology review, and resolving ambiguities, but is specifically focused on fidelity to the original.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9327",
+     "9329",
+     "9330",
+     "9331"
+    ]
+   }
+  ],
+  "notes": "Consulting an author may be live, but is treated as a method within the broader verification rather than a customer-waiting service."
+ },
+ {
+  "task_id": "9337",
+  "split_reasoning": "Content, context, and audience information are different inputs to the same translation preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile content, context, and intended-audience information for a translation.",
+    "time_share": 1.0,
+    "type_reasoning": "The gathered information forms an assignment brief or reference used by the translator.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The useful unit is the set of background and audience information collected for one assignment.",
+    "work_item": "one translation assignment's background and audience information compiled",
+    "start": "a translation assignment and its information needs are identified",
+    "end": "relevant background and audience details are available for the translator",
+    "checked_by": "the translator, translation team, or client",
+    "overlap_reasoning": "Background preparation supports translation and adaptation and may include terminology information, but it has a broader context and audience focus.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9331",
+     "9333",
+     "9334"
+    ]
+   }
+  ],
+  "notes": "The compiled information may be informal notes rather than a formal brief."
+ },
+ {
+  "task_id": "9338",
+  "split_reasoning": "Discussing requirements and determining fees are connected aspects of agreeing on a service engagement.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss translation requirements and fees with a client.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes a live requirements and fee discussion rather than a specified written deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The discussion may inform later assignment preparation, but is not the same output as compiling translation background.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9337"
+    ]
+   }
+  ],
+  "notes": "A separately prepared written quote or contract is not specified in the target."
+ },
+ {
+  "task_id": "9339",
+  "split_reasoning": "Localizing software and adapting its technical documentation produce different kinds of deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adapt software language and cultural content for another locale.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces localized software content for integration and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned set of software strings or resources can be localized and handed back for integration.",
+    "work_item": "one assigned software resource set localized",
+    "start": "software resources and target-locale requirements received",
+    "end": "localized resources submitted for integration or review",
+    "checked_by": "the localization team, software developers, or client",
+    "overlap_reasoning": "Software localization can include written translation, but also requires adaptation to the software's locale and context.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9331"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Adapt accompanying technical documentation for another language and culture.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces localized documentation for users or a documentation team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or assigned documentation section is submitted as a unit.",
+    "work_item": "one technical document or section localized",
+    "start": "source documentation and target-locale requirements received",
+    "end": "localized documentation submitted for review or publication",
+    "checked_by": "the documentation team, localization reviewer, or client",
+    "overlap_reasoning": "This is a specialized form of written translation with additional cultural and product-context adaptation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9331"
+    ]
+   }
+  ],
+  "notes": "The shares vary with the size and maturity of the software and documentation."
+ },
+ {
+  "task_id": "9340",
+  "split_reasoning": "The different groups listed are audiences for the same educational activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Educate students, parents, staff, and teachers about educational interpreters' roles and functions.",
+    "time_share": 1.0,
+    "type_reasoning": "The described work is teaching people through direct interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes this education about the interpreter's role.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9341",
+  "split_reasoning": "Training other language professionals and supervising their ongoing work are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train other translators or interpreters.",
+    "time_share": 0.5,
+    "type_reasoning": "The described training is a live instructional interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes training translators or interpreters.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise other translators or interpreters.",
+    "time_share": 0.5,
+    "type_reasoning": "The target describes ongoing supervisory interaction rather than a specified supervisory report or other deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision may involve reviewing translations, but general supervision and editing translated material each cover work the other does not.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9329"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the role; formal training materials or performance records are not specified."
+ },
+ {
+  "task_id": "9342",
+  "split_reasoning": "Traveling with and guiding tourists are closely connected ways of providing in-person assistance during their visit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accompany or guide tourists who speak another language.",
+    "time_share": 1.0,
+    "type_reasoning": "The value described is in accompanying and guiding people through live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Guiding may involve interpreting for tourists, but accompanying or guiding and interpreting messages each cover work the other does not.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9328"
+    ]
+   }
+  ],
+  "notes": "Travel is treated as part of accompanying tourists, not as a separate hands-on deliverable."
+ }
+]

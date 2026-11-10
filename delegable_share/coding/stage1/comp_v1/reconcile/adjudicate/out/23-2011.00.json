@@ -1,0 +1,84 @@
+[
+ {"task_id": "1639", "reasoning": "Coordinating office activity is interpersonal, but arranging subpoena service is a separate activity that ends in a proof of service the attorney and court rely on, so a split is right. X codes paralegals as personally serving subpoenas and calls that travel DISCRETE, but paralegals usually arrange service through a process server or runner and track the return. The revision keeps X's split and recasts part b as arranging service.", "choice": "revised",
+  "coding": {
+   "task_id": "1639",
+   "split_reasoning": "Two different activities: directing and coordinating the office's day-to-day work, and arranging for subpoenas to be served and proof of service filed.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Direct and coordinate day-to-day law office activity (assign and follow up on work, track deadlines, coordinate staff).",
+     "time_share": 0.75,
+     "type_reasoning": "The value is in directing people live; no single checkable deliverable is produced.",
+     "type": "INTERPERSONAL",
+     "duplicates": [],
+     "overlaps_with": []
+    },
+    {
+     "part_id": "b",
+     "text": "Arrange service of a subpoena through a process server or office runner, and see that proof of service is returned and filed.",
+     "time_share": 0.25,
+     "type_reasoning": "Each subpoena ends in a proof of service that the attorney and court rely on, and the paralegal's work is arranging and tracking it at a desk.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Subpoenas are issued, served and tracked one at a time.",
+     "work_item": "one subpoena served with proof of service filed",
+     "start": "signed subpoena ready for service",
+     "end": "proof of service received and filed in the matter",
+     "checked_by": "supervising attorney; court",
+     "duplicates": [],
+     "overlaps_with": ["1638"]
+    }
+   ],
+   "notes": "If the paralegal personally serves the subpoena, the travel and hand delivery would be PHYSICAL; that is the exception, not the norm."
+  }},
+ {"task_id": "1641", "reasoning": "Filing pocket parts and replacing bound volumes is hands-on work in the library, while checking which titles need updates is desk work; the instructions say to split an activity that is partly physical. X does this; Y treats the whole round as one desk deliverable.", "choice": "X"},
+ {"task_id": "1642", "reasoning": "Paralegals normally build an estate asset inventory from client questionnaires, statements, deeds and outside appraisals, not by inspecting property in person. One discrete deliverable, the valued inventory, fits how the work is done; Y's 40% physical-inspection share overstates site visits.", "choice": "X"},
+ {"task_id": "18491", "reasoning": "X's split of drafting from filing is right, but splitting affidavits from correspondence, as Y does, separates two examples of one activity. Keeping paper files is hands-on work away from the computer, though, so it gets its own small PHYSICAL part, as the instructions require. The revision keeps X's drafting part and divides filing into electronic and paper.", "choice": "revised",
+  "coding": {
+   "task_id": "18491",
+   "split_reasoning": "Two activities, drafting documents and maintaining files; filing is further split because paper filing is hands-on work while electronic filing is done at a computer.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Prepare an affidavit, letter or other legal document for the attorney's review.",
+     "time_share": 0.6,
+     "type_reasoning": "Each document is handed to the attorney for signature or sent out.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Documents are drafted and handed over one at a time.",
+     "work_item": "one affidavit, letter or similar document prepared",
+     "start": "attorney requests the document and supplies the facts",
+     "end": "draft approved by the attorney and sent or executed",
+     "checked_by": "supervising attorney; recipient",
+     "duplicates": [],
+     "overlaps_with": ["23994"]
+    },
+    {
+     "part_id": "b",
+     "text": "Organize and maintain matter documents in the electronic document management system.",
+     "time_share": 0.3,
+     "type_reasoning": "Each filing session leaves the matter file organized for colleagues to retrieve from.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Documents are filed in batches as they accumulate for a matter.",
+     "work_item": "one batch of matter documents saved, named and indexed in the electronic file",
+     "start": "documents received or created and awaiting filing",
+     "end": "documents saved and indexed in the matter's electronic file",
+     "checked_by": "attorneys and staff who use the file",
+     "duplicates": [],
+     "overlaps_with": []
+    },
+    {
+     "part_id": "c",
+     "text": "Organize and maintain paper case files.",
+     "time_share": 0.1,
+     "type_reasoning": "Sorting and placing paper documents in physical files is hands-on work away from a computer.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["18492"]
+    }
+   ],
+   "notes": "The paper share depends on how far the practice has gone paperless."
+  }},
+ {"task_id": "18492", "reasoning": "Trial preparation today still involves assembling physical exhibit binders and copies for court as well as preparing electronic exhibit sets, so the activity is partly physical and partly at a computer. The instructions say to split it, as Y does.", "choice": "Y"},
+ {"task_id": "18493", "reasoning": "A paralegal's case meeting with a client is an interview whose value is in the conversation; it is not a transaction carried out while a customer waits, so LIVE_SERVICE does not fit. Y codes both kinds of meeting as INTERPERSONAL, which matches the instructions' meeting example.", "choice": "Y"},
+ {"task_id": "18494", "reasoning": "Most pleadings are now e-filed, but some courts still require paper filings delivered to the clerk, which is physical work away from a computer. Y splits by where the work is done, as the instructions require.", "choice": "Y"},
+ {"task_id": "23994", "reasoning": "Drafting a document from scratch and editing or reviewing an existing one are different activities with very different time per item. Y's split follows the instruction to split when a statement joins different activities.", "choice": "Y"}
+]

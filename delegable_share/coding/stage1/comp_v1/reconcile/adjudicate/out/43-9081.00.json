@@ -1,0 +1,6 @@
+[
+ {"task_id": "5162", "reasoning": "Consulting reference books or a reader is a means used inside proofreading; its result shows up only in the marked proof coded under 5159 and 5158. X's work item is not something handed over or checked on its own.", "choice": "Y"},
+ {"task_id": "5165", "reasoning": "Reading proofs aloud with a copyholder is a standard proofreading method whose result is a proof checked against copy with errors marked, which editors rely on. It is production work with a checkable output, not interaction valued for itself, so DISCRETE fits better than INTERPERSONAL.", "choice": "Y"},
+ {"task_id": "20907", "reasoning": "Consultations with authors and editors are normally raised as author queries (margin or query-sheet notes, emails, brief calls) and end in a decision recorded on the proof. That is a discrete, checkable item per query rather than an interaction with no output.", "choice": "X"},
+ {"task_id": "20910", "reasoning": "The statement names both layout software and a printer's ruler, and the instructions say to split an activity that is partly physical and partly at a computer. X does this and keeps typesetting separate; Y merges physical and on-screen measuring.", "choice": "X"}
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "task_id": "9326",
+    "split_reasoning": "A standing professional obligation rather than a separable activity.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Follow ethical codes that protect the confidentiality of information handled in interpreting and translation work.",
+        "time_share": 1.0,
+        "type_reasoning": "It is a constraint on all work and yields no item anyone checks or relies on.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Confidentiality agreements signed per client are a minor discrete item but not the substance."
+  },
+  {
+    "task_id": "9327",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Resolve a conflict over the meaning of a word, concept, practice or behavior between languages or cultures and settle on the rendering.",
+        "time_share": 1.0,
+        "type_reasoning": "Each conflict ends in a decision or note that the client or reader relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Conflicts arise one at a time and are settled individually, often by query to the client.",
+        "work_item": "one meaning conflict resolved and the choice conveyed to the client or built into the text",
+        "start": "conflict or ambiguity noticed in source or speech",
+        "end": "resolution agreed and applied or reported to the client",
+        "checked_by": "client or requesting party; reviewing translator",
+        "duplicates": [],
+        "overlaps_with": [
+          "9328",
+          "9330",
+          "9336"
+        ]
+      }
+    ],
+    "notes": "Could happen live during interpreting or in written work; treated as written query."
+  },
+  {
+    "task_id": "9328",
+    "split_reasoning": "One activity: rendering speech between languages live, whether simultaneous or consecutive, spoken or signed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Interpret speech or sign language between parties simultaneously or consecutively during a live event.",
+        "time_share": 1.0,
+        "type_reasoning": "The parties are present and waiting while the interpreting is delivered.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "Interpreting is booked and delivered as one assignment or session at a time.",
+        "work_item": "one interpreting assignment (a meeting, appointment, hearing or conference session)",
+        "start": "assignment begins and first utterance is interpreted",
+        "end": "session ends and parties are finished",
+        "checked_by": "the parties relying on it, the client, and sometimes a second interpreter or court",
+        "duplicates": [],
+        "overlaps_with": [
+          "9335"
+        ]
+      }
+    ],
+    "notes": "Session length varies from minutes to full days."
+  },
+  {
+    "task_id": "9329",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Proofread, edit and revise a translated document.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a corrected translation that the client relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Documents are revised and returned whole.",
+        "work_item": "one translated document proofread and revised",
+        "start": "translated draft ready for review",
+        "end": "revised translation delivered",
+        "checked_by": "client; project manager or reviewer",
+        "duplicates": [],
+        "overlaps_with": [
+          "9330",
+          "9336",
+          "9331"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9330",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Check a translation's technical terms for accuracy and for consistency across revisions.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a terminology-checked translation or list of corrections that the reviewer relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "The check is done per translation or revision.",
+        "work_item": "one translation terminology-checked",
+        "start": "translation or revision available",
+        "end": "terms confirmed or corrected and returned",
+        "checked_by": "client; reviewer; project manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "9329",
+          "9333",
+          "9332"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9331",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Read a written source document such as a legal, scientific or news text and translate it into the target language.",
+        "time_share": 1.0,
+        "type_reasoning": "Each translation is a deliverable the client uses.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Source documents arrive one at a time and are delivered whole.",
+        "work_item": "one document translated",
+        "start": "source document received",
+        "end": "translation delivered to client",
+        "checked_by": "client; reviewer; end readers",
+        "duplicates": [],
+        "overlaps_with": [
+          "9329",
+          "9332",
+          "9337"
+        ]
+      }
+    ],
+    "notes": "Document length varies widely."
+  },
+  {
+    "task_id": "9332",
+    "split_reasoning": "Looking things up is a means used inside other work.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Consult dictionaries, lexicons, encyclopedias and terminology banks while translating.",
+        "time_share": 1.0,
+        "type_reasoning": "Reference use produces nothing handed over by itself; its result appears inside the translation.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": [
+          "9331",
+          "9330",
+          "9333"
+        ]
+      }
+    ],
+    "notes": "Overlaps heavily with translating."
+  },
+  {
+    "task_id": "9333",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Compile a glossary of terminology and information for a translation project, including legal or medical terms.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a glossary or termbase the translators use.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Compiled per project or domain.",
+        "work_item": "one project glossary or termbase",
+        "start": "project terminology needs identified",
+        "end": "glossary delivered or loaded to the termbase",
+        "checked_by": "translation team; client",
+        "duplicates": [],
+        "overlaps_with": [
+          "9330",
+          "9337",
+          "9332"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9334",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Adapt a translated school material to the cognitive and grade level of students, collaborating with the education team.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces an adapted text the teachers and students use.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Materials are adapted individually.",
+        "work_item": "one school material adapted to student level",
+        "start": "translated material and target level identified",
+        "end": "adapted material approved by the education team",
+        "checked_by": "teacher or education team",
+        "duplicates": [],
+        "overlaps_with": [
+          "9331"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9335",
+    "split_reasoning": "Listening is done either live while interpreting or on recordings to prepare translations.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Listen to a speaker during a live event to determine meaning for interpreting, using electronic listening equipment.",
+        "time_share": 0.6,
+        "type_reasoning": "The speaker and audience are present while this is done.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "It is part of one interpreting assignment.",
+        "work_item": "one interpreting assignment (listening component)",
+        "start": "speaker begins",
+        "end": "speaker finishes and session ends",
+        "checked_by": "the parties relying on it",
+        "duplicates": [
+          "9328"
+        ],
+        "overlaps_with": []
+      },
+      {
+        "part_id": "b",
+        "text": "Listen to a recorded statement and prepare a translation or transcript from it.",
+        "time_share": 0.4,
+        "type_reasoning": "Each recording ends in a written deliverable.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Recordings are handled one at a time.",
+        "work_item": "one audio or video recording translated",
+        "start": "recording received",
+        "end": "translation delivered",
+        "checked_by": "client; requesting agency",
+        "duplicates": [],
+        "overlaps_with": [
+          "9331"
+        ]
+      }
+    ],
+    "notes": "Part a is the same work as 9328."
+  },
+  {
+    "task_id": "9336",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Check original texts or confer with the author to confirm a translation keeps the content, meaning and feeling of the original.",
+        "time_share": 1.0,
+        "type_reasoning": "Ends in a confirmed or corrected translation.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Done per translation or per query.",
+        "work_item": "one translation checked against its original or author",
+        "start": "query or doubt about the original raised",
+        "end": "author's answer applied or the translation confirmed",
+        "checked_by": "client; author",
+        "duplicates": [],
+        "overlaps_with": [
+          "9327",
+          "9329"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9337",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Compile background information on the content, context and intended audience of material to be translated.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a brief or notes that guide the translation.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One brief per assignment.",
+        "work_item": "one assignment background brief",
+        "start": "assignment received",
+        "end": "background notes compiled",
+        "checked_by": "the translator and the client",
+        "duplicates": [],
+        "overlaps_with": [
+          "9333",
+          "9331"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9338",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Discuss requirements with a client and agree fees for the service.",
+        "time_share": 1.0,
+        "type_reasoning": "Ends in an agreed scope and price the client accepts.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each engagement is quoted once.",
+        "work_item": "one job scoped and quoted",
+        "start": "client request received",
+        "end": "fee and terms agreed",
+        "checked_by": "client",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "May be by phone or email."
+  },
+  {
+    "task_id": "9339",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Adapt software and its technical documents to another language and culture.",
+        "time_share": 1.0,
+        "type_reasoning": "Delivers a localized product the client releases.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Localization is handed over per release or per document set.",
+        "work_item": "one software or document set localized",
+        "start": "source strings or documents received",
+        "end": "localized files delivered and accepted",
+        "checked_by": "client; QA or product team",
+        "duplicates": [],
+        "overlaps_with": [
+          "9331"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9340",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Educate students, parents, staff and teachers about the role of educational interpreters.",
+        "time_share": 1.0,
+        "type_reasoning": "Value is in the live sessions; nothing is produced for a colleague to check.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "9341",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Train and supervise other translators or interpreters.",
+        "time_share": 1.0,
+        "type_reasoning": "Value is in the live coaching and oversight.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Reviewing others' work is covered by 9329."
+  },
+  {
+    "task_id": "9342",
+    "split_reasoning": "One activity with one kind of deliverable, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Travel with and guide tourists who speak another language.",
+        "time_share": 1.0,
+        "type_reasoning": "Done in person away from a computer, over a tour.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Could be read as LIVE_SERVICE since tourists are present throughout."
+  }
+]

@@ -1,0 +1,482 @@
+[
+ {
+  "task_id": "8113",
+  "split_reasoning": "Same activity done live with the customer and in writing afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question by phone or in person.",
+    "time_share": 0.5,
+    "type_reasoning": "Customer waiting while answered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered in one contact.",
+    "work_item": "one customer question answered live",
+    "start": "customer asks",
+    "end": "customer has the answer",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8116"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a customer's emailed question.",
+    "time_share": 0.5,
+    "type_reasoning": "Written queue, no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each email is answered separately.",
+    "work_item": "one emailed question answered",
+    "start": "email received",
+    "end": "reply sent",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8116"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8114",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend products to a customer based on needs and interests.",
+    "time_share": 1.0,
+    "type_reasoning": "Each recommendation is a distinct proposal.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One recommendation per customer need.",
+    "work_item": "one product recommendation",
+    "start": "customer's need understood",
+    "end": "recommendation sent or presented",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8113",
+     "8115"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8115",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact customers and prospects to demonstrate products and seek orders.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the sales conversation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "8114",
+     "8119"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8116",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate and quote prices, terms, warranties and delivery dates.",
+    "time_share": 1.0,
+    "type_reasoning": "Each quote is handed to the customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One quote per request.",
+    "work_item": "one quote",
+    "start": "customer request received",
+    "end": "quote sent",
+    "checked_by": "customer, sales manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "8118",
+     "20267"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8117",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Work with a client after the sale to resolve a problem or give support.",
+    "time_share": 1.0,
+    "type_reasoning": "Each problem is resolved and closed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Problems arise one at a time.",
+    "work_item": "one post-sale problem resolved",
+    "start": "client reports problem",
+    "end": "client confirms resolved",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "8121"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8118",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare drawings, estimates and bids for a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a bid package.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One bid per customer opportunity.",
+    "work_item": "one bid package",
+    "start": "customer's requirements received",
+    "end": "bid submitted",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8116",
+     "20267"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8119",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Send customers product samples and catalogs.",
+    "time_share": 1.0,
+    "type_reasoning": "Each shipment is checked by the customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One package per customer.",
+    "work_item": "one sample or catalog package sent",
+    "start": "customer requests samples",
+    "end": "package sent",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8115"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8120",
+  "split_reasoning": "Research from directories and leads is desk work; networking at events is live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Find prospects using directories and client leads.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a prospect list.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Lists built in batches.",
+    "work_item": "one prospect list",
+    "start": "lead source reviewed",
+    "end": "prospects recorded",
+    "checked_by": "sales manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Network at trade shows, clubs and conferences.",
+    "time_share": 0.4,
+    "type_reasoning": "Value is in live contact.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8121",
+  "split_reasoning": "Arranging is desk work; installation is hands-on.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange delivery of products.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a scheduled delivery.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One delivery arranged at a time.",
+    "work_item": "one delivery arranged",
+    "start": "order confirmed",
+    "end": "delivery scheduled and confirmed",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8117"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct installation of equipment on site.",
+    "time_share": 0.4,
+    "type_reasoning": "On-site, away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8122",
+  "split_reasoning": "Much monitoring is reading for oneself; some ends in a report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a market and competitor update.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Periodic.",
+    "work_item": "one market or competitor update",
+    "start": "period ends",
+    "end": "update sent",
+    "checked_by": "sales manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Keep up with market conditions and competitors by reading.",
+    "time_share": 0.7,
+    "type_reasoning": "Nothing others rely on is produced.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8124",
+  "split_reasoning": "Three different kinds of administrative paperwork.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare sales budgets and reports.",
+    "time_share": 0.35,
+    "type_reasoning": "Produces budgets and reports.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Periodic.",
+    "work_item": "one sales budget or report",
+    "start": "period starts or ends",
+    "end": "submitted",
+    "checked_by": "sales manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Keep sales records.",
+    "time_share": 0.3,
+    "type_reasoning": "Records are updated in batches.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Updates by period.",
+    "work_item": "one batch of record updates",
+    "start": "sales made",
+    "end": "records updated",
+    "checked_by": "sales manager, auditor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "File an expense report.",
+    "time_share": 0.35,
+    "type_reasoning": "Each report is approved.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per period.",
+    "work_item": "one expense report",
+    "start": "period ends",
+    "end": "report filed and approved",
+    "checked_by": "manager, finance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8125",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain credit information on a prospective customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check produces a credit file used for terms.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per prospect.",
+    "work_item": "one credit check on a prospect",
+    "start": "prospect wants credit",
+    "end": "credit info obtained",
+    "checked_by": "credit department or sales manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8126",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Forward customer orders to the manufacturer.",
+    "time_share": 1.0,
+    "type_reasoning": "Each order is placed and relied on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One order at a time.",
+    "work_item": "one order forwarded",
+    "start": "order taken",
+    "end": "order acknowledged by manufacturer",
+    "checked_by": "customer and manufacturer",
+    "duplicates": [],
+    "overlaps_with": [
+     "20267",
+     "8127"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8127",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check stock levels and reorder merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check ends in a reorder or none.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per account or store.",
+    "work_item": "one stock check and reorder",
+    "start": "stock reviewed",
+    "end": "reorder placed",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8126"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8128",
+  "split_reasoning": "Display assembly is hands-on; recommendations are written.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble and stock displays in stores.",
+    "time_share": 0.4,
+    "type_reasoning": "Hands-on at the store.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Recommend displays, promotions and advertising to retailers.",
+    "time_share": 0.6,
+    "type_reasoning": "Each recommendation is a proposal.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per retailer.",
+    "work_item": "one display or promotion recommendation",
+    "start": "retailer visit",
+    "end": "proposal given",
+    "checked_by": "retailer",
+    "duplicates": [],
+    "overlaps_with": [
+     "8129"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8129",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate with merchants for better shelf position and advertising.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the negotiation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "8128",
+     "20268"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20267",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a sales contract or order form.",
+    "time_share": 1.0,
+    "type_reasoning": "Each contract is signed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per sale.",
+    "work_item": "one contract or order form",
+    "start": "terms agreed",
+    "end": "contract sent for signature",
+    "checked_by": "customer, legal",
+    "duplicates": [],
+    "overlaps_with": [
+     "8116",
+     "8126",
+     "20268"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20268",
+  "split_reasoning": "One activity with one kind of output; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate contract and payment terms.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the negotiation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20267",
+     "8129"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

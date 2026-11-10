@@ -1,0 +1,305 @@
+[
+ {
+  "task_id": "1250",
+  "split_reasoning": "Analyzing credit and financial data is one activity producing a risk assessment for an applicant.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze an applicant's credit data and financial statements to assess lending risk.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis produces an assessment used in a credit decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment is completed for one applicant or credit request.",
+    "work_item": "one credit risk assessment",
+    "start": "credit request and supporting financial and credit data received",
+    "end": "risk assessment completed for use in the credit decision",
+    "checked_by": "credit manager or loan committee",
+    "overlap_reasoning": "Reports, applications, ratios, peer comparisons, and profitability analyses can incorporate parts of the risk assessment but also cover distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1251",
+     "1254",
+     "1255",
+     "1257",
+     "1259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1251",
+  "split_reasoning": "Preparing a credit risk report is one deliverable, regardless of the underlying risk level.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a report describing the risk involved in extending credit or lending money.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a distinct document used by credit decision makers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed report is handed over as a whole for a credit decision.",
+    "work_item": "one credit risk report",
+    "start": "credit information and risk findings available for reporting",
+    "end": "report completed and submitted to the decision maker",
+    "checked_by": "credit manager or loan committee",
+    "overlap_reasoning": "Risk analysis supplies findings for the report, and loan application summaries may contain similar risk information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1254"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1252",
+  "split_reasoning": "Reviewing records and recommending a payment plan are steps in one customer-specific recommendation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a customer's financial and payment records and recommend a payment plan.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a plan recommendation for a particular customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One customer account is evaluated and a recommendation is handed to the person handling the account.",
+    "work_item": "one payment plan recommendation",
+    "start": "customer account and financial records referred for review",
+    "end": "recommended payment plan documented or sent for use",
+    "checked_by": "credit or collections manager and account handler",
+    "overlap_reasoning": "Selecting delinquent accounts and contacting customers about payment can involve the same accounts but have different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1256",
+     "21164"
+    ]
+   }
+  ],
+  "notes": "The payment plan may sometimes be discussed live with a customer, but the target principally describes a records-based recommendation."
+ },
+ {
+  "task_id": "1253",
+  "split_reasoning": "Conferring with different business representatives is the same information-exchange activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with credit associations and business representatives to exchange credit information.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes a professional conversation rather than a specified document or customer service transaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Information obtained may inform credit analysis, but the conference and the analysis are different work.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1254",
+  "split_reasoning": "Completing the application, including its analysis and summary, and submitting it are steps in one loan submission.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete a loan application with its credit analysis and request summary and submit it for approval.",
+    "time_share": 1.0,
+    "type_reasoning": "The completed application package is a distinct submission to a loan committee.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The committee receives and considers one completed loan application package as a whole.",
+    "work_item": "one completed loan application package submitted for approval",
+    "start": "loan request and supporting information received",
+    "end": "completed application, analysis, and summary submitted to the loan committee",
+    "checked_by": "loan committee",
+    "overlap_reasoning": "The application includes credit analysis and risk summaries that can share work with separate assessments and reports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1251"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1255",
+  "split_reasoning": "Generating different financial ratios is one activity supporting an evaluation of a customer's financial status.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Generate financial ratios for a customer to evaluate financial status.",
+    "time_share": 1.0,
+    "type_reasoning": "The calculation produces a customer-specific set of ratios used in credit analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of ratios for one customer's financial information is the useful analytical output, rather than an individual calculation.",
+    "work_item": "one customer's financial ratio analysis",
+    "start": "customer financial data available for calculation",
+    "end": "ratios generated and made available for credit evaluation",
+    "checked_by": "credit analyst or credit manager",
+    "overlap_reasoning": "Ratios can form part of credit risk analysis, peer comparisons, and loan profitability analysis, but each has a broader output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1257",
+     "1259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1256",
+  "split_reasoning": "Reviewing files and selecting delinquent accounts are steps in identifying accounts for collection.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a customer file and determine whether the delinquent account should be selected for collection.",
+    "time_share": 1.0,
+    "type_reasoning": "Each account review produces a selection decision relied on by collections staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The account-level selection or nonselection is the decision resulting from the file review.",
+    "work_item": "one customer account reviewed for collection selection",
+    "start": "customer file or delinquency information available for review",
+    "end": "collection selection decision recorded and selected account identified for follow-up",
+    "checked_by": "collections staff or collections manager",
+    "overlap_reasoning": "Payment-plan recommendations and collection contacts may use the same delinquent accounts but are separate steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1252",
+     "21164"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1257",
+  "split_reasoning": "Comparing liquidity, profitability, and credit history are components of one peer comparison for an establishment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare an establishment's liquidity, profitability, and credit history with those of similar establishments.",
+    "time_share": 1.0,
+    "type_reasoning": "The comparison produces analytical findings used in evaluating a customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The comparison is completed for one establishment against an appropriate peer group.",
+    "work_item": "one establishment's peer comparison",
+    "start": "establishment and comparable peer financial and credit data available",
+    "end": "comparative findings completed for the credit evaluation",
+    "checked_by": "credit analyst or credit manager",
+    "overlap_reasoning": "Peer comparisons and ratios can contribute to a broader credit assessment, while profitability analysis addresses expected loan returns.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1255",
+     "1259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1258",
+  "split_reasoning": "Resolving complaints and verifying transactions are different customer-facing activities, although a contact can involve both.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with a customer to resolve a complaint.",
+    "time_share": 0.6,
+    "type_reasoning": "The analyst works with the customer during a live contact to address the complaint.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The customer relies on the response or resolution provided during one complaint contact.",
+    "work_item": "one customer complaint addressed during a live contact",
+    "start": "customer raises a complaint during the contact",
+    "end": "response or resolution communicated to the customer",
+    "checked_by": "customer and customer service or credit supervisor",
+    "overlap_reasoning": "Verifying a transaction can be part of resolving a complaint, but either activity can occur independently.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Consult with a customer to verify a financial or credit transaction.",
+    "time_share": 0.4,
+    "type_reasoning": "Verification is performed with the customer present in a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One transaction is checked with the customer and its verification outcome communicated during the contact.",
+    "work_item": "one transaction verified with a customer during a live contact",
+    "start": "transaction is raised for verification during the contact",
+    "end": "verification outcome communicated to the customer",
+    "checked_by": "customer and credit or account servicing staff",
+    "overlap_reasoning": "Transaction verification may support a complaint resolution, but it is not the same output as the other listed tasks.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares are estimates; some complaints or verification requests may require follow-up after the live contact."
+ },
+ {
+  "task_id": "1259",
+  "split_reasoning": "Analyzing the listed financial and business factors is one activity to assess expected loan profitability.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze financial and business information to determine a loan's expected profitability.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis produces a profitability assessment used in a lending decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment is completed for a particular loan or loan request.",
+    "work_item": "one expected loan profitability assessment",
+    "start": "loan terms and relevant financial and business data available",
+    "end": "expected profitability assessment completed for the lending decision",
+    "checked_by": "credit manager or loan committee",
+    "overlap_reasoning": "Profitability analysis can use ratios and peer comparisons and inform a broader risk assessment, but expected return is a distinct outcome.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1250",
+     "1255",
+     "1257"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21164",
+  "split_reasoning": "Collection contacts occur both live with customers and through written requests sent without the customer waiting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact a customer live to seek payment on a delinquent account.",
+    "time_share": 0.75,
+    "type_reasoning": "The collection attempt takes place during a live customer conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact produces a payment, payment commitment, or other collection response.",
+    "work_item": "one live delinquent-account collection contact",
+    "start": "customer reached about the overdue account",
+    "end": "payment or other response obtained and communicated during the contact",
+    "checked_by": "collections manager and customer",
+    "overlap_reasoning": "An account may first be selected for collection or reviewed for a payment plan, but those are separate steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1252",
+     "1256"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a written request for payment on a delinquent account.",
+    "time_share": 0.25,
+    "type_reasoning": "A written collection request is prepared and sent without the customer waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One notice or message is sent for a particular delinquent account.",
+    "work_item": "one written delinquent-account payment request",
+    "start": "delinquent account identified for written contact",
+    "end": "payment request sent to the customer",
+    "checked_by": "customer and collections manager",
+    "overlap_reasoning": "The written contact may follow account selection or a payment-plan review, but it is a separate output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1252",
+     "1256"
+    ]
+   }
+  ],
+  "notes": "The live and written shares are estimates and depend on the institution's collection procedures."
+ }
+]

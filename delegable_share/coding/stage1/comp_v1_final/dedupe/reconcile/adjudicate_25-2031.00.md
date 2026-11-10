@@ -1,0 +1,67 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1_final/dedupe/reconcile/adjudicated_25-2031.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[6639a] DISCRETE — one classroom rule and procedure set (start: teacher determines expectations for a class; end: rules and procedures communicated to the class) — from statement: Establish and enforce rules for behavior and procedures for maintaining order among students.
+[6641a] DISCRETE — one unit's objectives written and communicated (start: unit planned; end: objectives posted or given to students) — from statement: Establish clear objectives for all lessons, units, and projects, and communicate those objectives to students.
+[6642a] DISCRETE — one test or assignment prepared (start: unit content to assess; end: final test ready to give) — from statement: Prepare, administer, and grade tests and assignments to evaluate students' progress.
+[6642c] DISCRETE — one set of tests graded and returned (start: student work collected; end: marks recorded and papers returned) — from statement: Prepare, administer, and grade tests and assignments to evaluate students' progress.
+[6643a] DISCRETE — one lesson's materials prepared (start: lesson planned; end: materials ready) — from statement: Prepare materials and classrooms for class activities.
+[6644a] DISCRETE — one lesson adapted for students' needs (start: lesson planned and needs identified; end: adapted lesson and materials ready) — from statement: Adapt teaching methods and instructional materials to meet students' varying needs and interests.
+[6645a] DISCRETE — one update of student records (start: attendance taken or grades ready; end: records entered and complete) — from statement: Maintain accurate and complete student records as required by laws, district policies, and administrative regulations.
+[6646a] DISCRETE — one assignment set (start: lesson planned; end: assignment given to students) — from statement: Assign and grade class work and homework.
+[6646b] DISCRETE — one batch of assignments graded (start: work collected; end: marks recorded and returned) — from statement: Assign and grade class work and homework.
+[6647a] DISCRETE — one student evaluation note (start: reporting period or concern arises; end: note or comment recorded) — from statement: Observe and evaluate students' performance, behavior, social development, and physical health.
+[6649a] DISCRETE — one lesson plan (start: unit scheduled; end: plan complete) — from statement: Plan and conduct activities for a balanced program of instruction, demonstration, and work time that provides students with opportunities to observe, question, and investigate.
+[6653a] DISCRETE — one set of lesson plans for a class (start: upcoming unit or week; end: plans complete and filed) — from statement: Prepare for assigned classes, and show written evidence of preparation upon request of immediate supervisors.
+[6657a] DISCRETE — one course outline (start: course assigned; end: outline approved or filed) — from statement: Prepare objectives and outlines for courses of study, following curriculum guidelines or requirements of states and schools.
+[6659a] DISCRETE — one remedial plan (start: student needs identified; end: plan ready) — from statement: Prepare and implement remedial programs for students requiring extra help.
+[6662b] DISCRETE — one school program proposal, evaluation, or revision (start: program development or review need identified; end: document or proposed revision submitted to the responsible team) — from statement: Collaborate with other teachers and administrators in the development, evaluation, and revision of secondary school programs.
+[6663a] DISCRETE — one report to administration (start: report requested or due; end: report submitted) — from statement: Prepare reports on students and activities as required by administration.
+[6664a] DISCRETE — one supply order (start: need identified; end: order placed) — from statement: Select, store, order, issue, and inventory classroom equipment, materials, and supplies.
+[6665a] DISCRETE — one activity arranged (start: activity proposed; end: arrangements and permissions confirmed) — from statement: Plan and supervise class projects, field trips, visits by guest speakers, or other experiential activities, and guide students in learning from those activities.
+[6666b] DISCRETE — one set of results interpreted (start: scores received; end: strengths and needs recorded or shared) — from statement: Administer standardized ability and achievement tests, and interpret results to determine students' strengths and needs.
+[6667a] DISCRETE — one extracurricular activity or event plan (start: activity or event need identified; end: schedule and necessary arrangements communicated) — from statement: Sponsor extracurricular activities, such as clubs, student organizations, and academic contests.
+[6669a] LIVE_SERVICE — one student library request handled at the desk (start: student asks for library assistance; end: request is handled or referred and the student is informed) — from statement: Perform administrative duties, such as school library assistance, hall and cafeteria monitoring, and bus loading and unloading.
+[6670b] DISCRETE — one supportive technology configuration (start: student's access need and technology identified; end: settings or software configured and available for student use) — from statement: Provide students with disabilities with assistive devices, supportive technology, and assistance accessing facilities such as restrooms.
+
+=== PAIRS ===
+PAIR 6642c / 6646b
+[6642c] DISCRETE — one set of tests graded and returned (start: student work collected; end: marks recorded and papers returned) — from statement: Prepare, administer, and grade tests and assignments to evaluate students' progress.
+[6646b] DISCRETE — one batch of assignments graded (start: work collected; end: marks recorded and returned) — from statement: Assign and grade class work and homework.
+Original flag reasoning: Both are one batch of collected student work graded, with marks recorded and papers returned.
+
+PAIR 6649a / 6653a
+[6649a] DISCRETE — one lesson plan (start: unit scheduled; end: plan complete) — from statement: Plan and conduct activities for a balanced program of instruction, demonstration, and work time that provides students with opportunities to observe, question, and investigate.
+[6653a] DISCRETE — one set of lesson plans for a class (start: upcoming unit or week; end: plans complete and filed) — from statement: Prepare for assigned classes, and show written evidence of preparation upon request of immediate supervisors.
+Original flag reasoning: Both are the writing of lesson plans for upcoming instruction, one lesson versus a set, with the same inputs and output.

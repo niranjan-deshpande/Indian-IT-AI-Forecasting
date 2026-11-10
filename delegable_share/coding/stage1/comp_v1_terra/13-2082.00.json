@@ -1,0 +1,494 @@
+[
+ {
+  "task_id": "7358",
+  "split_reasoning": "Tax computations and form entries are made both during client appointments and later while preparing returns in the office.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute tax owed or overpaid and enter the figures on tax forms while the client waits.",
+    "time_share": 0.4,
+    "type_reasoning": "The calculations and entries are made during a live client appointment.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The relevant unit is the set of calculations and entries for one client's return, rather than each individual figure.",
+    "work_item": "One return's tax calculations and form entries made during an appointment",
+    "start": "Required figures are available during the client appointment",
+    "end": "Tax owed or overpaid is computed and entered on the forms during the appointment",
+    "checked_by": "Client and return reviewer",
+    "overlap_reasoning": "Preparing a return includes these computations, and applying tax benefits can affect them, but those tasks also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7360"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compute tax owed or overpaid and enter the figures on tax forms outside a client appointment.",
+    "time_share": 0.6,
+    "type_reasoning": "The completed calculations and entries are produced without a client waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The set of calculations and entries for one return is reviewed as part of that return.",
+    "work_item": "One return's tax calculations and form entries completed in the office",
+    "start": "Required return figures are available for calculation",
+    "end": "Tax owed or overpaid is computed and entered on the forms",
+    "checked_by": "Return reviewer and client",
+    "overlap_reasoning": "Return preparation includes these computations, and applying tax benefits can affect them, but both also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7360"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates and vary by practice."
+ },
+ {
+  "task_id": "7359",
+  "split_reasoning": "Returns are prepared both during appointments while clients wait and separately from client records in the office.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or assist with a client's tax return during an appointment.",
+    "time_share": 0.4,
+    "type_reasoning": "The preparation takes place while the client is present and waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The return is the document assembled and presented to the client as a whole.",
+    "work_item": "One tax return prepared or assisted with during a client appointment",
+    "start": "Client and return information are available at the appointment",
+    "end": "Return preparation during the appointment is completed and the result presented to the client",
+    "checked_by": "Client and return reviewer",
+    "overlap_reasoning": "Calculations, tax-benefit selection, record review, and research can form parts of return preparation, but each statement also has its own scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7360",
+     "7361",
+     "7362",
+     "7364",
+     "7366"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare or assist with an individual or small-business tax return outside a client appointment.",
+    "time_share": 0.6,
+    "type_reasoning": "The return is assembled from records without the client waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One return is the document handed to a reviewer or client, not each form entry.",
+    "work_item": "One individual or small-business tax return prepared or assisted with in the office",
+    "start": "Client's return information is received for preparation",
+    "end": "Prepared return is ready for review or delivery to the client",
+    "checked_by": "Return reviewer and client",
+    "overlap_reasoning": "Calculations, tax-benefit selection, record review, and research can form parts of preparation, but each statement also has its own scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7360",
+     "7361",
+     "7362",
+     "7364",
+     "7366"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the practice prepares returns mainly at appointments or from documents submitted for later work."
+ },
+ {
+  "task_id": "7360",
+  "split_reasoning": "Selecting and applying adjustments, deductions, and credits can be done both during a client appointment and later during office preparation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and apply appropriate adjustments, deductions, and credits while preparing a return with the client present.",
+    "time_share": 0.4,
+    "type_reasoning": "The tax-benefit work is performed during a live client appointment.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The applicable benefits selected for one return form a reviewable part of that return.",
+    "work_item": "One return's tax benefits selected and applied during an appointment",
+    "start": "Client's relevant tax information is available during the appointment",
+    "end": "Applicable adjustments, deductions, and credits are applied during the appointment",
+    "checked_by": "Client and return reviewer",
+    "overlap_reasoning": "Tax-benefit selection is part of return preparation and affects tax computations, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7359"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Identify and apply appropriate adjustments, deductions, and credits while preparing a return in the office.",
+    "time_share": 0.6,
+    "type_reasoning": "The selected tax benefits are applied without a client waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The applicable benefits selected for one return are reviewed together as part of that return.",
+    "work_item": "One return's tax benefits selected and applied in the office",
+    "start": "Client's relevant tax information is available for review",
+    "end": "Applicable adjustments, deductions, and credits are applied to the return",
+    "checked_by": "Return reviewer and client",
+    "overlap_reasoning": "Tax-benefit selection is part of return preparation and affects tax computations, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7358",
+     "7359"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; benefit selection may require follow-up with the client."
+ },
+ {
+  "task_id": "7361",
+  "split_reasoning": "Interviewing clients for additional tax information is one live information-gathering activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a client to obtain additional information about taxable income and deductible expenses and allowances.",
+    "time_share": 1.0,
+    "type_reasoning": "The information is obtained through a live client interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One interview or follow-up contact yields the additional information needed for the client's return.",
+    "work_item": "One client interview for additional tax information",
+    "start": "Client is contacted or attends an appointment for questions about the return",
+    "end": "Relevant questions are asked and the client's answers obtained during the contact",
+    "checked_by": "Tax preparer and return reviewer",
+    "overlap_reasoning": "The interview supplies information for return preparation and can involve discussing records, but it is not the whole preparation or record-review task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7362"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7362",
+  "split_reasoning": "Financial records are reviewed both with clients during appointments and separately when documents are submitted for office preparation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a client's financial records during an appointment to determine which tax forms are needed.",
+    "time_share": 0.4,
+    "type_reasoning": "The review is performed while the client is present and waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The records for one client's return are reviewed together to identify the forms needed.",
+    "work_item": "One client's records reviewed for required tax forms during an appointment",
+    "start": "Client presents or discusses financial records during the appointment",
+    "end": "Needed forms are identified during the appointment",
+    "checked_by": "Tax preparer and client",
+    "overlap_reasoning": "Record review supports return preparation and may occur alongside the client interview, but it has a distinct purpose and output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "7361"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review a client's financial records in the office to determine which tax forms are needed.",
+    "time_share": 0.6,
+    "type_reasoning": "The records are reviewed without the client waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The record set for one client's return is reviewed as a whole to identify the forms needed.",
+    "work_item": "One client's records reviewed for required tax forms in the office",
+    "start": "Client's financial records are received for review",
+    "end": "Needed forms are identified for return preparation",
+    "checked_by": "Tax preparer and return reviewer",
+    "overlap_reasoning": "Record review supports return preparation, but preparation also includes completing and checking the return.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how the practice collects and reviews client documents."
+ },
+ {
+  "task_id": "7363",
+  "split_reasoning": "Providing information and advice for correct form completion is one advisory activity, but it can be delivered live or in response to written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give a taxpayer information and advice on completing tax forms during a live contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The advice is delivered while the taxpayer is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact addresses the taxpayer's form-completion questions.",
+    "work_item": "One live response advising a taxpayer on form completion",
+    "start": "Taxpayer asks for help completing a tax form",
+    "end": "Relevant information and advice are given during the contact",
+    "checked_by": "Taxpayer",
+    "overlap_reasoning": "General tax questions and explanations of tax law can include form-completion advice, though each also covers other subjects.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20363",
+     "20364"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Give a taxpayer written information and advice on completing tax forms.",
+    "time_share": 0.3,
+    "type_reasoning": "A written response is produced for a taxpayer who is not waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One response to a taxpayer's request is sent and relied on as a whole.",
+    "work_item": "One written response advising a taxpayer on form completion",
+    "start": "Written request for form-completion help is received",
+    "end": "Information and advice are sent to the taxpayer",
+    "checked_by": "Taxpayer",
+    "overlap_reasoning": "General tax questions and explanations of tax law can include form-completion advice, though each also covers other subjects.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20363",
+     "20364"
+    ]
+   }
+  ],
+  "notes": "The balance between live and written advice varies by practice."
+ },
+ {
+  "task_id": "7364",
+  "split_reasoning": "Consulting tax-law references is one research activity aimed at determining how to prepare an atypical return.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research tax-law references to determine preparation procedures for an atypical return.",
+    "time_share": 1.0,
+    "type_reasoning": "The research produces a determination or guidance used in preparing a particular return.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The research for one atypical return or issue is the unit relied on by the preparer and reviewer.",
+    "work_item": "One atypical-return preparation issue researched",
+    "start": "An atypical return or preparation issue requiring guidance is identified",
+    "end": "Applicable preparation procedure is determined and available for use on the return",
+    "checked_by": "Tax preparer and return reviewer",
+    "overlap_reasoning": "The research can support preparation of a return or an explanation of tax law, but those tasks cover more than this research.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359",
+     "20364"
+    ]
+   }
+  ],
+  "notes": "Some research may occur during a client appointment, but atypical issues are treated here as primarily office work."
+ },
+ {
+  "task_id": "7365",
+  "split_reasoning": "Preparation fees can be calculated and communicated during a client appointment or later when office preparation is complete.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate a return preparation fee while the client is present or on the line.",
+    "time_share": 0.5,
+    "type_reasoning": "The fee calculation is performed during a live client contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The calculated fee for one return is the amount communicated to the client.",
+    "work_item": "One preparation fee calculated during a client contact",
+    "start": "Return complexity and processing time are available during the contact",
+    "end": "Fee is calculated and communicated to the client",
+    "checked_by": "Client and practice staff",
+    "overlap_reasoning": "No other listed statement describes calculating preparation fees.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Calculate a return preparation fee outside a client appointment.",
+    "time_share": 0.5,
+    "type_reasoning": "The fee is calculated in the office without the client waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The calculated fee for one return is used for the client's charge.",
+    "work_item": "One preparation fee calculated in the office",
+    "start": "Return complexity and processing time are available for fee calculation",
+    "end": "Fee is calculated and recorded for billing or communication",
+    "checked_by": "Billing staff and client",
+    "overlap_reasoning": "No other listed statement describes calculating preparation fees.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Fee timing varies by practice; shares are estimates."
+ },
+ {
+  "task_id": "7366",
+  "split_reasoning": "Checking another preparer's form inputs and totals is one review activity; the checks are alternative aspects of the same review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check forms prepared by another person for data-entry, arithmetic, and procedural errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces checked forms and identified corrections for another person to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The forms for one return are reviewed and returned or cleared together.",
+    "work_item": "One return's forms checked for input, arithmetic, and procedural errors",
+    "start": "Forms prepared by another person are submitted for checking",
+    "end": "Errors are identified and communicated or the forms are cleared",
+    "checked_by": "Original preparer and review supervisor",
+    "overlap_reasoning": "Return preparation may include review, but this statement specifically covers checking forms prepared by others.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7359"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20363",
+  "split_reasoning": "Answering questions and providing future tax planning are distinct activities; questions can be answered live or in writing, while planning can be delivered in a live consultation or as an office-prepared plan.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a client's tax question during a live contact.",
+    "time_share": 0.35,
+    "type_reasoning": "The client receives the answer while present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One client question or related set of questions is addressed within the contact.",
+    "work_item": "One client's tax question answered during a live contact",
+    "start": "Client asks a tax question",
+    "end": "Answer is provided or the next step is explained during the contact",
+    "checked_by": "Client",
+    "overlap_reasoning": "Some questions concern form completion or tax law, but the other statements also cover advice and explanations beyond answering a particular question.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "20364"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a client's written tax question.",
+    "time_share": 0.2,
+    "type_reasoning": "A written answer is sent without the client waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One written response to a client's question is sent as a whole.",
+    "work_item": "One written answer to a client's tax question",
+    "start": "Client's written question is received",
+    "end": "Answer is sent to the client",
+    "checked_by": "Client",
+    "overlap_reasoning": "Some questions concern form completion or tax law, but the other statements also cover advice and explanations beyond answering a particular question.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "20364"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Provide future tax-planning advice during a client consultation.",
+    "time_share": 0.2,
+    "type_reasoning": "Planning advice is provided while the client is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One consultation conveys planning recommendations for the client's circumstances.",
+    "work_item": "One live tax-planning consultation",
+    "start": "Client's future tax-planning needs are raised during a consultation",
+    "end": "Planning advice and relevant next steps are discussed with the client",
+    "checked_by": "Client",
+    "overlap_reasoning": "Planning advice can include explaining tax law, but law explanations also cover matters other than future planning.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20364"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Develop written future tax-planning recommendations for a client.",
+    "time_share": 0.25,
+    "type_reasoning": "The office work produces recommendations the client can use outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One set of recommendations for a client's planning situation is delivered as a whole.",
+    "work_item": "One set of written tax-planning recommendations",
+    "start": "Client's planning circumstances and objectives are available",
+    "end": "Recommendations are prepared and sent to the client",
+    "checked_by": "Client and tax practice reviewer",
+    "overlap_reasoning": "Planning recommendations may explain tax law, but law explanations also cover matters other than future planning.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20364"
+    ]
+   }
+  ],
+  "notes": "Shares and the use of written plans vary by practice and client needs."
+ },
+ {
+  "task_id": "20364",
+  "split_reasoning": "Explaining federal and state tax laws is one advisory activity, delivered both in live client conversations and in written responses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain federal or state tax law to an individual or company during a live contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The explanation is provided while the client is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One explanation addresses the law relevant to the client's question or situation during the contact.",
+    "work_item": "One live explanation of tax law to a client",
+    "start": "Client's need for an explanation is raised",
+    "end": "Relevant law is explained during the contact",
+    "checked_by": "Client",
+    "overlap_reasoning": "Form-completion advice and answers or planning advice can include explaining tax law, but those statements have additional purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "7364",
+     "20363"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Explain federal or state tax law to an individual or company in writing.",
+    "time_share": 0.3,
+    "type_reasoning": "The explanation is sent as a written deliverable outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One written explanation of the law relevant to a client's situation is sent as a whole.",
+    "work_item": "One written explanation of tax law to a client",
+    "start": "Client's need for a written explanation is received",
+    "end": "Explanation is sent to the client",
+    "checked_by": "Client and tax practice reviewer",
+    "overlap_reasoning": "Form-completion advice and answers or planning advice can include explaining tax law, but those statements have additional purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7363",
+     "7364",
+     "20363"
+    ]
+   }
+  ],
+  "notes": "The proportion of written explanations varies by practice."
+ },
+ {
+  "task_id": "21165",
+  "split_reasoning": "Appointments are scheduled both during live client contacts and from written requests handled later.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Schedule a client appointment during a call or in-person contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The appointment is arranged while the client is on the line or at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One appointment is entered and confirmed during the contact.",
+    "work_item": "One client appointment scheduled during a live contact",
+    "start": "Client requests an appointment",
+    "end": "Appointment is entered and the time confirmed to the client",
+    "checked_by": "Client and tax preparer",
+    "overlap_reasoning": "No other listed statement describes scheduling appointments.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule a client appointment from a written request.",
+    "time_share": 0.3,
+    "type_reasoning": "The request is handled without the client waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One appointment is entered and confirmed in response to the request.",
+    "work_item": "One client appointment scheduled from a written request",
+    "start": "Written appointment request is received",
+    "end": "Appointment is entered and confirmation is sent",
+    "checked_by": "Client and tax preparer",
+    "overlap_reasoning": "No other listed statement describes scheduling appointments.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary with the practice's scheduling channels."
+ }
+]

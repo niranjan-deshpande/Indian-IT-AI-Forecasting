@@ -1,0 +1,55 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/comp_v1_final/dedupe/reconcile/adjudicated_27-3091.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[9327a] LIVE_SERVICE — one meaning conflict clarified during an interpreted exchange (start: an ambiguous word, concept, practice, or behavior arises; end: the intended meaning is clarified for the exchange) — from statement: Identify and resolve conflicts related to the meanings of words, concepts, practices, or behaviors.
+[9327b] DISCRETE — one meaning conflict resolved for a written translation (start: an ambiguity or conflicting meaning is identified; end: the intended meaning and suitable rendering are determined) — from statement: Identify and resolve conflicts related to the meanings of words, concepts, practices, or behaviors.
+[9328a] LIVE_SERVICE — one interpreting assignment (a meeting, appointment, hearing or conference session) (start: assignment begins and first utterance is interpreted; end: session ends and parties are finished) — from statement: Translate messages simultaneously or consecutively into specified languages, orally or by using hand signs, maintaining message content, context, and style as much as possible.
+[9329a] DISCRETE — one translated document proofread and revised (start: translated draft ready for review; end: revised translation delivered) — from statement: Proofread, edit, and revise translated materials.
+[9330a] DISCRETE — one translation terminology-checked (start: translation or revision available; end: terms confirmed or corrected and returned) — from statement: Check translations of technical terms and terminology to ensure that they are accurate and remain consistent throughout translation revisions.
+[9331a] DISCRETE — one document translated (start: source document received; end: translation delivered to client) — from statement: Read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.
+[9333a] DISCRETE — one project glossary or termbase (start: project terminology needs identified; end: glossary delivered or loaded to the termbase) — from statement: Compile terminology and information to be used in translations, including technical terms such as those for legal or medical material.
+[9334a] DISCRETE — one school material adapted to student level (start: translated material and target level identified; end: adapted material approved by the education team) — from statement: Adapt translations to students' cognitive and grade levels, collaborating with educational team members as necessary.
+[9335a] LIVE_SERVICE — one interpreting assignment (listening component) (start: speaker begins; end: speaker finishes and session ends) — from statement: Listen to speakers' statements to determine meanings and to prepare translations, using electronic listening systems as necessary.
+[9335b] DISCRETE — one audio or video recording translated (start: recording received; end: translation delivered) — from statement: Listen to speakers' statements to determine meanings and to prepare translations, using electronic listening systems as necessary.
+[9336a] DISCRETE — one translation checked against its original or author (start: query or doubt about the original raised; end: author's answer applied or the translation confirmed) — from statement: Check original texts or confer with authors to ensure that translations retain the content, meaning, and feeling of the original material.
+[9337a] DISCRETE — one assignment background brief (start: assignment received; end: background notes compiled) — from statement: Compile information on content and context of information to be translated and on intended audience.
+[9338a] DISCRETE — one job scoped and quoted (start: client request received; end: fee and terms agreed) — from statement: Discuss translation requirements with clients and determine any fees to be charged for services provided.
+[9339a] DISCRETE — one assigned software resource set localized (start: software resources and target-locale requirements received; end: localized resources submitted for integration or review) — from statement: Adapt software and accompanying technical documents to another language and culture.
+[9339b] DISCRETE — one technical document or section localized (start: source documentation and target-locale requirements received; end: localized documentation submitted for review or publication) — from statement: Adapt software and accompanying technical documents to another language and culture.
+
+=== PAIRS ===
+PAIR 9328a / 9335a
+[9328a] LIVE_SERVICE — one interpreting assignment (a meeting, appointment, hearing or conference session) (start: assignment begins and first utterance is interpreted; end: session ends and parties are finished) — from statement: Translate messages simultaneously or consecutively into specified languages, orally or by using hand signs, maintaining message content, context, and style as much as possible.
+[9335a] LIVE_SERVICE — one interpreting assignment (listening component) (start: speaker begins; end: speaker finishes and session ends) — from statement: Listen to speakers' statements to determine meanings and to prepare translations, using electronic listening systems as necessary.
+Original flag reasoning: Both are one live interpreting session from the first utterance to the end of the session, with the same work done.
