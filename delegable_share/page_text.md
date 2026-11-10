@@ -28,7 +28,7 @@ I replace their metric with a continuous measure: the share of an occupation's w
 
 Importantly, I don't try to calibrate all my parameters from data. I use public benchmark data to estimate reliability; but I use LLMs to estiamte every other parameter (how a task breaks into units of work, how long those take, how long checking them takes, and which benchmark they resemble) using O\*NET task statements. 
 
-So far, I have results for {{bpo_n_occ}} Indian IT and BPO occupations and three pilot occupations (will edit this as more results come online overnight; my agents are still running!). Preliminary findings:
+So far, I have results for {{bpo_n_occ}} Indian IT and BPO occupations, three pilot occupations, and {{n_other}} others for comparison. Preliminary findings:
 - Across the IT and BPO occupations, delegation would save between {{bpo_S_lo}} and {{bpo_S_hi}} of work hours today, most for {{bpo_top}} and least for {{bpo_bottom}}.
 - If a firm's reviewer accepts only half of what passes the automatically graded benchmarks, that range drops to {{bpo_S5_lo}}–{{bpo_S5_hi}}.
 - A few choices, listed at the end, move these numbers a lot, so treat them as a first pass.

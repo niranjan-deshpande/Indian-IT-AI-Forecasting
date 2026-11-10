@@ -29,6 +29,7 @@ import json
 import math
 import random
 import re
+from types import SimpleNamespace
 import sys
 from pathlib import Path
 
@@ -1162,13 +1163,22 @@ def main():
     front = dict((k.strip(), v.strip()) for k, v in (l.split(":", 1) for l in fm.strip().splitlines()))
     tok = tokens(pilot)
     tok["today_long"] = "10 November 2026"
+    groups = group_of(pilot, bpo, extra)
+    if bpo:  # IT/BPO set = the BPO run plus IT/BPO occupations from later runs (bpo_extra)
+        bpo_all = SimpleNamespace(occs=list(bpo.occs), agg=dict(bpo.agg))
+        for r in extra:
+            for o in r.occs:
+                if groups[o] == "bpo":
+                    bpo_all.occs.append(o)
+                    bpo_all.agg.update({k: v for k, v in r.agg.items() if k[1] == o})
+        tok["n_other"] = str(sum(1 for r in extra for o in r.occs if groups[o] != "bpo"))
     if bpo:  # a few BPO-wide numbers for the prose
         for sc, suf in [(BASE, ""), (RHO5, "5")]:
-            vals = sorted((bpo.agg[(sc, o)]["S"], o) for o in bpo.occs)
+            vals = sorted((bpo_all.agg[(sc, o)]["S"], o) for o in bpo_all.occs)
             tok[f"bpo_S{suf}_lo"], tok[f"bpo_S{suf}_hi"] = pct(vals[0][0]), pct(vals[-1][0])
             if not suf:
                 tok["bpo_top"], tok["bpo_bottom"] = vals[-1][1], vals[0][1]
-        tok["bpo_n_occ"] = str(len(bpo.occs))
+        tok["bpo_n_occ"] = str(len(bpo_all.occs))
     unknown = sorted({k for k in re.findall(r"\{\{(\w+)\}\}", body + fm) if k != "repo" and k not in tok})
     assert not unknown, f"unknown tokens in page_text.md: {unknown}"
     sub = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: m.group(0) if m.group(1) == "repo" else tok[m.group(1)], s)  # noqa: E731
@@ -1180,15 +1190,14 @@ def main():
             "coverage": coverage_data(pilot), "horizons": horizons_data(pilot), "timing": timing_data()}
     gentables = {"summary": lambda: gt_summary(pilot), "match": lambda: gt_match(pilot), "items": lambda: gt_items(pilot)}
     runs_all = [pilot] + ([bpo] if bpo else []) + extra
-    groups = group_of(pilot, bpo, extra)
     data["groups"] = groups_data(runs_all, groups)
     data["group_timeline"] = group_timeline_data(runs_all, groups)
     data["timeline"] = timeline_data([pilot] + ([bpo] if bpo else []))
     data["trend"] = trend_data([pilot] + ([bpo] if bpo else []))
     if bpo:
-        data["bpo_headline"] = headline_data(bpo)
+        data["bpo_headline"] = headline_data(bpo_all)
         data["bpo_items"] = items_data(bpo)
-        gentables["bpo_summary"] = lambda: gt_summary(bpo)
+        gentables["bpo_summary"] = lambda: gt_summary(bpo_all)
 
     repo = f'<a href="{REPO_URL}">{REPO_URL.replace("https://", "")}</a>'
     doc = Doc({"repo": repo}, notes, figure_shells(pilot, bpo, comp), gentables, bpo is not None)
