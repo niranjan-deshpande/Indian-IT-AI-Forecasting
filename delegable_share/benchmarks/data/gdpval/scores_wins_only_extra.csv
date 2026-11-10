@@ -1,0 +1,5 @@
+model,provider,release_date,score,score_kind,source_url,notes
+GPT-5 (high),OpenAI,2025-08-07,0.390,GDPval gold WIN-ONLY (Table 2 of paper),https://arxiv.org/html/2510.04374,not wins-or-ties; do not mix with scores.csv
+o3 (high),OpenAI,2025-04-16,0.352,GDPval gold WIN-ONLY (Table 2),https://arxiv.org/html/2510.04374,not wins-or-ties
+o4-mini (high),OpenAI,2025-04-16,0.291,GDPval gold WIN-ONLY (Table 2),https://arxiv.org/html/2510.04374,not wins-or-ties
+GPT-4o,OpenAI,2024-05-13,0.125,GDPval gold WIN-ONLY (Table 2),https://arxiv.org/html/2510.04374,not wins-or-ties

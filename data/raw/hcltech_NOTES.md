@@ -1,6 +1,6 @@
 # HCLTech (firm id `hcltech`): collection notes
 
-Output: `data/raw/hcltech.csv`, 8,006 rows, long format per `data/SCHEMA.md`. Every value comes from a primary HCLTech document. All vintages are kept: each release's 3- and 5-quarter tables give one row per quarter shown, so a quarter usually has several rows that differ in `doc_date`/`source_url`.
+Output: `data/raw/hcltech.csv`, 8,006 rows, long format per `data/README.md`. Every value comes from a primary HCLTech document. All vintages are kept: each release's 3- and 5-quarter tables give one row per quarter shown, so a quarter usually has several rows that differ in `doc_date`/`source_url`.
 
 Reproduce the file with `python3 scripts/extract/hcltech_parse.py`. It uses `scripts/extract/hcltech_tables.py`, the generic table reader. OCR runs through `scripts/extract/hcltech_ocr.swift` (macOS Vision). Local copies of the documents are in `data/sources/hcltech/`.
 

@@ -1,0 +1,289 @@
+[
+ {
+  "item_id": "sphinx-doc__sphinx-11510",
+  "reasoning": "Trace how Docutils includes are read separately from Sphinx source events, then implement and test an appropriate include-processing hook without breaking include options.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "pypi-server",
+  "reasoning": "Create and build a minimal package, configure a local simple package index, and verify installation through pip.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "astropy__astropy-13579",
+  "reasoning": "Investigate sliced WCS inversion and how dropped world coordinates are reconstructed, then fix and test coupled-axis transformations.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-11445",
+  "reasoning": "Reproduce the parsing issue and trace prolog insertion and heading recognition, then add regression tests for domain roles and ordinary headings.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8638",
+  "reasoning": "Investigate autodoc's generated references and Python-domain resolution, then prevent inappropriate links while preserving legitimate cross-references.",
+  "estimate_min": 180,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "multi-source-data-merger",
+  "reasoning": "Inspect the input schemas, implement normalization, priority merging and field-level conflict reporting, and validate the parquet and JSON outputs.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "sam-cell-seg",
+  "reasoning": "Implement MobileSAM inference and mask-to-polygon conversion, including connected-component and overlap handling, then exercise the script on the demo data.",
+  "estimate_min": 300,
+  "low_min": 150,
+  "high_min": 600
+ },
+ {
+  "item_id": "django__django-9296",
+  "reasoning": "Add the requested iterator to Paginator and test page iteration, including existing pagination edge cases.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 45
+ },
+ {
+  "item_id": "django__django-11138",
+  "reasoning": "Trace timezone conversion across three database backends, fix the source timezone handling, and add backend-appropriate regression tests.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "install-windows-3.11",
+  "reasoning": "Configure snapshot-mode QEMU, VNC, a control interface and nginx, then boot to the desktop and check remote and programmatic input.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "mteb-leaderboard",
+  "reasoning": "Find the relevant historical Scandinavian leaderboard, identify the top Mean (Task) model, and write its exact identifier.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 75
+ },
+ {
+  "item_id": "openssl-selfsigned-cert",
+  "reasoning": "Generate and inspect the key and certificate, set permissions, and write and run the small certificate-checking script.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "fix-ocaml-gc",
+  "reasoning": "Diagnose a bootstrap crash in modified garbage-collector code, repair the free-space logic, rebuild and run the basic tests.",
+  "estimate_min": 480,
+  "low_min": 180,
+  "high_min": 960
+ },
+ {
+  "item_id": "merge-diff-arc-agi-task",
+  "reasoning": "Set up and merge the bundle branches, resolve conflicts, infer the grid transformation from examples, and check its generalization. The unseen puzzle makes the inference time uncertain.",
+  "estimate_min": 150,
+  "low_min": 45,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-13344",
+  "reasoning": "Trace async and sync middleware adaptation around the first middleware, fix the coroutine handling, and test relevant middleware combinations.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "sympy__sympy-13878",
+  "reasoning": "Implement and verify CDF formulas for numerous distributions, including support boundaries and symbolic special functions, with regression tests.",
+  "estimate_min": 300,
+  "low_min": 150,
+  "high_min": 600
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-7590",
+  "reasoning": "Extend the C++ declaration parser to recognize user-defined literal suffixes and add tests for relevant literal forms.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "sympy__sympy-17630",
+  "reasoning": "Trace where matrix zero blocks become scalar zeros, correct the block multiplication behavior and test repeated multiplication.",
+  "estimate_min": 100,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "django__django-13449",
+  "reasoning": "Inspect SQLite expression compilation and move the numeric cast outside the complete window expression, with tests for decimal window functions.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 210
+ },
+ {
+  "item_id": "django__django-16950",
+  "reasoning": "Trace inline formset handling of foreign keys to non-primary fields with defaults, implement a fix and test saving parent and child together.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "configure-git-webserver",
+  "reasoning": "Create a bare repository and deployment hook, configure a web server on port 8080, and test a push and HTTP fetch.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "chess-best-move",
+  "reasoning": "Transcribe the position from the image and analyze it with a chess engine, checking whether multiple moves satisfy the requested criterion.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 75
+ },
+ {
+  "item_id": "mailman",
+  "reasoning": "Configure Postfix and Mailman integration and local delivery, then test list creation, subscription confirmation and posting with the provided evaluator.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "kv-store-grpc",
+  "reasoning": "Define and generate the protobuf interfaces, implement the in-memory RPC service, start it and verify both methods with a client.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "overfull-hbox",
+  "reasoning": "Compile and inspect the warnings, then iteratively substitute permitted synonyms and recompile until no overfull boxes remain. The document size and number of affected lines are unknown.",
+  "estimate_min": 90,
+  "low_min": 25,
+  "high_min": 240
+ },
+ {
+  "item_id": "sparql-university",
+  "reasoning": "Inspect the ontology and date representation, construct the grouped query with enrollment and EU criteria, and validate results against the graph.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "build-pov-ray",
+  "reasoning": "Locate the historical sources, adapt the old build to a modern environment as needed, install it and verify the reference render.",
+  "estimate_min": 180,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "bn-fit-modify",
+  "reasoning": "Analyze conditional dependencies to recover the six-edge DAG, fit the network and intervention, and validate the edge files and generated sample.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "django__django-11400",
+  "reasoning": "Adjust related filter ordering fallbacks and add tests covering both model and ModelAdmin ordering.",
+  "estimate_min": 75,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "django__django-14238",
+  "reasoning": "Fix the identified subclass check and add regression tests for custom subclasses of the auto field variants.",
+  "estimate_min": 40,
+  "low_min": 15,
+  "high_min": 90
+ },
+ {
+  "item_id": "write-compressor",
+  "reasoning": "Reverse-engineer the decompressor's format, implement an encoder that achieves the size limit, and verify exact round-trip output.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "django__django-14311",
+  "reasoning": "Trace autoreloader command reconstruction for module and package entry points, correct the detection and add targeted tests.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 180
+ },
+ {
+  "item_id": "raman-fitting",
+  "reasoning": "Inspect the spectral data and fit suitable peak models and baselines for G and 2D, then check and serialize the fitted parameters.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 180
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8595",
+  "reasoning": "Locate the autodoc distinction between absent and empty __all__, fix it and add a regression test.",
+  "estimate_min": 40,
+  "low_min": 15,
+  "high_min": 90
+ },
+ {
+  "item_id": "scikit-learn__scikit-learn-13124",
+  "reasoning": "Examine stratified fold allocation, fix shuffling within classes while preserving balance and reproducibility, and add tests across split configurations.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "query-optimize",
+  "reasoning": "Inspect the existing query, schema, indexes and query plan, then rewrite and benchmark it while verifying equivalent results.",
+  "estimate_min": 120,
+  "low_min": 40,
+  "high_min": 300
+ },
+ {
+  "item_id": "tune-mjcf",
+  "reasoning": "Profile the supplied model and experiment with simulation configuration changes, repeatedly checking both performance and full-state numerical agreement.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "django__django-13807",
+  "reasoning": "Quote the table names in the identified SQLite constraint checks and test fixture loading and foreign-key checking for reserved names.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "path-tracing",
+  "reasoning": "Analyze the reference image and reverse-engineer a compact procedural renderer that meets a stringent image-similarity threshold, iterating on rendering parameters.",
+  "estimate_min": 600,
+  "low_min": 240,
+  "high_min": 1200
+ },
+ {
+  "item_id": "django__django-15569",
+  "reasoning": "Add cache invalidation to the identified unregister method and update or add tests for lookup registration and removal.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "qemu-startup",
+  "reasoning": "Configure QEMU serial access over a TCP listener, boot the Alpine image and verify that telnet reaches a login prompt.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 90
+ }
+]

@@ -1,6 +1,6 @@
 # Infosys (`infosys`): collection notes
 
-Output: `data/raw/infosys.csv`, 11,934 rows in long format following SCHEMA.md. Every row carries a `source_url`. Coverage runs from Q1FY12 through Q1FY27 (Apr-2011 to Jun-2026). Some Q1FY11–Q4FY11 values also appear, taken from comparative columns in the FY12 documents.
+Output: `data/raw/infosys.csv`, 11,934 rows in long format following data/README.md. Every row carries a `source_url`. Coverage runs from Q1FY12 through Q1FY27 (Apr-2011 to Jun-2026). Some Q1FY11–Q4FY11 values also appear, taken from comparative columns in the FY12 documents.
 
 Every multi-quarter table column was kept as its own vintage row. Fact sheets show the current quarter, the prior quarter and the year-ago quarter, and the older sheets' constant-currency block shows 5–6 quarters. To get the as-first-reported value, filter to rows where `fiscal_q` equals the quarter named in `source_doc`. USD revenue is identical in every vintage, so no restatements were found. Segment tables in FY19-format sheets do contain restated history for the FY18 quarters.
 

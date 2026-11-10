@@ -1,0 +1,22 @@
+{
+  "onet_tasks": 18838,
+  "onet_occupations_with_tasks": 923,
+  "eloundou_tasks": 19265,
+  "match_task_id": 18735,
+  "match_task_id_text_identical": 18677,
+  "match_text": 3,
+  "match_none": 100,
+  "none_task_dates": {
+    "08/2026": 49,
+    "08/2023": 22,
+    "08/2024": 17,
+    "08/2025": 12
+  },
+  "none_nearest_similarity_quartiles": [
+    0.39,
+    0.44,
+    0.52
+  ],
+  "none_occupation_absent_from_eloundou": 0,
+  "eloundou_tasks_not_in_onet31": 530
+}

@@ -1,0 +1,7 @@
+model,provider,release_date,l2_score,n_items,eval_date,source_url,notes
+GPT-5-mini,OpenAI,2025-08-07,0.477,235,2025-08-07,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-5-mini/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only."
+GPT-5-nano,OpenAI,2025-08-07,0.034,235,2025-08-07,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-5-nano/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only."
+Claude-4-Sonnet,Anthropic,2025-05-22,0.404,235,2025-08-07,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only."
+gpt-oss-120b,OpenAI,2025-08-05,0.115,235,2025-08-07,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-oss-120b/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only."
+gpt-oss-20b,OpenAI,2025-08-05,0.026,235,2025-08-07,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-oss-20b/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only."
+A3-Qwen3.5-9B,McGill-NLP (base Qwen),2026-03-02,0.106,341,2026-04-06,https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/A3-Qwen3.5-9B/workarena-l2.json,"No L3 entry on leaderboard, so not pooled; L2 only. A3 comment says 341 tasks (full benchmark), inconsistent with 235-task agent curriculum."

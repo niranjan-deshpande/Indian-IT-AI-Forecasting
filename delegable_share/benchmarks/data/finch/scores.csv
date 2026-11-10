@@ -1,0 +1,9 @@
+model,provider,release_date,score,score_kind,n_items,eval_date,source_url,notes
+GPT-5.1 Pro (ChatGPT product agent),OpenAI,2025-11-19,0.384,pass rate by expert human evaluation,172,2025-12,https://arxiv.org/abs/2512.13168,Table 5; automated-judge pass rate for same system is 0.419 (72/172). Product agent with web browsing; release date of GPT-5.1 Pro from memory of OpenAI rollout (GPT-5.1 itself 2025-11-12) - verify
+Claude Sonnet 4.5 (Claude product agent),Anthropic,2025-09-29,0.250,pass rate by expert human evaluation,172,2025-12,https://arxiv.org/abs/2512.13168,Table 5; automated-judge rate 0.291 (50/172)
+Claude Opus 4.5 (Claude product agent),Anthropic,2025-11-24,0.430,pass rate by automated GPT-5-mini LLM judge (no human-eval number),172,2025-12,https://arxiv.org/abs/2512.13168,Read from bar label in Fig. 2; judge overestimates humans by a few points
+GPT-5.1 (API single-call code-gen agent),OpenAI,2025-11-12,0.320,pass rate by automated LLM judge,172,2025-12,https://arxiv.org/abs/2512.13168,Fig. 2 / text; SpreadsheetBench-style single-call API harness (weaker scaffold than product agents)
+Claude Sonnet 4.5 (API single-call),Anthropic,2025-09-29,0.203,pass rate by automated LLM judge,172,2025-12,https://arxiv.org/abs/2512.13168,Fig. 2 bar label; API harness. Same model also in product row (best scaffold = product 0.250 human / 0.291 auto)
+Gemini 3 Pro Preview (API single-call),Google,2025-11-18,0.273,pass rate by automated LLM judge,172,2025-12,https://arxiv.org/abs/2512.13168,Fig. 2 bar label; API harness
+Grok 4 (API single-call),xAI,2025-07-09,0.238,pass rate by automated LLM judge,172,2025-12,https://arxiv.org/abs/2512.13168,Fig. 2 bar label; API harness; text-only PDF extraction
+Qwen3-Max (API single-call),Alibaba,2025-09-24,0.145,pass rate by automated LLM judge,172,2025-12,https://arxiv.org/abs/2512.13168,Fig. 2 bar label; API harness; no multimodal input. Qwen3-Max-Preview was 2025-09-05

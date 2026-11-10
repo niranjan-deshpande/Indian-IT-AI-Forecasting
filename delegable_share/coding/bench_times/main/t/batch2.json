@@ -1,0 +1,674 @@
+[
+ {
+  "item_id": "tau_voice:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+  "reasoning": "Verify the account and guide the caller through several device and roaming settings, then test MMS.",
+  "estimate_min": 14,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]",
+  "reasoning": "Account checks, a data refuel and extensive device troubleshooting are needed, including an APN reset and two permissions.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "gdpval:0112fc9b-c3b2-4084-8993-5a4abb1f54f1",
+  "reasoning": "The visible case requires clinical assessment and documentation, but the requested deliverable is truncated, making the scope uncertain.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "spreadsheetbench_2:Financial_Model:13_04",
+  "reasoning": "Inspect the model assumptions and neighboring formulas, complete five sets of calculations across sheets, and validate references.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "swt_bench:pydata__xarray-6461",
+  "reasoning": "Translate the clear scalar reproduction into an appropriate regression test and verify it fails for the reported reason.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 70
+ },
+ {
+  "item_id": "tau_retail_airline:retail:67",
+  "reasoning": "Authenticate with name and ZIP, find the latest order and report its total; no changes are needed.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-074",
+  "reasoning": "Explore stock transaction workflows to discover the unspecified bug, trace it to code, fix it and check nearby behavior.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "terminal_bench_2:sqlite-with-gcov",
+  "reasoning": "Unpack the supplied source, configure and build with coverage flags, expose the executable and verify instrumentation.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 75
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+  "reasoning": "Check account roaming and guide the customer through several connectivity settings, then assess the resulting speed.",
+  "estimate_min": 17,
+  "low_min": 10,
+  "high_min": 30
+ },
+ {
+  "item_id": "finch:45",
+  "reasoning": "Locate and reconcile departmental plan and actual headcount, populate the summary, and synthesize three sections of commentary.",
+  "estimate_min": 100,
+  "low_min": 50,
+  "high_min": 200
+ },
+ {
+  "item_id": "crmarena_pro:b2c:684",
+  "reasoning": "Find the relevant knowledge article and summarize its stated purpose.",
+  "estimate_min": 5,
+  "low_min": 2,
+  "high_min": 12
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-029",
+  "reasoning": "Reproduce an unspecified custom-field editing issue through exploration, identify the faulty implementation and regression-test the fix.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 420
+ },
+ {
+  "item_id": "terminal_bench_2:regex-log",
+  "reasoning": "Construct a line-aware regex covering valid dates and IPv4 boundaries, and test last-date selection and misleading lookalikes.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "gdpval:a1963a68-1bea-4bb1-b7e0-145c92a57449",
+  "reasoning": "Research the Korean market and regulations as of the specified date, develop an actionable strategy, and produce a sourced executive presentation.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 900
+ },
+ {
+  "item_id": "sopbench:library:borrow_book:14",
+  "reasoning": "Authenticate and perform the required eligibility checks in order, then explain the failed condition without lending the book.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "swe_bench_pro:instance_internetarchive__openlibrary-e390c1212055dd84a262a798e53487e771d3fb64-v8717e18970bcdc4e0d2cea3b1527752b21e74866",
+  "reasoning": "Trace multi-edition availability aggregation, correct prioritization and metadata, and test several edition combinations.",
+  "estimate_min": 200,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "terminal_bench_2:polyglot-rust-c",
+  "reasoning": "Develop syntax accepted by both Rust and C++, implement argument parsing and Fibonacci, and test both compilers.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "itbench_sre:Scenario-35",
+  "reasoning": "Trace memory pressure and downstream latency through the snapshot and identify the responsible Kubernetes entities.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "workarena_l1:order-apple-mac-book-pro15",
+  "reasoning": "Find the catalog item, set quantity six, submit and verify the order.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "workarena_l1:sort-service-catalog-item-list",
+  "reasoning": "Navigate to the list and apply and verify the three descending sort keys.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "tau_voice:retail:107",
+  "reasoning": "Authenticate, inspect two orders and suitable replacement options, confirm details and process both exchanges.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "gdpval:a0ef404e-82a6-4507-bff1-633d7c8e0004",
+  "reasoning": "Draft and format a complete generic rental-agreement guide with rationale, practical tips and troubleshooting.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 210
+ },
+ {
+  "item_id": "swt_bench:pydata__xarray-7229",
+  "reasoning": "Create a small self-contained array with distinct variable and coordinate attributes, then verify the regression test fails.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "finch:70",
+  "reasoning": "Identify each ENA support department and insert the requested blank line while preserving workbook structure and formulas.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 75
+ },
+ {
+  "item_id": "workarena_l1:multi-chart-value-retrieval",
+  "reasoning": "Open the dashboard and read the requested chart percentage.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "tau_voice:retail:0",
+  "reasoning": "Verify identity, find compatible replacements, confirm both exchange details and submit the single order change.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 18
+ },
+ {
+  "item_id": "finch:88",
+  "reasoning": "Research and reconcile ten years of federal fiscal data, build the requested linked analysis sheets, and check the calculations; the final subtask is truncated.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 420
+ },
+ {
+  "item_id": "tau_retail_airline:retail:55",
+  "reasoning": "Find and review all eligible orders, list delivered items, obtain confirmations and execute four separate actions.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "tau_voice:telecom:[mms_issue]bad_wifi_calling|data_mode_off|data_usage_exceeded[PERSONA:Easy]",
+  "reasoning": "Check the line and data balance, refuel data, and walk the caller through two device settings and a test.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 18
+ },
+ {
+  "item_id": "terminal_bench_2:hf-model-inference",
+  "reasoning": "Download and load the model, implement the Flask endpoint and validation, start the service and test its responses.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]",
+  "reasoning": "Check roaming entitlement and guide the customer through VPN and data-saver changes, then verify performance.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 22
+ },
+ {
+  "item_id": "starshell:erpnext:erpnext.create_project_with_name_company_priority_note:1",
+  "reasoning": "Create the project with the supplied fields and verify the saved record.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 7
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]bad_network_preference|break_app_sms_permission|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]",
+  "reasoning": "Check account and roaming status, replenish data and guide the customer through four device settings.",
+  "estimate_min": 18,
+  "low_min": 10,
+  "high_min": 32
+ },
+ {
+  "item_id": "spreadsheetbench_2:Template:06_08",
+  "reasoning": "Inspect the workbook to determine missing calculations, complete its model and validate references; the task does not specify its size.",
+  "estimate_min": 90,
+  "low_min": 30,
+  "high_min": 240
+ },
+ {
+  "item_id": "terminal_bench_2:torch-tensor-parallelism",
+  "reasoning": "Implement distributed sharding and gradient-correct collective operations for both linear layers, with multi-rank tests.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 480
+ },
+ {
+  "item_id": "sopbench:library:borrow_book:22",
+  "reasoning": "Log in and check availability, restrictions, membership and borrowing limit before explaining the refusal.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "workarena_pp:l3/sophisticated_memory/NAV_FILTER/001",
+  "reasoning": "Find the ticket and protocol, apply the two incident filters, verify the result and close the ticket.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "spreadsheetbench_2:Financial_Model:10_03",
+  "reasoning": "Inspect assumptions and existing formulas, fill several valuation and financial statement calculations, and check the balance sheet.",
+  "estimate_min": 55,
+  "low_min": 30,
+  "high_min": 110
+ },
+ {
+  "item_id": "spreadsheetbench_2:Visualization:Task_1431124",
+  "reasoning": "Build a validated selector, dynamic quarterly and cumulative summaries, and two formatted linked charts, then test changes in selection.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 210
+ },
+ {
+  "item_id": "finch:120",
+  "reasoning": "Inspect the workbook for formula errors, repair them in context and recalculate; scope is uncertain without the file.",
+  "estimate_min": 75,
+  "low_min": 25,
+  "high_min": 210
+ },
+ {
+  "item_id": "sopbench:online_market:add_review:50",
+  "reasoning": "Authenticate and check review limits, purchase history, uniqueness and credit status, then explain the failed condition.",
+  "estimate_min": 7,
+  "low_min": 4,
+  "high_min": 14
+ },
+ {
+  "item_id": "sopbench:hotel:place_room_service_order:6",
+  "reasoning": "Check the guest's stay, calculate the order fee and assess loyalty-point sufficiency before declining if required.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "tau_banking:task_059",
+  "reasoning": "Verify the customer, compare card and savings terms and net returns, then support the application and account opening.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "tau_voice:telecom:[service_issue]airplane_mode_on|break_apn_settings|contract_end_suspension|lock_sim_card_pin|unseat_sim_card[PERSONA:Easy]",
+  "reasoning": "Verify the caller and inspect the line and support procedure before escalating the unresolved service issue.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 16
+ },
+ {
+  "item_id": "crmarena_pro:b2c:114",
+  "reasoning": "Query the product's cases across six quarters, aggregate by month and identify the peak.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "swt_bench:django__django-11999",
+  "reasoning": "Add a model and regression assertion for a custom display method, then run the relevant Django tests.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "swe_bench_pro:instance_internetarchive__openlibrary-5c6c22f3d2edf2f1b10f5dc335e32cb6a5f40341-v76304ecdb3a5954fcf13feb710e8c40fcf24b73c",
+  "reasoning": "Trace the IA import and normalize publisher, place and ISBN inputs while covering string and list variants with tests.",
+  "estimate_min": 150,
+  "low_min": 70,
+  "high_min": 300
+ },
+ {
+  "item_id": "tau_voice:retail:84",
+  "reasoning": "Authenticate, compare the tablets, accommodate the changed selection and refund method, and confirm the return.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 15
+ },
+ {
+  "item_id": "spreadsheetbench_2:Template:15_04",
+  "reasoning": "Inspect the unspecified model, fill missing calculations and check consistency; workbook size and complexity are unknown.",
+  "estimate_min": 90,
+  "low_min": 30,
+  "high_min": 240
+ },
+ {
+  "item_id": "workarena_l1:order-standard-laptop",
+  "reasoning": "Find the laptop, enter the requested software and options, submit and verify.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "terminal_bench_2:model-extraction-relu-logits",
+  "reasoning": "Design and implement a query-based method to recover ReLU hyperplane directions, then validate it against the available oracle.",
+  "estimate_min": 600,
+  "low_min": 240,
+  "high_min": 1200
+ },
+ {
+  "item_id": "tau_voice:retail:99",
+  "reasoning": "Inspect several orders and replacement options, resolve the cancellation request under policy, and confirm two separate exchanges.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "tau_banking:task_079",
+  "reasoning": "Authenticate, review stolen-card procedures and transactions across three accounts, and perform the multiple card-state changes and follow-up checks.",
+  "estimate_min": 40,
+  "low_min": 25,
+  "high_min": 70
+ },
+ {
+  "item_id": "osworld_verified:236833a3-5704-47fc-888c-4f298f09f799",
+  "reasoning": "Find the dated paper list and transcribe the remaining metadata into the existing document using its established format.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "workarena_pp:l3/information_retrieval/WARRANTY_CHECK/003",
+  "reasoning": "Find and follow the warranty protocol, locate the employee's laptop and report the expiration date before closing the ticket.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "swt_bench:django__django-15127",
+  "reasoning": "Find the messages tests, exercise overridden message tags and assert that the level tag updates correctly.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "finch:40",
+  "reasoning": "Audit and repair formula errors across an unspecified workbook, checking recalculated results and neighboring formulas.",
+  "estimate_min": 75,
+  "low_min": 25,
+  "high_min": 210
+ },
+ {
+  "item_id": "finch:121",
+  "reasoning": "Audit the specified Deal Sheet for broken or incorrect formulas and verify the corrections.",
+  "estimate_min": 55,
+  "low_min": 20,
+  "high_min": 150
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1097",
+  "reasoning": "Query recently closed cases and associated locations, calculate closure times by state and identify the fastest.",
+  "estimate_min": 15,
+  "low_min": 7,
+  "high_min": 30
+ },
+ {
+  "item_id": "workarena_l1:multi-chart-min-max-retrieval",
+  "reasoning": "Open the dashboard and read the maximum chart label and count.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "itbench_sre:Scenario-29",
+  "reasoning": "Investigate ad and frontend errors in logs, traces and Kubernetes configuration to isolate the responsible entities.",
+  "estimate_min": 50,
+  "low_min": 20,
+  "high_min": 110
+ },
+ {
+  "item_id": "itbench_sre:Scenario-105",
+  "reasoning": "Without listed alerts, survey cluster health and telemetry before tracing the incident to its precise root-cause entities.",
+  "estimate_min": 80,
+  "low_min": 35,
+  "high_min": 180
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.create-incident:243",
+  "reasoning": "Create the incident with the supplied caller, description and channel, leaving the other specified fields empty.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "tau_banking:task_001",
+  "reasoning": "Compare the relevant card policies against the no-fee preference and guide the customer through the suitable application.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 22
+ },
+ {
+  "item_id": "workarena_l1:sort-user-list",
+  "reasoning": "Navigate to the user list, apply two descending sort keys and verify the ordering.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 7
+ },
+ {
+  "item_id": "finch:123",
+  "reasoning": "Locate the relevant power and gas prices, interpret the equal-scale long-short position, and calculate and explain the nominal return.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "tau_voice:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]",
+  "reasoning": "Check account and roaming, add data, and guide the caller through four device settings before checking speed.",
+  "estimate_min": 18,
+  "low_min": 10,
+  "high_min": 32
+ },
+ {
+  "item_id": "terminal_bench_1:pytorch-model-cli.hard",
+  "reasoning": "Inspect available model and data, export or prepare weights, implement a binary inference CLI and validate its prediction output.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "finch:48",
+  "reasoning": "Review income-statement entries against supporting data and accounting relationships, then correct and check discrepancies.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 150
+ },
+ {
+  "item_id": "gdpval:e996036e-8287-4e7f-8d0a-90a57cb53c45",
+  "reasoning": "Build and check three quarterly commercial-term scenarios using the reference projections, and present a leadership-ready recommendation.",
+  "estimate_min": 180,
+  "low_min": 90,
+  "high_min": 300
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-ipad-pro:671",
+  "reasoning": "Select the iPad configuration and quantity, submit the catalog order and verify it.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "crmarena_pro:b2c:369",
+  "reasoning": "Query product cases in the specified quarter, aggregate by issue and return the leading issue ID.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "eva_bench:medical_hr:6.1",
+  "reasoning": "Authenticate, check leave eligibility, record the FMLA case and arrange the return-to-work check-in with confirmations.",
+  "estimate_min": 15,
+  "low_min": 9,
+  "high_min": 25
+ },
+ {
+  "item_id": "itbench_sre:Scenario-4",
+  "reasoning": "Trace the propagated errors back from the frontend and checkout to the failing product-catalog dependency and its underlying entity.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "swe_bench_pro:instance_qutebrowser__qutebrowser-0d2afd58f3d0e34af21cee7d8a3fc9d855594e9f-vnan",
+  "reasoning": "Implement a safe QObject representation helper, update logging sites and test named, unnamed and non-QObject inputs.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-apple-watch:129",
+  "reasoning": "Find the catalog item, set quantity seven, place and verify the order.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-143",
+  "reasoning": "Explore the subscriber profile editor to find the unspecified defect, fix its cause and test surrounding functionality.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "swe_bench_pro:instance_future-architect__vuls-457a3a9627fb9a0800d0aecf1d4713fb634a9011",
+  "reasoning": "Update the Windows KB and revision mappings, check source values and run targeted scanner tests.",
+  "estimate_min": 100,
+  "low_min": 50,
+  "high_min": 210
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Check account roaming and guide the customer through multiple settings, an APN reset and SIM reseating, followed by an MMS test.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "tau_banking:task_063",
+  "reasoning": "Review multiple card and savings policies, compare returns and constraints, verify identity and complete the permitted application and opening.",
+  "estimate_min": 30,
+  "low_min": 18,
+  "high_min": 55
+ },
+ {
+  "item_id": "itbench_sre:Scenario-7",
+  "reasoning": "Trace failed payments to the responsible feature-flag configuration and verify the affected Kubernetes entity.",
+  "estimate_min": 40,
+  "low_min": 18,
+  "high_min": 90
+ },
+ {
+  "item_id": "tau_voice:airline:13",
+  "reasoning": "Identify the reservation, verify the destination-change restriction and explain or escalate the request as appropriate.",
+  "estimate_min": 7,
+  "low_min": 4,
+  "high_min": 13
+ },
+ {
+  "item_id": "swt_bench:pytest-dev__pytest-10051",
+  "reasoning": "Add the supplied caplog consistency reproduction to the existing logging tests and verify the failure.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-116",
+  "reasoning": "Explore contact editing to discover the defect, investigate the code and verify a targeted fix and related behavior.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.single-chart-value-retrieval:385",
+  "reasoning": "Open the hardware report and read the Defective percentage.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "crmarena_pro:b2b:1965",
+  "reasoning": "Find the contact's relevant prior transaction, disambiguate the design software and return its product ID.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "gdpval:7ed932dd-244f-4d61-bf02-1bc3bab1af14",
+  "reasoning": "Join stock, sales rates, shipments and pallet conversions into a dated inventory model, flag timing issues and validate recommended shipments.",
+  "estimate_min": 150,
+  "low_min": 75,
+  "high_min": 270
+ },
+ {
+  "item_id": "terminal_bench_2:reshard-c4-data",
+  "reasoning": "Design a reversible directory and file-splitting scheme, implement both scripts and test exact reconstruction and all size limits.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 480
+ },
+ {
+  "item_id": "workarena_l1:filter-change-request-list",
+  "reasoning": "Navigate to change requests and apply the two empty-field conditions with OR, then check the filter.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "swt_bench:sympy__sympy-15809",
+  "reasoning": "Add assertions for the specified zero-argument Min and Max identities and run the relevant tests.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "terminal_bench_1:path-tracing-reverse",
+  "reasoning": "Reverse engineer the opaque binary, reproduce its path-tracing behavior in C and compare outputs; complexity is highly uncertain.",
+  "estimate_min": 720,
+  "low_min": 300,
+  "high_min": 1800
+ },
+ {
+  "item_id": "sopbench:bank:set_safety_box:4",
+  "reasoning": "Check the username, authentication and balance eligibility, then decline with the applicable reason without changing the box.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "tau_banking:task_016",
+  "reasoning": "Verify the customer, locate referral eligibility rules and explain the missing bonus and relevant next step.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 22
+ },
+ {
+  "item_id": "tau_voice:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_storage_permission[PERSONA:None]",
+  "reasoning": "Check the account and guide the caller through connectivity, APN and permission changes, then test MMS.",
+  "estimate_min": 15,
+  "low_min": 9,
+  "high_min": 27
+ },
+ {
+  "item_id": "eva_bench:itsm:16",
+  "reasoning": "Verify the employee, check the license and cost center, submit the request and provide confirmation.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 15
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_network_preference|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Check usage and account roaming, refuel data, guide several device changes and verify connectivity.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ }
+]

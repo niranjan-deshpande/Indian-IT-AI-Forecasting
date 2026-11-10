@@ -1,0 +1,17 @@
+set,onetsoc_code,occupation_title,in_onet_31,n_tasks,n_core,n_supplemental,n_no_type,n_with_im,n_im_suppress_Y,n_rt_suppress_Y,n_ft_any_suppress_Y,task_dates,ratings_dates,ratings_sources,n_el_tasks_for_code,n_match_task_id,n_match_task_id_text_differs,n_match_text,n_match_none,n_el_tasks_dropped,n_task_type_differs_from_eloundou,notes
+pilot,15-1232.00,Computer User Support Specialists,True,16,13,3,0,16,0,0,1,08/2023,08/2023,Incumbent,16,16,0,0,0,0,2,
+pilot,43-4051.00,Customer Service Representatives,True,13,7,6,0,13,0,1,3,08/2022,08/2022,Incumbent,15,13,0,0,0,2,0,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+pilot,15-1253.00,Software Quality Assurance Analysts and Testers,True,30,27,0,3,27,0,0,0,"08/2022, 11/2020",08/2022,Occupational Expert,30,30,0,0,0,0,0,3 task(s) without ratings; 3 task(s) without Core/Supplemental type
+bpo,15-1252.00,Software Developers,True,17,11,6,0,17,0,1,1,08/2025,08/2025,Incumbent,19,17,0,0,0,2,17,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+bpo,15-1254.00,Web Developers,True,29,23,4,2,27,0,0,0,"07/2017, 11/2020",07/2017,Occupational Expert,29,29,0,0,0,0,0,2 task(s) without ratings; 2 task(s) without Core/Supplemental type
+bpo,15-1253.00,Software Quality Assurance Analysts and Testers,True,30,27,0,3,27,0,0,0,"08/2022, 11/2020",08/2022,Occupational Expert,30,30,0,0,0,0,0,3 task(s) without ratings; 3 task(s) without Core/Supplemental type
+bpo,15-1232.00,Computer User Support Specialists,True,16,13,3,0,16,0,0,1,08/2023,08/2023,Incumbent,16,16,0,0,0,0,2,
+bpo,15-1244.00,Network and Computer Systems Administrators,True,20,18,2,0,20,0,0,0,08/2026,08/2026,Occupational Expert,20,20,0,0,0,0,3,
+bpo,15-1242.00,Database Administrators,True,18,15,3,0,18,0,0,0,08/2023,08/2023,Incumbent,18,18,2,0,0,0,8,
+bpo,15-1211.00,Computer Systems Analysts,True,22,18,4,0,22,0,0,0,08/2023,08/2023,Incumbent,22,22,1,0,0,0,6,other O*NET codes under same SOC: 15-1211.01
+bpo,43-4051.00,Customer Service Representatives,True,13,7,6,0,13,0,1,3,08/2022,08/2022,Incumbent,15,13,0,0,0,2,0,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+bpo,43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks",True,28,13,15,0,28,0,0,0,07/2017,07/2017,Incumbent,30,28,0,0,0,2,0,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+bpo,43-3021.00,Billing and Posting Clerks,True,26,7,19,0,26,0,0,7,08/2026,08/2026,Incumbent,30,26,0,0,0,4,12,4 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+bpo,43-9021.00,Data Entry Keyers,True,9,5,4,0,9,0,0,1,08/2018,08/2018,Incumbent,9,9,0,0,0,0,0,
+bpo,43-9041.00,Insurance Claims and Policy Processing Clerks,True,25,15,6,4,21,0,0,0,"08/2022, 11/2020",08/2022,Incumbent,27,25,0,0,0,2,0,4 task(s) without ratings; 4 task(s) without Core/Supplemental type; 2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+bpo,29-2072.00,Medical Records Specialists,True,16,8,8,0,16,0,0,1,08/2026,08/2026,Incumbent,17,16,0,0,0,1,16,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code

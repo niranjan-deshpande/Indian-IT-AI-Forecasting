@@ -1,0 +1,310 @@
+[
+ {
+  "item_id": "torch-tensor-parallelism",
+  "reasoning": "Write two small modules that slice a master weight and bias by rank; need to get slicing dims and bias handling right, and likely test with a multi-process harness for world sizes 1,2,4 including gradients.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 70
+ },
+ {
+  "item_id": "matplotlib__matplotlib-25479",
+  "reasoning": "Find where pyplot/ScalarMappable resolves the colormap and make the registered name be used rather than cmap.name; touches cm.py and pyplot set_cmap, plus a test. Needs understanding of colormap registry.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "pytest-dev__pytest-6197",
+  "reasoning": "Regression in collection: __init__.py files collected as Package even if not matching python_files. Locate the change in pytest_collect_file in python.py, fix and add regression test.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 80
+ },
+ {
+  "item_id": "mailman",
+  "reasoning": "Configure mailman3 with postfix (LMTP, transport maps, domain, create list, subscription policy, aliases), mbox delivery, debug with eval script. Many integration pitfalls.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "pypi-server",
+  "reasoning": "Create a simple package, build it, run a local PyPI server (pypiserver) on 8080 with the package, verify pip install. Straightforward but a few setup steps.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "sympy__sympy-17630",
+  "reasoning": "BlockMatrix _blockmul yields scalar Zero instead of ZeroMatrix; need to trace in blockmatrix.py, convert zeros back to ZeroMatrix in the block structure, test.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-15103",
+  "reasoning": "Make element_id optional in json_script in both the template filter and utility; adjust function, docs and tests. Small change.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "django__django-9296",
+  "reasoning": "Add __iter__ to Paginator, with a small test and doc note. Trivial.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "django__django-15629",
+  "reasoning": "Propagate db_collation to foreign key columns in schema editor and related-field db_parameters, handle MySQL/Oracle schema paths and tests. Requires understanding of schema editor internals.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "cobol-modernization",
+  "reasoning": "Read an unseen COBOL program, understand fixed-width record layouts and logic, reimplement in Python so outputs are byte-identical; need to compile and compare across test inputs.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "multi-source-data-merger",
+  "reasoning": "Write a script reading JSON, CSV, parquet with different schemas, normalising fields and dates, merging by priority and producing a conflict report. Date formats and conflict edge cases need care.",
+  "estimate_min": 55,
+  "low_min": 30,
+  "high_min": 100
+ },
+ {
+  "item_id": "pydata__xarray-6992",
+  "reasoning": "Dataset DataVariables assumes variables minus coord names; fix __len__/iter/contains to count only variables not in coords, and check repr. Requires understanding index refactor; small code change.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "django__django-14311",
+  "reasoning": "Fix get_child_arguments in autoreload to handle -m foo.bar.baz module (use __spec__.name); tests with mock. Moderate understanding needed.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "sympy__sympy-13878",
+  "reasoning": "Implement precomputed _cdf for about a dozen distributions with correct formulas, verify each against the PDF, and add tests. Many formulas and sympy quirks.",
+  "estimate_min": 150,
+  "low_min": 90,
+  "high_min": 300
+ },
+ {
+  "item_id": "pytorch-model-cli",
+  "reasoning": "Build a C/C++ command line tool that loads weights json, decodes a PNG, runs MNIST model inference and produces a binary; need to train or convert weights and handle image decode; write prediction file.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "fix-git",
+  "reasoning": "Use git reflog to find lost commit on a detached or other branch and merge into master, resolve any conflicts. Quick for someone who knows git.",
+  "estimate_min": 12,
+  "low_min": 5,
+  "high_min": 30
+ },
+ {
+  "item_id": "django__django-15569",
+  "reasoning": "Add cache clear to _unregister_lookup and adjust one test. Tiny change.",
+  "estimate_min": 12,
+  "low_min": 5,
+  "high_min": 25
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-9658",
+  "reasoning": "Mock class bases shown with truncated name; fix in autodoc mock/ restify to use the mock's __display_name__ or module-qualified name; need to understand mock objects.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "fix-code-vulnerability",
+  "reasoning": "Review bottle.py to locate the vulnerability matching failing tests, identify CWE, fix and write report; need to run tests and map to CWE ids.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-13109",
+  "reasoning": "Switch ForeignKey.validate to use _base_manager; one line plus a test and possibly docs.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "compile-compcert",
+  "reasoning": "Install Coq/OCaml/menhir dependencies at right versions, configure for the architecture, build CompCert from source; dependency version issues and long build (wait excluded).",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "query-optimize",
+  "reasoning": "Understand the existing WordNet SQL query, rewrite it to be efficient while keeping identical output; profile in sqlite, verify equality.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "django__django-12708",
+  "reasoning": "Fix _delete_composed_index in schema editor to handle both unique and index constraints on same columns (filter by index type); tests with migrations.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "sympy__sympy-18199",
+  "reasoning": "Add handling of a % p == 0 in nthroot_mod returning 0 root; consider all_roots flag; add tests.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8638",
+  "reasoning": "Python domain resolves instance variable references with fuzzy searchmode to other same-named variables; need to restrict in find_obj/ xref resolution, with tests. Requires domain understanding.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 140
+ },
+ {
+  "item_id": "feal-differential-cryptanalysis",
+  "reasoning": "Understand the FEAL-like cipher, design a chosen-plaintext differential attack over 16-bit seed space for the last round key, implement within 30s runtime; cryptanalysis expertise required.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "overfull-hbox",
+  "reasoning": "Compile, find overfull hbox warnings, try synonym replacements in input.tex iteratively until none remain. Trial and error.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "path-tracing",
+  "reasoning": "Reverse-engineer a rendered image (likely sphere/scene shading) and write a compact C program matching with 0.99 similarity in under 2k gzipped; iterative analysis and tuning.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-13821",
+  "reasoning": "Drop SQLite below 3.9: update version check, features flags, docs and release notes, remove obsolete conditionals and tests across several files.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "write-compressor",
+  "reasoning": "Study the custom decompressor format, write a compressor (likely arithmetic or LZ style) that gets data.txt under 2500 bytes; requires reverse engineering the format and an optimal encoder.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "pytest-dev__pytest-10081",
+  "reasoning": "In unittest plugin runtest, check class-level skip as well as function-level before postponing tearDown with --pdb; use _is_skipped on the class; add test.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8595",
+  "reasoning": "Autodoc ModuleDocumenter get_object_members treats empty __all__ as falsy; change check to is not None; add test.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "psf__requests-6028",
+  "reasoning": "Proxy auth 407 on Python 3.8.12; investigate that urllib parse changes affect proxy auth credential extraction in get_auth_from_url/ proxy_headers; hard to reproduce without proxy, need to analyse and fix.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "pydata__xarray-4094",
+  "reasoning": "to_unstacked_dataset fails for single-dim variables; fix by dropping the stacked coordinate conflict using sel and drop; understand stacking implementation; test.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "bn-fit-modify",
+  "reasoning": "Run structure learning on data with constraints, save edges, fit a Bayesian network, perform do-intervention, and sample 10k points; needs choosing tools such as pgmpy and handling the intervention in continuous data.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 140
+ },
+ {
+  "item_id": "django__django-14493",
+  "reasoning": "Initialise substitutions before loop in post_process of HashedFilesMixin; small fix and test.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-7590",
+  "reasoning": "Add user defined literal parsing to the C++ domain parser: number and string literal suffixes; need to understand big cpp.py parser and write tests.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 140
+ },
+ {
+  "item_id": "openssl-selfsigned-cert",
+  "reasoning": "Run several openssl commands, set permissions, write verification file and a small python script. Routine.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "django__django-11138",
+  "reasoning": "Fix date conversion for MySQL/SQLite/Oracle to use database TIME_ZONE and skip conversion when equal; touches three backends operations and tests; careful semantics.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "distribution-search",
+  "reasoning": "Find a probability distribution with forward and backward KL both equal to 10 for vocab 150000; need mathematical design and numerical solve with parametrised family (e.g. two-level) and verification.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "tune-mjcf",
+  "reasoning": "Profile MuJoCo simulation and adjust solver options and similar settings in mjcf to achieve 60% runtime while matching state to 1e-5; iterative experimentation.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "django__django-12663",
+  "reasoning": "Subquery rhs SimpleLazyObject regression: resolve lazy object in get_prep_lookup or in output_field.get_prep_value for nested subqueries; needs tracing through query resolution; fix in Query.build_lookup / resolve_lookup_value.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "pydata__xarray-6599",
+  "reasoning": "polyval with timedelta coordinates; fix _ensure_numeric to handle timedelta64 using datetime_to_numeric with offset; modest change in computation.py plus test.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "kv-store-grpc",
+  "reasoning": "Install grpc packages, write proto, generate code, implement server and run it in background. Routine.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ }
+]

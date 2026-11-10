@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": "1283",
+    "reasoning": "The statement's two purposes, verifying that things work after a change and catching errors through routine checks, produce two different kinds of item, and Y names realistic handover units for each: a verification noted on the ticket, and a recorded check round. X's live/independent split is weak because command testing while a user waits is really part of the troubleshooting already covered by 1282/1288, and its 'one system operation tested' unit is closer to a step than to something handed over.",
+    "choice": "Y"
+  },
+  {
+    "task_id": "1287",
+    "reasoning": "Y separates the two kinds of record the statement names, per-ticket problem-and-remedy notes and the daily log of transactions and installations, and gives each a unit others actually review. X's live part, a record 'entered during a live contact', is thin: record-keeping is mostly wrap-up, and X's back-office part lumps all record types together. Y flags the possible live share in its notes.",
+    "choice": "Y"
+  },
+  {
+    "task_id": "1291",
+    "reasoning": "Referring a major problem or defective product to a vendor or outside technician usually means opening a vendor case or RMA from the queue after the user contact, not a warm transfer while the user waits. So X's single DISCRETE part, whose unit is the vendor case, is the realistic coding, and Y's 25% live share has little basis.",
+    "choice": "X"
+  },
+  {
+    "task_id": "1295",
+    "reasoning": "Reading the order sheet is the input to the hands-on job of inspecting and preparing equipment for delivery, not a separate computer-based deliverable, so this is one physical activity. X gives a separate 30% DISCRETE share to order reading, which overstates it and splits apart one activity.",
+    "choice": "Y"
+  }
+]

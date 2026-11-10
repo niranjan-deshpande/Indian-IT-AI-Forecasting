@@ -1,0 +1,42 @@
+{
+ "15-1232.00": {
+  "agreed": [
+   [
+    "1282a",
+    "1288a"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "1282b",
+    "b": "1288b",
+    "flagged_by": "claude",
+    "reasoning": "Both are a single ticket worked from the queue to an answer or fix and closure, with the same inputs, actions and output, in the same afterwards setting.",
+    "text": "[1282b] DISCRETE \u2014 one written user question answered (ticket or email) (start: question received by email or in the ticket queue; end: answer sent and ticket closed) \u2014 from statement: Answer user inquiries regarding computer software or hardware operation to resolve problems.\n[1288b] DISCRETE \u2014 one ticketed problem investigated and resolved (start: ticket assigned or problem left open from a contact; end: fix applied and confirmed by the user, ticket closed, or ticket escalated) \u2014 from statement: Read technical manuals, confer with users, or conduct computer diagnostics to investigate and resolve problems or to provide technical assistance and support."
+   },
+   {
+    "a": "1283b",
+    "b": "1285b",
+    "flagged_by": "claude",
+    "reasoning": "Both are a scheduled start-of-day round of checking systems and monitoring data, recording results and raising errors as tickets, so one is redundant given the other.",
+    "text": "[1283b] DISCRETE \u2014 one routine system check round (e.g. daily check of servers, printers, network links) (start: scheduled check begins; end: results recorded, with any errors logged as tickets) \u2014 from statement: Enter commands and observe system functioning to verify correct operations and detect errors.\n[1285b] DISCRETE \u2014 one daily system status review (start: start of day or shift; pull of monitoring data and logs; end: status recorded and any issues raised as tickets) \u2014 from statement: Oversee the daily performance of computer systems."
+   }
+  ]
+ },
+ "43-4051.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "15-1253.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "14641a",
+    "b": "14642a",
+    "flagged_by": "claude",
+    "reasoning": "Both start from a defect observed during testing and end with the problem reproduced, characterized and written up as a documented defect record, so filing a ticket with steps, severity and evidence is the same work as identifying, analyzing and documenting the problem.",
+    "text": "[14641a] DISCRETE \u2014 one defect report filed in the bug tracker (start: defect observed during testing; end: ticket filed with steps to reproduce, severity, and evidence, and assigned to a developer) \u2014 from statement: Document software defects, using a bug tracking system, and report defects to software developers.\n[14642a] DISCRETE \u2014 one program problem identified, analyzed, and documented (start: unexpected behavior noticed during testing or review; end: problem reproduced, characterized, and documented) \u2014 from statement: Identify, analyze, and document problems with program function, output, online screen, or content."
+   }
+  ]
+ }
+}

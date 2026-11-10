@@ -1,0 +1,310 @@
+[
+ {
+  "item_id": "sphinx-doc__sphinx-9658",
+  "reasoning": "Trace how autodoc represents mocked base classes, correct the displayed name, and add regression tests for inherited mocked classes.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "sympy__sympy-13878",
+  "reasoning": "Implement and verify precomputed CDFs for twelve distributions, including support boundaries, special functions, and symbolic test cases.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 900
+ },
+ {
+  "item_id": "psf__requests-6028",
+  "reasoning": "Investigate proxy authentication across Python and urllib3 versions, reproduce the failure without the reporter's paid proxy, and test a compatible fix.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "raman-fitting",
+  "reasoning": "Inspect the spectrum, select appropriate peak regions and Lorentzian conventions, fit both peaks, and validate the output parameters.",
+  "estimate_min": 65,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-11510",
+  "reasoning": "Investigate the include directive's source-reading path and event semantics, implement processing for included content, and test include options and nesting.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-13449",
+  "reasoning": "Trace SQLite's decimal casting through window-expression compilation, move the cast to a valid position, and add regression coverage.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "django__django-16263",
+  "reasoning": "Analyze count-query construction and annotation dependencies, then safely prune unused annotations without changing grouping, filtering, or distinct semantics.",
+  "estimate_min": 300,
+  "low_min": 150,
+  "high_min": 600
+ },
+ {
+  "item_id": "portfolio-optimization",
+  "reasoning": "Inspect the skeleton and baseline, implement the C calculation and Python interface, then check numerical agreement and performance at the requested sizes.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-14493",
+  "reasoning": "Fix the uninitialized variable for zero passes and test collection and manifest behavior with that setting.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "matplotlib__matplotlib-25479",
+  "reasoning": "Trace registry names through set_cmap and default colormap lookup, fix the alias mismatch, and add tests without breaking registered colormap behavior.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 180
+ },
+ {
+  "item_id": "django__django-15503",
+  "reasoning": "Correct JSON path construction so final numeric keys are treated as object keys, and test the three lookups and nested paths across backend implementations.",
+  "estimate_min": 140,
+  "low_min": 65,
+  "high_min": 280
+ },
+ {
+  "item_id": "pydata__xarray-4094",
+  "reasoning": "Reproduce the roundtrip failure, inspect the single-level stacked coordinate handling, and add tests covering both single- and multi-dimensional variables.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 180
+ },
+ {
+  "item_id": "password-recovery",
+  "reasoning": "Inspect available files and storage for deleted content, search raw or residual data for the specified password pattern, and write matching candidates.",
+  "estimate_min": 90,
+  "low_min": 25,
+  "high_min": 240
+ },
+ {
+  "item_id": "overfull-hbox",
+  "reasoning": "Compile to locate overflow warnings, then iteratively substitute allowed synonyms and recompile until all warnings are gone.",
+  "estimate_min": 75,
+  "low_min": 25,
+  "high_min": 180
+ },
+ {
+  "item_id": "astropy__astropy-7166",
+  "reasoning": "Extend docstring inheritance to properties while preserving descriptor behavior, and add tests for inheritance and existing property documentation.",
+  "estimate_min": 75,
+  "low_min": 30,
+  "high_min": 160
+ },
+ {
+  "item_id": "sympy__sympy-15599",
+  "reasoning": "Apply and assess the supplied simplification idea, then run targeted tests and check for recursion or incorrect symbolic reductions.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8638",
+  "reasoning": "Reproduce the unwanted instance-variable references, trace cross-reference generation and resolution, and test a fix against legitimate links.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "distribution-search",
+  "reasoning": "Construct a low-parameter probability distribution, numerically solve for both KL targets, and verify normalization and tolerances before saving.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "fix-git",
+  "reasoning": "Inspect branches, reflogs, stashes, and commits to locate the missing changes, merge them into master, and verify the resulting tree.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 90
+ },
+ {
+  "item_id": "openssl-selfsigned-cert",
+  "reasoning": "Generate the key and certificate, record the requested verification details, and write and run a small certificate-checking script.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "build-pov-ray",
+  "reasoning": "Locate the historical source archives, adapt the old build to the current system, install the executable, and check rendering against the supplied scene.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "pydata__xarray-6599",
+  "reasoning": "Trace the regression in polynomial evaluation for datetime and timedelta coordinates, fix the conversion or alignment, and test both types and dimension order.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-15103",
+  "reasoning": "Make the argument optional in the utility and template filter, preserve escaping, and update documentation and tests.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-12663",
+  "reasoning": "Trace lazy-object preparation through nested subquery lookups, correct the regression without changing other lookup behavior, and add tests.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-7590",
+  "reasoning": "Extend the C++ expression parser for user-defined literal suffixes and cover numeric and other relevant literal forms with parser tests.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "tune-mjcf",
+  "reasoning": "Profile the model, experiment with nonphysical simulation settings or equivalent model optimizations, and repeatedly validate speed and state accuracy.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "pypi-server",
+  "reasoning": "Create and build the package, configure a local simple package index on port 8080, and verify installation and import using pip.",
+  "estimate_min": 65,
+  "low_min": 30,
+  "high_min": 140
+ },
+ {
+  "item_id": "chess-best-move",
+  "reasoning": "Read the board position from the image, check legal moves and winning continuations with a chess engine, and write the qualifying moves.",
+  "estimate_min": 30,
+  "low_min": 12,
+  "high_min": 75
+ },
+ {
+  "item_id": "compile-compcert",
+  "reasoning": "Obtain the specified source and dependencies, configure for the host, build, and verify the resulting compiler on a small program.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 300
+ },
+ {
+  "item_id": "write-compressor",
+  "reasoning": "Reverse-engineer the decompressor's format, implement an encoder that meets the size limit, and compare its decompressed output byte-for-byte.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "kv-store-grpc",
+  "reasoning": "Define and generate the RPC interface, implement and launch the server, and check set/get behavior with a client.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "scikit-learn__scikit-learn-14053",
+  "reasoning": "Reproduce the tree export failure, correct feature-name indexing for leaf or internal nodes, and add a focused regression test.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 130
+ },
+ {
+  "item_id": "sam-cell-seg",
+  "reasoning": "Implement MobileSAM inference and CSV polygon conversion, resolve overlapping masks while maintaining contiguous cells, and test on the demo data and edge cases.",
+  "estimate_min": 360,
+  "low_min": 180,
+  "high_min": 720
+ },
+ {
+  "item_id": "django__django-15629",
+  "reasoning": "Trace collation propagation through foreign-key creation and schema alterations, implement the fix, and add migration and backend regression tests.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "mteb-leaderboard",
+  "reasoning": "Find a historical Scandinavian leaderboard or reliable snapshot, identify the highest task mean as of the requested date, and write the model identifier.",
+  "estimate_min": 40,
+  "low_min": 15,
+  "high_min": 100
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8595",
+  "reasoning": "Distinguish an absent __all__ from an explicitly empty one in autodoc and test both behaviors.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 85
+ },
+ {
+  "item_id": "scikit-learn__scikit-learn-13124",
+  "reasoning": "Correct stratified fold assignment to shuffle independently within classes, and test reproducibility, stratification, and unshuffled behavior.",
+  "estimate_min": 150,
+  "low_min": 65,
+  "high_min": 300
+ },
+ {
+  "item_id": "mailman",
+  "reasoning": "Configure and integrate Postfix and Mailman, create the list and local delivery routing, then exercise subscription, confirmation, posting, and removal flows.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 480
+ },
+ {
+  "item_id": "qemu-startup",
+  "reasoning": "Configure QEMU's serial console and telnet listener, boot the ISO in the background, and verify that the login prompt is reachable.",
+  "estimate_min": 40,
+  "low_min": 15,
+  "high_min": 100
+ },
+ {
+  "item_id": "pytest-dev__pytest-5787",
+  "reasoning": "Extend report serialization and deserialization to preserve chained exception representations, with tests for explicit and implicit chains.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-13109",
+  "reasoning": "Switch foreign-key validation to the base manager and test filtered default managers, validation restrictions, and form behavior.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "django__django-12708",
+  "reasoning": "Inspect constraint introspection and removal across backends, distinguish the index from the unique constraint, and add migration regression tests.",
+  "estimate_min": 150,
+  "low_min": 65,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-11964",
+  "reasoning": "Adjust choice enum string behavior while preserving integer and text semantics, and test fresh and retrieved field values.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 200
+ },
+ {
+  "item_id": "pytorch-model-recovery",
+  "reasoning": "Inspect weight names and shapes to reconstruct the model, determine its forward computation, optimize only the output layer, and validate the saved TorchScript model.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ }
+]

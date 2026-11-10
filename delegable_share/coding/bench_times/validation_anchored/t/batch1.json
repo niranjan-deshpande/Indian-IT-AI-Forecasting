@@ -1,0 +1,289 @@
+[
+ {
+  "item_id": "sphinx-doc__sphinx-9658",
+  "reasoning": "Trace how autodoc constructs base-class names for mocked objects, then fix the name handling and add a regression test.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 240
+ },
+ {
+  "item_id": "fix-git",
+  "reasoning": "Inspect branches, reflogs and dangling commits to locate the changes, then merge them into master and verify the result.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 75
+ },
+ {
+  "item_id": "django__django-16263",
+  "reasoning": "Optimize count-query annotation selection while preserving annotations needed by filters, grouping and other expressions; this needs substantial ORM regression testing.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "psf__requests-6028",
+  "reasoning": "Investigate the Python-version-specific proxy authentication regression, reproduce it and verify a compatible fix with proxy-focused tests.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "pytest-dev__pytest-6197",
+  "reasoning": "Trace the collection regression and adjust package initialization behavior, with tests covering both ordinary packages and actual tests.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "django__django-15503",
+  "reasoning": "Correct JSON path construction for numeric object keys across the affected backends and test the related lookups and nested paths.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "sympy__sympy-15599",
+  "reasoning": "The issue supplies a candidate patch and test; the work is to apply it and check for incorrect simplifications or regressions.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-14493",
+  "reasoning": "Fix the uninitialized variable for zero post-processing passes and add a focused collectstatic regression test.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 75
+ },
+ {
+  "item_id": "pytorch-model-cli",
+  "reasoning": "Inspect the available model and data, implement image preprocessing and weight loading, and build and verify a binary CLI and prediction artifact. The unspecified model details make the effort uncertain.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 600
+ },
+ {
+  "item_id": "django__django-14376",
+  "reasoning": "Replace the deprecated MySQL connection keyword names and update or add connection-parameter tests.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "pydata__xarray-4094",
+  "reasoning": "Reproduce the stack/unstack failure, trace the conflicting coordinate and fix it without breaking other dimensional combinations.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "distribution-search",
+  "reasoning": "Construct a parameterized distribution, numerically solve for the two KL targets, and verify normalization and tolerances before saving it.",
+  "estimate_min": 75,
+  "low_min": 30,
+  "high_min": 180
+ },
+ {
+  "item_id": "astropy__astropy-7166",
+  "reasoning": "Extend metaclass docstring inheritance to properties and test inherited and explicitly defined property docstrings.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 140
+ },
+ {
+  "item_id": "matplotlib__matplotlib-25479",
+  "reasoning": "Trace registered versus intrinsic colormap names through the current registry and pyplot interfaces, then fix and test the mismatch.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "django__django-16032",
+  "reasoning": "Trace selection masks through annotate, alias and subquery filtering, then fix the clearing behavior and add regression coverage.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "pylint-dev__pylint-7277",
+  "reasoning": "Guard removal of the initial sys.path entry and test both runpy and normal command-line invocation cases.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "pydata__xarray-6992",
+  "reasoning": "Investigate the inconsistency between coordinate names and variables after resetting an index, and add tests for the resulting dataset operations.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "torch-tensor-parallelism",
+  "reasoning": "Implement distributed sharding and collectives with correct backward behavior, then test outputs and gradients across multiple ranks.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "django__django-15629",
+  "reasoning": "Trace collation propagation through foreign-key schema creation and alteration, then add migration tests for referenced fields and backends.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "pydata__xarray-6599",
+  "reasoning": "Diagnose the regression in polynomial evaluation and coordinate handling, then test datetime and timedelta inputs and dimensional ordering.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 220
+ },
+ {
+  "item_id": "django__django-15103",
+  "reasoning": "Make the ID optional in the utility and template filter, update documentation and test escaping and both output forms.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "django__django-12663",
+  "reasoning": "Trace lazy-object preparation through nested subquery lookups and implement a targeted fix with regression tests.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 240
+ },
+ {
+  "item_id": "adaptive-rejection-sampler",
+  "reasoning": "Implement and validate a modular adaptive rejection sampler, including envelope construction, concavity checks and stochastic tests against known distributions.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 960
+ },
+ {
+  "item_id": "compile-compcert",
+  "reasoning": "Inspect the environment, install or configure the required Coq and compiler dependencies, build CompCert and verify the resulting compiler on a small program.",
+  "estimate_min": 150,
+  "low_min": 45,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-15252",
+  "reasoning": "Investigate migration recorder behavior with routers and multiple databases, implement consistent routing semantics and test migration execution and recording.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-13821",
+  "reasoning": "Update the SQLite minimum-version checks, remove obsolete compatibility branches where appropriate, and adjust tests and documentation.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 180
+ },
+ {
+  "item_id": "django__django-15957",
+  "reasoning": "Implement per-parent sliced prefetching, likely using window functions, and test relationship types, ordering and backend limitations.",
+  "estimate_min": 300,
+  "low_min": 120,
+  "high_min": 600
+ },
+ {
+  "item_id": "pytorch-model-recovery",
+  "reasoning": "Inspect state dictionary shapes and dataset, reconstruct the model, optimize only the output layer and verify the saved TorchScript state and loss.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "scikit-learn__scikit-learn-14053",
+  "reasoning": "Reproduce the single-feature tree export error, fix feature-name handling and add tests for leaf and split nodes.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "portfolio-optimization",
+  "reasoning": "Complete the C extension and Python wrapper, validate numerical agreement and benchmark large inputs while managing memory and conversion costs.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-11163",
+  "reasoning": "The issue identifies the exact conditional change; add a regression test and run the relevant model-to-dict tests.",
+  "estimate_min": 15,
+  "low_min": 5,
+  "high_min": 35
+ },
+ {
+  "item_id": "pytest-dev__pytest-10081",
+  "reasoning": "Trace unittest skip and debugger teardown interaction, fix the class-level skip case and add tests for both class and method skips.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "train-fasttext",
+  "reasoning": "Inspect and prepare the Yelp data, train and evaluate a suitably sized fastText classifier, and adjust parameters if necessary to meet accuracy and size limits.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 300
+ },
+ {
+  "item_id": "cancel-async-tasks",
+  "reasoning": "Implement bounded async concurrency with cancellation propagation and cleanup, then test interrupted runs and task failures.",
+  "estimate_min": 75,
+  "low_min": 30,
+  "high_min": 180
+ },
+ {
+  "item_id": "sympy__sympy-18199",
+  "reasoning": "Correct the zero-residue root handling and test it alongside existing modular root cases, including composite moduli where relevant.",
+  "estimate_min": 50,
+  "low_min": 20,
+  "high_min": 120
+ },
+ {
+  "item_id": "video-processing",
+  "reasoning": "Inspect the example video, devise foreground and motion heuristics for takeoff and landing, and test the resulting frame detection and TOML output.",
+  "estimate_min": 360,
+  "low_min": 150,
+  "high_min": 720
+ },
+ {
+  "item_id": "pytest-dev__pytest-5787",
+  "reasoning": "Extend exception report serialization and deserialization to preserve chained tracebacks, with tests for causes, contexts and distributed reporting.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-13109",
+  "reasoning": "Change foreign-key validation to use the base manager and add tests with a filtered default manager.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 80
+ },
+ {
+  "item_id": "django__django-12708",
+  "reasoning": "Fix index deletion when a matching unique constraint exists, and examine migration behavior with tests across applicable database backends.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-11964",
+  "reasoning": "Investigate choice-enum string conversion and implement consistent behavior while preserving enum and model field compatibility.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 210
+ },
+ {
+  "item_id": "cobol-modernization",
+  "reasoning": "Read and translate the COBOL program, including file formats and update semantics, then compare Python and compiled COBOL outputs on representative inputs. The program's size and complexity are not specified.",
+  "estimate_min": 360,
+  "low_min": 120,
+  "high_min": 900
+ }
+]

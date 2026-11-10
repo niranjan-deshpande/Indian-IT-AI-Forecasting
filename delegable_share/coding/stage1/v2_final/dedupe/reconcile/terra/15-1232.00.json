@@ -1,0 +1,14 @@
+[
+ {
+  "reasoning": "Answering a written question can overlap with resolving a ticketed problem, but it need not involve diagnosis or applying a fix. Conversely, the investigation may end in escalation rather than an answer and closure.",
+  "a": "1282b",
+  "b": "1288b",
+  "duplicate": false
+ },
+ {
+  "reasoning": "A routine system check round can involve directly testing devices, while the daily status review pulls monitoring data and logs. Their results may overlap, but completing one does not clearly complete the other.",
+  "a": "1283b",
+  "b": "1285b",
+  "duplicate": false
+ }
+]

@@ -1,6 +1,6 @@
 # GFC window (2007Q1–2012Q1) — collection notes
 
-Output: `data/raw/gfc.csv` (schema per `data/SCHEMA.md`; 11,336 rows; firms tcs, infosys, hcltech, wipro, techm, cognizant, accenture).
+Output: `data/raw/gfc.csv` (schema per `data/README.md`; 11,336 rows; firms tcs, infosys, hcltech, wipro, techm, cognizant, accenture).
 Scope: CORE metrics for calendar quarters 2007Q1–2012Q1: revenue, revenue growth as reported (cc where disclosed), headcount, utilization, attrition. Where the same documents carry them, the file also has revenue shares/levels by vertical, geography and service line, and subcontracting.
 
 **General conventions**

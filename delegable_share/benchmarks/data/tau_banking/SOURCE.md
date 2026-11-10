@@ -1,0 +1,14 @@
+# tau_banking (tau3 / tau2-bench banking_knowledge, text)
+- URLs: https://github.com/sierra-research/tau2-bench (data/tau2/domains/banking_knowledge/tasks.json, documents/ ~700 KB docs, prompts/); leaderboard JSONs web/leaderboard/public/submissions/*/submission.json (results.banking_knowledge.pass_1).
+- Access date: 2026-11-09. Licence: MIT (sierra-research/tau2-bench). Repo commit 033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f (main, 2026-11-04). Raw files in tau_retail_airline/raw (tasks, split files, policies, manifest.json, subs/ = all leaderboard submission JSONs) and the benchmark's own raw/ folder.
+- Population: all 97 tasks in tasks.json (matches "banking_knowledge_97" in data/tau2/benchmarks/banking.json). Sample: random.Random(2026).sample(sorted task ids, 24).
+- Headline = pass^1 over 4 trials, text mode. Retrieval config differs by entry (mostly "alltools" = BM25 + dense + shell; Sonnet 4.5, Gemini 3 Pro/Flash used "terminal"; Qwen3.5/GLM-5 "text-emb-3-large"); per-row config is in notes. Scores of v1.0.1 re-grade (2026-07-15) are not comparable with earlier ones.
+- Grading method: state. Final database state compared with gold (DB reward basis); a few tasks also check communicated info.
+- Time-estimator description: A chat with a fintech (Rho-Bank) customer about a card, dispute, refund, fee or cash-back question. The worker must find the relevant rules in roughly 700 internal policy documents, combine them with account data from tools, and make the policy-correct account change; done when the account state matches.
+- Human times: none. Gold action count from evaluation_criteria.actions (includes log_verification and discoverable-tool calls, some made by the customer).
+- Problems:
+  - Item text is truncated to 300 words, so the long gold action lists of big tasks (up to 37 actions) are cut; true count is in meta.gold_action_count. The customer scenario is also cut at about 135 words.
+  - Rows include 2 custom-scaffold entries (PrincipledMachines Cortex 0.1 = 0.732, Distyl ButtonAgent = 0.312); use with care. Cortex release_date (2026-11-04) is the submission date-like value in the file.
+  - Mixed retrieval configs and a known 1.0.1 regrading. Not saturated for most models; spread 0.10-0.55 (standard rows).
+  - Voice banking exists (voice-v2-banking, 97 tasks) but is a separate, custom track; not used here.
+  - Newest Sierra rows have no tau2 airline/retail/telecom scores, only banking.

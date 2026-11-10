@@ -1,0 +1,27 @@
+[
+ {
+  "task_id": "2579",
+  "reasoning": "X distinguishes live and back-office remedy processing and separately accounts for hands-on merchandise handling. Y makes the back-office item the entire complaint case, including investigation and notification covered by other statements.",
+  "choice": "X"
+ },
+ {
+  "task_id": "2582",
+  "reasoning": "Y accounts for referrals made while the customer waits as well as those routed afterward. X assumes all referrals are completed after contact, although live transfers and referrals are also common.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "2583",
+  "reasoning": "Y captures both live charging or payment work and transactions processed from later requests. Its note also recognizes that a request need not involve every listed action.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "2584",
+  "reasoning": "X distinguishes contract preparation from account-change orders and splits both between live and queued work. Y groups these different deliverables under one account-order item and describes a contract request as a change.",
+  "choice": "X"
+ },
+ {
+  "task_id": "18565",
+  "reasoning": "X separates the different live outputs, including order entry and account cancellation, and keeps complaint intake distinct from subsequent resolution. Its boundaries do not require the whole contact to end when an information question is answered.",
+  "choice": "X"
+ }
+]

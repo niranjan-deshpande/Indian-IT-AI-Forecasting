@@ -1,0 +1,13 @@
+# tau_telecom (tau2-bench telecom troubleshooting, text)
+- URLs: https://github.com/sierra-research/tau2-bench (data/tau2/domains/telecom/tasks.json, split_tasks.json "base", main_policy.md, tech_support_manual.md); leaderboard JSONs in web/leaderboard/public/submissions/*/submission.json.
+- Access date: 2026-11-09. Licence: MIT (sierra-research/tau2-bench). Repo commit 033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f (main, 2026-11-04). Raw files in tau_retail_airline/raw (tasks, split files, policies, manifest.json, subs/ = all leaderboard submission JSONs) and the benchmark's own raw/ folder.
+- Population: split "base" = 114 tasks (mms_issue 49, mobile_data_issue 36, service_issue 29), taken from the 2285-task "full" file by id. 114 matches the leaderboard's telecom_114 / voice-v1 telecom frame. Sample: random.Random(2026).sample(sorted base ids, 24); item ids are the long task-id strings.
+- Headline = pass^1 over 4 trials on this domain.
+- Grading method: state. Environment assertions on the final device and account state (e.g. can send MMS, correct refuel amount); no LLM judge.
+- Time-estimator description: A chat with a mobile customer whose phone cannot send MMS, has no data, or has no service. The worker checks the account with tools and talks the customer through steps on their own phone (airplane mode, SIM, APN, roaming, permissions) following a troubleshooting manual; done when the phone works and the account state is right.
+- Human times: none. Gold action count includes steps the customer performs on the phone ([customer does on phone]) and the agent's own tool calls.
+- Problems:
+  - Mixed harnesses: legacy v0.1.3 rows (self-reported, user sim gpt-4.1) vs Sierra v1.0.1 rows (gpt-5.2 sim). Gemini 3 Flash notes mention 20 telecom sims ended by too_many_errors scored as 0.
+  - Old Anthropic/OpenAI "original tau-bench" entries have no telecom; Opus 4.x and later Sierra rows have no telecom score. Last scored model 2026-02-16. Saturated: many rows at 0.96-0.98.
+  - Task persona (Easy/Hard/None) is in meta.persona; simulator behaviour instructions were removed from text.
+  - Item text lists hidden fault causes taken from the task id; the worker would discover them.

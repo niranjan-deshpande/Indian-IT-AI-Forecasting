@@ -1,0 +1,310 @@
+[
+ {
+  "item_id": "bn-fit-modify",
+  "reasoning": "Structure learning on 10k rows with constraints, then fit a BN, do an intervention on Y, resample and write three CSVs; needs tooling choice (pgmpy/bnlearn) and care with the intervention semantics.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "distribution-search",
+  "reasoning": "Construct a 150k-length distribution with KL(P||U)=KL(U||P)=10 within 0.001; needs a parametrised family (e.g. one large mass plus uniform tail) and a 2-D root solve, plus checking.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "django__django-16032",
+  "reasoning": "Subquery column selection bug after annotate then alias; locate in Query.resolve_expression/In lookup, make a small fix and run tests.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "django__django-13109",
+  "reasoning": "One-line change of _default_manager to _base_manager in ForeignKey.validate, plus a test and a quick check of existing tests.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "django__django-15252",
+  "reasoning": "Make MigrationRecorder honour router allow_migrate in ensure_schema, applied_migrations and record methods; requires understanding of executor flow and adding tests.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "pydata__xarray-6992",
+  "reasoning": "Fix DataVariables len/iter assumptions when coord_names exceed variables after index refactor; need to understand the index internals and the repr paths.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "django__django-13821",
+  "reasoning": "Bump the minimum SQLite version check, update feature flags, docs and conditional code and tests across several files; mostly mechanical but wide.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "pytest-dev__pytest-5787",
+  "reasoning": "Extend report serialization/deserialization for xdist to carry chained exception info; needs understanding of reprexc structures and round-trip, plus tests.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-14238",
+  "reasoning": "Fix AutoFieldMeta subclass check to use issubclass over _subclasses; small change with tests once located.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "pylint-dev__pylint-7277",
+  "reasoning": "Guard the sys.path.pop(0) by checking the first entry is '', '.' or cwd; small fix and a test.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "crack-7z-hash",
+  "reasoning": "Extract hash with 7z2john, crack with john/hashcat using a wordlist, extract the file; depends on tool availability and password strength.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-9296",
+  "reasoning": "Add a short __iter__ method to Paginator, plus a test and docs line.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "overfull-hbox",
+  "reasoning": "Iteratively compile LaTeX and swap synonyms in input.tex to eliminate overfull hbox warnings; trial-and-error or a small search script.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "django__django-16263",
+  "reasoning": "Strip unused annotations in count(): determine which annotations are referenced by filters, other annotations, ordering; modify get_aggregation; tricky edge cases and tests.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "django__django-14376",
+  "reasoning": "Replace deprecated db/passwd kwargs with database/password in MySQL backend and update any tests; trivial edit.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "django__django-15629",
+  "reasoning": "Propagate db_collation to FK fields in schema editor SQL for referencing columns and related migrations; needs digging into schema editor and tests across backends.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "tune-mjcf",
+  "reasoning": "Profile MuJoCo model and tune solver/option settings (e.g. integrator, iterations, contacts) to reach 60% time while matching state within tolerance; iterative experiments.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "pytest-dev__pytest-10081",
+  "reasoning": "Skip tearDown postponement under --pdb when class is skipped; check the class-level skip in unittest.py runtest; small fix and test.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 70
+ },
+ {
+  "item_id": "mteb-leaderboard",
+  "reasoning": "Look up the Scandinavian MTEB leaderboard as of Aug 2025 and write the top model name; mostly a lookup, possibly needing historical verification.",
+  "estimate_min": 20,
+  "low_min": 8,
+  "high_min": 60
+ },
+ {
+  "item_id": "sympy__sympy-13878",
+  "reasoning": "Implement precomputed _cdf for about a dozen distributions with correct formulas and verification, plus tests; lots of formulas and edge cases.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 420
+ },
+ {
+  "item_id": "train-fasttext",
+  "reasoning": "Train fasttext on yelp data with size under 150MB and accuracy at least 0.62; needs hyperparameter tuning, quantization or dimension limits, and evaluation.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "qemu-alpine-ssh",
+  "reasoning": "Boot Alpine ISO in qemu with port forward, log in via serial, configure network, install and start sshd, set root password and permit root login; fiddly interactive console work.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "openssl-selfsigned-cert",
+  "reasoning": "Run a handful of openssl commands, set permissions, write verification file and a small Python check script; routine but multi-part.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "django__django-15957",
+  "reasoning": "Allow sliced querysets in Prefetch by using window functions/filter-on-slice logic in prefetch queries; non-trivial ORM change with tests.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "pytorch-model-recovery",
+  "reasoning": "Infer architecture from the state dict, load, compute MSE, fine-tune only output layer, export TorchScript, and satisfy constraints; moderate PyTorch work.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "write-compressor",
+  "reasoning": "Produce a compressed file under 2500 bytes that the given custom decompressor reads; requires understanding the decoder (likely arithmetic coding) and writing a matching encoder.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "pydata__xarray-6599",
+  "reasoning": "Fix polyval handling of timedelta64 coords (convert via _ensure_numeric for timedelta as well as datetime); need to diagnose then adjust, with tests.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "fix-code-vulnerability",
+  "reasoning": "Find the injected vulnerability in bottle.py, write the report, fix the code and make the tests pass; requires scanning a large single file and reading the test failures.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-11445",
+  "reasoning": "Fix prolog insertion so that a title with a domain role is still treated as a docinfo/title; adjust the regex in rst.py and add tests.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "feal-differential-cryptanalysis",
+  "reasoning": "Understand the FEAL-like cipher and craft a chosen-plaintext differential attack recovering the last round key with 16-bit seed space; real crypto work, but simplified.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-9658",
+  "reasoning": "Fix the mock class naming so that the bases of mocked classes display the full name (set __display_name__ for mocked objects); requires understanding mock internals and tests.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "merge-diff-arc-agi-task",
+  "reasoning": "Git bundle fetching and merge with conflict resolution, plus inferring the ARC-style transformation from examples and implementing it; the puzzle inference dominates.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "path-tracing",
+  "reasoning": "Reverse-engineer a rendered image into a compact C program under 2k gzipped that reaches 0.99 similarity; requires inspecting the image, guessing the scene and iterating.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "astropy__astropy-7166",
+  "reasoning": "Make InheritDocstrings handle properties (isfunction or isinstance property) in the metaclass; small fix with a test.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "adaptive-rejection-sampler",
+  "reasoning": "Implement Gilks ARS in R with input validation, log-concavity checks, modular design, tests and sample files; install R; substantial implementation and testing.",
+  "estimate_min": 180,
+  "low_min": 90,
+  "high_min": 360
+ },
+ {
+  "item_id": "raman-fitting",
+  "reasoning": "Parse the spectrometer output, fit Lorentzian peaks for G and 2D with offsets, write JSON; need to inspect the file format and tune initial guesses.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "pydata__xarray-4094",
+  "reasoning": "Fix to_unstacked_dataset for single-dim variables by dropping the conflicting stacked coordinate when selecting; locate, patch, test.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-8595",
+  "reasoning": "Honour an empty __all__ in autodoc's module member selection (check 'is not None' instead of truthiness); small fix and test.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-11510",
+  "reasoning": "Make source-read modifications apply to included files by hooking the include directive in the Sphinx reader; requires understanding docutils include handling and tests.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-14493",
+  "reasoning": "Initialise substitutions before the loop in post_process to avoid UnboundLocalError for zero passes; tiny fix with a test.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "django__django-11400",
+  "reasoning": "Fix ordering fallbacks in RelatedFieldListFilter and RelatedOnlyFieldListFilter, passing ordering to get_choices; moderate change with tests.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "chess-best-move",
+  "reasoning": "Read the board from a PNG image (manually or with a script), determine the winning moves, possibly with an engine; mostly board transcription and verification.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 60
+ },
+ {
+  "item_id": "pytorch-model-cli",
+  "reasoning": "Write a CLI (likely C or C++) that loads JSON weights, decodes a PNG, runs MNIST forward pass and outputs the digit; requires PNG decoding and JSON parsing without libraries, plus verification.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 200
+ },
+ {
+  "item_id": "configure-git-webserver",
+  "reasoning": "Set up a bare git repo with a post-receive hook deploying to a webroot, install sshd/git user and a web server on port 8080; standard sysadmin, a few pitfalls.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ }
+]

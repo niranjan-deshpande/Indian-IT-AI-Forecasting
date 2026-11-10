@@ -1,0 +1,58 @@
+[
+  {
+    "item_id": "1286b",
+    "reasoning": "The core actions are installing and configuring an operating system, software and accounts on a machine so it works, which is closest to Terminal-Bench 2.0's everyday IT administration items (install and configure software, checked by the final machine state). WorkArena++ onboarding only creates records and orders hardware, and OSWorld goals are narrow single settings, so Terminal-Bench 2.0 is the better fit but only partial.",
+    "best": "terminal_bench_2",
+    "best_match": "partial",
+    "best_difference": "The work is done on physical hardware with imaging and graphical tools, includes directory accounts and a handover to the employee, rather than a command-line-only task checked by hidden tests."
+  },
+  {
+    "item_id": "1287b",
+    "reasoning": "The work is entering records of transactions, problems and installations into a log, which shares the record-entry action of WorkArena single ServiceNow actions. The benchmark gives one explicit instruction per record, whereas here the worker compiles a full day's log from their own activities with no instruction on content.",
+    "best": "workarena_l1",
+    "best_match": "partial",
+    "best_difference": "The worker compiles a whole day's log from their own activities rather than entering one record from an explicit instruction."
+  },
+  {
+    "item_id": "1288b",
+    "reasoning": "Investigating and fixing a computer problem through hands-on diagnostics is closest to Terminal-Bench 2.0's everyday administration items that diagnose and repair a broken machine state. WorkArena++ tickets are record workflows rather than technical fixes, and OSWorld goals are single settings changes rather than diagnosis.",
+    "best": "terminal_bench_2",
+    "best_match": "partial",
+    "best_difference": "Here there is an end user to confer with and confirm the fix, and problems are reported as user-facing PC issues rather than posed as command-line tasks."
+  },
+  {
+    "item_id": "2584b",
+    "reasoning": "Processing change-of-address and discontinuance orders on a customer's account under company rules matches the actions in tau-bench retail and airline items (change an order address, cancel, make the right database change). The request here arrives in writing and is processed from a queue, with a confirmation sent, rather than handled in a live chat.",
+    "best": "tau_retail_airline",
+    "best_match": "partial",
+    "best_difference": "Requests arrive as written or online forms handled from a queue with a confirmation sent, not as an interactive chat with the customer."
+  },
+  {
+    "item_id": "2587b",
+    "reasoning": "The work applies written policy terms to a specific case and records a policy-correct outcome, which is the core of tau3-bench banking (find the governing rule, combine it with case data, reach a compliant result). The domain is insurance coverage and the outcome is a recorded coverage decision from a loss report rather than an account change made during a customer chat.",
+    "best": "tau_banking",
+    "best_match": "partial",
+    "best_difference": "It is an insurance coverage decision made from a written loss report and policy, recorded on a claim file, not a fintech account change made during a customer chat."
+  },
+  {
+    "item_id": "14652b",
+    "reasoning": "Running a test session means exercising software to find faulty behaviour, which SWEeper-Bench shares in its exploration phase. SWT-bench writes new tests and Terminal-Bench is general administration, so neither is closer.",
+    "best": "sweeper_bench",
+    "best_match": "partial",
+    "best_difference": "The tester runs a scheduled test session and logs the results in a test-management tool, while the benchmark also requires fixing the code and does not ask for logged results."
+  },
+  {
+    "item_id": "14655a",
+    "reasoning": "Compatibility testing means running a build and watching for faulty behaviour, which SWEeper-Bench shares when the worker explores a running application to find faults. No benchmark tests across a matrix of hardware, operating systems or networks, and the benchmark ends in a code fix rather than recorded results and filed issues.",
+    "best": "sweeper_bench",
+    "best_match": "partial",
+    "best_difference": "The tests span a matrix of environments, and the output is recorded results and filed issues rather than a code fix in one environment."
+  },
+  {
+    "item_id": "14658a",
+    "reasoning": "The work is reviewing a program against coding or process standards and writing recommended changes for developers. No benchmark has a standards-compliance review whose output is a list of deviations and recommendations: the software benchmarks change code or write tests, and the general professional benchmarks are not program inspections.",
+    "best": "none",
+    "best_match": "none",
+    "best_difference": ""
+  }
+]

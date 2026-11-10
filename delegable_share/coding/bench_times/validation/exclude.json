@@ -1,0 +1,11 @@
+{
+ "reason": "security/CTF-style tasks: irrelevant to IT/BPO calibration; one tripped a safety classifier mid-run",
+ "ids": [
+  "crack-7z-hash",
+  "qemu-alpine-ssh",
+  "filter-js-from-html",
+  "password-recovery",
+  "fix-code-vulnerability",
+  "feal-differential-cryptanalysis"
+ ]
+}

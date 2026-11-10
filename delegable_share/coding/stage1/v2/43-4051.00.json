@@ -1,0 +1,391 @@
+[
+{
+  "task_id": "2578",
+  "split_reasoning": "One activity, recording each contact, but done in two places: notes typed while the customer is still on the line, and the wrap-up record completed after the contact ends.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Enter details of the customer's inquiry, complaint, or comment and the actions taken into the account notes while the customer is on the line or at the desk.",
+      "time_share": 0.4,
+      "type_reasoning": "The notes are typed during the live contact while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Notes are attached to one contact and are written within that contact.",
+      "work_item": "one set of contact notes entered during a call or visit",
+      "start": "customer states the reason for the contact",
+      "end": "notes and actions logged on the account before the contact ends",
+      "checked_by": "quality-assurance reviewer and later agents who read the account history",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2579"]
+    },
+    {
+      "part_id": "b",
+      "text": "Complete the interaction or transaction record (disposition codes, summary, actions taken) in after-call wrap-up.",
+      "time_share": 0.6,
+      "type_reasoning": "Done after the contact ends with no one waiting, producing a record others rely on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Each contact gets one closed record in the CRM, which is what QA samples and later agents read.",
+      "work_item": "one interaction record completed after a call or visit",
+      "start": "call or visit ends",
+      "end": "record saved with disposition code, summary, and actions taken",
+      "checked_by": "quality-assurance reviewer, supervisor, and later agents handling the account",
+      "duplicates": [],
+      "overlaps_with": ["2582", "2580"]
+    }
+  ],
+  "notes": "The live versus wrap-up share depends on the center's after-call-work policy."
+},
+{
+  "task_id": "2579",
+  "split_reasoning": "One activity, carrying out a remedy for a complaint, but done in two places: during the call or visit while the customer waits, and afterwards from written complaints or queued cases.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Process an exchange, refund, or bill adjustment while the customer is on the line or at the desk.",
+      "time_share": 0.65,
+      "type_reasoning": "The remedy is entered and confirmed during the live contact while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each remedy is agreed and entered within one contact.",
+      "work_item": "one refund, exchange, or bill adjustment entered during a call or visit",
+      "start": "customer agrees to the proposed remedy",
+      "end": "refund, exchange, or adjustment confirmed to the customer",
+      "checked_by": "the customer, and supervisor or finance for adjustments above limits",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2583", "2585"]
+    },
+    {
+      "part_id": "b",
+      "text": "Resolve a written or escalated complaint by processing the refund, exchange, or bill adjustment and notifying the customer.",
+      "time_share": 0.35,
+      "type_reasoning": "Done from a queue of written complaints with no one waiting, ending in a processed remedy.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Written complaints arrive as cases that are closed one at a time.",
+      "work_item": "one complaint case resolved from the written queue",
+      "start": "complaint received by email, letter, or web form",
+      "end": "remedy processed, customer notified, case closed",
+      "checked_by": "the customer, supervisor, and billing or finance team",
+      "duplicates": [],
+      "overlaps_with": ["2585", "2581", "2589", "2580"]
+    }
+  ],
+  "notes": "Notification of the remedy for written cases also falls under 2581."
+},
+{
+  "task_id": "2580",
+  "split_reasoning": "One activity: following up to confirm that a remedy actually took effect.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Check the account or order system to confirm that the change made to resolve a customer's problem was carried out correctly.",
+      "time_share": 1.0,
+      "type_reasoning": "Done after the contact as a follow-up, producing a verified (or reopened) case.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Follow-up checks are tied to one case and close or reopen it.",
+      "work_item": "one resolution verified for a customer case",
+      "start": "follow-up date reached or confirmation of change expected",
+      "end": "change confirmed and case closed, or discrepancy flagged and case reopened",
+      "checked_by": "supervisor and the customer",
+      "duplicates": [],
+      "overlaps_with": ["2579", "2581"]
+    }
+  ],
+  "notes": "Some checks happen immediately during the original call; this coding assumes the typical follow-up after the contact."
+},
+{
+  "task_id": "2581",
+  "split_reasoning": "One activity, contacting customers with answers or results, but done by two channels with different workflows: written responses and outbound phone calls.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Write and send a response to a customer's inquiry or a notification of claim investigation results or a planned adjustment.",
+      "time_share": 0.55,
+      "type_reasoning": "Produces a letter or email the customer relies on, with no one waiting.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Each response or notification is sent individually and closes an item in the queue.",
+      "work_item": "one written response or notification sent to a customer",
+      "start": "inquiry or investigation result ready for response",
+      "end": "letter or email sent and logged on the account",
+      "checked_by": "the customer, and supervisor or QA reviewer",
+      "duplicates": [],
+      "overlaps_with": ["2579", "2585", "2587"]
+    },
+    {
+      "part_id": "b",
+      "text": "Call a customer back to answer an inquiry or explain claim investigation results or a planned adjustment.",
+      "time_share": 0.45,
+      "type_reasoning": "The explanation happens in a live conversation with the customer on the line.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each callback is one contact that delivers the result and answers follow-up questions.",
+      "work_item": "one outbound callback delivering an answer or result",
+      "start": "customer answers the call",
+      "end": "result explained, customer's questions answered, call ended",
+      "checked_by": "the customer, and QA reviewer of recorded calls",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2580"]
+    }
+  ],
+  "notes": "Outbound calls are initiated by the representative, which fits LIVE_SERVICE only loosely; channel mix varies by employer."
+},
+{
+  "task_id": "2582",
+  "split_reasoning": "One activity: escalating an unresolved grievance to another department.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Prepare and route a referral of an unresolved customer grievance to the designated department for investigation.",
+      "time_share": 1.0,
+      "type_reasoning": "Produces an escalation ticket that the receiving department relies on, usually completed after the contact.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Escalations are handed over as tickets or referral forms, one per grievance.",
+      "work_item": "one grievance referral ticket",
+      "start": "representative determines the grievance cannot be resolved at first level",
+      "end": "referral with case details submitted to the designated department",
+      "checked_by": "receiving department and supervisor",
+      "duplicates": [],
+      "overlaps_with": ["2578", "2585"]
+    }
+  ],
+  "notes": "The customer is often told of the escalation during the call, but writing the referral is usually wrap-up work."
+},
+{
+  "task_id": "2583",
+  "split_reasoning": "One activity: pricing a requested service and taking payment or setting up billing; quoting, collecting, and arranging billing are alternative ways to settle the same transaction.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Determine the charges for a requested service and collect a deposit or payment, or set up billing, while the customer is on the line or at the desk.",
+      "time_share": 1.0,
+      "type_reasoning": "Charges are quoted and payment taken while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each charge-and-payment transaction is completed within one contact.",
+      "work_item": "one service charge determined and payment or billing arrangement completed during a contact",
+      "start": "customer requests a service",
+      "end": "charge quoted, payment or deposit taken or billing arranged, receipt or confirmation given",
+      "checked_by": "the customer, and cash-office or billing reconciliation",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2584", "2579"]
+    }
+  ],
+  "notes": "Some billing arrangements may be completed later in the back office; assumed small."
+},
+{
+  "task_id": "2584",
+  "split_reasoning": "One activity, entering account paperwork, but done in two places: during the call or visit and afterwards from mailed or emailed requests.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Complete a contract form, change-of-address record, or service discontinuance order in the computer while the customer is on the line or at the desk.",
+      "time_share": 0.6,
+      "type_reasoning": "The order is entered while the customer waits and is confirmed to them.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each order is entered and confirmed within one contact.",
+      "work_item": "one account order (contract, address change, or discontinuance) entered during a contact",
+      "start": "customer requests the change",
+      "end": "order submitted and confirmation given to the customer",
+      "checked_by": "the customer and the fulfilment or billing team that acts on the order",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2583"]
+    },
+    {
+      "part_id": "b",
+      "text": "Process contract forms, change-of-address records, or discontinuance orders from written or online requests.",
+      "time_share": 0.4,
+      "type_reasoning": "Done from a back-office queue with no one waiting.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Written requests are worked as individual items in a queue.",
+      "work_item": "one account order processed from a written request",
+      "start": "written or online request received",
+      "end": "order entered and confirmation sent to the customer",
+      "checked_by": "the customer and the fulfilment or billing team",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "18565 includes 'enter orders' and 'cancel accounts', which overlaps part a."
+},
+{
+  "task_id": "2585",
+  "split_reasoning": "Different kinds of item: quick validity checks done during the call, and longer investigations of complaints done afterwards.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Look up account and usage information during the call to assess whether a complaint is valid and explain the likely cause.",
+      "time_share": 0.45,
+      "type_reasoning": "The lookup and assessment happen while the customer is on the line.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each assessment is completed and explained within one contact.",
+      "work_item": "one complaint assessed during a call or visit",
+      "start": "customer describes the complaint",
+      "end": "validity and likely cause explained to the customer and noted",
+      "checked_by": "the customer and QA reviewer",
+      "duplicates": [],
+      "overlaps_with": ["18565", "2579"]
+    },
+    {
+      "part_id": "b",
+      "text": "Gather and examine records and outside information to investigate a complaint's validity and cause after the contact.",
+      "time_share": 0.55,
+      "type_reasoning": "Produces a written finding on the case that decides the remedy, with no one waiting.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Investigations are worked as cases and closed with a finding.",
+      "work_item": "one complaint investigation with a validity finding",
+      "start": "complaint case opened for review",
+      "end": "finding on validity and cause recorded and passed for remedy or reply",
+      "checked_by": "supervisor, and the staff who decide the remedy",
+      "duplicates": [],
+      "overlaps_with": ["2587", "2589", "2579", "2581", "2582"]
+    }
+  ],
+  "notes": "The split between quick and deep assessments varies a lot by industry."
+},
+{
+  "task_id": "2586",
+  "split_reasoning": "One activity: pitching additional services or products to customers.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Offer and promote new or additional services or products to customers during contacts.",
+      "time_share": 1.0,
+      "type_reasoning": "The value is in the persuasive conversation itself; the order that results is entered under another statement.",
+      "type": "INTERPERSONAL",
+      "duplicates": [],
+      "overlaps_with": ["18565"]
+    }
+  ],
+  "notes": "Could be read as LIVE_SERVICE if the sale and order entry are counted here rather than under 18565."
+},
+{
+  "task_id": "2587",
+  "split_reasoning": "One activity, deciding whether a loss is covered, but done in two places: answering a caller's coverage question live, and reviewing coverage on a claim afterwards.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Read the policy terms and tell a caller whether their loss appears to be covered while they are on the line.",
+      "time_share": 0.4,
+      "type_reasoning": "The policy is reviewed and the answer given while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each coverage question is answered within one contact.",
+      "work_item": "one coverage question answered during a call",
+      "start": "customer describes the loss and asks whether it is covered",
+      "end": "coverage answer given and noted on the account",
+      "checked_by": "the customer and claims staff who later rely on the note",
+      "duplicates": [],
+      "overlaps_with": ["18565"]
+    },
+    {
+      "part_id": "b",
+      "text": "Review the policy terms against a reported loss and record a coverage determination for the claim.",
+      "time_share": 0.6,
+      "type_reasoning": "Produces a coverage determination on a claim file, with no one waiting.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Coverage is determined per claim and recorded on the file.",
+      "work_item": "one coverage determination for a reported loss",
+      "start": "loss report and policy retrieved",
+      "end": "coverage decision recorded on the claim file",
+      "checked_by": "claims adjuster or supervisor, and the customer",
+      "duplicates": [],
+      "overlaps_with": ["2585", "2581"]
+    }
+  ],
+  "notes": "Applies only to insurance-sector representatives; the live share is a guess."
+},
+{
+  "task_id": "2589",
+  "split_reasoning": "Two activities: hands-on comparison of the returned merchandise, and desk work matching documents and preparing the return invoice.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Physically inspect disputed merchandise and compare it with the original requisition.",
+      "time_share": 0.35,
+      "type_reasoning": "Requires handling the goods away from the computer.",
+      "type": "PHYSICAL",
+      "duplicates": [],
+      "overlaps_with": ["2585"]
+    },
+    {
+      "part_id": "b",
+      "text": "Match the dispute against requisition and invoice records and prepare an invoice for the returned goods.",
+      "time_share": 0.65,
+      "type_reasoning": "Produces a return invoice that billing and the customer rely on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Each disputed return is processed and invoiced as one item.",
+      "work_item": "one return invoice prepared for a disputed shipment",
+      "start": "disputed goods and original requisition and invoice in hand",
+      "end": "return invoice issued and sent to billing and the customer",
+      "checked_by": "billing or accounts receivable, and the customer",
+      "duplicates": [],
+      "overlaps_with": ["2579", "2585"]
+    }
+  ],
+  "notes": "Physical share depends on whether the representative sees the goods or only photos and documents."
+},
+{
+  "task_id": "2591",
+  "split_reasoning": "One activity: proposing changes to prevent recurring problems.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Write a recommendation to management for an improvement in products, packaging, shipping, service, or billing procedures based on recurring customer problems.",
+      "time_share": 1.0,
+      "type_reasoning": "Produces a written suggestion that managers read and act on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Recommendations are submitted individually through a suggestion form, email, or team meeting note.",
+      "work_item": "one improvement recommendation submitted",
+      "start": "recurring problem identified from customer contacts",
+      "end": "recommendation with supporting examples sent to supervisor or process owner",
+      "checked_by": "supervisor or the department that owns the process",
+      "duplicates": [],
+      "overlaps_with": ["2578"]
+    }
+  ],
+  "notes": "Some recommendations are made orally in team meetings, which would be INTERPERSONAL."
+},
+{
+  "task_id": "18565",
+  "split_reasoning": "All live contacts, but covering different kinds of item: information requests, orders and cancellations entered on the spot, and complaint intake.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Answer a customer's call or visit asking for information about products or services.",
+      "time_share": 0.4,
+      "type_reasoning": "The answer is given in a live conversation while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each inquiry is handled within one contact.",
+      "work_item": "one information inquiry answered during a call or visit",
+      "start": "customer asks a question",
+      "end": "customer confirms the question is answered, contact ends",
+      "checked_by": "the customer and QA reviewer",
+      "duplicates": [],
+      "overlaps_with": ["2581"]
+    },
+    {
+      "part_id": "b",
+      "text": "Take and enter an order or cancel an account while the customer is on the line or at the desk.",
+      "time_share": 0.35,
+      "type_reasoning": "The order or cancellation is entered while the customer waits.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each order or cancellation is entered and confirmed within one contact.",
+      "work_item": "one order or account cancellation entered during a contact",
+      "start": "customer asks to order or cancel",
+      "end": "order or cancellation confirmed to the customer",
+      "checked_by": "the customer and the fulfilment or billing team",
+      "duplicates": [],
+      "overlaps_with": ["2584", "2583", "2586"]
+    },
+    {
+      "part_id": "c",
+      "text": "Obtain the details of a customer's complaint during a call or visit.",
+      "time_share": 0.25,
+      "type_reasoning": "The complaint is taken in a live conversation while the customer is present.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each complaint is taken down within one contact.",
+      "work_item": "one complaint taken during a call or visit",
+      "start": "customer raises a complaint",
+      "end": "complaint details captured and next steps explained to the customer",
+      "checked_by": "the customer and the staff who investigate or resolve it",
+      "duplicates": [],
+      "overlaps_with": ["2578", "2579", "2585"]
+    }
+  ],
+  "notes": "This broad statement overlaps the live parts of many other statements; shares across parts are a judgment."
+}
+]

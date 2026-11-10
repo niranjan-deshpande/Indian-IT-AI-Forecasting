@@ -1,0 +1,47 @@
+[
+ {
+  "task_id": "14638",
+  "reasoning": "Test plans and detailed test cases or scripts are distinct artifacts produced at different levels of detail. Y separates them without splitting the alternative forms of detailed test design unnecessarily.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "14643",
+  "reasoning": "X recasts ongoing monitoring as individual defect-status updates without assuming every follow-up involves retesting. Y adds a periodic reporting activity and assigns it a substantial share that the target does not establish.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14646",
+  "reasoning": "The target is participation in product design reviews, with the listed topics describing the input provided. X codes that interaction directly; Y assumes a separate written-comment deliverable not specified by the task.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14649",
+  "reasoning": "Specifying quality standards and developing procedures for assessing against them produce meaningfully different deliverables. Y distinguishes the criteria from the methods used to apply them.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "14652",
+  "reasoning": "Installation, maintenance, and use of testing software are distinct activities with different outputs. X covers maintenance changes and repairs as well as upgrades, whereas Y narrows maintenance to upgrades.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14653",
+  "reasoning": "Feedback can be delivered as a written artifact or through discussion with developers, and these have different work products. X distinguishes those activities rather than treating all communicated feedback as a discrete deliverable.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14654",
+  "reasoning": "X turns monitoring into an actionable performance issue without presuming a separate periodic report. Y assigns a substantial share to reporting even though the target does not establish that output or its frequency.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14660",
+  "reasoning": "Coordination can involve organizing testing, communicating during the round, and handling its results, not just arranging it beforehand. X covers more of that coordination than Y, although its shares and the extent of reporting will vary by workplace.",
+  "choice": "X"
+ },
+ {
+  "task_id": "14662",
+  "reasoning": "Traveling to a beta site does not make software evaluation hands-on physical work. Y treats the visit and its findings as one evaluation rather than assuming a separate report is always written afterwards.",
+  "choice": "Y"
+ }
+]

@@ -1,0 +1,504 @@
+[
+ {
+  "task_id": "1282",
+  "split_reasoning": "One activity, answering a user's question about software or hardware, but it is done in two places: live while the user is on the phone or at the desk, and afterwards from emailed or ticketed questions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a user's question about software or hardware operation while the user is on the phone, in chat, or at the desk, resolving the problem during the contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The user waits while the specialist explains or walks them through the fix, so this is work done in a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call or walk-up is one contact that ends with the user's question answered or the problem handed on.",
+    "work_item": "one user call, chat, or walk-up question answered",
+    "start": "user calls, opens a chat, or walks up with a question",
+    "end": "user confirms the answer or fix works, or the issue is logged for follow-up",
+    "checked_by": "the user who asked; help-desk supervisor through call reviews",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288",
+     "1287",
+     "1291"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a user's emailed or ticketed question about software or hardware operation.",
+    "time_share": 0.4,
+    "type_reasoning": "No one is waiting; each question produces a written answer the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Written questions arrive as tickets or emails in a queue and are closed one at a time.",
+    "work_item": "one written user question answered (ticket or email)",
+    "start": "question received by email or in the ticket queue",
+    "end": "answer sent and ticket closed",
+    "checked_by": "the user who asked; help-desk lead reviewing ticket quality",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288",
+     "1287"
+    ]
+   }
+  ],
+  "notes": "Live versus written share depends heavily on whether the desk is phone-first or ticket-first; 1288 covers the investigation behind harder questions and overlaps substantially."
+ },
+ {
+  "task_id": "1283",
+  "split_reasoning": "Entering commands and observing systems produces two kinds of item: verifying a machine or system after an install, repair, or change, and routine checks run to catch errors.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run test commands and observe a computer or system after an installation, repair, or change to verify it works correctly.",
+    "time_share": 0.6,
+    "type_reasoning": "Each verification ends in a pass/fail judgment that the user or ticket closure relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Verification is done once per install or fix, and its result is what allows the ticket or job to be closed.",
+    "work_item": "one post-install or post-repair verification of a machine or system",
+    "start": "installation, repair, or change completed",
+    "end": "correct operation confirmed and noted on the ticket, or error found and fix reopened",
+    "checked_by": "the user; support lead closing the ticket",
+    "duplicates": [],
+    "overlaps_with": [
+     "1284",
+     "1286",
+     "1285"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Run routine diagnostic commands on systems to detect errors before users report them.",
+    "time_share": 0.4,
+    "type_reasoning": "Routine checking is continuing work, but each run produces a recorded result that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Routine checks are done as a scheduled round (e.g. a morning check of key systems) and recorded as a whole.",
+    "work_item": "one routine system check round (e.g. daily check of servers, printers, network links)",
+    "start": "scheduled check begins",
+    "end": "results recorded, with any errors logged as tickets",
+    "checked_by": "IT supervisor; systems administrators who act on the errors",
+    "duplicates": [],
+    "overlaps_with": [
+     "1285",
+     "1287"
+    ]
+   }
+  ],
+  "notes": "Part b is close to 1285 (overseeing daily performance); the boundary between the two statements is blurry."
+ },
+ {
+  "task_id": "1284",
+  "split_reasoning": "Two different kinds of work: hands-on installation and repair of hardware and peripherals, and installing or fixing software at a computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install or make minor repairs to computer hardware or peripheral equipment (e.g. replace a drive, memory, keyboard, or printer part) following specifications.",
+    "time_share": 0.5,
+    "type_reasoning": "Needs hands-on work with the equipment away from a keyboard.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1286",
+     "1291",
+     "1283"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install software or make minor software repairs (reinstall, patch, reconfigure) on a user's computer following installation specifications.",
+    "time_share": 0.5,
+    "type_reasoning": "Each install or fix is a separate job done at a computer that the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Software installs and fixes come in as individual requests or tickets and are closed one at a time.",
+    "work_item": "one software installation or minor software repair completed on a machine",
+    "start": "install or repair request received",
+    "end": "software installed or fixed and ticket closed",
+    "checked_by": "the user; support lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1286",
+     "1282",
+     "1288",
+     "1283"
+    ]
+   }
+  ],
+  "notes": "Hardware/software split share is a judgment; remote software deployment makes part b more common in some sites."
+ },
+ {
+  "task_id": "1285",
+  "split_reasoning": "Overseeing daily performance is continuous; it produces two kinds of item: problems or alerts followed up, and a daily status check of the systems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow up a performance problem or alert on a computer system during the day and decide what action is needed.",
+    "time_share": 0.6,
+    "type_reasoning": "Each problem followed up ends in a decision and a ticket note others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alerts and performance problems are the unit that enters the queue and gets closed.",
+    "work_item": "one performance alert or problem followed up",
+    "start": "alert raised or slowdown noticed or reported",
+    "end": "cause recorded and fix applied, escalated, or closed as no action",
+    "checked_by": "IT supervisor; systems administrators",
+    "duplicates": [],
+    "overlaps_with": [
+     "1283",
+     "1288",
+     "1291"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review the day's system performance and record a daily status of the systems.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a daily status record or report that supervisors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The daily status check is handed over as one log entry or report per day.",
+    "work_item": "one daily system status review",
+    "start": "start of day or shift; pull of monitoring data and logs",
+    "end": "status recorded and any issues raised as tickets",
+    "checked_by": "IT supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1283",
+     "1287"
+    ]
+   }
+  ],
+  "notes": "'Oversee' is vague; for a user support specialist this is likely a modest share of time, and it overlaps heavily with 1283."
+ },
+ {
+  "task_id": "1286",
+  "split_reasoning": "Setting up equipment is partly hands-on (unpacking, placing, cabling) and partly at a computer (installing and configuring the operating system and software), so it is split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Physically set up computer equipment at an employee's workstation, including placing hardware and running and connecting cables.",
+    "time_share": 0.4,
+    "type_reasoning": "Hands-on work at the desk with equipment and cables.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1284",
+     "1295"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install and configure the operating system, software, and accounts on a new employee's computer so it is ready for use.",
+    "time_share": 0.6,
+    "type_reasoning": "Each configured machine is a distinct deliverable handed to the employee.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Machines are set up one per new starter or replacement request, and handed over as a whole.",
+    "work_item": "one workstation configured and handed over to an employee",
+    "start": "setup request or new-starter ticket received with hardware available",
+    "end": "machine imaged, software and accounts configured, handed to employee and ticket closed",
+    "checked_by": "the employee; IT supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1284",
+     "1283",
+     "1295"
+    ]
+   }
+  ],
+  "notes": "'Ensuring proper installation' may mean checking others' work; treated as part of the same setup items."
+ },
+ {
+  "task_id": "1287",
+  "split_reasoning": "The statement covers two kinds of record: a record of each problem and the remedy taken, and running logs of daily data communication transactions and installation activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write up the record of a user problem and the remedial action taken in the ticketing system after it is handled.",
+    "time_share": 0.6,
+    "type_reasoning": "Each record is a written item colleagues and supervisors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One record per problem or ticket is the unit others read and audit.",
+    "work_item": "one problem-and-remedy record written up for a ticket",
+    "start": "problem handled or remedy applied",
+    "end": "ticket notes complete with problem, steps taken, and outcome; ticket closed or updated",
+    "checked_by": "help-desk lead; other support staff who pick up the ticket later",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1288"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Keep the daily log of data communication transactions and installation activities.",
+    "time_share": 0.4,
+    "type_reasoning": "Logs are continuing, but each day's log is a record others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The log is maintained and reviewed per day or shift.",
+    "work_item": "one day's log of transactions and installation activities",
+    "start": "start of day or shift",
+    "end": "day's entries complete and log filed",
+    "checked_by": "IT supervisor; auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "1283",
+     "1285",
+     "1284",
+     "1286"
+    ]
+   }
+  ],
+  "notes": "Some ticket notes are typed while the user is still on the line; treated here as wrap-up work done after the contact, which may understate a live share."
+ },
+ {
+  "task_id": "1288",
+  "split_reasoning": "Reading manuals, conferring with users, and running diagnostics are alternative means to one deliverable (a resolved problem), but the work is done in two places: live while the user waits, and afterwards on ticketed problems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Troubleshoot and resolve a user's computer problem while the user is on the phone, on a remote session, or at the desk, using diagnostics, manuals, and questions to the user.",
+    "time_share": 0.45,
+    "type_reasoning": "The user waits while the specialist diagnoses and fixes the problem, so this is live service.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each problem worked during one contact is resolved or handed on before the contact ends.",
+    "work_item": "one problem diagnosed and resolved during a user contact",
+    "start": "user describes the problem on the call, session, or at the desk",
+    "end": "fix confirmed working by the user, or problem logged for further investigation",
+    "checked_by": "the user; help-desk supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1287"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate and resolve a ticketed computer problem after the contact, using diagnostics, technical manuals, and follow-up with the user.",
+    "time_share": 0.55,
+    "type_reasoning": "No one is waiting; each investigation produces a resolution that the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Harder problems become tickets that are worked and closed one at a time.",
+    "work_item": "one ticketed problem investigated and resolved",
+    "start": "ticket assigned or problem left open from a contact",
+    "end": "fix applied and confirmed by the user, ticket closed, or ticket escalated",
+    "checked_by": "the user; help-desk lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1291",
+     "1284",
+     "1287"
+    ]
+   }
+  ],
+  "notes": "Strong overlap with 1282; the two statements describe largely the same problem-resolution workflow from different angles."
+ },
+ {
+  "task_id": "1289",
+  "split_reasoning": "One activity: conferring with staff, users, and management to set requirements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with staff, users, and management to establish requirements for new systems or modifications.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the meetings and discussion; the statement does not name a written product a colleague would check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1292",
+     "1297",
+     "1296"
+    ]
+   }
+  ],
+  "notes": "If a written requirements summary is produced, it could be treated as a DISCRETE item; the statement only says 'confer'."
+ },
+ {
+  "task_id": "1290",
+  "split_reasoning": "Two different activities joined by 'or': writing training materials and procedures, and training users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write training materials or procedures for the proper use of hardware or software.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a document or guide that users and colleagues rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Materials are written and released one guide, procedure, or course pack at a time.",
+    "work_item": "one training guide, how-to document, or procedure",
+    "start": "need for material identified (new system, recurring question)",
+    "end": "material reviewed and published to users or the knowledge base",
+    "checked_by": "IT supervisor; users who follow it",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train users, individually or in groups, in the proper use of hardware or software.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live teaching session; nothing a colleague would check is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282"
+    ]
+   }
+  ],
+  "notes": "Share between writing and delivering training is a judgment and varies by organization."
+ },
+ {
+  "task_id": "1291",
+  "split_reasoning": "One activity: referring a major problem or defective product to an outside vendor or technician.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a major hardware or software problem or a defective product to a vendor or specialist technician for service.",
+    "time_share": 1.0,
+    "type_reasoning": "Each referral is a distinct service case that the vendor and the user rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Referrals are made as individual vendor service cases or RMAs, each opened and tracked to return.",
+    "work_item": "one vendor or technician service referral (case or RMA opened)",
+    "start": "problem judged beyond in-house repair or product found defective",
+    "end": "case opened with vendor with problem details and warranty info, user informed, ticket updated",
+    "checked_by": "vendor or technician; the affected user; IT supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1284",
+     "1288",
+     "1287"
+    ]
+   }
+  ],
+  "notes": "Unclear whether follow-up until the item is returned is part of the referral; treated as ending when the case is handed over."
+ },
+ {
+  "task_id": "1292",
+  "split_reasoning": "One activity: evaluating software or hardware and writing recommendations; the recommendation is part of the evaluation deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a piece of software or hardware and recommend improvements or upgrades.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a written evaluation with recommendations that managers read and act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The evaluation and its recommendation are handed over together as one document.",
+    "work_item": "one evaluation with recommendation (product, upgrade, or improvement)",
+    "start": "request or identified need to assess a product or system",
+    "end": "evaluation and recommendation sent to IT manager",
+    "checked_by": "IT manager; purchasing decision-makers",
+    "duplicates": [],
+    "overlaps_with": [
+     "1297",
+     "1289"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1293",
+  "split_reasoning": "Reading and attending events are alternative means to the same end, keeping knowledge current.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read trade magazines and technical manuals, or attend conferences and seminars, to keep up with hardware and software.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces nothing anyone else checks or relies on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288"
+    ]
+   }
+  ],
+  "notes": "Reading manuals to solve a specific problem belongs to 1288, not here."
+ },
+ {
+  "task_id": "1295",
+  "split_reasoning": "Inspecting equipment against order information is one preparation activity for delivery.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect equipment against order sheets to prepare it for delivery to users.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing equipment for delivery requires hands-on inspection of the physical items.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Employee equipment setup under 1286 is a related but distinct installation activity, not the order-based delivery inspection itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Order-sheet review is treated as part of the hands-on inspection, not as a separate computer-based deliverable."
+ },
+ {
+  "task_id": "1296",
+  "split_reasoning": "One activity: modifying or customizing commercial software for internal needs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Modify or customize a commercial program (e.g. templates, macros, configuration, scripts) to meet internal needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Each customization is a distinct change that users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Customizations are requested and delivered one change at a time.",
+    "work_item": "one program customization delivered (template, macro, configuration change)",
+    "start": "customization request received",
+    "end": "change tested and released to users",
+    "checked_by": "requesting users; IT supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1289"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1297",
+  "split_reasoning": "Workflow analysis, space design, and cost comparison are components of one deliverable, the feasibility study.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct an office automation feasibility study, including workflow analysis, space design, or cost comparison.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a study report that management reads and decides on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The study is handed over and signed off as one report.",
+    "work_item": "one office automation feasibility study report",
+    "start": "study requested or scoped",
+    "end": "study with analysis and recommendation delivered to management",
+    "checked_by": "IT manager; office or department management",
+    "duplicates": [],
+    "overlaps_with": [
+     "1292",
+     "1289"
+    ]
+   }
+  ],
+  "notes": "Studies may be large; a single report could be close to project scale. Some site visits for space design may be physical, but they are minor."
+ },
+ {
+  "task_id": "15204",
+  "split_reasoning": "Two different activities: hiring workers, and supervising and directing them day to day.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Hire workers for special project, monitoring, and installation work: screen candidates, interview, and decide on hires.",
+    "time_share": 0.25,
+    "type_reasoning": "Each hiring process ends in a hiring decision that HR and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Hiring is handled one vacancy at a time and signed off as a decision.",
+    "work_item": "one vacancy filled (hiring decision made)",
+    "start": "vacancy approved and applications received",
+    "end": "candidate selected and recommendation or offer sent to HR",
+    "checked_by": "HR; hiring manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise and direct workers doing special project work, problem-solving, monitoring, and installation of data communication equipment and software.",
+    "time_share": 0.75,
+    "type_reasoning": "The value is in directing and supervising people; nothing a colleague would check is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Interviewing is itself interpersonal; part a is coded at the level of the hiring decision."
+ }
+]

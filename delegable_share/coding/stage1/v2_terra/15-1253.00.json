@@ -1,0 +1,751 @@
+[
+ {
+  "task_id": "14638",
+  "split_reasoning": "Test plans and detailed test cases or scripts are different deliverables, even though both support testing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a test plan for a software change or release.",
+    "time_share": 0.4,
+    "type_reasoning": "A completed test plan is a distinct artifact used by the test team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for one release or change is reviewed and used as a whole.",
+    "work_item": "one test plan",
+    "start": "requirements and scope for the change or release are available",
+    "end": "test plan is prepared and shared for review or use",
+    "checked_by": "test lead and project team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14640",
+     "14645"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Design test scenarios, scripts, or procedures for software functionality.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces documented test designs that testers can execute.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A related set of cases or scripts is handed over for a feature or test objective.",
+    "work_item": "one feature-level set of test cases or scripts",
+    "start": "feature requirements or test objectives are available",
+    "end": "cases or scripts are ready for review and execution",
+    "checked_by": "test lead and testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14640",
+     "14648",
+     "14650"
+    ]
+   }
+  ],
+  "notes": "The boundary between a plan and detailed cases varies by team; time shares are estimates."
+ },
+ {
+  "task_id": "14639",
+  "split_reasoning": "Testing modifications is one activity, regardless of the particular change under test.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test a system modification before implementation.",
+    "time_share": 1.0,
+    "type_reasoning": "A test run produces results that the release team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results for one modification or release candidate are reviewed together for implementation.",
+    "work_item": "one modification test run and its results",
+    "start": "modified build and applicable tests are available",
+    "end": "tests are executed and results recorded for the release team",
+    "checked_by": "test lead and release team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14652",
+     "14655"
+    ]
+   }
+  ],
+  "notes": "Defect reporting is separately covered by task 14641."
+ },
+ {
+  "task_id": "14640",
+  "split_reasoning": "The listed testing areas are alternative coverage targets for developing a testing program, not separate activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a testing program covering the relevant software risks and scenarios.",
+    "time_share": 1.0,
+    "type_reasoning": "A testing program is a defined set of tests and coverage used by a project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The program for a release or feature is assembled and reviewed as a whole.",
+    "work_item": "one testing program for a release or feature",
+    "start": "scope, requirements, and testing risks are available",
+    "end": "test coverage and associated tests are prepared for use",
+    "checked_by": "test lead and project team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14638",
+     "14645",
+     "14649"
+    ]
+   }
+  ],
+  "notes": "Testing programs may range from organized suites of cases to more formal programs depending on the workplace."
+ },
+ {
+  "task_id": "14641",
+  "split_reasoning": "Documenting and reporting a defect are connected steps in producing one bug report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document a software defect in the bug tracker and report it to developers.",
+    "time_share": 1.0,
+    "type_reasoning": "Each defect yields a tracker entry that developers act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual bug ticket is the unit assigned and tracked.",
+    "work_item": "one software defect report",
+    "start": "a suspected defect and supporting evidence are identified",
+    "end": "bug ticket is entered and made available to the responsible developers",
+    "checked_by": "developers and test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14643",
+     "14644"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14642",
+  "split_reasoning": "Function, output, screens, and content are alternative places where the same problem-analysis activity occurs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify, analyze, and document a problem in software behavior or content.",
+    "time_share": 1.0,
+    "type_reasoning": "Each investigation produces a documented problem and supporting analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A single identified problem is the unit passed to others for review or correction.",
+    "work_item": "one software problem analyzed and documented",
+    "start": "anomalous behavior, output, screen, or content is observed",
+    "end": "problem and analysis are documented for review",
+    "checked_by": "developers and test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14639",
+     "14641",
+     "14651",
+     "14658",
+     "14661"
+    ]
+   }
+  ],
+  "notes": "The documentation may be a bug ticket, but the target also includes identifying and analyzing the problem."
+ },
+ {
+  "task_id": "14643",
+  "split_reasoning": "Monitoring resolution and tracking success are parts of following a defect through its status changes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Track the progress and outcome of a defect resolution effort.",
+    "time_share": 1.0,
+    "type_reasoning": "Continuous monitoring produces individual defect-status updates that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A tracked defect is the unit whose resolution progress and outcome are followed.",
+    "work_item": "one defect resolution status update",
+    "start": "a tracked defect is due for follow-up or its status changes",
+    "end": "current progress or outcome is recorded or communicated",
+    "checked_by": "test lead, developers, and project manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "14641",
+     "14644"
+    ]
+   }
+  ],
+  "notes": "Verifying a fix may be handled in a separate test run; this item covers tracking its outcome."
+ },
+ {
+  "task_id": "14644",
+  "split_reasoning": "Creating a defect database and maintaining its contents are distinct deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a database for known test defects.",
+    "time_share": 0.2,
+    "type_reasoning": "A configured database is a distinct resource used by the test team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The configured database is handed over as a working resource.",
+    "work_item": "one defect database created",
+    "start": "requirements for storing and accessing defect information are identified",
+    "end": "database is configured and available for use",
+    "checked_by": "test lead and database users",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain the accuracy and organization of a known-defect database.",
+    "time_share": 0.8,
+    "type_reasoning": "Maintenance produces updated defect records others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of record updates can be reviewed and relied on as a completed maintenance pass.",
+    "work_item": "one batch of defect database updates",
+    "start": "new or changed defect information is available for database maintenance",
+    "end": "affected records are updated or reconciled",
+    "checked_by": "test lead and database users",
+    "duplicates": [],
+    "overlaps_with": [
+     "14641",
+     "14643"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the organization already has a defect-tracking system."
+ },
+ {
+  "task_id": "14645",
+  "split_reasoning": "Scheduling and strategy are related planning components of a test effort, normally assembled together.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a test schedule or strategy around project scope and delivery dates.",
+    "time_share": 1.0,
+    "type_reasoning": "The planning produces an agreed schedule or strategy used to coordinate testing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A project or release-level testing schedule or strategy is reviewed as a whole.",
+    "work_item": "one test schedule or strategy",
+    "start": "project scope and delivery constraints are available",
+    "end": "schedule or strategy is prepared and shared with the project team",
+    "checked_by": "test lead and project manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "14638",
+     "14640",
+     "14660"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14646",
+  "split_reasoning": "The listed subjects are different inputs to the same product design review interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Participate in a product design review and provide testing-related input.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is participation and discussion in a live review.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14653",
+     "14658"
+    ]
+   }
+  ],
+  "notes": "Any separately prepared review document is not specified by the target."
+ },
+ {
+  "task_id": "14647",
+  "split_reasoning": "Accuracy, compliance, completeness, and risk are different review criteria applied to the same documentation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review software documentation for quality, compliance, and risk.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces comments or a reviewed document that authors can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or defined document section is normally submitted for review as a unit.",
+    "work_item": "one software document reviewed",
+    "start": "document is submitted for review",
+    "end": "review comments or approval are returned to the author",
+    "checked_by": "document author and project lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14658"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14648",
+  "split_reasoning": "Replicability and standards compliance are purposes of the same procedure-documentation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document a test procedure so it can be repeated and meets applicable standards.",
+    "time_share": 1.0,
+    "type_reasoning": "The documented procedure is an artifact used by testers and reviewers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a defined test activity is maintained and reviewed as a unit.",
+    "work_item": "one documented test procedure",
+    "start": "test method and applicable standards are available",
+    "end": "procedure is documented and made available for review or use",
+    "checked_by": "testers, test lead, and compliance reviewers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14638",
+     "14649"
+    ]
+   }
+  ],
+  "notes": "This covers documenting the procedure, not necessarily designing the full test plan."
+ },
+ {
+  "task_id": "14649",
+  "split_reasoning": "Quality standards and the methods or procedures used to apply them are different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or specify product quality or release-readiness standards.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces criteria that a team can review and apply.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of quality or readiness criteria is approved and used together.",
+    "work_item": "one set of quality or release-readiness standards",
+    "start": "quality objectives and applicable requirements are identified",
+    "end": "standards are specified and submitted for review",
+    "checked_by": "quality lead and release management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14640",
+     "14658"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop or specify methods or procedures for assessing product quality or release readiness.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces an assessment method or procedure used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment procedure for a defined quality or readiness decision is reviewed as a unit.",
+    "work_item": "one quality or release-readiness assessment procedure",
+    "start": "assessment objectives and applicable criteria are available",
+    "end": "method or procedure is documented and submitted for review",
+    "checked_by": "quality lead and release team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14638",
+     "14640",
+     "14648"
+    ]
+   }
+  ],
+  "notes": "A workplace may combine standards and procedures in one document; shares are estimates."
+ },
+ {
+  "task_id": "14650",
+  "split_reasoning": "Updating automated scripts is one activity regardless of what changed in the software.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update automated test scripts to reflect current software and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The updated scripts are distinct artifacts used in subsequent testing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A related set of script changes for a feature or software change is typically reviewed together.",
+    "work_item": "one set of automated test script updates",
+    "start": "software change or obsolete script behavior is identified",
+    "end": "scripts are updated, checked, and submitted for use",
+    "checked_by": "test automation lead and other testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14638",
+     "14659"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14651",
+  "split_reasoning": "Investigating a referred customer problem is one activity, irrespective of the cause.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a customer problem referred by technical support.",
+    "time_share": 1.0,
+    "type_reasoning": "The referred case produces investigation findings that support staff or developers use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The referred support case is the unit received and returned with findings.",
+    "work_item": "one referred customer problem investigated",
+    "start": "technical support refers a customer case with available evidence",
+    "end": "findings or recommended next steps are returned to support or developers",
+    "checked_by": "technical support and developers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14657",
+     "14661"
+    ]
+   }
+  ],
+  "notes": "This codes the referred investigation, not a live support conversation."
+ },
+ {
+  "task_id": "14652",
+  "split_reasoning": "Installing, maintaining, and using testing software produce different outputs and are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install a software testing program.",
+    "time_share": 0.15,
+    "type_reasoning": "Installation produces a configured program available for testing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One installation is completed and checked as a usable setup.",
+    "work_item": "one testing program installation",
+    "start": "testing software and installation requirements are available",
+    "end": "program is installed and basic operation is verified",
+    "checked_by": "test team and system administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "14656"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain a software testing program.",
+    "time_share": 0.25,
+    "type_reasoning": "Maintenance produces an updated or repaired testing tool configuration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A maintenance change or update is applied and verified as a unit.",
+    "work_item": "one testing program maintenance update",
+    "start": "an update, configuration change, or tool problem is identified",
+    "end": "maintenance change is applied and checked",
+    "checked_by": "test team and tool administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "14656"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Use a software testing program to execute tests.",
+    "time_share": 0.6,
+    "type_reasoning": "A testing session produces results that the test team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A test run or suite execution produces a coherent set of results.",
+    "work_item": "one test suite run using a testing program",
+    "start": "test build, test suite, and testing program are ready",
+    "end": "suite is executed and results are available",
+    "checked_by": "test lead and developers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14639",
+     "14655"
+    ]
+   }
+  ],
+  "notes": "Shares vary substantially with the availability and ownership of testing tools."
+ },
+ {
+  "task_id": "14653",
+  "split_reasoning": "Usability and functionality are subjects of the same feedback and recommendation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide developers with feedback and recommendations on software usability and functionality.",
+    "time_share": 1.0,
+    "type_reasoning": "Actionable feedback is conveyed to developers as a distinct set of findings or recommendations.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Feedback on a feature or review is commonly shared as a coherent set.",
+    "work_item": "one set of usability or functionality feedback",
+    "start": "software behavior or a feature is evaluated",
+    "end": "findings and recommendations are communicated to developers",
+    "checked_by": "developers and product team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14646",
+     "14657",
+     "14658"
+    ]
+   }
+  ],
+  "notes": "Feedback may also be given verbally during a design review."
+ },
+ {
+  "task_id": "14654",
+  "split_reasoning": "Performance monitoring is continuous, but its actionable outputs are individual performance issues investigated.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a performance issue identified through program monitoring.",
+    "time_share": 1.0,
+    "type_reasoning": "Each identified issue produces findings or an escalation that others can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An observed performance issue is investigated and communicated as a unit.",
+    "work_item": "one monitored performance issue investigated",
+    "start": "monitoring reveals a performance anomaly or threshold breach",
+    "end": "findings are recorded and the issue is closed or escalated",
+    "checked_by": "developers and operations or test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14661",
+     "14662"
+    ]
+   }
+  ],
+  "notes": "Some workplaces also produce periodic performance summaries; the target does not specify a reporting cadence."
+ },
+ {
+  "task_id": "14655",
+  "split_reasoning": "Programs, hardware, operating systems, and networks are alternative compatibility environments for the same testing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct software compatibility tests in a specified environment.",
+    "time_share": 1.0,
+    "type_reasoning": "A compatibility test produces results for the tested configuration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results for a defined environment or configuration are reviewed together.",
+    "work_item": "one compatibility test run for a configuration",
+    "start": "software build, configuration, and compatibility tests are ready",
+    "end": "tests are completed and configuration-specific results recorded",
+    "checked_by": "test lead and developers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14639",
+     "14652"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14656",
+  "split_reasoning": "Installing and configuring a recreation are connected steps in producing one testing environment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up a recreation of a software production environment for performance testing.",
+    "time_share": 1.0,
+    "type_reasoning": "The configured environment is a distinct resource used by testers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recreated environment is handed over for a defined testing effort.",
+    "work_item": "one recreated production-like test environment",
+    "start": "production configuration and test environment requirements are available",
+    "end": "environment is installed, configured, and checked for testing",
+    "checked_by": "performance testers and environment or operations team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14652"
+    ]
+   }
+  ],
+  "notes": "This covers software environment setup, not physical hardware installation."
+ },
+ {
+  "task_id": "14657",
+  "split_reasoning": "Collaborating with field staff on a case and assisting a customer who is present are different working contexts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collaborate with field staff to diagnose a software problem and recommend solutions.",
+    "time_share": 0.6,
+    "type_reasoning": "The joint investigation produces findings and recommendations that field staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A referred problem is worked through and its findings returned as a case.",
+    "work_item": "one field problem evaluated with staff",
+    "start": "field staff raise a problem and provide available details",
+    "end": "diagnostic findings and possible solutions are shared with field staff",
+    "checked_by": "field staff and developers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14651",
+     "14653",
+     "14661"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Work with a customer during a live contact to evaluate a software problem and suggest solutions.",
+    "time_share": 0.4,
+    "type_reasoning": "The customer participates and waits while the problem is evaluated and guidance is given.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The live diagnostic contact is a bounded interaction with an outcome communicated to the customer.",
+    "work_item": "one customer diagnostic contact",
+    "start": "customer describes the problem during the contact",
+    "end": "findings or possible next steps are explained before the contact ends",
+    "checked_by": "customer and support team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14651",
+     "14653"
+    ]
+   }
+  ],
+  "notes": "Customer collaboration may instead involve longer offline investigation; shares depend on the role and support model."
+ },
+ {
+  "task_id": "14658",
+  "split_reasoning": "Identifying a standards deviation and suggesting a correction are connected parts of one compliance finding.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify a program's deviation from standards and suggest a modification.",
+    "time_share": 1.0,
+    "type_reasoning": "Each finding and recommendation is an output developers or compliance reviewers can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular deviation and its suggested correction are reviewed together.",
+    "work_item": "one standards-deviation finding with recommendation",
+    "start": "program behavior or implementation is checked against an applicable standard",
+    "end": "deviation and suggested modification are documented or communicated",
+    "checked_by": "developers and compliance or quality lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14646",
+     "14647",
+     "14649",
+     "14653"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14659",
+  "split_reasoning": "Designing and developing an automated testing tool are connected stages of producing the tool.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design or develop an automated testing tool.",
+    "time_share": 1.0,
+    "type_reasoning": "A tool or defined tool enhancement is a software deliverable used by testers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A bounded tool component or enhancement can be reviewed and handed over without treating the whole automation project as one item.",
+    "work_item": "one automated testing tool component or enhancement",
+    "start": "an automation need and requirements are identified",
+    "end": "component or enhancement is implemented, checked, and submitted for use",
+    "checked_by": "test automation lead and testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14650"
+    ]
+   }
+  ],
+  "notes": "A design-only assignment may hand over a specification rather than implemented code."
+ },
+ {
+  "task_id": "14660",
+  "split_reasoning": "User and third-party testing are alternative participants in the same coordination activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate a round of user or third-party testing.",
+    "time_share": 1.0,
+    "type_reasoning": "Coordination produces an organized testing round with participants, materials, and arrangements in place.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined testing round is the unit scheduled and handed over to participating testers.",
+    "work_item": "one user or third-party testing round coordinated",
+    "start": "need, scope, and timing for external testing are identified",
+    "end": "participants and arrangements are confirmed and testing information is distributed",
+    "checked_by": "project lead and participating testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14645"
+    ]
+   }
+  ],
+  "notes": "Coordination includes communication with participants; executing their tests is not part of this item."
+ },
+ {
+  "task_id": "14661",
+  "split_reasoning": "Configuration files, logs, and code are alternative inputs to the same initial debugging activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform initial debugging to identify the source of a software breakdown.",
+    "time_share": 1.0,
+    "type_reasoning": "The investigation produces an initial diagnosis or evidence for further debugging.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One breakdown is investigated and its findings handed to the responsible team.",
+    "work_item": "one initial debugging investigation",
+    "start": "a software breakdown and relevant evidence are available",
+    "end": "likely source or remaining unknowns are recorded and communicated",
+    "checked_by": "developers and test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14642",
+     "14651",
+     "14654",
+     "14657"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14662",
+  "split_reasoning": "Visiting a beta site and evaluating performance there are connected parts of one on-site evaluation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate software performance at a beta testing site.",
+    "time_share": 1.0,
+    "type_reasoning": "The site evaluation produces findings that the product team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings from one site visit are normally communicated together.",
+    "work_item": "one beta-site performance evaluation",
+    "start": "a beta site and evaluation objectives are identified",
+    "end": "site observations and performance findings are documented or shared",
+    "checked_by": "product team and test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14654",
+     "14657"
+    ]
+   }
+  ],
+  "notes": "Travel to a site does not by itself make the evaluation hands-on physical work."
+ },
+ {
+  "task_id": "14663",
+  "split_reasoning": "Evaluation and recommendation are connected steps in selecting testing or bug-tracking software.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate testing or bug-tracking software and recommend an option.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces a recommendation or comparison for a decision maker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A comparison for a defined tool-selection need is reviewed as a whole.",
+    "work_item": "one testing or bug-tracking software evaluation",
+    "start": "tool-selection need and evaluation criteria are identified",
+    "end": "evaluation findings and recommendation are submitted",
+    "checked_by": "test lead and software purchasing or IT decision makers",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "An evaluation may conclude without recommending a particular product."
+ },
+ {
+  "task_id": "14664",
+  "split_reasoning": "Historical analysis is one activity applied to a selected body of test results.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze historical test results for patterns and trends.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces findings that the test or project team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis of results for a defined period, release, or question is reviewed as a whole.",
+    "work_item": "one historical test-results analysis",
+    "start": "analysis question and relevant historical results are identified",
+    "end": "patterns and findings are summarized and shared",
+    "checked_by": "test lead and project team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

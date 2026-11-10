@@ -1,0 +1,22 @@
+[
+ {
+  "task_id": "1283",
+  "reasoning": "X distinguishes tests performed during live user support from independent checks, as the instructions require when both are substantial. Y omits live testing and limits the work to post-change verification and scheduled rounds.",
+  "choice": "X"
+ },
+ {
+  "task_id": "1287",
+  "reasoning": "X separates records entered while a user waits from records completed outside the contact. Y treats all problem records as after-contact work despite acknowledging that some are entered live.",
+  "choice": "X"
+ },
+ {
+  "task_id": "1291",
+  "reasoning": "Y accounts for both referrals made during a live user contact, such as a transfer, and referrals submitted afterward. It also keeps the referral distinct from the investigation that precedes it; the live share will vary by workplace.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "1295",
+  "reasoning": "Y treats reading the order sheet as an input to the hands-on equipment inspection, rather than inventing a separate paperwork deliverable. The statement does not establish a distinct computer-based activity that requires a split.",
+  "choice": "Y"
+ }
+]

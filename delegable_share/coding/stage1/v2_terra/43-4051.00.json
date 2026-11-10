@@ -1,0 +1,529 @@
+[
+ {
+  "task_id": "2578",
+  "split_reasoning": "Interaction records are completed both during customer contacts and afterward as wrap-up work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record customer interaction and transaction details while the customer is present.",
+    "time_share": 0.55,
+    "type_reasoning": "The record is entered while the customer is waiting in a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact record is the entry that other representatives use.",
+    "work_item": "one interaction record entered during a customer contact",
+    "start": "customer describes the inquiry, complaint, comment, or transaction",
+    "end": "relevant details and actions taken so far are entered during the contact",
+    "checked_by": "other customer service representatives and supervisors",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete customer interaction and transaction records after the contact.",
+    "time_share": 0.45,
+    "type_reasoning": "The representative completes a record without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed contact record is available for later service and review.",
+    "work_item": "one interaction record completed after a customer contact",
+    "start": "customer contact ends and the representative begins wrap-up",
+    "end": "details of the contact and actions taken are saved",
+    "checked_by": "other customer service representatives and supervisors",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live versus wrap-up share varies with the recordkeeping system and contact type."
+ },
+ {
+  "task_id": "2579",
+  "split_reasoning": "Remedies are processed both during live contacts and afterward, while merchandise exchanges can also require hands-on handling.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process a refund, bill adjustment, or merchandise exchange while the customer waits.",
+    "time_share": 0.5,
+    "type_reasoning": "The remedy is entered or confirmed during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One remedy transaction is the actionable output of this resolution step.",
+    "work_item": "one customer remedy processed during a contact",
+    "start": "a remedy is selected for the customer's complaint",
+    "end": "the refund, adjustment, or exchange transaction is entered and confirmed to the customer",
+    "checked_by": "customer and customer service supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2581",
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Process a refund, bill adjustment, or merchandise exchange after the customer contact.",
+    "time_share": 0.35,
+    "type_reasoning": "The remedy transaction is completed in a queue or back office without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each processed remedy is a transaction that accounting or service staff can rely on.",
+    "work_item": "one customer remedy processed after a contact",
+    "start": "an approved or actionable remedy is received for processing",
+    "end": "the refund, adjustment, or exchange transaction is entered or submitted",
+    "checked_by": "customer service supervisor or accounting team",
+    "duplicates": [],
+    "overlaps_with": [
+     "2581",
+     "2589"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Handle returned and replacement merchandise as part of an exchange.",
+    "time_share": 0.15,
+    "type_reasoning": "Receiving and handing over physical merchandise requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2589"
+    ]
+   }
+  ],
+  "notes": "Merchandise handling applies only where representatives handle goods; shares vary by employer."
+ },
+ {
+  "task_id": "2580",
+  "split_reasoning": "Checking whether a previously requested change was made is one follow-up activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify that the appropriate change was made to resolve a customer's problem.",
+    "time_share": 1.0,
+    "type_reasoning": "Each follow-up produces a verification result that service staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The verification is attached to one customer's previously requested change or problem.",
+    "work_item": "one resolution change verified",
+    "start": "a previously requested resolution is due for follow-up",
+    "end": "the change is confirmed or its absence is flagged for further action",
+    "checked_by": "customer service supervisor or follow-up team",
+    "duplicates": [],
+    "overlaps_with": [
+     "2579",
+     "2581"
+    ]
+   }
+  ],
+  "notes": "This is coded as follow-up after the original contact; some checks may instead occur during a later live contact."
+ },
+ {
+  "task_id": "2581",
+  "split_reasoning": "Responses and notifications are delivered both in live calls and in written messages.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Call a customer with an inquiry response, claim result, or planned adjustment.",
+    "time_share": 0.6,
+    "type_reasoning": "The response or notification is delivered in a live customer conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One outbound contact communicates the response or result to the customer.",
+    "work_item": "one customer response or notification delivered by phone",
+    "start": "representative reaches the customer to communicate a response or result",
+    "end": "the response, investigation result, or planned adjustment is explained to the customer",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2579",
+     "2580",
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a customer a written inquiry response, claim result, or planned adjustment.",
+    "time_share": 0.4,
+    "type_reasoning": "A written response or notification is prepared and sent without a live customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The sent message is the unit the customer receives and relies on.",
+    "work_item": "one written customer response or notification",
+    "start": "an inquiry response, investigation result, or planned adjustment is ready to communicate",
+    "end": "the response or notification is sent to the customer",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2579",
+     "2580"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the organization's communication channels."
+ },
+ {
+  "task_id": "2582",
+  "split_reasoning": "Unresolved grievances may be referred during a live contact or routed afterward through an internal queue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer an unresolved customer grievance while the customer is still on the line or at the desk.",
+    "time_share": 0.4,
+    "type_reasoning": "The referral or transfer is made during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One grievance referral is the handoff to the designated department.",
+    "work_item": "one grievance referred during a customer contact",
+    "start": "representative determines during the contact that the grievance needs further investigation",
+    "end": "the grievance is transferred or referred and the customer is informed",
+    "checked_by": "receiving department and customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Route an unresolved customer grievance to the designated department after the contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The referral is prepared and routed without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The referral is the item received by the investigating department.",
+    "work_item": "one grievance referral submitted for investigation",
+    "start": "an unresolved grievance is identified for escalation",
+    "end": "the referral and relevant details are sent to the designated department",
+    "checked_by": "receiving department",
+    "duplicates": [],
+    "overlaps_with": [
+     "2578",
+     "2585"
+    ]
+   }
+  ],
+  "notes": "Live transfers and queued referrals vary by organization."
+ },
+ {
+  "task_id": "2583",
+  "split_reasoning": "Charge and payment arrangements are made both with customers waiting and from requests processed later.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine charges and collect or arrange payment while the customer is present.",
+    "time_share": 0.7,
+    "type_reasoning": "The charge or payment arrangement is completed during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One service request produces a charge and payment or billing arrangement.",
+    "work_item": "one service charge and payment arrangement handled during a contact",
+    "start": "customer requests a service or asks to pay",
+    "end": "charges are communicated and the payment, deposit, or billing arrangement is entered",
+    "checked_by": "customer and billing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Determine charges and process payment or billing arrangements from requests handled after contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The charge or billing transaction is processed without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The charge and associated arrangement for one request form a billing transaction.",
+    "work_item": "one service charge and payment arrangement processed",
+    "start": "a service or payment request is received for processing",
+    "end": "charges and the payment, deposit, or billing arrangement are entered or submitted",
+    "checked_by": "billing team and customer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A request may require only some of the listed charging and payment actions."
+ },
+ {
+  "task_id": "2584",
+  "split_reasoning": "Contract forms and account change orders are different deliverables, and each can be completed live or from a later processing queue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete a service contract form while the customer is present.",
+    "time_share": 0.2,
+    "type_reasoning": "The form is completed during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One completed contract form is submitted or presented for the customer's agreement.",
+    "work_item": "one contract form completed during a contact",
+    "start": "customer provides information needed for the contract",
+    "end": "the completed form is presented or submitted during the contact",
+    "checked_by": "customer and contract administration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete a service contract form from a request processed after contact.",
+    "time_share": 0.2,
+    "type_reasoning": "A completed form is produced without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One contract form is the document handed to the customer or contract team.",
+    "work_item": "one contract form completed for processing",
+    "start": "contract information is received for preparation",
+    "end": "the completed form is sent or submitted for the next contract step",
+    "checked_by": "contract administration team or customer",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Enter a change-of-address record or service discontinuance order while the customer is present.",
+    "time_share": 0.4,
+    "type_reasoning": "The account change is entered during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One account change record or discontinuance order is entered and confirmed.",
+    "work_item": "one account change or discontinuance order entered during a contact",
+    "start": "customer requests an address change or service discontinuance",
+    "end": "the change or order is entered and confirmed to the customer",
+    "checked_by": "customer and downstream service team",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Prepare a change-of-address record or service discontinuance order from a written or queued request.",
+    "time_share": 0.2,
+    "type_reasoning": "The account change is processed without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One change record or order is the item passed to the account or service system.",
+    "work_item": "one account change or discontinuance order processed",
+    "start": "a written or queued change request is received",
+    "end": "the change record or discontinuance order is entered or submitted",
+    "checked_by": "account administration or service team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Address changes and discontinuances are grouped as account-change orders; their relative volumes and live shares vary."
+ },
+ {
+  "task_id": "2585",
+  "split_reasoning": "Complaint information is obtained and assessed both during customer contacts and in subsequent investigations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain and examine complaint information while the customer is present.",
+    "time_share": 0.5,
+    "type_reasoning": "Information gathering and assessment occur while the customer waits in a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One complaint assessment identifies the apparent validity and possible cause for use in handling the complaint.",
+    "work_item": "one complaint assessed during a customer contact",
+    "start": "customer presents a complaint and relevant details",
+    "end": "available information is examined and an initial assessment is communicated or recorded",
+    "checked_by": "customer and customer service representative or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate complaint information after contact to assess validity and possible causes.",
+    "time_share": 0.5,
+    "type_reasoning": "The assessment is completed from records and other evidence without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment for one complaint is the result used for a response or resolution decision.",
+    "work_item": "one complaint validity and cause assessment",
+    "start": "a complaint and available supporting information are received for review",
+    "end": "validity and possible causes are assessed and recorded or passed to the handler",
+    "checked_by": "customer service supervisor or complaint handler",
+    "duplicates": [],
+    "overlaps_with": [
+     "2582",
+     "2587"
+    ]
+   }
+  ],
+  "notes": "A live assessment may be preliminary and followed by a separate investigation."
+ },
+ {
+  "task_id": "2586",
+  "split_reasoning": "Soliciting additional sales is one persuasive activity, regardless of the product or service offered.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Solicit customers to purchase new or additional products or services.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on persuading customers in a live sales interaction rather than producing an order.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   }
+  ],
+  "notes": "Written sales campaigns or order entry, if assigned, are not separately specified by this target."
+ },
+ {
+  "task_id": "2587",
+  "split_reasoning": "Policy coverage can be assessed during a customer contact or through a subsequent claim review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review policy terms for a particular loss while the customer waits.",
+    "time_share": 0.4,
+    "type_reasoning": "The policy review and coverage response occur during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One coverage assessment is communicated for the loss the customer describes.",
+    "work_item": "one loss coverage assessment during a customer contact",
+    "start": "customer describes a loss and asks about coverage",
+    "end": "relevant policy terms are reviewed and the assessment or its limitations are communicated",
+    "checked_by": "customer and claims team",
+    "duplicates": [],
+    "overlaps_with": [
+     "18565"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review policy terms for a particular loss from a claim or inquiry queue.",
+    "time_share": 0.6,
+    "type_reasoning": "The review produces a coverage assessment without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment for one loss is passed to the claim handler or used in a response.",
+    "work_item": "one loss coverage assessment",
+    "start": "loss details and the applicable policy are available for review",
+    "end": "the coverage assessment and relevant policy terms are recorded or passed to the handler",
+    "checked_by": "claims team or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2585"
+    ]
+   }
+  ],
+  "notes": "Representatives may provide a preliminary assessment rather than a final claims determination."
+ },
+ {
+  "task_id": "2589",
+  "split_reasoning": "Comparing the physical merchandise and preparing the return invoice involve hands-on handling and desk-based processing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine disputed merchandise against identifying order information.",
+    "time_share": 0.35,
+    "type_reasoning": "Inspecting and handling the returned goods requires physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2579"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Reconcile disputed merchandise details with requisitions and invoices and prepare a return invoice.",
+    "time_share": 0.65,
+    "type_reasoning": "The reconciliation and invoice preparation produce a document for return processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One return invoice is the document handed to the accounting or returns team.",
+    "work_item": "one invoice prepared for returned goods",
+    "start": "disputed goods details, requisition, and original invoice are available",
+    "end": "the return invoice is prepared and submitted for processing",
+    "checked_by": "returns or accounting team",
+    "duplicates": [],
+    "overlaps_with": [
+     "2579"
+    ]
+   }
+  ],
+  "notes": "Physical inspection may be performed by another department in some organizations."
+ },
+ {
+  "task_id": "2591",
+  "split_reasoning": "Recommendations across products and service procedures are the same kind of improvement proposal.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a product, packaging, shipping, service, or billing improvement to prevent future problems.",
+    "time_share": 1.0,
+    "type_reasoning": "Each recommendation communicates an actionable proposed improvement for others to consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One documented or communicated recommendation is the item handed to a manager or responsible team.",
+    "work_item": "one improvement recommendation",
+    "start": "a recurring or preventable customer problem is identified",
+    "end": "the proposed improvement and its rationale are communicated to the responsible person or team",
+    "checked_by": "service manager or responsible product or operations team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Recommendations may be submitted individually or collected in a periodic report."
+ },
+ {
+  "task_id": "18565",
+  "split_reasoning": "Providing information, entering orders, canceling accounts, and obtaining complaint details are distinct outputs of live customer contacts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide product or service information to a customer by telephone or in person.",
+    "time_share": 0.3,
+    "type_reasoning": "The information is provided while the customer is in a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer inquiry is answered during the contact.",
+    "work_item": "one product or service inquiry answered live",
+    "start": "customer asks for product or service information",
+    "end": "the requested information is provided or the customer is directed to the appropriate source",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2581",
+     "2586",
+     "2587"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Take or enter a customer's order by telephone or in person.",
+    "time_share": 0.3,
+    "type_reasoning": "The order is taken or entered while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One entered order is the item passed to fulfillment or service delivery.",
+    "work_item": "one customer order taken or entered during a contact",
+    "start": "customer requests an order",
+    "end": "the order details are entered or submitted and confirmed to the customer",
+    "checked_by": "customer and fulfillment team",
+    "duplicates": [],
+    "overlaps_with": [
+     "2583",
+     "2586"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Cancel a customer's account by telephone or in person.",
+    "time_share": 0.15,
+    "type_reasoning": "The cancellation is handled while the customer is in the live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One cancellation request produces an account cancellation or submitted cancellation order.",
+    "work_item": "one account cancellation handled during a contact",
+    "start": "customer requests account cancellation",
+    "end": "the cancellation is entered or submitted and its status is confirmed to the customer",
+    "checked_by": "customer and account administration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "2584"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Obtain details of a customer's complaint by telephone or in person.",
+    "time_share": 0.25,
+    "type_reasoning": "The representative gathers complaint details in a live customer conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The details obtained for one complaint form the input to its assessment or routing.",
+    "work_item": "one customer's complaint details obtained during a contact",
+    "start": "customer begins describing a complaint",
+    "end": "the representative has obtained the details needed for the next handling step",
+    "checked_by": "customer service representative or complaint handler",
+    "duplicates": [],
+    "overlaps_with": [
+     "2578",
+     "2582",
+     "2585"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the mix of contacts; recording, assessment, referral, and resolution are separately covered by other statements."
+ }
+]

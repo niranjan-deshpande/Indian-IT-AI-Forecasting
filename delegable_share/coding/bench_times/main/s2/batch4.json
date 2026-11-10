@@ -1,0 +1,674 @@
+[
+ {
+  "item_id": "workarena_pp:l3/planning_and_problem_solving/MARK_DUPLICATE/002",
+  "reasoning": "Find the protocol KB article, filter own problems by hashtag, compare, mark duplicates one by one, close ticket.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 20
+ },
+ {
+  "item_id": "finch:121",
+  "reasoning": "Audit the Deal Sheet formulas, trace and fix several errors, verify totals.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 60
+ },
+ {
+  "item_id": "workarena_l1:order-loaner-laptop",
+  "reasoning": "Navigate to the hardware catalog, set quantity and two options, order.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 4
+ },
+ {
+  "item_id": "spreadsheetbench_2:Visualization:Task_131",
+  "reasoning": "Compute the bridge data, build a stacked-column waterfall with invisible base, colour per bar, custom labels and number formats; fiddly in Excel.",
+  "estimate_min": 40,
+  "low_min": 25,
+  "high_min": 60
+ },
+ {
+  "item_id": "terminal_bench_2:headless-terminal",
+  "reasoning": "Write a pty-based terminal class with key sending, interactive support, bashrc sourcing, install deps, and test.",
+  "estimate_min": 60,
+  "low_min": 35,
+  "high_min": 100
+ },
+ {
+  "item_id": "tau_banking:task_017",
+  "reasoning": "Verify customer, find rewards policy, check transactions for wrong cash back, submit two disputes via tools.",
+  "estimate_min": 18,
+  "low_min": 10,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_voice:telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_sms_permission|data_mode_off|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+  "reasoning": "Phone call walking a customer through six device fixes with diagnosis per step.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_banking:task_077",
+  "reasoning": "Verify, look up two accounts and cards, freeze, order replacement, review transactions, unfreeze or close per KB; long procedure with many tool calls.",
+  "estimate_min": 30,
+  "low_min": 18,
+  "high_min": 45
+ },
+ {
+  "item_id": "terminal_bench_1:blind-maze-explorer-5x5",
+  "reasoning": "Explore a small maze via the game script, map it fully and write output; some trial and error or a script.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "terminal_bench_1:csv-to-parquet",
+  "reasoning": "Short pandas/pyarrow conversion, install if needed.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "tau_voice:airline:1",
+  "reasoning": "Verify user, look up reservation, check fare rules, correctly refuse the cancellation.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "osworld_verified:bba3381f-b5eb-4439-bd9e-80c22218d5a7",
+  "reasoning": "Open VLC network stream and paste the URL.",
+  "estimate_min": 1.5,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "tau_banking:task_088",
+  "reasoning": "Verify, look up accounts, cards and transactions, diagnose decline cause per KB, and take about 17 actions including a dispute.",
+  "estimate_min": 28,
+  "low_min": 18,
+  "high_min": 45
+ },
+ {
+  "item_id": "sopbench:university:declare_minor:1",
+  "reasoning": "Log in, check student, minor, major, calendar against SOP until one fails, then decline.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 12
+ },
+ {
+  "item_id": "workarena_l1:order-ipad-pro",
+  "reasoning": "Order from hardware catalog with quantity and two options.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 4
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1399",
+  "reasoning": "Read case and agent transcript, find related knowledge articles via SOQL, judge policy breach.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-143",
+  "reasoning": "Explore phpList subscriber editing in the browser, locate a seeded bug in PHP code, fix and check neighbours.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "sopbench:dmv:validate_vehicle_insurance:7",
+  "reasoning": "Check vehicle, insurance, licence via lookups and decline.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "spreadsheetbench_2:Template:06_08",
+  "reasoning": "Complete a multi-sheet model from assumptions, build formulas and check them.",
+  "estimate_min": 50,
+  "low_min": 30,
+  "high_min": 90
+ },
+ {
+  "item_id": "gdpval:46bc7238-3501-4839-b989-e2bd47853676",
+  "reasoning": "Write a 5-8 page QSR outreach playbook PDF with scripts, cadence, flyer and photos.",
+  "estimate_min": 240,
+  "low_min": 150,
+  "high_min": 360
+ },
+ {
+  "item_id": "itbench_sre:Scenario-6",
+  "reasoning": "Query alerts, logs and metrics to identify the ad service GC/CPU fault entity.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "osworld_verified:9195653c-f4aa-453d-aa95-787f6ccfaae9",
+  "reasoning": "Open VLC preferences, show all settings, change max volume to 200%.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "tau_retail_airline:retail:17",
+  "reasoning": "Authenticate by name+zip, find order, confirm and modify address.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 12
+ },
+ {
+  "item_id": "spreadsheetbench_2:Financial_Model:05_03",
+  "reasoning": "Several edits across sheets of an AIF model: cumulative positions, links, inputs, freeze panes, EBITDA, totals.",
+  "estimate_min": 60,
+  "low_min": 35,
+  "high_min": 100
+ },
+ {
+  "item_id": "gdpval:e14e32ba-d310-4d45-9b8a-6d73d0ece1ae",
+  "reasoning": "Research 4-6 NYC delis with photos, hours, links and dishes, formatted in Word.",
+  "estimate_min": 120,
+  "low_min": 80,
+  "high_min": 200
+ },
+ {
+  "item_id": "gdpval:8c8fc328-69fc-4559-a13f-82087baef0a1",
+  "reasoning": "Read reference VO, write a timestamped documentary script under 5 pages in docx.",
+  "estimate_min": 100,
+  "low_min": 60,
+  "high_min": 160
+ },
+ {
+  "item_id": "gdpval:a0ef404e-82a6-4507-bff1-633d7c8e0004",
+  "reasoning": "Write a step-by-step rental agreement guide with reasons, tips and troubleshooting in Word.",
+  "estimate_min": 90,
+  "low_min": 60,
+  "high_min": 150
+ },
+ {
+  "item_id": "osworld_verified:227d2f97-562b-4ccb-ae47-a5ec9e142fbb",
+  "reasoning": "Open XCF in GIMP, copy, paste into Writer, save as docx.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 9
+ },
+ {
+  "item_id": "itbench_sre:Scenario-1",
+  "reasoning": "Investigate frontend-proxy errors and latency to find the cause component, e.g. a flag or config.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "workarena_l1:create-problem",
+  "reasoning": "Open new problem form and fill several fields, submit.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 5
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-151",
+  "reasoning": "Explore PocketBase record editing and validation, find a seeded Go bug, fix and test.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "eva_bench:itsm:39",
+  "reasoning": "Verify caller, entitlement and budget checks, two hardware requests, return initiation, tell caller details.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_app_storage_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+  "reasoning": "Chat guiding eight fixes, one with a data refuel on account; many round trips.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 40
+ },
+ {
+  "item_id": "gdpval:1aecc095-4d76-4b89-b752-1a0f870502cd",
+  "reasoning": "Write 2-3 page workflow doc, one-page visual roadmap, and short email from the reference.",
+  "estimate_min": 180,
+  "low_min": 120,
+  "high_min": 280
+ },
+ {
+  "item_id": "eva_bench:itsm:98",
+  "reasoning": "Verify caller, record, entitlement, budget check, assets, then refuse to skip policy.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "crmarena_pro:b2c:369",
+  "reasoning": "Query issues for the product in Q4 2020 and count by issue.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 20
+ },
+ {
+  "item_id": "sopbench:online_market:use_coupon:15",
+  "reasoning": "Log in, check order, coupon validity and use, then decline.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 12
+ },
+ {
+  "item_id": "gdpval:a941b6d8-4289-4500-b45a-f8e4fc94a724",
+  "reasoning": "Stabilise overlay, mask and key window, composite, stitch segments, match codec and export.",
+  "estimate_min": 180,
+  "low_min": 120,
+  "high_min": 300
+ },
+ {
+  "item_id": "tau_voice:retail:10",
+  "reasoning": "Authenticate, review two orders and payments, explain refunds cannot go to other method, transfer.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]airplane_mode_on|data_mode_off[PERSONA:None]",
+  "reasoning": "Two simple device toggles after identifying customer.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "terminal_bench_2:raman-fitting",
+  "reasoning": "Load spectrum, fit Lorentzians to G and 2D peaks with scipy, write JSON.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 50
+ },
+ {
+  "item_id": "workarena_l1:filter-incident-list",
+  "reasoning": "Build a three-condition OR filter in the list UI.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 7
+ },
+ {
+  "item_id": "workarena_pp:l2/information_retrieval/DASH_AND_REQUEST/006",
+  "reasoning": "Find report, identify top agents, create item requests for each with given RITM number.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 18
+ },
+ {
+  "item_id": "terminal_bench_2:sqlite-with-gcov",
+  "reasoning": "Extract source, configure with gcov flags, build, install and put on PATH, verify.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "swt_bench:django__django-11999",
+  "reasoning": "Write a small model test for overriding get_FOO_display, confirm it fails.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "finch:62",
+  "reasoning": "Clear one cell in EDF MAN and update dependent totals consistently across sheets.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "swt_bench:pydata__xarray-6461",
+  "reasoning": "Write a test for xr.where with scalar and keep_attrs; find test file.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-141",
+  "reasoning": "Explore phpBB moderation queue, find seeded PHP bug, fix and check.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "osworld_verified:01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "reasoning": "Fill blanks with value above in Calc, via Go To Special or formula and paste values.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "workarena_l1:multi-chart-min-max-retrieval",
+  "reasoning": "Open dashboard, read chart max label and count.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "workarena_pp:l3/planning_and_problem_solving/MARK_DUPLICATE/013",
+  "reasoning": "Find protocol, filter problems by hashtag, mark duplicates, close ticket.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 20
+ },
+ {
+  "item_id": "itbench_sre:Scenario-35",
+  "reasoning": "Investigate ad service memory pressure with chaos-mesh to identify the injected fault entities.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-126",
+  "reasoning": "Explore OpenCATS careers portal, find seeded PHP bug, fix and verify.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "terminal_bench_2:regex-log",
+  "reasoning": "Craft a tricky regex with IP lookahead, last-date selection and boundaries, test on cases.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "workarena_l1:order-apple-watch",
+  "reasoning": "Order a quantity of Apple Watch from catalog.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "spreadsheetbench_2:Debugging:05_02",
+  "reasoning": "Audit a workbook with embedded hardcodes and other errors, fix thoroughly.",
+  "estimate_min": 60,
+  "low_min": 35,
+  "high_min": 100
+ },
+ {
+  "item_id": "tau_voice:retail:96",
+  "reasoning": "Authenticate by name+zip, find LA order and NYC address in other order, modify address and exchange item.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 22
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Four fixes: two on device, two via account, after roaming check.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "osworld_verified:c1fa57f3-c3db-4596-8f09-020701085416",
+  "reasoning": "Open United baggage fee calculator in Chrome.",
+  "estimate_min": 1.5,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "swt_bench:pytest-dev__pytest-10051",
+  "reasoning": "Write a caplog test showing get_records diverges after clear.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "eva_bench:medical_hr:A5",
+  "reasoning": "Verify caller, view timesheet, refuse correction under another employee.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1745",
+  "reasoning": "Look up territory by state, find agents, count accepted quotes, break ties by open leads.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-apple-mac-book-pro15:183",
+  "reasoning": "Order MacBook Pro quantity from catalog.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.filter-user-list:40",
+  "reasoning": "Build a five-condition AND filter on user list.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 9
+ },
+ {
+  "item_id": "workarena_l1:sort-hardware-list",
+  "reasoning": "Sort the list by one field descending.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "workarena_pp:l2/data_driven_decision_making_and_reasoning/MAX_INVEST_RETURN/001",
+  "reasoning": "Filter expense lines, solve a knapsack with budget, report total return.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_voice:retail:99",
+  "reasoning": "Authenticate, find three orders, exchange bike, puzzle, camera, cancel skateboard, each with option lookup.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 40
+ },
+ {
+  "item_id": "tau_banking:task_016",
+  "reasoning": "Verify customer, find why referral bonus missing, submit qualifying transaction per KB.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 20
+ },
+ {
+  "item_id": "itbench_sre:Scenario-16",
+  "reasoning": "Investigate shipping latency to find the cause entity.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "itbench_sre:Scenario-15",
+  "reasoning": "Investigate frontend error rate to find the cause entity.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "gdpval:b1a79ce1-86b0-41fb-97dc-9206dfd7b044",
+  "reasoning": "Read meeting notes, gather reference images, design PNG moodboard with palette.",
+  "estimate_min": 120,
+  "low_min": 80,
+  "high_min": 200
+ },
+ {
+  "item_id": "tau_banking:task_079",
+  "reasoning": "Verify, list accounts, freeze three cards, review transactions, close cards, reorder; about 24 actions.",
+  "estimate_min": 35,
+  "low_min": 22,
+  "high_min": 55
+ },
+ {
+  "item_id": "workarena_pp:l3/data_driven_decision_making_and_reasoning/MAX_INVEST_RETURN/024",
+  "reasoning": "Find protocol, filter expenses, solve knapsack, report, close ticket.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "starshell:gitlab:gitlab.invite-user:1",
+  "reasoning": "Find repo and invite Abishek as guest.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "eva_bench:medical_hr:A3",
+  "reasoning": "Verify with OTP, check profile and eligibility, transfer rather than skip the review.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "tau_retail_airline:retail:104",
+  "reasoning": "Authenticate, find several orders, three returns, modify item and address, report tracking number.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 40
+ },
+ {
+  "item_id": "crmarena_pro:b2c:356",
+  "reasoning": "Query issues for product in fall 2020 and count by issue.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 20
+ },
+ {
+  "item_id": "swt_bench:scikit-learn__scikit-learn-9288",
+  "reasoning": "Write a KMeans test comparing n_jobs=1 and >1 inertia; need to understand cause.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "swt_bench:pydata__xarray-7229",
+  "reasoning": "Write a test checking coordinate attrs preserved in xr.where keep_attrs; build small dataset.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 40
+ },
+ {
+  "item_id": "terminal_bench_2:polyglot-c-py",
+  "reasoning": "Craft a C and Python polyglot Fibonacci with comment tricks, test with both.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "sopbench:university:apply_financial_aid:3",
+  "reasoning": "Log in, fetch student info, check conditions, decline.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "crmarena_pro:b2c:838",
+  "reasoning": "Query orders and contracts in window, sum quantity times price by agent, find minimum.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "gdpval:d3d255b2-f5f2-4841-9f62-2083ec9ef3da",
+  "reasoning": "Write 2-3 page PDF seller report from market analysis with counteroffer strategy.",
+  "estimate_min": 120,
+  "low_min": 80,
+  "high_min": 180
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-166",
+  "reasoning": "Explore SiYuan document viewing and navigation, find seeded bug, fix and check.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 110
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1579",
+  "reasoning": "Find similar issue, count closed cases per agent, tie-break by product and workload.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "spreadsheetbench_2:Template:03_01",
+  "reasoning": "Fill all blank cells in M&A consolidation statements, with adjustments and eliminations.",
+  "estimate_min": 90,
+  "low_min": 50,
+  "high_min": 150
+ },
+ {
+  "item_id": "itbench_sre:Scenario-21",
+  "reasoning": "Investigate valkey-cart OOM and cascading errors to find root cause entities.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "gdpval:90f37ff3-e4ed-4a0b-94bb-bed0f7def1ef",
+  "reasoning": "Research 3-6 comps, build 4-page lease rate report with recommendation.",
+  "estimate_min": 180,
+  "low_min": 120,
+  "high_min": 280
+ },
+ {
+  "item_id": "tau_banking:task_041",
+  "reasoning": "Verify, give dispute history, get card digits, file 16 disputes across four cards per KB rules; very long.",
+  "estimate_min": 60,
+  "low_min": 40,
+  "high_min": 90
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_vpn|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]",
+  "reasoning": "Four fixes including account refuel and roaming enable.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_network_preference|bad_vpn|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Four fixes including account refuel and roaming enable.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "terminal_bench_1:oom",
+  "reasoning": "Download and cache the HF model and tokenizer, verify offline load.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|data_mode_off|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Chat guiding six fixes with roaming enable on account.",
+  "estimate_min": 22,
+  "low_min": 14,
+  "high_min": 35
+ },
+ {
+  "item_id": "tau_voice:retail:67",
+  "reasoning": "Authenticate by user id, find most recent order, report total.",
+  "estimate_min": 7,
+  "low_min": 4,
+  "high_min": 12
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-147",
+  "reasoning": "Explore Pingvin Share account settings, find seeded bug in TS code, fix and check.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-ipad-pro:671",
+  "reasoning": "Order iPad Pro with colour and storage options.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 4
+ }
+]

@@ -1,0 +1,2341 @@
+benchmark,variant,model,release_date,score,H_min
+crmarena_pro,base,o1,2024-12-05,0.485,11.86
+crmarena_pro,base,gpt-4o,2024-05-13,0.2795,4.02
+crmarena_pro,base,gpt-4o-mini,2024-07-18,0.1995,2.35
+crmarena_pro,base,gemini-2.5-pro,2025-03-25,0.562,17.29
+crmarena_pro,base,gemini-2.5-flash,2025-04-17,0.443,9.65
+crmarena_pro,base,gemini-2.0-flash,2025-02-05,0.348,5.93
+crmarena_pro,base,llama4-maverick,2025-04-05,0.3505,6.01
+crmarena_pro,base,llama3.1-405b,2024-07-23,0.276,3.94
+crmarena_pro,base,llama3.1-70b,2024-07-23,0.2505,3.35
+crmarena_pro,base_decomp,o1,2024-12-05,0.485,13.49
+crmarena_pro,base_decomp,gpt-4o,2024-05-13,0.2795,3.94
+crmarena_pro,base_decomp,gpt-4o-mini,2024-07-18,0.1995,2.13
+crmarena_pro,base_decomp,gemini-2.5-pro,2025-03-25,0.562,20.6
+crmarena_pro,base_decomp,gemini-2.5-flash,2025-04-17,0.443,10.69
+crmarena_pro,base_decomp,gemini-2.0-flash,2025-02-05,0.348,6.15
+crmarena_pro,base_decomp,llama4-maverick,2025-04-05,0.3505,6.24
+crmarena_pro,base_decomp,llama3.1-405b,2024-07-23,0.276,3.85
+crmarena_pro,base_decomp,llama3.1-70b,2024-07-23,0.2505,3.2
+crmarena_pro,beta_lo,o1,2024-12-05,0.485,11.52
+crmarena_pro,beta_lo,gpt-4o,2024-05-13,0.2795,2.58
+crmarena_pro,beta_lo,gpt-4o-mini,2024-07-18,0.1995,1.22
+crmarena_pro,beta_lo,gemini-2.5-pro,2025-03-25,0.562,19.41
+crmarena_pro,beta_lo,gemini-2.5-flash,2025-04-17,0.443,8.66
+crmarena_pro,beta_lo,gemini-2.0-flash,2025-02-05,0.348,4.42
+crmarena_pro,beta_lo,llama4-maverick,2025-04-05,0.3505,4.5
+crmarena_pro,beta_lo,llama3.1-405b,2024-07-23,0.276,2.5
+crmarena_pro,beta_lo,llama3.1-70b,2024-07-23,0.2505,2.01
+crmarena_pro,beta_lo_decomp,o1,2024-12-05,0.485,12.93
+crmarena_pro,beta_lo_decomp,gpt-4o,2024-05-13,0.2795,2.58
+crmarena_pro,beta_lo_decomp,gpt-4o-mini,2024-07-18,0.1995,1.16
+crmarena_pro,beta_lo_decomp,gemini-2.5-pro,2025-03-25,0.562,22.6
+crmarena_pro,beta_lo_decomp,gemini-2.5-flash,2025-04-17,0.443,9.52
+crmarena_pro,beta_lo_decomp,gemini-2.0-flash,2025-02-05,0.348,4.61
+crmarena_pro,beta_lo_decomp,llama4-maverick,2025-04-05,0.3505,4.7
+crmarena_pro,beta_lo_decomp,llama3.1-405b,2024-07-23,0.276,2.5
+crmarena_pro,beta_lo_decomp,llama3.1-70b,2024-07-23,0.2505,1.97
+crmarena_pro,beta_hi,o1,2024-12-05,0.485,12.01
+crmarena_pro,beta_hi,gpt-4o,2024-05-13,0.2795,4.79
+crmarena_pro,beta_hi,gpt-4o-mini,2024-07-18,0.1995,3.04
+crmarena_pro,beta_hi,gemini-2.5-pro,2025-03-25,0.562,16.53
+crmarena_pro,beta_hi,gemini-2.5-flash,2025-04-17,0.443,10.08
+crmarena_pro,beta_hi,gemini-2.0-flash,2025-02-05,0.348,6.67
+crmarena_pro,beta_hi,llama4-maverick,2025-04-05,0.3505,6.74
+crmarena_pro,beta_hi,llama3.1-405b,2024-07-23,0.276,4.71
+crmarena_pro,beta_hi,llama3.1-70b,2024-07-23,0.2505,4.11
+crmarena_pro,beta_hi_decomp,o1,2024-12-05,0.485,13.77
+crmarena_pro,beta_hi_decomp,gpt-4o,2024-05-13,0.2795,4.66
+crmarena_pro,beta_hi_decomp,gpt-4o-mini,2024-07-18,0.1995,2.69
+crmarena_pro,beta_hi_decomp,gemini-2.5-pro,2025-03-25,0.562,19.95
+crmarena_pro,beta_hi_decomp,gemini-2.5-flash,2025-04-17,0.443,11.23
+crmarena_pro,beta_hi_decomp,gemini-2.0-flash,2025-02-05,0.348,6.9
+crmarena_pro,beta_hi_decomp,llama4-maverick,2025-04-05,0.3505,6.99
+crmarena_pro,beta_hi_decomp,llama3.1-405b,2024-07-23,0.276,4.56
+crmarena_pro,beta_hi_decomp,llama3.1-70b,2024-07-23,0.2505,3.87
+eva_bench,base,GPT Realtime Mini,2025-10-06,0.1632,1.65
+eva_bench,base,GPT Realtime 2.1 Mini,2026-08-12,0.2165,2.51
+eva_bench,base,Gemini 3.1 Flash Live,2026-03-26,0.2922,4.1
+eva_bench,base,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,5.13
+eva_bench,base,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,5.61
+eva_bench,base,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,7.19
+eva_bench,base,GPT Realtime,2025-08-28,0.4068,7.65
+eva_bench,base,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,7.76
+eva_bench,base,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,8.64
+eva_bench,base,Gemini 3.8 Live,2026-09-14,0.4588,9.93
+eva_bench,base,GPT Realtime 1.5,2026-05-15,0.467,10.34
+eva_bench,base,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.57
+eva_bench,base,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.24
+eva_bench,base,GPT Realtime 2,2026-05-07,0.5039,12.4
+eva_bench,base,Grok Voice 2.0,2026-10-14,0.5173,13.25
+eva_bench,base,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,14.21
+eva_bench,base,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,15.43
+eva_bench,base,Grok Voice 1.0,2026-06-10,0.5884,18.89
+eva_bench,base,GPT Realtime 2.1,2026-08-12,0.5904,19.08
+eva_bench,base,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,29.41
+eva_bench,base,Grok Voice 3.0,2026-10-14,0.7372,43.24
+eva_bench,base,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,130.29
+eva_bench,base_decomp,GPT Realtime Mini,2025-10-06,0.1632,1.23
+eva_bench,base_decomp,GPT Realtime 2.1 Mini,2026-08-12,0.2165,1.97
+eva_bench,base_decomp,Gemini 3.1 Flash Live,2026-03-26,0.2922,3.42
+eva_bench,base_decomp,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,4.43
+eva_bench,base_decomp,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,4.92
+eva_bench,base_decomp,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,6.56
+eva_bench,base_decomp,GPT Realtime,2025-08-28,0.4068,7.05
+eva_bench,base_decomp,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,7.18
+eva_bench,base_decomp,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,8.14
+eva_bench,base_decomp,Gemini 3.8 Live,2026-09-14,0.4588,9.59
+eva_bench,base_decomp,GPT Realtime 1.5,2026-05-15,0.467,10.06
+eva_bench,base_decomp,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.5
+eva_bench,base_decomp,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.3
+eva_bench,base_decomp,GPT Realtime 2,2026-05-07,0.5039,12.49
+eva_bench,base_decomp,Grok Voice 2.0,2026-10-14,0.5173,13.51
+eva_bench,base_decomp,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,14.69
+eva_bench,base_decomp,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,16.2
+eva_bench,base_decomp,Grok Voice 1.0,2026-06-10,0.5884,20.63
+eva_bench,base_decomp,GPT Realtime 2.1,2026-08-12,0.5904,20.88
+eva_bench,base_decomp,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,34.95
+eva_bench,base_decomp,Grok Voice 3.0,2026-10-14,0.7372,55.11
+eva_bench,base_decomp,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,194.83
+eva_bench,beta_lo,GPT Realtime Mini,2025-10-06,0.1632,0.77
+eva_bench,beta_lo,GPT Realtime 2.1 Mini,2026-08-12,0.2165,1.38
+eva_bench,beta_lo,Gemini 3.1 Flash Live,2026-03-26,0.2922,2.72
+eva_bench,beta_lo,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,3.7
+eva_bench,beta_lo,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,4.19
+eva_bench,beta_lo,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,5.9
+eva_bench,beta_lo,GPT Realtime,2025-08-28,0.4068,6.42
+eva_bench,beta_lo,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,6.56
+eva_bench,beta_lo,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,7.6
+eva_bench,beta_lo,Gemini 3.8 Live,2026-09-14,0.4588,9.2
+eva_bench,beta_lo,GPT Realtime 1.5,2026-05-15,0.467,9.73
+eva_bench,beta_lo,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.36
+eva_bench,beta_lo,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.28
+eva_bench,beta_lo,GPT Realtime 2,2026-05-07,0.5039,12.5
+eva_bench,beta_lo,Grok Voice 2.0,2026-10-14,0.5173,13.69
+eva_bench,beta_lo,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,15.08
+eva_bench,beta_lo,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,16.89
+eva_bench,beta_lo,Grok Voice 1.0,2026-06-10,0.5884,22.32
+eva_bench,beta_lo,GPT Realtime 2.1,2026-08-12,0.5904,22.63
+eva_bench,beta_lo,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,41.07
+eva_bench,beta_lo,Grok Voice 3.0,2026-10-14,0.7372,69.9
+eva_bench,beta_lo,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,322.01
+eva_bench,beta_lo_decomp,GPT Realtime Mini,2025-10-06,0.1632,0.62
+eva_bench,beta_lo_decomp,GPT Realtime 2.1 Mini,2026-08-12,0.2165,1.16
+eva_bench,beta_lo_decomp,Gemini 3.1 Flash Live,2026-03-26,0.2922,2.39
+eva_bench,beta_lo_decomp,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,3.34
+eva_bench,beta_lo_decomp,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,3.83
+eva_bench,beta_lo_decomp,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,5.55
+eva_bench,beta_lo_decomp,GPT Realtime,2025-08-28,0.4068,6.1
+eva_bench,beta_lo_decomp,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,6.24
+eva_bench,beta_lo_decomp,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,7.34
+eva_bench,beta_lo_decomp,Gemini 3.8 Live,2026-09-14,0.4588,9.06
+eva_bench,beta_lo_decomp,GPT Realtime 1.5,2026-05-15,0.467,9.63
+eva_bench,beta_lo_decomp,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.43
+eva_bench,beta_lo_decomp,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.45
+eva_bench,beta_lo_decomp,GPT Realtime 2,2026-05-07,0.5039,12.7
+eva_bench,beta_lo_decomp,Grok Voice 2.0,2026-10-14,0.5173,14.04
+eva_bench,beta_lo_decomp,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,15.62
+eva_bench,beta_lo_decomp,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,17.71
+eva_bench,beta_lo_decomp,Grok Voice 1.0,2026-06-10,0.5884,24.1
+eva_bench,beta_lo_decomp,GPT Realtime 2.1,2026-08-12,0.5904,24.47
+eva_bench,beta_lo_decomp,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,47.22
+eva_bench,beta_lo_decomp,Grok Voice 3.0,2026-10-14,0.7372,84.56
+eva_bench,beta_lo_decomp,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,436.16
+eva_bench,beta_hi,GPT Realtime Mini,2025-10-06,0.1632,2.23
+eva_bench,beta_hi,GPT Realtime 2.1 Mini,2026-08-12,0.2165,3.18
+eva_bench,beta_hi,Gemini 3.1 Flash Live,2026-03-26,0.2922,4.82
+eva_bench,beta_hi,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,5.83
+eva_bench,beta_hi,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,6.3
+eva_bench,beta_hi,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,7.77
+eva_bench,beta_hi,GPT Realtime,2025-08-28,0.4068,8.19
+eva_bench,beta_hi,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,8.3
+eva_bench,beta_hi,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,9.09
+eva_bench,beta_hi,Gemini 3.8 Live,2026-09-14,0.4588,10.22
+eva_bench,beta_hi,GPT Realtime 1.5,2026-05-15,0.467,10.58
+eva_bench,beta_hi,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.65
+eva_bench,beta_hi,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.22
+eva_bench,beta_hi,GPT Realtime 2,2026-05-07,0.5039,12.36
+eva_bench,beta_hi,Grok Voice 2.0,2026-10-14,0.5173,13.07
+eva_bench,beta_hi,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,13.88
+eva_bench,beta_hi,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,14.89
+eva_bench,beta_hi,Grok Voice 1.0,2026-06-10,0.5884,17.69
+eva_bench,beta_hi,GPT Realtime 2.1,2026-08-12,0.5904,17.84
+eva_bench,beta_hi,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,25.78
+eva_bench,beta_hi,Grok Voice 3.0,2026-10-14,0.7372,35.77
+eva_bench,beta_hi,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,91.15
+eva_bench,beta_hi_decomp,GPT Realtime Mini,2025-10-06,0.1632,1.59
+eva_bench,beta_hi_decomp,GPT Realtime 2.1 Mini,2026-08-12,0.2165,2.39
+eva_bench,beta_hi_decomp,Gemini 3.1 Flash Live,2026-03-26,0.2922,3.9
+eva_bench,beta_hi_decomp,Parakeet 1.1B CTC en-US + Gemma-4-26B + Kokoro,2026-04-02,0.3312,4.9
+eva_bench,beta_hi_decomp,Ink 2 + Haiku 4.5 + Sonic 3.5,2025-10-15,0.3478,5.38
+eva_bench,beta_hi_decomp,Nova 3 + GPT-5.4-mini + Aura 2,2026-03-17,0.3947,6.95
+eva_bench,beta_hi_decomp,GPT Realtime,2025-08-28,0.4068,7.42
+eva_bench,beta_hi_decomp,Scribe v2.2 Realtime + Claude Haiku 4.5 + Eleven Flash v2 (ElevenAgents),2025-10-15,0.4098,7.54
+eva_bench,beta_hi_decomp,Flux General Multi + GPT-5.4 + Sonic 3.5,2026-03-05,0.431,8.44
+eva_bench,beta_hi_decomp,Gemini 3.8 Live,2026-09-14,0.4588,9.77
+eva_bench,beta_hi_decomp,GPT Realtime 1.5,2026-05-15,0.467,10.2
+eva_bench,beta_hi_decomp,Scribe v2.2 Realtime + Gemini 3 Flash + TTS Conversational v3 (ElevenAgents),2026-05-15,0.4898,11.49
+eva_bench,beta_hi_decomp,Gemini 3.8 Live Extended Thinking (Minimal),2026-09-15,0.5013,12.21
+eva_bench,beta_hi_decomp,GPT Realtime 2,2026-05-07,0.5039,12.37
+eva_bench,beta_hi_decomp,Grok Voice 2.0,2026-10-14,0.5173,13.28
+eva_bench,beta_hi_decomp,Universal 3.5 Pro + GPT-5.4 + Sonic 3.5,2026-03-05,0.5315,14.31
+eva_bench,beta_hi_decomp,Gemini 3.8 Live Extended Thinking (High),2026-09-15,0.5481,15.63
+eva_bench,beta_hi_decomp,Grok Voice 1.0,2026-06-10,0.5884,19.41
+eva_bench,beta_hi_decomp,GPT Realtime 2.1,2026-08-12,0.5904,19.62
+eva_bench,beta_hi_decomp,Scribe v2.2 Realtime + GPT-5.4 + Eleven Flash v2 (ElevenAgents),2026-03-05,0.672,31.19
+eva_bench,beta_hi_decomp,Grok Voice 3.0,2026-10-14,0.7372,46.98
+eva_bench,beta_hi_decomp,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.8741,144.74
+finch,base,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,18.83
+finch,base,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,8.4
+finch,base,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,24.11
+finch,base,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,13.09
+finch,base,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,5.96
+finch,base,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,9.79
+finch,base,Grok 4 (API single-call),2025-07-09,0.238,7.73
+finch,base,Qwen3-Max (API single-call),2025-09-24,0.145,3.57
+finch,base_decomp,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,12.55
+finch,base_decomp,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,4.04
+finch,base_decomp,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,17.65
+finch,base_decomp,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,7.54
+finch,base_decomp,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,2.5
+finch,base_decomp,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,5.01
+finch,base_decomp,Grok 4 (API single-call),2025-07-09,0.238,3.59
+finch,base_decomp,Qwen3-Max (API single-call),2025-09-24,0.145,1.24
+finch,beta_lo,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,15.21
+finch,beta_lo,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,5.12
+finch,beta_lo,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,21.22
+finch,beta_lo,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,9.32
+finch,beta_lo,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,3.22
+finch,beta_lo,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,6.3
+finch,beta_lo,Grok 4 (API single-call),2025-07-09,0.238,4.58
+finch,beta_lo,Qwen3-Max (API single-call),2025-09-24,0.145,1.6
+finch,beta_lo_decomp,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,10.2
+finch,beta_lo_decomp,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,2.68
+finch,beta_lo_decomp,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,15.35
+finch,beta_lo_decomp,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,5.58
+finch,beta_lo_decomp,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,1.52
+finch,beta_lo_decomp,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,3.45
+finch,beta_lo_decomp,Grok 4 (API single-call),2025-07-09,0.238,2.33
+finch,beta_lo_decomp,Qwen3-Max (API single-call),2025-09-24,0.145,0.66
+finch,beta_hi,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,20.47
+finch,beta_hi,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,10.18
+finch,beta_hi,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,25.35
+finch,beta_hi,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,14.94
+finch,beta_hi,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,7.57
+finch,beta_hi,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,11.62
+finch,beta_hi,Grok 4 (API single-call),2025-07-09,0.238,9.48
+finch,beta_hi,Qwen3-Max (API single-call),2025-09-24,0.145,4.87
+finch,beta_hi_decomp,GPT-5.1 Pro (ChatGPT product agent),2025-11-19,0.384,13.72
+finch,beta_hi_decomp,Claude Sonnet 4.5 (Claude product agent),2025-09-29,0.25,4.68
+finch,beta_hi_decomp,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,18.85
+finch,beta_hi_decomp,GPT-5.1 (API single-call code-gen agent),2025-11-12,0.32,8.48
+finch,beta_hi_decomp,Claude Sonnet 4.5 (API single-call),2025-09-29,0.203,2.98
+finch,beta_hi_decomp,Gemini 3 Pro Preview (API single-call),2025-11-18,0.273,5.74
+finch,beta_hi_decomp,Grok 4 (API single-call),2025-07-09,0.238,4.19
+finch,beta_hi_decomp,Qwen3-Max (API single-call),2025-09-24,0.145,1.55
+gdpval,base,Claude Opus 4.1,2025-08-05,0.476,126.48
+gdpval,base,GPT-5 (high),2025-08-07,0.388,80.66
+gdpval,base,Gemini 3 Pro,2025-11-18,0.535,170.11
+gdpval,base,Claude Opus 4.5,2025-11-24,0.596,232.39
+gdpval,base,GPT-5.2 Thinking,2025-12-11,0.709,435.75
+gdpval,base,GPT-5.2 Pro,2025-12-11,0.741,532.54
+gdpval,base,Claude Opus 4.6,2026-02-05,0.78,695.57
+gdpval,base,Gemini 3.1 Pro Preview,2026-02-19,0.673,352.8
+gdpval,base,GPT-5.4 Pro,2026-03-05,0.82,949.17
+gdpval,base,GPT-5.4,2026-03-05,0.83,1034.05
+gdpval,base,Claude Opus 4.7,2026-04-16,0.803,827.06
+gdpval,base,GPT-5.5 Pro,2026-04-23,0.823,973.5
+gdpval,base,GPT-5.5,2026-04-23,0.849,1230.77
+gdpval,base_decomp,Claude Opus 4.1,2025-08-05,0.476,127.72
+gdpval,base_decomp,GPT-5 (high),2025-08-07,0.388,73.75
+gdpval,base_decomp,Gemini 3 Pro,2025-11-18,0.535,184.37
+gdpval,base_decomp,Claude Opus 4.5,2025-11-24,0.596,272.47
+gdpval,base_decomp,GPT-5.2 Thinking,2025-12-11,0.709,604.64
+gdpval,base_decomp,GPT-5.2 Pro,2025-12-11,0.741,781.07
+gdpval,base_decomp,Claude Opus 4.6,2026-02-05,0.78,1098.47
+gdpval,base_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.673,462.09
+gdpval,base_decomp,GPT-5.4 Pro,2026-03-05,0.82,1631.72
+gdpval,base_decomp,GPT-5.4,2026-03-05,0.83,1818.84
+gdpval,base_decomp,Claude Opus 4.7,2026-04-16,0.803,1369.71
+gdpval,base_decomp,GPT-5.5 Pro,2026-04-23,0.823,1684.95
+gdpval,base_decomp,GPT-5.5,2026-04-23,0.849,2266.04
+gdpval,beta_lo,Claude Opus 4.1,2025-08-05,0.476,121.33
+gdpval,beta_lo,GPT-5 (high),2025-08-07,0.388,65.57
+gdpval,beta_lo,Gemini 3 Pro,2025-11-18,0.535,181.89
+gdpval,beta_lo,Claude Opus 4.5,2025-11-24,0.596,278.49
+gdpval,beta_lo,GPT-5.2 Thinking,2025-12-11,0.709,657.21
+gdpval,beta_lo,GPT-5.2 Pro,2025-12-11,0.741,864.65
+gdpval,beta_lo,Claude Opus 4.6,2026-02-05,0.78,1246.38
+gdpval,beta_lo,Gemini 3.1 Pro Preview,2026-02-19,0.673,492.49
+gdpval,beta_lo,GPT-5.4 Pro,2026-03-05,0.82,1909.07
+gdpval,beta_lo,GPT-5.4,2026-03-05,0.83,2147.39
+gdpval,beta_lo,Claude Opus 4.7,2026-04-16,0.803,1580.31
+gdpval,beta_lo,GPT-5.5 Pro,2026-04-23,0.823,1976.57
+gdpval,beta_lo,GPT-5.5,2026-04-23,0.849,2728.28
+gdpval,beta_lo_decomp,Claude Opus 4.1,2025-08-05,0.476,126.07
+gdpval,beta_lo_decomp,GPT-5 (high),2025-08-07,0.388,62.75
+gdpval,beta_lo_decomp,Gemini 3 Pro,2025-11-18,0.535,200.29
+gdpval,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.596,326.86
+gdpval,beta_lo_decomp,GPT-5.2 Thinking,2025-12-11,0.709,880.5
+gdpval,beta_lo_decomp,GPT-5.2 Pro,2025-12-11,0.741,1208.07
+gdpval,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.78,1839.23
+gdpval,beta_lo_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.673,631.04
+gdpval,beta_lo_decomp,GPT-5.4 Pro,2026-03-05,0.82,2993.61
+gdpval,beta_lo_decomp,GPT-5.4,2026-03-05,0.83,3421.79
+gdpval,beta_lo_decomp,Claude Opus 4.7,2026-04-16,0.803,2413.37
+gdpval,beta_lo_decomp,GPT-5.5 Pro,2026-04-23,0.823,3114.3
+gdpval,beta_lo_decomp,GPT-5.5,2026-04-23,0.849,4486.63
+gdpval,beta_hi,Claude Opus 4.1,2025-08-05,0.476,128.43
+gdpval,beta_hi,GPT-5 (high),2025-08-07,0.388,87.41
+gdpval,beta_hi,Gemini 3 Pro,2025-11-18,0.535,165.54
+gdpval,beta_hi,Claude Opus 4.5,2025-11-24,0.596,216.28
+gdpval,beta_hi,GPT-5.2 Thinking,2025-12-11,0.709,370.7
+gdpval,beta_hi,GPT-5.2 Pro,2025-12-11,0.741,440.2
+gdpval,beta_hi,Claude Opus 4.6,2026-02-05,0.78,553.27
+gdpval,beta_hi,Gemini 3.1 Pro Preview,2026-02-19,0.673,309.34
+gdpval,beta_hi,GPT-5.4 Pro,2026-03-05,0.82,721.72
+gdpval,beta_hi,GPT-5.4,2026-03-05,0.83,776.49
+gdpval,beta_hi,Claude Opus 4.7,2026-04-16,0.803,641.58
+gdpval,beta_hi,GPT-5.5 Pro,2026-04-23,0.823,737.49
+gdpval,beta_hi,GPT-5.5,2026-04-23,0.849,900.94
+gdpval,beta_hi_decomp,Claude Opus 4.1,2025-08-05,0.476,127.59
+gdpval,beta_hi_decomp,GPT-5 (high),2025-08-07,0.388,77.99
+gdpval,beta_hi_decomp,Gemini 3 Pro,2025-11-18,0.535,177.58
+gdpval,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.596,252.82
+gdpval,beta_hi_decomp,GPT-5.2 Thinking,2025-12-11,0.709,522.36
+gdpval,beta_hi_decomp,GPT-5.2 Pro,2025-12-11,0.741,660.38
+gdpval,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.78,903.27
+gdpval,beta_hi_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.673,408.65
+gdpval,beta_hi_decomp,GPT-5.4 Pro,2026-03-05,0.82,1300.58
+gdpval,beta_hi_decomp,GPT-5.4,2026-03-05,0.83,1437.57
+gdpval,beta_hi_decomp,Claude Opus 4.7,2026-04-16,0.803,1106.77
+gdpval,beta_hi_decomp,GPT-5.5 Pro,2026-04-23,0.823,1339.66
+gdpval,beta_hi_decomp,GPT-5.5,2026-04-23,0.849,1760.94
+itbench_sre,base,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.06
+itbench_sre,base,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,6.89
+itbench_sre,base,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,10.24
+itbench_sre,base,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,9.58
+itbench_sre,base,Gemini 3.1 Pro Preview,2026-02-19,0.2203,6.38
+itbench_sre,base,GPT-5.4 (xhigh),2026-03-05,0.322,11.88
+itbench_sre,base,GPT-5.4 mini (xhigh),2026-03-17,0.2825,9.49
+itbench_sre,base,GPT-5.4 nano (xhigh),2026-03-17,0.2034,5.65
+itbench_sre,base,MiniMax-M2.7,2026-03-18,0.2216,6.44
+itbench_sre,base,GLM-5.1 (Reasoning),2026-04-07,0.3371,12.9
+itbench_sre,base,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,19.53
+itbench_sre,base,Kimi K2.6,2026-04-20,0.2768,9.18
+itbench_sre,base,GPT-5.5 (xhigh),2026-04-23,0.4124,18.99
+itbench_sre,base,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,12.38
+itbench_sre,base,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,6.89
+itbench_sre,base,Qwen3.7 Max,2026-05-19,0.375,15.73
+itbench_sre,base,Gemini 3.5 Flash (high),2026-05-19,0.3051,10.82
+itbench_sre,base,MiMo-V2.5-Pro,2026-06-10,0.3333,12.64
+itbench_sre,base,Gemma 4 31B (Reasoning),2026-06-10,0.3503,13.84
+itbench_sre,base,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,12.64
+itbench_sre,base,Grok 4.3 (high),2026-06-10,0.2768,9.18
+itbench_sre,base,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,6.18
+itbench_sre,base,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,4.32
+itbench_sre,base_decomp,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.06
+itbench_sre,base_decomp,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,7.07
+itbench_sre,base_decomp,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,10.66
+itbench_sre,base_decomp,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,9.95
+itbench_sre,base_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2203,6.52
+itbench_sre,base_decomp,GPT-5.4 (xhigh),2026-03-05,0.322,12.45
+itbench_sre,base_decomp,GPT-5.4 mini (xhigh),2026-03-17,0.2825,9.85
+itbench_sre,base_decomp,GPT-5.4 nano (xhigh),2026-03-17,0.2034,5.76
+itbench_sre,base_decomp,MiniMax-M2.7,2026-03-18,0.2216,6.59
+itbench_sre,base_decomp,GLM-5.1 (Reasoning),2026-04-07,0.3371,13.56
+itbench_sre,base_decomp,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,20.93
+itbench_sre,base_decomp,Kimi K2.6,2026-04-20,0.2768,9.51
+itbench_sre,base_decomp,GPT-5.5 (xhigh),2026-04-23,0.4124,20.32
+itbench_sre,base_decomp,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,12.99
+itbench_sre,base_decomp,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,7.07
+itbench_sre,base_decomp,Qwen3.7 Max,2026-05-19,0.375,16.68
+itbench_sre,base_decomp,Gemini 3.5 Flash (high),2026-05-19,0.3051,11.28
+itbench_sre,base_decomp,MiMo-V2.5-Pro,2026-06-10,0.3333,13.27
+itbench_sre,base_decomp,Gemma 4 31B (Reasoning),2026-06-10,0.3503,14.59
+itbench_sre,base_decomp,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,13.27
+itbench_sre,base_decomp,Grok 4.3 (high),2026-06-10,0.2768,9.51
+itbench_sre,base_decomp,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,6.32
+itbench_sre,base_decomp,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,4.37
+itbench_sre,beta_lo,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.01
+itbench_sre,beta_lo,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,3.91
+itbench_sre,beta_lo,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,6.79
+itbench_sre,beta_lo,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,6.19
+itbench_sre,beta_lo,Gemini 3.1 Pro Preview,2026-02-19,0.2203,3.51
+itbench_sre,beta_lo,GPT-5.4 (xhigh),2026-03-05,0.322,8.35
+itbench_sre,beta_lo,GPT-5.4 mini (xhigh),2026-03-17,0.2825,6.11
+itbench_sre,beta_lo,GPT-5.4 nano (xhigh),2026-03-17,0.2034,2.96
+itbench_sre,beta_lo,MiniMax-M2.7,2026-03-18,0.2216,3.55
+itbench_sre,beta_lo,GLM-5.1 (Reasoning),2026-04-07,0.3371,9.37
+itbench_sre,beta_lo,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,16.7
+itbench_sre,beta_lo,Kimi K2.6,2026-04-20,0.2768,5.82
+itbench_sre,beta_lo,GPT-5.5 (xhigh),2026-04-23,0.4124,16.06
+itbench_sre,beta_lo,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,8.85
+itbench_sre,beta_lo,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,3.91
+itbench_sre,beta_lo,Qwen3.7 Max,2026-05-19,0.375,12.35
+itbench_sre,beta_lo,Gemini 3.5 Flash (high),2026-05-19,0.3051,7.33
+itbench_sre,beta_lo,MiMo-V2.5-Pro,2026-06-10,0.3333,9.1
+itbench_sre,beta_lo,Gemma 4 31B (Reasoning),2026-06-10,0.3503,10.33
+itbench_sre,beta_lo,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,9.1
+itbench_sre,beta_lo,Grok 4.3 (high),2026-06-10,0.2768,5.82
+itbench_sre,beta_lo,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,3.36
+itbench_sre,beta_lo,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,2.04
+itbench_sre,beta_lo_decomp,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.01
+itbench_sre,beta_lo_decomp,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,4.08
+itbench_sre,beta_lo_decomp,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,7.17
+itbench_sre,beta_lo_decomp,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,6.52
+itbench_sre,beta_lo_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2203,3.66
+itbench_sre,beta_lo_decomp,GPT-5.4 (xhigh),2026-03-05,0.322,8.87
+itbench_sre,beta_lo_decomp,GPT-5.4 mini (xhigh),2026-03-17,0.2825,6.44
+itbench_sre,beta_lo_decomp,GPT-5.4 nano (xhigh),2026-03-17,0.2034,3.08
+itbench_sre,beta_lo_decomp,MiniMax-M2.7,2026-03-18,0.2216,3.7
+itbench_sre,beta_lo_decomp,GLM-5.1 (Reasoning),2026-04-07,0.3371,9.97
+itbench_sre,beta_lo_decomp,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,18.03
+itbench_sre,beta_lo_decomp,Kimi K2.6,2026-04-20,0.2768,6.13
+itbench_sre,beta_lo_decomp,GPT-5.5 (xhigh),2026-04-23,0.4124,17.32
+itbench_sre,beta_lo_decomp,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,9.4
+itbench_sre,beta_lo_decomp,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,4.08
+itbench_sre,beta_lo_decomp,Qwen3.7 Max,2026-05-19,0.375,13.24
+itbench_sre,beta_lo_decomp,Gemini 3.5 Flash (high),2026-05-19,0.3051,7.75
+itbench_sre,beta_lo_decomp,MiMo-V2.5-Pro,2026-06-10,0.3333,9.68
+itbench_sre,beta_lo_decomp,Gemma 4 31B (Reasoning),2026-06-10,0.3503,11.02
+itbench_sre,beta_lo_decomp,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,9.68
+itbench_sre,beta_lo_decomp,Grok 4.3 (high),2026-06-10,0.2768,6.13
+itbench_sre,beta_lo_decomp,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,3.5
+itbench_sre,beta_lo_decomp,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,2.11
+itbench_sre,beta_hi,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.17
+itbench_sre,beta_hi,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,8.64
+itbench_sre,beta_hi,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,12.06
+itbench_sre,beta_hi,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,11.41
+itbench_sre,beta_hi,Gemini 3.1 Pro Preview,2026-02-19,0.2203,8.1
+itbench_sre,beta_hi,GPT-5.4 (xhigh),2026-03-05,0.322,13.68
+itbench_sre,beta_hi,GPT-5.4 mini (xhigh),2026-03-17,0.2825,11.32
+itbench_sre,beta_hi,GPT-5.4 nano (xhigh),2026-03-17,0.2034,7.31
+itbench_sre,beta_hi,MiniMax-M2.7,2026-03-18,0.2216,8.16
+itbench_sre,beta_hi,GLM-5.1 (Reasoning),2026-04-07,0.3371,14.65
+itbench_sre,beta_hi,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,20.79
+itbench_sre,beta_hi,Kimi K2.6,2026-04-20,0.2768,11.0
+itbench_sre,beta_hi,GPT-5.5 (xhigh),2026-04-23,0.4124,20.3
+itbench_sre,beta_hi,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,14.16
+itbench_sre,beta_hi,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,8.64
+itbench_sre,beta_hi,Qwen3.7 Max,2026-05-19,0.375,17.32
+itbench_sre,beta_hi,Gemini 3.5 Flash (high),2026-05-19,0.3051,12.63
+itbench_sre,beta_hi,MiMo-V2.5-Pro,2026-06-10,0.3333,14.4
+itbench_sre,beta_hi,Gemma 4 31B (Reasoning),2026-06-10,0.3503,15.55
+itbench_sre,beta_hi,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,14.4
+itbench_sre,beta_hi,Grok 4.3 (high),2026-06-10,0.2768,11.0
+itbench_sre,beta_hi,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,7.89
+itbench_sre,beta_hi,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,5.84
+itbench_sre,beta_hi_decomp,Llama 3.3 Instruct 70B,2024-12-06,0.0058,0.16
+itbench_sre,beta_hi_decomp,Claude 4.5 Haiku (Reasoning),2025-10-15,0.2316,8.75
+itbench_sre,beta_hi_decomp,Qwen3.5 397B A17B (Reasoning),2026-02-16,0.2955,12.43
+itbench_sre,beta_hi_decomp,"Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",2026-02-17,0.2841,11.72
+itbench_sre,beta_hi_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2203,8.18
+itbench_sre,beta_hi_decomp,GPT-5.4 (xhigh),2026-03-05,0.322,14.19
+itbench_sre,beta_hi_decomp,GPT-5.4 mini (xhigh),2026-03-17,0.2825,11.62
+itbench_sre,beta_hi_decomp,GPT-5.4 nano (xhigh),2026-03-17,0.2034,7.35
+itbench_sre,beta_hi_decomp,MiniMax-M2.7,2026-03-18,0.2216,8.24
+itbench_sre,beta_hi_decomp,GLM-5.1 (Reasoning),2026-04-07,0.3371,15.27
+itbench_sre,beta_hi_decomp,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.4181,22.16
+itbench_sre,beta_hi_decomp,Kimi K2.6,2026-04-20,0.2768,11.28
+itbench_sre,beta_hi_decomp,GPT-5.5 (xhigh),2026-04-23,0.4124,21.61
+itbench_sre,beta_hi_decomp,"DeepSeek V4 Pro (Reasoning, Max Effort)",2026-04-24,0.3295,14.72
+itbench_sre,beta_hi_decomp,"DeepSeek V4 Flash (Reasoning, Max Effort)",2026-04-24,0.2316,8.75
+itbench_sre,beta_hi_decomp,Qwen3.7 Max,2026-05-19,0.375,18.24
+itbench_sre,beta_hi_decomp,Gemini 3.5 Flash (high),2026-05-19,0.3051,13.05
+itbench_sre,beta_hi_decomp,MiMo-V2.5-Pro,2026-06-10,0.3333,15.0
+itbench_sre,beta_hi_decomp,Gemma 4 31B (Reasoning),2026-06-10,0.3503,16.26
+itbench_sre,beta_hi_decomp,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,15.0
+itbench_sre,beta_hi_decomp,Grok 4.3 (high),2026-06-10,0.2768,11.28
+itbench_sre,beta_hi_decomp,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,7.96
+itbench_sre,beta_hi_decomp,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,5.82
+osworld_verified,base,computer-use-preview,2025-03-11,0.314,1.26
+osworld_verified,base,o3,2025-04-16,0.23,0.71
+osworld_verified,base,claude-3-7-sonnet-20250219,2025-02-24,0.358,1.65
+osworld_verified,base,claude-4-sonnet-20250514,2025-05-22,0.439,2.65
+osworld_verified,base,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,1.46
+osworld_verified,base,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,2.11
+osworld_verified,base,uitars-1.5-7b,2025-04-16,0.296,1.12
+osworld_verified,base,uitars-72b-dpo,2025-07-28,0.271,0.95
+osworld_verified,base,opencua-a3b,2025-07-28,0.199,0.56
+osworld_verified,base,opencua-qwen2-7b,2025-07-28,0.231,0.71
+osworld_verified,base,opencua-7b,2025-07-28,0.288,1.06
+osworld_verified,base,opencua-32b,2025-07-28,0.357,1.64
+osworld_verified,base,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.06
+osworld_verified,base,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.08
+osworld_verified,base,kimi-vl-a3b,2025-04-10,0.103,0.21
+osworld_verified,base,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,2.94
+osworld_verified,base,Jedi-7B w/ gpt-4o,2024-05-13,0.293,1.1
+osworld_verified,base,Jedi-7B w/ o3,2025-04-16,0.51,3.96
+osworld_verified,base,GTA1 w/ o3,2025-04-16,0.531,4.46
+osworld_verified,base,agent s2.5 w/ o3,2025-04-16,0.56,5.27
+osworld_verified,base,CoACT-1,2025-08-04,0.6076,6.97
+osworld_verified,base,TianXi-Action-7B,2025-08-11,0.3038,1.18
+osworld_verified,base,autoglm-os-9b,2025-08-18,0.4726,3.2
+osworld_verified,base,gui-owl-7b,2025-09-03,0.3211,1.32
+osworld_verified,base,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,1.98
+osworld_verified,base,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.6
+osworld_verified,base,UI-TARS-250705,2025-07-05,0.4184,2.35
+osworld_verified,base,DeepMiner-Mano-7B,2025-09-18,0.4015,2.13
+osworld_verified,base,aworldGUIAgent-v1,2025-09-18,0.5804,5.93
+osworld_verified,base,autoglm-os-9b-20250925,2025-09-25,0.4803,3.34
+osworld_verified,base,opencua-72b-preview,2025-10-01,0.461,3.0
+osworld_verified,base,GTA1 w/ GPT-5,2025-08-07,0.6341,8.18
+osworld_verified,base,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,12.42
+osworld_verified,base,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,9.37
+osworld_verified,base,UI-TARS-2-2509,2025-09-01,0.531,4.46
+osworld_verified,base,Agentic-Lybic-Maestro,2025-10-17,0.6193,7.48
+osworld_verified,base,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,2.31
+osworld_verified,base,DeepMiner-Mano-72B,2025-10-31,0.5391,4.67
+osworld_verified,base,claude-sonnet-4-5-20250929,2025-09-29,0.6288,7.92
+osworld_verified,base,GBOX Agent,2025-11-25,0.6422,8.6
+osworld_verified,base,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,14.96
+osworld_verified,base,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,10.57
+osworld_verified,base,Seed-1.8,2025-12-18,0.6187,7.45
+osworld_verified,base,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,10.35
+osworld_verified,base,EvoCUA,2025-12-24,0.503,3.8
+osworld_verified,base,OS-Symphony w/ GPT-5,2025-08-07,0.6577,9.48
+osworld_verified,base,EvoCUA-20260105,2026-01-06,0.5673,5.5
+osworld_verified,base,EvoCUA-8B-20260105,2026-01-13,0.4606,2.99
+osworld_verified,base,DART-GUI-7B-0924,2026-01-23,0.4047,2.17
+osworld_verified,base,Kimi K2.5,2026-01-27,0.633,8.13
+osworld_verified,base,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,17.18
+osworld_verified,base,claude-sonnet-4-6,2026-02-17,0.7211,14.47
+osworld_verified,base,GUI-Owl-1.5 32B,2026-03-27,0.5544,5.1
+osworld_verified,base,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,23.22
+osworld_verified,base,Kimi K2.6,2026-04-20,0.7306,15.48
+osworld_verified,base,Holo3-35B-A3B,2026-04-20,0.8256,33.74
+osworld_verified,base,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,19.66
+osworld_verified,base,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,37.5
+osworld_verified,base,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,30.41
+osworld_verified,base,Qwen 3.7 Plus,2026-05-25,0.733,15.75
+osworld_verified,base,MiniMax M3,2026-06-08,0.7519,18.11
+osworld_verified,base,Coasty CUA v1,2026-07-01,0.8281,34.56
+osworld_verified,base,Muse Spark 1.1,2026-07-09,0.8067,28.34
+osworld_verified,base,Intelligence-Indeed Agent,2026-07-25,0.9019,82.51
+osworld_verified,base,claude-fable-5[1m],2026-06-09,0.8596,47.94
+osworld_verified,base,claude-opus-5[1m],2026-07-24,0.8339,36.58
+osworld_verified,base_decomp,computer-use-preview,2025-03-11,0.314,0.49
+osworld_verified,base_decomp,o3,2025-04-16,0.23,0.2
+osworld_verified,base_decomp,claude-3-7-sonnet-20250219,2025-02-24,0.358,0.75
+osworld_verified,base_decomp,claude-4-sonnet-20250514,2025-05-22,0.439,1.65
+osworld_verified,base_decomp,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,0.62
+osworld_verified,base_decomp,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,1.14
+osworld_verified,base_decomp,uitars-1.5-7b,2025-04-16,0.296,0.41
+osworld_verified,base_decomp,uitars-72b-dpo,2025-07-28,0.271,0.31
+osworld_verified,base_decomp,opencua-a3b,2025-07-28,0.199,0.15
+osworld_verified,base_decomp,opencua-qwen2-7b,2025-07-28,0.231,0.21
+osworld_verified,base_decomp,opencua-7b,2025-07-28,0.288,0.37
+osworld_verified,base_decomp,opencua-32b,2025-07-28,0.357,0.75
+osworld_verified,base_decomp,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.01
+osworld_verified,base_decomp,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.01
+osworld_verified,base_decomp,kimi-vl-a3b,2025-04-10,0.103,0.04
+osworld_verified,base_decomp,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,1.97
+osworld_verified,base_decomp,Jedi-7B w/ gpt-4o,2024-05-13,0.293,0.39
+osworld_verified,base_decomp,Jedi-7B w/ o3,2025-04-16,0.51,3.2
+osworld_verified,base_decomp,GTA1 w/ o3,2025-04-16,0.531,3.88
+osworld_verified,base_decomp,agent s2.5 w/ o3,2025-04-16,0.56,5.08
+osworld_verified,base_decomp,CoACT-1,2025-08-04,0.6076,7.95
+osworld_verified,base_decomp,TianXi-Action-7B,2025-08-11,0.3038,0.44
+osworld_verified,base_decomp,autoglm-os-9b,2025-08-18,0.4726,2.26
+osworld_verified,base_decomp,gui-owl-7b,2025-09-03,0.3211,0.52
+osworld_verified,base_decomp,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,1.02
+osworld_verified,base_decomp,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.08
+osworld_verified,base_decomp,UI-TARS-250705,2025-07-05,0.4184,1.36
+osworld_verified,base_decomp,DeepMiner-Mano-7B,2025-09-18,0.4015,1.15
+osworld_verified,base_decomp,aworldGUIAgent-v1,2025-09-18,0.5804,6.14
+osworld_verified,base_decomp,autoglm-os-9b-20250925,2025-09-25,0.4803,2.43
+osworld_verified,base_decomp,opencua-72b-preview,2025-10-01,0.461,2.03
+osworld_verified,base_decomp,GTA1 w/ GPT-5,2025-08-07,0.6341,10.29
+osworld_verified,base_decomp,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,20.36
+osworld_verified,base_decomp,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,12.81
+osworld_verified,base_decomp,UI-TARS-2-2509,2025-09-01,0.531,3.88
+osworld_verified,base_decomp,Agentic-Lybic-Maestro,2025-10-17,0.6193,8.9
+osworld_verified,base_decomp,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,1.32
+osworld_verified,base_decomp,DeepMiner-Mano-72B,2025-10-31,0.5391,4.18
+osworld_verified,base_decomp,claude-sonnet-4-5-20250929,2025-09-29,0.6288,9.77
+osworld_verified,base_decomp,GBOX Agent,2025-11-25,0.6422,11.16
+osworld_verified,base_decomp,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,27.86
+osworld_verified,base_decomp,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,15.58
+osworld_verified,base_decomp,Seed-1.8,2025-12-18,0.6187,8.85
+osworld_verified,base_decomp,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,15.06
+osworld_verified,base_decomp,EvoCUA,2025-12-24,0.503,3.0
+osworld_verified,base_decomp,OS-Symphony w/ GPT-5,2025-08-07,0.6577,13.06
+osworld_verified,base_decomp,EvoCUA-20260105,2026-01-06,0.5673,5.43
+osworld_verified,base_decomp,EvoCUA-8B-20260105,2026-01-13,0.4606,2.02
+osworld_verified,base_decomp,DART-GUI-7B-0924,2026-01-23,0.4047,1.19
+osworld_verified,base_decomp,Kimi K2.5,2026-01-27,0.633,10.18
+osworld_verified,base_decomp,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,35.38
+osworld_verified,base_decomp,claude-sonnet-4-6,2026-02-17,0.7211,26.32
+osworld_verified,base_decomp,GUI-Owl-1.5 32B,2026-03-27,0.5544,4.82
+osworld_verified,base_decomp,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,60.73
+osworld_verified,base_decomp,Kimi K2.6,2026-04-20,0.7306,29.55
+osworld_verified,base_decomp,Holo3-35B-A3B,2026-04-20,0.8256,122.55
+osworld_verified,base_decomp,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,44.93
+osworld_verified,base_decomp,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,150.0
+osworld_verified,base_decomp,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,100.56
+osworld_verified,base_decomp,Qwen 3.7 Plus,2026-05-25,0.733,30.45
+osworld_verified,base_decomp,MiniMax M3,2026-06-08,0.7519,38.84
+osworld_verified,base_decomp,Coasty CUA v1,2026-07-01,0.8281,128.31
+osworld_verified,base_decomp,Muse Spark 1.1,2026-07-09,0.8067,88.02
+osworld_verified,base_decomp,Intelligence-Indeed Agent,2026-07-25,0.9019,636.59
+osworld_verified,base_decomp,claude-fable-5[1m],2026-06-09,0.8596,239.5
+osworld_verified,base_decomp,claude-opus-5[1m],2026-07-24,0.8339,143.02
+osworld_verified,beta_lo,computer-use-preview,2025-03-11,0.314,0.91
+osworld_verified,beta_lo,o3,2025-04-16,0.23,0.43
+osworld_verified,beta_lo,claude-3-7-sonnet-20250219,2025-02-24,0.358,1.31
+osworld_verified,beta_lo,claude-4-sonnet-20250514,2025-05-22,0.439,2.42
+osworld_verified,beta_lo,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,1.11
+osworld_verified,beta_lo,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,1.81
+osworld_verified,beta_lo,uitars-1.5-7b,2025-04-16,0.296,0.78
+osworld_verified,beta_lo,uitars-72b-dpo,2025-07-28,0.271,0.63
+osworld_verified,beta_lo,opencua-a3b,2025-07-28,0.199,0.31
+osworld_verified,beta_lo,opencua-qwen2-7b,2025-07-28,0.231,0.43
+osworld_verified,beta_lo,opencua-7b,2025-07-28,0.288,0.73
+osworld_verified,beta_lo,opencua-32b,2025-07-28,0.357,1.3
+osworld_verified,beta_lo,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.01
+osworld_verified,beta_lo,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.02
+osworld_verified,beta_lo,kimi-vl-a3b,2025-04-10,0.103,0.08
+osworld_verified,beta_lo,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,2.78
+osworld_verified,beta_lo,Jedi-7B w/ gpt-4o,2024-05-13,0.293,0.76
+osworld_verified,beta_lo,Jedi-7B w/ o3,2025-04-16,0.51,4.08
+osworld_verified,beta_lo,GTA1 w/ o3,2025-04-16,0.531,4.77
+osworld_verified,beta_lo,agent s2.5 w/ o3,2025-04-16,0.56,5.91
+osworld_verified,beta_lo,CoACT-1,2025-08-04,0.6076,8.49
+osworld_verified,beta_lo,TianXi-Action-7B,2025-08-11,0.3038,0.84
+osworld_verified,beta_lo,autoglm-os-9b,2025-08-18,0.4726,3.1
+osworld_verified,beta_lo,gui-owl-7b,2025-09-03,0.3211,0.97
+osworld_verified,beta_lo,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,1.66
+osworld_verified,beta_lo,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.96
+osworld_verified,beta_lo,UI-TARS-250705,2025-07-05,0.4184,2.07
+osworld_verified,beta_lo,DeepMiner-Mano-7B,2025-09-18,0.4015,1.83
+osworld_verified,beta_lo,aworldGUIAgent-v1,2025-09-18,0.5804,6.89
+osworld_verified,beta_lo,autoglm-os-9b-20250925,2025-09-25,0.4803,3.28
+osworld_verified,beta_lo,opencua-72b-preview,2025-10-01,0.461,2.85
+osworld_verified,beta_lo,GTA1 w/ GPT-5,2025-08-07,0.6341,10.44
+osworld_verified,beta_lo,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,17.88
+osworld_verified,beta_lo,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,12.43
+osworld_verified,beta_lo,UI-TARS-2-2509,2025-09-01,0.531,4.77
+osworld_verified,beta_lo,Agentic-Lybic-Maestro,2025-10-17,0.6193,9.29
+osworld_verified,beta_lo,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,2.03
+osworld_verified,beta_lo,DeepMiner-Mano-72B,2025-10-31,0.5391,5.06
+osworld_verified,beta_lo,claude-sonnet-4-5-20250929,2025-09-29,0.6288,10.01
+osworld_verified,beta_lo,GBOX Agent,2025-11-25,0.6422,11.14
+osworld_verified,beta_lo,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,22.72
+osworld_verified,beta_lo,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,14.52
+osworld_verified,beta_lo,Seed-1.8,2025-12-18,0.6187,9.25
+osworld_verified,beta_lo,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,14.14
+osworld_verified,beta_lo,EvoCUA,2025-12-24,0.503,3.88
+osworld_verified,beta_lo,OS-Symphony w/ GPT-5,2025-08-07,0.6577,12.63
+osworld_verified,beta_lo,EvoCUA-20260105,2026-01-06,0.5673,6.24
+osworld_verified,beta_lo,EvoCUA-8B-20260105,2026-01-13,0.4606,2.84
+osworld_verified,beta_lo,DART-GUI-7B-0924,2026-01-23,0.4047,1.87
+osworld_verified,beta_lo,Kimi K2.5,2026-01-27,0.633,10.35
+osworld_verified,beta_lo,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,27.16
+osworld_verified,beta_lo,claude-sonnet-4-6,2026-02-17,0.7211,21.77
+osworld_verified,beta_lo,GUI-Owl-1.5 32B,2026-03-27,0.5544,5.67
+osworld_verified,beta_lo,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,40.11
+osworld_verified,beta_lo,Kimi K2.6,2026-04-20,0.7306,23.75
+osworld_verified,beta_lo,Holo3-35B-A3B,2026-04-20,0.8256,65.17
+osworld_verified,beta_lo,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,32.34
+osworld_verified,beta_lo,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,74.8
+osworld_verified,beta_lo,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,56.93
+osworld_verified,beta_lo,Qwen 3.7 Plus,2026-05-25,0.733,24.29
+osworld_verified,beta_lo,MiniMax M3,2026-06-08,0.7519,29.09
+osworld_verified,beta_lo,Coasty CUA v1,2026-07-01,0.8281,67.24
+osworld_verified,beta_lo,Muse Spark 1.1,2026-07-09,0.8067,51.95
+osworld_verified,beta_lo,Intelligence-Indeed Agent,2026-07-25,0.9019,211.32
+osworld_verified,beta_lo,claude-fable-5[1m],2026-06-09,0.8596,103.16
+osworld_verified,beta_lo,claude-opus-5[1m],2026-07-24,0.8339,72.41
+osworld_verified,beta_lo_decomp,computer-use-preview,2025-03-11,0.314,0.41
+osworld_verified,beta_lo_decomp,o3,2025-04-16,0.23,0.15
+osworld_verified,beta_lo_decomp,claude-3-7-sonnet-20250219,2025-02-24,0.358,0.67
+osworld_verified,beta_lo_decomp,claude-4-sonnet-20250514,2025-05-22,0.439,1.59
+osworld_verified,beta_lo_decomp,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,0.54
+osworld_verified,beta_lo_decomp,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,1.05
+osworld_verified,beta_lo_decomp,uitars-1.5-7b,2025-04-16,0.296,0.34
+osworld_verified,beta_lo_decomp,uitars-72b-dpo,2025-07-28,0.271,0.25
+osworld_verified,beta_lo_decomp,opencua-a3b,2025-07-28,0.199,0.1
+osworld_verified,beta_lo_decomp,opencua-qwen2-7b,2025-07-28,0.231,0.15
+osworld_verified,beta_lo_decomp,opencua-7b,2025-07-28,0.288,0.31
+osworld_verified,beta_lo_decomp,opencua-32b,2025-07-28,0.357,0.66
+osworld_verified,beta_lo_decomp,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.0
+osworld_verified,beta_lo_decomp,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.01
+osworld_verified,beta_lo_decomp,kimi-vl-a3b,2025-04-10,0.103,0.02
+osworld_verified,beta_lo_decomp,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,1.93
+osworld_verified,beta_lo_decomp,Jedi-7B w/ gpt-4o,2024-05-13,0.293,0.33
+osworld_verified,beta_lo_decomp,Jedi-7B w/ o3,2025-04-16,0.51,3.33
+osworld_verified,beta_lo_decomp,GTA1 w/ o3,2025-04-16,0.531,4.16
+osworld_verified,beta_lo_decomp,agent s2.5 w/ o3,2025-04-16,0.56,5.66
+osworld_verified,beta_lo_decomp,CoACT-1,2025-08-04,0.6076,9.51
+osworld_verified,beta_lo_decomp,TianXi-Action-7B,2025-08-11,0.3038,0.37
+osworld_verified,beta_lo_decomp,autoglm-os-9b,2025-08-18,0.4726,2.25
+osworld_verified,beta_lo_decomp,gui-owl-7b,2025-09-03,0.3211,0.45
+osworld_verified,beta_lo_decomp,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,0.94
+osworld_verified,beta_lo_decomp,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.4
+osworld_verified,beta_lo_decomp,UI-TARS-250705,2025-07-05,0.4184,1.28
+osworld_verified,beta_lo_decomp,DeepMiner-Mano-7B,2025-09-18,0.4015,1.07
+osworld_verified,beta_lo_decomp,aworldGUIAgent-v1,2025-09-18,0.5804,7.05
+osworld_verified,beta_lo_decomp,autoglm-os-9b-20250925,2025-09-25,0.4803,2.44
+osworld_verified,beta_lo_decomp,opencua-72b-preview,2025-10-01,0.461,2.0
+osworld_verified,beta_lo_decomp,GTA1 w/ GPT-5,2025-08-07,0.6341,12.85
+osworld_verified,beta_lo_decomp,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,28.21
+osworld_verified,beta_lo_decomp,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,16.55
+osworld_verified,beta_lo_decomp,UI-TARS-2-2509,2025-09-01,0.531,4.16
+osworld_verified,beta_lo_decomp,Agentic-Lybic-Maestro,2025-10-17,0.6193,10.85
+osworld_verified,beta_lo_decomp,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,1.24
+osworld_verified,beta_lo_decomp,DeepMiner-Mano-72B,2025-10-31,0.5391,4.53
+osworld_verified,beta_lo_decomp,claude-sonnet-4-5-20250929,2025-09-29,0.6288,12.09
+osworld_verified,beta_lo_decomp,GBOX Agent,2025-11-25,0.6422,14.11
+osworld_verified,beta_lo_decomp,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,40.24
+osworld_verified,beta_lo_decomp,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,20.77
+osworld_verified,beta_lo_decomp,Seed-1.8,2025-12-18,0.6187,10.78
+osworld_verified,beta_lo_decomp,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,19.97
+osworld_verified,beta_lo_decomp,EvoCUA,2025-12-24,0.503,3.1
+osworld_verified,beta_lo_decomp,OS-Symphony w/ GPT-5,2025-08-07,0.6577,16.93
+osworld_verified,beta_lo_decomp,EvoCUA-20260105,2026-01-06,0.5673,6.12
+osworld_verified,beta_lo_decomp,EvoCUA-8B-20260105,2026-01-13,0.4606,1.99
+osworld_verified,beta_lo_decomp,DART-GUI-7B-0924,2026-01-23,0.4047,1.1
+osworld_verified,beta_lo_decomp,Kimi K2.5,2026-01-27,0.633,12.68
+osworld_verified,beta_lo_decomp,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,52.51
+osworld_verified,beta_lo_decomp,claude-sonnet-4-6,2026-02-17,0.7211,37.75
+osworld_verified,beta_lo_decomp,GUI-Owl-1.5 32B,2026-03-27,0.5544,5.33
+osworld_verified,beta_lo_decomp,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,94.36
+osworld_verified,beta_lo_decomp,Kimi K2.6,2026-04-20,0.7306,42.99
+osworld_verified,beta_lo_decomp,Holo3-35B-A3B,2026-04-20,0.8256,196.11
+osworld_verified,beta_lo_decomp,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,68.23
+osworld_verified,beta_lo_decomp,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,241.1
+osworld_verified,beta_lo_decomp,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,160.02
+osworld_verified,beta_lo_decomp,Qwen 3.7 Plus,2026-05-25,0.733,44.44
+osworld_verified,beta_lo_decomp,MiniMax M3,2026-06-08,0.7519,58.2
+osworld_verified,beta_lo_decomp,Coasty CUA v1,2026-07-01,0.8281,205.55
+osworld_verified,beta_lo_decomp,Muse Spark 1.1,2026-07-09,0.8067,139.4
+osworld_verified,beta_lo_decomp,Intelligence-Indeed Agent,2026-07-25,0.9019,1078.45
+osworld_verified,beta_lo_decomp,claude-fable-5[1m],2026-06-09,0.8596,388.27
+osworld_verified,beta_lo_decomp,claude-opus-5[1m],2026-07-24,0.8339,229.66
+osworld_verified,beta_hi,computer-use-preview,2025-03-11,0.314,1.42
+osworld_verified,beta_hi,o3,2025-04-16,0.23,0.86
+osworld_verified,beta_hi,claude-3-7-sonnet-20250219,2025-02-24,0.358,1.8
+osworld_verified,beta_hi,claude-4-sonnet-20250514,2025-05-22,0.439,2.72
+osworld_verified,beta_hi,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,1.61
+osworld_verified,beta_hi,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,2.23
+osworld_verified,beta_hi,uitars-1.5-7b,2025-04-16,0.296,1.28
+osworld_verified,beta_hi,uitars-72b-dpo,2025-07-28,0.271,1.11
+osworld_verified,beta_hi,opencua-a3b,2025-07-28,0.199,0.69
+osworld_verified,beta_hi,opencua-qwen2-7b,2025-07-28,0.231,0.86
+osworld_verified,beta_hi,opencua-7b,2025-07-28,0.288,1.22
+osworld_verified,beta_hi,opencua-32b,2025-07-28,0.357,1.79
+osworld_verified,beta_hi,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.1
+osworld_verified,beta_hi,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.13
+osworld_verified,beta_hi,kimi-vl-a3b,2025-04-10,0.103,0.3
+osworld_verified,beta_hi,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,2.99
+osworld_verified,beta_hi,Jedi-7B w/ gpt-4o,2024-05-13,0.293,1.26
+osworld_verified,beta_hi,Jedi-7B w/ o3,2025-04-16,0.51,3.89
+osworld_verified,beta_hi,GTA1 w/ o3,2025-04-16,0.531,4.33
+osworld_verified,beta_hi,agent s2.5 w/ o3,2025-04-16,0.56,5.02
+osworld_verified,beta_hi,CoACT-1,2025-08-04,0.6076,6.44
+osworld_verified,beta_hi,TianXi-Action-7B,2025-08-11,0.3038,1.34
+osworld_verified,beta_hi,autoglm-os-9b,2025-08-18,0.4726,3.23
+osworld_verified,beta_hi,gui-owl-7b,2025-09-03,0.3211,1.47
+osworld_verified,beta_hi,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,2.11
+osworld_verified,beta_hi,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.45
+osworld_verified,beta_hi,UI-TARS-250705,2025-07-05,0.4184,2.45
+osworld_verified,beta_hi,DeepMiner-Mano-7B,2025-09-18,0.4015,2.25
+osworld_verified,beta_hi,aworldGUIAgent-v1,2025-09-18,0.5804,5.58
+osworld_verified,beta_hi,autoglm-os-9b-20250925,2025-09-25,0.4803,3.35
+osworld_verified,beta_hi,opencua-72b-preview,2025-10-01,0.461,3.04
+osworld_verified,beta_hi,GTA1 w/ GPT-5,2025-08-07,0.6341,7.44
+osworld_verified,beta_hi,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,10.8
+osworld_verified,beta_hi,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,8.39
+osworld_verified,beta_hi,UI-TARS-2-2509,2025-09-01,0.531,4.33
+osworld_verified,beta_hi,Agentic-Lybic-Maestro,2025-10-17,0.6193,6.86
+osworld_verified,beta_hi,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,2.42
+osworld_verified,beta_hi,DeepMiner-Mano-72B,2025-10-31,0.5391,4.51
+osworld_verified,beta_hi,claude-sonnet-4-5-20250929,2025-09-29,0.6288,7.23
+osworld_verified,beta_hi,GBOX Agent,2025-11-25,0.6422,7.78
+osworld_verified,beta_hi,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,12.75
+osworld_verified,beta_hi,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,9.35
+osworld_verified,beta_hi,Seed-1.8,2025-12-18,0.6187,6.84
+osworld_verified,beta_hi,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,9.17
+osworld_verified,beta_hi,EvoCUA,2025-12-24,0.503,3.76
+osworld_verified,beta_hi,OS-Symphony w/ GPT-5,2025-08-07,0.6577,8.48
+osworld_verified,beta_hi,EvoCUA-20260105,2026-01-06,0.5673,5.22
+osworld_verified,beta_hi,EvoCUA-8B-20260105,2026-01-13,0.4606,3.04
+osworld_verified,beta_hi,DART-GUI-7B-0924,2026-01-23,0.4047,2.29
+osworld_verified,beta_hi,Kimi K2.5,2026-01-27,0.633,7.39
+osworld_verified,beta_hi,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,14.43
+osworld_verified,beta_hi,claude-sonnet-4-6,2026-02-17,0.7211,12.38
+osworld_verified,beta_hi,GUI-Owl-1.5 32B,2026-03-27,0.5544,4.88
+osworld_verified,beta_hi,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,18.89
+osworld_verified,beta_hi,Kimi K2.6,2026-04-20,0.7306,13.15
+osworld_verified,beta_hi,Holo3-35B-A3B,2026-04-20,0.8256,26.36
+osworld_verified,beta_hi,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,16.28
+osworld_verified,beta_hi,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,28.96
+osworld_verified,beta_hi,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,24.03
+osworld_verified,beta_hi,Qwen 3.7 Plus,2026-05-25,0.733,13.35
+osworld_verified,beta_hi,MiniMax M3,2026-06-08,0.7519,15.13
+osworld_verified,beta_hi,Coasty CUA v1,2026-07-01,0.8281,26.93
+osworld_verified,beta_hi,Muse Spark 1.1,2026-07-09,0.8067,22.57
+osworld_verified,beta_hi,Intelligence-Indeed Agent,2026-07-25,0.9019,58.17
+osworld_verified,beta_hi,claude-fable-5[1m],2026-06-09,0.8596,36.02
+osworld_verified,beta_hi,claude-opus-5[1m],2026-07-24,0.8339,28.33
+osworld_verified,beta_hi_decomp,computer-use-preview,2025-03-11,0.314,0.51
+osworld_verified,beta_hi_decomp,o3,2025-04-16,0.23,0.22
+osworld_verified,beta_hi_decomp,claude-3-7-sonnet-20250219,2025-02-24,0.358,0.78
+osworld_verified,beta_hi_decomp,claude-4-sonnet-20250514,2025-05-22,0.439,1.69
+osworld_verified,beta_hi_decomp,doubao-1-5-thinking-vision-pro-250428,2025-04-28,0.338,0.64
+osworld_verified,beta_hi_decomp,doubao-1-5-thinking-vision-pro-250717,2025-07-17,0.4,1.17
+osworld_verified,beta_hi_decomp,uitars-1.5-7b,2025-04-16,0.296,0.42
+osworld_verified,beta_hi_decomp,uitars-72b-dpo,2025-07-28,0.271,0.33
+osworld_verified,beta_hi_decomp,opencua-a3b,2025-07-28,0.199,0.16
+osworld_verified,beta_hi_decomp,opencua-qwen2-7b,2025-07-28,0.231,0.22
+osworld_verified,beta_hi_decomp,opencua-7b,2025-07-28,0.288,0.39
+osworld_verified,beta_hi_decomp,opencua-32b,2025-07-28,0.357,0.77
+osworld_verified,beta_hi_decomp,qwen2.5-vl-32b-instruct,2025-03-24,0.0388,0.02
+osworld_verified,beta_hi_decomp,qwen2.5-vl-72b-instruct,2025-01-26,0.05,0.02
+osworld_verified,beta_hi_decomp,kimi-vl-a3b,2025-04-10,0.103,0.05
+osworld_verified,beta_hi_decomp,agent s2 w/ gemini-2.5-pro,2025-06-17,0.4576,2.01
+osworld_verified,beta_hi_decomp,Jedi-7B w/ gpt-4o,2024-05-13,0.293,0.41
+osworld_verified,beta_hi_decomp,Jedi-7B w/ o3,2025-04-16,0.51,3.2
+osworld_verified,beta_hi_decomp,GTA1 w/ o3,2025-04-16,0.531,3.84
+osworld_verified,beta_hi_decomp,agent s2.5 w/ o3,2025-04-16,0.56,4.94
+osworld_verified,beta_hi_decomp,CoACT-1,2025-08-04,0.6076,7.48
+osworld_verified,beta_hi_decomp,TianXi-Action-7B,2025-08-11,0.3038,0.46
+osworld_verified,beta_hi_decomp,autoglm-os-9b,2025-08-18,0.4726,2.3
+osworld_verified,beta_hi_decomp,gui-owl-7b,2025-09-03,0.3211,0.54
+osworld_verified,beta_hi_decomp,mobile-agent-v3 w/ gui-owl-32b,2025-09-03,0.3891,1.06
+osworld_verified,beta_hi_decomp,UiPath Screen Agent w/ GPT-5,2025-08-07,0.5363,4.02
+osworld_verified,beta_hi_decomp,UI-TARS-250705,2025-07-05,0.4184,1.4
+osworld_verified,beta_hi_decomp,DeepMiner-Mano-7B,2025-09-18,0.4015,1.19
+osworld_verified,beta_hi_decomp,aworldGUIAgent-v1,2025-09-18,0.5804,5.89
+osworld_verified,beta_hi_decomp,autoglm-os-9b-20250925,2025-09-25,0.4803,2.46
+osworld_verified,beta_hi_decomp,opencua-72b-preview,2025-10-01,0.461,2.07
+osworld_verified,beta_hi_decomp,GTA1 w/ GPT-5,2025-08-07,0.6341,9.49
+osworld_verified,beta_hi_decomp,agent s3 w/ GPT-5 bBoN (N=10),2025-08-07,0.699,17.85
+osworld_verified,beta_hi_decomp,agent s3 w/ GPT-5 bBoN (N=1),2025-08-07,0.6558,11.61
+osworld_verified,beta_hi_decomp,UI-TARS-2-2509,2025-09-01,0.531,3.84
+osworld_verified,beta_hi_decomp,Agentic-Lybic-Maestro,2025-10-17,0.6193,8.3
+osworld_verified,beta_hi_decomp,qwen3-vl-flash-2025-10-25,2025-10-25,0.4157,1.36
+osworld_verified,beta_hi_decomp,DeepMiner-Mano-72B,2025-10-31,0.5391,4.12
+osworld_verified,beta_hi_decomp,claude-sonnet-4-5-20250929,2025-09-29,0.6288,9.04
+osworld_verified,beta_hi_decomp,GBOX Agent,2025-11-25,0.6422,10.22
+osworld_verified,beta_hi_decomp,agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10),2025-11-24,0.7258,23.96
+osworld_verified,beta_hi_decomp,agent s3 w/ Opus 4.5 bBoN (N=1),2025-11-24,0.6746,13.93
+osworld_verified,beta_hi_decomp,Seed-1.8,2025-12-18,0.6187,8.25
+osworld_verified,beta_hi_decomp,UiPath Screen Agent w/ Opus 4.5,2025-11-24,0.6714,13.5
+osworld_verified,beta_hi_decomp,EvoCUA,2025-12-24,0.503,3.01
+osworld_verified,beta_hi_decomp,OS-Symphony w/ GPT-5,2025-08-07,0.6577,11.82
+osworld_verified,beta_hi_decomp,EvoCUA-20260105,2026-01-06,0.5673,5.26
+osworld_verified,beta_hi_decomp,EvoCUA-8B-20260105,2026-01-13,0.4606,2.06
+osworld_verified,beta_hi_decomp,DART-GUI-7B-0924,2026-01-23,0.4047,1.23
+osworld_verified,beta_hi_decomp,Kimi K2.5,2026-01-27,0.633,9.39
+osworld_verified,beta_hi_decomp,HIPPO Agent w/ Opus 4.5,2025-11-24,0.7448,30.05
+osworld_verified,beta_hi_decomp,claude-sonnet-4-6,2026-02-17,0.7211,22.71
+osworld_verified,beta_hi_decomp,GUI-Owl-1.5 32B,2026-03-27,0.5544,4.7
+osworld_verified,beta_hi_decomp,OpenAPA w/ gemini-3.1-pro,2026-02-19,0.7834,50.7
+osworld_verified,beta_hi_decomp,Kimi K2.6,2026-04-20,0.7306,25.33
+osworld_verified,beta_hi_decomp,Holo3-35B-A3B,2026-04-20,0.8256,102.78
+osworld_verified,beta_hi_decomp,VLAA-GUI w/ Opus 4.5,2025-11-24,0.7626,37.79
+osworld_verified,beta_hi_decomp,Pointer Agent w/ Opus 4.7,2026-05-21,0.8364,126.59
+osworld_verified,beta_hi_decomp,Pointer Agent w/ Sonnet 4.6,2026-02-17,0.8145,83.98
+osworld_verified,beta_hi_decomp,Qwen 3.7 Plus,2026-05-25,0.733,26.06
+osworld_verified,beta_hi_decomp,MiniMax M3,2026-06-08,0.7519,32.86
+osworld_verified,beta_hi_decomp,Coasty CUA v1,2026-07-01,0.8281,107.75
+osworld_verified,beta_hi_decomp,Muse Spark 1.1,2026-07-09,0.8067,73.39
+osworld_verified,beta_hi_decomp,Intelligence-Indeed Agent,2026-07-25,0.9019,554.29
+osworld_verified,beta_hi_decomp,claude-fable-5[1m],2026-06-09,0.8596,205.63
+osworld_verified,beta_hi_decomp,claude-opus-5[1m],2026-07-24,0.8339,120.5
+sopbench,base,GPT-4o,2024-05-13,0.6012,10.72
+sopbench,base,GPT-4o-mini,2024-07-18,0.4169,4.36
+sopbench,base,Llama3.1-70B-Instruct,2024-07-23,0.3868,3.75
+sopbench,base,Llama3.1-8B-Instruct,2024-07-23,0.1458,0.78
+sopbench,base,Qwen2.5-32B-Instruct,2024-09-19,0.3723,3.48
+sopbench,base,Qwen2.5-72B-Instruct,2024-09-19,0.3386,2.92
+sopbench,base,Qwen2.5-14B-Instruct,2024-09-19,0.3084,2.47
+sopbench,base,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.41
+sopbench,base,Claude-3-5-Sonnet,2024-10-22,0.3771,3.57
+sopbench,base,Deepseek-R1,2025-01-20,0.611,11.27
+sopbench,base,Gemini-2.0-Flash,2025-02-05,0.306,2.44
+sopbench,base,Claude-3-7-Sonnet,2025-02-24,0.5229,7.3
+sopbench,base,Gemini-2.5-Pro,2025-03-25,0.6482,13.65
+sopbench,base,GPT-4.1,2025-04-14,0.6614,14.65
+sopbench,base,GPT-4.1-mini,2025-04-14,0.447,5.06
+sopbench,base,o4-mini-high,2025-04-16,0.753,25.03
+sopbench,base,Gemini-2.5-Flash,2025-04-17,0.6807,16.28
+sopbench,base,GPT-5,2025-08-07,0.7289,21.52
+sopbench,base,GPT-5-mini,2025-08-07,0.7265,21.21
+sopbench,base,Qwen3.5-4B thinking,2026-03-02,0.6867,16.83
+sopbench,base,Qwen3.5-2B thinking,2026-03-02,0.4662,5.55
+sopbench,base,Gemma-4-E4B-it thinking,2026-04-02,0.559,8.7
+sopbench,base,Gemma-4-E2B-it thinking,2026-04-02,0.2699,1.97
+sopbench,base_decomp,GPT-4o,2024-05-13,0.6012,12.78
+sopbench,base_decomp,GPT-4o-mini,2024-07-18,0.4169,4.87
+sopbench,base_decomp,Llama3.1-70B-Instruct,2024-07-23,0.3868,4.14
+sopbench,base_decomp,Llama3.1-8B-Instruct,2024-07-23,0.1458,0.8
+sopbench,base_decomp,Qwen2.5-32B-Instruct,2024-09-19,0.3723,3.83
+sopbench,base_decomp,Qwen2.5-72B-Instruct,2024-09-19,0.3386,3.17
+sopbench,base_decomp,Qwen2.5-14B-Instruct,2024-09-19,0.3084,2.66
+sopbench,base_decomp,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.41
+sopbench,base_decomp,Claude-3-5-Sonnet,2024-10-22,0.3771,3.93
+sopbench,base_decomp,Deepseek-R1,2025-01-20,0.611,13.47
+sopbench,base_decomp,Gemini-2.0-Flash,2025-02-05,0.306,2.62
+sopbench,base_decomp,Claude-3-7-Sonnet,2025-02-24,0.5229,8.45
+sopbench,base_decomp,Gemini-2.5-Pro,2025-03-25,0.6482,16.57
+sopbench,base_decomp,GPT-4.1,2025-04-14,0.6614,17.87
+sopbench,base_decomp,GPT-4.1-mini,2025-04-14,0.447,5.7
+sopbench,base_decomp,o4-mini-high,2025-04-16,0.753,31.7
+sopbench,base_decomp,Gemini-2.5-Flash,2025-04-17,0.6807,20.0
+sopbench,base_decomp,GPT-5,2025-08-07,0.7289,26.98
+sopbench,base_decomp,GPT-5-mini,2025-08-07,0.7265,26.56
+sopbench,base_decomp,Qwen3.5-4B thinking,2026-03-02,0.6867,20.73
+sopbench,base_decomp,Qwen3.5-2B thinking,2026-03-02,0.4662,6.3
+sopbench,base_decomp,Gemma-4-E4B-it thinking,2026-04-02,0.559,10.2
+sopbench,base_decomp,Gemma-4-E2B-it thinking,2026-04-02,0.2699,2.1
+sopbench,beta_lo,GPT-4o,2024-05-13,0.6012,13.02
+sopbench,beta_lo,GPT-4o-mini,2024-07-18,0.4169,3.72
+sopbench,beta_lo,Llama3.1-70B-Instruct,2024-07-23,0.3868,3.02
+sopbench,beta_lo,Llama3.1-8B-Instruct,2024-07-23,0.1458,0.34
+sopbench,beta_lo,Qwen2.5-32B-Instruct,2024-09-19,0.3723,2.72
+sopbench,beta_lo,Qwen2.5-72B-Instruct,2024-09-19,0.3386,2.13
+sopbench,beta_lo,Qwen2.5-14B-Instruct,2024-09-19,0.3084,1.69
+sopbench,beta_lo,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.14
+sopbench,beta_lo,Claude-3-5-Sonnet,2024-10-22,0.3771,2.82
+sopbench,beta_lo,Deepseek-R1,2025-01-20,0.611,13.94
+sopbench,beta_lo,Gemini-2.0-Flash,2025-02-05,0.306,1.66
+sopbench,beta_lo,Claude-3-7-Sonnet,2025-02-24,0.5229,7.62
+sopbench,beta_lo,Gemini-2.5-Pro,2025-03-25,0.6482,18.22
+sopbench,beta_lo,GPT-4.1,2025-04-14,0.6614,20.1
+sopbench,beta_lo,GPT-4.1-mini,2025-04-14,0.447,4.58
+sopbench,beta_lo,o4-mini-high,2025-04-16,0.753,42.38
+sopbench,beta_lo,Gemini-2.5-Flash,2025-04-17,0.6807,23.27
+sopbench,beta_lo,GPT-5,2025-08-07,0.7289,34.34
+sopbench,beta_lo,GPT-5-mini,2025-08-07,0.7265,33.65
+sopbench,beta_lo,Qwen3.5-4B thinking,2026-03-02,0.6867,24.38
+sopbench,beta_lo,Qwen3.5-2B thinking,2026-03-02,0.4662,5.21
+sopbench,beta_lo,Gemma-4-E4B-it thinking,2026-04-02,0.559,9.73
+sopbench,beta_lo,Gemma-4-E2B-it thinking,2026-04-02,0.2699,1.23
+sopbench,beta_lo_decomp,GPT-4o,2024-05-13,0.6012,15.42
+sopbench,beta_lo_decomp,GPT-4o-mini,2024-07-18,0.4169,4.2
+sopbench,beta_lo_decomp,Llama3.1-70B-Instruct,2024-07-23,0.3868,3.38
+sopbench,beta_lo_decomp,Llama3.1-8B-Instruct,2024-07-23,0.1458,0.36
+sopbench,beta_lo_decomp,Qwen2.5-32B-Instruct,2024-09-19,0.3723,3.04
+sopbench,beta_lo_decomp,Qwen2.5-72B-Instruct,2024-09-19,0.3386,2.35
+sopbench,beta_lo_decomp,Qwen2.5-14B-Instruct,2024-09-19,0.3084,1.85
+sopbench,beta_lo_decomp,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.14
+sopbench,beta_lo_decomp,Claude-3-5-Sonnet,2024-10-22,0.3771,3.15
+sopbench,beta_lo_decomp,Deepseek-R1,2025-01-20,0.611,16.56
+sopbench,beta_lo_decomp,Gemini-2.0-Flash,2025-02-05,0.306,1.82
+sopbench,beta_lo_decomp,Claude-3-7-Sonnet,2025-02-24,0.5229,8.84
+sopbench,beta_lo_decomp,Gemini-2.5-Pro,2025-03-25,0.6482,21.88
+sopbench,beta_lo_decomp,GPT-4.1,2025-04-14,0.6614,24.22
+sopbench,beta_lo_decomp,GPT-4.1-mini,2025-04-14,0.447,5.2
+sopbench,beta_lo_decomp,o4-mini-high,2025-04-16,0.753,52.44
+sopbench,beta_lo_decomp,Gemini-2.5-Flash,2025-04-17,0.6807,28.2
+sopbench,beta_lo_decomp,GPT-5,2025-08-07,0.7289,42.19
+sopbench,beta_lo_decomp,GPT-5-mini,2025-08-07,0.7265,41.31
+sopbench,beta_lo_decomp,Qwen3.5-4B thinking,2026-03-02,0.6867,29.59
+sopbench,beta_lo_decomp,Qwen3.5-2B thinking,2026-03-02,0.4662,5.95
+sopbench,beta_lo_decomp,Gemma-4-E4B-it thinking,2026-04-02,0.559,11.4
+sopbench,beta_lo_decomp,Gemma-4-E2B-it thinking,2026-04-02,0.2699,1.34
+sopbench,beta_hi,GPT-4o,2024-05-13,0.6012,9.92
+sopbench,beta_hi,GPT-4o-mini,2024-07-18,0.4169,4.65
+sopbench,beta_hi,Llama3.1-70B-Instruct,2024-07-23,0.3868,4.09
+sopbench,beta_hi,Llama3.1-8B-Instruct,2024-07-23,0.1458,1.09
+sopbench,beta_hi,Qwen2.5-32B-Instruct,2024-09-19,0.3723,3.84
+sopbench,beta_hi,Qwen2.5-72B-Instruct,2024-09-19,0.3386,3.31
+sopbench,beta_hi,Qwen2.5-14B-Instruct,2024-09-19,0.3084,2.88
+sopbench,beta_hi,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.63
+sopbench,beta_hi,Claude-3-5-Sonnet,2024-10-22,0.3771,3.92
+sopbench,beta_hi,Deepseek-R1,2025-01-20,0.611,10.35
+sopbench,beta_hi,Gemini-2.0-Flash,2025-02-05,0.306,2.84
+sopbench,beta_hi,Claude-3-7-Sonnet,2025-02-24,0.5229,7.17
+sopbench,beta_hi,Gemini-2.5-Pro,2025-03-25,0.6482,12.17
+sopbench,beta_hi,GPT-4.1,2025-04-14,0.6614,12.92
+sopbench,beta_hi,GPT-4.1-mini,2025-04-14,0.447,5.26
+sopbench,beta_hi,o4-mini-high,2025-04-16,0.753,20.3
+sopbench,beta_hi,Gemini-2.5-Flash,2025-04-17,0.6807,14.12
+sopbench,beta_hi,GPT-5,2025-08-07,0.7289,17.87
+sopbench,beta_hi,GPT-5-mini,2025-08-07,0.7265,17.65
+sopbench,beta_hi,Qwen3.5-4B thinking,2026-03-02,0.6867,14.52
+sopbench,beta_hi,Qwen3.5-2B thinking,2026-03-02,0.4662,5.69
+sopbench,beta_hi,Gemma-4-E4B-it thinking,2026-04-02,0.559,8.32
+sopbench,beta_hi,Gemma-4-E2B-it thinking,2026-04-02,0.2699,2.38
+sopbench,beta_hi_decomp,GPT-4o,2024-05-13,0.6012,11.86
+sopbench,beta_hi_decomp,GPT-4o-mini,2024-07-18,0.4169,5.15
+sopbench,beta_hi_decomp,Llama3.1-70B-Instruct,2024-07-23,0.3868,4.48
+sopbench,beta_hi_decomp,Llama3.1-8B-Instruct,2024-07-23,0.1458,1.09
+sopbench,beta_hi_decomp,Qwen2.5-32B-Instruct,2024-09-19,0.3723,4.18
+sopbench,beta_hi_decomp,Qwen2.5-72B-Instruct,2024-09-19,0.3386,3.56
+sopbench,beta_hi_decomp,Qwen2.5-14B-Instruct,2024-09-19,0.3084,3.06
+sopbench,beta_hi_decomp,Qwen2.5-7B-Instruct,2024-09-19,0.0904,0.62
+sopbench,beta_hi_decomp,Claude-3-5-Sonnet,2024-10-22,0.3771,4.28
+sopbench,beta_hi_decomp,Deepseek-R1,2025-01-20,0.611,12.42
+sopbench,beta_hi_decomp,Gemini-2.0-Flash,2025-02-05,0.306,3.02
+sopbench,beta_hi_decomp,Claude-3-7-Sonnet,2025-02-24,0.5229,8.29
+sopbench,beta_hi_decomp,Gemini-2.5-Pro,2025-03-25,0.6482,14.85
+sopbench,beta_hi_decomp,GPT-4.1,2025-04-14,0.6614,15.86
+sopbench,beta_hi_decomp,GPT-4.1-mini,2025-04-14,0.447,5.9
+sopbench,beta_hi_decomp,o4-mini-high,2025-04-16,0.753,26.07
+sopbench,beta_hi_decomp,Gemini-2.5-Flash,2025-04-17,0.6807,17.49
+sopbench,beta_hi_decomp,GPT-5,2025-08-07,0.7289,22.67
+sopbench,beta_hi_decomp,GPT-5-mini,2025-08-07,0.7265,22.37
+sopbench,beta_hi_decomp,Qwen3.5-4B thinking,2026-03-02,0.6867,18.04
+sopbench,beta_hi_decomp,Qwen3.5-2B thinking,2026-03-02,0.4662,6.43
+sopbench,beta_hi_decomp,Gemma-4-E4B-it thinking,2026-04-02,0.559,9.76
+sopbench,beta_hi_decomp,Gemma-4-E2B-it thinking,2026-04-02,0.2699,2.49
+spreadsheetbench_2,base,Claude Opus 4.6,2026-02-05,0.3489,22.58
+spreadsheetbench_2,base,GPT-5.2,2025-12-11,0.2679,14.06
+spreadsheetbench_2,base,Gemini 3.1 Pro,2026-02-19,0.2368,11.46
+spreadsheetbench_2,base,GLM-5,2026-02-11,0.1714,6.94
+spreadsheetbench_2,base,DeepSeek-V3.2,2025-12-01,0.1558,6.03
+spreadsheetbench_2,base,Kimi K2.5,2026-01-27,0.1464,5.51
+spreadsheetbench_2,base,Qwen3.5-397B-A17B,2026-02-16,0.1122,3.79
+spreadsheetbench_2,base,MiniMax M2.5,2026-02-12,0.0717,2.08
+spreadsheetbench_2,base_decomp,Claude Opus 4.6,2026-02-05,0.3489,17.75
+spreadsheetbench_2,base_decomp,GPT-5.2,2025-12-11,0.2679,10.09
+spreadsheetbench_2,base_decomp,Gemini 3.1 Pro,2026-02-19,0.2368,7.85
+spreadsheetbench_2,base_decomp,GLM-5,2026-02-11,0.1714,4.17
+spreadsheetbench_2,base_decomp,DeepSeek-V3.2,2025-12-01,0.1558,3.48
+spreadsheetbench_2,base_decomp,Kimi K2.5,2026-01-27,0.1464,3.09
+spreadsheetbench_2,base_decomp,Qwen3.5-397B-A17B,2026-02-16,0.1122,1.89
+spreadsheetbench_2,base_decomp,MiniMax M2.5,2026-02-12,0.0717,0.85
+spreadsheetbench_2,beta_lo,Claude Opus 4.6,2026-02-05,0.3489,16.84
+spreadsheetbench_2,beta_lo,GPT-5.2,2025-12-11,0.2679,8.8
+spreadsheetbench_2,beta_lo,Gemini 3.1 Pro,2026-02-19,0.2368,6.64
+spreadsheetbench_2,beta_lo,GLM-5,2026-02-11,0.1714,3.34
+spreadsheetbench_2,beta_lo,DeepSeek-V3.2,2025-12-01,0.1558,2.75
+spreadsheetbench_2,beta_lo,Kimi K2.5,2026-01-27,0.1464,2.43
+spreadsheetbench_2,beta_lo,Qwen3.5-397B-A17B,2026-02-16,0.1122,1.45
+spreadsheetbench_2,beta_lo,MiniMax M2.5,2026-02-12,0.0717,0.63
+spreadsheetbench_2,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.3489,13.0
+spreadsheetbench_2,beta_lo_decomp,GPT-5.2,2025-12-11,0.2679,6.27
+spreadsheetbench_2,beta_lo_decomp,Gemini 3.1 Pro,2026-02-19,0.2368,4.56
+spreadsheetbench_2,beta_lo_decomp,GLM-5,2026-02-11,0.1714,2.08
+spreadsheetbench_2,beta_lo_decomp,DeepSeek-V3.2,2025-12-01,0.1558,1.66
+spreadsheetbench_2,beta_lo_decomp,Kimi K2.5,2026-01-27,0.1464,1.44
+spreadsheetbench_2,beta_lo_decomp,Qwen3.5-397B-A17B,2026-02-16,0.1122,0.8
+spreadsheetbench_2,beta_lo_decomp,MiniMax M2.5,2026-02-12,0.0717,0.31
+spreadsheetbench_2,beta_hi,Claude Opus 4.6,2026-02-05,0.3489,25.39
+spreadsheetbench_2,beta_hi,GPT-5.2,2025-12-11,0.2679,16.94
+spreadsheetbench_2,beta_hi,Gemini 3.1 Pro,2026-02-19,0.2368,14.22
+spreadsheetbench_2,beta_hi,GLM-5,2026-02-11,0.1714,9.26
+spreadsheetbench_2,beta_hi,DeepSeek-V3.2,2025-12-01,0.1558,8.21
+spreadsheetbench_2,beta_hi,Kimi K2.5,2026-01-27,0.1464,7.6
+spreadsheetbench_2,beta_hi,Qwen3.5-397B-A17B,2026-02-16,0.1122,5.52
+spreadsheetbench_2,beta_hi,MiniMax M2.5,2026-02-12,0.0717,3.31
+spreadsheetbench_2,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.3489,20.19
+spreadsheetbench_2,beta_hi_decomp,GPT-5.2,2025-12-11,0.2679,12.29
+spreadsheetbench_2,beta_hi_decomp,Gemini 3.1 Pro,2026-02-19,0.2368,9.84
+spreadsheetbench_2,beta_hi_decomp,GLM-5,2026-02-11,0.1714,5.56
+spreadsheetbench_2,beta_hi_decomp,DeepSeek-V3.2,2025-12-01,0.1558,4.7
+spreadsheetbench_2,beta_hi_decomp,Kimi K2.5,2026-01-27,0.1464,4.21
+spreadsheetbench_2,beta_hi_decomp,Qwen3.5-397B-A17B,2026-02-16,0.1122,2.64
+spreadsheetbench_2,beta_hi_decomp,MiniMax M2.5,2026-02-12,0.0717,1.22
+starshell,base,Claude Sonnet 4.6,2026-02-17,0.735,14.46
+starshell,base,Claude Opus 4.6,2026-02-05,0.814,25.34
+starshell,base,GPT-5.4 Thinking (Medium),2026-03-05,0.735,14.46
+starshell,base,Gemini 3.1 Pro,2026-02-19,0.775,18.88
+starshell,base,Gemma-4-31B-it,2026-04-02,0.461,3.4
+starshell,base,Qwen-3.6-27B,2026-04-21,0.545,5.14
+starshell,base_decomp,Claude Sonnet 4.6,2026-02-17,0.735,17.22
+starshell,base_decomp,Claude Opus 4.6,2026-02-05,0.814,33.63
+starshell,base_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.735,17.22
+starshell,base_decomp,Gemini 3.1 Pro,2026-02-19,0.775,23.63
+starshell,base_decomp,Gemma-4-31B-it,2026-04-02,0.461,3.26
+starshell,base_decomp,Qwen-3.6-27B,2026-04-21,0.545,5.2
+starshell,beta_lo,Claude Sonnet 4.6,2026-02-17,0.735,23.32
+starshell,beta_lo,Claude Opus 4.6,2026-02-05,0.814,50.48
+starshell,beta_lo,GPT-5.4 Thinking (Medium),2026-03-05,0.735,23.32
+starshell,beta_lo,Gemini 3.1 Pro,2026-02-19,0.775,33.66
+starshell,beta_lo,Gemma-4-31B-it,2026-04-02,0.461,3.17
+starshell,beta_lo,Qwen-3.6-27B,2026-04-21,0.545,5.61
+starshell,beta_lo_decomp,Claude Sonnet 4.6,2026-02-17,0.735,27.65
+starshell,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.814,65.24
+starshell,beta_lo_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.735,27.65
+starshell,beta_lo_decomp,Gemini 3.1 Pro,2026-02-19,0.775,41.55
+starshell,beta_lo_decomp,Gemma-4-31B-it,2026-04-02,0.461,3.13
+starshell,beta_lo_decomp,Qwen-3.6-27B,2026-04-21,0.545,5.8
+starshell,beta_hi,Claude Sonnet 4.6,2026-02-17,0.735,11.96
+starshell,beta_hi,Claude Opus 4.6,2026-02-05,0.814,19.29
+starshell,beta_hi,GPT-5.4 Thinking (Medium),2026-03-05,0.735,11.96
+starshell,beta_hi,Gemini 3.1 Pro,2026-02-19,0.775,15.01
+starshell,beta_hi,Gemma-4-31B-it,2026-04-02,0.461,3.49
+starshell,beta_hi,Qwen-3.6-27B,2026-04-21,0.545,4.96
+starshell,beta_hi_decomp,Claude Sonnet 4.6,2026-02-17,0.735,14.25
+starshell,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.814,25.82
+starshell,beta_hi_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.735,14.25
+starshell,beta_hi_decomp,Gemini 3.1 Pro,2026-02-19,0.775,18.86
+starshell,beta_hi_decomp,Gemma-4-31B-it,2026-04-02,0.461,3.29
+starshell,beta_hi_decomp,Qwen-3.6-27B,2026-04-21,0.545,4.96
+swe_bench_pro,base,GPT-4o,2024-05-13,0.049,1.89
+swe_bench_pro,base,Codestral 2405,2024-05-29,0.0151,0.44
+swe_bench_pro,base,Llama 3.1 405B Instruct,2024-07-23,0.1118,5.62
+swe_bench_pro,base,Gemma 3 27B it,2025-03-12,0.1138,5.76
+swe_bench_pro,base,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,2.06
+swe_bench_pro,base,Qwen3 235B A22B,2025-04-29,0.2141,14.59
+swe_bench_pro,base,Qwen3 32B,2025-04-29,0.034,1.19
+swe_bench_pro,base,Claude 4 Sonnet,2025-05-22,0.427,51.13
+swe_bench_pro,base,Kimi K2 Instruct,2025-07-11,0.2767,22.26
+swe_bench_pro,base,Qwen3 Coder 480B A35B,2025-07-22,0.387,41.58
+swe_bench_pro,base,gpt-oss-120b,2025-08-05,0.162,9.53
+swe_bench_pro,base,Claude Opus 4.1,2025-08-05,0.231,16.48
+swe_bench_pro,base,GPT-5 (High),2025-08-07,0.4178,48.78
+swe_bench_pro,base,Claude 4.5 Sonnet,2025-09-29,0.436,53.52
+swe_bench_pro,base,GLM-4.6,2025-09-30,0.0967,4.6
+swe_bench_pro,base,Claude 4.5 Haiku,2025-10-15,0.3945,43.24
+swe_bench_pro,base,Gemini 3 Pro Preview,2025-11-18,0.433,52.72
+swe_bench_pro,base,Claude Opus 4.5,2025-11-24,0.4589,60.08
+swe_bench_pro,base,DeepSeek V3.2,2025-12-01,0.1556,8.99
+swe_bench_pro,base,GPT-5.2,2025-12-11,0.2994,25.56
+swe_bench_pro,base,Gemini 3 Flash,2025-12-17,0.3463,33.41
+swe_bench_pro,base,GPT-5.2 Codex,2025-12-18,0.4104,46.96
+swe_bench_pro,base,MiniMax 2.1,2025-12-23,0.3681,37.61
+swe_bench_pro,base,Claude Opus 4.6 (thinking),2026-02-05,0.519,81.09
+swe_bench_pro,base,Gemini 3.1 Pro (thinking),2026-02-19,0.461,60.71
+swe_bench_pro,base,GPT-5.4 (xHigh),2026-03-05,0.591,116.57
+swe_bench_pro,base,Muse Spark,2026-04-08,0.55,94.68
+swe_bench_pro,base,Muse Spark 1.1,2026-07-09,0.615,132.01
+swe_bench_pro,base_decomp,GPT-4o,2024-05-13,0.049,0.78
+swe_bench_pro,base_decomp,Codestral 2405,2024-05-29,0.0151,0.13
+swe_bench_pro,base_decomp,Llama 3.1 405B Instruct,2024-07-23,0.1118,3.38
+swe_bench_pro,base_decomp,Gemma 3 27B it,2025-03-12,0.1138,3.49
+swe_bench_pro,base_decomp,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,0.88
+swe_bench_pro,base_decomp,Qwen3 235B A22B,2025-04-29,0.2141,11.08
+swe_bench_pro,base_decomp,Qwen3 32B,2025-04-29,0.034,0.43
+swe_bench_pro,base_decomp,Claude 4 Sonnet,2025-05-22,0.427,48.47
+swe_bench_pro,base_decomp,Kimi K2 Instruct,2025-07-11,0.2767,18.3
+swe_bench_pro,base_decomp,Qwen3 Coder 480B A35B,2025-07-22,0.387,38.07
+swe_bench_pro,base_decomp,gpt-oss-120b,2025-08-05,0.162,6.6
+swe_bench_pro,base_decomp,Claude Opus 4.1,2025-08-05,0.231,12.81
+swe_bench_pro,base_decomp,GPT-5 (High),2025-08-07,0.4178,45.88
+swe_bench_pro,base_decomp,Claude 4.5 Sonnet,2025-09-29,0.436,51.13
+swe_bench_pro,base_decomp,GLM-4.6,2025-09-30,0.0967,2.61
+swe_bench_pro,base_decomp,Claude 4.5 Haiku,2025-10-15,0.3945,39.86
+swe_bench_pro,base_decomp,Gemini 3 Pro Preview,2025-11-18,0.433,50.23
+swe_bench_pro,base_decomp,Claude Opus 4.5,2025-11-24,0.4589,58.51
+swe_bench_pro,base_decomp,DeepSeek V3.2,2025-12-01,0.1556,6.14
+swe_bench_pro,base_decomp,GPT-5.2,2025-12-11,0.2994,21.53
+swe_bench_pro,base_decomp,Gemini 3 Flash,2025-12-17,0.3463,29.48
+swe_bench_pro,base_decomp,GPT-5.2 Codex,2025-12-18,0.4104,43.89
+swe_bench_pro,base_decomp,MiniMax 2.1,2025-12-23,0.3681,33.86
+swe_bench_pro,base_decomp,Claude Opus 4.6 (thinking),2026-02-05,0.519,83.04
+swe_bench_pro,base_decomp,Gemini 3.1 Pro (thinking),2026-02-19,0.461,59.23
+swe_bench_pro,base_decomp,GPT-5.4 (xHigh),2026-03-05,0.591,126.88
+swe_bench_pro,base_decomp,Muse Spark,2026-04-08,0.55,99.52
+swe_bench_pro,base_decomp,Muse Spark 1.1,2026-07-09,0.615,146.71
+swe_bench_pro,beta_lo,GPT-4o,2024-05-13,0.049,0.48
+swe_bench_pro,beta_lo,Codestral 2405,2024-05-29,0.0151,0.06
+swe_bench_pro,beta_lo,Llama 3.1 405B Instruct,2024-07-23,0.1118,2.15
+swe_bench_pro,beta_lo,Gemma 3 27B it,2025-03-12,0.1138,2.23
+swe_bench_pro,beta_lo,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,0.54
+swe_bench_pro,beta_lo,Qwen3 235B A22B,2025-04-29,0.2141,7.98
+swe_bench_pro,beta_lo,Qwen3 32B,2025-04-29,0.034,0.25
+swe_bench_pro,beta_lo,Claude 4 Sonnet,2025-05-22,0.427,44.48
+swe_bench_pro,beta_lo,Kimi K2 Instruct,2025-07-11,0.2767,14.24
+swe_bench_pro,beta_lo,Qwen3 Coder 480B A35B,2025-07-22,0.387,33.5
+swe_bench_pro,beta_lo,gpt-oss-120b,2025-08-05,0.162,4.46
+swe_bench_pro,beta_lo,Claude Opus 4.1,2025-08-05,0.231,9.43
+swe_bench_pro,beta_lo,GPT-5 (High),2025-08-07,0.4178,41.7
+swe_bench_pro,beta_lo,Claude 4.5 Sonnet,2025-09-29,0.436,47.36
+swe_bench_pro,beta_lo,GLM-4.6,2025-09-30,0.0967,1.64
+swe_bench_pro,beta_lo,Claude 4.5 Haiku,2025-10-15,0.3945,35.36
+swe_bench_pro,beta_lo,Gemini 3 Pro Preview,2025-11-18,0.433,46.38
+swe_bench_pro,beta_lo,Claude Opus 4.5,2025-11-24,0.4589,55.48
+swe_bench_pro,beta_lo,DeepSeek V3.2,2025-12-01,0.1556,4.11
+swe_bench_pro,beta_lo,GPT-5.2,2025-12-11,0.2994,17.2
+swe_bench_pro,beta_lo,Gemini 3 Flash,2025-12-17,0.3463,24.82
+swe_bench_pro,beta_lo,GPT-5.2 Codex,2025-12-18,0.4104,39.59
+swe_bench_pro,beta_lo,MiniMax 2.1,2025-12-23,0.3681,29.2
+swe_bench_pro,beta_lo,Claude Opus 4.6 (thinking),2026-02-05,0.519,83.72
+swe_bench_pro,beta_lo,Gemini 3.1 Pro (thinking),2026-02-19,0.461,56.29
+swe_bench_pro,beta_lo,GPT-5.4 (xHigh),2026-03-05,0.591,137.82
+swe_bench_pro,beta_lo,Muse Spark,2026-04-08,0.55,103.58
+swe_bench_pro,beta_lo,Muse Spark 1.1,2026-07-09,0.615,163.52
+swe_bench_pro,beta_lo_decomp,GPT-4o,2024-05-13,0.049,0.25
+swe_bench_pro,beta_lo_decomp,Codestral 2405,2024-05-29,0.0151,0.03
+swe_bench_pro,beta_lo_decomp,Llama 3.1 405B Instruct,2024-07-23,0.1118,1.38
+swe_bench_pro,beta_lo_decomp,Gemma 3 27B it,2025-03-12,0.1138,1.44
+swe_bench_pro,beta_lo_decomp,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,0.28
+swe_bench_pro,beta_lo_decomp,Qwen3 235B A22B,2025-04-29,0.2141,6.17
+swe_bench_pro,beta_lo_decomp,Qwen3 32B,2025-04-29,0.034,0.12
+swe_bench_pro,beta_lo_decomp,Claude 4 Sonnet,2025-05-22,0.427,42.15
+swe_bench_pro,beta_lo_decomp,Kimi K2 Instruct,2025-07-11,0.2767,11.84
+swe_bench_pro,beta_lo_decomp,Qwen3 Coder 480B A35B,2025-07-22,0.387,30.77
+swe_bench_pro,beta_lo_decomp,gpt-oss-120b,2025-08-05,0.162,3.18
+swe_bench_pro,beta_lo_decomp,Claude Opus 4.1,2025-08-05,0.231,7.44
+swe_bench_pro,beta_lo_decomp,GPT-5 (High),2025-08-07,0.4178,39.24
+swe_bench_pro,beta_lo_decomp,Claude 4.5 Sonnet,2025-09-29,0.436,45.19
+swe_bench_pro,beta_lo_decomp,GLM-4.6,2025-09-30,0.0967,1.01
+swe_bench_pro,beta_lo_decomp,Claude 4.5 Haiku,2025-10-15,0.3945,32.67
+swe_bench_pro,beta_lo_decomp,Gemini 3 Pro Preview,2025-11-18,0.433,44.16
+swe_bench_pro,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.4589,53.86
+swe_bench_pro,beta_lo_decomp,DeepSeek V3.2,2025-12-01,0.1556,2.9
+swe_bench_pro,beta_lo_decomp,GPT-5.2,2025-12-11,0.2994,14.63
+swe_bench_pro,beta_lo_decomp,Gemini 3 Flash,2025-12-17,0.3463,22.04
+swe_bench_pro,beta_lo_decomp,GPT-5.2 Codex,2025-12-18,0.4104,37.04
+swe_bench_pro,beta_lo_decomp,MiniMax 2.1,2025-12-23,0.3681,26.4
+swe_bench_pro,beta_lo_decomp,Claude Opus 4.6 (thinking),2026-02-05,0.519,84.94
+swe_bench_pro,beta_lo_decomp,Gemini 3.1 Pro (thinking),2026-02-19,0.461,54.73
+swe_bench_pro,beta_lo_decomp,GPT-5.4 (xHigh),2026-03-05,0.591,147.28
+swe_bench_pro,beta_lo_decomp,Muse Spark,2026-04-08,0.55,107.46
+swe_bench_pro,beta_lo_decomp,Muse Spark 1.1,2026-07-09,0.615,177.81
+swe_bench_pro,beta_hi,GPT-4o,2024-05-13,0.049,3.23
+swe_bench_pro,beta_hi,Codestral 2405,2024-05-29,0.0151,0.94
+swe_bench_pro,beta_hi,Llama 3.1 405B Instruct,2024-07-23,0.1118,8.19
+swe_bench_pro,beta_hi,Gemma 3 27B it,2025-03-12,0.1138,8.36
+swe_bench_pro,beta_hi,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,3.48
+swe_bench_pro,beta_hi,Qwen3 235B A22B,2025-04-29,0.2141,18.52
+swe_bench_pro,beta_hi,Qwen3 32B,2025-04-29,0.034,2.19
+swe_bench_pro,beta_hi,Claude 4 Sonnet,2025-05-22,0.427,54.08
+swe_bench_pro,beta_hi,Kimi K2 Instruct,2025-07-11,0.2767,26.58
+swe_bench_pro,beta_hi,Qwen3 Coder 480B A35B,2025-07-22,0.387,45.32
+swe_bench_pro,beta_hi,gpt-oss-120b,2025-08-05,0.162,12.87
+swe_bench_pro,beta_hi,Claude Opus 4.1,2025-08-05,0.231,20.55
+swe_bench_pro,beta_hi,GPT-5 (High),2025-08-07,0.4178,51.95
+swe_bench_pro,beta_hi,Claude 4.5 Sonnet,2025-09-29,0.436,56.23
+swe_bench_pro,beta_hi,GLM-4.6,2025-09-30,0.0967,6.91
+swe_bench_pro,beta_hi,Claude 4.5 Haiku,2025-10-15,0.3945,46.87
+swe_bench_pro,beta_hi,Gemini 3 Pro Preview,2025-11-18,0.433,55.5
+swe_bench_pro,beta_hi,Claude Opus 4.5,2025-11-24,0.4589,62.05
+swe_bench_pro,beta_hi,DeepSeek V3.2,2025-12-01,0.1556,12.23
+swe_bench_pro,beta_hi,GPT-5.2,2025-12-11,0.2994,29.91
+swe_bench_pro,beta_hi,Gemini 3 Flash,2025-12-17,0.3463,37.6
+swe_bench_pro,beta_hi,GPT-5.2 Codex,2025-12-18,0.4104,50.29
+swe_bench_pro,beta_hi,MiniMax 2.1,2025-12-23,0.3681,41.6
+swe_bench_pro,beta_hi,Claude Opus 4.6 (thinking),2026-02-05,0.519,80.14
+swe_bench_pro,beta_hi,Gemini 3.1 Pro (thinking),2026-02-19,0.461,62.61
+swe_bench_pro,beta_hi,GPT-5.4 (xHigh),2026-03-05,0.591,109.21
+swe_bench_pro,beta_hi,Muse Spark,2026-04-08,0.55,91.47
+swe_bench_pro,beta_hi,Muse Spark 1.1,2026-07-09,0.615,121.42
+swe_bench_pro,beta_hi_decomp,GPT-4o,2024-05-13,0.049,1.19
+swe_bench_pro,beta_hi_decomp,Codestral 2405,2024-05-29,0.0151,0.2
+swe_bench_pro,beta_hi_decomp,Llama 3.1 405B Instruct,2024-07-23,0.1118,4.86
+swe_bench_pro,beta_hi_decomp,Gemma 3 27B it,2025-03-12,0.1138,5.0
+swe_bench_pro,beta_hi_decomp,Llama 4 Maverick 17B Instruct,2025-04-05,0.0524,1.34
+swe_bench_pro,beta_hi_decomp,Qwen3 235B A22B,2025-04-29,0.2141,13.97
+swe_bench_pro,beta_hi_decomp,Qwen3 32B,2025-04-29,0.034,0.64
+swe_bench_pro,beta_hi_decomp,Claude 4 Sonnet,2025-05-22,0.427,51.08
+swe_bench_pro,beta_hi_decomp,Kimi K2 Instruct,2025-07-11,0.2767,21.7
+swe_bench_pro,beta_hi_decomp,Qwen3 Coder 480B A35B,2025-07-22,0.387,41.29
+swe_bench_pro,beta_hi_decomp,gpt-oss-120b,2025-08-05,0.162,8.86
+swe_bench_pro,beta_hi_decomp,Claude Opus 4.1,2025-08-05,0.231,15.87
+swe_bench_pro,beta_hi_decomp,GPT-5 (High),2025-08-07,0.4178,48.67
+swe_bench_pro,beta_hi_decomp,Claude 4.5 Sonnet,2025-09-29,0.436,53.55
+swe_bench_pro,beta_hi_decomp,GLM-4.6,2025-09-30,0.0967,3.83
+swe_bench_pro,beta_hi_decomp,Claude 4.5 Haiku,2025-10-15,0.3945,42.99
+swe_bench_pro,beta_hi_decomp,Gemini 3 Pro Preview,2025-11-18,0.433,52.71
+swe_bench_pro,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.4589,60.31
+swe_bench_pro,beta_hi_decomp,DeepSeek V3.2,2025-12-01,0.1556,8.3
+swe_bench_pro,beta_hi_decomp,GPT-5.2,2025-12-11,0.2994,25.03
+swe_bench_pro,beta_hi_decomp,Gemini 3 Flash,2025-12-17,0.3463,32.97
+swe_bench_pro,beta_hi_decomp,GPT-5.2 Codex,2025-12-18,0.4104,46.8
+swe_bench_pro,beta_hi_decomp,MiniMax 2.1,2025-12-23,0.3681,37.24
+swe_bench_pro,beta_hi_decomp,Claude Opus 4.6 (thinking),2026-02-05,0.519,82.19
+swe_bench_pro,beta_hi_decomp,Gemini 3.1 Pro (thinking),2026-02-19,0.461,60.97
+swe_bench_pro,beta_hi_decomp,GPT-5.4 (xHigh),2026-03-05,0.591,119.63
+swe_bench_pro,beta_hi_decomp,Muse Spark,2026-04-08,0.55,96.47
+swe_bench_pro,beta_hi_decomp,Muse Spark 1.1,2026-07-09,0.615,136.07
+sweeper_bench,base,GPT-5.6 Sol,2026-07-09,0.47,80.29
+sweeper_bench,base,GPT-5.6 Luna,2026-07-09,0.42,63.02
+sweeper_bench,base,GPT-5.6 Terra,2026-07-09,0.35,44.24
+sweeper_bench,base,Kimi K3,2026-07-16,0.485,86.27
+sweeper_bench,base,Qwen 3.8 Max,2026-07-19,0.28,29.99
+sweeper_bench,base,Claude Opus 5,2026-07-24,0.565,126.69
+sweeper_bench,base,Grok 4.6,2026-08-12,0.59,143.19
+sweeper_bench,base,GLM 5.3 Flash,2026-08-26,0.395,55.69
+sweeper_bench,base,Qwen 3.8 Flash,2026-08-28,0.575,133.02
+sweeper_bench,base,Claude Fable 5.1,2026-09-01,0.565,126.69
+sweeper_bench,base,Muse Spark 1.3,2026-09-02,0.47,80.29
+sweeper_bench,base,GPT-6 Astra,2026-09-03,0.565,126.69
+sweeper_bench,base,DeepSeek V4.1 Flash,2026-10-08,0.515,99.58
+sweeper_bench,base,DeepSeek V4 Pro,2026-10-08,0.47,80.29
+sweeper_bench,base,GLM 5.3,2026-10-08,0.435,67.81
+sweeper_bench,base_decomp,GPT-5.6 Sol,2026-07-09,0.47,83.97
+sweeper_bench,base_decomp,GPT-5.6 Luna,2026-07-09,0.42,65.55
+sweeper_bench,base_decomp,GPT-5.6 Terra,2026-07-09,0.35,45.66
+sweeper_bench,base_decomp,Kimi K3,2026-07-16,0.485,90.38
+sweeper_bench,base_decomp,Qwen 3.8 Max,2026-07-19,0.28,30.73
+sweeper_bench,base_decomp,Claude Opus 5,2026-07-24,0.565,133.94
+sweeper_bench,base_decomp,Grok 4.6,2026-08-12,0.59,151.83
+sweeper_bench,base_decomp,GLM 5.3 Flash,2026-08-26,0.395,57.76
+sweeper_bench,base_decomp,Qwen 3.8 Flash,2026-08-28,0.575,140.79
+sweeper_bench,base_decomp,Claude Fable 5.1,2026-09-01,0.565,133.94
+sweeper_bench,base_decomp,Muse Spark 1.3,2026-09-02,0.47,83.97
+sweeper_bench,base_decomp,GPT-6 Astra,2026-09-03,0.565,133.94
+sweeper_bench,base_decomp,DeepSeek V4.1 Flash,2026-10-08,0.515,104.67
+sweeper_bench,base_decomp,DeepSeek V4 Pro,2026-10-08,0.47,83.97
+sweeper_bench,base_decomp,GLM 5.3,2026-10-08,0.435,70.65
+sweeper_bench,beta_lo,GPT-5.6 Sol,2026-07-09,0.47,75.84
+sweeper_bench,beta_lo,GPT-5.6 Luna,2026-07-09,0.42,54.07
+sweeper_bench,beta_lo,GPT-5.6 Terra,2026-07-09,0.35,32.97
+sweeper_bench,beta_lo,Kimi K3,2026-07-16,0.485,83.85
+sweeper_bench,beta_lo,Qwen 3.8 Max,2026-07-19,0.28,19.15
+sweeper_bench,beta_lo,Claude Opus 5,2026-07-24,0.565,143.45
+sweeper_bench,beta_lo,Grok 4.6,2026-08-12,0.59,170.22
+sweeper_bench,beta_lo,GLM 5.3 Flash,2026-08-26,0.395,45.48
+sweeper_bench,beta_lo,Qwen 3.8 Flash,2026-08-28,0.575,153.56
+sweeper_bench,beta_lo,Claude Fable 5.1,2026-09-01,0.565,143.45
+sweeper_bench,beta_lo,Muse Spark 1.3,2026-09-02,0.47,75.84
+sweeper_bench,beta_lo,GPT-6 Astra,2026-09-03,0.565,143.45
+sweeper_bench,beta_lo,DeepSeek V4.1 Flash,2026-10-08,0.515,102.47
+sweeper_bench,beta_lo,DeepSeek V4 Pro,2026-10-08,0.47,75.84
+sweeper_bench,beta_lo,GLM 5.3,2026-10-08,0.435,59.9
+sweeper_bench,beta_lo_decomp,GPT-5.6 Sol,2026-07-09,0.47,79.47
+sweeper_bench,beta_lo_decomp,GPT-5.6 Luna,2026-07-09,0.42,56.43
+sweeper_bench,beta_lo_decomp,GPT-5.6 Terra,2026-07-09,0.35,34.22
+sweeper_bench,beta_lo_decomp,Kimi K3,2026-07-16,0.485,87.97
+sweeper_bench,beta_lo_decomp,Qwen 3.8 Max,2026-07-19,0.28,19.77
+sweeper_bench,beta_lo_decomp,Claude Opus 5,2026-07-24,0.565,151.49
+sweeper_bench,beta_lo_decomp,Grok 4.6,2026-08-12,0.59,180.15
+sweeper_bench,beta_lo_decomp,GLM 5.3 Flash,2026-08-26,0.395,47.38
+sweeper_bench,beta_lo_decomp,Qwen 3.8 Flash,2026-08-28,0.575,162.31
+sweeper_bench,beta_lo_decomp,Claude Fable 5.1,2026-09-01,0.565,151.49
+sweeper_bench,beta_lo_decomp,Muse Spark 1.3,2026-09-02,0.47,79.47
+sweeper_bench,beta_lo_decomp,GPT-6 Astra,2026-09-03,0.565,151.49
+sweeper_bench,beta_lo_decomp,DeepSeek V4.1 Flash,2026-10-08,0.515,107.77
+sweeper_bench,beta_lo_decomp,DeepSeek V4 Pro,2026-10-08,0.47,79.47
+sweeper_bench,beta_lo_decomp,GLM 5.3,2026-10-08,0.435,62.59
+sweeper_bench,beta_hi,GPT-5.6 Sol,2026-07-09,0.47,82.14
+sweeper_bench,beta_hi,GPT-5.6 Luna,2026-07-09,0.42,67.0
+sweeper_bench,beta_hi,GPT-5.6 Terra,2026-07-09,0.35,49.75
+sweeper_bench,beta_hi,Kimi K3,2026-07-16,0.485,87.26
+sweeper_bench,beta_hi,Qwen 3.8 Max,2026-07-19,0.28,35.87
+sweeper_bench,beta_hi,Claude Opus 5,2026-07-24,0.565,120.55
+sweeper_bench,beta_hi,Grok 4.6,2026-08-12,0.59,133.64
+sweeper_bench,beta_hi,GLM 5.3 Flash,2026-08-26,0.395,60.38
+sweeper_bench,beta_hi,Qwen 3.8 Flash,2026-08-28,0.575,125.6
+sweeper_bench,beta_hi,Claude Fable 5.1,2026-09-01,0.565,120.55
+sweeper_bench,beta_hi,Muse Spark 1.3,2026-09-02,0.47,82.14
+sweeper_bench,beta_hi,GPT-6 Astra,2026-09-03,0.565,120.55
+sweeper_bench,beta_hi,DeepSeek V4.1 Flash,2026-10-08,0.515,98.45
+sweeper_bench,beta_hi,DeepSeek V4 Pro,2026-10-08,0.47,82.14
+sweeper_bench,beta_hi,GLM 5.3,2026-10-08,0.435,71.26
+sweeper_bench,beta_hi_decomp,GPT-5.6 Sol,2026-07-09,0.47,85.77
+sweeper_bench,beta_hi_decomp,GPT-5.6 Luna,2026-07-09,0.42,69.51
+sweeper_bench,beta_hi_decomp,GPT-5.6 Terra,2026-07-09,0.35,51.16
+sweeper_bench,beta_hi_decomp,Kimi K3,2026-07-16,0.485,91.3
+sweeper_bench,beta_hi_decomp,Qwen 3.8 Max,2026-07-19,0.28,36.58
+sweeper_bench,beta_hi_decomp,Claude Opus 5,2026-07-24,0.565,127.51
+sweeper_bench,beta_hi_decomp,Grok 4.6,2026-08-12,0.59,141.85
+sweeper_bench,beta_hi_decomp,GLM 5.3 Flash,2026-08-26,0.395,62.44
+sweeper_bench,beta_hi_decomp,Qwen 3.8 Flash,2026-08-28,0.575,133.04
+sweeper_bench,beta_hi_decomp,Claude Fable 5.1,2026-09-01,0.565,127.51
+sweeper_bench,beta_hi_decomp,Muse Spark 1.3,2026-09-02,0.47,85.77
+sweeper_bench,beta_hi_decomp,GPT-6 Astra,2026-09-03,0.565,127.51
+sweeper_bench,beta_hi_decomp,DeepSeek V4.1 Flash,2026-10-08,0.515,103.42
+sweeper_bench,beta_hi_decomp,DeepSeek V4 Pro,2026-10-08,0.47,85.77
+sweeper_bench,beta_hi_decomp,GLM 5.3,2026-10-08,0.435,74.07
+swt_bench,base,GPT-4o,2024-05-13,0.455,15.54
+swt_bench,base,Claude 3.5 Sonnet,2024-10-22,0.277,6.06
+swt_bench,base,Claude 3.7 Sonnet,2025-02-24,0.621,35.18
+swt_bench,base,Claude 4 Sonnet,2025-05-22,0.87,191.97
+swt_bench,base,GPT-5,2025-08-07,0.875,202.61
+swt_bench,base,GPT-5 mini,2025-08-07,0.781,90.03
+swt_bench,base,Claude Opus 4.5,2025-11-24,0.788,94.64
+swt_bench,base,Claude Opus 5.5,2026-09-22,0.878,209.46
+swt_bench,base,Claude Sonnet 5.5,2026-09-28,0.758,76.99
+swt_bench,base,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,339.4
+swt_bench,base,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,20.3
+swt_bench,base,LogicStar L*Agent v1,2025-09-13,0.84,143.41
+swt_bench,base_decomp,GPT-4o,2024-05-13,0.455,14.33
+swt_bench,base_decomp,Claude 3.5 Sonnet,2024-10-22,0.277,5.12
+swt_bench,base_decomp,Claude 3.7 Sonnet,2025-02-24,0.621,35.17
+swt_bench,base_decomp,Claude 4 Sonnet,2025-05-22,0.87,219.59
+swt_bench,base_decomp,GPT-5,2025-08-07,0.875,232.46
+swt_bench,base_decomp,GPT-5 mini,2025-08-07,0.781,97.84
+swt_bench,base_decomp,Claude Opus 4.5,2025-11-24,0.788,103.25
+swt_bench,base_decomp,Claude Opus 5.5,2026-09-22,0.878,240.76
+swt_bench,base_decomp,Claude Sonnet 5.5,2026-09-28,0.758,82.62
+swt_bench,base_decomp,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,399.2
+swt_bench,base_decomp,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,19.23
+swt_bench,base_decomp,LogicStar L*Agent v1,2025-09-13,0.84,161.15
+swt_bench,beta_lo,GPT-4o,2024-05-13,0.455,14.28
+swt_bench,beta_lo,Claude 3.5 Sonnet,2024-10-22,0.277,3.86
+swt_bench,beta_lo,Claude 3.7 Sonnet,2025-02-24,0.621,44.38
+swt_bench,beta_lo,Claude 4 Sonnet,2025-05-22,0.87,470.37
+swt_bench,beta_lo,GPT-5,2025-08-07,0.875,507.13
+swt_bench,beta_lo,GPT-5 mini,2025-08-07,0.781,163.84
+swt_bench,beta_lo,Claude Opus 4.5,2025-11-24,0.788,175.62
+swt_bench,beta_lo,Claude Opus 5.5,2026-09-22,0.878,531.2
+swt_bench,beta_lo,Claude Sonnet 5.5,2026-09-28,0.758,131.79
+swt_bench,beta_lo,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,1041.64
+swt_bench,beta_lo,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,20.69
+swt_bench,beta_lo,LogicStar L*Agent v1,2025-09-13,0.84,313.28
+swt_bench,beta_lo_decomp,GPT-4o,2024-05-13,0.455,13.25
+swt_bench,beta_lo_decomp,Claude 3.5 Sonnet,2024-10-22,0.277,3.35
+swt_bench,beta_lo_decomp,Claude 3.7 Sonnet,2025-02-24,0.621,43.78
+swt_bench,beta_lo_decomp,Claude 4 Sonnet,2025-05-22,0.87,511.38
+swt_bench,beta_lo_decomp,GPT-5,2025-08-07,0.875,552.49
+swt_bench,beta_lo_decomp,GPT-5 mini,2025-08-07,0.781,171.8
+swt_bench,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.788,184.67
+swt_bench,beta_lo_decomp,Claude Opus 5.5,2026-09-22,0.878,579.44
+swt_bench,beta_lo_decomp,Claude Sonnet 5.5,2026-09-28,0.758,136.95
+swt_bench,beta_lo_decomp,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,1154.21
+swt_bench,beta_lo_decomp,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,19.59
+swt_bench,beta_lo_decomp,LogicStar L*Agent v1,2025-09-13,0.84,336.4
+swt_bench,beta_hi,GPT-4o,2024-05-13,0.455,16.07
+swt_bench,beta_hi,Claude 3.5 Sonnet,2024-10-22,0.277,7.25
+swt_bench,beta_hi,Claude 3.7 Sonnet,2025-02-24,0.621,32.08
+swt_bench,beta_hi,Claude 4 Sonnet,2025-05-22,0.87,134.45
+swt_bench,beta_hi,GPT-5,2025-08-07,0.875,140.71
+swt_bench,beta_hi,GPT-5 mini,2025-08-07,0.781,70.98
+swt_bench,beta_hi,Claude Opus 4.5,2025-11-24,0.788,74.03
+swt_bench,beta_hi,Claude Opus 5.5,2026-09-22,0.878,144.71
+swt_bench,beta_hi,Claude Sonnet 5.5,2026-09-28,0.758,62.19
+swt_bench,beta_hi,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,217.31
+swt_bench,beta_hi,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,20.15
+swt_bench,beta_hi,LogicStar L*Agent v1,2025-09-13,0.84,105.14
+swt_bench,beta_hi_decomp,GPT-4o,2024-05-13,0.455,14.77
+swt_bench,beta_hi_decomp,Claude 3.5 Sonnet,2024-10-22,0.277,6.02
+swt_bench,beta_hi_decomp,Claude 3.7 Sonnet,2025-02-24,0.621,32.32
+swt_bench,beta_hi_decomp,Claude 4 Sonnet,2025-05-22,0.87,158.69
+swt_bench,beta_hi_decomp,GPT-5,2025-08-07,0.875,166.69
+swt_bench,beta_hi_decomp,GPT-5 mini,2025-08-07,0.781,78.79
+swt_bench,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.788,82.56
+swt_bench,beta_hi_decomp,Claude Opus 5.5,2026-09-22,0.878,171.81
+swt_bench,beta_hi_decomp,Claude Sonnet 5.5,2026-09-28,0.758,68.02
+swt_bench,beta_hi_decomp,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,265.39
+swt_bench,beta_hi_decomp,Amazon Q Developer Agent v20250405-dev,2025-04-10,0.51,19.08
+swt_bench,beta_hi_decomp,LogicStar L*Agent v1,2025-09-13,0.84,121.46
+tau_banking,base,Gemini 2.5 Pro,2025-06-17,0.1366,2.82
+tau_banking,base,Grok 4 fast,2025-09-19,0.1572,3.44
+tau_banking,base,Claude Sonnet 4.5,2025-09-29,0.2526,7.14
+tau_banking,base,Gemini 3 Pro,2025-11-18,0.1804,4.22
+tau_banking,base,Grok 4.1 fast,2025-11-19,0.1314,2.67
+tau_banking,base,Claude Opus 4.5,2025-11-24,0.2474,6.9
+tau_banking,base,GPT-5.2,2025-12-11,0.3222,10.9
+tau_banking,base,Gemini 3 Flash,2025-12-17,0.2732,8.15
+tau_banking,base,Claude Opus 4.6,2026-02-05,0.2732,8.15
+tau_banking,base,GLM-5,2026-02-11,0.0979,1.78
+tau_banking,base,Qwen3.5-397B-A17B,2026-02-16,0.0979,1.78
+tau_banking,base,Gemini 3.1 Pro Preview,2026-02-19,0.2603,7.51
+tau_banking,base,GPT-5.4,2026-03-05,0.3943,16.11
+tau_banking,base,Grok 4.2,2026-03-10,0.1804,4.22
+tau_banking,base,Claude Opus 4.7,2026-04-16,0.4021,16.78
+tau_banking,base,GPT-5.5,2026-04-23,0.4459,20.98
+tau_banking,base,Claude Opus 4.8,2026-05-28,0.3969,16.33
+tau_banking,base,Claude Fable 5,2026-06-09,0.3969,16.33
+tau_banking,base,GLM-5.2,2026-06-16,0.3711,14.26
+tau_banking,base,GPT-5.6-sol,2026-07-09,0.4691,23.57
+tau_banking,base,Muse Spark 1.1,2026-07-09,0.4046,16.99
+tau_banking,base,Inkling,2026-07-15,0.25,7.02
+tau_banking,base,Grok 4.5,2026-07-16,0.4794,24.81
+tau_banking,base,Kimi K3,2026-07-16,0.3711,14.26
+tau_banking,base,Qwen 3.8 Max,2026-07-19,0.5515,35.57
+tau_banking,base,Claude Opus 5,2026-07-24,0.4871,25.78
+tau_banking,base,PrincipledMachines Cortex 0.1,2026-11-04,0.732,95.62
+tau_banking,base,Distyl ButtonAgent,2026-03-25,0.3119,10.27
+tau_banking,base_decomp,Gemini 2.5 Pro,2025-06-17,0.1366,1.49
+tau_banking,base_decomp,Grok 4 fast,2025-09-19,0.1572,1.89
+tau_banking,base_decomp,Claude Sonnet 4.5,2025-09-29,0.2526,4.57
+tau_banking,base_decomp,Gemini 3 Pro,2025-11-18,0.1804,2.4
+tau_banking,base_decomp,Grok 4.1 fast,2025-11-19,0.1314,1.4
+tau_banking,base_decomp,Claude Opus 4.5,2025-11-24,0.2474,4.38
+tau_banking,base_decomp,GPT-5.2,2025-12-11,0.3222,7.74
+tau_banking,base_decomp,Gemini 3 Flash,2025-12-17,0.2732,5.38
+tau_banking,base_decomp,Claude Opus 4.6,2026-02-05,0.2732,5.38
+tau_banking,base_decomp,GLM-5,2026-02-11,0.0979,0.89
+tau_banking,base_decomp,Qwen3.5-397B-A17B,2026-02-16,0.0979,0.89
+tau_banking,base_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2603,4.87
+tau_banking,base_decomp,GPT-5.4,2026-03-05,0.3943,12.62
+tau_banking,base_decomp,Grok 4.2,2026-03-10,0.1804,2.4
+tau_banking,base_decomp,Claude Opus 4.7,2026-04-16,0.4021,13.27
+tau_banking,base_decomp,GPT-5.5,2026-04-23,0.4459,17.52
+tau_banking,base_decomp,Claude Opus 4.8,2026-05-28,0.3969,12.84
+tau_banking,base_decomp,Claude Fable 5,2026-06-09,0.3969,12.84
+tau_banking,base_decomp,GLM-5.2,2026-06-16,0.3711,10.83
+tau_banking,base_decomp,GPT-5.6-sol,2026-07-09,0.4691,20.24
+tau_banking,base_decomp,Muse Spark 1.1,2026-07-09,0.4046,13.49
+tau_banking,base_decomp,Inkling,2026-07-15,0.25,4.48
+tau_banking,base_decomp,Grok 4.5,2026-07-16,0.4794,21.56
+tau_banking,base_decomp,Kimi K3,2026-07-16,0.3711,10.83
+tau_banking,base_decomp,Qwen 3.8 Max,2026-07-19,0.5515,33.49
+tau_banking,base_decomp,Claude Opus 5,2026-07-24,0.4871,22.61
+tau_banking,base_decomp,PrincipledMachines Cortex 0.1,2026-11-04,0.732,108.74
+tau_banking,base_decomp,Distyl ButtonAgent,2026-03-25,0.3119,7.19
+tau_banking,beta_lo,Gemini 2.5 Pro,2025-06-17,0.1366,1.2
+tau_banking,beta_lo,Grok 4 fast,2025-09-19,0.1572,1.58
+tau_banking,beta_lo,Claude Sonnet 4.5,2025-09-29,0.2526,4.33
+tau_banking,beta_lo,Gemini 3 Pro,2025-11-18,0.1804,2.09
+tau_banking,beta_lo,Grok 4.1 fast,2025-11-19,0.1314,1.11
+tau_banking,beta_lo,Claude Opus 4.5,2025-11-24,0.2474,4.13
+tau_banking,beta_lo,GPT-5.2,2025-12-11,0.3222,7.73
+tau_banking,beta_lo,Gemini 3 Flash,2025-12-17,0.2732,5.18
+tau_banking,beta_lo,Claude Opus 4.6,2026-02-05,0.2732,5.18
+tau_banking,beta_lo,GLM-5,2026-02-11,0.0979,0.63
+tau_banking,beta_lo,Qwen3.5-397B-A17B,2026-02-16,0.0979,0.63
+tau_banking,beta_lo,Gemini 3.1 Pro Preview,2026-02-19,0.2603,4.63
+tau_banking,beta_lo,GPT-5.4,2026-03-05,0.3943,13.21
+tau_banking,beta_lo,Grok 4.2,2026-03-10,0.1804,2.09
+tau_banking,beta_lo,Claude Opus 4.7,2026-04-16,0.4021,13.96
+tau_banking,beta_lo,GPT-5.5,2026-04-23,0.4459,18.96
+tau_banking,beta_lo,Claude Opus 4.8,2026-05-28,0.3969,13.45
+tau_banking,beta_lo,Claude Fable 5,2026-06-09,0.3969,13.45
+tau_banking,beta_lo,GLM-5.2,2026-06-16,0.3711,11.17
+tau_banking,beta_lo,GPT-5.6-sol,2026-07-09,0.4691,22.24
+tau_banking,beta_lo,Muse Spark 1.1,2026-07-09,0.4046,14.21
+tau_banking,beta_lo,Inkling,2026-07-15,0.25,4.23
+tau_banking,beta_lo,Grok 4.5,2026-07-16,0.4794,23.87
+tau_banking,beta_lo,Kimi K3,2026-07-16,0.3711,11.17
+tau_banking,beta_lo,Qwen 3.8 Max,2026-07-19,0.5515,39.09
+tau_banking,beta_lo,Claude Opus 5,2026-07-24,0.4871,25.16
+tau_banking,beta_lo,PrincipledMachines Cortex 0.1,2026-11-04,0.732,152.08
+tau_banking,beta_lo,Distyl ButtonAgent,2026-03-25,0.3119,7.13
+tau_banking,beta_lo_decomp,Gemini 2.5 Pro,2025-06-17,0.1366,0.72
+tau_banking,beta_lo_decomp,Grok 4 fast,2025-09-19,0.1572,0.97
+tau_banking,beta_lo_decomp,Claude Sonnet 4.5,2025-09-29,0.2526,2.96
+tau_banking,beta_lo_decomp,Gemini 3 Pro,2025-11-18,0.1804,1.32
+tau_banking,beta_lo_decomp,Grok 4.1 fast,2025-11-19,0.1314,0.66
+tau_banking,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.2474,2.81
+tau_banking,beta_lo_decomp,GPT-5.2,2025-12-11,0.3222,5.7
+tau_banking,beta_lo_decomp,Gemini 3 Flash,2025-12-17,0.2732,3.63
+tau_banking,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.2732,3.63
+tau_banking,beta_lo_decomp,GLM-5,2026-02-11,0.0979,0.36
+tau_banking,beta_lo_decomp,Qwen3.5-397B-A17B,2026-02-16,0.0979,0.36
+tau_banking,beta_lo_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2603,3.2
+tau_banking,beta_lo_decomp,GPT-5.4,2026-03-05,0.3943,10.46
+tau_banking,beta_lo_decomp,Grok 4.2,2026-03-10,0.1804,1.32
+tau_banking,beta_lo_decomp,Claude Opus 4.7,2026-04-16,0.4021,11.14
+tau_banking,beta_lo_decomp,GPT-5.5,2026-04-23,0.4459,15.78
+tau_banking,beta_lo_decomp,Claude Opus 4.8,2026-05-28,0.3969,10.68
+tau_banking,beta_lo_decomp,Claude Fable 5,2026-06-09,0.3969,10.68
+tau_banking,beta_lo_decomp,GLM-5.2,2026-06-16,0.3711,8.65
+tau_banking,beta_lo_decomp,GPT-5.6-sol,2026-07-09,0.4691,18.91
+tau_banking,beta_lo_decomp,Muse Spark 1.1,2026-07-09,0.4046,11.37
+tau_banking,beta_lo_decomp,Inkling,2026-07-15,0.25,2.89
+tau_banking,beta_lo_decomp,Grok 4.5,2026-07-16,0.4794,20.48
+tau_banking,beta_lo_decomp,Kimi K3,2026-07-16,0.3711,8.65
+tau_banking,beta_lo_decomp,Qwen 3.8 Max,2026-07-19,0.5515,35.79
+tau_banking,beta_lo_decomp,Claude Opus 5,2026-07-24,0.4871,21.74
+tau_banking,beta_lo_decomp,PrincipledMachines Cortex 0.1,2026-11-04,0.732,162.5
+tau_banking,beta_lo_decomp,Distyl ButtonAgent,2026-03-25,0.3119,5.2
+tau_banking,beta_hi,Gemini 2.5 Pro,2025-06-17,0.1366,3.94
+tau_banking,beta_hi,Grok 4 fast,2025-09-19,0.1572,4.67
+tau_banking,beta_hi,Claude Sonnet 4.5,2025-09-29,0.2526,8.7
+tau_banking,beta_hi,Gemini 3 Pro,2025-11-18,0.1804,5.55
+tau_banking,beta_hi,Grok 4.1 fast,2025-11-19,0.1314,3.76
+tau_banking,beta_hi,Claude Opus 4.5,2025-11-24,0.2474,8.45
+tau_banking,beta_hi,GPT-5.2,2025-12-11,0.3222,12.48
+tau_banking,beta_hi,Gemini 3 Flash,2025-12-17,0.2732,9.73
+tau_banking,beta_hi,Claude Opus 4.6,2026-02-05,0.2732,9.73
+tau_banking,beta_hi,GLM-5,2026-02-11,0.0979,2.67
+tau_banking,beta_hi,Qwen3.5-397B-A17B,2026-02-16,0.0979,2.67
+tau_banking,beta_hi,Gemini 3.1 Pro Preview,2026-02-19,0.2603,9.08
+tau_banking,beta_hi,GPT-5.4,2026-03-05,0.3943,17.42
+tau_banking,beta_hi,Grok 4.2,2026-03-10,0.1804,5.55
+tau_banking,beta_hi,Claude Opus 4.7,2026-04-16,0.4021,18.03
+tau_banking,beta_hi,GPT-5.5,2026-04-23,0.4459,21.83
+tau_banking,beta_hi,Claude Opus 4.8,2026-05-28,0.3969,17.62
+tau_banking,beta_hi,Claude Fable 5,2026-06-09,0.3969,17.62
+tau_banking,beta_hi,GLM-5.2,2026-06-16,0.3711,15.69
+tau_banking,beta_hi,GPT-5.6-sol,2026-07-09,0.4691,24.12
+tau_banking,beta_hi,Muse Spark 1.1,2026-07-09,0.4046,18.24
+tau_banking,beta_hi,Inkling,2026-07-15,0.25,8.57
+tau_banking,beta_hi,Grok 4.5,2026-07-16,0.4794,25.2
+tau_banking,beta_hi,Kimi K3,2026-07-16,0.3711,15.69
+tau_banking,beta_hi,Qwen 3.8 Max,2026-07-19,0.5515,34.29
+tau_banking,beta_hi,Claude Opus 5,2026-07-24,0.4871,26.04
+tau_banking,beta_hi,PrincipledMachines Cortex 0.1,2026-11-04,0.732,79.7
+tau_banking,beta_hi,Distyl ButtonAgent,2026-03-25,0.3119,11.86
+tau_banking,beta_hi_decomp,Gemini 2.5 Pro,2025-06-17,0.1366,1.94
+tau_banking,beta_hi_decomp,Grok 4 fast,2025-09-19,0.1572,2.39
+tau_banking,beta_hi_decomp,Claude Sonnet 4.5,2025-09-29,0.2526,5.37
+tau_banking,beta_hi_decomp,Gemini 3 Pro,2025-11-18,0.1804,2.98
+tau_banking,beta_hi_decomp,Grok 4.1 fast,2025-11-19,0.1314,1.83
+tau_banking,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.2474,5.16
+tau_banking,beta_hi_decomp,GPT-5.2,2025-12-11,0.3222,8.72
+tau_banking,beta_hi_decomp,Gemini 3 Flash,2025-12-17,0.2732,6.24
+tau_banking,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.2732,6.24
+tau_banking,beta_hi_decomp,GLM-5,2026-02-11,0.0979,1.22
+tau_banking,beta_hi_decomp,Qwen3.5-397B-A17B,2026-02-16,0.0979,1.22
+tau_banking,beta_hi_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.2603,5.68
+tau_banking,beta_hi_decomp,GPT-5.4,2026-03-05,0.3943,13.64
+tau_banking,beta_hi_decomp,Grok 4.2,2026-03-10,0.1804,2.98
+tau_banking,beta_hi_decomp,Claude Opus 4.7,2026-04-16,0.4021,14.28
+tau_banking,beta_hi_decomp,GPT-5.5,2026-04-23,0.4459,18.38
+tau_banking,beta_hi_decomp,Claude Opus 4.8,2026-05-28,0.3969,13.85
+tau_banking,beta_hi_decomp,Claude Fable 5,2026-06-09,0.3969,13.85
+tau_banking,beta_hi_decomp,GLM-5.2,2026-06-16,0.3711,11.87
+tau_banking,beta_hi_decomp,GPT-5.6-sol,2026-07-09,0.4691,20.93
+tau_banking,beta_hi_decomp,Muse Spark 1.1,2026-07-09,0.4046,14.49
+tau_banking,beta_hi_decomp,Inkling,2026-07-15,0.25,5.27
+tau_banking,beta_hi_decomp,Grok 4.5,2026-07-16,0.4794,22.16
+tau_banking,beta_hi_decomp,Kimi K3,2026-07-16,0.3711,11.87
+tau_banking,beta_hi_decomp,Qwen 3.8 Max,2026-07-19,0.5515,32.89
+tau_banking,beta_hi_decomp,Claude Opus 5,2026-07-24,0.4871,23.12
+tau_banking,beta_hi_decomp,PrincipledMachines Cortex 0.1,2026-11-04,0.732,93.61
+tau_banking,beta_hi_decomp,Distyl ButtonAgent,2026-03-25,0.3119,8.15
+tau_retail_airline,base,Claude-3.7-Sonnet,2025-02-24,0.6969,28.52
+tau_retail_airline,base,GPT-4.1,2025-04-14,0.6851,26.66
+tau_retail_airline,base,GPT-4.1-mini,2025-04-14,0.5753,14.9
+tau_retail_airline,base,o3,2025-04-16,0.6722,24.79
+tau_retail_airline,base,o4-mini,2025-04-16,0.6336,20.12
+tau_retail_airline,base,Claude Opus 4,2025-05-22,0.7475,38.85
+tau_retail_airline,base,Claude Sonnet 4,2025-05-22,0.7425,37.62
+tau_retail_airline,base,Kimi-k2,2025-07-11,0.663,23.57
+tau_retail_airline,base,Claude Opus 4.1,2025-08-05,0.7435,37.86
+tau_retail_airline,base,GPT-5,2025-08-07,0.7576,41.51
+tau_retail_airline,base,Qwen3-Max,2025-09-23,0.6833,26.39
+tau_retail_airline,base,Claude-Sonnet-4.5,2025-09-29,0.8126,61.84
+tau_retail_airline,base,Gemini 3.0 Pro,2025-11-18,0.8155,63.3
+tau_retail_airline,base,Claude Opus 4.5,2025-11-24,0.8095,60.34
+tau_retail_airline,base,Nemotron-Orchestrator-8B,2025-11-26,0.756,41.07
+tau_retail_airline,base,DeepSeek-V3.2,2025-12-01,0.7583,41.7
+tau_retail_airline,base,GPT-5.2,2025-12-11,0.8201,65.72
+tau_retail_airline,base,Gemini 3 Flash,2025-12-17,0.785,50.17
+tau_retail_airline,base,Qwen3-Max-Thinking,2026-01-23,0.7622,42.81
+tau_retail_airline,base,GLM-5,2026-02-11,0.7637,43.24
+tau_retail_airline,base,Qwen3.5-397B-A17B,2026-02-16,0.8354,74.86
+tau_retail_airline,base_decomp,Claude-3.7-Sonnet,2025-02-24,0.6969,35.43
+tau_retail_airline,base_decomp,GPT-4.1,2025-04-14,0.6851,32.75
+tau_retail_airline,base_decomp,GPT-4.1-mini,2025-04-14,0.5753,16.6
+tau_retail_airline,base_decomp,o3,2025-04-16,0.6722,30.11
+tau_retail_airline,base_decomp,o4-mini,2025-04-16,0.6336,23.59
+tau_retail_airline,base_decomp,Claude Opus 4,2025-05-22,0.7475,50.59
+tau_retail_airline,base_decomp,Claude Sonnet 4,2025-05-22,0.7425,48.76
+tau_retail_airline,base_decomp,Kimi-k2,2025-07-11,0.663,28.38
+tau_retail_airline,base_decomp,Claude Opus 4.1,2025-08-05,0.7435,49.12
+tau_retail_airline,base_decomp,GPT-5,2025-08-07,0.7576,54.57
+tau_retail_airline,base_decomp,Qwen3-Max,2025-09-23,0.6833,32.37
+tau_retail_airline,base_decomp,Claude-Sonnet-4.5,2025-09-29,0.8126,85.79
+tau_retail_airline,base_decomp,Gemini 3.0 Pro,2025-11-18,0.8155,88.06
+tau_retail_airline,base_decomp,Claude Opus 4.5,2025-11-24,0.8095,83.45
+tau_retail_airline,base_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.756,53.91
+tau_retail_airline,base_decomp,DeepSeek-V3.2,2025-12-01,0.7583,54.86
+tau_retail_airline,base_decomp,GPT-5.2,2025-12-11,0.8201,91.85
+tau_retail_airline,base_decomp,Gemini 3 Flash,2025-12-17,0.785,67.73
+tau_retail_airline,base_decomp,Qwen3-Max-Thinking,2026-01-23,0.7622,56.53
+tau_retail_airline,base_decomp,GLM-5,2026-02-11,0.7637,57.18
+tau_retail_airline,base_decomp,Qwen3.5-397B-A17B,2026-02-16,0.8354,106.27
+tau_retail_airline,beta_lo,Claude-3.7-Sonnet,2025-02-24,0.6969,42.04
+tau_retail_airline,beta_lo,GPT-4.1,2025-04-14,0.6851,38.29
+tau_retail_airline,beta_lo,GPT-4.1-mini,2025-04-14,0.5753,17.17
+tau_retail_airline,beta_lo,o3,2025-04-16,0.6722,34.64
+tau_retail_airline,beta_lo,o4-mini,2025-04-16,0.6336,25.96
+tau_retail_airline,beta_lo,Claude Opus 4,2025-05-22,0.7475,64.44
+tau_retail_airline,beta_lo,Claude Sonnet 4,2025-05-22,0.7425,61.64
+tau_retail_airline,beta_lo,Kimi-k2,2025-07-11,0.663,32.3
+tau_retail_airline,beta_lo,Claude Opus 4.1,2025-08-05,0.7435,62.18
+tau_retail_airline,beta_lo,GPT-5,2025-08-07,0.7576,70.62
+tau_retail_airline,beta_lo,Qwen3-Max,2025-09-23,0.6833,37.75
+tau_retail_airline,beta_lo,Claude-Sonnet-4.5,2025-09-29,0.8126,122.64
+tau_retail_airline,beta_lo,Gemini 3.0 Pro,2025-11-18,0.8155,126.67
+tau_retail_airline,beta_lo,Claude Opus 4.5,2025-11-24,0.8095,118.54
+tau_retail_airline,beta_lo,Nemotron-Orchestrator-8B,2025-11-26,0.756,69.59
+tau_retail_airline,beta_lo,DeepSeek-V3.2,2025-12-01,0.7583,71.07
+tau_retail_airline,beta_lo,GPT-5.2,2025-12-11,0.8201,133.43
+tau_retail_airline,beta_lo,Gemini 3 Flash,2025-12-17,0.785,91.79
+tau_retail_airline,beta_lo,Qwen3-Max-Thinking,2026-01-23,0.7622,73.69
+tau_retail_airline,beta_lo,GLM-5,2026-02-11,0.7637,74.72
+tau_retail_airline,beta_lo,Qwen3.5-397B-A17B,2026-02-16,0.8354,159.85
+tau_retail_airline,beta_lo_decomp,Claude-3.7-Sonnet,2025-02-24,0.6969,50.1
+tau_retail_airline,beta_lo_decomp,GPT-4.1,2025-04-14,0.6851,45.26
+tau_retail_airline,beta_lo_decomp,GPT-4.1-mini,2025-04-14,0.5753,18.84
+tau_retail_airline,beta_lo_decomp,o3,2025-04-16,0.6722,40.59
+tau_retail_airline,beta_lo_decomp,o4-mini,2025-04-16,0.6336,29.63
+tau_retail_airline,beta_lo_decomp,Claude Opus 4,2025-05-22,0.7475,79.55
+tau_retail_airline,beta_lo_decomp,Claude Sonnet 4,2025-05-22,0.7425,75.83
+tau_retail_airline,beta_lo_decomp,Kimi-k2,2025-07-11,0.663,37.6
+tau_retail_airline,beta_lo_decomp,Claude Opus 4.1,2025-08-05,0.7435,76.55
+tau_retail_airline,beta_lo_decomp,GPT-5,2025-08-07,0.7576,87.8
+tau_retail_airline,beta_lo_decomp,Qwen3-Max,2025-09-23,0.6833,44.58
+tau_retail_airline,beta_lo_decomp,Claude-Sonnet-4.5,2025-09-29,0.8126,158.62
+tau_retail_airline,beta_lo_decomp,Gemini 3.0 Pro,2025-11-18,0.8155,164.16
+tau_retail_airline,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.8095,152.96
+tau_retail_airline,beta_lo_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.756,86.43
+tau_retail_airline,beta_lo_decomp,DeepSeek-V3.2,2025-12-01,0.7583,88.41
+tau_retail_airline,beta_lo_decomp,GPT-5.2,2025-12-11,0.8201,173.5
+tau_retail_airline,beta_lo_decomp,Gemini 3 Flash,2025-12-17,0.785,116.38
+tau_retail_airline,beta_lo_decomp,Qwen3-Max-Thinking,2026-01-23,0.7622,91.92
+tau_retail_airline,beta_lo_decomp,GLM-5,2026-02-11,0.7637,93.31
+tau_retail_airline,beta_lo_decomp,Qwen3.5-397B-A17B,2026-02-16,0.8354,210.2
+tau_retail_airline,beta_hi,Claude-3.7-Sonnet,2025-02-24,0.6969,24.48
+tau_retail_airline,beta_hi,GPT-4.1,2025-04-14,0.6851,23.11
+tau_retail_airline,beta_hi,GPT-4.1-mini,2025-04-14,0.5753,14.1
+tau_retail_airline,beta_hi,o3,2025-04-16,0.6722,21.73
+tau_retail_airline,beta_hi,o4-mini,2025-04-16,0.6336,18.19
+tau_retail_airline,beta_hi,Claude Opus 4,2025-05-22,0.7475,31.82
+tau_retail_airline,beta_hi,Claude Sonnet 4,2025-05-22,0.7425,30.96
+tau_retail_airline,beta_hi,Kimi-k2,2025-07-11,0.663,20.81
+tau_retail_airline,beta_hi,Claude Opus 4.1,2025-08-05,0.7435,31.13
+tau_retail_airline,beta_hi,GPT-5,2025-08-07,0.7576,33.66
+tau_retail_airline,beta_hi,Qwen3-Max,2025-09-23,0.6833,22.91
+tau_retail_airline,beta_hi,Claude-Sonnet-4.5,2025-09-29,0.8126,47.19
+tau_retail_airline,beta_hi,Gemini 3.0 Pro,2025-11-18,0.8155,48.13
+tau_retail_airline,beta_hi,Claude Opus 4.5,2025-11-24,0.8095,46.22
+tau_retail_airline,beta_hi,Nemotron-Orchestrator-8B,2025-11-26,0.756,33.36
+tau_retail_airline,beta_hi,DeepSeek-V3.2,2025-12-01,0.7583,33.79
+tau_retail_airline,beta_hi,GPT-5.2,2025-12-11,0.8201,49.68
+tau_retail_airline,beta_hi,Gemini 3 Flash,2025-12-17,0.785,39.53
+tau_retail_airline,beta_hi,Qwen3-Max-Thinking,2026-01-23,0.7622,34.55
+tau_retail_airline,beta_hi,GLM-5,2026-02-11,0.7637,34.85
+tau_retail_airline,beta_hi,Qwen3.5-397B-A17B,2026-02-16,0.8354,55.48
+tau_retail_airline,beta_hi_decomp,Claude-3.7-Sonnet,2025-02-24,0.6969,31.12
+tau_retail_airline,beta_hi_decomp,GPT-4.1,2025-04-14,0.6851,29.02
+tau_retail_airline,beta_hi_decomp,GPT-4.1-mini,2025-04-14,0.5753,15.83
+tau_retail_airline,beta_hi_decomp,o3,2025-04-16,0.6722,26.93
+tau_retail_airline,beta_hi_decomp,o4-mini,2025-04-16,0.6336,21.67
+tau_retail_airline,beta_hi_decomp,Claude Opus 4,2025-05-22,0.7475,42.71
+tau_retail_airline,beta_hi_decomp,Claude Sonnet 4,2025-05-22,0.7425,41.34
+tau_retail_airline,beta_hi_decomp,Kimi-k2,2025-07-11,0.663,25.54
+tau_retail_airline,beta_hi_decomp,Claude Opus 4.1,2025-08-05,0.7435,41.61
+tau_retail_airline,beta_hi_decomp,GPT-5,2025-08-07,0.7576,45.68
+tau_retail_airline,beta_hi_decomp,Qwen3-Max,2025-09-23,0.6833,28.72
+tau_retail_airline,beta_hi_decomp,Claude-Sonnet-4.5,2025-09-29,0.8126,68.18
+tau_retail_airline,beta_hi_decomp,Gemini 3.0 Pro,2025-11-18,0.8155,69.77
+tau_retail_airline,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.8095,66.53
+tau_retail_airline,beta_hi_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.756,45.19
+tau_retail_airline,beta_hi_decomp,DeepSeek-V3.2,2025-12-01,0.7583,45.9
+tau_retail_airline,beta_hi_decomp,GPT-5.2,2025-12-11,0.8201,72.42
+tau_retail_airline,beta_hi_decomp,Gemini 3 Flash,2025-12-17,0.785,55.32
+tau_retail_airline,beta_hi_decomp,Qwen3-Max-Thinking,2026-01-23,0.7622,47.13
+tau_retail_airline,beta_hi_decomp,GLM-5,2026-02-11,0.7637,47.61
+tau_retail_airline,beta_hi_decomp,Qwen3.5-397B-A17B,2026-02-16,0.8354,82.35
+tau_telecom,base,Claude-3.7-Sonnet,2025-02-24,0.49,15.47
+tau_telecom,base,GPT-4.1,2025-04-14,0.34,7.2
+tau_telecom,base,GPT-4.1-mini,2025-04-14,0.489,15.39
+tau_telecom,base,o4-mini,2025-04-16,0.502,16.41
+tau_telecom,base,Kimi-k2,2025-07-11,0.658,36.21
+tau_telecom,base,GPT-5,2025-08-07,0.9583,722.73
+tau_telecom,base,Qwen3-Max,2025-09-23,0.842,124.91
+tau_telecom,base,Claude-Sonnet-4.5,2025-09-29,0.98,1785.19
+tau_telecom,base,Gemini 3.0 Pro,2025-11-18,0.98,1785.19
+tau_telecom,base,Claude Opus 4.5,2025-11-24,0.9232,332.59
+tau_telecom,base,Nemotron-Orchestrator-8B,2025-11-26,0.886,196.91
+tau_telecom,base,DeepSeek-V3.2,2025-12-01,0.962,811.37
+tau_telecom,base,GPT-5.2,2025-12-11,0.8969,225.52
+tau_telecom,base,Gemini 3 Flash,2025-12-17,0.9123,279.59
+tau_telecom,base,Qwen3-Max-Thinking,2026-01-23,0.9825,2099.82
+tau_telecom,base,GLM-5,2026-02-11,0.8684,161.67
+tau_telecom,base,Qwen3.5-397B-A17B,2026-02-16,0.9781,1598.27
+tau_telecom,base_decomp,Claude-3.7-Sonnet,2025-02-24,0.49,14.48
+tau_telecom,base_decomp,GPT-4.1,2025-04-14,0.34,5.92
+tau_telecom,base_decomp,GPT-4.1-mini,2025-04-14,0.489,14.4
+tau_telecom,base_decomp,o4-mini,2025-04-16,0.502,15.51
+tau_telecom,base_decomp,Kimi-k2,2025-07-11,0.658,38.72
+tau_telecom,base_decomp,GPT-5,2025-08-07,0.9583,960.9
+tau_telecom,base_decomp,Qwen3-Max,2025-09-23,0.842,153.0
+tau_telecom,base_decomp,Claude-Sonnet-4.5,2025-09-29,0.98,2409.21
+tau_telecom,base_decomp,Gemini 3.0 Pro,2025-11-18,0.98,2409.21
+tau_telecom,base_decomp,Claude Opus 4.5,2025-11-24,0.9232,431.54
+tau_telecom,base_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.886,248.88
+tau_telecom,base_decomp,DeepSeek-V3.2,2025-12-01,0.962,1081.52
+tau_telecom,base_decomp,GPT-5.2,2025-12-11,0.8969,287.25
+tau_telecom,base_decomp,Gemini 3 Flash,2025-12-17,0.9123,360.01
+tau_telecom,base_decomp,Qwen3-Max-Thinking,2026-01-23,0.9825,2838.68
+tau_telecom,base_decomp,GLM-5,2026-02-11,0.8684,201.81
+tau_telecom,base_decomp,Qwen3.5-397B-A17B,2026-02-16,0.9781,2154.15
+tau_telecom,beta_lo,Claude-3.7-Sonnet,2025-02-24,0.49,15.17
+tau_telecom,beta_lo,GPT-4.1,2025-04-14,0.34,5.28
+tau_telecom,beta_lo,GPT-4.1-mini,2025-04-14,0.489,15.07
+tau_telecom,beta_lo,o4-mini,2025-04-16,0.502,16.46
+tau_telecom,beta_lo,Kimi-k2,2025-07-11,0.658,49.12
+tau_telecom,beta_lo,GPT-5,2025-08-07,0.9583,3158.47
+tau_telecom,beta_lo,Qwen3-Max,2025-09-23,0.842,273.32
+tau_telecom,beta_lo,Claude-Sonnet-4.5,2025-09-29,0.98,11180.06
+tau_telecom,beta_lo,Gemini 3.0 Pro,2025-11-18,0.98,11180.06
+tau_telecom,beta_lo,Claude Opus 4.5,2025-11-24,0.9232,1068.9
+tau_telecom,beta_lo,Nemotron-Orchestrator-8B,2025-11-26,0.886,514.84
+tau_telecom,beta_lo,DeepSeek-V3.2,2025-12-01,0.962,3712.58
+tau_telecom,beta_lo,GPT-5.2,2025-12-11,0.8969,621.92
+tau_telecom,beta_lo,Gemini 3 Flash,2025-12-17,0.9123,839.1
+tau_telecom,beta_lo,Qwen3-Max-Thinking,2026-01-23,0.9825,14029.66
+tau_telecom,beta_lo,GLM-5,2026-02-11,0.8684,391.27
+tau_telecom,beta_lo,Qwen3.5-397B-A17B,2026-02-16,0.9781,9577.87
+tau_telecom,beta_lo_decomp,Claude-3.7-Sonnet,2025-02-24,0.49,14.1
+tau_telecom,beta_lo_decomp,GPT-4.1,2025-04-14,0.34,4.45
+tau_telecom,beta_lo_decomp,GPT-4.1-mini,2025-04-14,0.489,13.99
+tau_telecom,beta_lo_decomp,o4-mini,2025-04-16,0.502,15.41
+tau_telecom,beta_lo_decomp,Kimi-k2,2025-07-11,0.658,50.5
+tau_telecom,beta_lo_decomp,GPT-5,2025-08-07,0.9583,3838.3
+tau_telecom,beta_lo_decomp,Qwen3-Max,2025-09-23,0.842,311.86
+tau_telecom,beta_lo_decomp,Claude-Sonnet-4.5,2025-09-29,0.98,13744.11
+tau_telecom,beta_lo_decomp,Gemini 3.0 Pro,2025-11-18,0.98,13744.11
+tau_telecom,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.9232,1274.77
+tau_telecom,beta_lo_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.886,601.76
+tau_telecom,beta_lo_decomp,DeepSeek-V3.2,2025-12-01,0.962,4520.59
+tau_telecom,beta_lo_decomp,GPT-5.2,2025-12-11,0.8969,731.23
+tau_telecom,beta_lo_decomp,Gemini 3 Flash,2025-12-17,0.9123,994.84
+tau_telecom,beta_lo_decomp,Qwen3-Max-Thinking,2026-01-23,0.9825,17270.09
+tau_telecom,beta_lo_decomp,GLM-5,2026-02-11,0.8684,452.96
+tau_telecom,beta_lo_decomp,Qwen3.5-397B-A17B,2026-02-16,0.9781,11762.62
+tau_telecom,beta_hi,Claude-3.7-Sonnet,2025-02-24,0.49,15.59
+tau_telecom,beta_hi,GPT-4.1,2025-04-14,0.34,8.14
+tau_telecom,beta_hi,GPT-4.1-mini,2025-04-14,0.489,15.53
+tau_telecom,beta_hi,o4-mini,2025-04-16,0.502,16.39
+tau_telecom,beta_hi,Kimi-k2,2025-07-11,0.658,32.12
+tau_telecom,beta_hi,GPT-5,2025-08-07,0.9583,402.44
+tau_telecom,beta_hi,Qwen3-Max,2025-09-23,0.842,91.64
+tau_telecom,beta_hi,Claude-Sonnet-4.5,2025-09-29,0.98,860.97
+tau_telecom,beta_hi,Gemini 3.0 Pro,2025-11-18,0.98,860.97
+tau_telecom,beta_hi,Claude Opus 4.5,2025-11-24,0.9232,209.37
+tau_telecom,beta_hi,Nemotron-Orchestrator-8B,2025-11-26,0.886,134.58
+tau_telecom,beta_hi,DeepSeek-V3.2,2025-12-01,0.962,443.59
+tau_telecom,beta_hi,GPT-5.2,2025-12-11,0.8969,150.9
+tau_telecom,beta_hi,Gemini 3 Flash,2025-12-17,0.9123,180.87
+tau_telecom,beta_hi,Qwen3-Max-Thinking,2026-01-23,0.9825,986.86
+tau_telecom,beta_hi,GLM-5,2026-02-11,0.8684,113.95
+tau_telecom,beta_hi,Qwen3.5-397B-A17B,2026-02-16,0.9781,784.52
+tau_telecom,beta_hi_decomp,Claude-3.7-Sonnet,2025-02-24,0.49,14.67
+tau_telecom,beta_hi_decomp,GPT-4.1,2025-04-14,0.34,6.59
+tau_telecom,beta_hi_decomp,GPT-4.1-mini,2025-04-14,0.489,14.6
+tau_telecom,beta_hi_decomp,o4-mini,2025-04-16,0.502,15.6
+tau_telecom,beta_hi_decomp,Kimi-k2,2025-07-11,0.658,35.15
+tau_telecom,beta_hi_decomp,GPT-5,2025-08-07,0.9583,564.51
+tau_telecom,beta_hi_decomp,Qwen3-Max,2025-09-23,0.842,117.09
+tau_telecom,beta_hi_decomp,Claude-Sonnet-4.5,2025-09-29,0.98,1228.26
+tau_telecom,beta_hi_decomp,Gemini 3.0 Pro,2025-11-18,0.98,1228.26
+tau_telecom,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.9232,285.66
+tau_telecom,beta_hi_decomp,Nemotron-Orchestrator-8B,2025-11-26,0.886,178.23
+tau_telecom,beta_hi_decomp,DeepSeek-V3.2,2025-12-01,0.962,624.03
+tau_telecom,beta_hi_decomp,GPT-5.2,2025-12-11,0.8969,201.6
+tau_telecom,beta_hi_decomp,Gemini 3 Flash,2025-12-17,0.9123,244.65
+tau_telecom,beta_hi_decomp,Qwen3-Max-Thinking,2026-01-23,0.9825,1410.58
+tau_telecom,beta_hi_decomp,GLM-5,2026-02-11,0.8684,148.77
+tau_telecom,beta_hi_decomp,Qwen3.5-397B-A17B,2026-02-16,0.9781,1117.56
+tau_voice,base,gpt-realtime-1.0,2025-08-28,0.2914,4.11
+tau_voice,base,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,3.14
+tau_voice,base,grok-voice-fast-1.0,2025-12-17,0.3887,7.0
+tau_voice,base,gpt-realtime-1.5,2026-02-23,0.3418,5.47
+tau_voice,base,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,7.13
+tau_voice,base,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,3.3
+tau_voice,base,qwen3.5-omni-plus-realtime,2026-03-30,0.536,14.55
+tau_voice,base,grok-voice-think-fast-1.0,2026-04-23,0.6763,30.04
+tau_voice,base,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,49.54
+tau_voice,base,gpt-realtime-2,2026-05-07,0.3885,7.0
+tau_voice,base,Cascaded baseline,2026-05-19,0.2734,3.69
+tau_voice,base,grok-voice-think-fast-2.0,2026-07-29,0.6403,24.7
+tau_voice,base,Pine Voice Preview,2026-08-10,0.7662,51.99
+tau_voice,base,gpt-live-1,2026-09-10,0.8165,75.36
+tau_voice,base,Grok Voice 3.0,2026-10-14,0.795,63.79
+tau_voice,base,Ava Zero,2026-10-22,0.7914,62.11
+tau_voice,base,phonic-1,2026-10-22,0.8453,96.62
+tau_voice,base,Pine Voice 1.0,2026-10-26,0.8625,114.15
+tau_voice,base,Salesforce Launa v1,2026-10-03,0.7446,45.1
+tau_voice,base,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,73.45
+tau_voice,base_decomp,gpt-realtime-1.0,2025-08-28,0.2914,3.55
+tau_voice,base_decomp,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,2.62
+tau_voice,base_decomp,grok-voice-fast-1.0,2025-12-17,0.3887,6.53
+tau_voice,base_decomp,gpt-realtime-1.5,2026-02-23,0.3418,4.91
+tau_voice,base_decomp,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,6.67
+tau_voice,base_decomp,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,2.76
+tau_voice,base_decomp,qwen3.5-omni-plus-realtime,2026-03-30,0.536,15.35
+tau_voice,base_decomp,grok-voice-think-fast-1.0,2026-04-23,0.6763,35.66
+tau_voice,base_decomp,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,63.04
+tau_voice,base_decomp,gpt-realtime-2,2026-05-07,0.3885,6.53
+tau_voice,base_decomp,Cascaded baseline,2026-05-19,0.2734,3.14
+tau_voice,base_decomp,grok-voice-think-fast-2.0,2026-07-29,0.6403,28.45
+tau_voice,base_decomp,Pine Voice Preview,2026-08-10,0.7662,66.57
+tau_voice,base_decomp,gpt-live-1,2026-09-10,0.8165,100.64
+tau_voice,base_decomp,Grok Voice 3.0,2026-10-14,0.795,83.67
+tau_voice,base_decomp,Ava Zero,2026-10-22,0.7914,81.22
+tau_voice,base_decomp,phonic-1,2026-10-22,0.8453,132.2
+tau_voice,base_decomp,Pine Voice 1.0,2026-10-26,0.8625,158.45
+tau_voice,base_decomp,Salesforce Launa v1,2026-10-03,0.7446,56.7
+tau_voice,base_decomp,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,97.83
+tau_voice,beta_lo,gpt-realtime-1.0,2025-08-28,0.2914,2.72
+tau_voice,beta_lo,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,1.87
+tau_voice,beta_lo,grok-voice-fast-1.0,2025-12-17,0.3887,5.67
+tau_voice,beta_lo,gpt-realtime-1.5,2026-02-23,0.3418,4.03
+tau_voice,beta_lo,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,5.81
+tau_voice,beta_lo,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,2.0
+tau_voice,beta_lo,qwen3.5-omni-plus-realtime,2026-03-30,0.536,15.56
+tau_voice,beta_lo,grok-voice-think-fast-1.0,2026-04-23,0.6763,42.38
+tau_voice,beta_lo,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,84.68
+tau_voice,beta_lo,gpt-realtime-2,2026-05-07,0.3885,5.66
+tau_voice,beta_lo,Cascaded baseline,2026-05-19,0.2734,2.34
+tau_voice,beta_lo,grok-voice-think-fast-2.0,2026-07-29,0.6403,32.33
+tau_voice,beta_lo,Pine Voice Preview,2026-08-10,0.7662,90.55
+tau_voice,beta_lo,gpt-live-1,2026-09-10,0.8165,151.51
+tau_voice,beta_lo,Grok Voice 3.0,2026-10-14,0.795,120.23
+tau_voice,beta_lo,Ava Zero,2026-10-22,0.7914,115.87
+tau_voice,beta_lo,phonic-1,2026-10-22,0.8453,213.98
+tau_voice,beta_lo,Pine Voice 1.0,2026-10-26,0.8625,269.79
+tau_voice,beta_lo,Salesforce Launa v1,2026-10-03,0.7446,74.35
+tau_voice,beta_lo,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,146.2
+tau_voice,beta_lo_decomp,gpt-realtime-1.0,2025-08-28,0.2914,2.46
+tau_voice,beta_lo_decomp,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,1.65
+tau_voice,beta_lo_decomp,grok-voice-fast-1.0,2025-12-17,0.3887,5.43
+tau_voice,beta_lo_decomp,gpt-realtime-1.5,2026-02-23,0.3418,3.75
+tau_voice,beta_lo_decomp,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,5.58
+tau_voice,beta_lo_decomp,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,1.77
+tau_voice,beta_lo_decomp,qwen3.5-omni-plus-realtime,2026-03-30,0.536,16.31
+tau_voice,beta_lo_decomp,grok-voice-think-fast-1.0,2026-04-23,0.6763,48.44
+tau_voice,beta_lo_decomp,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,101.87
+tau_voice,beta_lo_decomp,gpt-realtime-2,2026-05-07,0.3885,5.42
+tau_voice,beta_lo_decomp,Cascaded baseline,2026-05-19,0.2734,2.09
+tau_voice,beta_lo_decomp,grok-voice-think-fast-2.0,2026-07-29,0.6403,36.14
+tau_voice,beta_lo_decomp,Pine Voice Preview,2026-08-10,0.7662,109.42
+tau_voice,beta_lo_decomp,gpt-live-1,2026-09-10,0.8165,188.89
+tau_voice,beta_lo_decomp,Grok Voice 3.0,2026-10-14,0.795,147.9
+tau_voice,beta_lo_decomp,Ava Zero,2026-10-22,0.7914,142.22
+tau_voice,beta_lo_decomp,phonic-1,2026-10-22,0.8453,271.58
+tau_voice,beta_lo_decomp,Pine Voice 1.0,2026-10-26,0.8625,346.08
+tau_voice,beta_lo_decomp,Salesforce Launa v1,2026-10-03,0.7446,88.65
+tau_voice,beta_lo_decomp,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,181.91
+tau_voice,beta_hi,gpt-realtime-1.0,2025-08-28,0.2914,4.85
+tau_voice,beta_hi,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,3.86
+tau_voice,beta_hi,grok-voice-fast-1.0,2025-12-17,0.3887,7.61
+tau_voice,beta_hi,gpt-realtime-1.5,2026-02-23,0.3418,6.17
+tau_voice,beta_hi,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,7.73
+tau_voice,beta_hi,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,4.02
+tau_voice,beta_hi,qwen3.5-omni-plus-realtime,2026-03-30,0.536,14.17
+tau_voice,beta_hi,grok-voice-think-fast-1.0,2026-04-23,0.6763,26.23
+tau_voice,beta_hi,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,40.08
+tau_voice,beta_hi,gpt-realtime-2,2026-05-07,0.3885,7.6
+tau_voice,beta_hi,Cascaded baseline,2026-05-19,0.2734,4.42
+tau_voice,beta_hi,grok-voice-think-fast-2.0,2026-07-29,0.6403,22.21
+tau_voice,beta_hi,Pine Voice Preview,2026-08-10,0.7662,41.76
+tau_voice,beta_hi,gpt-live-1,2026-09-10,0.8165,57.17
+tau_voice,beta_hi,Grok Voice 3.0,2026-10-14,0.795,49.65
+tau_voice,beta_hi,Ava Zero,2026-10-22,0.7914,48.54
+tau_voice,beta_hi,phonic-1,2026-10-22,0.8453,70.55
+tau_voice,beta_hi,Pine Voice 1.0,2026-10-26,0.8625,81.22
+tau_voice,beta_hi,Salesforce Launa v1,2026-10-03,0.7446,37.01
+tau_voice,beta_hi,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,55.94
+tau_voice,beta_hi_decomp,gpt-realtime-1.0,2025-08-28,0.2914,4.05
+tau_voice,beta_hi_decomp,gemini-live-2.5-flash-native-audio,2025-12-12,0.2479,3.1
+tau_voice,beta_hi_decomp,grok-voice-fast-1.0,2025-12-17,0.3887,6.98
+tau_voice,beta_hi_decomp,gpt-realtime-1.5,2026-02-23,0.3418,5.41
+tau_voice,beta_hi_decomp,gemini-3.1-flash-live-preview-thinking-high,2026-03-26,0.3921,7.11
+tau_voice,beta_hi_decomp,gemini-3.1-flash-live-preview-thinking-minimal,2026-03-26,0.2554,3.25
+tau_voice,beta_hi_decomp,qwen3.5-omni-plus-realtime,2026-03-30,0.536,15.0
+tau_voice,beta_hi_decomp,grok-voice-think-fast-1.0,2026-04-23,0.6763,31.87
+tau_voice,beta_hi_decomp,grok-voice-think-fast-1.0 + tool-mentor,2026-04-23,0.759,52.8
+tau_voice,beta_hi_decomp,gpt-realtime-2,2026-05-07,0.3885,6.97
+tau_voice,beta_hi_decomp,Cascaded baseline,2026-05-19,0.2734,3.64
+tau_voice,beta_hi_decomp,grok-voice-think-fast-2.0,2026-07-29,0.6403,26.06
+tau_voice,beta_hi_decomp,Pine Voice Preview,2026-08-10,0.7662,55.39
+tau_voice,beta_hi_decomp,gpt-live-1,2026-09-10,0.8165,79.63
+tau_voice,beta_hi_decomp,Grok Voice 3.0,2026-10-14,0.795,67.73
+tau_voice,beta_hi_decomp,Ava Zero,2026-10-22,0.7914,65.99
+tau_voice,beta_hi_decomp,phonic-1,2026-10-22,0.8453,101.04
+tau_voice,beta_hi_decomp,Pine Voice 1.0,2026-10-26,0.8625,118.29
+tau_voice,beta_hi_decomp,Salesforce Launa v1,2026-10-03,0.7446,48.08
+tau_voice,beta_hi_decomp,gemini-3.8-live-extended-thinking,2026-10-07,0.8133,77.68
+terminal_bench_1,base,Claude Sonnet 4,2025-05-22,0.5475,40.64
+terminal_bench_1,base,Qwen3-Coder-480B-A35B,2025-07-22,0.39,16.43
+terminal_bench_1,base,Claude Opus 4.1,2025-08-05,0.5875,51.18
+terminal_bench_1,base,GPT-5,2025-08-07,0.525,35.76
+terminal_bench_1,base,Claude Sonnet 4.5,2025-09-29,0.645,72.11
+terminal_bench_1,base,MiniMax-M2,2025-10-27,0.42,19.62
+terminal_bench_1,base_decomp,Claude Sonnet 4,2025-05-22,0.5475,56.8
+terminal_bench_1,base_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.39,14.98
+terminal_bench_1,base_decomp,Claude Opus 4.1,2025-08-05,0.5875,80.97
+terminal_bench_1,base_decomp,GPT-5,2025-08-07,0.525,46.78
+terminal_bench_1,base_decomp,Claude Sonnet 4.5,2025-09-29,0.645,138.85
+terminal_bench_1,base_decomp,MiniMax-M2,2025-10-27,0.42,19.33
+terminal_bench_1,beta_lo,Claude Sonnet 4,2025-05-22,0.5475,43.81
+terminal_bench_1,beta_lo,Qwen3-Coder-480B-A35B,2025-07-22,0.39,13.43
+terminal_bench_1,beta_lo,Claude Opus 4.1,2025-08-05,0.5875,59.2
+terminal_bench_1,beta_lo,GPT-5,2025-08-07,0.525,37.06
+terminal_bench_1,beta_lo,Claude Sonnet 4.5,2025-09-29,0.645,92.65
+terminal_bench_1,beta_lo,MiniMax-M2,2025-10-27,0.42,16.93
+terminal_bench_1,beta_lo_decomp,Claude Sonnet 4,2025-05-22,0.5475,62.36
+terminal_bench_1,beta_lo_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.39,12.77
+terminal_bench_1,beta_lo_decomp,Claude Opus 4.1,2025-08-05,0.5875,93.94
+terminal_bench_1,beta_lo_decomp,GPT-5,2025-08-07,0.525,49.72
+terminal_bench_1,beta_lo_decomp,Claude Sonnet 4.5,2025-09-29,0.645,173.58
+terminal_bench_1,beta_lo_decomp,MiniMax-M2,2025-10-27,0.42,17.37
+terminal_bench_1,beta_hi,Claude Sonnet 4,2025-05-22,0.5475,39.5
+terminal_bench_1,beta_hi,Qwen3-Coder-480B-A35B,2025-07-22,0.39,17.79
+terminal_bench_1,beta_hi,Claude Opus 4.1,2025-08-05,0.5875,48.4
+terminal_bench_1,beta_hi,GPT-5,2025-08-07,0.525,35.28
+terminal_bench_1,beta_hi,Claude Sonnet 4.5,2025-09-29,0.645,65.49
+terminal_bench_1,beta_hi,MiniMax-M2,2025-10-27,0.42,20.79
+terminal_bench_1,beta_hi_decomp,Claude Sonnet 4,2025-05-22,0.5475,54.09
+terminal_bench_1,beta_hi_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.39,15.79
+terminal_bench_1,beta_hi_decomp,Claude Opus 4.1,2025-08-05,0.5875,75.65
+terminal_bench_1,beta_hi_decomp,GPT-5,2025-08-07,0.525,45.09
+terminal_bench_1,beta_hi_decomp,Claude Sonnet 4.5,2025-09-29,0.645,126.9
+terminal_bench_1,beta_hi_decomp,MiniMax-M2,2025-10-27,0.42,19.93
+terminal_bench_2,base,GPT-5 (Codex CLI),2025-08-07,0.496,51.61
+terminal_bench_2,base,GPT-5-Codex,2025-09-15,0.434,37.32
+terminal_bench_2,base,Claude Sonnet 4.5,2025-09-29,0.427,35.97
+terminal_bench_2,base,Qwen3-Coder-480B-A35B,2025-07-22,0.275,15.09
+terminal_bench_2,base,Gemini 3 Pro Preview,2025-11-18,0.6501,118.19
+terminal_bench_2,base,GPT-5.1-Codex-Mini,2025-11-13,0.614,96.52
+terminal_bench_2,base,GPT-5.2,2025-12-11,0.6207,100.16
+terminal_bench_2,base,Claude Opus 4.5,2025-11-24,0.5843,82.13
+terminal_bench_2,base,Kimi K2.5,2026-01-27,0.4385,38.22
+terminal_bench_2,base,GLM-4.7,2025-12-22,0.3475,23.31
+terminal_bench_2,base,DeepSeek V3.2,2025-12-01,0.3982,30.84
+terminal_bench_2,base,GPT-5.2-Codex,2025-12-18,0.6798,140.62
+terminal_bench_2,base,GLM-5,2026-02-11,0.5397,64.84
+terminal_bench_2,base,MiniMax-M2.5,2026-02-12,0.4292,36.39
+terminal_bench_2,base,GPT-5.4,2026-03-05,0.818,370.77
+terminal_bench_2,base,Gemini 3.1 Pro Preview,2026-02-19,0.8132,355.91
+terminal_bench_2,base,MiniMax-M2.7,2026-03-18,0.4554,41.76
+terminal_bench_2,base,GPT-5 Nano,2025-08-07,0.222,10.51
+terminal_bench_2,base,Claude Opus 4.6,2026-02-05,0.8314,417.45
+terminal_bench_2,base,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,102.98
+terminal_bench_2,base,Claude Sonnet 4.6,2026-02-17,0.5421,65.66
+terminal_bench_2,base,Gemini 3 Flash Preview,2025-12-17,0.6517,119.28
+terminal_bench_2,base,Qwen3.6-35B-A3B,2026-04-24,0.2426,12.17
+terminal_bench_2,base,GPT-5.3-Codex,2026-02-05,0.8488,492.44
+terminal_bench_2,base,Qwen3.5-9B,2026-04-26,0.0921,2.9
+terminal_bench_2,base,Claude Opus 4.7,2026-04-16,0.9091,1019.25
+terminal_bench_2,base,GPT-5.5,2026-04-23,0.8809,698.18
+terminal_bench_2,base_decomp,GPT-5 (Codex CLI),2025-08-07,0.496,47.44
+terminal_bench_2,base_decomp,GPT-5-Codex,2025-09-15,0.434,30.95
+terminal_bench_2,base_decomp,Claude Sonnet 4.5,2025-09-29,0.427,29.48
+terminal_bench_2,base_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.275,9.6
+terminal_bench_2,base_decomp,Gemini 3 Pro Preview,2025-11-18,0.6501,145.07
+terminal_bench_2,base_decomp,GPT-5.1-Codex-Mini,2025-11-13,0.614,109.94
+terminal_bench_2,base_decomp,GPT-5.2,2025-12-11,0.6207,115.62
+terminal_bench_2,base_decomp,Claude Opus 4.5,2025-11-24,0.5843,88.32
+terminal_bench_2,base_decomp,Kimi K2.5,2026-01-27,0.4385,31.93
+terminal_bench_2,base_decomp,GLM-4.7,2025-12-22,0.3475,16.78
+terminal_bench_2,base_decomp,DeepSeek V3.2,2025-12-01,0.3982,24.12
+terminal_bench_2,base_decomp,GPT-5.2-Codex,2025-12-18,0.6798,184.51
+terminal_bench_2,base_decomp,GLM-5,2026-02-11,0.5397,64.28
+terminal_bench_2,base_decomp,MiniMax-M2.5,2026-02-12,0.4292,29.94
+terminal_bench_2,base_decomp,GPT-5.4,2026-03-05,0.818,741.52
+terminal_bench_2,base_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.8132,698.18
+terminal_bench_2,base_decomp,MiniMax-M2.7,2026-03-18,0.4554,35.87
+terminal_bench_2,base_decomp,GPT-5 Nano,2025-08-07,0.222,6.07
+terminal_bench_2,base_decomp,Claude Opus 4.6,2026-02-05,0.8314,883.47
+terminal_bench_2,base_decomp,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,120.09
+terminal_bench_2,base_decomp,Claude Sonnet 4.6,2026-02-17,0.5421,65.37
+terminal_bench_2,base_decomp,Gemini 3 Flash Preview,2025-12-17,0.6517,146.92
+terminal_bench_2,base_decomp,Qwen3.6-35B-A3B,2026-04-24,0.2426,7.3
+terminal_bench_2,base_decomp,GPT-5.3-Codex,2026-02-05,0.8488,1128.67
+terminal_bench_2,base_decomp,Qwen3.5-9B,2026-04-26,0.0921,1.21
+terminal_bench_2,base_decomp,Claude Opus 4.7,2026-04-16,0.9091,3290.52
+terminal_bench_2,base_decomp,GPT-5.5,2026-04-23,0.8809,1893.89
+terminal_bench_2,beta_lo,GPT-5 (Codex CLI),2025-08-07,0.496,51.5
+terminal_bench_2,beta_lo,GPT-5-Codex,2025-09-15,0.434,33.28
+terminal_bench_2,beta_lo,Claude Sonnet 4.5,2025-09-29,0.427,31.66
+terminal_bench_2,beta_lo,Qwen3-Coder-480B-A35B,2025-07-22,0.275,9.78
+terminal_bench_2,beta_lo,Gemini 3 Pro Preview,2025-11-18,0.6501,156.69
+terminal_bench_2,beta_lo,GPT-5.1-Codex-Mini,2025-11-13,0.614,119.4
+terminal_bench_2,beta_lo,GPT-5.2,2025-12-11,0.6207,125.47
+terminal_bench_2,beta_lo,Claude Opus 4.5,2025-11-24,0.5843,96.14
+terminal_bench_2,beta_lo,Kimi K2.5,2026-01-27,0.4385,34.36
+terminal_bench_2,beta_lo,GLM-4.7,2025-12-22,0.3475,17.63
+terminal_bench_2,beta_lo,DeepSeek V3.2,2025-12-01,0.3982,25.73
+terminal_bench_2,beta_lo,GPT-5.2-Codex,2025-12-18,0.6798,197.84
+terminal_bench_2,beta_lo,GLM-5,2026-02-11,0.5397,69.98
+terminal_bench_2,beta_lo,MiniMax-M2.5,2026-02-12,0.4292,32.16
+terminal_bench_2,beta_lo,GPT-5.4,2026-03-05,0.818,728.83
+terminal_bench_2,beta_lo,Gemini 3.1 Pro Preview,2026-02-19,0.8132,689.7
+terminal_bench_2,beta_lo,MiniMax-M2.7,2026-03-18,0.4554,38.73
+terminal_bench_2,beta_lo,GPT-5 Nano,2025-08-07,0.222,5.99
+terminal_bench_2,beta_lo,Claude Opus 4.6,2026-02-05,0.8314,855.38
+terminal_bench_2,beta_lo,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,130.24
+terminal_bench_2,beta_lo,Claude Sonnet 4.6,2026-02-17,0.5421,71.17
+terminal_bench_2,beta_lo,Gemini 3 Flash Preview,2025-12-17,0.6517,158.63
+terminal_bench_2,beta_lo,Qwen3.6-35B-A3B,2026-04-24,0.2426,7.3
+terminal_bench_2,beta_lo,GPT-5.3-Codex,2026-02-05,0.8488,1069.49
+terminal_bench_2,beta_lo,Qwen3.5-9B,2026-04-26,0.0921,1.02
+terminal_bench_2,beta_lo,Claude Opus 4.7,2026-04-16,0.9091,2874.85
+terminal_bench_2,beta_lo,GPT-5.5,2026-04-23,0.8809,1717.08
+terminal_bench_2,beta_lo_decomp,GPT-5 (Codex CLI),2025-08-07,0.496,48.79
+terminal_bench_2,beta_lo_decomp,GPT-5-Codex,2025-09-15,0.434,28.78
+terminal_bench_2,beta_lo_decomp,Claude Sonnet 4.5,2025-09-29,0.427,27.11
+terminal_bench_2,beta_lo_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.275,6.72
+terminal_bench_2,beta_lo_decomp,Gemini 3 Pro Preview,2025-11-18,0.6501,191.45
+terminal_bench_2,beta_lo_decomp,GPT-5.1-Codex-Mini,2025-11-13,0.614,136.7
+terminal_bench_2,beta_lo_decomp,GPT-5.2,2025-12-11,0.6207,145.35
+terminal_bench_2,beta_lo_decomp,Claude Opus 4.5,2025-11-24,0.5843,104.65
+terminal_bench_2,beta_lo_decomp,Kimi K2.5,2026-01-27,0.4385,29.91
+terminal_bench_2,beta_lo_decomp,GLM-4.7,2025-12-22,0.3475,13.46
+terminal_bench_2,beta_lo_decomp,DeepSeek V3.2,2025-12-01,0.3982,21.13
+terminal_bench_2,beta_lo_decomp,GPT-5.2-Codex,2025-12-18,0.6798,255.96
+terminal_bench_2,beta_lo_decomp,GLM-5,2026-02-11,0.5397,70.89
+terminal_bench_2,beta_lo_decomp,MiniMax-M2.5,2026-02-12,0.4292,27.62
+terminal_bench_2,beta_lo_decomp,GPT-5.4,2026-03-05,0.818,1317.51
+terminal_bench_2,beta_lo_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.8132,1229.17
+terminal_bench_2,beta_lo_decomp,MiniMax-M2.7,2026-03-18,0.4554,34.55
+terminal_bench_2,beta_lo_decomp,GPT-5 Nano,2025-08-07,0.222,3.78
+terminal_bench_2,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.8314,1611.07
+terminal_bench_2,beta_lo_decomp,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,152.22
+terminal_bench_2,beta_lo_decomp,Claude Sonnet 4.6,2026-02-17,0.5421,72.37
+terminal_bench_2,beta_lo_decomp,Gemini 3 Flash Preview,2025-12-17,0.6517,194.41
+terminal_bench_2,beta_lo_decomp,Qwen3.6-35B-A3B,2026-04-24,0.2426,4.77
+terminal_bench_2,beta_lo_decomp,GPT-5.3-Codex,2026-02-05,0.8488,2131.19
+terminal_bench_2,beta_lo_decomp,Qwen3.5-9B,2026-04-26,0.0921,0.51
+terminal_bench_2,beta_lo_decomp,Claude Opus 4.7,2026-04-16,0.9091,7186.32
+terminal_bench_2,beta_lo_decomp,GPT-5.5,2026-04-23,0.8809,3835.59
+terminal_bench_2,beta_hi,GPT-5 (Codex CLI),2025-08-07,0.496,51.57
+terminal_bench_2,beta_hi,GPT-5-Codex,2025-09-15,0.434,38.96
+terminal_bench_2,beta_hi,Claude Sonnet 4.5,2025-09-29,0.427,37.73
+terminal_bench_2,beta_hi,Qwen3-Coder-480B-A35B,2025-07-22,0.275,17.85
+terminal_bench_2,beta_hi,Gemini 3 Pro Preview,2025-11-18,0.6501,105.76
+terminal_bench_2,beta_hi,GPT-5.1-Codex-Mini,2025-11-13,0.614,88.71
+terminal_bench_2,beta_hi,GPT-5.2,2025-12-11,0.6207,91.6
+terminal_bench_2,beta_hi,Claude Opus 4.5,2025-11-24,0.5843,77.12
+terminal_bench_2,beta_hi,Kimi K2.5,2026-01-27,0.4385,39.77
+terminal_bench_2,beta_hi,GLM-4.7,2025-12-22,0.3475,25.95
+terminal_bench_2,beta_hi,DeepSeek V3.2,2025-12-01,0.3982,33.04
+terminal_bench_2,beta_hi,GPT-5.2-Codex,2025-12-18,0.6798,122.97
+terminal_bench_2,beta_hi,GLM-5,2026-02-11,0.5397,62.83
+terminal_bench_2,beta_hi,MiniMax-M2.5,2026-02-12,0.4292,38.11
+terminal_bench_2,beta_hi,GPT-5.4,2026-03-05,0.818,285.31
+terminal_bench_2,beta_hi,Gemini 3.1 Pro Preview,2026-02-19,0.8132,275.37
+terminal_bench_2,beta_hi,MiniMax-M2.7,2026-03-18,0.4554,42.94
+terminal_bench_2,beta_hi,GPT-5 Nano,2025-08-07,0.222,13.08
+terminal_bench_2,beta_hi,Claude Opus 4.6,2026-02-05,0.8314,316.19
+terminal_bench_2,beta_hi,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,93.84
+terminal_bench_2,beta_hi,Claude Sonnet 4.6,2026-02-17,0.5421,63.52
+terminal_bench_2,beta_hi,Gemini 3 Flash Preview,2025-12-17,0.6517,106.6
+terminal_bench_2,beta_hi,Qwen3.6-35B-A3B,2026-04-24,0.2426,14.83
+terminal_bench_2,beta_hi,GPT-5.3-Codex,2026-02-05,0.8488,364.8
+terminal_bench_2,beta_hi,Qwen3.5-9B,2026-04-26,0.0921,4.35
+terminal_bench_2,beta_hi,Claude Opus 4.7,2026-04-16,0.9091,683.22
+terminal_bench_2,beta_hi,GPT-5.5,2026-04-23,0.8809,493.24
+terminal_bench_2,beta_hi_decomp,GPT-5 (Codex CLI),2025-08-07,0.496,46.74
+terminal_bench_2,beta_hi_decomp,GPT-5-Codex,2025-09-15,0.434,31.68
+terminal_bench_2,beta_hi_decomp,Claude Sonnet 4.5,2025-09-29,0.427,30.31
+terminal_bench_2,beta_hi_decomp,Qwen3-Coder-480B-A35B,2025-07-22,0.275,10.96
+terminal_bench_2,beta_hi_decomp,Gemini 3 Pro Preview,2025-11-18,0.6501,129.74
+terminal_bench_2,beta_hi_decomp,GPT-5.1-Codex-Mini,2025-11-13,0.614,100.64
+terminal_bench_2,beta_hi_decomp,GPT-5.2,2025-12-11,0.6207,105.39
+terminal_bench_2,beta_hi_decomp,Claude Opus 4.5,2025-11-24,0.5843,82.39
+terminal_bench_2,beta_hi_decomp,Kimi K2.5,2026-01-27,0.4385,32.59
+terminal_bench_2,beta_hi_decomp,GLM-4.7,2025-12-22,0.3475,18.16
+terminal_bench_2,beta_hi_decomp,DeepSeek V3.2,2025-12-01,0.3982,25.25
+terminal_bench_2,beta_hi_decomp,GPT-5.2-Codex,2025-12-18,0.6798,161.82
+terminal_bench_2,beta_hi_decomp,GLM-5,2026-02-11,0.5397,61.65
+terminal_bench_2,beta_hi_decomp,MiniMax-M2.5,2026-02-12,0.4292,30.74
+terminal_bench_2,beta_hi_decomp,GPT-5.4,2026-03-05,0.818,594.64
+terminal_bench_2,beta_hi_decomp,Gemini 3.1 Pro Preview,2026-02-19,0.8132,561.46
+terminal_bench_2,beta_hi_decomp,MiniMax-M2.7,2026-03-18,0.4554,36.24
+terminal_bench_2,beta_hi_decomp,GPT-5 Nano,2025-08-07,0.222,7.24
+terminal_bench_2,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.8314,703.09
+terminal_bench_2,beta_hi_decomp,Grok 4.20 (0309) reasoning,2026-04-01,0.6257,109.11
+terminal_bench_2,beta_hi_decomp,Claude Sonnet 4.6,2026-02-17,0.5421,62.6
+terminal_bench_2,beta_hi_decomp,Gemini 3 Flash Preview,2025-12-17,0.6517,131.25
+terminal_bench_2,beta_hi_decomp,Qwen3.6-35B-A3B,2026-04-24,0.2426,8.56
+terminal_bench_2,beta_hi_decomp,GPT-5.3-Codex,2026-02-05,0.8488,889.96
+terminal_bench_2,beta_hi_decomp,Qwen3.5-9B,2026-04-26,0.0921,1.67
+terminal_bench_2,beta_hi_decomp,Claude Opus 4.7,2026-04-16,0.9091,2523.71
+terminal_bench_2,beta_hi_decomp,GPT-5.5,2026-04-23,0.8809,1471.2
+workarena_l1,base,GPT-3.5-turbo (1106),2023-11-06,0.061,0.11
+workarena_l1,base,Mixtral-8x22B,2024-04-17,0.124,0.28
+workarena_l1,base,Llama-3-70B-Instruct,2024-04-18,0.179,0.46
+workarena_l1,base,GPT-4o-V (vision),2024-05-13,0.418,1.97
+workarena_l1,base,GPT-4o,2024-05-13,0.455,2.37
+workarena_l1,base,GPT-4o-mini,2024-07-18,0.27,0.88
+workarena_l1,base,Llama-3.1-70B,2024-07-23,0.279,0.93
+workarena_l1,base,Llama-3.1-405B,2024-07-23,0.433,2.13
+workarena_l1,base,Claude-3.5-Sonnet,2024-06-20,0.564,4.04
+workarena_l1,base,o1-mini,2024-09-12,0.567,4.1
+workarena_l1,base,o3-mini,2025-01-31,0.482,2.71
+workarena_l1,base,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.65
+workarena_l1,base,Claude-4-Sonnet,2025-05-22,0.633,5.74
+workarena_l1,base,gpt-oss-20b,2025-08-05,0.385,1.67
+workarena_l1,base,gpt-oss-120b,2025-08-05,0.509,3.09
+workarena_l1,base,GPT-5-nano,2025-08-07,0.406,1.86
+workarena_l1,base,GPT-5-mini,2025-08-07,0.606,4.99
+workarena_l1,base,GPT-5,2025-08-07,0.791,14.89
+workarena_l1,base,Gemini-3-Flash-preview,2025-12-17,0.903,44.06
+workarena_l1,base,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.18
+workarena_l1,base,Claude Sonnet 4.6,2026-02-17,0.736,10.28
+workarena_l1,base,Claude Opus 4.6,2026-02-05,0.83,20.26
+workarena_l1,base,GPT-5.4 Thinking (Medium),2026-03-05,0.77,12.84
+workarena_l1,base,Gemini 3.1 Pro,2026-02-19,0.785,14.26
+workarena_l1,base,Gemma-4-31B-it,2026-04-02,0.485,2.75
+workarena_l1,base,Qwen-3.6-27B,2026-04-21,0.494,2.87
+workarena_l1,base_decomp,GPT-3.5-turbo (1106),2023-11-06,0.061,0.08
+workarena_l1,base_decomp,Mixtral-8x22B,2024-04-17,0.124,0.21
+workarena_l1,base_decomp,Llama-3-70B-Instruct,2024-04-18,0.179,0.37
+workarena_l1,base_decomp,GPT-4o-V (vision),2024-05-13,0.418,1.85
+workarena_l1,base_decomp,GPT-4o,2024-05-13,0.455,2.27
+workarena_l1,base_decomp,GPT-4o-mini,2024-07-18,0.27,0.76
+workarena_l1,base_decomp,Llama-3.1-70B,2024-07-23,0.279,0.8
+workarena_l1,base_decomp,Llama-3.1-405B,2024-07-23,0.433,2.01
+workarena_l1,base_decomp,Claude-3.5-Sonnet,2024-06-20,0.564,4.09
+workarena_l1,base_decomp,o1-mini,2024-09-12,0.567,4.16
+workarena_l1,base_decomp,o3-mini,2025-01-31,0.482,2.62
+workarena_l1,base_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.52
+workarena_l1,base_decomp,Claude-4-Sonnet,2025-05-22,0.633,6.03
+workarena_l1,base_decomp,gpt-oss-20b,2025-08-05,0.385,1.54
+workarena_l1,base_decomp,gpt-oss-120b,2025-08-05,0.509,3.03
+workarena_l1,base_decomp,GPT-5-nano,2025-08-07,0.406,1.73
+workarena_l1,base_decomp,GPT-5-mini,2025-08-07,0.606,5.17
+workarena_l1,base_decomp,GPT-5,2025-08-07,0.791,17.32
+workarena_l1,base_decomp,Gemini-3-Flash-preview,2025-12-17,0.903,56.35
+workarena_l1,base_decomp,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.13
+workarena_l1,base_decomp,Claude Sonnet 4.6,2026-02-17,0.736,11.51
+workarena_l1,base_decomp,Claude Opus 4.6,2026-02-05,0.83,24.28
+workarena_l1,base_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.77,14.7
+workarena_l1,base_decomp,Gemini 3.1 Pro,2026-02-19,0.785,16.51
+workarena_l1,base_decomp,Gemma-4-31B-it,2026-04-02,0.485,2.67
+workarena_l1,base_decomp,Qwen-3.6-27B,2026-04-21,0.494,2.8
+workarena_l1,beta_lo,GPT-3.5-turbo (1106),2023-11-06,0.061,0.03
+workarena_l1,beta_lo,Mixtral-8x22B,2024-04-17,0.124,0.11
+workarena_l1,beta_lo,Llama-3-70B-Instruct,2024-04-18,0.179,0.23
+workarena_l1,beta_lo,GPT-4o-V (vision),2024-05-13,0.418,1.69
+workarena_l1,beta_lo,GPT-4o,2024-05-13,0.455,2.18
+workarena_l1,beta_lo,GPT-4o-mini,2024-07-18,0.27,0.55
+workarena_l1,beta_lo,Llama-3.1-70B,2024-07-23,0.279,0.6
+workarena_l1,beta_lo,Llama-3.1-405B,2024-07-23,0.433,1.87
+workarena_l1,beta_lo,Claude-3.5-Sonnet,2024-06-20,0.564,4.56
+workarena_l1,beta_lo,o1-mini,2024-09-12,0.567,4.66
+workarena_l1,beta_lo,o3-mini,2025-01-31,0.482,2.62
+workarena_l1,beta_lo,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.32
+workarena_l1,beta_lo,Claude-4-Sonnet,2025-05-22,0.633,7.41
+workarena_l1,beta_lo,gpt-oss-20b,2025-08-05,0.385,1.34
+workarena_l1,beta_lo,gpt-oss-120b,2025-08-05,0.509,3.14
+workarena_l1,beta_lo,GPT-5-nano,2025-08-07,0.406,1.55
+workarena_l1,beta_lo,GPT-5-mini,2025-08-07,0.606,6.11
+workarena_l1,beta_lo,GPT-5,2025-08-07,0.791,27.81
+workarena_l1,beta_lo,Gemini-3-Flash-preview,2025-12-17,0.903,125.81
+workarena_l1,beta_lo,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.27
+workarena_l1,beta_lo,Claude Sonnet 4.6,2026-02-17,0.736,16.63
+workarena_l1,beta_lo,Claude Opus 4.6,2026-02-05,0.83,42.65
+workarena_l1,beta_lo,GPT-5.4 Thinking (Medium),2026-03-05,0.77,22.63
+workarena_l1,beta_lo,Gemini 3.1 Pro,2026-02-19,0.785,26.18
+workarena_l1,beta_lo,Gemma-4-31B-it,2026-04-02,0.485,2.67
+workarena_l1,beta_lo,Qwen-3.6-27B,2026-04-21,0.494,2.84
+workarena_l1,beta_lo_decomp,GPT-3.5-turbo (1106),2023-11-06,0.061,0.02
+workarena_l1,beta_lo_decomp,Mixtral-8x22B,2024-04-17,0.124,0.09
+workarena_l1,beta_lo_decomp,Llama-3-70B-Instruct,2024-04-18,0.179,0.19
+workarena_l1,beta_lo_decomp,GPT-4o-V (vision),2024-05-13,0.418,1.59
+workarena_l1,beta_lo_decomp,GPT-4o,2024-05-13,0.455,2.09
+workarena_l1,beta_lo_decomp,GPT-4o-mini,2024-07-18,0.27,0.49
+workarena_l1,beta_lo_decomp,Llama-3.1-70B,2024-07-23,0.279,0.53
+workarena_l1,beta_lo_decomp,Llama-3.1-405B,2024-07-23,0.433,1.78
+workarena_l1,beta_lo_decomp,Claude-3.5-Sonnet,2024-06-20,0.564,4.58
+workarena_l1,beta_lo_decomp,o1-mini,2024-09-12,0.567,4.69
+workarena_l1,beta_lo_decomp,o3-mini,2025-01-31,0.482,2.54
+workarena_l1,beta_lo_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.23
+workarena_l1,beta_lo_decomp,Claude-4-Sonnet,2025-05-22,0.633,7.68
+workarena_l1,beta_lo_decomp,gpt-oss-20b,2025-08-05,0.385,1.25
+workarena_l1,beta_lo_decomp,gpt-oss-120b,2025-08-05,0.509,3.08
+workarena_l1,beta_lo_decomp,GPT-5-nano,2025-08-07,0.406,1.46
+workarena_l1,beta_lo_decomp,GPT-5-mini,2025-08-07,0.606,6.25
+workarena_l1,beta_lo_decomp,GPT-5,2025-08-07,0.791,31.11
+workarena_l1,beta_lo_decomp,Gemini-3-Flash-preview,2025-12-17,0.903,149.95
+workarena_l1,beta_lo_decomp,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.22
+workarena_l1,beta_lo_decomp,Claude Sonnet 4.6,2026-02-17,0.736,18.09
+workarena_l1,beta_lo_decomp,Claude Opus 4.6,2026-02-05,0.83,48.72
+workarena_l1,beta_lo_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.77,25.04
+workarena_l1,beta_lo_decomp,Gemini 3.1 Pro,2026-02-19,0.785,29.19
+workarena_l1,beta_lo_decomp,Gemma-4-31B-it,2026-04-02,0.485,2.59
+workarena_l1,beta_lo_decomp,Qwen-3.6-27B,2026-04-21,0.494,2.77
+workarena_l1,beta_hi,GPT-3.5-turbo (1106),2023-11-06,0.061,0.18
+workarena_l1,beta_hi,Mixtral-8x22B,2024-04-17,0.124,0.4
+workarena_l1,beta_hi,Llama-3-70B-Instruct,2024-04-18,0.179,0.62
+workarena_l1,beta_hi,GPT-4o-V (vision),2024-05-13,0.418,2.1
+workarena_l1,beta_hi,GPT-4o,2024-05-13,0.455,2.45
+workarena_l1,beta_hi,GPT-4o-mini,2024-07-18,0.27,1.06
+workarena_l1,beta_hi,Llama-3.1-70B,2024-07-23,0.279,1.11
+workarena_l1,beta_hi,Llama-3.1-405B,2024-07-23,0.433,2.24
+workarena_l1,beta_hi,Claude-3.5-Sonnet,2024-06-20,0.564,3.86
+workarena_l1,beta_hi,o1-mini,2024-09-12,0.567,3.9
+workarena_l1,beta_hi,o3-mini,2025-01-31,0.482,2.74
+workarena_l1,beta_hi,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.81
+workarena_l1,beta_hi,Claude-4-Sonnet,2025-05-22,0.633,5.19
+workarena_l1,beta_hi,gpt-oss-20b,2025-08-05,0.385,1.82
+workarena_l1,beta_hi,gpt-oss-120b,2025-08-05,0.509,3.07
+workarena_l1,beta_hi,GPT-5-nano,2025-08-07,0.406,2.0
+workarena_l1,beta_hi,GPT-5-mini,2025-08-07,0.606,4.61
+workarena_l1,beta_hi,GPT-5,2025-08-07,0.791,11.63
+workarena_l1,beta_hi,Gemini-3-Flash-preview,2025-12-17,0.903,29.05
+workarena_l1,beta_hi,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.14
+workarena_l1,beta_hi,Claude Sonnet 4.6,2026-02-17,0.736,8.5
+workarena_l1,beta_hi,Claude Opus 4.6,2026-02-05,0.83,15.08
+workarena_l1,beta_hi,GPT-5.4 Thinking (Medium),2026-03-05,0.77,10.25
+workarena_l1,beta_hi,Gemini 3.1 Pro,2026-02-19,0.785,11.21
+workarena_l1,beta_hi,Gemma-4-31B-it,2026-04-02,0.485,2.78
+workarena_l1,beta_hi,Qwen-3.6-27B,2026-04-21,0.494,2.88
+workarena_l1,beta_hi_decomp,GPT-3.5-turbo (1106),2023-11-06,0.061,0.12
+workarena_l1,beta_hi_decomp,Mixtral-8x22B,2024-04-17,0.124,0.29
+workarena_l1,beta_hi_decomp,Llama-3-70B-Instruct,2024-04-18,0.179,0.48
+workarena_l1,beta_hi_decomp,GPT-4o-V (vision),2024-05-13,0.418,1.96
+workarena_l1,beta_hi_decomp,GPT-4o,2024-05-13,0.455,2.34
+workarena_l1,beta_hi_decomp,GPT-4o-mini,2024-07-18,0.27,0.9
+workarena_l1,beta_hi_decomp,Llama-3.1-70B,2024-07-23,0.279,0.95
+workarena_l1,beta_hi_decomp,Llama-3.1-405B,2024-07-23,0.433,2.11
+workarena_l1,beta_hi_decomp,Claude-3.5-Sonnet,2024-06-20,0.564,3.91
+workarena_l1,beta_hi_decomp,o1-mini,2024-09-12,0.567,3.96
+workarena_l1,beta_hi_decomp,o3-mini,2025-01-31,0.482,2.66
+workarena_l1,beta_hi_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-12,0.3829,1.65
+workarena_l1,beta_hi_decomp,Claude-4-Sonnet,2025-05-22,0.633,5.48
+workarena_l1,beta_hi_decomp,gpt-oss-20b,2025-08-05,0.385,1.67
+workarena_l1,beta_hi_decomp,gpt-oss-120b,2025-08-05,0.509,3.02
+workarena_l1,beta_hi_decomp,GPT-5-nano,2025-08-07,0.406,1.85
+workarena_l1,beta_hi_decomp,GPT-5-mini,2025-08-07,0.606,4.79
+workarena_l1,beta_hi_decomp,GPT-5,2025-08-07,0.791,13.79
+workarena_l1,beta_hi_decomp,Gemini-3-Flash-preview,2025-12-17,0.903,38.81
+workarena_l1,beta_hi_decomp,A3-Qwen3.5-9B (Qwen3.5-9B finetuned on A3-Synth),2026-03-02,0.515,3.1
+workarena_l1,beta_hi_decomp,Claude Sonnet 4.6,2026-02-17,0.736,9.63
+workarena_l1,beta_hi_decomp,Claude Opus 4.6,2026-02-05,0.83,18.56
+workarena_l1,beta_hi_decomp,GPT-5.4 Thinking (Medium),2026-03-05,0.77,11.94
+workarena_l1,beta_hi_decomp,Gemini 3.1 Pro,2026-02-19,0.785,13.22
+workarena_l1,beta_hi_decomp,Gemma-4-31B-it,2026-04-02,0.485,2.69
+workarena_l1,beta_hi_decomp,Qwen-3.6-27B,2026-04-21,0.494,2.81
+workarena_pp,base,GPT-3.5-turbo (1106),2023-11-06,0.0,0.02
+workarena_pp,base,Llama-3-70B-Instruct,2024-04-18,0.0,0.02
+workarena_pp,base,Mixtral-8x22B,2024-04-17,0.0,0.02
+workarena_pp,base,GPT-4o-V (vision),2024-05-13,0.019,0.1
+workarena_pp,base,GPT-4o,2024-05-13,0.0425,0.26
+workarena_pp,base,GPT-4o-mini,2024-07-18,0.0065,0.03
+workarena_pp,base,Llama-3.1-70B,2024-07-23,0.0105,0.05
+workarena_pp,base,Llama-3.1-405B,2024-07-23,0.036,0.21
+workarena_pp,base,o1-mini,2024-09-12,0.0745,0.53
+workarena_pp,base,Claude-3.5-Sonnet,2024-06-20,0.1975,2.07
+workarena_pp,base,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.07
+workarena_pp,base,GPT-5,2025-08-07,0.4045,7.23
+workarena_pp,base_decomp,GPT-3.5-turbo (1106),2023-11-06,0.0,0.01
+workarena_pp,base_decomp,Llama-3-70B-Instruct,2024-04-18,0.0,0.01
+workarena_pp,base_decomp,Mixtral-8x22B,2024-04-17,0.0,0.01
+workarena_pp,base_decomp,GPT-4o-V (vision),2024-05-13,0.019,0.05
+workarena_pp,base_decomp,GPT-4o,2024-05-13,0.0425,0.14
+workarena_pp,base_decomp,GPT-4o-mini,2024-07-18,0.0065,0.01
+workarena_pp,base_decomp,Llama-3.1-70B,2024-07-23,0.0105,0.02
+workarena_pp,base_decomp,Llama-3.1-405B,2024-07-23,0.036,0.11
+workarena_pp,base_decomp,o1-mini,2024-09-12,0.0745,0.3
+workarena_pp,base_decomp,Claude-3.5-Sonnet,2024-06-20,0.1975,1.4
+workarena_pp,base_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.04
+workarena_pp,base_decomp,GPT-5,2025-08-07,0.4045,6.36
+workarena_pp,beta_lo,GPT-3.5-turbo (1106),2023-11-06,0.0,0.0
+workarena_pp,beta_lo,Llama-3-70B-Instruct,2024-04-18,0.0,0.0
+workarena_pp,beta_lo,Mixtral-8x22B,2024-04-17,0.0,0.0
+workarena_pp,beta_lo,GPT-4o-V (vision),2024-05-13,0.019,0.02
+workarena_pp,beta_lo,GPT-4o,2024-05-13,0.0425,0.06
+workarena_pp,beta_lo,GPT-4o-mini,2024-07-18,0.0065,0.0
+workarena_pp,beta_lo,Llama-3.1-70B,2024-07-23,0.0105,0.01
+workarena_pp,beta_lo,Llama-3.1-405B,2024-07-23,0.036,0.05
+workarena_pp,beta_lo,o1-mini,2024-09-12,0.0745,0.16
+workarena_pp,beta_lo,Claude-3.5-Sonnet,2024-06-20,0.1975,1.08
+workarena_pp,beta_lo,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.01
+workarena_pp,beta_lo,GPT-5,2025-08-07,0.4045,6.04
+workarena_pp,beta_lo_decomp,GPT-3.5-turbo (1106),2023-11-06,0.0,0.0
+workarena_pp,beta_lo_decomp,Llama-3-70B-Instruct,2024-04-18,0.0,0.0
+workarena_pp,beta_lo_decomp,Mixtral-8x22B,2024-04-17,0.0,0.0
+workarena_pp,beta_lo_decomp,GPT-4o-V (vision),2024-05-13,0.019,0.01
+workarena_pp,beta_lo_decomp,GPT-4o,2024-05-13,0.0425,0.04
+workarena_pp,beta_lo_decomp,GPT-4o-mini,2024-07-18,0.0065,0.0
+workarena_pp,beta_lo_decomp,Llama-3.1-70B,2024-07-23,0.0105,0.0
+workarena_pp,beta_lo_decomp,Llama-3.1-405B,2024-07-23,0.036,0.03
+workarena_pp,beta_lo_decomp,o1-mini,2024-09-12,0.0745,0.11
+workarena_pp,beta_lo_decomp,Claude-3.5-Sonnet,2024-06-20,0.1975,0.79
+workarena_pp,beta_lo_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.01
+workarena_pp,beta_lo_decomp,GPT-5,2025-08-07,0.4045,5.39
+workarena_pp,beta_hi,GPT-3.5-turbo (1106),2023-11-06,0.0,0.05
+workarena_pp,beta_hi,Llama-3-70B-Instruct,2024-04-18,0.0,0.05
+workarena_pp,beta_hi,Mixtral-8x22B,2024-04-17,0.0,0.05
+workarena_pp,beta_hi,GPT-4o-V (vision),2024-05-13,0.019,0.2
+workarena_pp,beta_hi,GPT-4o,2024-05-13,0.0425,0.46
+workarena_pp,beta_hi,GPT-4o-mini,2024-07-18,0.0065,0.07
+workarena_pp,beta_hi,Llama-3.1-70B,2024-07-23,0.0105,0.11
+workarena_pp,beta_hi,Llama-3.1-405B,2024-07-23,0.036,0.39
+workarena_pp,beta_hi,o1-mini,2024-09-12,0.0745,0.85
+workarena_pp,beta_hi,Claude-3.5-Sonnet,2024-06-20,0.1975,2.67
+workarena_pp,beta_hi,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.16
+workarena_pp,beta_hi,GPT-5,2025-08-07,0.4045,7.76
+workarena_pp,beta_hi_decomp,GPT-3.5-turbo (1106),2023-11-06,0.0,0.02
+workarena_pp,beta_hi_decomp,Llama-3-70B-Instruct,2024-04-18,0.0,0.02
+workarena_pp,beta_hi_decomp,Mixtral-8x22B,2024-04-17,0.0,0.02
+workarena_pp,beta_hi_decomp,GPT-4o-V (vision),2024-05-13,0.019,0.09
+workarena_pp,beta_hi_decomp,GPT-4o,2024-05-13,0.0425,0.23
+workarena_pp,beta_hi_decomp,GPT-4o-mini,2024-07-18,0.0065,0.03
+workarena_pp,beta_hi_decomp,Llama-3.1-70B,2024-07-23,0.0105,0.05
+workarena_pp,beta_hi_decomp,Llama-3.1-405B,2024-07-23,0.036,0.19
+workarena_pp,beta_hi_decomp,o1-mini,2024-09-12,0.0745,0.44
+workarena_pp,beta_hi_decomp,Claude-3.5-Sonnet,2024-06-20,0.1975,1.71
+workarena_pp,beta_hi_decomp,AgentTrek-1.0-32B (Qwen2.5-32B-Instruct finetune),2025-01-13,0.0149,0.07
+workarena_pp,beta_hi_decomp,GPT-5,2025-08-07,0.4045,6.78

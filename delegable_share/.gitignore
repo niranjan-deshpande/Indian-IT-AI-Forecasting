@@ -1,0 +1,4 @@
+# Downloaded third-party data (O*NET, Eloundou et al.); rebuild with scripts/pull_tasks.py
+data/raw/
+__pycache__/
+*.pyc

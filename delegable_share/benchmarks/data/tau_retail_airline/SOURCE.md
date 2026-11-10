@@ -1,0 +1,14 @@
+# tau_retail_airline (tau-bench / tau2-bench retail + airline, pooled, text)
+- URLs: https://github.com/sierra-research/tau2-bench (data/tau2/domains/{airline,retail}/tasks.json, split_tasks.json, policy.md); leaderboard JSONs at web/leaderboard/public/submissions/*/submission.json (rendered at taubench.com).
+- Access date: 2026-11-09. Licence: MIT (sierra-research/tau2-bench). Repo commit 033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f (main, 2026-11-04). Raw files in tau_retail_airline/raw (tasks, split files, policies, manifest.json, subs/ = all leaderboard submission JSONs) and the benchmark's own raw/ folder.
+- Population: split "base" = airline 50 tasks + retail 114 tasks = 164 items (pooled, natural proportions). Sample: random.Random(2026).sample(sorted ids, 24) over ids "airline:<id>" / "retail:<id>"; got 7 airline, 17 retail.
+- Headline score = pass^1 (mean per-task success over 4 trials). Pooled score in scores.csv = (50*airline + 114*retail)/164, computed by me from the per-domain pass_1 numbers in each submission.
+- Grading method: state. Final database state must equal the gold state (DB hash), plus required information communicated to the customer in some tasks (COMMUNICATE / NL assertions).
+- Time-estimator description: A chat with a customer who wants something done in an online store (exchange or return items, cancel or change an order, change an address) or an airline (rebook, cancel, change baggage, check allowances). The worker must verify the customer, apply the written policy, confirm details, and make the right database changes; done when the final records are correct and required facts were told to the customer.
+- Human times: none shipped. Gold action counts (meta.gold_action_count) are from evaluation_criteria.actions; expected turns not available in task files.
+- Problems:
+  - Mixed harnesses. Legacy rows (no submission_type; tau2 v0.1.3, user sim gpt-4.1 or developer's own) were self-reported by developers; "original tau-bench" rows (Claude Opus 4/4.1, Sonnet 4) used the original 115-retail task set and are pooled here with tau2 weights as an approximation. Sierra rows are tau2 v1.0.1 with gpt-5.2 user simulator. Task fixes between versions change scores.
+  - From mid-2026 Sierra stopped reporting airline/retail for new models (they report banking only), so there are no scored rows after 2026-02-16. Strongly saturating: top rows 0.81-0.84.
+  - Model-name variants merged (e.g. Gemini 3 Pro google 2025-11 vs Sierra rerun); best standard entry kept, others listed in notes. Qwen3-Max eval_date in source is evidently a typo (2024-09-23).
+  - retail has 3 open task-issue annotations (task_issues/); not removed.
+  - Release dates are as given in the submission files (model_release.release_date); not independently checked.

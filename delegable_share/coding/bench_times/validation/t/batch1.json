@@ -1,0 +1,310 @@
+[
+ {
+  "item_id": "django__django-16032",
+  "reasoning": "Trace how annotations and aliases affect subquery selection, then fix the query handling and test the supplied regression and related cases.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "configure-git-webserver",
+  "reasoning": "Set up an SSH-accessible Git repository, a deployment hook or equivalent, and a web server, then verify a push and HTTP request end to end.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "torch-tensor-parallelism",
+  "reasoning": "Implement weight sharding and distributed forward and backward communication, then test results and gradients across multiple ranks.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 480
+ },
+ {
+  "item_id": "sphinx-doc__sphinx-11445",
+  "reasoning": "Reproduce the prolog and heading interaction, trace the parsing behavior, and add regression tests for headings and the toctree.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-13344",
+  "reasoning": "Investigate async middleware adaptation and response handling, then test the fix with middleware in different positions and execution modes.",
+  "estimate_min": 150,
+  "low_min": 70,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-9296",
+  "reasoning": "Add paginator iteration and verify page order and edge cases with tests, updating documentation if appropriate.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "feal-differential-cryptanalysis",
+  "reasoning": "Analyze the supplied cipher and key derivation, derive a practical chosen-plaintext differential attack, and implement and validate it within the runtime limit.",
+  "estimate_min": 600,
+  "low_min": 240,
+  "high_min": 1440
+ },
+ {
+  "item_id": "train-fasttext",
+  "reasoning": "Inspect and prepare the Yelp data, train a compact classifier, and check validation accuracy and model size, adjusting parameters if needed.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 210
+ },
+ {
+  "item_id": "pydata__xarray-6992",
+  "reasoning": "Reproduce the index-reset inconsistency, determine whether to repair the coordinate invariant or its consumers, and test the affected dataset operations.",
+  "estimate_min": 130,
+  "low_min": 60,
+  "high_min": 270
+ },
+ {
+  "item_id": "install-windows-3.11",
+  "reasoning": "Configure QEMU snapshot mode, VNC, a programmatic control interface, and nginx; boot to the desktop and verify access and input.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-14238",
+  "reasoning": "The issue identifies the likely subclass-check fix; implement it and add tests for custom subclasses and unrelated field types.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "sympy__sympy-17630",
+  "reasoning": "Trace how matrix zeros become scalar zeros during block multiplication, repair the underlying expression behavior, and test repeated multiplication.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "query-optimize",
+  "reasoning": "Inspect the existing query and database schema, use query plans and timings to restructure it, and check output equivalence. The time depends heavily on the unseen query.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 300
+ },
+ {
+  "item_id": "video-processing",
+  "reasoning": "Inspect the example video, develop a background-subtraction and motion-based jump detector, and validate frame estimates. Generalization from one example makes this uncertain.",
+  "estimate_min": 360,
+  "low_min": 150,
+  "high_min": 720
+ },
+ {
+  "item_id": "django__django-11138",
+  "reasoning": "Trace timezone conversion across three database backends, update their date operations consistently, and test database and active timezone combinations.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "django__django-14376",
+  "reasoning": "Replace the deprecated connection keyword names and check how explicit options and connection tests interact with the change.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "filter-js-from-html",
+  "reasoning": "Develop and test a formatting-preserving sanitizer against script elements, event handlers, dangerous URLs, and HTML parsing edge cases. Reliable XSS removal without reformatting is particularly demanding.",
+  "estimate_min": 360,
+  "low_min": 150,
+  "high_min": 900
+ },
+ {
+  "item_id": "pytest-dev__pytest-6197",
+  "reasoning": "Trace the collection regression, prevent unrelated package initializers from being imported, and test both ordinary and explicit collection cases.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "crack-7z-hash",
+  "reasoning": "Inspect the archive and available clues, attempt extraction or password recovery, and write the discovered word. The active time is highly uncertain because the archive and password are unspecified.",
+  "estimate_min": 90,
+  "low_min": 15,
+  "high_min": 360
+ },
+ {
+  "item_id": "astropy__astropy-13579",
+  "reasoning": "Investigate how sliced WCS fills dropped world coordinates and how axis coupling affects inversion, then implement and test a numerically correct fix.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 540
+ },
+ {
+  "item_id": "django__django-16950",
+  "reasoning": "Reproduce the admin inline failure, trace how the parent\u2019s default target field is handled, and test creation and editing with non-primary-key foreign keys.",
+  "estimate_min": 150,
+  "low_min": 65,
+  "high_min": 300
+ },
+ {
+  "item_id": "cobol-modernization",
+  "reasoning": "Read and run the COBOL program, reproduce its file formats and business logic in Python, and compare resulting files under varied inputs. The unseen program's size makes the estimate uncertain.",
+  "estimate_min": 360,
+  "low_min": 120,
+  "high_min": 900
+ },
+ {
+  "item_id": "django__django-14311",
+  "reasoning": "Inspect autoreloader argument reconstruction for modules and packages, correct module detection, and add tests for both invocation forms.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "sparql-university",
+  "reasoning": "Inspect the ontology and date representation, write the joins and aggregate conditions, and verify current employment, EU membership, and enrollment counts.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "django__django-11163",
+  "reasoning": "The issue supplies the precise conditional change; add the fix and a regression test for empty and omitted field lists.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 50
+ },
+ {
+  "item_id": "fix-ocaml-gc",
+  "reasoning": "Investigate the modified runtime and compiler bootstrap crash, repair heap sweeping invariants, and run the basic testsuite. Debugging low-level GC corruption can vary substantially.",
+  "estimate_min": 600,
+  "low_min": 240,
+  "high_min": 1440
+ },
+ {
+  "item_id": "django__django-15252",
+  "reasoning": "Trace migration recorder behavior under database routers, implement consistent schema and recording behavior, and test multiple database scenarios.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "django__django-13821",
+  "reasoning": "Raise the SQLite minimum and audit version-dependent feature flags, code paths, tests, and documentation for obsolete compatibility logic.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-15957",
+  "reasoning": "Implement per-parent sliced prefetching, likely using window functions, while handling database capabilities and relation types; add broad regression coverage.",
+  "estimate_min": 360,
+  "low_min": 150,
+  "high_min": 720
+ },
+ {
+  "item_id": "multi-source-data-merger",
+  "reasoning": "Inspect the input schemas, normalize and merge records by priority, generate field-level conflicts, and validate Parquet types and dates.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "django__django-11400",
+  "reasoning": "Trace ordering through both admin filters, apply the intended fallback and ModelAdmin ordering, and add tests for each configuration.",
+  "estimate_min": 80,
+  "low_min": 35,
+  "high_min": 160
+ },
+ {
+  "item_id": "merge-diff-arc-agi-task",
+  "reasoning": "Import and merge the bundles, resolve conflicts, infer the grid transformation from examples, and test a general implementation. Difficulty depends strongly on the unseen examples.",
+  "estimate_min": 180,
+  "low_min": 60,
+  "high_min": 480
+ },
+ {
+  "item_id": "pylint-dev__pylint-7277",
+  "reasoning": "Adjust the path removal condition and test both runpy invocation and normal command-line behavior.",
+  "estimate_min": 50,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "pytest-dev__pytest-10081",
+  "reasoning": "Trace the special debugging teardown path and class-level unittest skips, then add regression tests covering skipped and non-skipped cases.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 200
+ },
+ {
+  "item_id": "qemu-alpine-ssh",
+  "reasoning": "Boot the ISO with port forwarding, configure root credentials and SSH inside the guest, and verify a login from the host.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "cancel-async-tasks",
+  "reasoning": "Implement bounded concurrency with cancellation propagation and awaited cleanup, then test normal completion, exceptions, and cancellation.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "sympy__sympy-18199",
+  "reasoning": "Trace modular root handling and add the zero-root case with tests for returned root forms and related inputs.",
+  "estimate_min": 60,
+  "low_min": 25,
+  "high_min": 120
+ },
+ {
+  "item_id": "path-tracing",
+  "reasoning": "Analyze the supplied image to infer its generative scene or pattern, implement a compact renderer, and iteratively compare pixels. The unseen image makes the difficulty highly uncertain.",
+  "estimate_min": 480,
+  "low_min": 120,
+  "high_min": 1200
+ },
+ {
+  "item_id": "adaptive-rejection-sampler",
+  "reasoning": "Implement the adaptive envelope and sampling algorithm in R, validate inputs and log concavity, and build statistical and unit tests with sample output.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 900
+ },
+ {
+  "item_id": "django__django-13807",
+  "reasoning": "Quote table names in both SQLite pragma paths and add tests using reserved or otherwise problematic identifiers.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "fix-code-vulnerability",
+  "reasoning": "Audit the Bottle code and tests to identify the specific input-validation vulnerability and CWE, implement the proper exception behavior, and run regression tests.",
+  "estimate_min": 180,
+  "low_min": 60,
+  "high_min": 420
+ },
+ {
+  "item_id": "django__django-15569",
+  "reasoning": "Mirror the lookup cache invalidation used during registration and adjust the cited test, with a regression test for unregistration.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "pytorch-model-cli",
+  "reasoning": "Inspect available model assets and requirements, implement or package inference as an executable, produce the requested files, and verify predictions. Unspecified weights and model architecture add uncertainty.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 540
+ },
+ {
+  "item_id": "bn-fit-modify",
+  "reasoning": "Infer the six-edge structure from the data and stated constraints, fit conditional distributions, simulate the intervention, and validate the output files.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ }
+]

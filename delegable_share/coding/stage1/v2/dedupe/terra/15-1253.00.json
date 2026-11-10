@@ -1,0 +1,9 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both reproduce and characterize an observed program problem and document it as a defect; filing and assigning the ticket adds a reporting step.",
+   "a": "14641a",
+   "b": "14642a"
+  }
+ ]
+}

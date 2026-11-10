@@ -4,7 +4,7 @@ operating-metrics fact sheets and press releases (Wayback copies of tcs.com PDFs
 Inputs : data/sources/gfc/tcs/txt/*.txt (pdftotext -layout), data/sources/gfc/tcs/ocr/*.ocr.txt
          (macOS Vision OCR of image-only slides, via scripts/extract/gfc_tcs_ocr.swift),
          data/sources/gfc/tcs/_manifest.csv (archive/original URLs)
-Output : data/sources/gfc/tcs/gfc_tcs_rows.csv (SCHEMA.md columns)
+Output : data/sources/gfc/tcs/gfc_tcs_rows.csv (data/README.md columns)
 
 Parsing approach
 - Segment share tables (Geography / IP Revenue = industry vertical / SP Revenue = service line) are

@@ -1,6 +1,6 @@
 # Cognizant (`cognizant`) — data collection notes
 
-Output: `data/raw/cognizant.csv` (5,961 rows, long format per SCHEMA.md). Calendar fiscal year; `fiscal_q` = `cal_q` = `YYYYQn`.
+Output: `data/raw/cognizant.csv` (5,961 rows, long format per data/README.md). Calendar fiscal year; `fiscal_q` = `cal_q` = `YYYYQn`.
 Coverage window: 2013Q4 (earlier, bonus) through 2026Q2 (latest reported, 8-K of 2026-07-29).
 
 Reproduce: `python3 scripts/extract/cognizant_download.py` (downloads from EDGAR into `data/sources/cognizant/edgar/`, writes `manifest.csv`), then `python3 scripts/extract/cognizant_extract.py` (writes the CSV). Text versions of each filing are in `data/sources/cognizant/txt/`; slide images read by hand are in `data/sources/cognizant/slides/`.

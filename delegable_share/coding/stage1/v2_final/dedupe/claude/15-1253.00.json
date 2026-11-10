@@ -1,0 +1,1 @@
+{"pairs": [{"reasoning": "Both start from a defect observed during testing and end with the problem reproduced, characterized and written up as a documented defect record, so filing a ticket with steps, severity and evidence is the same work as identifying, analyzing and documenting the problem.", "a": "14641a", "b": "14642a"}]}

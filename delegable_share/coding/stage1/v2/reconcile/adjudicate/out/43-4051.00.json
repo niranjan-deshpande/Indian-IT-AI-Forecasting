@@ -1,0 +1,62 @@
+[
+ {
+  "task_id": "2579",
+  "reasoning": "Both split by where the remedy is processed, as Example D asks, but X's PHYSICAL part is not typical of this occupation, whose reps mostly work by phone or at a desk while goods are handled by returns staff. Y's part b makes the work item the whole complaint case, absorbing investigation (2585) and notification (2581), whereas the instructions say a workflow step's work item should be that step's own output. Revised: keep Y's structure but narrow part b to processing the remedy itself.",
+  "choice": "revised",
+  "coding": {
+   "task_id": "2579",
+   "split_reasoning": "One activity, carrying out a remedy for a complaint, but done in two places: during the call or visit while the customer waits, and afterwards from queued or written cases.",
+   "parts": [
+    {
+     "part_id": "a",
+     "text": "Process an exchange, refund, or bill adjustment while the customer is on the line or at the desk.",
+     "time_share": 0.65,
+     "type_reasoning": "The remedy is entered and confirmed during the live contact while the customer waits.",
+     "type": "LIVE_SERVICE",
+     "unit_reasoning": "Each remedy is agreed and entered within one contact.",
+     "work_item": "one refund, exchange, or bill adjustment entered during a call or visit",
+     "start": "customer agrees to the proposed remedy",
+     "end": "refund, exchange, or adjustment entered and confirmed to the customer",
+     "checked_by": "the customer, and supervisor or finance for adjustments above limits",
+     "duplicates": [],
+     "overlaps_with": ["18565", "2583"]
+    },
+    {
+     "part_id": "b",
+     "text": "Process the refund, exchange, or bill adjustment for a written or escalated complaint after the contact, once the remedy has been decided.",
+     "time_share": 0.35,
+     "type_reasoning": "Done from a queue of cases with no customer waiting, ending in a processed remedy transaction.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Each remedy transaction is entered or submitted as one item that billing or finance relies on; investigating the complaint and notifying the customer are covered by 2585 and 2581.",
+     "work_item": "one refund, exchange, or bill adjustment processed from a queued case",
+     "start": "case with an approved or decided remedy reaches the representative's queue",
+     "end": "refund, exchange, or adjustment entered or submitted and the case noted",
+     "checked_by": "supervisor and billing or finance team",
+     "duplicates": [],
+     "overlaps_with": ["2581", "2585", "2589", "2580"]
+    }
+   ],
+   "notes": "Where reps also staff a physical returns desk, merchandise handling would add a PHYSICAL component; treated as atypical for this occupation."
+  }
+ },
+ {
+  "task_id": "2582",
+  "reasoning": "The statement's output is a referral that the investigating department works from, and that is a written escalation ticket or form; the customer is told about it in the live conversation (18565), but the referral itself is the handed-over item. Y's live part mainly describes call transfers, which belong to the conversation rather than to a referral for investigation. X's single DISCRETE part follows the instructions better.",
+  "choice": "X"
+ },
+ {
+  "task_id": "2583",
+  "reasoning": "Quoting a charge and taking a deposit or payment are done while the customer is on the line or at the desk, so the activity is almost entirely live. Y's back-office part is vague and its 30% share is not well supported; processing mailed payments is closer to billing-clerk work. X's single LIVE_SERVICE part with a note on later billing set-up fits better.",
+  "choice": "X"
+ },
+ {
+  "task_id": "2584",
+  "reasoning": "Contract forms, address changes, and discontinuance orders are all account paperwork entered on the computer, so the statement lists alternative items for one activity rather than different activities. The distinction the instructions call for is where the work is done, and Y splits on that; X's four-way split adds detail not required by the instructions.",
+  "choice": "Y"
+ },
+ {
+  "task_id": "18565",
+  "reasoning": "Both split live contacts by kind of item; Y's merge of orders and cancellations is reasonable since both are entered and confirmed on the spot. X names the representative as the checker for complaint intake, which fails the requirement that someone else checks or relies on the work, while Y names the staff who act on the complaint.",
+  "choice": "Y"
+ }
+]

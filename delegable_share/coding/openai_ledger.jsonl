@@ -1,0 +1,33 @@
+{"time": "2026-11-09T22:30:30", "model": "gpt-6.1-terra", "purpose": "stage1 v2_terra 43-4051.00", "prompt_tokens": 3294, "completion_tokens": 6078, "usd": 0.0337}
+{"time": "2026-11-09T22:30:32", "model": "gpt-6.1-terra", "purpose": "stage1 v2_terra 15-1232.00", "prompt_tokens": 3338, "completion_tokens": 6191, "usd": 0.0343}
+{"time": "2026-11-09T22:30:46", "model": "gpt-6.1-terra", "purpose": "stage1 v2_terra 15-1253.00", "prompt_tokens": 3486, "completion_tokens": 7492, "usd": 0.0409}
+{"time": "2026-11-09T22:32:00", "model": "gpt-6.1-terra", "purpose": "stage1b v2 15-1232.00", "prompt_tokens": 1530, "completion_tokens": 331, "usd": 0.0032}
+{"time": "2026-11-09T22:32:04", "model": "gpt-6.1-terra", "purpose": "stage1b v2 43-4051.00", "prompt_tokens": 1603, "completion_tokens": 197, "usd": 0.0026}
+{"time": "2026-11-09T22:32:14", "model": "gpt-6.1-terra", "purpose": "stage1b v2 15-1253.00", "prompt_tokens": 2127, "completion_tokens": 524, "usd": 0.0047}
+{"time": "2026-11-09T22:41:23", "model": "gpt-6.1-terra", "purpose": "reconcile stage1 v2 15-1232.00", "prompt_tokens": 6598, "completion_tokens": 450, "usd": 0.0088}
+{"time": "2026-11-09T22:41:29", "model": "gpt-6.1-terra", "purpose": "reconcile stage1 v2 43-4051.00", "prompt_tokens": 8159, "completion_tokens": 445, "usd": 0.0104}
+{"time": "2026-11-09T22:41:41", "model": "gpt-6.1-terra", "purpose": "reconcile stage1 v2 15-1253.00", "prompt_tokens": 9318, "completion_tokens": 836, "usd": 0.0135}
+{"time": "2026-11-09T22:43:12", "model": "gpt-6.1-terra", "purpose": "stage1b v2_final 15-1232.00", "prompt_tokens": 1474, "completion_tokens": 598, "usd": 0.0045}
+{"time": "2026-11-09T22:43:15", "model": "gpt-6.1-terra", "purpose": "stage1b v2_final 43-4051.00", "prompt_tokens": 1617, "completion_tokens": 117, "usd": 0.0022}
+{"time": "2026-11-09T22:43:19", "model": "gpt-6.1-terra", "purpose": "stage1b v2_final 15-1253.00", "prompt_tokens": 2065, "completion_tokens": 246, "usd": 0.0033}
+{"time": "2026-11-09T22:44:20", "model": "gpt-6.1-terra", "purpose": "reconcile dupes v2_final 15-1232.00", "prompt_tokens": 1937, "completion_tokens": 204, "usd": 0.003}
+{"time": "2026-11-09T22:44:26", "model": "gpt-6.1-terra", "purpose": "reconcile dupes v2_final 15-1253.00", "prompt_tokens": 2372, "completion_tokens": 223, "usd": 0.0035}
+{"time": "2026-11-09T22:52:55", "model": "gpt-6.1-terra", "purpose": "stage2 pilot t batch0", "prompt_tokens": 3829, "completion_tokens": 4314, "usd": 0.0254}
+{"time": "2026-11-09T22:53:45", "model": "gpt-6.1-terra", "purpose": "stage2 pilot t batch1", "prompt_tokens": 3734, "completion_tokens": 4371, "usd": 0.0256}
+{"time": "2026-11-09T22:54:35", "model": "gpt-6.1-terra", "purpose": "stage2 pilot t batch2", "prompt_tokens": 3692, "completion_tokens": 4354, "usd": 0.0255}
+{"time": "2026-11-09T22:55:21", "model": "gpt-6.1-terra", "purpose": "stage2 pilot t batch3", "prompt_tokens": 3600, "completion_tokens": 4062, "usd": 0.0239}
+{"time": "2026-11-09T23:05:55", "model": "gpt-6.1-terra", "purpose": "stage2 pilot_v3 t batch0", "prompt_tokens": 3910, "completion_tokens": 4809, "usd": 0.028}
+{"time": "2026-11-09T23:06:48", "model": "gpt-6.1-terra", "purpose": "stage2 pilot_v3 t batch1", "prompt_tokens": 3815, "completion_tokens": 4623, "usd": 0.0269}
+{"time": "2026-11-09T23:07:40", "model": "gpt-6.1-terra", "purpose": "stage2 pilot_v3 t batch2", "prompt_tokens": 3773, "completion_tokens": 4637, "usd": 0.027}
+{"time": "2026-11-09T23:08:29", "model": "gpt-6.1-terra", "purpose": "stage2 pilot_v3 t batch3", "prompt_tokens": 3681, "completion_tokens": 4292, "usd": 0.0251}
+{"time": "2026-11-09T23:17:12", "model": "gpt-6.1-terra", "purpose": "stage23 pilot_v4c t batch0", "prompt_tokens": 9481, "completion_tokens": 11962, "usd": 0.0693}
+{"time": "2026-11-09T23:19:13", "model": "gpt-6.1-terra", "purpose": "stage23 pilot_v4c t batch1", "prompt_tokens": 9556, "completion_tokens": 10804, "usd": 0.0636}
+{"time": "2026-11-09T23:33:20", "model": "gpt-6.1-terra", "purpose": "bench_times validation t0", "prompt_tokens": 24688, "completion_tokens": 2336, "usd": 0.0364}
+{"time": "2026-11-09T23:33:51", "model": "gpt-6.1-terra", "purpose": "bench_times validation t1", "prompt_tokens": 17439, "completion_tokens": 2414, "usd": 0.0295}
+{"time": "2026-11-09T23:42:09", "model": "gpt-6.1-terra", "purpose": "bench_times validation_anchored t0", "prompt_tokens": 23153, "completion_tokens": 2171, "usd": 0.034}
+{"time": "2026-11-09T23:42:34", "model": "gpt-6.1-terra", "purpose": "bench_times validation_anchored t1", "prompt_tokens": 22013, "completion_tokens": 2142, "usd": 0.0327}
+{"time": "2026-11-10T00:03:03", "model": "gpt-6.1-terra", "purpose": "bench_times main t0", "prompt_tokens": 28184, "completion_tokens": 5439, "usd": 0.0554}
+{"time": "2026-11-10T00:04:11", "model": "gpt-6.1-terra", "purpose": "bench_times main t1", "prompt_tokens": 28770, "completion_tokens": 6004, "usd": 0.0588}
+{"time": "2026-11-10T00:05:16", "model": "gpt-6.1-terra", "purpose": "bench_times main t2", "prompt_tokens": 27104, "completion_tokens": 5696, "usd": 0.0556}
+{"time": "2026-11-10T00:06:20", "model": "gpt-6.1-terra", "purpose": "bench_times main t3", "prompt_tokens": 27221, "completion_tokens": 5591, "usd": 0.0552}
+{"time": "2026-11-10T00:07:27", "model": "gpt-6.1-terra", "purpose": "bench_times main t4", "prompt_tokens": 27429, "completion_tokens": 5978, "usd": 0.0573}

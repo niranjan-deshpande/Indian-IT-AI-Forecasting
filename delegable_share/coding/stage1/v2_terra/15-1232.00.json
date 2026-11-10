@@ -1,0 +1,505 @@
+[
+ {
+  "task_id": "1282",
+  "split_reasoning": "Inquiries are answered both during live contacts and from written requests after the user is no longer waiting; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a user's hardware or software inquiry during a live contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The specialist assists the user while the user is on the call, chat, or at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "An individual inquiry is handled and answered within the contact.",
+    "work_item": "one user inquiry answered during a live contact",
+    "start": "user asks about a hardware or software problem",
+    "end": "answer or immediate guidance is communicated to the user",
+    "checked_by": "the user",
+    "overlap_reasoning": "Investigating a problem with the user under 1288 can be part of answering the same inquiry, but each statement also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a written user inquiry about hardware or software.",
+    "time_share": 0.3,
+    "type_reasoning": "The specialist prepares a response from a written request without the user waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The response to one inquiry is sent as a whole.",
+    "work_item": "one written user inquiry answered",
+    "start": "written inquiry is received",
+    "end": "answer or guidance is sent to the user",
+    "checked_by": "the user",
+    "overlap_reasoning": "Problem investigation under 1288 may support the answer, but it also covers diagnostic work beyond answering inquiries.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288"
+    ]
+   }
+  ],
+  "notes": "The live and written shares vary by support channel."
+ },
+ {
+  "task_id": "1283",
+  "split_reasoning": "Command-based checks are performed both while users wait during support contacts and independently during system checks; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter commands and observe system behavior while assisting a user live.",
+    "time_share": 0.4,
+    "type_reasoning": "The test is performed within a live contact while the user waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A test and its result form a distinct step communicated during the contact.",
+    "work_item": "one system operation tested during a live support contact",
+    "start": "a system operation is selected for testing during the contact",
+    "end": "the result or detected error is communicated to the user",
+    "checked_by": "the user or support specialist continuing the case",
+    "overlap_reasoning": "The test can be part of diagnostic investigation under 1288, while that statement also includes other investigative methods.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1288"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Enter commands and observe system behavior during an independent system check.",
+    "time_share": 0.6,
+    "type_reasoning": "The check produces a result for use by support staff without a user waiting live.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of commands used to check a particular operation yields one usable test result.",
+    "work_item": "one system operation checked",
+    "start": "operation or suspected error is selected for testing",
+    "end": "operation is verified or an error is identified and recorded or reported",
+    "checked_by": "support staff or system administrator",
+    "overlap_reasoning": "Command tests can be used in both system oversight under 1285 and problem investigation under 1288, but neither statement is limited to these tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1285",
+     "1288"
+    ]
+   }
+  ],
+  "notes": "The division depends on how much testing occurs during user contacts."
+ },
+ {
+  "task_id": "1284",
+  "split_reasoning": "Hands-on hardware and peripheral work differs from installing or repairing software at a computer; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install or perform minor repairs on hardware or peripheral equipment according to specifications.",
+    "time_share": 0.55,
+    "type_reasoning": "This requires hands-on handling of physical equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Physical installation can also be part of setting up employee equipment under 1286, which additionally covers employee configuration.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1286"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install or perform minor repairs on software according to specifications.",
+    "time_share": 0.45,
+    "type_reasoning": "Each installation or repair produces a software configuration that a user or support team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One requested installation or repair is a natural completed service item.",
+    "work_item": "one software installation or minor repair",
+    "start": "installation or repair request and specifications are available",
+    "end": "software is installed or repaired and its operation checked",
+    "checked_by": "the user or support supervisor",
+    "overlap_reasoning": "Software installation can also be part of employee equipment setup under 1286, which has a broader setup purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1286"
+    ]
+   }
+  ],
+  "notes": "Software work is treated as ordinarily performed outside a live user contact."
+ },
+ {
+  "task_id": "1285",
+  "split_reasoning": "Daily oversight is ongoing, so it is represented by routine performance reviews and investigations of detected problems; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review the daily performance of assigned computer systems.",
+    "time_share": 0.45,
+    "type_reasoning": "A daily review yields a status or findings that support staff can rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The daily review of assigned systems is a natural shift-level oversight item.",
+    "work_item": "one daily system performance review",
+    "start": "daily system status and performance information becomes available",
+    "end": "status is assessed and any concerns are recorded or passed on",
+    "checked_by": "support lead or system administrator",
+    "overlap_reasoning": "Command-based checks under 1283 may contribute to the review, but that task also covers checks outside daily oversight.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1283"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate a system performance issue detected during daily oversight.",
+    "time_share": 0.55,
+    "type_reasoning": "Each detected issue produces a finding or an action for support staff to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The detected issue is the item investigated and acted on.",
+    "work_item": "one system performance issue investigated",
+    "start": "an abnormal condition or performance issue is detected",
+    "end": "findings are recorded and the issue is addressed or passed on",
+    "checked_by": "support lead or system administrator",
+    "overlap_reasoning": "Command tests under 1283 and diagnostics under 1288 may be used in investigating the issue, but both tasks also cover work beyond performance oversight.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1283",
+     "1288"
+    ]
+   }
+  ],
+  "notes": "The relative time spent on routine reviews and issues varies with system stability."
+ },
+ {
+  "task_id": "1286",
+  "split_reasoning": "Physical equipment and cable setup is distinct from computer-based operating system and software setup; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up employee equipment and install or ensure installation of its cables.",
+    "time_share": 0.45,
+    "type_reasoning": "This requires hands-on work with equipment and cables.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hardware installation under 1284 can be part of this employee setup, but it also includes repairs and other installations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1284"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install or ensure installation of the operating system and appropriate software for an employee's equipment.",
+    "time_share": 0.55,
+    "type_reasoning": "The configured software environment is a distinct deliverable for employee use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The software setup for one employee device is handed over as a usable configuration.",
+    "work_item": "one employee device software setup",
+    "start": "device and employee software requirements are available",
+    "end": "required operating system and software are installed or verified",
+    "checked_by": "employee or support lead",
+    "overlap_reasoning": "Software installation under 1284 can be part of this setup, but it also covers repairs and installations for other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1284"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much imaging and installation is automated or performed by other staff."
+ },
+ {
+  "task_id": "1287",
+  "split_reasoning": "Support records may be entered while a user waits or completed afterward alongside other daily transaction and installation records; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a problem and remedial actions while assisting a user live.",
+    "time_share": 0.3,
+    "type_reasoning": "The record is entered during the live support contact while the user is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The record entry for one contact is a distinct output, separate from resolving the problem.",
+    "work_item": "one support interaction record entered during a live contact",
+    "start": "problem or action to be recorded is identified during the contact",
+    "end": "the relevant details are entered in the support record",
+    "checked_by": "support staff or supervisor",
+    "overlap_reasoning": "The other statements describe assistance, testing, or installation rather than this record-keeping step itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain records of transactions, problems, remedial actions, and installations outside live contacts.",
+    "time_share": 0.7,
+    "type_reasoning": "The specialist completes or updates records without a user waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record of one transaction, support issue, or installation is the item others retrieve and review.",
+    "work_item": "one transaction, problem, or installation record completed",
+    "start": "details of the activity or action are available for recording",
+    "end": "record is entered or updated and saved",
+    "checked_by": "support staff, supervisor, or auditor",
+    "overlap_reasoning": "The other statements describe the underlying technical work rather than its separate record-keeping output.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The share recorded during contact depends on the ticketing workflow."
+ },
+ {
+  "task_id": "1288",
+  "split_reasoning": "Problem investigation and technical assistance occur both during live user contacts and independently from written requests or diagnostic work; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a user's computer problem or provide technical assistance during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The specialist consults the user or performs checks while the user waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One problem investigation or assistance response is completed or brought to a handoff within the contact.",
+    "work_item": "one problem investigated during a live support contact",
+    "start": "user describes a problem or requests technical assistance",
+    "end": "findings or guidance are communicated, or further work is agreed",
+    "checked_by": "the user or support specialist continuing the case",
+    "overlap_reasoning": "Answering inquiries under 1282 and command testing under 1283 can be parts of this investigation, but each also covers work outside it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1283"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate a computer problem or prepare technical assistance outside a live contact.",
+    "time_share": 0.4,
+    "type_reasoning": "Manual research and diagnostics produce findings or guidance without a user waiting live.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The investigation of one reported problem yields a finding or guidance for the case.",
+    "work_item": "one computer problem investigated",
+    "start": "problem report or request for technical assistance is received",
+    "end": "findings and recommended action or guidance are communicated or recorded",
+    "checked_by": "user or support specialist handling the case",
+    "overlap_reasoning": "Written inquiry answers, command tests, and performance investigations under 1282, 1283, and 1285 can include some of this work, but each has a different scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1282",
+     "1283",
+     "1285"
+    ]
+   }
+  ],
+  "notes": "Manuals, user consultation, and diagnostics are alternative investigative inputs rather than separate deliverables."
+ },
+ {
+  "task_id": "1289",
+  "split_reasoning": "Conferring with different groups serves the single purpose of establishing system requirements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with staff, users, and management to establish requirements for a new or modified system.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live requirements discussions rather than preparation of a separate specification.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A feasibility study under 1297 may include requirements or workflow discussions, but the study also includes analyses beyond those discussions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1297"
+    ]
+   }
+  ],
+  "notes": "A separately authored requirements document is not specified in the target."
+ },
+ {
+  "task_id": "1290",
+  "split_reasoning": "Developing training materials and procedures is distinct from delivering live user training; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop training materials and procedures for using hardware or software.",
+    "time_share": 0.45,
+    "type_reasoning": "The work produces instructional content that can be reviewed and reused.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A training package or procedure for a defined topic is handed over as a whole.",
+    "work_item": "one training material or procedure package",
+    "start": "training topic and intended users are identified",
+    "end": "materials and procedures are prepared and made available for use",
+    "checked_by": "training lead, support manager, or users",
+    "overlap_reasoning": "None of the other statements describes developing training content.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train users in the proper use of hardware or software.",
+    "time_share": 0.55,
+    "type_reasoning": "The value is in the live teaching interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Answering individual inquiries under 1282 is support work rather than the training session described here.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The balance between preparation and delivery varies by training program."
+ },
+ {
+  "task_id": "1291",
+  "split_reasoning": "Major problems are referred both during live contacts and afterward through vendor or technician channels; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a major problem or defective product for service during a live user contact.",
+    "time_share": 0.25,
+    "type_reasoning": "The referral or transfer is made while the user remains on the call or at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One referral is the handoff step within the contact, not the entire support case.",
+    "work_item": "one service referral made during a live contact",
+    "start": "the issue is identified as requiring vendor or technician service",
+    "end": "referral or transfer is made and communicated to the user",
+    "checked_by": "user and receiving vendor or technician",
+    "overlap_reasoning": "Investigation under 1288 can lead to a referral, but the investigation and referral are separate steps.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Refer a major problem or defective product to a vendor or technician outside a live user contact.",
+    "time_share": 0.75,
+    "type_reasoning": "The referral is submitted or communicated after the live contact or from a work queue.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One referral is sent to a receiving service provider as a distinct handoff.",
+    "work_item": "one vendor or technician service referral",
+    "start": "problem or defect is identified as requiring outside service",
+    "end": "relevant issue details and service request are sent to the provider",
+    "checked_by": "receiving vendor or technician",
+    "overlap_reasoning": "Investigation under 1288 can precede the referral, but the two are distinct outputs.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live share depends on whether the organization uses warm transfers or submits referrals after contact."
+ },
+ {
+  "task_id": "1292",
+  "split_reasoning": "Evaluating a product and recommending improvements or upgrades are parts of one assessment deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate software or hardware and recommend improvements or upgrades.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an evaluation and recommendation for a decision-maker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment of a product or defined set of alternatives is reviewed as one item.",
+    "work_item": "one hardware or software evaluation with recommendations",
+    "start": "product or upgrade need is selected for evaluation",
+    "end": "evaluation and recommendations are submitted",
+    "checked_by": "IT manager or purchasing decision-maker",
+    "overlap_reasoning": "A feasibility study under 1297 may include hardware or software comparisons, but it also covers broader office automation feasibility.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1297"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1293",
+  "split_reasoning": "Reading and attending events are alternative ways to maintain technical knowledge, not separate deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain knowledge of hardware and software through technical reading and professional events.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes staying current rather than producing an item for someone else to check.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Reading manuals under 1288 is for investigating a specific problem, whereas this task is general professional learning.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1295",
+  "split_reasoning": "Inspecting equipment against order information is one preparation activity for delivery.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect equipment against order sheets to prepare it for delivery to users.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing equipment for delivery requires hands-on inspection of the physical items.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Employee equipment setup under 1286 is a related but distinct installation activity, not the order-based delivery inspection itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Order-sheet review is treated as part of the hands-on inspection, not as a separate computer-based deliverable."
+ },
+ {
+  "task_id": "1296",
+  "split_reasoning": "Modifying and customizing commercial programs are alternative descriptions of the same software-change activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Modify or customize a commercial program for an internal need.",
+    "time_share": 1.0,
+    "type_reasoning": "A completed program configuration or modification is a distinct deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One defined customization request or change is implemented and handed over for use or review.",
+    "work_item": "one commercial program customization",
+    "start": "internal customization need and program are identified",
+    "end": "change is implemented, tested, and made available for use or review",
+    "checked_by": "internal user or IT lead",
+    "overlap_reasoning": "Software installation or minor repair under 1284 is distinct from customization for an internal need.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1297",
+  "split_reasoning": "Workflow, space, and cost analyses are alternative or complementary inputs to one office automation feasibility study.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct an office automation feasibility study.",
+    "time_share": 1.0,
+    "type_reasoning": "The study produces findings for a decision about a proposed automation effort.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A study for one proposed automation effort is submitted and reviewed as a whole.",
+    "work_item": "one office automation feasibility study",
+    "start": "proposed automation need and study scope are identified",
+    "end": "feasibility findings and supporting analyses are submitted",
+    "checked_by": "management or project sponsor",
+    "overlap_reasoning": "Requirements discussions under 1289 and product evaluations under 1292 may contribute to a study, but each also serves purposes beyond that study.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1289",
+     "1292"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "15204",
+  "split_reasoning": "Hiring workers is distinct from supervising and directing their ongoing work; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Hire workers for project, problem-solving, monitoring, or installation work.",
+    "time_share": 0.2,
+    "type_reasoning": "A hiring process produces a selection or hiring decision that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selection for one vacancy is the decision handed to management or human resources.",
+    "work_item": "one hiring selection for a worker vacancy",
+    "start": "vacancy and hiring need are identified",
+    "end": "candidate is selected and hiring decision is communicated",
+    "checked_by": "hiring manager or human resources",
+    "overlap_reasoning": "None of the other statements describes hiring workers.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise and direct workers performing project, problem-solving, monitoring, and installation work.",
+    "time_share": 0.8,
+    "type_reasoning": "The target describes directing and supervising people through live interactions.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The technical tasks elsewhere describe doing the work rather than supervising the workers who do it.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Hiring frequency and supervisory responsibilities vary substantially by role."
+ }
+]

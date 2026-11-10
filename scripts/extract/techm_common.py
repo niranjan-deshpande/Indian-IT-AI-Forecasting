@@ -1,7 +1,7 @@
 """Shared helpers for Tech Mahindra extraction (firm id `techm`)."""
 import csv, os, re, datetime as dt
 
-ROOT = "/Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/0. Exploratory Analysis"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # repo root
 SRC = os.path.join(ROOT, "data/sources/techm")
 TXT = os.path.join(SRC, "txt")          # pdftotext -layout outputs (created by techm_extract.py)
 FIRM = "techm"

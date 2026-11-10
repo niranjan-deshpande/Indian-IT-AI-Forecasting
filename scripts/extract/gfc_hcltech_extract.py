@@ -3,7 +3,7 @@ investor releases (Wayback copies of hcltech.com / hcl.in PDFs).
 
 Inputs : data/sources/gfc/hcltech/*.pdf  (+ manifest.tsv: timestamp, original URL, local file)
          text is produced with `pdftotext -layout` into data/sources/gfc/hcltech/txt/
-Output : data/sources/gfc/hcltech/gfc_hcltech_rows.csv  (SCHEMA.md columns)
+Output : data/sources/gfc/hcltech/gfc_hcltech_rows.csv  (data/README.md columns)
 
 HCL fiscal year in this period ends 30 June (Q1 = Jul-Sep, Q2 = Oct-Dec, Q3 = Jan-Mar,
 Q4 = Apr-Jun). Every release shows 3 quarterly columns (year-ago, prior quarter, current),

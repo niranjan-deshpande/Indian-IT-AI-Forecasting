@@ -1,0 +1,674 @@
+[
+ {
+  "item_id": "osworld_verified:a82b78bb-7fde-4cb3-94a4-035baf10bcf0",
+  "reasoning": "Open the paper, identify first and last three authors, search for four personal webpages, then create a bookmark folder and add four bookmarks. About 27 GUI actions plus searching and verifying pages.",
+  "estimate_min": 9,
+  "low_min": 6,
+  "high_min": 15
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_network_preference|bad_vpn|user_abroad_roaming_disabled_on[PERSONA:None]",
+  "reasoning": "Verify customer, check line and roaming, enable roaming on the account, and walk the customer through VPN disconnect and network mode change by chat, then confirm speed.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "finch:164",
+  "reasoning": "Translate a screenshot of an English PDF page into Chinese and lay it out into a single PDF; needs reading, translating and reformatting with unknown amount of text.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "spreadsheetbench_2:Financial_Model:10_03",
+  "reasoning": "Fill in P/E, NOPAT, variance with target price, operating expenses and a balance sheet check across several sheets of an existing model, preserving structure and formatting; requires tracing assumptions and checking.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "terminal_bench_2:rstan-to-pystan",
+  "reasoning": "Read the R/Stan GP script, install PyStan 3.10.0 (fiddly build), port the model and settings, run sampling and write four result files; debugging and sampling time are likely.",
+  "estimate_min": 55,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "swe_bench_pro:instance_internetarchive__openlibrary-6fdbbeee4c0a7e976ff3e46fb1d36f4eb110c428-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+  "reasoning": "Add type annotations, a SeedDict TypedDict, type guards and cleanups across the List model and related modules while keeping tests passing; many small edits across several files with type checking.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "spreadsheetbench_2:Debugging:06_07",
+  "reasoning": "Audit a multi-sheet workbook with index/match errors, hardcodes and other issues; find and fix all seeded errors and check results.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "swt_bench:sympy__sympy-15809",
+  "reasoning": "Write a short test that Min() and Max() with no arguments return oo and -oo; find the right test file and run it to confirm failure.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_network_preference|bad_vpn|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+  "reasoning": "Verify customer, check roaming and data usage, refuel data, enable roaming, and guide five phone-side fixes by chat with a cooperative customer.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "workarena_l1:sort-service-catalog-item-list",
+  "reasoning": "Open the catalog items list and set a three-level sort on price, hide-on-portal and access type in the list UI.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "tau_voice:telecom:[service_issue]airplane_mode_on|lock_sim_card_pin|overdue_bill_suspension[PERSONA:Easy]",
+  "reasoning": "Verify caller and investigate no-service causes; the gold action is a transfer to a human, though a real agent would check bill status and device steps first. Short call.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 15
+ },
+ {
+  "item_id": "terminal_bench_1:pytorch-model-cli",
+  "reasoning": "Export PyTorch weights to JSON, write C code using cJSON and lodepng for the MNIST forward pass, compile, verify against PyTorch, and write the prediction file.",
+  "estimate_min": 50,
+  "low_min": 30,
+  "high_min": 100
+ },
+ {
+  "item_id": "swe_bench_pro:instance_internetarchive__openlibrary-5c6c22f3d2edf2f1b10f5dc335e32cb6a5f40341-v76304ecdb3a5954fcf13feb710e8c40fcf24b73c",
+  "reasoning": "Modify get_ia_record to split publisher strings into publishers and places and sort ISBNs into 10 and 13 lists, handling string and list input; small change in one function plus testing.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "tau_retail_airline:retail:8",
+  "reasoning": "Authenticate by name and zip, find the order, look up water bottle and lamp options, confirm and exchange only the lamp.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 20
+ },
+ {
+  "item_id": "workarena_pp:l3/data_driven_decision_making_and_reasoning/MAX_INVEST_RETURN/013",
+  "reasoning": "Find the protocol in the knowledge base, filter tagged records, solve a small knapsack under a 5400 budget by hand, apply the selection, report the return and close the ticket.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "workarena_pp:l3/contextual_understanding_infeasible_tasks/INF_NAV_SORT/003",
+  "reasoning": "Open the ticket, try the sort, recognise the field does not exist, and close the ticket as skipped.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "workarena_l1:order-developer-laptop",
+  "reasoning": "Go to the hardware catalog, open Developer Laptop, set quantity 2, fill the software text and three options, and order.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 9
+ },
+ {
+  "item_id": "crmarena_pro:b2c:749",
+  "reasoning": "Search the knowledge articles for AutoElite Motors roof mechanism services and summarise concisely.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "spreadsheetbench_2:Visualization:Task_1420776",
+  "reasoning": "Consolidate two monthly sheets for a date range, build a four-series line chart with a multi-level date/weekday/time axis, show gaps as blanks and fix label overlap; fiddly chart work.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 60
+ },
+ {
+  "item_id": "gdpval:0112fc9b-c3b2-4084-8993-5a4abb1f54f1",
+  "reasoning": "Write a clinical visit note with assessment and plan for a 16-year-old with a head injury, covering concussion evaluation, imaging decisions, guidance and follow-up; careful professional writing.",
+  "estimate_min": 50,
+  "low_min": 30,
+  "high_min": 90
+ },
+ {
+  "item_id": "workarena_pp:l2/planning_and_problem_solving/MARK_DUPLICATE/016",
+  "reasoning": "Filter the problems list by tag, compare descriptions to find duplicates, and edit each lower-priority duplicate to Closed with Duplicate of set.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 22
+ },
+ {
+  "item_id": "tau_voice:retail:84",
+  "reasoning": "Authenticate by name and zip, find the order with two tablets, confirm the return, handle the change to the pricier tablet and gift card refund, and process.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 20
+ },
+ {
+  "item_id": "terminal_bench_2:polyglot-rust-c",
+  "reasoning": "Craft a single file valid as both Rust and C++ via comment and macro tricks, printing the Nth Fibonacci number; clever and fiddly with two compilers to test.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "tau_retail_airline:retail:23",
+  "reasoning": "Authenticate, locate three orders, look up helmet, luggage and grill options, confirm and make two exchanges and one pending modification.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 32
+ },
+ {
+  "item_id": "eva_bench:itsm:16",
+  "reasoning": "Verify the employee, look up the license catalog, validate the cost center and submit the permanent license request; five tool calls.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "itbench_sre:Scenario-29",
+  "reasoning": "Investigate a Kubernetes snapshot with alerts on frontend and ad, trace through logs and traces to find the root-cause entity (likely an injected fault); moderate investigation.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "terminal_bench_2:cancel-async-tasks",
+  "reasoning": "Write an asyncio concurrency-limited runner that runs cleanup on cancellation; subtle cancellation semantics need testing.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.filter-service-catalog-item-list:391",
+  "reasoning": "Open the catalog items list and build a two-condition filter on category and type.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "workarena_l1:order-apple-mac-book-pro15",
+  "reasoning": "Go to the hardware catalog, open Apple MacBook Pro 15, set quantity 6 and order.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 7
+ },
+ {
+  "item_id": "tau_banking:task_046",
+  "reasoning": "Verify customer, find the account-closure policy in the knowledge base, check dispute history via a discoverable tool and respond; policy search is the main effort.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "terminal_bench_1:cron-broken-network",
+  "reasoning": "Diagnose why curl to example.com fails, likely via cron or network config, inspect and explain the fix; some shell investigation.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_voice:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]",
+  "reasoning": "Verify customer, check roaming and data usage, refuel data, enable roaming, and guide four device steps on a phone call.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-154",
+  "reasoning": "Explore ProjectSend client account settings, find an unreported bug without a bug report in PHP, locate it and fix it; open-ended exploration.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "workarena_pp:l3/planning_and_problem_solving/MARK_DUPLICATE/015",
+  "reasoning": "Open the ticket, find the protocol, filter problems by tag, identify duplicates and mark them closed as duplicates, then close the ticket.",
+  "estimate_min": 18,
+  "low_min": 10,
+  "high_min": 30
+ },
+ {
+  "item_id": "terminal_bench_2:prove-plus-comm",
+  "reasoning": "Complete a short Coq induction proof for plus commutativity and compile; routine for a Coq user.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 20
+ },
+ {
+  "item_id": "sopbench:hotel:modify_reservation:34",
+  "reasoning": "Run lookups for availability, amount, lead time, stays and loyalty tier, then modify the reservation.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "gdpval:a99d85fc-eff8-48d2-a7d4-42a75d62f18d",
+  "reasoning": "Build an Excel lease calculator with editable inputs, three scenarios, and annual and monthly rent matrices with escalators, checked for correctness; substantial formula building.",
+  "estimate_min": 90,
+  "low_min": 50,
+  "high_min": 150
+ },
+ {
+  "item_id": "tau_retail_airline:airline:10",
+  "reasoning": "Get user id, find the reservation, explain that cabin changes must apply to all flights and that the policy limits the change; no database change expected.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 20
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_sms_permission|data_mode_off|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+  "reasoning": "Six phone-side fixes guided by chat with a hard-to-handle customer after verification and roaming checks; long conversation.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-129",
+  "reasoning": "Explore Opengist admin user management, find an unreported bug in Go code by using the app, and fix it.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "tau_retail_airline:retail:87",
+  "reasoning": "Authenticate by email, look up three pending orders to find the DC address, confirm, change three order addresses and the default address.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_retail_airline:airline:27",
+  "reasoning": "Get user id, look up the reservation and flight status, confirm the delay, explain compensation by Silver status and that no certificate applies.",
+  "estimate_min": 12,
+  "low_min": 7,
+  "high_min": 20
+ },
+ {
+  "item_id": "itbench_sre:Scenario-2",
+  "reasoning": "Investigate a Kubernetes snapshot where cart EmptyCart fails due to a feature flag; trace to the flag configuration entity.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "eva_bench:medical_hr:T1.1",
+  "reasoning": "Verify provider with OTP, then handle three credentialing requests with eligibility checks, scheduling and notifications; 18 tool calls.",
+  "estimate_min": 30,
+  "low_min": 20,
+  "high_min": 50
+ },
+ {
+  "item_id": "tau_voice:telecom:[mobile_data_issue]airplane_mode_on|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]",
+  "reasoning": "Verify caller, enable roaming on the account, and guide airplane mode and data saver toggles over the phone.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "terminal_bench_1:swe-bench-astropy-2",
+  "reasoning": "Fix the QDP reader in astropy to accept lower-case commands by making a regex case-insensitive and handling parsing; find code, patch and test.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "sopbench:hotel:modify_reservation:53",
+  "reasoning": "Run lookups on availability, amount, overlap, lead time, stays and loyalty tier, then modify the reservation.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1097",
+  "reasoning": "Write SOQL over cases in the past two months to compute closure time per state and report the quickest state; date and aggregation logic.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-021",
+  "reasoning": "Explore Chevereto image viewer and actions, find an unreported bug in PHP, and fix it.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "swe_bench_pro:instance_NodeBB__NodeBB-05f2236193f407cf8e2072757fbd6bb170bc13f0-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+  "reasoning": "Add an ascending last-post-time sort in getSortedTopics across tag, category and global listings with pinned handling and limits; small to moderate change plus tests.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "starshell:erpnext:erpnext.create_sales_invoice_with_customer_item_account_dependencies_HARD:2",
+  "reasoning": "Create a customer, item and account if missing, then a sales invoice in JPY in ERPNext; several forms with specific fields.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 40
+ },
+ {
+  "item_id": "crmarena_pro:b2c:684",
+  "reasoning": "Search knowledge articles for the purpose of the tire maintenance packages and summarise concisely.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "workarena_pp:l3/data_driven_decision_making_and_reasoning/EXPENSE_MGMT/011",
+  "reasoning": "Find the protocol, filter four expense lines by tag, identify duplicates, keep the designated one, delete the rest and close the ticket.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]",
+  "reasoning": "Verify customer, enable roaming and guide VPN disconnect and data saver toggle by chat.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "sopbench:library:borrow_book:22",
+  "reasoning": "Log in the user, check availability, restriction, membership and borrow limit, then decline with the reason.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "swt_bench:pytest-dev__pytest-7982",
+  "reasoning": "Write a test that a symlinked directory is collected by pytest; needs the pytester fixture and symlink setup.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "swe_bench_pro:instance_protonmail__webclients-4817fe14e1356789c90165c2a53f6a043c2c5f83",
+  "reasoning": "Rework draft creation and signature helpers in the mail composer so signatures including referral links are inserted through the standard pipeline; several files with needed test updates in unfamiliar code.",
+  "estimate_min": 90,
+  "low_min": 50,
+  "high_min": 180
+ },
+ {
+  "item_id": "finch:93",
+  "reasoning": "Compute monthly MWh per deal for flat and peak contracts, fill the counterparty tables, total and multiply by curve price; formula building across tables.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "swt_bench:pytest-dev__pytest-5840",
+  "reasoning": "Write a test for conftest path casing on Windows; hard to reproduce on non-Windows systems, so mocks of path handling are needed.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "tau_banking:task_018",
+  "reasoning": "Verify customer, find rewards dispute policy in many documents, identify wrong cash-back transactions, and submit six disputes via tools; long investigation.",
+  "estimate_min": 40,
+  "low_min": 25,
+  "high_min": 70
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+  "reasoning": "Verify customer, enable roaming on the account, and guide six device-side fixes by chat with a hard customer; long conversation.",
+  "estimate_min": 22,
+  "low_min": 14,
+  "high_min": 38
+ },
+ {
+  "item_id": "swt_bench:django__django-15127",
+  "reasoning": "Write a test that LEVEL_TAGS updates under override_settings in messages tests; find the right test module.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "terminal_bench_1:sqlite-with-gcov",
+  "reasoning": "Build SQLite with gcov flags and install to PATH; configure, make, and verify gcov output.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-160",
+  "reasoning": "Explore Roundcube contact import and export, find an unreported bug in PHP, and fix it.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "tau_banking:task_035",
+  "reasoning": "Verify customer, find the incident policy among the knowledge documents, unlock the emergency transfer tool and transfer to a human.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "finch:10",
+  "reasoning": "Fill formulas across columns X to AH for the timing model performance statistics over 2013 to 2025 by following header logic and existing formulas.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "osworld_verified:d52d6308-ec58-42b7-a2c9-de80e4837b2b",
+  "reasoning": "Close the left dock in GIMP via the Windows menu or Tab; one action.",
+  "estimate_min": 1,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "swt_bench:django__django-16595",
+  "reasoning": "Write an optimizer test showing consecutive AlterField operations reduce to one; simple test in the migration optimizer tests.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "workarena_pp:l3/sophisticated_memory/OFFBOARD_USER/004",
+  "reasoning": "Find the protocol, locate the user, unassign hardware assets, deactivate the account and close the ticket.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "swe_bench_pro:instance_flipt-io__flipt-b22f5f02e40b225b6b93fff472914973422e97c6",
+  "reasoning": "Add a local OCI bundle copy to the Flipt store with reference validation, errors, and CLI wiring in Go; moderate change across several files.",
+  "estimate_min": 90,
+  "low_min": 50,
+  "high_min": 180
+ },
+ {
+  "item_id": "sopbench:online_market:add_review:27",
+  "reasoning": "Log in the user, check order history and credit status, then add the review.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "swt_bench:sympy__sympy-24562",
+  "reasoning": "Write a test that Rational('0.5','100') equals 1/200; trivial test.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "swt_bench:django__django-11790",
+  "reasoning": "Write a test that AuthenticationForm username renders a maxlength attribute; simple form test.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 22
+ },
+ {
+  "item_id": "starshell:gitlab:gitlab.create-group:0",
+  "reasoning": "Create a group in GitLab and add four members.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 12
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:None]",
+  "reasoning": "Verify customer, refuel data, and guide seven phone fixes by chat for an MMS problem; long conversation.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 35
+ },
+ {
+  "item_id": "gdpval:788d2bc6-82df-4dc7-8467-a0f31405dc14",
+  "reasoning": "Design a 15-18 slide PDF sales deck from a services document, with titles, summaries, bullets and relevant open-source images; design and content work.",
+  "estimate_min": 120,
+  "low_min": 70,
+  "high_min": 200
+ },
+ {
+  "item_id": "swe_bench_pro:instance_protonmail__webclients-c8117f446c3d1d7e117adc6e0e46b0ece9b0b90e",
+  "reasoning": "Change getLastPersistedLocalID to return number or null, synchronously, and update its callers in session restoration; small but spread across files with tests.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "tau_voice:retail:0",
+  "reasoning": "Authenticate by name and zip, find the order, look up keyboard and thermostat options, confirm and exchange both items.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-116",
+  "reasoning": "Explore Monica contact profile editor, find an unreported bug in PHP, and fix it.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 150
+ },
+ {
+  "item_id": "spreadsheetbench_2:Debugging:06_01",
+  "reasoning": "Audit a workbook for double-counting and other seeded errors, fix them and check the results.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "eva_bench:itsm:12",
+  "reasoning": "Verify the employee, check hardware entitlement and budget, get assets, submit the replacement and initiate return; seven tool calls.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 20
+ },
+ {
+  "item_id": "finch:116",
+  "reasoning": "Compare monthly direction of two price series across 2002, count same versus opposite moves; simple formulas.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "tau_voice:airline:46",
+  "reasoning": "Get user id and reservation, check insurance rules and decline the refund; no change expected.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "itbench_sre:Scenario-105",
+  "reasoning": "Investigate a Kubernetes snapshot with no alerts listed, so the cause must be found from events, logs and metrics; open-ended investigation.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "tau_banking:task_076",
+  "reasoning": "Verify customer, find account options among 24 relevant documents, compute ATM fee costs, open the best checking account via tool.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 60
+ },
+ {
+  "item_id": "eva_bench:medical_hr:T3.3",
+  "reasoning": "Verify provider with OTP, transfer DEA, update malpractice, check extension eligibility and report; 12 tool calls.",
+  "estimate_min": 22,
+  "low_min": 14,
+  "high_min": 38
+ },
+ {
+  "item_id": "crmarena_pro:b2b:394",
+  "reasoning": "Query cases over four quarters for a product, group by issue and return the top issue Id; SOQL aggregation.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1306",
+  "reasoning": "Review an opportunity's tasks and decide the correct stage among five; read records and judge.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "tau_retail_airline:retail:64",
+  "reasoning": "Authenticate, find order and camera options, choose the best waterproof camera within the price, and exchange it; many lookups.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "eva_bench:airline:1.1.2",
+  "reasoning": "Verify the caller, get the reservation, search rebooking options, rebook within cost and arrival limits, and assign a window seat.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "finch:120",
+  "reasoning": "Audit a workbook of unknown size and correct formula errors in place; seeded error detection.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "swe_bench_pro:instance_navidrome__navidrome-dfa453cc4ab772928686838dc73d0130740f054e",
+  "reasoning": "Add InPlaylist and NotInPlaylist operators to the Go criteria package with JSON mapping and SQL generation, following existing operators; focused change with tests.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "terminal_bench_1:path-tracing",
+  "reasoning": "Reverse-engineer a rendered image into a C program that reproduces it at 0.8 similarity, requiring analysis of the scene and rendering code; hard reconstruction.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "terminal_bench_1:gpt2-codegolf",
+  "reasoning": "Write a GPT-2 inference engine in under 5000 bytes of C that reads the TF checkpoint and BPE file; extremely difficult golfing and debugging.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 900
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_both_permissions|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+  "reasoning": "Verify customer, enable roaming and refuel data, and guide ten phone fixes by chat with a hard customer; very long conversation.",
+  "estimate_min": 30,
+  "low_min": 18,
+  "high_min": 50
+ },
+ {
+  "item_id": "swe_bench_pro:instance_navidrome__navidrome-10108c63c9b5bdf2966ffb3239bbfd89683e37b7",
+  "reasoning": "Make share URLs and open graph links derive from configured base URL instead of the request host, across Go server code and tests; moderate.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ }
+]

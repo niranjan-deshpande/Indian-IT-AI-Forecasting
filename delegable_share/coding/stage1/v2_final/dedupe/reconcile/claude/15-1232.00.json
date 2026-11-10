@@ -1,0 +1,4 @@
+[
+  {"a": "1282b", "b": "1288b", "reasoning": "Answering a written user question from the ticket queue through to closure is the same afterwards, ticket-based work as investigating and resolving a ticketed problem, with the same inputs, actions and output. The extra escalation or open-from-a-contact starts in 1288b are minor variants, so keeping both would count the same ticket work twice.", "duplicate": true},
+  {"a": "1283b", "b": "1285b", "reasoning": "Both are a scheduled start-of-day round of checking servers and systems through commands or monitoring data, recording the status and raising any errors as tickets. The same worker doing one has done the other, so the two would double-count the same daily check.", "duplicate": true}
+]

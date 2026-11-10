@@ -1,0 +1,9 @@
+model,provider,release_date,score,score_kind,n_items,eval_date,source_url,notes
+Claude Opus 4.6,Anthropic,2026-02-05,0.3489,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; paper's SWE-agent-based scaffold thinking mode; release dates from memory - verify; eval date = paper period (exact run dates not stated)
+GPT-5.2,OpenAI,2025-12-11,0.2679,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold
+Gemini 3.1 Pro,Google,2026-02-19,0.2368,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold
+GLM-5,Zhipu AI,2026-02-11,0.1714,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold
+DeepSeek-V3.2,DeepSeek,2025-12-01,0.1558,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold; V3.2-Exp was 2025-09-29
+Kimi K2.5,Moonshot AI,2026-01-27,0.1464,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold
+Qwen3.5-397B-A17B,Alibaba,2026-02-16,0.1122,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold
+MiniMax M2.5,MiniMax,2026-02-12,0.0717,overall task accuracy (full-output match; Visualization = mean rubric pass rate),321,2026-06,https://arxiv.org/abs/2606.29955,Table 3; same scaffold

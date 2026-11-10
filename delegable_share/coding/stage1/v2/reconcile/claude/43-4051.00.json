@@ -1,0 +1,27 @@
+[
+  {
+    "task_id": "2579",
+    "reasoning": "Both split the remedy by where it is done (live vs afterwards), as Example D asks. X adds a PHYSICAL part for handling merchandise, but most customer service representatives work at a computer or phone and do not physically receive goods, so the 15% physical share is not typical of this occupation. Y's two-part split and its work items (remedy entered during a contact; a written complaint case closed) follow the instructions more cleanly.",
+    "choice": "Y"
+  },
+  {
+    "task_id": "2582",
+    "reasoning": "The statement is about referring grievances for further investigation, which today means writing an escalation ticket or referral that the receiving department works from; this is usually done in wrap-up after the customer has been told about the escalation. Y's live part mixes this with call transfers, which belong to the live conversation (18565) rather than producing a referral for investigation. X's single DISCRETE part with a referral ticket as the work item fits better.",
+    "choice": "X"
+  },
+  {
+    "task_id": "2583",
+    "reasoning": "Quoting a charge and collecting a deposit or payment are done while the customer is on the line or at the desk, so the activity is almost entirely live. Y's back-office part is vague, and its 30% share is not well supported; processing mailed payments would be billing-clerk work rather than this statement. X's single LIVE_SERVICE part, with a note that some billing set-up happens later, follows the instructions better.",
+    "choice": "X"
+  },
+  {
+    "task_id": "2584",
+    "reasoning": "Contract forms, address changes and discontinuance orders are similar kinds of item, all account paperwork entered on the computer, so the statement lists alternative items for one activity rather than different activities. The real difference is where the work is done, and Y splits it that way. X's four-way split adds detail without following any distinction the instructions call for.",
+    "choice": "Y"
+  },
+  {
+    "task_id": "18565",
+    "reasoning": "Both split the live contacts by kind of item. Taking an order and cancelling an account are similar 'enter and confirm on the spot' items, so Y's merge is reasonable. X gives the person who took the complaint as its own checker, which does not meet the requirement that someone else checks or relies on the work, while Y names the staff who act on the complaint. Y follows the instructions slightly better.",
+    "choice": "Y"
+  }
+]

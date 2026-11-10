@@ -1,0 +1,265 @@
+[
+  {
+    "task_id": "2578",
+    "split_reasoning": "One activity: writing up each customer contact or transaction; inquiries, complaints, and comments are just different contents of the same record.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Record the details of a customer interaction or transaction, including the inquiry, complaint, or comment and the actions taken.",
+        "time_share": 1.0,
+        "type_reasoning": "Each write-up is a distinct account note that colleagues and later reps rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Reps write one note per contact in the CRM or account system; this is the step's own output, separate from handling the contact itself.",
+        "work_item": "one interaction record written after a customer contact",
+        "start": "customer contact or transaction ends (or wrap-up time begins)",
+        "end": "note with reason for contact, details, and actions taken saved to the customer's account",
+        "checked_by": "other reps who handle the account later; quality-assurance reviewer or supervisor",
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "2579",
+    "split_reasoning": "Exchanging merchandise, refunding money, and adjusting bills are alternative remedies for the same deliverable, a resolved complaint, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Resolve a customer's service or billing complaint by processing an exchange, refund, or bill adjustment.",
+        "time_share": 1.0,
+        "type_reasoning": "Each complaint ends in a processed remedy that the customer and billing/finance rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Complaints are handled and closed one case at a time, with the remedy transaction as the handed-over output.",
+        "work_item": "one complaint resolved with an exchange, refund, or bill adjustment processed",
+        "start": "complaint accepted as valid and remedy chosen",
+        "end": "exchange, refund, or adjustment entered in the system and case marked resolved",
+        "checked_by": "customer; billing or finance team; supervisor who approves adjustments above limits",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Boundary with 2585 (assessing complaint validity) and 18565 (taking complaint details) is a judgment; this part covers only the remedy step."
+  },
+  {
+    "task_id": "2580",
+    "split_reasoning": "One activity: verifying that a promised fix actually took effect.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Check that the changes made to resolve a customer's problem (e.g. an adjustment, order, or account change) were actually carried out.",
+        "time_share": 1.0,
+        "type_reasoning": "Each check produces a confirmed (or reopened) case that the customer and team rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Follow-up checks are done per case, typically from a follow-up queue or callback reminder.",
+        "work_item": "one resolved case verified (follow-up check on a customer's fix)",
+        "start": "follow-up reminder or case due for verification",
+        "end": "change confirmed in the account/order system and case closed, or discrepancy flagged and case reopened",
+        "checked_by": "customer; supervisor or quality reviewer",
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "2581",
+    "split_reasoning": "Responding to inquiries and notifying customers of claim results or adjustments are both outbound customer contacts that deliver an answer or outcome, so they are treated as one activity.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Contact a customer (by phone, email, or letter) to answer a pending inquiry or to tell them the outcome of a claim investigation or a planned adjustment.",
+        "time_share": 1.0,
+        "type_reasoning": "Each contact delivers a specific answer or decision the customer relies on, whether by call or written notice.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Outbound contacts are worked one case at a time from a callback or notification queue.",
+        "work_item": "one outbound customer response or notification sent/completed",
+        "start": "case reaches a decision or pending inquiry is ready for reply",
+        "end": "customer reached (or written notice sent) with the answer, outcome, or planned adjustment, and contact logged",
+        "checked_by": "customer; supervisor or quality reviewer",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Could be split into 'answer pending inquiries' vs 'notify claim outcomes'; also could be LIVE_SERVICE when done by phone. The inquiry-answering portion is close to 18565."
+  },
+  {
+    "task_id": "2582",
+    "split_reasoning": "One activity: escalating an unresolved grievance to another department.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Refer an unresolved customer grievance to the designated department for further investigation.",
+        "time_share": 1.0,
+        "type_reasoning": "Each referral is a hand-off package the receiving department relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Referrals are made as one escalation ticket or transfer per grievance; this is the step's own output.",
+        "work_item": "one escalation/referral of an unresolved grievance",
+        "start": "rep determines the grievance cannot be resolved at their level",
+        "end": "escalation ticket with case summary routed to the designated department and customer informed",
+        "checked_by": "receiving department (e.g. claims, billing, investigations); supervisor",
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "2583",
+    "split_reasoning": "Determining charges, collecting a deposit or payment, and arranging billing are successive steps in settling one service request's money side, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Determine the charges for a customer's requested service and collect the deposit or payment or set up billing for it.",
+        "time_share": 1.0,
+        "type_reasoning": "Each request ends in a priced, paid-or-billed transaction that finance relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Charges and payments are entered per service request or account transaction.",
+        "work_item": "one service request priced and payment collected or billing arranged",
+        "start": "customer requests a service",
+        "end": "charges calculated and quoted, and payment/deposit posted or billing set up on the account",
+        "checked_by": "customer; billing/finance team; cash reconciliation or audit",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Usually done during a live call (18565); in-person payment collection may involve some cash handling."
+  },
+  {
+    "task_id": "2584",
+    "split_reasoning": "Contract forms, change-of-address records, and discontinuance orders are different document types but the same kind of work: processing an account change on the computer, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Complete a contract form, change-of-address record, or service discontinuance order in the computer system.",
+        "time_share": 1.0,
+        "type_reasoning": "Each form or order is a distinct record that downstream teams act on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each account change is entered and submitted as one form or order.",
+        "work_item": "one account form or service order completed (contract, address change, or discontinuance)",
+        "start": "customer request with needed details received",
+        "end": "form or order completed and submitted in the system",
+        "checked_by": "downstream fulfilment/service teams; billing; customer",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Partly overlaps 18565, which mentions taking orders and cancelling accounts during the conversation; this statement covers the back-end paperwork."
+  },
+  {
+    "task_id": "2585",
+    "split_reasoning": "One activity: investigating a complaint to judge its validity and likely cause; the listed information sources are inputs.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Gather and examine the relevant information on a customer complaint to decide whether it is valid and what likely caused it.",
+        "time_share": 1.0,
+        "type_reasoning": "Each investigation ends in a validity finding that the resolution step relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Complaints are investigated one case at a time, ending in a recorded determination.",
+        "work_item": "one complaint investigated with validity and probable cause recorded",
+        "start": "complaint details received",
+        "end": "determination (valid/not valid, probable cause) recorded on the case",
+        "checked_by": "supervisor; billing or claims department; customer via the eventual decision",
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "2586",
+    "split_reasoning": "One activity: pitching new or additional products or services to customers.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Solicit sales of new or additional services or products from customers.",
+        "time_share": 1.0,
+        "type_reasoning": "The value is in persuading the customer during the live contact; any resulting order is entered under another statement.",
+        "type": "INTERPERSONAL",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Could alternatively be LIVE_SERVICE with 'one sales offer made / order taken' as the item; the order entry itself overlaps 18565."
+  },
+  {
+    "task_id": "2587",
+    "split_reasoning": "One activity: making a coverage determination for a reported loss.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review the terms of a customer's insurance policy to determine whether a reported loss is covered.",
+        "time_share": 1.0,
+        "type_reasoning": "Each review produces a coverage decision that the customer and claims staff rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Coverage is checked per reported loss or claim inquiry.",
+        "work_item": "one coverage determination for a reported loss",
+        "start": "customer reports a loss or asks whether it is covered",
+        "end": "coverage decision (covered / not covered / refer) recorded and communicated",
+        "checked_by": "claims adjuster or supervisor; customer",
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "2589",
+    "split_reasoning": "Two activities: physically comparing returned merchandise against the requisition and invoice, and then preparing an invoice for the returned goods at a computer.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Inspect disputed or returned merchandise and compare it with the original requisition and invoice details.",
+        "time_share": 0.4,
+        "type_reasoning": "Requires handling and examining the physical goods away from a computer.",
+        "type": "PHYSICAL",
+        "overlaps_with": []
+      },
+      {
+        "part_id": "b",
+        "text": "Prepare an invoice (credit or return invoice) for returned goods.",
+        "time_share": 0.6,
+        "type_reasoning": "Each return produces an invoice that billing and the customer rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Return invoices are prepared one per return or dispute.",
+        "work_item": "one return invoice prepared for a disputed shipment",
+        "start": "comparison of returned goods against requisition and invoice completed",
+        "end": "return/credit invoice issued and posted to the account",
+        "checked_by": "billing/accounts receivable; customer",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Whether the comparison is hands-on depends on the setting; if done from documents only, part a would be DISCRETE and merge with b."
+  },
+  {
+    "task_id": "2591",
+    "split_reasoning": "One activity: proposing changes to prevent recurring problems; products, packaging, shipping, service, and billing are just subject areas.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Recommend improvements to products, packaging, shipping, service, or billing procedures to prevent future customer problems.",
+        "time_share": 1.0,
+        "type_reasoning": "Each recommendation is a written suggestion that management reviews and may act on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Reps hand over recommendations as individual suggestions or feedback submissions, often based on recurring complaints.",
+        "work_item": "one improvement recommendation submitted",
+        "start": "rep notices a recurring problem pattern",
+        "end": "written suggestion or feedback submitted to supervisor or the responsible department",
+        "checked_by": "supervisor or management of the responsible department",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Some recommendations may be given verbally in team meetings, which would be INTERPERSONAL."
+  },
+  {
+    "task_id": "18565",
+    "split_reasoning": "Providing information, taking orders, cancelling accounts, and taking complaint details are different request types handled within the same live customer contact, so no split.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Handle a customer's phone or in-person contact: provide product or service information, take or enter an order, cancel an account, or take details of a complaint.",
+        "time_share": 1.0,
+        "type_reasoning": "A live conversation with a customer that ends in a resolved request or a record of it.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "The call or walk-up contact is the unit that enters the queue and is closed.",
+        "work_item": "one customer call or walk-up contact handled",
+        "start": "customer's call is answered or customer approaches the counter",
+        "end": "information given, order entered, account cancelled, or complaint details captured, and contact ends",
+        "checked_by": "customer; quality-assurance call monitoring or supervisor",
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Record-keeping after the contact is 2578; back-end form completion is 2584."
+  }
+]

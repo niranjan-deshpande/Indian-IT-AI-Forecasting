@@ -1,0 +1,6 @@
+{"gdpval": "human_expert", "sweeper_bench": "llm_judge", "swt_bench": "tests", "swe_bench_pro": "tests",
+ "tau_retail_airline": "state", "tau_telecom": "state", "tau_banking": "state", "tau_voice": "state",
+ "eva_bench": "state", "crmarena_pro": "exact_answer", "sopbench": "state",
+ "workarena_l1": "state", "workarena_pp": "state", "starshell": "state", "osworld_verified": "state",
+ "finch": "llm_judge", "spreadsheetbench_2": "state",
+ "terminal_bench_2": "tests", "terminal_bench_1": "tests", "itbench_sre": "exact_answer"}

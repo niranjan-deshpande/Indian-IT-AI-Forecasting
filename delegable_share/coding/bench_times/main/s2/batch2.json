@@ -1,0 +1,674 @@
+[
+ {
+  "item_id": "workarena_l1:sort-asset-list",
+  "reasoning": "Open assets list, use sort dialog or column headers for two fields, verify order.",
+  "estimate_min": 1.5,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "finch:82",
+  "reasoning": "Build a correlation table with CORREL formulas of NBSK against each paper series, label headers, check ranges.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 15
+ },
+ {
+  "item_id": "finch:70",
+  "reasoning": "Insert a labeled blank row under each support department in the plan sheet; need to check formulas/totals are not broken.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "crmarena_pro:b2c:878",
+  "reasoning": "Write SOQL over orders/opportunities/contracts filtered to Fall 2024 signed dates, compute quantity*price per agent, find the max; needs schema exploration and several queries.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "tau_voice:telecom:[service_issue]airplane_mode_on|break_apn_settings|overdue_bill_suspension[PERSONA:None]",
+  "reasoning": "Verify customer, follow manual through three causes, walk through device steps, send payment request, resume line; live phone call of about 7 actions.",
+  "estimate_min": 18,
+  "low_min": 12,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_banking:task_068",
+  "reasoning": "Find the right policies among many documents for savings/checking choice, verify identity, open two accounts, handle card and closure; a long multi-step chat with research.",
+  "estimate_min": 30,
+  "low_min": 20,
+  "high_min": 50
+ },
+ {
+  "item_id": "itbench_sre:Scenario-38",
+  "reasoning": "Cost-variation alert with no obvious error; must dig through metrics, events and configs to find the entity causing the cost change; open-ended investigation.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 70
+ },
+ {
+  "item_id": "eva_bench:medical_hr:4.1",
+  "reasoning": "Verify caller, look up checklist, mark two tasks, check availability, schedule appointment; 7 tool calls on a call.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 12
+ },
+ {
+  "item_id": "workarena_l1:order-standard-laptop",
+  "reasoning": "Navigate to catalog hardware store, open the laptop, fill the software text and two checkboxes, order.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 5
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.create-user:387",
+  "reasoning": "Fill about 16 fields in the new user form, including several dropdowns and odd text, then save.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "terminal_bench_2:torch-tensor-parallelism",
+  "reasoning": "Implement column and row parallel linear layers with sharding and distributed semantics; needs care with gradients and testing with several world sizes.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 60
+ },
+ {
+  "item_id": "osworld_verified:cb130f0d-d36f-4302-9838-b3baf46139b6",
+  "reasoning": "Infeasible request; quickly check VLC for an auto-adjust option and report that none exists.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 4
+ },
+ {
+  "item_id": "gdpval:ec591973-04d5-48c0-981c-1ab2fcec2dc1",
+  "reasoning": "One executive strategy slide requiring thoughtful framing across channels plus design polish; strategy director would take a couple of hours.",
+  "estimate_min": 100,
+  "low_min": 60,
+  "high_min": 180
+ },
+ {
+  "item_id": "finch:153",
+  "reasoning": "Add spread column and three log-return columns with formulas, fill down, move the date column to the end; check.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 20
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-sales-laptop:612",
+  "reasoning": "Order six Sales Laptops with a text field and several checkbox options in the catalog form.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "terminal_bench_1:super-benchmark-upet",
+  "reasoning": "Clone repo, read readme, install deps, download data, run training with specified settings, debug errors, and report accuracy; setup friction likely.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "gdpval:43dc9778-450b-4b46-b77e-b6d82b202035",
+  "reasoning": "Prepare a full 1040 with many forms (W-2s, interest, dividends, capital gains, childcare, LTC, student loan, mortgage); data entry and checking in tax software.",
+  "estimate_min": 150,
+  "low_min": 90,
+  "high_min": 240
+ },
+ {
+  "item_id": "swe_bench_pro:instance_ansible__ansible-a7d2a4e03209cff1e97e59fd54bb2b05fdbdbec6-v0f01c69f1e2528b935359cfe578530722bca2c59",
+  "reasoning": "Add proxy_display decorator and route display/warning/deprecated through the final queue across a few files, with forking subtleties; needs understanding of ansible's worker model.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "terminal_bench_2:llm-inference-batching-scheduler",
+  "reasoning": "Design a batching heuristic against a cost model with shape limits across two buckets, iterate to meet thresholds; optimization with testing.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "workarena_l1:order-ipad-mini",
+  "reasoning": "Order three iPad minis choosing colour and storage in the catalog form.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 5
+ },
+ {
+  "item_id": "eva_bench:medical_hr:D8.1",
+  "reasoning": "Verify, check timesheet and eligibility, submit correction, notify manager, then shift swap with certification checks and second notification; 10 calls, two intents.",
+  "estimate_min": 14,
+  "low_min": 9,
+  "high_min": 22
+ },
+ {
+  "item_id": "workarena_pp:l3/planning_and_problem_solving/MARK_DUPLICATE/011",
+  "reasoning": "Find protocol, filter problems by hashtag, compare to identify duplicates, mark them, close ticket; moderate reading and comparison.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "crmarena_pro:b2b:1376",
+  "reasoning": "Query the opportunity and its tasks, judge the correct stage against the stage definitions; a few queries and reasoning.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "sopbench:bank:transfer_funds:18",
+  "reasoning": "Check username, admin password and balance against SOP and decline; short sequence of lookups and a response.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "gdpval:e996036e-8287-4e7f-8d0a-90a57cb53c45",
+  "reasoning": "Build an Excel scenario model comparing three terms structures with margin, payment terms and allowances plus recommendation; modeling and summary for leadership.",
+  "estimate_min": 120,
+  "low_min": 75,
+  "high_min": 210
+ },
+ {
+  "item_id": "workarena_l1:impersonation",
+  "reasoning": "Use the user menu to impersonate a named user via search; a few clicks.",
+  "estimate_min": 1.5,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "swe_bench_pro:instance_ansible__ansible-cd473dfb2fdbc97acf3293c134b21cbbcfa89ec3-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+  "reasoning": "Reproduce a crash on invalid hosts value, find the type check spot in the play loader, add a clear error and ensure tests pass; small targeted fix.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "terminal_bench_1:path-tracing-reverse",
+  "reasoning": "Reverse-engineer a compiled binary output (likely a ray tracer) to produce identical C source under a size limit; disassembly and matching exact output.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "sopbench:online_market:use_coupon:8",
+  "reasoning": "Login, check order, coupon validity and expiry, apply the coupon; a few lookups.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "osworld_verified:236833a3-5704-47fc-888c-4f298f09f799",
+  "reasoning": "Browse HF daily papers for a date and transcribe metadata for many papers into a docx matching format; 255 GUI actions.",
+  "estimate_min": 40,
+  "low_min": 25,
+  "high_min": 70
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-082",
+  "reasoning": "Explore admin profile settings in IDURAR, find a hidden bug and fix the code; exploratory debugging in a Node/React app.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "eva_bench:itsm:72",
+  "reasoning": "Verify, check entitlement and budget, submit three requests including OTP step; 11 calls.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 25
+ },
+ {
+  "item_id": "starshell:gitlab:gitlab.create-issue:9",
+  "reasoning": "Open a new issue with a brief title and short description in GitLab.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "eva_bench:itsm:77",
+  "reasoning": "Verify, troubleshoot, ticket, SLA, dispatch, then three more requests with entitlement/budget checks and return; 17 calls, four intents.",
+  "estimate_min": 25,
+  "low_min": 16,
+  "high_min": 40
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-ipad-mini:233",
+  "reasoning": "Order four iPad minis with colour and storage selections.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 5
+ },
+ {
+  "item_id": "spreadsheetbench_2:Template:06_03",
+  "reasoning": "Complete a multi-sheet financial model from assumptions: fill formulas, link statements, check balances; substantial modeling.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "osworld_verified:dbbf4b99-2253-4b10-9274-45f246af2466",
+  "reasoning": "Open the RAW file in GIMP and export as JPEG; a couple of dialogs.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "finch:76",
+  "reasoning": "Bold titles and add row borders between departments in a table; formatting only.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-apple-watch:129",
+  "reasoning": "Order seven Apple Watches with no config.",
+  "estimate_min": 2.5,
+  "low_min": 1.5,
+  "high_min": 4
+ },
+ {
+  "item_id": "gdpval:5e2b6aab-f9fb-4dd6-a1a5-874ef1743909",
+  "reasoning": "Concept design of a rugged flashlight with CAD models of all components, assemblies in STEP and 2D drawings; many hours of CAD work.",
+  "estimate_min": 600,
+  "low_min": 360,
+  "high_min": 1000
+ },
+ {
+  "item_id": "terminal_bench_1:nginx-request-logging",
+  "reasoning": "Install nginx, write config with log format and rate limiting, create pages, start and test; routine sysadmin work.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "gdpval:e6429658-4de1-42dd-a9e0-2d2b9b02fb10",
+  "reasoning": "Write a 2-4 page medical necessity appeal from the chart and fill the AbbVie PAP form digitally; reading, writing, form filling.",
+  "estimate_min": 90,
+  "low_min": 60,
+  "high_min": 150
+ },
+ {
+  "item_id": "eva_bench:medical_hr:1.2",
+  "reasoning": "Verify, pull profile and license, check eligibility; duplicates found, decline; 4 calls.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "terminal_bench_2:model-extraction-relu-logits",
+  "reasoning": "Recover first-layer weights of a ReLU net via black-box queries (known cryptanalytic attack); needs algorithm design and numerics.",
+  "estimate_min": 100,
+  "low_min": 50,
+  "high_min": 200
+ },
+ {
+  "item_id": "tau_voice:retail:48",
+  "reasoning": "Authenticate by name and zip, locate order, confirm return details, process return, check second item eligibility; phone call.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 18
+ },
+ {
+  "item_id": "finch:8",
+  "reasoning": "Compile every US federal shutdown 1976-2024 with presidents, leaders, furlough counts, losses, disputes, then four aggregate subtasks with formulas; heavy research and building.",
+  "estimate_min": 150,
+  "low_min": 90,
+  "high_min": 300
+ },
+ {
+  "item_id": "starshell:servicenow:workarena.servicenow.order-loaner-laptop:770",
+  "reasoning": "Order a loaner laptop with two form answers.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 5
+ },
+ {
+  "item_id": "itbench_sre:Scenario-26",
+  "reasoning": "No alert listed; must scan the snapshot broadly for what is wrong; open-ended investigation.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "sopbench:healthcare:update_policy:24",
+  "reasoning": "Login, check policy, enrollment period, income proof, claims, then update; several lookups.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "crmarena_pro:b2c:394",
+  "reasoning": "Query cases/issues for the product over six months from the given date and count by issue; a couple of SOQL queries.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "finch:171",
+  "reasoning": "Add a sheet computing total DEL by departmental group from resource and capital DEL excluding depreciation; locate the tables and build formulas.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "terminal_bench_2:count-dataset-tokens",
+  "reasoning": "Read the README, filter dataset by domain, load tokenizer, count tokens and write answer; some pitfalls with dataset fields.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "itbench_sre:Scenario-11",
+  "reasoning": "Alerts point at fraud-detection with a feature flag delay; check the flag ConfigMap/flagd and confirm; fairly directed investigation.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "osworld_verified:9bc3cc16-074a-45ac-9bdc-b2a362e1daf3",
+  "reasoning": "Export inbox emails as separate eml files in Thunderbird via select-all and save as.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "gdpval:94925f49-36bc-42da-b45b-61078d329300",
+  "reasoning": "Five PDF reports with school details and nearby listings under budget from web sources; extensive research and layout.",
+  "estimate_min": 240,
+  "low_min": 150,
+  "high_min": 400
+ },
+ {
+  "item_id": "terminal_bench_1:decommissioning-service-with-sensitive-data",
+  "reasoning": "Tar, gpg encrypt, shred files, remove dirs; simple ordered commands.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 20
+ },
+ {
+  "item_id": "eva_bench:medical_hr:6.1",
+  "reasoning": "Verify with OTP, check eligibility, submit FMLA case, notify, schedule check-in; 9 calls.",
+  "estimate_min": 11,
+  "low_min": 7,
+  "high_min": 16
+ },
+ {
+  "item_id": "tau_telecom:telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+  "reasoning": "Diagnose five causes via manual, guide four device steps, enable roaming; a long chat.",
+  "estimate_min": 20,
+  "low_min": 12,
+  "high_min": 30
+ },
+ {
+  "item_id": "workarena_l1:all-menu",
+  "reasoning": "Find the Knowledge application's Guided Setup module in the nav menu.",
+  "estimate_min": 1.5,
+  "low_min": 1,
+  "high_min": 3
+ },
+ {
+  "item_id": "eva_bench:medical_hr:D1.3",
+  "reasoning": "Verify with OTP, check license extension, privileges and reactivation eligibility, explain outstanding blockers; 9 calls, no change.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 18
+ },
+ {
+  "item_id": "tau_retail_airline:retail:78",
+  "reasoning": "Authenticate, change address, exchange a makeup kit, cancel an order, with confirmations; three actions.",
+  "estimate_min": 15,
+  "low_min": 10,
+  "high_min": 22
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-062",
+  "reasoning": "Explore Friendica profile settings, find a seeded bug and fix in PHP; exploratory debugging.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "workarena_pp:l3/sophisticated_memory/NAV_FILTER/001",
+  "reasoning": "Find protocol, open incident list, build a filter with two conditions, close ticket.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 12
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-029",
+  "reasoning": "Explore Craft CMS field setup UI, find the fault and fix; larger codebase, exploratory.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "sopbench:library:update_membership:1",
+  "reasoning": "Login, check balance and fee, decline; short.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "swe_bench_pro:instance_future-architect__vuls-d576b6c6c15e56c47cc3e26f5878867677d4a9ea",
+  "reasoning": "Make major(\"\") return empty; trivial edit plus a test after locating the function.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_retail_airline:airline:0",
+  "reasoning": "Get user, look up reservation, check rules, refuse the cancellation and explain.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 12
+ },
+ {
+  "item_id": "crmarena_pro:b2c:1174",
+  "reasoning": "Query closed cases in three months by state, compute average duration, pick the best; a couple of queries.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "tau_banking:task_059",
+  "reasoning": "Research policies for credit card and savings choice to maximise net return, verify, list accounts, apply card, open savings; moderate research.",
+  "estimate_min": 22,
+  "low_min": 14,
+  "high_min": 35
+ },
+ {
+  "item_id": "tau_voice:telecom:[mms_issue]bad_wifi_calling|data_mode_off|data_usage_exceeded[PERSONA:Easy]",
+  "reasoning": "Verify, diagnose three causes, guide two device steps, refuel data; short phone call.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 18
+ },
+ {
+  "item_id": "swe_bench_pro:instance_ansible__ansible-d72025be751c894673ba85caa063d835a0ad3a8c-v390e508d27db7a51eece36bb6d9698b63a5b638a",
+  "reasoning": "Rework nxos_interfaces default enabled logic across platforms, states and interface types, with idempotence; large module change with hidden tests.",
+  "estimate_min": 240,
+  "low_min": 120,
+  "high_min": 480
+ },
+ {
+  "item_id": "tau_retail_airline:retail:83",
+  "reasoning": "Authenticate by name and zip, find the order, identify the pricier tablet, return refunding appropriately.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 15
+ },
+ {
+  "item_id": "osworld_verified:2a729ded-3296-423d-aec4-7dd55ed5fbb3",
+  "reasoning": "Make image background transparent in GIMP (add alpha, select by color, delete).",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "workarena_pp:l3/information_retrieval/WARRANTY_CHECK/003",
+  "reasoning": "Find protocol, look up the user's laptop asset, read warranty date, report and close.",
+  "estimate_min": 8,
+  "low_min": 5,
+  "high_min": 14
+ },
+ {
+  "item_id": "swt_bench:matplotlib__matplotlib-25332",
+  "reasoning": "Write a test that pickles a figure after align_labels; place in test_pickle, run to confirm failure.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "itbench_sre:Scenario-80",
+  "reasoning": "Network partition affecting checkout; find the chaos-mesh object causing it; fairly directed.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "gdpval:b7a5912e-0e63-41f5-8c22-9cdb8f46ab01",
+  "reasoning": "Build Excel report with summary metrics, per-category breakdown, source and payment summaries and observations from a rental spreadsheet.",
+  "estimate_min": 60,
+  "low_min": 35,
+  "high_min": 100
+ },
+ {
+  "item_id": "tau_retail_airline:retail:89",
+  "reasoning": "Authenticate, find cheapest mechanical keyboard and options, tell the customer, return current one.",
+  "estimate_min": 12,
+  "low_min": 8,
+  "high_min": 18
+ },
+ {
+  "item_id": "finch:6",
+  "reasoning": "Write a 300-word economic analysis with charts from the table; reading data, charts and writing.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 80
+ },
+ {
+  "item_id": "itbench_sre:Scenario-14",
+  "reasoning": "Error rates across frontend, payment and checkout; trace to the shared root cause; moderate investigation.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "terminal_bench_1:raman-fitting.easy",
+  "reasoning": "Convert data, fit two Lorentzians with scipy, write JSON; fitting guess tuning needed.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "workarena_pp:l3/contextual_understanding_infeasible_tasks/INF_NAV_ORDER_REASON/002",
+  "reasoning": "Find protocol, open iPad pro form, notice unsupported storage, report reason, close skipped.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "eva_bench:airline:3.1.5",
+  "reasoning": "Verify, get reservation, search rebooking options within constraints, rebook, assign seat, add baggage; 5 calls.",
+  "estimate_min": 11,
+  "low_min": 7,
+  "high_min": 16
+ },
+ {
+  "item_id": "swt_bench:django__django-16899",
+  "reasoning": "Add tests for readonly_fields check message including field name; update existing check tests; find test file and run.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "itbench_sre:Scenario-18",
+  "reasoning": "Frontend error rate with chaos-mesh in scope; find injected fault; moderate investigation.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "terminal_bench_1:sqlite-db-truncate",
+  "reasoning": "Recover rows from a truncated sqlite file via parsing raw pages or tooling; forensic work with trial and error.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "sopbench:university:change_major:0",
+  "reasoning": "Login and check GPA, period, changes, credits, capacity then change major; seven lookups.",
+  "estimate_min": 10,
+  "low_min": 6,
+  "high_min": 16
+ },
+ {
+  "item_id": "swt_bench:sympy__sympy-18199",
+  "reasoning": "Write a test for nthroot_mod(17*17,5,17) including root 0; locate test file and run.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "tau_banking:task_014",
+  "reasoning": "Check KB for referral program, find it is not confirmed, transfer to human; moderate research.",
+  "estimate_min": 14,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-108",
+  "reasoning": "Explore Mautic contact management, find the bug and fix in PHP; exploratory.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "terminal_bench_1:raman-fitting",
+  "reasoning": "Parse unknown data format, fit two Lorentzian peaks, write JSON; no hints on file conversion.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-158",
+  "reasoning": "Explore REDAXO backend user management, find a bug and fix.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "terminal_bench_1:train-fasttext",
+  "reasoning": "Train fasttext on Yelp data to hit 0.62 accuracy under 150MB; hyperparameter tuning and quantization iterations.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "workarena_l1:create-incident",
+  "reasoning": "Fill about 14 fields in the incident form, some dropdowns and reference lookups, save.",
+  "estimate_min": 6,
+  "low_min": 4,
+  "high_min": 10
+ },
+ {
+  "item_id": "sweeper_bench:sweeper-113",
+  "reasoning": "Explore Miniflux feed settings, find a bug in Go code and fix.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "finch:48",
+  "reasoning": "Review income statement for mis-entered figures by checking totals and formulas, then correct.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ }
+]

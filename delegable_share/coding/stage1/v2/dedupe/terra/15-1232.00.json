@@ -1,0 +1,9 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both cover a live user contact to address a computer problem, ending when the user confirms the answer or fix or the issue is logged for follow-up.",
+   "a": "1282a",
+   "b": "1288a"
+  }
+ ]
+}

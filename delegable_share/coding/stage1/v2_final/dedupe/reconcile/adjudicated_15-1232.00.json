@@ -1,0 +1,4 @@
+[
+  {"a": "1282b", "b": "1288b", "reasoning": "Answering a written how-to question by email or ticket produces an answer, while 1288b requires diagnosing a problem and applying a fix (and also takes in problems carried over from live contacts), so the inputs, actions and outputs differ enough that one does not make the other redundant.", "duplicate": false},
+  {"a": "1283b", "b": "1285b", "reasoning": "Both are a scheduled start-of-day round of checking the state of the systems, recording the status and raising any errors as tickets; whether that is done by running commands or pulling monitoring data and logs is just a difference in method, so keeping both would count the same daily check twice.", "duplicate": true}
+]
