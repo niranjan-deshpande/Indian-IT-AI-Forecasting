@@ -360,11 +360,17 @@ def group_of(pilot, bpo, extra):
     return g
 
 
+# One-sentence O*NET 31.0 descriptions (first sentence of "Occupation Data"), shown on hover in Figure 5.
+_desc = DS / "data" / "occupation_descriptions.csv"
+OCC_DESC = dict(pd.read_csv(_desc)[["occupation_title", "description"]].values) if _desc.exists() else {}
+
+
 def groups_data(runs, groups):
     rows = []
     for run in runs:
         for o in run.occs:
-            rows.append({"g": groups[o], "occ": occ_short(o), "S1": round(100 * run.agg[(BASE, o)]["S"], 2),
+            rows.append({"g": groups[o], "occ": occ_short(o), "desc": OCC_DESC.get(o, ""),
+                         "S1": round(100 * run.agg[(BASE, o)]["S"], 2),
                          "S5": round(100 * run.agg[(RHO5, o)]["S"], 2)})
     order = [k for k, _ in GROUP_ORDER]
     rows.sort(key=lambda r: (order.index(r["g"]), r["S1"]))
@@ -1085,6 +1091,11 @@ function figTimeline(id, d) {
   lay.annotations = ann; lay.shapes = shapes; draw(el, traces, lay); el.dataset.narrow = narrow;
 }
 
+function wrapText(s, n) {  /* break a long line into <br>-separated lines of at most ~n characters */
+  const out = []; let line = "";
+  (s || "").split(" ").forEach(w => { if (line && (line + " " + w).length > n) { out.push(line); line = w; } else line = line ? line + " " + w : w; });
+  if (line) out.push(line); return out.join("<br>");
+}
 const TREND_COL = ["#235fa6", "#b0702a", "#2f8a57", "#c0607e", "#8f68a6", "#ae8a2c", "#4fa3c7", "#5c5c5c"];
 /* S for every occupation, grouped (dot plot); filled = rho 1, hollow = rho 0.5 */
 function figGroups(id, d) {
@@ -1095,15 +1106,25 @@ function figGroups(id, d) {
     if (!rs.length) return;
     traces.push({ type: "scatter", mode: "markers", y: rs.map(r => r.occ), x: rs.map(r => r.S5), name: d.labels[g] + ", ρ = 0.5",
       marker: { size: 9, color: "rgba(0,0,0,0)", line: { color: d.cols[g], width: 1.8 } }, showlegend: false,
-      hovertemplate: "%{y}: S = %{x:.0f}%<extra>ρ = 0.5</extra>" });
+      customdata: rs.map(r => [wrapText(r.desc, 60), r.S1]),
+      hovertemplate: "<b>%{y}</b>: S = %{x:.0f}% at ρ = 0.5 (ρ = 1: %{customdata[1]:.0f}%)<br><span style='font-size:11.5px'>%{customdata[0]}</span><extra></extra>" });
     traces.push({ type: "scatter", mode: "markers", y: rs.map(r => r.occ), x: rs.map(r => r.S1), name: d.labels[g],
-      marker: { size: 10, color: d.cols[g] }, hovertemplate: "%{y}: S = %{x:.0f}%<extra>ρ = 1</extra>" });
+      customdata: rs.map(r => [wrapText(r.desc, 60), r.S5]), marker: { size: 10, color: d.cols[g] },
+      hovertemplate: "<b>%{y}</b>: S = %{x:.0f}% (ρ = 0.5: %{customdata[1]:.0f}%)<br><span style='font-size:11.5px'>%{customdata[0]}</span><extra></extra>" });
   });
   draw(el, traces, { hovermode: "closest", height: 60 + 19 * ys.length, margin: { l: narrow ? 128 : 150, r: 12, t: 8, b: 36 },
     showlegend: false,
     xaxis: axis({ range: [0, 60], ticksuffix: "%", dtick: 10 }),
     yaxis: axis({ type: "category", categoryarray: ys, categoryorder: "array", autorange: "reversed", ticks: "", tickfont: small(11.5) }) });
   el.dataset.narrow = narrow;
+  // Hovering a job's name shows its O*NET description (native tooltip on the tick label).
+  const desc = Object.fromEntries(d.rows.map(r => [r.occ, r.desc]));
+  const label = () => el.querySelectorAll(".ytick text").forEach(t => {
+    const s = desc[[...t.childNodes].filter(n => n.nodeName !== "title").map(n => n.textContent).join("")]; if (!s) return;
+    let tt = t.querySelector("title"); if (!tt) { tt = document.createElementNS("http://www.w3.org/2000/svg", "title"); t.appendChild(tt); }
+    tt.textContent = s; t.style.pointerEvents = "all"; t.style.cursor = "help";
+  });
+  label(); if (!el.dataset.descHook) { el.on("plotly_afterplot", label); el.dataset.descHook = 1; }
 }
 
 /* record-setting horizon by model release date, per benchmark (log scale) */

@@ -1,0 +1,80 @@
+onet_soc,occupation_title,description
+11-1021.00,General and Operations Managers,"Plan, direct, or coordinate the operations of public or private sector organizations, overseeing multiple departments or locations."
+11-2021.00,Marketing Managers,"Plan, direct, or coordinate marketing policies and programs, such as determining the demand for products and services offered by a firm and its competitors, and identify potential customers."
+11-3021.00,Computer and Information Systems Managers,"Plan, direct, or coordinate activities in such fields as electronic data processing, information systems, systems analysis, and computer programming."
+11-9111.00,Medical and Health Services Managers,"Plan, direct, or coordinate medical and health services in hospitals, clinics, managed care organizations, public health agencies, or similar organizations."
+13-1041.00,Compliance Officers,"Examine, evaluate, and investigate eligibility for or conformity with laws and regulations governing contract compliance of licenses and permits, and perform other compliance and enforcement inspection and analysis activities not classified elsewhere."
+13-1082.00,Project Management Specialists,"Analyze and coordinate the schedule, timeline, procurement, staffing, and budget of a product or service on a per project basis."
+13-1111.00,Management Analysts,"Conduct organizational studies and evaluations, design systems and procedures, conduct work simplification and measurement studies, and prepare operations and procedures manuals to assist management in operating more efficiently and effectively."
+13-1151.00,Training and Development Specialists,Design or conduct work-related training and development programs to improve individual skills or organizational performance.
+13-2011.00,Accountants and Auditors,"Examine, analyze, and interpret accounting records to prepare financial statements, give advice, or audit and evaluate statements prepared by others."
+13-2031.00,Budget Analysts,"Examine budget estimates for completeness, accuracy, and conformance with procedures and regulations."
+13-2041.00,Credit Analysts,Analyze credit data and financial statements of individuals or firms to determine the degree of risk involved in extending credit or lending money.
+13-2072.00,Loan Officers,"Evaluate, authorize, or recommend approval of commercial, real estate, or credit loans."
+13-2082.00,Tax Preparers,Prepare tax returns for individuals or small businesses.
+15-1211.00,Computer Systems Analysts,"Analyze science, engineering, business, and other data processing problems to develop and implement solutions to complex applications problems, system administration issues, or network concerns."
+15-1212.00,Information Security Analysts,"Plan, implement, upgrade, or monitor security measures for the protection of computer networks and information."
+15-1232.00,Computer User Support Specialists,Provide technical assistance to computer users.
+15-1242.00,Database Administrators,"Administer, test, and implement computer databases, applying knowledge of database management systems."
+15-1244.00,Network and Computer Systems Administrators,"Install, configure, and maintain an organization's local area network (LAN), wide area network (WAN), data communications network, operating systems, and physical and virtual servers."
+15-1251.00,Computer Programmers,"Create, modify, and test the code and scripts that allow computer applications to run."
+15-1252.00,Software Developers,"Research, design, and develop computer and network software or specialized utility programs."
+15-1253.00,Software Quality Assurance Analysts and Testers,Develop and execute software tests to identify software problems and their causes.
+15-1254.00,Web Developers,"Develop and implement websites, web applications, application databases, and interactive web interfaces."
+15-2031.00,Operations Research Analysts,"Formulate and apply mathematical modeling and other optimizing methods to develop and interpret information that assists management with decisionmaking, policy formulation, or other managerial functions."
+15-2051.00,Data Scientists,Develop and implement a set of techniques or analytics applications to transform raw data into meaningful information using data-oriented programming languages and visualization software.
+17-2051.00,Civil Engineers,"Perform engineering duties in planning, designing, and overseeing construction and maintenance of building structures and facilities, such as roads, railroads, airports, bridges, harbors, channels, dams, irrigation projects, pipelines, power plants, and water and sewage systems."
+17-2141.00,Mechanical Engineers,"Perform engineering duties in planning and designing tools, engines, machines, and other mechanically functioning equipment."
+19-3011.00,Economists,"Conduct research, prepare reports, or formulate plans to address economic problems related to the production and distribution of goods and services or monetary and fiscal policy."
+21-1021.00,"Child, Family, and School Social Workers",Provide social services and assistance to improve the social and psychological functioning of children and their families and to maximize the family well-being and the academic functioning of children.
+23-1011.00,Lawyers,"Represent clients in criminal and civil litigation and other legal proceedings, draw up legal documents, or manage or advise clients on legal transactions."
+23-2011.00,Paralegals and Legal Assistants,"Assist lawyers by investigating facts, preparing legal documents, or researching legal precedent."
+25-2021.00,"Elementary School Teachers, Except Special Education",Teach academic and social skills to students at the elementary school level.
+25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",Teach one or more subjects to students at the secondary school level.
+27-1024.00,Graphic Designers,"Design or create graphics to meet specific commercial or promotional needs, such as packaging, displays, or logos."
+27-3031.00,Public Relations Specialists,"Promote or create an intended public image for individuals, groups, or organizations."
+27-3041.00,Editors,"Plan, coordinate, revise, or edit written material."
+27-3042.00,Technical Writers,"Write technical materials, such as equipment manuals, appendices, or operating and maintenance instructions."
+27-3091.00,Interpreters and Translators,"Interpret oral or sign language, or translate written text from one language into another."
+29-1051.00,Pharmacists,Dispense drugs prescribed by physicians and other health practitioners and provide information to patients about medications and their use.
+29-1141.00,Registered Nurses,"Assess patient health problems and needs, develop and implement nursing care plans, and maintain medical records."
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,"Care for ill, injured, or convalescing patients or persons with disabilities in hospitals, nursing homes, clinics, private homes, group homes, and similar institutions."
+29-2072.00,Medical Records Specialists,"Compile, process, and maintain medical records of hospital and clinic patients in a manner consistent with medical, administrative, ethical, legal, and regulatory requirements of the healthcare system."
+31-1121.00,Home Health Aides,"Monitor the health status of an individual with disabilities or illness, and address their health-related needs, such as changing bandages, dressing wounds, or administering medication."
+31-9092.00,Medical Assistants,Perform administrative and certain clinical duties under the direction of a physician.
+31-9094.00,Medical Transcriptionists,"Transcribe medical reports recorded by physicians and other healthcare practitioners using various electronic devices, covering office visits, emergency room visits, diagnostic imaging studies, operations, chart reviews, and final summaries."
+33-3051.00,Police and Sheriff's Patrol Officers,"Maintain order and protect life and property by enforcing local, tribal, state, or federal laws and ordinances."
+33-9032.00,Security Guards,"Guard, patrol, or monitor premises to prevent theft, violence, or infractions of rules."
+35-2014.00,"Cooks, Restaurant","Prepare, season, and cook dishes such as soups, meats, vegetables, or desserts in restaurants."
+35-3023.00,Fast Food and Counter Workers,Perform duties such as taking orders and serving food and beverages.
+35-3031.00,Waiters and Waitresses,Take orders and serve food and beverages to patrons at tables in dining establishment.
+37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",Keep buildings in clean and orderly condition.
+37-3011.00,Landscaping and Groundskeeping Workers,Landscape or maintain grounds of property using hand or power tools or equipment.
+39-9011.00,Childcare Workers,"Attend to children at schools, businesses, private households, and childcare institutions."
+41-1011.00,First-Line Supervisors of Retail Sales Workers,Directly supervise and coordinate activities of retail sales workers in an establishment or department.
+41-2011.00,Cashiers,Receive and disburse money in establishments other than financial institutions.
+41-2031.00,Retail Salespersons,"Sell merchandise, such as furniture, motor vehicles, appliances, or apparel to consumers."
+41-3021.00,Insurance Sales Agents,"Sell life, property, casualty, health, automotive, or other types of insurance."
+41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",Sell goods for wholesalers or manufacturers to businesses or groups of individuals.
+41-9022.00,Real Estate Sales Agents,"Rent, buy, or sell property for clients."
+41-9041.00,Telemarketers,Solicit donations or orders for goods or services over the telephone.
+43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,Directly supervise and coordinate the activities of clerical and administrative support workers.
+43-3011.00,Bill and Account Collectors,"Locate and notify customers of delinquent accounts by mail, telephone, or personal visit to solicit payment."
+43-3021.00,Billing and Posting Clerks,"Compile, compute, and record billing, accounting, statistical, and other numerical data for billing purposes."
+43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks","Compute, classify, and record numerical data to keep financial records complete."
+43-3051.00,Payroll and Timekeeping Clerks,Compile and record employee time and payroll data.
+43-4051.00,Customer Service Representatives,Interact with customers to provide basic or scripted information in response to routine inquiries about products and services.
+43-5071.00,"Shipping, Receiving, and Inventory Clerks",Verify and maintain records on incoming and outgoing shipments involving inventory.
+43-6013.00,Medical Secretaries and Administrative Assistants,"Perform secretarial duties using specific knowledge of medical terminology and hospital, clinic, or laboratory procedures."
+43-9021.00,Data Entry Keyers,"Operate data entry device, such as keyboard or photo composing perforator."
+43-9041.00,Insurance Claims and Policy Processing Clerks,"Process new insurance policies, modifications to existing policies, and claims forms."
+43-9061.00,"Office Clerks, General","Perform duties too varied and diverse to be classified in any specific office clerical occupation, requiring knowledge of office systems and procedures."
+43-9081.00,Proofreaders and Copy Markers,"Read transcript or proof type setup to detect and mark for correction any grammatical, typographical, or compositional errors."
+47-2031.00,Carpenters,"Construct, erect, install, or repair structures and fixtures made of wood and comparable materials, such as concrete forms; building frameworks, including partitions, joists, studding, and rafters; and wood stairways, window and door frames, and hardwood floors."
+47-2061.00,Construction Laborers,Perform tasks involving physical labor at construction sites.
+47-2111.00,Electricians,"Install, maintain, and repair electrical wiring, equipment, and fixtures."
+49-9071.00,"Maintenance and Repair Workers, General","Perform work involving the skills of two or more maintenance or craft occupations to keep machines, mechanical equipment, or the structure of a building in repair."
+51-2092.00,Team Assemblers,Work as part of a team having responsibility for assembling an entire product or component of a product.
+53-3032.00,Heavy and Tractor-Trailer Truck Drivers,"Drive a tractor-trailer combination or a truck with a capacity of at least 26,001 pounds Gross Vehicle Weight (GVW)."
+53-7062.00,"Laborers and Freight, Stock, and Material Movers, Hand","Manually move freight, stock, luggage, or other materials, or perform other general labor."
+53-7065.00,Stockers and Order Fillers,"Receive, store, and issue merchandise, materials, equipment, and other items from stockroom, warehouse, or storage yard to fill shelves, racks, tables, or customers' orders."
