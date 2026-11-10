@@ -57,20 +57,28 @@ Different instances of one task type can have very different lengths (e.g. a "su
 
 For {{n_bench}} benchmarks I collected dated scores for every model I could find. For each benchmark I then estimate its horizon: the length of item at which the best agent succeeds half the time.[^fit]
 
+::: figure trend
+**Figure 1.** Each point is a model that beat every earlier model on that benchmark, for the eight benchmarks the work is most often matched to.
+:::
+
 Everything else comes from LLMs reading O\*NET. Two Claude models and one GPT model each split every task statement into units of work, estimate how long these take and how long they take to check, and pick the closest benchmark. I use the median answer. The same models also estimate how long people take on the benchmark items, so we measure the work and benchmarks on the same scale.
 
 ## Results
 
 ::: gentable bpo_summary
-**Table 1.** S and D for the IT and BPO occupations, for both reviewer cases. Averages over each occupation's work, weighted by O\*NET task importance.
+**Table 1.** S and D for the IT and BPO occupations as of {{today_long}}, for both reviewer cases. Averages over each occupation's work, weighted by O\*NET task importance.
 :::
 
 ::: figure bpo_headline
-**Figure 1.** S by occupation, IT and BPO set.
+**Figure 2.** S by occupation, IT and BPO set, as of {{today_long}}.
+:::
+
+::: figure timeline
+**Figure 3.** S over time. Every benchmark's horizon moves along the pooled trend, so the lines before and after today are extrapolations, not refits.
 :::
 
 ::: gentable summary
-**Table 2.** The same for the three pilot occupations.
+**Table 2.** The same for the three pilot occupations, as of {{today_long}}.
 :::
 
 ## What moves the numbers
@@ -80,7 +88,7 @@ Everything else comes from LLMs reading O\*NET. Two Claude models and one GPT mo
 - **Squeezed time estimates.** The LLMs rank items by length well, but squeeze their estimates toward an hour or two. Using the same LLMs on both sides cancels much of this, but not all.
 
 ::: figure scenarios
-**Figure 2.** S and D for the pilot occupations as one setting changes at a time.
+**Figure 4.** S and D for the pilot occupations as one setting changes at a time, as of {{today_long}}.
 :::
 
 Next, I am running sixteen comparison occupations, including some that should come out high (translators, proofreaders) and some that should come out near zero (electricians, janitors).

@@ -1,0 +1,12 @@
+# Online-Mind2Web (online_mind2web), accessed 2026-11-10
+- HF dataset osunlp/Online-Mind2Web is GATED (auto), CC-BY-4.0; I did NOT accept terms. Per-task website, level and reference length are therefore not available.
+- Items: public task instructions (`confirmed_task`) for all 300 tasks, taken from the public leaderboard Space file https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_label_111825.json (Space licence apache-2.0; the OSU GitHub repo OSU-NLP-Group/Online-Mind2Web, MIT, has older copies). This is the 2025-11-18 version, after 36 tasks were updated.
+- Scores: Space csv auto_o4-mini_Mind2Web-Online - Leaderboard_data.csv (raw/lb_auto_o4mini.csv) and human-eval csv (raw/lb_human.csv). Leaderboard SR averaged over three runs; ours is the auto WebJudge(o4-mini) column, human-eval value in notes.
+- Population: all 300 tasks (136 websites; Easy 83 / Medium 143 / Hard 74 by human steps, per paper arXiv 2504.01382). Sample: random.Random(2026).sample(sorted task_ids, 24). Level/gold steps not recoverable per task.
+- Grading method: llm_judge. WebJudge (o4-mini) reads the task, key points, key screenshots and action history; human labels agree about 85%.
+- Time-estimator description: A task on a named live consumer website, e.g. find or filter listings, or add specific options to a cart or booking; the worker completes it in a browser and it is done when the final page or answer meets every stated condition.
+- Human times: none measured; level = number of human annotation steps (Easy 1-5, Medium 6-10, Hard 11+).
+- Problems:
+  - 20 scores are mostly agent SYSTEMS (Operator, Navigator, Hark...), not bare models; 8 not OSU-verified (self-reported, e.g. GPT-5.4 92.8, Eko, Seed1.5-VL). Mixed judges/prompting: newer entries (2026-06+) use a judge note that includes the agent's final response.
+  - Release dates are exact only for a few; others are YYYY-MM from the leaderboard 'Release Time' column. eval_date is the leaderboard Date.
+  - Task set changed over time (updates Jul-Nov 2025); tasks go stale on live sites. Near saturation by 2026 (90%+). Tasks are on live sites and may be out of date.

@@ -1,0 +1,12 @@
+# APEX-Agents (apex_agents), v1.1 (240 tasks), accessed 2026-11-10
+- Official HF datasets mercor/apex-agents and mercor/apex-agents-v1.1 are GATED (auto-approve); I did NOT accept terms and did not use them. Eval-traces dataset not used (its licence forbids fitting).
+- Items: public GitHub mirror https://github.com/Osmosis-AI/apex-agents-harbor (Mercor's Harbor release mercor/apex-agents-1-1@1.0.1, rev 14; 240 tasks, 31 worlds; CC BY 4.0, evaluation-only terms, we use task text only for time estimation). Raw files: raw/tasks/<slug>/instruction.md and task.toml (24 sampled), raw/tree.json, raw/sample_ids.txt.
+- Scores: Epoch AI Benchmarking Hub apex_agents_external.csv (https://epoch.ai/data/benchmark_data.zip, CC BY 4.0; downloaded 2026-11-10; copy raw/epoch_apex_agents_external.csv) which carries Mercor's leaderboard Pass@1 (https://www.mercor.com/apex/apex-agents-leaderboard/) and release dates.
+- Population: 240 tasks of v1.1 (80 each IB, law, consulting). Scores match v1.1 (e.g. Fable 5.1 = 68.6%). Sample: random.Random(2026).sample(sorted 240 slugs, 24); slug is the directory name. Sample has 10 IB, 11 law, 3 consulting; 22 message answers, 2 file edits.
+- Grading method: llm_judge. Expert-written binary criteria per task graded by an LLM judge (deepseek-v4-flash, temp 0.1); Pass@1 = all criteria met.
+- Time-estimator description: A task inside a simulated firm's files, email, chat, spreadsheets and presentations for an investment-banking analyst, management consultant or corporate lawyer; the worker returns a message or a spreadsheet/document, and it is done when every expert-written criterion is met.
+- Human times: expert estimates per task exist in the gated metadata (paper: mean 1.82 h; baselining says about 33% high); NOT in the public mirror, so meta.human_time_hours is null. Mercor email apex@mercor.com for them, or accept terms yourselves.
+- Problems:
+  - 59 models, release 2025-08 to 2026-11. scores.csv keeps best reasoning-effort setting per model (others in notes). eval_date blank (not published); Epoch scores are Mercor-reported.
+  - Epoch also has a "Mean score" column (criteria-level), not used; leaderboard v1.0 scores (Jan 2026) are not comparable and not included.
+  - Task text only; world files are in Docker images (not downloaded). Reference-file names in text are from the mirror's task folder only.

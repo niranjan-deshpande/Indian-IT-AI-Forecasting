@@ -38,6 +38,7 @@ SCENARIOS = {
     "+12 months (pooled trend)": dict(months_ahead=12),
 }
 NGRID = 401
+TODAY = "2026-11-10"  # snapshot date; horizons are aligned to this date in horizons.py
 
 
 def lognormal_fit(p10, p50, p90):
@@ -158,6 +159,40 @@ def main():
                       f"{r['benchmark']} | {r['H_min']} | {r['pi_at_p50']} | {r['D']} | {r['S']} | "
                       f"{r['band_lo_min']}–{r['band_hi_min']} |")
     (od / "RESULTS.md").write_text("\n".join(md) + "\n")
+    # Timeline: occupation S and D at monthly offsets from today (-24 to +12), moving every
+    # benchmark's horizon along the pooled trend. Base and the rho-0.5 case only.
+    import datetime as dt
+    today = dt.date.fromisoformat(TODAY)
+    tl = []
+    for sname in ("base", "base, rho 0.5 (tests/state)"):
+        p0 = {**BASE, **SCENARIOS[sname]}
+        for mo in range(-24, 13):
+            g = defaultdict(lambda: defaultdict(float))
+            for u in items:
+                iid, w = u["task_id"] + u["part_id"], float(u["weight"])
+                o = g[u["occupation_title"]]
+                if u["type"] not in ("DISCRETE", "LIVE_SERVICE"):
+                    o["w"] += w
+                    continue
+                f, mt = feats[iid], match[iid]
+                bm = mt["best"] if mt["best"] in hz[p0["variant"]] else None
+                if not bm:
+                    continue
+                h = hz[p0["variant"]][bm]
+                rho = p0["rho_tests"] if h["grading"] in ("tests", "state") else 1.0
+                Hval = float(h[p0["hcol"]]) * 2 ** (mo / float(h["pooled_doubling_months"]))
+                D, _, _, S = item_D(f, Hval, rho, p0)
+                o["w"] += w
+                o["wD"] += w * D
+                o["wS"] += w * S
+            date = (today + dt.timedelta(days=round(mo * 30.44))).isoformat()
+            for occ, o in g.items():
+                tl.append({"scenario": sname, "months_from_today": mo, "date": date, "occupation": occ,
+                           "S": round(o["wS"] / o["w"], 4), "D": round(o["wD"] / o["w"], 4)})
+    with open(od / "timeline.csv", "w", newline="") as fh:
+        wr = csv.DictWriter(fh, fieldnames=list(tl[0]))
+        wr.writeheader()
+        wr.writerows(tl)
     print("\n".join(md[:6 + len(SCENARIOS)]))
 
 

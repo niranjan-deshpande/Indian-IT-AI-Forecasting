@@ -293,6 +293,360 @@ apex_accounting,beta_hi_decomp,Nemotron 3.5 Bolt (high),2026-11-10,0.033,0.5
 apex_accounting,beta_hi_decomp,Gemini 4 Carbon (high),2026-10-28,0.225,13.16
 apex_accounting,beta_hi_decomp,Kimi K3.1 Pro (max),2026-10-23,0.172,7.74
 apex_accounting,beta_hi_decomp,Inkling 2 Small,2026-11-05,0.145,5.53
+apex_agents,base,GPT-OSS-120B,2025-08-05,0.044,1.28
+apex_agents,base,DeepSeek-V3.2,2025-12-01,0.213,11.01
+apex_agents,base,Opus 4.6,2026-02-05,0.463,46.59
+apex_agents,base,Qwen3.5,2026-02-13,0.249,14.15
+apex_agents,base,Sonnet 4.6,2026-02-17,0.43,39.41
+apex_agents,base,Gemini 3.1 Pro,2026-02-19,0.351,26.0
+apex_agents,base,GPT-5.4,2026-03-05,0.524,63.27
+apex_agents,base,GLM-5.1,2026-04-07,0.409,35.38
+apex_agents,base,Opus 4.7,2026-04-16,0.492,53.89
+apex_agents,base,GPT-5.5,2026-04-23,0.551,72.5
+apex_agents,base,Gemini 3.5 Flash,2026-05-19,0.275,16.72
+apex_agents,base,Opus 4.8,2026-05-28,0.489,53.09
+apex_agents,base,MiniMax-M3,2026-06-01,0.377,29.91
+apex_agents,base,Nemotron 3 Ultra,2026-06-04,0.227,12.17
+apex_agents,base,Fable 5,2026-06-09,0.636,112.82
+apex_agents,base,Kimi K2.7 Code,2026-06-12,0.376,29.76
+apex_agents,base,GLM-5.2,2026-06-16,0.452,44.07
+apex_agents,base,Sonnet 5,2026-06-30,0.545,70.33
+apex_agents,base,Grok 4.5,2026-07-08,0.562,76.66
+apex_agents,base,GPT-5.6 Terra,2026-07-09,0.582,84.92
+apex_agents,base,GPT-5.6 Luna,2026-07-09,0.43,39.41
+apex_agents,base,Muse Spark 1.1,2026-07-09,0.318,21.61
+apex_agents,base,GPT-5.6 Sol,2026-07-09,0.514,60.18
+apex_agents,base,Inkling,2026-07-15,0.338,24.2
+apex_agents,base,Kimi K3,2026-07-16,0.478,50.24
+apex_agents,base,Gemini 3.5 Flash Lite,2026-07-21,0.293,18.66
+apex_agents,base,Gemini 3.6 Flash,2026-07-21,0.469,48.02
+apex_agents,base,Opus 5,2026-07-24,0.658,127.25
+apex_agents,base,Qwen3.8-Max,2026-08-02,0.633,111.01
+apex_agents,base,Muse Spark 1.2,2026-08-05,0.454,44.52
+apex_agents,base,Grok 4.6,2026-08-12,0.653,123.78
+apex_agents,base,DeepSeek-V4-Pro-0813,2026-08-13,0.473,48.99
+apex_agents,base,Gemini 3.7 Flash,2026-08-13,0.678,142.4
+apex_agents,base,Qwen 3.8 27B,2026-08-14,0.475,49.49
+apex_agents,base,GLM-5.3,2026-08-14,0.566,78.24
+apex_agents,base,GLM-5.3-Flash,2026-08-20,0.528,64.56
+apex_agents,base,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,149.1
+apex_agents,base,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,86.69
+apex_agents,base,Gemini 3.8 Flash,2026-09-02,0.643,117.18
+apex_agents,base,GPT-6 Astra,2026-09-03,0.647,119.77
+apex_agents,base,DeepSeek-V4.1-Flash,2026-09-09,0.395,32.89
+apex_agents,base,MiMo V2.6 Pro,2026-09-21,0.544,69.98
+apex_agents,base,Grok 4.7,2026-09-21,0.546,70.69
+apex_agents,base,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,200.65
+apex_agents,base,GPT-6 Sol,2026-09-22,0.543,69.63
+apex_agents,base,GPT-6 Luna,2026-09-22,0.443,42.11
+apex_agents,base,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,228.66
+apex_agents,base,GPT-6.1 Sol,2026-09-29,0.6,93.22
+apex_agents,base,Gemini 4 Argon,2026-09-30,0.824,383.28
+apex_agents,base,Beam,2026-10-05,0.488,52.82
+apex_agents,base,Mistral Large 4,2026-10-06,0.516,60.78
+apex_agents,base,Haiku 5.5,2026-10-07,0.561,76.27
+apex_agents,base,Muse Wonder 1.0,2026-10-12,0.661,129.38
+apex_agents,base,Muse Spark Open,2026-10-15,0.334,23.66
+apex_agents,base,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,159.94
+apex_agents,base,Kimi K3.1 Pro,2026-10-23,0.655,125.15
+apex_agents,base,GPT-6.1 Terra,2026-10-26,0.683,146.54
+apex_agents,base,Gemini 4 Carbon,2026-10-28,0.842,449.38
+apex_agents,base,Inkling 2 Small,2026-11-05,0.468,47.78
+apex_agents,base_decomp,GPT-OSS-120B,2025-08-05,0.044,0.56
+apex_agents,base_decomp,DeepSeek-V3.2,2025-12-01,0.213,6.82
+apex_agents,base_decomp,Opus 4.6,2026-02-05,0.463,39.4
+apex_agents,base_decomp,Qwen3.5,2026-02-13,0.249,9.22
+apex_agents,base_decomp,Sonnet 4.6,2026-02-17,0.43,32.1
+apex_agents,base_decomp,Gemini 3.1 Pro,2026-02-19,0.351,19.31
+apex_agents,base_decomp,GPT-5.4,2026-03-05,0.524,57.37
+apex_agents,base_decomp,GLM-5.1,2026-04-07,0.409,28.13
+apex_agents,base_decomp,Opus 4.7,2026-04-16,0.492,47.11
+apex_agents,base_decomp,GPT-5.5,2026-04-23,0.551,67.83
+apex_agents,base_decomp,Gemini 3.5 Flash,2026-05-19,0.275,11.29
+apex_agents,base_decomp,Opus 4.8,2026-05-28,0.489,46.24
+apex_agents,base_decomp,MiniMax-M3,2026-06-01,0.377,22.92
+apex_agents,base_decomp,Nemotron 3 Ultra,2026-06-04,0.227,7.7
+apex_agents,base_decomp,Fable 5,2026-06-09,0.636,117.05
+apex_agents,base_decomp,Kimi K2.7 Code,2026-06-12,0.376,22.77
+apex_agents,base_decomp,GLM-5.2,2026-06-16,0.452,36.81
+apex_agents,base_decomp,Sonnet 5,2026-06-30,0.545,65.34
+apex_agents,base_decomp,Grok 4.5,2026-07-08,0.562,72.66
+apex_agents,base_decomp,GPT-5.6 Terra,2026-07-09,0.582,82.42
+apex_agents,base_decomp,GPT-5.6 Luna,2026-07-09,0.43,32.1
+apex_agents,base_decomp,Muse Spark 1.1,2026-07-09,0.318,15.42
+apex_agents,base_decomp,GPT-5.6 Sol,2026-07-09,0.514,53.94
+apex_agents,base_decomp,Inkling,2026-07-15,0.338,17.69
+apex_agents,base_decomp,Kimi K3,2026-07-16,0.478,43.22
+apex_agents,base_decomp,Gemini 3.5 Flash Lite,2026-07-21,0.293,12.9
+apex_agents,base_decomp,Gemini 3.6 Flash,2026-07-21,0.469,40.88
+apex_agents,base_decomp,Opus 5,2026-07-24,0.658,135.84
+apex_agents,base_decomp,Qwen3.8-Max,2026-08-02,0.633,114.73
+apex_agents,base_decomp,Muse Spark 1.2,2026-08-05,0.454,37.27
+apex_agents,base_decomp,Grok 4.6,2026-08-12,0.653,131.27
+apex_agents,base_decomp,DeepSeek-V4-Pro-0813,2026-08-13,0.473,41.91
+apex_agents,base_decomp,Gemini 3.7 Flash,2026-08-13,0.678,156.16
+apex_agents,base_decomp,Qwen 3.8 27B,2026-08-14,0.475,42.43
+apex_agents,base_decomp,GLM-5.3,2026-08-14,0.566,74.5
+apex_agents,base_decomp,GLM-5.3-Flash,2026-08-20,0.528,58.81
+apex_agents,base_decomp,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,165.32
+apex_agents,base_decomp,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,84.54
+apex_agents,base_decomp,Gemini 3.8 Flash,2026-09-02,0.643,122.67
+apex_agents,base_decomp,GPT-6 Astra,2026-09-03,0.647,126.03
+apex_agents,base_decomp,DeepSeek-V4.1-Flash,2026-09-09,0.395,25.73
+apex_agents,base_decomp,MiMo V2.6 Pro,2026-09-21,0.544,64.94
+apex_agents,base_decomp,Grok 4.7,2026-09-21,0.546,65.75
+apex_agents,base_decomp,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,238.88
+apex_agents,base_decomp,GPT-6 Sol,2026-09-22,0.543,64.53
+apex_agents,base_decomp,GPT-6 Luna,2026-09-22,0.443,34.81
+apex_agents,base_decomp,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,280.86
+apex_agents,base_decomp,GPT-6.1 Sol,2026-09-29,0.6,92.47
+apex_agents,base_decomp,Gemini 4 Argon,2026-09-30,0.824,530.56
+apex_agents,base_decomp,Beam,2026-10-05,0.488,45.96
+apex_agents,base_decomp,Mistral Large 4,2026-10-06,0.516,54.61
+apex_agents,base_decomp,Haiku 5.5,2026-10-07,0.561,72.2
+apex_agents,base_decomp,Muse Wonder 1.0,2026-10-12,0.661,138.67
+apex_agents,base_decomp,Muse Spark Open,2026-10-15,0.334,17.22
+apex_agents,base_decomp,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,180.33
+apex_agents,base_decomp,Kimi K3.1 Pro,2026-10-23,0.655,133.08
+apex_agents,base_decomp,GPT-6.1 Terra,2026-10-26,0.683,161.81
+apex_agents,base_decomp,Gemini 4 Carbon,2026-10-28,0.842,643.96
+apex_agents,base_decomp,Inkling 2 Small,2026-11-05,0.468,40.63
+apex_agents,beta_lo,GPT-OSS-120B,2025-08-05,0.044,0.3
+apex_agents,beta_lo,DeepSeek-V3.2,2025-12-01,0.213,6.03
+apex_agents,beta_lo,Opus 4.6,2026-02-05,0.463,43.53
+apex_agents,beta_lo,Qwen3.5,2026-02-13,0.249,8.51
+apex_agents,beta_lo,Sonnet 4.6,2026-02-17,0.43,34.63
+apex_agents,beta_lo,Gemini 3.1 Pro,2026-02-19,0.351,19.6
+apex_agents,beta_lo,GPT-5.4,2026-03-05,0.524,66.15
+apex_agents,beta_lo,GLM-5.1,2026-04-07,0.409,29.88
+apex_agents,beta_lo,Opus 4.7,2026-04-16,0.492,53.12
+apex_agents,beta_lo,GPT-5.5,2026-04-23,0.551,79.68
+apex_agents,beta_lo,Gemini 3.5 Flash,2026-05-19,0.275,10.7
+apex_agents,beta_lo,Opus 4.8,2026-05-28,0.489,52.04
+apex_agents,beta_lo,MiniMax-M3,2026-06-01,0.377,23.75
+apex_agents,beta_lo,Nemotron 3 Ultra,2026-06-04,0.227,6.92
+apex_agents,beta_lo,Fable 5,2026-06-09,0.636,145.85
+apex_agents,beta_lo,Kimi K2.7 Code,2026-06-12,0.376,23.58
+apex_agents,beta_lo,GLM-5.2,2026-06-16,0.452,40.35
+apex_agents,beta_lo,Sonnet 5,2026-06-30,0.545,76.44
+apex_agents,beta_lo,Grok 4.5,2026-07-08,0.562,85.99
+apex_agents,beta_lo,GPT-5.6 Terra,2026-07-09,0.582,98.9
+apex_agents,beta_lo,GPT-5.6 Luna,2026-07-09,0.43,34.63
+apex_agents,beta_lo,Muse Spark 1.1,2026-07-09,0.318,15.21
+apex_agents,beta_lo,GPT-5.6 Sol,2026-07-09,0.514,61.76
+apex_agents,beta_lo,Inkling,2026-07-15,0.338,17.76
+apex_agents,beta_lo,Kimi K3,2026-07-16,0.478,48.26
+apex_agents,beta_lo,Gemini 3.5 Flash Lite,2026-07-21,0.293,12.44
+apex_agents,beta_lo,Gemini 3.6 Flash,2026-07-21,0.469,45.37
+apex_agents,beta_lo,Opus 5,2026-07-24,0.658,171.96
+apex_agents,beta_lo,Qwen3.8-Max,2026-08-02,0.633,142.66
+apex_agents,beta_lo,Muse Spark 1.2,2026-08-05,0.454,40.91
+apex_agents,beta_lo,Grok 4.6,2026-08-12,0.653,165.58
+apex_agents,beta_lo,DeepSeek-V4-Pro-0813,2026-08-13,0.473,46.63
+apex_agents,beta_lo,Gemini 3.7 Flash,2026-08-13,0.678,200.61
+apex_agents,beta_lo,Qwen 3.8 27B,2026-08-14,0.475,47.28
+apex_agents,beta_lo,GLM-5.3,2026-08-14,0.566,88.42
+apex_agents,beta_lo,GLM-5.3-Flash,2026-08-20,0.528,67.99
+apex_agents,beta_lo,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,213.65
+apex_agents,beta_lo,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,101.73
+apex_agents,beta_lo,Gemini 3.8 Flash,2026-09-02,0.643,153.62
+apex_agents,beta_lo,GPT-6 Astra,2026-09-03,0.647,158.28
+apex_agents,beta_lo,DeepSeek-V4.1-Flash,2026-09-09,0.395,27.05
+apex_agents,beta_lo,MiMo V2.6 Pro,2026-09-21,0.544,75.91
+apex_agents,beta_lo,Grok 4.7,2026-09-21,0.546,76.97
+apex_agents,beta_lo,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,320.96
+apex_agents,beta_lo,GPT-6 Sol,2026-09-22,0.543,75.39
+apex_agents,beta_lo,GPT-6 Luna,2026-09-22,0.443,37.91
+apex_agents,beta_lo,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,384.0
+apex_agents,beta_lo,GPT-6.1 Sol,2026-09-29,0.6,112.35
+apex_agents,beta_lo,Gemini 4 Argon,2026-09-30,0.824,781.26
+apex_agents,beta_lo,Beam,2026-10-05,0.488,51.68
+apex_agents,beta_lo,Mistral Large 4,2026-10-06,0.516,62.62
+apex_agents,beta_lo,Haiku 5.5,2026-10-07,0.561,85.4
+apex_agents,beta_lo,Muse Wonder 1.0,2026-10-12,0.661,175.93
+apex_agents,beta_lo,Muse Spark Open,2026-10-15,0.334,17.23
+apex_agents,beta_lo,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,235.2
+apex_agents,beta_lo,Kimi K3.1 Pro,2026-10-23,0.655,168.1
+apex_agents,beta_lo,GPT-6.1 Terra,2026-10-26,0.683,208.64
+apex_agents,beta_lo,Gemini 4 Carbon,2026-10-28,0.842,972.85
+apex_agents,beta_lo,Inkling 2 Small,2026-11-05,0.468,45.05
+apex_agents,beta_lo_decomp,GPT-OSS-120B,2025-08-05,0.044,0.16
+apex_agents,beta_lo_decomp,DeepSeek-V3.2,2025-12-01,0.213,4.01
+apex_agents,beta_lo_decomp,Opus 4.6,2026-02-05,0.463,37.28
+apex_agents,beta_lo_decomp,Qwen3.5,2026-02-13,0.249,5.89
+apex_agents,beta_lo_decomp,Sonnet 4.6,2026-02-17,0.43,28.74
+apex_agents,beta_lo_decomp,Gemini 3.1 Pro,2026-02-19,0.351,15.07
+apex_agents,beta_lo_decomp,GPT-5.4,2026-03-05,0.524,60.05
+apex_agents,beta_lo_decomp,GLM-5.1,2026-04-07,0.409,24.3
+apex_agents,beta_lo_decomp,Opus 4.7,2026-04-16,0.492,46.76
+apex_agents,beta_lo_decomp,GPT-5.5,2026-04-23,0.551,74.24
+apex_agents,beta_lo_decomp,Gemini 3.5 Flash,2026-05-19,0.275,7.62
+apex_agents,beta_lo_decomp,Opus 4.8,2026-05-28,0.489,45.68
+apex_agents,beta_lo_decomp,MiniMax-M3,2026-06-01,0.377,18.73
+apex_agents,beta_lo_decomp,Nemotron 3 Ultra,2026-06-04,0.227,4.68
+apex_agents,beta_lo_decomp,Fable 5,2026-06-09,0.636,147.94
+apex_agents,beta_lo_decomp,Kimi K2.7 Code,2026-06-12,0.376,18.58
+apex_agents,beta_lo_decomp,GLM-5.2,2026-06-16,0.452,34.19
+apex_agents,beta_lo_decomp,Sonnet 5,2026-06-30,0.545,70.81
+apex_agents,beta_lo_decomp,Grok 4.5,2026-07-08,0.562,80.99
+apex_agents,beta_lo_decomp,GPT-5.6 Terra,2026-07-09,0.582,95.0
+apex_agents,beta_lo_decomp,GPT-5.6 Luna,2026-07-09,0.43,28.74
+apex_agents,beta_lo_decomp,Muse Spark 1.1,2026-07-09,0.318,11.32
+apex_agents,beta_lo_decomp,GPT-5.6 Sol,2026-07-09,0.514,55.53
+apex_agents,beta_lo_decomp,Inkling,2026-07-15,0.338,13.48
+apex_agents,beta_lo_decomp,Kimi K3,2026-07-16,0.478,41.92
+apex_agents,beta_lo_decomp,Gemini 3.5 Flash Lite,2026-07-21,0.293,9.03
+apex_agents,beta_lo_decomp,Gemini 3.6 Flash,2026-07-21,0.469,39.07
+apex_agents,beta_lo_decomp,Opus 5,2026-07-24,0.658,178.47
+apex_agents,beta_lo_decomp,Qwen3.8-Max,2026-08-02,0.633,144.26
+apex_agents,beta_lo_decomp,Muse Spark 1.2,2026-08-05,0.454,34.73
+apex_agents,beta_lo_decomp,Grok 4.6,2026-08-12,0.653,170.94
+apex_agents,beta_lo_decomp,DeepSeek-V4-Pro-0813,2026-08-13,0.473,40.31
+apex_agents,beta_lo_decomp,Gemini 3.7 Flash,2026-08-13,0.678,212.67
+apex_agents,beta_lo_decomp,Qwen 3.8 27B,2026-08-14,0.475,40.95
+apex_agents,beta_lo_decomp,GLM-5.3,2026-08-14,0.566,83.61
+apex_agents,beta_lo_decomp,GLM-5.3-Flash,2026-08-20,0.528,61.96
+apex_agents,beta_lo_decomp,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,228.46
+apex_agents,beta_lo_decomp,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,98.11
+apex_agents,beta_lo_decomp,Gemini 3.8 Flash,2026-09-02,0.643,156.96
+apex_agents,beta_lo_decomp,GPT-6 Astra,2026-09-03,0.647,162.39
+apex_agents,beta_lo_decomp,DeepSeek-V4.1-Flash,2026-09-09,0.395,21.7
+apex_agents,beta_lo_decomp,MiMo V2.6 Pro,2026-09-21,0.544,70.26
+apex_agents,beta_lo_decomp,Grok 4.7,2026-09-21,0.546,71.37
+apex_agents,beta_lo_decomp,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,362.46
+apex_agents,beta_lo_decomp,GPT-6 Sol,2026-09-22,0.543,69.7
+apex_agents,beta_lo_decomp,GPT-6 Luna,2026-09-22,0.443,31.85
+apex_agents,beta_lo_decomp,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,443.85
+apex_agents,beta_lo_decomp,GPT-6.1 Sol,2026-09-29,0.6,109.87
+apex_agents,beta_lo_decomp,Gemini 4 Argon,2026-09-30,0.824,983.44
+apex_agents,beta_lo_decomp,Beam,2026-10-05,0.488,45.33
+apex_agents,beta_lo_decomp,Mistral Large 4,2026-10-06,0.516,56.41
+apex_agents,beta_lo_decomp,Haiku 5.5,2026-10-07,0.561,80.35
+apex_agents,beta_lo_decomp,Muse Wonder 1.0,2026-10-12,0.661,183.17
+apex_agents,beta_lo_decomp,Muse Spark Open,2026-10-15,0.334,13.03
+apex_agents,beta_lo_decomp,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,254.81
+apex_agents,beta_lo_decomp,Kimi K3.1 Pro,2026-10-23,0.655,173.91
+apex_agents,beta_lo_decomp,GPT-6.1 Terra,2026-10-26,0.683,222.38
+apex_agents,beta_lo_decomp,Gemini 4 Carbon,2026-10-28,0.842,1253.97
+apex_agents,beta_lo_decomp,Inkling 2 Small,2026-11-05,0.468,38.77
+apex_agents,beta_hi,GPT-OSS-120B,2025-08-05,0.044,2.24
+apex_agents,beta_hi,DeepSeek-V3.2,2025-12-01,0.213,13.94
+apex_agents,beta_hi,Opus 4.6,2026-02-05,0.463,47.84
+apex_agents,beta_hi,Qwen3.5,2026-02-13,0.249,17.27
+apex_agents,beta_hi,Sonnet 4.6,2026-02-17,0.43,41.46
+apex_agents,beta_hi,Gemini 3.1 Pro,2026-02-19,0.351,29.04
+apex_agents,beta_hi,GPT-5.4,2026-03-05,0.524,62.17
+apex_agents,beta_hi,GLM-5.1,2026-04-07,0.409,37.8
+apex_agents,beta_hi,Opus 4.7,2026-04-16,0.492,54.19
+apex_agents,beta_hi,GPT-5.5,2026-04-23,0.551,69.86
+apex_agents,beta_hi,Gemini 3.5 Flash,2026-05-19,0.275,19.91
+apex_agents,beta_hi,Opus 4.8,2026-05-28,0.489,53.5
+apex_agents,beta_hi,MiniMax-M3,2026-06-01,0.377,32.74
+apex_agents,beta_hi,Nemotron 3 Ultra,2026-06-04,0.227,15.19
+apex_agents,beta_hi,Fable 5,2026-06-09,0.636,102.0
+apex_agents,beta_hi,Kimi K2.7 Code,2026-06-12,0.376,32.6
+apex_agents,beta_hi,GLM-5.2,2026-06-16,0.452,45.62
+apex_agents,beta_hi,Sonnet 5,2026-06-30,0.545,68.06
+apex_agents,beta_hi,Grok 4.5,2026-07-08,0.562,73.28
+apex_agents,beta_hi,GPT-5.6 Terra,2026-07-09,0.582,79.98
+apex_agents,beta_hi,GPT-5.6 Luna,2026-07-09,0.43,41.46
+apex_agents,beta_hi,Muse Spark 1.1,2026-07-09,0.318,24.8
+apex_agents,beta_hi,GPT-5.6 Sol,2026-07-09,0.514,59.56
+apex_agents,beta_hi,Inkling,2026-07-15,0.338,27.31
+apex_agents,beta_hi,Kimi K3,2026-07-16,0.478,51.03
+apex_agents,beta_hi,Gemini 3.5 Flash Lite,2026-07-21,0.293,21.88
+apex_agents,beta_hi,Gemini 3.6 Flash,2026-07-21,0.469,49.09
+apex_agents,beta_hi,Opus 5,2026-07-24,0.658,113.06
+apex_agents,beta_hi,Qwen3.8-Max,2026-08-02,0.633,100.6
+apex_agents,beta_hi,Muse Spark 1.2,2026-08-05,0.454,46.01
+apex_agents,beta_hi,Grok 4.6,2026-08-12,0.653,110.42
+apex_agents,beta_hi,DeepSeek-V4-Pro-0813,2026-08-13,0.473,49.94
+apex_agents,beta_hi,Gemini 3.7 Flash,2026-08-13,0.678,124.49
+apex_agents,beta_hi,Qwen 3.8 27B,2026-08-14,0.475,50.37
+apex_agents,beta_hi,GLM-5.3,2026-08-14,0.566,74.57
+apex_agents,beta_hi,GLM-5.3-Flash,2026-08-20,0.528,63.25
+apex_agents,beta_hi,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,129.48
+apex_agents,beta_hi,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,81.41
+apex_agents,beta_hi,Gemini 3.8 Flash,2026-09-02,0.643,105.36
+apex_agents,beta_hi,GPT-6 Astra,2026-09-03,0.647,107.35
+apex_agents,beta_hi,DeepSeek-V4.1-Flash,2026-09-09,0.395,35.51
+apex_agents,beta_hi,MiMo V2.6 Pro,2026-09-21,0.544,67.77
+apex_agents,beta_hi,Grok 4.7,2026-09-21,0.546,68.36
+apex_agents,beta_hi,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,166.89
+apex_agents,beta_hi,GPT-6 Sol,2026-09-22,0.543,67.48
+apex_agents,beta_hi,GPT-6 Luna,2026-09-22,0.443,43.87
+apex_agents,beta_hi,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,186.59
+apex_agents,beta_hi,GPT-6.1 Sol,2026-09-29,0.6,86.63
+apex_agents,beta_hi,Gemini 4 Argon,2026-09-30,0.824,289.86
+apex_agents,beta_hi,Beam,2026-10-05,0.488,53.27
+apex_agents,beta_hi,Mistral Large 4,2026-10-06,0.516,60.07
+apex_agents,beta_hi,Haiku 5.5,2026-10-07,0.561,72.96
+apex_agents,beta_hi,Muse Wonder 1.0,2026-10-12,0.661,114.68
+apex_agents,beta_hi,Muse Spark Open,2026-10-15,0.334,26.8
+apex_agents,beta_hi,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,137.48
+apex_agents,beta_hi,Kimi K3.1 Pro,2026-10-23,0.655,111.46
+apex_agents,beta_hi,GPT-6.1 Terra,2026-10-26,0.683,127.58
+apex_agents,beta_hi,Gemini 4 Carbon,2026-10-28,0.842,331.9
+apex_agents,beta_hi,Inkling 2 Small,2026-11-05,0.468,48.88
+apex_agents,beta_hi_decomp,GPT-OSS-120B,2025-08-05,0.044,0.89
+apex_agents,beta_hi_decomp,DeepSeek-V3.2,2025-12-01,0.213,8.33
+apex_agents,beta_hi_decomp,Opus 4.6,2026-02-05,0.463,40.2
+apex_agents,beta_hi_decomp,Qwen3.5,2026-02-13,0.249,10.93
+apex_agents,beta_hi_decomp,Sonnet 4.6,2026-02-17,0.43,33.46
+apex_agents,beta_hi_decomp,Gemini 3.1 Pro,2026-02-19,0.351,21.22
+apex_agents,beta_hi_decomp,GPT-5.4,2026-03-05,0.524,56.28
+apex_agents,beta_hi_decomp,GLM-5.1,2026-04-07,0.409,29.73
+apex_agents,beta_hi_decomp,Opus 4.7,2026-04-16,0.492,47.17
+apex_agents,beta_hi_decomp,GPT-5.5,2026-04-23,0.551,65.39
+apex_agents,beta_hi_decomp,Gemini 3.5 Flash,2026-05-19,0.275,13.11
+apex_agents,beta_hi_decomp,Opus 4.8,2026-05-28,0.489,46.4
+apex_agents,beta_hi_decomp,MiniMax-M3,2026-06-01,0.377,24.74
+apex_agents,beta_hi_decomp,Nemotron 3 Ultra,2026-06-04,0.227,9.29
+apex_agents,beta_hi_decomp,Fable 5,2026-06-09,0.636,106.7
+apex_agents,beta_hi_decomp,Kimi K2.7 Code,2026-06-12,0.376,24.59
+apex_agents,beta_hi_decomp,GLM-5.2,2026-06-16,0.452,37.82
+apex_agents,beta_hi_decomp,Sonnet 5,2026-06-30,0.545,63.23
+apex_agents,beta_hi_decomp,Grok 4.5,2026-07-08,0.562,69.54
+apex_agents,beta_hi_decomp,GPT-5.6 Terra,2026-07-09,0.582,77.87
+apex_agents,beta_hi_decomp,GPT-5.6 Luna,2026-07-09,0.43,33.46
+apex_agents,beta_hi_decomp,Muse Spark 1.1,2026-07-09,0.318,17.34
+apex_agents,beta_hi_decomp,GPT-5.6 Sol,2026-07-09,0.514,53.25
+apex_agents,beta_hi_decomp,Inkling,2026-07-15,0.338,19.62
+apex_agents,beta_hi_decomp,Kimi K3,2026-07-16,0.478,43.67
+apex_agents,beta_hi_decomp,Gemini 3.5 Flash Lite,2026-07-21,0.293,14.78
+apex_agents,beta_hi_decomp,Gemini 3.6 Flash,2026-07-21,0.469,41.55
+apex_agents,beta_hi_decomp,Opus 5,2026-07-24,0.658,122.0
+apex_agents,beta_hi_decomp,Qwen3.8-Max,2026-08-02,0.633,104.8
+apex_agents,beta_hi_decomp,Muse Spark 1.2,2026-08-05,0.454,38.24
+apex_agents,beta_hi_decomp,Grok 4.6,2026-08-12,0.653,118.3
+apex_agents,beta_hi_decomp,DeepSeek-V4-Pro-0813,2026-08-13,0.473,42.48
+apex_agents,beta_hi_decomp,Gemini 3.7 Flash,2026-08-13,0.678,138.35
+apex_agents,beta_hi_decomp,Qwen 3.8 27B,2026-08-14,0.475,42.95
+apex_agents,beta_hi_decomp,GLM-5.3,2026-08-14,0.566,71.12
+apex_agents,beta_hi_decomp,GLM-5.3-Flash,2026-08-20,0.528,57.54
+apex_agents,beta_hi_decomp,Fable 5.1 [claude-fable-5.1],2026-09-01,0.686,145.65
+apex_agents,beta_hi_decomp,Muse Spark 1.3 [muse-spark-1-3],2026-09-02,0.586,79.66
+apex_agents,beta_hi_decomp,Gemini 3.8 Flash,2026-09-02,0.643,111.3
+apex_agents,beta_hi_decomp,GPT-6 Astra,2026-09-03,0.647,114.04
+apex_agents,beta_hi_decomp,DeepSeek-V4.1-Flash,2026-09-09,0.395,27.45
+apex_agents,beta_hi_decomp,MiMo V2.6 Pro,2026-09-21,0.544,62.88
+apex_agents,beta_hi_decomp,Grok 4.7,2026-09-21,0.546,63.59
+apex_agents,beta_hi_decomp,Opus 5.5 [claude-opus-5-5],2026-09-22,0.735,203.3
+apex_agents,beta_hi_decomp,GPT-6 Sol,2026-09-22,0.543,62.53
+apex_agents,beta_hi_decomp,GPT-6 Luna,2026-09-22,0.443,35.98
+apex_agents,beta_hi_decomp,Sonnet 5.5 [claude-sonnet-5-5],2026-09-28,0.755,235.56
+apex_agents,beta_hi_decomp,GPT-6.1 Sol,2026-09-29,0.6,86.33
+apex_agents,beta_hi_decomp,Gemini 4 Argon,2026-09-30,0.824,421.44
+apex_agents,beta_hi_decomp,Beam,2026-10-05,0.488,46.14
+apex_agents,beta_hi_decomp,Mistral Large 4,2026-10-06,0.516,53.84
+apex_agents,beta_hi_decomp,Haiku 5.5,2026-10-07,0.561,69.15
+apex_agents,beta_hi_decomp,Muse Wonder 1.0,2026-10-12,0.661,124.3
+apex_agents,beta_hi_decomp,Muse Spark Open,2026-10-15,0.334,19.15
+apex_agents,beta_hi_decomp,DeepSeek-V4.1-Flash-1017,2026-10-17,0.698,157.56
+apex_agents,beta_hi_decomp,Kimi K3.1 Pro,2026-10-23,0.655,119.77
+apex_agents,beta_hi_decomp,GPT-6.1 Terra,2026-10-26,0.683,142.86
+apex_agents,beta_hi_decomp,Gemini 4 Carbon,2026-10-28,0.842,503.34
+apex_agents,beta_hi_decomp,Inkling 2 Small,2026-11-05,0.468,41.32
 crmarena_pro,base,o1,2024-12-05,0.485,11.86
 crmarena_pro,base,gpt-4o,2024-05-13,0.2795,4.02
 crmarena_pro,base,gpt-4o-mini,2024-07-18,0.1995,2.35
@@ -1037,6 +1391,372 @@ itbench_sre,beta_hi_decomp,Qwen3.5 27B (Reasoning),2026-06-10,0.3333,15.0
 itbench_sre,beta_hi_decomp,Grok 4.3 (high),2026-06-10,0.2768,11.28
 itbench_sre,beta_hi_decomp,Gemma 4 26B A4B (Reasoning),2026-06-10,0.2159,7.96
 itbench_sre,beta_hi_decomp,Qwen3.5 35B A3B (Reasoning),2026-06-10,0.1695,5.82
+jobbench,base,Opus-4,2025-05-22,0.219,85.18
+jobbench,base,Sonnet-4,2025-05-22,0.184,65.62
+jobbench,base,GPT-5,2025-08-07,0.0853,22.85
+jobbench,base,Sonnet-4.5,2025-09-29,0.277,123.79
+jobbench,base,Haiku-4.5,2025-10-15,0.174,60.49
+jobbench,base,GPT-5.1-Codex,2025-11-12,0.262,112.99
+jobbench,base,GPT-5.1,2025-11-13,0.163,55.06
+jobbench,base,Gemini-3-Pro,2025-11-18,0.114,33.55
+jobbench,base,Opus-4.5,2025-11-24,0.323,161.03
+jobbench,base,GPT-5.2,2025-12-11,0.343,179.4
+jobbench,base,Gemini-3-Flash,2025-12-17,0.114,33.55
+jobbench,base,GPT-5.2-Codex,2025-12-18,0.26,111.59
+jobbench,base,Kimi-K2.5,2026-01-27,0.0873,23.55
+jobbench,base,Opus-4.6,2026-02-05,0.367,203.45
+jobbench,base,GPT-5.3-Codex,2026-02-05,0.337,173.74
+jobbench,base,MiniMax-M2.5,2026-02-12,0.148,48.03
+jobbench,base,Sonnet-4.6,2026-02-17,0.369,205.56
+jobbench,base,Gemini 3.1 Pro,2026-02-19,0.159,53.15
+jobbench,base,GPT-5.4,2026-03-05,0.389,227.63
+jobbench,base,Opus-4.7,2026-04-16,0.459,321.31
+jobbench,base,GPT-5.5,2026-04-23,0.427,274.97
+jobbench,base,Gemini 3.5 Flash,2026-05-19,0.315,154.08
+jobbench,base,Claude Opus 4.8,2026-05-28,0.484,362.45
+jobbench,base,Nemotron 3 Ultra,2026-06-04,0.272,120.12
+jobbench,base,Claude Fable 5,2026-06-09,0.574,559.91
+jobbench,base,GLM 5.2,2026-06-16,0.434,284.56
+jobbench,base,Muse Spark 1.1,2026-07-09,0.547,490.85
+jobbench,base,GPT-5.6 SOL,2026-07-09,0.454,313.63
+jobbench,base,Inkling,2026-07-15,0.311,150.68
+jobbench,base,Kimi K3,2026-07-16,0.543,481.44
+jobbench,base,Claude Opus 5,2026-07-24,0.657,854.02
+jobbench,base,Qwen 3.8 Max,2026-08-02,0.527,445.66
+jobbench,base,Muse Spark 1.2,2026-08-05,0.616,690.3
+jobbench,base,GLM-5.3,2026-08-14,0.614,683.34
+jobbench,base,Claude Fable 5.1,2026-09-01,0.731,1299.05
+jobbench,base,Muse Spark 1.3,2026-09-02,0.649,818.6
+jobbench,base,GPT-6 Astra,2026-09-03,0.661,872.45
+jobbench,base,Claude Opus 5.5,2026-09-22,0.754,1500.62
+jobbench,base,Qwen-3.5-Plus,2026-05-15,0.185,66.14
+jobbench,base,Grok-4.2-Fast,2026-05-15,0.0438,9.78
+jobbench,base,Muse Wonder Full,,0.753,1490.97
+jobbench,base_decomp,Opus-4,2025-05-22,0.219,91.52
+jobbench,base_decomp,Sonnet-4,2025-05-22,0.184,69.92
+jobbench,base_decomp,GPT-5,2025-08-07,0.0853,23.79
+jobbench,base_decomp,Sonnet-4.5,2025-09-29,0.277,134.85
+jobbench,base_decomp,Haiku-4.5,2025-10-15,0.174,64.3
+jobbench,base_decomp,GPT-5.1-Codex,2025-11-12,0.262,122.64
+jobbench,base_decomp,GPT-5.1,2025-11-13,0.163,58.39
+jobbench,base_decomp,Gemini-3-Pro,2025-11-18,0.114,35.18
+jobbench,base_decomp,Opus-4.5,2025-11-24,0.323,177.37
+jobbench,base_decomp,GPT-5.2,2025-12-11,0.343,198.57
+jobbench,base_decomp,Gemini-3-Flash,2025-12-17,0.114,35.18
+jobbench,base_decomp,GPT-5.2-Codex,2025-12-18,0.26,121.07
+jobbench,base_decomp,Kimi-K2.5,2026-01-27,0.0873,24.54
+jobbench,base_decomp,Opus-4.6,2026-02-05,0.367,226.5
+jobbench,base_decomp,GPT-5.3-Codex,2026-02-05,0.337,192.02
+jobbench,base_decomp,MiniMax-M2.5,2026-02-12,0.148,50.75
+jobbench,base_decomp,Sonnet-4.6,2026-02-17,0.369,228.96
+jobbench,base_decomp,Gemini 3.1 Pro,2026-02-19,0.159,56.3
+jobbench,base_decomp,GPT-5.4,2026-03-05,0.389,254.79
+jobbench,base_decomp,Opus-4.7,2026-04-16,0.459,365.91
+jobbench,base_decomp,GPT-5.5,2026-04-23,0.427,310.66
+jobbench,base_decomp,Gemini 3.5 Flash,2026-05-19,0.315,169.38
+jobbench,base_decomp,Claude Opus 4.8,2026-05-28,0.484,415.34
+jobbench,base_decomp,Nemotron 3 Ultra,2026-06-04,0.272,130.7
+jobbench,base_decomp,Claude Fable 5,2026-06-09,0.574,656.37
+jobbench,base_decomp,GLM 5.2,2026-06-16,0.434,322.05
+jobbench,base_decomp,Muse Spark 1.1,2026-07-09,0.547,571.48
+jobbench,base_decomp,GPT-5.6 SOL,2026-07-09,0.454,356.72
+jobbench,base_decomp,Inkling,2026-07-15,0.311,165.49
+jobbench,base_decomp,Kimi K3,2026-07-16,0.543,559.95
+jobbench,base_decomp,Claude Opus 5,2026-07-24,0.657,1022.81
+jobbench,base_decomp,Qwen 3.8 Max,2026-08-02,0.527,516.24
+jobbench,base_decomp,Muse Spark 1.2,2026-08-05,0.616,818.0
+jobbench,base_decomp,GLM-5.3,2026-08-14,0.614,809.33
+jobbench,base_decomp,Claude Fable 5.1,2026-09-01,0.731,1586.38
+jobbench,base_decomp,Muse Spark 1.3,2026-09-02,0.649,978.35
+jobbench,base_decomp,GPT-6 Astra,2026-09-03,0.661,1045.98
+jobbench,base_decomp,Claude Opus 5.5,2026-09-22,0.754,1843.8
+jobbench,base_decomp,Qwen-3.5-Plus,2026-05-15,0.185,70.5
+jobbench,base_decomp,Grok-4.2-Fast,2026-05-15,0.0438,10.09
+jobbench,base_decomp,Muse Wonder Full,,0.753,1831.45
+jobbench,beta_lo,Opus-4,2025-05-22,0.219,46.64
+jobbench,beta_lo,Sonnet-4,2025-05-22,0.184,32.4
+jobbench,beta_lo,GPT-5,2025-08-07,0.0853,7.42
+jobbench,beta_lo,Sonnet-4.5,2025-09-29,0.277,78.6
+jobbench,beta_lo,Haiku-4.5,2025-10-15,0.174,28.92
+jobbench,beta_lo,GPT-5.1-Codex,2025-11-12,0.262,69.19
+jobbench,beta_lo,GPT-5.1,2025-11-13,0.163,25.36
+jobbench,beta_lo,Gemini-3-Pro,2025-11-18,0.114,12.69
+jobbench,beta_lo,Opus-4.5,2025-11-24,0.323,113.44
+jobbench,beta_lo,GPT-5.2,2025-12-11,0.343,131.89
+jobbench,beta_lo,Gemini-3-Flash,2025-12-17,0.114,12.69
+jobbench,beta_lo,GPT-5.2-Codex,2025-12-18,0.26,68.0
+jobbench,beta_lo,Kimi-K2.5,2026-01-27,0.0873,7.74
+jobbench,beta_lo,Opus-4.6,2026-02-05,0.367,157.19
+jobbench,beta_lo,GPT-5.3-Codex,2026-02-05,0.337,126.12
+jobbench,beta_lo,MiniMax-M2.5,2026-02-12,0.148,20.95
+jobbench,beta_lo,Sonnet-4.6,2026-02-17,0.369,159.47
+jobbench,beta_lo,Gemini 3.1 Pro,2026-02-19,0.159,24.14
+jobbench,beta_lo,GPT-5.4,2026-03-05,0.389,183.84
+jobbench,beta_lo,Opus-4.7,2026-04-16,0.459,297.28
+jobbench,beta_lo,GPT-5.5,2026-04-23,0.427,239.25
+jobbench,beta_lo,Gemini 3.5 Flash,2026-05-19,0.315,106.67
+jobbench,beta_lo,Claude Opus 4.8,2026-05-28,0.484,351.65
+jobbench,beta_lo,Nemotron 3 Ultra,2026-06-04,0.272,75.37
+jobbench,beta_lo,Claude Fable 5,2026-06-09,0.574,644.82
+jobbench,beta_lo,GLM 5.2,2026-06-16,0.434,250.96
+jobbench,beta_lo,Muse Spark 1.1,2026-07-09,0.547,536.71
+jobbench,beta_lo,GPT-5.6 SOL,2026-07-09,0.454,287.42
+jobbench,beta_lo,Inkling,2026-07-15,0.311,103.4
+jobbench,beta_lo,Kimi K3,2026-07-16,0.543,522.41
+jobbench,beta_lo,Claude Opus 5,2026-07-24,0.657,1161.75
+jobbench,beta_lo,Qwen 3.8 Max,2026-08-02,0.527,469.08
+jobbench,beta_lo,Muse Spark 1.2,2026-08-05,0.616,863.41
+jobbench,beta_lo,GLM-5.3,2026-08-14,0.614,851.29
+jobbench,beta_lo,Claude Fable 5.1,2026-09-01,0.731,2085.54
+jobbench,beta_lo,Muse Spark 1.3,2026-09-02,0.649,1095.1
+jobbench,beta_lo,GPT-6 Astra,2026-09-03,0.661,1196.87
+jobbench,beta_lo,Claude Opus 5.5,2026-09-22,0.754,2550.54
+jobbench,beta_lo,Qwen-3.5-Plus,2026-05-15,0.185,32.76
+jobbench,beta_lo,Grok-4.2-Fast,2026-05-15,0.0438,2.27
+jobbench,beta_lo,Muse Wonder Full,,0.753,2527.68
+jobbench,beta_lo_decomp,Opus-4,2025-05-22,0.219,51.11
+jobbench,beta_lo_decomp,Sonnet-4,2025-05-22,0.184,35.29
+jobbench,beta_lo_decomp,GPT-5,2025-08-07,0.0853,7.94
+jobbench,beta_lo_decomp,Sonnet-4.5,2025-09-29,0.277,87.0
+jobbench,beta_lo_decomp,Haiku-4.5,2025-10-15,0.174,31.44
+jobbench,beta_lo_decomp,GPT-5.1-Codex,2025-11-12,0.262,76.39
+jobbench,beta_lo_decomp,GPT-5.1,2025-11-13,0.163,27.52
+jobbench,beta_lo_decomp,Gemini-3-Pro,2025-11-18,0.114,13.66
+jobbench,beta_lo_decomp,Opus-4.5,2025-11-24,0.323,126.59
+jobbench,beta_lo_decomp,GPT-5.2,2025-12-11,0.343,147.7
+jobbench,beta_lo_decomp,Gemini-3-Flash,2025-12-17,0.114,13.66
+jobbench,beta_lo_decomp,GPT-5.2-Codex,2025-12-18,0.26,75.05
+jobbench,beta_lo_decomp,Kimi-K2.5,2026-01-27,0.0873,8.29
+jobbench,beta_lo_decomp,Opus-4.6,2026-02-05,0.367,176.78
+jobbench,beta_lo_decomp,GPT-5.3-Codex,2026-02-05,0.337,141.09
+jobbench,beta_lo_decomp,MiniMax-M2.5,2026-02-12,0.148,22.68
+jobbench,beta_lo_decomp,Sonnet-4.6,2026-02-17,0.369,179.4
+jobbench,beta_lo_decomp,Gemini 3.1 Pro,2026-02-19,0.159,26.18
+jobbench,beta_lo_decomp,GPT-5.4,2026-03-05,0.389,207.56
+jobbench,beta_lo_decomp,Opus-4.7,2026-04-16,0.459,339.89
+jobbench,beta_lo_decomp,GPT-5.5,2026-04-23,0.427,271.97
+jobbench,beta_lo_decomp,Gemini 3.5 Flash,2026-05-19,0.315,118.86
+jobbench,beta_lo_decomp,Claude Opus 4.8,2026-05-28,0.484,403.88
+jobbench,beta_lo_decomp,Nemotron 3 Ultra,2026-06-04,0.272,83.35
+jobbench,beta_lo_decomp,Claude Fable 5,2026-06-09,0.574,752.85
+jobbench,beta_lo_decomp,GLM 5.2,2026-06-16,0.434,285.65
+jobbench,beta_lo_decomp,Muse Spark 1.1,2026-07-09,0.547,623.53
+jobbench,beta_lo_decomp,GPT-5.6 SOL,2026-07-09,0.454,328.32
+jobbench,beta_lo_decomp,Inkling,2026-07-15,0.311,115.14
+jobbench,beta_lo_decomp,Kimi K3,2026-07-16,0.543,606.47
+jobbench,beta_lo_decomp,Claude Opus 5,2026-07-24,0.657,1377.42
+jobbench,beta_lo_decomp,Qwen 3.8 Max,2026-08-02,0.527,542.98
+jobbench,beta_lo_decomp,Muse Spark 1.2,2026-08-05,0.616,1015.92
+jobbench,beta_lo_decomp,GLM-5.3,2026-08-14,0.614,1001.29
+jobbench,beta_lo_decomp,Claude Fable 5.1,2026-09-01,0.731,2507.36
+jobbench,beta_lo_decomp,Muse Spark 1.3,2026-09-02,0.649,1296.46
+jobbench,beta_lo_decomp,GPT-6 Astra,2026-09-03,0.661,1420.13
+jobbench,beta_lo_decomp,Claude Opus 5.5,2026-09-22,0.754,3079.83
+jobbench,beta_lo_decomp,Qwen-3.5-Plus,2026-05-15,0.185,35.69
+jobbench,beta_lo_decomp,Grok-4.2-Fast,2026-05-15,0.0438,2.41
+jobbench,beta_lo_decomp,Muse Wonder Full,,0.753,3051.65
+jobbench,beta_hi,Opus-4,2025-05-22,0.219,108.28
+jobbench,beta_hi,Sonnet-4,2025-05-22,0.184,86.93
+jobbench,beta_hi,GPT-5,2025-08-07,0.0853,35.79
+jobbench,beta_hi,Sonnet-4.5,2025-09-29,0.277,148.35
+jobbench,beta_hi,Haiku-4.5,2025-10-15,0.174,81.17
+jobbench,beta_hi,GPT-5.1-Codex,2025-11-12,0.262,137.37
+jobbench,beta_hi,GPT-5.1,2025-11-13,0.163,75.0
+jobbench,beta_hi,Gemini-3-Pro,2025-11-18,0.114,49.44
+jobbench,beta_hi,Opus-4.5,2025-11-24,0.323,185.15
+jobbench,beta_hi,GPT-5.2,2025-12-11,0.343,202.79
+jobbench,beta_hi,Gemini-3-Flash,2025-12-17,0.114,49.44
+jobbench,beta_hi,GPT-5.2-Codex,2025-12-18,0.26,135.94
+jobbench,beta_hi,Kimi-K2.5,2026-01-27,0.0873,36.71
+jobbench,beta_hi,Opus-4.6,2026-02-05,0.367,225.47
+jobbench,beta_hi,GPT-5.3-Codex,2026-02-05,0.337,197.38
+jobbench,beta_hi,MiniMax-M2.5,2026-02-12,0.148,66.85
+jobbench,beta_hi,Sonnet-4.6,2026-02-17,0.369,227.44
+jobbench,beta_hi,Gemini 3.1 Pro,2026-02-19,0.159,72.8
+jobbench,beta_hi,GPT-5.4,2026-03-05,0.389,247.85
+jobbench,beta_hi,Opus-4.7,2026-04-16,0.459,331.4
+jobbench,beta_hi,GPT-5.5,2026-04-23,0.427,290.63
+jobbench,beta_hi,Gemini 3.5 Flash,2026-05-19,0.315,178.39
+jobbench,beta_hi,Claude Opus 4.8,2026-05-28,0.484,366.83
+jobbench,beta_hi,Nemotron 3 Ultra,2026-06-04,0.272,144.64
+jobbench,beta_hi,Claude Fable 5,2026-06-09,0.574,529.26
+jobbench,beta_hi,GLM 5.2,2026-06-16,0.434,299.15
+jobbench,beta_hi,Muse Spark 1.1,2026-07-09,0.547,473.68
+jobbench,beta_hi,GPT-5.6 SOL,2026-07-09,0.454,324.71
+jobbench,beta_hi,Inkling,2026-07-15,0.311,175.07
+jobbench,beta_hi,Kimi K3,2026-07-16,0.543,466.01
+jobbench,beta_hi,Claude Opus 5,2026-07-24,0.657,755.46
+jobbench,beta_hi,Qwen 3.8 Max,2026-08-02,0.527,436.64
+jobbench,beta_hi,Muse Spark 1.2,2026-08-05,0.616,631.41
+jobbench,beta_hi,GLM-5.3,2026-08-14,0.614,626.04
+jobbench,beta_hi,Claude Fable 5.1,2026-09-01,0.731,1075.71
+jobbench,beta_hi,Muse Spark 1.3,2026-09-02,0.649,728.96
+jobbench,beta_hi,GPT-6 Astra,2026-09-03,0.661,769.18
+jobbench,beta_hi,Claude Opus 5.5,2026-09-22,0.754,1214.68
+jobbench,beta_hi,Qwen-3.5-Plus,2026-05-15,0.185,87.51
+jobbench,beta_hi,Grok-4.2-Fast,2026-05-15,0.0438,17.54
+jobbench,beta_hi,Muse Wonder Full,,0.753,1208.1
+jobbench,beta_hi_decomp,Opus-4,2025-05-22,0.219,114.88
+jobbench,beta_hi_decomp,Sonnet-4,2025-05-22,0.184,91.34
+jobbench,beta_hi_decomp,GPT-5,2025-08-07,0.0853,36.61
+jobbench,beta_hi_decomp,Sonnet-4.5,2025-09-29,0.277,159.94
+jobbench,beta_hi_decomp,Haiku-4.5,2025-10-15,0.174,85.06
+jobbench,beta_hi_decomp,GPT-5.1-Codex,2025-11-12,0.262,147.48
+jobbench,beta_hi_decomp,GPT-5.1,2025-11-13,0.163,78.36
+jobbench,beta_hi_decomp,Gemini-3-Pro,2025-11-18,0.114,50.97
+jobbench,beta_hi_decomp,Opus-4.5,2025-11-24,0.323,202.21
+jobbench,beta_hi_decomp,GPT-5.2,2025-12-11,0.343,222.74
+jobbench,beta_hi_decomp,Gemini-3-Flash,2025-12-17,0.114,50.97
+jobbench,beta_hi_decomp,GPT-5.2-Codex,2025-12-18,0.26,145.87
+jobbench,beta_hi_decomp,Kimi-K2.5,2026-01-27,0.0873,37.58
+jobbench,beta_hi_decomp,Opus-4.6,2026-02-05,0.367,249.35
+jobbench,beta_hi_decomp,GPT-5.3-Codex,2026-02-05,0.337,216.43
+jobbench,beta_hi_decomp,MiniMax-M2.5,2026-02-12,0.148,69.56
+jobbench,beta_hi_decomp,Sonnet-4.6,2026-02-17,0.369,251.67
+jobbench,beta_hi_decomp,Gemini 3.1 Pro,2026-02-19,0.159,75.98
+jobbench,beta_hi_decomp,GPT-5.4,2026-03-05,0.389,275.83
+jobbench,beta_hi_decomp,Opus-4.7,2026-04-16,0.459,376.38
+jobbench,beta_hi_decomp,GPT-5.5,2026-04-23,0.427,327.02
+jobbench,beta_hi_decomp,Gemini 3.5 Flash,2026-05-19,0.315,194.39
+jobbench,beta_hi_decomp,Claude Opus 4.8,2026-05-28,0.484,419.68
+jobbench,beta_hi_decomp,Nemotron 3 Ultra,2026-06-04,0.272,155.72
+jobbench,beta_hi_decomp,Claude Fable 5,2026-06-09,0.574,621.97
+jobbench,beta_hi_decomp,GLM 5.2,2026-06-16,0.434,337.29
+jobbench,beta_hi_decomp,Muse Spark 1.1,2026-07-09,0.547,552.15
+jobbench,beta_hi_decomp,GPT-5.6 SOL,2026-07-09,0.454,368.25
+jobbench,beta_hi_decomp,Inkling,2026-07-15,0.311,190.55
+jobbench,beta_hi_decomp,Kimi K3,2026-07-16,0.543,542.56
+jobbench,beta_hi_decomp,Claude Opus 5,2026-07-24,0.657,910.53
+jobbench,beta_hi_decomp,Qwen 3.8 Max,2026-08-02,0.527,505.95
+jobbench,beta_hi_decomp,Muse Spark 1.2,2026-08-05,0.616,751.51
+jobbench,beta_hi_decomp,GLM-5.3,2026-08-14,0.614,744.66
+jobbench,beta_hi_decomp,Claude Fable 5.1,2026-09-01,0.731,1326.8
+jobbench,beta_hi_decomp,Muse Spark 1.3,2026-09-02,0.649,876.43
+jobbench,beta_hi_decomp,GPT-6 Astra,2026-09-03,0.661,928.21
+jobbench,beta_hi_decomp,Claude Opus 5.5,2026-09-22,0.754,1509.17
+jobbench,beta_hi_decomp,Qwen-3.5-Plus,2026-05-15,0.185,91.98
+jobbench,beta_hi_decomp,Grok-4.2-Fast,2026-05-15,0.0438,17.75
+jobbench,beta_hi_decomp,Muse Wonder Full,,0.753,1500.51
+online_mind2web,base,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,5.73
+online_mind2web,base,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,1.34
+online_mind2web,base,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,1.05
+online_mind2web,base,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,0.92
+online_mind2web,base,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,1.12
+online_mind2web,base,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,3.32
+online_mind2web,base,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,2.25
+online_mind2web,base,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.34
+online_mind2web,base,Eko-V2 (Unknown),2025-05-15,0.78,17.9
+online_mind2web,base,Eko-V1 (Unknown),2025-05-15,0.31,1.42
+online_mind2web,base,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,16.02
+online_mind2web,base,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,5.45
+online_mind2web,base,Navigator (n1-preview-11-2025),2025-11-15,0.647,7.99
+online_mind2web,base,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,1.9
+online_mind2web,base,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,85.17
+online_mind2web,base,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,11.33
+online_mind2web,base,Webwright (GPT‑5.4),2026-05-15,0.867,37.47
+online_mind2web,base,Navigator (n1.5-latest),2026-06-15,0.879,42.71
+online_mind2web,base,Hark (Hark Handoff),2026-08-15,0.953,146.63
+online_mind2web,base,ACT-2 (GPT-5.4),2026-08-15,0.923,78.06
+online_mind2web,base_decomp,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,5.68
+online_mind2web,base_decomp,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,1.02
+online_mind2web,base_decomp,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,0.77
+online_mind2web,base_decomp,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,0.66
+online_mind2web,base_decomp,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,0.83
+online_mind2web,base_decomp,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,2.98
+online_mind2web,base_decomp,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,1.87
+online_mind2web,base_decomp,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.08
+online_mind2web,base_decomp,Eko-V2 (Unknown),2025-05-15,0.78,21.19
+online_mind2web,base_decomp,Eko-V1 (Unknown),2025-05-15,0.31,1.09
+online_mind2web,base_decomp,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,18.69
+online_mind2web,base_decomp,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,5.35
+online_mind2web,base_decomp,Navigator (n1-preview-11-2025),2025-11-15,0.647,8.39
+online_mind2web,base_decomp,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,1.54
+online_mind2web,base_decomp,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,115.46
+online_mind2web,base_decomp,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,12.57
+online_mind2web,base_decomp,Webwright (GPT‑5.4),2026-05-15,0.867,48.02
+online_mind2web,base_decomp,Navigator (n1.5-latest),2026-06-15,0.879,55.34
+online_mind2web,base_decomp,Hark (Hark Handoff),2026-08-15,0.953,203.44
+online_mind2web,base_decomp,ACT-2 (GPT-5.4),2026-08-15,0.923,105.33
+online_mind2web,beta_lo,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,6.7
+online_mind2web,beta_lo,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,0.9
+online_mind2web,beta_lo,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,0.65
+online_mind2web,beta_lo,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,0.54
+online_mind2web,beta_lo,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,0.7
+online_mind2web,beta_lo,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,3.16
+online_mind2web,beta_lo,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,1.84
+online_mind2web,beta_lo,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.56
+online_mind2web,beta_lo,Eko-V2 (Unknown),2025-05-15,0.78,32.3
+online_mind2web,beta_lo,Eko-V1 (Unknown),2025-05-15,0.31,0.98
+online_mind2web,beta_lo,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,27.71
+online_mind2web,beta_lo,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,6.25
+online_mind2web,beta_lo,Navigator (n1-preview-11-2025),2025-11-15,0.647,10.6
+online_mind2web,beta_lo,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,1.46
+online_mind2web,beta_lo,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,282.31
+online_mind2web,beta_lo,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,17.15
+online_mind2web,beta_lo,Webwright (GPT‑5.4),2026-05-15,0.867,90.02
+online_mind2web,beta_lo,Navigator (n1.5-latest),2026-06-15,0.879,107.97
+online_mind2web,beta_lo,Hark (Hark Handoff),2026-08-15,0.953,602.43
+online_mind2web,beta_lo,ACT-2 (GPT-5.4),2026-08-15,0.923,250.02
+online_mind2web,beta_lo_decomp,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,6.5
+online_mind2web,beta_lo_decomp,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,0.72
+online_mind2web,beta_lo_decomp,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,0.5
+online_mind2web,beta_lo_decomp,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,0.41
+online_mind2web,beta_lo_decomp,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,0.55
+online_mind2web,beta_lo_decomp,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,2.84
+online_mind2web,beta_lo_decomp,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,1.57
+online_mind2web,beta_lo_decomp,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.26
+online_mind2web,beta_lo_decomp,Eko-V2 (Unknown),2025-05-15,0.78,35.8
+online_mind2web,beta_lo_decomp,Eko-V1 (Unknown),2025-05-15,0.31,0.79
+online_mind2web,beta_lo_decomp,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,30.38
+online_mind2web,beta_lo_decomp,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,6.02
+online_mind2web,beta_lo_decomp,Navigator (n1-preview-11-2025),2025-11-15,0.647,10.73
+online_mind2web,beta_lo_decomp,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,1.22
+online_mind2web,beta_lo_decomp,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,345.98
+online_mind2web,beta_lo_decomp,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,18.11
+online_mind2web,beta_lo_decomp,Webwright (GPT‑5.4),2026-05-15,0.867,105.83
+online_mind2web,beta_lo_decomp,Navigator (n1.5-latest),2026-06-15,0.879,127.98
+online_mind2web,beta_lo_decomp,Hark (Hark Handoff),2026-08-15,0.953,751.01
+online_mind2web,beta_lo_decomp,ACT-2 (GPT-5.4),2026-08-15,0.923,305.36
+online_mind2web,beta_hi,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,5.39
+online_mind2web,beta_hi,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,1.57
+online_mind2web,beta_hi,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,1.28
+online_mind2web,beta_hi,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,1.14
+online_mind2web,beta_hi,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,1.35
+online_mind2web,beta_hi,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,3.39
+online_mind2web,beta_hi,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,2.43
+online_mind2web,beta_hi,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.25
+online_mind2web,beta_hi,Eko-V2 (Unknown),2025-05-15,0.78,14.18
+online_mind2web,beta_hi,Eko-V1 (Unknown),2025-05-15,0.31,1.65
+online_mind2web,beta_hi,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,12.91
+online_mind2web,beta_hi,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,5.17
+online_mind2web,beta_hi,Navigator (n1-preview-11-2025),2025-11-15,0.647,7.15
+online_mind2web,beta_hi,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,2.11
+online_mind2web,beta_hi,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,52.99
+online_mind2web,beta_hi,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,9.62
+online_mind2web,beta_hi,Webwright (GPT‑5.4),2026-05-15,0.867,26.5
+online_mind2web,beta_hi,Navigator (n1.5-latest),2026-06-15,0.879,29.6
+online_mind2web,beta_hi,Hark (Hark Handoff),2026-08-15,0.953,83.75
+online_mind2web,beta_hi,ACT-2 (GPT-5.4),2026-08-15,0.923,49.24
+online_mind2web,beta_hi_decomp,Operator (OpenAI Computer-Using Agent),2025-01-23,0.583,5.41
+online_mind2web,beta_hi_decomp,SeeAct (gpt-4o-2024-08-06),2024-08-06,0.3,1.16
+online_mind2web,beta_hi_decomp,Browser Use (gpt-4o-2024-08-06),2024-08-06,0.26,0.9
+online_mind2web,beta_hi_decomp,Claude Computer Use 3.5 (Claude-3-5-sonnet-20241022),2024-10-22,0.24,0.79
+online_mind2web,beta_hi_decomp,Agent-E (gpt-4o-2024-08-06),2024-08-06,0.27,0.96
+online_mind2web,beta_hi_decomp,Claude Computer Use 3.7 (w/o thinking) (Claude-3-7-sonnet-20250219),2025-02-24,0.473,3.03
+online_mind2web,beta_hi_decomp,ACT-1-20250703 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-07-15,0.395,2.0
+online_mind2web,beta_hi_decomp,ACT-1-20250814 (o3-2025-04-16 and Claude-sonnet-4-20250514),2025-08-15,0.527,4.02
+online_mind2web,beta_hi_decomp,Eko-V2 (Unknown),2025-05-15,0.78,17.46
+online_mind2web,beta_hi_decomp,Eko-V1 (Unknown),2025-05-15,0.31,1.23
+online_mind2web,beta_hi_decomp,Seed1.5-VL (Seed1.5-VL),2025-05-15,0.764,15.63
+online_mind2web,beta_hi_decomp,Google Computer Use (09-2025) (Gemini 2.5 Computer Use),2025-10-07,0.573,5.13
+online_mind2web,beta_hi_decomp,Navigator (n1-preview-11-2025),2025-11-15,0.647,7.67
+online_mind2web,beta_hi_decomp,MolmoWeb (MolmoWeb-8B),2026-03-15,0.363,1.67
+online_mind2web,beta_hi_decomp,GPT‑5.4 (GPT‑5.4),2026-03-05,0.928,76.33
+online_mind2web,beta_hi_decomp,ChatGPT Atlas (ChatGPT Atlas),2025-10-21,0.709,10.99
+online_mind2web,beta_hi_decomp,Webwright (GPT‑5.4),2026-05-15,0.867,35.76
+online_mind2web,beta_hi_decomp,Navigator (n1.5-latest),2026-06-15,0.879,40.45
+online_mind2web,beta_hi_decomp,Hark (Hark Handoff),2026-08-15,0.953,123.94
+online_mind2web,beta_hi_decomp,ACT-2 (GPT-5.4),2026-08-15,0.923,70.55
 osworld_verified,base,computer-use-preview,2025-03-11,0.314,1.26
 osworld_verified,base,o3,2025-04-16,0.23,0.71
 osworld_verified,base,claude-3-7-sonnet-20250219,2025-02-24,0.358,1.65

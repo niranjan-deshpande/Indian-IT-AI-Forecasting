@@ -97,6 +97,16 @@ EXAMPLES = ["1282b", "14662a"]  # worked examples on the page: a ticket reply, a
 MONTHS = ("January February March April May June July August September October November December").split()
 
 
+TODAY = "2026-11-10"
+
+
+BENCH.update({"apex_accounting": "APEX-Accounting", "dualentry": "DualEntry", "vals_finance_agent": "Vals Finance Agent",
+              "healthadminbench": "HealthAdminBench", "ui_cube": "UI-CUBE", "theagentcompany": "TheAgentCompany",
+              "swe_lancer": "SWE-Lancer", "spider2": "Spider 2.0", "terminal_bench_4": "Terminal-Bench 4",
+              "dba_bench": "DBA-Bench", "swe_bench_verified": "SWE-bench Verified", "jobbench": "JobBench",
+              "apex_agents": "APEX-Agents", "online_mind2web": "Online-Mind2Web", "officeval": "OfficeVal",
+              "osworld_2": "OSWorld 2.0"})
+
 def bname(b):
     b = str(b).replace(" (no horizon)", "")
     return BENCH.get(b, b)
@@ -273,6 +283,40 @@ def horizons_data(run):
                      "model": str(r.H_now_model), "score": round(100 * float(r.H_now_score)), "med": float(r.item_median_min),
                      "w": round(100 * float(w.get(b, 0)))})
     return {"rows": rows}
+
+
+def timeline_data(runs):
+    """S by occupation at monthly dates (delegable.py timeline.csv), horizons moved on the pooled trend."""
+    series, dates = [], None
+    for run in runs:
+        tl = pd.read_csv(DS / "coding" / "stage2" / run.name / "delegable" / "timeline.csv")
+        for o in run.occs:
+            r1 = tl[(tl.scenario == BASE) & (tl.occupation == o)].sort_values("months_from_today")
+            r5 = tl[(tl.scenario == RHO5) & (tl.occupation == o)].sort_values("months_from_today")
+            dates = list(r1.date)
+            series.append({"name": occ_short(o), "S1": [round(100 * v, 2) for v in r1.S],
+                           "S5": [round(100 * v, 2) for v in r5.S]})
+    return {"dates": dates, "series": series, "today": TODAY}
+
+
+def trend_data(runs, k=8):
+    """Record-setting horizon by model release date, for the k benchmarks with most matched weight."""
+    f = pd.read_csv(DS / "benchmarks" / "horizons_fits.csv")
+    f = f[(f.variant == "base") & f.release_date.notna()].copy()
+    f["release_date"] = f.release_date.astype(str).str.slice(0, 10)
+    f = f[f.release_date.str.len() == 10]
+    w = pd.concat([r.coded().groupby("benchmark").weight.sum() / r.coded().weight.sum() for r in runs], axis=1).sum(axis=1)
+    top = [b for b in w.sort_values(ascending=False).index if b in set(f.benchmark)][:k]
+    out = []
+    for b in top:
+        g = f[f.benchmark == b].sort_values("release_date")
+        best, xs, ys, ms = 0, [], [], []
+        for _, r in g.iterrows():
+            if r.H_min > best:
+                best = r.H_min
+                xs.append(r.release_date); ys.append(round(float(r.H_min), 2)); ms.append(str(r.model))
+        out.append({"name": bname(b), "x": xs, "y": ys, "model": ms})
+    return {"series": out, "today": TODAY}
 
 
 def timing_raw(run="validation"):
@@ -530,6 +574,9 @@ def figure_shells(pilot, bpo):
                       ln("#8a7d6d", "dashed", 1.5) + "Estimate = published</span>" + ln("#235fa6", "solid", 2)
                       + "Fitted line</span>"),
     }
+    runs_occs = pilot.occs + (bpo.occs if bpo else [])
+    shells["timeline"] = fig("timeline", "S over time, % of unassisted hours (horizons moved along the pooled trend)", occ_legend(runs_occs))
+    shells["trend"] = fig("trend", "Horizon of the best model released so far, by release date (log scale)")
     if bpo:
         shells["bpo_headline"] = fig("bpo_headline", "BPO occupations, % of unassisted hours", rho)
         shells["bpo_items"] = fig("bpo_items", "Each work item, baseline (ρ = 1); marker area ∝ importance weight", item_types)
@@ -921,12 +968,48 @@ function figTiming(id, d) {
   el.dataset.narrow = narrow;
 }
 
-const FIGS = { headline: figHeadline, bpo_headline: figHeadline, mechanism: figMechanism, dvs: figDvS, items: figItems, bpo_items: figItems,
+/* S over time, one line per occupation; horizons moved along the pooled trend */
+function figTimeline(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.16 : 0.07;
+  const traces = [], ann = [], shapes = [];
+  const lay = { hovermode: "closest", height: narrow ? 620 : 380, margin: { l: 46, r: 12, t: 26, b: 36 }, showlegend: false };
+  [["1", "ρ = 1"], ["5", "ρ = 0.5 for test- and state-graded benchmarks"]].forEach(([r, nm], i) => {
+    const k = i ? "2" : "", p = twoPanels(narrow, i, gap);
+    d.series.forEach((q, j) => traces.push({ type: "scatter", mode: "lines", x: d.dates, y: q["S" + r], xaxis: "x" + k, yaxis: "y" + k,
+      line: { color: OCC_COL[j % OCC_COL.length], width: 2 }, name: q.name,
+      hovertemplate: q.name + ", %{x|%b %Y}: S = %{y:.0f}%<extra></extra>" }));
+    lay["xaxis" + k] = axis({ domain: p.x, anchor: "y" + k, type: "date", tickformat: "%b %Y", nticks: narrow ? 4 : 5 });
+    lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, range: [0, 70], ticksuffix: "%", dtick: 10 });
+    shapes.push({ type: "line", xref: "x" + k, yref: "y" + k + " domain", x0: d.today, x1: d.today, y0: 0, y1: 1,
+      line: { color: C.muted || "#8a7d6d", width: 1, dash: "dot" } });
+    ann.push(ptitle(k, nm));
+    ann.push({ xref: "x" + k, yref: "y" + k + " domain", x: d.today, y: 0.98, xanchor: "right", showarrow: false,
+      text: "today ", font: { family: FONT, size: 11, color: "#8a7d6d" } });
+  });
+  lay.annotations = ann; lay.shapes = shapes; draw(el, traces, lay); el.dataset.narrow = narrow;
+}
+
+const TREND_COL = ["#235fa6", "#b0702a", "#2f8a57", "#c0607e", "#8f68a6", "#ae8a2c", "#4fa3c7", "#5c5c5c"];
+/* record-setting horizon by model release date, per benchmark (log scale) */
+function figTrend(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640;
+  const traces = d.series.map((q, j) => ({ type: "scatter", mode: "lines+markers", x: q.x, y: q.y, name: q.name, text: q.model,
+    line: { color: TREND_COL[j % TREND_COL.length], width: 1.8, shape: "hv" }, marker: { size: 6, color: TREND_COL[j % TREND_COL.length] },
+    hovertemplate: q.name + "<br>%{text}, %{x|%b %Y}: %{y:.0f} min<extra></extra>" }));
+  draw(el, traces, { hovermode: "closest", height: narrow ? 460 : 400, margin: { l: 60, r: 12, t: 10, b: 36 },
+    showlegend: true, legend: { orientation: "h", y: -0.14, font: small(11.5) },
+    xaxis: axis({ type: "date", tickformat: "%b %Y" }),
+    yaxis: axis(Object.assign({ type: "log" }, LOGTICKS)),
+    shapes: [{ type: "line", xref: "x", yref: "paper", x0: d.today, x1: d.today, y0: 0, y1: 1, line: { color: "#8a7d6d", width: 1, dash: "dot" } }] });
+  el.dataset.narrow = narrow;
+}
+
+const FIGS = { timeline: figTimeline, trend: figTrend, headline: figHeadline, bpo_headline: figHeadline, mechanism: figMechanism, dvs: figDvS, items: figItems, bpo_items: figItems,
   scenarios: figScenarios, types: figTypes, coverage: figCoverage, horizons: figHorizons, timing: figTiming };
 const CHARTS = {};
 Object.keys(DATA).forEach(k => { CHARTS["chart-" + k] = () => FIGS[k]("chart-" + k, DATA[k]); });
 """
-JS_FIGS = {"headline", "bpo_headline", "mechanism", "dvs", "items", "bpo_items", "scenarios", "types", "coverage", "horizons", "timing"}
+JS_FIGS = {"timeline", "trend", "headline", "bpo_headline", "mechanism", "dvs", "items", "bpo_items", "scenarios", "types", "coverage", "horizons", "timing"}
 
 EXTRA_CSS = """
 /* this page */
@@ -961,6 +1044,7 @@ def main():
     body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     front = dict((k.strip(), v.strip()) for k, v in (l.split(":", 1) for l in fm.strip().splitlines()))
     tok = tokens(pilot)
+    tok["today_long"] = "10 November 2026"
     if bpo:  # a few BPO-wide numbers for the prose
         for sc, suf in [(BASE, ""), (RHO5, "5")]:
             vals = sorted((bpo.agg[(sc, o)]["S"], o) for o in bpo.occs)
@@ -978,6 +1062,8 @@ def main():
             "items": items_data(pilot), "scenarios": scenarios_data(pilot), "types": types_data(pilot),
             "coverage": coverage_data(pilot), "horizons": horizons_data(pilot), "timing": timing_data()}
     gentables = {"summary": lambda: gt_summary(pilot), "match": lambda: gt_match(pilot), "items": lambda: gt_items(pilot)}
+    data["timeline"] = timeline_data([pilot] + ([bpo] if bpo else []))
+    data["trend"] = trend_data([pilot] + ([bpo] if bpo else []))
     if bpo:
         data["bpo_headline"] = headline_data(bpo)
         data["bpo_items"] = items_data(bpo)

@@ -94,3 +94,10 @@
 {"time": "2026-11-10T01:05:13", "model": "gpt-6.1-terra", "purpose": "stage1b comp_v1_final 13-1111.00", "prompt_tokens": 921, "completion_tokens": 81, "usd": 0.0013}
 {"time": "2026-11-10T01:08:18", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch0", "prompt_tokens": 8816, "completion_tokens": 9178, "usd": 0.0547}
 {"time": "2026-11-10T01:10:23", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch1", "prompt_tokens": 8852, "completion_tokens": 11218, "usd": 0.0649}
+{"time": "2026-11-10T01:12:08", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch2", "prompt_tokens": 8625, "completion_tokens": 8948, "usd": 0.0534}
+{"time": "2026-11-10T01:13:58", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch3", "prompt_tokens": 8910, "completion_tokens": 9144, "usd": 0.0546}
+{"time": "2026-11-10T01:14:37", "model": "gpt-6.1-terra", "purpose": "bench_times comp t0", "prompt_tokens": 20561, "completion_tokens": 4448, "usd": 0.0428}
+{"time": "2026-11-10T01:15:50", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch4", "prompt_tokens": 8811, "completion_tokens": 9983, "usd": 0.0587}
+{"time": "2026-11-10T01:17:59", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch5", "prompt_tokens": 8858, "completion_tokens": 11335, "usd": 0.0655}
+{"time": "2026-11-10T01:19:51", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch6", "prompt_tokens": 8828, "completion_tokens": 10035, "usd": 0.059}
+{"time": "2026-11-10T01:21:46", "model": "gpt-6.1-terra", "purpose": "stage23 comp_v1 t batch7", "prompt_tokens": 8724, "completion_tokens": 9839, "usd": 0.0579}

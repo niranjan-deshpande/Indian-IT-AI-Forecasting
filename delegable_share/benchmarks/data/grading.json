@@ -29,5 +29,8 @@
  "spider2": "exact_answer",
  "terminal_bench_4": "tests",
  "dba_bench": "state",
- "swe_bench_verified": "tests"
+ "swe_bench_verified": "tests",
+ "jobbench": "llm_judge",
+ "apex_agents": "llm_judge",
+ "online_mind2web": "llm_judge"
 }

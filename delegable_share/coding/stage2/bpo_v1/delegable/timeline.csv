@@ -1,0 +1,741 @@
+scenario,months_from_today,date,occupation,S,D
+base,-24,2024-11-09,Software Developers,0.0002,0.0062
+base,-24,2024-11-09,Web Developers,0.0013,0.0268
+base,-24,2024-11-09,Network and Computer Systems Administrators,0.0009,0.0191
+base,-24,2024-11-09,Database Administrators,0.0034,0.0341
+base,-24,2024-11-09,Computer Systems Analysts,0.0,0.0009
+base,-24,2024-11-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0055,0.0306
+base,-24,2024-11-09,Billing and Posting Clerks,0.0004,0.0082
+base,-24,2024-11-09,Data Entry Keyers,0.0,0.0
+base,-24,2024-11-09,Insurance Claims and Policy Processing Clerks,0.0063,0.0731
+base,-24,2024-11-09,Medical Records Specialists,0.0014,0.021
+base,-23,2024-12-10,Software Developers,0.0004,0.0096
+base,-23,2024-12-10,Web Developers,0.0022,0.0366
+base,-23,2024-12-10,Network and Computer Systems Administrators,0.0017,0.0298
+base,-23,2024-12-10,Database Administrators,0.0044,0.04
+base,-23,2024-12-10,Computer Systems Analysts,0.0001,0.0016
+base,-23,2024-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0068,0.0331
+base,-23,2024-12-10,Billing and Posting Clerks,0.0007,0.0112
+base,-23,2024-12-10,Data Entry Keyers,0.0,0.0
+base,-23,2024-12-10,Insurance Claims and Policy Processing Clerks,0.0088,0.0906
+base,-23,2024-12-10,Medical Records Specialists,0.0023,0.0294
+base,-22,2025-01-09,Software Developers,0.0007,0.0138
+base,-22,2025-01-09,Web Developers,0.0033,0.0483
+base,-22,2025-01-09,Network and Computer Systems Administrators,0.0028,0.0422
+base,-22,2025-01-09,Database Administrators,0.0056,0.0461
+base,-22,2025-01-09,Computer Systems Analysts,0.0001,0.003
+base,-22,2025-01-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0081,0.0347
+base,-22,2025-01-09,Billing and Posting Clerks,0.0011,0.0146
+base,-22,2025-01-09,Data Entry Keyers,0.0,0.0
+base,-22,2025-01-09,Insurance Claims and Policy Processing Clerks,0.0119,0.1109
+base,-22,2025-01-09,Medical Records Specialists,0.0034,0.0384
+base,-21,2025-02-09,Software Developers,0.0012,0.0282
+base,-21,2025-02-09,Web Developers,0.005,0.0799
+base,-21,2025-02-09,Network and Computer Systems Administrators,0.0044,0.0583
+base,-21,2025-02-09,Database Administrators,0.0069,0.0543
+base,-21,2025-02-09,Computer Systems Analysts,0.0002,0.0065
+base,-21,2025-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0095,0.0358
+base,-21,2025-02-09,Billing and Posting Clerks,0.0017,0.0184
+base,-21,2025-02-09,Data Entry Keyers,0.0,0.0
+base,-21,2025-02-09,Insurance Claims and Policy Processing Clerks,0.0155,0.131
+base,-21,2025-02-09,Medical Records Specialists,0.0048,0.0483
+base,-20,2025-03-11,Software Developers,0.002,0.0438
+base,-20,2025-03-11,Web Developers,0.0076,0.119
+base,-20,2025-03-11,Network and Computer Systems Administrators,0.0066,0.0758
+base,-20,2025-03-11,Database Administrators,0.0085,0.0633
+base,-20,2025-03-11,Computer Systems Analysts,0.0004,0.0123
+base,-20,2025-03-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0107,0.0366
+base,-20,2025-03-11,Billing and Posting Clerks,0.0024,0.0234
+base,-20,2025-03-11,Data Entry Keyers,0.0,0.0
+base,-20,2025-03-11,Insurance Claims and Policy Processing Clerks,0.0198,0.1509
+base,-20,2025-03-11,Medical Records Specialists,0.0066,0.0577
+base,-19,2025-04-11,Software Developers,0.0032,0.0609
+base,-19,2025-04-11,Web Developers,0.0112,0.1639
+base,-19,2025-04-11,Network and Computer Systems Administrators,0.0092,0.0963
+base,-19,2025-04-11,Database Administrators,0.0103,0.0727
+base,-19,2025-04-11,Computer Systems Analysts,0.0008,0.0231
+base,-19,2025-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.012,0.0394
+base,-19,2025-04-11,Billing and Posting Clerks,0.0032,0.0289
+base,-19,2025-04-11,Data Entry Keyers,0.0,0.0
+base,-19,2025-04-11,Insurance Claims and Policy Processing Clerks,0.0247,0.1705
+base,-19,2025-04-11,Medical Records Specialists,0.0088,0.0692
+base,-18,2025-05-11,Software Developers,0.0047,0.0792
+base,-18,2025-05-11,Web Developers,0.016,0.2117
+base,-18,2025-05-11,Network and Computer Systems Administrators,0.0125,0.116
+base,-18,2025-05-11,Database Administrators,0.0124,0.0863
+base,-18,2025-05-11,Computer Systems Analysts,0.0015,0.0357
+base,-18,2025-05-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0134,0.0419
+base,-18,2025-05-11,Billing and Posting Clerks,0.0043,0.0352
+base,-18,2025-05-11,Data Entry Keyers,0.0,0.0
+base,-18,2025-05-11,Insurance Claims and Policy Processing Clerks,0.0301,0.1911
+base,-18,2025-05-11,Medical Records Specialists,0.0113,0.08
+base,-17,2025-06-11,Software Developers,0.0067,0.1008
+base,-17,2025-06-11,Web Developers,0.0221,0.2657
+base,-17,2025-06-11,Network and Computer Systems Administrators,0.0163,0.1354
+base,-17,2025-06-11,Database Administrators,0.0149,0.1032
+base,-17,2025-06-11,Computer Systems Analysts,0.0025,0.0502
+base,-17,2025-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0147,0.0448
+base,-17,2025-06-11,Billing and Posting Clerks,0.0057,0.0419
+base,-17,2025-06-11,Data Entry Keyers,0.0,0.0
+base,-17,2025-06-11,Insurance Claims and Policy Processing Clerks,0.0361,0.2121
+base,-17,2025-06-11,Medical Records Specialists,0.0143,0.0911
+base,-16,2025-07-11,Software Developers,0.0091,0.1235
+base,-16,2025-07-11,Web Developers,0.0295,0.3214
+base,-16,2025-07-11,Network and Computer Systems Administrators,0.0207,0.1572
+base,-16,2025-07-11,Database Administrators,0.0178,0.1198
+base,-16,2025-07-11,Computer Systems Analysts,0.0038,0.0656
+base,-16,2025-07-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0162,0.0482
+base,-16,2025-07-11,Billing and Posting Clerks,0.0074,0.0493
+base,-16,2025-07-11,Data Entry Keyers,0.0,0.0
+base,-16,2025-07-11,Insurance Claims and Policy Processing Clerks,0.0426,0.2347
+base,-16,2025-07-11,Medical Records Specialists,0.0178,0.1022
+base,-15,2025-08-10,Software Developers,0.0121,0.1476
+base,-15,2025-08-10,Web Developers,0.0383,0.3766
+base,-15,2025-08-10,Network and Computer Systems Administrators,0.0257,0.1806
+base,-15,2025-08-10,Database Administrators,0.0211,0.1363
+base,-15,2025-08-10,Computer Systems Analysts,0.0055,0.0865
+base,-15,2025-08-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0176,0.052
+base,-15,2025-08-10,Billing and Posting Clerks,0.0094,0.057
+base,-15,2025-08-10,Data Entry Keyers,0.0,0.0
+base,-15,2025-08-10,Insurance Claims and Policy Processing Clerks,0.0498,0.2584
+base,-15,2025-08-10,Medical Records Specialists,0.0217,0.1136
+base,-14,2025-09-10,Software Developers,0.0156,0.1727
+base,-14,2025-09-10,Web Developers,0.0485,0.4303
+base,-14,2025-09-10,Network and Computer Systems Administrators,0.0315,0.2064
+base,-14,2025-09-10,Database Administrators,0.0248,0.1531
+base,-14,2025-09-10,Computer Systems Analysts,0.0078,0.11
+base,-14,2025-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0192,0.0574
+base,-14,2025-09-10,Billing and Posting Clerks,0.0118,0.0648
+base,-14,2025-09-10,Data Entry Keyers,0.0,0.0
+base,-14,2025-09-10,Insurance Claims and Policy Processing Clerks,0.0575,0.2823
+base,-14,2025-09-10,Medical Records Specialists,0.0261,0.1246
+base,-13,2025-10-10,Software Developers,0.0198,0.1975
+base,-13,2025-10-10,Web Developers,0.06,0.4803
+base,-13,2025-10-10,Network and Computer Systems Administrators,0.0379,0.2312
+base,-13,2025-10-10,Database Administrators,0.0291,0.1772
+base,-13,2025-10-10,Computer Systems Analysts,0.0108,0.1408
+base,-13,2025-10-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0211,0.0647
+base,-13,2025-10-10,Billing and Posting Clerks,0.0146,0.0737
+base,-13,2025-10-10,Data Entry Keyers,0.0,0.0
+base,-13,2025-10-10,Insurance Claims and Policy Processing Clerks,0.0658,0.3092
+base,-13,2025-10-10,Medical Records Specialists,0.031,0.1347
+base,-12,2025-11-10,Software Developers,0.0247,0.2216
+base,-12,2025-11-10,Web Developers,0.0728,0.5267
+base,-12,2025-11-10,Network and Computer Systems Administrators,0.0449,0.2623
+base,-12,2025-11-10,Database Administrators,0.034,0.2005
+base,-12,2025-11-10,Computer Systems Analysts,0.0146,0.1734
+base,-12,2025-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0231,0.0726
+base,-12,2025-11-10,Billing and Posting Clerks,0.0178,0.0875
+base,-12,2025-11-10,Data Entry Keyers,0.0,0.0
+base,-12,2025-11-10,Insurance Claims and Policy Processing Clerks,0.0747,0.3361
+base,-12,2025-11-10,Medical Records Specialists,0.0361,0.1434
+base,-11,2025-12-10,Software Developers,0.0301,0.2452
+base,-11,2025-12-10,Web Developers,0.0869,0.5689
+base,-11,2025-12-10,Network and Computer Systems Administrators,0.0529,0.2987
+base,-11,2025-12-10,Database Administrators,0.0395,0.2264
+base,-11,2025-12-10,Computer Systems Analysts,0.0192,0.2062
+base,-11,2025-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0255,0.085
+base,-11,2025-12-10,Billing and Posting Clerks,0.0217,0.1042
+base,-11,2025-12-10,Data Entry Keyers,0.0004,0.0209
+base,-11,2025-12-10,Insurance Claims and Policy Processing Clerks,0.0842,0.3633
+base,-11,2025-12-10,Medical Records Specialists,0.0415,0.1508
+base,-10,2026-01-10,Software Developers,0.0362,0.2661
+base,-10,2026-01-10,Web Developers,0.1021,0.6079
+base,-10,2026-01-10,Network and Computer Systems Administrators,0.0617,0.335
+base,-10,2026-01-10,Database Administrators,0.0458,0.2526
+base,-10,2026-01-10,Computer Systems Analysts,0.0246,0.2382
+base,-10,2026-01-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0284,0.1032
+base,-10,2026-01-10,Billing and Posting Clerks,0.0263,0.122
+base,-10,2026-01-10,Data Entry Keyers,0.0015,0.0423
+base,-10,2026-01-10,Insurance Claims and Policy Processing Clerks,0.0943,0.3905
+base,-10,2026-01-10,Medical Records Specialists,0.047,0.1562
+base,-9,2026-02-09,Software Developers,0.0429,0.2862
+base,-9,2026-02-09,Web Developers,0.1183,0.642
+base,-9,2026-02-09,Network and Computer Systems Administrators,0.0714,0.3726
+base,-9,2026-02-09,Database Administrators,0.0527,0.2792
+base,-9,2026-02-09,Computer Systems Analysts,0.0309,0.2738
+base,-9,2026-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.032,0.1226
+base,-9,2026-02-09,Billing and Posting Clerks,0.0318,0.1514
+base,-9,2026-02-09,Data Entry Keyers,0.0034,0.064
+base,-9,2026-02-09,Insurance Claims and Policy Processing Clerks,0.1051,0.4181
+base,-9,2026-02-09,Medical Records Specialists,0.0525,0.1604
+base,-8,2026-03-11,Software Developers,0.0502,0.3048
+base,-8,2026-03-11,Web Developers,0.1354,0.6721
+base,-8,2026-03-11,Network and Computer Systems Administrators,0.082,0.4109
+base,-8,2026-03-11,Database Administrators,0.0602,0.3038
+base,-8,2026-03-11,Computer Systems Analysts,0.0381,0.3104
+base,-8,2026-03-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0362,0.1414
+base,-8,2026-03-11,Billing and Posting Clerks,0.0383,0.183
+base,-8,2026-03-11,Data Entry Keyers,0.0062,0.0964
+base,-8,2026-03-11,Insurance Claims and Policy Processing Clerks,0.1167,0.4458
+base,-8,2026-03-11,Medical Records Specialists,0.0578,0.1634
+base,-7,2026-04-11,Software Developers,0.0581,0.3206
+base,-7,2026-04-11,Web Developers,0.1533,0.6976
+base,-7,2026-04-11,Network and Computer Systems Administrators,0.0936,0.4486
+base,-7,2026-04-11,Database Administrators,0.0685,0.3292
+base,-7,2026-04-11,Computer Systems Analysts,0.0464,0.346
+base,-7,2026-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0411,0.1604
+base,-7,2026-04-11,Billing and Posting Clerks,0.0461,0.2176
+base,-7,2026-04-11,Data Entry Keyers,0.0102,0.1298
+base,-7,2026-04-11,Insurance Claims and Policy Processing Clerks,0.1292,0.4741
+base,-7,2026-04-11,Medical Records Specialists,0.0629,0.1658
+base,-6,2026-05-11,Software Developers,0.0665,0.3346
+base,-6,2026-05-11,Web Developers,0.1718,0.7203
+base,-6,2026-05-11,Network and Computer Systems Administrators,0.106,0.4861
+base,-6,2026-05-11,Database Administrators,0.0773,0.3534
+base,-6,2026-05-11,Computer Systems Analysts,0.0556,0.3807
+base,-6,2026-05-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0465,0.1788
+base,-6,2026-05-11,Billing and Posting Clerks,0.0552,0.257
+base,-6,2026-05-11,Data Entry Keyers,0.0153,0.1656
+base,-6,2026-05-11,Insurance Claims and Policy Processing Clerks,0.1426,0.5041
+base,-6,2026-05-11,Medical Records Specialists,0.0677,0.168
+base,-5,2026-06-11,Software Developers,0.0752,0.3462
+base,-5,2026-06-11,Web Developers,0.1908,0.7394
+base,-5,2026-06-11,Network and Computer Systems Administrators,0.1194,0.5219
+base,-5,2026-06-11,Database Administrators,0.0868,0.3753
+base,-5,2026-06-11,Computer Systems Analysts,0.0659,0.4141
+base,-5,2026-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0525,0.2027
+base,-5,2026-06-11,Billing and Posting Clerks,0.0659,0.3195
+base,-5,2026-06-11,Data Entry Keyers,0.0216,0.2003
+base,-5,2026-06-11,Insurance Claims and Policy Processing Clerks,0.1569,0.5361
+base,-5,2026-06-11,Medical Records Specialists,0.0724,0.1801
+base,-4,2026-07-11,Software Developers,0.0844,0.3566
+base,-4,2026-07-11,Web Developers,0.2102,0.7607
+base,-4,2026-07-11,Network and Computer Systems Administrators,0.1337,0.5564
+base,-4,2026-07-11,Database Administrators,0.0969,0.4026
+base,-4,2026-07-11,Computer Systems Analysts,0.0771,0.446
+base,-4,2026-07-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0591,0.2287
+base,-4,2026-07-11,Billing and Posting Clerks,0.0787,0.3821
+base,-4,2026-07-11,Data Entry Keyers,0.0291,0.2342
+base,-4,2026-07-11,Insurance Claims and Policy Processing Clerks,0.1722,0.5695
+base,-4,2026-07-11,Medical Records Specialists,0.0776,0.2132
+base,-3,2026-08-11,Software Developers,0.0938,0.3662
+base,-3,2026-08-11,Web Developers,0.2299,0.7798
+base,-3,2026-08-11,Network and Computer Systems Administrators,0.1488,0.5875
+base,-3,2026-08-11,Database Administrators,0.1076,0.4281
+base,-3,2026-08-11,Computer Systems Analysts,0.0892,0.4768
+base,-3,2026-08-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0664,0.2552
+base,-3,2026-08-11,Billing and Posting Clerks,0.0932,0.4376
+base,-3,2026-08-11,Data Entry Keyers,0.0376,0.2661
+base,-3,2026-08-11,Insurance Claims and Policy Processing Clerks,0.1883,0.6044
+base,-3,2026-08-11,Medical Records Specialists,0.0837,0.2468
+base,-2,2026-09-10,Software Developers,0.1035,0.3771
+base,-2,2026-09-10,Web Developers,0.2498,0.796
+base,-2,2026-09-10,Network and Computer Systems Administrators,0.1646,0.6167
+base,-2,2026-09-10,Database Administrators,0.119,0.4608
+base,-2,2026-09-10,Computer Systems Analysts,0.1022,0.506
+base,-2,2026-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0742,0.2835
+base,-2,2026-09-10,Billing and Posting Clerks,0.1092,0.4891
+base,-2,2026-09-10,Data Entry Keyers,0.0471,0.2943
+base,-2,2026-09-10,Insurance Claims and Policy Processing Clerks,0.2051,0.6425
+base,-2,2026-09-10,Medical Records Specialists,0.0907,0.2845
+base,-1,2026-10-11,Software Developers,0.1134,0.3939
+base,-1,2026-10-11,Web Developers,0.2697,0.8097
+base,-1,2026-10-11,Network and Computer Systems Administrators,0.181,0.6429
+base,-1,2026-10-11,Database Administrators,0.131,0.4915
+base,-1,2026-10-11,Computer Systems Analysts,0.1161,0.5332
+base,-1,2026-10-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0827,0.3132
+base,-1,2026-10-11,Billing and Posting Clerks,0.1264,0.5354
+base,-1,2026-10-11,Data Entry Keyers,0.0573,0.3201
+base,-1,2026-10-11,Insurance Claims and Policy Processing Clerks,0.2226,0.6872
+base,-1,2026-10-11,Medical Records Specialists,0.0987,0.326
+base,0,2026-11-10,Software Developers,0.1236,0.4135
+base,0,2026-11-10,Web Developers,0.2894,0.8212
+base,0,2026-11-10,Network and Computer Systems Administrators,0.1978,0.666
+base,0,2026-11-10,Database Administrators,0.1437,0.5212
+base,0,2026-11-10,Computer Systems Analysts,0.1307,0.5586
+base,0,2026-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.092,0.347
+base,0,2026-11-10,Billing and Posting Clerks,0.1445,0.5757
+base,0,2026-11-10,Data Entry Keyers,0.0683,0.3415
+base,0,2026-11-10,Insurance Claims and Policy Processing Clerks,0.2411,0.7452
+base,0,2026-11-10,Medical Records Specialists,0.1083,0.3969
+base,1,2026-12-10,Software Developers,0.134,0.4344
+base,1,2026-12-10,Web Developers,0.3089,0.8312
+base,1,2026-12-10,Network and Computer Systems Administrators,0.215,0.6885
+base,1,2026-12-10,Database Administrators,0.1567,0.5491
+base,1,2026-12-10,Computer Systems Analysts,0.1459,0.5823
+base,1,2026-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.102,0.3825
+base,1,2026-12-10,Billing and Posting Clerks,0.1633,0.6116
+base,1,2026-12-10,Data Entry Keyers,0.0797,0.3576
+base,1,2026-12-10,Insurance Claims and Policy Processing Clerks,0.2605,0.7958
+base,1,2026-12-10,Medical Records Specialists,0.12,0.4628
+base,2,2027-01-10,Software Developers,0.1446,0.4551
+base,2,2027-01-10,Web Developers,0.328,0.8389
+base,2,2027-01-10,Network and Computer Systems Administrators,0.2326,0.7142
+base,2,2027-01-10,Database Administrators,0.1702,0.5752
+base,2,2027-01-10,Computer Systems Analysts,0.1616,0.6041
+base,2,2027-01-10,"Bookkeeping, Accounting, and Auditing Clerks",0.1128,0.4235
+base,2,2027-01-10,Billing and Posting Clerks,0.1825,0.6424
+base,2,2027-01-10,Data Entry Keyers,0.0914,0.3706
+base,2,2027-01-10,Insurance Claims and Policy Processing Clerks,0.2805,0.84
+base,2,2027-01-10,Medical Records Specialists,0.1336,0.5256
+base,3,2027-02-09,Software Developers,0.1554,0.477
+base,3,2027-02-09,Web Developers,0.3465,0.8497
+base,3,2027-02-09,Network and Computer Systems Administrators,0.2504,0.7382
+base,3,2027-02-09,Database Administrators,0.184,0.5992
+base,3,2027-02-09,Computer Systems Analysts,0.1778,0.6242
+base,3,2027-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.1247,0.468
+base,3,2027-02-09,Billing and Posting Clerks,0.202,0.6735
+base,3,2027-02-09,Data Entry Keyers,0.1032,0.3805
+base,3,2027-02-09,Insurance Claims and Policy Processing Clerks,0.3007,0.8788
+base,3,2027-02-09,Medical Records Specialists,0.149,0.5826
+base,4,2027-03-12,Software Developers,0.1662,0.4987
+base,4,2027-03-12,Web Developers,0.3645,0.8592
+base,4,2027-03-12,Network and Computer Systems Administrators,0.2684,0.7604
+base,4,2027-03-12,Database Administrators,0.198,0.6204
+base,4,2027-03-12,Computer Systems Analysts,0.1942,0.6419
+base,4,2027-03-12,"Bookkeeping, Accounting, and Auditing Clerks",0.1378,0.52
+base,4,2027-03-12,Billing and Posting Clerks,0.2216,0.7009
+base,4,2027-03-12,Data Entry Keyers,0.115,0.3876
+base,4,2027-03-12,Insurance Claims and Policy Processing Clerks,0.321,0.9095
+base,4,2027-03-12,Medical Records Specialists,0.1658,0.6344
+base,5,2027-04-11,Software Developers,0.1772,0.5212
+base,5,2027-04-11,Web Developers,0.3818,0.867
+base,5,2027-04-11,Network and Computer Systems Administrators,0.2864,0.7801
+base,5,2027-04-11,Database Administrators,0.2122,0.6397
+base,5,2027-04-11,Computer Systems Analysts,0.2107,0.6588
+base,5,2027-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.1522,0.5718
+base,5,2027-04-11,Billing and Posting Clerks,0.2411,0.7247
+base,5,2027-04-11,Data Entry Keyers,0.1266,0.3926
+base,5,2027-04-11,Insurance Claims and Policy Processing Clerks,0.341,0.934
+base,5,2027-04-11,Medical Records Specialists,0.1841,0.7005
+base,6,2027-05-12,Software Developers,0.1882,0.5421
+base,6,2027-05-12,Web Developers,0.3984,0.8733
+base,6,2027-05-12,Network and Computer Systems Administrators,0.3043,0.7971
+base,6,2027-05-12,Database Administrators,0.2264,0.6556
+base,6,2027-05-12,Computer Systems Analysts,0.2273,0.6753
+base,6,2027-05-12,"Bookkeeping, Accounting, and Auditing Clerks",0.168,0.6229
+base,6,2027-05-12,Billing and Posting Clerks,0.2605,0.7464
+base,6,2027-05-12,Data Entry Keyers,0.1379,0.396
+base,6,2027-05-12,Insurance Claims and Policy Processing Clerks,0.3604,0.9524
+base,6,2027-05-12,Medical Records Specialists,0.2035,0.7433
+base,7,2027-06-11,Software Developers,0.1992,0.5614
+base,7,2027-06-11,Web Developers,0.4141,0.8787
+base,7,2027-06-11,Network and Computer Systems Administrators,0.3219,0.812
+base,7,2027-06-11,Database Administrators,0.2407,0.6717
+base,7,2027-06-11,Computer Systems Analysts,0.2438,0.6902
+base,7,2027-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.1848,0.6705
+base,7,2027-06-11,Billing and Posting Clerks,0.2795,0.7644
+base,7,2027-06-11,Data Entry Keyers,0.1488,0.3979
+base,7,2027-06-11,Insurance Claims and Policy Processing Clerks,0.3792,0.9654
+base,7,2027-06-11,Medical Records Specialists,0.2234,0.7743
+base,8,2027-07-12,Software Developers,0.2102,0.5806
+base,8,2027-07-12,Web Developers,0.4289,0.8829
+base,8,2027-07-12,Network and Computer Systems Administrators,0.3392,0.8246
+base,8,2027-07-12,Database Administrators,0.2549,0.6849
+base,8,2027-07-12,Computer Systems Analysts,0.2602,0.7037
+base,8,2027-07-12,"Bookkeeping, Accounting, and Auditing Clerks",0.2028,0.714
+base,8,2027-07-12,Billing and Posting Clerks,0.2981,0.7805
+base,8,2027-07-12,Data Entry Keyers,0.1591,0.3993
+base,8,2027-07-12,Insurance Claims and Policy Processing Clerks,0.3971,0.9745
+base,8,2027-07-12,Medical Records Specialists,0.2434,0.796
+base,9,2027-08-11,Software Developers,0.2212,0.5979
+base,9,2027-08-11,Web Developers,0.4428,0.8863
+base,9,2027-08-11,Network and Computer Systems Administrators,0.356,0.8348
+base,9,2027-08-11,Database Administrators,0.2691,0.6968
+base,9,2027-08-11,Computer Systems Analysts,0.2763,0.716
+base,9,2027-08-11,"Bookkeeping, Accounting, and Auditing Clerks",0.2216,0.7531
+base,9,2027-08-11,Billing and Posting Clerks,0.3161,0.7937
+base,9,2027-08-11,Data Entry Keyers,0.1689,0.4001
+base,9,2027-08-11,Insurance Claims and Policy Processing Clerks,0.4139,0.9806
+base,9,2027-08-11,Medical Records Specialists,0.263,0.8108
+base,10,2027-09-10,Software Developers,0.2322,0.6132
+base,10,2027-09-10,Web Developers,0.4557,0.889
+base,10,2027-09-10,Network and Computer Systems Administrators,0.3723,0.8431
+base,10,2027-09-10,Database Administrators,0.2831,0.7067
+base,10,2027-09-10,Computer Systems Analysts,0.2921,0.7263
+base,10,2027-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.2412,0.7874
+base,10,2027-09-10,Billing and Posting Clerks,0.3335,0.8048
+base,10,2027-09-10,Data Entry Keyers,0.1781,0.4005
+base,10,2027-09-10,Insurance Claims and Policy Processing Clerks,0.4297,0.9845
+base,10,2027-09-10,Medical Records Specialists,0.282,0.8201
+base,11,2027-10-11,Software Developers,0.2432,0.6269
+base,11,2027-10-11,Web Developers,0.4675,0.8908
+base,11,2027-10-11,Network and Computer Systems Administrators,0.3879,0.8496
+base,11,2027-10-11,Database Administrators,0.297,0.7155
+base,11,2027-10-11,Computer Systems Analysts,0.3075,0.7357
+base,11,2027-10-11,"Bookkeeping, Accounting, and Auditing Clerks",0.2612,0.8166
+base,11,2027-10-11,Billing and Posting Clerks,0.3501,0.8133
+base,11,2027-10-11,Data Entry Keyers,0.1867,0.4008
+base,11,2027-10-11,Insurance Claims and Policy Processing Clerks,0.4444,0.9869
+base,11,2027-10-11,Medical Records Specialists,0.3,0.8258
+base,12,2027-11-10,Software Developers,0.2541,0.6379
+base,12,2027-11-10,Web Developers,0.4784,0.8922
+base,12,2027-11-10,Network and Computer Systems Administrators,0.4029,0.8549
+base,12,2027-11-10,Database Administrators,0.3106,0.7231
+base,12,2027-11-10,Computer Systems Analysts,0.3223,0.7441
+base,12,2027-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.2816,0.8395
+base,12,2027-11-10,Billing and Posting Clerks,0.3659,0.8199
+base,12,2027-11-10,Data Entry Keyers,0.1945,0.4009
+base,12,2027-11-10,Insurance Claims and Policy Processing Clerks,0.4579,0.9883
+base,12,2027-11-10,Medical Records Specialists,0.317,0.8291
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Software Developers,0.0002,0.0062
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Web Developers,0.0012,0.0229
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Network and Computer Systems Administrators,0.0002,0.0059
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Database Administrators,0.0034,0.0341
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Computer Systems Analysts,0.0,0.0009
+"base, rho 0.5 (tests/state)",-24,2024-11-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0037,0.0235
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Billing and Posting Clerks,0.0004,0.0069
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Insurance Claims and Policy Processing Clerks,0.0063,0.0724
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Medical Records Specialists,0.0014,0.0208
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Software Developers,0.0004,0.0096
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Web Developers,0.002,0.0301
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Network and Computer Systems Administrators,0.0004,0.0096
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Database Administrators,0.0044,0.04
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Computer Systems Analysts,0.0001,0.0016
+"base, rho 0.5 (tests/state)",-23,2024-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0045,0.0253
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Billing and Posting Clerks,0.0006,0.009
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Insurance Claims and Policy Processing Clerks,0.0087,0.089
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Medical Records Specialists,0.0022,0.0291
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Software Developers,0.0007,0.0138
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Web Developers,0.0029,0.0383
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Network and Computer Systems Administrators,0.0007,0.014
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Database Administrators,0.0056,0.0461
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Computer Systems Analysts,0.0001,0.003
+"base, rho 0.5 (tests/state)",-22,2025-01-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0053,0.0265
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Billing and Posting Clerks,0.0009,0.0111
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Insurance Claims and Policy Processing Clerks,0.0117,0.1078
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Medical Records Specialists,0.0033,0.0378
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Software Developers,0.0012,0.0282
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Web Developers,0.0042,0.0632
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Network and Computer Systems Administrators,0.0012,0.0203
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Database Administrators,0.0069,0.0527
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Computer Systems Analysts,0.0002,0.0065
+"base, rho 0.5 (tests/state)",-21,2025-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0061,0.0272
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Billing and Posting Clerks,0.0013,0.0133
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Insurance Claims and Policy Processing Clerks,0.0152,0.1247
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Medical Records Specialists,0.0047,0.0471
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Software Developers,0.002,0.0438
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Web Developers,0.0063,0.0911
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Network and Computer Systems Administrators,0.0018,0.0273
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Database Administrators,0.0084,0.0595
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Computer Systems Analysts,0.0004,0.0123
+"base, rho 0.5 (tests/state)",-20,2025-03-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0069,0.0275
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Billing and Posting Clerks,0.0017,0.0156
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Insurance Claims and Policy Processing Clerks,0.0192,0.1393
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Medical Records Specialists,0.0064,0.0556
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Software Developers,0.0032,0.0609
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Web Developers,0.0091,0.1206
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Network and Computer Systems Administrators,0.0027,0.0368
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Database Administrators,0.01,0.0662
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Computer Systems Analysts,0.0008,0.0231
+"base, rho 0.5 (tests/state)",-19,2025-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0077,0.0298
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Billing and Posting Clerks,0.0022,0.018
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Insurance Claims and Policy Processing Clerks,0.0235,0.1509
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Medical Records Specialists,0.0083,0.0649
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Software Developers,0.0047,0.0791
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Web Developers,0.0127,0.1514
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Network and Computer Systems Administrators,0.0038,0.0474
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Database Administrators,0.0119,0.0762
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Computer Systems Analysts,0.0015,0.0357
+"base, rho 0.5 (tests/state)",-18,2025-05-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0085,0.0317
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Billing and Posting Clerks,0.0028,0.0204
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Insurance Claims and Policy Processing Clerks,0.028,0.1603
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Medical Records Specialists,0.0105,0.0722
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Software Developers,0.0067,0.1002
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Web Developers,0.017,0.1845
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Network and Computer Systems Administrators,0.0052,0.0604
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Database Administrators,0.014,0.0881
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Computer Systems Analysts,0.0025,0.0501
+"base, rho 0.5 (tests/state)",-17,2025-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0094,0.0337
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Billing and Posting Clerks,0.0035,0.0226
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Insurance Claims and Policy Processing Clerks,0.0327,0.1675
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Medical Records Specialists,0.0128,0.0782
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Software Developers,0.0091,0.1222
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Web Developers,0.0221,0.2218
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Network and Computer Systems Administrators,0.0069,0.0741
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Database Administrators,0.0164,0.0995
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Computer Systems Analysts,0.0038,0.0654
+"base, rho 0.5 (tests/state)",-16,2025-07-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0103,0.036
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Billing and Posting Clerks,0.0041,0.0246
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Insurance Claims and Policy Processing Clerks,0.0373,0.1732
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Medical Records Specialists,0.0153,0.0831
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Software Developers,0.012,0.1452
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Web Developers,0.028,0.2652
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Network and Computer Systems Administrators,0.0089,0.0876
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Database Administrators,0.019,0.1109
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Computer Systems Analysts,0.0055,0.0831
+"base, rho 0.5 (tests/state)",-15,2025-08-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0112,0.0385
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Billing and Posting Clerks,0.0049,0.0271
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Insurance Claims and Policy Processing Clerks,0.042,0.1784
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Medical Records Specialists,0.0178,0.0871
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Software Developers,0.0155,0.1689
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Web Developers,0.035,0.3084
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Network and Computer Systems Administrators,0.0113,0.1011
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Database Administrators,0.0219,0.1223
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Computer Systems Analysts,0.0076,0.1018
+"base, rho 0.5 (tests/state)",-14,2025-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0121,0.0412
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Billing and Posting Clerks,0.0057,0.0299
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Insurance Claims and Policy Processing Clerks,0.0466,0.1833
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Medical Records Specialists,0.0204,0.0899
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Software Developers,0.0195,0.192
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Web Developers,0.0428,0.3489
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Network and Computer Systems Administrators,0.0139,0.1142
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Database Administrators,0.0252,0.145
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Computer Systems Analysts,0.0103,0.1252
+"base, rho 0.5 (tests/state)",-13,2025-10-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0131,0.0442
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Billing and Posting Clerks,0.0065,0.0336
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Insurance Claims and Policy Processing Clerks,0.0511,0.1883
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Medical Records Specialists,0.0229,0.0922
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Software Developers,0.0242,0.2142
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Web Developers,0.0514,0.393
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Network and Computer Systems Administrators,0.0168,0.127
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Database Administrators,0.029,0.1669
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Computer Systems Analysts,0.0135,0.15
+"base, rho 0.5 (tests/state)",-12,2025-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0141,0.0475
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Billing and Posting Clerks,0.0074,0.0381
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Insurance Claims and Policy Processing Clerks,0.0554,0.1935
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Medical Records Specialists,0.0254,0.0941
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Software Developers,0.0294,0.2356
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Web Developers,0.061,0.4348
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Network and Computer Systems Administrators,0.02,0.142
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Database Administrators,0.0334,0.1929
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Computer Systems Analysts,0.0173,0.1738
+"base, rho 0.5 (tests/state)",-11,2025-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0152,0.0511
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Billing and Posting Clerks,0.0084,0.0434
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Insurance Claims and Policy Processing Clerks,0.0597,0.2001
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Medical Records Specialists,0.0279,0.0967
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Software Developers,0.0352,0.2543
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Web Developers,0.0714,0.4733
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Network and Computer Systems Administrators,0.0235,0.1572
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Database Administrators,0.0384,0.2201
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Computer Systems Analysts,0.0216,0.1967
+"base, rho 0.5 (tests/state)",-10,2026-01-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0165,0.06
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Billing and Posting Clerks,0.0095,0.0494
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Insurance Claims and Policy Processing Clerks,0.0638,0.2079
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Medical Records Specialists,0.0303,0.1008
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Software Developers,0.0415,0.273
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Web Developers,0.0826,0.5081
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Network and Computer Systems Administrators,0.0273,0.173
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Database Administrators,0.0439,0.2475
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Computer Systems Analysts,0.0266,0.2197
+"base, rho 0.5 (tests/state)",-9,2026-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.018,0.0697
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Billing and Posting Clerks,0.0108,0.0644
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Insurance Claims and Policy Processing Clerks,0.0678,0.2186
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Medical Records Specialists,0.0326,0.1045
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Software Developers,0.0484,0.2899
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Web Developers,0.0945,0.5531
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Network and Computer Systems Administrators,0.0313,0.1949
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Database Administrators,0.0501,0.2729
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Computer Systems Analysts,0.0321,0.2428
+"base, rho 0.5 (tests/state)",-8,2026-03-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0199,0.0786
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Billing and Posting Clerks,0.0127,0.0803
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Insurance Claims and Policy Processing Clerks,0.0717,0.2304
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Medical Records Specialists,0.0349,0.1082
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Software Developers,0.0558,0.3046
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Web Developers,0.1073,0.5972
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Network and Computer Systems Administrators,0.0357,0.2176
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Database Administrators,0.0568,0.2979
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Computer Systems Analysts,0.0383,0.2745
+"base, rho 0.5 (tests/state)",-7,2026-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0219,0.0879
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Billing and Posting Clerks,0.015,0.1006
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Insurance Claims and Policy Processing Clerks,0.0755,0.2423
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Medical Records Specialists,0.0371,0.1116
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Software Developers,0.0636,0.3179
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Web Developers,0.1208,0.6352
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Network and Computer Systems Administrators,0.0405,0.2428
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Database Administrators,0.0639,0.3215
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Computer Systems Analysts,0.0452,0.304
+"base, rho 0.5 (tests/state)",-6,2026-05-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0243,0.097
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Billing and Posting Clerks,0.018,0.1278
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Insurance Claims and Policy Processing Clerks,0.0793,0.2624
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Medical Records Specialists,0.0393,0.1144
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Software Developers,0.0718,0.329
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Web Developers,0.1348,0.6671
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Network and Computer Systems Administrators,0.0457,0.2783
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Database Administrators,0.0716,0.342
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Computer Systems Analysts,0.0528,0.3315
+"base, rho 0.5 (tests/state)",-5,2026-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0269,0.1103
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Billing and Posting Clerks,0.0218,0.1603
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Insurance Claims and Policy Processing Clerks,0.0829,0.28
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Medical Records Specialists,0.0413,0.1166
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Software Developers,0.0803,0.3383
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Web Developers,0.1494,0.7011
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Network and Computer Systems Administrators,0.0513,0.3134
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Database Administrators,0.0796,0.3605
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Computer Systems Analysts,0.0609,0.357
+"base, rho 0.5 (tests/state)",-4,2026-07-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0299,0.1284
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Billing and Posting Clerks,0.0269,0.2036
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Insurance Claims and Policy Processing Clerks,0.0866,0.3067
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Medical Records Specialists,0.0432,0.1184
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Software Developers,0.089,0.3456
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Web Developers,0.1644,0.7307
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Network and Computer Systems Administrators,0.0575,0.3488
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Database Administrators,0.088,0.3769
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Computer Systems Analysts,0.0696,0.3821
+"base, rho 0.5 (tests/state)",-3,2026-08-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0333,0.146
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Billing and Posting Clerks,0.0332,0.2432
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Insurance Claims and Policy Processing Clerks,0.0902,0.3346
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Medical Records Specialists,0.0451,0.1196
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Software Developers,0.0978,0.3517
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Web Developers,0.1798,0.7553
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Network and Computer Systems Administrators,0.0641,0.3815
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Database Administrators,0.0966,0.3907
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Computer Systems Analysts,0.0788,0.4076
+"base, rho 0.5 (tests/state)",-2,2026-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0373,0.1735
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Billing and Posting Clerks,0.0407,0.2843
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Data Entry Keyers,0.0,0.0
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Insurance Claims and Policy Processing Clerks,0.0938,0.3599
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Medical Records Specialists,0.0467,0.1205
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Software Developers,0.1067,0.3585
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Web Developers,0.1952,0.7757
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Network and Computer Systems Administrators,0.0711,0.4142
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Database Administrators,0.1054,0.403
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Computer Systems Analysts,0.0886,0.436
+"base, rho 0.5 (tests/state)",-1,2026-10-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0419,0.1993
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Billing and Posting Clerks,0.0495,0.3365
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Data Entry Keyers,0.0005,0.0572
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Insurance Claims and Policy Processing Clerks,0.0973,0.3839
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Medical Records Specialists,0.0483,0.1211
+"base, rho 0.5 (tests/state)",0,2026-11-10,Software Developers,0.1157,0.3659
+"base, rho 0.5 (tests/state)",0,2026-11-10,Web Developers,0.2107,0.7932
+"base, rho 0.5 (tests/state)",0,2026-11-10,Network and Computer Systems Administrators,0.0786,0.449
+"base, rho 0.5 (tests/state)",0,2026-11-10,Database Administrators,0.1143,0.4139
+"base, rho 0.5 (tests/state)",0,2026-11-10,Computer Systems Analysts,0.0988,0.4618
+"base, rho 0.5 (tests/state)",0,2026-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0472,0.2301
+"base, rho 0.5 (tests/state)",0,2026-11-10,Billing and Posting Clerks,0.0596,0.3819
+"base, rho 0.5 (tests/state)",0,2026-11-10,Data Entry Keyers,0.0018,0.1156
+"base, rho 0.5 (tests/state)",0,2026-11-10,Insurance Claims and Policy Processing Clerks,0.101,0.42
+"base, rho 0.5 (tests/state)",0,2026-11-10,Medical Records Specialists,0.0497,0.1214
+"base, rho 0.5 (tests/state)",1,2026-12-10,Software Developers,0.1247,0.3732
+"base, rho 0.5 (tests/state)",1,2026-12-10,Web Developers,0.2261,0.808
+"base, rho 0.5 (tests/state)",1,2026-12-10,Network and Computer Systems Administrators,0.0864,0.4834
+"base, rho 0.5 (tests/state)",1,2026-12-10,Database Administrators,0.1233,0.4234
+"base, rho 0.5 (tests/state)",1,2026-12-10,Computer Systems Analysts,0.1095,0.4859
+"base, rho 0.5 (tests/state)",1,2026-12-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0532,0.2638
+"base, rho 0.5 (tests/state)",1,2026-12-10,Billing and Posting Clerks,0.0706,0.4235
+"base, rho 0.5 (tests/state)",1,2026-12-10,Data Entry Keyers,0.0041,0.1639
+"base, rho 0.5 (tests/state)",1,2026-12-10,Insurance Claims and Policy Processing Clerks,0.1051,0.449
+"base, rho 0.5 (tests/state)",1,2026-12-10,Medical Records Specialists,0.0511,0.1217
+"base, rho 0.5 (tests/state)",2,2027-01-10,Software Developers,0.1336,0.3809
+"base, rho 0.5 (tests/state)",2,2027-01-10,Web Developers,0.2412,0.8195
+"base, rho 0.5 (tests/state)",2,2027-01-10,Network and Computer Systems Administrators,0.0947,0.5216
+"base, rho 0.5 (tests/state)",2,2027-01-10,Database Administrators,0.1322,0.4324
+"base, rho 0.5 (tests/state)",2,2027-01-10,Computer Systems Analysts,0.1204,0.5087
+"base, rho 0.5 (tests/state)",2,2027-01-10,"Bookkeeping, Accounting, and Auditing Clerks",0.0602,0.305
+"base, rho 0.5 (tests/state)",2,2027-01-10,Billing and Posting Clerks,0.0826,0.4607
+"base, rho 0.5 (tests/state)",2,2027-01-10,Data Entry Keyers,0.007,0.2073
+"base, rho 0.5 (tests/state)",2,2027-01-10,Insurance Claims and Policy Processing Clerks,0.1093,0.4727
+"base, rho 0.5 (tests/state)",2,2027-01-10,Medical Records Specialists,0.0523,0.1219
+"base, rho 0.5 (tests/state)",3,2027-02-09,Software Developers,0.1424,0.3922
+"base, rho 0.5 (tests/state)",3,2027-02-09,Web Developers,0.2559,0.8337
+"base, rho 0.5 (tests/state)",3,2027-02-09,Network and Computer Systems Administrators,0.1035,0.5648
+"base, rho 0.5 (tests/state)",3,2027-02-09,Database Administrators,0.1411,0.4529
+"base, rho 0.5 (tests/state)",3,2027-02-09,Computer Systems Analysts,0.1317,0.5307
+"base, rho 0.5 (tests/state)",3,2027-02-09,"Bookkeeping, Accounting, and Auditing Clerks",0.0683,0.3584
+"base, rho 0.5 (tests/state)",3,2027-02-09,Billing and Posting Clerks,0.0953,0.4979
+"base, rho 0.5 (tests/state)",3,2027-02-09,Data Entry Keyers,0.0104,0.2465
+"base, rho 0.5 (tests/state)",3,2027-02-09,Insurance Claims and Policy Processing Clerks,0.1136,0.499
+"base, rho 0.5 (tests/state)",3,2027-02-09,Medical Records Specialists,0.0533,0.1221
+"base, rho 0.5 (tests/state)",4,2027-03-12,Software Developers,0.1511,0.4078
+"base, rho 0.5 (tests/state)",4,2027-03-12,Web Developers,0.2703,0.846
+"base, rho 0.5 (tests/state)",4,2027-03-12,Network and Computer Systems Administrators,0.1128,0.6034
+"base, rho 0.5 (tests/state)",4,2027-03-12,Database Administrators,0.1501,0.4841
+"base, rho 0.5 (tests/state)",4,2027-03-12,Computer Systems Analysts,0.1431,0.5509
+"base, rho 0.5 (tests/state)",4,2027-03-12,"Bookkeeping, Accounting, and Auditing Clerks",0.0779,0.4186
+"base, rho 0.5 (tests/state)",4,2027-03-12,Billing and Posting Clerks,0.1087,0.5325
+"base, rho 0.5 (tests/state)",4,2027-03-12,Data Entry Keyers,0.0144,0.2803
+"base, rho 0.5 (tests/state)",4,2027-03-12,Insurance Claims and Policy Processing Clerks,0.1181,0.5286
+"base, rho 0.5 (tests/state)",4,2027-03-12,Medical Records Specialists,0.0543,0.1237
+"base, rho 0.5 (tests/state)",5,2027-04-11,Software Developers,0.1598,0.4279
+"base, rho 0.5 (tests/state)",5,2027-04-11,Web Developers,0.2843,0.8564
+"base, rho 0.5 (tests/state)",5,2027-04-11,Network and Computer Systems Administrators,0.1225,0.6384
+"base, rho 0.5 (tests/state)",5,2027-04-11,Database Administrators,0.1593,0.51
+"base, rho 0.5 (tests/state)",5,2027-04-11,Computer Systems Analysts,0.1545,0.5698
+"base, rho 0.5 (tests/state)",5,2027-04-11,"Bookkeeping, Accounting, and Auditing Clerks",0.0891,0.4791
+"base, rho 0.5 (tests/state)",5,2027-04-11,Billing and Posting Clerks,0.1227,0.5753
+"base, rho 0.5 (tests/state)",5,2027-04-11,Data Entry Keyers,0.0186,0.3087
+"base, rho 0.5 (tests/state)",5,2027-04-11,Insurance Claims and Policy Processing Clerks,0.1229,0.558
+"base, rho 0.5 (tests/state)",5,2027-04-11,Medical Records Specialists,0.0554,0.1598
+"base, rho 0.5 (tests/state)",6,2027-05-12,Software Developers,0.1684,0.4523
+"base, rho 0.5 (tests/state)",6,2027-05-12,Web Developers,0.2976,0.8647
+"base, rho 0.5 (tests/state)",6,2027-05-12,Network and Computer Systems Administrators,0.1325,0.6691
+"base, rho 0.5 (tests/state)",6,2027-05-12,Database Administrators,0.1685,0.5347
+"base, rho 0.5 (tests/state)",6,2027-05-12,Computer Systems Analysts,0.1661,0.5895
+"base, rho 0.5 (tests/state)",6,2027-05-12,"Bookkeeping, Accounting, and Auditing Clerks",0.1018,0.5396
+"base, rho 0.5 (tests/state)",6,2027-05-12,Billing and Posting Clerks,0.1372,0.6111
+"base, rho 0.5 (tests/state)",6,2027-05-12,Data Entry Keyers,0.0231,0.3319
+"base, rho 0.5 (tests/state)",6,2027-05-12,Insurance Claims and Policy Processing Clerks,0.128,0.5858
+"base, rho 0.5 (tests/state)",6,2027-05-12,Medical Records Specialists,0.0572,0.2145
+"base, rho 0.5 (tests/state)",7,2027-06-11,Software Developers,0.1769,0.4774
+"base, rho 0.5 (tests/state)",7,2027-06-11,Web Developers,0.3104,0.8716
+"base, rho 0.5 (tests/state)",7,2027-06-11,Network and Computer Systems Administrators,0.1427,0.6967
+"base, rho 0.5 (tests/state)",7,2027-06-11,Database Administrators,0.1777,0.5577
+"base, rho 0.5 (tests/state)",7,2027-06-11,Computer Systems Analysts,0.1776,0.6085
+"base, rho 0.5 (tests/state)",7,2027-06-11,"Bookkeeping, Accounting, and Auditing Clerks",0.116,0.5962
+"base, rho 0.5 (tests/state)",7,2027-06-11,Billing and Posting Clerks,0.152,0.6379
+"base, rho 0.5 (tests/state)",7,2027-06-11,Data Entry Keyers,0.0277,0.3507
+"base, rho 0.5 (tests/state)",7,2027-06-11,Insurance Claims and Policy Processing Clerks,0.1332,0.6113
+"base, rho 0.5 (tests/state)",7,2027-06-11,Medical Records Specialists,0.0597,0.2552
+"base, rho 0.5 (tests/state)",8,2027-07-12,Software Developers,0.1854,0.5014
+"base, rho 0.5 (tests/state)",8,2027-07-12,Web Developers,0.3224,0.877
+"base, rho 0.5 (tests/state)",8,2027-07-12,Network and Computer Systems Administrators,0.153,0.7319
+"base, rho 0.5 (tests/state)",8,2027-07-12,Database Administrators,0.1868,0.58
+"base, rho 0.5 (tests/state)",8,2027-07-12,Computer Systems Analysts,0.1891,0.6252
+"base, rho 0.5 (tests/state)",8,2027-07-12,"Bookkeeping, Accounting, and Auditing Clerks",0.1315,0.6478
+"base, rho 0.5 (tests/state)",8,2027-07-12,Billing and Posting Clerks,0.1668,0.6604
+"base, rho 0.5 (tests/state)",8,2027-07-12,Data Entry Keyers,0.0323,0.3647
+"base, rho 0.5 (tests/state)",8,2027-07-12,Insurance Claims and Policy Processing Clerks,0.1385,0.6338
+"base, rho 0.5 (tests/state)",8,2027-07-12,Medical Records Specialists,0.0626,0.2905
+"base, rho 0.5 (tests/state)",9,2027-08-11,Software Developers,0.1939,0.5253
+"base, rho 0.5 (tests/state)",9,2027-08-11,Web Developers,0.3337,0.8816
+"base, rho 0.5 (tests/state)",9,2027-08-11,Network and Computer Systems Administrators,0.1634,0.7571
+"base, rho 0.5 (tests/state)",9,2027-08-11,Database Administrators,0.1958,0.6002
+"base, rho 0.5 (tests/state)",9,2027-08-11,Computer Systems Analysts,0.2004,0.6407
+"base, rho 0.5 (tests/state)",9,2027-08-11,"Bookkeeping, Accounting, and Auditing Clerks",0.1482,0.6941
+"base, rho 0.5 (tests/state)",9,2027-08-11,Billing and Posting Clerks,0.1815,0.6777
+"base, rho 0.5 (tests/state)",9,2027-08-11,Data Entry Keyers,0.0368,0.3748
+"base, rho 0.5 (tests/state)",9,2027-08-11,Insurance Claims and Policy Processing Clerks,0.1439,0.6708
+"base, rho 0.5 (tests/state)",9,2027-08-11,Medical Records Specialists,0.0658,0.3216
+"base, rho 0.5 (tests/state)",10,2027-09-10,Software Developers,0.2022,0.5486
+"base, rho 0.5 (tests/state)",10,2027-09-10,Web Developers,0.3442,0.8849
+"base, rho 0.5 (tests/state)",10,2027-09-10,Network and Computer Systems Administrators,0.1737,0.7768
+"base, rho 0.5 (tests/state)",10,2027-09-10,Database Administrators,0.2047,0.6175
+"base, rho 0.5 (tests/state)",10,2027-09-10,Computer Systems Analysts,0.2114,0.655
+"base, rho 0.5 (tests/state)",10,2027-09-10,"Bookkeeping, Accounting, and Auditing Clerks",0.1659,0.7338
+"base, rho 0.5 (tests/state)",10,2027-09-10,Billing and Posting Clerks,0.1959,0.6916
+"base, rho 0.5 (tests/state)",10,2027-09-10,Data Entry Keyers,0.0411,0.3822
+"base, rho 0.5 (tests/state)",10,2027-09-10,Insurance Claims and Policy Processing Clerks,0.1496,0.7067
+"base, rho 0.5 (tests/state)",10,2027-09-10,Medical Records Specialists,0.0693,0.3601
+"base, rho 0.5 (tests/state)",11,2027-10-11,Software Developers,0.2104,0.5695
+"base, rho 0.5 (tests/state)",11,2027-10-11,Web Developers,0.3539,0.8872
+"base, rho 0.5 (tests/state)",11,2027-10-11,Network and Computer Systems Administrators,0.1839,0.7922
+"base, rho 0.5 (tests/state)",11,2027-10-11,Database Administrators,0.2133,0.6326
+"base, rho 0.5 (tests/state)",11,2027-10-11,Computer Systems Analysts,0.2222,0.6685
+"base, rho 0.5 (tests/state)",11,2027-10-11,"Bookkeeping, Accounting, and Auditing Clerks",0.1842,0.7677
+"base, rho 0.5 (tests/state)",11,2027-10-11,Billing and Posting Clerks,0.2099,0.7017
+"base, rho 0.5 (tests/state)",11,2027-10-11,Data Entry Keyers,0.0452,0.3872
+"base, rho 0.5 (tests/state)",11,2027-10-11,Insurance Claims and Policy Processing Clerks,0.1554,0.7327
+"base, rho 0.5 (tests/state)",11,2027-10-11,Medical Records Specialists,0.0733,0.4155
+"base, rho 0.5 (tests/state)",12,2027-11-10,Software Developers,0.2185,0.5888
+"base, rho 0.5 (tests/state)",12,2027-11-10,Web Developers,0.3628,0.889
+"base, rho 0.5 (tests/state)",12,2027-11-10,Network and Computer Systems Administrators,0.1938,0.804
+"base, rho 0.5 (tests/state)",12,2027-11-10,Database Administrators,0.2217,0.6444
+"base, rho 0.5 (tests/state)",12,2027-11-10,Computer Systems Analysts,0.2326,0.6809
+"base, rho 0.5 (tests/state)",12,2027-11-10,"Bookkeeping, Accounting, and Auditing Clerks",0.203,0.794
+"base, rho 0.5 (tests/state)",12,2027-11-10,Billing and Posting Clerks,0.2234,0.7096
+"base, rho 0.5 (tests/state)",12,2027-11-10,Data Entry Keyers,0.049,0.3907
+"base, rho 0.5 (tests/state)",12,2027-11-10,Insurance Claims and Policy Processing Clerks,0.1611,0.7516
+"base, rho 0.5 (tests/state)",12,2027-11-10,Medical Records Specialists,0.0777,0.453

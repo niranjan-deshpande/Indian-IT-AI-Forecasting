@@ -1,0 +1,13 @@
+# JobBench (jobbench), accessed 2026-11-10
+- Data: https://huggingface.co/datasets/JobBench/job-bench (not gated, MIT, sha d43a665..., last modified 2026-09-11); raw/tasks.parquet (main, 65 tasks), raw/easy.parquet (63, not used). Code: github.com/Job-Bench/job-bench-eval.
+- Scores: paper https://arxiv.org/html/2605.26329v1 Table 3 (main split, 36 scaffold x model configs); leaderboard https://job-bench.github.io (25 models, newer).
+- Population: the 65-task main split (paper headline 45.9 for Opus 4.7 is on main). The leaderboard page does not state its split; assumed main.
+- Sample: random.Random(2026).sample(sorted task_ids, 24) over main. text = prompt (cut at 200 words) + reference file names + O*NET task in meta; rubrics not included.
+- Grading method: llm_judge. Weighted share of binary rubrics passed (a rubric counts only if all its criteria pass), judged by Grok-4.1-Fast (paper) / Grok 4.3 (leaderboard); mean over tasks.
+- Time-estimator description: A professional request from a named occupation, with a folder of real public-record files (spreadsheets, PDFs, documents), tied to one O*NET task; the worker produces the requested reports, workbooks or memos, and it is done when they are correct, complete and meet the stated professional requirements.
+- Human times: none published. Meta has the O*NET task and WorkBank desire score.
+- Problems:
+  - Two score sources use different judges and harnesses. scores.csv keeps one row per model: paper best-of-scaffold rows (Claude Code / Codex CLI / OpenCode / OpenClaw) where the model is in the paper; leaderboard-only newer models are OpenCode runs with Grok 4.3. The leaderboard value is in notes where both exist (it differs by 1 to 7 points, e.g. Opus 4.7 45.9 vs 44.5, GPT-5.5 42.7 vs 38.3), so the series is not one harness.
+  - Paper eval dates are approximate (arXiv v1 25 May 2026); leaderboard has no run dates (eval_date blank).
+  - Release dates: from Epoch AI hub CSVs / my knowledge of announcements; blank for Qwen-3.5-Plus, Grok-4.2-Fast, Muse Wonder Full.
+  - The paper says 130 tasks (65+65) but HF easy has 63; main is 65. Leaderboard top scores (75%) are near the range where item times matter little. Items are fully public (no private set seen).

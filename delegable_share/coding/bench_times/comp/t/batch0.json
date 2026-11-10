@@ -1,0 +1,506 @@
+[
+ {
+  "item_id": "jobbench:purchasing_agents_except_wholesale_retail_and_farm_products__task1",
+  "reasoning": "The agent must obtain and analyze historical prices, compare bids and award options, and prepare linked purchasing documents with delivery and spending constraints.",
+  "estimate_min": 420,
+  "low_min": 240,
+  "high_min": 720
+ },
+ {
+  "item_id": "jobbench:secretaries_and_administrative_assistants_except_legal_medical_and_executive__task2",
+  "reasoning": "This requires reconciling attendance and leave records against two memos, then producing a checked report, reconciliation workbook, and individual letters.",
+  "estimate_min": 360,
+  "low_min": 210,
+  "high_min": 600
+ },
+ {
+  "item_id": "online_mind2web:2d5a7f95f951a26838289dfd629ae850",
+  "reasoning": "Search a property site by ZIP code and apply the private-pool filter.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "online_mind2web:b6d10e9bd19b4009a02dea0e98f4e1ae",
+  "reasoning": "Navigate to the MLS standings page on Fox Sports.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "online_mind2web:e9f4dfc67e0e6aa37f05f7cc5aa7428c",
+  "reasoning": "Locate a physician directory and combine the location, specialty, and rating filters, checking the results.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "jobbench:civil_engineers__task3",
+  "reasoning": "The engineer must independently verify quantities, obtain and reconcile cost references, and build a formula-based estimate and value-engineering comparison.",
+  "estimate_min": 900,
+  "low_min": 540,
+  "high_min": 1500
+ },
+ {
+  "item_id": "apex_agents:world431-amk-02-78a4d3ea",
+  "reasoning": "Locate the executed lease and analyze its repair, replacement, and ordinary-wear provisions before explaining the result.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "online_mind2web:65c4030f22fb6eb101acfee4825f1318",
+  "reasoning": "Search a doctor directory and verify location, gender, credential, and cardiology specialty.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "jobbench:biostatisticians__task1",
+  "reasoning": "The work combines cohort eligibility programming, empirical event-rate analysis, sequential-design sample size calculations, sensitivity analyses, and regulatory support.",
+  "estimate_min": 900,
+  "low_min": 540,
+  "high_min": 1500
+ },
+ {
+  "item_id": "online_mind2web:85b284c18d7e78c9b5a9e074e7aa3b98",
+  "reasoning": "Filter student housing by location and included services, then compare prices and open the cheapest qualifying apartment.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 18
+ },
+ {
+  "item_id": "apex_agents:world417-tg-03-83b4a9e2",
+  "reasoning": "Review the three documents against the current HSR form and instructions, distinguishing them from the obsolete checklist.",
+  "estimate_min": 100,
+  "low_min": 55,
+  "high_min": 180
+ },
+ {
+  "item_id": "jobbench:mechanical_engineers__task1",
+  "reasoning": "A code-compliant vessel package requires full revision reconciliation, pressure and external-pressure calculations, material checks, and careful engineering documentation.",
+  "estimate_min": 1200,
+  "low_min": 720,
+  "high_min": 2100
+ },
+ {
+  "item_id": "online_mind2web:c8d7f2aa7eb5dd074c48c9f76f8659ad",
+  "reasoning": "Find and open the relevant teen driver safety program page.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 7
+ },
+ {
+  "item_id": "jobbench:sociology_teachers_postsecondary__task1",
+  "reasoning": "The work includes database quality checks, grade and risk calculations, external dataset analysis, and evidence-based intervention planning.",
+  "estimate_min": 660,
+  "low_min": 390,
+  "high_min": 1080
+ },
+ {
+  "item_id": "apex_agents:world431-jcf-01-3d85cec9",
+  "reasoning": "The lawyer must interpret the specified lease version and apply its commencement and delay provisions to the detailed chronology.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 140
+ },
+ {
+  "item_id": "online_mind2web:f707d765bca668830745d20807d7bee6",
+  "reasoning": "Use an adoption site to filter by location, radius, species, breed, age, and sex.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "apex_agents:world418-ah-01-88f58446",
+  "reasoning": "Compare the assignment provisions with the underlying contract and assess which deletions preserve effectiveness and risk allocation.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 165
+ },
+ {
+  "item_id": "apex_agents:world221-oa-4-7d9c6888",
+  "reasoning": "Inspect the merger model, change the assumptions and share issuance calculation, and verify the resulting balance sheet metrics.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "jobbench:producers__task1",
+  "reasoning": "The producer must resolve cast and venue conflicts under external scheduling rules, build the revised schedule, and complete the related financial review and other deliverables.",
+  "estimate_min": 600,
+  "low_min": 360,
+  "high_min": 1020
+ },
+ {
+  "item_id": "jobbench:web_administrators__task1",
+  "reasoning": "Reconstructing the incident, auditing every change requirement, hardening two configurations, and documenting findings requires substantial cross-source testing.",
+  "estimate_min": 720,
+  "low_min": 420,
+  "high_min": 1200
+ },
+ {
+  "item_id": "apex_agents:world415-im-01-84006694",
+  "reasoning": "Review the supplied disclosure record and applicable SEC filing and correction requirements, then explain the conclusion.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 165
+ },
+ {
+  "item_id": "apex_agents:task-5vd1ebb0-c4e34a72",
+  "reasoning": "Interpret the warranty remedy and apply calendar-day proration across the spreadsheet, with checks for ineligible claims.",
+  "estimate_min": 55,
+  "low_min": 30,
+  "high_min": 100
+ },
+ {
+  "item_id": "online_mind2web:6db4a0e346976f2729ba9afcd3208941",
+  "reasoning": "Find the carrier's tracking page and submit the shipment number.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 7
+ },
+ {
+  "item_id": "apex_agents:world132-da-task07-d7bf24d6",
+  "reasoning": "Find the relevant pricing baseline and two report factors, apply the requested multipliers, and check the arithmetic.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "apex_agents:world-128-nk-task-1-c49d8b70",
+  "reasoning": "Reconcile the city-level market intelligence and forecasts, calculate competitor relative market shares, and count applicable cities.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 110
+ },
+ {
+  "item_id": "online_mind2web:2c20d87a046fadcb6ff07ee877bfbf37",
+  "reasoning": "Locate the IRS prior-year form and open the 2022 version.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "jobbench:petroleum_engineers__task1",
+  "reasoning": "This requires interval selection and validated drilling regressions, externally sourced production decline analysis, database matching, and an integrated technical assessment.",
+  "estimate_min": 1440,
+  "low_min": 840,
+  "high_min": 2400
+ },
+ {
+  "item_id": "apex_agents:world228-sm-task04-2add8328",
+  "reasoning": "Find net sales and year-end headcount for both years in the annual report and calculate the two ratios.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "jobbench:statisticians__task1",
+  "reasoning": "The statistician must source and join state data, produce reproducible models and sensitivity checks, and prepare a workbook and technical memo.",
+  "estimate_min": 960,
+  "low_min": 600,
+  "high_min": 1560
+ },
+ {
+  "item_id": "apex_agents:world425-jcf-02-9f502d4d",
+  "reasoning": "The lawyer must reconcile election and agreement dates and carefully apply the specified corrective-procedure and ruling guidance.",
+  "estimate_min": 180,
+  "low_min": 100,
+  "high_min": 300
+ },
+ {
+  "item_id": "apex_agents:world221-tr-01-d4fc3833",
+  "reasoning": "Update the merger assumptions and construct and validate two separate two-variable accretion/dilution sensitivities.",
+  "estimate_min": 120,
+  "low_min": 65,
+  "high_min": 210
+ },
+ {
+  "item_id": "apex_agents:world221-hy-01-e2ae04a7",
+  "reasoning": "Trace the existing model and financial inputs, adjust the issuance price, and reconcile the revised pro forma balance sheet.",
+  "estimate_min": 65,
+  "low_min": 35,
+  "high_min": 120
+ },
+ {
+  "item_id": "apex_agents:world418-tk-01-50b3b6a8",
+  "reasoning": "Apply the stated coastwise rule and foreign-built LNG vessel exception to the two vessel categories, checking the supplied authorities.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 55
+ },
+ {
+  "item_id": "online_mind2web:7c09c2c7c87cf6bb1138701eb54284ea",
+  "reasoning": "Navigate to the topic, select the most popular news over the past month, and open its comments.",
+  "estimate_min": 5,
+  "low_min": 2,
+  "high_min": 10
+ },
+ {
+  "item_id": "jobbench:training_and_development_specialists__task2",
+  "reasoning": "The specialist must reconcile instructor identities, analyze training outcomes, build a constrained quarterly schedule, and produce integrated evaluation materials.",
+  "estimate_min": 660,
+  "low_min": 390,
+  "high_min": 1080
+ },
+ {
+  "item_id": "online_mind2web:d02d236836924919f35f2438d9ed2374",
+  "reasoning": "Find the top-250 listing and filter or check titles for AMC+ availability.",
+  "estimate_min": 5,
+  "low_min": 2,
+  "high_min": 12
+ },
+ {
+  "item_id": "online_mind2web:5d542a7ec1fa142ba73cc87d970caf39",
+  "reasoning": "Locate the 2022 CVPR main-conference publications and sort or compare them by citation count.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "jobbench:data_entry_keyers__task1",
+  "reasoning": "Compare spreadsheet records and ten scanned originals, document individual discrepancies, validate customers, and prepare the audit outputs.",
+  "estimate_min": 480,
+  "low_min": 270,
+  "high_min": 840
+ },
+ {
+  "item_id": "jobbench:mechanical_engineering_technicians__task2",
+  "reasoning": "The technician must reconcile vibration standards, compare all shared test points, analyze field history, and document the acceptance decision.",
+  "estimate_min": 480,
+  "low_min": 270,
+  "high_min": 780
+ },
+ {
+  "item_id": "apex_agents:world224-hs-09-56aefeb6",
+  "reasoning": "Update the LBO assumptions and inspect the debt and interest formulas for average-balance treatment before checking returns.",
+  "estimate_min": 80,
+  "low_min": 40,
+  "high_min": 150
+ },
+ {
+  "item_id": "online_mind2web:627f7a18d85f29a687234f1ade4585c2",
+  "reasoning": "Open the relevant league statistics and sort or inspect total blocked shots.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 7
+ },
+ {
+  "item_id": "online_mind2web:255bf27c43fd3f9254d6b81a5f36d3a9",
+  "reasoning": "Apply the region, auction, land-use, mineral-rights, and recency criteria, then compare acreage.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 18
+ },
+ {
+  "item_id": "jobbench:police_fire_and_ambulance_dispatchers__task1",
+  "reasoning": "This combines clinical and operational triage with unit matching, GIS proximity, CAD synchronization, conflict detection, and handover workbooks.",
+  "estimate_min": 600,
+  "low_min": 360,
+  "high_min": 1020
+ },
+ {
+  "item_id": "apex_agents:world226-rm-04-8d085d2b",
+  "reasoning": "Add interpolated incentive payouts and two operating cases to the LBO, then check their effects on the five-year returns.",
+  "estimate_min": 180,
+  "low_min": 100,
+  "high_min": 300
+ },
+ {
+  "item_id": "online_mind2web:bf3b311cc8dce16d3de844f4b5875dfd",
+  "reasoning": "Navigate Apple's watch comparison and open the Ultra information.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "jobbench:purchasing_agents_except_wholesale_retail_and_farm_products__task3",
+  "reasoning": "Audit three quotations against requirements, recalculate budget-compliant scenarios, and prepare defensible vendor scores and recommendations.",
+  "estimate_min": 540,
+  "low_min": 330,
+  "high_min": 900
+ },
+ {
+  "item_id": "jobbench:sociology_teachers_postsecondary__task3",
+  "reasoning": "Reconcile participation and attendance, calculate grades and risk flags for all students, and assemble the requested review package.",
+  "estimate_min": 360,
+  "low_min": 210,
+  "high_min": 600
+ },
+ {
+  "item_id": "jobbench:statisticians__task3",
+  "reasoning": "Obtain and normalize multiple county datasets, build and audit a SQLite database, and analyze socioeconomic and geographic health patterns.",
+  "estimate_min": 1440,
+  "low_min": 840,
+  "high_min": 2400
+ },
+ {
+  "item_id": "apex_agents:world223-smn-02-088bee6c",
+  "reasoning": "Revise several linked forecast and valuation formulas, update comparable-based WACC, and validate the requested DCF outputs.",
+  "estimate_min": 150,
+  "low_min": 85,
+  "high_min": 240
+ },
+ {
+  "item_id": "apex_agents:world225-mb-03-9e4a1b17",
+  "reasoning": "Locate the presentation growth rates and apply the conditional tax and growth scenario to the projections, comparing against the original.",
+  "estimate_min": 65,
+  "low_min": 35,
+  "high_min": 120
+ },
+ {
+  "item_id": "apex_agents:world-418-apa-01-a9e837e3",
+  "reasoning": "Inspect the agreement's headings, isolated labels, and signature blocks within the expressly limited scope.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "online_mind2web:d5c34bf39eb6096ae5d439325cde4d32",
+  "reasoning": "Search the DMV location finder for a Richmond office.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "apex_agents:world423-dpm-02-4263f118",
+  "reasoning": "Compare the notification template with GDPR content requirements and read the updated policy together with its operative playbook.",
+  "estimate_min": 75,
+  "low_min": 40,
+  "high_min": 135
+ },
+ {
+  "item_id": "online_mind2web:05483c50cc9b04c8ac44c574758fb2bd",
+  "reasoning": "Search BBB listings near the ZIP code, filter for accredited charities, and compare ratings.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 12
+ },
+ {
+  "item_id": "online_mind2web:871e7771cecb989972f138ecc373107b",
+  "reasoning": "Search for Vancouver weather and open the seven-day forecast.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "online_mind2web:301f267f421b93045874726183e8f722",
+  "reasoning": "Use recipe search filters and check that results meet the vegan, savory, timing, and protein conditions.",
+  "estimate_min": 6,
+  "low_min": 3,
+  "high_min": 14
+ },
+ {
+  "item_id": "apex_agents:world417-ts-04-ba4d7322",
+  "reasoning": "Apply the specified California layoff definitions and cases to the combined separations and establishment facts, then explain the litigation assessment.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 165
+ },
+ {
+  "item_id": "online_mind2web:aafd1fddea1558466ac6133934d35156",
+  "reasoning": "Search Houston rental listings and apply the house and one-bedroom filters.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "jobbench:customer_service_representatives__task1",
+  "reasoning": "Investigate six disputes across account, weather, benchmark, and regulatory sources, then prepare the required workbook and case resolutions.",
+  "estimate_min": 540,
+  "low_min": 330,
+  "high_min": 900
+ },
+ {
+  "item_id": "jobbench:medical_secretaries__task1",
+  "reasoning": "Audit referral diagnoses and duplicates against ICD-10, then prepare the required workbook and compliant correspondence using external references.",
+  "estimate_min": 420,
+  "low_min": 240,
+  "high_min": 720
+ },
+ {
+  "item_id": "apex_agents:world224-sk-task01-f8b6f40d",
+  "reasoning": "Change the specified LBO inputs, verify the forecast recalculation, and report the year-five equity value and IRR.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 65
+ },
+ {
+  "item_id": "jobbench:online_merchants__task1",
+  "reasoning": "Investigate the escalated complaints against performance metrics and two external datasets, then build the analysis workbook and recommendations.",
+  "estimate_min": 480,
+  "low_min": 285,
+  "high_min": 780
+ },
+ {
+  "item_id": "online_mind2web:33bd2cdcea4fcc42a09a8a1e4e5841c6",
+  "reasoning": "Select the nearest store and pickup time, configure the combo and sauces, and verify the bag contents.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 16
+ },
+ {
+  "item_id": "online_mind2web:005be9dd91c95669d6ddde9ae667125c",
+  "reasoning": "Find Qatar Airways' economy baggage policy and check the applicable allowance information.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 8
+ },
+ {
+  "item_id": "apex_agents:world223-smn-05-b00d08c1",
+  "reasoning": "Combine the filing with merger-model assumptions to calculate debt paydown, share repurchases, enterprise value, and valuation ratios.",
+  "estimate_min": 100,
+  "low_min": 55,
+  "high_min": 180
+ },
+ {
+  "item_id": "jobbench:supply_chain_managers__task1",
+  "reasoning": "Join inventory, sales, and supplier data; compute ABC, replenishment, and scorecard metrics; and integrate the findings into contract recommendations.",
+  "estimate_min": 720,
+  "low_min": 420,
+  "high_min": 1200
+ },
+ {
+  "item_id": "jobbench:reporters_and_correspondents__task1",
+  "reasoning": "The reporter must analyze water data, verify interview claims and regulatory details, compare Newark numerically, and prepare the editorial package.",
+  "estimate_min": 600,
+  "low_min": 360,
+  "high_min": 1020
+ },
+ {
+  "item_id": "apex_agents:task-128-pj-04-a1434323",
+  "reasoning": "Locate survey and agency inputs, determine adoption and full LTV, and calculate the population-based market size.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "jobbench:technical_writers__task3",
+  "reasoning": "A complete endpoint-level reconciliation, substantial style guide, and publication-ready API rewrite require careful cross-checking of several technical sources.",
+  "estimate_min": 1080,
+  "low_min": 660,
+  "high_min": 1800
+ },
+ {
+  "item_id": "jobbench:purchasing_agents_except_wholesale_retail_and_farm_products__task2",
+  "reasoning": "Reconcile the revised requirements and funding constraints, recalculate four bids, score vendors, and document the procurement recommendation against policy.",
+  "estimate_min": 600,
+  "low_min": 360,
+  "high_min": 1020
+ },
+ {
+  "item_id": "online_mind2web:bb5d90e6f2fbc0ae146f7c1998c2b4a1",
+  "reasoning": "Filter TED talks by robot topic and duration, then sort or compare by views.",
+  "estimate_min": 5,
+  "low_min": 2,
+  "high_min": 10
+ },
+ {
+  "item_id": "online_mind2web:ef289e34a2f59a707cb07e2a6229ff03",
+  "reasoning": "Use a car comparison tool to select the two specified Acura models and years.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 9
+ }
+]

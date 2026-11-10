@@ -1,0 +1,223 @@
+scenario,months_from_today,date,occupation,S,D
+base,-24,2024-11-09,Computer User Support Specialists,0.0017,0.0392
+base,-24,2024-11-09,Customer Service Representatives,0.0009,0.0189
+base,-24,2024-11-09,Software Quality Assurance Analysts and Testers,0.0,0.0028
+base,-23,2024-12-10,Computer User Support Specialists,0.0032,0.0565
+base,-23,2024-12-10,Customer Service Representatives,0.0016,0.0286
+base,-23,2024-12-10,Software Quality Assurance Analysts and Testers,0.0002,0.0062
+base,-22,2025-01-09,Computer User Support Specialists,0.0052,0.0747
+base,-22,2025-01-09,Customer Service Representatives,0.0025,0.0393
+base,-22,2025-01-09,Software Quality Assurance Analysts and Testers,0.0004,0.011
+base,-21,2025-02-09,Computer User Support Specialists,0.0079,0.1009
+base,-21,2025-02-09,Customer Service Representatives,0.0038,0.05
+base,-21,2025-02-09,Software Quality Assurance Analysts and Testers,0.0008,0.0177
+base,-20,2025-03-11,Computer User Support Specialists,0.0114,0.1298
+base,-20,2025-03-11,Customer Service Representatives,0.0053,0.0644
+base,-20,2025-03-11,Software Quality Assurance Analysts and Testers,0.0014,0.0259
+base,-19,2025-04-11,Computer User Support Specialists,0.0158,0.1604
+base,-19,2025-04-11,Customer Service Representatives,0.0074,0.0874
+base,-19,2025-04-11,Software Quality Assurance Analysts and Testers,0.0023,0.0401
+base,-18,2025-05-11,Computer User Support Specialists,0.021,0.1892
+base,-18,2025-05-11,Customer Service Representatives,0.0104,0.1137
+base,-18,2025-05-11,Software Quality Assurance Analysts and Testers,0.0038,0.0641
+base,-17,2025-06-11,Computer User Support Specialists,0.027,0.2145
+base,-17,2025-06-11,Customer Service Representatives,0.0143,0.1393
+base,-17,2025-06-11,Software Quality Assurance Analysts and Testers,0.0059,0.0852
+base,-16,2025-07-11,Computer User Support Specialists,0.0338,0.2383
+base,-16,2025-07-11,Customer Service Representatives,0.0191,0.1672
+base,-16,2025-07-11,Software Quality Assurance Analysts and Testers,0.0086,0.1055
+base,-15,2025-08-10,Computer User Support Specialists,0.0411,0.2586
+base,-15,2025-08-10,Customer Service Representatives,0.0252,0.2036
+base,-15,2025-08-10,Software Quality Assurance Analysts and Testers,0.0119,0.1234
+base,-14,2025-09-10,Computer User Support Specialists,0.0489,0.2779
+base,-14,2025-09-10,Customer Service Representatives,0.0325,0.2381
+base,-14,2025-09-10,Software Quality Assurance Analysts and Testers,0.0157,0.1414
+base,-13,2025-10-10,Computer User Support Specialists,0.0572,0.2952
+base,-13,2025-10-10,Customer Service Representatives,0.0411,0.2726
+base,-13,2025-10-10,Software Quality Assurance Analysts and Testers,0.02,0.159
+base,-12,2025-11-10,Computer User Support Specialists,0.0659,0.3149
+base,-12,2025-11-10,Customer Service Representatives,0.0511,0.3102
+base,-12,2025-11-10,Software Quality Assurance Analysts and Testers,0.0249,0.1819
+base,-11,2025-12-10,Computer User Support Specialists,0.0751,0.3371
+base,-11,2025-12-10,Customer Service Representatives,0.0626,0.3497
+base,-11,2025-12-10,Software Quality Assurance Analysts and Testers,0.0304,0.2092
+base,-10,2026-01-10,Computer User Support Specialists,0.0848,0.3608
+base,-10,2026-01-10,Customer Service Representatives,0.0762,0.4125
+base,-10,2026-01-10,Software Quality Assurance Analysts and Testers,0.0366,0.2368
+base,-9,2026-02-09,Computer User Support Specialists,0.095,0.3855
+base,-9,2026-02-09,Customer Service Representatives,0.0924,0.472
+base,-9,2026-02-09,Software Quality Assurance Analysts and Testers,0.0435,0.2814
+base,-8,2026-03-11,Computer User Support Specialists,0.1057,0.4114
+base,-8,2026-03-11,Customer Service Representatives,0.1114,0.5347
+base,-8,2026-03-11,Software Quality Assurance Analysts and Testers,0.0517,0.3306
+base,-7,2026-04-11,Computer User Support Specialists,0.1169,0.4368
+base,-7,2026-04-11,Customer Service Representatives,0.1334,0.5975
+base,-7,2026-04-11,Software Quality Assurance Analysts and Testers,0.0609,0.3789
+base,-6,2026-05-11,Computer User Support Specialists,0.1286,0.4605
+base,-6,2026-05-11,Customer Service Representatives,0.1582,0.6579
+base,-6,2026-05-11,Software Quality Assurance Analysts and Testers,0.0713,0.4294
+base,-5,2026-06-11,Computer User Support Specialists,0.1407,0.4823
+base,-5,2026-06-11,Customer Service Representatives,0.1855,0.7127
+base,-5,2026-06-11,Software Quality Assurance Analysts and Testers,0.0827,0.4765
+base,-4,2026-07-11,Computer User Support Specialists,0.1531,0.5013
+base,-4,2026-07-11,Customer Service Representatives,0.2146,0.7582
+base,-4,2026-07-11,Software Quality Assurance Analysts and Testers,0.0951,0.5206
+base,-3,2026-08-11,Computer User Support Specialists,0.1658,0.5203
+base,-3,2026-08-11,Customer Service Representatives,0.2448,0.794
+base,-3,2026-08-11,Software Quality Assurance Analysts and Testers,0.1084,0.5599
+base,-2,2026-09-10,Computer User Support Specialists,0.1789,0.5427
+base,-2,2026-09-10,Customer Service Representatives,0.2751,0.8191
+base,-2,2026-09-10,Software Quality Assurance Analysts and Testers,0.1224,0.5948
+base,-1,2026-10-11,Computer User Support Specialists,0.1923,0.5624
+base,-1,2026-10-11,Customer Service Representatives,0.3046,0.8386
+base,-1,2026-10-11,Software Quality Assurance Analysts and Testers,0.1372,0.6294
+base,0,2026-11-10,Computer User Support Specialists,0.2058,0.5785
+base,0,2026-11-10,Customer Service Representatives,0.3328,0.8548
+base,0,2026-11-10,Software Quality Assurance Analysts and Testers,0.1526,0.6584
+base,1,2026-12-10,Computer User Support Specialists,0.2194,0.5929
+base,1,2026-12-10,Customer Service Representatives,0.3594,0.866
+base,1,2026-12-10,Software Quality Assurance Analysts and Testers,0.1687,0.6873
+base,2,2027-01-10,Computer User Support Specialists,0.2328,0.6051
+base,2,2027-01-10,Customer Service Representatives,0.3839,0.8748
+base,2,2027-01-10,Software Quality Assurance Analysts and Testers,0.1854,0.7137
+base,3,2027-02-09,Computer User Support Specialists,0.2461,0.6154
+base,3,2027-02-09,Customer Service Representatives,0.4065,0.8815
+base,3,2027-02-09,Software Quality Assurance Analysts and Testers,0.2026,0.7411
+base,4,2027-03-12,Computer User Support Specialists,0.2591,0.6246
+base,4,2027-03-12,Customer Service Representatives,0.4269,0.8868
+base,4,2027-03-12,Software Quality Assurance Analysts and Testers,0.2205,0.7716
+base,5,2027-04-11,Computer User Support Specialists,0.2717,0.6321
+base,5,2027-04-11,Customer Service Representatives,0.4453,0.8911
+base,5,2027-04-11,Software Quality Assurance Analysts and Testers,0.2388,0.7981
+base,6,2027-05-12,Computer User Support Specialists,0.2839,0.6381
+base,6,2027-05-12,Customer Service Representatives,0.4617,0.8943
+base,6,2027-05-12,Software Quality Assurance Analysts and Testers,0.2576,0.8211
+base,7,2027-06-11,Computer User Support Specialists,0.2956,0.643
+base,7,2027-06-11,Customer Service Representatives,0.4763,0.8966
+base,7,2027-06-11,Software Quality Assurance Analysts and Testers,0.2767,0.8418
+base,8,2027-07-12,Computer User Support Specialists,0.3068,0.6468
+base,8,2027-07-12,Customer Service Representatives,0.4893,0.8983
+base,8,2027-07-12,Software Quality Assurance Analysts and Testers,0.2959,0.8598
+base,9,2027-08-11,Computer User Support Specialists,0.3174,0.6498
+base,9,2027-08-11,Customer Service Representatives,0.5006,0.8994
+base,9,2027-08-11,Software Quality Assurance Analysts and Testers,0.3153,0.875
+base,10,2027-09-10,Computer User Support Specialists,0.3274,0.6518
+base,10,2027-09-10,Customer Service Representatives,0.5106,0.9001
+base,10,2027-09-10,Software Quality Assurance Analysts and Testers,0.3346,0.8877
+base,11,2027-10-11,Computer User Support Specialists,0.3369,0.6533
+base,11,2027-10-11,Customer Service Representatives,0.5193,0.9005
+base,11,2027-10-11,Software Quality Assurance Analysts and Testers,0.3537,0.8982
+base,12,2027-11-10,Computer User Support Specialists,0.3457,0.6544
+base,12,2027-11-10,Customer Service Representatives,0.5268,0.9007
+base,12,2027-11-10,Software Quality Assurance Analysts and Testers,0.3725,0.9063
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Computer User Support Specialists,0.0007,0.015
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Customer Service Representatives,0.0009,0.0188
+"base, rho 0.5 (tests/state)",-24,2024-11-09,Software Quality Assurance Analysts and Testers,0.0,0.0006
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Computer User Support Specialists,0.0012,0.0196
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Customer Service Representatives,0.0016,0.0284
+"base, rho 0.5 (tests/state)",-23,2024-12-10,Software Quality Assurance Analysts and Testers,0.0,0.0015
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Computer User Support Specialists,0.0019,0.0237
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Customer Service Representatives,0.0025,0.0389
+"base, rho 0.5 (tests/state)",-22,2025-01-09,Software Quality Assurance Analysts and Testers,0.0001,0.0041
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Computer User Support Specialists,0.0026,0.032
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Customer Service Representatives,0.0037,0.0491
+"base, rho 0.5 (tests/state)",-21,2025-02-09,Software Quality Assurance Analysts and Testers,0.0003,0.0086
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Computer User Support Specialists,0.0036,0.0442
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Customer Service Representatives,0.0051,0.0624
+"base, rho 0.5 (tests/state)",-20,2025-03-11,Software Quality Assurance Analysts and Testers,0.0007,0.0146
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Computer User Support Specialists,0.0048,0.0598
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Customer Service Representatives,0.0071,0.0838
+"base, rho 0.5 (tests/state)",-19,2025-04-11,Software Quality Assurance Analysts and Testers,0.0012,0.0275
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Computer User Support Specialists,0.0063,0.0824
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Customer Service Representatives,0.0098,0.1069
+"base, rho 0.5 (tests/state)",-18,2025-05-11,Software Quality Assurance Analysts and Testers,0.0023,0.0529
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Computer User Support Specialists,0.0082,0.1072
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Customer Service Representatives,0.0131,0.127
+"base, rho 0.5 (tests/state)",-17,2025-06-11,Software Quality Assurance Analysts and Testers,0.0039,0.0741
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Computer User Support Specialists,0.0106,0.1299
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Customer Service Representatives,0.017,0.1462
+"base, rho 0.5 (tests/state)",-16,2025-07-11,Software Quality Assurance Analysts and Testers,0.006,0.0941
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Computer User Support Specialists,0.0133,0.15
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Customer Service Representatives,0.0216,0.1697
+"base, rho 0.5 (tests/state)",-15,2025-08-10,Software Quality Assurance Analysts and Testers,0.0086,0.1116
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Computer User Support Specialists,0.0163,0.1688
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Customer Service Representatives,0.0268,0.1869
+"base, rho 0.5 (tests/state)",-14,2025-09-10,Software Quality Assurance Analysts and Testers,0.0117,0.1288
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Computer User Support Specialists,0.0196,0.192
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Customer Service Representatives,0.0324,0.1988
+"base, rho 0.5 (tests/state)",-13,2025-10-10,Software Quality Assurance Analysts and Testers,0.0151,0.1448
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Computer User Support Specialists,0.0234,0.2156
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Customer Service Representatives,0.0382,0.2069
+"base, rho 0.5 (tests/state)",-12,2025-11-10,Software Quality Assurance Analysts and Testers,0.019,0.1657
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Computer User Support Specialists,0.0274,0.2361
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Customer Service Representatives,0.0441,0.212
+"base, rho 0.5 (tests/state)",-11,2025-12-10,Software Quality Assurance Analysts and Testers,0.0234,0.1903
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Computer User Support Specialists,0.0318,0.2545
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Customer Service Representatives,0.0499,0.2151
+"base, rho 0.5 (tests/state)",-10,2026-01-10,Software Quality Assurance Analysts and Testers,0.0283,0.2135
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Computer User Support Specialists,0.0363,0.271
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Customer Service Representatives,0.0557,0.2168
+"base, rho 0.5 (tests/state)",-9,2026-02-09,Software Quality Assurance Analysts and Testers,0.0338,0.2383
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Computer User Support Specialists,0.041,0.2865
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Customer Service Representatives,0.0612,0.2179
+"base, rho 0.5 (tests/state)",-8,2026-03-11,Software Quality Assurance Analysts and Testers,0.0399,0.2653
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Computer User Support Specialists,0.0459,0.3014
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Customer Service Representatives,0.0666,0.2184
+"base, rho 0.5 (tests/state)",-7,2026-04-11,Software Quality Assurance Analysts and Testers,0.0466,0.2945
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Computer User Support Specialists,0.0509,0.315
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Customer Service Representatives,0.0717,0.2188
+"base, rho 0.5 (tests/state)",-6,2026-05-11,Software Quality Assurance Analysts and Testers,0.0539,0.326
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Computer User Support Specialists,0.056,0.3342
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Customer Service Representatives,0.0766,0.219
+"base, rho 0.5 (tests/state)",-5,2026-06-11,Software Quality Assurance Analysts and Testers,0.0619,0.3559
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Computer User Support Specialists,0.0614,0.3546
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Customer Service Representatives,0.0811,0.2193
+"base, rho 0.5 (tests/state)",-4,2026-07-11,Software Quality Assurance Analysts and Testers,0.0705,0.3873
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Computer User Support Specialists,0.0669,0.3705
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Customer Service Representatives,0.0853,0.2199
+"base, rho 0.5 (tests/state)",-3,2026-08-11,Software Quality Assurance Analysts and Testers,0.0797,0.4178
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Computer User Support Specialists,0.0727,0.3927
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Customer Service Representatives,0.0893,0.221
+"base, rho 0.5 (tests/state)",-2,2026-09-10,Software Quality Assurance Analysts and Testers,0.0895,0.461
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Computer User Support Specialists,0.0788,0.4149
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Customer Service Representatives,0.0929,0.2229
+"base, rho 0.5 (tests/state)",-1,2026-10-11,Software Quality Assurance Analysts and Testers,0.1002,0.5016
+"base, rho 0.5 (tests/state)",0,2026-11-10,Computer User Support Specialists,0.0851,0.4354
+"base, rho 0.5 (tests/state)",0,2026-11-10,Customer Service Representatives,0.0963,0.2259
+"base, rho 0.5 (tests/state)",0,2026-11-10,Software Quality Assurance Analysts and Testers,0.1116,0.5373
+"base, rho 0.5 (tests/state)",1,2026-12-10,Computer User Support Specialists,0.0918,0.4535
+"base, rho 0.5 (tests/state)",1,2026-12-10,Customer Service Representatives,0.0994,0.2301
+"base, rho 0.5 (tests/state)",1,2026-12-10,Software Quality Assurance Analysts and Testers,0.1236,0.5686
+"base, rho 0.5 (tests/state)",2,2027-01-10,Computer User Support Specialists,0.0986,0.4686
+"base, rho 0.5 (tests/state)",2,2027-01-10,Customer Service Representatives,0.1023,0.2357
+"base, rho 0.5 (tests/state)",2,2027-01-10,Software Quality Assurance Analysts and Testers,0.1362,0.5966
+"base, rho 0.5 (tests/state)",3,2027-02-09,Computer User Support Specialists,0.1055,0.4814
+"base, rho 0.5 (tests/state)",3,2027-02-09,Customer Service Representatives,0.1049,0.2417
+"base, rho 0.5 (tests/state)",3,2027-02-09,Software Quality Assurance Analysts and Testers,0.1492,0.6245
+"base, rho 0.5 (tests/state)",4,2027-03-12,Computer User Support Specialists,0.1125,0.5209
+"base, rho 0.5 (tests/state)",4,2027-03-12,Customer Service Representatives,0.1074,0.2723
+"base, rho 0.5 (tests/state)",4,2027-03-12,Software Quality Assurance Analysts and Testers,0.1628,0.6541
+"base, rho 0.5 (tests/state)",5,2027-04-11,Computer User Support Specialists,0.1198,0.5455
+"base, rho 0.5 (tests/state)",5,2027-04-11,Customer Service Representatives,0.1098,0.2905
+"base, rho 0.5 (tests/state)",5,2027-04-11,Software Quality Assurance Analysts and Testers,0.1769,0.6791
+"base, rho 0.5 (tests/state)",6,2027-05-12,Computer User Support Specialists,0.127,0.5631
+"base, rho 0.5 (tests/state)",6,2027-05-12,Customer Service Representatives,0.1121,0.3015
+"base, rho 0.5 (tests/state)",6,2027-05-12,Software Quality Assurance Analysts and Testers,0.1913,0.7001
+"base, rho 0.5 (tests/state)",7,2027-06-11,Computer User Support Specialists,0.1342,0.5759
+"base, rho 0.5 (tests/state)",7,2027-06-11,Customer Service Representatives,0.1141,0.3086
+"base, rho 0.5 (tests/state)",7,2027-06-11,Software Quality Assurance Analysts and Testers,0.2061,0.7252
+"base, rho 0.5 (tests/state)",8,2027-07-12,Computer User Support Specialists,0.1413,0.5854
+"base, rho 0.5 (tests/state)",8,2027-07-12,Customer Service Representatives,0.116,0.3127
+"base, rho 0.5 (tests/state)",8,2027-07-12,Software Quality Assurance Analysts and Testers,0.2212,0.7504
+"base, rho 0.5 (tests/state)",9,2027-08-11,Computer User Support Specialists,0.1482,0.5927
+"base, rho 0.5 (tests/state)",9,2027-08-11,Customer Service Representatives,0.1176,0.315
+"base, rho 0.5 (tests/state)",9,2027-08-11,Software Quality Assurance Analysts and Testers,0.2365,0.7718
+"base, rho 0.5 (tests/state)",10,2027-09-10,Computer User Support Specialists,0.1548,0.5982
+"base, rho 0.5 (tests/state)",10,2027-09-10,Customer Service Representatives,0.1191,0.3163
+"base, rho 0.5 (tests/state)",10,2027-09-10,Software Quality Assurance Analysts and Testers,0.2519,0.7904
+"base, rho 0.5 (tests/state)",11,2027-10-11,Computer User Support Specialists,0.1612,0.6024
+"base, rho 0.5 (tests/state)",11,2027-10-11,Customer Service Representatives,0.1203,0.3169
+"base, rho 0.5 (tests/state)",11,2027-10-11,Software Quality Assurance Analysts and Testers,0.2672,0.8065
+"base, rho 0.5 (tests/state)",12,2027-11-10,Computer User Support Specialists,0.1672,0.6055
+"base, rho 0.5 (tests/state)",12,2027-11-10,Customer Service Representatives,0.1214,0.3175
+"base, rho 0.5 (tests/state)",12,2027-11-10,Software Quality Assurance Analysts and Testers,0.2824,0.8198

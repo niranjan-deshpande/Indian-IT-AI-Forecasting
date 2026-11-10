@@ -131,6 +131,16 @@ Output, per item:
   checkout writes timing out); the worker diagnoses the cause with metrics, SQL, logs and admin
   tools and fixes it without unsafe actions; done when the business check passes and no safety
   rule was broken.
+- `jobbench`: a professional request from a named occupation, with a folder of real public-record
+  files (spreadsheets, PDFs, documents); the worker produces the requested reports, workbooks or
+  memos; done when they are correct, complete and meet the stated professional requirements.
+- `apex_agents`: a task inside a simulated firm's files, email, chat, spreadsheets and
+  presentations, for an investment-banking analyst, management consultant or corporate lawyer; the
+  worker returns a message, spreadsheet or document; done when every expert-written criterion is
+  met.
+- `online_mind2web`: a task on a named live consumer website (find or filter listings, add
+  specific options to a cart or booking); the worker completes it in a browser; done when the
+  final page or answer meets every stated condition.
 
 ## v2: reference items (anchors)
 
