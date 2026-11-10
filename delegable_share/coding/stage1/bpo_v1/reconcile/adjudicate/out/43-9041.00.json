@@ -1,0 +1,4 @@
+[
+  {"task_id": "23320", "reasoning": "The statement covers two different kinds of item: entering and organizing records in batches, and searching for and retrieving a single record when someone asks. Y names both with clear start and end points, while X's single generic 'record or set of records' item blurs them.", "choice": "Y"},
+  {"task_id": "23333", "reasoning": "Pulling a cancellation printout from the system is computer work, while pulling cancellation cards from a physical file is hands-on. The instructions say to split an activity that is partly physical, even when the two routes serve the same purpose, and Y does this.", "choice": "Y"}
+]

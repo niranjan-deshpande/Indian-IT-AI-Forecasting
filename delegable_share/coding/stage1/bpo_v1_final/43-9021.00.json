@@ -1,0 +1,196 @@
+[
+ {
+  "task_id": "11401",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read source documents and key or scan their data into fields.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces entered data.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Batches of documents.",
+    "work_item": "one batch of source documents entered",
+    "start": "batch received",
+    "end": "batch entered",
+    "checked_by": "supervisor; downstream users",
+    "duplicates": [],
+    "overlaps_with": [
+     "11403"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11402",
+  "split_reasoning": "Physically sorting paper materials and compiling and checking data are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort and organize paper source materials for data entry.",
+    "time_share": 0.35,
+    "type_reasoning": "Sorting paper materials requires hands-on handling away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11407"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compile and verify data for entry, including organizing electronic source data.",
+    "time_share": 0.65,
+    "type_reasoning": "The work produces a prepared and checked set of data for entry.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A prepared batch can be handed to a keyer as a whole.",
+    "work_item": "One batch of source data compiled and checked before entry",
+    "start": "Source data received for preparation",
+    "end": "Data organized and accuracy checked for entry",
+    "checked_by": "Data entry keyer or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11407"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the proportion of paper and electronic material. This task concerns checking before entry; task 11403 concerns verification of entered data."
+ },
+ {
+  "task_id": "11403",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare entered data with sources or re-enter to find errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces verified batch.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per batch.",
+    "work_item": "one batch verified",
+    "start": "entry complete",
+    "end": "errors flagged",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11405",
+     "11401"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11404",
+  "split_reasoning": "One activity; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Store completed documents in the right places.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on filing away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11405",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Locate and correct entry errors or report them to a supervisor.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces corrected data.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per error set.",
+    "work_item": "one set of errors corrected or reported",
+    "start": "errors found",
+    "end": "corrected or reported",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11403"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11406",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep a log of activities and completed work.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a log.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per shift.",
+    "work_item": "one shift's work log",
+    "start": "shift starts",
+    "end": "log completed",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11407",
+  "split_reasoning": "One activity; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select materials needed for work assignments.",
+    "time_share": 1.0,
+    "type_reasoning": "Gathering materials by hand.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11408",
+  "split_reasoning": "One activity; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load machines with input or output media.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on machine work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11409",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Resolve a garbled or indecipherable message using cryptographic procedures.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces decoded message.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per message.",
+    "work_item": "one message resolved",
+    "start": "message flagged",
+    "end": "message readable",
+    "checked_by": "sender; supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Rare and dated."
+ }
+]

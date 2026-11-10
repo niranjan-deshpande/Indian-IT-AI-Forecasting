@@ -9,6 +9,7 @@ Stage 1 (download, skipped with --skip-download) writes into delegable_share/dat
 Stage 2 (build) writes into delegable_share/data/:
   pilot_tasks.csv          one row per O*NET task statement, 3 pilot occupations
   bpo_tasks.csv            same, 13 BPO occupations
+  comparison_tasks.csv     same, 16 hand-picked comparison occupations (control_group column)
   occupation_summary.csv   per-occupation checks: code exists, task counts, ratings, Eloundou match
 
 Downloaded files are untrusted data: this script only writes bytes, unzips with a path check
@@ -69,6 +70,18 @@ BPO = [
     "15-1211.00", "43-4051.00", "43-3031.00", "43-3021.00", "43-9021.00", "43-9041.00",
     "29-2072.00",
 ]
+# Hand-picked comparison set (2026-11-10): positive controls (text/computer work, short items),
+# negative controls (physical or interpersonal), and white-collar occupations outside IT/BPO.
+# Excludes the pilot, the BPO set, and the occupations used as worked examples in the prompts
+# (43-6014 Secretaries, 13-1161 Market Research, 13-1071 HR Specialists, 43-4171 Receptionists).
+COMPARISON = {
+    "27-3091.00": "positive", "43-9081.00": "positive", "27-3042.00": "positive",
+    "23-2011.00": "positive", "13-2082.00": "positive",
+    "47-2111.00": "negative", "29-1141.00": "negative", "39-9011.00": "negative",
+    "37-2011.00": "negative", "53-3032.00": "negative",
+    "13-2011.00": "white_collar", "23-1011.00": "white_collar", "13-2041.00": "white_collar",
+    "25-2031.00": "white_collar", "41-4012.00": "white_collar", "13-1111.00": "white_collar",
+}
 
 # --------------------------------------------------------------------------------------
 # Frequency (FT) method
@@ -444,10 +457,12 @@ def build():
     print(f"O*NET {ONET_VERSION} whole-database Eloundou match: " + json.dumps(stats))
 
     summaries = []
-    for name, codes in [("pilot", PILOT), ("bpo", BPO)]:
+    for name, codes in [("pilot", PILOT), ("bpo", BPO), ("comparison", list(COMPARISON))]:
         built = build_set(codes, occ, ts, ratings, dwas, el)
         if name == "bpo":
             built.insert(0, "in_pilot", built["onetsoc_code"].isin(PILOT))
+        if name == "comparison":
+            built.insert(0, "control_group", built["onetsoc_code"].map(COMPARISON))
         out = DATA / f"{name}_tasks.csv"
         built.to_csv(out, index=False)
         print(f"wrote {out.relative_to(ROOT)}: {len(built)} rows; "

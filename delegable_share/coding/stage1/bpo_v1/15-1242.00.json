@@ -1,0 +1,463 @@
+[
+ {
+  "task_id": "1298",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write standards and guidelines for acquiring and using software and for protecting vulnerable information.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a standards document staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Standards are written one at a time.",
+    "work_item": "one standard or guideline document",
+    "start": "need for a standard identified",
+    "end": "standard approved and issued",
+    "checked_by": "management and security officer",
+    "duplicates": [],
+    "overlaps_with": [
+     "1301"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1299",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change existing databases or database management systems, or direct programmers to make changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Each change is a deliverable users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes are handed over per request.",
+    "work_item": "one database change",
+    "start": "change requested",
+    "end": "change tested and in production",
+    "checked_by": "application owner and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1300",
+     "1309",
+     "21651"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1300",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test programs or databases, fix errors and make needed changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Each test round ends in a tested, corrected result.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Tests are done per change or release.",
+    "work_item": "one test round with fixes",
+    "start": "change ready for test",
+    "end": "tests pass and fixes done",
+    "checked_by": "developers and project lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21651",
+     "1299"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1301",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and put in place security measures protecting files from accidental or unauthorized damage, change or disclosure.",
+    "time_share": 1.0,
+    "type_reasoning": "Each measure is a deployed protection others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done one measure at a time.",
+    "work_item": "one security measure planned and implemented",
+    "start": "risk identified",
+    "end": "measure in place and documented",
+    "checked_by": "security officer and auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1298",
+     "1305"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1302",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Approve, schedule, plan and oversee installation and testing of new database products or improvements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each installation ends in a signed-off system.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per installation.",
+    "work_item": "one installation planned and overseen through testing",
+    "start": "installation request",
+    "end": "installation tested and signed off",
+    "checked_by": "management and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21649",
+     "21651"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1303",
+  "split_reasoning": "Two activities: teaching sessions, and answering questions as they arise.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train users on the database systems.",
+    "time_share": 0.3,
+    "type_reasoning": "Teaching is live and produces nothing checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a user's question by email or ticket.",
+    "time_share": 0.7,
+    "type_reasoning": "Each answer is a written deliverable the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions arrive one at a time.",
+    "work_item": "one user question answered",
+    "start": "question received",
+    "end": "answer sent",
+    "checked_by": "the user",
+    "duplicates": [],
+    "overlaps_with": [
+     "21650"
+    ]
+   }
+  ],
+  "notes": "Some questions are answered live; treated as written here."
+ },
+ {
+  "task_id": "1305",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Decide which users get which access levels on each part of the database.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is an access specification enforced and audited.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per database or request.",
+    "work_item": "one access specification or change",
+    "start": "access need raised",
+    "end": "access set and recorded",
+    "checked_by": "security officer and data owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "1301"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1306",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build data models describing data elements and their use.",
+    "time_share": 1.0,
+    "type_reasoning": "Each model is used by developers and reviewers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Models are produced per project.",
+    "work_item": "one data model",
+    "start": "data needs gathered",
+    "end": "model reviewed and issued",
+    "checked_by": "developers and data owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "1313",
+     "1315"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1309",
+  "split_reasoning": "One activity: consulting manuals.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read DBMS manuals for the procedure needed to make a database change.",
+    "time_share": 1.0,
+    "type_reasoning": "The reading itself produces nothing; the change is covered under another statement.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "1299"
+    ]
+   }
+  ],
+  "notes": "Coded NO_DELIVERABLE as a step in the change workflow."
+ },
+ {
+  "task_id": "1311",
+  "split_reasoning": "Two jobs: setting up monitoring, and creating production databases.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter commands to set up monitoring of database performance.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a working monitor others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per database.",
+    "work_item": "one performance monitoring setup",
+    "start": "database needs monitoring",
+    "end": "monitoring working",
+    "checked_by": "DBA team",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Enter commands to create a production database.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a database users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One database at a time.",
+    "work_item": "one production database created",
+    "start": "creation approved",
+    "end": "database ready for use",
+    "checked_by": "application owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "1313"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1312",
+  "split_reasoning": "Keeping up with trends is separate from advising management.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow trends in database systems.",
+    "time_share": 0.5,
+    "type_reasoning": "Nothing is produced.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Advise management on a trend.",
+    "time_share": 0.5,
+    "type_reasoning": "Each is a briefing management uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One briefing at a time.",
+    "work_item": "one trend briefing",
+    "start": "trend evaluated",
+    "end": "briefing delivered",
+    "checked_by": "upper management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21648"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1313",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write the code for logical and physical database descriptions, or direct others to.",
+    "time_share": 1.0,
+    "type_reasoning": "Each is code reviewed and used.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per database or change.",
+    "work_item": "one database description coded",
+    "start": "design approved",
+    "end": "code reviewed and deployed",
+    "checked_by": "DBA team and developers",
+    "duplicates": [],
+    "overlaps_with": [
+     "1306",
+     "1299"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1314",
+  "split_reasoning": "One activity: reading charts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read workflow charts from programmer analysts to understand what the computer will do.",
+    "time_share": 1.0,
+    "type_reasoning": "Reading alone produces nothing checked.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Coded NO_DELIVERABLE; may in practice yield review comments."
+ },
+ {
+  "task_id": "1315",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Revise the company's definitions of data in the data dictionary.",
+    "time_share": 1.0,
+    "type_reasoning": "Each update is a record staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per change.",
+    "work_item": "one data dictionary update",
+    "start": "change identified",
+    "end": "dictionary revised",
+    "checked_by": "data owners",
+    "duplicates": [],
+    "overlaps_with": [
+     "1306"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21648",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify, evaluate and recommend hardware or software for database performance.",
+    "time_share": 1.0,
+    "type_reasoning": "Each ends in a recommendation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per decision.",
+    "work_item": "one technology recommendation",
+    "start": "performance need",
+    "end": "recommendation delivered",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "1312",
+     "21649"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21649",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and install an upgrade to the database management system software.",
+    "time_share": 1.0,
+    "type_reasoning": "Each upgrade is a system change users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done one upgrade at a time.",
+    "work_item": "one DBMS upgrade planned and installed",
+    "start": "upgrade decided",
+    "end": "upgrade verified in production",
+    "checked_by": "management and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1302",
+     "21648"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21650",
+  "split_reasoning": "Same activity in two places: live help at the desk or on a call, and written help.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help a junior staff member or client while they are on the call or at the desk.",
+    "time_share": 0.4,
+    "type_reasoning": "The person is waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each contact resolved within one conversation.",
+    "work_item": "one live support contact",
+    "start": "person asks",
+    "end": "problem resolved",
+    "checked_by": "the person helped",
+    "duplicates": [],
+    "overlaps_with": [
+     "1303"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a junior staff member's or client's technical question by email or ticket.",
+    "time_share": 0.6,
+    "type_reasoning": "No one is waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions arrive one at a time.",
+    "work_item": "one support question answered",
+    "start": "question received",
+    "end": "answer sent",
+    "checked_by": "the person who asked",
+    "duplicates": [],
+    "overlaps_with": [
+     "1303"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "21651",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test changes to database applications or systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Each ends in test results.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per change.",
+    "work_item": "one change tested",
+    "start": "change ready",
+    "end": "results reported",
+    "checked_by": "developers and project lead",
+    "duplicates": [
+     "1300"
+    ],
+    "overlaps_with": [
+     "1299"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

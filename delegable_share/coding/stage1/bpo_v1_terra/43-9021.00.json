@@ -1,0 +1,244 @@
+[
+ {
+  "task_id": "11401",
+  "split_reasoning": "Reading source documents and entering their data are steps in one data-entry activity, regardless of the input method.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read a source document and enter its data into the designated fields or output media.",
+    "time_share": 1.0,
+    "type_reasoning": "Each entry produces a data record for subsequent processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A source document and its entered data form a manageable unit that can be passed to the next stage.",
+    "work_item": "One source document entered as a data record or set of records",
+    "start": "Source document received for entry",
+    "end": "Required data entered and made available for subsequent processing",
+    "checked_by": "Data verifier or downstream processing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "11405"
+    ]
+   }
+  ],
+  "notes": "Scanning is treated as an entry method rather than a separate physical task."
+ },
+ {
+  "task_id": "11402",
+  "split_reasoning": "Physically sorting paper materials and compiling and checking data are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort and organize paper source materials for data entry.",
+    "time_share": 0.35,
+    "type_reasoning": "Sorting paper materials requires hands-on handling away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11407"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compile and verify data for entry, including organizing electronic source data.",
+    "time_share": 0.65,
+    "type_reasoning": "The work produces a prepared and checked set of data for entry.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A prepared batch can be handed to a keyer as a whole.",
+    "work_item": "One batch of source data compiled and checked before entry",
+    "start": "Source data received for preparation",
+    "end": "Data organized and accuracy checked for entry",
+    "checked_by": "Data entry keyer or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11407"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the proportion of paper and electronic material. This task concerns checking before entry; task 11403 concerns verification of entered data."
+ },
+ {
+  "task_id": "11403",
+  "split_reasoning": "Comparing entered data with sources and re-entering it are alternative methods of the same verification activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify entered data against its source or by re-entering it to detect errors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each verification produces a checked set of entries and identifies discrepancies for handling.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or batch of entered records is verified as a unit.",
+    "work_item": "One document's or batch's entered data verified",
+    "start": "Entered data and source material available for verification",
+    "end": "Entries checked and discrepancies identified",
+    "checked_by": "Data entry keyer, error-resolution staff, or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11405"
+    ]
+   }
+  ],
+  "notes": "Correcting or reporting identified errors is coded under task 11405."
+ },
+ {
+  "task_id": "11404",
+  "split_reasoning": "Storing paper documents requires physical handling, whereas filing electronic documents is computer-based work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "File completed paper documents in their designated locations.",
+    "time_share": 0.5,
+    "type_reasoning": "Filing paper documents requires hands-on handling away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Save completed electronic documents in their designated locations.",
+    "time_share": 0.5,
+    "type_reasoning": "Each filing action produces an accessible stored document that others can retrieve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed document is saved and retrieved as a whole.",
+    "work_item": "One completed electronic document filed",
+    "start": "Completed document ready for storage",
+    "end": "Document saved in its designated location",
+    "checked_by": "Supervisor or staff retrieving the document",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The paper and electronic shares depend on the workplace's document formats."
+ },
+ {
+  "task_id": "11405",
+  "split_reasoning": "Correcting an error and reporting an error that cannot be corrected produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Locate and correct a data-entry error.",
+    "time_share": 0.8,
+    "type_reasoning": "The activity produces a corrected data entry for downstream use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An identified error or related set of errors in one record is handled as a correction.",
+    "work_item": "One data record corrected",
+    "start": "A suspected data-entry error is identified",
+    "end": "The error is located and the record corrected",
+    "checked_by": "Data verifier, supervisor, or downstream data user",
+    "duplicates": [],
+    "overlaps_with": [
+     "11401",
+     "11403"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Report a data-entry error to a supervisor when it cannot be resolved by the keyer.",
+    "time_share": 0.2,
+    "type_reasoning": "The activity produces an error report that a supervisor can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A reported error or related set of discrepancies is handed over for resolution.",
+    "work_item": "One data-entry error reported to a supervisor",
+    "start": "An error requiring supervisor attention is identified",
+    "end": "Error details reported to the supervisor",
+    "checked_by": "Supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11403"
+    ]
+   }
+  ],
+  "notes": "The correction and reporting shares depend on error severity and the keyer's authority."
+ },
+ {
+  "task_id": "11406",
+  "split_reasoning": "Logging activities and completed work are closely related entries in the same work log.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain a log of data-entry activities and completed work.",
+    "time_share": 1.0,
+    "type_reasoning": "Log maintenance produces a record that supervisors use to track work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The log is typically maintained and reviewed for a shift or other reporting period.",
+    "work_item": "One shift's work log updated",
+    "start": "Shift begins or log is opened for the reporting period",
+    "end": "Activities and completed work recorded for the period",
+    "checked_by": "Supervisor or production tracking staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The reporting period varies by workplace."
+ },
+ {
+  "task_id": "11407",
+  "split_reasoning": "Selecting physical materials and selecting electronic materials involve work in different places.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select physical source materials and supplies needed for an assignment.",
+    "time_share": 0.4,
+    "type_reasoning": "Selecting and gathering physical materials requires hands-on handling.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11402"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Select electronic source materials needed for an assignment.",
+    "time_share": 0.6,
+    "type_reasoning": "The selection produces a set of electronic materials ready for the assignment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Materials are selected together for a particular assignment or batch.",
+    "work_item": "One assignment's electronic materials selected",
+    "start": "Assignment and its material requirements received",
+    "end": "Required electronic materials selected and available for use",
+    "checked_by": "Assigned keyer or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "11402"
+    ]
+   }
+  ],
+  "notes": "The shares depend on whether assignments use paper or electronic materials."
+ },
+ {
+  "task_id": "11408",
+  "split_reasoning": "Loading different kinds of input or output media is one physical machine-preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load a machine with the input or output media required for the work.",
+    "time_share": 1.0,
+    "type_reasoning": "Loading paper or other media into a machine requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11409",
+  "split_reasoning": "Cryptographic procedures and equipment are means of resolving the same kind of garbled or indecipherable message.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Resolve a garbled or indecipherable message using cryptographic procedures and equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a readable or otherwise resolved message for use by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each message is resolved and passed on as a whole.",
+    "work_item": "One garbled or indecipherable message resolved",
+    "start": "Garbled or indecipherable message received",
+    "end": "Resolved message made available to the intended recipient or processing team",
+    "checked_by": "Message recipient or supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The task does not specify the equipment or how unresolved messages are escalated."
+ }
+]

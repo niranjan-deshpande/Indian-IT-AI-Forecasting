@@ -1,0 +1,4 @@
+[
+  {"a": "23245a", "b": "23258a", "reasoning": "23245a works from source documents (purchase orders, sales tickets, hospital records) to compute the base charges due, while 23258a works on a billing document to apply credit terms, discounts and shipment charges, so they have different inputs and are sequential steps rather than the same work.", "duplicate": false},
+  {"a": "23240a", "b": "23264a", "reasoning": "Both take ready billing or charge information and produce a completed bill or invoice ready to issue, so preparing an invoice under 23240a has already created the billing document in 23264a.", "duplicate": true}
+]

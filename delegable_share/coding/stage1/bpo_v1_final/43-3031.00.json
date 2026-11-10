@@ -1,0 +1,869 @@
+[
+ {
+  "task_id": "2486",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a batch of figures, postings and documents for correct entry, arithmetic and codes.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a checked batch with corrections others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Checks are done on a batch or set of postings and returned as a whole.",
+    "work_item": "one batch of entries checked and corrected",
+    "start": "batch received for checking",
+    "end": "batch passed or corrections made",
+    "checked_by": "supervisor; auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2496",
+     "2502",
+     "2509",
+     "2493"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2487",
+  "split_reasoning": "Generic tool statement joining recording and analyzing; recast into the two kinds of item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record transactions in the accounting software.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces posted entries others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are keyed in batches.",
+    "work_item": "one batch of transactions recorded",
+    "start": "source documents ready",
+    "end": "batch posted",
+    "checked_by": "supervisor; accountant",
+    "duplicates": [
+     "2489"
+    ],
+    "overlaps_with": [
+     "2490"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Run analyses or queries in the accounting software and report results.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces an output someone asks for.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each analysis answers one request.",
+    "work_item": "one analysis or report query run",
+    "start": "request made",
+    "end": "results delivered",
+    "checked_by": "requesting manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "2492"
+    ]
+   }
+  ],
+  "notes": "Largely duplicates 2489."
+ },
+ {
+  "task_id": "2488",
+  "split_reasoning": "One activity; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow federal, state and company policies and regulations while doing the job.",
+    "time_share": 1.0,
+    "type_reasoning": "Background constraint on all work; no item of its own.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2489",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Debit, credit and total accounts in accounting software.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces posted entries.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are posted in batches.",
+    "work_item": "one batch of debits and credits posted",
+    "start": "source data ready",
+    "end": "accounts posted and totaled",
+    "checked_by": "supervisor; accountant",
+    "duplicates": [
+     "2487"
+    ],
+    "overlaps_with": [
+     "2490",
+     "2506"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2490",
+  "split_reasoning": "Two steps: recording, then summarizing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Classify and record financial data in journals, ledgers or software.",
+    "time_share": 0.75,
+    "type_reasoning": "Produces recorded entries.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recorded in batches.",
+    "work_item": "one batch of transactions classified and recorded",
+    "start": "documents received",
+    "end": "entries recorded",
+    "checked_by": "supervisor; accountant",
+    "duplicates": [
+     "2489"
+    ],
+    "overlaps_with": [
+     "2487",
+     "2506"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Summarize recorded financial data for a period.",
+    "time_share": 0.25,
+    "type_reasoning": "Produces a summary others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One summary per period.",
+    "work_item": "one period summary of financial data",
+    "start": "period closes",
+    "end": "summary delivered",
+    "checked_by": "accountant; manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "2492",
+     "2504"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2491",
+  "split_reasoning": "Bills and invoices, account statements, and financial statements are different deliverables with different preparation workflows.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate, prepare, and issue a bill or invoice.",
+    "time_share": 0.5,
+    "type_reasoning": "Each bill or invoice is an issued document used for payment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The invoice or bill is the document sent to the payer.",
+    "work_item": "one bill or invoice issued",
+    "start": "billable transaction or billing information received",
+    "end": "bill or invoice calculated and issued",
+    "checked_by": "customer or payer and billing supervisor",
+    "overlap_reasoning": "Calculations and invoice matching may use or check billing information, but have different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2497",
+     "2509"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and issue an account statement.",
+    "time_share": 0.25,
+    "type_reasoning": "An account statement is a distinct document sent to an account holder.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One statement summarizes an account for a billing period and is issued as a whole.",
+    "work_item": "one account statement issued",
+    "start": "account activity for the statement period available",
+    "end": "statement prepared and issued",
+    "checked_by": "account holder and accounting staff",
+    "overlap_reasoning": "Preparing account statements can use the same balances and data as calculations and financial reports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2492",
+     "2497"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare and issue a financial statement.",
+    "time_share": 0.25,
+    "type_reasoning": "A financial statement is a distinct report relied on by management or other users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed statement is issued as a whole for a reporting period.",
+    "work_item": "one financial statement prepared and issued",
+    "start": "period's accounting figures available",
+    "end": "statement prepared and issued",
+    "checked_by": "accountant or financial manager",
+    "overlap_reasoning": "Financial report compilation can include preparation of the same kinds of statements, but also includes other reports and tables.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2492"
+    ]
+   }
+  ],
+  "notes": "Shares vary with billing volume and the clerk's role in financial statement preparation."
+ },
+ {
+  "task_id": "2492",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile a report or table on cash receipts, expenditures, payables, receivables or profit and loss.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a report others read.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report per period or request.",
+    "work_item": "one financial report",
+    "start": "period ends or request made",
+    "end": "report delivered",
+    "checked_by": "manager; accountant",
+    "duplicates": [],
+    "overlaps_with": [
+     "2490",
+     "2507",
+     "2487"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2493",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Code a batch of documents with account codes per company procedure.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces coded documents for posting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are coded in batches.",
+    "work_item": "one batch of documents coded",
+    "start": "documents received",
+    "end": "coded documents passed to posting",
+    "checked_by": "supervisor; posting clerk",
+    "duplicates": [],
+    "overlaps_with": [
+     "2486",
+     "2509"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2494",
+  "split_reasoning": "Same activity done live with a caller or visitor and afterwards from written questions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a question about accounts using computerized records while the person is on the phone or at the desk.",
+    "time_share": 0.5,
+    "type_reasoning": "Person waits during the lookup.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered within one contact.",
+    "work_item": "one account question answered during a contact",
+    "start": "person asks",
+    "end": "answer given",
+    "checked_by": "the person asking",
+    "duplicates": [],
+    "overlaps_with": [
+     "2498"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a written question about accounts from computerized records.",
+    "time_share": 0.5,
+    "type_reasoning": "Worked from queued requests.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each request is answered once.",
+    "work_item": "one written inquiry answered",
+    "start": "inquiry received",
+    "end": "reply sent",
+    "checked_by": "the person asking; supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2495",
+  "split_reasoning": "Tool statement covering two different jobs: calculating and copying.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Do calculations on a 10-key calculator for other accounting tasks.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces figures other work relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Calculations come in sets for a task.",
+    "work_item": "one set of calculations",
+    "start": "figures to calculate",
+    "end": "totals handed over",
+    "checked_by": "supervisor",
+    "duplicates": [
+     "2497"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Make copies of documents on a copy machine.",
+    "time_share": 0.3,
+    "type_reasoning": "Hands-on machine work away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Typewriters are largely obsolete."
+ },
+ {
+  "task_id": "2496",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Reconcile records or note and report a discrepancy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each discrepancy ends in a reconciliation or a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Discrepancies are handled one at a time.",
+    "work_item": "one discrepancy reconciled or reported",
+    "start": "discrepancy found",
+    "end": "resolved or reported",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2503",
+     "2502",
+     "2486"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2497",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform financial calculations such as amounts due, interest, balances and discounts.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces figures others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Calculations are done per account or transaction.",
+    "work_item": "one set of financial calculations",
+    "start": "transaction data available",
+    "end": "figures delivered",
+    "checked_by": "supervisor; customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2491",
+     "2501",
+     "2508"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2498",
+  "split_reasoning": "Filing, answering calls, and handling correspondence are different activities, and filing can be physical or electronic.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "File paper accounting or office documents.",
+    "time_share": 0.25,
+    "type_reasoning": "Sorting and placing paper documents requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Copying documents is another general office duty, but it is not the same as filing them.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "File electronic accounting or office documents.",
+    "time_share": 0.2,
+    "type_reasoning": "Electronic filing produces an organized, retrievable record used by colleagues.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or related batch is filed in the appropriate location as a unit.",
+    "work_item": "one document or batch filed electronically",
+    "start": "documents available for filing",
+    "end": "documents saved in the appropriate location",
+    "checked_by": "staff who retrieve the documents",
+    "overlap_reasoning": "Storing information in accounting software can overlap with electronic filing but also includes recording and analysis.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2487"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Answer and handle a routine incoming call.",
+    "time_share": 0.25,
+    "type_reasoning": "The caller is served or directed during a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One incoming call is handled through its immediate response or transfer.",
+    "work_item": "one routine incoming call handled",
+    "start": "incoming call received",
+    "end": "caller answered, directed, or transferred",
+    "checked_by": "caller or receiving staff member",
+    "overlap_reasoning": "Some calls involve looking up and answering financial questions, while others do not.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2494"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Prepare and send routine office correspondence.",
+    "time_share": 0.3,
+    "type_reasoning": "Each response or message is a distinct written communication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A correspondence item is prepared and sent as a whole.",
+    "work_item": "one routine correspondence item sent",
+    "start": "request or need for correspondence received",
+    "end": "message or letter prepared and sent",
+    "checked_by": "recipient or supervisor",
+    "overlap_reasoning": "Written financial answers and typed documents can be routine correspondence but are narrower or differently scoped.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2494",
+     "2495"
+    ]
+   }
+  ],
+  "notes": "Shares and the balance of paper and electronic filing vary by workplace."
+ },
+ {
+  "task_id": "2499",
+  "split_reasoning": "Compiling and balancing deposit information is desk work, while assembling and sending physical payments requires hands-on handling.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile cashier data and verify and balance receipts for a bank deposit.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces a balanced deposit record for the deposit.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Receipts and cashier data are checked together for one deposit batch.",
+    "work_item": "one deposit batch compiled and balanced",
+    "start": "cashier totals and receipt information received",
+    "end": "deposit totals verified and deposit record prepared",
+    "checked_by": "cash supervisor or accounting staff",
+    "overlap_reasoning": "Receiving and recording payments and checking figures may cover portions of deposit preparation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2486",
+     "2500"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Assemble and send cash and checks to the bank for deposit.",
+    "time_share": 0.4,
+    "type_reasoning": "Handling and transmitting physical payments requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Banking received cash and checks includes the physical deposit but also covers receipt and recording.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2500"
+    ]
+   }
+  ],
+  "notes": "Electronic payment deposits may require less physical handling."
+ },
+ {
+  "task_id": "2500",
+  "split_reasoning": "Receiving payments is partly live with a payer at the counter and partly back-office from mail or drop-offs; recording payments is computer work, while handling and banking cash and checks is hands-on.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take cash or a check from a payer at the counter, record it and give a receipt.",
+    "time_share": 0.2,
+    "type_reasoning": "The payer is present and waits while the payment is taken and recorded.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each payment is received and receipted within one contact.",
+    "work_item": "one payment received at the counter",
+    "start": "payer hands over payment",
+    "end": "payment recorded and receipt given",
+    "checked_by": "payer and cash supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Record mailed or accumulated cash, checks and vouchers in the accounting records.",
+    "time_share": 0.45,
+    "type_reasoning": "Back-office entry with no one waiting creates records that downstream staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Receipts are entered in batches, such as the day's mail or a cashier's drop.",
+    "work_item": "one batch of received payments recorded",
+    "start": "payments or vouchers received",
+    "end": "receipts entered and batch totals agreed",
+    "checked_by": "accounting supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2490",
+     "2499"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Handle, secure and bank the physical cash, checks and vouchers.",
+    "time_share": 0.35,
+    "type_reasoning": "Opening mail, counting cash and taking deposits to the bank is hands-on work away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2499"
+    ]
+   }
+  ],
+  "notes": "The counter share depends on whether the clerk's workplace takes walk-in payments; electronic payments reduce the physical share."
+ },
+ {
+  "task_id": "2501",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate and prepare checks for utilities, taxes and other payments.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces checks to be signed and sent.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Checks are prepared in batches.",
+    "work_item": "one batch of payment checks prepared",
+    "start": "bills approved",
+    "end": "checks ready for signature",
+    "checked_by": "supervisor who signs; payees",
+    "duplicates": [],
+    "overlaps_with": [
+     "2497",
+     "18561"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2502",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare computer printouts with manually kept journals to see if they match.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a match check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One comparison per journal or period.",
+    "work_item": "one printout-to-journal comparison",
+    "start": "printout produced",
+    "end": "match confirmed or differences noted",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2486",
+     "2496",
+     "2506"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2503",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Reconcile bank transaction records to the books.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a reconciliation others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per account per statement.",
+    "work_item": "one bank account reconciliation",
+    "start": "bank statement received",
+    "end": "reconciliation completed",
+    "checked_by": "accountant; auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2496"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2504",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a trial balance of the books.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a trial balance.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per period.",
+    "work_item": "one trial balance",
+    "start": "period postings complete",
+    "end": "trial balance delivered",
+    "checked_by": "accountant",
+    "duplicates": [],
+    "overlaps_with": [
+     "2490"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2505",
+  "split_reasoning": "Monitoring produces two kinds of item: status reviews and follow-ups on late payments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review loan and account status for payments up to date.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a status review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per review cycle.",
+    "work_item": "one account status review",
+    "start": "review date",
+    "end": "review noted and exceptions listed",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2491"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Contact customers or issue notices for overdue payments.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a follow-up item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each overdue account is chased once.",
+    "work_item": "one overdue account followed up",
+    "start": "payment found late",
+    "end": "customer contacted/notice sent",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2506",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transfer entries from separate journals to the general ledger or processing sheets.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces posted ledger entries.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Posted in batches.",
+    "work_item": "one batch of journal entries posted to the ledger",
+    "start": "journal ready",
+    "end": "ledger updated",
+    "checked_by": "supervisor; accountant",
+    "duplicates": [],
+    "overlaps_with": [
+     "2489",
+     "2490",
+     "2502"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2507",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile budget data and documents from estimated revenue, expenses and previous budgets.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces budget documents.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One budget per period or department.",
+    "work_item": "one budget package",
+    "start": "budget cycle starts",
+    "end": "budget submitted",
+    "checked_by": "manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "2492",
+     "2508"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2508",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate costs of materials, overhead and expenses from estimates, quotations and price lists.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a cost figure.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per job or item.",
+    "work_item": "one cost calculation",
+    "start": "estimate request",
+    "end": "cost delivered",
+    "checked_by": "requesting manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "2497",
+     "2507"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2509",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Match order forms with invoices and record the information.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces matched and recorded invoices.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done in batches.",
+    "work_item": "one batch of invoices matched to orders",
+    "start": "invoices received",
+    "end": "matches recorded",
+    "checked_by": "supervisor; payables",
+    "duplicates": [],
+    "overlaps_with": [
+     "2486",
+     "2493"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2510",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete and submit tax, workers' compensation, pension and other government forms.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a filed form.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per form per period.",
+    "work_item": "one government form completed and submitted",
+    "start": "filing due",
+    "end": "form submitted",
+    "checked_by": "agency; supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "18561"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2511",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update inventory records for receipts, issues and counts.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces updated records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done in batches.",
+    "work_item": "one batch of inventory record updates",
+    "start": "stock movements known",
+    "end": "records updated",
+    "checked_by": "supervisor; operations",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Counts and reconciliations may be separate work."
+ },
+ {
+  "task_id": "2514",
+  "split_reasoning": "Two different documents: purchase orders and expense reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a purchase order.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces an order sent to a supplier.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One order per purchase.",
+    "work_item": "one purchase order",
+    "start": "need for purchase",
+    "end": "order issued",
+    "checked_by": "approver; supplier",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare an expense report.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a report for approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per person or period.",
+    "work_item": "one expense report",
+    "start": "expenses received",
+    "end": "report submitted",
+    "checked_by": "approver",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18561",
+  "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and process payroll information.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces payroll for payment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One payroll run per period.",
+    "work_item": "one payroll run",
+    "start": "pay period closes",
+    "end": "payroll processed",
+    "checked_by": "employees; supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2510",
+     "2501"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

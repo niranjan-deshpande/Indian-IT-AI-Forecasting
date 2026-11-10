@@ -1,0 +1,587 @@
+[
+  {
+    "task_id": "3464",
+    "split_reasoning": "Same activity (helping users with computer problems) is done in two places: live with a user on the phone or at the desk, and afterwards from a ticket queue.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Help a user fix a computer problem while the user is on the phone, chat or at the desk.",
+        "time_share": 0.4,
+        "type_reasoning": "The user waits while the analyst works through the problem with them.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "Each request is worked within one contact.",
+        "work_item": "one user problem fixed during a live contact",
+        "start": "user reports the problem",
+        "end": "user confirms it works",
+        "checked_by": "the user",
+        "duplicates": [],
+        "overlaps_with": [
+          "20950"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Resolve a user's reported computer problem from a written ticket or email after the contact.",
+        "time_share": 0.6,
+        "type_reasoning": "Worked from a queue with no one waiting; each ticket is an ordinary deliverable.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Tickets arrive and close one at a time.",
+        "work_item": "one support ticket resolved",
+        "start": "ticket received",
+        "end": "fix confirmed, ticket closed",
+        "checked_by": "the user who raised it; help desk lead",
+        "duplicates": [],
+        "overlaps_with": [
+          "20950"
+        ]
+      }
+    ],
+    "notes": "Share of live vs ticket work depends on the employer's help-desk set-up."
+  },
+  {
+    "task_id": "3465",
+    "split_reasoning": "Three different kinds of item: testing, monitoring, and coordinating installations.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Test a program or system change and report the results.",
+        "time_share": 0.35,
+        "type_reasoning": "Each test cycle ends in results others rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Tests are run per program or change and signed off as a whole.",
+        "work_item": "one program or system change tested",
+        "start": "change ready for test",
+        "end": "test results reported/signed off",
+        "checked_by": "project lead; developers",
+        "duplicates": [],
+        "overlaps_with": [
+          "3477",
+          "3470"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Monitor and maintain running systems, investigating and resolving each alert or fault.",
+        "time_share": 0.35,
+        "type_reasoning": "Continuing activity that produces discrete items, so recast as items.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each alert or maintenance job is handled and closed once.",
+        "work_item": "one monitoring alert or maintenance job investigated and closed",
+        "start": "alert raised or maintenance due",
+        "end": "issue resolved or handed off, logged",
+        "checked_by": "system owner; operations manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "20950",
+          "3464"
+        ]
+      },
+      {
+        "part_id": "c",
+        "text": "Coordinate the installation of a program or system with users and technical staff.",
+        "time_share": 0.3,
+        "type_reasoning": "Produces a completed installation that users rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Installations are scheduled and signed off one at a time.",
+        "work_item": "one installation or rollout coordinated",
+        "start": "installation scheduled",
+        "end": "installation complete and accepted",
+        "checked_by": "users; IT manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3470"
+        ]
+      }
+    ],
+    "notes": "Time shares are judgments."
+  },
+  {
+    "task_id": "3466",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Write code for a program or application using object-oriented languages and client-server and web technologies.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces working code that others test and use.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Work is handed over per program, module or feature.",
+        "work_item": "one program, module or feature coded",
+        "start": "specification or ticket assigned",
+        "end": "code complete and passed to test/review",
+        "checked_by": "project lead; testers",
+        "duplicates": [],
+        "overlaps_with": [
+          "3478",
+          "3470"
+        ]
+      }
+    ],
+    "notes": "Statement describes tools more than a task; coded as programming work."
+  },
+  {
+    "task_id": "3467",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Meet clients to learn what information processing or computation a program must handle.",
+        "time_share": 1.0,
+        "type_reasoning": "The value is in the live conversation with the client; no separate checked output.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "3471",
+          "3474"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3468",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Connect two or more of the organization's systems so they are compatible and share information.",
+        "time_share": 1.0,
+        "type_reasoning": "Each link ends in a working interface that other systems and users rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Integrations are built and signed off one connection at a time.",
+        "work_item": "one system-to-system integration or interface",
+        "start": "need to share data between systems identified",
+        "end": "interface working and accepted",
+        "checked_by": "system owners; IT manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3470",
+          "3465"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3469",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Consult with management to agree the principles a system will follow.",
+        "time_share": 1.0,
+        "type_reasoning": "The value is in the live agreement reached; nothing a colleague would check is produced.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "3467"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3470",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Change or extend a system to serve a new purpose or improve workflow.",
+        "time_share": 1.0,
+        "type_reasoning": "Each change ends in a modified system that users rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Changes are specified, built and released one at a time.",
+        "work_item": "one system enhancement delivered",
+        "start": "change request approved",
+        "end": "change released and accepted",
+        "checked_by": "system owner; users",
+        "duplicates": [],
+        "overlaps_with": [
+          "3466",
+          "3468",
+          "3465"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3471",
+    "split_reasoning": "Two different activities: the interviews and observation themselves, and writing up what was learned.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Interview or survey workers and observe their work.",
+        "time_share": 0.6,
+        "type_reasoning": "Value is in the live interaction and observation.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "3467"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Write up how information is processed from the interviews, surveys and observation.",
+        "time_share": 0.4,
+        "type_reasoning": "Produces a written description others use for design.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One write-up per study of a job or process.",
+        "work_item": "one process-findings write-up",
+        "start": "interviews and observation finished",
+        "end": "write-up delivered",
+        "checked_by": "project lead; analysts doing design",
+        "duplicates": [],
+        "overlaps_with": [
+          "3474"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3472",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Decide which software or hardware is needed to set up or change a system and list it.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a list of requirements others act on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One list per system setup or change.",
+        "work_item": "one set of hardware/software requirements for a system",
+        "start": "system need defined",
+        "end": "requirements list delivered",
+        "checked_by": "project lead; purchasing/IT manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3479",
+          "3475"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3473",
+    "split_reasoning": "Two different activities: running training sessions, and writing materials for them.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Train staff and users in live sessions on computer systems and programs.",
+        "time_share": 0.7,
+        "type_reasoning": "Value is in the live session; nothing a colleague would check is produced.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": []
+      },
+      {
+        "part_id": "b",
+        "text": "Prepare training guides or materials on a system.",
+        "time_share": 0.3,
+        "type_reasoning": "Produces materials users rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Materials are written per system or topic.",
+        "work_item": "one set of training materials",
+        "start": "system change needing training",
+        "end": "materials issued",
+        "checked_by": "trainees; manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3477"
+        ]
+      }
+    ],
+    "notes": "Statement mentions only training; written materials are inferred."
+  },
+  {
+    "task_id": "3474",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Analyze information processing needs and produce a system design using structured analysis and data modeling.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a design document that developers build from.",
+        "type": "DISCRETE",
+        "unit_reasoning": "The design is handed over per system or project.",
+        "work_item": "one system design",
+        "start": "requirements gathered",
+        "end": "design document approved",
+        "checked_by": "project lead; developers",
+        "duplicates": [],
+        "overlaps_with": [
+          "3476",
+          "3484",
+          "3471",
+          "3477"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3475",
+    "split_reasoning": "Two steps: assessing a package, then adapting it.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Evaluate a pre-developed application package for usefulness and report.",
+        "time_share": 0.4,
+        "type_reasoning": "Produces an evaluation others decide on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One evaluation per package.",
+        "work_item": "one package evaluation",
+        "start": "package identified",
+        "end": "evaluation reported",
+        "checked_by": "management; IT manager",
+        "duplicates": [],
+        "overlaps_with": [
+          "3479",
+          "3472"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Adapt and configure a chosen package to the user environment.",
+        "time_share": 0.6,
+        "type_reasoning": "Produces a working configured package.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each package is configured and accepted as a whole.",
+        "work_item": "one package configured for the user environment",
+        "start": "package selected",
+        "end": "package working and accepted",
+        "checked_by": "users; project lead",
+        "duplicates": [],
+        "overlaps_with": [
+          "3470"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3476",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Define a system's goals and draw flow charts and diagrams of its logical steps.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces diagrams that developers and colleagues review.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Diagrams are handed over per program or system.",
+        "work_item": "one set of goals and flow diagrams",
+        "start": "requirements available",
+        "end": "diagrams delivered",
+        "checked_by": "developers; project lead",
+        "duplicates": [],
+        "overlaps_with": [
+          "3474"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3477",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Write or revise a design procedure, test procedure or quality standard.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a document others follow.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each procedure or standard is a separate document.",
+        "work_item": "one procedure or standard written or revised",
+        "start": "need for a procedure identified",
+        "end": "document approved and issued",
+        "checked_by": "project lead; QA",
+        "duplicates": [],
+        "overlaps_with": [
+          "3465",
+          "3474"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3478",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review printouts and performance indicators to find a code problem and correct the code.",
+        "time_share": 1.0,
+        "type_reasoning": "Each fix ends in corrected code others rely on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Defects are located and fixed one at a time.",
+        "work_item": "one code defect located and corrected",
+        "start": "problem indicator noticed",
+        "end": "corrected code verified",
+        "checked_by": "project lead; users",
+        "duplicates": [],
+        "overlaps_with": [
+          "20950",
+          "3466"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3479",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Recommend new equipment or software packages.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a recommendation others decide on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One recommendation per purchase decision.",
+        "work_item": "one recommendation memo",
+        "start": "need or option identified",
+        "end": "recommendation delivered",
+        "checked_by": "management",
+        "duplicates": [],
+        "overlaps_with": [
+          "3472",
+          "3475",
+          "3483"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3480",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Read manuals, periodicals and technical reports to learn how to meet user requirements.",
+        "time_share": 1.0,
+        "type_reasoning": "Keeping up with reading; nothing others check or rely on is produced.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3481",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Supervise programmers and analysts or lead a systems project.",
+        "time_share": 1.0,
+        "type_reasoning": "Value is in directing people live; no single checked output.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Project plans or status reports would be separate statements."
+  },
+  {
+    "task_id": "3482",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Use the computer to analyze and solve a business problem, e.g. building a production, inventory or cost system.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a solution or analysis the business uses.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each problem is solved and delivered as a whole.",
+        "work_item": "one business problem analyzed and solved",
+        "start": "problem posed",
+        "end": "solution delivered",
+        "checked_by": "the requesting business unit",
+        "duplicates": [],
+        "overlaps_with": [
+          "3474",
+          "3483"
+        ]
+      }
+    ],
+    "notes": "Vague; coded as business-problem analysis."
+  },
+  {
+    "task_id": "3483",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Prepare a cost-benefit and return-on-investment analysis for a system implementation.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces an analysis decision makers use.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One analysis per implementation decision.",
+        "work_item": "one cost-benefit/ROI analysis",
+        "start": "proposed implementation defined",
+        "end": "analysis delivered",
+        "checked_by": "management",
+        "duplicates": [],
+        "overlaps_with": [
+          "3479"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "3484",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Specify the inputs a system will use and plan how its results are distributed and used.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a specification others build from.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One specification per system.",
+        "work_item": "one input/output specification",
+        "start": "system design underway",
+        "end": "specification approved",
+        "checked_by": "developers; users",
+        "duplicates": [],
+        "overlaps_with": [
+          "3474"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "20950",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Troubleshoot a program or system malfunction and restore normal operation.",
+        "time_share": 1.0,
+        "type_reasoning": "Each incident ends in restored service.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Incidents are handled one at a time.",
+        "work_item": "one malfunction troubleshot and resolved",
+        "start": "fault reported or detected",
+        "end": "normal operation confirmed",
+        "checked_by": "users; system owner",
+        "duplicates": [],
+        "overlaps_with": [
+          "3464",
+          "3478",
+          "3465"
+        ]
+      }
+    ],
+    "notes": ""
+  }
+]

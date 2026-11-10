@@ -1,0 +1,32 @@
+[
+  {"task_id": "2490", "reasoning": "Classifying and recording transactions is day-to-day batch posting, while summarizing the data for a period is a separate period-end output that accountants use. X splits them and gives each a sensible work item; Y quietly drops the summarizing.", "choice": "X"},
+  {"task_id": "2491", "reasoning": "Preparing period financial statements is a different activity from running bills, invoices and account statements to customers, with different inputs and different checkers. Y separates them, while X's single 'batch of bills' item does not cover financial statements.", "choice": "Y"},
+  {"task_id": "2495", "reasoning": "This is a tools statement: calculator work is just the means for the calculations in 2497, and typewriters are not used in today's workflow. Y codes the calculations as a duplicate of 2497 and splits out physical copying; X invents a separate typing deliverable.", "choice": "Y"},
+  {"task_id": "2496", "reasoning": "Reconciling a discrepancy and noting and reporting it are two possible outcomes for the same item: a discrepancy is either resolved by the clerk or passed on. X's single 'discrepancy reconciled or reported' item reflects this; Y splits one workflow by its outcome.", "choice": "X"},
+  {"task_id": "2498", "reasoning": "Both codings split out calls, filing and correspondence. X also separates electronic filing, which is a large share of filing today and produces a retrievable record, from physical paper filing, so X is more complete.", "choice": "X"},
+  {"task_id": "2499", "reasoning": "Compiling and balancing the deposit is desk work, while assembling cash and checks and taking or sending them to the bank is hands-on. The instructions require splitting work that is partly physical, which X does and Y does not.", "choice": "X"},
+  {"task_id": "2500", "reasoning": "X correctly separates payments taken live at a counter from back-office work but leaves out that handling and banking cash and checks is physical. Y separates the physical work but leaves out the live counter contact. The revision keeps all three: live counter receipts, back-office recording, and physical handling and banking.", "choice": "revised", "coding": {
+    "task_id": "2500",
+    "split_reasoning": "Receiving payments is partly live with a payer at the counter and partly back-office from mail or drop-offs; recording payments is computer work, while handling and banking cash and checks is hands-on.",
+    "parts": [
+      {"part_id": "a", "text": "Take cash or a check from a payer at the counter, record it and give a receipt.", "time_share": 0.2,
+       "type_reasoning": "The payer is present and waits while the payment is taken and recorded.", "type": "LIVE_SERVICE",
+       "unit_reasoning": "Each payment is received and receipted within one contact.",
+       "work_item": "one payment received at the counter", "start": "payer hands over payment",
+       "end": "payment recorded and receipt given", "checked_by": "payer and cash supervisor",
+       "duplicates": [], "overlaps_with": []},
+      {"part_id": "b", "text": "Record mailed or accumulated cash, checks and vouchers in the accounting records.", "time_share": 0.45,
+       "type_reasoning": "Back-office entry with no one waiting creates records that downstream staff rely on.", "type": "DISCRETE",
+       "unit_reasoning": "Receipts are entered in batches, such as the day's mail or a cashier's drop.",
+       "work_item": "one batch of received payments recorded", "start": "payments or vouchers received",
+       "end": "receipts entered and batch totals agreed", "checked_by": "accounting supervisor",
+       "duplicates": [], "overlaps_with": ["2490", "2499"]},
+      {"part_id": "c", "text": "Handle, secure and bank the physical cash, checks and vouchers.", "time_share": 0.35,
+       "type_reasoning": "Opening mail, counting cash and taking deposits to the bank is hands-on work away from the computer.", "type": "PHYSICAL",
+       "duplicates": [], "overlaps_with": ["2499"]}
+    ],
+    "notes": "The counter share depends on whether the clerk's workplace takes walk-in payments; electronic payments reduce the physical share."
+  }},
+  {"task_id": "2505", "reasoning": "Most of the time in monitoring goes to the periodic review of account status, which X does not code, while following up on late accounts with reminders or notices is the step that ensures payments are brought up to date. Y recasts the ongoing activity into both kinds of item.", "choice": "Y"},
+  {"task_id": "2510", "reasoning": "Tax returns, workers' compensation forms and pension forms are all completed from the books and submitted the same way, as one filed form at a time. A split by form type does not separate different activities, so Y's single part is enough.", "choice": "Y"}
+]

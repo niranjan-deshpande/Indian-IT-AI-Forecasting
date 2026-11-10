@@ -1,0 +1,459 @@
+[
+ {
+  "task_id": "21661",
+  "split_reasoning": "Analyzing alternatives, recommending a system change, and planning its installation are stages of one planning deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze information and recommend and plan the installation of a new or modified system.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces a recommendation and installation plan for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for one proposed installation or modification is reviewed and handed over as a whole.",
+    "work_item": "one system installation or modification recommendation and plan",
+    "start": "a proposed system need or change is identified",
+    "end": "recommendation and installation plan are submitted",
+    "checked_by": "project manager and technical stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "21662",
+     "21666",
+     "21667",
+     "21672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21662",
+  "split_reasoning": "Assessing requirements against time and cost constraints is one feasibility analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess whether a proposed software design is feasible given user requirements, time, and cost.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment produces a feasibility finding that informs a design decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feasibility assessment for a proposed design is the decision input handed to stakeholders.",
+    "work_item": "one software design feasibility assessment",
+    "start": "user needs, requirements, and constraints are available",
+    "end": "feasibility findings and tradeoffs are communicated",
+    "checked_by": "project manager and design team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21664",
+     "21667"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21663",
+  "split_reasoning": "Conferring with managers to obtain project information is one kind of interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with data processing or project managers about project limitations and capabilities.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is the live exchange of information with managers rather than a separately specified deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21664",
+     "21665"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21664",
+  "split_reasoning": "The listed topics are addressed through the same activity of conferring with technical colleagues.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with technical colleagues about system design, constraints, performance requirements, and interfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "The task describes collaborative discussion and information exchange, not a separately specified design document.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21662",
+     "21663",
+     "21665",
+     "21667",
+     "21668",
+     "21672"
+    ]
+   }
+  ],
+  "notes": "Written design outputs are covered separately by the design and reporting statements."
+ },
+ {
+  "task_id": "21665",
+  "split_reasoning": "Status, proposals, and technical issues are topics for the same consulting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with customers or other departments about project status, proposals, and technical issues.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is project consultation through live interaction rather than a specified transaction or written deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21663",
+     "21664",
+     "21673"
+    ]
+   }
+  ],
+  "notes": "Written project correspondence is addressed separately in task 21673."
+ },
+ {
+  "task_id": "21666",
+  "split_reasoning": "Coordinating a software installation is one activity involving the people responsible for deployment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate the people and activities involved in installing a software system.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes coordination among participants rather than a specified installation plan or hands-on installation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661"
+    ]
+   }
+  ],
+  "notes": "Coordination may also involve deployment schedules or records; the target does not specify those outputs."
+ },
+ {
+  "task_id": "21667",
+  "split_reasoning": "Designing, developing, and modifying software with analytical methods are related stages of producing a software change.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design and develop or modify software using analysis and models to evaluate design outcomes.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a software implementation that can be reviewed and used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feature or other bounded software change is a typical unit submitted for review and integration.",
+    "work_item": "one designed and implemented software feature or change",
+    "start": "a software need or change is assigned",
+    "end": "implementation and associated design are submitted for review or integration",
+    "checked_by": "software reviewers and downstream test or integration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21662",
+     "21664",
+     "21669",
+     "21670"
+    ]
+   }
+  ],
+  "notes": "The boundary between a feature and a larger design effort varies by team."
+ },
+ {
+  "task_id": "21668",
+  "split_reasoning": "Determining performance standards is one activity with a single type of specification output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine performance standards for a software system.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces performance criteria that developers and testers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of criteria for a system or bounded change is reviewed together.",
+    "work_item": "one set of system performance standards",
+    "start": "a system or change needs performance criteria",
+    "end": "standards and measurable targets are documented and communicated",
+    "checked_by": "project stakeholders, developers, and testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "21664",
+     "21667",
+     "21673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21669",
+  "split_reasoning": "Developing test procedures, writing code, producing documentation, and directing others are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop software system testing or validation procedures.",
+    "time_share": 0.3,
+    "type_reasoning": "The work produces a procedure that testers can follow and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a system or bounded change is a practical handoff to the test team.",
+    "work_item": "one software test or validation procedure",
+    "start": "requirements and the system or change to be tested are available",
+    "end": "procedure is documented and made available to testers",
+    "checked_by": "test lead and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop software programming for a system or system change.",
+    "time_share": 0.3,
+    "type_reasoning": "Programming produces code submitted for review or integration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A bounded code change is the normal unit of review and integration.",
+    "work_item": "one software code change",
+    "start": "a programming requirement or change is assigned",
+    "end": "code is submitted for review or integration",
+    "checked_by": "code reviewers and integration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667",
+     "21670"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop software system documentation.",
+    "time_share": 0.2,
+    "type_reasoning": "Documentation is a written deliverable used by developers, operators, or users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or bounded documentation update is reviewed and published as a whole.",
+    "work_item": "one software documentation document or update",
+    "start": "a system or change requires documentation",
+    "end": "documentation is submitted or published",
+    "checked_by": "technical reviewers and documentation users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21673"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Direct staff carrying out software testing, validation, programming, or documentation.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing staff is an interpersonal activity centered on guidance and oversight.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21677",
+     "21678"
+    ]
+   }
+  ],
+  "notes": "Time shares are approximate and depend on whether the developer primarily produces work or directs others."
+ },
+ {
+  "task_id": "21670",
+  "split_reasoning": "Correcting errors, adapting to hardware, and improving interfaces or performance are different reasons for the same kind of software modification.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Modify existing software to fix errors, accommodate hardware, or improve interfaces or performance.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a bounded software change for review and integration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A fix or enhancement is typically tracked and submitted as a change rather than as an entire system.",
+    "work_item": "one existing-software fix or enhancement",
+    "start": "a defect, adaptation need, or enhancement is assigned",
+    "end": "modified code is submitted for review or integration",
+    "checked_by": "code reviewers and test or integration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667",
+     "21669"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21671",
+  "split_reasoning": "Continuous monitoring is represented by the discrete exceptions it prompts the developer to investigate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a monitored equipment or system exception against operating specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "An investigated exception produces a finding or escalation that operations staff can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An alert or observed exception is handled as one identifiable monitoring item.",
+    "work_item": "one system or equipment monitoring exception assessed",
+    "start": "an alert or observed reading indicates a possible deviation",
+    "end": "the deviation is assessed and the finding recorded or escalated",
+    "checked_by": "operations or system support team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The task may also include routine checks that reveal no exception; monitoring practices vary by system."
+ },
+ {
+  "task_id": "21672",
+  "split_reasoning": "Reporting formats, costs, and security needs are inputs to the same hardware configuration decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate requirements and constraints to determine a hardware configuration.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces a configuration recommendation that technical stakeholders use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A configuration recommendation for a system or deployment is reviewed as a whole.",
+    "work_item": "one hardware configuration recommendation",
+    "start": "a system's hardware configuration needs assessment",
+    "end": "configuration and supporting considerations are communicated",
+    "checked_by": "infrastructure engineers and project manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21664"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21673",
+  "split_reasoning": "Technical specification reports and project activity or status communications are different kinds of written output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a report or correspondence describing project specifications.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a written specification communication for stakeholders to review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One specification report or written communication is sent and reviewed as a whole.",
+    "work_item": "one project specification report or communication",
+    "start": "a need to communicate project specifications is identified",
+    "end": "the written report or correspondence is sent or submitted",
+    "checked_by": "project stakeholders and technical reviewers",
+    "duplicates": [],
+    "overlaps_with": [
+     "21668",
+     "21669"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a report or correspondence about project activities or status.",
+    "time_share": 0.5,
+    "type_reasoning": "Each written update is a deliverable that project stakeholders rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A status report or written update is normally sent and read as a whole.",
+    "work_item": "one project activity or status update",
+    "start": "an update is requested or due",
+    "end": "report or correspondence is sent to its recipients",
+    "checked_by": "project manager and other recipients",
+    "duplicates": [],
+    "overlaps_with": [
+     "21665"
+    ]
+   }
+  ],
+  "notes": "The shares depend on reporting responsibilities and project stage."
+ },
+ {
+  "task_id": "21676",
+  "split_reasoning": "Storing, retrieving, and manipulating data are means of preparing data for the same analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Store, retrieve, and manipulate data needed to analyze system capabilities and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a prepared dataset or extract that supports an analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A prepared dataset for one analysis is a usable handoff, rather than each individual data operation.",
+    "work_item": "one dataset or extract prepared for system analysis",
+    "start": "an analysis requires data about system capabilities or requirements",
+    "end": "relevant data are retrieved, manipulated, and made available for analysis",
+    "checked_by": "the analyst or development team using the data",
+    "duplicates": [],
+    "overlaps_with": [
+     "21662",
+     "21667"
+    ]
+   }
+  ],
+  "notes": "The prepared data may be used by the same developer rather than formally handed to another person."
+ },
+ {
+  "task_id": "21677",
+  "split_reasoning": "Supervising staff and assigning specific work items are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise programmers, designers, technicians, and other technical staff.",
+    "time_share": 0.7,
+    "type_reasoning": "Supervision is primarily live guidance and oversight of staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [
+     "21678"
+    ],
+    "overlaps_with": [
+     "21669"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Assign work to programmers, designers, technicians, and other technical staff.",
+    "time_share": 0.3,
+    "type_reasoning": "A recorded work assignment identifies the work and person responsible for it.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assigned task or ticket is the unit staff receive and act on.",
+    "work_item": "one technical work item assigned to a staff member",
+    "start": "a task needs an owner",
+    "end": "the assignment is recorded or communicated to the assignee",
+    "checked_by": "assigned staff member and project lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21669",
+     "21678"
+    ]
+   }
+  ],
+  "notes": "Assignment can also occur verbally during supervision; the share attributed to recorded or communicated assignments is approximate."
+ },
+ {
+  "task_id": "21678",
+  "split_reasoning": "Supervising the listed kinds of technical staff is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise programmers, technologists, technicians, and other technical staff.",
+    "time_share": 1.0,
+    "type_reasoning": "The task describes live oversight and guidance of staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [
+     "21677"
+    ],
+    "overlaps_with": [
+     "21669"
+    ]
+   }
+  ],
+  "notes": "This duplicates the supervision component of task 21677; that task also explicitly includes work assignment."
+ },
+ {
+  "task_id": "21679",
+  "split_reasoning": "Training users on new or modified equipment is one teaching activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train users to operate new or modified equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live instruction and practice with users.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Preparation of training materials is not specified in the target."
+ }
+]

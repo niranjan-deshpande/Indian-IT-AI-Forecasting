@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delegable share</title>
+<meta name="description" content="A measure of how many of an occupation&#x27;s work hours a firm would save by handing work to an AI agent instead of having a person do it with AI help, for Indian IT and BPO occupations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #fbf8f3; --panel: #fffdf9; --ink: #2a2318; --ink-2: #5e5245; --ink-3: #8a7d6d;
+  --rule: #e6ddd0; --rule-2: #cfc4b4;
+  --accent: #235fa6; --mid: #2f8a57; --acn: #7a7268; --cat-a: #b0702a; --soft: #eef3f9;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --toc-w: 250px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif);
+  font-size: 17.5px; line-height: 1.6; font-optical-sizing: auto; }
+.page { padding-left: 0; }
+main { display: grid; grid-template-columns: 1fr min(700px, calc(100% - 32px)) 1fr; padding: 48px 0 72px; }
+main > * { grid-column: 2; min-width: 0; }
+main > .wide, main > details.more figure.wide { grid-column: 1 / -1; }
+main > .wide { width: min(920px, calc(100% - 32px)); justify-self: center; }
+p { margin: 0 0 1.05em; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+h1 { font-size: 2.0rem; line-height: 1.2; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 14px; }
+h2 { font-size: 1.36rem; line-height: 1.3; font-weight: 600; margin: 2.6em 0 0.7em; letter-spacing: -0.01em; }
+h2 .num { color: var(--ink-3); font-weight: 400; margin-right: 0.35em; }
+h3 { font-size: 1.08rem; font-weight: 600; margin: 1.9em 0 0.5em; }
+ul, ol { padding-left: 1.3em; margin: 0 0 1.05em; } li { margin-bottom: 0.35em; }
+header { padding-bottom: 22px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+.crumbs { font-family: var(--sans); font-size: 14px; color: var(--ink-3); margin: 0 0 18px; }
+.crumbs b { color: var(--ink-2); font-weight: 600; }
+.byline { font-family: var(--sans); font-size: 15px; color: var(--ink-2); margin: 0 0 6px; }
+.byline .tag { display: inline-block; border: 1px solid #c9a227; color: #7a6212; background: #fbf3d6; border-radius: 3px;
+  padding: 0 6px; font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 4px; }
+.thanks { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin: 0; }
+code { font-size: 0.86em; background: #f1ebe1; padding: 1px 4px; border-radius: 3px; }
+
+/* table of contents */
+.toc { font-family: var(--sans); font-size: 14px; line-height: 1.35; }
+.toc-head { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin-bottom: 10px; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc > ul > li { margin: 0 0 10px; }
+.toc > ul > li > a { font-weight: 600; color: var(--ink); }
+.toc ul ul { margin: 4px 0 0 0; padding-left: 10px; border-left: 1px solid var(--rule); }
+.toc ul ul li { margin: 3px 0; }
+.toc a { color: var(--ink-2); text-decoration: none; display: block; padding: 1px 0; }
+.toc a:hover { color: var(--accent); }
+.toc a.active { color: var(--accent); }
+.toc li.opt > a::after { content: " +"; color: var(--ink-3); font-size: 12px; }
+@media (min-width: 1180px) {
+  .page { padding-left: calc(var(--toc-w) + 24px); }
+  .toc { position: fixed; top: 0; left: 0; width: var(--toc-w); height: 100vh; overflow-y: auto;
+    padding: 48px 18px 32px 28px; border-right: 1px solid var(--rule); background: var(--bg); }
+  .toc-mobile { display: none; }
+}
+@media (max-width: 1179px) {
+  .page > .toc { display: none; }
+  .toc-mobile { margin: 18px 0 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); padding: 8px 14px; }
+  .toc-mobile > summary { font-family: var(--sans); font-weight: 600; font-size: 15px; cursor: pointer; }
+  .toc-mobile .toc { padding: 8px 0 4px; } .toc-mobile .toc-head { display: none; }
+}
+
+/* answer box */
+.answer { background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 12px 18px 2px;
+  margin: 0.4em 0 1.6em; }
+.answer p { margin-bottom: 0.7em; }
+.answer-tag { display: block; font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+
+/* footnotes: hover (or tap) to read */
+.fn { position: relative; }
+.fn-ref { font-family: var(--sans); font-size: 0.68em; vertical-align: super; line-height: 0; text-decoration: none;
+  color: var(--accent); padding: 0 2px; margin-left: 1px; font-weight: 600; cursor: pointer; }
+.fn-ref::before { content: "["; } .fn-ref::after { content: "]"; }
+.fn-pop { display: none; position: absolute; z-index: 30; left: 0; top: 1.5em; width: 360px; max-width: calc(100vw - 32px);
+  background: #fffdf9; border: 1px solid var(--rule-2); border-radius: 6px; box-shadow: 0 6px 24px rgba(42,35,24,0.14);
+  padding: 10px 13px; font-family: var(--sans); font-size: 14px; line-height: 1.45; color: var(--ink); font-weight: 400;
+  font-style: normal; text-align: left; }
+.fn-n { font-weight: 600; color: var(--accent); margin-right: 2px; }
+.fn.show .fn-pop { display: block; }
+@media (max-width: 700px) {
+  .fn.show .fn-pop { position: fixed; left: 12px; right: 12px; bottom: 12px; top: auto; width: auto; max-width: none; }
+}
+ol.notes { font-family: var(--sans); font-size: 14px; line-height: 1.45; } ol.notes li { margin-bottom: 0.5em; }
+
+/* collapsible detail sections */
+details.more { margin: 2em 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); }
+details.more > summary { cursor: pointer; padding: 12px 16px; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px;
+  align-items: baseline; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before { content: "+"; font-family: var(--sans); color: var(--accent); font-weight: 600; width: 0.9em; }
+details.more[open] > summary::before { content: "−"; }
+.more-title { font-weight: 600; font-size: 1.08rem; }
+.more-hint { font-family: var(--sans); font-size: 13px; color: var(--ink-3); }
+details.more[open] .more-hint { display: none; }
+.more-body { padding: 4px 18px 8px 34px; }
+.more-body figure { margin-left: -16px; margin-right: -16px; }
+details.app { border-bottom: 1px solid var(--rule); padding: 10px 0; }
+details.app > summary { cursor: pointer; font-family: var(--sans); font-weight: 600; font-size: 15px; list-style: none; }
+details.app > summary::-webkit-details-marker { display: none; }
+details.app > summary::before { content: "+"; display: inline-block; width: 1.2em; color: var(--ink-3); }
+details.app[open] > summary::before { content: "−"; }
+details.app > div { padding: 8px 0 4px 1.2em; font-size: 15.5px; }
+h2#appendix { margin-top: 3em; }
+
+/* figures */
+figure { margin: 2em 0 2.2em; }
+.fig-panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px 8px; }
+.fig-top { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.fig-title { font-family: var(--sans); font-weight: 600; font-size: 15px; color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-family: var(--sans); font-size: 13.5px; color: var(--ink); }
+.legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+.legend .mk { font-weight: 400; margin-right: 5px; font-size: 12px; }
+.legend i { display: inline-block; width: 20px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: 6px; }
+.fig-note { font-family: var(--sans); font-size: 12.5px; line-height: 1.4; color: var(--ink-3); margin-top: 4px; }
+.chart { width: 100%; }
+figcaption { font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--ink-2); margin: 10px 2px 0; max-width: 760px; }
+figcaption b { color: var(--ink); font-weight: 600; }
+
+/* tables */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.6em 0 1.9em; }
+.table-cap { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin: 0 0 8px; }
+.table-cap b { color: var(--ink); font-weight: 600; }
+table { border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; line-height: 1.4;
+  font-variant-numeric: tabular-nums lining-nums; width: 100%; }
+th, td { padding: 7px 10px; border-bottom: 1px solid var(--rule); text-align: right; vertical-align: top; }
+th:first-child, td:first-child { padding-left: 0; text-align: left; }
+th:last-child, td:last-child { padding-right: 0; }
+thead th { font-weight: 600; color: var(--ink-2); border-bottom: 1px solid var(--ink-3); vertical-align: bottom; }
+tbody th { font-weight: 400; }
+table.items td, table.items th { text-align: right; } table.items th:first-child, table.items td:first-child { text-align: left; }
+.table-note { font-family: var(--sans); font-size: 13px; color: var(--ink-2); margin: 8px 0 0; }
+
+.math { margin: 1.2em 0 1.4em; text-align: center; font-size: 1.05em; overflow-x: auto; overflow-y: hidden; }
+.footer { font-family: var(--sans); font-size: 13px; color: var(--ink-3); margin-top: 2.5em; }
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  main { padding-top: 28px; }
+  h1 { font-size: 1.6rem; }
+  .fig-panel { padding: 12px 10px 6px; }
+  .more-body { padding: 4px 12px 8px 14px; }
+  .more-body figure { margin-left: -6px; margin-right: -6px; }
+}
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  .page { padding-left: 0; } .page > .toc, .toc-mobile { display: none; }
+  .fn-pop { display: none !important; }
+  .fig-panel { border: 0; padding: 0; }
+  figure, .table-wrap { break-inside: avoid; }
+}
+
+/* this page */
+.imath { white-space: nowrap; }
+.math .katex-display { margin: 0; }
+table.itemlist { font-size: 13px; } table.itemlist td:nth-child(2) { text-align: left; min-width: 220px; }
+table.itemlist td:nth-child(3), table.itemlist td:nth-child(4) { text-align: left; white-space: nowrap; }
+table.itemlist th:nth-child(2), table.itemlist th:nth-child(3), table.itemlist th:nth-child(4) { text-align: left; }
+table.itemlist th[scope="row"] { white-space: nowrap; }
+table.text th, table.text td { text-align: left; }
+.pending p:last-child { margin-bottom: 0; }
+.pending { font-family: var(--sans); font-size: 15px; color: var(--ink-2); background: var(--panel); border: 1px dashed var(--rule-2);
+  border-radius: 6px; padding: 10px 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#summary" data-target="summary">Summary</a></li><li><a href="#the-model" data-target="the-model">The model</a></li><li><a href="#calibrating-parameters" data-target="calibrating-parameters">Calibrating parameters</a></li><li><a href="#results" data-target="results">Results</a></li><li><a href="#what-moves-the-numbers" data-target="what-moves-the-numbers">What moves the numbers</a></li></ul></nav>
+<main>
+<header><p class="crumbs"><a href="index.html">Pilot note</a> · <a href="two-questions.html">Two questions (working draft)</a> · <a href="health-check.html">Health check</a> · <a href="theta-model.html">Estimating θ (working draft)</a> · <b>Delegable share</b></p><h1>Which work would a firm hand to an AI agent?</h1><p class="byline">Niranjan Deshpande · November 2026 · <span class="tag">Working draft</span></p><p class="thanks">Written as part of SPAR (Fall 2026), supervised by Andrei Potlogea. Data and code: <a href="https://github.com/niranjan-deshpande/Indian-IT-AI-Forecasting">github.com/niranjan-deshpande/Indian-IT-AI-Forecasting</a>.</p></header><details class="toc-mobile"><summary>Contents</summary><nav class="toc" aria-label="Contents"><div class="toc-head">Contents</div><ul><li><a href="#summary" data-target="summary">Summary</a></li><li><a href="#the-model" data-target="the-model">The model</a></li><li><a href="#calibrating-parameters" data-target="calibrating-parameters">Calibrating parameters</a></li><li><a href="#results" data-target="results">Results</a></li><li><a href="#what-moves-the-numbers" data-target="what-moves-the-numbers">What moves the numbers</a></li></ul></nav></details>
+<h2 id="summary">Summary</h2>
+<p>Here, I investigate how <b>delegable</b> different occupations are to AI. Like we discussed last time, I mean this as an update to Eloundou et al.’s exposure measure, which labels each O*NET task by whether an LLM could cut the time it takes in half. The issue with that label is that it ignores <b>reliability</b>: a task the AI gets right 60% of the time and one it gets right 99% of the time are very different, but they get the same label under Eloundou et al.’s framework.</p>
+<p>I replace their metric with a continuous measure: the share of an occupation’s work hours that a cost-minimising firm would save by handing work to an AI agent, instead of having a person do it with AI help.</p>
+<p>Importantly, I don’t try to calibrate all my parameters from data. I use public benchmark data to estimate reliability; but I use LLMs to estiamte every other parameter (how a task breaks into units of work, how long those take, how long checking them takes, and which benchmark they resemble) using O*NET task statements.</p>
+<p>So far, I have results for 10 Indian IT and BPO occupations and three pilot occupations (will edit this as more results come online overnight; my agents are still running!). Preliminary findings:</p>
+<ul><li>Across the IT and BPO occupations, delegation would save between 6% and 28% of work hours today, most for Web Developers and least for Data Entry Keyers.</li><li>If a firm’s reviewer accepts only half of what passes the automatically graded benchmarks, that range drops to 0%–20%.</li><li>A few choices, listed at the end, move these numbers a lot, so treat them as a first pass.</li></ul>
+<h2 id="the-model">The model</h2>
+<p>Here, I walk through the model I use at a high level of abstraction. Consider one piece of work, like a support ticket, an email reply or a test plan. Suppose a worker takes <span class="imath" data-tex="h">h</span> hours to do it without AI. Thefirm has two options.</p>
+<ul><li><b>Assist.</b> The worker can do it with AI help, which saves a share <span class="imath" data-tex="\kappa">\kappa</span> of the time.</li><li><b>Delegate.</b> An agent can do it with a person checking the result. If the check passes, the work is done. If not, the worker does it with AI help, as they would have anyway (i.e., they go down the usual assist path).</li></ul>
+<p>These two save very different amounts of time! Relatively old (2025; this is ancient in AI land!) studies of AI assistance find time savings of roughly 5–25%. Meanwhile, delegating saves most of the work, but only when the agent is reliable enough that checking its output is worth the time. A failed attempt costs only the check, so the firm delegates when</p>
+<div class="math" data-tex="\pi(h)\,(1-\kappa)\,h \;&gt;\; a + b\,h,"><span class="math-fallback">\pi(h)\,(1-\kappa)\,h \;&gt;\; a + b\,h,</span></div>
+<p>where <span class="imath" data-tex="\pi(h)">\pi(h)</span> is the chance the output is accepted and <span class="imath" data-tex="a + bh">a + bh</span> is the checking time. The checking time is defined in this way because every check costs a few fixed minutes, plus time that grows with the size of the work.</p>
+<p>I calibrate the acceptance chance comes from benchmarks. LLMs match each piece of work is matched to the benchmark whose items it most resembles. On every benchmark, agents succeed less often on items that take people longer, so we can use the latest scores to observe roughly how often the best current agent would succeed on work of a given length.</p>
+<p>Different instances of one task type can have very different lengths (e.g. a “support ticket” can be a few minutes or a few hours), so I compute the saving at each length and take the average. We calculate two metrics:</p>
+<ul><li><b>S</b>, the hours saved by delegating instead of assisting, as a share of the hours the work takes without AI.</li><li><b>D</b>, the share of hours where delegating pays at all. D is generally much higher than S, because when checking is cheap it is worth trying the agent even where it usually fails (e.g. for very long tasks, even if success probability is close to zero, the upside of the agent succesfully doing the task is much higher than the cost of a check, since check-time grows less than one-for-one with <span class="imath" data-tex="h">h</span>. Live calls and chats follow a slightly different rule.<span class="fn"><a class="fn-ref" href="#note-live" aria-label="Note 1">1</a><span class="fn-pop" role="note"><span class="fn-n">1</span> Nobody checks a call before the customer hears it. So for live work the firm reviews a sample of contacts, and a failed contact adds a cost for the customer’s bad experience, set to 1 times the contact’s length.</span></span></li></ul>
+<h2 id="calibrating-parameters">Calibrating parameters</h2>
+<p>For 31 benchmarks I collected dated scores for every model I could find. For each benchmark I then estimate its horizon: the length of item at which the best agent succeeds half the time.<span class="fn"><a class="fn-ref" href="#note-fit" aria-label="Note 2">2</a><span class="fn-pop" role="note"><span class="fn-n">2</span> The slope of success against log length is fixed at METR’s estimate. Only the horizon is fitted, so that the predicted success over a sample of 24 items matches each model’s overall score.</span></span></p>
+<p>Everything else comes from LLMs reading O*NET. Two Claude models and one GPT model each split every task statement into units of work, estimate how long these take and how long they take to check, and pick the closest benchmark. I use the median answer. The same models also estimate how long people take on the benchmark items, so we measure the work and benchmarks on the same scale.</p>
+<h2 id="results">Results</h2>
+<div class="table-wrap"><p class="table-cap"><b>Table 1.</b> S and D for the IT and BPO occupations, for both reviewer cases. Averages over each occupation’s work, weighted by O*NET task importance.</p><table class="items"><thead><tr><th>Occupation</th><th>S, ρ = 1</th><th>S, ρ = 0.5</th><th>D, ρ = 1</th><th>D, ρ = 0.5</th><th>Uncovered</th></tr></thead><tbody><tr><th scope="row">Software Developers</th><td>12%</td><td>11%</td><td>41%</td><td>36%</td><td>0%</td></tr><tr><th scope="row">Web Developers</th><td>28%</td><td>20%</td><td>81%</td><td>78%</td><td>4%</td></tr><tr><th scope="row">Network and Computer Systems Administrators</th><td>19%</td><td>8%</td><td>66%</td><td>44%</td><td>0%</td></tr><tr><th scope="row">Database Administrators</th><td>14%</td><td>11%</td><td>52%</td><td>41%</td><td>11%</td></tr><tr><th scope="row">Computer Systems Analysts</th><td>13%</td><td>10%</td><td>55%</td><td>46%</td><td>3%</td></tr><tr><th scope="row">Bookkeeping, Accounting, and Auditing Clerks</th><td>9%</td><td>5%</td><td>34%</td><td>23%</td><td>4%</td></tr><tr><th scope="row">Billing and Posting Clerks</th><td>14%</td><td>6%</td><td>57%</td><td>38%</td><td>10%</td></tr><tr><th scope="row">Data Entry Keyers</th><td>6%</td><td>0%</td><td>33%</td><td>9%</td><td>39%</td></tr><tr><th scope="row">Insurance Claims and Policy Processing Clerks</th><td>24%</td><td>10%</td><td>73%</td><td>41%</td><td>5%</td></tr><tr><th scope="row">Medical Records Specialists</th><td>11%</td><td>5%</td><td>38%</td><td>12%</td><td>0%</td></tr></tbody></table></div>
+<figure class="wide" id="fig-bpo_headline"><div class="fig-panel"><div class="fig-top"><div class="fig-title">BPO occupations, % of unassisted hours</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:#235fa6"></span>ρ = 1</span><span><span class="sw" style="background:#9fb8d6"></span>ρ = 0.5 for test- and state-graded benchmarks</span></div></div><div id="chart-bpo_headline" class="chart" role="img" aria-label="BPO occupations, % of unassisted hours"></div></div><figcaption><b>Figure 1.</b> S by occupation, IT and BPO set.</figcaption></figure>
+<div class="table-wrap"><p class="table-cap"><b>Table 2.</b> The same for the three pilot occupations.</p><table class="items"><thead><tr><th>Occupation</th><th>S, ρ = 1</th><th>S, ρ = 0.5</th><th>D, ρ = 1</th><th>D, ρ = 0.5</th><th>Uncovered</th></tr></thead><tbody><tr><th scope="row">Computer User Support Specialists</th><td>20%</td><td>8%</td><td>58%</td><td>43%</td><td>1%</td></tr><tr><th scope="row">Customer Service Representatives</th><td>33%</td><td>10%</td><td>85%</td><td>22%</td><td>0%</td></tr><tr><th scope="row">Software Quality Assurance Analysts and Testers</th><td>15%</td><td>11%</td><td>65%</td><td>53%</td><td>4%</td></tr></tbody></table></div>
+<h2 id="what-moves-the-numbers">What moves the numbers</h2>
+<ul><li><b>How strict the reviewer is.</b> Benchmarks graded by tests or state checks pass some work a real reviewer would reject. If the reviewer accepts only half of it, S for customer service falls from 33% to 10%, since all of its benchmarks are graded that way.</li><li><b>Lining up dates.</b> Benchmarks were last scored between early 2025 and this month. I move each one’s best result forward to today at a doubling time of 3.5 months.<span class="fn"><a class="fn-ref" href="#note-pooled" aria-label="Note 3">3</a><span class="fn-pop" role="note"><span class="fn-n">3</span> The median of the benchmarks’ own doubling times, over benchmarks with at least four successive record-setting models.</span></span> Without that step, S for the pilot occupations is 11%, 19% and 7%, instead of 20%, 33% and 15%.</li><li><b>Squeezed time estimates.</b> The LLMs rank items by length well, but squeeze their estimates toward an hour or two. Using the same LLMs on both sides cancels much of this, but not all.</li></ul>
+<figure class="wide" id="fig-scenarios"><div class="fig-panel"><div class="fig-top"><div class="fig-title">One setting changed at a time from the baseline</div><div class="legend" aria-hidden="true"><span><span class="sw" style="background:#235fa6"></span>User support</span><span><span class="sw" style="background:#b0702a"></span>Customer service</span><span><span class="sw" style="background:#2f8a57"></span>Software QA</span><span><i style="border-color:#8a7d6d;border-top-style:dotted;border-top-width:1.5px"></i>Baseline value</span></div></div><div id="chart-scenarios" class="chart" role="img" aria-label="One setting changed at a time from the baseline"></div></div><figcaption><b>Figure 2.</b> S and D for the pilot occupations as one setting changes at a time.</figcaption></figure>
+<p>Next, I am running sixteen comparison occupations, including some that should come out high (translators, proofreaders) and some that should come out near zero (electricians, janitors).</p><details class="app" id="notes"><summary>All notes</summary><div><ol class="notes"><li id="note-live">Nobody checks a call before the customer hears it. So for live work the firm reviews a sample of contacts, and a failed contact adds a cost for the customer’s bad experience, set to 1 times the contact’s length.</li><li id="note-fit">The slope of success against log length is fixed at METR’s estimate. Only the horizon is fitted, so that the predicted success over a sample of 24 items matches each model’s overall score.</li><li id="note-pooled">The median of the benchmarks’ own doubling times, over benchmarks with at least four successive record-setting models.</li></ol></div></details><p class="footer">Built from <code>delegable_share/page_text.md</code> and the CSVs of run <code>pilot_v4c</code> and <code>bpo_v1</code> by <code>delegable_share/scripts/build_page.py</code>.</p>
+</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script>
+const DATA = {"scenarios":{"occ":["User support","Customer service","Software QA"],"rows":[{"lab":"Baseline: ρ = 1, aligned to today","short":"Baseline","base":true,"S":[20.281,32.983,15.002],"D":[57.503,85.454,65.45]},{"lab":"ρ = 0.5 for test- and state-graded benchmarks","short":"ρ = 0.5","base":false,"S":[8.377,9.502,10.972],"D":[42.919,22.49,53.316]},{"lab":"No date alignment (latest observed horizons)","short":"No alignment","base":false,"S":[11.401,19.134,7.398],"D":[42.087,58.052,45.938]},{"lab":"Spread of times widened, both sides","short":"Widen, both","base":false,"S":[9.534,14.326,2.724],"D":[30.159,44.481,13.134]},{"lab":"Spread of times widened, benchmark items only","short":"Widen, bench.","base":false,"S":[27.454,40.225,21.739],"D":[61.393,86.688,73.167]},{"lab":"Slope β = 0.6 (baseline 0.84)","short":"β = 0.6","base":false,"S":[25.394,37.643,23.396],"D":[63.455,88.013,82.937]},{"lab":"Slope β = 1.0","short":"β = 1.0","base":false,"S":[18.014,30.356,11.686],"D":[52.97,82.728,53.745]},{"lab":"Failure cost λ = 0.25 (live items)","short":"λ = 0.25","base":false,"S":[21.103,39.452,15.109],"D":[58.246,86.342,65.45]},{"lab":"Failure cost λ = 3 (live items)","short":"λ = 3","base":false,"S":[19.421,21.604,14.727],"D":[55.436,68.422,65.4]},{"lab":"Uncovered items take their second match","short":"2nd match","base":false,"S":[20.499,32.983,14.708],"D":[58.102,85.454,66.051]},{"lab":"One year ahead (pooled trend)","short":"+12 months","base":false,"S":[34.083,52.37,36.3],"D":[65.389,90.067,90.209]}]},"bpo_headline":{"occ":["Software developers","Web developers","Network/systems admins","Database admins","Systems analysts","Bookkeeping clerks","Billing clerks","Data entry keyers","Insurance claims clerks","Medical records"],"S1":[12.125,27.528,19.344,14.126,12.787,8.999,14.202,6.348,23.652,10.556],"S5":[11.37,19.52,7.682,11.226,9.669,4.615,5.768,0.113,9.957,4.936],"D1":[40.923,81.194,66.022,51.775,55.394,34.199,57.106,33.284,73.181,37.883],"D5":[36.444,78.014,43.859,41.212,45.672,22.618,37.573,9.298,40.962,12.127]}};
+const C = { accent: "#235fa6", acn: "#7a7268", a: "#b0702a", ink: "#2a2318", ink2: "#5e5245", ink3: "#8a7d6d",
+  rule: "#e6ddd0", rule2: "#cfc4b4", mid: "#2f8a57", light: "#9fb8d6", grey: "#cfc4b4" };
+const FONT = "'Source Sans 3', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
+const CONFIG = { displayModeBar: false, responsive: true, scrollZoom: false };
+const FIRM = { tcs: "#4d6f91", infosys: "#b8643f", hcltech: "#5a9370", wipro: "#8f68a6", techm: "#ae8a2c", ltim: "#c0607e" };
+const MIDC = { persistent: "#2f8a57", coforge: "#6fb38a", mphasis: "#1d5e3a", hexaware: "#93c9a8" };
+
+function baseLayout(extra) {
+  return Object.assign({ font: { family: FONT, size: 12.5, color: C.ink2 }, paper_bgcolor: "rgba(0,0,0,0)",
+    plot_bgcolor: "rgba(0,0,0,0)", showlegend: false, dragmode: false,
+    hoverlabel: { bgcolor: "#fffdf9", bordercolor: C.rule2, font: { family: FONT, size: 13, color: C.ink } } }, extra);
+}
+function axis(extra) {
+  return Object.assign({ showgrid: false, zeroline: false, fixedrange: true, showline: true, linecolor: C.rule2, linewidth: 1,
+    ticks: "outside", ticklen: 4, tickcolor: C.rule2, tickfont: { family: FONT, size: 12, color: C.ink2 } }, extra);
+}
+function tint(hex, a) { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; }
+function W(el) { return el.getBoundingClientRect().width; }
+function f1(v) { return v === null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1); }
+function f0(v) { return v === null ? "–" : (Math.round(v) > 0 ? "+" : Math.round(v) < 0 ? "−" : "") + Math.abs(Math.round(v)); }
+function ytitle(text) { return { text, font: { family: FONT, size: 12, color: C.ink3 }, standoff: 6 }; }
+function ptitle(k, text) { return { text, xref: "x" + k + " domain", yref: "y" + k + " domain", x: 0, y: 1.03, xanchor: "left", yanchor: "bottom", showarrow: false, font: { family: FONT, size: 13.5, color: C.ink } }; }
+function hline(k, y, o) { return Object.assign({ type: "line", xref: "x" + k + " domain", yref: "y" + k, x0: 0, x1: 1, y0: y, y1: y, line: { color: C.rule2, width: 1 }, layer: "below" }, o || {}); }
+function vline(k, x, o) { return Object.assign({ type: "line", xref: "x" + k, yref: "y" + k + " domain", x0: x, x1: x, y0: 0, y1: 1, line: { color: C.ink3, width: 1, dash: "dot" }, layer: "below" }, o || {}); }
+function band(k, x0, x1, color, op) { return { type: "rect", xref: "x" + k, yref: "y" + k + " domain", x0, x1, y0: 0, y1: 1, fillcolor: color || C.accent, opacity: op || 0.06, line: { width: 0 }, layer: "below" }; }
+function lab(k, x, y, text, o) { return Object.assign({ xref: "x" + k, yref: "y" + k, x, y, text, showarrow: false, font: { family: FONT, size: 11.5, color: C.ink3 } }, o || {}); }
+function twoPanels(narrow, i, gap) {
+  if (narrow) { const h = (1 - gap) / 2; return { x: [0, 1], y: i === 0 ? [1 - h, 1] : [0, h] }; }
+  const w = (1 - gap) / 2; return { x: i === 0 ? [0, w] : [w + gap, 1], y: [0, 0.9] };
+}
+function grid(n, cols, i, gx, gy) {
+  const rows = Math.ceil(n / cols), r = Math.floor(i / cols), c = i % cols;
+  const w = (1 - gx * (cols - 1)) / cols, h = (1 - gy * (rows - 1)) / rows;
+  const x0 = c * (w + gx), y1 = 1 - r * (h + gy);
+  return { x: [x0, x0 + w], y: [y1 - h, y1] };
+}
+/* push labels apart so they do not overlap: items [{y}] get .ly */
+function spread(items, gap) {
+  const s = items.slice().sort((a, b) => a.y - b.y); s.forEach(o => { o.ly = o.y; });
+  for (let it = 0; it < 80; it++) {
+    let moved = false;
+    for (let i = 1; i < s.length; i++) { const d = s[i].ly - s[i - 1].ly; if (d < gap - 1e-9) { const m = (gap - d) / 2; s[i].ly += m; s[i - 1].ly -= m; moved = true; } }
+    if (!moved) break;
+  }
+  return items;
+}
+function draw(el, traces, layout) { Plotly.react(el, traces, baseLayout(layout), CONFIG); }
+const FYL = y => "FY" + String(y % 100).padStart(2, "0");
+function fyAxis(a, b, step, extra) { const v = []; for (let y = a; y <= b; y += step) v.push(y); return axis(Object.assign({ tickvals: v, ticktext: v.map(FYL), range: [a - 0.5, b + 0.5] }, extra || {})); }
+const QM = ["Mar", "Jun", "Sep", "Dec"];
+const qlab = q => QM[+q.slice(5) - 1] + " " + q.slice(0, 4);
+const lastIdx = arr => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i] !== null) return i; return -1; };
+const errY = (y, lo, hi, color, w) => ({ type: "data", symmetric: false, array: hi.map((h, i) => h === null || y[i] === null ? null : h - y[i]),
+  arrayminus: lo.map((l, i) => l === null || y[i] === null ? null : y[i] - l), color: color, thickness: 1.5, width: w || 0 });
+const small = n => ({ family: FONT, size: n, color: C.ink2 });
+
+
+const OCC_COL = ["#235fa6", "#b0702a", "#2f8a57", "#8f68a6", "#c0607e", "#4d6f91", "#ae8a2c", "#5a9370", "#b8643f", "#7a7268", "#163d6b", "#6fb38a", "#93c9a8"];
+const TYPE_COL = { DISCRETE: "#235fa6", LIVE_SERVICE: "#b0702a", INTERPERSONAL: "#8f68a6", PHYSICAL: "#7a7268", NO_DELIVERABLE: "#cfc4b4" };
+const TYPE_LAB = { DISCRETE: "Discrete", LIVE_SERVICE: "Live service", INTERPERSONAL: "Interpersonal", PHYSICAL: "Physical", NO_DELIVERABLE: "No deliverable" };
+const P = v => v === null ? "–" : Math.round(v) + "%";
+const DUR = m => m < 90 ? Math.round(m) + " min" : (m / 60 < 10 ? (m / 60).toFixed(1) : Math.round(m / 60).toLocaleString()) + " h";
+const LOGTICKS = { tickvals: [1, 10, 60, 600, 6000, 60000, 600000], ticktext: ["1 min", "10 min", "1 h", "10 h", "100 h", "1,000 h", "10,000 h"] };
+const stackH = (narrow, n, per, pad) => (narrow ? 2 : 1) * (pad + per * n);
+
+/* S and D by occupation, two reliability cases */
+function figHeadline(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.16 : 0.07, n = d.occ.length;
+  const traces = [], ann = [];
+  const lay = { barmode: "group", bargap: 0.3, bargroupgap: 0.06, hovermode: "closest", height: stackH(narrow, n, 50, 46) + 30,
+    margin: { l: narrow ? 118 : 132, r: 36, t: 24, b: 28 } };
+  ["S", "D"].forEach((m, i) => {
+    const k = i ? "2" : "", p = twoPanels(narrow, i, gap);
+    [["1", C.accent, "ρ = 1"], ["5", C.light, "ρ = 0.5"]].forEach(([r, col, nm]) => {
+      const v = d[m + r];
+      traces.push({ type: "bar", orientation: "h", y: d.occ, x: v, xaxis: "x" + k, yaxis: "y" + k, marker: { color: col },
+        text: v.map(P), textposition: "outside", cliponaxis: false, textfont: small(11.5),
+        hovertemplate: "%{y}: " + m + " = %{x:.1f}%<extra>" + nm + "</extra>" });
+    });
+    lay["xaxis" + k] = axis({ domain: p.x, anchor: "y" + k, range: [0, 100], ticksuffix: "%", dtick: 25 });
+    lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, autorange: "reversed", showticklabels: i === 0 || narrow, ticks: "" });
+    ann.push(ptitle(k, m === "S" ? "S: net hours saved" : "D: hours handed to an agent"));
+  });
+  lay.annotations = ann; draw(el, traces, lay); el.dataset.narrow = narrow;
+}
+
+/* the delegation rule for one item, over its range of lengths */
+function figMechanism(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.2 : 0.08;
+  const traces = [], ann = [], shapes = [], lay = { hovermode: "x unified", height: narrow ? 640 : 340, margin: { l: 46, r: 10, t: 34, b: 40 } };
+  d.panels.forEach((q, i) => {
+    const k = i ? "2" : "", p = twoPanels(narrow, i, gap), ax = { xaxis: "x" + k, yaxis: "y" + k };
+    traces.push(Object.assign({ x: q.x, y: q.dens, type: "scatter", mode: "lines", fill: "tozeroy", line: { width: 0 }, fillcolor: "rgba(207,196,180,0.45)", hoverinfo: "skip" }, ax));
+    traces.push(Object.assign({ x: q.poly.x, y: q.poly.y, type: "scatter", mode: "lines", fill: "toself", line: { width: 0 }, fillcolor: "rgba(35,95,166,0.18)", hoverinfo: "skip" }, ax));
+    traces.push(Object.assign({ x: q.x, y: q.gain, type: "scatter", mode: "lines", line: { color: C.accent, width: 2.5 }, hovertemplate: "saving %{y:.0f}%<extra></extra>" }, ax));
+    traces.push(Object.assign({ x: q.x, y: q.rev.map(v => Math.min(v, 140)), type: "scatter", mode: "lines", line: { color: C.a, width: 2.5 }, hovertemplate: "review %{y:.0f}%<extra></extra>" }, ax));
+    lay["xaxis" + k] = axis(Object.assign({ domain: p.x, anchor: "y" + k, type: "log", title: { text: "Item length", font: small(12), standoff: 4 } }, LOGTICKS,
+      { range: [Math.log10(q.x[0]), Math.log10(q.x[q.x.length - 1])], hoverformat: ".0f" }));
+    lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, range: [0, 100], ticksuffix: "%", dtick: 25 });
+    shapes.push(vline(k, q.p50));
+    ann.push(ptitle(k, q.title.length > 46 && narrow ? q.title.slice(0, 44) + "…" : q.title));
+    ann.push(lab(k, Math.log10(q.p50), 97, "typical item", { xanchor: "left", xshift: 4 }));
+    ann.push({ xref: "x" + k + " domain", yref: "y" + k + " domain", x: 1, y: 0.86, xanchor: "right", showarrow: false, align: "right",
+      text: "matched to " + q.bm + "<br><b>S = " + q.S + "%</b>, D = " + q.D + "%", font: { family: FONT, size: 12, color: C.ink2 } });
+  });
+  lay.annotations = ann; lay.shapes = shapes; draw(el, traces, lay); el.dataset.narrow = narrow;
+}
+
+/* D against S, per coded item */
+function figDvS(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640;
+  const traces = d.occ.map((o, i) => {
+    const pts = d.pts.filter(p => p.o === i);
+    return { x: pts.map(p => p.D), y: pts.map(p => p.S), type: "scatter", mode: "markers", name: o,
+      marker: { color: OCC_COL[i % OCC_COL.length], size: 8, opacity: 0.85, line: { color: "#fffdf9", width: 0.8 } },
+      customdata: pts.map(p => [p.lab, p.pi]), hovertemplate: "%{customdata[0]}<br>D %{x:.0f}%, S %{y:.0f}%, π at typical length %{customdata[1]}<extra>" + o + "</extra>" };
+  });
+  traces.unshift({ x: [0, 100], y: [0, 100], type: "scatter", mode: "lines", line: { color: C.rule2, width: 1, dash: "dot" }, hoverinfo: "skip" });
+  draw(el, traces, { height: narrow ? 330 : 360, hovermode: "closest", margin: { l: 50, r: 10, t: 8, b: 42 },
+    xaxis: axis({ range: [-3, 103], ticksuffix: "%", title: ytitle("D: share of hours handed to an agent") }),
+    yaxis: axis({ range: [-3, 103], ticksuffix: "%", title: ytitle("S: net hours saved") }),
+    annotations: [{ x: 70, y: 70, text: "S = D", showarrow: false, textangle: narrow ? 0 : -33, yshift: 9, font: { family: FONT, size: 11.5, color: C.ink3 } }] });
+  el.dataset.narrow = narrow;
+}
+
+/* every item, S and D, by occupation and type */
+function figItems(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.14 : 0.06, n = d.occ.length;
+  const traces = [], ann = [];
+  const lay = { hovermode: "closest", height: stackH(narrow, n, 78, 30) + 40, margin: { l: narrow ? 104 : 120, r: 10, t: 24, b: 30 } };
+  ["S", "D"].forEach((m, i) => {
+    const k = i ? "2" : "", p = twoPanels(narrow, i, gap);
+    Object.keys(TYPE_COL).forEach(t => {
+      const pts = d.items.filter(q => q.t === t); if (!pts.length) return;
+      const coded = t === "DISCRETE" || t === "LIVE_SERVICE";
+      traces.push({ x: pts.map(q => q[m]), y: pts.map(q => q.o + q.j), xaxis: "x" + k, yaxis: "y" + k, type: "scatter", mode: "markers",
+        marker: { size: pts.map(q => 5 + 11 * Math.sqrt(q.w)), color: coded ? tint(TYPE_COL[t], 0.75) : "rgba(0,0,0,0)",
+          line: { color: coded ? "#fffdf9" : "#b5a994", width: coded ? 0.8 : 1.2 } },
+        customdata: pts.map(q => [q.lab, q.bm, q.pi === null ? "–" : q.pi, q.S, q.D, d.occ[q.o]]),
+        hovertemplate: "<b>%{customdata[0]}</b><br>%{customdata[5]} · " + TYPE_LAB[t] + "<br>Benchmark: %{customdata[1]}<br>π at typical length: %{customdata[2]}<br>S %{customdata[3]:.0f}%, D %{customdata[4]:.0f}%<extra></extra>" });
+    });
+    lay["xaxis" + k] = axis({ domain: p.x, anchor: "y" + k, range: [-4, 104], ticksuffix: "%", dtick: 25 });
+    lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, range: [n - 0.5, -0.5], tickvals: d.occ.map((_, j) => j), ticktext: d.occ,
+      showticklabels: i === 0 || narrow, ticks: "", showline: false });
+    ann.push(ptitle(k, m === "S" ? "S: net hours saved" : "D: hours handed to an agent"));
+  });
+  const shapes = [];
+  ["", "2"].forEach(k => { for (let j = 0; j < n - 1; j++) shapes.push(hline(k, j + 0.5, { line: { color: C.rule, width: 1 } })); });
+  lay.annotations = ann; lay.shapes = shapes; draw(el, traces, lay); el.dataset.narrow = narrow;
+}
+
+/* scenario dot plot */
+function figScenarios(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.1 : 0.05, nr = d.rows.length;
+  const y = d.rows.map(r => { const t = narrow ? r.short : r.lab; return r.base ? "<b>" + t + "</b>" : t; });
+  const traces = [], ann = [], shapes = [];
+  const lay = { hovermode: "closest", height: (narrow ? 2 : 1) * (26 * nr + 20) + 50, margin: { l: narrow ? 92 : 300, r: 12, t: 24, b: 30 } };
+  ["S", "D"].forEach((m, i) => {
+    const k = i ? "2" : "", p = twoPanels(narrow, i, gap);
+    const sx = [], sy = [];
+    d.rows.forEach((r, j) => { sx.push(Math.min(...r[m]), Math.max(...r[m]), null); sy.push(y[j], y[j], null); });
+    traces.push({ x: sx, y: sy, xaxis: "x" + k, yaxis: "y" + k, type: "scatter", mode: "lines", line: { color: C.rule2, width: 2 }, hoverinfo: "skip" });
+    d.occ.forEach((o, q) => {
+      traces.push({ x: d.rows.map(r => r[m][q]), y, xaxis: "x" + k, yaxis: "y" + k, type: "scatter", mode: "markers", name: o,
+        marker: { color: OCC_COL[q % OCC_COL.length], size: 9, line: { color: "#fffdf9", width: 1 } },
+        hovertemplate: o + ": " + m + " = %{x:.0f}%<extra></extra>" });
+      shapes.push(Object.assign(vline(k, d.rows[0][m][q]), { line: { color: OCC_COL[q % OCC_COL.length], width: 1, dash: "dot" } }));
+    });
+    lay["xaxis" + k] = axis({ domain: p.x, anchor: "y" + k, range: [0, 100], ticksuffix: "%", dtick: 25 });
+    lay["yaxis" + k] = axis({ domain: p.y, anchor: "x" + k, autorange: "reversed", type: "category", showticklabels: i === 0 || narrow, ticks: "", showline: false, tickfont: small(narrow ? 11 : 12.5) });
+    ann.push(ptitle(k, m === "S" ? "S: net hours saved" : "D: hours handed to an agent"));
+  });
+  lay.annotations = ann; lay.shapes = shapes; draw(el, traces, lay); el.dataset.narrow = narrow;
+}
+
+/* type of work item, share of weight */
+function figTypes(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640;
+  const traces = d.types.map(t => ({ type: "bar", orientation: "h", y: d.occ, x: d.v[t], name: TYPE_LAB[t], marker: { color: TYPE_COL[t] },
+    text: d.v[t].map(v => v >= 6 ? Math.round(v) + "%" : ""), textposition: "inside", insidetextanchor: "middle",
+    textfont: { family: FONT, size: 11.5, color: t === "NO_DELIVERABLE" ? C.ink : "#fff" },
+    hovertemplate: "%{y}: " + TYPE_LAB[t] + " %{x:.0f}%<extra></extra>" }));
+  draw(el, traces, { barmode: "stack", bargap: 0.35, height: 44 * d.occ.length + 60, hovermode: "closest",
+    margin: { l: narrow ? 108 : 124, r: 10, t: 6, b: 28 },
+    xaxis: axis({ range: [0, 100], ticksuffix: "%", dtick: 25 }), yaxis: axis({ autorange: "reversed", ticks: "", showline: false }) });
+  el.dataset.narrow = narrow;
+}
+
+/* weight by matched benchmark */
+function figCoverage(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640;
+  const traces = d.occ.map((o, i) => ({ type: "bar", orientation: "h", y: d.bm, x: d.v.map(r => r[i]), name: o,
+    marker: { color: OCC_COL[i % OCC_COL.length] }, hovertemplate: "%{y}: " + o + " %{x:.1f}% of coded weight<extra></extra>" }));
+  const tot = d.v.map(r => r.reduce((a, b) => a + b, 0));
+  traces.push({ type: "scatter", mode: "text", y: d.bm, x: tot, text: tot.map(v => Math.round(v) + "%"), textposition: "middle right",
+    textfont: small(11.5), hoverinfo: "skip", cliponaxis: false });
+  draw(el, traces, { barmode: "stack", bargap: 0.3, height: 22 * d.bm.length + 50, hovermode: "closest",
+    margin: { l: narrow ? 128 : 160, r: 30, t: 6, b: 28 },
+    xaxis: axis({ ticksuffix: "%", range: [0, Math.max(...tot) * 1.12] }), yaxis: axis({ autorange: "reversed", ticks: "", showline: false, tickfont: small(narrow ? 11 : 12.5) }) });
+  el.dataset.narrow = narrow;
+}
+
+/* benchmark horizons: latest observed and aligned to today */
+function figHorizons(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, r = d.rows, y = r.map(q => q.name);
+  const sx = [], sy = [];
+  r.forEach(q => { sx.push(q.latest, q.today, null); sy.push(q.name, q.name, null); });
+  const hov = r.map(q => [q.date, q.model, q.score, DUR(q.latest), DUR(q.today), q.grading, q.w, DUR(q.med)]);
+  const traces = [
+    { x: sx, y: sy, type: "scatter", mode: "lines", line: { color: C.rule2, width: 2 }, hoverinfo: "skip" },
+    { x: r.map(q => q.med), y, type: "scatter", mode: "markers", marker: { symbol: "line-ns", size: 12, line: { color: C.ink3, width: 2 } },
+      hovertemplate: "%{y}: median item %{x:.0f} min (our estimate)<extra></extra>" },
+    { x: r.map(q => q.latest), y, type: "scatter", mode: "markers", marker: { size: 8, color: "#fffdf9", line: { color: C.ink3, width: 1.5 } },
+      customdata: hov, hovertemplate: "<b>%{y}</b><br>Latest observed: %{customdata[3]} (%{customdata[1]}, %{customdata[0]}, score %{customdata[2]}%)<extra></extra>" },
+    { x: r.map(q => q.today), y, type: "scatter", mode: "markers", marker: { size: 10, color: r.map(q => q.rho ? C.accent : C.a) },
+      customdata: hov, hovertemplate: "<b>%{y}</b><br>Today: %{customdata[4]}<br>Grading: %{customdata[5]}<br>Share of pilot coded weight: %{customdata[6]}%<extra></extra>" },
+  ];
+  const ann = r.map(q => ({ xref: "paper", yref: "y", x: 1, y: q.name, xanchor: "left", xshift: 6, showarrow: false,
+    text: q.w ? q.w + "%" : "–", font: { family: FONT, size: 11.5, color: C.ink2 } }));
+  ann.push({ xref: "paper", yref: "paper", x: 1, y: 1, xanchor: "left", yanchor: "bottom", xshift: 2, showarrow: false, text: "weight", font: { family: FONT, size: 11, color: C.ink3 } });
+  draw(el, traces, { height: 24 * r.length + 70, hovermode: "closest", margin: { l: narrow ? 128 : 150, r: 44, t: 18, b: 32 },
+    xaxis: axis(Object.assign({ type: "log", range: [0.3, 4.6] }, LOGTICKS)), yaxis: axis({ type: "category", ticks: "", showline: false, tickfont: small(narrow ? 11 : 12.5) }),
+    annotations: ann });
+  el.dataset.narrow = narrow;
+}
+
+/* blind time estimates vs published */
+function figTiming(id, d) {
+  const el = document.getElementById(id), narrow = W(el) < 640, gap = narrow ? 0.2 : 0.1;
+  const p1 = twoPanels(narrow, 0, gap), p2 = twoPanels(narrow, 1, gap);
+  const lo = 3, hi = 2000, fx = [lo, hi], fy = fx.map(x => Math.exp(d.icpt) * Math.pow(x, d.slope));
+  const blabel = b => b.hi === null ? ">" + b.lo + " min" : b.lo + "–" + b.hi + " min";
+  const traces = [
+    { x: fx, y: fx, type: "scatter", mode: "lines", line: { color: C.ink3, width: 1.5, dash: "dash" }, hoverinfo: "skip" },
+    { x: fx, y: fy, type: "scatter", mode: "lines", line: { color: C.accent, width: 2 }, hoverinfo: "skip" },
+    { x: d.tb.pub, y: d.tb.est, type: "scatter", mode: "markers", marker: { color: tint(C.accent, 0.7), size: 8, line: { color: "#fffdf9", width: 0.8 } },
+      hovertemplate: "published %{x:.0f} min, estimated %{y:.0f} min<extra></extra>" },
+    { x: d.swe.map(q => q.b + q.j), y: d.swe.map(q => q.est), xaxis: "x2", yaxis: "y2", type: "scatter", mode: "markers",
+      marker: { color: tint(C.a, 0.7), size: 8, line: { color: "#fffdf9", width: 0.8 } }, hovertemplate: "estimated %{y:.0f} min<extra></extra>" },
+  ];
+  const shapes = d.buckets.map((b, i) => ({ type: "rect", xref: "x2", yref: "y2", x0: i - 0.4, x1: i + 0.4, y0: Math.max(b.lo, lo), y1: b.hi === null ? hi : b.hi,
+    fillcolor: C.rule, opacity: 0.6, line: { width: 0 }, layer: "below" }));
+  const lt = { tickvals: [5, 15, 60, 240, 960], ticktext: ["5 min", "15 min", "1 h", "4 h", "16 h"] };
+  draw(el, traces, { height: narrow ? 600 : 330, hovermode: "closest", margin: { l: 56, r: 10, t: 30, b: 46 }, shapes,
+    xaxis: axis(Object.assign({ domain: p1.x, anchor: "y", type: "log", range: [Math.log10(lo), Math.log10(hi)], title: { text: "Published time", font: small(12), standoff: 4 } }, lt)),
+    yaxis: axis(Object.assign({ domain: p1.y, anchor: "x", type: "log", range: [Math.log10(lo), Math.log10(hi)], title: ytitle("Our estimate") }, lt)),
+    xaxis2: axis({ domain: p2.x, anchor: "y2", range: [-0.6, d.buckets.length - 0.4], tickvals: d.buckets.map((_, i) => i), ticktext: d.buckets.map(blabel),
+      title: { text: "Published bucket (shaded)", font: small(12), standoff: 4 } }),
+    yaxis2: axis(Object.assign({ domain: p2.y, anchor: "x2", type: "log", range: [Math.log10(lo), Math.log10(hi)] }, lt)),
+    annotations: [ptitle("", "Terminal-Bench 2"), ptitle("2", "SWE-bench Verified"),
+      { xref: "x domain", yref: "y domain", x: 0.97, y: 0.04, xanchor: "right", showarrow: false, text: "slope " + d.slope.toFixed(2), font: { family: FONT, size: 12, color: C.accent } }] });
+  el.dataset.narrow = narrow;
+}
+
+const FIGS = { headline: figHeadline, bpo_headline: figHeadline, mechanism: figMechanism, dvs: figDvS, items: figItems, bpo_items: figItems,
+  scenarios: figScenarios, types: figTypes, coverage: figCoverage, horizons: figHorizons, timing: figTiming };
+const CHARTS = {};
+Object.keys(DATA).forEach(k => { CHARTS["chart-" + k] = () => FIGS[k]("chart-" + k, DATA[k]); });
+
+if (window.katex) {
+  document.querySelectorAll(".math[data-tex]").forEach(el => katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false }));
+  document.querySelectorAll(".imath[data-tex]").forEach(el => katex.render(el.dataset.tex, el, { displayMode: false, throwOnError: false }));
+}
+const drawn = new Set();
+function drawOne(id) { const el = document.getElementById(id); if (el && W(el) > 0) { try { CHARTS[id](); drawn.add(id); } catch (e) { console.error(id, e); } } }
+let io = null;
+if (window.Plotly) {
+  if ("IntersectionObserver" in window) {
+    io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && !drawn.has(e.target.id)) drawOne(e.target.id); }), { rootMargin: "600px 0px" });
+    Object.keys(CHARTS).forEach(id => { const el = document.getElementById(id); if (el) io.observe(el); });
+  } else Object.keys(CHARTS).forEach(drawOne);
+}
+document.querySelectorAll("details").forEach(d => d.addEventListener("toggle", () => {
+  if (d.open) d.querySelectorAll(".chart").forEach(c => { if (CHARTS[c.id]) { drawOne(c.id); Plotly.Plots.resize(c); } });
+}));
+let rt;
+window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => drawn.forEach(id => {
+  const el = document.getElementById(id); if (el && W(el) > 0 && String(W(el) < 640) !== el.dataset.narrow) drawOne(id);
+}), 150); });
+
+/* footnotes: hover on desktop, tap anywhere */
+const fns = document.querySelectorAll(".fn");
+function place(fn) {
+  const pop = fn.querySelector(".fn-pop"); pop.style.left = "0px";
+  if (window.innerWidth <= 700) return;
+  const r = pop.getBoundingClientRect(), over = r.right - (window.innerWidth - 16);
+  if (over > 0) pop.style.left = (-over) + "px";
+  const r2 = pop.getBoundingClientRect(); if (r2.left < 16) pop.style.left = (parseFloat(pop.style.left) + 16 - r2.left) + "px";
+}
+let hideT;
+fns.forEach(fn => {
+  fn.addEventListener("mouseenter", () => { if (window.matchMedia("(hover: hover)").matches) { clearTimeout(hideT); fns.forEach(f => f !== fn && f.classList.remove("show")); fn.classList.add("show"); place(fn); } });
+  fn.addEventListener("mouseleave", () => { if (window.matchMedia("(hover: hover)").matches) hideT = setTimeout(() => fn.classList.remove("show"), 180); });
+  fn.querySelector(".fn-ref").addEventListener("click", e => { e.preventDefault(); const on = !fn.classList.contains("show");
+    fns.forEach(f => f.classList.remove("show")); if (on) { fn.classList.add("show"); place(fn); } });
+});
+document.addEventListener("click", e => { if (!e.target.closest(".fn")) fns.forEach(f => f.classList.remove("show")); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") fns.forEach(f => f.classList.remove("show")); });
+
+/* table of contents: open collapsed sections when jumped to, highlight the current section */
+document.querySelectorAll(".toc a").forEach(a => a.addEventListener("click", () => {
+  const t = document.getElementById(a.dataset.target); if (t && t.tagName === "DETAILS") t.open = true;
+  const m = a.closest(".toc-mobile"); if (m) m.open = false;
+}));
+const heads = [...document.querySelectorAll("main h2[id], main h3[id], main details.more[id]")];
+function onScroll() {
+  let cur = heads[0]; for (const h of heads) { if (h.getBoundingClientRect().top < 120) cur = h; }
+  document.querySelectorAll(".toc a").forEach(a => a.classList.toggle("active", cur && a.dataset.target === cur.id));
+}
+window.addEventListener("scroll", () => requestAnimationFrame(onScroll), { passive: true }); onScroll();
+</script>
+</body>
+</html>

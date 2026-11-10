@@ -1,0 +1,648 @@
+[
+ {
+  "task_id": "3464",
+  "split_reasoning": "User assistance is provided both during live contacts and later through written requests or support queues.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist a user with a computer problem while the user is on a call or at the desk.",
+    "time_share": 0.6,
+    "type_reasoning": "The analyst diagnoses or guides the user while the user waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One user contact is the unit in which assistance is provided.",
+    "work_item": "one live user assistance contact",
+    "start": "user describes a computer problem during a call or visit",
+    "end": "guidance or a next step is communicated to the user",
+    "checked_by": "the user and support supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "20950"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond to a written request for help with a computer problem.",
+    "time_share": 0.4,
+    "type_reasoning": "The analyst works from a request without the user waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A support request and its response are handled as one item.",
+    "work_item": "one written user assistance request answered",
+    "start": "written help request received",
+    "end": "guidance or a next step sent to the user",
+    "checked_by": "the user and support supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "20950"
+    ]
+   }
+  ],
+  "notes": "The live and written shares vary with the organization's support arrangements."
+ },
+ {
+  "task_id": "3465",
+  "split_reasoning": "Testing, maintenance, monitoring, and coordinating installations are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test a computer program or system and document the results.",
+    "time_share": 0.3,
+    "type_reasoning": "Each test cycle produces results that a development or operations team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A test cycle for a specified change or release is handed over as a set of results.",
+    "work_item": "one program or system test cycle completed",
+    "start": "program, system change, or release is ready for testing",
+    "end": "test results and defects are recorded and shared",
+    "checked_by": "development team and test lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "3477"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Perform a maintenance change on a computer program or system.",
+    "time_share": 0.35,
+    "type_reasoning": "Maintenance produces a completed change to a program or system.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A maintenance request or scheduled change is tracked and completed as a unit.",
+    "work_item": "one program or system maintenance change",
+    "start": "maintenance need or scheduled change identified",
+    "end": "change applied and its completion recorded",
+    "checked_by": "system owner and operations team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3470",
+     "3478",
+     "20950"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Investigate a monitoring alert or exception for a computer program or system.",
+    "time_share": 0.2,
+    "type_reasoning": "Continuous monitoring produces individual alerts or exceptions that are investigated and recorded.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An alert or exception is the item acted on and passed to the responsible team.",
+    "work_item": "one monitoring alert or exception investigated",
+    "start": "alert or exception appears in monitoring results",
+    "end": "findings and any necessary escalation are recorded",
+    "checked_by": "operations team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3478",
+     "20950"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Coordinate the installation of a computer program or system with the people involved.",
+    "time_share": 0.15,
+    "type_reasoning": "Coordination consists primarily of live discussion and agreement among the installation participants.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3468"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the system's maintenance and release cycle."
+ },
+ {
+  "task_id": "3466",
+  "split_reasoning": "The languages, development processes, and technologies are alternative means of producing application changes rather than separate activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop an application component using appropriate programming languages and client-server, multimedia, or internet technologies.",
+    "time_share": 1.0,
+    "type_reasoning": "Development produces a distinct component or change for integration and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined component or change is the unit submitted to a development team, rather than an entire application project.",
+    "work_item": "one application component or code change developed",
+    "start": "component or change requirements assigned",
+    "end": "implementation submitted for review or integration",
+    "checked_by": "development team and code reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3470",
+     "3475",
+     "3478",
+     "3482"
+    ]
+   }
+  ],
+  "notes": "The target names tools and processes rather than a specific deliverable; the component is a typical unit of their use."
+ },
+ {
+  "task_id": "3467",
+  "split_reasoning": "Conferring with clients about their computing needs is one live requirements discussion.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss with a client the information processing or computation needs a program should address.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the live discussion with the client, rather than preparation of a requirements document.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3471",
+     "3474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3468",
+  "split_reasoning": "Coordinating and linking systems are parts of the same integration activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Integrate organizational computer systems so they can share information compatibly.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an integration or interface that other system teams use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined interface or integration change can be handed over and checked without treating the entire integration project as one item.",
+    "work_item": "one system interface or integration change implemented",
+    "start": "specific information-sharing need and systems identified",
+    "end": "interface or integration change implemented and handed over",
+    "checked_by": "system owners and integration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3465",
+     "3470",
+     "3474",
+     "3482",
+     "3484"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3469",
+  "split_reasoning": "Consulting management to reach agreement on system principles is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult management to reach agreement on system principles.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes a live discussion and agreement with management, not a separate document.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3474",
+     "3476"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3470",
+  "split_reasoning": "Expanding and modifying a system are alternative forms of the same system-change activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Expand or modify a system to support a new purpose or improve workflow.",
+    "time_share": 1.0,
+    "type_reasoning": "The analyst produces an implemented system change that users and technical colleagues rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined change request or enhancement is a handover unit smaller than a whole system project.",
+    "work_item": "one system enhancement or modification implemented",
+    "start": "a defined enhancement or workflow change is assigned",
+    "end": "change implemented and handed over for use or release",
+    "checked_by": "system owner, users, and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3465",
+     "3466",
+     "3468",
+     "3474",
+     "3475",
+     "3478",
+     "3482"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3471",
+  "split_reasoning": "Interviews, surveys, observation, and performing the job are alternative ways to establish how work and information are processed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a work process to determine what information workers process and how they process it.",
+    "time_share": 1.0,
+    "type_reasoning": "The investigation produces findings that inform subsequent systems analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings for a defined work process or investigation are usable as a whole by the design team.",
+    "work_item": "one work-process investigation and its findings",
+    "start": "work process selected for investigation",
+    "end": "information-processing findings documented and shared",
+    "checked_by": "systems design team and process owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "3467",
+     "3474"
+    ]
+   }
+  ],
+  "notes": "The methods can include live interaction, but the target's purpose is determining and conveying how the work is done."
+ },
+ {
+  "task_id": "3472",
+  "split_reasoning": "Determining hardware and software needs is one requirements-selection activity, with the two being possible components of the same output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine the hardware and software needed to set up or alter a system.",
+    "time_share": 1.0,
+    "type_reasoning": "The analyst produces a set of technology requirements for a system change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The requirements for a defined setup or alteration are reviewed together.",
+    "work_item": "one hardware and software requirements specification",
+    "start": "system setup or alteration needs are identified",
+    "end": "required hardware and software specified and shared",
+    "checked_by": "system owner and technical or procurement team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3474",
+     "3479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3473",
+  "split_reasoning": "Training staff and training users are the same activity delivered to different audiences.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train staff or users to work with computer systems and programs.",
+    "time_share": 1.0,
+    "type_reasoning": "The target's value is in the live instruction and interaction with learners.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Preparation of training materials is not specified in the target."
+ },
+ {
+  "task_id": "3474",
+  "split_reasoning": "Analyzing needs and planning and designing systems are connected steps producing a system design; the listed techniques are alternative methods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze processing needs and prepare a computer system design.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a design that stakeholders and implementers can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A design for a defined system or substantial subsystem is a reviewable handover, not the entire implementation project.",
+    "work_item": "one system or subsystem design",
+    "start": "processing needs are assigned for analysis",
+    "end": "design documented and submitted for stakeholder review",
+    "checked_by": "system owner, technical leads, and implementation team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3467",
+     "3468",
+     "3469",
+     "3470",
+     "3471",
+     "3472",
+     "3476",
+     "3482",
+     "3484"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3475",
+  "split_reasoning": "Assessing a pre-developed package and adapting a selected package produce different outputs and can occur independently.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess whether a pre-developed application package is useful for a user environment.",
+    "time_share": 0.4,
+    "type_reasoning": "The assessment produces findings that support a package decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One package assessment is a distinct decision input.",
+    "work_item": "one application package assessment",
+    "start": "package and user needs identified for evaluation",
+    "end": "assessment findings shared with decision makers",
+    "checked_by": "system owner and technical decision makers",
+    "duplicates": [],
+    "overlaps_with": [
+     "3479"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Adapt a pre-developed application package to a user environment.",
+    "time_share": 0.6,
+    "type_reasoning": "Adaptation produces a configured or modified package for the target environment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined adaptation or configuration change is handed over for testing and use.",
+    "work_item": "one package adaptation or configuration change",
+    "start": "selected package and environment requirements available",
+    "end": "adaptation completed and handed over for testing or use",
+    "checked_by": "system owner, users, and technical team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3466",
+     "3470"
+    ]
+   }
+  ],
+  "notes": "The relative time spent assessing and adapting varies by package."
+ },
+ {
+  "task_id": "3476",
+  "split_reasoning": "Defining system goals and diagramming program logic produce distinct artifacts at different levels of design.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Define the goals of a computer system.",
+    "time_share": 0.35,
+    "type_reasoning": "The defined goals are a reviewable statement used to guide system design.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of goals for a defined system or change is reviewed as a whole.",
+    "work_item": "one system goals statement",
+    "start": "system purpose and stakeholder needs available",
+    "end": "goals documented and submitted for review",
+    "checked_by": "system owner and management",
+    "duplicates": [],
+    "overlaps_with": [
+     "3469",
+     "3474"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Create flowcharts or diagrams describing the logical operational steps of a program.",
+    "time_share": 0.65,
+    "type_reasoning": "The analyst produces diagrams that programmers and reviewers use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A diagram or coherent set of diagrams for a program or function is a design handover.",
+    "work_item": "one program logic diagram or diagram set",
+    "start": "program function and requirements identified",
+    "end": "logic diagrams completed and shared",
+    "checked_by": "programmers and technical lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "3474"
+    ]
+   }
+  ],
+  "notes": "The time shares depend on how much program logic requires diagramming."
+ },
+ {
+  "task_id": "3477",
+  "split_reasoning": "System design procedures, test procedures, and quality standards are different kinds of documents used for different purposes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop, document, or revise a system design procedure.",
+    "time_share": 0.35,
+    "type_reasoning": "The activity produces a documented procedure for design staff to follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual procedure or revision is reviewed and issued as a whole.",
+    "work_item": "one system design procedure or revision",
+    "start": "need for a new or revised design procedure identified",
+    "end": "procedure documented and submitted for approval or use",
+    "checked_by": "systems design lead",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Develop, document, or revise a system test procedure.",
+    "time_share": 0.35,
+    "type_reasoning": "The activity produces a documented procedure for testers to follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual test procedure or revision is a reviewable handover.",
+    "work_item": "one test procedure or revision",
+    "start": "need for a new or revised test procedure identified",
+    "end": "procedure documented and submitted for approval or use",
+    "checked_by": "test lead and quality team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3465"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop, document, or revise a system quality standard.",
+    "time_share": 0.3,
+    "type_reasoning": "The activity produces a standard used to evaluate system work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A standard or revision can be reviewed and adopted as a distinct document.",
+    "work_item": "one quality standard or revision",
+    "start": "need for a new or revised quality standard identified",
+    "end": "standard documented and submitted for approval or use",
+    "checked_by": "quality lead and system management",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares are estimates and depend on the organization's documentation needs."
+ },
+ {
+  "task_id": "3478",
+  "split_reasoning": "Reviewing performance evidence and correcting the identified code error are connected steps in producing a code correction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze printouts and performance indicators to locate a code problem and correct the code.",
+    "time_share": 1.0,
+    "type_reasoning": "Each investigation and correction produces a code change for review or deployment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A diagnosed code defect and its correction are normally tracked as one defect or change.",
+    "work_item": "one code defect diagnosed and corrected",
+    "start": "printouts or performance indicators reveal a suspected code problem",
+    "end": "code correction submitted for review or deployment",
+    "checked_by": "development team and test team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3465",
+     "3466",
+     "3470",
+     "20950"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3479",
+  "split_reasoning": "Equipment and software packages are alternative subjects of the same recommendation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend new computer equipment or software packages.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a recommendation for a purchase or technology decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation addressing a defined need is submitted to decision makers as a whole.",
+    "work_item": "one equipment or software recommendation",
+    "start": "technology need identified",
+    "end": "recommendation and supporting rationale submitted",
+    "checked_by": "management and procurement or technical decision makers",
+    "duplicates": [],
+    "overlaps_with": [
+     "3472",
+     "3475",
+     "3483"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3480",
+  "split_reasoning": "Manuals, periodicals, and technical reports are alternative sources for the same learning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read technical sources to learn how to develop programs meeting staff and user requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes learning by reading, not producing a separate item for others to check.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Applying the knowledge to a specific program would be covered by development work rather than this learning activity."
+ },
+ {
+  "task_id": "3481",
+  "split_reasoning": "Supervising staff and leading a particular systems project are different responsibilities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise computer programmers or other systems analysts.",
+    "time_share": 0.5,
+    "type_reasoning": "The target describes the live management and supervision of staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Lead the people working on a particular systems project.",
+    "time_share": 0.5,
+    "type_reasoning": "The leadership described centers on coordinating and directing project participants through live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares vary with the analyst's managerial and project assignments; specific project documents are not named in the target."
+ },
+ {
+  "task_id": "3482",
+  "split_reasoning": "The examples are different business problems addressed by the same computer-based analysis and solution activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze a business problem using computer tools and develop a system solution.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a defined analysis or system solution for business and technical stakeholders.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A solution for a defined business problem or subsystem is a reviewable handover rather than an entire implementation project.",
+    "work_item": "one business problem analysis and proposed system solution",
+    "start": "business problem and relevant information identified",
+    "end": "analysis and proposed solution submitted for review",
+    "checked_by": "business owner and systems team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3466",
+     "3468",
+     "3470",
+     "3474",
+     "3483"
+    ]
+   }
+  ],
+  "notes": "The target is broad and may also include implementation; the unit captures its analysis and solution output."
+ },
+ {
+  "task_id": "3483",
+  "split_reasoning": "Cost-benefit and return-on-investment analyses are related methods used together to inform an implementation decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a cost-benefit and return-on-investment analysis for a system implementation decision.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces a decision document that management can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis of a defined implementation option or set of options is submitted as a whole.",
+    "work_item": "one system implementation cost-benefit and ROI analysis",
+    "start": "implementation options and relevant cost and benefit data identified",
+    "end": "analysis submitted to decision makers",
+    "checked_by": "management and finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "3479",
+     "3482"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3484",
+  "split_reasoning": "Specifying system inputs and planning the distribution and use of results are related parts of an input-output specification.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Specify the inputs a system accesses and how its results will be distributed and used.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a specification used by system designers and implementers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Input and output requirements for a defined system or subsystem are reviewed together.",
+    "work_item": "one system input and output specification",
+    "start": "system scope and processing needs identified",
+    "end": "input and output specification documented and shared",
+    "checked_by": "system owner, designers, and implementation team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3468",
+     "3474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20950",
+  "split_reasoning": "Troubleshooting program and system malfunctions is one restoration activity, regardless of the affected technology.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Troubleshoot a program or system malfunction and restore normal functioning.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a resolved incident or an implemented restoration that operations and users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A malfunction is typically tracked and resolved as one incident, separate from any user assistance contact.",
+    "work_item": "one program or system malfunction resolved",
+    "start": "malfunction reported or detected",
+    "end": "normal functioning restored and resolution recorded",
+    "checked_by": "system owner, operations team, and affected users",
+    "duplicates": [],
+    "overlaps_with": [
+     "3464",
+     "3465",
+     "3478"
+    ]
+   }
+  ],
+  "notes": "Some troubleshooting can occur during a live user contact, but this target centers on restoring the system rather than providing assistance during that contact."
+ }
+]

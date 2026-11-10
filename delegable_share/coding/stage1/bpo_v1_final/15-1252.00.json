@@ -1,0 +1,452 @@
+[
+ {
+  "task_id": "21661",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze information to recommend a new system or a modification to an existing one, and plan its installation.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis ends in a written recommendation and plan that management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each new system or modification gets its own recommendation and plan, handed over as a whole.",
+    "work_item": "one system recommendation with installation plan",
+    "start": "a need for a new or modified system is raised",
+    "end": "recommendation and installation plan delivered to management",
+    "checked_by": "project or IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21662",
+     "21666",
+     "21672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21662",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess whether a proposed software design is feasible within the time and cost limits, based on user needs and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment produces a feasibility conclusion that managers use to approve or reject the work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Feasibility is judged per proposed design or project, and handed over as a single conclusion.",
+    "work_item": "one feasibility assessment of a proposed design",
+    "start": "user needs and requirements received",
+    "end": "feasibility conclusion with time and cost estimate given to the project manager",
+    "checked_by": "project manager and requesting customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21668"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21663",
+  "split_reasoning": "One activity: conferring with managers to gather project information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet or talk with data processing or project managers to learn the limits and capabilities of a data processing project.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the exchange of information; nothing separate is produced for a colleague to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21664",
+     "21665"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21664",
+  "split_reasoning": "One activity: conferring with technical colleagues on design.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with systems analysts, engineers and programmers to design systems and learn project limits, performance needs and interfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "A design discussion whose value is the live exchange; the design artifacts are covered under design statements.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21663",
+     "21667",
+     "21668"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21665",
+  "split_reasoning": "Two different activities: talking with customers or departments about status and proposals, and answering technical questions in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet or call customers or other departments to discuss project status, proposals or technical issues.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live discussion; nothing separate is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21663",
+     "21664"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a customer's or department's technical question about system design or maintenance in writing.",
+    "time_share": 0.4,
+    "type_reasoning": "Each question produces a written reply that the asker relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions arrive one at a time by email or ticket and are answered as a whole.",
+    "work_item": "one technical question answered in writing",
+    "start": "question received",
+    "end": "answer sent and question closed",
+    "checked_by": "customer or department that asked",
+    "duplicates": [],
+    "overlaps_with": [
+     "21673"
+    ]
+   }
+  ],
+  "notes": "Time split is a judgment."
+ },
+ {
+  "task_id": "21666",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate the installation of a software system with users, IT staff and vendors until it is in service.",
+    "time_share": 1.0,
+    "type_reasoning": "Each installation ends in a system that users rely on and a handover that someone signs off.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Installations are scheduled and handed over one system at a time.",
+    "work_item": "one software system installation coordinated",
+    "start": "installation approved and scheduled",
+    "end": "system installed, verified and handed to users",
+    "checked_by": "users and IT operations",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21679"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21667",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design, build or change a software system, using analysis and models to predict how the design will behave.",
+    "time_share": 1.0,
+    "type_reasoning": "Each piece of work ends in code that colleagues review and rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work is handed over per feature or module through a code review or release, not per line of code.",
+    "work_item": "one feature or module designed and implemented",
+    "start": "assigned requirement or ticket",
+    "end": "code reviewed, merged and released",
+    "checked_by": "code reviewer, QA and product owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "21664",
+     "21669",
+     "21670"
+    ]
+   }
+  ],
+  "notes": "Design and coding are treated as one deliverable since they are handed over together."
+ },
+ {
+  "task_id": "21668",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set the performance standards that a system must meet.",
+    "time_share": 1.0,
+    "type_reasoning": "The output is a documented set of standards that testers and managers check against.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Standards are set per system or project and agreed as a whole.",
+    "work_item": "one set of system performance standards",
+    "start": "system requirements being scoped",
+    "end": "standards documented and agreed with stakeholders",
+    "checked_by": "project manager and stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "21662",
+     "21671"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21669",
+  "split_reasoning": "Developing test procedures, writing code, producing documentation, and directing others are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop software system testing or validation procedures.",
+    "time_share": 0.3,
+    "type_reasoning": "The work produces a procedure that testers can follow and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a system or bounded change is a practical handoff to the test team.",
+    "work_item": "one software test or validation procedure",
+    "start": "requirements and the system or change to be tested are available",
+    "end": "procedure is documented and made available to testers",
+    "checked_by": "test lead and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop software programming for a system or system change.",
+    "time_share": 0.3,
+    "type_reasoning": "Programming produces code submitted for review or integration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A bounded code change is the normal unit of review and integration.",
+    "work_item": "one software code change",
+    "start": "a programming requirement or change is assigned",
+    "end": "code is submitted for review or integration",
+    "checked_by": "code reviewers and integration team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667",
+     "21670"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop software system documentation.",
+    "time_share": 0.2,
+    "type_reasoning": "Documentation is a written deliverable used by developers, operators, or users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document or bounded documentation update is reviewed and published as a whole.",
+    "work_item": "one software documentation document or update",
+    "start": "a system or change requires documentation",
+    "end": "documentation is submitted or published",
+    "checked_by": "technical reviewers and documentation users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21673"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Direct staff carrying out software testing, validation, programming, or documentation.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing staff is an interpersonal activity centered on guidance and oversight.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21677",
+     "21678"
+    ]
+   }
+  ],
+  "notes": "Time shares are approximate and depend on whether the developer primarily produces work or directs others."
+ },
+ {
+  "task_id": "21670",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change existing software to fix an error, adapt it to new hardware, update an interface or improve performance.",
+    "time_share": 1.0,
+    "type_reasoning": "Each change ends in modified code that reviewers and users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes are handed over per ticket or request through review and release.",
+    "work_item": "one change request or bug fix to existing software",
+    "start": "change or bug ticket assigned",
+    "end": "change tested, merged and released",
+    "checked_by": "code reviewer, QA and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21667",
+     "21669"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21671",
+  "split_reasoning": "Continuous monitoring is represented by the discrete exceptions it prompts the developer to investigate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a monitored equipment or system exception against operating specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "An investigated exception produces a finding or escalation that operations staff can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An alert or observed exception is handled as one identifiable monitoring item.",
+    "work_item": "one system or equipment monitoring exception assessed",
+    "start": "an alert or observed reading indicates a possible deviation",
+    "end": "the deviation is assessed and the finding recorded or escalated",
+    "checked_by": "operations or system support team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The task may also include routine checks that reveal no exception; monitoring practices vary by system."
+ },
+ {
+  "task_id": "21672",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather information on reporting formats, costs and security needs and use it to specify the hardware configuration.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a recommended configuration that managers approve or buy.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A configuration is specified per system and handed over as a whole.",
+    "work_item": "one hardware configuration recommendation",
+    "start": "system requirements and constraints gathered",
+    "end": "recommended hardware configuration delivered",
+    "checked_by": "project manager and IT purchasing",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21673",
+  "split_reasoning": "Two kinds of written output differ in size and purpose: status or specification reports, and shorter correspondence.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a report on project specifications, activities or status.",
+    "time_share": 0.6,
+    "type_reasoning": "Each report is read and relied on by managers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are issued one at a time on a schedule or on request.",
+    "work_item": "one project report",
+    "start": "reporting date or request",
+    "end": "report sent",
+    "checked_by": "project manager and customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "21665",
+     "21669"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write correspondence about a project to customers or colleagues.",
+    "time_share": 0.4,
+    "type_reasoning": "Each message is a short deliverable that the recipient relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Messages are written and sent individually.",
+    "work_item": "one piece of project correspondence",
+    "start": "reason to write arises",
+    "end": "message sent",
+    "checked_by": "the recipient",
+    "duplicates": [],
+    "overlaps_with": [
+     "21665"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "21676",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pull and work with data to analyze a system's capabilities and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis ends in findings that planners rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Analyses are asked for and delivered one question at a time.",
+    "work_item": "one data analysis of system capabilities or requirements",
+    "start": "question about capacity or requirements raised",
+    "end": "findings delivered",
+    "checked_by": "project manager and systems analysts",
+    "duplicates": [],
+    "overlaps_with": [
+     "21661",
+     "21662"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21677",
+  "split_reasoning": "One activity: supervising and assigning work to staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign work to and supervise programmers, designers, technologists and technicians.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision is done through live interaction and produces nothing separate to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [
+     "21678"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Near-verbatim duplicate of 21678."
+ },
+ {
+  "task_id": "21678",
+  "split_reasoning": "One activity: supervising technical staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise the work of programmers, technologists, technicians and other technical staff.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision is live interaction and produces nothing separate to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [
+     "21677"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Near-verbatim duplicate of 21677."
+ },
+ {
+  "task_id": "21679",
+  "split_reasoning": "One activity: training users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train users on new or modified equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Teaching is a live session and nothing a colleague would check is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21666"
+    ]
+   }
+  ],
+  "notes": "Training materials, if written, belong elsewhere."
+ }
+]

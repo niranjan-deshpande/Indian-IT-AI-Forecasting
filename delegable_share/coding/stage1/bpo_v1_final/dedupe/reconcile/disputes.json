@@ -1,0 +1,117 @@
+{
+ "15-1252.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "15-1254.00": {
+  "agreed": [
+   [
+    "14694c",
+    "14695a"
+   ]
+  ],
+  "disputed": []
+ },
+ "15-1244.00": {
+  "agreed": [
+   [
+    "1324a",
+    "15205a"
+   ]
+  ],
+  "disputed": []
+ },
+ "15-1242.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "1300a",
+    "b": "21651a",
+    "flagged_by": "claude",
+    "reasoning": "Testing a database change and fixing errors includes testing the change and reporting results, the same work with the same inputs.",
+    "text": "[1300a] DISCRETE \u2014 one test round with fixes (start: change ready for test; end: tests pass and fixes done) \u2014 from statement: Test programs or databases, correct errors, and make necessary modifications.\n[21651a] DISCRETE \u2014 one change tested (start: change ready; end: results reported) \u2014 from statement: Test changes to database applications or systems."
+   },
+   {
+    "a": "1303c",
+    "b": "21650b",
+    "flagged_by": "claude",
+    "reasoning": "Both are a written question received and answered to the user, with identical start and end.",
+    "text": "[1303c] DISCRETE \u2014 one written user question answered (start: written question received; end: answer sent to the user) \u2014 from statement: Train users and answer questions.\n[21650b] DISCRETE \u2014 one support question answered (start: question received; end: answer sent) \u2014 from statement: Provide technical support to junior staff or clients."
+   },
+   {
+    "a": "1303b",
+    "b": "21650a",
+    "flagged_by": "claude",
+    "reasoning": "Both are a live contact where a user asks and gets an answer or support in real time.",
+    "text": "[1303b] LIVE_SERVICE \u2014 one user question answered during a live contact (start: user asks the question; end: answer communicated to the user) \u2014 from statement: Train users and answer questions.\n[21650a] LIVE_SERVICE \u2014 one live support contact (start: person asks; end: problem resolved) \u2014 from statement: Provide technical support to junior staff or clients."
+   }
+  ]
+ },
+ "15-1211.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "43-3031.00": {
+  "agreed": [
+   [
+    "2487a",
+    "2489a"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "2487a",
+    "b": "2490a",
+    "flagged_by": "claude",
+    "reasoning": "Both record a batch of transactions from source documents into the accounting system.",
+    "text": "[2487a] DISCRETE \u2014 one batch of transactions recorded (start: source documents ready; end: batch posted) \u2014 from statement: Operate computers programmed with accounting software to record, store, and analyze information.\n[2490a] DISCRETE \u2014 one batch of transactions classified and recorded (start: documents received; end: entries recorded) \u2014 from statement: Classify, record, and summarize numerical and financial data to compile and keep financial records, using journals and ledgers or computers."
+   },
+   {
+    "a": "2489a",
+    "b": "2490a",
+    "flagged_by": "claude",
+    "reasoning": "Posting debits and credits to accounts is the same as classifying and recording transactions into entries.",
+    "text": "[2489a] DISCRETE \u2014 one batch of debits and credits posted (start: source data ready; end: accounts posted and totaled) \u2014 from statement: Debit, credit, and total accounts on computer spreadsheets and databases, using specialized accounting software.\n[2490a] DISCRETE \u2014 one batch of transactions classified and recorded (start: documents received; end: entries recorded) \u2014 from statement: Classify, record, and summarize numerical and financial data to compile and keep financial records, using journals and ledgers or computers."
+   }
+  ]
+ },
+ "43-3021.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "23245a",
+    "b": "23258a",
+    "flagged_by": "claude",
+    "reasoning": "Computing charges from a billing document is the same work as reviewing documents to compute charges due.",
+    "text": "[23245a] DISCRETE \u2014 one set of documents reviewed and charges computed (start: documents received; end: charges computed) \u2014 from statement: Review documents, such as purchase orders, sales tickets, charge slips, or hospital records, to compute fees or charges due.\n[23258a] DISCRETE \u2014 one billing document's charges computed (start: document opened; end: amounts final) \u2014 from statement: Compute credit terms, discounts, shipment charges, or rates for goods or services to complete billing documents."
+   },
+   {
+    "a": "23240a",
+    "b": "23264a",
+    "flagged_by": "claude",
+    "reasoning": "Preparing invoices and recording amounts due is the same as creating a billing document ready for issue.",
+    "text": "[23240a] DISCRETE \u2014 one batch of invoices prepared and recorded (start: billing data ready; end: invoices ready to send) \u2014 from statement: Prepare itemized statements, bills, or invoices and record amounts due for items purchased or services rendered.\n[23264a] DISCRETE \u2014 one billing document created (start: transaction and charge information available; end: billing document completed and made ready for issue) \u2014 from statement: Create billing documents, shipping labels, credit memorandums, or credit forms."
+   }
+  ]
+ },
+ "43-9021.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "43-9041.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "23320a",
+    "b": "23326a",
+    "flagged_by": "claude",
+    "reasoning": "Keying documents into the computer is the same work as entering a batch of records.",
+    "text": "[23320a] DISCRETE \u2014 one batch of records entered or filed (start: records or documents received; end: records entered and filed) \u2014 from statement: Organize or work with detailed office or warehouse records, using computers to enter, access, search or retrieve data.\n[23326a] DISCRETE \u2014 one batch of documents keyed (start: documents received; end: data entered and checked) \u2014 from statement: Transcribe data to worksheets, and enter data into computer for use in preparing documents and adjusting accounts."
+   }
+  ]
+ },
+ "29-2072.00": {
+  "agreed": [],
+  "disputed": []
+ }
+}

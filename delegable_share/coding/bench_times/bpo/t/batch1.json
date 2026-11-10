@@ -1,0 +1,415 @@
+[
+ {
+  "item_id": "healthadminbench:emr-hard-8",
+  "reasoning": "Review the referral, search existing authorizations, verify eligibility, submit all codes, and record and clear the authorization.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "theagentcompany:hr-make-slides-introduce-leadership",
+  "reasoning": "Find five profiles, create and check a five-slide presentation in the specified order, then notify HR.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 60
+ },
+ {
+  "item_id": "swe_bench_verified:matplotlib__matplotlib-22871",
+  "reasoning": "Trace date formatter offset selection, fix the missing year, and test different tick intervals and date ranges.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "healthadminbench:denial-easy-20",
+  "reasoning": "Review the completed denial and supporting information, determine its disposition, and write a triage note.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "terminal_bench_4:music-harmony",
+  "reasoning": "Transcribe the excerpt, construct and check a stylistically valid four-part harmonization, and encode it with MusicXML harmony annotations. The excerpt's length and complexity are not stated.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "theagentcompany:ds-predictive-modeling",
+  "reasoning": "Inspect the training and test data, develop and validate a suitable regression pipeline, and upload predictions in the required format. The achievable accuracy and amount of tuning depend on the unseen data.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "vals_finance_agent:14",
+  "reasoning": "Find cost of revenue and beginning and ending inventory in the annual filing, calculate turnover, and check the figures.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "healthadminbench:denial-easy-19",
+  "reasoning": "Review the denial and associated records, decide the appropriate triage disposition, and document the reasoning.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "swe_bench_verified:pydata__xarray-7233",
+  "reasoning": "Investigate how coarsen construction preserves coordinate status, implement a fix, and add regression tests for coordinate and variable cases.",
+  "estimate_min": 120,
+  "low_min": 45,
+  "high_min": 240
+ },
+ {
+  "item_id": "dba_bench:pg_query_perf_stale_stats_lock_contention:checkout_stale_stats_single_waiter_simple",
+  "reasoning": "Identify the blocking session and slow query, address the statistics or lock cause safely, and verify throughput.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_collation_conversion:store_returns_collation_conversion",
+  "reasoning": "Identify the correct column, assess rewrite, locking and index risks, make the bounded change, restore prefix-search performance, and verify plans and metadata.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "swe_lancer:18230_905",
+  "reasoning": "Reproduce the paste-specific suggestion failure, trace composer input handling, implement a fix, and run relevant browser tests.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "ui_cube:concur--1",
+  "reasoning": "Create the report, select two expenses, attach their corresponding receipts, and check submission.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-13-3155ba0f",
+  "reasoning": "Reconcile client-level billing and ledger balances against the draft and review notes, correct classifications and totals, and check the final explanation.",
+  "estimate_min": 150,
+  "low_min": 75,
+  "high_min": 270
+ },
+ {
+  "item_id": "swe_lancer:42204_388",
+  "reasoning": "Reproduce the group-leaving state, trace membership and warning logic, and test the corrected mobile-web flow.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "swe_bench_verified:django__django-14631",
+  "reasoning": "Refactor form cleaning and change detection through bound fields, preserving field-specific behavior, and extend the test suite.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "terminal_bench_4:kv-live-surgery",
+  "reasoning": "Investigate the running server and protocol, engineer a live replacement with consistent state and surviving connections, then verify correctness and throughput.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 960
+ },
+ {
+  "item_id": "vals_finance_agent:0",
+  "reasoning": "Locate the company's merger disclosures and summarize management's discussion of the transaction and operational effects.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "swe_lancer:28093_799",
+  "reasoning": "Trace how composer content and height control the expand button, fix whitespace-only behavior, and test the interaction.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "dba_bench:pg_system_failure_auto_analyze_storm:store_sales_auto_analyze_storm_simple",
+  "reasoning": "Correlate recurring latency with maintenance activity, distinguish the unrelated query, adjust safe settings, and verify the result.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "theagentcompany:sde-run-janusgraph",
+  "reasoning": "Clone and build the project, resolve the Docker-related build configuration, start the server, and verify the HTTP endpoint.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 210
+ },
+ {
+  "item_id": "terminal_bench_4:risk-scorer-replay",
+  "reasoning": "Study the packet contracts and traces, probe the production scorer, implement generalized scoring and review-event processing, and verify deterministic outputs on varied packets.",
+  "estimate_min": 600,
+  "low_min": 300,
+  "high_min": 1200
+ },
+ {
+  "item_id": "swe_bench_verified:matplotlib__matplotlib-26291",
+  "reasoning": "Reproduce the inset rendering failure, trace locator and renderer lifecycle behavior, and add tests for affected rendering paths.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "healthadminbench:fax-medium-2",
+  "reasoning": "Find the three required documents, select the current H&P, send the fax, and document and clear the referral.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "terminal_bench_4:gsea-proteomics",
+  "reasoning": "Build the differential-expression gene set and multiclass GSEA inputs, run and validate eight comparisons, and extract the requested statistics and leading-edge outputs.",
+  "estimate_min": 360,
+  "low_min": 180,
+  "high_min": 720
+ },
+ {
+  "item_id": "swe_lancer:45479_400",
+  "reasoning": "Trace workspace and rate changes through distance-expense state, correct amount recalculation, and test the multi-step flow.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "dba_bench:pg_query_perf_heavy_offset_pagination:branch_order_deep_offset",
+  "reasoning": "Analyze the materialized windowed query and late-batch plan, develop a safe verifiable pagination improvement, and check results and performance.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "vals_finance_agent:39",
+  "reasoning": "Find Airbnb's adjusted EBITDA definition and reconciliation in its filings or earnings materials and summarize the adjustments.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "vals_finance_agent:38",
+  "reasoning": "Review Delta's quarterly earnings guidance and identify the metrics consistently reported.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "spider2:sf_bq376",
+  "reasoning": "Locate neighborhood polygons and station and crime locations, build spatial aggregations without join multiplication, and validate the result.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 180
+ },
+ {
+  "item_id": "spider2:sf_bq090",
+  "reasoning": "Discover the trade, strategy, side and intrinsic-value fields, calculate the two averages and their difference, and check the result.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "swe_lancer:4324",
+  "reasoning": "Implement shortcode-to-emoji rendering in the composer across supported platforms and test input and selection edge cases.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 480
+ },
+ {
+  "item_id": "terminal_bench_4:freight-dispatch-shift",
+  "reasoning": "Interpret the dispatch schema and operational rules, implement a stateful event-driven planner and audit, and test varied cutoffs and lifecycle changes.",
+  "estimate_min": 900,
+  "low_min": 480,
+  "high_min": 1800
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-7-55332112",
+  "reasoning": "Apply matter-specific realization and write-down instructions to the WIP schedule, aggregate practice-group balances, and reconcile the journal entry.",
+  "estimate_min": 150,
+  "low_min": 75,
+  "high_min": 270
+ },
+ {
+  "item_id": "ui_cube:time-pickers--1",
+  "reasoning": "Set the hour, minute, and meridiem and verify the displayed time.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "spider2:sf_bq247",
+  "reasoning": "Identify the publication and abstract fields, rank valid families by publication count, join their nonempty abstracts, and verify the output.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "healthadminbench:fax-hard-1",
+  "reasoning": "Review the DME order and all supporting documents, determine whether processing can proceed, and document the findings.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "healthadminbench:denial-medium-6",
+  "reasoning": "Review the authorization history and remittance, locate the payer claim, file the specified appeal, and document the investigation.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "swe_lancer:41183_948",
+  "reasoning": "Reproduce the stale self-DM preview, trace actionable-whisper removal and last-message state, and test the fix.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "swe_bench_verified:django__django-11790",
+  "reasoning": "Trace how AuthenticationForm obtains username field attributes, restore the maxlength behavior, and test custom user models and rendering.",
+  "estimate_min": 90,
+  "low_min": 35,
+  "high_min": 180
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_online_ddl:order_line_gift_note_ddl_simple",
+  "reasoning": "Find the failed precheck and relevant table, add the nullable text field with bounded locking, and verify the precheck and data.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 75
+ },
+ {
+  "item_id": "theagentcompany:sde-delete-all-project-under-plane",
+  "reasoning": "Find all projects in the workspace, delete each, and confirm none remain. Time depends on the number of projects.",
+  "estimate_min": 15,
+  "low_min": 5,
+  "high_min": 40
+ },
+ {
+  "item_id": "terminal_bench_4:fp8-rmsnorm-gemm",
+  "reasoning": "Implement and tune an H100-specific fused normalization and FP8 matrix multiplication kernel, then verify correctness and performance across batch sizes.",
+  "estimate_min": 1200,
+  "low_min": 600,
+  "high_min": 2400
+ },
+ {
+  "item_id": "terminal_bench_4:sglang-qwen-burst",
+  "reasoning": "Trace speculative streaming and tool-call parsing on the server, repair ordering across formats, and test accelerated streams against baseline behavior.",
+  "estimate_min": 360,
+  "low_min": 150,
+  "high_min": 720
+ },
+ {
+  "item_id": "theagentcompany:ml-grade-exam",
+  "reasoning": "Find all six scattered PDFs, evaluate each attempt against the exam criteria, rename them accurately, and select the highest score.",
+  "estimate_min": 180,
+  "low_min": 90,
+  "high_min": 360
+ },
+ {
+  "item_id": "healthadminbench:emr-hard-16",
+  "reasoning": "Review the biologic medical-necessity evidence, submit the authorization with clinical documentation, and record the result in the referral.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 45
+ },
+ {
+  "item_id": "healthadminbench:fax-medium-5",
+  "reasoning": "Collect the three documents, send the urgent certified fax with the specified cover note, and document and clear the referral.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 25
+ },
+ {
+  "item_id": "healthadminbench:denial-hard-15",
+  "reasoning": "Review the remittance and clinical records, analyze the NCCI code relationships, file a line-specific appeal, and document the reasoning.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 75
+ },
+ {
+  "item_id": "dba_bench:pg_system_failure_checkpoint_archive:checkpoint_archive_dual_fault",
+  "reasoning": "Analyze bounded historical metrics for both checkpoint and archive problems, make safe capacity or workload changes, and prove the next mixed window is safe.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "swe_bench_verified:sphinx-doc__sphinx-7748",
+  "reasoning": "Extend docstring signature parsing to handle overloads and test rendering and docstring removal across methods and other autodoc cases.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "terminal_bench_4:cargo-flight-dispatch",
+  "reasoning": "Audit and repair navigation, aircraft performance, fuel and route optimization logic, then validate a deterministic safety-constrained flight plan.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 960
+ },
+ {
+  "item_id": "swe_lancer:44429_1100",
+  "reasoning": "Trace participant selection in money-request flows, block domain emails without affecting ordinary recipients, and test the relevant UI paths.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "ui_cube:navigation-lists-tables--3",
+  "reasoning": "Use the load-more control until at least twelve items are visible and verify the count.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "swe_bench_verified:psf__requests-1921",
+  "reasoning": "Trace session-header merging and transport behavior for None values, implement consistent omission, and test default and per-request headers.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 210
+ },
+ {
+  "item_id": "ui_cube:combo-box-tasks--6",
+  "reasoning": "Open the command picker, find the specified command, execute it, and verify the selection.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_partition_migration:payment_events_attach_simple",
+  "reasoning": "Identify the blocking lock and attach bottleneck, resolve them safely, complete the partition attachment, and verify data integrity.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 110
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-4-baa13987",
+  "reasoning": "Review the settlement, holdback, client advances and posted entries, then calculate and explain any remaining journal entries.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 220
+ },
+ {
+  "item_id": "swe_bench_verified:sphinx-doc__sphinx-10466",
+  "reasoning": "Trace gettext message location accumulation, deduplicate without breaking ordering or other metadata, and add regression tests.",
+  "estimate_min": 100,
+  "low_min": 40,
+  "high_min": 210
+ },
+ {
+  "item_id": "swe_bench_verified:sympy__sympy-22714",
+  "reasoning": "Investigate the interaction between unevaluated expressions and point coordinate validation, fix the underlying check, and test real and imaginary cases.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ }
+]

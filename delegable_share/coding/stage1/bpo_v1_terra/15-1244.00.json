@@ -1,0 +1,761 @@
+[
+ {
+  "task_id": "1317",
+  "split_reasoning": "Routine backups and disaster recovery are distinct operations with different triggers and outputs; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform and verify scheduled or requested data backups.",
+    "time_share": 0.7,
+    "type_reasoning": "Each backup run produces a backup set and status that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A backup job run is the unit normally monitored and checked.",
+    "work_item": "one backup job run",
+    "start": "scheduled or requested backup is due",
+    "end": "backup completes and its status is checked and recorded",
+    "checked_by": "systems administrator or backup operator",
+    "overlap_reasoning": "General systems maintenance can include backups, but is broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Recover data and systems following a disaster or service loss.",
+    "time_share": 0.3,
+    "type_reasoning": "A recovery operation produces restored services or data for users to rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined recovery of a system or data set is a handoff-sized result within a larger disaster response.",
+    "work_item": "one system or data set recovered",
+    "start": "recovery of the affected system or data is authorized",
+    "end": "restoration is verified and handed back to operations or users",
+    "checked_by": "operations team and affected system owner",
+    "overlap_reasoning": "Recovery can involve troubleshooting and system administration, but those statements also cover unrelated work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Recovery frequency and the resulting time share vary greatly by organization."
+ },
+ {
+  "task_id": "1318",
+  "split_reasoning": "Administration and maintenance include both computer-based configuration work and hands-on hardware maintenance; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Administer and maintain network and computing system configurations and software.",
+    "time_share": 0.8,
+    "type_reasoning": "Each maintenance request or scheduled change produces an updated system configuration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual maintenance change is normally scheduled, performed, and handed back as one unit.",
+    "work_item": "one network or system maintenance change",
+    "start": "maintenance request, schedule, or identified configuration need",
+    "end": "change is applied, checked, and recorded",
+    "checked_by": "operations team or system owner",
+    "overlap_reasoning": "Many other statements specify particular administration activities within this broad maintenance task, but each also has its own scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1317",
+     "1319",
+     "1320",
+     "1321",
+     "1322",
+     "1325",
+     "1330",
+     "15205",
+     "15206",
+     "15208"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain network and computer hardware hands-on.",
+    "time_share": 0.2,
+    "type_reasoning": "Hardware maintenance requires physical work on equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hardware testing, replacement, and voice equipment work can be part of maintenance, but are not its whole scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1322",
+     "15205",
+     "15208"
+    ]
+   }
+  ],
+  "notes": "This is a broad umbrella task; shares depend on the equipment and division of responsibilities."
+ },
+ {
+  "task_id": "1319",
+  "split_reasoning": "Planning, coordination, and implementation are successive steps in delivering a network security measure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan, coordinate, and implement a network security measure.",
+    "time_share": 1.0,
+    "type_reasoning": "Each security change results in a measure that operations and security staff can verify and rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined security change, rather than the entire security program, is normally reviewed and implemented as a unit.",
+    "work_item": "one network security measure implemented",
+    "start": "security need or approved change request identified",
+    "end": "measure is implemented, tested, and handed over",
+    "checked_by": "security team and network owner",
+    "overlap_reasoning": "General administration and antivirus maintenance can include security changes, but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15206"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1320",
+  "split_reasoning": "Console monitoring and coordinating network access produce different work items; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Monitor system and network consoles and handle a performance alert.",
+    "time_share": 0.7,
+    "type_reasoning": "Continuous monitoring produces individual alerts that are assessed and recorded or routed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An alert is the operational item handled or handed to another team.",
+    "work_item": "one console performance alert assessed",
+    "start": "alert or abnormal console condition appears",
+    "end": "condition is assessed and action or escalation is recorded",
+    "checked_by": "operations team or incident responder",
+    "overlap_reasoning": "Performance monitoring and troubleshooting share alert investigation, while also covering longer-term analysis or resolution.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1325",
+     "1330",
+     "15205"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Coordinate a network access or usage request through the management console.",
+    "time_share": 0.3,
+    "type_reasoning": "A request produces an access or usage coordination action recorded for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A single request is the normal unit of authorization and handling.",
+    "work_item": "one network access or usage request handled",
+    "start": "approved request or operational need is received",
+    "end": "access or usage arrangement is applied or coordinated and recorded",
+    "checked_by": "requesting team and network administrator",
+    "overlap_reasoning": "General administration and security measures may include access control but are broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1319"
+    ]
+   }
+  ],
+  "notes": "The exact meaning of coordinating network access and use varies by site."
+ },
+ {
+  "task_id": "1321",
+  "split_reasoning": "Startup or shutdown and its control record form one routine operating procedure, with the two actions serving as alternative procedures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry out a routine network startup or shutdown and update the control record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each procedure leaves the network in the required operating state and produces a control record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One scheduled startup or shutdown is performed and recorded as a single operating event.",
+    "work_item": "one network startup or shutdown procedure completed and logged",
+    "start": "scheduled procedure or authorized operating instruction",
+    "end": "required state is verified and control record updated",
+    "checked_by": "operations staff or supervisor",
+    "overlap_reasoning": "The procedure is part of general administration, and its control record shares work with network logging.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1330"
+    ]
+   }
+  ],
+  "notes": "Some sites may require hands-on switching, but the routine is coded here as predominantly console-based."
+ },
+ {
+  "task_id": "1322",
+  "split_reasoning": "Software and configuration work is computer-based, while assembling and testing hardware requires hands-on work; shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design, configure, and test a network or operating system software configuration.",
+    "time_share": 0.7,
+    "type_reasoning": "The work yields a tested configuration for deployment or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined configuration or change is the unit tested and handed over.",
+    "work_item": "one tested network or operating system configuration",
+    "start": "configuration requirement or change request received",
+    "end": "configuration is tested and handed over or deployed",
+    "checked_by": "network or systems operations team",
+    "overlap_reasoning": "General administration and requirements recommendations share configuration work but have wider or different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1323",
+     "1328"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Configure and test computer hardware hands-on.",
+    "time_share": 0.3,
+    "type_reasoning": "Hardware configuration and testing require handling equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hardware maintenance and troubleshooting can include similar hands-on configuration and tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Hardware design work may also involve computer-based planning; the share depends on the role."
+ },
+ {
+  "task_id": "1323",
+  "split_reasoning": "Improvement recommendations and associated hardware or software requirements are parts of the same proposed change.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a system or network configuration improvement and identify its hardware and software requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces a recommendation that a decision-maker can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposed change and its requirements are normally considered together.",
+    "work_item": "one configuration improvement recommendation",
+    "start": "configuration issue or improvement opportunity identified",
+    "end": "recommendation and requirements submitted for review",
+    "checked_by": "IT manager or system owner",
+    "overlap_reasoning": "Requirements analysis and equipment assessments may inform recommendations, while technology research can lead to separate recommendations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1322",
+     "1328",
+     "1329",
+     "15207"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1324",
+  "split_reasoning": "The target describes one activity: discussing solutions with network users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss a solution to an existing system problem with a network user.",
+    "time_share": 1.0,
+    "type_reasoning": "The discussion is a live service interaction with a user seeking help.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One consultation about a problem is the bounded contact, not the later repair.",
+    "work_item": "one user consultation about a system problem",
+    "start": "user and administrator begin discussing the problem",
+    "end": "solution or next step is explained to the user",
+    "checked_by": "network user",
+    "overlap_reasoning": "Troubleshooting and technical support may include the consultation, but also involve diagnosis and implementation beyond it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205",
+     "15208"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1325",
+  "split_reasoning": "Continuous performance monitoring is recast as an assessment of a defined period or capacity concern.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess network performance and identify current or future adjustment needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Monitoring produces performance assessments or findings that inform network changes.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A periodic or issue-driven assessment is a reviewable unit of analysis.",
+    "work_item": "one network performance assessment",
+    "start": "monitoring period ends or a performance concern is identified",
+    "end": "findings and adjustment needs are recorded or communicated",
+    "checked_by": "network operations team or IT manager",
+    "overlap_reasoning": "Console monitoring can surface the same issues, while recommendations and requirements analysis use some of the same evidence.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1320",
+     "1323",
+     "1328"
+    ]
+   }
+  ],
+  "notes": "Some organizations record findings in tickets rather than formal reports."
+ },
+ {
+  "task_id": "1326",
+  "split_reasoning": "The target is one activity: teaching people to use computer systems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train people to use a computer system.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live instruction and interaction with learners.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "User consultations may explain system use, but focus on solutions to existing problems rather than training generally.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1324"
+    ]
+   }
+  ],
+  "notes": "Preparation of training materials is not specified."
+ },
+ {
+  "task_id": "1327",
+  "split_reasoning": "Loading media, installing software, and replenishing printer supplies are different activities; media and printer work are physical while software installation is computer-based. Shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load computer tapes or disks into equipment.",
+    "time_share": 0.2,
+    "type_reasoning": "Loading media requires hands-on handling of tapes or disks.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Media loading may support backups but is not the entire backup operation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1317"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install software on a computer or server.",
+    "time_share": 0.6,
+    "type_reasoning": "Each installation produces a usable software installation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An installation on a defined machine or deployment target can be checked and handed over.",
+    "work_item": "one software installation",
+    "start": "installation request or approved deployment is received",
+    "end": "software is installed and basic operation verified",
+    "checked_by": "requesting user or systems operations team",
+    "overlap_reasoning": "General administration and application maintenance can include installing software, but also cover other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15206"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Load printer paper or forms.",
+    "time_share": 0.2,
+    "type_reasoning": "Replenishing printer supplies requires hands-on work at the printer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General hardware maintenance is broader than replenishing printer supplies.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318"
+    ]
+   }
+  ],
+  "notes": "The relative frequency of these activities varies considerably by environment."
+ },
+ {
+  "task_id": "1328",
+  "split_reasoning": "Gathering customer information and evaluating requirements are successive steps in one requirements analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather customer needs and analyze system and network requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces requirements that planners or decision-makers can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined request or initiative yields a set of requirements for review, rather than a whole implementation project.",
+    "work_item": "one system or network requirements assessment",
+    "start": "customer need or assessment request identified",
+    "end": "requirements and evaluation communicated for review",
+    "checked_by": "customer, IT manager, or design team",
+    "overlap_reasoning": "Recommendations and performance assessments can use the same requirements and evidence but have distinct purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1322",
+     "1323",
+     "1325"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1329",
+  "split_reasoning": "Reviewing equipment performance records to decide on repair or replacement is one assessment activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze equipment performance records to assess whether repair or replacement is needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment yields a decision or recommendation that maintenance staff can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An equipment item or defined group assessed for a repair-or-replace decision is a reviewable unit.",
+    "work_item": "one equipment repair-or-replacement assessment",
+    "start": "equipment performance records are selected for review",
+    "end": "repair or replacement finding is recorded or communicated",
+    "checked_by": "IT manager or maintenance team",
+    "overlap_reasoning": "Configuration recommendations and troubleshooting can use the same performance evidence but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323",
+     "15205"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1330",
+  "split_reasoning": "Network function logs and maintenance or repair records document different events and are maintained as separate items; shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a network function or operating event in the relevant log.",
+    "time_share": 0.5,
+    "type_reasoning": "Each log entry produces a record that operations staff can consult.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An operating event is recorded and relied on as an individual entry.",
+    "work_item": "one network function log entry",
+    "start": "network event or operating action occurs",
+    "end": "entry is completed in the network log",
+    "checked_by": "network operations staff or auditor",
+    "overlap_reasoning": "Console monitoring and startup or shutdown procedures can generate the same entries as part of broader work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1320",
+     "1321"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record a network maintenance or repair action.",
+    "time_share": 0.5,
+    "type_reasoning": "Each maintenance or repair record documents work for later reference.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed maintenance or repair action is normally documented as one record or ticket update.",
+    "work_item": "one maintenance or repair record",
+    "start": "maintenance or repair action is performed",
+    "end": "details and outcome are entered in the record",
+    "checked_by": "operations staff, supervisor, or auditor",
+    "overlap_reasoning": "Administration and troubleshooting can include recording their actions, but also cover performing the work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15205"
+    ]
+   }
+  ],
+  "notes": "The two record types may be kept in the same system."
+ },
+ {
+  "task_id": "1332",
+  "split_reasoning": "Maintaining a parts inventory involves physical stock checks and computer-based inventory updates; shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and check emergency repair parts on hand.",
+    "time_share": 0.5,
+    "type_reasoning": "Checking physical stock requires handling or inspecting parts away from the computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Purchasing coordination may follow a shortage but is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1333"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Update emergency repair parts inventory records.",
+    "time_share": 0.5,
+    "type_reasoning": "Each inventory update leaves a record that staff use to locate or replenish parts.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A stock count or receipt produces a bounded update to the inventory record.",
+    "work_item": "one inventory record update",
+    "start": "stock count, receipt, or parts usage is reported",
+    "end": "quantities and relevant part details are updated",
+    "checked_by": "repair staff or inventory manager",
+    "overlap_reasoning": "Purchasing coordination may use inventory records but has a different output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1333"
+    ]
+   }
+  ],
+  "notes": "The split depends on whether a separate stockroom team performs physical counts."
+ },
+ {
+  "task_id": "1333",
+  "split_reasoning": "The target is one coordination activity involving vendors and company personnel.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with vendors and company personnel to facilitate a purchase.",
+    "time_share": 1.0,
+    "type_reasoning": "The stated work is coordinating among people, rather than preparing or approving a specified purchasing document.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Purchasing discussions may follow inventory reviews or requirements recommendations, but those have different purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323",
+     "1328",
+     "1332"
+    ]
+   }
+  ],
+  "notes": "If the role includes preparing purchase orders or written quote comparisons, those would be separate discrete outputs not specified here."
+ },
+ {
+  "task_id": "15205",
+  "split_reasoning": "Troubleshooting occurs both while users wait and independently in a work queue, while replacing components is hands-on; shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Diagnose and resolve a system or network problem while a user is present or connected.",
+    "time_share": 0.3,
+    "type_reasoning": "The user is waiting during the live support interaction and any diagnostic work performed within it.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A live troubleshooting contact is bounded by the user's request and the communicated outcome or next step.",
+    "work_item": "one live troubleshooting contact",
+    "start": "user reports a problem during a call, chat, or visit",
+    "end": "fix or next step is communicated before the contact ends",
+    "checked_by": "affected user",
+    "overlap_reasoning": "User consultation shares the discussion, while administration and voice support can include live troubleshooting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1324",
+     "15208"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Diagnose and resolve a hardware, software, or network problem outside a live user contact.",
+    "time_share": 0.5,
+    "type_reasoning": "A queued or internally detected problem produces a documented resolution or escalation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One incident or problem ticket is the normal unit assigned and closed or escalated.",
+    "work_item": "one system or network incident diagnosed and resolved or escalated",
+    "start": "incident ticket or alert is assigned",
+    "end": "resolution is verified and recorded, or the incident is escalated",
+    "checked_by": "operations team and affected system owner",
+    "overlap_reasoning": "Monitoring, recovery, application maintenance, and voice support may include some of the same incident work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1317",
+     "1318",
+     "1320",
+     "1329",
+     "1330",
+     "15206",
+     "15208"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Replace a defective hardware component.",
+    "time_share": 0.2,
+    "type_reasoning": "Component replacement requires hands-on work with equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General hardware maintenance and voice equipment support can include component replacement.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1322",
+     "15208"
+    ]
+   }
+  ],
+  "notes": "The live, back-office, and physical shares depend on the support model and equipment."
+ },
+ {
+  "task_id": "15206",
+  "split_reasoning": "Configuration and maintenance changes differ from monitoring alerts; email and virus protection are alternative application domains for these activities. Shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Configure or maintain an email or virus protection application.",
+    "time_share": 0.6,
+    "type_reasoning": "Each application change produces an updated, checked configuration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific configuration or maintenance change is normally tracked and verified as one unit.",
+    "work_item": "one email or virus protection application change",
+    "start": "maintenance need or change request identified",
+    "end": "change is applied and verified",
+    "checked_by": "application owner or operations team",
+    "overlap_reasoning": "General administration, network security, and software installation can include application changes but are broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1319",
+     "1327",
+     "15205"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Monitor an email or virus protection application and assess an alert.",
+    "time_share": 0.4,
+    "type_reasoning": "Continuous monitoring produces individual alerts or exceptions requiring assessment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An alert is the unit investigated, recorded, or routed.",
+    "work_item": "one email or virus protection alert assessed",
+    "start": "application alert or exception appears",
+    "end": "finding and action or escalation are recorded",
+    "checked_by": "operations or security team",
+    "overlap_reasoning": "Console monitoring and incident troubleshooting may handle the same alert but also cover other systems and actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1320",
+     "15205"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "15207",
+  "split_reasoning": "Keeping current, recommending a technology, and implementing it are different activities; the learning methods are alternatives. Shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research new technologies through seminars, trade articles, or classes.",
+    "time_share": 0.3,
+    "type_reasoning": "The specified learning activity itself need not produce a handoff that someone else checks.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Research can inform improvement recommendations, but those recommendations are a separate output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Recommend implementation of a new technology.",
+    "time_share": 0.3,
+    "type_reasoning": "A recommendation is a distinct proposal for a decision-maker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One technology proposal is the unit submitted for a decision.",
+    "work_item": "one new technology implementation recommendation",
+    "start": "technology and potential organizational use identified",
+    "end": "recommendation is communicated for review",
+    "checked_by": "IT manager or technology decision-maker",
+    "overlap_reasoning": "Configuration improvement recommendations can include new technology, but also cover changes to existing systems.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Implement an approved new technology.",
+    "time_share": 0.4,
+    "type_reasoning": "A defined implementation produces a working technology deployment for users or operations.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A bounded deployment or implementation change is handed over independently of the larger adoption program.",
+    "work_item": "one new technology deployment or implementation change",
+    "start": "implementation is approved and assigned",
+    "end": "technology is configured, tested, and handed over",
+    "checked_by": "system owner and operations team",
+    "overlap_reasoning": "General administration and configuration work may include implementing new technology, but are broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1322"
+    ]
+   }
+  ],
+  "notes": "Some technology deployments require substantial physical installation; the implementation part assumes predominantly computer-based work."
+ },
+ {
+  "task_id": "15208",
+  "split_reasoning": "Implementation and support are different activities; support occurs both live and in a queue, and equipment installation requires hands-on work. Shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Configure and implement a voice service or system change.",
+    "time_share": 0.35,
+    "type_reasoning": "A defined voice service change produces a tested configuration for use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A service or configuration change is the unit normally tested and handed over.",
+    "work_item": "one voice service implementation or configuration change",
+    "start": "approved voice service requirement or change request received",
+    "end": "service change is configured, tested, and handed over",
+    "checked_by": "voice operations team or service owner",
+    "overlap_reasoning": "General administration and system configuration can include voice services but also cover other systems.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1322"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install or maintain voice equipment hands-on.",
+    "time_share": 0.2,
+    "type_reasoning": "Equipment installation and maintenance require physical work at the device.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General hardware maintenance and component replacement can include voice equipment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15205"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Provide voice service technical support while the user is present or connected.",
+    "time_share": 0.2,
+    "type_reasoning": "The user waits during the live support contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One live contact about a voice service issue has a distinct communicated outcome.",
+    "work_item": "one live voice service support contact",
+    "start": "user reports a voice service issue during a contact",
+    "end": "fix or next step is communicated to the user",
+    "checked_by": "affected user",
+    "overlap_reasoning": "User consultation and general troubleshooting can cover the same live discussion, but are not limited to voice services.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1324",
+     "15205"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Resolve a voice service support issue outside a live user contact.",
+    "time_share": 0.25,
+    "type_reasoning": "A queued issue produces a documented resolution or escalation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One voice service incident or request is assigned and closed or escalated as a unit.",
+    "work_item": "one voice service support issue handled",
+    "start": "voice service incident or request is assigned",
+    "end": "outcome is verified and recorded, or the issue is escalated",
+    "checked_by": "voice operations team and affected user",
+    "overlap_reasoning": "General system troubleshooting can include the same voice incidents but also covers other technology.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15205"
+    ]
+   }
+  ],
+  "notes": "The shares depend on whether the organization has a separate telecom team."
+ }
+]

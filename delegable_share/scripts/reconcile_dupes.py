@@ -68,6 +68,10 @@ def main():
         (rdir / "claude").mkdir(parents=True, exist_ok=True)
         (rdir / "terra").mkdir(exist_ok=True)
         (rdir / "disputes.json").write_text(json.dumps(dis, indent=1))
+        if __import__("os").environ.get("NOROUND"):  # BPO run on: one-model flags go to Opus directly
+            for code, v in dis.items():
+                print(code, "agreed", v["agreed"], "| disputed", [(p["a"], p["b"]) for p in v["disputed"]])
+            return
         before = spent()
         for code, v in dis.items():
             if not v["disputed"]:
@@ -112,12 +116,14 @@ def main():
                 out = rdir / f"adjudicated_{code}.json"
                 blocks = "\n\n".join(
                     f"PAIR {p['a']} / {p['b']}\n{p['text']}\nOriginal flag reasoning: "
-                    f"{p['reasoning']}\nVerdict 1: {json.dumps(p['verdicts'].get('claude'))}\n"
-                    f"Verdict 2: {json.dumps(p['verdicts'].get('terra'))}" for p in left)
+                    f"{p['reasoning']}" + (f"\nVerdict 1: {json.dumps(p['verdicts'].get('claude'))}\n"
+                    f"Verdict 2: {json.dumps(p['verdicts'].get('terra'))}" if p['verdicts'] else "")
+                    for p in left)
                 (rdir / f"adjudicate_{code}.md").write_text(
                     "You are the final adjudicator. Use only this file: read no other file and "
-                    "do not search the web.\nTwo checkers disagree, after seeing each other's "
-                    "views, about whether each pair below is a duplicate under these rules:\n"
+                    "do not search the web.\nTwo independent checkers disagree (one flagged the "
+                    "pair, the other did not) about whether each pair below is a duplicate under "
+                    "these rules:\n"
                     f"{RULES}\nMake the final call for each pair. Write ONE JSON array of "
                     '{"a","b","reasoning","duplicate": true|false} to:\n'
                     f"  {out}\nand nothing else to that file. Then reply \"done <n> pairs\".\n\n"
@@ -139,11 +145,27 @@ def main():
         src = ROOT / "coding" / "stage1" / tag / "units.csv"
         rows = list(csv.DictReader(open(src)))
         key = {f"{r['task_id']}{r['part_id']}": r for r in rows}
-        drop = set()
+        # Merge whole groups (pairs can chain, e.g. a=b, a=c, b=c): keep the first member; its
+        # weight is the mean of the group's weights (symmetric collapse, DECISIONS 2026-11-09).
+        parent = {}
+
+        def find(x):
+            parent.setdefault(x, x)
+            while parent[x] != x:
+                x = parent[x]
+            return x
         for a, b in pairs:
-            key[a]["weight"] = round((float(key[a]["weight"]) + float(key[b]["weight"])) / 2, 4)
-            key[a]["collapsed_with"] = b
-            drop.add(b)
+            parent[find(b)] = find(a)
+        groups = {}
+        for x in list(parent):
+            groups.setdefault(find(x), []).append(x)
+        drop = set()
+        for members in groups.values():
+            members = sorted(members)
+            keep = members[0]
+            key[keep]["weight"] = round(sum(float(key[m]["weight"]) for m in members) / len(members), 4)
+            key[keep]["collapsed_with"] = ";".join(members[1:])
+            drop |= set(members[1:])
         out = [dict(r, collapsed_with=r.get("collapsed_with", "")) for r in rows
                if f"{r['task_id']}{r['part_id']}" not in drop]
         with open(src.with_name("units_final.csv"), "w", newline="") as f:

@@ -1,0 +1,632 @@
+[
+ {
+  "task_id": "1317",
+  "split_reasoning": "Two different activities: routine backups, and recovery operations after a failure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run and verify a scheduled data backup.",
+    "time_share": 0.7,
+    "type_reasoning": "Each backup produces a stored copy others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Backups run as jobs and are checked one at a time.",
+    "work_item": "one backup job run and verified",
+    "start": "scheduled backup time",
+    "end": "job completed and checked in the log",
+    "checked_by": "IT manager and users who may need restores",
+    "duplicates": [],
+    "overlaps_with": [
+     "1330"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Carry out a disaster recovery or restore operation.",
+    "time_share": 0.3,
+    "type_reasoning": "Each restore returns data or systems to service for users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Restores are done per incident or test.",
+    "work_item": "one restore or recovery operation",
+    "start": "restore requested or failure declared",
+    "end": "data or system confirmed restored",
+    "checked_by": "affected users and IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1318",
+  "split_reasoning": "Two kinds of work: scheduled maintenance changes, and administration requests from users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make a maintenance change to networks, servers, systems software or configurations.",
+    "time_share": 0.6,
+    "type_reasoning": "Each change is a unit others rely on being done correctly.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes are done one at a time under a change ticket.",
+    "work_item": "one maintenance change implemented",
+    "start": "change scheduled or approved",
+    "end": "change done and verified",
+    "checked_by": "IT manager and affected users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1319",
+     "1322",
+     "15205"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Handle an administration request such as an account, access or software setup.",
+    "time_share": 0.4,
+    "type_reasoning": "Each request ends in a completed ticket the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests come in through a queue one at a time.",
+    "work_item": "one administration request handled",
+    "start": "request logged",
+    "end": "request completed and user told",
+    "checked_by": "the requesting user",
+    "duplicates": [],
+    "overlaps_with": [
+     "1324"
+    ]
+   }
+  ],
+  "notes": "The statement is very broad; the two kinds of work are a judgment. Hardware handling is covered under other statements."
+ },
+ {
+  "task_id": "1319",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and put in place security measures to protect data, software and hardware.",
+    "time_share": 1.0,
+    "type_reasoning": "Each measure is a deployed protection that managers and auditors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Measures are planned and rolled out one at a time.",
+    "work_item": "one security measure planned and implemented",
+    "start": "security risk or requirement identified",
+    "end": "measure working and documented",
+    "checked_by": "IT manager and auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "15206"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1320",
+  "split_reasoning": "Console operation is continuous but yields two kinds of item: alerts or issues, and access requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Handle an alert or issue seen on the master console.",
+    "time_share": 0.6,
+    "type_reasoning": "Each alert ends in a resolution or escalation others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alerts are handled one at a time.",
+    "work_item": "one console alert handled",
+    "start": "alert seen",
+    "end": "fixed or escalated and logged",
+    "checked_by": "IT manager and affected users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1325"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Coordinate access to the network or system for a user or job.",
+    "time_share": 0.4,
+    "type_reasoning": "Each coordination produces an access outcome the user relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests are dealt with one at a time.",
+    "work_item": "one access request coordinated",
+    "start": "request received",
+    "end": "access given or refused and noted",
+    "checked_by": "the requesting user",
+    "duplicates": [],
+    "overlaps_with": [
+     "1321"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1321",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run a routine network startup or shutdown and keep the control record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each run is a procedure completed with a record others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Startups and shutdowns are run and logged one at a time.",
+    "work_item": "one startup or shutdown procedure with record",
+    "start": "scheduled startup or shutdown time",
+    "end": "procedure done and control record filed",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1330"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1322",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design, configure and test hardware, networking software or operating system software.",
+    "time_share": 1.0,
+    "type_reasoning": "Each result is a configured, tested setup others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Setups are done one at a time and handed over after testing.",
+    "work_item": "one system or network setup designed, configured and tested",
+    "start": "requirement for new setup",
+    "end": "tested setup handed over",
+    "checked_by": "IT manager and users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1318",
+     "1323"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1323",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend changes to improve systems and network configurations and the hardware or software they need.",
+    "time_share": 1.0,
+    "type_reasoning": "Each recommendation is a document managers decide on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recommendations are made per proposed change.",
+    "work_item": "one improvement recommendation",
+    "start": "weakness or opportunity noticed",
+    "end": "recommendation delivered",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1325",
+     "1328",
+     "1333"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1324",
+  "split_reasoning": "Same activity done in two places: with the user at the desk or on the phone, and afterwards through written messages.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Talk to a user, while they are on the line or at the desk, about a current system problem.",
+    "time_share": 0.5,
+    "type_reasoning": "The user waits while the problem is discussed or fixed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each contact is resolved or referred within one conversation.",
+    "work_item": "one live conversation about a system problem",
+    "start": "user calls or arrives with a problem",
+    "end": "problem fixed or referred and user told",
+    "checked_by": "the user and the IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Follow up with a user about a system problem by email or ticket.",
+    "time_share": 0.5,
+    "type_reasoning": "Done from written messages with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Messages are handled one at a time.",
+    "work_item": "one written follow-up on a system problem",
+    "start": "user message or ticket received",
+    "end": "reply sent and ticket updated",
+    "checked_by": "the user",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Live share depends on the workplace."
+ },
+ {
+  "task_id": "1325",
+  "split_reasoning": "Monitoring is continuous but yields two kinds of item: alerts investigated, and periodic performance reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a performance alert on the network and decide if an adjustment is needed.",
+    "time_share": 0.5,
+    "type_reasoning": "Each ends in a tuning action or finding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alerts are handled individually.",
+    "work_item": "one performance alert investigated",
+    "start": "alert or slowdown noticed",
+    "end": "adjustment made or finding logged",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1320"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write a periodic network performance and capacity report on future changes.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a report managers plan from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is handed over per period.",
+    "work_item": "one periodic performance report",
+    "start": "reporting period ends",
+    "end": "report sent",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1326",
+  "split_reasoning": "One activity: training.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train people to use computer systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Teaching is a live session and nothing is checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1327",
+  "split_reasoning": "One statement mixes physical work (loading media and paper) and computer work (installing software).",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load tapes, disks, printer paper or forms by hand.",
+    "time_share": 0.5,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1317"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install software on systems.",
+    "time_share": 0.5,
+    "type_reasoning": "Each install produces working software users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Installs are done one at a time.",
+    "work_item": "one software installation",
+    "start": "install requested",
+    "end": "software installed and verified",
+    "checked_by": "the users",
+    "duplicates": [],
+    "overlaps_with": [
+     "15206"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1328",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather data about customer needs and use it to identify, predict and evaluate system and network requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment is a requirements document used for planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Assessments are done per need or project.",
+    "work_item": "one system requirements assessment",
+    "start": "customer need raised",
+    "end": "requirements assessment delivered",
+    "checked_by": "IT manager and customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1329",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze equipment performance records to decide whether to repair or replace.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis ends in a repair or replace decision others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Analyses are done per piece or group of equipment.",
+    "work_item": "one repair-or-replace assessment",
+    "start": "equipment records pulled",
+    "end": "recommendation given",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1330",
+     "15205"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1330",
+  "split_reasoning": "Logging yields two kinds of item: logs of network operation, and maintenance or repair records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the log of network functions.",
+    "time_share": 0.5,
+    "type_reasoning": "Each log entry set is relied on for audit and tracing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Logs are updated per shift or day.",
+    "work_item": "one network function log update",
+    "start": "shift or period begins",
+    "end": "log updated",
+    "checked_by": "IT manager and auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1321"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record maintenance and repair work after it is done.",
+    "time_share": 0.5,
+    "type_reasoning": "Each record is relied on for history.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Records are written per job.",
+    "work_item": "one maintenance or repair record",
+    "start": "work finished",
+    "end": "record filed",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1332",
+  "split_reasoning": "Physical stock counting differs from record keeping.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check parts stock on the shelf.",
+    "time_share": 0.4,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1333"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Update the parts inventory and flag reorders.",
+    "time_share": 0.6,
+    "type_reasoning": "Each update is a record others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Updates are made per check or use.",
+    "work_item": "one inventory update",
+    "start": "parts used or counted",
+    "end": "inventory records updated",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1333"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "1333",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with vendors and company staff so that a purchase is made.",
+    "time_share": 1.0,
+    "type_reasoning": "Each purchase ends in an order placed that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Purchases are handled one at a time.",
+    "work_item": "one purchase coordinated",
+    "start": "need approved",
+    "end": "order placed with vendor",
+    "checked_by": "purchasing or IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1332",
+     "1323"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "15205",
+  "split_reasoning": "Two kinds of work: diagnosing and fixing problems at a computer, and physically swapping components.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Diagnose and resolve a hardware, software or network problem from a computer.",
+    "time_share": 0.8,
+    "type_reasoning": "Each fix is a closed problem others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Problems are handled as tickets one at a time.",
+    "work_item": "one problem diagnosed and resolved",
+    "start": "problem reported or detected",
+    "end": "fix confirmed and ticket closed",
+    "checked_by": "affected user and IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1324",
+     "1329"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Replace a defective component by hand.",
+    "time_share": 0.2,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1329"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "15206",
+  "split_reasoning": "Work comes as two kinds of item: configuration changes, and alerts to investigate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make a configuration change to email or virus protection software.",
+    "time_share": 0.4,
+    "type_reasoning": "Each change is a deliverable others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes are made one at a time.",
+    "work_item": "one email or antivirus configuration change",
+    "start": "change needed",
+    "end": "change in place and checked",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1319"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate an alert from email or virus protection.",
+    "time_share": 0.6,
+    "type_reasoning": "Each ends in a resolution or escalation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alerts arrive and are handled one at a time.",
+    "work_item": "one email or virus alert investigated",
+    "start": "alert raised",
+    "end": "dealt with and logged",
+    "checked_by": "IT manager and affected users",
+    "duplicates": [],
+    "overlaps_with": [
+     "1319"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "15207",
+  "split_reasoning": "Learning is separate from the recommendations or implementations it leads to.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend seminars, read articles or take classes on new technologies.",
+    "time_share": 0.6,
+    "type_reasoning": "Nothing is produced for others.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Recommend or implement a new technology after research.",
+    "time_share": 0.4,
+    "type_reasoning": "Each produces a proposal or rollout managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per technology.",
+    "work_item": "one new technology recommendation or implementation",
+    "start": "research complete",
+    "end": "recommendation made or technology live",
+    "checked_by": "IT manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1323"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "15208",
+  "split_reasoning": "Two kinds of work: setting up voice systems, and supporting users of them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install or configure voice services and equipment such as PBX or voice mail.",
+    "time_share": 0.4,
+    "type_reasoning": "Each install produces a working service users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done one system or change at a time.",
+    "work_item": "one voice system change implemented",
+    "start": "change requested",
+    "end": "change working and verified",
+    "checked_by": "IT manager and phone users",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Resolve a user's voice service problem.",
+    "time_share": 0.6,
+    "type_reasoning": "Each ends in a fixed problem.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Problems are handled as tickets.",
+    "work_item": "one voice support request resolved",
+    "start": "request received",
+    "end": "problem fixed and closed",
+    "checked_by": "the user",
+    "duplicates": [],
+    "overlaps_with": [
+     "15205"
+    ]
+   }
+  ],
+  "notes": "Voice support may be partly live phone or desk work and partly physical handset swaps."
+ }
+]

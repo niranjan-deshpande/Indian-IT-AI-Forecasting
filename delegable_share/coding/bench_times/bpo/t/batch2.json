@@ -1,0 +1,408 @@
+[
+ {
+  "item_id": "theagentcompany:ds-organise-report-sus-data",
+  "reasoning": "Review the folder's filenames, classify overlapping naming problems, and send Jessica a checked report. Time depends on the number of files.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 60
+ },
+ {
+  "item_id": "terminal_bench_4:vba-userform-port",
+  "reasoning": "This requires reverse-engineering the VBA application's forms and behavior, then implementing and testing a full-stack replacement. The amount of legacy functionality is not specified, so the range is broad.",
+  "estimate_min": 1200,
+  "low_min": 480,
+  "high_min": 3000
+ },
+ {
+  "item_id": "terminal_bench_4:atrx-vep-crispr",
+  "reasoning": "Reconstruct and compare transcripts, run transcript-specific offline VEP annotation, and carefully validate genomic mapping and CRISPR targeting. The work combines several error-prone bioinformatics steps and a strict output contract.",
+  "estimate_min": 720,
+  "low_min": 360,
+  "high_min": 1500
+ },
+ {
+  "item_id": "spider2:sf018",
+  "reasoning": "Read the supplied push-notification definitions, identify relevant event tables and time filters, and validate the SQL result.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "swe_lancer:44804_694",
+  "reasoning": "Trace the account-settings indicator to its underlying condition, fix the missing notice or incorrect indicator, and test the relevant navigation flows.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 420
+ },
+ {
+  "item_id": "ui_cube:input-boxes--18",
+  "reasoning": "Use keyboard focus and the widget's increments to set the exact budget, then verify the value.",
+  "estimate_min": 2,
+  "low_min": 0.5,
+  "high_min": 5
+ },
+ {
+  "item_id": "healthadminbench:denial-hard-19",
+  "reasoning": "Review clinical and remittance records, compare the authorization with the billed service, and file an evidence-backed appeal and detailed triage note.",
+  "estimate_min": 35,
+  "low_min": 20,
+  "high_min": 65
+ },
+ {
+  "item_id": "healthadminbench:fax-hard-4",
+  "reasoning": "Inspect the order and supporting documents, determine whether the BiPAP request can proceed, and record the findings and action.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "theagentcompany:pm-create-channel-message",
+  "reasoning": "Create the public channel, invite the named colleague, and post the specified welcome message.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 7
+ },
+ {
+  "item_id": "terminal_bench_4:nextjs-performance",
+  "reasoning": "Profile and remove latency across several routes and mutation flows while preserving behavior and appearance, then measure and regression-test the production app.",
+  "estimate_min": 600,
+  "low_min": 300,
+  "high_min": 1200
+ },
+ {
+  "item_id": "ui_cube:navigation-hierarchical-spatial--14",
+  "reasoning": "Scroll the tab row, select Tab 9, and verify the selection.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "spider2:sf_bq461",
+  "reasoning": "Identify the game and scoring-play schema, construct a chronological query with cumulative team scores, and check the result.",
+  "estimate_min": 50,
+  "low_min": 20,
+  "high_min": 110
+ },
+ {
+  "item_id": "swe_bench_verified:pytest-dev__pytest-10081",
+  "reasoning": "Reproduce the class-level skip behavior under pdb, trace pytest's unittest teardown handling, and implement and test a targeted fix.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 360
+ },
+ {
+  "item_id": "dualentry:example_6_financial_reporting",
+  "reasoning": "Subtract operating expenses, including depreciation but excluding interest, from revenue and check the arithmetic.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "healthadminbench:denial-easy-4",
+  "reasoning": "Review the denial and available records, choose the appropriate disposition, and document the rationale.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "theagentcompany:sde-create-new-characters",
+  "reasoning": "Clone the repository, inspect its character schema and contribution instructions, create twelve valid balanced records on the requested branch, and verify them.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "spider2:sf_bq331",
+  "reasoning": "Find topic, message, vote and user relationships, then compute distinct-voter scores, the overall first-message average, and the top three.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "vals_finance_agent:13",
+  "reasoning": "Find Zillow's cash flow, capital expenditure and revenue figures for three years, compute the margins, and describe their trend.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "terminal_bench_4:payments-pipeline-fix",
+  "reasoning": "Diagnose startup and notification delivery across respawns and rolling deployments, implement a reliable low-latency fix, and test for omissions and duplicates.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 960
+ },
+ {
+  "item_id": "swe_lancer:42525_1141",
+  "reasoning": "Trace the expense-title editor and save validation, prevent empty titles consistently, and test save and reopening behavior.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 330
+ },
+ {
+  "item_id": "ui_cube:sap-stock--3",
+  "reasoning": "Run four material searches, count companies in each result, and submit and verify the JSON.",
+  "estimate_min": 7,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "theagentcompany:sde-create-new-repo",
+  "reasoning": "Contact Zhang, use his project information to create a public repository and update its README, then verify the URL and content.",
+  "estimate_min": 15,
+  "low_min": 7,
+  "high_min": 30
+ },
+ {
+  "item_id": "vals_finance_agent:11",
+  "reasoning": "Locate monthly revenue history and Q1 guidance, calculate the specified March growth average and projection, and reconcile currencies and guidance units.",
+  "estimate_min": 45,
+  "low_min": 25,
+  "high_min": 90
+ },
+ {
+  "item_id": "terminal_bench_4:mvcc-lsm-compaction",
+  "reasoning": "Analyze the crash reproducer and MVCC retention rules, implement a compaction-safe correction, and add a deterministic regression test.",
+  "estimate_min": 420,
+  "low_min": 180,
+  "high_min": 900
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_massive_backfill:customer_birth_decade_backfill",
+  "reasoning": "Assess workload and data risks, design a throttled backfill, and monitor application health and completion throughout execution. Active time excludes unattended execution.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "vals_finance_agent:43",
+  "reasoning": "Find the relevant Airbnb regional booking and nights figures or a disclosed metric, then compute and check the 2024 average.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 70
+ },
+ {
+  "item_id": "dualentry:example_8_accounting_knowledge",
+  "reasoning": "Explain how FIFO and LIFO assign inventory costs and their implications under GAAP.",
+  "estimate_min": 3,
+  "low_min": 1,
+  "high_min": 6
+ },
+ {
+  "item_id": "spider2:sf_local264",
+  "reasoning": "Inspect the model-comparison tables, identify how steps and versions are represented, and aggregate the requested model categories.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "dba_bench:pg_resource_governance_audit_logging:audit_orders_role_logging",
+  "reasoning": "Trace the excessive logging to its settings or audit configuration, retain required write and administrative audit coverage, and verify checkout operations and logs.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 180
+ },
+ {
+  "item_id": "dba_bench:pg_resource_governance_io_context_workload:report_is_pressure_simple",
+  "reasoning": "Correlate I/O and application metrics to identify the causal workload, control it without changing job results, and verify the SLO and required jobs.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "ui_cube:navigation-lists-tables--1",
+  "reasoning": "Use the pagination controls to reach page 5 and confirm it is selected.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "terminal_bench_4:vpp-loss-divergence",
+  "reasoning": "Isolate numerical divergence in installed distributed-training framework code, correct the underlying behavior, and validate the pristine workload against a strict trace tolerance.",
+  "estimate_min": 720,
+  "low_min": 300,
+  "high_min": 1800
+ },
+ {
+  "item_id": "ui_cube:navigation-hierarchical-spatial--4",
+  "reasoning": "Open the Products menu and navigate its nested panel to React Components.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 3
+ },
+ {
+  "item_id": "theagentcompany:sde-reply-community-issue-by-asking-npc",
+  "reasoning": "Read the issue, ask Mike for guidance, and post a reply consistent with his response.",
+  "estimate_min": 12,
+  "low_min": 5,
+  "high_min": 25
+ },
+ {
+  "item_id": "vals_finance_agent:34",
+  "reasoning": "Find Uber's 2023 EBITDA reconciliation, compare the adjustment line items, and report the largest with its amount.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "theagentcompany:sde-move-bustub-wiki",
+  "reasoning": "Copy the issue's project instructions into a new wiki page without losing key information, then save and verify its URL in the requested file.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "ui_cube:sap-stock--8",
+  "reasoning": "Search the material, expand the relevant plant's stock tree, and submit the storage-location names as JSON.",
+  "estimate_min": 4,
+  "low_min": 2,
+  "high_min": 9
+ },
+ {
+  "item_id": "terminal_bench_4:pretrain-shard-corruption",
+  "reasoning": "Investigate the training data and recover the exact intended examples rather than approximations, then verify a legitimate training run and checkpoint. The recovery path is unspecified.",
+  "estimate_min": 540,
+  "low_min": 240,
+  "high_min": 1200
+ },
+ {
+  "item_id": "swe_bench_verified:matplotlib__matplotlib-25775",
+  "reasoning": "Add per-text antialiasing properties, propagate them through drawing and applicable backends, and cover Text and Annotation behavior with tests.",
+  "estimate_min": 240,
+  "low_min": 100,
+  "high_min": 500
+ },
+ {
+  "item_id": "ui_cube:salesforce--6",
+  "reasoning": "Find and edit four leads individually, setting and checking each employee range.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "ui_cube:time-pickers--11",
+  "reasoning": "Set both endpoints in the business-hours widget and verify the resulting times.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "dba_bench:pg_system_failure_connection_bloat:checkout_connection_and_bloat",
+  "reasoning": "Diagnose connection saturation and discover table bloat, safely remediate both causes, and confirm service recovery.",
+  "estimate_min": 120,
+  "low_min": 55,
+  "high_min": 240
+ },
+ {
+  "item_id": "spider2:sf_local062",
+  "reasoning": "Find the customer, sales and product cost relationships, calculate monthly customer profits, and implement equal-width buckets with correct boundary handling.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "swe_bench_verified:sympy__sympy-15875",
+  "reasoning": "Trace the assumptions logic for sums involving complex expressions, correct the unsound zero inference, and test related cases for regressions.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 540
+ },
+ {
+  "item_id": "ui_cube:navigation-lists-tables--9",
+  "reasoning": "Click the Age column until it is sorted descending and verify the order.",
+  "estimate_min": 1,
+  "low_min": 0.5,
+  "high_min": 2
+ },
+ {
+  "item_id": "theagentcompany:sde-implement-covering-index-in-janusgraph",
+  "reasoning": "Implement an index API and storage/query-path changes in a substantial database system, then run correctness tests and a Cassandra-backed performance benchmark. Achieving the required speedup makes the scope highly uncertain.",
+  "estimate_min": 2400,
+  "low_min": 960,
+  "high_min": 6000
+ },
+ {
+  "item_id": "healthadminbench:denial-medium-7",
+  "reasoning": "Review the denial and remittance, file an emergency-service appeal with the appropriate argument, and document the investigation in EMR.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-23-6140e09e",
+  "reasoning": "Review the memo and exports, map collections to classes and customers, calculate monthly changes, and identify the largest Real Estate fluctuation.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "spider2:sf_bq427",
+  "reasoning": "Interpret the court-coordinate documentation and basket orientation, join the relevant shot data, and validate the grouped averages and filters.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-30-b66225e0",
+  "reasoning": "Inspect the aging workpaper, compute each bucket's share of total receivables, and check the percentages against the supporting totals.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "spider2:sf_local284",
+  "reasoning": "Find the relevant wholesale loss-rate data and calculate its mean, standard deviation, and counts in the requested ranges.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 100
+ },
+ {
+  "item_id": "dba_bench:pg_resource_governance_host_backup:nightly_backup_read_saturation",
+  "reasoning": "Correlate host I/O pressure with the backup stream, safely limit or move it, and verify report recovery.",
+  "estimate_min": 65,
+  "low_min": 30,
+  "high_min": 140
+ },
+ {
+  "item_id": "vals_finance_agent:5",
+  "reasoning": "Find and compare the companies' 2025 capital spending plans, checking definitions and contemporaneous sources.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "dba_bench:pg_health_check_unused_indexes:customer_unused_index_simple",
+  "reasoning": "Review index usage, dependencies and change history, retire only safe implicated indexes with bounded operations, and verify protected paths.",
+  "estimate_min": 90,
+  "low_min": 40,
+  "high_min": 180
+ },
+ {
+  "item_id": "terminal_bench_4:wdm-design",
+  "reasoning": "Design and optimize a manufacturable binary photonic structure against demanding broadband transmission and leakage constraints, then validate with the specified simulation normalization. Iterative numerical design makes the active effort highly uncertain.",
+  "estimate_min": 1800,
+  "low_min": 720,
+  "high_min": 4800
+ },
+ {
+  "item_id": "spider2:sf_bq098",
+  "reasoning": "Read the taxi documentation, identify borough joins, implement the date and data-quality filters, and check the no-tip percentage calculation.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "vals_finance_agent:46",
+  "reasoning": "Locate Shift4's Q1 guidance and Q3 reported payment volume, calculate the guidance midpoint, and express the variance as a percentage.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "theagentcompany:ds-find-meeting-spreadsheet",
+  "reasoning": "Find the relevant spreadsheet in the document folder, download it to the workspace, and write and verify its link.",
+  "estimate_min": 12,
+  "low_min": 5,
+  "high_min": 25
+ }
+]

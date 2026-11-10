@@ -1,4 +1,4 @@
-# Stages 2+3 combined: features and benchmark match — v1 (2026-11-09)
+# Stages 2+3 combined: features and benchmark match — v1.1 (2026-11-10: worked examples A–B swapped out of the BPO set)
 
 One pass per item: the Stage 2 v3 feature questions (unchanged, from `stage2_features.md`), then
 the benchmark match (from `stage3_match.md`). Folded at the user's suggestion: one read of the
@@ -39,55 +39,55 @@ Add these fields to each item's output, after the feature fields:
 
 ## Worked examples
 
-### Example A — Bookkeeping, Accounting, and Auditing Clerks
-Work item: one batch of postings checked (e.g. a day's entries for one ledger). Start: batch of
-entries and source documents received for review. End: batch marked verified, with errors corrected
-or flagged. Checked by: senior accountant or auditor. Type: DISCRETE.
+### Example A — Executive Secretaries and Executive Administrative Assistants
+Work item: one document checked and returned with revisions (e.g. a letter, memo or report).
+Start: document received for checking. End: marked-up document returned to the author. Checked
+by: the author, and the executive who signs it. Type: DISCRETE.
 
 ```json
 {
   "item_id": "example-A",
   "unit_flag": false, "unit_flag_reason": "",
-  "domain_reasoning": "Most of the time goes into opening entries in the accounting system and comparing them with source documents on screen.",
-  "domain": "computer_use",
-  "length_reasoning": "A small batch of routine entries takes a quarter of an hour; a month-end batch with many accruals and exceptions takes a couple of hours.",
-  "length_p10": 15, "length_p50": 40, "length_p90": 120, "two_groups": false,
-  "review_reasoning": "A senior accountant checks a short batch by opening the sign-off and spot-checking a few entries; a typical batch needs a few more entries traced to source; a month-end batch needs the exceptions and accruals checked one by one.",
-  "review_p10": 4, "review_p50": 8, "review_p90": 18,
-  "stakes_reasoning": "A missed miscoding usually surfaces at reconciliation and is corrected by a journal entry; a large one can reach the financial statements.",
-  "stakes": "medium", "stakes_p90": "high",
-  "context_reasoning": "Needs the company's chart of accounts and coding rules, learned over a few weeks.",
+  "domain_reasoning": "The work is reading and marking up text; the editor is just where it happens.",
+  "domain": "text",
+  "length_reasoning": "A one-page letter takes a few minutes; a long report with tables and house-style rules takes most of an hour.",
+  "length_p10": 5, "length_p50": 15, "length_p90": 60, "two_groups": false,
+  "review_reasoning": "For a short letter the author accepts or rejects the tracked changes in a minute or two; a typical memo needs the changes read in context; a long report needs a few sections reread.",
+  "review_p10": 1, "review_p50": 3, "review_p90": 10,
+  "stakes_reasoning": "A missed error is usually caught by the signer; one that goes out is embarrassing but rarely costly.",
+  "stakes": "low", "stakes_p90": "medium",
+  "context_reasoning": "Needs the company's house style and the executive's preferences, learned in a few weeks.",
   "context": "medium",
-  "match_reasoning": "APEX-Accounting items are month-end accounting work in an accounting system against source documents, which shares the main actions, but they produce entries and reconciliations rather than checking someone else's. DualEntry also has single bookkeeping entries, but as short cases given as data rather than a batch checked in a system.",
-  "best": "apex_accounting", "best_match": "partial",
-  "best_difference": "the benchmark produces accounting work; this item checks work already entered",
-  "second": "dualentry", "second_match": "partial"
+  "match_reasoning": "GDPval items are written deliverables judged by experts, which shares the main action of producing a professional document, but they create a document from a brief rather than correcting someone else's. No other benchmark involves editing text.",
+  "best": "gdpval", "best_match": "partial",
+  "best_difference": "the benchmark produces a new document; this item corrects an existing one",
+  "second": "none", "second_match": "none"
 }
 ```
 
-### Example B — Network and Computer Systems Administrators
-Work item: one performance alert investigated. Start: alert raised by monitoring tool. End: cause
-recorded and either adjustment requested or alert closed as no action. Checked by: on-call lead /
-change board. Type: DISCRETE.
+### Example B — Market Research Analysts and Marketing Specialists
+Work item: one statistics release reviewed and summarised. Start: new release of industry figures
+published. End: note on the notable changes sent to the team. Checked by: marketing manager.
+Type: DISCRETE.
 
 ```json
 {
   "item_id": "example-B",
   "unit_flag": false, "unit_flag_reason": "",
-  "domain_reasoning": "The work is in monitoring dashboards, logs and device consoles.",
+  "domain_reasoning": "Most of the time goes into pulling the figures into a spreadsheet and comparing them with earlier releases.",
   "domain": "computer_use",
-  "length_reasoning": "Most alerts are transient or known and closed in minutes; a real fault can take an hour or more to trace.",
-  "length_p10": 5, "length_p50": 20, "length_p90": 90, "two_groups": true,
-  "review_reasoning": "For a quick alert the lead reads the closing note and glances at the triggering graph; a typical one also needs the cause checked against the logs; a long investigation needs its chain of reasoning followed.",
-  "review_p10": 2, "review_p50": 4, "review_p90": 12,
-  "stakes_reasoning": "A wrongly closed alert usually recurs and is caught, but a missed real fault can become an outage.",
-  "stakes": "medium", "stakes_p90": "high",
-  "context_reasoning": "Telling noise from a real problem needs months of knowing this network's normal behaviour and history.",
-  "context": "high",
-  "match_reasoning": "ITBench items start from alerts and telemetry and end with the cause named, which is the same investigation, but for application services on Kubernetes rather than network devices. Terminal-Bench 2 has some system-administration diagnosis at the command line, but mostly configuration rather than alert triage.",
-  "best": "itbench_sre", "best_match": "partial",
-  "best_difference": "application incidents on Kubernetes rather than network performance",
-  "second": "terminal_bench_2", "second_match": "partial"
+  "length_reasoning": "A routine monthly release with small changes takes a quarter of an hour; a large annual release with revised series takes a few hours.",
+  "length_p10": 15, "length_p50": 45, "length_p90": 180, "two_groups": false,
+  "review_reasoning": "For a routine release the manager reads the note; a typical one needs a couple of figures checked against the release; a large one needs the comparisons spot-checked.",
+  "review_p10": 2, "review_p50": 5, "review_p90": 15,
+  "stakes_reasoning": "A wrong figure in the note can mislead a planning decision, but it is usually caught when the trend report is written.",
+  "stakes": "medium", "stakes_p90": "medium",
+  "context_reasoning": "Needs to know which series matter for this company's markets, learned over a few weeks.",
+  "context": "medium",
+  "match_reasoning": "Finch items are business spreadsheet workflows that include pulling figures across sheets and checking them, which shares the main actions, but they are finance and accounting workbooks rather than published statistics. SpreadsheetBench 2 has similar workbook work but builds models to a specification.",
+  "best": "finch", "best_match": "partial",
+  "best_difference": "finance workbooks rather than published industry statistics, and no written summary",
+  "second": "spreadsheetbench_2", "second_match": "partial"
 }
 ```
 

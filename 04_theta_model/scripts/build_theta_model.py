@@ -17,7 +17,8 @@ OUT = ROOT / "docs" / "theta-model.html"
 STYLE_FROM = ROOT / "docs" / "health-check.html"
 
 CRUMBS = ('<a href="index.html">Pilot note</a> · <a href="two-questions.html">Two questions (working draft)</a> · '
-          '<a href="health-check.html">Health check</a> · <b>Estimating θ (working draft)</b>')
+          '<a href="health-check.html">Health check</a> · <b>Estimating θ (working draft)</b> · '
+          '<a href="delegable-share.html">Delegable share</a>')
 UNNUMBERED = {"Sources"}
 EXTRA_CSS = """
 /* this page */

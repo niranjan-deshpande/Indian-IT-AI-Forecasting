@@ -1,0 +1,583 @@
+[
+ {
+  "task_id": "23313",
+  "split_reasoning": "One activity: preparing a claim form and checking it is complete; each claim is handled as one form.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a claim form or related document and review it for completeness.",
+    "time_share": 1.0,
+    "type_reasoning": "Each claim form is a deliverable the adjuster relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Claims are worked one at a time and the form goes forward as a whole.",
+    "work_item": "one claim form prepared and checked for completeness",
+    "start": "claim notice or information received",
+    "end": "complete form ready for adjudication or routed",
+    "checked_by": "claims adjuster or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23323",
+     "23317",
+     "23319"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23314",
+  "split_reasoning": "One activity: working out a claim amount.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate the amount payable on a claim.",
+    "time_share": 1.0,
+    "type_reasoning": "Each calculation produces a figure that others rely on for payment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each claim gets its own amount.",
+    "work_item": "one claim amount calculated",
+    "start": "claim details and coverage in hand",
+    "end": "amount recorded on the claim file",
+    "checked_by": "claims adjuster, supervisor, or accounting",
+    "duplicates": [],
+    "overlaps_with": [
+     "23316",
+     "23328",
+     "23318"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23315",
+  "split_reasoning": "One activity: filing information into a claim file, done in the back office.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post or attach incoming information and documents to a claim file.",
+    "time_share": 1.0,
+    "type_reasoning": "Done from a queue of documents with no one waiting; the file is relied on by later handlers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Items are filed per claim, usually in a batch.",
+    "work_item": "one batch of documents posted to claim files",
+    "start": "documents or information received",
+    "end": "items attached and file updated",
+    "checked_by": "adjuster and downstream claim handlers",
+    "duplicates": [],
+    "overlaps_with": [
+     "23326",
+     "23320"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23316",
+  "split_reasoning": "One activity: sending a claim on, whether for payment or investigation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transmit a completed claim for payment or for further investigation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each transmission is a handover someone downstream relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Claims are routed one at a time into the payment or investigation queue.",
+    "work_item": "one claim transmitted for payment or investigation",
+    "start": "claim reviewed and ready to route",
+    "end": "claim received by payment or investigation unit",
+    "checked_by": "payment unit, investigator, or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23314",
+     "23328"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23317",
+  "split_reasoning": "Same activity (getting missing information) done in two places: by phone while the person is on the line, and by letter or email afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Phone the insured or other involved person and obtain missing claim information while they are on the line.",
+    "time_share": 0.5,
+    "type_reasoning": "The person is on the call while the information is gathered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is completed within one contact.",
+    "work_item": "one outbound call to obtain missing claim information",
+    "start": "person reached and asked for the missing details",
+    "end": "information obtained and noted on file",
+    "checked_by": "the insured, and the adjuster waiting for the data",
+    "duplicates": [],
+    "overlaps_with": [
+     "23332",
+     "23322"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write to the insured or other involved person to request missing claim information and record the reply.",
+    "time_share": 0.5,
+    "type_reasoning": "Done by letter or email with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each request goes out and is closed on reply.",
+    "work_item": "one written request for missing information",
+    "start": "missing item identified",
+    "end": "reply received and filed",
+    "checked_by": "adjuster relying on the file",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322"
+    ]
+   }
+  ],
+  "notes": "Split of phone versus written is a judgment."
+ },
+ {
+  "task_id": "23318",
+  "split_reasoning": "One activity: reading a policy to decide coverage.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review an insurance policy to determine whether it covers a claim.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a coverage determination others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each claim or inquiry gets one determination.",
+    "work_item": "one coverage determination",
+    "start": "claim and policy retrieved",
+    "end": "coverage decision recorded",
+    "checked_by": "adjuster, supervisor, or the insured",
+    "duplicates": [],
+    "overlaps_with": [
+     "23314",
+     "23325"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23319",
+  "split_reasoning": "Two kinds of item are joined: new policies and claims.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process and record a new insurance policy.",
+    "time_share": 0.5,
+    "type_reasoning": "Each new policy is a record others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Policies arrive one at a time.",
+    "work_item": "one new policy processed and recorded",
+    "start": "application received",
+    "end": "policy set up in company records",
+    "checked_by": "underwriter, agent, or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23329",
+     "23323",
+     "23326"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Process and record a new claim.",
+    "time_share": 0.5,
+    "type_reasoning": "Each claim is logged and set up for handling.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Claims arrive one at a time.",
+    "work_item": "one new claim processed and recorded",
+    "start": "claim notice received",
+    "end": "claim set up in the system",
+    "checked_by": "adjuster or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23313",
+     "23315",
+     "23332"
+    ]
+   }
+  ],
+  "notes": "Overlaps with several finer-grained steps."
+ },
+ {
+  "task_id": "23320",
+  "split_reasoning": "Very general statement covering filing/entering records and pulling them up; two kinds of item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter, file and organize office records on the computer.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces maintained records others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Records are done in batches.",
+    "work_item": "one batch of records entered or filed",
+    "start": "records or documents received",
+    "end": "records entered and filed",
+    "checked_by": "supervisor or colleagues using the records",
+    "duplicates": [],
+    "overlaps_with": [
+     "23326",
+     "23315"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Search for and retrieve a record when someone asks.",
+    "time_share": 0.4,
+    "type_reasoning": "Each retrieval is a request answered with a record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests arrive singly.",
+    "work_item": "one record retrieval request",
+    "start": "request received",
+    "end": "record supplied to the requester",
+    "checked_by": "the requester",
+    "duplicates": [],
+    "overlaps_with": [
+     "23315"
+    ]
+   }
+  ],
+  "notes": "Generic statement; hard to separate from data-entry tasks."
+ },
+ {
+  "task_id": "23321",
+  "split_reasoning": "Same activity done live with callers and in writing afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a policyholder how to proceed with a claim or refer them to a repair facility or contractor during a call or visit.",
+    "time_share": 0.75,
+    "type_reasoning": "The customer is waiting while advice is given.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each inquiry is dealt with in one contact.",
+    "work_item": "one customer inquiry answered during a call",
+    "start": "customer states the need",
+    "end": "customer has instructions or referral",
+    "checked_by": "the customer; supervisor via call monitoring",
+    "duplicates": [],
+    "overlaps_with": [
+     "23332",
+     "23322"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send written instructions or referrals to a policyholder after the contact.",
+    "time_share": 0.25,
+    "type_reasoning": "Done by letter or email with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each message is sent individually.",
+    "work_item": "one written instruction or referral",
+    "start": "request noted",
+    "end": "message sent",
+    "checked_by": "policyholder",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23322",
+  "split_reasoning": "One activity: written correspondence with insured or agent.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write to an insured or agent to obtain information or report account status or changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Each message is a deliverable the recipient relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Letters or emails go out individually.",
+    "work_item": "one letter or email to an insured or agent",
+    "start": "need to inform or ask arises",
+    "end": "message sent",
+    "checked_by": "insured or agent; supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23317",
+     "23321",
+     "23334"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23323",
+  "split_reasoning": "One activity: verifying data on an application or policy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review an application or policy and verify the data on it.",
+    "time_share": 1.0,
+    "type_reasoning": "Each document yields a verified or corrected record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are handled one at a time.",
+    "work_item": "one application or policy verified",
+    "start": "document received",
+    "end": "verified or corrected and returned",
+    "checked_by": "underwriter or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23313",
+     "23319"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23324",
+  "split_reasoning": "One activity: deciding a reinstatement request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a reinstatement request against criteria and approve it if met.",
+    "time_share": 1.0,
+    "type_reasoning": "Each request ends in a decision others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests arrive one at a time.",
+    "work_item": "one reinstatement request decided",
+    "start": "request received",
+    "end": "approval or denial recorded",
+    "checked_by": "underwriting or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23325",
+  "split_reasoning": "One activity: reviewing documents to decide whether a change is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review letters, applications and other documents to decide if a policy change is needed and its effect.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a decision about the change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One request is examined at a time.",
+    "work_item": "one change request assessed",
+    "start": "letter or document received",
+    "end": "change determination noted",
+    "checked_by": "supervisor or the processor who makes the change",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23318"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23326",
+  "split_reasoning": "One activity: data entry from source documents.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transcribe data to worksheets and enter it in the computer.",
+    "time_share": 1.0,
+    "type_reasoning": "Entered data is relied on by later document preparation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Source documents are keyed in batches.",
+    "work_item": "one batch of documents keyed",
+    "start": "documents received",
+    "end": "data entered and checked",
+    "checked_by": "supervisor or downstream processors",
+    "duplicates": [],
+    "overlaps_with": [
+     "23315",
+     "23320"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23327",
+  "split_reasoning": "One activity: notifying about a cancellation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Notify the agent and accounting of a policy cancellation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each notice is a handover others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One notice per cancellation.",
+    "work_item": "one cancellation notice",
+    "start": "cancellation processed",
+    "end": "notice sent",
+    "checked_by": "agent and accounting",
+    "duplicates": [],
+    "overlaps_with": [
+     "23333"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23328",
+  "split_reasoning": "One activity: paying small claims.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pay a small claim.",
+    "time_share": 1.0,
+    "type_reasoning": "Each payment is a transaction auditors check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One payment per claim.",
+    "work_item": "one small claim paid",
+    "start": "claim approved as small",
+    "end": "payment issued and recorded",
+    "checked_by": "supervisor, accounting, auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23314",
+     "23316"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23329",
+  "split_reasoning": "One activity: preparing and sending forms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and submit a business or government form, such as an application to a carrier.",
+    "time_share": 1.0,
+    "type_reasoning": "Each form is a deliverable sent on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Forms are submitted one at a time.",
+    "work_item": "one form or application submitted",
+    "start": "information gathered",
+    "end": "form submitted",
+    "checked_by": "carrier or agency",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23313"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23330",
+  "split_reasoning": "Same activity done live when the customer pays and afterwards for mailed payments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take an initial premium and issue a receipt while the customer is on the line or present.",
+    "time_share": 0.5,
+    "type_reasoning": "The customer waits during payment.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each payment completes within a contact.",
+    "work_item": "one premium taken and receipted during contact",
+    "start": "customer agrees to pay",
+    "end": "receipt confirmed",
+    "checked_by": "customer; accounting",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Record initial premiums received by mail and send receipts.",
+    "time_share": 0.5,
+    "type_reasoning": "Done from a queue without the customer present.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Mailed payments are handled in batches.",
+    "work_item": "one batch of premiums receipted",
+    "start": "payments received",
+    "end": "receipts sent",
+    "checked_by": "accounting",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Live share is a guess."
+ },
+ {
+  "task_id": "23332",
+  "split_reasoning": "One activity: interviewing and taking calls from clients about claims, all live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a client's call or interview them to give service and gather claim information.",
+    "time_share": 1.0,
+    "type_reasoning": "The client is waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is one contact.",
+    "work_item": "one client call or interview",
+    "start": "client contacts or is contacted",
+    "end": "call ends with information obtained or issue handled",
+    "checked_by": "the client; supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23317",
+     "23321"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23333",
+  "split_reasoning": "One activity: obtaining cancellation lists or cards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Get the printout of policy cancellations or pull cancellation cards from file.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces the list used to process cancellations.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A list is obtained per run.",
+    "work_item": "one cancellation list retrieved",
+    "start": "run or request begins",
+    "end": "list in hand for processing",
+    "checked_by": "colleague processing cancellations",
+    "duplicates": [],
+    "overlaps_with": [
+     "23327"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23334",
+  "split_reasoning": "One activity: drafting letters for others.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draft business correspondence for a supervisor, manager or professional.",
+    "time_share": 1.0,
+    "type_reasoning": "Each draft is reviewed and signed by the requester.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Letters are drafted one at a time.",
+    "work_item": "one letter drafted",
+    "start": "request for a letter",
+    "end": "draft handed over",
+    "checked_by": "the supervisor, manager or professional who signs",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

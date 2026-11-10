@@ -1,0 +1,4 @@
+[
+  {"a": "2487a", "b": "2490a", "reasoning": "Both take a batch of source documents and record the transactions in the accounting records, ending with the entries posted, so recording the batch under one has done the other.", "duplicate": true},
+  {"a": "2489a", "b": "2490a", "reasoning": "Classifying and recording a batch of transactions in the books means debiting and crediting the right accounts from the same source data, so posting debits and credits is the same work with the same input and output, and the account totals are a minor addition.", "duplicate": true}
+]

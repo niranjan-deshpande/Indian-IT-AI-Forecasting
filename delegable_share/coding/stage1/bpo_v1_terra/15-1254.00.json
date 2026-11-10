@@ -1,0 +1,755 @@
+[
+ {
+  "task_id": "14694",
+  "split_reasoning": "Design, construction, and maintenance produce different work products at different stages of a website's life.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a website or a defined website feature.",
+    "time_share": 0.25,
+    "type_reasoning": "The design is a distinct artifact used by the development team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A design for a defined feature or site is handed over as a whole.",
+    "work_item": "one website or feature design",
+    "start": "design requirements or brief received",
+    "end": "design delivered for review or implementation",
+    "checked_by": "development team and project stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "14722",
+     "14724",
+     "14730"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Build a website or a defined website feature using development and content tools.",
+    "time_share": 0.45,
+    "type_reasoning": "Each implementation produces a distinct website component for review or release.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feature or component is a manageable development handoff rather than an entire project.",
+    "work_item": "one implemented website feature or component",
+    "start": "feature requirements or design ready for implementation",
+    "end": "component submitted for review or deployment",
+    "checked_by": "development team and testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14707"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain an existing website by making a requested change or correction.",
+    "time_share": 0.3,
+    "type_reasoning": "Each maintenance change produces an updated site component.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requested change or correction is normally tracked and completed as a unit.",
+    "work_item": "one website maintenance change",
+    "start": "maintenance request or defect identified",
+    "end": "change completed and submitted for release",
+    "checked_by": "site owner and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14695",
+     "14707",
+     "14719"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate and vary with the site's development stage."
+ },
+ {
+  "task_id": "14695",
+  "split_reasoning": "Performing updates and directing other people to perform them are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a website update.",
+    "time_share": 0.8,
+    "type_reasoning": "An update produces a distinct change to the site.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requested update is the unit reviewed and released.",
+    "work_item": "one website update",
+    "start": "update request or approved change received",
+    "end": "update completed and submitted for release",
+    "checked_by": "site owner or development lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707",
+     "14719"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct staff performing website updates.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing staff is supervisory interaction rather than a distinct update produced by the worker.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The split depends on the worker's supervisory responsibilities."
+ },
+ {
+  "task_id": "14697",
+  "split_reasoning": "Prioritizing needs, resolving conflicts, and choosing criteria or solutions are purposes of the same kind of team discussion.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with management or development teams about priorities, conflicts, content criteria, or solutions.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live discussion and coordination with colleagues.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14702",
+     "14706",
+     "14711",
+     "14727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14698",
+  "split_reasoning": "Backing up website files is one activity with a single kind of output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Back up website files to a local directory for recovery.",
+    "time_share": 1.0,
+    "type_reasoning": "Each backup produces a recoverable copy relied on by the site team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A backup run for a site or defined file set is a checkable unit.",
+    "work_item": "one website file backup",
+    "start": "scheduled or requested backup is due",
+    "end": "files copied to the local backup location and completion checked",
+    "checked_by": "site administrator or recovery team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14700",
+  "split_reasoning": "Validity, structure, standards, and compatibility are criteria applied in the same code evaluation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate website or application code against structural, standards, and compatibility requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each evaluation produces review findings or an approval for a code change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A code change or defined code submission is reviewed as a unit.",
+    "work_item": "one code submission evaluated",
+    "start": "code submitted for evaluation",
+    "end": "findings or approval returned to the developer",
+    "checked_by": "developer and development lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14710",
+     "14726"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14701",
+  "split_reasoning": "Education, reading, and professional events are alternative means of staying current.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep current with web technologies and programming practices.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes maintaining knowledge rather than producing a specific item for others.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14702",
+  "split_reasoning": "Analyzing needs and determining requirements form one requirements-definition activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze user needs and define technical requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces requirements used by the development team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined feature or request yields a requirements set that can be reviewed as a whole.",
+    "work_item": "one set of technical requirements for a defined need",
+    "start": "user need or project request received",
+    "end": "requirements recorded and shared for review",
+    "checked_by": "users, project stakeholders, and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697",
+     "14722"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14704",
+  "split_reasoning": "Developing a supporting database is one implementation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a database or database component supporting a website or web application.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a database implementation for application developers to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined database component or schema change is a reviewable development unit.",
+    "work_item": "one implemented database component or schema change",
+    "start": "database requirements or change request received",
+    "end": "database component submitted for review or deployment",
+    "checked_by": "database and application development teams",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707",
+     "14724"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14705",
+  "split_reasoning": "Domain registration renewal is a single administrative activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Renew a website's domain name registration.",
+    "time_share": 1.0,
+    "type_reasoning": "Each renewal produces a confirmed continuation of a registration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A domain registration is renewed and confirmed as an individual unit.",
+    "work_item": "one domain registration renewed",
+    "start": "renewal notice or upcoming expiration identified",
+    "end": "renewal confirmed by the registrar and recorded",
+    "checked_by": "site owner or domain administrator",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14706",
+  "split_reasoning": "Developing an e-commerce strategy with stakeholders and integrating it into a website are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collaborate with management or users to develop an e-commerce strategy.",
+    "time_share": 0.4,
+    "type_reasoning": "The target emphasizes collaborative strategy discussions with stakeholders.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Integrate an e-commerce strategy into a website.",
+    "time_share": 0.6,
+    "type_reasoning": "Integration produces a website feature or change that stakeholders can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined e-commerce feature or integration is implemented and handed over as a unit.",
+    "work_item": "one e-commerce website integration or feature",
+    "start": "strategy and feature requirements agreed",
+    "end": "integration submitted for review or deployment",
+    "checked_by": "management, users, and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707"
+    ]
+   }
+  ],
+  "notes": "The relative shares depend on the worker's strategy and implementation responsibilities."
+ },
+ {
+  "task_id": "14707",
+  "split_reasoning": "Writing supporting code is one activity across websites and web applications.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write supporting code for a website or web application.",
+    "time_share": 1.0,
+    "type_reasoning": "Each coding assignment produces a distinct code change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A code change for a defined requirement is submitted and reviewed as a unit.",
+    "work_item": "one supporting code change",
+    "start": "coding requirement or development task assigned",
+    "end": "code submitted for review or integration",
+    "checked_by": "development team or code reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14695",
+     "14704",
+     "14706",
+     "14719"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14708",
+  "split_reasoning": "Communicating about hardware or software issues is one coordination activity regardless of the recipient.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with network personnel or hosting agencies about issues affecting a website.",
+    "time_share": 1.0,
+    "type_reasoning": "The work centers on coordination with other parties to address an issue.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14723"
+    ]
+   }
+  ],
+  "notes": "Some workplaces also use written support tickets; the target does not specify that output."
+ },
+ {
+  "task_id": "14710",
+  "split_reasoning": "Scheduled tests and tests after revisions are the same activity triggered at different times.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a planned or post-revision website test.",
+    "time_share": 1.0,
+    "type_reasoning": "Each test execution produces results that the development team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined test run is completed and its outcome handed to the team as a unit.",
+    "work_item": "one website test run",
+    "start": "scheduled test is due or a revision is ready to test",
+    "end": "test executed and outcome recorded or reported",
+    "checked_by": "test lead or development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14700",
+     "14726"
+    ]
+   }
+  ],
+  "notes": "Detailed test documentation is separately covered by task 14726."
+ },
+ {
+  "task_id": "14711",
+  "split_reasoning": "Programming languages, design tools, and applications are alternative types of technology selected for development.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select a programming language, design tool, or application for a development need.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection yields a technology choice that the team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A choice for a defined need is communicated and acted on as a unit.",
+    "work_item": "one development technology selection",
+    "start": "development need and selection criteria identified",
+    "end": "choice recorded or communicated to the team",
+    "checked_by": "development lead or project stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697",
+     "14725",
+     "14727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14713",
+  "split_reasoning": "Answering individual inquiries and setting up an automated response system are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Respond to a user inquiry received by email.",
+    "time_share": 0.6,
+    "type_reasoning": "Each email inquiry produces a response sent to the user.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual inquiry and its reply are handled as one correspondence item.",
+    "work_item": "one user email inquiry answered",
+    "start": "user inquiry received by email",
+    "end": "response sent to the user",
+    "checked_by": "the user and, when applicable, a supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Set up an automated system to respond to user inquiries.",
+    "time_share": 0.4,
+    "type_reasoning": "The setup produces a configured response mechanism that the site team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined automated response setup or change is configured and handed over as a unit.",
+    "work_item": "one automated response configuration",
+    "start": "response automation requirement identified",
+    "end": "configuration tested and made available for use",
+    "checked_by": "site owner and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with the volume of inquiries and frequency of automation changes."
+ },
+ {
+  "task_id": "14714",
+  "split_reasoning": "Developing a revision procedure and implementing it are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a procedure for ongoing website revision.",
+    "time_share": 0.6,
+    "type_reasoning": "The procedure is a documented process used by the site team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure or defined revision to one is reviewed and issued as a whole.",
+    "work_item": "one website revision procedure",
+    "start": "need for a procedure or procedure change identified",
+    "end": "procedure documented and submitted for approval or use",
+    "checked_by": "site owner and development lead",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Implement a procedure for ongoing website revision.",
+    "time_share": 0.4,
+    "type_reasoning": "Implementation produces a configured or established workflow for the site team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure rollout is completed and handed over for routine use.",
+    "work_item": "one website revision procedure implemented",
+    "start": "procedure approved for implementation",
+    "end": "workflow established and made available to the team",
+    "checked_by": "site owner and staff using the procedure",
+    "duplicates": [],
+    "overlaps_with": [
+     "14695"
+    ]
+   }
+  ],
+  "notes": "Implementation here means establishing the procedure, not performing each later website update."
+ },
+ {
+  "task_id": "14717",
+  "split_reasoning": "Establishing a server directory tree is one configuration activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Establish a server directory tree for a website or application.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a directory structure that developers and administrators use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A directory structure for a defined site or environment is configured as a unit.",
+    "work_item": "one server directory tree established",
+    "start": "site or environment directory requirements identified",
+    "end": "directory tree created and made available to the team",
+    "checked_by": "server administrator and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14729"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14719",
+  "split_reasoning": "Recommending improvements and implementing approved improvements produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a website performance improvement.",
+    "time_share": 0.3,
+    "type_reasoning": "The recommendation is a distinct proposal for a stakeholder to consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal addressing a defined performance issue is reviewed as a unit.",
+    "work_item": "one performance improvement recommendation",
+    "start": "performance issue or improvement opportunity identified",
+    "end": "recommendation communicated to the decision-maker",
+    "checked_by": "development lead or site owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "14725",
+     "14727",
+     "14728"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an approved website performance improvement.",
+    "time_share": 0.7,
+    "type_reasoning": "Implementation produces a change to the site or its supporting systems.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined improvement is developed and submitted as one change.",
+    "work_item": "one performance improvement implemented",
+    "start": "improvement selected for implementation",
+    "end": "change completed and submitted for review or deployment",
+    "checked_by": "development team and site owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14695",
+     "14707"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the scale and approval process for improvements."
+ },
+ {
+  "task_id": "14722",
+  "split_reasoning": "The listed technical factors are contents of the same type of specification.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Describe website specifications in clear technical detail.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a specification used by stakeholders and developers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specification for a defined site or feature is reviewed and shared as a whole.",
+    "work_item": "one website or feature specification",
+    "start": "requirements and technical details gathered",
+    "end": "specification delivered for review or implementation",
+    "checked_by": "development team and project stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14702",
+     "14724",
+     "14730"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14723",
+  "split_reasoning": "Continuous log monitoring is recast as the discrete problem notifications it produces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify a security problem in performance logs and notify security specialists.",
+    "time_share": 1.0,
+    "type_reasoning": "Each identified problem produces a notification that specialists can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A problem notification groups the relevant log evidence for one issue.",
+    "work_item": "one security problem notification",
+    "start": "log entry or pattern suggesting a problem identified",
+    "end": "problem details sent to security specialists",
+    "checked_by": "security specialists",
+    "duplicates": [],
+    "overlaps_with": [
+     "14708"
+    ]
+   }
+  ],
+  "notes": "Routine log review that finds no problem is not a separate notification."
+ },
+ {
+  "task_id": "14724",
+  "split_reasoning": "Physical, interface, logical, and data models are alternative or combined contents of a web model or prototype.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a web model or prototype for a site or application.",
+    "time_share": 1.0,
+    "type_reasoning": "A model or prototype is a distinct artifact for stakeholders to review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A prototype or model for a defined design is shared and reviewed as a whole.",
+    "work_item": "one web model or prototype",
+    "start": "modeling requirements or design brief received",
+    "end": "model or prototype delivered for review",
+    "checked_by": "development team and project stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14704",
+     "14722",
+     "14730"
+    ]
+   }
+  ],
+  "notes": "Physical models here are system models, not necessarily hands-on physical construction."
+ },
+ {
+  "task_id": "14725",
+  "split_reasoning": "Evaluating and recommending server options are stages of one selection-support activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate server hardware or software and provide a recommendation.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces findings or a recommendation used in a server decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment for a defined server need is presented as a unit.",
+    "work_item": "one server hardware or software assessment",
+    "start": "server need or option identified for evaluation",
+    "end": "assessment or recommendation delivered to the decision-maker",
+    "checked_by": "infrastructure lead or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14711",
+     "14719",
+     "14727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14726",
+  "split_reasoning": "Test plans and procedures are prepared before execution, while test results are recorded afterward; they are different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document a website test plan or testing procedure.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a plan or procedure for testers to follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan or procedure for a defined test scope is reviewed as a document.",
+    "work_item": "one documented test plan or procedure",
+    "start": "test scope and requirements identified",
+    "end": "plan or procedure shared for review or use",
+    "checked_by": "test lead and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14710"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Document website test results.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a results record used to assess the tested site or revision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results for a defined test run are reported together.",
+    "work_item": "one test results record",
+    "start": "test outcomes available for documentation",
+    "end": "results recorded and shared with the team",
+    "checked_by": "test lead and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14700",
+     "14710"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the balance of test planning and execution."
+ },
+ {
+  "task_id": "14727",
+  "split_reasoning": "Researching, documenting, rating, and selecting alternatives are stages of an architecture or technology assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess and document alternatives for web architecture or technologies.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces a documented comparison or selection for the team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alternatives for a defined architectural or technology decision are assessed together.",
+    "work_item": "one web architecture or technology alternatives assessment",
+    "start": "decision need and evaluation criteria identified",
+    "end": "comparison or selection documented and shared",
+    "checked_by": "architecture lead, development team, or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697",
+     "14711",
+     "14719",
+     "14725"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14728",
+  "split_reasoning": "Server load, bandwidth, database performance, and device types are different factors recorded in the same kind of technical assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document technical factors affecting a website or application.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a technical record used by the development or infrastructure team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record covering a defined site, environment, or assessment period is shared as a unit.",
+    "work_item": "one technical factors record or report",
+    "start": "site or environment selected for documentation",
+    "end": "relevant measurements and technical factors recorded and shared",
+    "checked_by": "development and infrastructure teams",
+    "duplicates": [],
+    "overlaps_with": [
+     "14719",
+     "14722"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14729",
+  "split_reasoning": "Installing and configuring the HTTP server and associated operating system are parts of establishing one server environment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install and configure an HTTP server and its associated operating system.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a configured server environment for the site team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A server environment is configured and handed over as a unit.",
+    "work_item": "one configured HTTP server environment",
+    "start": "server environment and configuration requirements assigned",
+    "end": "server and operating system configured and made available",
+    "checked_by": "server administrator and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14717"
+    ]
+   }
+  ],
+  "notes": "This codes software installation and configuration, not physical hardware installation."
+ },
+ {
+  "task_id": "14730",
+  "split_reasoning": "Interaction and sequence diagrams are closely related representations of system behavior.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a system interaction or sequence diagram.",
+    "time_share": 1.0,
+    "type_reasoning": "The diagram is a distinct design artifact used by the development team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A diagram for a defined interaction or sequence is reviewed as a whole.",
+    "work_item": "one system interaction or sequence diagram",
+    "start": "interaction or process to model identified",
+    "end": "diagram completed and shared for review",
+    "checked_by": "development team and system architect",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14722",
+     "14724"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

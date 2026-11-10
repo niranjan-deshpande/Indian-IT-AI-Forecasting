@@ -71,7 +71,7 @@ base,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one pro
 base,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,4551.0,1.0,0.875,0.9972,0.2809,3.4,815.7
 base,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 base,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,295.8,1.0,0.051,0.0,0.0,,
-base,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+base,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,186.2,1.0,0.186,0.6141,0.032,22.2,1037.6
 base,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,4551.0,1.0,0.857,0.9997,0.4207,19.4,14668.2
 base,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 base,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,75.6,1.0,0.149,0.0,0.0,,
@@ -150,171 +150,171 @@ base,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one histori
 "base, rho 0.5 (tests/state)",14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,4551.0,1.0,0.875,0.9972,0.2809,3.4,815.7
 "base, rho 0.5 (tests/state)",14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 "base, rho 0.5 (tests/state)",14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,295.8,0.5,0.026,0.0,0.0,,
-"base, rho 0.5 (tests/state)",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+"base, rho 0.5 (tests/state)",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,186.2,0.5,0.093,0.1467,0.0022,30.7,311.3
 "base, rho 0.5 (tests/state)",14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,4551.0,1.0,0.857,0.9997,0.4207,19.4,14668.2
 "base, rho 0.5 (tests/state)",14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 "base, rho 0.5 (tests/state)",14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,75.6,1.0,0.149,0.0,0.0,,
 "base, rho 0.5 (tests/state)",14662a,Software Quality Assurance Analysts and Testers,DISCRETE,one beta-site performance evaluation,3.33,sweeper_bench,257.2,1.0,0.231,0.9083,0.0754,27.1,2028.8
 "base, rho 0.5 (tests/state)",14663a,Software Quality Assurance Analysts and Testers,DISCRETE,one tool evaluation with recommendation,3.25,gdpval,4551.0,1.0,0.685,0.9977,0.2722,26.4,63512.6
 "base, rho 0.5 (tests/state)",14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one historical test results analysis report,3.29,finch,236.6,1.0,0.282,0.7852,0.0693,14.1,1798.2
-beta 0.6,1282a,Computer User Support Specialists,LIVE_SERVICE,"one user call, chat, or walk-up question answered",2.0235,eva_bench,364.9,1.0,0.837,0.9664,0.3905,0.5,92.0
-beta 0.6,1282b,Computer User Support Specialists,DISCRETE,one written user question answered (ticket or email),1.516,gdpval,16420.9,1.0,0.975,0.9986,0.4315,2.1,594.8
-beta 0.6,1283a,Computer User Support Specialists,DISCRETE,one post-install or post-repair verification of a machine or system,2.142,terminal_bench_1,3509.6,1.0,0.932,0.9998,0.5355,1.5,964.8
-beta 0.6,1283b,Computer User Support Specialists,DISCRETE,"one routine system check round (e.g. daily check of servers, printers, network links)",1.512,terminal_bench_2,18419.2,1.0,0.961,1.0,0.5038,4.6,349.7
+beta 0.6,1282a,Computer User Support Specialists,LIVE_SERVICE,"one user call, chat, or walk-up question answered",2.0235,eva_bench,365.8,1.0,0.837,0.9664,0.391,0.5,92.0
+beta 0.6,1282b,Computer User Support Specialists,DISCRETE,one written user question answered (ticket or email),1.516,gdpval,17021.1,1.0,0.976,0.9986,0.4321,2.1,594.8
+beta 0.6,1283a,Computer User Support Specialists,DISCRETE,one post-install or post-repair verification of a machine or system,2.142,terminal_bench_1,3774.2,1.0,0.934,0.9998,0.5392,1.5,964.8
+beta 0.6,1283b,Computer User Support Specialists,DISCRETE,"one routine system check round (e.g. daily check of servers, printers, network links)",1.512,terminal_bench_2,19116.3,1.0,0.961,1.0,0.5047,4.6,349.7
 beta 0.6,1284a,Computer User Support Specialists,PHYSICAL,,1.885,,,,,0.0,0.0,,
-beta 0.6,1284b,Computer User Support Specialists,DISCRETE,one software installation or minor software repair completed on a machine,1.885,osworld_verified,554.4,1.0,0.769,1.0,0.4201,2.3,1076.4
-beta 0.6,1285a,Computer User Support Specialists,DISCRETE,one performance alert or problem followed up,2.394,itbench_sre,107.0,1.0,0.407,0.6905,0.0513,3.8,125.4
+beta 0.6,1284b,Computer User Support Specialists,DISCRETE,one software installation or minor software repair completed on a machine,1.885,osworld_verified,565.1,1.0,0.771,1.0,0.4222,2.3,1076.4
+beta 0.6,1285a,Computer User Support Specialists,DISCRETE,one performance alert or problem followed up,2.394,itbench_sre,111.0,1.0,0.413,0.7046,0.0541,3.7,131.2
 beta 0.6,1286a,Computer User Support Specialists,PHYSICAL,,1.576,,,,,0.0,0.0,,
-beta 0.6,1286b,Computer User Support Specialists,DISCRETE,one workstation configured and handed over to an employee,2.364,terminal_bench_2,18419.2,1.0,0.941,1.0,0.6454,7.2,1097.0
-beta 0.6,1287a,Computer User Support Specialists,DISCRETE,one problem-and-remedy record written up for a ticket,2.082,workarena_l1,2353.7,1.0,0.954,1.0,0.4018,0.5,133.5
-beta 0.6,1287b,Computer User Support Specialists,DISCRETE,one day's log of transactions and installation activities,1.388,workarena_l1,2353.7,1.0,0.876,1.0,0.422,3.6,548.5
-beta 0.6,1288b,Computer User Support Specialists,DISCRETE,one ticketed problem investigated and resolved,2.167,terminal_bench_2,18419.2,1.0,0.961,0.9994,0.6139,3.4,3711.1
+beta 0.6,1286b,Computer User Support Specialists,DISCRETE,one workstation configured and handed over to an employee,2.364,terminal_bench_2,19116.3,1.0,0.943,1.0,0.6467,7.2,1097.0
+beta 0.6,1287a,Computer User Support Specialists,DISCRETE,one problem-and-remedy record written up for a ticket,2.082,workarena_l1,2495.7,1.0,0.956,1.0,0.4036,0.5,133.5
+beta 0.6,1287b,Computer User Support Specialists,DISCRETE,one day's log of transactions and installation activities,1.388,workarena_l1,2495.7,1.0,0.88,1.0,0.4254,3.6,548.5
+beta 0.6,1288b,Computer User Support Specialists,DISCRETE,one ticketed problem investigated and resolved,2.167,terminal_bench_2,19116.3,1.0,0.961,0.9994,0.6152,3.4,3711.1
 beta 0.6,1289a,Computer User Support Specialists,INTERPERSONAL,,3.71,,,,,0.0,0.0,,
-beta 0.6,1290a,Computer User Support Specialists,DISCRETE,"one training guide, how-to document, or procedure",1.32,gdpval,16420.9,1.0,0.908,0.9996,0.4785,13.4,11322.7
+beta 0.6,1290a,Computer User Support Specialists,DISCRETE,"one training guide, how-to document, or procedure",1.32,gdpval,17021.1,1.0,0.91,0.9996,0.4806,13.4,11322.7
 beta 0.6,1290b,Computer User Support Specialists,INTERPERSONAL,,1.98,,,,,0.0,0.0,,
-beta 0.6,1291a,Computer User Support Specialists,DISCRETE,one vendor or technician service referral (case or RMA opened),3.4,workarena_pp,367.3,1.0,0.722,1.0,0.312,2.5,631.4
-beta 0.6,1292a,Computer User Support Specialists,DISCRETE,"one evaluation with recommendation (product, upgrade, or improvement)",3.39,gdpval,16420.9,1.0,0.812,1.0,0.4561,21.4,100337.3
+beta 0.6,1291a,Computer User Support Specialists,DISCRETE,one vendor or technician service referral (case or RMA opened),3.4,workarena_pp,398.7,1.0,0.732,1.0,0.3214,2.5,667.7
+beta 0.6,1292a,Computer User Support Specialists,DISCRETE,"one evaluation with recommendation (product, upgrade, or improvement)",3.39,gdpval,17021.1,1.0,0.815,1.0,0.4594,21.4,100337.3
 beta 0.6,1293a,Computer User Support Specialists,NO_DELIVERABLE,,3.04,,,,,0.0,0.0,,
 beta 0.6,1295a,Computer User Support Specialists,PHYSICAL,,3.21,,,,,0.0,0.0,,
-beta 0.6,1296a,Computer User Support Specialists,DISCRETE,"one program customization delivered (template, macro, configuration change)",2.89,spreadsheetbench_2,201.6,1.0,0.414,0.8712,0.075,21.8,1327.2
-beta 0.6,1297a,Computer User Support Specialists,DISCRETE,one office automation feasibility study report,3.17,gdpval,16420.9,1.0,0.547,1.0,0.2854,114.6,34934.2
+beta 0.6,1296a,Computer User Support Specialists,DISCRETE,"one program customization delivered (template, macro, configuration change)",2.89,spreadsheetbench_2,211.8,1.0,0.421,0.8795,0.0792,21.3,1385.9
+beta 0.6,1297a,Computer User Support Specialists,DISCRETE,one office automation feasibility study report,3.17,gdpval,17021.1,1.0,0.552,1.0,0.2892,114.6,34934.2
 beta 0.6,15204a,Computer User Support Specialists,DISCRETE,one vacancy filled (hiring decision made),0.7325,none (no horizon),,,,,,,
 beta 0.6,15204b,Computer User Support Specialists,INTERPERSONAL,,2.1975,,,,,0.0,0.0,,
-beta 0.6,2578a,Customer Service Representatives,LIVE_SERVICE,one set of contact notes entered during a call or visit,1.812,eva_bench,364.9,1.0,0.859,0.9999,0.526,0.7,93.2
-beta 0.6,2578b,Customer Service Representatives,DISCRETE,one interaction record completed after a call or visit,2.718,workarena_l1,2353.7,1.0,0.966,0.9707,0.1721,1.3,148.7
-beta 0.6,2579a,Customer Service Representatives,LIVE_SERVICE,"one refund, exchange, or bill adjustment entered during a call or visit",2.7235,tau_voice,308.5,1.0,0.86,0.9993,0.5026,0.5,75.3
-beta 0.6,2579b,Customer Service Representatives,DISCRETE,"one refund, exchange, or bill adjustment processed from a queued case",1.4665,tau_retail_airline,1734.5,1.0,0.919,1.0,0.37,1.0,291.1
-beta 0.6,2580a,Customer Service Representatives,DISCRETE,one resolution verified for a customer case,4.39,workarena_l1,2353.7,1.0,0.949,1.0,0.2985,0.7,109.7
-beta 0.6,2581a,Customer Service Representatives,DISCRETE,one written response or notification sent to a customer,2.321,gdpval,16420.9,1.0,0.975,1.0,0.3825,1.2,320.5
-beta 0.6,2581b,Customer Service Representatives,LIVE_SERVICE,one outbound callback delivering an answer or result,1.899,tau_voice,308.5,1.0,0.822,0.9996,0.4595,1.1,78.3
-beta 0.6,2582a,Customer Service Representatives,DISCRETE,one grievance referral ticket,4.07,crmarena_pro,3940.3,1.0,0.949,1.0,0.4654,1.3,182.8
-beta 0.6,2583a,Customer Service Representatives,LIVE_SERVICE,one service charge determined and payment or billing arrangement completed during a contact,4.18,tau_voice,308.5,1.0,0.846,0.9998,0.4968,0.7,77.2
-beta 0.6,2584a,Customer Service Representatives,LIVE_SERVICE,"one account order (contract, address change, or discontinuance) entered during a contact",2.46,tau_voice,308.5,1.0,0.834,0.9994,0.4704,0.8,77.4
-beta 0.6,2584b,Customer Service Representatives,DISCRETE,one account order processed from a written request,1.64,tau_retail_airline,1734.5,1.0,0.919,1.0,0.37,1.0,291.1
-beta 0.6,2585a,Customer Service Representatives,LIVE_SERVICE,one complaint assessed during a call or visit,1.6335,tau_voice,308.5,1.0,0.802,0.996,0.4015,1.2,77.8
-beta 0.6,2585b,Customer Service Representatives,DISCRETE,one complaint investigation with a validity finding,1.9965,crmarena_pro,3940.3,1.0,0.906,0.9996,0.4953,4.7,801.2
+beta 0.6,2578a,Customer Service Representatives,LIVE_SERVICE,one set of contact notes entered during a call or visit,1.812,eva_bench,365.8,1.0,0.859,0.9999,0.5264,0.7,93.2
+beta 0.6,2578b,Customer Service Representatives,DISCRETE,one interaction record completed after a call or visit,2.718,workarena_l1,2495.7,1.0,0.967,0.9707,0.1736,1.3,148.7
+beta 0.6,2579a,Customer Service Representatives,LIVE_SERVICE,"one refund, exchange, or bill adjustment entered during a call or visit",2.7235,tau_voice,309.3,1.0,0.86,0.9994,0.503,0.5,76.3
+beta 0.6,2579b,Customer Service Representatives,DISCRETE,"one refund, exchange, or bill adjustment processed from a queued case",1.4665,tau_retail_airline,1819.2,1.0,0.922,1.0,0.3724,1.0,291.1
+beta 0.6,2580a,Customer Service Representatives,DISCRETE,one resolution verified for a customer case,4.39,workarena_l1,2495.7,1.0,0.951,1.0,0.3003,0.7,109.7
+beta 0.6,2581a,Customer Service Representatives,DISCRETE,one written response or notification sent to a customer,2.321,gdpval,17021.1,1.0,0.976,1.0,0.383,1.2,320.5
+beta 0.6,2581b,Customer Service Representatives,LIVE_SERVICE,one outbound callback delivering an answer or result,1.899,tau_voice,309.3,1.0,0.823,0.9996,0.46,1.1,78.3
+beta 0.6,2582a,Customer Service Representatives,DISCRETE,one grievance referral ticket,4.07,crmarena_pro,4382.0,1.0,0.952,1.0,0.4688,1.3,182.8
+beta 0.6,2583a,Customer Service Representatives,LIVE_SERVICE,one service charge determined and payment or billing arrangement completed during a contact,4.18,tau_voice,309.3,1.0,0.846,0.9998,0.4973,0.7,78.2
+beta 0.6,2584a,Customer Service Representatives,LIVE_SERVICE,"one account order (contract, address change, or discontinuance) entered during a contact",2.46,tau_voice,309.3,1.0,0.834,0.9994,0.4709,0.8,77.4
+beta 0.6,2584b,Customer Service Representatives,DISCRETE,one account order processed from a written request,1.64,tau_retail_airline,1819.2,1.0,0.922,1.0,0.3724,1.0,291.1
+beta 0.6,2585a,Customer Service Representatives,LIVE_SERVICE,one complaint assessed during a call or visit,1.6335,tau_voice,309.3,1.0,0.802,0.996,0.4021,1.2,77.8
+beta 0.6,2585b,Customer Service Representatives,DISCRETE,one complaint investigation with a validity finding,1.9965,crmarena_pro,4382.0,1.0,0.911,0.9996,0.5013,4.7,801.2
 beta 0.6,2586a,Customer Service Representatives,INTERPERSONAL,,3.87,,,,,0.0,0.0,,
-beta 0.6,2587a,Customer Service Representatives,LIVE_SERVICE,one coverage question answered during a call,1.62,sopbench,7068.8,1.0,0.968,1.0,0.6592,1.0,146.3
-beta 0.6,2587b,Customer Service Representatives,DISCRETE,one coverage determination for a reported loss,2.43,tau_banking,160.4,1.0,0.586,0.5553,0.0208,9.2,71.8
+beta 0.6,2587a,Customer Service Representatives,LIVE_SERVICE,one coverage question answered during a call,1.62,sopbench,7830.4,1.0,0.97,1.0,0.6635,1.0,146.3
+beta 0.6,2587b,Customer Service Representatives,DISCRETE,one coverage determination for a reported loss,2.43,tau_banking,160.6,1.0,0.586,0.5553,0.0209,9.2,71.8
 beta 0.6,2589a,Customer Service Representatives,PHYSICAL,,1.274,,,,,0.0,0.0,,
-beta 0.6,2589b,Customer Service Representatives,DISCRETE,one return invoice prepared for a disputed shipment,2.366,starshell,604.3,1.0,0.8,1.0,0.3413,2.7,295.1
-beta 0.6,2591a,Customer Service Representatives,DISCRETE,one improvement recommendation submitted,3.16,gdpval,16420.9,1.0,0.908,1.0,0.5146,6.3,29277.0
-beta 0.6,18565a,Customer Service Representatives,LIVE_SERVICE,one information inquiry answered during a call or visit,1.868,tau_voice,308.5,1.0,0.875,1.0,0.5618,0.5,73.1
-beta 0.6,18565b,Customer Service Representatives,LIVE_SERVICE,one order or account cancellation entered during a contact,1.6345,tau_voice,308.5,1.0,0.846,0.9998,0.4979,0.7,78.2
-beta 0.6,18565c,Customer Service Representatives,LIVE_SERVICE,one complaint taken during a call or visit,1.1675,eva_bench,364.9,1.0,0.837,0.9995,0.4786,1.0,93.1
-beta 0.6,14638a,Software Quality Assurance Analysts and Testers,DISCRETE,one test plan,1.74,gdpval,16420.9,1.0,0.735,1.0,0.3674,18.5,24447.0
-beta 0.6,14638b,Software Quality Assurance Analysts and Testers,DISCRETE,one feature-level set of test cases or scripts,2.61,swt_bench,1529.2,1.0,0.651,0.9995,0.2629,10.5,8575.1
-beta 0.6,14639a,Software Quality Assurance Analysts and Testers,DISCRETE,one system modification tested (one test cycle),4.21,sweeper_bench,380.2,1.0,0.448,0.8738,0.1071,18.9,5233.2
-beta 0.6,14640a,Software Quality Assurance Analysts and Testers,DISCRETE,one test suite for one testing area of a release,4.52,swt_bench,1529.2,1.0,0.509,0.9982,0.2128,20.4,35630.2
-beta 0.6,14641a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect report filed in the bug tracker,4.69,workarena_l1,2353.7,1.0,0.915,0.9941,0.2887,3.3,1099.3
-beta 0.6,14643a,Software Quality Assurance Analysts and Testers,DISCRETE,one resolved defect verified and closed or reopened,2.472,sweeper_bench,380.2,1.0,0.752,0.9732,0.1921,3.4,342.4
-beta 0.6,14643b,Software Quality Assurance Analysts and Testers,DISCRETE,one defect status report (weekly or per sprint),1.648,finch,487.5,1.0,0.684,1.0,0.3217,4.5,1201.8
+beta 0.6,2589b,Customer Service Representatives,DISCRETE,one return invoice prepared for a disputed shipment,2.366,starshell,635.0,1.0,0.805,1.0,0.346,2.7,295.1
+beta 0.6,2591a,Customer Service Representatives,DISCRETE,one improvement recommendation submitted,3.16,gdpval,17021.1,1.0,0.91,1.0,0.5169,6.3,29277.0
+beta 0.6,18565a,Customer Service Representatives,LIVE_SERVICE,one information inquiry answered during a call or visit,1.868,tau_voice,309.3,1.0,0.875,1.0,0.5622,0.5,73.1
+beta 0.6,18565b,Customer Service Representatives,LIVE_SERVICE,one order or account cancellation entered during a contact,1.6345,tau_voice,309.3,1.0,0.846,0.9998,0.4984,0.7,78.2
+beta 0.6,18565c,Customer Service Representatives,LIVE_SERVICE,one complaint taken during a call or visit,1.1675,eva_bench,365.8,1.0,0.837,0.9995,0.479,1.0,93.1
+beta 0.6,14638a,Software Quality Assurance Analysts and Testers,DISCRETE,one test plan,1.74,gdpval,17021.1,1.0,0.739,1.0,0.3709,18.5,24447.0
+beta 0.6,14638b,Software Quality Assurance Analysts and Testers,DISCRETE,one feature-level set of test cases or scripts,2.61,swt_bench,1541.0,1.0,0.652,0.9995,0.2637,10.5,8734.9
+beta 0.6,14639a,Software Quality Assurance Analysts and Testers,DISCRETE,one system modification tested (one test cycle),4.21,sweeper_bench,386.4,1.0,0.45,0.8738,0.1084,18.9,5233.2
+beta 0.6,14640a,Software Quality Assurance Analysts and Testers,DISCRETE,one test suite for one testing area of a release,4.52,swt_bench,1541.0,1.0,0.51,0.9982,0.2136,20.4,35630.2
+beta 0.6,14641a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect report filed in the bug tracker,4.69,workarena_l1,2495.7,1.0,0.918,0.9942,0.2925,3.3,1165.1
+beta 0.6,14643a,Software Quality Assurance Analysts and Testers,DISCRETE,one resolved defect verified and closed or reopened,2.472,sweeper_bench,386.4,1.0,0.754,0.9743,0.1939,3.4,349.1
+beta 0.6,14643b,Software Quality Assurance Analysts and Testers,DISCRETE,one defect status report (weekly or per sprint),1.648,finch,519.0,1.0,0.692,1.0,0.3292,4.5,1201.8
 beta 0.6,14644a,Software Quality Assurance Analysts and Testers,DISCRETE,one known-defects database set up,0.6225,scuba (no horizon),,,,,,,
-beta 0.6,14644b,Software Quality Assurance Analysts and Testers,DISCRETE,one curation pass over the known-defects database,3.5275,workarena_pp,367.3,1.0,0.33,0.8611,0.0662,16.1,875.2
-beta 0.6,14645a,Software Quality Assurance Analysts and Testers,DISCRETE,one test strategy and schedule for a project or release,4.0,gdpval,16420.9,1.0,0.713,1.0,0.3555,27.0,29336.4
+beta 0.6,14644b,Software Quality Assurance Analysts and Testers,DISCRETE,one curation pass over the known-defects database,3.5275,workarena_pp,398.7,1.0,0.34,0.882,0.0731,15.5,964.3
+beta 0.6,14645a,Software Quality Assurance Analysts and Testers,DISCRETE,one test strategy and schedule for a project or release,4.0,gdpval,17021.1,1.0,0.718,1.0,0.3591,27.0,29336.4
 beta 0.6,14646a,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,4.03,,,,,0.0,0.0,,
-beta 0.6,14647a,Software Quality Assurance Analysts and Testers,DISCRETE,one software document reviewed with findings,3.71,gdpval,16420.9,1.0,0.922,0.9978,0.4389,14.7,11133.2
-beta 0.6,14648a,Software Quality Assurance Analysts and Testers,DISCRETE,one test procedure documented,4.3,gdpval,16420.9,1.0,0.922,1.0,0.4575,6.8,4461.4
-beta 0.6,14649a,Software Quality Assurance Analysts and Testers,DISCRETE,one quality standard or set of release-readiness criteria,4.12,gdpval,16420.9,1.0,0.677,1.0,0.3154,24.6,65284.4
-beta 0.6,14650a,Software Quality Assurance Analysts and Testers,DISCRETE,one set of automated test scripts updated for a product change,4.09,swt_bench,1529.2,1.0,0.739,0.998,0.3252,14.4,11133.2
-beta 0.6,14651a,Software Quality Assurance Analysts and Testers,DISCRETE,one escalated customer problem investigated,3.81,sweeper_bench,380.2,1.0,0.374,0.7701,0.0567,15.9,600.6
-beta 0.6,14652a,Software Quality Assurance Analysts and Testers,DISCRETE,one testing tool installed or upgraded,1.491,terminal_bench_2,18419.2,1.0,0.926,0.9997,0.5913,7.2,21957.8
-beta 0.6,14652b,Software Quality Assurance Analysts and Testers,DISCRETE,one test run executed with results recorded,2.769,sweeper_bench,380.2,1.0,0.651,0.9921,0.2528,5.9,4646.6
-beta 0.6,14653a,Software Quality Assurance Analysts and Testers,DISCRETE,one written feedback note on a build or feature,2.562,gdpval,16420.9,1.0,0.947,1.0,0.4268,3.4,2230.7
+beta 0.6,14647a,Software Quality Assurance Analysts and Testers,DISCRETE,one software document reviewed with findings,3.71,gdpval,17021.1,1.0,0.923,0.9978,0.4408,14.7,11133.2
+beta 0.6,14648a,Software Quality Assurance Analysts and Testers,DISCRETE,one test procedure documented,4.3,gdpval,17021.1,1.0,0.923,1.0,0.4592,6.8,4461.4
+beta 0.6,14649a,Software Quality Assurance Analysts and Testers,DISCRETE,one quality standard or set of release-readiness criteria,4.12,gdpval,17021.1,1.0,0.681,1.0,0.3191,24.6,65284.4
+beta 0.6,14650a,Software Quality Assurance Analysts and Testers,DISCRETE,one set of automated test scripts updated for a product change,4.09,swt_bench,1541.0,1.0,0.74,0.998,0.3261,14.4,11133.2
+beta 0.6,14651a,Software Quality Assurance Analysts and Testers,DISCRETE,one escalated customer problem investigated,3.81,sweeper_bench,386.4,1.0,0.376,0.776,0.058,15.9,613.4
+beta 0.6,14652a,Software Quality Assurance Analysts and Testers,DISCRETE,one testing tool installed or upgraded,1.491,terminal_bench_2,19116.3,1.0,0.928,0.9997,0.5935,7.2,21957.8
+beta 0.6,14652b,Software Quality Assurance Analysts and Testers,DISCRETE,one test run executed with results recorded,2.769,sweeper_bench,386.4,1.0,0.653,0.9924,0.2547,5.9,4763.2
+beta 0.6,14653a,Software Quality Assurance Analysts and Testers,DISCRETE,one written feedback note on a build or feature,2.562,gdpval,17021.1,1.0,0.948,1.0,0.428,3.4,2230.7
 beta 0.6,14653b,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.708,,,,,0.0,0.0,,
-beta 0.6,14654a,Software Quality Assurance Analysts and Testers,DISCRETE,one monitored performance issue investigated,3.97,itbench_sre,107.0,1.0,0.262,0.297,0.0044,26.1,137.4
-beta 0.6,14655a,Software Quality Assurance Analysts and Testers,DISCRETE,one compatibility test cycle for a build,3.88,sweeper_bench,380.2,1.0,0.31,0.9441,0.1082,25.4,5684.5
-beta 0.6,14656a,Software Quality Assurance Analysts and Testers,DISCRETE,one test environment built to mirror production,3.45,terminal_bench_2,18419.2,1.0,0.662,1.0,0.3286,29.2,89321.2
-beta 0.6,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one problem diagnosed during a live session with field staff or a customer,1.67,tau_telecom,188620.8,1.0,0.979,1.0,0.7954,2.0,1929.6
-beta 0.6,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,16420.9,1.0,0.896,1.0,0.328,3.4,2230.7
+beta 0.6,14654a,Software Quality Assurance Analysts and Testers,DISCRETE,one monitored performance issue investigated,3.97,itbench_sre,111.0,1.0,0.267,0.3215,0.0055,24.9,147.4
+beta 0.6,14655a,Software Quality Assurance Analysts and Testers,DISCRETE,one compatibility test cycle for a build,3.88,sweeper_bench,386.4,1.0,0.312,0.9463,0.1096,25.4,5795.8
+beta 0.6,14656a,Software Quality Assurance Analysts and Testers,DISCRETE,one test environment built to mirror production,3.45,terminal_bench_2,19116.3,1.0,0.667,1.0,0.3327,29.2,93005.9
+beta 0.6,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one problem diagnosed during a live session with field staff or a customer,1.67,tau_telecom,198682.9,1.0,0.98,1.0,0.7973,2.0,1929.6
+beta 0.6,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,17021.1,1.0,0.898,1.0,0.33,3.4,2230.7
 beta 0.6,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
-beta 0.6,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,494.8,1.0,0.144,0.6732,0.0189,91.6,4666.3
-beta 0.6,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
-beta 0.6,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,16420.9,1.0,0.886,0.9997,0.484,19.7,14668.2
+beta 0.6,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,505.9,1.0,0.146,0.6804,0.0196,89.7,4765.9
+beta 0.6,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,480.7,1.0,0.381,0.9972,0.1462,22.2,9629.8
+beta 0.6,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,17021.1,1.0,0.888,0.9997,0.4863,19.7,14668.2
 beta 0.6,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
-beta 0.6,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,107.0,1.0,0.262,0.0,0.0,,
-beta 0.6,14662a,Software Quality Assurance Analysts and Testers,DISCRETE,one beta-site performance evaluation,3.33,sweeper_bench,380.2,1.0,0.348,0.9998,0.1697,27.1,11894.8
-beta 0.6,14663a,Software Quality Assurance Analysts and Testers,DISCRETE,one tool evaluation with recommendation,3.25,gdpval,16420.9,1.0,0.79,1.0,0.4133,26.4,252247.7
-beta 0.6,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one historical test results analysis report,3.29,finch,487.5,1.0,0.442,0.997,0.1874,13.8,14983.8
-beta 1.0,1282a,Computer User Support Specialists,LIVE_SERVICE,"one user call, chat, or walk-up question answered",2.0235,eva_bench,98.9,1.0,0.805,0.6879,0.2415,0.5,27.6
-beta 1.0,1282b,Computer User Support Specialists,DISCRETE,one written user question answered (ticket or email),1.516,gdpval,2913.2,1.0,0.988,0.9986,0.4382,2.1,594.8
-beta 1.0,1283a,Computer User Support Specialists,DISCRETE,one post-install or post-repair verification of a machine or system,2.142,terminal_bench_1,705.0,1.0,0.94,0.9998,0.5065,1.5,785.4
-beta 1.0,1283b,Computer User Support Specialists,DISCRETE,"one routine system check round (e.g. daily check of servers, printers, network links)",1.512,terminal_bench_2,2301.4,1.0,0.962,1.0,0.4973,4.6,349.7
+beta 0.6,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,111.0,1.0,0.267,0.0,0.0,,
+beta 0.6,14662a,Software Quality Assurance Analysts and Testers,DISCRETE,one beta-site performance evaluation,3.33,sweeper_bench,386.4,1.0,0.351,0.9998,0.1714,27.1,12089.3
+beta 0.6,14663a,Software Quality Assurance Analysts and Testers,DISCRETE,one tool evaluation with recommendation,3.25,gdpval,17021.1,1.0,0.794,1.0,0.4168,26.4,252247.7
+beta 0.6,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one historical test results analysis report,3.29,finch,519.0,1.0,0.451,0.9975,0.1938,13.8,15988.6
+beta 1.0,1282a,Computer User Support Specialists,LIVE_SERVICE,"one user call, chat, or walk-up question answered",2.0235,eva_bench,98.8,1.0,0.805,0.6879,0.2412,0.5,27.6
+beta 1.0,1282b,Computer User Support Specialists,DISCRETE,one written user question answered (ticket or email),1.516,gdpval,2870.3,1.0,0.988,0.9986,0.4379,2.1,594.8
+beta 1.0,1283a,Computer User Support Specialists,DISCRETE,one post-install or post-repair verification of a machine or system,2.142,terminal_bench_1,684.1,1.0,0.938,0.9998,0.5035,1.5,758.9
+beta 1.0,1283b,Computer User Support Specialists,DISCRETE,"one routine system check round (e.g. daily check of servers, printers, network links)",1.512,terminal_bench_2,2266.3,1.0,0.962,1.0,0.4965,4.6,349.7
 beta 1.0,1284a,Computer User Support Specialists,PHYSICAL,,1.885,,,,,0.0,0.0,,
-beta 1.0,1284b,Computer User Support Specialists,DISCRETE,one software installation or minor software repair completed on a machine,1.885,osworld_verified,109.3,1.0,0.593,0.9582,0.2096,2.3,179.3
-beta 1.0,1285a,Computer User Support Specialists,DISCRETE,one performance alert or problem followed up,2.394,itbench_sre,70.0,1.0,0.259,0.1247,0.0041,3.8,19.7
+beta 1.0,1284b,Computer User Support Specialists,DISCRETE,one software installation or minor software repair completed on a machine,1.885,osworld_verified,108.4,1.0,0.591,0.9582,0.2081,2.3,179.3
+beta 1.0,1285a,Computer User Support Specialists,DISCRETE,one performance alert or problem followed up,2.394,itbench_sre,69.0,1.0,0.256,0.1162,0.0038,3.9,18.9
 beta 1.0,1286a,Computer User Support Specialists,PHYSICAL,,1.576,,,,,0.0,0.0,,
-beta 1.0,1286b,Computer User Support Specialists,DISCRETE,one workstation configured and handed over to an employee,2.364,terminal_bench_2,2301.4,1.0,0.927,1.0,0.6093,7.2,1097.0
-beta 1.0,1287a,Computer User Support Specialists,DISCRETE,one problem-and-remedy record written up for a ticket,2.082,workarena_l1,197.2,1.0,0.929,0.9994,0.3461,0.5,76.3
-beta 1.0,1287b,Computer User Support Specialists,DISCRETE,one day's log of transactions and installation activities,1.388,workarena_l1,197.2,1.0,0.687,0.9878,0.2321,3.6,181.6
-beta 1.0,1288b,Computer User Support Specialists,DISCRETE,one ticketed problem investigated and resolved,2.167,terminal_bench_2,2301.4,1.0,0.962,0.9994,0.5743,3.4,3711.1
+beta 1.0,1286b,Computer User Support Specialists,DISCRETE,one workstation configured and handed over to an employee,2.364,terminal_bench_2,2266.3,1.0,0.926,1.0,0.6079,7.2,1097.0
+beta 1.0,1287a,Computer User Support Specialists,DISCRETE,one problem-and-remedy record written up for a ticket,2.082,workarena_l1,192.5,1.0,0.928,0.9993,0.3438,0.5,74.2
+beta 1.0,1287b,Computer User Support Specialists,DISCRETE,one day's log of transactions and installation activities,1.388,workarena_l1,192.5,1.0,0.681,0.9865,0.2281,3.6,177.1
+beta 1.0,1288b,Computer User Support Specialists,DISCRETE,one ticketed problem investigated and resolved,2.167,terminal_bench_2,2266.3,1.0,0.962,0.9994,0.573,3.4,3711.1
 beta 1.0,1289a,Computer User Support Specialists,INTERPERSONAL,,3.71,,,,,0.0,0.0,,
-beta 1.0,1290a,Computer User Support Specialists,DISCRETE,"one training guide, how-to document, or procedure",1.32,gdpval,2913.2,1.0,0.89,0.999,0.403,13.1,5509.4
+beta 1.0,1290a,Computer User Support Specialists,DISCRETE,"one training guide, how-to document, or procedure",1.32,gdpval,2870.3,1.0,0.889,0.999,0.4011,13.1,5509.4
 beta 1.0,1290b,Computer User Support Specialists,INTERPERSONAL,,1.98,,,,,0.0,0.0,,
-beta 1.0,1291a,Computer User Support Specialists,DISCRETE,one vendor or technician service referral (case or RMA opened),3.4,workarena_pp,113.8,1.0,0.603,0.8944,0.1681,2.5,97.0
-beta 1.0,1292a,Computer User Support Specialists,DISCRETE,"one evaluation with recommendation (product, upgrade, or improvement)",3.39,gdpval,2913.2,1.0,0.669,0.9929,0.2635,21.4,19304.1
+beta 1.0,1291a,Computer User Support Specialists,DISCRETE,one vendor or technician service referral (case or RMA opened),3.4,workarena_pp,110.0,1.0,0.595,0.883,0.1619,2.5,93.0
+beta 1.0,1292a,Computer User Support Specialists,DISCRETE,"one evaluation with recommendation (product, upgrade, or improvement)",3.39,gdpval,2870.3,1.0,0.666,0.9925,0.2613,21.4,18900.5
 beta 1.0,1293a,Computer User Support Specialists,NO_DELIVERABLE,,3.04,,,,,0.0,0.0,,
 beta 1.0,1295a,Computer User Support Specialists,PHYSICAL,,3.21,,,,,0.0,0.0,,
-beta 1.0,1296a,Computer User Support Specialists,DISCRETE,"one program customization delivered (template, macro, configuration change)",2.89,spreadsheetbench_2,128.7,1.0,0.263,0.2228,0.0086,21.8,170.0
-beta 1.0,1297a,Computer User Support Specialists,DISCRETE,one office automation feasibility study report,3.17,gdpval,2913.2,1.0,0.195,0.7089,0.048,114.6,2943.6
+beta 1.0,1296a,Computer User Support Specialists,DISCRETE,"one program customization delivered (template, macro, configuration change)",2.89,spreadsheetbench_2,126.1,1.0,0.259,0.2107,0.0078,22.2,162.8
+beta 1.0,1297a,Computer User Support Specialists,DISCRETE,one office automation feasibility study report,3.17,gdpval,2870.3,1.0,0.193,0.702,0.0469,114.6,2901.8
 beta 1.0,15204a,Computer User Support Specialists,DISCRETE,one vacancy filled (hiring decision made),0.7325,none (no horizon),,,,,,,
 beta 1.0,15204b,Computer User Support Specialists,INTERPERSONAL,,2.1975,,,,,0.0,0.0,,
-beta 1.0,2578a,Customer Service Representatives,LIVE_SERVICE,one set of contact notes entered during a call or visit,1.812,eva_bench,98.9,1.0,0.846,0.9664,0.4341,0.7,27.9
-beta 1.0,2578b,Customer Service Representatives,DISCRETE,one interaction record completed after a call or visit,2.718,workarena_l1,197.2,1.0,0.956,0.9541,0.1322,1.3,32.4
-beta 1.0,2579a,Customer Service Representatives,LIVE_SERVICE,"one refund, exchange, or bill adjustment entered during a call or visit",2.7235,tau_voice,88.7,1.0,0.855,0.9441,0.4169,0.5,24.6
-beta 1.0,2579b,Customer Service Representatives,DISCRETE,"one refund, exchange, or bill adjustment processed from a queued case",1.4665,tau_retail_airline,263.7,1.0,0.898,0.9962,0.3106,1.0,111.7
-beta 1.0,2580a,Customer Service Representatives,DISCRETE,one resolution verified for a customer case,4.39,workarena_l1,197.2,1.0,0.916,0.9952,0.2396,0.7,45.0
-beta 1.0,2581a,Customer Service Representatives,DISCRETE,one written response or notification sent to a customer,2.321,gdpval,2913.2,1.0,0.988,1.0,0.3907,1.2,320.5
-beta 1.0,2581b,Customer Service Representatives,LIVE_SERVICE,one outbound callback delivering an answer or result,1.899,tau_voice,88.7,1.0,0.787,0.9147,0.3302,1.1,25.1
-beta 1.0,2582a,Customer Service Representatives,DISCRETE,one grievance referral ticket,4.07,crmarena_pro,533.4,1.0,0.947,1.0,0.4463,1.3,182.8
-beta 1.0,2583a,Customer Service Representatives,LIVE_SERVICE,one service charge determined and payment or billing arrangement completed during a contact,4.18,tau_voice,88.7,1.0,0.831,0.9506,0.4002,0.7,24.9
-beta 1.0,2584a,Customer Service Representatives,LIVE_SERVICE,"one account order (contract, address change, or discontinuance) entered during a contact",2.46,tau_voice,88.7,1.0,0.808,0.9208,0.3534,0.8,25.0
-beta 1.0,2584b,Customer Service Representatives,DISCRETE,one account order processed from a written request,1.64,tau_retail_airline,263.7,1.0,0.898,0.9962,0.3106,1.0,111.7
-beta 1.0,2585a,Customer Service Representatives,LIVE_SERVICE,one complaint assessed during a call or visit,1.6335,tau_voice,88.7,1.0,0.747,0.7968,0.2423,1.2,24.8
-beta 1.0,2585b,Customer Service Representatives,DISCRETE,one complaint investigation with a validity finding,1.9965,crmarena_pro,533.4,1.0,0.856,0.9995,0.4006,4.7,614.3
+beta 1.0,2578a,Customer Service Representatives,LIVE_SERVICE,one set of contact notes entered during a call or visit,1.812,eva_bench,98.8,1.0,0.846,0.9664,0.4338,0.7,27.9
+beta 1.0,2578b,Customer Service Representatives,DISCRETE,one interaction record completed after a call or visit,2.718,workarena_l1,192.5,1.0,0.955,0.9524,0.1305,1.3,31.3
+beta 1.0,2579a,Customer Service Representatives,LIVE_SERVICE,"one refund, exchange, or bill adjustment entered during a call or visit",2.7235,tau_voice,88.6,1.0,0.855,0.9441,0.4166,0.5,24.6
+beta 1.0,2579b,Customer Service Representatives,DISCRETE,"one refund, exchange, or bill adjustment processed from a queued case",1.4665,tau_retail_airline,258.6,1.0,0.896,0.9958,0.3082,1.0,108.5
+beta 1.0,2580a,Customer Service Representatives,DISCRETE,one resolution verified for a customer case,4.39,workarena_l1,192.5,1.0,0.914,0.9946,0.2373,0.7,43.9
+beta 1.0,2581a,Customer Service Representatives,DISCRETE,one written response or notification sent to a customer,2.321,gdpval,2870.3,1.0,0.988,1.0,0.3904,1.2,320.5
+beta 1.0,2581b,Customer Service Representatives,LIVE_SERVICE,one outbound callback delivering an answer or result,1.899,tau_voice,88.6,1.0,0.787,0.9147,0.3298,1.1,25.1
+beta 1.0,2582a,Customer Service Representatives,DISCRETE,one grievance referral ticket,4.07,crmarena_pro,510.4,1.0,0.944,1.0,0.4432,1.3,182.8
+beta 1.0,2583a,Customer Service Representatives,LIVE_SERVICE,one service charge determined and payment or billing arrangement completed during a contact,4.18,tau_voice,88.6,1.0,0.831,0.9506,0.3999,0.7,24.9
+beta 1.0,2584a,Customer Service Representatives,LIVE_SERVICE,"one account order (contract, address change, or discontinuance) entered during a contact",2.46,tau_voice,88.6,1.0,0.808,0.9178,0.3531,0.8,24.7
+beta 1.0,2584b,Customer Service Representatives,DISCRETE,one account order processed from a written request,1.64,tau_retail_airline,258.6,1.0,0.896,0.9958,0.3082,1.0,108.5
+beta 1.0,2585a,Customer Service Representatives,LIVE_SERVICE,one complaint assessed during a call or visit,1.6335,tau_voice,88.6,1.0,0.747,0.7968,0.242,1.2,24.8
+beta 1.0,2585b,Customer Service Representatives,DISCRETE,one complaint investigation with a validity finding,1.9965,crmarena_pro,510.4,1.0,0.85,0.9995,0.3941,4.7,589.1
 beta 1.0,2586a,Customer Service Representatives,INTERPERSONAL,,3.87,,,,,0.0,0.0,,
-beta 1.0,2587a,Customer Service Representatives,LIVE_SERVICE,one coverage question answered during a call,1.62,sopbench,576.0,1.0,0.96,1.0,0.6149,1.0,139.1
+beta 1.0,2587a,Customer Service Representatives,LIVE_SERVICE,one coverage question answered during a call,1.62,sopbench,552.2,1.0,0.958,1.0,0.6103,1.0,132.3
 beta 1.0,2587b,Customer Service Representatives,DISCRETE,one coverage determination for a reported loss,2.43,tau_banking,82.5,1.0,0.478,0.1146,0.0019,8.7,23.1
 beta 1.0,2589a,Customer Service Representatives,PHYSICAL,,1.274,,,,,0.0,0.0,,
-beta 1.0,2589b,Customer Service Representatives,DISCRETE,one return invoice prepared for a disputed shipment,2.366,starshell,97.8,1.0,0.62,0.875,0.1496,2.7,55.1
-beta 1.0,2591a,Customer Service Representatives,DISCRETE,one improvement recommendation submitted,3.16,gdpval,2913.2,1.0,0.89,0.9979,0.4141,6.3,8530.3
-beta 1.0,18565a,Customer Service Representatives,LIVE_SERVICE,one information inquiry answered during a call or visit,1.868,tau_voice,88.7,1.0,0.881,0.989,0.5158,0.5,24.8
-beta 1.0,18565b,Customer Service Representatives,LIVE_SERVICE,one order or account cancellation entered during a contact,1.6345,tau_voice,88.7,1.0,0.831,0.9506,0.4012,0.7,24.9
-beta 1.0,18565c,Customer Service Representatives,LIVE_SERVICE,one complaint taken during a call or visit,1.1675,eva_bench,98.9,1.0,0.805,0.9147,0.3476,1.0,27.9
-beta 1.0,14638a,Software Quality Assurance Analysts and Testers,DISCRETE,one test plan,1.74,gdpval,2913.2,1.0,0.493,0.9178,0.1482,18.5,2322.9
-beta 1.0,14638b,Software Quality Assurance Analysts and Testers,DISCRETE,one feature-level set of test cases or scripts,2.61,swt_bench,279.3,1.0,0.341,0.5438,0.0506,10.5,463.2
-beta 1.0,14639a,Software Quality Assurance Analysts and Testers,DISCRETE,one system modification tested (one test cycle),4.21,sweeper_bench,226.0,1.0,0.295,0.3111,0.0249,17.4,569.8
-beta 1.0,14640a,Software Quality Assurance Analysts and Testers,DISCRETE,one test suite for one testing area of a release,4.52,swt_bench,279.3,1.0,0.162,0.3483,0.0197,20.4,1003.5
-beta 1.0,14641a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect report filed in the bug tracker,4.69,workarena_l1,197.2,1.0,0.814,0.7422,0.1083,3.5,72.8
-beta 1.0,14643a,Software Quality Assurance Analysts and Testers,DISCRETE,one resolved defect verified and closed or reopened,2.472,sweeper_bench,226.0,1.0,0.79,0.8322,0.1663,3.1,129.8
-beta 1.0,14643b,Software Quality Assurance Analysts and Testers,DISCRETE,one defect status report (weekly or per sprint),1.648,finch,196.8,1.0,0.593,0.9395,0.2029,4.5,215.3
+beta 1.0,2589b,Customer Service Representatives,DISCRETE,one return invoice prepared for a disputed shipment,2.366,starshell,95.8,1.0,0.615,0.8665,0.1459,2.7,53.8
+beta 1.0,2591a,Customer Service Representatives,DISCRETE,one improvement recommendation submitted,3.16,gdpval,2870.3,1.0,0.889,0.9978,0.4121,6.3,8347.8
+beta 1.0,18565a,Customer Service Representatives,LIVE_SERVICE,one information inquiry answered during a call or visit,1.868,tau_voice,88.6,1.0,0.881,0.989,0.5156,0.5,24.8
+beta 1.0,18565b,Customer Service Representatives,LIVE_SERVICE,one order or account cancellation entered during a contact,1.6345,tau_voice,88.6,1.0,0.831,0.9506,0.4009,0.7,24.9
+beta 1.0,18565c,Customer Service Representatives,LIVE_SERVICE,one complaint taken during a call or visit,1.1675,eva_bench,98.8,1.0,0.805,0.9147,0.3473,1.0,27.9
+beta 1.0,14638a,Software Quality Assurance Analysts and Testers,DISCRETE,one test plan,1.74,gdpval,2870.3,1.0,0.489,0.9147,0.1462,18.5,2281.5
+beta 1.0,14638b,Software Quality Assurance Analysts and Testers,DISCRETE,one feature-level set of test cases or scripts,2.61,swt_bench,278.4,1.0,0.34,0.5438,0.0503,10.5,463.2
+beta 1.0,14639a,Software Quality Assurance Analysts and Testers,DISCRETE,one system modification tested (one test cycle),4.21,sweeper_bench,224.5,1.0,0.294,0.304,0.0246,17.4,554.6
+beta 1.0,14640a,Software Quality Assurance Analysts and Testers,DISCRETE,one test suite for one testing area of a release,4.52,swt_bench,278.4,1.0,0.162,0.3483,0.0196,20.4,1003.5
+beta 1.0,14641a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect report filed in the bug tracker,4.69,workarena_l1,192.5,1.0,0.81,0.7358,0.1052,3.5,71.4
+beta 1.0,14643a,Software Quality Assurance Analysts and Testers,DISCRETE,one resolved defect verified and closed or reopened,2.472,sweeper_bench,224.5,1.0,0.789,0.8322,0.1653,3.1,129.8
+beta 1.0,14643b,Software Quality Assurance Analysts and Testers,DISCRETE,one defect status report (weekly or per sprint),1.648,finch,191.8,1.0,0.587,0.9345,0.198,4.5,209.3
 beta 1.0,14644a,Software Quality Assurance Analysts and Testers,DISCRETE,one known-defects database set up,0.6225,scuba (no horizon),,,,,,,
-beta 1.0,14644b,Software Quality Assurance Analysts and Testers,DISCRETE,one curation pass over the known-defects database,3.5275,workarena_pp,113.8,1.0,0.087,0.0,0.0,,
-beta 1.0,14645a,Software Quality Assurance Analysts and Testers,DISCRETE,one test strategy and schedule for a project or release,4.0,gdpval,2913.2,1.0,0.447,0.9236,0.1288,27.5,2889.4
+beta 1.0,14644b,Software Quality Assurance Analysts and Testers,DISCRETE,one curation pass over the known-defects database,3.5275,workarena_pp,110.0,1.0,0.084,0.0,0.0,,
+beta 1.0,14645a,Software Quality Assurance Analysts and Testers,DISCRETE,one test strategy and schedule for a project or release,4.0,gdpval,2870.3,1.0,0.444,0.9207,0.1268,27.5,2838.0
 beta 1.0,14646a,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,4.03,,,,,0.0,0.0,,
-beta 1.0,14647a,Software Quality Assurance Analysts and Testers,DISCRETE,one software document reviewed with findings,3.71,gdpval,2913.2,1.0,0.915,0.9964,0.3752,14.4,3983.9
-beta 1.0,14648a,Software Quality Assurance Analysts and Testers,DISCRETE,one test procedure documented,4.3,gdpval,2913.2,1.0,0.915,0.9999,0.4144,6.8,3173.1
-beta 1.0,14649a,Software Quality Assurance Analysts and Testers,DISCRETE,one quality standard or set of release-readiness criteria,4.12,gdpval,2913.2,1.0,0.378,0.7612,0.0885,24.6,2526.6
-beta 1.0,14650a,Software Quality Assurance Analysts and Testers,DISCRETE,one set of automated test scripts updated for a product change,4.09,swt_bench,279.3,1.0,0.508,0.8056,0.0996,15.0,530.3
-beta 1.0,14651a,Software Quality Assurance Analysts and Testers,DISCRETE,one escalated customer problem investigated,3.81,sweeper_bench,226.0,1.0,0.201,0.0703,0.0011,19.6,60.0
-beta 1.0,14652a,Software Quality Assurance Analysts and Testers,DISCRETE,one testing tool installed or upgraded,1.491,terminal_bench_2,2301.4,1.0,0.895,0.9994,0.4656,7.2,10752.9
-beta 1.0,14652b,Software Quality Assurance Analysts and Testers,DISCRETE,one test run executed with results recorded,2.769,sweeper_bench,226.0,1.0,0.626,0.8064,0.1529,5.3,608.1
-beta 1.0,14653a,Software Quality Assurance Analysts and Testers,DISCRETE,one written feedback note on a build or feature,2.562,gdpval,2913.2,1.0,0.956,1.0,0.4127,3.4,2056.9
+beta 1.0,14647a,Software Quality Assurance Analysts and Testers,DISCRETE,one software document reviewed with findings,3.71,gdpval,2870.3,1.0,0.914,0.9963,0.3735,14.4,3907.4
+beta 1.0,14648a,Software Quality Assurance Analysts and Testers,DISCRETE,one test procedure documented,4.3,gdpval,2870.3,1.0,0.914,0.9999,0.413,6.8,3122.0
+beta 1.0,14649a,Software Quality Assurance Analysts and Testers,DISCRETE,one quality standard or set of release-readiness criteria,4.12,gdpval,2870.3,1.0,0.374,0.7549,0.087,24.6,2477.3
+beta 1.0,14650a,Software Quality Assurance Analysts and Testers,DISCRETE,one set of automated test scripts updated for a product change,4.09,swt_bench,278.4,1.0,0.508,0.8056,0.0992,15.0,530.3
+beta 1.0,14651a,Software Quality Assurance Analysts and Testers,DISCRETE,one escalated customer problem investigated,3.81,sweeper_bench,224.5,1.0,0.2,0.0671,0.001,20.0,58.8
+beta 1.0,14652a,Software Quality Assurance Analysts and Testers,DISCRETE,one testing tool installed or upgraded,1.491,terminal_bench_2,2266.3,1.0,0.894,0.9993,0.4635,7.2,10522.8
+beta 1.0,14652b,Software Quality Assurance Analysts and Testers,DISCRETE,one test run executed with results recorded,2.769,sweeper_bench,224.5,1.0,0.624,0.8064,0.1519,5.3,608.1
+beta 1.0,14653a,Software Quality Assurance Analysts and Testers,DISCRETE,one written feedback note on a build or feature,2.562,gdpval,2870.3,1.0,0.955,1.0,0.4118,3.4,2023.7
 beta 1.0,14653b,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.708,,,,,0.0,0.0,,
-beta 1.0,14654a,Software Quality Assurance Analysts and Testers,DISCRETE,one monitored performance issue investigated,3.97,itbench_sre,70.0,1.0,0.105,0.0,0.0,,
-beta 1.0,14655a,Software Quality Assurance Analysts and Testers,DISCRETE,one compatibility test cycle for a build,3.88,sweeper_bench,226.0,1.0,0.136,0.2776,0.0175,25.4,686.8
-beta 1.0,14656a,Software Quality Assurance Analysts and Testers,DISCRETE,one test environment built to mirror production,3.45,terminal_bench_2,2301.4,1.0,0.277,0.6064,0.056,29.2,2166.8
-beta 1.0,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one problem diagnosed during a live session with field staff or a customer,1.67,tau_telecom,5396.9,1.0,0.947,0.9901,0.6194,2.0,457.1
-beta 1.0,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,2913.2,1.0,0.866,0.9817,0.254,3.4,469.8
+beta 1.0,14654a,Software Quality Assurance Analysts and Testers,DISCRETE,one monitored performance issue investigated,3.97,itbench_sre,69.0,1.0,0.103,0.0,0.0,,
+beta 1.0,14655a,Software Quality Assurance Analysts and Testers,DISCRETE,one compatibility test cycle for a build,3.88,sweeper_bench,224.5,1.0,0.135,0.2776,0.0173,25.4,686.8
+beta 1.0,14656a,Software Quality Assurance Analysts and Testers,DISCRETE,one test environment built to mirror production,3.45,terminal_bench_2,2266.3,1.0,0.274,0.5987,0.0549,29.2,2123.4
+beta 1.0,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one problem diagnosed during a live session with field staff or a customer,1.67,tau_telecom,5282.1,1.0,0.946,0.9896,0.6153,2.0,449.3
+beta 1.0,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,2870.3,1.0,0.864,0.9808,0.2521,3.4,462.3
 beta 1.0,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
-beta 1.0,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,250.4,1.0,0.025,0.0,0.0,,
-beta 1.0,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
-beta 1.0,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,2913.2,1.0,0.844,0.9992,0.3831,19.4,7821.2
+beta 1.0,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,248.2,1.0,0.025,0.0,0.0,,
+beta 1.0,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,143.3,1.0,0.117,0.2643,0.0103,22.2,454.0
+beta 1.0,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,2870.3,1.0,0.842,0.9992,0.381,19.4,7681.9
 beta 1.0,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
-beta 1.0,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,70.0,1.0,0.105,0.0,0.0,,
-beta 1.0,14662a,Software Quality Assurance Analysts and Testers,DISCRETE,one beta-site performance evaluation,3.33,sweeper_bench,226.0,1.0,0.173,0.6664,0.0401,27.1,977.6
-beta 1.0,14663a,Software Quality Assurance Analysts and Testers,DISCRETE,one tool evaluation with recommendation,3.25,gdpval,2913.2,1.0,0.618,0.9719,0.2036,25.8,21670.5
-beta 1.0,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one historical test results analysis report,3.29,finch,196.8,1.0,0.215,0.5278,0.0366,13.8,825.2
+beta 1.0,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,69.0,1.0,0.103,0.0,0.0,,
+beta 1.0,14662a,Software Quality Assurance Analysts and Testers,DISCRETE,one beta-site performance evaluation,3.33,sweeper_bench,224.5,1.0,0.172,0.6591,0.0396,27.1,961.8
+beta 1.0,14663a,Software Quality Assurance Analysts and Testers,DISCRETE,one tool evaluation with recommendation,3.25,gdpval,2870.3,1.0,0.615,0.9719,0.2017,25.8,21670.5
+beta 1.0,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one historical test results analysis report,3.29,finch,191.8,1.0,0.21,0.5119,0.035,13.8,790.3
 "decompressed spread, both sides",1282a,Computer User Support Specialists,LIVE_SERVICE,"one user call, chat, or walk-up question answered",2.0235,eva_bench,222.5,1.0,0.867,0.0559,0.018,0.2,59.7
 "decompressed spread, both sides",1282b,Computer User Support Specialists,DISCRETE,one written user question answered (ticket or email),1.516,gdpval,15257.9,1.0,0.994,0.8472,0.2794,2.0,13758.1
 "decompressed spread, both sides",1283a,Computer User Support Specialists,DISCRETE,one post-install or post-repair verification of a machine or system,2.142,terminal_bench_1,6600.9,1.0,0.985,0.6804,0.2282,1.5,9337.9
@@ -387,7 +387,7 @@ beta 1.0,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one his
 "decompressed spread, both sides",14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,15257.9,1.0,0.951,0.378,0.0743,3.1,2732.4
 "decompressed spread, both sides",14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 "decompressed spread, both sides",14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,475.8,1.0,0.074,0.001,0.0,136.0,566.9
-"decompressed spread, both sides",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+"decompressed spread, both sides",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,460.7,1.0,0.328,0.0559,0.0044,9.2,2687.8
 "decompressed spread, both sides",14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,15257.9,1.0,0.943,0.4956,0.1016,19.7,62290.2
 "decompressed spread, both sides",14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 "decompressed spread, both sides",14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,150.6,1.0,0.238,0.0,0.0,,
@@ -466,7 +466,7 @@ beta 1.0,14664a,Software Quality Assurance Analysts and Testers,DISCRETE,one his
 "decompressed spread, benchmarks only",14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,15257.9,1.0,0.951,1.0,0.3724,3.4,2230.7
 "decompressed spread, benchmarks only",14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 "decompressed spread, benchmarks only",14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,475.8,1.0,0.074,0.059,0.0004,131.2,564.0
-"decompressed spread, benchmarks only",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+"decompressed spread, benchmarks only",14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,460.7,1.0,0.328,0.9147,0.0995,22.2,2737.8
 "decompressed spread, benchmarks only",14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,15257.9,1.0,0.943,0.9997,0.5282,19.0,14668.2
 "decompressed spread, benchmarks only",14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 "decompressed spread, benchmarks only",14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,150.6,1.0,0.238,0.0,0.0,,
@@ -545,7 +545,7 @@ lambda 0.25,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,
 lambda 0.25,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,4551.0,1.0,0.875,0.9972,0.2809,3.4,815.7
 lambda 0.25,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 lambda 0.25,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,295.8,1.0,0.051,0.0,0.0,,
-lambda 0.25,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+lambda 0.25,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,186.2,1.0,0.186,0.6141,0.032,22.2,1037.6
 lambda 0.25,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,4551.0,1.0,0.857,0.9997,0.4207,19.4,14668.2
 lambda 0.25,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 lambda 0.25,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,75.6,1.0,0.149,0.0,0.0,,
@@ -624,7 +624,7 @@ lambda 3,14657a,Software Quality Assurance Analysts and Testers,LIVE_SERVICE,one
 lambda 3,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,4551.0,1.0,0.875,0.9972,0.2809,3.4,815.7
 lambda 3,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 lambda 3,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,295.8,1.0,0.051,0.0,0.0,,
-lambda 3,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+lambda 3,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,186.2,1.0,0.186,0.6141,0.032,22.2,1037.6
 lambda 3,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,4551.0,1.0,0.857,0.9997,0.4207,19.4,14668.2
 lambda 3,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 lambda 3,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,75.6,1.0,0.149,0.0,0.0,,
@@ -703,7 +703,7 @@ fill from 2nd match,14657a,Software Quality Assurance Analysts and Testers,LIVE_
 fill from 2nd match,14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,4551.0,1.0,0.875,0.9972,0.2809,3.4,815.7
 fill from 2nd match,14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,swt_bench,449.0,1.0,0.461,0.7788,0.0759,22.4,798.5
 fill from 2nd match,14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,295.8,1.0,0.051,0.0,0.0,,
-fill from 2nd match,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,gdpval,4551.0,1.0,0.77,1.0,0.3929,22.2,28301.0
+fill from 2nd match,14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,186.2,1.0,0.186,0.6141,0.032,22.2,1037.6
 fill from 2nd match,14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,4551.0,1.0,0.857,0.9997,0.4207,19.4,14668.2
 fill from 2nd match,14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 fill from 2nd match,14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,75.6,1.0,0.149,0.0,0.0,,
@@ -782,7 +782,7 @@ latest observed H (no date alignment),14657a,Software Quality Assurance Analysts
 latest observed H (no date alignment),14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,1230.8,1.0,0.7,0.8665,0.1267,3.4,212.2
 latest observed H (no date alignment),14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 latest observed H (no date alignment),14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,132.0,1.0,0.027,0.0,0.0,,
-latest observed H (no date alignment),14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
+latest observed H (no date alignment),14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,13.2,1.0,0.024,0.0,0.0,,
 latest observed H (no date alignment),14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,1230.8,1.0,0.666,0.997,0.2508,20.4,4902.2
 latest observed H (no date alignment),14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 latest observed H (no date alignment),14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,19.5,1.0,0.053,0.0,0.0,,
@@ -861,7 +861,7 @@ latest observed H (no date alignment),14664a,Software Quality Assurance Analysts
 +12 months (pooled trend),14657b,Software Quality Assurance Analysts and Testers,DISCRETE,one written diagnosis and recommended solution,1.67,gdpval,49001.3,1.0,0.981,1.0,0.4154,3.4,2230.7
 +12 months (pooled trend),14658a,Software Quality Assurance Analysts and Testers,DISCRETE,one standards-compliance review of a program with recommendations,3.7,none (no horizon),,,,,,,
 +12 months (pooled trend),14659a,Software Quality Assurance Analysts and Testers,DISCRETE,one automated testing tool or framework component,3.6,swe_bench_pro,3184.7,1.0,0.284,0.8532,0.0751,42.8,8796.0
-+12 months (pooled trend),14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany (no horizon),,,,,,,
++12 months (pooled trend),14660a,Software Quality Assurance Analysts and Testers,DISCRETE,one user or third-party test round organized,1.336,theagentcompany,2004.5,1.0,0.627,0.9989,0.2798,22.2,12384.0
 +12 months (pooled trend),14660b,Software Quality Assurance Analysts and Testers,DISCRETE,one test round results report,0.835,gdpval,49001.3,1.0,0.978,0.9997,0.5828,19.0,14668.2
 +12 months (pooled trend),14660c,Software Quality Assurance Analysts and Testers,INTERPERSONAL,,1.169,,,,,0.0,0.0,,
 +12 months (pooled trend),14661a,Software Quality Assurance Analysts and Testers,DISCRETE,one defect given an initial root-cause diagnosis,3.66,itbench_sre,813.8,1.0,0.564,0.7599,0.102,7.5,412.3

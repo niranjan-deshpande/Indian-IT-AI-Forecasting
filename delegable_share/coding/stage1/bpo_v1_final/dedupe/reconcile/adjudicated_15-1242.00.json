@@ -1,0 +1,5 @@
+[
+  {"a": "1300a", "b": "21651a", "reasoning": "21651a ends at test results reported while 1300a also carries the error correction through to passing tests, so 21651a is an earlier step with a different output rather than redundant work.", "duplicate": false},
+  {"a": "1303c", "b": "21650b", "reasoning": "Both are a written question from a user or client received and answered in writing, with the same start, actions and end, so answering one has done the other.", "duplicate": true},
+  {"a": "1303b", "b": "21650a", "reasoning": "Both are a live contact where a user or client asks and the worker answers or resolves it in real time, the same live work counted twice.", "duplicate": true}
+]

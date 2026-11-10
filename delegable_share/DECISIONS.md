@@ -9,6 +9,65 @@ Changes to `SPEC.md` (v2) agreed since it was written. Newest first.
   a timing study; τ-bench action counts or a timed pilot). See `benchmarks/ACQUISITION.md`.
 
 
+## 2026-11-10 — Comparison set: hand-picked, with controls (user asked)
+
+16 occupations outside the pilot and BPO set, chosen by hand (not an employment-weighted draw, so
+not an economy average; it tests whether the measure separates controls and where BPO sits among
+white-collar work). `data/comparison_tasks.csv` (`control_group` column), 313 rated statements.
+- **Positive controls:** Interpreters and Translators, Proofreaders and Copy Markers, Technical
+  Writers, Paralegals, Tax Preparers.
+- **Negative controls:** Electricians, Registered Nurses, Childcare Workers, Janitors, Heavy Truck
+  Drivers.
+- **White-collar comparison:** Accountants and Auditors, Lawyers, Credit Analysts, Secondary School
+  Teachers, Wholesale Sales Representatives, Management Analysts. (Financial and Investment
+  Analysts dropped: no O*NET importance ratings.)
+Same protocol as the BPO run, except Stages 2+3 batches ≤34 and Stage 1 groups of 3 occupations.
+Run tags `comp_v1`.
+
+## 2026-11-10 — BPO run: set-up and usage cuts
+
+- **Scope:** the 10 non-pilot BPO occupations, 204 rated statements (`data/bpo_tasks.csv`,
+  `in_pilot` False). Run tags: Stage 1 `bpo_v1` (final table `bpo_v1_final/units_final.csv`), Stages 2+3 `bpo_v1`, item times `bench_times/bpo`.
+- **Worked examples swapped** out of the BPO set (Stage 1 A–C, Stages 2+3 A–B). New sources:
+  Executive Secretaries 2797, Market Research Analysts 5442, HR Specialists 18867. Their matches
+  no longer point at BPO benchmarks (the old ones taught bookkeeping → APEX-Accounting and alerts
+  → ITBench). **These three occupations, and Receptionists, must be left out of the comparison
+  sample.**
+- **Usage cuts (user asked):** Stage 1 coded by Sonnet, not Opus, with Terra as the cross-family
+  check and Opus only for disputes. Several occupations per Stage 1 brief (instructions once;
+  one output file per occupation).
+- **No reconcile rounds** (Stage 1 and duplicates): disputes go straight to one Opus subagent
+  (`reconcile_stage1.py` and `reconcile_dupes.py` now work without round files; `NOROUND=1`).
+- **Stage 1 result:** 204 statements → 288 parts; Sonnet and Terra disagreed on 61 statements
+  (30%, pilot 32%); Opus chose Terra's coding 32 times, Sonnet's 26, and revised 3 (no sign of the
+  pilot's self-preference).
+- **Duplicates:** both models flagged 3 pairs; Opus confirmed 6 of 8 one-model pairs; 288 → 280
+  parts. Chained pairs are merged as a group (one kept, weight = mean over the group); the old
+  pairwise merge would have double-averaged a three-way group.
+- **Stages 2+3:** 230 coded items, batches of 46 (5 per Sonnet coder), up from 34. Every coder
+  reported thinning reasoning in the second half (median reasoning words per item fall from ~100
+  to ~30; pilot batches of 34 fell to ~60), and some wrote late items from a script. Checked
+  before deciding: agreement between the two Sonnet coders does not fall with position (length
+  |Δln| 0.27–0.30 early vs 0.20–0.29 late; same best match 50–59% early vs 57–73% late; pilot 0.28
+  and 69%), and early and late answers have the same distributions (median length 30 min, p90/p10
+  12, review/length 0.25, GDPval share 20%, "none" 2–4%). Codings kept; only the written reasoning
+  is thin. **Future runs: batches of ≤34.**
+- **Benchmarks added for the BPO matches** (same brief, Sonnet agents): APEX-Accounting (only the
+  10 public dev items; scores on the private set), DualEntry (8 illustrative items, one per
+  category, not random; two scoring rounds the vendor calls non-comparable), Vals Finance Agent,
+  HealthAdminBench (5 models, one month), UI-CUBE, TheAgentCompany, SWE-Lancer, Spider 2 (top rows
+  are third-party systems; kept, as everywhere: best reported system per model), Terminal-Bench 4,
+  DBA-Bench (6 models), SWE-bench Verified. **Excluded:** OfficeVal (score is mean partial credit,
+  not share solved) and OSWorld 2 (tasks gated). Benchmarks under ~0.8% of weight (SCUBA,
+  Online-Mind2Web, APEX-Agents, JobBench, Cybench, SWE-bench Multimodal, WebArena) not gathered.
+  Items in these cases count as uncovered; the "fill from 2nd match" scenario covers them.
+- **Pooled doubling time stays 3.5 months** in the base case with 31 benchmarks (2.2–4.0 across
+  the β and decompression variants). Pilot results barely move (QA uncovered 6% → 4%).
+- **BPO result (base, ρ = 1 / ρ = 0.5 for tests/state):** S — Web Developers 28/20%, Insurance
+  Claims 24/10%, Network Admins 19/8%, Billing 14/6%, DBAs 14/11%, Systems Analysts 13/10%, Software
+  Developers 12/11%, Medical Records 11/5%, Bookkeeping 9/5%, Data Entry 6/0% (39% uncovered).
+  Pilot: User Support 20/8%, Customer Service 33/10%, QA 15/11%.
+
 ## 2026-11-10 — Second half (curves and D): built; choices made while building (user may revisit)
 
 Pipeline: `benchmarks/data/<b>/` (24 sampled items, dated scores, SOURCE.md; gathered by Sonnet

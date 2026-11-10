@@ -148,8 +148,10 @@ def main():
         for code in codes:
             if not key[code]:
                 continue
-            v = {m: {str(x["task_id"]): x for x in
-                     json.loads((rdir / m / f"{code}.json").read_text())}
+            # The reconcile round is optional (skipped from the BPO run on: models pick their own
+            # coding). Without round files every dispute goes to the adjudicator.
+            v = {m: ({str(x["task_id"]): x for x in json.loads((rdir / m / f"{code}.json").read_text())}
+                     if (rdir / m / f"{code}.json").exists() else {})
                  for m in ("claude", "terra")}
             left = []
             for tid in key[code]:
@@ -161,6 +163,8 @@ def main():
                     left.append(tid)
 
             def verdicts(code_, tid, v=v):
+                if not v["claude"] and not v["terra"]:
+                    return ""
                 return "".join(
                     f"VERDICT {n}: {json.dumps(v[m].get(tid, {}), indent=1)}\n"
                     for n, m in (("1", "claude"), ("2", "terra")))
@@ -183,7 +187,7 @@ def main():
         fdir = ROOT / "coding" / "stage1" / f"{tag}_final"
         fdir.mkdir(exist_ok=True)
         log = [f"# Stage 1 reconciliation log — {tag}", "",
-               "Base coding: Claude (Opus subagent). Disputed statements replaced by the outcome "
+               "Base coding: Claude subagent (Opus in the pilot, Sonnet from the BPO run). Disputed statements replaced by the outcome "
                "of reconciliation (both picked the same coding) or adjudication (Opus).", ""]
         counts = collections.Counter()
         for code in codes:

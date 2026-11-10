@@ -1,0 +1,77 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/bpo_v1_final/dedupe/reconcile/adjudicated_43-3021.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[23237a] DISCRETE — one stop-payment notice posted (start: notice received; end: notice posted) — from statement: Post stop-payment notices to prevent payment of protested checks.
+[23238a] DISCRETE — one batch of billing data verified and corrected (start: data received; end: corrected data released) — from statement: Verify accuracy of billing data and revise any errors.
+[23239a] DISCRETE — one batch of checks verified (start: checks received; end: checks passed or returned) — from statement: Verify signatures and required information on checks.
+[23240a] DISCRETE — one batch of invoices prepared and recorded (start: billing data ready; end: invoices ready to send) — from statement: Prepare itemized statements, bills, or invoices and record amounts due for items purchased or services rendered.
+[23241a] DISCRETE — one batch of postings (start: documents received; end: records updated) — from statement: Perform bookkeeping work, including posting data or keeping other records concerning costs of goods or services or the shipment of goods.
+[23242a] DISCRETE — one billing calculation or document processed using office equipment (start: billing information or document supplied for processing; end: calculation or document produced for the next billing step) — from statement: Operate typing, adding, calculating, or billing machines.
+[23243a] DISCRETE — one discrepancy resolved (start: discrepancy found; end: records corrected) — from statement: Resolve discrepancies in accounting records.
+[23244a] LIVE_SERVICE — one customer call about an account (start: call connects; end: information exchanged) — from statement: Contact customers to obtain or relay account information.
+[23244b] DISCRETE — one written customer message (start: need to contact; end: message sent) — from statement: Contact customers to obtain or relay account information.
+[23245a] DISCRETE — one set of documents reviewed and charges computed (start: documents received; end: charges computed) — from statement: Review documents, such as purchase orders, sales tickets, charge slips, or hospital records, to compute fees or charges due.
+[23246a] DISCRETE — one batch of invoices and support documents filed (start: documents processed; end: records filed) — from statement: Keep records of invoices and support documents.
+[23247a] DISCRETE — one batch of statements routed (start: statements printed; end: routed for delivery) — from statement: Route statements for mailing or over-the-counter delivery to customers.
+[23249b] DISCRETE — one major equipment fault reported (start: major equipment problem identified; end: fault details communicated to repair personnel) — from statement: Fix minor problems, such as equipment jams, and notify repair personnel of major equipment problems.
+[23251a] DISCRETE — one bank statement reconciliation (start: statement received; end: reconciled) — from statement: Compare previously prepared bank statements with canceled checks and reconcile discrepancies.
+[23255a] DISCRETE — one charge or rule determined (start: question arises; end: answer found) — from statement: Consult sources, such as rate books, manuals, or insurance company representatives, to determine specific charges or information such as rules, regulations, or government tax and tariff information.
+[23256a] DISCRETE — one client job's fee calculated (start: billing period closes; end: fee ready to bill) — from statement: Track accumulated hours and dollar amounts charged to each client job to calculate client fees for professional services, such as legal or accounting services.
+[23257a] DISCRETE — one manual update (start: change announced; end: manual updated) — from statement: Update manuals when rates, rules, or regulations are amended.
+[23258a] DISCRETE — one billing document's charges computed (start: document opened; end: amounts final) — from statement: Compute credit terms, discounts, shipment charges, or rates for goods or services to complete billing documents.
+[23260a] DISCRETE — one rate decision (start: review period; end: rates set or recommended) — from statement: Review compiled data on operating costs and revenues to set rates.
+[23262a] LIVE_SERVICE — one live rates, routing, or procedures inquiry answered (start: customer asks the question during a call or visit; end: answer given to the customer) — from statement: Answer inquiries regarding rates, routing, or procedures.
+[23262b] DISCRETE — one written rates, routing, or procedures inquiry answered (start: written inquiry received; end: answer sent to the requester) — from statement: Answer inquiries regarding rates, routing, or procedures.
+[23263a] DISCRETE — one cost factor report (start: period ends; end: report delivered) — from statement: Compile reports of cost factors, such as labor, production, storage, and equipment.
+[23264a] DISCRETE — one billing document created (start: transaction and charge information available; end: billing document completed and made ready for issue) — from statement: Create billing documents, shipping labels, credit memorandums, or credit forms.
+[23264b] DISCRETE — one shipping label created (start: shipment and destination details available; end: label prepared for the shipment) — from statement: Create billing documents, shipping labels, credit memorandums, or credit forms.
+[23264c] DISCRETE — one credit memorandum or credit form created (start: credit transaction and supporting details received; end: credit document completed and routed for processing) — from statement: Create billing documents, shipping labels, credit memorandums, or credit forms.
+[23265a] LIVE_SERVICE — one general telephone call answered and handled (start: telephone call received; end: caller's request handled or call transferred) — from statement: Perform general administrative tasks, such as answering telephones, scheduling appointments, and ordering supplies or equipment.
+[23265b] LIVE_SERVICE — one appointment scheduled or changed during a contact (start: caller or visitor requests an appointment; end: appointment entered and confirmed) — from statement: Perform general administrative tasks, such as answering telephones, scheduling appointments, and ordering supplies or equipment.
+[23265c] DISCRETE — one appointment scheduled or changed from a written request (start: written appointment request received; end: calendar updated and confirmation sent) — from statement: Perform general administrative tasks, such as answering telephones, scheduling appointments, and ordering supplies or equipment.
+[23265d] DISCRETE — one supply or equipment order submitted (start: supply or equipment need identified; end: order or purchasing request submitted) — from statement: Perform general administrative tasks, such as answering telephones, scheduling appointments, and ordering supplies or equipment.
+[23266b] DISCRETE — one account adjustment for a check-return error (start: check-return error and required correction identified; end: account adjustment entered or submitted for approval) — from statement: Return checks to customers or retrieve checks returned to customers in error, adjusting accounts and answering inquiries about errors as necessary.
+[23266c] LIVE_SERVICE — one live check-error inquiry answered (start: customer asks about the check error; end: explanation or status relayed to the customer) — from statement: Return checks to customers or retrieve checks returned to customers in error, adjusting accounts and answering inquiries about errors as necessary.
+[23266d] DISCRETE — one written check-error inquiry answered (start: written inquiry about the error received; end: explanation or status sent to the customer) — from statement: Return checks to customers or retrieve checks returned to customers in error, adjusting accounts and answering inquiries about errors as necessary.
+
+=== PAIRS ===
+PAIR 23245a / 23258a
+[23245a] DISCRETE — one set of documents reviewed and charges computed (start: documents received; end: charges computed) — from statement: Review documents, such as purchase orders, sales tickets, charge slips, or hospital records, to compute fees or charges due.
+[23258a] DISCRETE — one billing document's charges computed (start: document opened; end: amounts final) — from statement: Compute credit terms, discounts, shipment charges, or rates for goods or services to complete billing documents.
+Original flag reasoning: Computing charges from a billing document is the same work as reviewing documents to compute charges due.
+
+PAIR 23240a / 23264a
+[23240a] DISCRETE — one batch of invoices prepared and recorded (start: billing data ready; end: invoices ready to send) — from statement: Prepare itemized statements, bills, or invoices and record amounts due for items purchased or services rendered.
+[23264a] DISCRETE — one billing document created (start: transaction and charge information available; end: billing document completed and made ready for issue) — from statement: Create billing documents, shipping labels, credit memorandums, or credit forms.
+Original flag reasoning: Preparing invoices and recording amounts due is the same as creating a billing document ready for issue.

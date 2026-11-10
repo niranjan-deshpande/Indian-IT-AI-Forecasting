@@ -1,0 +1,638 @@
+[
+  {
+    "task_id": "23237",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Post a stop-payment notice to prevent payment of a protested check.",
+        "time_share": 1.0,
+        "type_reasoning": "Each notice is a posted instruction the bank relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Notices are posted one at a time.",
+        "work_item": "one stop-payment notice posted",
+        "start": "notice received",
+        "end": "notice posted",
+        "checked_by": "bank; supervisor",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23238",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Verify the accuracy of billing data and correct errors.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces verified billing data.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Done in batches.",
+        "work_item": "one batch of billing data verified and corrected",
+        "start": "data received",
+        "end": "corrected data released",
+        "checked_by": "supervisor; customers",
+        "duplicates": [],
+        "overlaps_with": [
+          "23243",
+          "23245"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23239",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Verify signatures and required information on checks.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces checks cleared for processing.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Done in batches.",
+        "work_item": "one batch of checks verified",
+        "start": "checks received",
+        "end": "checks passed or returned",
+        "checked_by": "supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23266"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23240",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Prepare itemized statements, bills or invoices and record amounts due.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces bills customers receive.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Issued per customer or batch.",
+        "work_item": "one batch of invoices prepared and recorded",
+        "start": "billing data ready",
+        "end": "invoices ready to send",
+        "checked_by": "customers; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23264",
+          "23258",
+          "23245"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23241",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Post data and keep records of costs of goods, services or shipments.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces posted records.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Done in batches.",
+        "work_item": "one batch of postings",
+        "start": "documents received",
+        "end": "records updated",
+        "checked_by": "supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23246",
+          "23256"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23242",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Operate typing, adding, calculating or billing machines.",
+        "time_share": 1.0,
+        "type_reasoning": "Describes the tools used for other statements; no item of its own.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": "Tool statement; the output is counted under billing and calculation statements."
+  },
+  {
+    "task_id": "23243",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Resolve a discrepancy in accounting records.",
+        "time_share": 1.0,
+        "type_reasoning": "Each discrepancy ends in a correction.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Handled one at a time.",
+        "work_item": "one discrepancy resolved",
+        "start": "discrepancy found",
+        "end": "records corrected",
+        "checked_by": "supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23238",
+          "23251"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23244",
+    "split_reasoning": "Contact is made live by phone or in writing.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Call a customer to get or give account information.",
+        "time_share": 0.6,
+        "type_reasoning": "Customer is on the line.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "Each call is one contact.",
+        "work_item": "one customer call about an account",
+        "start": "call connects",
+        "end": "information exchanged",
+        "checked_by": "customer; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23262"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Write to a customer to get or give account information.",
+        "time_share": 0.4,
+        "type_reasoning": "Written, no one waiting.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each message is its own item.",
+        "work_item": "one written customer message",
+        "start": "need to contact",
+        "end": "message sent",
+        "checked_by": "customer",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23245",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review documents to compute fees or charges due.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces computed charges.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per document set.",
+        "work_item": "one set of documents reviewed and charges computed",
+        "start": "documents received",
+        "end": "charges computed",
+        "checked_by": "supervisor; customer",
+        "duplicates": [],
+        "overlaps_with": [
+          "23240",
+          "23258",
+          "23238"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23246",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Keep records of invoices and support documents.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces filed records.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Filed in batches.",
+        "work_item": "one batch of invoices and support documents filed",
+        "start": "documents processed",
+        "end": "records filed",
+        "checked_by": "supervisor; auditors",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23247",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Route statements for mailing or counter delivery.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces routed statements.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Batch.",
+        "work_item": "one batch of statements routed",
+        "start": "statements printed",
+        "end": "routed for delivery",
+        "checked_by": "customers; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23250",
+          "23259"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23248",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Monitor equipment to ensure proper operation.",
+        "time_share": 1.0,
+        "type_reasoning": "Watching equipment produces nothing others check.",
+        "type": "NO_DELIVERABLE",
+        "duplicates": [],
+        "overlaps_with": [
+          "23249"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23249",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Clear equipment jams and notify repair staff of larger problems.",
+        "time_share": 1.0,
+        "type_reasoning": "Hands-on machine work away from the computer.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "23248"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23250",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Weigh envelopes and affix postage.",
+        "time_share": 1.0,
+        "type_reasoning": "Hands-on work away from the computer.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "23247",
+          "23259"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23251",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Compare bank statements with canceled checks and reconcile discrepancies.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a reconciliation.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One per statement.",
+        "work_item": "one bank statement reconciliation",
+        "start": "statement received",
+        "end": "reconciled",
+        "checked_by": "supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23243"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23255",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Consult rate books, manuals or insurers to find the correct charge or rule.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces an answer that goes into a bill.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per charge to be determined.",
+        "work_item": "one charge or rule determined",
+        "start": "question arises",
+        "end": "answer found",
+        "checked_by": "supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23245",
+          "23258"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23256",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Track hours and dollars charged to a client job and calculate the client fee.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a fee figure for billing.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per job per billing period.",
+        "work_item": "one client job's fee calculated",
+        "start": "billing period closes",
+        "end": "fee ready to bill",
+        "checked_by": "client; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23240"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23257",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Update manuals when rates, rules or regulations change.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces updated manual.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per change.",
+        "work_item": "one manual update",
+        "start": "change announced",
+        "end": "manual updated",
+        "checked_by": "colleagues; supervisor",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23258",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Compute credit terms, discounts, shipment charges or rates for billing documents.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces computed amounts.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per billing document.",
+        "work_item": "one billing document's charges computed",
+        "start": "document opened",
+        "end": "amounts final",
+        "checked_by": "supervisor; customer",
+        "duplicates": [],
+        "overlaps_with": [
+          "23240",
+          "23245",
+          "23255"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23259",
+    "split_reasoning": "One activity; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Load machines with statements, checks or envelopes, or stuff envelopes by hand.",
+        "time_share": 1.0,
+        "type_reasoning": "Hands-on work away from the computer.",
+        "type": "PHYSICAL",
+        "duplicates": [],
+        "overlaps_with": [
+          "23247",
+          "23250"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23260",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Review cost and revenue data to set rates.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a rate recommendation.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per rate set.",
+        "work_item": "one rate decision",
+        "start": "review period",
+        "end": "rates set or recommended",
+        "checked_by": "management",
+        "duplicates": [],
+        "overlaps_with": [
+          "23263"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23262",
+    "split_reasoning": "Inquiries come live or in writing.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Answer a live inquiry about rates, routing or procedures.",
+        "time_share": 0.5,
+        "type_reasoning": "Person waits.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "One contact each.",
+        "work_item": "one inquiry answered live",
+        "start": "person asks",
+        "end": "answer given",
+        "checked_by": "inquirer",
+        "duplicates": [],
+        "overlaps_with": [
+          "23244"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Answer a written inquiry about rates, routing or procedures.",
+        "time_share": 0.5,
+        "type_reasoning": "Queued.",
+        "type": "DISCRETE",
+        "unit_reasoning": "One per inquiry.",
+        "work_item": "one written inquiry answered",
+        "start": "inquiry received",
+        "end": "reply sent",
+        "checked_by": "inquirer",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23263",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Compile a report of cost factors such as labor, production, storage and equipment.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces a report.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per report.",
+        "work_item": "one cost factor report",
+        "start": "period ends",
+        "end": "report delivered",
+        "checked_by": "management",
+        "duplicates": [],
+        "overlaps_with": [
+          "23260"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23264",
+    "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Create billing documents, shipping labels, credit memos or credit forms.",
+        "time_share": 1.0,
+        "type_reasoning": "Produces documents.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Per document or batch.",
+        "work_item": "one batch of billing documents, labels or credit memos",
+        "start": "trigger such as shipment or credit",
+        "end": "documents issued",
+        "checked_by": "customers; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23240"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23265",
+    "split_reasoning": "Phone answering is live; scheduling and ordering are not.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Answer telephones.",
+        "time_share": 0.35,
+        "type_reasoning": "Live with caller.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "One per call.",
+        "work_item": "one call handled",
+        "start": "call picked up",
+        "end": "call ended",
+        "checked_by": "caller",
+        "duplicates": [],
+        "overlaps_with": [
+          "23244"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Schedule appointments and order supplies or equipment.",
+        "time_share": 0.65,
+        "type_reasoning": "Written requests.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each request handled and confirmed.",
+        "work_item": "one appointment or supply order",
+        "start": "request received",
+        "end": "confirmed or order placed",
+        "checked_by": "requester; supervisor",
+        "duplicates": [],
+        "overlaps_with": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "task_id": "23266",
+    "split_reasoning": "Returning checks is back-office, but errors may prompt live inquiries.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Return a check or retrieve one returned in error and adjust the account.",
+        "time_share": 0.6,
+        "type_reasoning": "Back-office item.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each check handled once.",
+        "work_item": "one check returned or retrieved with account adjusted",
+        "start": "check identified",
+        "end": "account adjusted",
+        "checked_by": "customer; supervisor",
+        "duplicates": [],
+        "overlaps_with": [
+          "23239"
+        ]
+      },
+      {
+        "part_id": "b",
+        "text": "Answer a customer's inquiry about a check error.",
+        "time_share": 0.4,
+        "type_reasoning": "Customer waits.",
+        "type": "LIVE_SERVICE",
+        "unit_reasoning": "Each inquiry per contact.",
+        "work_item": "one check inquiry answered",
+        "start": "customer raises error",
+        "end": "explanation given",
+        "checked_by": "customer",
+        "duplicates": [],
+        "overlaps_with": [
+          "23244"
+        ]
+      }
+    ],
+    "notes": ""
+  }
+]

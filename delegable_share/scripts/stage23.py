@@ -25,7 +25,7 @@ from stage2 import CODERS, WRAPPER, item_text, prompt_parts  # noqa: E402
 
 COMBINED = ROOT / "prompts" / "stage23_combined.md"
 CATALOG = ROOT / "benchmarks" / "stage3_catalog_draft.md"
-BATCH = 34
+BATCH = int(__import__("os").environ.get("BATCH", 34))
 TIER_A = {"metr_th", "swe_bench_verified", "multi_swe_bench", "terminal_bench_2",
           "vals_finance_agent", "osworld_2", "cybench"}
 RATING = ["none", "partial", "good"]

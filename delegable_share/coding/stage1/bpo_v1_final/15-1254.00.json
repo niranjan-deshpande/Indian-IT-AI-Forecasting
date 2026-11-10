@@ -1,0 +1,739 @@
+[
+ {
+  "task_id": "14694",
+  "split_reasoning": "Design, construction, and maintenance produce different work products at different stages of a website's life.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a website or a defined website feature.",
+    "time_share": 0.25,
+    "type_reasoning": "The design is a distinct artifact used by the development team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A design for a defined feature or site is handed over as a whole.",
+    "work_item": "one website or feature design",
+    "start": "design requirements or brief received",
+    "end": "design delivered for review or implementation",
+    "checked_by": "development team and project stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "14722",
+     "14724",
+     "14730"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Build a website or a defined website feature using development and content tools.",
+    "time_share": 0.45,
+    "type_reasoning": "Each implementation produces a distinct website component for review or release.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feature or component is a manageable development handoff rather than an entire project.",
+    "work_item": "one implemented website feature or component",
+    "start": "feature requirements or design ready for implementation",
+    "end": "component submitted for review or deployment",
+    "checked_by": "development team and testers",
+    "duplicates": [],
+    "overlaps_with": [
+     "14707"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain an existing website by making a requested change or correction.",
+    "time_share": 0.3,
+    "type_reasoning": "Each maintenance change produces an updated site component.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requested change or correction is normally tracked and completed as a unit.",
+    "work_item": "one website maintenance change",
+    "start": "maintenance request or defect identified",
+    "end": "change completed and submitted for release",
+    "checked_by": "site owner and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14695",
+     "14707",
+     "14719"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate and vary with the site's development stage."
+ },
+ {
+  "task_id": "14695",
+  "split_reasoning": "Performing updates and directing other people to perform them are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a website update.",
+    "time_share": 0.8,
+    "type_reasoning": "An update produces a distinct change to the site.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requested update is the unit reviewed and released.",
+    "work_item": "one website update",
+    "start": "update request or approved change received",
+    "end": "update completed and submitted for release",
+    "checked_by": "site owner or development lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707",
+     "14719"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct staff performing website updates.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing staff is supervisory interaction rather than a distinct update produced by the worker.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The split depends on the worker's supervisory responsibilities."
+ },
+ {
+  "task_id": "14697",
+  "split_reasoning": "One activity: meeting to decide priorities and solutions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with management or development teams to set priorities, settle conflicts, set content criteria or choose solutions.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live discussion and nothing separate is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14706",
+     "14711"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14698",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Back up website files to local directories so the site can be restored quickly.",
+    "time_share": 1.0,
+    "type_reasoning": "Each backup produces a stored copy that others rely on for recovery.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Backups are run as separate jobs and checked one at a time.",
+    "work_item": "one website file backup completed",
+    "start": "scheduled time or before a major change",
+    "end": "backup copied to local directory and verified",
+    "checked_by": "site owner and whoever restores the site",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14700",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check code for validity, structure, standards and compatibility with browsers, devices and operating systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check ends in a findings list or approval the author relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Code is checked per change or release and returned as a whole.",
+    "work_item": "one code change evaluated",
+    "start": "code change ready for review",
+    "end": "issues list or approval returned",
+    "checked_by": "developer who wrote it and team lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14710"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14701",
+  "split_reasoning": "One activity: staying current.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep up with web technologies through reading, courses, conferences and groups.",
+    "time_share": 1.0,
+    "type_reasoning": "Nothing is produced that others check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Coded NO_DELIVERABLE."
+ },
+ {
+  "task_id": "14702",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze what users need and turn it into technical requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis ends in documented requirements that developers build from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requirements are produced per request or project.",
+    "work_item": "one set of technical requirements",
+    "start": "user request or need raised",
+    "end": "requirements documented and confirmed",
+    "checked_by": "client or manager and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14706",
+     "14722"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14704",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build or change a database that supports a website or web application.",
+    "time_share": 1.0,
+    "type_reasoning": "Each database or schema change is handed to developers who build on it.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Databases are built or changed one at a time.",
+    "work_item": "one database or schema built or changed",
+    "start": "data requirements known",
+    "end": "database working and handed to developers",
+    "checked_by": "application developers and tech lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14707"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14705",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Renew a domain name registration.",
+    "time_share": 1.0,
+    "type_reasoning": "Each renewal ends in a confirmed registration the site depends on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Renewals happen domain by domain on their own dates.",
+    "work_item": "one domain renewal",
+    "start": "renewal notice or due date",
+    "end": "renewal confirmed",
+    "checked_by": "site owner or management",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14706",
+  "split_reasoning": "Two activities: discussing e-commerce strategy with management or users, and building the integration into the site.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with management or users to develop an e-commerce strategy.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in the live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Integrate an agreed e-commerce feature into the website.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a working site feature others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Features are integrated one at a time.",
+    "work_item": "one e-commerce feature integrated",
+    "start": "strategy and feature agreed",
+    "end": "feature live and tested",
+    "checked_by": "site owner or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14707"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "14707",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write supporting code for a web application or website.",
+    "time_share": 1.0,
+    "type_reasoning": "Each piece of code is reviewed and relied on by the team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Code is handed over per change through review.",
+    "work_item": "one supporting code change",
+    "start": "task assigned",
+    "end": "code reviewed and merged",
+    "checked_by": "code reviewer and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14704"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14708",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact network staff or the hosting agency to fix hardware or software problems affecting the website.",
+    "time_share": 1.0,
+    "type_reasoning": "Each problem ends in a resolved issue that the site owner relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Issues are raised and closed one at a time through tickets or emails.",
+    "work_item": "one hosting or network issue resolved",
+    "start": "problem affecting the site noticed",
+    "end": "hosting or network provider confirms the fix",
+    "checked_by": "site owner and site users",
+    "duplicates": [],
+    "overlaps_with": [
+     "14719",
+     "14723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14710",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run website tests on a planned schedule or after any site or product change.",
+    "time_share": 1.0,
+    "type_reasoning": "Each test run ends in results that developers act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Tests are run per schedule or per revision and reported as a whole.",
+    "work_item": "one website test run",
+    "start": "scheduled time or site revision completed",
+    "end": "results recorded and defects reported",
+    "checked_by": "development team lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14700",
+     "14726"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14711",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Choose the programming languages, design tools or applications for a project.",
+    "time_share": 1.0,
+    "type_reasoning": "Each choice is a decision the team builds on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Selections are made per project or need.",
+    "work_item": "one tool or language selection",
+    "start": "project need identified",
+    "end": "choice made and communicated",
+    "checked_by": "development team and management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14697",
+     "14727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14713",
+  "split_reasoning": "Two different activities: answering emails and setting up automated responses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a user's email inquiry.",
+    "time_share": 0.7,
+    "type_reasoning": "Each reply is a deliverable the user relies on, written after the user has gone.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Emails arrive one at a time and are answered individually.",
+    "work_item": "one user email inquiry answered",
+    "start": "inquiry email received",
+    "end": "reply sent",
+    "checked_by": "the user who asked",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Set up an automated system that sends replies to user emails.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a working auto-reply that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each automated response is configured and tested once.",
+    "work_item": "one automated response set up",
+    "start": "need for auto-reply identified",
+    "end": "auto-reply live and tested",
+    "checked_by": "site owner",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "14714",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or put in place procedures for the ongoing revision of the website.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a documented procedure that content staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Procedures are written one at a time.",
+    "work_item": "one website revision procedure",
+    "start": "need for a revision process identified",
+    "end": "procedure documented and in use",
+    "checked_by": "site owner and content staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "14695"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14717",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up the server directory tree for a website.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a directory structure that developers and hosts rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Directory trees are set up per site or deployment.",
+    "work_item": "one server directory structure established",
+    "start": "new site or deployment planned",
+    "end": "directory tree created and documented",
+    "checked_by": "development team and hosting staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "14729"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14719",
+  "split_reasoning": "Recommending improvements and implementing approved improvements produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a website performance improvement.",
+    "time_share": 0.3,
+    "type_reasoning": "The recommendation is a distinct proposal for a stakeholder to consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal addressing a defined performance issue is reviewed as a unit.",
+    "work_item": "one performance improvement recommendation",
+    "start": "performance issue or improvement opportunity identified",
+    "end": "recommendation communicated to the decision-maker",
+    "checked_by": "development lead or site owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "14725",
+     "14727",
+     "14728"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an approved website performance improvement.",
+    "time_share": 0.7,
+    "type_reasoning": "Implementation produces a change to the site or its supporting systems.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined improvement is developed and submitted as one change.",
+    "work_item": "one performance improvement implemented",
+    "start": "improvement selected for implementation",
+    "end": "change completed and submitted for review or deployment",
+    "checked_by": "development team and site owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14695",
+     "14707"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the scale and approval process for improvements."
+ },
+ {
+  "task_id": "14722",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write clear, detailed descriptions of website specifications such as features, software, protocols and systems.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a specification document others build from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Specifications are written one at a time.",
+    "work_item": "one website specification document",
+    "start": "requirements known",
+    "end": "specification issued",
+    "checked_by": "development team and client",
+    "duplicates": [],
+    "overlaps_with": [
+     "14702",
+     "14724",
+     "14730"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14723",
+  "split_reasoning": "Monitoring is continuous but yields two kinds of item: routine log reviews and notices to security specialists.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review security performance logs to find problems.",
+    "time_share": 0.8,
+    "type_reasoning": "Each review ends in a note or finding that the team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Logs are reviewed in sessions and each session is closed out.",
+    "work_item": "one security log review",
+    "start": "review period begins or alert seen",
+    "end": "log reviewed and findings noted",
+    "checked_by": "security specialists and site owner",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Notify security specialists of a problem found in the logs.",
+    "time_share": 0.2,
+    "type_reasoning": "Each notice is a deliverable that specialists act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Problems are escalated individually.",
+    "work_item": "one security problem escalated",
+    "start": "problem identified in logs",
+    "end": "notice sent and acknowledged",
+    "checked_by": "security specialists",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "14724",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build a web model or prototype, such as a physical, interface, logical or data model.",
+    "time_share": 1.0,
+    "type_reasoning": "Each prototype is shown to and relied on by stakeholders.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Prototypes are built and shown one at a time.",
+    "work_item": "one web model or prototype",
+    "start": "design need or requirements known",
+    "end": "prototype delivered for review",
+    "checked_by": "client, management and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14694",
+     "14730"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14725",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate server hardware or software and recommend which to use.",
+    "time_share": 1.0,
+    "type_reasoning": "Each evaluation ends in a recommendation management acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Evaluations are done per decision.",
+    "work_item": "one server hardware or software recommendation",
+    "start": "server need identified",
+    "end": "recommendation delivered",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14727",
+     "14729"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14726",
+  "split_reasoning": "Two different documents: test plans and procedures written before testing, and results written after it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a test plan or testing procedure.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a plan that testers follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are written per project or release.",
+    "work_item": "one test plan or procedure",
+    "start": "testing need identified",
+    "end": "plan issued",
+    "checked_by": "QA lead and development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14710"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record the results of a round of tests.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a record that developers and managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results are recorded per test round.",
+    "work_item": "one test results record",
+    "start": "test round finished",
+    "end": "results filed and shared",
+    "checked_by": "development team lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "14710"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "14727",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research and compare alternatives for web architecture or technology, document them, and select one.",
+    "time_share": 1.0,
+    "type_reasoning": "Each comparison ends in a written rating and choice the team builds on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Alternatives are researched per decision.",
+    "work_item": "one architecture or technology comparison",
+    "start": "decision needed",
+    "end": "comparison written and choice recorded",
+    "checked_by": "development team and management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14711",
+     "14725"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14728",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document technical factors such as server load, bandwidth, database performance, and browser and device types.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a report the team uses for planning and tuning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are produced per period or review.",
+    "work_item": "one technical factors report",
+    "start": "monitoring data gathered",
+    "end": "report filed or shared",
+    "checked_by": "development team and management",
+    "duplicates": [],
+    "overlaps_with": [
+     "14719"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14729",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install and configure HTTP servers and their operating systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Each install ends in a working server others depend on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Servers are built one at a time.",
+    "work_item": "one HTTP server installed and configured",
+    "start": "server requested",
+    "end": "server tested and handed over",
+    "checked_by": "development team and hosting staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "14717",
+     "14725"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "14730",
+  "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draw system interaction or sequence diagrams.",
+    "time_share": 1.0,
+    "type_reasoning": "Each diagram set is a document the team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Diagrams are drawn per system or feature.",
+    "work_item": "one set of interaction or sequence diagrams",
+    "start": "design or feature to be described",
+    "end": "diagrams reviewed and shared",
+    "checked_by": "development team",
+    "duplicates": [],
+    "overlaps_with": [
+     "14722",
+     "14724"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

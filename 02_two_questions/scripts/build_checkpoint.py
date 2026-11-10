@@ -481,7 +481,7 @@ def main():
                   '<p class="footer">Built from <code>02_two_questions/checkpoint_text.md</code> and the repository CSVs by '
                   '<code>02_two_questions/scripts/build_checkpoint.py</code>.</p>')
     byline_parts = [p.strip() for p in front["byline"].split("·")]
-    header = (f'<header><p class="crumbs"><a href="index.html">Pilot note</a> · <b>Two questions (working draft)</b> · <a href="health-check.html">Health check</a> · <a href="theta-model.html">Estimating θ (working draft)</a></p>'
+    header = (f'<header><p class="crumbs"><a href="index.html">Pilot note</a> · <b>Two questions (working draft)</b> · <a href="health-check.html">Health check</a> · <a href="theta-model.html">Estimating θ (working draft)</a> · <a href="delegable-share.html">Delegable share</a></p>'
               f'<h1>{inline(front["title"], {})}</h1>'
               f'<p class="byline">{" · ".join(byline_parts[:-1])} · <span class="tag">{html.escape(byline_parts[-1])}</span></p>'
               f'<p class="thanks">{inline(front["thanks"], doc.tokens)}</p></header>')

@@ -1,0 +1,38 @@
+[
+  {"task_id": "3465", "reasoning": "Y is right that testing, maintenance changes and monitoring alerts are different kinds of item, whereas X lumps maintenance and alerts together. But coordinating an installation today ends in a rollout that is accepted and signed off, so that part should be DISCRETE as in X, not INTERPERSONAL. The revision keeps Y's structure and recodes the installation part.", "choice": "revised", "coding": {
+    "task_id": "3465",
+    "split_reasoning": "Testing, maintenance, monitoring, and coordinating installations are different activities with different outputs.",
+    "parts": [
+      {"part_id": "a", "text": "Test a computer program or system and document the results.", "time_share": 0.3,
+       "type_reasoning": "Each test cycle produces results that a development or operations team uses.", "type": "DISCRETE",
+       "unit_reasoning": "A test cycle for a specified change or release is handed over as one set of results.",
+       "work_item": "one program or system test cycle completed", "start": "program, system change, or release is ready for testing",
+       "end": "test results and defects are recorded and shared", "checked_by": "development team and test lead",
+       "duplicates": [], "overlaps_with": ["3477"]},
+      {"part_id": "b", "text": "Perform a maintenance change on a computer program or system.", "time_share": 0.35,
+       "type_reasoning": "Maintenance produces a completed change to a program or system.", "type": "DISCRETE",
+       "unit_reasoning": "A maintenance request or scheduled change is tracked and completed as a unit.",
+       "work_item": "one program or system maintenance change", "start": "maintenance need or scheduled change identified",
+       "end": "change applied and its completion recorded", "checked_by": "system owner and operations team",
+       "duplicates": [], "overlaps_with": ["3470", "3478", "20950"]},
+      {"part_id": "c", "text": "Investigate a monitoring alert or exception for a computer program or system.", "time_share": 0.2,
+       "type_reasoning": "Continuous monitoring produces individual alerts or exceptions that are investigated and recorded.", "type": "DISCRETE",
+       "unit_reasoning": "An alert or exception is the item acted on and passed to the responsible team.",
+       "work_item": "one monitoring alert or exception investigated", "start": "alert or exception appears in monitoring results",
+       "end": "findings and any necessary escalation are recorded", "checked_by": "operations team",
+       "duplicates": [], "overlaps_with": ["3478", "20950"]},
+      {"part_id": "d", "text": "Coordinate the installation of a program or system with users and technical staff.", "time_share": 0.15,
+       "type_reasoning": "Each coordinated installation ends in a completed rollout that users and IT rely on and accept.", "type": "DISCRETE",
+       "unit_reasoning": "Installations are scheduled and signed off one at a time.",
+       "work_item": "one installation or rollout coordinated", "start": "installation scheduled",
+       "end": "installation complete and accepted", "checked_by": "users and IT manager",
+       "duplicates": [], "overlaps_with": ["3468", "3470"]}
+    ],
+    "notes": "Shares are judgments and depend on the system's maintenance and release cycle."
+  }},
+  {"task_id": "3471", "reasoning": "Interviewing, surveying, observing and performing the job are alternative methods for one deliverable: findings on how information is processed. Under the instructions this is not a reason to split, and the interviews' value lies in the findings rather than in the interaction itself. X codes it as one DISCRETE investigation.", "choice": "X"},
+  {"task_id": "3473", "reasoning": "The statement is only about training staff and users, which is live teaching with nothing a colleague checks. X invents a training-materials part that the statement does not mention, so Y's single INTERPERSONAL part is correct.", "choice": "Y"},
+  {"task_id": "3476", "reasoning": "Defining a system's goals produces a requirements-level statement that management and owners agree to, while program flowcharts are technical design artifacts that programmers use. These are different deliverables with different checkers, so X's split is better than Y's combined set.", "choice": "X"},
+  {"task_id": "3477", "reasoning": "Design procedures, test procedures and quality standards are all written, reviewed and issued the same way, as one document at a time. Splitting by topic does not separate different activities, so X's single part with 'one procedure or standard' is enough.", "choice": "X"},
+  {"task_id": "3481", "reasoning": "Both codings make the whole statement INTERPERSONAL, and supervising staff versus leading project staff is the same kind of live direction of people. Y's two-way split adds nothing, so X's single part is preferred.", "choice": "X"}
+]

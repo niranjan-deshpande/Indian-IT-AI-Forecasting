@@ -107,7 +107,8 @@ LIVE_SERVICE rule π(1−κ)h > q(a+bh) + (1−π)λh with q, λ still to source
 
 1. **Check the levers above with the user:** date alignment rule, ρ, λ, and whether D or S is the
    headline.
-2. **BPO run:** Stages 1–3, then gather data for any newly matched benchmarks (same brief).
+2. **BPO run done (2026-11-10)** — see DECISIONS. Comparison against the economy still needs the
+   comparison sample (item 4).
 3. **Parameters to source:** q, λ (QA sampling share, failure penalty) for live service.
 4. **Comparison sample not drawn** (30–50 occupations, employment-weighted).
 5. **Nothing is committed** (including the repo reorganisation).

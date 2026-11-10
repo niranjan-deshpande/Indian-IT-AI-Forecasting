@@ -1,0 +1,781 @@
+[
+ {
+  "task_id": "23237",
+  "split_reasoning": "Posting a stop-payment notice is one activity with one record as its output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post a stop-payment notice for a protested check.",
+    "time_share": 1.0,
+    "type_reasoning": "Each notice creates a record used to prevent payment of a particular check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The posted notice is the record relied on by payment-processing staff.",
+    "work_item": "one stop-payment notice posted",
+    "start": "stop-payment instruction for a protested check received",
+    "end": "notice entered and available to payment-processing staff",
+    "checked_by": "payment-processing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23238",
+  "split_reasoning": "Checking billing data and correcting its errors are steps in one review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify a billing record and correct any errors found.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a verified or corrected billing record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A billing record is reviewed and released as a whole for subsequent billing.",
+    "work_item": "one billing record verified and corrected",
+    "start": "billing record and supporting data available for review",
+    "end": "record verified and any corrections entered",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23240",
+     "23243",
+     "23245"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23239",
+  "split_reasoning": "Checking signatures and required information are checks on the same item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify the signature and required information on a check.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check is accepted for further processing or flagged for a problem.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual check is the item passed on or returned for attention.",
+    "work_item": "one check verified or flagged",
+    "start": "check received for verification",
+    "end": "required details checked and check passed on or flagged",
+    "checked_by": "payment-processing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23240",
+  "split_reasoning": "Preparing the itemized bill and recording its amount due are parts of the same billing output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare an itemized bill or invoice and record the amount due.",
+    "time_share": 1.0,
+    "type_reasoning": "Each billing transaction produces a bill and an associated amount-due record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed bill is the whole item issued to the customer and recorded for collection.",
+    "work_item": "one itemized bill or invoice prepared and recorded",
+    "start": "purchase or service details available for billing",
+    "end": "itemized bill prepared and amount due recorded",
+    "checked_by": "customer and billing or accounts-receivable staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23238",
+     "23241",
+     "23245",
+     "23258",
+     "23264"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23241",
+  "split_reasoning": "Posting bookkeeping data and keeping cost or shipment records are ways of maintaining transaction records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post or maintain bookkeeping records of costs or shipments.",
+    "time_share": 1.0,
+    "type_reasoning": "Each posting or record update produces an entry that other staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A transaction or related set of entries is posted as a unit from its supporting documents.",
+    "work_item": "one transaction's bookkeeping entries posted or updated",
+    "start": "cost, service, or shipment information received",
+    "end": "relevant bookkeeping records updated",
+    "checked_by": "accounting staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23240",
+     "23246",
+     "23256"
+    ]
+   }
+  ],
+  "notes": "Records may be posted individually or in batches depending on the workplace."
+ },
+ {
+  "task_id": "23242",
+  "split_reasoning": "The listed machines are alternative tools used to produce typed, calculated, or billing work; the statement does not identify separate deliverables for each.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use office or billing equipment to process a billing calculation or document.",
+    "time_share": 1.0,
+    "type_reasoning": "The equipment is operated to produce an individual calculation or document for billing work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The output of a processing job, rather than each machine operation, is the unit another worker uses.",
+    "work_item": "one billing calculation or document processed using office equipment",
+    "start": "billing information or document supplied for processing",
+    "end": "calculation or document produced for the next billing step",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23240",
+     "23245",
+     "23258",
+     "23264"
+    ]
+   }
+  ],
+  "notes": "This is a broad equipment-use statement and may substantially duplicate specific billing tasks depending on the job."
+ },
+ {
+  "task_id": "23243",
+  "split_reasoning": "Investigating and correcting a discrepancy are stages of one resolution.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate and resolve a discrepancy in accounting records.",
+    "time_share": 1.0,
+    "type_reasoning": "Each discrepancy produces a correction or documented resolution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A discrepancy is investigated and resolved as a case, even if several entries must be checked.",
+    "work_item": "one accounting discrepancy resolved",
+    "start": "discrepancy identified or referred",
+    "end": "records corrected or resolution documented and communicated",
+    "checked_by": "accounting staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23238",
+     "23251",
+     "23266"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23244",
+  "split_reasoning": "Account information is obtained or relayed both in live customer contacts and through written correspondence.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact a customer live to obtain or relay account information.",
+    "time_share": 0.7,
+    "type_reasoning": "The information exchange takes place while the customer is on the call or at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer contact is completed when the requested information has been exchanged.",
+    "work_item": "one live customer contact about account information",
+    "start": "customer reached or approached about an account",
+    "end": "information obtained or relayed and contact concluded",
+    "checked_by": "customer and billing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23262",
+     "23266"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write to a customer to obtain or relay account information.",
+    "time_share": 0.3,
+    "type_reasoning": "Written account correspondence is prepared without the customer waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The sent message or letter is the individual communication handed to the customer.",
+    "work_item": "one account-information request or response sent",
+    "start": "need for customer account information or notification identified",
+    "end": "message or letter sent to the customer",
+    "checked_by": "customer and billing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23262",
+     "23266"
+    ]
+   }
+  ],
+  "notes": "The channel shares vary by employer."
+ },
+ {
+  "task_id": "23245",
+  "split_reasoning": "The listed source documents are alternative inputs to the same charge calculation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review transaction or service documents and compute the charges due.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a charge calculation for use in billing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The calculation for one transaction or service account is passed to the billing step as a whole.",
+    "work_item": "one transaction or service charge calculation",
+    "start": "supporting purchase or service documents received",
+    "end": "charges calculated and made available for billing",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23238",
+     "23240",
+     "23242",
+     "23255",
+     "23256",
+     "23258"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23246",
+  "split_reasoning": "Keeping invoices and their supporting documents together is one record-maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain the invoice and supporting documents for a billing transaction.",
+    "time_share": 1.0,
+    "type_reasoning": "Each filing or record update leaves an organized record for later use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The invoice and its supporting documents form the record retrieved for a transaction.",
+    "work_item": "one invoice record filed or updated with supporting documents",
+    "start": "invoice and supporting documents available for filing",
+    "end": "record filed or updated and retrievable",
+    "checked_by": "billing staff, accounting staff, or an auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23241"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23247",
+  "split_reasoning": "Mailing and over-the-counter delivery are alternative destinations for routing prepared statements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Route prepared statements for mailing or customer pickup.",
+    "time_share": 1.0,
+    "type_reasoning": "Each routed set of statements is handed off to a delivery or customer-service channel.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Statements are commonly sorted and handed off as a batch for the relevant delivery channel.",
+    "work_item": "one batch of statements routed for delivery",
+    "start": "prepared statements received for routing",
+    "end": "statements delivered to the mail or counter-distribution channel",
+    "checked_by": "mailroom or counter staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23259"
+    ]
+   }
+  ],
+  "notes": "Some workplaces route individual statements rather than batches."
+ },
+ {
+  "task_id": "23248",
+  "split_reasoning": "Monitoring is continuous; the actionable item it produces is an equipment issue identified for attention.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and flag an equipment operating problem during monitoring.",
+    "time_share": 1.0,
+    "type_reasoning": "Each detected problem can be handed to someone for correction or repair.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An identified equipment issue is the discrete item arising from continued monitoring.",
+    "work_item": "one equipment operating problem identified and flagged",
+    "start": "equipment observed during operation",
+    "end": "problem identified and flagged for attention",
+    "checked_by": "equipment operator, supervisor, or repair personnel",
+    "duplicates": [],
+    "overlaps_with": [
+     "23249"
+    ]
+   }
+  ],
+  "notes": "Routine observation may produce no separate record when equipment runs normally."
+ },
+ {
+  "task_id": "23249",
+  "split_reasoning": "Hands-on correction of minor problems and notification of repair personnel about major problems are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Fix a minor equipment problem such as a jam.",
+    "time_share": 0.65,
+    "type_reasoning": "Clearing a jam or similar fault requires hands-on work on the equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23248"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Notify repair personnel of a major equipment problem.",
+    "time_share": 0.35,
+    "type_reasoning": "The notification creates a repair request or message for another worker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One reported fault is the item handed to repair personnel.",
+    "work_item": "one major equipment fault reported",
+    "start": "major equipment problem identified",
+    "end": "fault details communicated to repair personnel",
+    "checked_by": "repair personnel or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23248"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the frequency of minor jams and major failures."
+ },
+ {
+  "task_id": "23250",
+  "split_reasoning": "Weighing statement envelopes and applying the resulting postage are one physical mailing process.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Weigh statement envelopes and affix the correct postage.",
+    "time_share": 1.0,
+    "type_reasoning": "Handling, weighing, and stamping or metering envelopes require hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23247",
+     "23259"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23251",
+  "split_reasoning": "Comparing a bank statement with canceled checks and reconciling differences is one reconciliation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare a bank statement with canceled checks and reconcile discrepancies.",
+    "time_share": 1.0,
+    "type_reasoning": "Each reconciliation produces a checked statement and documented resolution of differences.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The bank statement period is the usual unit reviewed and handed over.",
+    "work_item": "one bank statement reconciled against canceled checks",
+    "start": "prepared bank statement and canceled checks available",
+    "end": "checks compared and discrepancies reconciled or documented",
+    "checked_by": "accounting staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23243"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23255",
+  "split_reasoning": "Rate books, manuals, and insurance representatives are alternative sources for determining billing information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult reference sources to determine a specific charge or applicable billing rule.",
+    "time_share": 1.0,
+    "type_reasoning": "Each inquiry produces a determined charge or rule for use in a billing case.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The answer to one billing question is the output passed to the person completing the bill.",
+    "work_item": "one charge or billing-rule determination",
+    "start": "specific charge or rule question identified",
+    "end": "applicable information determined and recorded or relayed",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23245",
+     "23258",
+     "23262"
+    ]
+   }
+  ],
+  "notes": "Consulting a representative may involve a live conversation, but the item coded is the resulting determination for billing."
+ },
+ {
+  "task_id": "23256",
+  "split_reasoning": "Tracking accumulated job charges and calculating the resulting client fee form one job-billing calculation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Track hours and charges for a client job and calculate the client fee.",
+    "time_share": 1.0,
+    "type_reasoning": "Tracking produces a job-level fee calculation for a billing period or billing event.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The accumulated job calculation is the unit supplied for preparing the client's bill.",
+    "work_item": "one client-job fee calculation for a billing period",
+    "start": "job time and charge records available",
+    "end": "accumulated amounts checked and fee calculated for billing",
+    "checked_by": "billing staff and the professional responsible for the client",
+    "duplicates": [],
+    "overlaps_with": [
+     "23241",
+     "23245",
+     "23258"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23257",
+  "split_reasoning": "Updating a manual for amended rates, rules, or regulations is one document-maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a manual to reflect amended rates, rules, or regulations.",
+    "time_share": 1.0,
+    "type_reasoning": "Each amendment produces a revised manual section or update for users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A revision corresponding to an amendment is issued or incorporated as a whole.",
+    "work_item": "one manual amendment incorporated",
+    "start": "notice of a rate, rule, or regulatory change received",
+    "end": "relevant manual content updated and made available",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23258",
+  "split_reasoning": "Credit terms, discounts, shipment charges, and rates are different inputs to the same billing calculation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate applicable terms, discounts, charges, or rates for a billing document.",
+    "time_share": 1.0,
+    "type_reasoning": "Each calculation supplies billing values for a particular transaction.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The set of applicable calculations for one billing document is used together to complete it.",
+    "work_item": "one billing document's terms and charge calculations",
+    "start": "transaction details and applicable terms available",
+    "end": "values calculated and supplied or entered for billing",
+    "checked_by": "billing staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23240",
+     "23242",
+     "23245",
+     "23255",
+     "23256",
+     "23264"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23259",
+  "split_reasoning": "Machine loading and hand stuffing are alternative hands-on methods of preparing statements for distribution.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load statement-distribution equipment or stuff statement envelopes by hand.",
+    "time_share": 1.0,
+    "type_reasoning": "Both methods require physically handling statements, checks, or envelopes.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23247",
+     "23250"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23260",
+  "split_reasoning": "Reviewing cost and revenue data to set a rate is one rate-setting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review operating-cost and revenue data and set or recommend a rate.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a rate determination that can be approved or used.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A rate determination for a service or rate category is the unit submitted for use or approval.",
+    "work_item": "one rate determination based on operating costs and revenues",
+    "start": "compiled cost and revenue data available for a rate review",
+    "end": "rate set or recommendation submitted",
+    "checked_by": "billing management or the rate approver",
+    "duplicates": [],
+    "overlaps_with": [
+     "23263"
+    ]
+   }
+  ],
+  "notes": "The clerk's authority to set rather than recommend rates varies by employer."
+ },
+ {
+  "task_id": "23262",
+  "split_reasoning": "Inquiries are answered both during live customer contacts and from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's live inquiry about rates, routing, or procedures.",
+    "time_share": 0.75,
+    "type_reasoning": "The customer waits in a call or at a counter while the clerk answers.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One inquiry is addressed within the live contact.",
+    "work_item": "one live rates, routing, or procedures inquiry answered",
+    "start": "customer asks the question during a call or visit",
+    "end": "answer given to the customer",
+    "checked_by": "customer and, if reviewed, a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23244",
+     "23255",
+     "23265",
+     "23266"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a written inquiry about rates, routing, or procedures.",
+    "time_share": 0.25,
+    "type_reasoning": "The response is prepared and sent without the customer waiting in a live conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written inquiry receives an individual response.",
+    "work_item": "one written rates, routing, or procedures inquiry answered",
+    "start": "written inquiry received",
+    "end": "answer sent to the requester",
+    "checked_by": "requester and, if reviewed, a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23244",
+     "23255",
+     "23266"
+    ]
+   }
+  ],
+  "notes": "Channel shares are estimates and vary by workplace."
+ },
+ {
+  "task_id": "23263",
+  "split_reasoning": "The listed cost factors are inputs to the same kind of compiled cost report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile a report of labor, production, storage, equipment, or other cost factors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each reporting cycle or request produces a report for management or accounting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed report is the unit sent to its users.",
+    "work_item": "one compiled cost-factor report",
+    "start": "reporting request or period begins and cost data are available",
+    "end": "cost factors compiled and report submitted",
+    "checked_by": "accounting staff or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "23260"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23264",
+  "split_reasoning": "Billing documents, shipping labels, and credit documents are different outputs with different downstream uses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a billing document for a transaction.",
+    "time_share": 0.5,
+    "type_reasoning": "Each transaction produces a document for billing or collection.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed billing document is the item issued or passed to billing staff.",
+    "work_item": "one billing document created",
+    "start": "transaction and charge information available",
+    "end": "billing document completed and made ready for issue",
+    "checked_by": "customer and billing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23240",
+     "23242",
+     "23258"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Create a shipping label for a shipment.",
+    "time_share": 0.2,
+    "type_reasoning": "Each label is a distinct output used to route a shipment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The label for one package or shipment is handed to shipping staff.",
+    "work_item": "one shipping label created",
+    "start": "shipment and destination details available",
+    "end": "label prepared for the shipment",
+    "checked_by": "shipping staff or carrier",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Create a credit memorandum or credit form.",
+    "time_share": 0.3,
+    "type_reasoning": "Each credit document records a credit for subsequent account processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed credit document is the item reviewed or posted by accounting.",
+    "work_item": "one credit memorandum or credit form created",
+    "start": "credit transaction and supporting details received",
+    "end": "credit document completed and routed for processing",
+    "checked_by": "accounts-receivable staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23266"
+    ]
+   }
+  ],
+  "notes": "Shares vary substantially with the employer's billing and shipping workflow."
+ },
+ {
+  "task_id": "23265",
+  "split_reasoning": "Answering calls, scheduling appointments, and ordering supplies are different activities; appointment scheduling also occurs both live and from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer and direct a general telephone call.",
+    "time_share": 0.35,
+    "type_reasoning": "The caller is on the line while the clerk handles or directs the call.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One call is handled as a single live contact.",
+    "work_item": "one general telephone call answered and handled",
+    "start": "telephone call received",
+    "end": "caller's request handled or call transferred",
+    "checked_by": "caller and receiving staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23262"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule or change an appointment while a caller or visitor waits.",
+    "time_share": 0.2,
+    "type_reasoning": "The booking is made during a live contact with the requester.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One appointment request is entered and confirmed during the contact.",
+    "work_item": "one appointment scheduled or changed during a contact",
+    "start": "caller or visitor requests an appointment",
+    "end": "appointment entered and confirmed",
+    "checked_by": "requester and staff member whose calendar is updated",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Schedule or change an appointment from a written request.",
+    "time_share": 0.15,
+    "type_reasoning": "The appointment is entered outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written appointment request results in a calendar entry and confirmation.",
+    "work_item": "one appointment scheduled or changed from a written request",
+    "start": "written appointment request received",
+    "end": "calendar updated and confirmation sent",
+    "checked_by": "requester and staff member whose calendar is updated",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Order supplies or equipment for the office.",
+    "time_share": 0.3,
+    "type_reasoning": "Each order creates a purchasing request or order relied on by the supplier or purchasing staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An order containing the needed items is submitted as a whole.",
+    "work_item": "one supply or equipment order submitted",
+    "start": "supply or equipment need identified",
+    "end": "order or purchasing request submitted",
+    "checked_by": "purchasing staff, supplier, or supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares and channels are estimates; other general administrative duties are not specified."
+ },
+ {
+  "task_id": "23266",
+  "split_reasoning": "Returning or retrieving checks, adjusting accounts, and answering inquiries are distinct activities; inquiries can be handled live or in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Return a check to a customer or retrieve one returned in error.",
+    "time_share": 0.35,
+    "type_reasoning": "The clerk physically handles and transfers or retrieves the check.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Adjust an account to correct an error involving a returned check.",
+    "time_share": 0.3,
+    "type_reasoning": "The correction produces an account entry used by accounting staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The adjustment for one check error is the record reviewed and posted.",
+    "work_item": "one account adjustment for a check-return error",
+    "start": "check-return error and required correction identified",
+    "end": "account adjustment entered or submitted for approval",
+    "checked_by": "accounting staff or a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23243",
+     "23264"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Answer a customer's live inquiry about a check-return error.",
+    "time_share": 0.25,
+    "type_reasoning": "The customer waits on a call or at the counter while the inquiry is answered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One inquiry is addressed within the customer contact.",
+    "work_item": "one live check-error inquiry answered",
+    "start": "customer asks about the check error",
+    "end": "explanation or status relayed to the customer",
+    "checked_by": "customer and, if reviewed, a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23244",
+     "23262"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Answer a written customer inquiry about a check-return error.",
+    "time_share": 0.1,
+    "type_reasoning": "The written response is prepared outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The response to one written inquiry is sent as a whole.",
+    "work_item": "one written check-error inquiry answered",
+    "start": "written inquiry about the error received",
+    "end": "explanation or status sent to the customer",
+    "checked_by": "customer and, if reviewed, a supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23244",
+     "23262"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; account adjustments may sometimes be made while a customer waits, depending on the workplace."
+ }
+]

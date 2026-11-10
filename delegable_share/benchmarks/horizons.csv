@@ -1,121 +1,187 @@
 benchmark,variant,beta,n_items,item_median_min,H_now_min,H_now_model,H_now_date,H_now_score,n_models,n_frontier,doubling_months,grading,pooled_doubling_months,age_months,H_today_min
+apex_accounting,base,0.84,10,95.0,19.16,Gemini 4 Argon (high),2026-09-30,0.238,49,6,3.8,llm_judge,3.5,1.3,25.02
+apex_accounting,base_decomp,0.84,10,95.0,11.82,Gemini 4 Argon (high),2026-09-30,0.238,49,6,2.8,llm_judge,2.4,1.3,17.44
+apex_accounting,beta_lo,0.6,10,95.0,11.17,Gemini 4 Argon (high),2026-09-30,0.238,49,6,2.8,llm_judge,2.5,1.3,16.23
+apex_accounting,beta_lo_decomp,0.6,10,95.0,6.97,Gemini 4 Argon (high),2026-09-30,0.238,49,6,2.3,llm_judge,2.2,1.3,10.65
+apex_accounting,beta_hi,1.0,10,95.0,23.7,Gemini 4 Argon (high),2026-09-30,0.238,49,6,4.4,llm_judge,4.0,1.3,30.02
+apex_accounting,beta_hi_decomp,1.0,10,95.0,14.72,Gemini 4 Argon (high),2026-09-30,0.238,49,6,2.9,llm_judge,2.7,1.3,20.8
 crmarena_pro,base,0.84,24,12.0,17.29,gemini-2.5-pro,2025-03-25,0.562,9,3,4.8,exact_answer,3.5,19.5,829.8
 crmarena_pro,base_decomp,0.84,24,12.0,20.6,gemini-2.5-pro,2025-03-25,0.562,9,3,4.3,exact_answer,2.4,19.5,5828.91
-crmarena_pro,beta_lo,0.6,24,12.0,19.41,gemini-2.5-pro,2025-03-25,0.562,9,3,3.5,exact_answer,2.5,19.5,3940.28
-crmarena_pro,beta_lo_decomp,0.6,24,12.0,22.6,gemini-2.5-pro,2025-03-25,0.562,9,3,3.3,exact_answer,2.2,19.5,9317.0
-crmarena_pro,beta_hi,1.0,24,12.0,16.53,gemini-2.5-pro,2025-03-25,0.562,9,3,5.7,exact_answer,3.9,19.5,533.36
+crmarena_pro,beta_lo,0.6,24,12.0,19.41,gemini-2.5-pro,2025-03-25,0.562,9,3,3.5,exact_answer,2.5,19.5,4382.04
+crmarena_pro,beta_lo_decomp,0.6,24,12.0,22.6,gemini-2.5-pro,2025-03-25,0.562,9,3,3.3,exact_answer,2.2,19.5,10683.46
+crmarena_pro,beta_hi,1.0,24,12.0,16.53,gemini-2.5-pro,2025-03-25,0.562,9,3,5.7,exact_answer,4.0,19.5,510.42
 crmarena_pro,beta_hi_decomp,1.0,24,12.0,19.95,gemini-2.5-pro,2025-03-25,0.562,9,3,4.9,exact_answer,2.7,19.5,3014.74
+dba_bench,base,0.84,24,47.5,14.14,GPT-5.5,2026-04-23,0.271,6,2,,state,3.5,6.6,52.29
+dba_bench,base_decomp,0.84,24,47.5,11.68,GPT-5.5,2026-04-23,0.271,6,2,,state,2.4,6.6,78.64
+dba_bench,beta_lo,0.6,24,47.5,8.91,GPT-5.5,2026-04-23,0.271,6,2,,state,2.5,6.6,55.59
+dba_bench,beta_lo_decomp,0.6,24,47.5,7.71,GPT-5.5,2026-04-23,0.271,6,2,,state,2.2,6.6,61.74
+dba_bench,beta_hi,1.0,24,47.5,16.96,GPT-5.5,2026-04-23,0.271,6,2,,state,4.0,6.6,54.03
+dba_bench,beta_hi_decomp,1.0,24,47.5,13.65,GPT-5.5,2026-04-23,0.271,6,2,,state,2.7,6.6,74.36
+dualentry,base,0.84,8,3.0,47.2,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,6.7,exact_answer,3.5,0.9,56.63
+dualentry,base_decomp,0.84,8,3.0,52.66,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,6.2,exact_answer,2.4,0.9,68.68
+dualentry,beta_lo,0.6,8,3.0,141.62,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,4.8,exact_answer,2.5,0.9,182.76
+dualentry,beta_lo_decomp,0.6,8,3.0,150.45,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,4.6,exact_answer,2.2,0.9,201.03
+dualentry,beta_hi,1.0,8,3.0,30.48,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,8.0,exact_answer,4.0,0.9,35.82
+dualentry,beta_hi_decomp,1.0,8,3.0,35.06,Gemini 4 Argon [Oct2026],2026-10-13,0.911,38,11,7.2,exact_answer,2.7,0.9,44.4
 eva_bench,base,0.84,24,12.0,130.29,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,3.9,state,3.5,0.5,142.71
 eva_bench,base_decomp,0.84,24,12.0,194.83,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,3.3,state,2.4,0.5,222.51
-eva_bench,beta_lo,0.6,24,12.0,322.01,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,2.8,state,2.5,0.5,364.89
-eva_bench,beta_lo_decomp,0.6,24,12.0,436.16,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,2.6,state,2.2,0.5,502.55
-eva_bench,beta_hi,1.0,24,12.0,91.15,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,4.6,state,3.9,0.5,98.91
+eva_bench,beta_lo,0.6,24,12.0,322.01,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,2.8,state,2.5,0.5,365.8
+eva_bench,beta_lo_decomp,0.6,24,12.0,436.16,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,2.6,state,2.2,0.5,504.17
+eva_bench,beta_hi,1.0,24,12.0,91.15,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,4.6,state,4.0,0.5,98.81
 eva_bench,beta_hi_decomp,1.0,24,12.0,144.74,Cartesia Managed Agents - GPT 5.5,2026-10-27,0.874,22,7,3.7,state,2.7,0.5,162.88
 finch,base,0.84,24,40.0,24.11,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,3.2,llm_judge,3.5,11.5,236.57
 finch,base_decomp,0.84,24,40.0,17.65,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,2.3,llm_judge,2.4,11.5,493.23
-finch,beta_lo,0.6,24,40.0,21.22,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,2.4,llm_judge,2.5,11.5,487.5
-finch,beta_lo_decomp,0.6,24,40.0,15.35,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,1.9,llm_judge,2.2,11.5,535.6
-finch,beta_hi,1.0,24,40.0,25.35,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,3.7,llm_judge,3.9,11.5,196.8
+finch,beta_lo,0.6,24,40.0,21.22,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,2.4,llm_judge,2.5,11.5,519.04
+finch,beta_lo_decomp,0.6,24,40.0,15.35,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,1.9,llm_judge,2.2,11.5,580.63
+finch,beta_hi,1.0,24,40.0,25.35,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,3.7,llm_judge,4.0,11.5,191.76
 finch,beta_hi_decomp,1.0,24,40.0,18.85,Claude Opus 4.5 (Claude product agent),2025-11-24,0.43,8,5,2.4,llm_judge,2.7,11.5,363.85
 gdpval,base,0.84,24,135.0,1230.77,GPT-5.5,2026-04-23,0.849,13,9,2.3,human_expert,3.5,6.6,4550.98
 gdpval,base_decomp,0.84,24,135.0,2266.04,GPT-5.5,2026-04-23,0.849,13,9,1.8,human_expert,2.4,6.6,15257.93
-gdpval,beta_lo,0.6,24,135.0,2728.28,GPT-5.5,2026-04-23,0.849,13,9,1.7,human_expert,2.5,6.6,16420.93
-gdpval,beta_lo_decomp,0.6,24,135.0,4486.63,GPT-5.5,2026-04-23,0.849,13,9,1.4,human_expert,2.2,6.6,34305.48
-gdpval,beta_hi,1.0,24,135.0,900.94,GPT-5.5,2026-04-23,0.849,13,9,2.7,human_expert,3.9,6.6,2913.23
+gdpval,beta_lo,0.6,24,135.0,2728.28,GPT-5.5,2026-04-23,0.849,13,9,1.7,human_expert,2.5,6.6,17021.11
+gdpval,beta_lo_decomp,0.6,24,135.0,4486.63,GPT-5.5,2026-04-23,0.849,13,9,1.4,human_expert,2.2,6.6,35928.72
+gdpval,beta_hi,1.0,24,135.0,900.94,GPT-5.5,2026-04-23,0.849,13,9,2.7,human_expert,4.0,6.6,2870.27
 gdpval,beta_hi_decomp,1.0,24,135.0,1760.94,GPT-5.5,2026-04-23,0.849,13,9,2.0,human_expert,2.7,6.6,9592.84
+healthadminbench,base,0.84,24,13.5,7.17,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,3.5,9.1,43.75
+healthadminbench,base_decomp,0.84,24,13.5,6.62,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,2.4,9.1,92.55
+healthadminbench,beta_lo,0.6,24,13.5,5.54,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,2.5,9.1,69.69
+healthadminbench,beta_lo_decomp,0.6,24,13.5,5.39,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,2.2,9.1,95.77
+healthadminbench,beta_hi,1.0,24,13.5,7.93,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,4.0,9.1,39.38
+healthadminbench,beta_hi_decomp,1.0,24,13.5,7.1,Claude Opus 4.6 (Anthropic computer-use tool),2026-02-05,0.363,5,2,,state,2.7,9.1,74.04
 itbench_sre,base,0.84,24,27.5,19.53,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,2.1,exact_answer,3.5,6.8,75.58
 itbench_sre,base_decomp,0.84,24,27.5,20.93,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,2.0,exact_answer,2.4,6.8,150.61
-itbench_sre,beta_lo,0.6,24,27.5,16.7,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,1.5,exact_answer,2.5,6.8,107.0
-itbench_sre,beta_lo_decomp,0.6,24,27.5,18.03,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,1.5,exact_answer,2.2,6.8,147.98
-itbench_sre,beta_hi,1.0,24,27.5,20.79,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,2.4,exact_answer,3.9,6.8,70.03
+itbench_sre,beta_lo,0.6,24,27.5,16.7,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,1.5,exact_answer,2.5,6.8,111.05
+itbench_sre,beta_lo_decomp,0.6,24,27.5,18.03,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,1.5,exact_answer,2.2,6.8,155.23
+itbench_sre,beta_hi,1.0,24,27.5,20.79,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,2.4,exact_answer,4.0,6.8,68.96
 itbench_sre,beta_hi_decomp,1.0,24,27.5,22.16,"Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",2026-04-16,0.418,23,6,2.4,exact_answer,2.7,6.8,128.06
 osworld_verified,base,0.84,24,4.0,82.51,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,4.1,state,3.5,3.5,166.59
 osworld_verified,base_decomp,0.84,24,4.0,636.59,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,2.4,state,2.4,3.5,1773.69
-osworld_verified,beta_lo,0.6,24,4.0,211.32,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,3.1,state,2.5,3.5,554.35
-osworld_verified,beta_lo_decomp,0.6,24,4.0,1078.45,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,2.2,state,2.2,3.5,3217.26
-osworld_verified,beta_hi,1.0,24,4.0,58.17,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,4.6,state,3.9,3.5,109.28
+osworld_verified,beta_lo,0.6,24,4.0,211.32,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,3.1,state,2.5,3.5,565.14
+osworld_verified,beta_lo_decomp,0.6,24,4.0,1078.45,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,2.2,state,2.2,3.5,3298.18
+osworld_verified,beta_hi,1.0,24,4.0,58.17,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,4.6,state,4.0,3.5,108.42
 osworld_verified,beta_hi_decomp,1.0,24,4.0,554.29,Intelligence-Indeed Agent,2026-07-25,0.902,66,18,2.5,state,2.7,3.5,1378.19
 sopbench,base,0.84,24,6.0,25.03,o4-mini-high,2025-04-16,0.753,23,5,15.6,state,3.5,18.8,1041.07
 sopbench,base_decomp,0.84,24,6.0,31.7,o4-mini-high,2025-04-16,0.753,23,5,14.5,state,2.4,18.8,7279.93
-sopbench,beta_lo,0.6,24,6.0,42.38,o4-mini-high,2025-04-16,0.753,23,5,11.2,state,2.5,18.8,7068.75
-sopbench,beta_lo_decomp,0.6,24,6.0,52.44,o4-mini-high,2025-04-16,0.753,23,5,10.8,state,2.2,18.8,17303.55
-sopbench,beta_hi,1.0,24,6.0,20.3,o4-mini-high,2025-04-16,0.753,23,5,18.5,state,3.9,18.8,576.05
+sopbench,beta_lo,0.6,24,6.0,42.38,o4-mini-high,2025-04-16,0.753,23,5,11.2,state,2.5,18.8,7830.44
+sopbench,beta_lo_decomp,0.6,24,6.0,52.44,o4-mini-high,2025-04-16,0.753,23,5,10.8,state,2.2,18.8,19741.19
+sopbench,beta_hi,1.0,24,6.0,20.3,o4-mini-high,2025-04-16,0.753,23,5,18.5,state,4.0,18.8,552.17
 sopbench,beta_hi_decomp,1.0,24,6.0,26.07,o4-mini-high,2025-04-16,0.753,23,5,16.8,state,2.7,18.8,3272.41
+spider2,base,0.84,24,35.0,963.32,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,2.4,exact_answer,3.5,11.7,9828.3
+spider2,base_decomp,0.84,24,35.0,1222.39,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,2.1,exact_answer,2.4,11.7,36161.11
+spider2,beta_lo,0.6,24,35.0,3562.99,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,1.7,exact_answer,2.5,11.7,92046.07
+spider2,beta_lo_decomp,0.6,24,35.0,4159.56,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,1.6,exact_answer,2.2,11.7,167420.83
+spider2,beta_hi,1.0,24,35.0,573.1,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,2.8,exact_answer,4.0,11.7,4487.68
+spider2,beta_hi_decomp,1.0,24,35.0,766.08,Gemini 3 Pro Preview [system: QUVI-3 (DAQUV)],2025-11-18,0.942,22,9,2.4,exact_answer,2.7,11.7,15554.57
 spreadsheetbench_2,base,0.84,24,55.0,22.58,Claude Opus 4.6,2026-02-05,0.349,8,3,1.4,state,3.5,9.1,137.79
 spreadsheetbench_2,base_decomp,0.84,24,55.0,17.75,Claude Opus 4.6,2026-02-05,0.349,8,3,1.2,state,2.4,9.1,248.15
-spreadsheetbench_2,beta_lo,0.6,24,55.0,16.84,Claude Opus 4.6,2026-02-05,0.349,8,3,1.0,state,2.5,9.1,201.59
-spreadsheetbench_2,beta_lo_decomp,0.6,24,55.0,13.0,Claude Opus 4.6,2026-02-05,0.349,8,3,0.9,state,2.2,9.1,216.68
-spreadsheetbench_2,beta_hi,1.0,24,55.0,25.39,Claude Opus 4.6,2026-02-05,0.349,8,3,1.7,state,3.9,9.1,128.7
+spreadsheetbench_2,beta_lo,0.6,24,55.0,16.84,Claude Opus 4.6,2026-02-05,0.349,8,3,1.0,state,2.5,9.1,211.85
+spreadsheetbench_2,beta_lo_decomp,0.6,24,55.0,13.0,Claude Opus 4.6,2026-02-05,0.349,8,3,0.9,state,2.2,9.1,230.99
+spreadsheetbench_2,beta_hi,1.0,24,55.0,25.39,Claude Opus 4.6,2026-02-05,0.349,8,3,1.7,state,4.0,9.1,126.09
 spreadsheetbench_2,beta_hi_decomp,1.0,24,55.0,20.19,Claude Opus 4.6,2026-02-05,0.349,8,3,1.3,state,2.7,9.1,210.56
 starshell,base,0.84,24,4.0,25.34,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,3.5,9.1,154.63
 starshell,base_decomp,0.84,24,4.0,33.63,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.4,9.1,470.15
-starshell,beta_lo,0.6,24,4.0,50.48,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.5,9.1,604.29
-starshell,beta_lo_decomp,0.6,24,4.0,65.24,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.2,9.1,1087.4
-starshell,beta_hi,1.0,24,4.0,19.29,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,3.9,9.1,97.78
+starshell,beta_lo,0.6,24,4.0,50.48,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.5,9.1,635.05
+starshell,beta_lo_decomp,0.6,24,4.0,65.24,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.2,9.1,1159.21
+starshell,beta_hi,1.0,24,4.0,19.29,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,4.0,9.1,95.79
 starshell,beta_hi_decomp,1.0,24,4.0,25.82,Claude Opus 4.6,2026-02-05,0.814,6,1,,state,2.7,9.1,269.27
 swe_bench_pro,base,0.84,24,75.0,132.01,Muse Spark 1.1,2026-07-09,0.615,28,10,4.2,tests,3.5,4.1,295.78
 swe_bench_pro,base_decomp,0.84,24,75.0,146.71,Muse Spark 1.1,2026-07-09,0.615,28,10,3.4,tests,2.4,4.1,475.78
-swe_bench_pro,beta_lo,0.6,24,75.0,163.52,Muse Spark 1.1,2026-07-09,0.615,28,10,3.0,tests,2.5,4.1,494.84
-swe_bench_pro,beta_lo_decomp,0.6,24,75.0,177.81,Muse Spark 1.1,2026-07-09,0.615,28,10,2.7,tests,2.2,4.1,623.69
-swe_bench_pro,beta_hi,1.0,24,75.0,121.42,Muse Spark 1.1,2026-07-09,0.615,28,10,4.9,tests,3.9,4.1,250.45
+swe_bench_pro,beta_lo,0.6,24,75.0,163.52,Muse Spark 1.1,2026-07-09,0.615,28,10,3.0,tests,2.5,4.1,505.92
+swe_bench_pro,beta_lo_decomp,0.6,24,75.0,177.81,Muse Spark 1.1,2026-07-09,0.615,28,10,2.7,tests,2.2,4.1,641.73
+swe_bench_pro,beta_hi,1.0,24,75.0,121.42,Muse Spark 1.1,2026-07-09,0.615,28,10,4.9,tests,4.0,4.1,248.16
 swe_bench_pro,beta_hi_decomp,1.0,24,75.0,136.07,Muse Spark 1.1,2026-07-09,0.615,28,10,3.8,tests,2.7,4.1,387.2
+swe_bench_verified,base,0.84,24,40.0,2349.46,Claude Opus 5,2026-07-24,0.96,55,15,3.5,tests,3.5,3.6,4774.73
+swe_bench_verified,base_decomp,0.84,24,40.0,6584.28,Claude Opus 5,2026-07-24,0.96,55,15,2.7,tests,2.4,3.6,18520.25
+swe_bench_verified,beta_lo,0.6,24,40.0,10202.31,Claude Opus 5,2026-07-24,0.96,55,15,2.5,tests,2.5,3.6,27534.14
+swe_bench_verified,beta_lo_decomp,0.6,24,40.0,24222.45,Claude Opus 5,2026-07-24,0.96,55,15,2.2,tests,2.2,3.6,74849.25
+swe_bench_verified,beta_hi,1.0,24,40.0,1318.51,Claude Opus 5,2026-07-24,0.96,55,15,4.0,tests,4.0,3.6,2471.6
+swe_bench_verified,beta_hi_decomp,1.0,24,40.0,4041.91,Claude Opus 5,2026-07-24,0.96,55,15,2.9,tests,2.7,3.6,10134.93
+swe_lancer,base,0.84,24,90.0,147.37,ChatGPT agent,2025-07-17,0.6,12,5,2.7,tests,3.5,15.8,3368.84
+swe_lancer,base_decomp,0.84,24,90.0,162.05,ChatGPT agent,2025-07-17,0.6,12,5,2.4,tests,2.4,15.8,15546.32
+swe_lancer,beta_lo,0.6,24,90.0,177.92,ChatGPT agent,2025-07-17,0.6,12,5,2.0,tests,2.5,15.8,14220.81
+swe_lancer,beta_lo_decomp,0.6,24,90.0,189.8,ChatGPT agent,2025-07-17,0.6,12,5,1.8,tests,2.2,15.8,27571.14
+swe_lancer,beta_hi,1.0,24,90.0,136.85,ChatGPT agent,2025-07-17,0.6,12,5,3.2,tests,4.0,15.8,2190.21
+swe_lancer,beta_hi_decomp,1.0,24,90.0,153.45,ChatGPT agent,2025-07-17,0.6,12,5,2.7,tests,2.7,15.8,8865.96
 sweeper_bench,base,0.84,24,90.0,143.19,Grok 4.6,2026-08-12,0.59,15,6,0.8,llm_judge,3.5,3.0,257.16
 sweeper_bench,base_decomp,0.84,24,90.0,151.83,Grok 4.6,2026-08-12,0.59,15,6,0.8,llm_judge,2.4,3.0,356.62
-sweeper_bench,beta_lo,0.6,24,90.0,170.22,Grok 4.6,2026-08-12,0.59,15,6,0.6,llm_judge,2.5,3.0,380.23
-sweeper_bench,beta_lo_decomp,0.6,24,90.0,180.15,Grok 4.6,2026-08-12,0.59,15,6,0.6,llm_judge,2.2,3.0,447.93
-sweeper_bench,beta_hi,1.0,24,90.0,133.64,Grok 4.6,2026-08-12,0.59,15,6,1.0,llm_judge,3.9,3.0,226.02
+sweeper_bench,beta_lo,0.6,24,90.0,170.22,Grok 4.6,2026-08-12,0.59,15,6,0.6,llm_judge,2.5,3.0,386.39
+sweeper_bench,beta_lo_decomp,0.6,24,90.0,180.15,Grok 4.6,2026-08-12,0.59,15,6,0.6,llm_judge,2.2,3.0,457.29
+sweeper_bench,beta_hi,1.0,24,90.0,133.64,Grok 4.6,2026-08-12,0.59,15,6,1.0,llm_judge,4.0,3.0,224.52
 sweeper_bench,beta_hi_decomp,1.0,24,90.0,141.85,Grok 4.6,2026-08-12,0.59,15,6,1.0,llm_judge,2.7,3.0,303.02
 swt_bench,base,0.84,24,20.0,339.4,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,7.4,tests,3.5,1.4,448.96
 swt_bench,base_decomp,0.84,24,20.0,399.2,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,6.9,tests,2.4,1.4,600.31
-swt_bench,beta_lo,0.6,24,20.0,1041.64,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,5.3,tests,2.5,1.4,1529.25
-swt_bench,beta_lo_decomp,0.6,24,20.0,1154.21,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,5.1,tests,2.2,1.4,1783.53
-swt_bench,beta_hi,1.0,24,20.0,217.31,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,8.8,tests,3.9,1.4,279.33
+swt_bench,beta_lo,0.6,24,20.0,1041.64,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,5.3,tests,2.5,1.4,1541.04
+swt_bench,beta_lo_decomp,0.6,24,20.0,1154.21,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,5.1,tests,2.2,1.4,1801.26
+swt_bench,beta_hi,1.0,24,20.0,217.31,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,8.8,tests,4.0,1.4,278.44
 swt_bench,beta_hi_decomp,1.0,24,20.0,265.39,Claude Sonnet 5.5 + Claude Opus 5.5,2026-09-28,0.915,12,6,7.9,tests,2.7,1.4,381.4
 tau_banking,base,0.84,24,30.0,95.62,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,3.6,state,3.5,0.2,99.43
 tau_banking,base_decomp,0.84,24,30.0,108.74,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,2.9,state,2.4,0.2,115.11
-tau_banking,beta_lo,0.6,24,30.0,152.08,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,2.6,state,2.5,0.2,160.45
-tau_banking,beta_lo_decomp,0.6,24,30.0,162.5,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,2.3,state,2.2,0.2,172.67
-tau_banking,beta_hi,1.0,24,30.0,79.7,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,4.2,state,3.9,0.2,82.54
+tau_banking,beta_lo,0.6,24,30.0,152.08,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,2.6,state,2.5,0.2,160.62
+tau_banking,beta_lo_decomp,0.6,24,30.0,162.5,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,2.3,state,2.2,0.2,172.91
+tau_banking,beta_hi,1.0,24,30.0,79.7,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,4.2,state,4.0,0.2,82.5
 tau_banking,beta_hi_decomp,1.0,24,30.0,93.61,PrincipledMachines Cortex 0.1,2026-11-04,0.732,28,11,3.2,state,2.7,0.2,98.47
 tau_retail_airline,base,0.84,24,10.0,74.86,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,8.2,state,3.5,8.8,425.27
 tau_retail_airline,base_decomp,0.84,24,10.0,106.27,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,7.2,state,2.4,8.8,1338.43
-tau_retail_airline,beta_lo,0.6,24,10.0,159.85,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,5.9,state,2.5,8.8,1734.52
-tau_retail_airline,beta_lo_decomp,0.6,24,10.0,210.2,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,5.5,state,2.2,8.8,3134.45
-tau_retail_airline,beta_hi,1.0,24,10.0,55.48,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,9.7,state,3.9,8.8,263.74
+tau_retail_airline,beta_lo,0.6,24,10.0,159.85,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,5.9,state,2.5,8.8,1819.24
+tau_retail_airline,beta_lo_decomp,0.6,24,10.0,210.2,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,5.5,state,2.2,8.8,3332.98
+tau_retail_airline,beta_hi,1.0,24,10.0,55.48,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,9.7,state,4.0,8.8,258.58
 tau_retail_airline,beta_hi_decomp,1.0,24,10.0,82.35,Qwen3.5-397B-A17B,2026-02-16,0.835,21,8,8.1,state,2.7,8.8,782.72
 tau_telecom,base,0.84,24,17.0,2099.82,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,1.3,state,3.5,9.6,13944.6
 tau_telecom,base_decomp,0.84,24,17.0,2838.68,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,1.2,state,2.4,9.6,44894.47
-tau_telecom,beta_lo,0.6,24,17.0,14029.66,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,0.9,state,2.5,9.6,188620.84
-tau_telecom,beta_lo_decomp,0.6,24,17.0,17270.09,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,0.9,state,2.2,9.6,328329.17
-tau_telecom,beta_hi,1.0,24,17.0,986.86,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,1.5,state,3.9,9.6,5396.95
+tau_telecom,beta_lo,0.6,24,17.0,14029.66,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,0.9,state,2.5,9.6,198682.92
+tau_telecom,beta_lo_decomp,0.6,24,17.0,17270.09,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,0.9,state,2.2,9.6,351057.29
+tau_telecom,beta_hi,1.0,24,17.0,986.86,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,1.5,state,4.0,9.6,5282.12
 tau_telecom,beta_hi_decomp,1.0,24,17.0,1410.58,Qwen3-Max-Thinking,2026-01-23,0.983,17,6,1.4,state,2.7,9.6,16415.1
 tau_voice,base,0.84,24,12.0,114.15,Pine Voice 1.0,2026-10-26,0.863,20,10,2.8,state,3.5,0.5,125.85
 tau_voice,base_decomp,0.84,24,12.0,158.45,Pine Voice 1.0,2026-10-26,0.863,20,10,2.4,state,2.4,0.5,182.68
-tau_voice,beta_lo,0.6,24,12.0,269.79,Pine Voice 1.0,2026-10-26,0.863,20,10,2.0,state,2.5,0.5,308.46
-tau_voice,beta_lo_decomp,0.6,24,12.0,346.08,Pine Voice 1.0,2026-10-26,0.863,20,10,1.9,state,2.2,0.5,402.81
-tau_voice,beta_hi,1.0,24,12.0,81.22,Pine Voice 1.0,2026-10-26,0.863,20,10,3.3,state,3.9,0.5,88.65
+tau_voice,beta_lo,0.6,24,12.0,269.79,Pine Voice 1.0,2026-10-26,0.863,20,10,2.0,state,2.5,0.5,309.29
+tau_voice,beta_lo_decomp,0.6,24,12.0,346.08,Pine Voice 1.0,2026-10-26,0.863,20,10,1.9,state,2.2,0.5,404.21
+tau_voice,beta_hi,1.0,24,12.0,81.22,Pine Voice 1.0,2026-10-26,0.863,20,10,3.3,state,4.0,0.5,88.56
 tau_voice,beta_hi_decomp,1.0,24,12.0,118.29,Pine Voice 1.0,2026-10-26,0.863,20,10,2.7,state,2.7,0.5,134.24
 terminal_bench_1,base,0.84,24,27.5,72.11,Claude Sonnet 4.5,2025-09-29,0.645,6,3,5.3,tests,3.5,13.4,1018.54
 terminal_bench_1,base_decomp,0.84,24,27.5,138.85,Claude Sonnet 4.5,2025-09-29,0.645,6,3,3.4,tests,2.4,13.4,6600.92
-terminal_bench_1,beta_lo,0.6,24,27.5,92.65,Claude Sonnet 4.5,2025-09-29,0.645,6,3,4.0,tests,2.5,13.4,3509.57
-terminal_bench_1,beta_lo_decomp,0.6,24,27.5,173.58,Claude Sonnet 4.5,2025-09-29,0.645,6,3,2.9,tests,2.2,13.4,10674.87
-terminal_bench_1,beta_hi,1.0,24,27.5,65.49,Claude Sonnet 4.5,2025-09-29,0.645,6,3,6.0,tests,3.9,13.4,705.04
+terminal_bench_1,beta_lo,0.6,24,27.5,92.65,Claude Sonnet 4.5,2025-09-29,0.645,6,3,4.0,tests,2.5,13.4,3774.17
+terminal_bench_1,beta_lo_decomp,0.6,24,27.5,173.58,Claude Sonnet 4.5,2025-09-29,0.645,6,3,2.9,tests,2.2,13.4,11722.45
+terminal_bench_1,beta_hi,1.0,24,27.5,65.49,Claude Sonnet 4.5,2025-09-29,0.645,6,3,6.0,tests,4.0,13.4,684.14
 terminal_bench_1,beta_hi_decomp,1.0,24,27.5,126.9,Claude Sonnet 4.5,2025-09-29,0.645,6,3,3.5,tests,2.7,13.4,3928.08
 terminal_bench_2,base,0.84,24,52.5,1019.25,Claude Opus 4.7,2026-04-16,0.909,27,9,1.6,tests,3.5,6.8,3944.46
 terminal_bench_2,base_decomp,0.84,24,52.5,3290.52,Claude Opus 4.7,2026-04-16,0.909,27,9,1.2,tests,2.4,6.8,23677.53
-terminal_bench_2,beta_lo,0.6,24,52.5,2874.85,Claude Opus 4.7,2026-04-16,0.909,27,9,1.2,tests,2.5,6.8,18419.21
-terminal_bench_2,beta_lo_decomp,0.6,24,52.5,7186.32,Claude Opus 4.7,2026-04-16,0.909,27,9,1.0,tests,2.2,6.8,58981.59
-terminal_bench_2,beta_hi,1.0,24,52.5,683.22,Claude Opus 4.7,2026-04-16,0.909,27,9,1.8,tests,3.9,6.8,2301.39
+terminal_bench_2,beta_lo,0.6,24,52.5,2874.85,Claude Opus 4.7,2026-04-16,0.909,27,9,1.2,tests,2.5,6.8,19116.31
+terminal_bench_2,beta_lo_decomp,0.6,24,52.5,7186.32,Claude Opus 4.7,2026-04-16,0.909,27,9,1.0,tests,2.2,6.8,61871.98
+terminal_bench_2,beta_hi,1.0,24,52.5,683.22,Claude Opus 4.7,2026-04-16,0.909,27,9,1.8,tests,4.0,6.8,2266.28
 terminal_bench_2,beta_hi_decomp,1.0,24,52.5,2523.71,Claude Opus 4.7,2026-04-16,0.909,27,9,1.2,tests,2.7,6.8,14584.15
+terminal_bench_4,base,0.84,24,240.0,554.58,Claude Opus 5.5,2026-09-22,0.658,23,6,1.5,tests,3.5,1.6,762.81
+terminal_bench_4,base_decomp,0.84,24,240.0,673.16,Claude Opus 5.5,2026-09-22,0.658,23,6,1.3,tests,2.4,1.6,1071.58
+terminal_bench_4,beta_lo,0.6,24,240.0,750.83,Claude Opus 5.5,2026-09-22,0.658,23,6,1.1,tests,2.5,1.6,1173.2
+terminal_bench_4,beta_lo_decomp,0.6,24,240.0,888.29,Claude Opus 5.5,2026-09-22,0.658,23,6,1.0,tests,2.2,1.6,1475.08
+terminal_bench_4,beta_hi,1.0,24,240.0,492.15,Claude Opus 5.5,2026-09-22,0.658,23,6,1.8,tests,4.0,1.6,652.79
+terminal_bench_4,beta_hi_decomp,1.0,24,240.0,604.21,Claude Opus 5.5,2026-09-22,0.658,23,6,1.4,tests,2.7,1.6,913.4
+theagentcompany,base,0.84,24,20.0,13.18,DeepSeek-V3.2,2025-09-29,0.429,16,6,3.3,state,3.5,13.4,186.17
+theagentcompany,base_decomp,0.84,24,20.0,9.69,DeepSeek-V3.2,2025-09-29,0.429,16,6,2.4,state,2.4,13.4,460.66
+theagentcompany,beta_lo,0.6,24,20.0,11.8,DeepSeek-V3.2,2025-09-29,0.429,16,6,2.5,state,2.5,13.4,480.68
+theagentcompany,beta_lo_decomp,0.6,24,20.0,8.84,DeepSeek-V3.2,2025-09-29,0.429,16,6,2.0,state,2.2,13.4,597.0
+theagentcompany,beta_hi,1.0,24,20.0,13.72,DeepSeek-V3.2,2025-09-29,0.429,16,6,3.9,state,4.0,13.4,143.33
+theagentcompany,beta_hi_decomp,1.0,24,20.0,10.08,DeepSeek-V3.2,2025-09-29,0.429,16,6,2.5,state,2.7,13.4,312.02
+ui_cube,base,0.84,24,1.0,2.76,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,6.1,state,3.5,15.1,55.04
+ui_cube,base_decomp,0.84,24,1.0,6.08,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,4.0,state,2.4,15.1,477.92
+ui_cube,beta_lo,0.6,24,1.0,3.28,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,4.7,state,2.5,15.1,216.52
+ui_cube,beta_lo_decomp,0.6,24,1.0,7.95,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,3.4,state,2.2,15.1,929.24
+ui_cube,beta_hi,1.0,24,1.0,2.56,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,6.9,state,4.0,15.1,36.3
+ui_cube,beta_hi_decomp,1.0,24,1.0,5.37,UIPathScreenAgent / GPT-5,2025-08-07,0.588,4,3,4.3,state,2.7,15.1,259.91
+vals_finance_agent,base,0.84,24,13.5,33.3,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,4.9,llm_judge,3.5,6.8,128.87
+vals_finance_agent,base_decomp,0.84,24,13.5,55.08,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,3.8,llm_judge,2.4,6.8,396.34
+vals_finance_agent,beta_lo,0.6,24,13.5,43.62,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,3.6,llm_judge,2.5,6.8,290.05
+vals_finance_agent,beta_lo_decomp,0.6,24,13.5,68.09,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,3.1,llm_judge,2.2,6.8,586.23
+vals_finance_agent,beta_hi,1.0,24,13.5,29.98,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,5.7,llm_judge,4.0,6.8,99.45
+vals_finance_agent,beta_hi_decomp,1.0,24,13.5,51.35,Claude Opus 4.7 [FA v1.1],2026-04-16,0.644,110,15,4.2,llm_judge,2.7,6.8,296.74
 workarena_l1,base,0.84,24,3.0,44.06,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,3.5,state,3.5,10.8,372.23
 workarena_l1,base_decomp,0.84,24,3.0,56.35,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,3.1,state,2.4,10.8,1265.99
-workarena_l1,beta_lo,0.6,24,3.0,125.81,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,2.5,state,2.5,10.8,2353.69
-workarena_l1,beta_lo_decomp,0.6,24,3.0,149.95,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,2.4,state,2.2,10.8,4145.58
-workarena_l1,beta_hi,1.0,24,3.0,29.05,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,4.1,state,3.9,10.8,197.18
+workarena_l1,beta_lo,0.6,24,3.0,125.81,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,2.5,state,2.5,10.8,2495.69
+workarena_l1,beta_lo_decomp,0.6,24,3.0,149.95,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,2.4,state,2.2,10.8,4470.43
+workarena_l1,beta_hi,1.0,24,3.0,29.05,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,4.1,state,4.0,10.8,192.46
 workarena_l1,beta_hi_decomp,1.0,24,3.0,38.81,Gemini-3-Flash-preview,2025-12-17,0.903,26,10,3.6,state,2.7,10.8,617.03
 workarena_pp,base,0.84,24,12.0,7.23,GPT-5,2025-08-07,0.405,12,5,2.6,state,3.5,15.1,144.17
 workarena_pp,base_decomp,0.84,24,12.0,6.36,GPT-5,2025-08-07,0.405,12,5,2.3,state,2.4,15.1,499.92
-workarena_pp,beta_lo,0.6,24,12.0,6.04,GPT-5,2025-08-07,0.405,12,5,1.9,state,2.5,15.1,367.27
-workarena_pp,beta_lo_decomp,0.6,24,12.0,5.39,GPT-5,2025-08-07,0.405,12,5,1.8,state,2.2,15.1,566.76
-workarena_pp,beta_hi,1.0,24,12.0,7.76,GPT-5,2025-08-07,0.405,12,5,3.1,state,3.9,15.1,113.84
+workarena_pp,beta_lo,0.6,24,12.0,6.04,GPT-5,2025-08-07,0.405,12,5,1.9,state,2.5,15.1,398.72
+workarena_pp,beta_lo_decomp,0.6,24,12.0,5.39,GPT-5,2025-08-07,0.405,12,5,1.8,state,2.2,15.1,630.01
+workarena_pp,beta_hi,1.0,24,12.0,7.76,GPT-5,2025-08-07,0.405,12,5,3.1,state,4.0,15.1,110.03
 workarena_pp,beta_hi_decomp,1.0,24,12.0,6.78,GPT-5,2025-08-07,0.405,12,5,2.7,state,2.7,15.1,328.15

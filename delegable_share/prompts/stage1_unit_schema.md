@@ -1,4 +1,4 @@
-# Stage 1 prompt: unit schema — v2 (2026-11-09)
+# Stage 1 prompt: unit schema — v2.1 (2026-11-10: worked examples A–C swapped out of the BPO set)
 
 Changes from the spec appendix are listed at the bottom. Worked-example statements are
 checked against O*NET 31.0 (`data/bpo_tasks.csv`).
@@ -133,26 +133,28 @@ Output JSON only:
 
 ## Worked examples (to paste into the prompt)
 
-Drawn from BPO occupations outside the pilot, so the pilot stays a clean test.
+Drawn from occupations outside both the pilot and the BPO set (examples swapped 2026-11-10;
+the earlier ones came from BPO occupations and would have leaked into the BPO run).
 
 ### Example A — DISCRETE, granularity choice
-Bookkeeping, Accounting, and Auditing Clerks — "Check figures, postings, and
-documents for correct entry, mathematical accuracy, and proper codes."
+Executive Secretaries and Executive Administrative Assistants (43-6014.00, task 2797) — "Review
+work done by others to check for correct spelling and grammar, ensure that company format
+policies are followed, and recommend revisions."
 
 ```json
 {
-  "split_reasoning": "One activity: checking entered records; item sizes vary but the kind of work is the same.",
+  "split_reasoning": "One activity: checking documents others wrote; documents vary in length but the kind of work is the same.",
   "parts": [{
     "part_id": "a",
-    "text": "Check a batch of postings and their source documents for correct entry, arithmetic, and codes.",
+    "text": "Check a document written by someone else for spelling, grammar and house format, and mark the revisions needed.",
     "time_share": 1.0,
-    "type_reasoning": "Each check produces a verified (or corrected) batch that someone relies on.",
+    "type_reasoning": "Each check produces a marked-up document that the author relies on.",
     "type": "DISCRETE",
-    "unit_reasoning": "Clerks check postings in batches tied to a period or an account, and sign off the batch, not each line.",
-    "work_item": "one batch of postings checked (e.g. a day's entries for one ledger)",
-    "start": "batch of entries and source documents received for review",
-    "end": "batch marked verified, with errors corrected or flagged",
-    "checked_by": "senior accountant or auditor",
+    "unit_reasoning": "Documents arrive one at a time and go back to the author as a whole, not page by page.",
+    "work_item": "one document checked and returned with revisions (e.g. a letter, memo or report)",
+    "start": "document received for checking",
+    "end": "marked-up document returned to the author",
+    "checked_by": "the author, and the executive who signs it",
     "duplicates": [],
     "overlaps_with": []
   }],
@@ -161,57 +163,58 @@ documents for correct entry, mathematical accuracy, and proper codes."
 ```
 
 ### Example B — ONGOING recast into items
-Network and Computer Systems Administrators (15-1244.00, task 1325) — "Monitor
-network performance to determine whether adjustments are needed and where
-changes will be needed in the future."
+Market Research Analysts and Marketing Specialists (13-1161.00, task 5442) — "Monitor industry
+statistics and follow trends in trade literature."
 
 ```json
 {
-  "split_reasoning": "Monitoring is continuous, but it produces two different kinds of item: reacting to problems now and planning for later.",
+  "split_reasoning": "Monitoring is continuous, but it produces two different kinds of item: notes on each new release of figures, and periodic trend reports.",
   "parts": [
     {
       "part_id": "a",
-      "text": "Investigate a performance alert and decide whether an adjustment is needed.",
-      "time_share": 0.65,
-      "type_reasoning": "Each alert ends in a decision and usually a ticket note others rely on.",
+      "text": "Review a new release of industry statistics and send the team a note on the changes that matter.",
+      "time_share": 0.5,
+      "type_reasoning": "Each release ends in a short note that colleagues read and act on.",
       "type": "DISCRETE",
-      "unit_reasoning": "Alerts are the unit that enters the queue and gets closed.",
-      "work_item": "one performance alert investigated",
-      "start": "alert raised by monitoring tool",
-      "end": "cause recorded and either adjustment requested or alert closed as no action",
-      "checked_by": "on-call lead / change board",
+      "unit_reasoning": "Releases arrive on a schedule and each one is reviewed and reported on once.",
+      "work_item": "one statistics release reviewed and summarised",
+      "start": "new release of industry figures published",
+      "end": "note on the notable changes sent to the team",
+      "checked_by": "marketing manager",
       "duplicates": [],
       "overlaps_with": []
     },
     {
       "part_id": "b",
-      "text": "Write a periodic capacity and performance review recommending future changes.",
-      "time_share": 0.35,
-      "type_reasoning": "Produces a report that managers read and act on.",
+      "text": "Write a periodic trend report drawing on industry statistics and trade literature.",
+      "time_share": 0.5,
+      "type_reasoning": "Produces a report that managers read and plan from.",
       "type": "DISCRETE",
       "unit_reasoning": "The report is what is handed over and signed off.",
-      "work_item": "one capacity review report (monthly or quarterly)",
-      "start": "pull of the period's performance data",
-      "end": "report with recommendations sent to IT manager",
-      "checked_by": "IT manager",
+      "work_item": "one trend report (monthly or quarterly)",
+      "start": "period's statistics and articles gathered",
+      "end": "report with implications sent to marketing management",
+      "checked_by": "marketing manager",
       "duplicates": [],
       "overlaps_with": []
     }
   ],
-  "notes": "Time shares are a judgment; alert volume varies a lot by site."
+  "notes": "Time shares are a judgment; they depend on how often figures are released."
 }
 ```
 
 ### Example C — COMPOUND with an interpersonal part
-Database Administrators — "Train users and answer questions."
+Human Resources Specialists (13-1071.00, task 18867) — "Provide management with information or
+training related to interviewing, performance appraisals, counseling techniques, or
+documentation of performance issues."
 
 ```json
 {
-  "split_reasoning": "Two different activities joined by 'and': teaching users, and answering their individual questions.",
+  "split_reasoning": "Two different activities joined by 'or': training managers, and answering a manager's question about a specific case.",
   "parts": [
     {
       "part_id": "a",
-      "text": "Train users on the database or reporting tools.",
+      "text": "Train managers on interviewing, appraisals or documenting performance issues.",
       "time_share": 0.4,
       "type_reasoning": "The value is in the live session; nothing a colleague would check is produced.",
       "type": "INTERPERSONAL",
@@ -220,15 +223,15 @@ Database Administrators — "Train users and answer questions."
     },
     {
       "part_id": "b",
-      "text": "Answer a user's question about the database, usually by email or ticket.",
+      "text": "Answer a manager's question about handling a specific case, usually by email.",
       "time_share": 0.6,
-      "type_reasoning": "Each question produces a written answer the user relies on.",
+      "type_reasoning": "Each question produces written guidance the manager relies on.",
       "type": "DISCRETE",
-      "unit_reasoning": "Questions arrive one at a time through email or the ticket queue.",
-      "work_item": "one user question answered",
+      "unit_reasoning": "Questions arrive one at a time, by email or the HR ticket queue.",
+      "work_item": "one manager's question answered with written guidance",
       "start": "question received",
-      "end": "answer sent and question closed",
-      "checked_by": "the user who asked",
+      "end": "guidance sent and question closed",
+      "checked_by": "the manager who asked; HR lead for sensitive cases",
       "duplicates": [],
       "overlaps_with": []
     }

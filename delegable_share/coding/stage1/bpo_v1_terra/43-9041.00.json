@@ -1,0 +1,598 @@
+[
+ {
+  "task_id": "23313",
+  "split_reasoning": "Preparing and checking a claim form are successive steps in producing a complete document.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a claim form or related document and check it for completeness.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed and checked document is a distinct output, normally prepared for back-office processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual form or related document is the item passed on for claim processing.",
+    "work_item": "one prepared and completeness-checked claim document",
+    "start": "claim information and document requirements received",
+    "end": "document prepared and checked, with omissions identified",
+    "checked_by": "claims processor or adjuster",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23329"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23314",
+  "split_reasoning": "Calculating the amount of a claim is one activity with one calculation as its output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate the amount of an insurance claim.",
+    "time_share": 1.0,
+    "type_reasoning": "A claim calculation is a distinct back-office output used in processing the claim.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The calculation for one claim is reviewed or used as a whole.",
+    "work_item": "one claim amount calculation",
+    "start": "claim details and applicable calculation information available",
+    "end": "calculated amount recorded or provided for processing",
+    "checked_by": "claims adjuster or payment processor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23328"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23315",
+  "split_reasoning": "Posting or attaching information uses alternative methods to update the same claim file.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post or attach received information to a claim file.",
+    "time_share": 1.0,
+    "type_reasoning": "Each file update produces a discrete record for subsequent claim handling.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The received information is filed against one claim as a processing step of its own.",
+    "work_item": "one claim file updated with received information",
+    "start": "information received for an identified claim",
+    "end": "information posted or attached to the claim file",
+    "checked_by": "claims processor or adjuster",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23320",
+     "23326"
+    ]
+   }
+  ],
+  "notes": "Some updates may be made during a call, but the statement does not establish a substantial live-service share."
+ },
+ {
+  "task_id": "23316",
+  "split_reasoning": "Payment and investigation are alternative destinations for the same claim-transmission activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transmit a claim for payment or further investigation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each transmission is a distinct handoff to a downstream recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A claim is routed as a whole for the next processing step.",
+    "work_item": "one claim transmitted for payment or investigation",
+    "start": "claim ready for routing",
+    "end": "claim transmitted to the appropriate payment or investigation queue",
+    "checked_by": "payment processor or claims investigator",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23317",
+  "split_reasoning": "Missing information is obtained both in live contacts and through written requests handled after the contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact an insured person or other involved party live to obtain missing information.",
+    "time_share": 0.7,
+    "type_reasoning": "The clerk requests and obtains information during a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact addresses a particular request for missing information.",
+    "work_item": "one live contact requesting missing claim information",
+    "start": "missing information identified and person reached",
+    "end": "information obtained or next steps agreed before the contact ends",
+    "checked_by": "claims processor or adjuster",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322",
+     "23332"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a written request to an insured person or other involved party for missing information.",
+    "time_share": 0.3,
+    "type_reasoning": "A written request is prepared and sent without the recipient waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each request is a correspondence item sent to a recipient.",
+    "work_item": "one written request for missing claim information",
+    "start": "missing information and appropriate recipient identified",
+    "end": "request sent",
+    "checked_by": "recipient and claims processor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322",
+     "23334"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the employer's contact channels."
+ },
+ {
+  "task_id": "23318",
+  "split_reasoning": "Reviewing a policy to determine coverage is one assessment, regardless of policy type.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review an insurance policy to determine coverage for a claim or question.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a coverage determination or finding used in subsequent processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The relevant policy is reviewed against one claim or coverage question.",
+    "work_item": "one coverage review",
+    "start": "claim or coverage question and policy identified",
+    "end": "coverage finding recorded or conveyed",
+    "checked_by": "claims adjuster or policy processor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23325"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23319",
+  "split_reasoning": "Processing new policies and processing claims have different inputs and produce different records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process and record a new insurance policy.",
+    "time_share": 0.45,
+    "type_reasoning": "Each new policy produces a distinct policy record for downstream use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A new policy is processed and recorded as one case.",
+    "work_item": "one new policy processed and recorded",
+    "start": "new policy application or issuance instructions received",
+    "end": "policy processed and recorded in company records",
+    "checked_by": "policy administration team and insured",
+    "duplicates": [],
+    "overlaps_with": [
+     "23320",
+     "23323",
+     "23326",
+     "23329"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Process and record an insurance claim.",
+    "time_share": 0.55,
+    "type_reasoning": "Each claim produces a distinct claim record and processing outcome.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A claim is the case passed through the processing queue.",
+    "work_item": "one claim processed and recorded",
+    "start": "claim and supporting information received",
+    "end": "claim processing completed for the clerk's stage and recorded",
+    "checked_by": "claims team or downstream payment team",
+    "duplicates": [],
+    "overlaps_with": [
+     "23313",
+     "23314",
+     "23315",
+     "23316",
+     "23318",
+     "23320",
+     "23326",
+     "23328"
+    ]
+   }
+  ],
+  "notes": "Shares vary by assignment; the processing stage may differ across employers."
+ },
+ {
+  "task_id": "23320",
+  "split_reasoning": "Entering, accessing, searching, and retrieving data are methods of working with detailed records; the target does not specify separate record-handling outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize or work with detailed office or warehouse records using a computer.",
+    "time_share": 1.0,
+    "type_reasoning": "Record work produces an organized, updated, or retrieved record for someone to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record or group of related records is handled in response to a processing need.",
+    "work_item": "one record or related set of records organized or retrieved",
+    "start": "record-handling request or processing need identified",
+    "end": "records updated, organized, or made available for use",
+    "checked_by": "records user or downstream processing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "23315",
+     "23319",
+     "23323",
+     "23325",
+     "23326",
+     "23333"
+    ]
+   }
+  ],
+  "notes": "The statement is broad; actual handoff units depend on the records system and assignment."
+ },
+ {
+  "task_id": "23321",
+  "split_reasoning": "Customer-service guidance and referrals occur both during live contacts and in responses to written inquiries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide claim instructions or a repair or contractor referral during a live customer contact.",
+    "time_share": 0.75,
+    "type_reasoning": "The customer receives guidance while participating in a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact addresses the customer's immediate service request.",
+    "work_item": "one live customer-service inquiry answered",
+    "start": "customer asks for instructions or a referral",
+    "end": "guidance or referral given before the contact ends",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322",
+     "23332"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond in writing to a customer requesting claim instructions or a referral.",
+    "time_share": 0.25,
+    "type_reasoning": "A written response is a distinct deliverable sent without a live customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written inquiry receives a response that can be used independently.",
+    "work_item": "one written customer-service inquiry answered",
+    "start": "written request for instructions or referral received",
+    "end": "response sent to the customer",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322",
+     "23334"
+    ]
+   }
+  ],
+  "notes": "The live and written shares depend on the service channels used."
+ },
+ {
+  "task_id": "23322",
+  "split_reasoning": "Requesting information and reporting account status or changes are purposes of the same correspondence activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correspond with an insured person or agent to request information or report account status or changes.",
+    "time_share": 1.0,
+    "type_reasoning": "Each written communication is a distinct item sent to a recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A letter or message addressing one account matter is the item sent and relied on.",
+    "work_item": "one account-related letter or message",
+    "start": "need for information or an account update identified",
+    "end": "correspondence sent to the insured person or agent",
+    "checked_by": "insured person or agent",
+    "duplicates": [],
+    "overlaps_with": [
+     "23317",
+     "23321",
+     "23327",
+     "23334"
+    ]
+   }
+  ],
+  "notes": "Correspondence is treated as written; live calls are covered separately."
+ },
+ {
+  "task_id": "23323",
+  "split_reasoning": "The listed personal and property data are different fields checked in the same verification activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and verify information on an insurance application or policy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a verified record or identified discrepancies for processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An application or policy is reviewed as a whole rather than field by field.",
+    "work_item": "one application or policy data verification",
+    "start": "application or policy and verification sources available",
+    "end": "data verified and discrepancies recorded or referred",
+    "checked_by": "policy processor or underwriter",
+    "duplicates": [],
+    "overlaps_with": [
+     "23319",
+     "23320",
+     "23324"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23324",
+  "split_reasoning": "Comparing an application with reinstatement criteria and approving an eligible reinstatement are steps in one case decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a reinstatement application against criteria and approve it when eligible.",
+    "time_share": 1.0,
+    "type_reasoning": "Each application produces a documented eligibility outcome and, where applicable, an approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The reinstatement application is the case evaluated and handed forward.",
+    "work_item": "one reinstatement application evaluated",
+    "start": "reinstatement application and applicable criteria available",
+    "end": "eligibility outcome recorded and eligible reinstatement approved",
+    "checked_by": "policy administration team and insured",
+    "duplicates": [],
+    "overlaps_with": [
+     "23323",
+     "23325"
+    ]
+   }
+  ],
+  "notes": "Applications that do not meet criteria may require referral rather than a clerk's final decision."
+ },
+ {
+  "task_id": "23325",
+  "split_reasoning": "Letters, applications, and company documents are inputs to the same assessment of needed policy changes and their effects.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine policyholder or agent correspondence and policy documents to determine needed changes and their effects.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment produces findings used to decide or process a policy change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The change request or issue is assessed as one case using the relevant documents.",
+    "work_item": "one policy-change assessment",
+    "start": "correspondence or other indication of a possible change received",
+    "end": "needed changes and their effects identified and recorded or conveyed",
+    "checked_by": "policy processor or underwriter",
+    "duplicates": [],
+    "overlaps_with": [
+     "23318",
+     "23320",
+     "23324",
+     "23326"
+    ]
+   }
+  ],
+  "notes": "The unit ends with the assessment, not necessarily with the policy change being processed."
+ },
+ {
+  "task_id": "23326",
+  "split_reasoning": "Transcribing to worksheets and entering data into a computer are related ways to prepare data for documents and account adjustments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transcribe or enter data for preparing documents or adjusting accounts.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed data-entry or worksheet item is used by a downstream processor.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The data associated with one document preparation or account adjustment is handled as a unit.",
+    "work_item": "one case's data transcribed or entered",
+    "start": "source information and intended document or account identified",
+    "end": "data entered or transcribed and available for downstream use",
+    "checked_by": "document preparer or account processor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23315",
+     "23319",
+     "23320",
+     "23325"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23327",
+  "split_reasoning": "Notifying the agent and accounting department are related transmissions of the same cancellation notice.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Notify the insurance agent and accounting department of a policy cancellation.",
+    "time_share": 1.0,
+    "type_reasoning": "The cancellation notification is a distinct communication sent for recipients to act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Notifications for one cancellation form a single handoff step, even with multiple recipients.",
+    "work_item": "one policy cancellation notification sent to the required recipients",
+    "start": "policy cancellation information available",
+    "end": "agent and accounting department notified",
+    "checked_by": "insurance agent and accounting department",
+    "duplicates": [],
+    "overlaps_with": [
+     "23322",
+     "23334"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23328",
+  "split_reasoning": "Paying a small claim is one payment-processing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pay a small insurance claim.",
+    "time_share": 1.0,
+    "type_reasoning": "Each payment is a distinct transaction normally processed from a claim file.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One claim payment is authorized or issued as a transaction relied on by the claimant and accounting.",
+    "work_item": "one small-claim payment processed",
+    "start": "small claim ready for payment",
+    "end": "payment issued or submitted through the payment system and recorded",
+    "checked_by": "claimant and accounting or claims supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23314",
+     "23319"
+    ]
+   }
+  ],
+  "notes": "The clerk's authority and payment mechanism vary by employer."
+ },
+ {
+  "task_id": "23329",
+  "split_reasoning": "Business and government forms are different examples of the same form-processing and submission activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare, process, and submit a business or government form.",
+    "time_share": 1.0,
+    "type_reasoning": "Each submission is a distinct form delivered to a carrier or other recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed form or application is submitted and reviewed as a whole.",
+    "work_item": "one business or government form prepared and submitted",
+    "start": "form requirement and source information received",
+    "end": "completed form submitted to the designated recipient",
+    "checked_by": "receiving carrier, government agency, or business",
+    "duplicates": [],
+    "overlaps_with": [
+     "23313",
+     "23319",
+     "23326"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23330",
+  "split_reasoning": "Initial premiums can be collected and receipted during a live customer contact or processed later from mailed or other written payment submissions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect an initial premium and issue a receipt during a customer contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The customer waits while the payment is taken and confirmed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One initial payment and its receipt are completed within the contact.",
+    "work_item": "one initial premium collected and receipted live",
+    "start": "customer offers or agrees to make the initial payment",
+    "end": "payment accepted and receipt provided before the contact ends",
+    "checked_by": "customer and accounting department",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Process an initial premium received outside a live contact and issue a receipt.",
+    "time_share": 0.4,
+    "type_reasoning": "The payment and receipt are processed without the customer waiting in a live conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each received payment is recorded and receipted as a transaction.",
+    "work_item": "one initial premium processed and receipted",
+    "start": "initial payment received for processing",
+    "end": "payment recorded and receipt issued",
+    "checked_by": "policyholder and accounting department",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on how the insurer receives initial premiums."
+ },
+ {
+  "task_id": "23332",
+  "split_reasoning": "Interviewing clients and taking their calls are live-contact methods for providing service and gathering claim information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a client or take a client call to provide service and obtain claim information.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is performed in a live conversation with the client.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One interview or call is the bounded customer contact in which information and service are provided.",
+    "work_item": "one client interview or call about a claim",
+    "start": "client interview or call begins",
+    "end": "requested service and information gathering are completed for the contact",
+    "checked_by": "client and claims processor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23317",
+     "23321"
+    ]
+   }
+  ],
+  "notes": "Any separate post-call recording is outside this contact unit."
+ },
+ {
+  "task_id": "23333",
+  "split_reasoning": "Obtaining a computer printout and retrieving physical cancellation cards are alternative outputs, but retrieving cards requires hands-on work away from the computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain a computer printout of policy cancellations.",
+    "time_share": 0.8,
+    "type_reasoning": "Generating the cancellation list produces a distinct report for processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The printout is the list handed to or used by the next worker.",
+    "work_item": "one policy-cancellation printout",
+    "start": "cancellation list needed and system data available",
+    "end": "printout generated and made available",
+    "checked_by": "policy administration or accounting staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23320"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Retrieve policy-cancellation cards from a physical file.",
+    "time_share": 0.2,
+    "type_reasoning": "Locating and retrieving cards from a physical filing system requires hands-on work away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on whether the employer still maintains cancellation cards."
+ },
+ {
+  "task_id": "23334",
+  "split_reasoning": "Composing correspondence for different professional recipients is one writing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compose business correspondence for a supervisor, manager, or professional.",
+    "time_share": 1.0,
+    "type_reasoning": "Each letter or message is a distinct written deliverable for review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual piece of correspondence is the item handed over or sent.",
+    "work_item": "one piece of business correspondence composed",
+    "start": "correspondence assignment and relevant information received",
+    "end": "draft provided for approval or correspondence sent as authorized",
+    "checked_by": "requesting supervisor, manager, or professional",
+    "duplicates": [],
+    "overlaps_with": [
+     "23317",
+     "23321",
+     "23322",
+     "23327"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

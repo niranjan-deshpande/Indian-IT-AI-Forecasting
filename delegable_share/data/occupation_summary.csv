@@ -15,3 +15,19 @@ bpo,43-3021.00,Billing and Posting Clerks,True,26,7,19,0,26,0,0,7,08/2026,08/202
 bpo,43-9021.00,Data Entry Keyers,True,9,5,4,0,9,0,0,1,08/2018,08/2018,Incumbent,9,9,0,0,0,0,0,
 bpo,43-9041.00,Insurance Claims and Policy Processing Clerks,True,25,15,6,4,21,0,0,0,"08/2022, 11/2020",08/2022,Incumbent,27,25,0,0,0,2,0,4 task(s) without ratings; 4 task(s) without Core/Supplemental type; 2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
 bpo,29-2072.00,Medical Records Specialists,True,16,8,8,0,16,0,0,1,08/2026,08/2026,Incumbent,17,16,0,0,0,1,16,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,27-3091.00,Interpreters and Translators,True,17,8,9,0,17,0,0,1,08/2021,08/2021,Incumbent,17,17,0,0,0,0,0,
+comparison,43-9081.00,Proofreaders and Copy Markers,True,11,9,2,0,11,0,0,0,07/2016,07/2016,Incumbent,11,11,0,0,0,0,0,
+comparison,27-3042.00,Technical Writers,True,15,8,7,0,15,0,0,2,08/2026,08/2026,Incumbent,15,15,0,0,0,0,7,
+comparison,23-2011.00,Paralegals and Legal Assistants,True,12,6,6,0,12,0,0,3,08/2024,08/2024,Incumbent,12,11,4,0,1,1,2,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,13-2082.00,Tax Preparers,True,12,12,0,0,12,0,0,0,08/2025,08/2025,Occupational Expert,12,12,0,0,0,0,0,
+comparison,47-2111.00,Electricians,True,21,20,1,0,21,0,0,2,08/2022,08/2022,Incumbent,21,21,0,0,0,0,0,
+comparison,29-1141.00,Registered Nurses,True,27,15,12,0,27,0,0,0,08/2021,08/2021,Incumbent,27,27,0,0,0,0,0,"other O*NET codes under same SOC: 29-1141.01, 29-1141.02, 29-1141.03, 29-1141.04"
+comparison,39-9011.00,Childcare Workers,True,24,19,5,0,24,0,0,0,08/2018,08/2018,Incumbent,25,24,2,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code; other O*NET codes under same SOC: 39-9011.01
+comparison,37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",True,21,12,9,0,21,0,0,2,08/2023,08/2023,Incumbent,23,21,0,0,0,2,3,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,53-3032.00,Heavy and Tractor-Trailer Truck Drivers,True,29,21,8,0,29,0,0,0,08/2022,08/2022,Incumbent,31,29,1,0,0,2,0,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,13-2011.00,Accountants and Auditors,True,30,30,0,0,30,0,0,0,08/2026,08/2026,Occupational Expert,30,30,0,0,0,0,10,
+comparison,23-1011.00,Lawyers,True,22,15,7,0,22,0,0,0,08/2024,08/2024,Incumbent,22,21,0,0,1,1,4,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,13-2041.00,Credit Analysts,True,11,7,4,0,11,0,0,0,08/2020,08/2020,Occupational Expert,11,11,0,0,0,0,0,
+comparison,25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",True,32,30,2,0,32,0,0,0,08/2025,08/2025,Incumbent,32,32,1,0,0,0,3,
+comparison,41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",True,18,10,8,0,18,0,4,2,08/2020,08/2020,Incumbent,19,18,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+comparison,13-1111.00,Management Analysts,True,11,10,1,0,11,0,0,0,08/2022,08/2022,Occupational Expert,11,11,0,0,0,0,0,

@@ -1,0 +1,9 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both record and post a batch of source transactions to accounts using accounting software.",
+   "a": "2487a",
+   "b": "2489a"
+  }
+ ]
+}

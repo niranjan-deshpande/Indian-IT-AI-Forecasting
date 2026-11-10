@@ -1,6 +1,6 @@
 """Fit benchmark horizons with a fixed slope: location only, from overall scores.
 
-  python3 scripts/horizons.py <bench_times_run> [--today YYYY-MM-DD]
+  python3 scripts/horizons.py <bench_times_run[,run2]> [--today YYYY-MM-DD]
 
 For each benchmark b and model j with overall score s_j, solve for H_bj in
 
@@ -55,10 +55,10 @@ def ordinal(d):
 def main():
     run = sys.argv[1]
     today = sys.argv[sys.argv.index("--today") + 1] if "--today" in sys.argv else "2026-11-09"
-    est = ROOT / "coding" / "bench_times" / run / "estimates.csv"
     times = {}
-    for r in csv.DictReader(open(est)):
-        times.setdefault(r["benchmark"].replace("-", "_"), []).append(float(r["est_median"]))
+    for rn in run.split(","):  # several timing runs can be combined, e.g. main,bpo
+        for r in csv.DictReader(open(ROOT / "coding" / "bench_times" / rn / "estimates.csv")):
+            times.setdefault(r["benchmark"].replace("-", "_"), []).append(float(r["est_median"]))
     grading = json.loads((ROOT / "benchmarks" / "data" / "grading.json").read_text())
     fits, snap = [], []
     for b, ts in sorted(times.items()):

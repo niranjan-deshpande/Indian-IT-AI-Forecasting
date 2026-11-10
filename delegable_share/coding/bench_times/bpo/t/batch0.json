@@ -1,0 +1,415 @@
+[
+ {
+  "item_id": "terminal_bench_4:ctr-optimization",
+  "reasoning": "Inspect the API and event data, distinguish genuine traffic, experiment with delivery settings, and verify airtime and evaluation constraints. Simulated-time waiting is excluded.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "ui_cube:date-pickers--12",
+  "reasoning": "Select the requested date, time, and London timezone, checking any displayed conversion.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "swe_bench_verified:django__django-11532",
+  "reasoning": "Trace Message-ID domain handling, add IDNA encoding in the appropriate place, and test Unicode and ordinary hostnames.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "swe_bench_verified:sympy__sympy-13877",
+  "reasoning": "Investigate symbolic zero detection and Bareiss pivoting, implement a robust fix, and test determinant cases and regressions.",
+  "estimate_min": 240,
+  "low_min": 90,
+  "high_min": 480
+ },
+ {
+  "item_id": "healthadminbench:emr-easy-8",
+  "reasoning": "Review the referral and clinical documentation for conservative treatment, then record the finding and appropriate decision.",
+  "estimate_min": 8,
+  "low_min": 4,
+  "high_min": 15
+ },
+ {
+  "item_id": "terminal_bench_4:math-eval-grader",
+  "reasoning": "Extract and verify 48 answer keys, build and test a general mathematical answer grader, and implement the prescribed inference and results pipeline. Model execution waiting is excluded.",
+  "estimate_min": 600,
+  "low_min": 300,
+  "high_min": 1200
+ },
+ {
+  "item_id": "spider2:sf_local028",
+  "reasoning": "Find the order status and date fields, aggregate delivered orders by month and year, and check the pivoted result.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "vals_finance_agent:45",
+  "reasoning": "Research Zillow's acquisitions and revenue disclosures over the relevant period, then connect the strategic rationale to changes in its revenue mix.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "ui_cube:copy-paste-tasks--30",
+  "reasoning": "Transfer and verify all fields for three contracts, select clauses, and configure timelines and reminders.",
+  "estimate_min": 25,
+  "low_min": 15,
+  "high_min": 45
+ },
+ {
+  "item_id": "ui_cube:workday--3",
+  "reasoning": "Locate the specified request and remove it, confirming the change.",
+  "estimate_min": 2,
+  "low_min": 1,
+  "high_min": 5
+ },
+ {
+  "item_id": "spider2:sf_bq085",
+  "reasoning": "Identify the correct cumulative case snapshot and population entries, join the seven countries, and validate the per-capita calculations.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 80
+ },
+ {
+  "item_id": "swe_lancer:18909_734",
+  "reasoning": "Compare the emoji search empty state with other search components, adjust styling, and check the affected screens.",
+  "estimate_min": 100,
+  "low_min": 45,
+  "high_min": 210
+ },
+ {
+  "item_id": "spider2:sf003",
+  "reasoning": "Find comparable ACS ZCTA estimates, calculate year-over-year growth with an appropriate prior-year baseline, and rank qualifying areas.",
+  "estimate_min": 60,
+  "low_min": 30,
+  "high_min": 120
+ },
+ {
+  "item_id": "swe_lancer:44152_1098",
+  "reasoning": "Reproduce the last-member leave flow, trace navigation and report state, and test the fix for loading and back navigation.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "ui_cube:sap-stock--7",
+  "reasoning": "Look up the material description and stock overview, then submit the requested JSON.",
+  "estimate_min": 5,
+  "low_min": 3,
+  "high_min": 10
+ },
+ {
+  "item_id": "vals_finance_agent:7",
+  "reasoning": "Locate the relevant transaction disclosure and distinguish consideration measured at closing from other deal values.",
+  "estimate_min": 25,
+  "low_min": 10,
+  "high_min": 55
+ },
+ {
+  "item_id": "swe_lancer:18746_833",
+  "reasoning": "Trace mention suggestion generation and filtering, add self and group-wide mentions without including reports, and test relevant contexts.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "swe_lancer:29318_1003",
+  "reasoning": "Reproduce the offline currency discrepancy, trace amount scaling through optimistic report data, and test offline and online behavior.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "vals_finance_agent:37",
+  "reasoning": "Find Q3 guidance and Q4 actual figures, calculate the midpoint comparison in basis points, and verify the direction.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "swe_lancer:19022_888",
+  "reasoning": "Trace task-description validation and saving, allow an empty description, and test editing existing tasks.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "swe_bench_verified:sympy__sympy-16886",
+  "reasoning": "Correct the Morse mapping and add or update encoding and decoding regression tests.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "terminal_bench_4:layout-config-recreation",
+  "reasoning": "Inspect the poster and assets, reconstruct editable layers and typography, then repeatedly render and compare pixels. The time is highly sensitive to the unseen poster's complexity.",
+  "estimate_min": 420,
+  "low_min": 180,
+  "high_min": 900
+ },
+ {
+  "item_id": "spider2:sf_ga022",
+  "reasoning": "Study the retention definition and event schema, construct the Shanghai-time cohort and weekly activity windows, and validate the pivoted rates.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "healthadminbench:fax-hard-5",
+  "reasoning": "Review the order and all supporting documents, determine the appropriate DME action, and document the evidence and decision.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "spider2:sf_bq265",
+  "reasoning": "Inspect order and item relationships, implement the specified per-user average order value carefully, and validate the top ten.",
+  "estimate_min": 35,
+  "low_min": 18,
+  "high_min": 70
+ },
+ {
+  "item_id": "swe_lancer:44235_908",
+  "reasoning": "Reproduce the new-account onboarding and Concierge deep-link flow, diagnose initialization or navigation state, and test the repair.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "dba_bench:pg_system_failure_noisy_neighbor:single_archive_cpu_neighbor_simple",
+  "reasoning": "Identify the competing resource consumer using system and database metrics, mitigate it safely, and verify lookup throughput.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "healthadminbench:denial-hard-6",
+  "reasoning": "Review four linked denials and remittance, file the medical necessity appeal, set follow-up, and document a unified strategy and dollars at risk.",
+  "estimate_min": 40,
+  "low_min": 20,
+  "high_min": 70
+ },
+ {
+  "item_id": "theagentcompany:example",
+  "reasoning": "Find and clone the repository, configure and start the server, and complete the requested introductions through chat.",
+  "estimate_min": 35,
+  "low_min": 15,
+  "high_min": 75
+ },
+ {
+  "item_id": "swe_bench_verified:sphinx-doc__sphinx-8265",
+  "reasoning": "Reproduce signature rendering, trace tuple default parsing or formatting, and add regression tests for related defaults.",
+  "estimate_min": 180,
+  "low_min": 75,
+  "high_min": 360
+ },
+ {
+  "item_id": "dba_bench:pg_resource_governance_privilege_masking:customer_developer_masking",
+  "reasoning": "Inspect the stored policy, role memberships and effective grants, restore masking for the developer account, and verify approved reads remain intact.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 140
+ },
+ {
+  "item_id": "ui_cube:copy-paste-tasks--27",
+  "reasoning": "Transcribe three applications, use the calculator and reference verification, select required documents, and check each submission.",
+  "estimate_min": 30,
+  "low_min": 18,
+  "high_min": 55
+ },
+ {
+  "item_id": "dba_bench:pg_resource_governance_io_context_workload:report_is_pressure",
+  "reasoning": "Correlate historical I/O, device pressure and workload timing, adjust the actual competing workload without missing deadlines, and verify SLOs.",
+  "estimate_min": 75,
+  "low_min": 35,
+  "high_min": 150
+ },
+ {
+  "item_id": "ui_cube:kanban-board--8",
+  "reasoning": "Count the visible issues by priority across the board and submit the totals.",
+  "estimate_min": 5,
+  "low_min": 2,
+  "high_min": 12
+ },
+ {
+  "item_id": "vals_finance_agent:32",
+  "reasoning": "Find Boeing's debt and net income figures, calculate the incremental interest impact and percentage, and make tax and debt-balance assumptions explicit.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "spider2:sf_bq224",
+  "reasoning": "Inspect the approved license list and repository activity tables, aggregate the relevant April metrics, and rank eligible repositories.",
+  "estimate_min": 45,
+  "low_min": 20,
+  "high_min": 90
+ },
+ {
+  "item_id": "swe_bench_verified:django__django-13417",
+  "reasoning": "Trace ordering decisions for grouped querysets, correct the ordered property, and cover explicit and default ordering in tests.",
+  "estimate_min": 110,
+  "low_min": 45,
+  "high_min": 220
+ },
+ {
+  "item_id": "vals_finance_agent:9",
+  "reasoning": "Find 2022 and 2024 revenue in filings and compute the two-year CAGR.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 25
+ },
+ {
+  "item_id": "swe_lancer:45941_1113",
+  "reasoning": "Investigate the Safari mobile redirect and browser restrictions, fix the navigation behavior, and test the flow.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_online_ddl:order_line_delivery_note_ddl",
+  "reasoning": "Inspect the failed release precheck and schema, perform lock-bounded nullable-column DDL, and verify traffic and the original check.",
+  "estimate_min": 50,
+  "low_min": 25,
+  "high_min": 100
+ },
+ {
+  "item_id": "swe_bench_verified:matplotlib__matplotlib-20826",
+  "reasoning": "Trace the clear regression in tick configuration and shared axes, implement a fix, and test tick visibility across clear and sharing cases.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "healthadminbench:emr-hard-6",
+  "reasoning": "Verify eligibility and surgical benefits, submit the authorization, record both results and clear the referral.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 35
+ },
+ {
+  "item_id": "dba_bench:pg_system_failure_cpu_lock_spin:advisory_lock_retry_cpu_storm",
+  "reasoning": "Identify the advisory-lock holder and retry storm, resolve the blocking condition without restarting, and verify settlement progress.",
+  "estimate_min": 55,
+  "low_min": 25,
+  "high_min": 110
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-5-848b939d",
+  "reasoning": "Reconcile payroll registers to ledger accounts using the controller memo, accrual workpapers and compensation records, then check the requested balances.",
+  "estimate_min": 120,
+  "low_min": 60,
+  "high_min": 240
+ },
+ {
+  "item_id": "swe_lancer:12155_1",
+  "reasoning": "Reproduce HTML paste behavior, trace clipboard-to-message conversion and whitespace handling, and test paragraph preservation across supported paths.",
+  "estimate_min": 210,
+  "low_min": 90,
+  "high_min": 420
+ },
+ {
+  "item_id": "theagentcompany:admin-arrange-meeting-rooms",
+  "reasoning": "Calculate the peak simultaneous meetings, write the answer file, and communicate the result to Chen.",
+  "estimate_min": 15,
+  "low_min": 8,
+  "high_min": 30
+ },
+ {
+  "item_id": "apex_accounting:world-9-task-26-33d90130",
+  "reasoning": "Apply partnership-agreement compensation rules to partner and billing data, reconcile account 6200, and prepare the adjusting entry.",
+  "estimate_min": 150,
+  "low_min": 75,
+  "high_min": 300
+ },
+ {
+  "item_id": "theagentcompany:sde-fix-rising-wave-datatype",
+  "reasoning": "Clone the repository, locate and change the specified type, check the diff, and open the merge request.",
+  "estimate_min": 25,
+  "low_min": 12,
+  "high_min": 50
+ },
+ {
+  "item_id": "spider2:sf_bq279",
+  "reasoning": "Inspect station status and date fields, derive distinct active and closed counts for each year, and check the results.",
+  "estimate_min": 30,
+  "low_min": 15,
+  "high_min": 60
+ },
+ {
+  "item_id": "theagentcompany:admin-ask-for-upgrade-reimbursement",
+  "reasoning": "Find the expense record, request reimbursement, and if rejected consult the CTO about the late-bill procedure and partial reimbursement.",
+  "estimate_min": 20,
+  "low_min": 10,
+  "high_min": 40
+ },
+ {
+  "item_id": "vals_finance_agent:40",
+  "reasoning": "Find Floor & Decor's Q4 2024 earnings release and verify the reported comparable-store sales figure.",
+  "estimate_min": 10,
+  "low_min": 5,
+  "high_min": 20
+ },
+ {
+  "item_id": "terminal_bench_4:freecad-impeller",
+  "reasoning": "Build a fully parametric single-body impeller with twisted patterned blades, bore and specified geometry, then test both blade-count variants.",
+  "estimate_min": 480,
+  "low_min": 240,
+  "high_min": 900
+ },
+ {
+  "item_id": "dba_bench:pg_business_change_partition_migration:payment_events_attach_stall",
+  "reasoning": "Diagnose the stalled release and locking impact, safely complete the partition migration, and check payment data and workload recovery.",
+  "estimate_min": 90,
+  "low_min": 45,
+  "high_min": 180
+ },
+ {
+  "item_id": "swe_lancer:41529_679",
+  "reasoning": "Trace offline state and pending-action styling for default tax rates, correct the disabled appearance, and verify the workspace flow.",
+  "estimate_min": 150,
+  "low_min": 60,
+  "high_min": 300
+ },
+ {
+  "item_id": "spider2:sf_bq370",
+  "reasoning": "Explore order and invoice line relationships, implement line-level matching and customer-level count and value comparisons, and validate against duplication.",
+  "estimate_min": 70,
+  "low_min": 35,
+  "high_min": 140
+ },
+ {
+  "item_id": "dualentry:example_2_journal_entries",
+  "reasoning": "Calculate one month's amortization and enter the insurance expense debit and prepaid insurance credit.",
+  "estimate_min": 3,
+  "low_min": 2,
+  "high_min": 6
+ },
+ {
+  "item_id": "healthadminbench:emr-medium-13",
+  "reasoning": "Review the referral, submit the CT authorization in the payer portal, and record the authorization number and referral decision.",
+  "estimate_min": 12,
+  "low_min": 6,
+  "high_min": 22
+ },
+ {
+  "item_id": "swe_lancer:18827_741",
+  "reasoning": "Trace how the confirmation message is stored or rendered, make it responsive to language changes, and test the unlink flow.",
+  "estimate_min": 120,
+  "low_min": 50,
+  "high_min": 240
+ },
+ {
+  "item_id": "terminal_bench_4:coq-block-bound",
+  "reasoning": "Inspect the formal definitions and theorem, develop supporting lemmas, and iteratively compile a complete proof. The theorem itself is not shown, so the difficulty and range are especially uncertain.",
+  "estimate_min": 480,
+  "low_min": 120,
+  "high_min": 1200
+ }
+]

@@ -6,17 +6,17 @@ Headline measure: S; D alongside. Headline rows: the first two (ρ = 1, and ρ =
 
 | Scenario | Computer User Support Specialists | Customer Service Representatives | Software Quality Assurance Analysts and Testers |
 |---|---|---|---|
-| base | S 20% · D 58% (eq D 56%; unc 1%) | S 33% · D 85% (eq D 85%; unc 0%) | S 15% · D 66% (eq D 65%; unc 6%) |
-| base, rho 0.5 (tests/state) | S 8% · D 43% (eq D 41%; unc 1%) | S 10% · D 22% (eq D 24%; unc 0%) | S 11% · D 54% (eq D 54%; unc 6%) |
-| beta 0.6 | S 25% · D 63% (eq D 63%; unc 1%) | S 37% · D 88% (eq D 87%; unc 0%) | S 23% · D 82% (eq D 82%; unc 6%) |
-| beta 1.0 | S 18% · D 53% (eq D 52%; unc 1%) | S 31% · D 83% (eq D 82%; unc 0%) | S 12% · D 54% (eq D 54%; unc 6%) |
-| decompressed spread, both sides | S 10% · D 30% (eq D 29%; unc 1%) | S 14% · D 44% (eq D 44%; unc 0%) | S 3% · D 13% (eq D 13%; unc 6%) |
-| decompressed spread, benchmarks only | S 27% · D 61% (eq D 60%; unc 1%) | S 40% · D 87% (eq D 86%; unc 0%) | S 22% · D 73% (eq D 73%; unc 6%) |
-| lambda 0.25 | S 21% · D 58% (eq D 57%; unc 1%) | S 39% · D 86% (eq D 86%; unc 0%) | S 15% · D 66% (eq D 65%; unc 6%) |
-| lambda 3 | S 19% · D 55% (eq D 54%; unc 1%) | S 22% · D 68% (eq D 68%; unc 0%) | S 15% · D 65% (eq D 65%; unc 6%) |
-| fill from 2nd match | S 20% · D 58% (eq D 57%; unc 0%) | S 33% · D 85% (eq D 85%; unc 0%) | S 15% · D 67% (eq D 67%; unc 0%) |
-| latest observed H (no date alignment) | S 11% · D 42% (eq D 40%; unc 1%) | S 19% · D 58% (eq D 57%; unc 0%) | S 8% · D 47% (eq D 47%; unc 6%) |
-| +12 months (pooled trend) | S 34% · D 65% (eq D 65%; unc 1%) | S 52% · D 90% (eq D 89%; unc 0%) | S 36% · D 90% (eq D 90%; unc 6%) |
+| base | S 20% · D 58% (eq D 56%; unc 1%) | S 33% · D 85% (eq D 85%; unc 0%) | S 15% · D 65% (eq D 65%; unc 4%) |
+| base, rho 0.5 (tests/state) | S 8% · D 43% (eq D 41%; unc 1%) | S 10% · D 22% (eq D 24%; unc 0%) | S 11% · D 53% (eq D 54%; unc 4%) |
+| beta 0.6 | S 25% · D 63% (eq D 63%; unc 1%) | S 38% · D 88% (eq D 87%; unc 0%) | S 23% · D 83% (eq D 83%; unc 4%) |
+| beta 1.0 | S 18% · D 53% (eq D 52%; unc 1%) | S 30% · D 83% (eq D 82%; unc 0%) | S 12% · D 54% (eq D 54%; unc 4%) |
+| decompressed spread, both sides | S 10% · D 30% (eq D 29%; unc 1%) | S 14% · D 44% (eq D 44%; unc 0%) | S 3% · D 13% (eq D 13%; unc 4%) |
+| decompressed spread, benchmarks only | S 27% · D 61% (eq D 60%; unc 1%) | S 40% · D 87% (eq D 86%; unc 0%) | S 22% · D 73% (eq D 73%; unc 4%) |
+| lambda 0.25 | S 21% · D 58% (eq D 57%; unc 1%) | S 39% · D 86% (eq D 86%; unc 0%) | S 15% · D 65% (eq D 65%; unc 4%) |
+| lambda 3 | S 19% · D 55% (eq D 54%; unc 1%) | S 22% · D 68% (eq D 68%; unc 0%) | S 15% · D 65% (eq D 65%; unc 4%) |
+| fill from 2nd match | S 20% · D 58% (eq D 57%; unc 0%) | S 33% · D 85% (eq D 85%; unc 0%) | S 15% · D 66% (eq D 66%; unc 0%) |
+| latest observed H (no date alignment) | S 11% · D 42% (eq D 40%; unc 1%) | S 19% · D 58% (eq D 57%; unc 0%) | S 7% · D 46% (eq D 46%; unc 4%) |
+| +12 months (pooled trend) | S 34% · D 65% (eq D 65%; unc 1%) | S 52% · D 90% (eq D 89%; unc 0%) | S 36% · D 90% (eq D 90%; unc 4%) |
 
 ## Items (base scenario)
 
@@ -83,7 +83,7 @@ Headline measure: S; D alongside. Headline rows: the first two (ρ = 1, and ρ =
 | 14657b | DISC | one written diagnosis and recommended solution | 1.67 | gdpval | 4551.0 | 0.875 | 0.9972 | 0.2809 | 3.4–815.7 |
 | 14658a | DISC | one standards-compliance review of a program with recommenda | 3.70 | none (no horizon) |  |  |  |  | – |
 | 14659a | DISC | one automated testing tool or framework component | 3.60 | swe_bench_pro | 295.8 | 0.051 | 0.0 | 0.0 | – |
-| 14660a | DISC | one user or third-party test round organized | 1.34 | theagentcompany (no horizon) |  |  |  |  | – |
+| 14660a | DISC | one user or third-party test round organized | 1.34 | theagentcompany | 186.2 | 0.186 | 0.6141 | 0.032 | 22.2–1037.6 |
 | 14660b | DISC | one test round results report | 0.83 | gdpval | 4551.0 | 0.857 | 0.9997 | 0.4207 | 19.4–14668.2 |
 | 14661a | DISC | one defect given an initial root-cause diagnosis | 3.66 | itbench_sre | 75.6 | 0.149 | 0.0 | 0.0 | – |
 | 14662a | DISC | one beta-site performance evaluation | 3.33 | sweeper_bench | 257.2 | 0.231 | 0.9083 | 0.0754 | 27.1–2028.8 |

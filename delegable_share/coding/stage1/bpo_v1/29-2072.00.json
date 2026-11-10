@@ -1,0 +1,481 @@
+[
+ {
+  "task_id": "22877",
+  "split_reasoning": "One activity: assigning a DRG to a case.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign a patient case to a DRG using grouper software.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment is a result billing relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per encounter.",
+    "work_item": "one inpatient encounter assigned a DRG",
+    "start": "codes finalized",
+    "end": "DRG recorded",
+    "checked_by": "coding auditor, billing",
+    "duplicates": [],
+    "overlaps_with": [
+     "22881",
+     "22890"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22878",
+  "split_reasoning": "Broad statement with two kinds of output: the chart itself and data for research or cost control.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and maintain a patient's record documenting condition and treatment.",
+    "time_share": 0.8,
+    "type_reasoning": "Each chart is relied on clinically and legally.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One chart per patient encounter.",
+    "work_item": "one patient record compiled and maintained",
+    "start": "encounter documents received",
+    "end": "record complete and filed",
+    "checked_by": "HIM supervisor, clinicians, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "22880",
+     "22881",
+     "22890",
+     "22885"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compile record data for research, cost control or care improvement.",
+    "time_share": 0.2,
+    "type_reasoning": "Produces a data set or report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One data request at a time.",
+    "work_item": "one data extract or report",
+    "start": "request received",
+    "end": "data delivered",
+    "checked_by": "requesting manager or researcher",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22879",
+  "split_reasoning": "Reference lookups are in service of coding and produce nothing checked separately.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Look up disease processes in classification manuals.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces nothing anyone checks on its own.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "22881"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22880",
+  "split_reasoning": "One activity: entering patient data.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter patient data into the computer.",
+    "time_share": 1.0,
+    "type_reasoning": "Entered data is relied on downstream.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per patient record.",
+    "work_item": "one patient record's data entered",
+    "start": "source documents available",
+    "end": "data entered",
+    "checked_by": "HIM supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "22881",
+     "22893",
+     "22885"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22881",
+  "split_reasoning": "One activity: abstracting and coding a patient's encounter.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Abstract and code an encounter using standard classification systems.",
+    "time_share": 1.0,
+    "type_reasoning": "Codes drive billing and statistics.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One encounter at a time.",
+    "work_item": "one encounter abstracted and coded",
+    "start": "chart ready for coding",
+    "end": "codes finalized",
+    "checked_by": "coding auditor, billing",
+    "duplicates": [],
+    "overlaps_with": [
+     "22877",
+     "22888",
+     "22890"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22882",
+  "split_reasoning": "Ongoing system upkeep that yields two kinds of item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Index and file records in storage and retrieval systems.",
+    "time_share": 0.6,
+    "type_reasoning": "Indexing is relied on to find records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done in batches.",
+    "work_item": "one batch of records indexed",
+    "start": "records received",
+    "end": "indexed and stored",
+    "checked_by": "HIM supervisor, record users",
+    "duplicates": [],
+    "overlaps_with": [
+     "22891",
+     "22889"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Run an analysis or query from the record system.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One request at a time.",
+    "work_item": "one query or report",
+    "start": "request",
+    "end": "output delivered",
+    "checked_by": "requester",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22884",
+  "split_reasoning": "One activity: preparing forms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a business or government form.",
+    "time_share": 1.0,
+    "type_reasoning": "Each form is sent on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One form at a time.",
+    "work_item": "one form prepared and submitted",
+    "start": "form needed",
+    "end": "form submitted",
+    "checked_by": "receiving agency, supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "22887"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22885",
+  "split_reasoning": "Admission work is partly done at the desk with the patient, discharge work in the back office.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process admission documents while the patient is present.",
+    "time_share": 0.25,
+    "type_reasoning": "Patient waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One per admission.",
+    "work_item": "one admission processed during patient contact",
+    "start": "patient presents",
+    "end": "admission complete",
+    "checked_by": "patient, registration",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Process discharge and admission paperwork after the contact.",
+    "time_share": 0.75,
+    "type_reasoning": "Back-office, no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One chart's documents at a time.",
+    "work_item": "one patient's admission/discharge documents processed",
+    "start": "documents received",
+    "end": "documents filed in the chart",
+    "checked_by": "HIM supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "22878",
+     "22880"
+    ]
+   }
+  ],
+  "notes": "Live share is a guess."
+ },
+ {
+  "task_id": "22886",
+  "split_reasoning": "Mostly routine practice, plus occasional audits.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow routine safeguards to keep records confidential.",
+    "time_share": 0.7,
+    "type_reasoning": "Continuing practice with no deliverable.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "22887"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Audit record access or review a privacy incident.",
+    "time_share": 0.3,
+    "type_reasoning": "Each audit produces a finding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One audit at a time.",
+    "work_item": "one access audit or incident review",
+    "start": "audit scheduled or incident reported",
+    "end": "findings reported",
+    "checked_by": "privacy officer",
+    "duplicates": [],
+    "overlaps_with": [
+     "22887"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22887",
+  "split_reasoning": "Done both at the counter or phone and from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Release information to a requester at the counter or on the phone.",
+    "time_share": 0.2,
+    "type_reasoning": "Requester waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One per contact.",
+    "work_item": "one release made during contact",
+    "start": "requester asks and is verified",
+    "end": "information provided",
+    "checked_by": "requester, privacy officer",
+    "duplicates": [],
+    "overlaps_with": [
+     "22889"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Release information in response to written requests.",
+    "time_share": 0.8,
+    "type_reasoning": "Queue of written requests.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One request at a time.",
+    "work_item": "one release request fulfilled",
+    "start": "request received",
+    "end": "records sent and logged",
+    "checked_by": "requester, privacy officer",
+    "duplicates": [],
+    "overlaps_with": [
+     "22884",
+     "22889"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22888",
+  "split_reasoning": "Two activities: querying individual cases and attending team meetings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Query a physician about a code or diagnosis and resolve it.",
+    "time_share": 0.7,
+    "type_reasoning": "Each query yields a resolved code.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One query at a time.",
+    "work_item": "one coding query resolved",
+    "start": "conflict found",
+    "end": "code resolved",
+    "checked_by": "coder, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     "22881"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Attend coding team meetings.",
+    "time_share": 0.3,
+    "type_reasoning": "Value is in live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "22881"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22889",
+  "split_reasoning": "One activity: supplying a record on request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Retrieve a patient record for medical staff.",
+    "time_share": 1.0,
+    "type_reasoning": "Each retrieval is delivered.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One request at a time.",
+    "work_item": "one record retrieved and delivered",
+    "start": "request",
+    "end": "record delivered",
+    "checked_by": "requester",
+    "duplicates": [],
+    "overlaps_with": [
+     "22882",
+     "22887"
+    ]
+   }
+  ],
+  "notes": "Some requests are walk-up; treated as one."
+ },
+ {
+  "task_id": "22890",
+  "split_reasoning": "One activity: reviewing a record.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a record for completeness, accuracy and compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a result.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One record at a time.",
+    "work_item": "one record reviewed",
+    "start": "record complete for review",
+    "end": "deficiencies sent or record cleared",
+    "checked_by": "HIM supervisor, auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "22878",
+     "22881"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22891",
+  "split_reasoning": "Physical handling of paper plus on-computer indexing and checking.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and feed paper records through a scanner.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on paper work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "22882"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Index and quality-check scanned images.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces checked electronic records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of scans.",
+    "work_item": "one batch of scans indexed and checked",
+    "start": "scan complete",
+    "end": "images in the chart",
+    "checked_by": "HIM supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "22882"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22892",
+  "split_reasoning": "Same activity done live with a patient on the line and afterwards from requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Book an appointment while the patient is on the phone or at the desk.",
+    "time_share": 0.6,
+    "type_reasoning": "Patient waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One per contact.",
+    "work_item": "one appointment booked during contact",
+    "start": "patient requests",
+    "end": "slot confirmed",
+    "checked_by": "patient, clinic",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule from written requests and referrals.",
+    "time_share": 0.4,
+    "type_reasoning": "Queue of requests.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Batches.",
+    "work_item": "one batch of appointments scheduled",
+    "start": "requests received",
+    "end": "appointments made, confirmations sent",
+    "checked_by": "clinic, patients",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "22893",
+  "split_reasoning": "One activity: transcribing reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transcribe a dictated medical report.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report at a time.",
+    "work_item": "one report transcribed",
+    "start": "dictation received",
+    "end": "report returned for signature",
+    "checked_by": "authoring physician",
+    "duplicates": [],
+    "overlaps_with": [
+     "22880"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

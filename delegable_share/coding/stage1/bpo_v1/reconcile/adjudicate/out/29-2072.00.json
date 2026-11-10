@@ -1,0 +1,22 @@
+[
+  {"task_id": "22878", "reasoning": "'To provide data for research or cost control' states why records are kept, not a separate activity; data extracts on request are not described in the statement. X's single DISCRETE part, one encounter's documentation compiled into the record, follows the statement, while Y invents a data-extract part.", "choice": "X"},
+  {"task_id": "22885", "reasoning": "Medical records specialists process admission and discharge documents in the back office after registration staff have done the live intake, so Y's LIVE_SERVICE part does not fit this occupation. X's split by document type separates the same activity by topic only. The revision codes one back-office DISCRETE part covering either document set.", "choice": "revised", "coding": {
+    "task_id": "22885",
+    "split_reasoning": "Admission and discharge documents are processed the same way, in the health information office after the patient contact, so they are one activity on different document sets.",
+    "parts": [
+      {"part_id": "a", "text": "Process a patient's admission or discharge documents and incorporate them into the record.", "time_share": 1.0,
+       "type_reasoning": "Done from a queue of documents with no patient waiting, producing a processed document set that downstream staff rely on.", "type": "DISCRETE",
+       "unit_reasoning": "The documents for one admission or one discharge are processed together for the encounter.",
+       "work_item": "one patient's admission or discharge document set processed",
+       "start": "admission or discharge documents received for processing",
+       "end": "documents checked, indexed and filed in the patient's record or routed",
+       "checked_by": "HIM supervisor, and coding and billing staff downstream",
+       "duplicates": [], "overlaps_with": ["22878", "22880", "22884"]}
+    ],
+    "notes": "Discharge processing (chart assembly and deficiency checks) usually takes longer per item than admission documents; where specialists also register patients at a desk, a live part would be needed."
+  }},
+  {"task_id": "22886", "reasoning": "Most confidentiality work is routine practice built into everyday record handling, which produces nothing separate to check, and only access audits and incident reviews produce findings. Y separates the NO_DELIVERABLE routine from the audits, while X puts all the time on issues addressed.", "choice": "Y"},
+  {"task_id": "22887", "reasoning": "Release-of-information requests mostly come in writing, but patients and others also request records at the counter or by phone and wait while their identity and authorization are checked. Y applies the Example D split with a sensible small live share; X codes everything as back-office.", "choice": "Y"},
+  {"task_id": "22888", "reasoning": "Querying a physician and raising an issue at the coding team's meeting are alternative ways of resolving the same item, an unclear code or diagnosis, which the instructions say not to split. X codes the issue as the unit and notes that one meeting may cover several issues.", "choice": "X"},
+  {"task_id": "22889", "reasoning": "Pulling an electronic record is computer work, but retrieving a paper chart from storage is hands-on. The instructions require splitting work that is partly physical, which X does and Y does not.", "choice": "X"}
+]

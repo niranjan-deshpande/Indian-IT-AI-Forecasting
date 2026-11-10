@@ -97,6 +97,40 @@ Output, per item:
 - `itbench_sre`: a snapshot of a failing Kubernetes application (alerts, events, logs, traces,
   metrics, service topology); the worker investigates with command-line tools and reports which
   components caused the incident; correct when every true root cause is named and no wrong one.
+- `apex_accounting`: a month-end accounting task for a small firm, with a few spreadsheets, PDFs,
+  ledger exports and accounting-system records; the worker reconciles an account, books or checks
+  accruals and journal entries, analyses a variance or builds a schedule, and reports specific
+  figures; done when every figure and judgment on an expert's checklist is right.
+- `dualentry`: a short bookkeeping request in an accounting system (classify a bank transaction,
+  write a journal entry, record a bill or invoice, reconcile a bank balance, compute a figure);
+  done when the account, debit or credit, and amounts match the reference.
+- `vals_finance_agent`: a financial analyst's research question about a public company, answered
+  from its filings and web search with a calculator (e.g. compute a percent change in share
+  repurchases, compare inventory days); done when the answer matches an expert's.
+- `healthadminbench`: a revenue-cycle administration task across hospital records, insurance-
+  portal and fax systems (check a referral, submit a prior authorisation or appeal, attach
+  documents, write a note); done when every required field, document and note is recorded
+  correctly.
+- `ui_cube`: a short task on a web page or business application (set a date, pick from a list,
+  navigate a table, copy records between pages, look up stock, file an expense); done when the
+  application state or answer matches the goal.
+- `theagentcompany`: a work task inside a simulated software company with a code host, project
+  tracker, file share and team chat (roles such as developer, project manager, HR, finance); the
+  worker follows a short instruction, which may need messages to colleagues, and produces the
+  final files, records or messages; done when every checkpoint on the end state is met.
+- `swe_lancer`: a real bug or small feature in a commercial expense-management app (React
+  Native/TypeScript), given the issue report and the repository; done when end-to-end browser
+  tests of the corrected behaviour pass.
+- `spider2`: a business user's question about a large company data warehouse (often hundreds of
+  tables), with any documentation supplied; the worker explores the schema and writes SQL that
+  answers it; done when the result table matches the correct answer.
+- `terminal_bench_4`: a Linux machine and a written instruction for a long, realistic job
+  (infrastructure, data pipelines, operations or compliance processing, ML engineering) done at
+  the command line; hidden tests check the outputs and final state.
+- `dba_bench`: a live PostgreSQL database under application load and a symptom alert (e.g.
+  checkout writes timing out); the worker diagnoses the cause with metrics, SQL, logs and admin
+  tools and fixes it without unsafe actions; done when the business check passes and no safety
+  rule was broken.
 
 ## v2: reference items (anchors)
 

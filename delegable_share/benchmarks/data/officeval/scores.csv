@@ -1,0 +1,6 @@
+model,provider,release_date,score,score_kind,n_items,eval_date,source_url,notes
+GLM-5.2,Z.ai,2026-06-13,0.1791,mean normalized task score (usability gate x weighted rubric fraction; partial credit; NOT fraction solved),100,2026-07,https://arxiv.org/abs/2607.27155,"Paper Table 3 (score 17.91/100). Release date 13 or 16 Jun 2026 per secondary sources. Eval date = paper window (arXiv v1 Jul 2026; v2 18 Aug 2026), exact run date not stated."
+Qwen3.7-Plus,Alibaba,,0.1751,mean normalized task score (partial credit; NOT fraction solved),100,2026-07,https://arxiv.org/abs/2607.27155,"Score 17.51. Release June 2026, exact day not found."
+Kimi K2.6,Moonshot AI,2026-04-20,0.1700,mean normalized task score (partial credit; NOT fraction solved),100,2026-07,https://arxiv.org/abs/2607.27155,"Score 17.00. Release date from one secondary source."
+DeepSeek-V4-Pro,DeepSeek,2026-04-24,0.1448,mean normalized task score (partial credit; NOT fraction solved),100,2026-07,https://arxiv.org/abs/2607.27155,"Score 14.48. Preview 24 Apr 2026; a later GA checkpoint (V4-Pro-0813) exists; which was evaluated is not stated."
+MiniMax M3,MiniMax,2026-06-01,0.1382,mean normalized task score (partial credit; NOT fraction solved),100,2026-07,https://arxiv.org/abs/2607.27155,"Score 13.82."

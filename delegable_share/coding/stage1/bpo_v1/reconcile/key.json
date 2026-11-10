@@ -1,0 +1,4704 @@
+{
+ "15-1252.00": {
+  "21665": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "21665",
+     "split_reasoning": "Status, proposals, and technical issues are topics for the same consulting activity.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Consult with customers or other departments about project status, proposals, and technical issues.",
+       "time_share": 1.0,
+       "type_reasoning": "The task is project consultation through live interaction rather than a specified transaction or written deliverable.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "21663",
+        "21664",
+        "21673"
+       ]
+      }
+     ],
+     "notes": "Written project correspondence is addressed separately in task 21673."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "21665",
+     "split_reasoning": "Two different activities: talking with customers or departments about status and proposals, and answering technical questions in writing.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Meet or call customers or other departments to discuss project status, proposals or technical issues.",
+       "time_share": 0.6,
+       "type_reasoning": "The value is in the live discussion; nothing separate is produced.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "21663",
+        "21664"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a customer's or department's technical question about system design or maintenance in writing.",
+       "time_share": 0.4,
+       "type_reasoning": "Each question produces a written reply that the asker relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Questions arrive one at a time by email or ticket and are answered as a whole.",
+       "work_item": "one technical question answered in writing",
+       "start": "question received",
+       "end": "answer sent and question closed",
+       "checked_by": "customer or department that asked",
+       "duplicates": [],
+       "overlaps_with": [
+        "21673"
+       ]
+      }
+     ],
+     "notes": "Time split is a judgment."
+    }
+   }
+  },
+  "21666": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "21666",
+     "split_reasoning": "Coordinating a software installation is one activity involving the people responsible for deployment.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Coordinate the people and activities involved in installing a software system.",
+       "time_share": 1.0,
+       "type_reasoning": "The target describes coordination among participants rather than a specified installation plan or hands-on installation.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "21661"
+       ]
+      }
+     ],
+     "notes": "Coordination may also involve deployment schedules or records; the target does not specify those outputs."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "21666",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Coordinate the installation of a software system with users, IT staff and vendors until it is in service.",
+       "time_share": 1.0,
+       "type_reasoning": "Each installation ends in a system that users rely on and a handover that someone signs off.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Installations are scheduled and handed over one system at a time.",
+       "work_item": "one software system installation coordinated",
+       "start": "installation approved and scheduled",
+       "end": "system installed, verified and handed to users",
+       "checked_by": "users and IT operations",
+       "duplicates": [],
+       "overlaps_with": [
+        "21661",
+        "21679"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "21669": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "21669",
+     "split_reasoning": "Three different activities joined by 'or': writing test or validation procedures, programming, and writing documentation.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop or direct the testing or validation procedures for a software system.",
+       "time_share": 0.4,
+       "type_reasoning": "Produces a test or validation procedure that testers follow and managers rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Procedures are written per system or release and handed over as a set.",
+       "work_item": "one test or validation procedure set",
+       "start": "system or release ready for test planning",
+       "end": "procedures reviewed and issued to testers",
+       "checked_by": "QA lead and project manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "21670"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Write or direct the programming for a software system.",
+       "time_share": 0.35,
+       "type_reasoning": "Produces code that reviewers check and the team relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Code is handed over per change through code review.",
+       "work_item": "one programming task completed",
+       "start": "task assigned",
+       "end": "code reviewed and merged",
+       "checked_by": "code reviewer and team lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "21667",
+        "21670"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Write or direct the documentation for a software system.",
+       "time_share": 0.25,
+       "type_reasoning": "Produces a document that users or maintainers rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Documents are written and issued one at a time.",
+       "work_item": "one software document written",
+       "start": "documentation need identified",
+       "end": "document reviewed and published",
+       "checked_by": "technical lead and users of the document",
+       "duplicates": [],
+       "overlaps_with": [
+        "21673"
+       ]
+      }
+     ],
+     "notes": "'Direct' overlaps with the supervision statements; shares are a judgment."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "21669",
+     "split_reasoning": "Developing test procedures, writing code, producing documentation, and directing others are distinct activities with different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop software system testing or validation procedures.",
+       "time_share": 0.3,
+       "type_reasoning": "The work produces a procedure that testers can follow and review.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A procedure for a system or bounded change is a practical handoff to the test team.",
+       "work_item": "one software test or validation procedure",
+       "start": "requirements and the system or change to be tested are available",
+       "end": "procedure is documented and made available to testers",
+       "checked_by": "test lead and development team",
+       "duplicates": [],
+       "overlaps_with": [
+        "21667"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Develop software programming for a system or system change.",
+       "time_share": 0.3,
+       "type_reasoning": "Programming produces code submitted for review or integration.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A bounded code change is the normal unit of review and integration.",
+       "work_item": "one software code change",
+       "start": "a programming requirement or change is assigned",
+       "end": "code is submitted for review or integration",
+       "checked_by": "code reviewers and integration team",
+       "duplicates": [],
+       "overlaps_with": [
+        "21667",
+        "21670"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Develop software system documentation.",
+       "time_share": 0.2,
+       "type_reasoning": "Documentation is a written deliverable used by developers, operators, or users.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A document or bounded documentation update is reviewed and published as a whole.",
+       "work_item": "one software documentation document or update",
+       "start": "a system or change requires documentation",
+       "end": "documentation is submitted or published",
+       "checked_by": "technical reviewers and documentation users",
+       "duplicates": [],
+       "overlaps_with": [
+        "21673"
+       ]
+      },
+      {
+       "part_id": "d",
+       "text": "Direct staff carrying out software testing, validation, programming, or documentation.",
+       "time_share": 0.2,
+       "type_reasoning": "Directing staff is an interpersonal activity centered on guidance and oversight.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "21677",
+        "21678"
+       ]
+      }
+     ],
+     "notes": "Time shares are approximate and depend on whether the developer primarily produces work or directs others."
+    }
+   }
+  },
+  "21671": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "21671",
+     "split_reasoning": "Monitoring is continuous but yields two kinds of item: individual alerts or anomalies, and periodic conformance reports.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Investigate an alert or anomaly in system operation that departs from specifications.",
+       "time_share": 0.7,
+       "type_reasoning": "Each alert investigated ends in a finding or fix that operations rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Alerts arrive and are worked one at a time.",
+       "work_item": "one alert or anomaly investigated",
+       "start": "alert or departure from specification noticed",
+       "end": "cause found and fixed or escalated",
+       "checked_by": "IT operations and system owner",
+       "duplicates": [],
+       "overlaps_with": [
+        "21668"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Check system operation against specifications and report on conformance.",
+       "time_share": 0.3,
+       "type_reasoning": "Produces a periodic report that managers read.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The report is the item handed over each period.",
+       "work_item": "one periodic conformance report",
+       "start": "reporting period ends",
+       "end": "report sent to the project manager",
+       "checked_by": "project manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "21668",
+        "21673"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "21671",
+     "split_reasoning": "Continuous monitoring is represented by the discrete exceptions it prompts the developer to investigate.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Investigate a monitored equipment or system exception against operating specifications.",
+       "time_share": 1.0,
+       "type_reasoning": "An investigated exception produces a finding or escalation that operations staff can act on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An alert or observed exception is handled as one identifiable monitoring item.",
+       "work_item": "one system or equipment monitoring exception assessed",
+       "start": "an alert or observed reading indicates a possible deviation",
+       "end": "the deviation is assessed and the finding recorded or escalated",
+       "checked_by": "operations or system support team",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The task may also include routine checks that reveal no exception; monitoring practices vary by system."
+    }
+   }
+  },
+  "21677": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "21677",
+     "split_reasoning": "Supervising staff and assigning specific work items are distinct activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Supervise programmers, designers, technicians, and other technical staff.",
+       "time_share": 0.7,
+       "type_reasoning": "Supervision is primarily live guidance and oversight of staff.",
+       "type": "INTERPERSONAL",
+       "duplicates": [
+        "21678"
+       ],
+       "overlaps_with": [
+        "21669"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Assign work to programmers, designers, technicians, and other technical staff.",
+       "time_share": 0.3,
+       "type_reasoning": "A recorded work assignment identifies the work and person responsible for it.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One assigned task or ticket is the unit staff receive and act on.",
+       "work_item": "one technical work item assigned to a staff member",
+       "start": "a task needs an owner",
+       "end": "the assignment is recorded or communicated to the assignee",
+       "checked_by": "assigned staff member and project lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "21669",
+        "21678"
+       ]
+      }
+     ],
+     "notes": "Assignment can also occur verbally during supervision; the share attributed to recorded or communicated assignments is approximate."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "21677",
+     "split_reasoning": "One activity: supervising and assigning work to staff.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Assign work to and supervise programmers, designers, technologists and technicians.",
+       "time_share": 1.0,
+       "type_reasoning": "Supervision is done through live interaction and produces nothing separate to check.",
+       "type": "INTERPERSONAL",
+       "duplicates": [
+        "21678"
+       ],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Near-verbatim duplicate of 21678."
+    }
+   }
+  }
+ },
+ "15-1254.00": {
+  "14694": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14694",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Design, build or maintain a website using authoring and scripting languages and content tools.",
+       "time_share": 1.0,
+       "type_reasoning": "Each change ends in a site update that the owner and users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Work is handed over as a page, feature or maintenance change published to the site.",
+       "work_item": "one website page, feature or maintenance change",
+       "start": "change requested or assigned",
+       "end": "change tested and published",
+       "checked_by": "site owner or manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "14695",
+        "14707",
+        "14724"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14694",
+     "split_reasoning": "Design, construction, and maintenance produce different work products at different stages of a website's life.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Design a website or a defined website feature.",
+       "time_share": 0.25,
+       "type_reasoning": "The design is a distinct artifact used by the development team.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A design for a defined feature or site is handed over as a whole.",
+       "work_item": "one website or feature design",
+       "start": "design requirements or brief received",
+       "end": "design delivered for review or implementation",
+       "checked_by": "development team and project stakeholders",
+       "duplicates": [],
+       "overlaps_with": [
+        "14722",
+        "14724",
+        "14730"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Build a website or a defined website feature using development and content tools.",
+       "time_share": 0.45,
+       "type_reasoning": "Each implementation produces a distinct website component for review or release.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A feature or component is a manageable development handoff rather than an entire project.",
+       "work_item": "one implemented website feature or component",
+       "start": "feature requirements or design ready for implementation",
+       "end": "component submitted for review or deployment",
+       "checked_by": "development team and testers",
+       "duplicates": [],
+       "overlaps_with": [
+        "14707"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Maintain an existing website by making a requested change or correction.",
+       "time_share": 0.3,
+       "type_reasoning": "Each maintenance change produces an updated site component.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A requested change or correction is normally tracked and completed as a unit.",
+       "work_item": "one website maintenance change",
+       "start": "maintenance request or defect identified",
+       "end": "change completed and submitted for release",
+       "checked_by": "site owner and development team",
+       "duplicates": [],
+       "overlaps_with": [
+        "14695",
+        "14707",
+        "14719"
+       ]
+      }
+     ],
+     "notes": "Shares are approximate and vary with the site's development stage."
+    }
+   }
+  },
+  "14695": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14695",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Make or direct updates to the website.",
+       "time_share": 1.0,
+       "type_reasoning": "Each update is published and relied on by the site owner.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Updates are requested and published one at a time or in a release.",
+       "work_item": "one website update published",
+       "start": "update requested",
+       "end": "update live and confirmed",
+       "checked_by": "site owner or content owner",
+       "duplicates": [],
+       "overlaps_with": [
+        "14694",
+        "14714"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14695",
+     "split_reasoning": "Performing updates and directing other people to perform them are different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Perform a website update.",
+       "time_share": 0.8,
+       "type_reasoning": "An update produces a distinct change to the site.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A requested update is the unit reviewed and released.",
+       "work_item": "one website update",
+       "start": "update request or approved change received",
+       "end": "update completed and submitted for release",
+       "checked_by": "site owner or development lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "14694",
+        "14707",
+        "14719"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Direct staff performing website updates.",
+       "time_share": 0.2,
+       "type_reasoning": "Directing staff is supervisory interaction rather than a distinct update produced by the worker.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The split depends on the worker's supervisory responsibilities."
+    }
+   }
+  },
+  "14708": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14708",
+     "split_reasoning": "Communicating about hardware or software issues is one coordination activity regardless of the recipient.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Coordinate with network personnel or hosting agencies about issues affecting a website.",
+       "time_share": 1.0,
+       "type_reasoning": "The work centers on coordination with other parties to address an issue.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "14723"
+       ]
+      }
+     ],
+     "notes": "Some workplaces also use written support tickets; the target does not specify that output."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14708",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Contact network staff or the hosting agency to fix hardware or software problems affecting the website.",
+       "time_share": 1.0,
+       "type_reasoning": "Each problem ends in a resolved issue that the site owner relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Issues are raised and closed one at a time through tickets or emails.",
+       "work_item": "one hosting or network issue resolved",
+       "start": "problem affecting the site noticed",
+       "end": "hosting or network provider confirms the fix",
+       "checked_by": "site owner and site users",
+       "duplicates": [],
+       "overlaps_with": [
+        "14719",
+        "14723"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "14714": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14714",
+     "split_reasoning": "Developing a revision procedure and implementing it are different activities with different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop a procedure for ongoing website revision.",
+       "time_share": 0.6,
+       "type_reasoning": "The procedure is a documented process used by the site team.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A procedure or defined revision to one is reviewed and issued as a whole.",
+       "work_item": "one website revision procedure",
+       "start": "need for a procedure or procedure change identified",
+       "end": "procedure documented and submitted for approval or use",
+       "checked_by": "site owner and development lead",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Implement a procedure for ongoing website revision.",
+       "time_share": 0.4,
+       "type_reasoning": "Implementation produces a configured or established workflow for the site team.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A procedure rollout is completed and handed over for routine use.",
+       "work_item": "one website revision procedure implemented",
+       "start": "procedure approved for implementation",
+       "end": "workflow established and made available to the team",
+       "checked_by": "site owner and staff using the procedure",
+       "duplicates": [],
+       "overlaps_with": [
+        "14695"
+       ]
+      }
+     ],
+     "notes": "Implementation here means establishing the procedure, not performing each later website update."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14714",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop or put in place procedures for the ongoing revision of the website.",
+       "time_share": 1.0,
+       "type_reasoning": "The result is a documented procedure that content staff follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Procedures are written one at a time.",
+       "work_item": "one website revision procedure",
+       "start": "need for a revision process identified",
+       "end": "procedure documented and in use",
+       "checked_by": "site owner and content staff",
+       "duplicates": [],
+       "overlaps_with": [
+        "14695"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "14719": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14719",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Recommend and put in place improvements to website performance.",
+       "time_share": 1.0,
+       "type_reasoning": "Each improvement is a change whose effect the owner relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Improvements are recommended and implemented one at a time.",
+       "work_item": "one performance improvement recommended and implemented",
+       "start": "performance problem or opportunity found",
+       "end": "improvement live and effect checked",
+       "checked_by": "site owner and development lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "14708",
+        "14728"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14719",
+     "split_reasoning": "Recommending improvements and implementing approved improvements produce different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Recommend a website performance improvement.",
+       "time_share": 0.3,
+       "type_reasoning": "The recommendation is a distinct proposal for a stakeholder to consider.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A proposal addressing a defined performance issue is reviewed as a unit.",
+       "work_item": "one performance improvement recommendation",
+       "start": "performance issue or improvement opportunity identified",
+       "end": "recommendation communicated to the decision-maker",
+       "checked_by": "development lead or site owner",
+       "duplicates": [],
+       "overlaps_with": [
+        "14725",
+        "14727",
+        "14728"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Implement an approved website performance improvement.",
+       "time_share": 0.7,
+       "type_reasoning": "Implementation produces a change to the site or its supporting systems.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A defined improvement is developed and submitted as one change.",
+       "work_item": "one performance improvement implemented",
+       "start": "improvement selected for implementation",
+       "end": "change completed and submitted for review or deployment",
+       "checked_by": "development team and site owner",
+       "duplicates": [],
+       "overlaps_with": [
+        "14694",
+        "14695",
+        "14707"
+       ]
+      }
+     ],
+     "notes": "Shares depend on the scale and approval process for improvements."
+    }
+   }
+  },
+  "14723": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "14723",
+     "split_reasoning": "Continuous log monitoring is recast as the discrete problem notifications it produces.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Identify a security problem in performance logs and notify security specialists.",
+       "time_share": 1.0,
+       "type_reasoning": "Each identified problem produces a notification that specialists can act on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A problem notification groups the relevant log evidence for one issue.",
+       "work_item": "one security problem notification",
+       "start": "log entry or pattern suggesting a problem identified",
+       "end": "problem details sent to security specialists",
+       "checked_by": "security specialists",
+       "duplicates": [],
+       "overlaps_with": [
+        "14708"
+       ]
+      }
+     ],
+     "notes": "Routine log review that finds no problem is not a separate notification."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "14723",
+     "split_reasoning": "Monitoring is continuous but yields two kinds of item: routine log reviews and notices to security specialists.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Review security performance logs to find problems.",
+       "time_share": 0.8,
+       "type_reasoning": "Each review ends in a note or finding that the team relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Logs are reviewed in sessions and each session is closed out.",
+       "work_item": "one security log review",
+       "start": "review period begins or alert seen",
+       "end": "log reviewed and findings noted",
+       "checked_by": "security specialists and site owner",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Notify security specialists of a problem found in the logs.",
+       "time_share": 0.2,
+       "type_reasoning": "Each notice is a deliverable that specialists act on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Problems are escalated individually.",
+       "work_item": "one security problem escalated",
+       "start": "problem identified in logs",
+       "end": "notice sent and acknowledged",
+       "checked_by": "security specialists",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   }
+  }
+ },
+ "15-1244.00": {
+  "1322": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1322",
+     "split_reasoning": "Software and configuration work is computer-based, while assembling and testing hardware requires hands-on work; shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Design, configure, and test a network or operating system software configuration.",
+       "time_share": 0.7,
+       "type_reasoning": "The work yields a tested configuration for deployment or use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A defined configuration or change is the unit tested and handed over.",
+       "work_item": "one tested network or operating system configuration",
+       "start": "configuration requirement or change request received",
+       "end": "configuration is tested and handed over or deployed",
+       "checked_by": "network or systems operations team",
+       "overlap_reasoning": "General administration and requirements recommendations share configuration work but have wider or different outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1323",
+        "1328"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Configure and test computer hardware hands-on.",
+       "time_share": 0.3,
+       "type_reasoning": "Hardware configuration and testing require handling equipment.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Hardware maintenance and troubleshooting can include similar hands-on configuration and tests.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "15205"
+       ]
+      }
+     ],
+     "notes": "Hardware design work may also involve computer-based planning; the share depends on the role."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1322",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Design, configure and test hardware, networking software or operating system software.",
+       "time_share": 1.0,
+       "type_reasoning": "Each result is a configured, tested setup others use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Setups are done one at a time and handed over after testing.",
+       "work_item": "one system or network setup designed, configured and tested",
+       "start": "requirement for new setup",
+       "end": "tested setup handed over",
+       "checked_by": "IT manager and users",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1323"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "1324": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1324",
+     "split_reasoning": "Same activity done in two places: with the user at the desk or on the phone, and afterwards through written messages.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Talk to a user, while they are on the line or at the desk, about a current system problem.",
+       "time_share": 0.5,
+       "type_reasoning": "The user waits while the problem is discussed or fixed.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "Each contact is resolved or referred within one conversation.",
+       "work_item": "one live conversation about a system problem",
+       "start": "user calls or arrives with a problem",
+       "end": "problem fixed or referred and user told",
+       "checked_by": "the user and the IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "15205"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Follow up with a user about a system problem by email or ticket.",
+       "time_share": 0.5,
+       "type_reasoning": "Done from written messages with no one waiting.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Messages are handled one at a time.",
+       "work_item": "one written follow-up on a system problem",
+       "start": "user message or ticket received",
+       "end": "reply sent and ticket updated",
+       "checked_by": "the user",
+       "duplicates": [],
+       "overlaps_with": [
+        "15205"
+       ]
+      }
+     ],
+     "notes": "Live share depends on the workplace."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1324",
+     "split_reasoning": "The target describes one activity: discussing solutions with network users.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Discuss a solution to an existing system problem with a network user.",
+       "time_share": 1.0,
+       "type_reasoning": "The discussion is a live service interaction with a user seeking help.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One consultation about a problem is the bounded contact, not the later repair.",
+       "work_item": "one user consultation about a system problem",
+       "start": "user and administrator begin discussing the problem",
+       "end": "solution or next step is explained to the user",
+       "checked_by": "network user",
+       "overlap_reasoning": "Troubleshooting and technical support may include the consultation, but also involve diagnosis and implementation beyond it.",
+       "duplicates": [],
+       "overlaps_with": [
+        "15205",
+        "15208"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "1325": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1325",
+     "split_reasoning": "Continuous performance monitoring is recast as an assessment of a defined period or capacity concern.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Assess network performance and identify current or future adjustment needs.",
+       "time_share": 1.0,
+       "type_reasoning": "Monitoring produces performance assessments or findings that inform network changes.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A periodic or issue-driven assessment is a reviewable unit of analysis.",
+       "work_item": "one network performance assessment",
+       "start": "monitoring period ends or a performance concern is identified",
+       "end": "findings and adjustment needs are recorded or communicated",
+       "checked_by": "network operations team or IT manager",
+       "overlap_reasoning": "Console monitoring can surface the same issues, while recommendations and requirements analysis use some of the same evidence.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1320",
+        "1323",
+        "1328"
+       ]
+      }
+     ],
+     "notes": "Some organizations record findings in tickets rather than formal reports."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1325",
+     "split_reasoning": "Monitoring is continuous but yields two kinds of item: alerts investigated, and periodic performance reports.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Investigate a performance alert on the network and decide if an adjustment is needed.",
+       "time_share": 0.5,
+       "type_reasoning": "Each ends in a tuning action or finding.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Alerts are handled individually.",
+       "work_item": "one performance alert investigated",
+       "start": "alert or slowdown noticed",
+       "end": "adjustment made or finding logged",
+       "checked_by": "IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "1320"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Write a periodic network performance and capacity report on future changes.",
+       "time_share": 0.5,
+       "type_reasoning": "Produces a report managers plan from.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The report is handed over per period.",
+       "work_item": "one periodic performance report",
+       "start": "reporting period ends",
+       "end": "report sent",
+       "checked_by": "IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "1323"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   }
+  },
+  "1327": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1327",
+     "split_reasoning": "One statement mixes physical work (loading media and paper) and computer work (installing software).",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Load tapes, disks, printer paper or forms by hand.",
+       "time_share": 0.5,
+       "type_reasoning": "Hands-on work away from a computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "1317"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Install software on systems.",
+       "time_share": 0.5,
+       "type_reasoning": "Each install produces working software users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Installs are done one at a time.",
+       "work_item": "one software installation",
+       "start": "install requested",
+       "end": "software installed and verified",
+       "checked_by": "the users",
+       "duplicates": [],
+       "overlaps_with": [
+        "15206"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1327",
+     "split_reasoning": "Loading media, installing software, and replenishing printer supplies are different activities; media and printer work are physical while software installation is computer-based. Shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Load computer tapes or disks into equipment.",
+       "time_share": 0.2,
+       "type_reasoning": "Loading media requires hands-on handling of tapes or disks.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Media loading may support backups but is not the entire backup operation.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1317"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Install software on a computer or server.",
+       "time_share": 0.6,
+       "type_reasoning": "Each installation produces a usable software installation.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An installation on a defined machine or deployment target can be checked and handed over.",
+       "work_item": "one software installation",
+       "start": "installation request or approved deployment is received",
+       "end": "software is installed and basic operation verified",
+       "checked_by": "requesting user or systems operations team",
+       "overlap_reasoning": "General administration and application maintenance can include installing software, but also cover other activities.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "15206"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Load printer paper or forms.",
+       "time_share": 0.2,
+       "type_reasoning": "Replenishing printer supplies requires hands-on work at the printer.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "General hardware maintenance is broader than replenishing printer supplies.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318"
+       ]
+      }
+     ],
+     "notes": "The relative frequency of these activities varies considerably by environment."
+    }
+   }
+  },
+  "1333": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1333",
+     "split_reasoning": "The target is one coordination activity involving vendors and company personnel.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Coordinate with vendors and company personnel to facilitate a purchase.",
+       "time_share": 1.0,
+       "type_reasoning": "The stated work is coordinating among people, rather than preparing or approving a specified purchasing document.",
+       "type": "INTERPERSONAL",
+       "overlap_reasoning": "Purchasing discussions may follow inventory reviews or requirements recommendations, but those have different purposes.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1323",
+        "1328",
+        "1332"
+       ]
+      }
+     ],
+     "notes": "If the role includes preparing purchase orders or written quote comparisons, those would be separate discrete outputs not specified here."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1333",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Coordinate with vendors and company staff so that a purchase is made.",
+       "time_share": 1.0,
+       "type_reasoning": "Each purchase ends in an order placed that others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Purchases are handled one at a time.",
+       "work_item": "one purchase coordinated",
+       "start": "need approved",
+       "end": "order placed with vendor",
+       "checked_by": "purchasing or IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "1332",
+        "1323"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "15205": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "15205",
+     "split_reasoning": "Two kinds of work: diagnosing and fixing problems at a computer, and physically swapping components.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Diagnose and resolve a hardware, software or network problem from a computer.",
+       "time_share": 0.8,
+       "type_reasoning": "Each fix is a closed problem others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Problems are handled as tickets one at a time.",
+       "work_item": "one problem diagnosed and resolved",
+       "start": "problem reported or detected",
+       "end": "fix confirmed and ticket closed",
+       "checked_by": "affected user and IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "1324",
+        "1329"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Replace a defective component by hand.",
+       "time_share": 0.2,
+       "type_reasoning": "Hands-on work.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "1329"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "15205",
+     "split_reasoning": "Troubleshooting occurs both while users wait and independently in a work queue, while replacing components is hands-on; shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Diagnose and resolve a system or network problem while a user is present or connected.",
+       "time_share": 0.3,
+       "type_reasoning": "The user is waiting during the live support interaction and any diagnostic work performed within it.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "A live troubleshooting contact is bounded by the user's request and the communicated outcome or next step.",
+       "work_item": "one live troubleshooting contact",
+       "start": "user reports a problem during a call, chat, or visit",
+       "end": "fix or next step is communicated before the contact ends",
+       "checked_by": "affected user",
+       "overlap_reasoning": "User consultation shares the discussion, while administration and voice support can include live troubleshooting.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1324",
+        "15208"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Diagnose and resolve a hardware, software, or network problem outside a live user contact.",
+       "time_share": 0.5,
+       "type_reasoning": "A queued or internally detected problem produces a documented resolution or escalation.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One incident or problem ticket is the normal unit assigned and closed or escalated.",
+       "work_item": "one system or network incident diagnosed and resolved or escalated",
+       "start": "incident ticket or alert is assigned",
+       "end": "resolution is verified and recorded, or the incident is escalated",
+       "checked_by": "operations team and affected system owner",
+       "overlap_reasoning": "Monitoring, recovery, application maintenance, and voice support may include some of the same incident work.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1317",
+        "1318",
+        "1320",
+        "1329",
+        "1330",
+        "15206",
+        "15208"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Replace a defective hardware component.",
+       "time_share": 0.2,
+       "type_reasoning": "Component replacement requires hands-on work with equipment.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "General hardware maintenance and voice equipment support can include component replacement.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1322",
+        "15208"
+       ]
+      }
+     ],
+     "notes": "The live, back-office, and physical shares depend on the support model and equipment."
+    }
+   }
+  },
+  "15207": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "15207",
+     "split_reasoning": "Learning is separate from the recommendations or implementations it leads to.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Attend seminars, read articles or take classes on new technologies.",
+       "time_share": 0.6,
+       "type_reasoning": "Nothing is produced for others.",
+       "type": "NO_DELIVERABLE",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Recommend or implement a new technology after research.",
+       "time_share": 0.4,
+       "type_reasoning": "Each produces a proposal or rollout managers rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done per technology.",
+       "work_item": "one new technology recommendation or implementation",
+       "start": "research complete",
+       "end": "recommendation made or technology live",
+       "checked_by": "IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "1323"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "15207",
+     "split_reasoning": "Keeping current, recommending a technology, and implementing it are different activities; the learning methods are alternatives. Shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Research new technologies through seminars, trade articles, or classes.",
+       "time_share": 0.3,
+       "type_reasoning": "The specified learning activity itself need not produce a handoff that someone else checks.",
+       "type": "NO_DELIVERABLE",
+       "overlap_reasoning": "Research can inform improvement recommendations, but those recommendations are a separate output.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1323"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Recommend implementation of a new technology.",
+       "time_share": 0.3,
+       "type_reasoning": "A recommendation is a distinct proposal for a decision-maker.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One technology proposal is the unit submitted for a decision.",
+       "work_item": "one new technology implementation recommendation",
+       "start": "technology and potential organizational use identified",
+       "end": "recommendation is communicated for review",
+       "checked_by": "IT manager or technology decision-maker",
+       "overlap_reasoning": "Configuration improvement recommendations can include new technology, but also cover changes to existing systems.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1323"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Implement an approved new technology.",
+       "time_share": 0.4,
+       "type_reasoning": "A defined implementation produces a working technology deployment for users or operations.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A bounded deployment or implementation change is handed over independently of the larger adoption program.",
+       "work_item": "one new technology deployment or implementation change",
+       "start": "implementation is approved and assigned",
+       "end": "technology is configured, tested, and handed over",
+       "checked_by": "system owner and operations team",
+       "overlap_reasoning": "General administration and configuration work may include implementing new technology, but are broader.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1322"
+       ]
+      }
+     ],
+     "notes": "Some technology deployments require substantial physical installation; the implementation part assumes predominantly computer-based work."
+    }
+   }
+  },
+  "15208": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "15208",
+     "split_reasoning": "Implementation and support are different activities; support occurs both live and in a queue, and equipment installation requires hands-on work. Shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Configure and implement a voice service or system change.",
+       "time_share": 0.35,
+       "type_reasoning": "A defined voice service change produces a tested configuration for use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A service or configuration change is the unit normally tested and handed over.",
+       "work_item": "one voice service implementation or configuration change",
+       "start": "approved voice service requirement or change request received",
+       "end": "service change is configured, tested, and handed over",
+       "checked_by": "voice operations team or service owner",
+       "overlap_reasoning": "General administration and system configuration can include voice services but also cover other systems.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "1322"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Install or maintain voice equipment hands-on.",
+       "time_share": 0.2,
+       "type_reasoning": "Equipment installation and maintenance require physical work at the device.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "General hardware maintenance and component replacement can include voice equipment.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "15205"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Provide voice service technical support while the user is present or connected.",
+       "time_share": 0.2,
+       "type_reasoning": "The user waits during the live support contact.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One live contact about a voice service issue has a distinct communicated outcome.",
+       "work_item": "one live voice service support contact",
+       "start": "user reports a voice service issue during a contact",
+       "end": "fix or next step is communicated to the user",
+       "checked_by": "affected user",
+       "overlap_reasoning": "User consultation and general troubleshooting can cover the same live discussion, but are not limited to voice services.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1324",
+        "15205"
+       ]
+      },
+      {
+       "part_id": "d",
+       "text": "Resolve a voice service support issue outside a live user contact.",
+       "time_share": 0.25,
+       "type_reasoning": "A queued issue produces a documented resolution or escalation.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One voice service incident or request is assigned and closed or escalated as a unit.",
+       "work_item": "one voice service support issue handled",
+       "start": "voice service incident or request is assigned",
+       "end": "outcome is verified and recorded, or the issue is escalated",
+       "checked_by": "voice operations team and affected user",
+       "overlap_reasoning": "General system troubleshooting can include the same voice incidents but also covers other technology.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1318",
+        "15205"
+       ]
+      }
+     ],
+     "notes": "The shares depend on whether the organization has a separate telecom team."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "15208",
+     "split_reasoning": "Two kinds of work: setting up voice systems, and supporting users of them.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Install or configure voice services and equipment such as PBX or voice mail.",
+       "time_share": 0.4,
+       "type_reasoning": "Each install produces a working service users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done one system or change at a time.",
+       "work_item": "one voice system change implemented",
+       "start": "change requested",
+       "end": "change working and verified",
+       "checked_by": "IT manager and phone users",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Resolve a user's voice service problem.",
+       "time_share": 0.6,
+       "type_reasoning": "Each ends in a fixed problem.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Problems are handled as tickets.",
+       "work_item": "one voice support request resolved",
+       "start": "request received",
+       "end": "problem fixed and closed",
+       "checked_by": "the user",
+       "duplicates": [],
+       "overlaps_with": [
+        "15205"
+       ]
+      }
+     ],
+     "notes": "Voice support may be partly live phone or desk work and partly physical handset swaps."
+    }
+   }
+  }
+ },
+ "15-1242.00": {
+  "1298": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1298",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Write standards and guidelines for acquiring and using software and for protecting vulnerable information.",
+       "time_share": 1.0,
+       "type_reasoning": "The result is a standards document staff follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Standards are written one at a time.",
+       "work_item": "one standard or guideline document",
+       "start": "need for a standard identified",
+       "end": "standard approved and issued",
+       "checked_by": "management and security officer",
+       "duplicates": [],
+       "overlaps_with": [
+        "1301"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1298",
+     "split_reasoning": "Software acquisition and use standards and information-protection standards normally produce different policy documents.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop standards and guidelines for acquiring and using software.",
+       "time_share": 0.5,
+       "type_reasoning": "The work produces written standards for others to follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A standards document is reviewed and issued as a whole.",
+       "work_item": "one software acquisition and use standards document",
+       "start": "need for a new or revised standard identified",
+       "end": "standards document submitted for approval or issued",
+       "checked_by": "IT management and software purchasers",
+       "overlap_reasoning": "Technology recommendations can inform standards but address particular performance needs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21648"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Develop standards and guidelines for protecting vulnerable information.",
+       "time_share": 0.5,
+       "type_reasoning": "The work produces written security guidance.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A security standards document is reviewed and issued as a whole.",
+       "work_item": "one information-protection standards document",
+       "start": "need for new or revised protection guidance identified",
+       "end": "guidance submitted for approval or issued",
+       "checked_by": "security management and database staff",
+       "overlap_reasoning": "Security planning and access specifications apply or inform the standards but produce different outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1301",
+        "1305"
+       ]
+      }
+     ],
+     "notes": "Shares are estimates; some organizations combine these standards in one policy."
+    }
+   }
+  },
+  "1299": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1299",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Change existing databases or database management systems, or direct programmers to make changes.",
+       "time_share": 1.0,
+       "type_reasoning": "Each change is a deliverable users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Changes are handed over per request.",
+       "work_item": "one database change",
+       "start": "change requested",
+       "end": "change tested and in production",
+       "checked_by": "application owner and users",
+       "duplicates": [],
+       "overlaps_with": [
+        "1300",
+        "1309",
+        "21651"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1299",
+     "split_reasoning": "Making database changes and directing other staff to make them are different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Modify an existing database or database management system.",
+       "time_share": 0.7,
+       "type_reasoning": "Each assigned change produces a modified database or system.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A requested change is implemented and handed over as a whole.",
+       "work_item": "one database or DBMS change implemented",
+       "start": "change requirement or request received",
+       "end": "change implemented and handed over",
+       "checked_by": "requesting team and database lead",
+       "overlap_reasoning": "Error corrections, security changes, schema descriptions, and upgrades can involve database modifications but also have distinct scopes.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1300",
+        "1301",
+        "1313",
+        "21649"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Direct programmers or analysts making changes to an existing database or DBMS.",
+       "time_share": 0.3,
+       "type_reasoning": "The part is supervision and direction of colleagues rather than a separate finished change made by the administrator.",
+       "type": "INTERPERSONAL",
+       "overlap_reasoning": "Directing others to code database descriptions can be one kind of direction on a change.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1313"
+       ]
+      }
+     ],
+     "notes": "Shares vary with how much implementation is delegated."
+    }
+   }
+  },
+  "1300": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1300",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Test programs or databases, fix errors and make needed changes.",
+       "time_share": 1.0,
+       "type_reasoning": "Each test round ends in a tested, corrected result.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Tests are done per change or release.",
+       "work_item": "one test round with fixes",
+       "start": "change ready for test",
+       "end": "tests pass and fixes done",
+       "checked_by": "developers and project lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "21651",
+        "1299"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1300",
+     "split_reasoning": "Testing produces findings, while correcting errors and modifying the program or database produces a separate change.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Test a program or database and record the results.",
+       "time_share": 0.5,
+       "type_reasoning": "A test produces results that others use to assess the program or database.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A test run or test cycle has a coherent set of results.",
+       "work_item": "one program or database test cycle and its results",
+       "start": "program or database selected for testing",
+       "end": "test results and defects recorded or communicated",
+       "checked_by": "developers and database lead",
+       "overlap_reasoning": "Testing changes is a subset of testing programs and databases.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21651"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Correct errors and make necessary modifications to a program or database.",
+       "time_share": 0.5,
+       "type_reasoning": "Each correction results in a changed program or database.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An assigned correction or related set of modifications is handed over as a change.",
+       "work_item": "one error correction or related modification",
+       "start": "error or required modification identified",
+       "end": "correction implemented and handed over",
+       "checked_by": "database lead and testing team",
+       "overlap_reasoning": "Database modifications and DBMS upgrades may include corrections but also cover changes not prompted by errors.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1299",
+        "21649"
+       ]
+      }
+     ],
+     "notes": "Testing and correction may be iterated; shares are estimates."
+    }
+   }
+  },
+  "1301": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1301",
+     "split_reasoning": "Planning security measures and implementing them produce different outputs; coordination is included with planning.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Plan and coordinate measures to safeguard computer-file information.",
+       "time_share": 0.4,
+       "type_reasoning": "The planning work produces a set of measures for approval and implementation.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A security plan for a defined system or change is reviewed as a whole.",
+       "work_item": "one security measures plan",
+       "start": "system protection need or risk identified",
+       "end": "measures documented and coordinated for implementation",
+       "checked_by": "security management and system owners",
+       "overlap_reasoning": "Protection standards and access specifications can form inputs to or components of a security plan.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1298",
+        "1305"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Implement measures to protect information in computer files.",
+       "time_share": 0.6,
+       "type_reasoning": "Implementation produces a configured protection measure that others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A defined security change is implemented and handed over as a whole.",
+       "work_item": "one security measure implemented",
+       "start": "protection measure approved or assigned",
+       "end": "measure configured and implementation communicated",
+       "checked_by": "security team and system owner",
+       "overlap_reasoning": "Implementing a security measure can involve a database modification or application of access specifications.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1299",
+        "1305"
+       ]
+      }
+     ],
+     "notes": "The balance between planning and implementation depends on the security measure."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1301",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Plan and put in place security measures protecting files from accidental or unauthorized damage, change or disclosure.",
+       "time_share": 1.0,
+       "type_reasoning": "Each measure is a deployed protection others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done one measure at a time.",
+       "work_item": "one security measure planned and implemented",
+       "start": "risk identified",
+       "end": "measure in place and documented",
+       "checked_by": "security officer and auditor",
+       "duplicates": [],
+       "overlaps_with": [
+        "1298",
+        "1305"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "1302": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1302",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Approve, schedule, plan and oversee installation and testing of new database products or improvements.",
+       "time_share": 1.0,
+       "type_reasoning": "Each installation ends in a signed-off system.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done per installation.",
+       "work_item": "one installation planned and overseen through testing",
+       "start": "installation request",
+       "end": "installation tested and signed off",
+       "checked_by": "management and users",
+       "duplicates": [],
+       "overlaps_with": [
+        "21649",
+        "21651"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1302",
+     "split_reasoning": "Planning, scheduling, and approving an installation produce a plan or approval, while supervising the work is a separate live activity.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Plan, schedule, and approve installation and testing of a new product or system improvement.",
+       "time_share": 0.6,
+       "type_reasoning": "This produces an installation and testing plan and approval for a defined change.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The plan and approval are handled for a particular installation or improvement.",
+       "work_item": "one installation and testing plan with approval",
+       "start": "proposed product installation or improvement received",
+       "end": "plan and schedule approved and communicated",
+       "checked_by": "IT management and implementation team",
+       "overlap_reasoning": "Upgrade planning and actual testing can be part of the installation process but have their own outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21649",
+        "21651"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Supervise staff installing and testing a new product or system improvement.",
+       "time_share": 0.4,
+       "type_reasoning": "Supervising staff is principally a live interpersonal activity.",
+       "type": "INTERPERSONAL",
+       "overlap_reasoning": "Supervision may accompany upgrades or testing, without being the same work as performing them.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21649",
+        "21651"
+       ]
+      }
+     ],
+     "notes": "Shares depend on the scale of the installation and level of delegation."
+    }
+   }
+  },
+  "1303": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1303",
+     "split_reasoning": "Training and answering questions are different activities, and questions are handled both live and from written requests.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Train users in database use.",
+       "time_share": 0.4,
+       "type_reasoning": "The value of training is in the live teaching interaction.",
+       "type": "INTERPERSONAL",
+       "overlap_reasoning": "Technical support may include teaching a user during a support interaction.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21650"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a user's database question during a live contact.",
+       "time_share": 0.35,
+       "type_reasoning": "The user waits while the administrator answers or looks up the answer.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One question is addressed and communicated within the contact.",
+       "work_item": "one user question answered during a live contact",
+       "start": "user asks the question",
+       "end": "answer communicated to the user",
+       "checked_by": "the user",
+       "overlap_reasoning": "Answering a user question can be part of technical support, which also covers troubleshooting and junior-staff assistance.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21650"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Answer a user's database question received in writing.",
+       "time_share": 0.25,
+       "type_reasoning": "The written answer is delivered without the user waiting in a live contact.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each written question receives an answer the user can rely on.",
+       "work_item": "one written user question answered",
+       "start": "written question received",
+       "end": "answer sent to the user",
+       "checked_by": "the user",
+       "overlap_reasoning": "Written answers may be technical support, which also covers other support activities and recipients.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21650"
+       ]
+      }
+     ],
+     "notes": "Shares depend on training responsibilities and the channels users use."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1303",
+     "split_reasoning": "Two activities: teaching sessions, and answering questions as they arise.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Train users on the database systems.",
+       "time_share": 0.3,
+       "type_reasoning": "Teaching is live and produces nothing checked.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a user's question by email or ticket.",
+       "time_share": 0.7,
+       "type_reasoning": "Each answer is a written deliverable the user relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Questions arrive one at a time.",
+       "work_item": "one user question answered",
+       "start": "question received",
+       "end": "answer sent",
+       "checked_by": "the user",
+       "duplicates": [],
+       "overlaps_with": [
+        "21650"
+       ]
+      }
+     ],
+     "notes": "Some questions are answered live; treated as written here."
+    }
+   }
+  },
+  "1312": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1312",
+     "split_reasoning": "Identifying and evaluating trends are steps in providing management with trend information and advice.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Evaluate database-system industry trends and advise upper management.",
+       "time_share": 1.0,
+       "type_reasoning": "The evaluation produces advice or an assessment that management can use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An assessment of a defined trend or set of trends is communicated as a whole.",
+       "work_item": "one database-system trend assessment or briefing",
+       "start": "trend or management information need identified",
+       "end": "assessment and advice communicated to management",
+       "checked_by": "upper management",
+       "overlap_reasoning": "A trend assessment can inform a technology recommendation, but recommendations address a specific performance need.",
+       "duplicates": [],
+       "overlaps_with": [
+        "21648"
+       ]
+      }
+     ],
+     "notes": "Advice may be written or presented in a briefing."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1312",
+     "split_reasoning": "Keeping up with trends is separate from advising management.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Follow trends in database systems.",
+       "time_share": 0.5,
+       "type_reasoning": "Nothing is produced.",
+       "type": "NO_DELIVERABLE",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Advise management on a trend.",
+       "time_share": 0.5,
+       "type_reasoning": "Each is a briefing management uses.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One briefing at a time.",
+       "work_item": "one trend briefing",
+       "start": "trend evaluated",
+       "end": "briefing delivered",
+       "checked_by": "upper management",
+       "duplicates": [],
+       "overlaps_with": [
+        "21648"
+       ]
+      }
+     ],
+     "notes": "Shares are a judgment."
+    }
+   }
+  },
+  "1313": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "1313",
+     "split_reasoning": "Coding database descriptions and directing others to code them are different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Code logical and physical database descriptions and specify their identifiers to the DBMS.",
+       "time_share": 0.7,
+       "type_reasoning": "The work produces database definitions that the DBMS and development team use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A set of definitions for a database or defined schema change is submitted or applied as a whole.",
+       "work_item": "one coded set of database definitions",
+       "start": "database design or definition change received",
+       "end": "descriptions and identifiers coded and submitted or applied",
+       "checked_by": "database lead and application developers",
+       "overlap_reasoning": "Definitions can implement a data model, revise a database, or support creation of a production database, but those tasks have broader or different outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1299",
+        "1306",
+        "1311",
+        "1315"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Direct others coding logical and physical database descriptions.",
+       "time_share": 0.3,
+       "type_reasoning": "The activity is live direction of colleagues doing the coding.",
+       "type": "INTERPERSONAL",
+       "overlap_reasoning": "Directing database modifications can include directing the coding of database descriptions.",
+       "duplicates": [],
+       "overlaps_with": [
+        "1299"
+       ]
+      }
+     ],
+     "notes": "Shares depend on delegation."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "1313",
+     "split_reasoning": "One activity with one kind of deliverable, so no split is needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Write the code for logical and physical database descriptions, or direct others to.",
+       "time_share": 1.0,
+       "type_reasoning": "Each is code reviewed and used.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done per database or change.",
+       "work_item": "one database description coded",
+       "start": "design approved",
+       "end": "code reviewed and deployed",
+       "checked_by": "DBA team and developers",
+       "duplicates": [],
+       "overlaps_with": [
+        "1306",
+        "1299"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  }
+ },
+ "15-1211.00": {
+  "3465": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3465",
+     "split_reasoning": "Three different kinds of item: testing, monitoring, and coordinating installations.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Test a program or system change and report the results.",
+       "time_share": 0.35,
+       "type_reasoning": "Each test cycle ends in results others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Tests are run per program or change and signed off as a whole.",
+       "work_item": "one program or system change tested",
+       "start": "change ready for test",
+       "end": "test results reported/signed off",
+       "checked_by": "project lead; developers",
+       "duplicates": [],
+       "overlaps_with": [
+        "3477",
+        "3470"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Monitor and maintain running systems, investigating and resolving each alert or fault.",
+       "time_share": 0.35,
+       "type_reasoning": "Continuing activity that produces discrete items, so recast as items.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each alert or maintenance job is handled and closed once.",
+       "work_item": "one monitoring alert or maintenance job investigated and closed",
+       "start": "alert raised or maintenance due",
+       "end": "issue resolved or handed off, logged",
+       "checked_by": "system owner; operations manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "20950",
+        "3464"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Coordinate the installation of a program or system with users and technical staff.",
+       "time_share": 0.3,
+       "type_reasoning": "Produces a completed installation that users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Installations are scheduled and signed off one at a time.",
+       "work_item": "one installation or rollout coordinated",
+       "start": "installation scheduled",
+       "end": "installation complete and accepted",
+       "checked_by": "users; IT manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "3470"
+       ]
+      }
+     ],
+     "notes": "Time shares are judgments."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3465",
+     "split_reasoning": "Testing, maintenance, monitoring, and coordinating installations are distinct activities with different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Test a computer program or system and document the results.",
+       "time_share": 0.3,
+       "type_reasoning": "Each test cycle produces results that a development or operations team can use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A test cycle for a specified change or release is handed over as a set of results.",
+       "work_item": "one program or system test cycle completed",
+       "start": "program, system change, or release is ready for testing",
+       "end": "test results and defects are recorded and shared",
+       "checked_by": "development team and test lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "3477"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Perform a maintenance change on a computer program or system.",
+       "time_share": 0.35,
+       "type_reasoning": "Maintenance produces a completed change to a program or system.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A maintenance request or scheduled change is tracked and completed as a unit.",
+       "work_item": "one program or system maintenance change",
+       "start": "maintenance need or scheduled change identified",
+       "end": "change applied and its completion recorded",
+       "checked_by": "system owner and operations team",
+       "duplicates": [],
+       "overlaps_with": [
+        "3470",
+        "3478",
+        "20950"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Investigate a monitoring alert or exception for a computer program or system.",
+       "time_share": 0.2,
+       "type_reasoning": "Continuous monitoring produces individual alerts or exceptions that are investigated and recorded.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An alert or exception is the item acted on and passed to the responsible team.",
+       "work_item": "one monitoring alert or exception investigated",
+       "start": "alert or exception appears in monitoring results",
+       "end": "findings and any necessary escalation are recorded",
+       "checked_by": "operations team",
+       "duplicates": [],
+       "overlaps_with": [
+        "3478",
+        "20950"
+       ]
+      },
+      {
+       "part_id": "d",
+       "text": "Coordinate the installation of a computer program or system with the people involved.",
+       "time_share": 0.15,
+       "type_reasoning": "Coordination consists primarily of live discussion and agreement among the installation participants.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "3468"
+       ]
+      }
+     ],
+     "notes": "The shares depend on the system's maintenance and release cycle."
+    }
+   }
+  },
+  "3471": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3471",
+     "split_reasoning": "Interviews, surveys, observation, and performing the job are alternative ways to establish how work and information are processed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Investigate a work process to determine what information workers process and how they process it.",
+       "time_share": 1.0,
+       "type_reasoning": "The investigation produces findings that inform subsequent systems analysis.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Findings for a defined work process or investigation are usable as a whole by the design team.",
+       "work_item": "one work-process investigation and its findings",
+       "start": "work process selected for investigation",
+       "end": "information-processing findings documented and shared",
+       "checked_by": "systems design team and process owner",
+       "duplicates": [],
+       "overlaps_with": [
+        "3467",
+        "3474"
+       ]
+      }
+     ],
+     "notes": "The methods can include live interaction, but the target's purpose is determining and conveying how the work is done."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3471",
+     "split_reasoning": "Two different activities: the interviews and observation themselves, and writing up what was learned.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Interview or survey workers and observe their work.",
+       "time_share": 0.6,
+       "type_reasoning": "Value is in the live interaction and observation.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "3467"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Write up how information is processed from the interviews, surveys and observation.",
+       "time_share": 0.4,
+       "type_reasoning": "Produces a written description others use for design.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One write-up per study of a job or process.",
+       "work_item": "one process-findings write-up",
+       "start": "interviews and observation finished",
+       "end": "write-up delivered",
+       "checked_by": "project lead; analysts doing design",
+       "duplicates": [],
+       "overlaps_with": [
+        "3474"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "3473": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3473",
+     "split_reasoning": "Two different activities: running training sessions, and writing materials for them.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Train staff and users in live sessions on computer systems and programs.",
+       "time_share": 0.7,
+       "type_reasoning": "Value is in the live session; nothing a colleague would check is produced.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Prepare training guides or materials on a system.",
+       "time_share": 0.3,
+       "type_reasoning": "Produces materials users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Materials are written per system or topic.",
+       "work_item": "one set of training materials",
+       "start": "system change needing training",
+       "end": "materials issued",
+       "checked_by": "trainees; manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "3477"
+       ]
+      }
+     ],
+     "notes": "Statement mentions only training; written materials are inferred."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3473",
+     "split_reasoning": "Training staff and training users are the same activity delivered to different audiences.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Train staff or users to work with computer systems and programs.",
+       "time_share": 1.0,
+       "type_reasoning": "The target's value is in the live instruction and interaction with learners.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Preparation of training materials is not specified in the target."
+    }
+   }
+  },
+  "3476": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3476",
+     "split_reasoning": "Defining system goals and diagramming program logic produce distinct artifacts at different levels of design.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Define the goals of a computer system.",
+       "time_share": 0.35,
+       "type_reasoning": "The defined goals are a reviewable statement used to guide system design.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A set of goals for a defined system or change is reviewed as a whole.",
+       "work_item": "one system goals statement",
+       "start": "system purpose and stakeholder needs available",
+       "end": "goals documented and submitted for review",
+       "checked_by": "system owner and management",
+       "duplicates": [],
+       "overlaps_with": [
+        "3469",
+        "3474"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Create flowcharts or diagrams describing the logical operational steps of a program.",
+       "time_share": 0.65,
+       "type_reasoning": "The analyst produces diagrams that programmers and reviewers use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A diagram or coherent set of diagrams for a program or function is a design handover.",
+       "work_item": "one program logic diagram or diagram set",
+       "start": "program function and requirements identified",
+       "end": "logic diagrams completed and shared",
+       "checked_by": "programmers and technical lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "3474"
+       ]
+      }
+     ],
+     "notes": "The time shares depend on how much program logic requires diagramming."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3476",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Define a system's goals and draw flow charts and diagrams of its logical steps.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces diagrams that developers and colleagues review.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Diagrams are handed over per program or system.",
+       "work_item": "one set of goals and flow diagrams",
+       "start": "requirements available",
+       "end": "diagrams delivered",
+       "checked_by": "developers; project lead",
+       "duplicates": [],
+       "overlaps_with": [
+        "3474"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "3477": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3477",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Write or revise a design procedure, test procedure or quality standard.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces a document others follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each procedure or standard is a separate document.",
+       "work_item": "one procedure or standard written or revised",
+       "start": "need for a procedure identified",
+       "end": "document approved and issued",
+       "checked_by": "project lead; QA",
+       "duplicates": [],
+       "overlaps_with": [
+        "3465",
+        "3474"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3477",
+     "split_reasoning": "System design procedures, test procedures, and quality standards are different kinds of documents used for different purposes.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Develop, document, or revise a system design procedure.",
+       "time_share": 0.35,
+       "type_reasoning": "The activity produces a documented procedure for design staff to follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An individual procedure or revision is reviewed and issued as a whole.",
+       "work_item": "one system design procedure or revision",
+       "start": "need for a new or revised design procedure identified",
+       "end": "procedure documented and submitted for approval or use",
+       "checked_by": "systems design lead",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Develop, document, or revise a system test procedure.",
+       "time_share": 0.35,
+       "type_reasoning": "The activity produces a documented procedure for testers to follow.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An individual test procedure or revision is a reviewable handover.",
+       "work_item": "one test procedure or revision",
+       "start": "need for a new or revised test procedure identified",
+       "end": "procedure documented and submitted for approval or use",
+       "checked_by": "test lead and quality team",
+       "duplicates": [],
+       "overlaps_with": [
+        "3465"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Develop, document, or revise a system quality standard.",
+       "time_share": 0.3,
+       "type_reasoning": "The activity produces a standard used to evaluate system work.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A standard or revision can be reviewed and adopted as a distinct document.",
+       "work_item": "one quality standard or revision",
+       "start": "need for a new or revised quality standard identified",
+       "end": "standard documented and submitted for approval or use",
+       "checked_by": "quality lead and system management",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The shares are estimates and depend on the organization's documentation needs."
+    }
+   }
+  },
+  "3481": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "3481",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Supervise programmers and analysts or lead a systems project.",
+       "time_share": 1.0,
+       "type_reasoning": "Value is in directing people live; no single checked output.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Project plans or status reports would be separate statements."
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "3481",
+     "split_reasoning": "Supervising staff and leading a particular systems project are different responsibilities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Supervise computer programmers or other systems analysts.",
+       "time_share": 0.5,
+       "type_reasoning": "The target describes the live management and supervision of staff.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Lead the people working on a particular systems project.",
+       "time_share": 0.5,
+       "type_reasoning": "The leadership described centers on coordinating and directing project participants through live interaction.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The shares vary with the analyst's managerial and project assignments; specific project documents are not named in the target."
+    }
+   }
+  }
+ },
+ "43-3031.00": {
+  "2490": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2490",
+     "split_reasoning": "Two steps: recording, then summarizing.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Classify and record financial data in journals, ledgers or software.",
+       "time_share": 0.75,
+       "type_reasoning": "Produces recorded entries.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Recorded in batches.",
+       "work_item": "one batch of transactions classified and recorded",
+       "start": "documents received",
+       "end": "entries recorded",
+       "checked_by": "supervisor; accountant",
+       "duplicates": [
+        "2489"
+       ],
+       "overlaps_with": [
+        "2487",
+        "2506"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Summarize recorded financial data for a period.",
+       "time_share": 0.25,
+       "type_reasoning": "Produces a summary others use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One summary per period.",
+       "work_item": "one period summary of financial data",
+       "start": "period closes",
+       "end": "summary delivered",
+       "checked_by": "accountant; manager",
+       "duplicates": [],
+       "overlaps_with": [
+        "2492",
+        "2504"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2490",
+     "split_reasoning": "Classifying, recording, and summarizing financial data are connected steps in maintaining financial records.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Classify and record financial data in journals, ledgers, or computerized records.",
+       "time_share": 1.0,
+       "type_reasoning": "The work produces updated financial records for accounting users.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A transaction or related batch is classified and entered as a unit.",
+       "work_item": "one transaction or batch recorded in financial records",
+       "start": "source financial data received",
+       "end": "classified entries saved or posted in the records",
+       "checked_by": "accountant or accounting supervisor",
+       "overlap_reasoning": "Software operation, account posting, coding, and journal transfers share portions of recordkeeping but specify different activities or scopes.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2487",
+        "2489",
+        "2493",
+        "2506"
+       ]
+      }
+     ],
+     "notes": "Summarization within routine recordkeeping is included; separately issued reports are covered by 2492."
+    }
+   }
+  },
+  "2491": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2491",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Calculate, prepare and issue bills, invoices and statements.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces documents customers receive.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Billing runs or documents are issued in batches.",
+       "work_item": "one batch of bills, invoices or statements issued",
+       "start": "billing period or transaction data ready",
+       "end": "documents sent to customers",
+       "checked_by": "customers; supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "2497",
+        "2505"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2491",
+     "split_reasoning": "Bills and invoices, account statements, and financial statements are different deliverables with different preparation workflows.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Calculate, prepare, and issue a bill or invoice.",
+       "time_share": 0.5,
+       "type_reasoning": "Each bill or invoice is an issued document used for payment.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The invoice or bill is the document sent to the payer.",
+       "work_item": "one bill or invoice issued",
+       "start": "billable transaction or billing information received",
+       "end": "bill or invoice calculated and issued",
+       "checked_by": "customer or payer and billing supervisor",
+       "overlap_reasoning": "Calculations and invoice matching may use or check billing information, but have different outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2497",
+        "2509"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Prepare and issue an account statement.",
+       "time_share": 0.25,
+       "type_reasoning": "An account statement is a distinct document sent to an account holder.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One statement summarizes an account for a billing period and is issued as a whole.",
+       "work_item": "one account statement issued",
+       "start": "account activity for the statement period available",
+       "end": "statement prepared and issued",
+       "checked_by": "account holder and accounting staff",
+       "overlap_reasoning": "Preparing account statements can use the same balances and data as calculations and financial reports.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2492",
+        "2497"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Prepare and issue a financial statement.",
+       "time_share": 0.25,
+       "type_reasoning": "A financial statement is a distinct report relied on by management or other users.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The completed statement is issued as a whole for a reporting period.",
+       "work_item": "one financial statement prepared and issued",
+       "start": "period's accounting figures available",
+       "end": "statement prepared and issued",
+       "checked_by": "accountant or financial manager",
+       "overlap_reasoning": "Financial report compilation can include preparation of the same kinds of statements, but also includes other reports and tables.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2492"
+       ]
+      }
+     ],
+     "notes": "Shares vary with billing volume and the clerk's role in financial statement preparation."
+    }
+   }
+  },
+  "2495": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2495",
+     "split_reasoning": "Calculations, typed document production, and physical copying are different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Use a calculator to perform a financial calculation.",
+       "time_share": 0.5,
+       "type_reasoning": "A calculation produces a figure used in a financial record or document.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The completed calculation for a transaction or request is the usable output.",
+       "work_item": "one financial calculation completed",
+       "start": "figures and calculation requirement available",
+       "end": "result calculated and recorded or supplied",
+       "checked_by": "accounting staff or supervisor",
+       "overlap_reasoning": "The financial calculations statement covers calculations by any suitable method, including calculators.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2497"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Type a financial or office document.",
+       "time_share": 0.25,
+       "type_reasoning": "Typing produces a document for another person to use or check.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The finished document, not each typed entry, is handed over.",
+       "work_item": "one document typed",
+       "start": "content or instructions for the document received",
+       "end": "document typed and provided for use or review",
+       "checked_by": "requester or supervisor",
+       "overlap_reasoning": "Routine correspondence can include typed documents but also covers preparing and sending responses.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2498"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Make physical copies of financial or office documents.",
+       "time_share": 0.25,
+       "type_reasoning": "Operating a copier and handling paper requires hands-on work away from a computer.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "General office duties may include copying, though that statement also covers other activities.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2498"
+       ]
+      }
+     ],
+     "notes": "The equipment mix varies; typewriters and standalone calculators may be uncommon in some workplaces."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2495",
+     "split_reasoning": "Tool statement covering two different jobs: calculating and copying.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Do calculations on a 10-key calculator for other accounting tasks.",
+       "time_share": 0.7,
+       "type_reasoning": "Produces figures other work relies on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Calculations come in sets for a task.",
+       "work_item": "one set of calculations",
+       "start": "figures to calculate",
+       "end": "totals handed over",
+       "checked_by": "supervisor",
+       "duplicates": [
+        "2497"
+       ],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Make copies of documents on a copy machine.",
+       "time_share": 0.3,
+       "type_reasoning": "Hands-on machine work away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Typewriters are largely obsolete."
+    }
+   }
+  },
+  "2496": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2496",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Reconcile records or note and report a discrepancy.",
+       "time_share": 1.0,
+       "type_reasoning": "Each discrepancy ends in a reconciliation or a report.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Discrepancies are handled one at a time.",
+       "work_item": "one discrepancy reconciled or reported",
+       "start": "discrepancy found",
+       "end": "resolved or reported",
+       "checked_by": "supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "2503",
+        "2502",
+        "2486"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2496",
+     "split_reasoning": "Reconciling records and separately noting or reporting discrepancies can produce different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Reconcile discrepancies between financial records.",
+       "time_share": 0.6,
+       "type_reasoning": "A reconciliation produces an explained or corrected set of records.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A reconciliation of an account or defined set of records is completed as a whole.",
+       "work_item": "one set of financial records reconciled",
+       "start": "discrepancy between records identified",
+       "end": "difference resolved or reconciliation documented",
+       "checked_by": "accountant or accounting supervisor",
+       "overlap_reasoning": "Checking figures, comparing journals, and reconciling bank transactions can form part of a reconciliation but have different scopes.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2486",
+        "2502",
+        "2503"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Note and report a discrepancy found in financial records.",
+       "time_share": 0.4,
+       "type_reasoning": "A discrepancy note or report is a discrete output for someone to investigate or correct.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A discrepancy is documented and passed to the responsible person as an actionable item.",
+       "work_item": "one financial-record discrepancy documented and reported",
+       "start": "discrepancy found in records",
+       "end": "discrepancy noted and reported to the responsible person",
+       "checked_by": "accountant or accounting supervisor",
+       "overlap_reasoning": "Record checks and comparisons can identify discrepancies, but they also include checking records without reporting an error.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2486",
+        "2502",
+        "2503"
+       ]
+      }
+     ],
+     "notes": "Discrepancy reporting may be embedded in reconciliation; shares are approximate."
+    }
+   }
+  },
+  "2498": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2498",
+     "split_reasoning": "Filing, answering calls, and handling correspondence are different activities, and filing can be physical or electronic.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "File paper accounting or office documents.",
+       "time_share": 0.25,
+       "type_reasoning": "Sorting and placing paper documents requires hands-on work away from a computer.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Copying documents is another general office duty, but it is not the same as filing them.",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "File electronic accounting or office documents.",
+       "time_share": 0.2,
+       "type_reasoning": "Electronic filing produces an organized, retrievable record used by colleagues.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A document or related batch is filed in the appropriate location as a unit.",
+       "work_item": "one document or batch filed electronically",
+       "start": "documents available for filing",
+       "end": "documents saved in the appropriate location",
+       "checked_by": "staff who retrieve the documents",
+       "overlap_reasoning": "Storing information in accounting software can overlap with electronic filing but also includes recording and analysis.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2487"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Answer and handle a routine incoming call.",
+       "time_share": 0.25,
+       "type_reasoning": "The caller is served or directed during a live contact.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One incoming call is handled through its immediate response or transfer.",
+       "work_item": "one routine incoming call handled",
+       "start": "incoming call received",
+       "end": "caller answered, directed, or transferred",
+       "checked_by": "caller or receiving staff member",
+       "overlap_reasoning": "Some calls involve looking up and answering financial questions, while others do not.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2494"
+       ]
+      },
+      {
+       "part_id": "d",
+       "text": "Prepare and send routine office correspondence.",
+       "time_share": 0.3,
+       "type_reasoning": "Each response or message is a distinct written communication.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A correspondence item is prepared and sent as a whole.",
+       "work_item": "one routine correspondence item sent",
+       "start": "request or need for correspondence received",
+       "end": "message or letter prepared and sent",
+       "checked_by": "recipient or supervisor",
+       "overlap_reasoning": "Written financial answers and typed documents can be routine correspondence but are narrower or differently scoped.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2494",
+        "2495"
+       ]
+      }
+     ],
+     "notes": "Shares and the balance of paper and electronic filing vary by workplace."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2498",
+     "split_reasoning": "Statement lists three different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Answer telephones.",
+       "time_share": 0.3,
+       "type_reasoning": "Done live with the caller.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "Each call is handled in one contact.",
+       "work_item": "one call handled",
+       "start": "call picked up",
+       "end": "call concluded",
+       "checked_by": "caller",
+       "duplicates": [],
+       "overlaps_with": [
+        "2494"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "File paper documents.",
+       "time_share": 0.3,
+       "type_reasoning": "Hands-on work away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "c",
+       "text": "Handle routine correspondence.",
+       "time_share": 0.4,
+       "type_reasoning": "Produces letters or emails sent.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Letters are handled one at a time.",
+       "work_item": "one routine letter or email handled",
+       "start": "correspondence received",
+       "end": "reply sent",
+       "checked_by": "recipient; supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "2499": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2499",
+     "split_reasoning": "Compiling and balancing deposit information is desk work, while assembling and sending physical payments requires hands-on handling.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Compile cashier data and verify and balance receipts for a bank deposit.",
+       "time_share": 0.6,
+       "type_reasoning": "The work produces a balanced deposit record for the deposit.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Receipts and cashier data are checked together for one deposit batch.",
+       "work_item": "one deposit batch compiled and balanced",
+       "start": "cashier totals and receipt information received",
+       "end": "deposit totals verified and deposit record prepared",
+       "checked_by": "cash supervisor or accounting staff",
+       "overlap_reasoning": "Receiving and recording payments and checking figures may cover portions of deposit preparation.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2486",
+        "2500"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Assemble and send cash and checks to the bank for deposit.",
+       "time_share": 0.4,
+       "type_reasoning": "Handling and transmitting physical payments requires hands-on work away from a computer.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Banking received cash and checks includes the physical deposit but also covers receipt and recording.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2500"
+       ]
+      }
+     ],
+     "notes": "Electronic payment deposits may require less physical handling."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2499",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Prepare a bank deposit by compiling cashier data, balancing receipts and sending to the bank.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces a balanced deposit.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One deposit per day or period.",
+       "work_item": "one bank deposit prepared and sent",
+       "start": "cashier receipts collected",
+       "end": "deposit sent",
+       "checked_by": "supervisor; bank",
+       "duplicates": [],
+       "overlaps_with": [
+        "2500"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "2500": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2500",
+     "split_reasoning": "Receiving payments may be live at a counter; recording and banking mailed receipts is back-office.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Take cash or checks from a person at the counter and record the payment.",
+       "time_share": 0.3,
+       "type_reasoning": "Payer is present.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One payment per contact.",
+       "work_item": "one payment received at the counter",
+       "start": "payer hands over payment",
+       "end": "receipt given",
+       "checked_by": "payer; supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Record and bank mailed or accumulated cash, checks and vouchers.",
+       "time_share": 0.7,
+       "type_reasoning": "Back-office batch work.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Batches are recorded and banked together.",
+       "work_item": "one batch of receipts recorded and banked",
+       "start": "receipts collected",
+       "end": "deposit made",
+       "checked_by": "supervisor; bank",
+       "duplicates": [],
+       "overlaps_with": [
+        "2499"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2500",
+     "split_reasoning": "Handling and banking physical payments is distinct from recording those payments in accounting records.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Receive and bank cash, checks, and vouchers.",
+       "time_share": 0.55,
+       "type_reasoning": "Receiving, securing, and transporting physical payments requires hands-on work.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Preparing a bank deposit includes handling and sending payments but also includes balancing deposit data.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2499"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Record received cash, checks, and vouchers.",
+       "time_share": 0.45,
+       "type_reasoning": "Payment entry creates an accounting record used by downstream staff.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An individual payment or related batch is recorded and saved as a unit.",
+       "work_item": "one received payment or batch recorded",
+       "start": "payment or voucher received",
+       "end": "receipt entered in the accounting records",
+       "checked_by": "cashier supervisor or accounting staff",
+       "overlap_reasoning": "General financial recordkeeping and compiling bank deposit data can include these payment records.",
+       "duplicates": [],
+       "overlaps_with": [
+        "2490",
+        "2499"
+       ]
+      }
+     ],
+     "notes": "The split assumes the task includes physical payments; shares vary with payment methods."
+    }
+   }
+  },
+  "2505": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2505",
+     "split_reasoning": "Continuous monitoring is represented by the discrete overdue or at-risk accounts it identifies.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Review a loan or account payment status and flag an overdue or at-risk account.",
+       "time_share": 1.0,
+       "type_reasoning": "Monitoring produces individual account exceptions for follow-up.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An identified account is flagged and passed on as a single follow-up item.",
+       "work_item": "one payment-status exception identified and flagged",
+       "start": "loan or account payment status becomes available for review",
+       "end": "overdue or at-risk status recorded or referred for follow-up",
+       "checked_by": "collections staff or accounting supervisor",
+       "overlap_reasoning": "Other statements may provide account information or reports, but none describes the same payment-status monitoring output.",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Routine checks that find no exception may also consume time; workflows may document them in a periodic review list."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2505",
+     "split_reasoning": "Monitoring produces two kinds of item: status reviews and follow-ups on late payments.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Review loan and account status for payments up to date.",
+       "time_share": 0.6,
+       "type_reasoning": "Produces a status review.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Done per review cycle.",
+       "work_item": "one account status review",
+       "start": "review date",
+       "end": "review noted and exceptions listed",
+       "checked_by": "supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "2491"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Contact customers or issue notices for overdue payments.",
+       "time_share": 0.4,
+       "type_reasoning": "Produces a follow-up item.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each overdue account is chased once.",
+       "work_item": "one overdue account followed up",
+       "start": "payment found late",
+       "end": "customer contacted/notice sent",
+       "checked_by": "supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "2510": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "2510",
+     "split_reasoning": "Tax returns, workers' compensation forms, and pension contribution forms have different requirements and recipients.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Complete and submit a tax form or return.",
+       "time_share": 0.5,
+       "type_reasoning": "A submitted tax filing is a distinct document relied on by the employer and tax authority.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each required return or form is completed and filed as a whole.",
+       "work_item": "one tax form or return submitted",
+       "start": "filing requirement and supporting financial data available",
+       "end": "form completed and submitted",
+       "checked_by": "tax authority and accounting supervisor",
+       "overlap_reasoning": "Payroll processing may supply information for payroll tax filings but also covers preparing employee pay.",
+       "duplicates": [],
+       "overlaps_with": [
+        "18561"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Complete and submit a workers' compensation form.",
+       "time_share": 0.25,
+       "type_reasoning": "A workers' compensation filing is a distinct submitted document.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each required form is prepared and submitted as a whole.",
+       "work_item": "one workers' compensation form submitted",
+       "start": "filing requirement and supporting information available",
+       "end": "form completed and submitted",
+       "checked_by": "receiving agency or insurer and employer",
+       "overlap_reasoning": "Payroll processing may provide wage data for the form but has a different output.",
+       "duplicates": [],
+       "overlaps_with": [
+        "18561"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Complete and submit a pension contribution form or other required government document.",
+       "time_share": 0.25,
+       "type_reasoning": "Each filing is a distinct document submitted to a receiving organization.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A required form is prepared and submitted as a whole.",
+       "work_item": "one pension contribution or other government form submitted",
+       "start": "filing requirement and supporting information available",
+       "end": "form completed and submitted",
+       "checked_by": "receiving agency or plan administrator and employer",
+       "overlap_reasoning": "Payroll processing may supply contribution information but includes other work.",
+       "duplicates": [],
+       "overlaps_with": [
+        "18561"
+       ]
+      }
+     ],
+     "notes": "Other government documents vary in complexity; shares are approximate."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "2510",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Complete and submit tax, workers' compensation, pension and other government forms.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces a filed form.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One per form per period.",
+       "work_item": "one government form completed and submitted",
+       "start": "filing due",
+       "end": "form submitted",
+       "checked_by": "agency; supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "18561"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  }
+ },
+ "43-3021.00": {
+  "23242": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23242",
+     "split_reasoning": "The listed machines are alternative tools used to produce typed, calculated, or billing work; the statement does not identify separate deliverables for each.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Use office or billing equipment to process a billing calculation or document.",
+       "time_share": 1.0,
+       "type_reasoning": "The equipment is operated to produce an individual calculation or document for billing work.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The output of a processing job, rather than each machine operation, is the unit another worker uses.",
+       "work_item": "one billing calculation or document processed using office equipment",
+       "start": "billing information or document supplied for processing",
+       "end": "calculation or document produced for the next billing step",
+       "checked_by": "billing staff or a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23240",
+        "23245",
+        "23258",
+        "23264"
+       ]
+      }
+     ],
+     "notes": "This is a broad equipment-use statement and may substantially duplicate specific billing tasks depending on the job."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23242",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Operate typing, adding, calculating or billing machines.",
+       "time_share": 1.0,
+       "type_reasoning": "Describes the tools used for other statements; no item of its own.",
+       "type": "NO_DELIVERABLE",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Tool statement; the output is counted under billing and calculation statements."
+    }
+   }
+  },
+  "23248": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23248",
+     "split_reasoning": "Monitoring is continuous; the actionable item it produces is an equipment issue identified for attention.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Identify and flag an equipment operating problem during monitoring.",
+       "time_share": 1.0,
+       "type_reasoning": "Each detected problem can be handed to someone for correction or repair.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An identified equipment issue is the discrete item arising from continued monitoring.",
+       "work_item": "one equipment operating problem identified and flagged",
+       "start": "equipment observed during operation",
+       "end": "problem identified and flagged for attention",
+       "checked_by": "equipment operator, supervisor, or repair personnel",
+       "duplicates": [],
+       "overlaps_with": [
+        "23249"
+       ]
+      }
+     ],
+     "notes": "Routine observation may produce no separate record when equipment runs normally."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23248",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Monitor equipment to ensure proper operation.",
+       "time_share": 1.0,
+       "type_reasoning": "Watching equipment produces nothing others check.",
+       "type": "NO_DELIVERABLE",
+       "duplicates": [],
+       "overlaps_with": [
+        "23249"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "23249": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23249",
+     "split_reasoning": "Hands-on correction of minor problems and notification of repair personnel about major problems are different activities.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Fix a minor equipment problem such as a jam.",
+       "time_share": 0.65,
+       "type_reasoning": "Clearing a jam or similar fault requires hands-on work on the equipment.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "23248"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Notify repair personnel of a major equipment problem.",
+       "time_share": 0.35,
+       "type_reasoning": "The notification creates a repair request or message for another worker.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One reported fault is the item handed to repair personnel.",
+       "work_item": "one major equipment fault reported",
+       "start": "major equipment problem identified",
+       "end": "fault details communicated to repair personnel",
+       "checked_by": "repair personnel or a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23248"
+       ]
+      }
+     ],
+     "notes": "Shares depend on the frequency of minor jams and major failures."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23249",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Clear equipment jams and notify repair staff of larger problems.",
+       "time_share": 1.0,
+       "type_reasoning": "Hands-on machine work away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "23248"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "23262": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23262",
+     "split_reasoning": "Inquiries come live or in writing.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Answer a live inquiry about rates, routing or procedures.",
+       "time_share": 0.5,
+       "type_reasoning": "Person waits.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One contact each.",
+       "work_item": "one inquiry answered live",
+       "start": "person asks",
+       "end": "answer given",
+       "checked_by": "inquirer",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a written inquiry about rates, routing or procedures.",
+       "time_share": 0.5,
+       "type_reasoning": "Queued.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One per inquiry.",
+       "work_item": "one written inquiry answered",
+       "start": "inquiry received",
+       "end": "reply sent",
+       "checked_by": "inquirer",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23262",
+     "split_reasoning": "Inquiries are answered both during live customer contacts and from written requests.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Answer a customer's live inquiry about rates, routing, or procedures.",
+       "time_share": 0.75,
+       "type_reasoning": "The customer waits in a call or at a counter while the clerk answers.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One inquiry is addressed within the live contact.",
+       "work_item": "one live rates, routing, or procedures inquiry answered",
+       "start": "customer asks the question during a call or visit",
+       "end": "answer given to the customer",
+       "checked_by": "customer and, if reviewed, a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244",
+        "23255",
+        "23265",
+        "23266"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a written inquiry about rates, routing, or procedures.",
+       "time_share": 0.25,
+       "type_reasoning": "The response is prepared and sent without the customer waiting in a live conversation.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each written inquiry receives an individual response.",
+       "work_item": "one written rates, routing, or procedures inquiry answered",
+       "start": "written inquiry received",
+       "end": "answer sent to the requester",
+       "checked_by": "requester and, if reviewed, a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244",
+        "23255",
+        "23266"
+       ]
+      }
+     ],
+     "notes": "Channel shares are estimates and vary by workplace."
+    }
+   }
+  },
+  "23264": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23264",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Create billing documents, shipping labels, credit memos or credit forms.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces documents.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Per document or batch.",
+       "work_item": "one batch of billing documents, labels or credit memos",
+       "start": "trigger such as shipment or credit",
+       "end": "documents issued",
+       "checked_by": "customers; supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23240"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23264",
+     "split_reasoning": "Billing documents, shipping labels, and credit documents are different outputs with different downstream uses.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Create a billing document for a transaction.",
+       "time_share": 0.5,
+       "type_reasoning": "Each transaction produces a document for billing or collection.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The completed billing document is the item issued or passed to billing staff.",
+       "work_item": "one billing document created",
+       "start": "transaction and charge information available",
+       "end": "billing document completed and made ready for issue",
+       "checked_by": "customer and billing staff",
+       "duplicates": [],
+       "overlaps_with": [
+        "23240",
+        "23242",
+        "23258"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Create a shipping label for a shipment.",
+       "time_share": 0.2,
+       "type_reasoning": "Each label is a distinct output used to route a shipment.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The label for one package or shipment is handed to shipping staff.",
+       "work_item": "one shipping label created",
+       "start": "shipment and destination details available",
+       "end": "label prepared for the shipment",
+       "checked_by": "shipping staff or carrier",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "c",
+       "text": "Create a credit memorandum or credit form.",
+       "time_share": 0.3,
+       "type_reasoning": "Each credit document records a credit for subsequent account processing.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The completed credit document is the item reviewed or posted by accounting.",
+       "work_item": "one credit memorandum or credit form created",
+       "start": "credit transaction and supporting details received",
+       "end": "credit document completed and routed for processing",
+       "checked_by": "accounts-receivable staff or a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23266"
+       ]
+      }
+     ],
+     "notes": "Shares vary substantially with the employer's billing and shipping workflow."
+    }
+   }
+  },
+  "23265": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23265",
+     "split_reasoning": "Answering calls, scheduling appointments, and ordering supplies are different activities; appointment scheduling also occurs both live and from written requests.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Answer and direct a general telephone call.",
+       "time_share": 0.35,
+       "type_reasoning": "The caller is on the line while the clerk handles or directs the call.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One call is handled as a single live contact.",
+       "work_item": "one general telephone call answered and handled",
+       "start": "telephone call received",
+       "end": "caller's request handled or call transferred",
+       "checked_by": "caller and receiving staff",
+       "duplicates": [],
+       "overlaps_with": [
+        "23262"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Schedule or change an appointment while a caller or visitor waits.",
+       "time_share": 0.2,
+       "type_reasoning": "The booking is made during a live contact with the requester.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One appointment request is entered and confirmed during the contact.",
+       "work_item": "one appointment scheduled or changed during a contact",
+       "start": "caller or visitor requests an appointment",
+       "end": "appointment entered and confirmed",
+       "checked_by": "requester and staff member whose calendar is updated",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "c",
+       "text": "Schedule or change an appointment from a written request.",
+       "time_share": 0.15,
+       "type_reasoning": "The appointment is entered outside a live contact.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each written appointment request results in a calendar entry and confirmation.",
+       "work_item": "one appointment scheduled or changed from a written request",
+       "start": "written appointment request received",
+       "end": "calendar updated and confirmation sent",
+       "checked_by": "requester and staff member whose calendar is updated",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "d",
+       "text": "Order supplies or equipment for the office.",
+       "time_share": 0.3,
+       "type_reasoning": "Each order creates a purchasing request or order relied on by the supplier or purchasing staff.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An order containing the needed items is submitted as a whole.",
+       "work_item": "one supply or equipment order submitted",
+       "start": "supply or equipment need identified",
+       "end": "order or purchasing request submitted",
+       "checked_by": "purchasing staff, supplier, or supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The shares and channels are estimates; other general administrative duties are not specified."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23265",
+     "split_reasoning": "Phone answering is live; scheduling and ordering are not.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Answer telephones.",
+       "time_share": 0.35,
+       "type_reasoning": "Live with caller.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One per call.",
+       "work_item": "one call handled",
+       "start": "call picked up",
+       "end": "call ended",
+       "checked_by": "caller",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Schedule appointments and order supplies or equipment.",
+       "time_share": 0.65,
+       "type_reasoning": "Written requests.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each request handled and confirmed.",
+       "work_item": "one appointment or supply order",
+       "start": "request received",
+       "end": "confirmed or order placed",
+       "checked_by": "requester; supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "23266": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23266",
+     "split_reasoning": "Returning checks is back-office, but errors may prompt live inquiries.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Return a check or retrieve one returned in error and adjust the account.",
+       "time_share": 0.6,
+       "type_reasoning": "Back-office item.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Each check handled once.",
+       "work_item": "one check returned or retrieved with account adjusted",
+       "start": "check identified",
+       "end": "account adjusted",
+       "checked_by": "customer; supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23239"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Answer a customer's inquiry about a check error.",
+       "time_share": 0.4,
+       "type_reasoning": "Customer waits.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "Each inquiry per contact.",
+       "work_item": "one check inquiry answered",
+       "start": "customer raises error",
+       "end": "explanation given",
+       "checked_by": "customer",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23266",
+     "split_reasoning": "Returning or retrieving checks, adjusting accounts, and answering inquiries are distinct activities; inquiries can be handled live or in writing.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Return a check to a customer or retrieve one returned in error.",
+       "time_share": 0.35,
+       "type_reasoning": "The clerk physically handles and transfers or retrieves the check.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Adjust an account to correct an error involving a returned check.",
+       "time_share": 0.3,
+       "type_reasoning": "The correction produces an account entry used by accounting staff.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The adjustment for one check error is the record reviewed and posted.",
+       "work_item": "one account adjustment for a check-return error",
+       "start": "check-return error and required correction identified",
+       "end": "account adjustment entered or submitted for approval",
+       "checked_by": "accounting staff or a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23243",
+        "23264"
+       ]
+      },
+      {
+       "part_id": "c",
+       "text": "Answer a customer's live inquiry about a check-return error.",
+       "time_share": 0.25,
+       "type_reasoning": "The customer waits on a call or at the counter while the inquiry is answered.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One inquiry is addressed within the customer contact.",
+       "work_item": "one live check-error inquiry answered",
+       "start": "customer asks about the check error",
+       "end": "explanation or status relayed to the customer",
+       "checked_by": "customer and, if reviewed, a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244",
+        "23262"
+       ]
+      },
+      {
+       "part_id": "d",
+       "text": "Answer a written customer inquiry about a check-return error.",
+       "time_share": 0.1,
+       "type_reasoning": "The written response is prepared outside a live customer contact.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The response to one written inquiry is sent as a whole.",
+       "work_item": "one written check-error inquiry answered",
+       "start": "written inquiry about the error received",
+       "end": "explanation or status sent to the customer",
+       "checked_by": "customer and, if reviewed, a supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "23244",
+        "23262"
+       ]
+      }
+     ],
+     "notes": "Shares are estimates; account adjustments may sometimes be made while a customer waits, depending on the workplace."
+    }
+   }
+  }
+ },
+ "43-9021.00": {
+  "11402": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "11402",
+     "split_reasoning": "Physically sorting paper materials and compiling and checking data are different kinds of work.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Sort and organize paper source materials for data entry.",
+       "time_share": 0.35,
+       "type_reasoning": "Sorting paper materials requires hands-on handling away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "11407"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Compile and verify data for entry, including organizing electronic source data.",
+       "time_share": 0.65,
+       "type_reasoning": "The work produces a prepared and checked set of data for entry.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A prepared batch can be handed to a keyer as a whole.",
+       "work_item": "One batch of source data compiled and checked before entry",
+       "start": "Source data received for preparation",
+       "end": "Data organized and accuracy checked for entry",
+       "checked_by": "Data entry keyer or supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "11407"
+       ]
+      }
+     ],
+     "notes": "The shares depend on the proportion of paper and electronic material. This task concerns checking before entry; task 11403 concerns verification of entered data."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "11402",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Compile, sort and verify data before entry.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces prepared batch.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Per batch.",
+       "work_item": "one batch prepared for entry",
+       "start": "documents received",
+       "end": "batch ready",
+       "checked_by": "data entry operator; supervisor",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "11404": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "11404",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Store completed documents in the right places.",
+       "time_share": 1.0,
+       "type_reasoning": "Hands-on filing away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "11404",
+     "split_reasoning": "Storing paper documents requires physical handling, whereas filing electronic documents is computer-based work.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "File completed paper documents in their designated locations.",
+       "time_share": 0.5,
+       "type_reasoning": "Filing paper documents requires hands-on handling away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Save completed electronic documents in their designated locations.",
+       "time_share": 0.5,
+       "type_reasoning": "Each filing action produces an accessible stored document that others can retrieve.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A completed document is saved and retrieved as a whole.",
+       "work_item": "One completed electronic document filed",
+       "start": "Completed document ready for storage",
+       "end": "Document saved in its designated location",
+       "checked_by": "Supervisor or staff retrieving the document",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "The paper and electronic shares depend on the workplace's document formats."
+    }
+   }
+  },
+  "11405": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "11405",
+     "split_reasoning": "One activity with one kind of deliverable; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Locate and correct entry errors or report them to a supervisor.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces corrected data.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Per error set.",
+       "work_item": "one set of errors corrected or reported",
+       "start": "errors found",
+       "end": "corrected or reported",
+       "checked_by": "supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "11403"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "11405",
+     "split_reasoning": "Correcting an error and reporting an error that cannot be corrected produce different outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Locate and correct a data-entry error.",
+       "time_share": 0.8,
+       "type_reasoning": "The activity produces a corrected data entry for downstream use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An identified error or related set of errors in one record is handled as a correction.",
+       "work_item": "One data record corrected",
+       "start": "A suspected data-entry error is identified",
+       "end": "The error is located and the record corrected",
+       "checked_by": "Data verifier, supervisor, or downstream data user",
+       "duplicates": [],
+       "overlaps_with": [
+        "11401",
+        "11403"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Report a data-entry error to a supervisor when it cannot be resolved by the keyer.",
+       "time_share": 0.2,
+       "type_reasoning": "The activity produces an error report that a supervisor can act on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A reported error or related set of discrepancies is handed over for resolution.",
+       "work_item": "One data-entry error reported to a supervisor",
+       "start": "An error requiring supervisor attention is identified",
+       "end": "Error details reported to the supervisor",
+       "checked_by": "Supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "11403"
+       ]
+      }
+     ],
+     "notes": "The correction and reporting shares depend on error severity and the keyer's authority."
+    }
+   }
+  },
+  "11407": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "11407",
+     "split_reasoning": "One activity; no split needed.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Select materials needed for work assignments.",
+       "time_share": 1.0,
+       "type_reasoning": "Gathering materials by hand.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "11407",
+     "split_reasoning": "Selecting physical materials and selecting electronic materials involve work in different places.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Select physical source materials and supplies needed for an assignment.",
+       "time_share": 0.4,
+       "type_reasoning": "Selecting and gathering physical materials requires hands-on handling.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "11402"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Select electronic source materials needed for an assignment.",
+       "time_share": 0.6,
+       "type_reasoning": "The selection produces a set of electronic materials ready for the assignment.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Materials are selected together for a particular assignment or batch.",
+       "work_item": "One assignment's electronic materials selected",
+       "start": "Assignment and its material requirements received",
+       "end": "Required electronic materials selected and available for use",
+       "checked_by": "Assigned keyer or supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "11402"
+       ]
+      }
+     ],
+     "notes": "The shares depend on whether assignments use paper or electronic materials."
+    }
+   }
+  }
+ },
+ "43-9041.00": {
+  "23320": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23320",
+     "split_reasoning": "Entering, accessing, searching, and retrieving data are methods of working with detailed records; the target does not specify separate record-handling outputs.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Organize or work with detailed office or warehouse records using a computer.",
+       "time_share": 1.0,
+       "type_reasoning": "Record work produces an organized, updated, or retrieved record for someone to use.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A record or group of related records is handled in response to a processing need.",
+       "work_item": "one record or related set of records organized or retrieved",
+       "start": "record-handling request or processing need identified",
+       "end": "records updated, organized, or made available for use",
+       "checked_by": "records user or downstream processing team",
+       "duplicates": [],
+       "overlaps_with": [
+        "23315",
+        "23319",
+        "23323",
+        "23325",
+        "23326",
+        "23333"
+       ]
+      }
+     ],
+     "notes": "The statement is broad; actual handoff units depend on the records system and assignment."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23320",
+     "split_reasoning": "Very general statement covering filing/entering records and pulling them up; two kinds of item.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Enter, file and organize office records on the computer.",
+       "time_share": 0.6,
+       "type_reasoning": "Produces maintained records others rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Records are done in batches.",
+       "work_item": "one batch of records entered or filed",
+       "start": "records or documents received",
+       "end": "records entered and filed",
+       "checked_by": "supervisor or colleagues using the records",
+       "duplicates": [],
+       "overlaps_with": [
+        "23326",
+        "23315"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Search for and retrieve a record when someone asks.",
+       "time_share": 0.4,
+       "type_reasoning": "Each retrieval is a request answered with a record.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Requests arrive singly.",
+       "work_item": "one record retrieval request",
+       "start": "request received",
+       "end": "record supplied to the requester",
+       "checked_by": "the requester",
+       "duplicates": [],
+       "overlaps_with": [
+        "23315"
+       ]
+      }
+     ],
+     "notes": "Generic statement; hard to separate from data-entry tasks."
+    }
+   }
+  },
+  "23333": {
+   "X": {
+    "source": "claude",
+    "coding": {
+     "task_id": "23333",
+     "split_reasoning": "One activity: obtaining cancellation lists or cards.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Get the printout of policy cancellations or pull cancellation cards from file.",
+       "time_share": 1.0,
+       "type_reasoning": "Produces the list used to process cancellations.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A list is obtained per run.",
+       "work_item": "one cancellation list retrieved",
+       "start": "run or request begins",
+       "end": "list in hand for processing",
+       "checked_by": "colleague processing cancellations",
+       "duplicates": [],
+       "overlaps_with": [
+        "23327"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   },
+   "Y": {
+    "source": "terra",
+    "coding": {
+     "task_id": "23333",
+     "split_reasoning": "Obtaining a computer printout and retrieving physical cancellation cards are alternative outputs, but retrieving cards requires hands-on work away from the computer.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Obtain a computer printout of policy cancellations.",
+       "time_share": 0.8,
+       "type_reasoning": "Generating the cancellation list produces a distinct report for processing.",
+       "type": "DISCRETE",
+       "unit_reasoning": "The printout is the list handed to or used by the next worker.",
+       "work_item": "one policy-cancellation printout",
+       "start": "cancellation list needed and system data available",
+       "end": "printout generated and made available",
+       "checked_by": "policy administration or accounting staff",
+       "duplicates": [],
+       "overlaps_with": [
+        "23320"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Retrieve policy-cancellation cards from a physical file.",
+       "time_share": 0.2,
+       "type_reasoning": "Locating and retrieving cards from a physical filing system requires hands-on work away from the computer.",
+       "type": "PHYSICAL",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": "Shares depend on whether the employer still maintains cancellation cards."
+    }
+   }
+  }
+ },
+ "29-2072.00": {
+  "22878": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22878",
+     "split_reasoning": "Compiling and maintaining a patient's record is one record-management activity serving several purposes.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Compile and maintain a patient's medical record documenting condition and treatment.",
+       "time_share": 1.0,
+       "type_reasoning": "Work produces a maintained record that clinicians and other authorized users rely on.",
+       "type": "DISCRETE",
+       "unit_reasoning": "An encounter's documentation is assembled into the patient's record as a usable whole.",
+       "work_item": "one patient's encounter record compiled or updated",
+       "start": "encounter documentation is received or becomes available",
+       "end": "documentation is organized and incorporated into the patient's record",
+       "checked_by": "clinicians, health information staff, and authorized researchers",
+       "overlap_reasoning": "Data entry, admission and discharge processing, record review, and scanning can contribute to maintaining the record but also have separate outputs.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22880",
+        "22885",
+        "22890",
+        "22891"
+       ]
+      }
+     ],
+     "notes": "The record may continue to be updated after any one encounter's documentation is processed."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22878",
+     "split_reasoning": "Broad statement with two kinds of output: the chart itself and data for research or cost control.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Compile and maintain a patient's record documenting condition and treatment.",
+       "time_share": 0.8,
+       "type_reasoning": "Each chart is relied on clinically and legally.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One chart per patient encounter.",
+       "work_item": "one patient record compiled and maintained",
+       "start": "encounter documents received",
+       "end": "record complete and filed",
+       "checked_by": "HIM supervisor, clinicians, auditors",
+       "duplicates": [],
+       "overlaps_with": [
+        "22880",
+        "22881",
+        "22890",
+        "22885"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Compile record data for research, cost control or care improvement.",
+       "time_share": 0.2,
+       "type_reasoning": "Produces a data set or report.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One data request at a time.",
+       "work_item": "one data extract or report",
+       "start": "request received",
+       "end": "data delivered",
+       "checked_by": "requesting manager or researcher",
+       "duplicates": [],
+       "overlaps_with": []
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "22885": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22885",
+     "split_reasoning": "Admission and discharge documents arise at different points in care and are processed as separate document sets; the shares are estimates.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Process a patient's admission documents.",
+       "time_share": 0.5,
+       "type_reasoning": "The processed admission document set is a distinct record used by hospital staff.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Documents for one admission are processed together for the encounter.",
+       "work_item": "one patient's admission document set processed",
+       "start": "admission documents are received for processing",
+       "end": "documents are processed and filed or routed",
+       "checked_by": "admissions and health information staff",
+       "overlap_reasoning": "Admission processing may include data entry, general form processing, and incorporation into the medical record, but each of those tasks also has a wider scope.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22878",
+        "22880",
+        "22884"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Process a patient's discharge documents.",
+       "time_share": 0.5,
+       "type_reasoning": "The processed discharge document set is a distinct record used after the patient's stay.",
+       "type": "DISCRETE",
+       "unit_reasoning": "Documents for one discharge are processed together for the encounter.",
+       "work_item": "one patient's discharge document set processed",
+       "start": "discharge documents are received for processing",
+       "end": "documents are processed and filed or routed",
+       "checked_by": "health information and downstream care or billing staff",
+       "overlap_reasoning": "Discharge processing may include data entry, general form processing, and incorporation into the medical record, but each of those tasks also has a wider scope.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22878",
+        "22880",
+        "22884"
+       ]
+      }
+     ],
+     "notes": "Shares and exact routing depend on the facility."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22885",
+     "split_reasoning": "Admission work is partly done at the desk with the patient, discharge work in the back office.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Process admission documents while the patient is present.",
+       "time_share": 0.25,
+       "type_reasoning": "Patient waits.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One per admission.",
+       "work_item": "one admission processed during patient contact",
+       "start": "patient presents",
+       "end": "admission complete",
+       "checked_by": "patient, registration",
+       "duplicates": [],
+       "overlaps_with": []
+      },
+      {
+       "part_id": "b",
+       "text": "Process discharge and admission paperwork after the contact.",
+       "time_share": 0.75,
+       "type_reasoning": "Back-office, no one waiting.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One chart's documents at a time.",
+       "work_item": "one patient's admission/discharge documents processed",
+       "start": "documents received",
+       "end": "documents filed in the chart",
+       "checked_by": "HIM supervisor",
+       "duplicates": [],
+       "overlaps_with": [
+        "22878",
+        "22880"
+       ]
+      }
+     ],
+     "notes": "Live share is a guess."
+    }
+   }
+  },
+  "22886": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22886",
+     "split_reasoning": "Protecting confidentiality is a continuing responsibility; its reviewable output is a security or access issue identified and addressed for a record.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Review and address a medical record confidentiality or access-control issue.",
+       "time_share": 1.0,
+       "type_reasoning": "Each issue addressed produces a documented access or security action that others can review.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One identified issue is a manageable unit of security review and follow-up.",
+       "work_item": "one medical record access or confidentiality issue addressed",
+       "start": "an access concern or security issue is identified",
+       "end": "appropriate protective action is taken or the issue is referred and documented",
+       "checked_by": "health information management and privacy or security staff",
+       "overlap_reasoning": "Security work can include checks during information release and secure handling of stored records, but it also covers confidentiality issues beyond those tasks.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22882",
+        "22887"
+       ]
+      }
+     ],
+     "notes": "Routine confidentiality precautions are often embedded in other tasks rather than recorded as separate issues; local practice may use access reviews or another unit."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22886",
+     "split_reasoning": "Mostly routine practice, plus occasional audits.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Follow routine safeguards to keep records confidential.",
+       "time_share": 0.7,
+       "type_reasoning": "Continuing practice with no deliverable.",
+       "type": "NO_DELIVERABLE",
+       "duplicates": [],
+       "overlaps_with": [
+        "22887"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Audit record access or review a privacy incident.",
+       "time_share": 0.3,
+       "type_reasoning": "Each audit produces a finding.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One audit at a time.",
+       "work_item": "one access audit or incident review",
+       "start": "audit scheduled or incident reported",
+       "end": "findings reported",
+       "checked_by": "privacy officer",
+       "duplicates": [],
+       "overlaps_with": [
+        "22887"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "22887": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22887",
+     "split_reasoning": "Releasing information is one activity governed by authorization and disclosure requirements, regardless of recipient.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Release medical information to an authorized person or agency in accordance with regulations.",
+       "time_share": 1.0,
+       "type_reasoning": "Each request produces a release or documented disposition for a recipient or requester.",
+       "type": "DISCRETE",
+       "unit_reasoning": "A release request is processed and fulfilled or declined as a whole.",
+       "work_item": "one request for medical information processed",
+       "start": "request and any required authorization are received",
+       "end": "permitted information is sent or the request is declined or returned for correction",
+       "checked_by": "the requester and health information or privacy staff",
+       "overlap_reasoning": "Release processing can include forms, confidentiality checks, and record retrieval, but those tasks also cover work outside a release request.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22884",
+        "22886",
+        "22889"
+       ]
+      }
+     ],
+     "notes": "This describes the usual back-office release process; procedures vary by organization."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22887",
+     "split_reasoning": "Done both at the counter or phone and from written requests.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Release information to a requester at the counter or on the phone.",
+       "time_share": 0.2,
+       "type_reasoning": "Requester waits.",
+       "type": "LIVE_SERVICE",
+       "unit_reasoning": "One per contact.",
+       "work_item": "one release made during contact",
+       "start": "requester asks and is verified",
+       "end": "information provided",
+       "checked_by": "requester, privacy officer",
+       "duplicates": [],
+       "overlaps_with": [
+        "22889"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Release information in response to written requests.",
+       "time_share": 0.8,
+       "type_reasoning": "Queue of written requests.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One request at a time.",
+       "work_item": "one release request fulfilled",
+       "start": "request received",
+       "end": "records sent and logged",
+       "checked_by": "requester, privacy officer",
+       "duplicates": [],
+       "overlaps_with": [
+        "22884",
+        "22889"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "22888": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22888",
+     "split_reasoning": "Consulting clinicians and discussing issues with the coding team are alternative means of resolving unclear coding information.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Resolve or clarify conflicting, missing, or unclear codes or diagnoses with clinicians or the coding team.",
+       "time_share": 1.0,
+       "type_reasoning": "Each issue produces a clarification or documented disposition used in coding.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One coding or diagnosis issue is raised, investigated, and resolved or referred as a unit.",
+       "work_item": "one coding or diagnosis clarification issue resolved or referred",
+       "start": "conflicting, missing, or unclear information is identified",
+       "end": "clarification is documented and the coding issue is resolved or referred",
+       "checked_by": "coding staff, the responding clinician, and coding auditors",
+       "overlap_reasoning": "Clarification can involve consulting manuals and is often part of coding an encounter, but those activities also cover cases without a clarification issue.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22879",
+        "22881"
+       ]
+      }
+     ],
+     "notes": "A team meeting may include several issues; the coded unit is the issue rather than the meeting."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22888",
+     "split_reasoning": "Two activities: querying individual cases and attending team meetings.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Query a physician about a code or diagnosis and resolve it.",
+       "time_share": 0.7,
+       "type_reasoning": "Each query yields a resolved code.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One query at a time.",
+       "work_item": "one coding query resolved",
+       "start": "conflict found",
+       "end": "code resolved",
+       "checked_by": "coder, physician",
+       "duplicates": [],
+       "overlaps_with": [
+        "22881"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Attend coding team meetings.",
+       "time_share": 0.3,
+       "type_reasoning": "Value is in live discussion.",
+       "type": "INTERPERSONAL",
+       "duplicates": [],
+       "overlaps_with": [
+        "22881"
+       ]
+      }
+     ],
+     "notes": ""
+    }
+   }
+  },
+  "22889": {
+   "X": {
+    "source": "terra",
+    "coding": {
+     "task_id": "22889",
+     "split_reasoning": "Records are retrieved electronically and from physical storage, requiring different kinds of work; the shares are approximate.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Retrieve an electronic patient record for authorized medical personnel.",
+       "time_share": 0.75,
+       "type_reasoning": "Each retrieval request produces access to or a copy of a record for a requester.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One requested patient record is located and made available as a whole.",
+       "work_item": "one electronic patient record retrieved for a requester",
+       "start": "authorized retrieval request is received",
+       "end": "record is made available to the requester",
+       "checked_by": "the requesting physician, technician, or other authorized staff member",
+       "overlap_reasoning": "Retrieval uses record systems and may support an information release, but system maintenance and release processing have broader scopes.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22882",
+        "22887"
+       ]
+      },
+      {
+       "part_id": "b",
+       "text": "Retrieve a paper patient record from physical storage for authorized medical personnel.",
+       "time_share": 0.25,
+       "type_reasoning": "Finding and transporting a paper record requires hands-on work away from a computer.",
+       "type": "PHYSICAL",
+       "overlap_reasoning": "Physical retrieval shares handling of stored records with storage-system operation and may support an information release.",
+       "duplicates": [],
+       "overlaps_with": [
+        "22882",
+        "22887"
+       ]
+      }
+     ],
+     "notes": "The electronic and paper shares vary by facility."
+    }
+   },
+   "Y": {
+    "source": "claude",
+    "coding": {
+     "task_id": "22889",
+     "split_reasoning": "One activity: supplying a record on request.",
+     "parts": [
+      {
+       "part_id": "a",
+       "text": "Retrieve a patient record for medical staff.",
+       "time_share": 1.0,
+       "type_reasoning": "Each retrieval is delivered.",
+       "type": "DISCRETE",
+       "unit_reasoning": "One request at a time.",
+       "work_item": "one record retrieved and delivered",
+       "start": "request",
+       "end": "record delivered",
+       "checked_by": "requester",
+       "duplicates": [],
+       "overlaps_with": [
+        "22882",
+        "22887"
+       ]
+      }
+     ],
+     "notes": "Some requests are walk-up; treated as one."
+    }
+   }
+  }
+ }
+}

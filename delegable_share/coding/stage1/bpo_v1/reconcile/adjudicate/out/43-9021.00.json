@@ -1,0 +1,6 @@
+[
+  {"task_id": "11402", "reasoning": "Sorting paper source documents is hands-on work away from the computer, while compiling and checking data before entry produces a prepared batch. The instructions say to split work that is partly physical, which X does and Y does not.", "choice": "X"},
+  {"task_id": "11404", "reasoning": "For data entry keyers, the 'completed documents' to be stored are the paper source documents, which are filed by hand. Saving an electronic file is a keystroke-level step inside data entry, not a deliverable, so Y's electronic part is not a real work item and X's single PHYSICAL part is correct.", "choice": "X"},
+  {"task_id": "11405", "reasoning": "Correcting an error and reporting it to a supervisor are two possible outcomes for the same item: an error is either fixed by the keyer or passed up. X's single item reflects this; Y splits one workflow by its outcome.", "choice": "X"},
+  {"task_id": "11407", "reasoning": "The materials a keyer selects are mainly physical media, forms and source documents, which are gathered by hand. Picking electronic files for an assignment is a trivial step rather than a deliverable someone checks, so X's single PHYSICAL part is better.", "choice": "X"}
+]
