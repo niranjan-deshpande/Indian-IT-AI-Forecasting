@@ -1,0 +1,576 @@
+[
+ {
+  "task_id": "9413",
+  "split_reasoning": "The listed report types are different inputs to the same transcription activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transcribe a practitioner's dictation into a medical report.",
+    "time_share": 1.0,
+    "type_reasoning": "Each dictation produces a distinct report for review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is the document handed over as a whole.",
+    "work_item": "one transcribed medical report",
+    "start": "recorded dictation and identifying information received",
+    "end": "report transcribed and prepared for review",
+    "checked_by": "dictating practitioner",
+    "duplicates": [],
+    "overlaps_with": [
+     "9414",
+     "9415",
+     "9416",
+     "9417",
+     "9419",
+     "9421",
+     "9425",
+     "20254"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9414",
+  "split_reasoning": "Spelling, clarity, consistency, and terminology are aspects of one report-editing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and edit a transcribed medical report for language, consistency, and terminology.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces an edited report for the practitioner.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is reviewed and returned as a whole rather than as individual corrections.",
+    "work_item": "one transcribed report reviewed and edited",
+    "start": "transcribed report and source dictation available for review",
+    "end": "edited report prepared for practitioner review",
+    "checked_by": "dictating practitioner or transcription quality reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9415",
+     "9417",
+     "9419",
+     "9421",
+     "9425"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9415",
+  "split_reasoning": "Distinguishing terms and consulting references are methods of resolving terminology issues in a report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Resolve ambiguous or inconsistent medical terms in a transcribed report using appropriate references.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a report with terminology resolved or uncertainties flagged.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Terminology issues are handled in the context of a report that is passed on as a whole.",
+    "work_item": "one report with medical terminology checked",
+    "start": "ambiguous or inconsistent terminology encountered in a report",
+    "end": "terms corrected or unresolved questions flagged in the report",
+    "checked_by": "dictating practitioner or transcription quality reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9414",
+     "9417",
+     "9419",
+     "9421"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9416",
+  "split_reasoning": "Returning a report in print or electronically is one handoff using alternative formats.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Return a dictated report for practitioner review and inclusion in the medical record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each handoff produces a report available to the practitioner and records workflow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual report is the item sent for review and signature.",
+    "work_item": "one dictated report routed for review",
+    "start": "completed report ready for routing",
+    "end": "report delivered or placed in the review queue",
+    "checked_by": "dictating practitioner and medical records staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9421"
+    ]
+   }
+  ],
+  "notes": "The item ends at handoff, not at the practitioner's later signature or correction."
+ },
+ {
+  "task_id": "9417",
+  "split_reasoning": "Expanding jargon and abbreviations are the same kind of terminology conversion within a report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Expand medical jargon and abbreviations in a medical report.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces report text that practitioners and records users rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The expansions are completed in the context of one report, the unit handed over.",
+    "work_item": "one report with jargon and abbreviations expanded",
+    "start": "dictated or transcribed report containing terms to expand",
+    "end": "expanded wording incorporated into the report",
+    "checked_by": "dictating practitioner or transcription quality reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9414",
+     "9415",
+     "9421"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9419",
+  "split_reasoning": "Identifying an error and obtaining the doctor's clarification are steps in resolving the same report issue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify a report error and obtain the doctor's clarification.",
+    "time_share": 1.0,
+    "type_reasoning": "The result is a documented clarification or correction to a report, even when the doctor is contacted live.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A clarification request addresses a particular report issue and results in information used to correct it.",
+    "work_item": "one report issue clarified with a doctor",
+    "start": "suspected mistake identified in a report",
+    "end": "doctor's clarification recorded and correction made or routed",
+    "checked_by": "dictating doctor and transcription or medical records staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9414",
+     "9415",
+     "9421"
+    ]
+   }
+  ],
+  "notes": "Some clarification requests remain unresolved pending a doctor's response."
+ },
+ {
+  "task_id": "9420",
+  "split_reasoning": "Entering information into records and retrieving information for others produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter supplied data for inclusion in a medical record.",
+    "time_share": 0.6,
+    "type_reasoning": "Each entry produces a record update used by clinical or records staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A patient's record update is the unit completed and made available downstream.",
+    "work_item": "one medical record data update",
+    "start": "source information received for entry",
+    "end": "data entered and saved or submitted to the record",
+    "checked_by": "medical records staff or treating clinician",
+    "duplicates": [],
+    "overlaps_with": [
+     "9421",
+     "9423",
+     "9426"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Retrieve medical data for inclusion in records or transmission to a physician.",
+    "time_share": 0.4,
+    "type_reasoning": "Each retrieval produces a set of requested information for a downstream user.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A request for a patient's information is fulfilled and handed over as a whole.",
+    "work_item": "one medical data retrieval request fulfilled",
+    "start": "request or instruction to retrieve information received",
+    "end": "requested data supplied to the record or physician",
+    "checked_by": "requesting physician or medical records staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9422",
+     "9423"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the balance of entry and retrieval duties."
+ },
+ {
+  "task_id": "9421",
+  "split_reasoning": "Medical reports and other patient-care records differ substantially from correspondence, statistics, research, and administrative documents.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Produce a medical report or other patient-care record.",
+    "time_share": 0.7,
+    "type_reasoning": "Each report or record is a distinct document for clinical use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual patient document is the unit prepared for review or inclusion in the record.",
+    "work_item": "one medical report or patient-care document",
+    "start": "dictation or source information received",
+    "end": "document prepared and submitted for review or filing",
+    "checked_by": "clinician or medical records staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9414",
+     "9415",
+     "9416",
+     "9417",
+     "9419",
+     "9420",
+     "9423",
+     "9425",
+     "20254"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Produce medical correspondence or administrative material.",
+    "time_share": 0.15,
+    "type_reasoning": "Each letter or administrative document is completed and sent or filed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A single correspondence or administrative document is the item handed over.",
+    "work_item": "one medical correspondence or administrative document",
+    "start": "dictation, instructions, or source material received",
+    "end": "document prepared and submitted to its recipient or reviewer",
+    "checked_by": "requesting practitioner or administrative staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9424",
+     "20254"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare a statistics or medical research document from supplied material.",
+    "time_share": 0.15,
+    "type_reasoning": "Each prepared document is a distinct output for a researcher or administrator.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed statistics or research document is handed over as a whole.",
+    "work_item": "one statistics or medical research document prepared",
+    "start": "source material and instructions received",
+    "end": "document prepared and submitted for review",
+    "checked_by": "requesting researcher or administrator",
+    "duplicates": [],
+    "overlaps_with": [
+     "20254"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate; the statement does not specify the mix of document types."
+ },
+ {
+  "task_id": "9422",
+  "split_reasoning": "Case-progress inquiries can be answered during a live contact or afterwards from a written request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a live inquiry about a medical case within confidentiality limits.",
+    "time_share": 0.7,
+    "type_reasoning": "The requester is waiting during the conversation and any permitted lookup.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One inquiry is addressed within one call or visit.",
+    "work_item": "one live case-progress inquiry answered",
+    "start": "caller or visitor asks about a case",
+    "end": "permitted information or a refusal or referral is communicated",
+    "checked_by": "requester and, where applicable, supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "9420",
+     "9427"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a written inquiry about a medical case within confidentiality limits.",
+    "time_share": 0.3,
+    "type_reasoning": "The response is prepared outside a live contact and sent as a discrete item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written inquiry receives a response or referral.",
+    "work_item": "one written case-progress inquiry answered",
+    "start": "written inquiry received",
+    "end": "permitted response or refusal or referral sent",
+    "checked_by": "requester and, where applicable, supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "9420"
+    ]
+   }
+  ],
+  "notes": "The live and written shares vary by workplace."
+ },
+ {
+  "task_id": "9423",
+  "split_reasoning": "Setting up a database, updating electronic records, and maintaining physical files are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up a medical files database using the workplace's approved system.",
+    "time_share": 0.1,
+    "type_reasoning": "Setup produces a usable database or organized record structure for staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A configured database or record collection is the unit made available to users.",
+    "work_item": "one medical records database or collection set up",
+    "start": "request and requirements for a record collection received",
+    "end": "collection configured and made available to authorized staff",
+    "checked_by": "medical records supervisor or system users",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain electronic medical files and database records.",
+    "time_share": 0.65,
+    "type_reasoning": "Each record update produces an electronic record that staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A patient's record update is saved and made available as a whole.",
+    "work_item": "one electronic medical record updated",
+    "start": "new report or record change received",
+    "end": "information entered or attached and saved in the correct record",
+    "checked_by": "medical records staff or treating clinician",
+    "duplicates": [],
+    "overlaps_with": [
+     "9420",
+     "9421",
+     "9426"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain paper medical files, including organizing and filing reports.",
+    "time_share": 0.25,
+    "type_reasoning": "This requires handling and organizing physical files away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9424",
+     "9426"
+    ]
+   }
+  ],
+  "notes": "Database setup frequency and paper-file work vary substantially by workplace."
+ },
+ {
+  "task_id": "9424",
+  "split_reasoning": "Mail handling, insurance claims, typing, and physical filing are different activities; office machines are tools used in these activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Handle incoming and outgoing office mail.",
+    "time_share": 0.2,
+    "type_reasoning": "Sorting, distributing, and preparing physical mail require hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Complete and submit an insurance claim.",
+    "time_share": 0.4,
+    "type_reasoning": "Each claim is a distinct submission relied on by billing staff and the insurer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual claim is completed and submitted as a unit.",
+    "work_item": "one insurance claim completed and submitted",
+    "start": "claim information and supporting documentation received",
+    "end": "claim submitted to the insurer or billing queue",
+    "checked_by": "billing staff and insurer",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Type office correspondence or other clerical material.",
+    "time_share": 0.25,
+    "type_reasoning": "Typing produces a distinct document for a recipient or reviewer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed document is handed over as a whole.",
+    "work_item": "one typed office document",
+    "start": "draft, dictation, or instructions received",
+    "end": "typed document delivered for use or review",
+    "checked_by": "requesting staff member or document recipient",
+    "duplicates": [],
+    "overlaps_with": [
+     "9421",
+     "20254"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "File and retrieve physical office documents.",
+    "time_share": 0.15,
+    "type_reasoning": "This requires hands-on handling of paper files.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9423",
+     "9426"
+    ]
+   }
+  ],
+  "notes": "Shares are illustrative; the mix of clerical duties varies by workplace."
+ },
+ {
+  "task_id": "9425",
+  "split_reasoning": "Choosing what to include and exclude are complementary decisions when preparing a report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine which information belongs in a medical report.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection is reflected in a report draft that the practitioner reviews.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Content decisions are made for one report rather than handed over as isolated choices.",
+    "work_item": "one report with content selected",
+    "start": "dictation and other source information available",
+    "end": "report content selected and draft prepared for review",
+    "checked_by": "dictating practitioner",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9414",
+     "9421"
+    ]
+   }
+  ],
+  "notes": "Content choices remain subject to practitioner review and facility rules."
+ },
+ {
+  "task_id": "9426",
+  "split_reasoning": "Receiving patients, scheduling appointments, and maintaining records are distinct activities; scheduling occurs both live and from written requests, and records can be electronic or physical.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive and check in a patient at the desk.",
+    "time_share": 0.25,
+    "type_reasoning": "The patient waits during the interaction and any check-in work.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One patient is received and checked in during a visit.",
+    "work_item": "one patient received and checked in",
+    "start": "patient arrives at the desk",
+    "end": "check-in completed and patient directed or announced",
+    "checked_by": "patient and clinical or front-desk staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9427"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule or change an appointment while a patient is on the phone or at the desk.",
+    "time_share": 0.3,
+    "type_reasoning": "The patient waits while the appointment is booked or changed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One appointment request is completed and confirmed during the contact.",
+    "work_item": "one appointment booked or changed during a patient contact",
+    "start": "patient requests an appointment or change",
+    "end": "appointment entered and confirmed to the patient",
+    "checked_by": "patient and clinical scheduling staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9427"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Schedule or change an appointment from a written request.",
+    "time_share": 0.1,
+    "type_reasoning": "The booking is completed outside a live contact and communicated afterwards.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One written appointment request results in a calendar entry and response.",
+    "work_item": "one written appointment request processed",
+    "start": "written scheduling request received",
+    "end": "appointment entered or changed and response sent",
+    "checked_by": "patient and clinical scheduling staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Update electronic patient records outside a live contact.",
+    "time_share": 0.25,
+    "type_reasoning": "Each update creates a saved record that other staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A patient's record update is the unit completed for downstream use.",
+    "work_item": "one electronic patient record updated",
+    "start": "new or changed patient information received",
+    "end": "record updated and saved",
+    "checked_by": "clinical or medical records staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "9420",
+     "9423"
+    ]
+   },
+   {
+    "part_id": "e",
+    "text": "Maintain paper patient records.",
+    "time_share": 0.1,
+    "type_reasoning": "Organizing and filing paper records requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9423",
+     "9424"
+    ]
+   }
+  ],
+  "notes": "Shares and the extent of front-desk duties vary by workplace."
+ },
+ {
+  "task_id": "9427",
+  "split_reasoning": "Screening telephone calls and visitors is the same live intake activity through different contact channels.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive and screen a telephone caller or visitor.",
+    "time_share": 1.0,
+    "type_reasoning": "The caller or visitor waits while their purpose is identified and they are directed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call or visit is screened and routed within the contact.",
+    "work_item": "one caller or visitor screened and directed",
+    "start": "call received or visitor arrives",
+    "end": "person directed, transferred, or informed of the next step",
+    "checked_by": "caller or visitor and receiving staff member",
+    "duplicates": [],
+    "overlaps_with": [
+     "9422",
+     "9426"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20254",
+  "split_reasoning": "Shorthand, stenotype, and transcription equipment are alternative methods for capturing dictation as text.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Capture and transcribe dictated material using shorthand, stenotype, or transcription equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Each dictation produces a text document for a practitioner or other recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The transcribed document is the unit handed over, regardless of the capture method.",
+    "work_item": "one dictated document transcribed",
+    "start": "live or recorded dictation received",
+    "end": "dictation captured and text prepared for review",
+    "checked_by": "dictating practitioner or requesting staff member",
+    "duplicates": [],
+    "overlaps_with": [
+     "9413",
+     "9421",
+     "9424"
+    ]
+   }
+  ],
+  "notes": "The statement includes both live dictation capture and recorded transcription; neither necessarily involves serving a waiting customer."
+ }
+]

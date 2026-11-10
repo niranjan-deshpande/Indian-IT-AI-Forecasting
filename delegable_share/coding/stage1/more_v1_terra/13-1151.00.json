@@ -1,0 +1,582 @@
+[
+ {
+  "task_id": "93",
+  "split_reasoning": "Reading different publications serves the single purpose of staying current.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read current publications to keep up with developments in the specialist's area of expertise.",
+    "time_share": 1.0,
+    "type_reasoning": "Keeping current does not itself produce an item for someone else to check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "94",
+  "split_reasoning": "The listed techniques are alternative ways to present instruction in a live training session.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present instruction using lectures, exercises, simulations, discussions, or other instructional techniques.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is live teaching, with value in the interaction with learners.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "97",
+     "19558",
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "95",
+  "split_reasoning": "Scheduling a class is one activity informed by the availability of several resources.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Schedule a class using available classrooms, equipment, and instructors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each scheduled class produces an arrangement that instructors and participants rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A class scheduling entry and its communicated details form one usable handoff.",
+    "work_item": "one class scheduled",
+    "start": "class requiring a date, resources, and an instructor is identified",
+    "end": "class details are entered and communicated to those involved",
+    "checked_by": "instructor, participants, and training coordinator",
+    "duplicates": [],
+    "overlaps_with": [
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "97",
+  "split_reasoning": "Offering a training program is treated as providing instruction; the types of job skills are alternative subject matter.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide a training program to help workers maintain or improve job skills.",
+    "time_share": 1.0,
+    "type_reasoning": "The core activity is live instruction and interaction with learners.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "94",
+     "19558",
+     "20474"
+    ]
+   }
+  ],
+  "notes": "The statement could also mean arranging or making programs available rather than delivering instruction."
+ },
+ {
+  "task_id": "98",
+  "split_reasoning": "Evaluating effectiveness and recording training activity produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Monitor and evaluate the effectiveness of a training activity or program.",
+    "time_share": 0.65,
+    "type_reasoning": "An evaluation produces findings that program owners can use to assess training.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An evaluation of a particular activity or program is a coherent set of findings handed to stakeholders.",
+    "work_item": "one training effectiveness evaluation",
+    "start": "training activity or program is selected for evaluation",
+    "end": "findings are documented and provided to program stakeholders",
+    "checked_by": "training manager and program sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     "102",
+     "19559"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record training activity information, such as attendance or completion.",
+    "time_share": 0.35,
+    "type_reasoning": "The completed training record is a distinct item used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A session's attendance or completion record is typically maintained and reviewed as a unit.",
+    "work_item": "one training session's activity record",
+    "start": "training session occurs and activity information becomes available",
+    "end": "session information is entered or filed in the training record",
+    "checked_by": "training administrator, manager, or compliance staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Time shares depend on whether administrative recording or effectiveness evaluation predominates."
+ },
+ {
+  "task_id": "99",
+  "split_reasoning": "Meetings and seminars are live interactions attended to exchange information; their purposes do not require separate work items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend meetings or seminars to obtain training information or update management on program status.",
+    "time_share": 1.0,
+    "type_reasoning": "The target concerns participation in live interactions rather than a separate written output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "100",
+  "split_reasoning": "Recruiting participants and placing them in programs are distinct coordination activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate recruitment of training program participants.",
+    "time_share": 0.55,
+    "type_reasoning": "Recruitment coordination produces a communicated solicitation for a program.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recruitment announcement or request for candidates is issued for a specific program or cohort.",
+    "work_item": "one training program participant recruitment solicitation",
+    "start": "program identifies a need for participants",
+    "end": "recruitment information or candidate request is distributed",
+    "checked_by": "training manager, recruiting contacts, and potential participants",
+    "duplicates": [],
+    "overlaps_with": [
+     "20474"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Coordinate placement of selected participants in training programs.",
+    "time_share": 0.45,
+    "type_reasoning": "Placement produces an assignment that the participant and program staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A participant's placement in a particular program is a distinct assignment.",
+    "work_item": "one participant placed in a training program",
+    "start": "candidate information and available program places are received",
+    "end": "program placement is recorded and communicated",
+    "checked_by": "participant, training coordinator, and participant's manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "20474"
+    ]
+   }
+  ],
+  "notes": "Recruitment and placement procedures and time shares vary by program."
+ },
+ {
+  "task_id": "101",
+  "split_reasoning": "Outlines, text, and handouts are alternative materials subject to the same review activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate training materials prepared by instructors.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces feedback or an approval that the instructor can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A submitted set of materials for a course or session is reviewed and returned as a unit.",
+    "work_item": "one instructor-prepared training material set reviewed",
+    "start": "instructor submits materials for review",
+    "end": "review feedback or approval is provided",
+    "checked_by": "instructor and training manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "20475"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "102",
+  "split_reasoning": "Developing an alternative method is one response to an observed lack of improvement.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop an alternative training method when expected improvements are not observed.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a proposed method for stakeholders to consider or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposed alternative for a particular training need is a distinct design handoff.",
+    "work_item": "one alternative training method proposal",
+    "start": "evidence indicates expected improvements are not being achieved",
+    "end": "alternative method is documented and presented for use or approval",
+    "checked_by": "training manager and program sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     "98",
+     "19559",
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "103",
+  "split_reasoning": "Surveys, interviews, focus groups, and consultations are alternative inputs to one training-needs assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess training needs using information gathered from employees and other stakeholders.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces findings that guide training decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A needs assessment for a defined group or business need is delivered as a coherent set of findings.",
+    "work_item": "one training-needs assessment",
+    "start": "a group or organizational training need is identified for assessment",
+    "end": "assessment findings and training needs are documented and shared",
+    "checked_by": "training manager and requesting managers",
+    "duplicates": [],
+    "overlaps_with": [
+     "106",
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "105",
+  "split_reasoning": "Selecting and assigning an instructor are connected steps in filling an instructional assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select an instructor and assign that instructor to conduct training.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an instructor assignment used to staff training.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each instructor assignment is a distinct staffing decision communicated to those involved.",
+    "work_item": "one instructor selected and assigned",
+    "start": "training requirement and available instructors are identified",
+    "end": "instructor assignment is confirmed and communicated",
+    "checked_by": "instructor and training manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "95",
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "106",
+  "split_reasoning": "Devising a program for developing executive potential is one program-design activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Devise a development program for employees with executive potential.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a program design that decision-makers can review and implement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program design for a defined employee population is the handoff, rather than each individual exercise.",
+    "work_item": "one executive-potential development program design",
+    "start": "leadership development need and target employee group are identified",
+    "end": "program design is documented and submitted for review or implementation",
+    "checked_by": "training leadership and organizational leadership",
+    "duplicates": [],
+    "overlaps_with": [
+     "103",
+     "20474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "108",
+  "split_reasoning": "Outcomes, fees, and expenses are terms negotiated within the same client interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate training outcomes, fees, and expenses with a client.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the live negotiation, whose value is in reaching agreement with the client.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Contract drafting or processing is not specified as a separate task."
+ },
+ {
+  "task_id": "111",
+  "split_reasoning": "Trainee referrals may be made during a conversation with the trainee or afterwards through a written referral process.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a trainee to an appropriate employment or social service resource during a live conversation.",
+    "time_share": 0.6,
+    "type_reasoning": "The trainee is present while the specialist identifies and communicates the referral.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One referral is communicated to the trainee within the contact.",
+    "work_item": "one trainee referral communicated during a live contact",
+    "start": "a referral need is identified during the conversation",
+    "end": "appropriate resource and referral information are given to the trainee",
+    "checked_by": "trainee and, where contacted, the receiving service",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and send a trainee referral after the live contact.",
+    "time_share": 0.4,
+    "type_reasoning": "A written referral completed outside the contact is a distinct handoff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each referral concerns one trainee and is sent to a receiving resource or the trainee.",
+    "work_item": "one written trainee referral",
+    "start": "referral need and relevant trainee information are identified",
+    "end": "referral information is sent to the trainee or receiving resource",
+    "checked_by": "trainee and receiving representative or agency",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live versus written mix depends on referral procedures and whether a formal referral is required."
+ },
+ {
+  "task_id": "19558",
+  "split_reasoning": "Developing a training program and delivering it are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a training program on efficiency, recycling, or another environmental issue.",
+    "time_share": 0.55,
+    "type_reasoning": "Program development produces a design for review and implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The program design is the coherent handoff for a defined environmental training need.",
+    "work_item": "one environmental training program design",
+    "start": "environmental training need and audience are identified",
+    "end": "program design is documented and submitted for approval or implementation",
+    "checked_by": "training manager and environmental program stakeholders",
+    "duplicates": [],
+    "overlaps_with": [
+     "20474",
+     "20475"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an environmental training program by conducting instruction.",
+    "time_share": 0.45,
+    "type_reasoning": "Conducting instruction is a live interaction with learners.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "94",
+     "97",
+     "20474"
+    ]
+   }
+  ],
+  "notes": "Implementation may also include administrative rollout work; the shares depend on the program."
+ },
+ {
+  "task_id": "19559",
+  "split_reasoning": "In-person and virtual delivery are alternatives evaluated against the same effectiveness, cost, and environmental criteria.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate training delivery modes for effectiveness, cost, or environmental impact.",
+    "time_share": 1.0,
+    "type_reasoning": "The comparison produces a recommendation or findings used to select a delivery mode.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A comparison for a particular training program or delivery decision is reviewed as a unit.",
+    "work_item": "one training delivery mode evaluation",
+    "start": "training program and delivery alternatives are identified for comparison",
+    "end": "comparison and recommendation are documented and shared",
+    "checked_by": "training manager and program sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     "98",
+     "102",
+     "20474",
+     "20476"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20474",
+  "split_reasoning": "Designing a program, organizing its delivery, and directing people delivering it are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design and plan an employee or customer orientation or training program.",
+    "time_share": 0.5,
+    "type_reasoning": "Program design produces a plan that stakeholders can review and implement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program plan for a defined audience is a distinct handoff.",
+    "work_item": "one orientation or training program plan",
+    "start": "program need and audience are identified",
+    "end": "program plan is documented and submitted for approval or implementation",
+    "checked_by": "training manager and program sponsor",
+    "duplicates": [],
+    "overlaps_with": [
+     "102",
+     "103",
+     "106",
+     "19558",
+     "19559",
+     "20475"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Organize the resources and arrangements for an orientation or training program.",
+    "time_share": 0.3,
+    "type_reasoning": "Organizing produces a coordinated set of delivery arrangements.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The arrangements for a program session or cohort are relied on together by delivery staff.",
+    "work_item": "one program session or cohort's delivery arrangements",
+    "start": "approved program and delivery requirements are available",
+    "end": "resources and arrangements are confirmed and communicated",
+    "checked_by": "training coordinator, instructors, and participants",
+    "duplicates": [],
+    "overlaps_with": [
+     "95",
+     "100",
+     "105",
+     "19558"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Direct people carrying out an orientation or training program.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing delivery is live coordination and guidance of the people involved.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "94",
+     "97",
+     "19558",
+     "20477"
+    ]
+   }
+  ],
+  "notes": "Program direction can include additional administrative deliverables; shares vary with the specialist's role."
+ },
+ {
+  "task_id": "20475",
+  "split_reasoning": "Obtaining and organizing existing materials differs from developing new training materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain and organize existing training manuals, guides, and course materials.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces an organized set of materials for instructors or learners.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A materials set for a particular course or session is assembled and handed over together.",
+    "work_item": "one organized set of existing training materials",
+    "start": "course material requirements are identified",
+    "end": "materials are obtained, organized, and made available",
+    "checked_by": "instructor and training coordinator",
+    "duplicates": [],
+    "overlaps_with": [
+     "101",
+     "20474"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop training manuals, guides, handouts, or visual materials.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces a training material that others review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A manual, guide, handout, or presentation is created and handed over as a distinct material.",
+    "work_item": "one developed training material",
+    "start": "material's instructional purpose and requirements are identified",
+    "end": "completed material is submitted or made available for training",
+    "checked_by": "training manager, instructor, and learners",
+    "duplicates": [],
+    "overlaps_with": [
+     "101",
+     "19558",
+     "20474"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the availability of suitable existing materials."
+ },
+ {
+  "task_id": "20476",
+  "split_reasoning": "Monitoring training costs feeds the preparation of budget reports, which are the discrete outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Monitor training costs and prepare a budget report to justify expenditures.",
+    "time_share": 1.0,
+    "type_reasoning": "The continuing cost monitoring produces periodic reports for financial oversight.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A budget report for a reporting period or program is the item submitted for review.",
+    "work_item": "one training cost and budget report",
+    "start": "cost data for the program or reporting period become available",
+    "end": "budget report and expenditure justification are submitted",
+    "checked_by": "training manager, finance staff, and budget approver",
+    "duplicates": [],
+    "overlaps_with": [
+     "19559"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20477",
+  "split_reasoning": "Supervising instructors, evaluating their performance, and referring them for development are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise instructors delivering training.",
+    "time_share": 0.45,
+    "type_reasoning": "Supervision consists primarily of live direction and feedback to instructors.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20474"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Evaluate an instructor's performance.",
+    "time_share": 0.4,
+    "type_reasoning": "An evaluation produces documented feedback or an assessment used by the instructor and management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual instructor evaluation is reviewed and communicated as a whole.",
+    "work_item": "one instructor performance evaluation",
+    "start": "instructor performance is selected for review",
+    "end": "assessment and feedback are documented and communicated",
+    "checked_by": "instructor and training manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "98"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Refer an instructor to a skill development class.",
+    "time_share": 0.15,
+    "type_reasoning": "The referral creates a specific development recommendation or enrollment request.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A referral for one instructor to a particular class is a distinct handoff.",
+    "work_item": "one instructor development-class referral",
+    "start": "instructor development need and suitable class are identified",
+    "end": "referral or enrollment request is communicated",
+    "checked_by": "instructor and class coordinator",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A referral may also be communicated live; the usual channel depends on the employer's procedures."
+ }
+]

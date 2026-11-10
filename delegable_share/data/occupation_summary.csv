@@ -31,3 +31,53 @@ comparison,13-2041.00,Credit Analysts,True,11,7,4,0,11,0,0,0,08/2020,08/2020,Occ
 comparison,25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",True,32,30,2,0,32,0,0,0,08/2025,08/2025,Incumbent,32,32,1,0,0,0,3,
 comparison,41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",True,18,10,8,0,18,0,4,2,08/2020,08/2020,Incumbent,19,18,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
 comparison,13-1111.00,Management Analysts,True,11,10,1,0,11,0,0,0,08/2022,08/2022,Occupational Expert,11,11,0,0,0,0,0,
+more,15-1251.00,Computer Programmers,True,17,13,4,0,17,0,0,0,08/2018,08/2018,Incumbent,17,17,0,0,0,0,0,
+more,15-1212.00,Information Security Analysts,True,11,11,0,0,11,0,0,0,08/2018,08/2018,Incumbent,12,11,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,41-9041.00,Telemarketers,True,12,8,4,0,12,0,0,0,08/2023,08/2023,Incumbent,12,12,0,0,0,0,4,
+more,43-3051.00,Payroll and Timekeeping Clerks,True,21,15,6,0,21,0,0,0,08/2022,08/2022,Incumbent,22,21,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,43-3011.00,Bill and Account Collectors,True,15,13,2,0,15,0,0,0,08/2018,08/2018,Incumbent,15,15,0,0,0,0,0,
+more,31-9094.00,Medical Transcriptionists,True,15,13,2,0,15,0,0,0,08/2021,08/2021,Incumbent,15,15,0,0,0,0,0,
+more,15-2051.00,Data Scientists,True,16,15,1,0,16,0,0,0,08/2026,08/2026,Occupational Expert,16,16,0,0,0,0,16,"other O*NET codes under same SOC: 15-2051.01, 15-2051.02"
+more,41-2031.00,Retail Salespersons,True,24,14,10,0,24,0,0,0,08/2018,08/2018,Incumbent,24,24,0,0,0,0,0,
+more,41-2011.00,Cashiers,True,28,12,16,0,28,0,0,4,08/2024,08/2024,Incumbent,29,28,0,0,0,1,8,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,43-9061.00,"Office Clerks, General",True,20,12,8,0,20,0,0,0,08/2018,08/2018,Incumbent,21,20,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,11-1021.00,General and Operations Managers,True,17,9,8,0,17,0,0,2,08/2023,08/2023,Incumbent,17,17,0,0,0,0,0,
+more,13-1082.00,Project Management Specialists,True,20,20,0,0,20,0,0,0,08/2026,08/2026,Occupational Expert,20,20,0,0,0,0,20,
+more,25-2021.00,"Elementary School Teachers, Except Special Education",True,38,36,2,0,38,0,0,0,08/2024,08/2024,Incumbent,38,38,1,0,0,0,0,
+more,31-9092.00,Medical Assistants,True,20,19,1,0,20,0,0,1,08/2021,08/2021,Incumbent,20,20,0,0,0,0,0,
+more,47-2061.00,Construction Laborers,True,27,8,19,0,27,0,2,6,08/2020,08/2020,Incumbent,32,27,0,0,0,5,0,5 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,35-2014.00,"Cooks, Restaurant",True,20,14,6,0,20,0,0,1,08/2025,08/2025,Incumbent,20,20,0,0,0,0,3,
+more,33-3051.00,Police and Sheriff's Patrol Officers,True,30,25,5,0,30,0,0,0,08/2026,08/2026,Incumbent,30,30,1,0,0,0,3,other O*NET codes under same SOC: 33-3051.04
+more,41-3021.00,Insurance Sales Agents,True,19,14,5,0,19,0,0,1,08/2018,08/2018,Incumbent,19,19,0,0,0,0,0,
+more,27-1024.00,Graphic Designers,True,19,17,2,0,19,0,0,0,08/2023,08/2023,Occupational Expert,16,16,0,0,3,0,3,
+more,11-2021.00,Marketing Managers,True,20,12,8,0,20,0,0,2,08/2026,08/2026,Incumbent,20,20,0,0,0,0,4,
+more,13-2072.00,Loan Officers,True,30,14,3,13,17,0,0,0,"08/2020, 11/2020",08/2020,Incumbent,30,30,0,0,0,0,0,13 task(s) without ratings; 13 task(s) without Core/Supplemental type
+more,11-3021.00,Computer and Information Systems Managers,True,17,16,1,0,17,0,0,0,07/2016,07/2016,Incumbent,17,17,0,0,0,0,0,
+more,11-9111.00,Medical and Health Services Managers,True,18,17,1,0,18,0,0,0,08/2022,08/2022,Occupational Expert,18,18,0,0,0,0,0,
+more,13-2031.00,Budget Analysts,True,13,12,1,0,13,0,0,0,08/2024,08/2024,Incumbent,13,13,0,0,0,0,0,
+more,13-1151.00,Training and Development Specialists,True,20,18,2,0,20,0,0,0,08/2022,08/2022,Occupational Expert,20,20,0,0,0,0,0,
+more,13-1041.00,Compliance Officers,True,16,6,6,4,12,0,1,0,11/2020,11/2020,Analyst - Transition,16,16,0,0,0,0,0,"4 task(s) without ratings; 4 task(s) without Core/Supplemental type; other O*NET codes under same SOC: 13-1041.01, 13-1041.03, 13-1041.04, 13-1041.06, 13-1041.07, 13-1041.08"
+more,15-2031.00,Operations Research Analysts,True,17,17,0,0,17,0,0,0,08/2024,08/2024,Occupational Expert,16,16,0,0,1,0,1,
+more,17-2051.00,Civil Engineers,True,16,11,5,0,16,0,0,0,08/2021,08/2021,Occupational Expert,17,16,0,0,0,1,0,"1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code; other O*NET codes under same SOC: 17-2051.01, 17-2051.02"
+more,17-2141.00,Mechanical Engineers,True,28,16,12,0,28,0,2,2,08/2024,08/2024,Incumbent,28,28,0,0,0,0,3,"other O*NET codes under same SOC: 17-2141.01, 17-2141.02"
+more,19-3011.00,Economists,True,14,13,1,0,14,0,0,0,08/2024,08/2024,Occupational Expert,13,13,0,0,1,0,3,other O*NET codes under same SOC: 19-3011.01
+more,21-1021.00,"Child, Family, and School Social Workers",True,21,12,9,0,21,0,0,2,08/2018,08/2018,Incumbent,23,21,0,0,0,2,0,2 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,27-3031.00,Public Relations Specialists,True,18,15,3,0,18,0,0,0,08/2022,08/2022,Occupational Expert,18,18,0,0,0,0,0,
+more,27-3041.00,Editors,True,22,19,3,0,22,0,0,0,08/2026,08/2026,Incumbent,21,20,0,0,2,1,5,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,29-2061.00,Licensed Practical and Licensed Vocational Nurses,True,22,15,7,0,22,0,0,0,08/2021,08/2021,Incumbent,23,22,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,29-1051.00,Pharmacists,True,21,20,1,0,21,0,0,0,08/2026,08/2026,Occupational Expert,21,21,0,0,0,0,8,
+more,31-1121.00,Home Health Aides,True,15,12,3,0,15,0,0,2,08/2026,08/2026,Incumbent,15,15,1,0,0,0,3,
+more,33-9032.00,Security Guards,True,14,13,1,0,14,0,0,0,08/2023,08/2023,Incumbent,14,14,0,0,0,0,3,
+more,35-3031.00,Waiters and Waitresses,True,25,22,3,0,25,0,0,0,08/2025,08/2025,Incumbent,25,25,0,0,0,0,2,
+more,35-3023.00,Fast Food and Counter Workers,True,27,17,10,0,27,0,0,2,08/2025,08/2025,Incumbent,28,27,0,0,0,1,7,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code; other O*NET codes under same SOC: 35-3023.01
+more,37-3011.00,Landscaping and Groundskeeping Workers,True,19,6,13,0,19,0,3,7,08/2026,08/2026,Incumbent,27,19,0,0,0,8,7,8 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,41-1011.00,First-Line Supervisors of Retail Sales Workers,True,21,16,5,0,21,0,0,0,08/2018,08/2018,Incumbent,21,21,0,0,0,0,0,
+more,41-9022.00,Real Estate Sales Agents,True,33,23,10,0,33,0,0,0,08/2026,08/2026,Occupational Expert,33,33,0,0,0,0,2,
+more,43-5071.00,"Shipping, Receiving, and Inventory Clerks",True,11,10,1,0,11,0,0,1,08/2019,08/2019,Incumbent,11,11,0,0,0,0,0,
+more,43-6013.00,Medical Secretaries and Administrative Assistants,True,15,11,4,0,15,0,0,0,08/2021,08/2021,Incumbent,16,15,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,True,28,19,9,0,28,0,0,0,07/2015,07/2015,Incumbent,29,28,0,0,0,1,0,1 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,47-2031.00,Carpenters,True,29,25,4,0,29,0,0,3,08/2026,08/2026,Incumbent,29,29,0,0,0,0,9,
+more,49-9071.00,"Maintenance and Repair Workers, General",True,27,21,6,0,27,0,0,0,08/2021,08/2021,Incumbent,30,27,0,0,0,3,0,3 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code
+more,51-2092.00,Team Assemblers,True,11,6,5,0,11,0,0,0,08/2020,08/2020,Incumbent,11,11,0,0,0,0,0,
+more,53-7062.00,"Laborers and Freight, Stock, and Material Movers, Hand",True,13,3,10,0,13,0,0,3,08/2024,08/2024,Incumbent,21,12,0,0,1,9,3,9 Eloundou (O*NET 27.2) task(s) no longer in 31.0 for this code; other O*NET codes under same SOC: 53-7062.04
+more,53-7065.00,Stockers and Order Fillers,True,30,21,9,0,30,0,0,1,08/2026,08/2026,Incumbent,30,30,0,0,0,0,8,

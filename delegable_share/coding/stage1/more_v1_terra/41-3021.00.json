@@ -1,0 +1,684 @@
+[
+ {
+  "task_id": "718",
+  "split_reasoning": "Policy delivery, coverage review, and beneficiary changes are distinct activities, and beneficiary changes can be completed either during or after a client visit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver and explain a policy to a policyholder.",
+    "time_share": 0.25,
+    "type_reasoning": "The explanation takes place with the policyholder present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The policyholder receives and relies on one policy explanation during the visit.",
+    "work_item": "one policy delivered and explained to a policyholder",
+    "start": "agent meets the policyholder with the issued policy",
+    "end": "policy is delivered and its provisions explained",
+    "checked_by": "policyholder",
+    "overlap_reasoning": "Sales and policy explanations can include related discussion, but this part concerns delivery of an issued policy.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721",
+     "724"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review a policyholder's insurance program with them and suggest additions or changes.",
+    "time_share": 0.4,
+    "type_reasoning": "The review and recommendations are provided during a live client contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One client review produces recommendations the policyholder can act on.",
+    "work_item": "one policyholder coverage review and set of recommendations",
+    "start": "agent meets the policyholder to review coverage",
+    "end": "coverage and suggested changes are discussed with the policyholder",
+    "checked_by": "policyholder",
+    "overlap_reasoning": "Customization and policy explanation can draw on the review, but also cover work beyond this policyholder visit.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "724"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Arrange a beneficiary change while meeting with a policyholder.",
+    "time_share": 0.2,
+    "type_reasoning": "The change is recorded or submitted while the policyholder is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A beneficiary change request is a distinct item submitted for processing.",
+    "work_item": "one beneficiary change request completed during a policyholder visit",
+    "start": "policyholder requests a beneficiary change during the visit",
+    "end": "required change information is recorded and the request submitted or handed off",
+    "checked_by": "policyholder and insurer's policy administration staff",
+    "overlap_reasoning": "Record maintenance and form completion may include this change, but also cover other administrative work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "726",
+     "728"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Complete and submit a beneficiary change after meeting with a policyholder.",
+    "time_share": 0.15,
+    "type_reasoning": "The request is finished as back-office work after the client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each beneficiary change is submitted as a separate request for policy administration.",
+    "work_item": "one beneficiary change request submitted after a policyholder visit",
+    "start": "beneficiary change instructions are obtained from the policyholder",
+    "end": "completed request is submitted for processing",
+    "checked_by": "insurer's policy administration staff and policyholder",
+    "overlap_reasoning": "Record maintenance and required forms may include beneficiary changes but are not limited to them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "726",
+     "728"
+    ]
+   }
+  ],
+  "notes": "Shares and the split between changes completed during and after visits vary by insurer and required signatures."
+ },
+ {
+  "task_id": "719",
+  "split_reasoning": "Premium calculation and payment setup produce different outputs, and each can be done during a client contact or afterward.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate a premium while the customer is present.",
+    "time_share": 0.3,
+    "type_reasoning": "The customer waits while the agent calculates and communicates the premium.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A premium calculation for a proposed policy is communicated as a distinct result.",
+    "work_item": "one premium calculated during a customer contact",
+    "start": "coverage and rating information are available during the contact",
+    "end": "calculated premium is communicated to the customer",
+    "checked_by": "customer and insurer",
+    "overlap_reasoning": "A premium calculation may support a sale or customized program, but neither statement is limited to that calculation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "721"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Calculate a premium after receiving the necessary rating information.",
+    "time_share": 0.25,
+    "type_reasoning": "The calculation is completed outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each proposed policy has a premium result that can be sent or used downstream.",
+    "work_item": "one premium calculation completed outside a customer contact",
+    "start": "coverage and rating information are received",
+    "end": "premium calculation is recorded or communicated",
+    "checked_by": "customer and insurer",
+    "overlap_reasoning": "This calculation may be part of a sale or customized program, but those tasks include other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "721"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Establish a payment method while the customer is present.",
+    "time_share": 0.25,
+    "type_reasoning": "Payment arrangements are entered and confirmed during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A payment arrangement is a separate setup relied on by the customer and insurer.",
+    "work_item": "one policy payment method established during a customer contact",
+    "start": "customer selects or discusses a payment method",
+    "end": "payment method is recorded and confirmed to the customer",
+    "checked_by": "customer and insurer's billing team",
+    "overlap_reasoning": "Payment setup can be part of a sale or required policy paperwork but is not the whole of either task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721",
+     "726"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Establish a payment method from instructions received outside a live customer contact.",
+    "time_share": 0.2,
+    "type_reasoning": "The payment arrangement is entered as back-office work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each policy payment setup is a distinct record used by billing.",
+    "work_item": "one policy payment method established from a written request",
+    "start": "customer's payment instructions are received",
+    "end": "payment method is recorded and any required confirmation sent",
+    "checked_by": "insurer's billing team and customer",
+    "overlap_reasoning": "Payment setup can form part of a sale or policy paperwork but those tasks cover more than this record.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721",
+     "726"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on whether the insurer supplies automated rates and how payment instructions are collected."
+ },
+ {
+  "task_id": "720",
+  "split_reasoning": "Customizing a customer's coverage is one activity, but it can be done with the customer waiting or later using collected information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Customize an insurance program while discussing options with the customer.",
+    "time_share": 0.4,
+    "type_reasoning": "The coverage choices are developed during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One proposed combination of coverages is presented to the customer as a whole.",
+    "work_item": "one customized coverage proposal developed during a customer contact",
+    "start": "customer's risks and needs are available during the contact",
+    "end": "proposed coverage combination is presented to the customer",
+    "checked_by": "customer and insurer",
+    "overlap_reasoning": "Coverage review, premium calculation, explanation, and selling can contribute to customization, but each also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "719",
+     "721",
+     "722",
+     "724",
+     "729"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a customized insurance program from a customer's documented risks and needs.",
+    "time_share": 0.6,
+    "type_reasoning": "The proposed program is assembled outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The proposal is handed to the customer or sales team as one set of recommended coverages.",
+    "work_item": "one customized insurance coverage proposal",
+    "start": "customer's risk and coverage information is available",
+    "end": "proposed coverage combination is prepared for presentation",
+    "checked_by": "customer and insurer",
+    "overlap_reasoning": "Other statements cover inputs to or uses of the proposal as well as work beyond customization.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "719",
+     "721",
+     "722",
+     "724",
+     "729"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the complexity of the risks and the agency's sales process."
+ },
+ {
+  "task_id": "721",
+  "split_reasoning": "Selling different policy types is the same broad activity, and the policy types are alternative products rather than separate kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sell an insurance policy to an individual or business.",
+    "time_share": 1.0,
+    "type_reasoning": "The sale is ordinarily made through live interaction with the prospective customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The customer and insurer rely on the agreed sale of one policy, while supporting steps are described separately.",
+    "work_item": "one insurance policy sale agreed with a customer",
+    "start": "sales discussion with a prospective customer begins",
+    "end": "customer agrees to purchase the proposed coverage",
+    "checked_by": "customer and insurer or agency",
+    "overlap_reasoning": "Prospecting, interviewing, explaining, customizing, calculating, and arranging coverage are related steps or components of selling but each also has its own scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "719",
+     "720",
+     "722",
+     "723",
+     "724",
+     "725",
+     "726",
+     "729"
+    ]
+   }
+  ],
+  "notes": "The sale is a broad outcome; the other statements separately describe several steps within the sales workflow."
+ },
+ {
+  "task_id": "722",
+  "split_reasoning": "Financial resources, needs, insured conditions, and existing coverage are different inputs gathered in the same client interview.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a prospective client about their needs, resources, risks, and existing coverage.",
+    "time_share": 1.0,
+    "type_reasoning": "The information is collected in a live conversation with a prospective customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One completed client intake supplies the information used to develop coverage recommendations.",
+    "work_item": "one prospective client insurance-needs interview",
+    "start": "interview with the prospective client begins",
+    "end": "relevant needs, risk, and existing coverage information has been gathered",
+    "checked_by": "agent or downstream underwriting team",
+    "overlap_reasoning": "The interview supplies information for a sale and customization, which include additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "721"
+    ]
+   }
+  ],
+  "notes": "The work item is the interview, not a separately written post-contact record."
+ },
+ {
+  "task_id": "723",
+  "split_reasoning": "Networking to find prospects and compiling prospect lists are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Network to identify and develop prospective insurance clients.",
+    "time_share": 0.65,
+    "type_reasoning": "The value of networking lies in building relationships through live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Networking can lead to sales, but it also includes relationship-building that does not result in a sale.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compile a list of prospective insurance clients.",
+    "time_share": 0.35,
+    "type_reasoning": "A prospect list is a discrete record used for follow-up.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A compiled list or batch of leads is handed to or used by the sales team.",
+    "work_item": "one prospect list or batch of leads",
+    "start": "prospect information is gathered from networking or other sources",
+    "end": "leads are entered into a list or sales system for follow-up",
+    "checked_by": "agent or agency sales team",
+    "overlap_reasoning": "Lead generation supports sales but is not the same work item as an agreed sale.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721"
+    ]
+   }
+  ],
+  "notes": "The networking and list-building shares vary with the agent's source of leads."
+ },
+ {
+  "task_id": "724",
+  "split_reasoning": "Explaining features, advantages, and disadvantages is one activity applied to alternative policies.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain and compare insurance policy features to a prospective customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The explanation is normally given in a live conversation with a customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One explanation or comparison is provided within a customer contact and informs the customer's choice.",
+    "work_item": "one customer-facing explanation of policy options",
+    "start": "customer asks about or is presented with policy options",
+    "end": "features and relevant advantages and disadvantages have been explained",
+    "checked_by": "prospective customer",
+    "overlap_reasoning": "Policy delivery, customization, and selling can include explanation but also contain work beyond the comparison.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "720",
+     "721"
+    ]
+   }
+  ],
+  "notes": "Written comparisons may also be used, but the target emphasizes explaining options to promote a sale."
+ },
+ {
+  "task_id": "725",
+  "split_reasoning": "Contacting the underwriter and submitting forms are connected steps toward one binder coverage request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Request binder coverage from an underwriter and submit the necessary forms.",
+    "time_share": 1.0,
+    "type_reasoning": "The agent produces a request and supporting forms for the underwriter outside a customer-facing contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One binder request is submitted and handled as a unit by the underwriter.",
+    "work_item": "one binder coverage request submitted to an underwriter",
+    "start": "coverage to be bound and required client information are available",
+    "end": "request and required forms are submitted to the underwriter",
+    "checked_by": "underwriter",
+    "overlap_reasoning": "The request can be part of a sale and can involve policy forms, but the other statements also cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721",
+     "726",
+     "729"
+    ]
+   }
+  ],
+  "notes": "The unit ends with submission; issuing the binder is the underwriter's decision."
+ },
+ {
+  "task_id": "726",
+  "split_reasoning": "Checking medical examinations and forms are alternative requirements within one policy-requirements follow-up activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow up on a policy's outstanding requirements until the necessary examinations and forms are complete.",
+    "time_share": 1.0,
+    "type_reasoning": "The agent tracks and resolves requirements for a policy as a discrete back-office case.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed requirements for one policy are handed to or relied on by the insurer.",
+    "work_item": "one policy's requirements verified and completed",
+    "start": "insurer identifies the policy's required forms and other conditions",
+    "end": "required items are completed and their status communicated or recorded",
+    "checked_by": "underwriter or policy issuance team",
+    "overlap_reasoning": "Sales, binder requests, beneficiary changes, and administrative records may involve some of the same forms, but each has a different broader purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "719",
+     "721",
+     "725",
+     "728"
+    ]
+   }
+  ],
+  "notes": "Follow-up may involve client calls, but the unit is the requirements check across the policy case rather than any one call."
+ },
+ {
+  "task_id": "727",
+  "split_reasoning": "Obtaining and providing claim information are connected parts of the same client conversation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with a client to exchange information about a policy claim.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live service conversation with the client.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One claim-related contact exchanges information that the client or claims team can use.",
+    "work_item": "one client contact about a policy claim",
+    "start": "client or agent initiates a claim-related conversation",
+    "end": "requested claim information has been exchanged",
+    "checked_by": "client and claims handler",
+    "overlap_reasoning": "Claim monitoring may include related follow-up, but it continues beyond the information exchange described here.",
+    "duplicates": [],
+    "overlaps_with": [
+     "730"
+    ]
+   }
+  ],
+  "notes": "Any separate post-call record or claim settlement decision is outside this contact."
+ },
+ {
+  "task_id": "728",
+  "split_reasoning": "Maintaining records and handling renewals are different administrative activities, and renewals occur both live with clients and in back-office processing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain insurance client and policy records.",
+    "time_share": 0.4,
+    "type_reasoning": "Each record update is a discrete administrative output used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A client or policy record is updated as one administrative item.",
+    "work_item": "one client or policy record updated",
+    "start": "new or changed information is received for a record",
+    "end": "record is updated and saved",
+    "checked_by": "agency staff or insurer's policy administration team",
+    "overlap_reasoning": "Beneficiary changes and policy requirements may entail record updates, but this part also covers other records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "726"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Handle a policy renewal with the customer during a live contact.",
+    "time_share": 0.25,
+    "type_reasoning": "Renewal details are reviewed and handled while the customer is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One policy renewal is addressed and its next steps confirmed within the contact.",
+    "work_item": "one policy renewal handled during a customer contact",
+    "start": "customer contacts the agent or is reached about a renewal",
+    "end": "renewal decision or required next steps are confirmed to the customer",
+    "checked_by": "customer and insurer's policy administration team",
+    "overlap_reasoning": "A renewal discussion may include a coverage review or sale but also includes renewal-specific administration.",
+    "duplicates": [],
+    "overlaps_with": [
+     "718",
+     "721",
+     "726"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Process a policy renewal from notices or customer instructions outside a live contact.",
+    "time_share": 0.35,
+    "type_reasoning": "The renewal is handled as a discrete back-office item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each policy renewal is processed and sent or recorded as a unit.",
+    "work_item": "one policy renewal processed outside a customer contact",
+    "start": "renewal notice or customer instructions are received",
+    "end": "renewal is processed or submitted and any required notice sent",
+    "checked_by": "insurer's policy administration team and customer",
+    "overlap_reasoning": "Renewal processing can include sales or policy requirement work but is not identical to those broader tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "721",
+     "726"
+    ]
+   }
+  ],
+  "notes": "Shares depend on agency procedures and how much renewal work is automated or handled live."
+ },
+ {
+  "task_id": "729",
+  "split_reasoning": "Selecting an insurer for requested coverage is one activity, whether the agent compares a few or many companies.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select an insurance company to underwrite the coverage a client requests.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection is a discrete decision recorded or communicated for the next underwriting step.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One insurer selection is made for a coverage request and used to route the application.",
+    "work_item": "one insurer selected for a client's coverage request",
+    "start": "client's requested coverage and risk information are available",
+    "end": "suitable insurer is selected and the choice recorded or communicated",
+    "checked_by": "client, agency, and selected insurer",
+    "overlap_reasoning": "Selection supports customization, sales, and binder requests but is not identical to any of those broader activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "721",
+     "725"
+    ]
+   }
+  ],
+  "notes": "Some selections may be made during a customer contact; the item is coded as the usual placement decision outside that contact."
+ },
+ {
+  "task_id": "730",
+  "split_reasoning": "Monitoring is ongoing, but its discrete output is the follow-up and review of an individual claim.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and follow up on an insurance claim's progress and proposed settlement.",
+    "time_share": 1.0,
+    "type_reasoning": "Each claim follow-up produces a status or issue communicated or recorded for use by the client or claims staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual claim follow-up is the bounded item within the continuing monitoring activity.",
+    "work_item": "one claim status or settlement follow-up",
+    "start": "claim update, proposed settlement, or follow-up date prompts review",
+    "end": "status or identified concern is recorded or communicated to the appropriate party",
+    "checked_by": "client and claims handler",
+    "overlap_reasoning": "A client claim conversation can supply information for follow-up, but monitoring also involves review and communication outside that conversation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "727"
+    ]
+   }
+  ],
+  "notes": "A claim may require several follow-ups; the agent does not necessarily control the settlement decision."
+ },
+ {
+  "task_id": "731",
+  "split_reasoning": "Developing a competitive marketing strategy is one distinct planning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a marketing strategy for selling insurance competitively.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a strategy or plan that the agent or agency can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A strategy for a defined market or planning period is the usable planning deliverable.",
+    "work_item": "one insurance marketing strategy or plan",
+    "start": "marketing objective and target market are identified",
+    "end": "strategy and proposed marketing actions are documented or agreed",
+    "checked_by": "agency manager or agent",
+    "overlap_reasoning": "Prospecting may implement a marketing strategy, but developing the strategy and finding individual leads are different work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "732",
+  "split_reasoning": "The listed meetings, seminars, and programs are alternative settings for learning and receiving assistance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend learning sessions to keep current, develop skills, and receive technical assistance.",
+    "time_share": 1.0,
+    "type_reasoning": "The target concerns the agent's learning and does not specify a deliverable someone else checks or relies on.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "No other statement describes the same learning activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Any subsequent account work applying the learning belongs to other statements."
+ },
+ {
+  "task_id": "733",
+  "split_reasoning": "Examining condition, construction, age, and other characteristics are inputs to the same on-site risk inspection.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect a property to assess whether it is an acceptable insurance risk.",
+    "time_share": 1.0,
+    "type_reasoning": "Inspecting the property's physical characteristics requires work at the property away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Inspection findings can inform underwriting or coverage selection, but those tasks do not duplicate the on-site inspection.",
+    "duplicates": [],
+    "overlaps_with": [
+     "720",
+     "729"
+    ]
+   }
+  ],
+  "notes": "A separate written inspection report is not specified in the target."
+ },
+ {
+  "task_id": "734",
+  "split_reasoning": "Installing a bookkeeping system and resolving an existing system problem are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install and configure a bookkeeping system.",
+    "time_share": 0.55,
+    "type_reasoning": "The work produces a configured system that the customer can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One system installation is handed over for use as a whole.",
+    "work_item": "one bookkeeping system installed and configured",
+    "start": "installation requirements and system access are available",
+    "end": "system is configured and ready for customer use",
+    "checked_by": "customer or bookkeeping staff",
+    "overlap_reasoning": "Incorporating an insurance program into a bookkeeping system can include installation, but it also covers planning and oversight.",
+    "duplicates": [],
+    "overlaps_with": [
+     "735"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Resolve a bookkeeping system problem.",
+    "time_share": 0.45,
+    "type_reasoning": "Each reported problem produces a discrete correction or resolution for the system user.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One reported system problem is investigated and resolved as a unit.",
+    "work_item": "one bookkeeping system problem resolved",
+    "start": "system problem is reported or identified",
+    "end": "correction is made or resolution is communicated to the user",
+    "checked_by": "customer or bookkeeping staff",
+    "overlap_reasoning": "Resolving a problem may arise during insurance-program incorporation but also occurs independently.",
+    "duplicates": [],
+    "overlaps_with": [
+     "735"
+    ]
+   }
+  ],
+  "notes": "The task is interpreted as software setup and troubleshooting rather than physical hardware installation."
+ },
+ {
+  "task_id": "735",
+  "split_reasoning": "Planning the incorporation and overseeing its implementation are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan how to incorporate an insurance program into a company's bookkeeping system.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces an implementation plan that company staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The plan for one company's insurance program is the handoff for implementation.",
+    "work_item": "one insurance-program bookkeeping integration plan",
+    "start": "company's insurance and bookkeeping requirements are available",
+    "end": "integration approach and required steps are documented or agreed",
+    "checked_by": "company bookkeeping staff or management",
+    "overlap_reasoning": "System installation and customer requirements explanation can support the plan, but they are separate activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "734",
+     "736"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Oversee incorporation of an insurance program into a company's bookkeeping system.",
+    "time_share": 0.5,
+    "type_reasoning": "The oversight consists of coordinating and supervising the people carrying out the implementation.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "System installation can be part of the implementation being overseen, but hands-on installation and oversight are not identical.",
+    "duplicates": [],
+    "overlaps_with": [
+     "734"
+    ]
+   }
+  ],
+  "notes": "The oversight part is coded as coordination rather than an assumed formal sign-off."
+ },
+ {
+  "task_id": "736",
+  "split_reasoning": "Explaining the bookkeeping requirements for a group insurance program is one customer-facing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain the bookkeeping requirements for implementing a group insurance program to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The explanation is provided during a live interaction with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer receives an explanation of the requirements needed to implement the program.",
+    "work_item": "one customer explanation of group insurance bookkeeping requirements",
+    "start": "customer requests or is ready to discuss implementation requirements",
+    "end": "bookkeeping requirements have been explained and customer questions addressed",
+    "checked_by": "customer or customer bookkeeping staff",
+    "overlap_reasoning": "Integration planning and system installation may use the same requirements but produce different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "734",
+     "735"
+    ]
+   }
+  ],
+  "notes": "The target does not specify preparation of a separate written requirements document."
+ }
+]

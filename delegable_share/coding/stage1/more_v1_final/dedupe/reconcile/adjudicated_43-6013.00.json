@@ -1,0 +1,2 @@
+[{"a": "20438b", "b": "775b", "reasoning": "Scheduling an ordered test or procedure from a physician order and notifying the patient is the same as scheduling and confirming a diagnostic appointment from a referral or order.", "duplicate": true},
+ {"a": "20438a", "b": "775a", "reasoning": "Booking an ordered test with the patient during a contact and booking a diagnostic appointment during a patient call or visit are the same live booking with the same confirmed slot as output.", "duplicate": true}]

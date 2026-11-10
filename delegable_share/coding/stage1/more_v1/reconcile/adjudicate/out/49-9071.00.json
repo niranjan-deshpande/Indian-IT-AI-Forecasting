@@ -1,0 +1,9 @@
+[
+  {"task_id": "3022", "reasoning": "Assembling, installing or repairing the listed systems are alternative hands-on jobs on the same kinds of equipment, and every part would be PHYSICAL. X's single part follows the do-not-split rule for listed alternatives.", "choice": "X"},
+  {"task_id": "3023", "reasoning": "A general maintenance worker diagnoses a fault at the machine, by examining it and checking a manual or catalog as needed, and usually goes straight on to the repair; no separate diagnosis is handed over. X's PHYSICAL coding reflects how this is done; Y's DISCRETE desk-based conclusion is not how this work is handed over today.", "choice": "X"},
+  {"task_id": "3031", "reasoning": "Painting and repairing building parts are alternative hands-on finishes to the same building elements, and both would be PHYSICAL. Splitting adds nothing, so X's single part is adequate.", "choice": "X"},
+  {"task_id": "3035", "reasoning": "Repairing and fabricating parts on machine tools are the same machining activity with different inputs, and both would be PHYSICAL. Y's single part fits the do-not-split rule.", "choice": "Y"},
+  {"task_id": "3037", "reasoning": "Building and repairing wooden structures are the same hands-on carpentry, and both would be PHYSICAL. X's single part is sufficient.", "choice": "X"},
+  {"task_id": "20676", "reasoning": "Training and managing staff are different activities, the same distinction Example C draws when it splits training from other work, even though both are INTERPERSONAL here. X follows the split rule.", "choice": "X"},
+  {"task_id": "20677", "reasoning": "Landscaping and snow removal are given as examples of one activity, groundskeeping, and both are PHYSICAL. X's single part is adequate.", "choice": "X"}
+]

@@ -1,0 +1,3 @@
+{"pairs": [{"reasoning": "Scheduling and confirming an appointment from a referral or order and scheduling an ordered test or procedure after a physician order are the same work and output.", "a": "775b", "b": "20438b"},
+{"reasoning": "Booking an appointment during a patient contact and scheduling an ordered test during a patient contact are the same live booking and confirmation.", "a": "775a", "b": "20438a"},
+{"reasoning": "Compiling and entering a chart, report or letter and preparing a document in software from a request or source material are the same document-production work.", "a": "776a", "b": "782a"}]}

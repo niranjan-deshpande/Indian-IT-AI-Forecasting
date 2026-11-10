@@ -9,6 +9,25 @@ Changes to `SPEC.md` (v2) agreed since it was written. Newest first.
   a timing study; τ-bench action counts or a timed pilot). See `benchmarks/ACQUISITION.md`.
 
 
+## 2026-11-10 — Second wave (more_v1): 50 more occupations
+
+Set: 7 further IT/BPO occupations (`bpo_extra`, grouped with BPO on the page) and 43 across
+the economy (`general`), from `pull_tasks.py` MORE. Pipeline as for comp_v1: 1,003 statements
+→ 1,366 parts → 1,338 after duplicates → 780 coded items. Stage 1 disputes (313) to Opus
+(Sonnet's coding kept 167, Terra's 141, revised 5). Terra's file for Licensed Practical Nurses
+lacked the "type" field and was re-run. Stage 2+3: 101 three-way match splits, adjudicated by
+two Opus agents (brief split in half; 28 went to "none").
+
+No new benchmark data: the only matched benchmark without a horizon above 1% of weight was
+METR's task suite (1.3%); those items count as uncovered (the "fill from 2nd match" scenario
+covers them). Horizons unchanged (pooled doubling 3.4 months).
+
+Result (S at ρ = 1, mean over occupations): general 13%, bpo_extra 26%, bpo_v1 15%. Manual
+labour 0–5%. **Flag:** counter and phone work (Telemarketers 54%, Cashiers 34%, Retail
+Salespersons 33%) is LIVE_SERVICE matched to τ-bench-style state-graded benchmarks whose
+horizons were moved far forward from their last score (τ-retail 75 → 448 min since Feb 2026);
+at ρ = 0.5 these fall to 0–4%. Same mechanism as the pilot's customer service. Not changed.
+
 ## 2026-11-10 — Comparison set: hand-picked, with controls (user asked)
 
 16 occupations outside the pilot and BPO set, chosen by hand (not an employment-weighted draw, so

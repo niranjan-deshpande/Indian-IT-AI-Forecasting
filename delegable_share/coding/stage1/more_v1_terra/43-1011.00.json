@@ -1,0 +1,983 @@
+[
+ {
+  "task_id": "9703",
+  "split_reasoning": "Complaints and policy questions differ in complexity, and both can be handled live or from written requests after contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Resolve a customer complaint while the customer is on the phone or at the desk.",
+    "time_share": 0.4,
+    "type_reasoning": "The supervisor works with the waiting customer during a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The complaint response is the step delivered during the contact.",
+    "work_item": "one complaint addressed during a customer contact",
+    "start": "customer presents or is transferred with a complaint",
+    "end": "response or next steps explained to the customer",
+    "checked_by": "customer and customer service management",
+    "overlap_reasoning": "Guidance on escalated complaints can support this work, but is addressed to employees rather than customers.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9705"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate and respond to a customer complaint received or continued in writing.",
+    "time_share": 0.3,
+    "type_reasoning": "The response is prepared outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A complaint response is handed back to the customer as a whole.",
+    "work_item": "one written complaint response",
+    "start": "complaint received for back-office handling",
+    "end": "response or next steps sent to the customer",
+    "checked_by": "customer and customer service management",
+    "overlap_reasoning": "Guidance on escalated complaints can support this work, but is addressed to employees rather than customers.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9705"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Answer a customer's policy or procedure question during a live contact.",
+    "time_share": 0.2,
+    "type_reasoning": "The customer waits while the supervisor answers.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The answer is delivered within the customer contact.",
+    "work_item": "one policy or procedure question answered live",
+    "start": "customer asks the question",
+    "end": "answer explained to the customer",
+    "checked_by": "customer",
+    "overlap_reasoning": "Other statements concern guidance to staff rather than answers to customers.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Answer a customer's written question about policies or procedures.",
+    "time_share": 0.1,
+    "type_reasoning": "A written answer is prepared without the customer waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written question receives a response the customer can rely on.",
+    "work_item": "one written policy or procedure answer",
+    "start": "customer's written question received",
+    "end": "answer sent to the customer",
+    "checked_by": "customer",
+    "overlap_reasoning": "Other statements concern guidance to staff rather than answers to customers.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on the complaint volume and customer contact channels."
+ },
+ {
+  "task_id": "9704",
+  "split_reasoning": "Supervising employees and correcting identified errors are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise office or customer service employees for quality, deadlines, and procedural compliance.",
+    "time_share": 0.7,
+    "type_reasoning": "Day-to-day supervision centers on directing and coaching employees as they work.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Guidance, performance discussions, formal evaluations, and participating in subordinate work share aspects of supervision but have distinct scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9705",
+     "9707",
+     "9709",
+     "9722"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Correct an error or problem found in employees' administrative or customer service work.",
+    "time_share": 0.3,
+    "type_reasoning": "Each correction produces a revised work item or record for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific erroneous item is corrected and returned to the workflow.",
+    "work_item": "one employee work item corrected",
+    "start": "error or problem identified in an employee's work",
+    "end": "correction completed and item returned to the workflow",
+    "checked_by": "employee and downstream user",
+    "overlap_reasoning": "Participating in subordinate work may also involve correcting difficult work, while guidance addresses the employee rather than the correction itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9705",
+     "9722"
+    ]
+   }
+  ],
+  "notes": "The balance between direct supervision and hands-on correction varies by office."
+ },
+ {
+  "task_id": "9705",
+  "split_reasoning": "Guidance on difficult work and escalated disputes is one activity directed to employees.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Guide an employee through a difficult problem or escalated complaint or dispute.",
+    "time_share": 1.0,
+    "type_reasoning": "The main value is the live coaching interaction with the employee.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "This shares coaching and complaint subject matter with supervision and customer complaint handling, but the recipient here is the employee.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9703",
+     "9704",
+     "9712"
+    ]
+   }
+  ],
+  "notes": "Written case-specific guidance may occur, but the task primarily describes employee coaching."
+ },
+ {
+  "task_id": "9706",
+  "split_reasoning": "Putting management's policies and service standards into operation is one implementation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Implement an agreed corporate or departmental policy, procedure, or service standard with management.",
+    "time_share": 1.0,
+    "type_reasoning": "Implementation produces instructions or changes that staff use in their work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One policy or standard is put into operation and communicated as an identifiable change.",
+    "work_item": "one policy or service-standard implementation",
+    "start": "management identifies a policy or standard to implement",
+    "end": "operating changes communicated and put into use",
+    "checked_by": "management and affected staff",
+    "overlap_reasoning": "Communicating procedures, developing them, and implementing initiatives may form parts of a rollout but have broader or different purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9712",
+     "9719",
+     "9723"
+    ]
+   }
+  ],
+  "notes": "The formality and size of an implementation vary."
+ },
+ {
+  "task_id": "9707",
+  "split_reasoning": "Identifying and addressing an employee's performance problem is one live discussion activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss a job performance problem with an employee and work on resolving its causes.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is primarily in the conversation and coaching with the employee.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision and formal evaluation can identify performance issues, but this task is the discussion with the employee.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9704",
+     "9709"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9708",
+  "split_reasoning": "Personally instructing employees and arranging for someone else to train them are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train or instruct employees in job duties or company policies.",
+    "time_share": 0.7,
+    "type_reasoning": "Instruction is a live teaching interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Communicating procedures and broader training program implementation may include instruction but are not limited to teaching sessions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9712",
+     "9723"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Arrange for employee training to be provided.",
+    "time_share": 0.3,
+    "type_reasoning": "Each arrangement results in a confirmed training booking or assignment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A training request is completed when the provider and employee arrangements are confirmed.",
+    "work_item": "one employee training arrangement",
+    "start": "training need identified",
+    "end": "training provider and employee arrangements confirmed",
+    "checked_by": "employee, trainer, and manager",
+    "overlap_reasoning": "Implementing a training program can include arranging sessions, but also covers broader program work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9723"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether training is delivered by the supervisor or another provider."
+ },
+ {
+  "task_id": "9709",
+  "split_reasoning": "Evaluation and the associated personnel recommendation normally form one employee appraisal output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate an employee's performance and regulatory conformance and recommend personnel action.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces an appraisal and recommendation for management or personnel records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The appraisal for one employee is reviewed and handled as a whole.",
+    "work_item": "one employee performance evaluation with any recommended action",
+    "start": "employee's performance and compliance information gathered for review",
+    "end": "evaluation and recommendation submitted or recorded",
+    "checked_by": "management, human resources, and employee",
+    "overlap_reasoning": "Supervision, performance discussions, record review, and management recommendations can feed or follow an evaluation but each includes other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9704",
+     "9707",
+     "9710",
+     "9720"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9710",
+  "split_reasoning": "Production, payroll, and shipping records are alternative inputs to the same review activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review operational records or reports to verify details and assess work activity or performance.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review yields checked records or identified discrepancies that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report or related set of records is reviewed and its findings passed on as a whole.",
+    "work_item": "one operational report or record set reviewed",
+    "start": "report or records received for review",
+    "end": "review completed and discrepancies or findings recorded or communicated",
+    "checked_by": "management or the staff responsible for the records",
+    "overlap_reasoning": "Review findings may support employee evaluations, record corrections, calculations, and financial analysis without being identical to those outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9709",
+     "9714",
+     "9715",
+     "9718"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9711",
+  "split_reasoning": "Recruiting candidates, interviewing them, and making a selection are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recruit candidates for an office or administrative vacancy.",
+    "time_share": 0.3,
+    "type_reasoning": "Recruitment produces a candidate pool for a vacancy.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A vacancy's candidate pool is assembled for the subsequent selection process.",
+    "work_item": "one vacancy's recruited candidate pool",
+    "start": "vacancy approved for recruitment",
+    "end": "candidates identified and applications available for consideration",
+    "checked_by": "hiring manager and human resources",
+    "overlap_reasoning": "Staffing recommendations can concern hiring decisions but also cover other staffing matters.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9720"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interview a candidate for an office or administrative position.",
+    "time_share": 0.4,
+    "type_reasoning": "Interviewing is primarily a live interaction with the candidate.",
+    "overlap_reasoning": "No other listed task describes conducting candidate interviews.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Select a candidate for an office or administrative vacancy.",
+    "time_share": 0.3,
+    "type_reasoning": "The selection results in a hiring decision communicated to the relevant parties.",
+    "unit_reasoning": "The decision is made for one vacancy and handed to management or human resources.",
+    "type": "DISCRETE",
+    "work_item": "one candidate selection decision",
+    "start": "candidate information and interview results available",
+    "end": "selection decision documented or communicated",
+    "checked_by": "hiring manager and human resources",
+    "overlap_reasoning": "A selection decision may be communicated as a staffing recommendation, although staffing recommendations also address other decisions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9720"
+    ]
+   }
+  ],
+  "notes": "Recruitment procedures and the supervisor's selection authority vary by employer."
+ },
+ {
+  "task_id": "9712",
+  "split_reasoning": "Interpreting and communicating procedures to staff are parts of the same guidance activity, delivered both live and in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain a work procedure or company policy to staff in a live interaction.",
+    "time_share": 0.7,
+    "type_reasoning": "The value is in explaining and discussing the policy with staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Employee coaching, instruction, and policy implementation can include explanations, but each has a broader or different purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9705",
+     "9706",
+     "9708"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send staff a written interpretation of a work procedure or company policy.",
+    "time_share": 0.3,
+    "type_reasoning": "The written guidance is a distinct item that staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One policy explanation is issued to the staff who need it.",
+    "work_item": "one written policy or procedure explanation",
+    "start": "policy question or need for clarification identified",
+    "end": "written explanation sent to staff",
+    "checked_by": "affected staff and management",
+    "overlap_reasoning": "Policy implementation and preparing manuals can include written guidance but cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9706",
+     "9716"
+    ]
+   }
+  ],
+  "notes": "The proportion of written explanations varies by workplace."
+ },
+ {
+  "task_id": "9713",
+  "split_reasoning": "Schedules, deadlines, and assignments are related components of issuing staff work plans.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and issue staff schedules, deadlines, and duty assignments.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a plan that staff use to organize their duties.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule or assignment plan is issued for a group and period as a whole.",
+    "work_item": "one staff schedule or duty-assignment plan issued",
+    "start": "staff availability and work requirements received",
+    "end": "schedule, deadlines, or assignments issued to staff",
+    "checked_by": "affected staff and management",
+    "overlap_reasoning": "Developing schedules against budgets and workloads covers much of the same scheduling work, while this statement also includes deadlines and assignments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9724"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9714",
+  "split_reasoning": "The listed subjects are different inputs to the same activity of maintaining administrative records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain an inventory, personnel, order, supply, or machine-maintenance record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each update produces a current record that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record or related batch is updated in response to new information.",
+    "work_item": "one administrative record or related batch updated",
+    "start": "new or changed record information received",
+    "end": "record updated and saved or filed",
+    "checked_by": "staff and managers who use the record",
+    "overlap_reasoning": "Record review and inventory monitoring use or update related information but also involve verification or purchasing decisions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9710",
+     "9725"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9715",
+  "split_reasoning": "Balances, totals, and commissions are alternative figures computed by the same activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute a balance, total, commission, or similar administrative figure.",
+    "time_share": 1.0,
+    "type_reasoning": "The calculation yields a figure or calculation sheet used in subsequent work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A calculation for one account, period, or related batch is completed and passed on as a whole.",
+    "work_item": "one administrative calculation or related batch",
+    "start": "source figures and calculation requirements available",
+    "end": "calculated figures recorded or communicated",
+    "checked_by": "manager, payroll staff, or other downstream user",
+    "overlap_reasoning": "Record review and financial analysis may use calculations but also cover verification or interpretation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9710",
+     "9718"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9716",
+  "split_reasoning": "Reports, manuals, and correspondence are different deliverables with different preparation workflows.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research, compile, and prepare a report required by management or a government agency.",
+    "time_share": 0.5,
+    "type_reasoning": "A completed report is submitted to a recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is the complete item reviewed or submitted.",
+    "work_item": "one management or government report",
+    "start": "reporting requirement and source information identified",
+    "end": "report completed and submitted",
+    "checked_by": "management or receiving government agency",
+    "overlap_reasoning": "Financial analyses and training evaluations may be prepared as reports, but this task covers reports more broadly.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9718",
+     "9723"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Research and prepare a manual required by management or a government agency.",
+    "time_share": 0.3,
+    "type_reasoning": "The manual is a distinct document issued for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A manual or separately issued revision is prepared and handed over as a whole.",
+    "work_item": "one manual or manual revision",
+    "start": "manual requirement and source materials identified",
+    "end": "manual or revision completed and issued",
+    "checked_by": "management, relevant agency, and manual users",
+    "overlap_reasoning": "Manual preparation may document procedures or training materials, while those tasks also include development and implementation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9712",
+     "9719",
+     "9723"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Research and prepare correspondence or other requested information for management or a government agency.",
+    "time_share": 0.2,
+    "type_reasoning": "Each response or piece of correspondence is a separate item sent to its recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A request or subject is addressed in one completed communication.",
+    "work_item": "one requested correspondence or information response",
+    "start": "request or need for correspondence received",
+    "end": "completed communication sent",
+    "checked_by": "management or receiving government agency",
+    "overlap_reasoning": "A management recommendation may be sent as correspondence, but the correspondence task also covers other information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9720"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the organization's reporting and documentation requirements."
+ },
+ {
+  "task_id": "9717",
+  "split_reasoning": "Coordinating with other supervisors or departments is one interaction activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate work activities with other supervisors or departments.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live coordination and agreement across work units.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Consulting about specific problems and coordinating office services can involve the same contacts but have more specific purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9721",
+     "9727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9718",
+  "split_reasoning": "Financial analysis and providing its implications for budget planning form one analytical input.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze departmental or establishment finances and provide input for budget planning.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces budget information or recommendations for management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis for a budget cycle or requested financial issue is handed over as a whole.",
+    "work_item": "one financial analysis and budget input",
+    "start": "financial information and budget requirements available",
+    "end": "analysis and budget input submitted",
+    "checked_by": "management and budget or finance staff",
+    "overlap_reasoning": "This work can use reviewed records and calculations or be presented as a report, but it adds budget-focused analysis.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9710",
+     "9715",
+     "9716"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9719",
+  "split_reasoning": "Procedures, policies, and standards are alternative documents developed or revised through the same activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or update a work procedure, policy, or standard.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a new or revised document for approval and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A policy, procedure, or standard revision is reviewed as a whole.",
+    "work_item": "one new or revised procedure, policy, or standard",
+    "start": "need for a new or changed document identified",
+    "end": "draft completed and submitted for approval or issuance",
+    "checked_by": "management and affected staff",
+    "overlap_reasoning": "Implementation, manual preparation, recommendations, and measurement criteria may use or produce related material but have different scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9706",
+     "9716",
+     "9720",
+     "9723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9720",
+  "split_reasoning": "Staffing and procedural changes are alternative subjects of recommendations to management.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a staffing decision, procedural change, or similar action to management.",
+    "time_share": 1.0,
+    "type_reasoning": "Each recommendation conveys a proposed decision for management to consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation concerning one issue is presented as a whole.",
+    "work_item": "one management recommendation",
+    "start": "issue requiring a management decision identified",
+    "end": "recommendation and supporting rationale communicated",
+    "checked_by": "management",
+    "overlap_reasoning": "Evaluations, hiring decisions, correspondence, and procedure development can include recommendations but each covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9709",
+     "9711",
+     "9716",
+     "9719"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9721",
+  "split_reasoning": "Equipment, quality, and scheduling are alternative subjects of the same consultation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with managers or other personnel to resolve an operational problem.",
+    "time_share": 1.0,
+    "type_reasoning": "The task centers on live discussion and coordination to resolve a problem.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General coordination and arranging repairs can involve consultation, but are not limited to this problem-solving discussion.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9717",
+     "9728"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9722",
+  "split_reasoning": "Participating in subordinate work can involve live customer service, back-office processing, or hands-on physical work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a subordinate's customer service work while the customer is waiting.",
+    "time_share": 0.3,
+    "type_reasoning": "The supervisor performs the work during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The assisted transaction or request is completed within the contact.",
+    "work_item": "one customer service request handled during a contact",
+    "start": "customer request requires the supervisor's help",
+    "end": "requested service or next step confirmed to the customer",
+    "checked_by": "customer and customer service staff",
+    "overlap_reasoning": "Complaint resolution is one possible kind of subordinate customer service work, but both statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9703",
+     "9704"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Perform a subordinate's administrative work from the back-office queue.",
+    "time_share": 0.6,
+    "type_reasoning": "The supervisor completes a queued administrative item outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned administrative item is completed and returned to the workflow.",
+    "work_item": "one subordinate administrative work item completed",
+    "start": "queued or difficult item taken up by the supervisor",
+    "end": "item completed and returned to the workflow",
+    "checked_by": "downstream staff or recipient",
+    "overlap_reasoning": "Correcting employee errors is one reason to participate in subordinate work, but participation also includes routine work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9704"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Help with a subordinate's hands-on office support work.",
+    "time_share": 0.1,
+    "type_reasoning": "Physical handling away from a computer is required for this portion.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hands-on help may include shipping or distribution work, although that statement also covers coordination and processing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9730"
+    ]
+   }
+  ],
+  "notes": "The mix depends heavily on the work of the supervised unit."
+ },
+ {
+  "task_id": "9723",
+  "split_reasoning": "Design, implementation, and evaluation are distinct activities, and training programs, customer service initiatives, and measurement criteria have different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a staff training or development program.",
+    "time_share": 0.2,
+    "type_reasoning": "Program design produces a plan or curriculum for use or approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One program design is handed over as a coherent plan.",
+    "work_item": "one training or development program design",
+    "start": "training or development need identified",
+    "end": "program plan or curriculum completed",
+    "checked_by": "management and training personnel",
+    "overlap_reasoning": "Manual preparation can document a program, while arranging or delivering training concerns its execution.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9708",
+     "9716"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement a staff training or development program.",
+    "time_share": 0.2,
+    "type_reasoning": "Implementation produces a coordinated rollout of the program for staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program rollout is organized and made available as a unit.",
+    "work_item": "one training program rollout",
+    "start": "program approved for implementation",
+    "end": "training arrangements established and program launched",
+    "checked_by": "management, trainers, and participating staff",
+    "overlap_reasoning": "Arranging or delivering individual training sessions can be part of a rollout but is also performed independently.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9708"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Evaluate a staff training or development program.",
+    "time_share": 0.15,
+    "type_reasoning": "The evaluation produces findings on the program for management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One program evaluation is completed and communicated as a whole.",
+    "work_item": "one training program evaluation",
+    "start": "program results and feedback available for review",
+    "end": "evaluation findings communicated",
+    "checked_by": "management and training personnel",
+    "overlap_reasoning": "The evaluation may be issued as a report, but the reporting task covers many other subjects.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9716"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Design or implement a customer service initiative.",
+    "time_share": 0.2,
+    "type_reasoning": "An initiative plan or rollout is a distinct change that management and staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One initiative is planned or launched as a coherent change.",
+    "work_item": "one customer service initiative plan or rollout",
+    "start": "customer service improvement need identified",
+    "end": "initiative plan completed or rollout launched",
+    "checked_by": "management and customer service staff",
+    "overlap_reasoning": "Implementing service standards may be part of an initiative, while policy implementation also covers other changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9706"
+    ]
+   },
+   {
+    "part_id": "e",
+    "text": "Evaluate a customer service initiative.",
+    "time_share": 0.1,
+    "type_reasoning": "The evaluation produces findings for management to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The results of one initiative are assessed and communicated together.",
+    "work_item": "one customer service initiative evaluation",
+    "start": "initiative results available for assessment",
+    "end": "evaluation findings communicated",
+    "checked_by": "management",
+    "overlap_reasoning": "The findings may be submitted as a report, but the reporting task covers many other subjects.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9716"
+    ]
+   },
+   {
+    "part_id": "f",
+    "text": "Design, implement, or evaluate staff performance measurement criteria.",
+    "time_share": 0.15,
+    "type_reasoning": "This produces or revises criteria that managers use to assess performance.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of criteria is developed, introduced, or assessed as a coherent measurement tool.",
+    "work_item": "one set of performance measurement criteria developed or reviewed",
+    "start": "need for criteria or review identified",
+    "end": "criteria or review findings submitted or put into use",
+    "checked_by": "management and staff using the criteria",
+    "overlap_reasoning": "Criteria can be a type of standard, and their assessment can be reported, but these statements also cover other standards and reports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9716",
+     "9719"
+    ]
+   }
+  ],
+  "notes": "Shares and the boundary between program rollout and individual instruction vary by organization."
+ },
+ {
+  "task_id": "9724",
+  "split_reasoning": "Developing schedules to fit budgets and workloads is one planning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop staff work schedules according to budgets and workloads.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a schedule for staff and management to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a defined period and group is prepared as a whole.",
+    "work_item": "one budget- and workload-based staff schedule",
+    "start": "budget, workload, and staffing information available",
+    "end": "schedule completed for approval or use",
+    "checked_by": "management and affected staff",
+    "overlap_reasoning": "Preparing and issuing schedules shares the scheduling work, but also includes deadlines and duty assignments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9713"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9725",
+  "split_reasoning": "Monitoring stock leads to discrete supply requisitions or purchases, which are the items produced.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Monitor inventory and requisition or purchase supplies when needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each identified need produces a requisition or purchase order.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A supply order is submitted as a complete purchasing item.",
+    "work_item": "one supply requisition or purchase order",
+    "start": "inventory review identifies a supply need",
+    "end": "requisition or purchase order submitted",
+    "checked_by": "purchasing staff, supplier, or approving manager",
+    "overlap_reasoning": "Inventory records and broader office-service acquisition can support or include supply ordering but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9714",
+     "9727"
+    ]
+   }
+  ],
+  "notes": "Routine stock checks that do not lead to an order are part of the monitoring activity."
+ },
+ {
+  "task_id": "9727",
+  "split_reasoning": "Planning office services produces a plan, while coordinating their provision is a separate interaction activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan an office service or facilities change, such as acquisition, relocation, maintenance, or security.",
+    "time_share": 0.5,
+    "type_reasoning": "Planning produces a service plan or request for management or providers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific service need or change is planned and submitted as a whole.",
+    "work_item": "one office service plan or request",
+    "start": "office service need identified",
+    "end": "plan or request prepared and submitted",
+    "checked_by": "management and service provider",
+    "overlap_reasoning": "Supply orders, repair arrangements, and storage layouts may be components of office service planning but are also separately performed.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9725",
+     "9728",
+     "9731"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Coordinate the provision of office services with staff or providers.",
+    "time_share": 0.5,
+    "type_reasoning": "Coordination centers on live discussions and agreements among the parties involved.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General interdepartmental coordination and arranging repairs can involve the same contacts but also cover other purposes or outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9717",
+     "9728"
+    ]
+   }
+  ],
+  "notes": "The mix varies with the service and whether the supervisor plans it or only coordinates delivery."
+ },
+ {
+  "task_id": "9728",
+  "split_reasoning": "Arranging maintenance or repair is one service-booking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange necessary maintenance or repair work.",
+    "time_share": 1.0,
+    "type_reasoning": "The arrangement produces a service request or confirmed booking.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific maintenance or repair need is handed to a provider as one request.",
+    "work_item": "one maintenance or repair arrangement",
+    "start": "maintenance or repair need reported",
+    "end": "service request submitted or work scheduled",
+    "checked_by": "service provider and affected staff",
+    "overlap_reasoning": "Operational consultation and office-service coordination can lead to or include a repair arrangement but cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9721",
+     "9727"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9729",
+  "split_reasoning": "Keeping informed of labor-management agreement provisions is one continuing learning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep informed about labor-management agreement provisions and their effects on departmental operations.",
+    "time_share": 1.0,
+    "type_reasoning": "The task describes staying current rather than producing an item for someone else.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Applying or communicating a policy may draw on this knowledge, but keeping informed is not the same output.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9730",
+  "split_reasoning": "Shipping and distribution involve distinct coordination, administrative processing, and hands-on handling work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate shipping, receiving, distribution, or transportation with the people involved.",
+    "time_share": 0.3,
+    "type_reasoning": "This portion centers on live coordination among staff and carriers.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Coordination with other work units may include logistics, but also covers other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9717"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Process administrative information for a shipment, receipt, distribution, or transportation movement.",
+    "time_share": 0.4,
+    "type_reasoning": "Processing produces a transaction or shipping record for downstream staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One shipment or receipt is processed as an identifiable transaction.",
+    "work_item": "one shipment or receipt processed",
+    "start": "shipment or receipt information becomes available",
+    "end": "transaction recorded and required documents issued or filed",
+    "checked_by": "warehouse staff, carrier, or recipient",
+    "overlap_reasoning": "Maintaining order or inventory records can include related updates, but is broader than logistics processing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9714"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Physically handle goods for shipping, receiving, or distribution.",
+    "time_share": 0.3,
+    "type_reasoning": "Handling goods requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Participating in subordinate work can include physical logistics work but also covers other subordinate duties.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9722"
+    ]
+   }
+  ],
+  "notes": "The physical share depends on whether the supervisor personally handles goods."
+ },
+ {
+  "task_id": "9731",
+  "split_reasoning": "The listed item characteristics are inputs to one storage-layout planning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a stockroom, warehouse, or other storage-area layout based on stored items' characteristics.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a layout plan that staff can review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A layout for a defined storage area is prepared and handed over as a whole.",
+    "work_item": "one storage-area layout plan",
+    "start": "storage area and item requirements identified",
+    "end": "layout plan completed and submitted or issued",
+    "checked_by": "management and storage-area staff",
+    "overlap_reasoning": "Broader office-service planning can include organizing space, but this task specifically plans storage layouts.",
+    "duplicates": [],
+    "overlaps_with": [
+     "9727"
+    ]
+   }
+  ],
+  "notes": "Site observation may inform the plan; physical rearrangement is not specified."
+ }
+]

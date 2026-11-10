@@ -1,0 +1,950 @@
+[
+ {
+  "task_id": "1411",
+  "split_reasoning": "Reading and interpreting these materials is one activity using alternative inputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read and interpret engineering drawings, schematics, or technical reports.",
+    "time_share": 1.0,
+    "type_reasoning": "The statement describes reading for understanding rather than a separately handed-over interpretation.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "The materials may be read during design evaluation or other engineering work, but those tasks have additional outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1413",
+     "1420",
+     "20733",
+     "20742"
+    ]
+   }
+  ],
+  "notes": "An interpretation specifically requested and communicated to another person could be a discrete item; the statement does not specify one."
+ },
+ {
+  "task_id": "1412",
+  "split_reasoning": "Conferring with colleagues is the same live activity regardless of its technical purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with engineers or other personnel about procedures, malfunctions, or technical information.",
+    "time_share": 1.0,
+    "type_reasoning": "The stated work is the professional discussion itself, not a specified document or customer service transaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "These discussions can support troubleshooting and operations, which also include other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "1421",
+     "20734"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1413",
+  "split_reasoning": "Feasibility, cost, and maintenance are related aspects of one customer design evaluation using alternative source materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a customer design or application for feasibility, cost, and maintenance requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces an assessment that engineering or customer-facing staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal or application is evaluated and communicated as a whole.",
+    "work_item": "one customer design or application assessment",
+    "start": "proposal, specifications, or other relevant data received",
+    "end": "assessment and findings communicated to the requesting team",
+    "checked_by": "engineering lead or customer-facing team",
+    "overlap_reasoning": "General research and cost estimating can include similar analysis but cover other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1411",
+     "1420",
+     "20733",
+     "20738"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1418",
+  "split_reasoning": "Providing feedback on customer problems or needs is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide design engineers with feedback on a customer problem or need.",
+    "time_share": 1.0,
+    "type_reasoning": "The feedback is a distinct communication that the design team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One customer issue or set of related needs is handed over to the design team together.",
+    "work_item": "one customer problem or needs feedback item",
+    "start": "customer problem or need identified",
+    "end": "feedback communicated to design engineers",
+    "checked_by": "design engineers",
+    "overlap_reasoning": "Customer service may uncover the issue, while malfunction recommendations may propose a specific engineering change.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1421",
+     "20734",
+     "20741"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1419",
+  "split_reasoning": "Oversight of installation, operation, maintenance, and repair is one supervisory activity applied to different work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Oversee equipment work and verify that it meets specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "Oversight produces a documented or communicated compliance finding for a particular installation or equipment work item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular equipment activity or inspection is reviewed and its findings communicated as a whole.",
+    "work_item": "one equipment work oversight and compliance finding",
+    "start": "equipment work or operation is ready for oversight",
+    "end": "conformance or deficiencies communicated to the responsible team",
+    "checked_by": "project manager, maintenance lead, or equipment owner",
+    "overlap_reasoning": "Renewable equipment oversight is a subset, while general equipment work and personnel supervision include other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19629",
+     "20733",
+     "20739"
+    ]
+   }
+  ],
+  "notes": "Hands-on installation or repair is not assumed from an oversight statement."
+ },
+ {
+  "task_id": "1420",
+  "split_reasoning": "Hands-on equipment testing and analysis of test or research data are different activities normally performed away from and at a computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct hands-on research tests on equipment, components, or systems.",
+    "time_share": 0.4,
+    "type_reasoning": "Setting up and running physical equipment tests requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Testing models and general product research can also involve physical tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733",
+     "20735"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze research data on equipment feasibility, design, operation, or performance.",
+    "time_share": 0.6,
+    "type_reasoning": "The analysis produces research findings that others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings for one research question or test series are communicated together.",
+    "work_item": "one equipment research analysis or test report",
+    "start": "research question and relevant data available",
+    "end": "findings communicated to the engineering team",
+    "checked_by": "engineering lead or project team",
+    "overlap_reasoning": "Design evaluation, energy evaluation, and model testing can use similar analyses for more specific purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1413",
+     "19630",
+     "20733",
+     "20735"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much research uses physical testing rather than existing or simulated data."
+ },
+ {
+  "task_id": "1421",
+  "split_reasoning": "Recommending a design modification to address a malfunction is one deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a design modification to eliminate a machine or system malfunction.",
+    "time_share": 1.0,
+    "type_reasoning": "The recommendation is an engineering output for another party to consider or implement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation for a particular malfunction is communicated as a whole.",
+    "work_item": "one malfunction-related design modification recommendation",
+    "start": "malfunction and relevant engineering information identified",
+    "end": "recommended modification communicated to the responsible team",
+    "checked_by": "design engineer or engineering lead",
+    "overlap_reasoning": "Failure investigations may produce such recommendations, but also include diagnosis and other remedies.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1418",
+     "20734",
+     "20736"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1423",
+  "split_reasoning": "Planning production methods and monitoring or coordinating actual production produce different work items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a production approach and select manufacturing methods for a product design.",
+    "time_share": 0.55,
+    "type_reasoning": "The selected approach is a plan used by production personnel.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A production approach is handed over for a particular product or production scope.",
+    "work_item": "one production or manufacturing method plan",
+    "start": "product design and production requirements available",
+    "end": "production approach communicated for implementation",
+    "checked_by": "manufacturing engineering and production management",
+    "overlap_reasoning": "General process engineering and efficiency studies can include manufacturing-method selection.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733",
+     "20742"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Coordinate or monitor production and address a production issue.",
+    "time_share": 0.45,
+    "type_reasoning": "Continuing production oversight is represented by an issue reviewed and communicated for action.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A production issue is handled as a distinct item rather than counting the entire production run.",
+    "work_item": "one production issue reviewed and coordinated",
+    "start": "production issue or variance identified",
+    "end": "required action communicated to responsible personnel",
+    "checked_by": "production manager or manufacturing team",
+    "overlap_reasoning": "Personnel supervision and equipment operation can overlap with coordination but are broader than the issue.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733",
+     "20739"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the engineer's planning and production oversight responsibilities."
+ },
+ {
+  "task_id": "1427",
+  "split_reasoning": "Procedures, service schedules, and materials arrangements are distinct maintenance outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Establish or coordinate a maintenance or safety procedure for equipment.",
+    "time_share": 0.4,
+    "type_reasoning": "A procedure is a distinct instruction used by maintenance personnel.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a particular equipment activity is issued as a whole.",
+    "work_item": "one maintenance or safety procedure",
+    "start": "equipment maintenance or safety requirement identified",
+    "end": "procedure issued or agreed with responsible personnel",
+    "checked_by": "maintenance lead and safety personnel",
+    "overlap_reasoning": "Equipment maintenance oversight may check use of the procedure but is not the same as establishing it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "19629",
+     "20733"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Establish or coordinate an equipment service schedule.",
+    "time_share": 0.35,
+    "type_reasoning": "The schedule is a distinct output used to arrange service.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a machine or equipment group is agreed and issued together.",
+    "work_item": "one equipment service schedule",
+    "start": "equipment service requirements identified",
+    "end": "schedule agreed and made available to maintenance personnel",
+    "checked_by": "maintenance planner or equipment owner",
+    "overlap_reasoning": "Maintenance oversight and general maintenance work may use the schedule but also cover execution.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "20733"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Coordinate the materials required for equipment maintenance.",
+    "time_share": 0.25,
+    "type_reasoning": "A materials request or arrangement is a distinct output relied on by maintenance and supply staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Materials for a particular maintenance requirement are requested or arranged together.",
+    "work_item": "one maintenance materials request or supply arrangement",
+    "start": "maintenance materials requirement identified",
+    "end": "materials request or arrangement communicated to supply personnel",
+    "checked_by": "maintenance planner or supply team",
+    "overlap_reasoning": "General equipment maintenance can include arranging materials along with other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the scope of maintenance planning and procurement support."
+ },
+ {
+  "task_id": "1429",
+  "split_reasoning": "Writing performance requirements is one activity for a product or project.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write performance requirements for a product development or engineering project.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a requirements document or section used by the project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requirements package for an assigned scope is reviewed as a whole.",
+    "work_item": "one performance requirements package",
+    "start": "project objectives and stakeholder inputs available",
+    "end": "requirements issued for review or use",
+    "checked_by": "engineering lead and project stakeholders",
+    "overlap_reasoning": "General design work may develop requirements, and component specification applies them to particular components.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733",
+     "20736"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1430",
+  "split_reasoning": "The emerging fields are alternative application contexts for engineering principles, not separate tasks.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply mechanical engineering principles to an assigned problem in an emerging field.",
+    "time_share": 1.0,
+    "type_reasoning": "An application of engineering principles normally produces an analysis or design that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The analysis or design for an assigned problem is handed over as a coherent engineering output.",
+    "work_item": "one engineering analysis or design for an emerging-field problem",
+    "start": "problem and requirements assigned",
+    "end": "analysis or design communicated to the project team",
+    "checked_by": "engineering lead or project team",
+    "overlap_reasoning": "General mechanical engineering research and design cover similar methods across both established and emerging fields.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "20733"
+    ]
+   }
+  ],
+  "notes": "The statement is broad; the exact output depends on the assignment."
+ },
+ {
+  "task_id": "1431",
+  "split_reasoning": "Designing test apparatus and developing a test procedure produce different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design test control apparatus or equipment.",
+    "time_share": 0.5,
+    "type_reasoning": "The design is a distinct engineering package used to build or procure test equipment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The design for an apparatus or assigned subsystem is reviewed as a whole.",
+    "work_item": "one test apparatus design package",
+    "start": "test equipment requirements defined",
+    "end": "design issued for review or fabrication",
+    "checked_by": "test engineering lead or fabrication team",
+    "overlap_reasoning": "General mechanical product and equipment design includes test equipment among other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a procedure for testing a product.",
+    "time_share": 0.5,
+    "type_reasoning": "The procedure is a written or otherwise recorded instruction used by test personnel.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a test or test series is issued as a whole.",
+    "work_item": "one product test procedure",
+    "start": "product test objectives and requirements identified",
+    "end": "procedure issued for review or use",
+    "checked_by": "test engineering lead and test personnel",
+    "overlap_reasoning": "Research testing and model testing may use the procedure but also involve conducting and evaluating tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "20735"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the assignment emphasizes equipment design or procedural development."
+ },
+ {
+  "task_id": "19627",
+  "split_reasoning": "Taking building measurements and calculating energy losses are physical and computer-based parts of the work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take building or equipment measurements needed to calculate energy losses.",
+    "time_share": 0.35,
+    "type_reasoning": "Using gauges or analyzers on site requires hands-on physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Energy performance evaluation may also require measurements, but has a different evaluation scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19630"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Calculate building energy losses from measurements and building data.",
+    "time_share": 0.65,
+    "type_reasoning": "The calculation produces results used in building or system decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The calculations for an assigned building or assessment scope are delivered together.",
+    "work_item": "one building energy-loss calculation",
+    "start": "building data and necessary measurements available",
+    "end": "calculation results documented or communicated",
+    "checked_by": "energy engineer, building owner, or project team",
+    "overlap_reasoning": "Energy performance evaluations and system designs may use the calculation but include additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19628",
+     "19630"
+    ]
+   }
+  ],
+  "notes": "Some calculations use existing data without a site measurement; shares depend on the assignment."
+ },
+ {
+  "task_id": "19628",
+  "split_reasoning": "Designing an integrated system for energy efficiency is one deliverable despite the alternative system combinations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design an integrated mechanical or alternative system to improve energy efficiency.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a system design for review and implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned system design or design package is handed over as a whole.",
+    "work_item": "one energy-efficient integrated system design package",
+    "start": "building or system requirements and constraints available",
+    "end": "design package issued for review or implementation",
+    "checked_by": "engineering lead, client, or construction team",
+    "overlap_reasoning": "Energy calculations, energy evaluations, and general system design can contribute to this design.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19627",
+     "19630",
+     "20733"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19629",
+  "split_reasoning": "Directing installation, operation, maintenance, or repair is one oversight activity applied to alternative renewable energy equipment work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct work on renewable energy equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Direction of a particular equipment activity produces instructions or an oversight finding relied on by the work crew.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular equipment work assignment is directed and its status or needed action communicated as a unit.",
+    "work_item": "one renewable energy equipment work assignment directed",
+    "start": "installation, operation, maintenance, or repair assignment identified",
+    "end": "work direction and status communicated to responsible personnel",
+    "checked_by": "work crew lead or project manager",
+    "overlap_reasoning": "General equipment oversight includes renewable equipment but also covers other machinery; general equipment work includes hands-on activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "1427",
+     "20733",
+     "20739"
+    ]
+   }
+  ],
+  "notes": "Direction is not assumed to include hands-on installation or repair."
+ },
+ {
+  "task_id": "19630",
+  "split_reasoning": "Energy performance and environmental impact are related evaluation criteria for a design or prototype.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a mechanical design or prototype for energy performance or environmental impact.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces findings used by the design team or client.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An evaluation of a particular design or prototype is communicated as a whole.",
+    "work_item": "one energy or environmental design evaluation",
+    "start": "design or prototype and evaluation criteria available",
+    "end": "evaluation findings communicated to the responsible team",
+    "checked_by": "design lead or client",
+    "overlap_reasoning": "Research, energy-loss calculations, and general design evaluation may contribute to or resemble this assessment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "19627",
+     "19628",
+     "20733",
+     "20735"
+    ]
+   }
+  ],
+  "notes": "Hands-on testing, if required, may be covered separately by testing tasks."
+ },
+ {
+  "task_id": "19631",
+  "split_reasoning": "Recommending utility or energy services is one activity with alternative service choices.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend utility or energy services that reduce a customer's carbon footprint.",
+    "time_share": 1.0,
+    "type_reasoning": "The recommendation is a distinct output that a client or project team can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The service options and recommendation for one request are communicated together.",
+    "work_item": "one low-carbon energy service recommendation",
+    "start": "energy needs and available service information identified",
+    "end": "recommendation communicated to the decision-maker",
+    "checked_by": "client or project lead",
+    "overlap_reasoning": "Energy-efficient system design can consider service choices but also produces a system design.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19628"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19632",
+  "split_reasoning": "Selecting equipment is an engineering deliverable, while installing it is hands-on physical work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select combined heat, power, cogeneration, or trigeneration equipment to reduce energy use or pollution.",
+    "time_share": 0.7,
+    "type_reasoning": "The selection produces a specified equipment choice relied on by the project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The choice for an assigned equipment application is communicated as a whole.",
+    "work_item": "one combined heat and power equipment selection",
+    "start": "system requirements and equipment options available",
+    "end": "equipment selection and rationale communicated",
+    "checked_by": "engineering lead, client, or procurement team",
+    "overlap_reasoning": "Component specification and integrated system design may include selection of this equipment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19628",
+     "20733",
+     "20736"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install combined heat, power, cogeneration, or trigeneration equipment.",
+    "time_share": 0.3,
+    "type_reasoning": "Installation requires hands-on work at the equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General equipment installation includes this equipment, while directing installation is oversight rather than necessarily hands-on work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19629",
+     "20733"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the engineer personally installs equipment or primarily selects it."
+ },
+ {
+  "task_id": "20733",
+  "split_reasoning": "Research and evaluation, design, and hands-on installation, operation, or maintenance are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research or evaluate a mechanical product, equipment item, system, or process against requirements.",
+    "time_share": 0.3,
+    "type_reasoning": "Research or evaluation produces findings used for an engineering decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings for one assigned product, system, or process evaluation are communicated together.",
+    "work_item": "one mechanical engineering research or evaluation finding",
+    "start": "engineering question and requirements assigned",
+    "end": "findings communicated to the project team",
+    "checked_by": "engineering lead or project team",
+    "overlap_reasoning": "The more specific research, proposal, and energy-evaluation statements cover subsets of this broad activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1413",
+     "1420",
+     "19630",
+     "20735",
+     "20742"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Design a mechanical product, equipment item, system, or process to meet requirements.",
+    "time_share": 0.5,
+    "type_reasoning": "Design work produces an engineering design package for review or implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned design or subsystem package is handed over as a whole.",
+    "work_item": "one mechanical design package",
+    "start": "design requirements and constraints assigned",
+    "end": "design package issued for review or implementation",
+    "checked_by": "engineering lead, client, or downstream production team",
+    "overlap_reasoning": "The specific system-design and component-specification statements cover parts of this broad design activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1423",
+     "1429",
+     "1430",
+     "1431",
+     "19628",
+     "19632",
+     "20736"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Install, operate, or maintain mechanical equipment or systems.",
+    "time_share": 0.2,
+    "type_reasoning": "Direct installation, operation, and maintenance can require hands-on work at equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Specific installation and equipment oversight statements cover related but narrower work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "19629",
+     "19632"
+    ]
+   }
+  ],
+  "notes": "This broad statement overlaps many specific tasks; shares vary greatly by assignment."
+ },
+ {
+  "task_id": "20734",
+  "split_reasoning": "Diagnosis and remedial recommendations form one investigation output for an equipment problem.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate an equipment failure or difficulty and recommend remedial action.",
+    "time_share": 1.0,
+    "type_reasoning": "The investigation produces a diagnosis and recommended action relied on by the equipment team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One failure or related problem is investigated and reported as a case.",
+    "work_item": "one equipment failure investigation and remedy recommendation",
+    "start": "failure or operating difficulty reported",
+    "end": "diagnosis and recommended action communicated",
+    "checked_by": "maintenance lead, equipment owner, or engineering manager",
+    "overlap_reasoning": "Design modification recommendations can be one remedy, and customer feedback or service can convey the problem.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1412",
+     "1418",
+     "1421",
+     "20741"
+    ]
+   }
+  ],
+  "notes": "The investigation may include physical examination; hands-on repair is not specified."
+ },
+ {
+  "task_id": "20735",
+  "split_reasoning": "Developing models, physically testing models, and analyzing test results are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a model of an alternative design or processing method.",
+    "time_share": 0.45,
+    "type_reasoning": "A model is a distinct artifact used for engineering assessment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One model or assigned model variant is made available for evaluation.",
+    "work_item": "one alternative design or process model",
+    "start": "alternative and modeling requirements identified",
+    "end": "model prepared for review or testing",
+    "checked_by": "engineering or test team",
+    "overlap_reasoning": "General research and design may include developing models among other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "20733"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Physically test a model of an alternative design or processing method.",
+    "time_share": 0.2,
+    "type_reasoning": "Setting up and running a physical model test requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Equipment research testing can include tests of alternative models.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "20733"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Analyze model or test results to assess an alternative design or process.",
+    "time_share": 0.35,
+    "type_reasoning": "The assessment produces findings that inform engineering choices.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results for an alternative or test series are evaluated and communicated together.",
+    "work_item": "one alternative model assessment",
+    "start": "model output or test results available",
+    "end": "assessment of the alternative communicated",
+    "checked_by": "engineering lead or design team",
+    "overlap_reasoning": "Research testing and energy evaluations may use similar model-based assessments for overlapping purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1420",
+     "19630",
+     "20733"
+    ]
+   }
+  ],
+  "notes": "Many models are entirely computational, so the physical-testing share varies."
+ },
+ {
+  "task_id": "20736",
+  "split_reasoning": "Specifying components and directing product modifications produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Specify system components to meet design, performance, or environmental requirements.",
+    "time_share": 0.6,
+    "type_reasoning": "The component specification is a distinct engineering output used by design and procurement teams.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Specifications for an assigned component or component group are issued together.",
+    "work_item": "one system component specification",
+    "start": "system requirements and constraints available",
+    "end": "component specification issued for review or procurement",
+    "checked_by": "engineering lead, procurement, or design team",
+    "overlap_reasoning": "Equipment selection and broad design work can include component specification.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1429",
+     "19632",
+     "20733"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct a product modification to meet design, performance, or environmental requirements.",
+    "time_share": 0.4,
+    "type_reasoning": "The direction produces a modification instruction or decision relied on by the implementing team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular modification is directed and communicated as an engineering change.",
+    "work_item": "one product modification instruction",
+    "start": "conformance issue or modification requirement identified",
+    "end": "modification direction communicated to the implementing team",
+    "checked_by": "design lead, manufacturing team, or compliance staff",
+    "overlap_reasoning": "A malfunction-related modification recommendation can lead to such direction, but need not cover implementation direction.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1421",
+     "20733"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the balance of component selection and change implementation."
+ },
+ {
+  "task_id": "20737",
+  "split_reasoning": "Assisting drafters with structural product design is one collaborative activity using alternative drafting tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist drafters in developing the structural design of a product.",
+    "time_share": 1.0,
+    "type_reasoning": "The engineer's contribution is incorporated into a drawing or design that the drafter and team use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Assistance on an assigned drawing or design package is completed and handed back for drafting.",
+    "work_item": "one structural drawing or design contribution",
+    "start": "drafter requests or receives an assigned design input",
+    "end": "engineering input or marked-up design returned to the drafter",
+    "checked_by": "drafter and engineering lead",
+    "overlap_reasoning": "General mechanical design can include structural drafting assistance but also covers other design work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20733"
+    ]
+   }
+  ],
+  "notes": "A purely conversational consultation without a recorded design contribution would instead be interpersonal."
+ },
+ {
+  "task_id": "20738",
+  "split_reasoning": "Preparing a cost estimate and preparing or submitting a bid are distinct outputs, though an estimate can support a bid.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate costs for an engineering, construction, or extraction project.",
+    "time_share": 0.6,
+    "type_reasoning": "A cost estimate is a distinct deliverable used in project or commercial decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The estimate for an assigned project scope is reviewed as a whole.",
+    "work_item": "one project cost estimate",
+    "start": "project scope and estimating inputs received",
+    "end": "estimate issued to the requesting team",
+    "checked_by": "project manager or commercial team",
+    "overlap_reasoning": "Customer design evaluation can include cost analysis but also assesses feasibility or maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1413"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and submit a bid for an engineering, construction, or extraction project.",
+    "time_share": 0.4,
+    "type_reasoning": "A bid is a distinct submission relied on by the prospective client and the employer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A bid for a particular opportunity is submitted as a package.",
+    "work_item": "one project bid submission",
+    "start": "bid opportunity and requirements received",
+    "end": "bid submitted to the prospective client",
+    "checked_by": "commercial manager and prospective client",
+    "overlap_reasoning": "Business solicitation may lead to a bid but also includes other outreach.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20740"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how often estimates are made without a formal bid."
+ },
+ {
+  "task_id": "20739",
+  "split_reasoning": "Supervision of the listed personnel is one personnel activity applied to different employee groups.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise production workers, technicians, technologists, or other engineers.",
+    "time_share": 1.0,
+    "type_reasoning": "The stated activity is personnel supervision through live direction and interaction, with no specific personnel record identified.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Production and equipment oversight can involve directing the same staff but also cover technical work and compliance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1419",
+     "1423",
+     "19629"
+    ]
+   }
+  ],
+  "notes": "Formal appraisals or other personnel records are not specified."
+ },
+ {
+  "task_id": "20740",
+  "split_reasoning": "Soliciting business through live outreach and preparing written solicitation materials are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact and persuade prospective clients in live business-development conversations.",
+    "time_share": 0.65,
+    "type_reasoning": "The value of live solicitation is in the interaction and persuasion.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A business-development conversation may lead to a bid but is not the bid submission itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20738"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a written solicitation for a prospective client.",
+    "time_share": 0.35,
+    "type_reasoning": "A written solicitation is a distinct communication sent to a prospect.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A solicitation addressed to one prospect or opportunity is sent as a whole.",
+    "work_item": "one written business solicitation",
+    "start": "prospective client or opportunity identified",
+    "end": "solicitation sent to the prospect",
+    "checked_by": "prospective client or business-development manager",
+    "overlap_reasoning": "A solicitation may precede a formal bid, which has its own submission requirements.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20738"
+    ]
+   }
+  ],
+  "notes": "Shares and use of written outreach vary with the engineer's business-development role."
+ },
+ {
+  "task_id": "20741",
+  "split_reasoning": "Technical customer service occurs both during live contacts and later from written requests or follow-up queues.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide technical customer service while the customer is on the line or at the desk.",
+    "time_share": 0.6,
+    "type_reasoning": "The customer waits during the live technical service interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A customer question or service issue is addressed within a contact, even if further work is needed later.",
+    "work_item": "one live technical customer service contact",
+    "start": "customer presents a technical question or problem",
+    "end": "guidance or next steps communicated before the contact ends",
+    "checked_by": "customer or service supervisor",
+    "overlap_reasoning": "The contact can identify needs for design feedback or trigger a later failure investigation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1418",
+     "20734"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond to a written technical customer request or provide technical follow-up after a contact.",
+    "time_share": 0.4,
+    "type_reasoning": "The response is prepared without the customer waiting live and is a distinct service output.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One written request or follow-up is handled and communicated as a unit.",
+    "work_item": "one written technical customer service response",
+    "start": "written request or follow-up assignment received",
+    "end": "technical response or next steps sent to the customer",
+    "checked_by": "customer or service supervisor",
+    "overlap_reasoning": "A response may draw on failure investigation findings or feed customer needs to design engineers.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1418",
+     "20734"
+    ]
+   }
+  ],
+  "notes": "Shares vary by customer service channel and complexity."
+ },
+ {
+  "task_id": "20742",
+  "split_reasoning": "Studying an industrial process for equipment efficiency is one assessment, with equipment placement as one possible factor.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Study an industrial process to improve the efficiency of equipment applications.",
+    "time_share": 1.0,
+    "type_reasoning": "The study produces findings or recommendations used by production and engineering teams.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assigned process or equipment application is assessed and reported as a whole.",
+    "work_item": "one industrial process and equipment efficiency assessment",
+    "start": "process and equipment performance question assigned",
+    "end": "findings and improvement recommendations communicated",
+    "checked_by": "production manager or manufacturing engineering lead",
+    "overlap_reasoning": "Production planning and general process research can include efficiency analysis but have broader scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1423",
+     "20733"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

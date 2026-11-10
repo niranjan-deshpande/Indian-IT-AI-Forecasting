@@ -1,0 +1,405 @@
+[
+ {
+  "task_id": "4618",
+  "split_reasoning": "Delivering a prepared sales talk is one activity, whether the objective is a sale or a donation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver a prepared sales talk to persuade a prospect to purchase or donate.",
+    "time_share": 1.0,
+    "type_reasoning": "The pitch is delivered during a live telephone conversation with the prospect.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The completed pitch to one prospect is the unit of this step, rather than the entire sales workflow.",
+    "work_item": "one scripted sales or donation pitch delivered",
+    "start": "prospect is reached and the sales talk begins",
+    "end": "pitch is completed or the prospect declines to continue",
+    "checked_by": "the prospect and the sales supervisor",
+    "overlap_reasoning": "Solicitation calls, product explanations, script adjustments, inbound calls, and follow-up calls can include a pitch, but each statement also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4619",
+     "4620",
+     "4623",
+     "4625",
+     "4626"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4619",
+  "split_reasoning": "Sales and donation solicitations use the same telephone-contact activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Call a business or individual to solicit a sale or donation.",
+    "time_share": 1.0,
+    "type_reasoning": "The solicitation takes place in a live telephone contact with a prospect.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One solicitation call is the contact handled as a whole; order entry and record maintenance are separate steps in the task list.",
+    "work_item": "one outbound solicitation call",
+    "start": "worker calls a prospective customer or donor",
+    "end": "solicitation conversation ends or the call attempt is unsuccessful",
+    "checked_by": "the prospect and the sales supervisor",
+    "overlap_reasoning": "A solicitation call can include a scripted pitch, explanations, an order, appointment setting, or a follow-up, but those statements also cover work beyond the call itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4618",
+     "4620",
+     "4621",
+     "4626",
+     "4628"
+    ]
+   }
+  ],
+  "notes": "An unsuccessful attempt may end without a live conversation."
+ },
+ {
+  "task_id": "4620",
+  "split_reasoning": "Explaining offerings and prices and answering related questions are parts of the same customer conversation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain an offering and its price and answer a customer's questions.",
+    "time_share": 1.0,
+    "type_reasoning": "The explanation and answers are normally provided while the customer is on the telephone.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The explanation and related answers given in one contact are the output of this step.",
+    "work_item": "one customer's product or pricing questions answered during a call",
+    "start": "customer asks about an offering or its price",
+    "end": "explanation and related answers are given",
+    "checked_by": "the customer and the sales supervisor",
+    "overlap_reasoning": "Sales pitches, solicitation calls, inbound calls, and follow-ups may contain these explanations, but also include other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4618",
+     "4619",
+     "4625",
+     "4626"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4621",
+  "split_reasoning": "Customer information and orders may be entered while the customer waits or completed from call notes afterward.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain customer details and enter an order while the customer is on the telephone.",
+    "time_share": 0.7,
+    "type_reasoning": "The customer remains on the line while details are collected and the order is entered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One entered order is the usable output of collecting and recording the customer's details.",
+    "work_item": "one order entered during a customer call",
+    "start": "customer agrees to place an order",
+    "end": "details and order are entered and confirmed to the customer",
+    "checked_by": "the customer and the order-processing team",
+    "overlap_reasoning": "Solicitation calls can include order entry, while prospect and account records can contain some of the same customer and purchase information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4619",
+     "4622",
+     "4627"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete an order entry from customer details collected during a call after the call ends.",
+    "time_share": 0.3,
+    "type_reasoning": "The order is completed in back-office work without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each order is entered as a separate transaction for downstream processing.",
+    "work_item": "one order completed from call notes",
+    "start": "call ends with customer and order details collected",
+    "end": "order and customer details are entered for processing",
+    "checked_by": "the order-processing team",
+    "overlap_reasoning": "Prospect and account records may contain the same customer and purchase information, but also cover other recordkeeping.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4622",
+     "4627"
+    ]
+   }
+  ],
+  "notes": "The shares depend on whether the employer requires orders to be completed during the call."
+ },
+ {
+  "task_id": "4622",
+  "split_reasoning": "Prospect details and reactions can be recorded during the contact or in wrap-up after it ends.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a prospect's identifying details, purchases, and reactions during the call.",
+    "time_share": 0.4,
+    "type_reasoning": "The record is made while the prospect is still participating in the telephone contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One prospect contact record is the item saved for later use.",
+    "work_item": "one prospect contact record entered during a call",
+    "start": "prospect provides details or reacts during the call",
+    "end": "available details and reactions are saved before the call ends",
+    "checked_by": "the sales supervisor and subsequent sales staff",
+    "overlap_reasoning": "Order entry and general record maintenance can include the same identifying and purchase details, but each also has a broader or different output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4621",
+     "4627"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record a contacted prospect's details, purchases, and reactions after the call.",
+    "time_share": 0.6,
+    "type_reasoning": "The record is completed as wrap-up after the prospect has left the conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each contact produces a record that later sales staff can use as a whole.",
+    "work_item": "one prospect contact record completed after a call",
+    "start": "prospect call ends",
+    "end": "contact details, purchases, and reactions are saved",
+    "checked_by": "the sales supervisor and subsequent sales staff",
+    "overlap_reasoning": "Order entry and general record maintenance can include the same identifying and purchase details, but each also has a broader or different output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4621",
+     "4627"
+    ]
+   }
+  ],
+  "notes": "The division between live entry and wrap-up varies by system and campaign."
+ },
+ {
+  "task_id": "4623",
+  "split_reasoning": "Scripts may be tailored in advance as written material or adapted during a live conversation with an individual.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adapt the sales talk to a prospect's needs and interests during a call.",
+    "time_share": 0.6,
+    "type_reasoning": "The adaptation is made and delivered while the prospect is on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One tailored pitch delivered to a prospect is the output of the live adjustment.",
+    "work_item": "one sales talk adapted during a prospect call",
+    "start": "prospect's needs or interests become apparent during the call",
+    "end": "adapted sales talk is delivered",
+    "checked_by": "the prospect and the sales supervisor",
+    "overlap_reasoning": "A prepared sales talk can be adjusted as it is delivered, but delivering and revising scripts are not always the same work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4618"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Revise a sales script in advance to address an individual's needs and interests.",
+    "time_share": 0.4,
+    "type_reasoning": "The revised script is prepared outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A tailored script or set of talking points is the material used for the next contact.",
+    "work_item": "one prospect-specific script or set of talking points",
+    "start": "existing script and prospect information are available",
+    "end": "tailored script or talking points are ready for use",
+    "checked_by": "the telemarketer and sales supervisor",
+    "overlap_reasoning": "The adjusted script supports delivery of a sales talk, but preparing it is not the same as delivering it.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The relative amount of advance tailoring and real-time adaptation varies by campaign."
+ },
+ {
+  "task_id": "4624",
+  "split_reasoning": "Directories, reply cards, and purchased lists are alternative sources for the same prospect-list work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain potential customers' names and telephone numbers from available sources.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a usable set of prospect contact details.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A source or assigned batch is processed into a list that can be passed to or used by callers.",
+    "work_item": "one batch of prospect names and telephone numbers compiled",
+    "start": "a source or batch of potential customer details is assigned",
+    "end": "contact details are compiled and available for calling",
+    "checked_by": "the sales team or campaign supervisor",
+    "overlap_reasoning": "Contacting prospects and maintaining contact records use or update leads, but neither is the same as obtaining the lead batch.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4625",
+  "split_reasoning": "Answering incoming calls from advertisement respondents is one live-contact activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an incoming call from a potential customer responding to an advertisement.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live telephone service contact with the prospective customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One incoming call is handled as a whole, while order entry and other downstream steps are separately described.",
+    "work_item": "one inbound call from an advertisement respondent handled",
+    "start": "potential customer calls in response to an advertisement",
+    "end": "the call is answered and the immediate conversation ends",
+    "checked_by": "the caller and the sales supervisor",
+    "overlap_reasoning": "An inbound call can include a sales pitch or product explanation, but answering the call and delivering those components are not identical.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4618",
+     "4620"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4626",
+  "split_reasoning": "Telephone follow-ups and written letters produce different outputs in live and non-live settings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Call a customer or prospect to respond to correspondence or follow up an initial sales contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The follow-up is handled through a live telephone conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One follow-up call addresses a correspondence item or prior contact.",
+    "work_item": "one customer or prospect follow-up call",
+    "start": "customer correspondence or an initial contact is identified for follow-up",
+    "end": "follow-up conversation ends or the call attempt is unsuccessful",
+    "checked_by": "the customer or prospect and the sales supervisor",
+    "overlap_reasoning": "A follow-up call can contain a sales pitch, solicitation, or explanation, but can also address correspondence without those activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4618",
+     "4619",
+     "4620"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write a letter responding to customer correspondence or following up an initial sales contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The letter is prepared and sent without the recipient waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each letter is a complete response or follow-up sent to a recipient.",
+    "work_item": "one customer response or follow-up letter",
+    "start": "correspondence or initial contact is identified for a written response",
+    "end": "letter is completed and sent",
+    "checked_by": "the recipient and, where required, the sales supervisor",
+    "overlap_reasoning": "The other statements do not describe the same written response or follow-up letter.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The phone and letter shares are estimates and vary by employer."
+ },
+ {
+  "task_id": "4627",
+  "split_reasoning": "Contact, account, and order records can be maintained during customer calls and in later back-office updates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a contact, account, or order record while speaking with the customer.",
+    "time_share": 0.4,
+    "type_reasoning": "The update is made while the customer is still on the telephone.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One record update is saved for subsequent users of the account or order.",
+    "work_item": "one contact, account, or order record updated during a call",
+    "start": "customer provides or confirms information requiring a record update",
+    "end": "record update is saved before the call ends",
+    "checked_by": "the customer, sales staff, and downstream order staff",
+    "overlap_reasoning": "Order entry and prospect-contact recording can update the same fields, but record maintenance also covers other account and order changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4621",
+     "4622"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain contact, account, or order records after a call or from back-office information.",
+    "time_share": 0.6,
+    "type_reasoning": "The update is completed without a customer waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each updated record is saved as a usable item for staff handling the contact, account, or order.",
+    "work_item": "one contact, account, or order record updated outside a call",
+    "start": "call notes or other information requiring an update are available",
+    "end": "record changes are saved",
+    "checked_by": "sales staff and downstream order staff",
+    "overlap_reasoning": "Order entry and prospect-contact recording can update the same fields, but record maintenance also covers other account and order changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4621",
+     "4622"
+    ]
+   }
+  ],
+  "notes": "The live and back-office shares depend on the record system and wrap-up procedure."
+ },
+ {
+  "task_id": "4628",
+  "split_reasoning": "Appointments may be booked while a prospect is on the telephone or subsequently from a request or call notes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Schedule a sales-representative meeting or presentation while the prospect is on the telephone.",
+    "time_share": 0.8,
+    "type_reasoning": "The appointment is arranged while the prospect waits in the live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One confirmed appointment is the scheduling output used by the prospect and sales team.",
+    "work_item": "one sales appointment scheduled during a call",
+    "start": "prospect agrees to arrange a meeting or presentation",
+    "end": "appointment is entered and confirmed to the prospect",
+    "checked_by": "the prospect and the sales representative",
+    "overlap_reasoning": "An outbound solicitation call may include appointment scheduling, but the call can also have other outcomes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4619"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule a sales-representative meeting or presentation from a request or call notes after the contact.",
+    "time_share": 0.2,
+    "type_reasoning": "The appointment is arranged outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One scheduled appointment is handed to the prospect and sales team for use.",
+    "work_item": "one sales appointment scheduled outside a call",
+    "start": "appointment request or call notes are available",
+    "end": "appointment is entered and confirmation is sent",
+    "checked_by": "the prospect and the sales representative",
+    "overlap_reasoning": "The other statements do not describe this back-office scheduling output.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The back-office share depends on how appointment requests are received and processed."
+ },
+ {
+  "task_id": "4629",
+  "split_reasoning": "Client and market surveys are alternative subjects for the same survey activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct a telephone survey to obtain information about a client or potential customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The survey questions and responses are exchanged in a live telephone conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One respondent's completed survey is the response set relied on by the survey team.",
+    "work_item": "one telephone survey response collected",
+    "start": "respondent is reached and agrees to the survey",
+    "end": "survey questions are completed and responses recorded, or the respondent stops",
+    "checked_by": "the survey or market research team",
+    "overlap_reasoning": "Prospect records may capture reactions, but a survey response set collects broader information for a distinct purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4622"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,228 @@
+[
+ {
+  "task_id": "8468",
+  "split_reasoning": "One activity: moving between stations and doing each task.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Rotate through and do all the tasks in a production process.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on assembly work on the line.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "8472",
+     "20158"
+    ]
+   }
+  ],
+  "notes": "Umbrella statement for the physical assembly work."
+ },
+ {
+  "task_id": "8469",
+  "split_reasoning": "One activity: the team deciding who does what and how.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Decide work assignments and procedures with the team.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live team discussion; nothing is produced for others to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20160"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "8472",
+  "split_reasoning": "One activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help produce wiring assemblies.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on assembly.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20157",
+  "split_reasoning": "One activity: checking products and parts, with parts and finished products as the same kind of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check products and parts for quality at the line.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on checking at the work station, with no separate deliverable beyond pass or rework.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "If a formal inspection record is signed per lot, this could be DISCRETE."
+ },
+ {
+  "task_id": "20158",
+  "split_reasoning": "One activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Package finished products and prepare them for shipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20159",
+  "split_reasoning": "One activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Shovel, sweep or otherwise clean work areas.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20160",
+  "split_reasoning": "One activity: reviewing work orders and drawings before building.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review work orders and blueprints so that work is done to specification.",
+    "time_share": 1.0,
+    "type_reasoning": "The review is a distinct step whose outcome the team relies on, done at a desk or station before assembly.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each work order is reviewed once before its run starts.",
+    "work_item": "one work order and drawings reviewed before assembly",
+    "start": "work order received",
+    "end": "specifications understood and issues raised, assembly begins",
+    "checked_by": "team leader or supervisor; quality",
+    "duplicates": [],
+    "overlaps_with": [
+     "8469"
+    ]
+   }
+  ],
+  "notes": "May be an informal glance rather than a recorded step."
+ },
+ {
+  "task_id": "20161",
+  "split_reasoning": "One activity: reporting production.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete production reports showing the team's output for management.",
+    "time_share": 1.0,
+    "type_reasoning": "A written report is sent to management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report per shift or day.",
+    "work_item": "one production report",
+    "start": "end of shift or reporting period",
+    "end": "report submitted to management",
+    "checked_by": "production supervisor or manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20162",
+  "split_reasoning": "One activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain production equipment and machinery.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20163",
+  "split_reasoning": "Supervising assemblers and training employees are different live activities, so they are split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise assemblers during production work.",
+    "time_share": 0.6,
+    "type_reasoning": "Supervision consists principally of live direction and oversight of employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision can include making work assignments, but it also includes ongoing oversight not covered by determining assignments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8469"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Train employees on job procedures.",
+    "time_share": 0.4,
+    "type_reasoning": "Training's value is in the live instruction and demonstration given to employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Training can communicate procedures that were determined separately, but determining a procedure and teaching it are different activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8469"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates and depend on staffing and the amount of training needed."
+ },
+ {
+  "task_id": "20164",
+  "split_reasoning": "Operating production machinery and driving equipment such as forklifts serve different activities, so they are split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate production machinery and equipment.",
+    "time_share": 0.7,
+    "type_reasoning": "Operating production machinery involves hands-on control of equipment at the production site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Machine operation may be a rotated task and may be used in wiring assembly, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468",
+     "8472"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Operate forklifts or similar heavy equipment to move materials.",
+    "time_share": 0.3,
+    "type_reasoning": "Driving and operating heavy material-handling equipment is physical work at the production site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Forklift operation may be part of a production rotation, but rotation is not limited to moving materials.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with the machinery and material-handling arrangements at the facility."
+ }
+]

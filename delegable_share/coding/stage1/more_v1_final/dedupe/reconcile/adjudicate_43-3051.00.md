@@ -1,0 +1,63 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_43-3051.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[2515a] DISCRETE — one pay run's paychecks and earnings statements issued (start: payroll computed and approved for release; end: paychecks/statements printed or deposited and distributed) — from statement: Process and issue employee paychecks and statements of earnings and deductions.
+[2516a] DISCRETE — one pay period's wage and deduction calculations entered (start: verified hours and pay data available; end: computed payroll entered and ready for approval) — from statement: Compute wages and deductions, and enter data into computers.
+[2517a] DISCRETE — one pay period's compiled time and payroll data (start: time sheets and records collected; end: compiled data handed to payroll computation) — from statement: Compile employee time, production, and payroll data from time sheets and other records.
+[2518a] DISCRETE — one pay period's payroll review with discrepancies reconciled (start: time and wage records ready for review; end: discrepancies resolved and records corrected) — from statement: Review time sheets, work charts, wage computation, and other information to detect and reconcile payroll discrepancies.
+[2519a] DISCRETE — one pay period's verified attendance and hours posted (start: time records received; end: verified hours and adjustments posted to records) — from statement: Verify attendance, hours worked, and pay adjustments, and post information onto designated records.
+[2520a] DISCRETE — one employee status change recorded (start: change notice or form received; end: payroll record updated) — from statement: Record employee information, such as exemptions, transfers, and resignations, to maintain and update payroll records.
+[2521a] DISCRETE — one pay adjustment issued and recorded (start: error found or retroactive increase approved; end: adjustment paid and recorded) — from statement: Issue and record adjustments to pay related to previous errors or retroactive increases.
+[2523a] LIVE_SERVICE — one payroll question answered during a call or visit (start: employee or manager asks the question; end: answer given and person satisfied) — from statement: Provide information to employees and managers on payroll matters, tax issues, benefit plans, and collective agreement provisions.
+[2523b] DISCRETE — one written payroll inquiry answered (start: inquiry received; end: reply sent) — from statement: Provide information to employees and managers on payroll matters, tax issues, benefit plans, and collective agreement provisions.
+[2524a] DISCRETE — one pay period's time sheets completed (start: clock or attendance records available; end: time sheets completed and passed to payroll) — from statement: Complete time sheets showing employees' arrival and departure times.
+[2526b] DISCRETE — one pay-period batch of electronic timecards made available and collected (start: timecards are opened or made available for the pay period; end: submitted timecards are gathered for payroll processing) — from statement: Distribute and collect timecards each pay period.
+[2527a] DISCRETE — one benefits form completed and processed (start: form needed or received; end: verified form submitted or filed) — from statement: Complete, verify, and process forms and documentation for administration of benefits, such as pension plans, and unemployment and medical insurance.
+[2528a] DISCRETE — one period-end payroll report set balanced (start: period closes; end: balanced reports submitted) — from statement: Prepare and balance period-end reports, and reconcile issued payrolls to bank statements.
+[2528b] DISCRETE — one payroll bank reconciliation (start: bank statement received; end: reconciliation completed and differences explained) — from statement: Prepare and balance period-end reports, and reconcile issued payrolls to bank statements.
+[2529a] DISCRETE — one pay or benefits report submitted (start: report due or requested; end: report sent to department) — from statement: Compile statistical reports, statements, and summaries related to pay and benefits accounts, and submit them to appropriate departments.
+[2530b] DISCRETE — one special-program payroll deduction authorization processed (start: employee deduction authorization is received; end: deduction is entered or forwarded for payroll processing) — from statement: Coordinate special programs, such as United Way campaigns, that involve payroll deductions.
+[18562a] DISCRETE — one new employee set up in payroll (start: new hire paperwork received; end: employee record complete in the payroll system) — from statement: Process paperwork for new employees and enter employee information into the payroll system.
+[18563a] DISCRETE — one leave entry recorded (start: leave request or report received; end: leave entered and balance updated) — from statement: Keep track of leave time, such as vacation, personal, and sick leave, for employees.
+[18563b] DISCRETE — one pay period's leave balance update (start: pay period closes; end: accruals posted) — from statement: Keep track of leave time, such as vacation, personal, and sick leave, for employees.
+[18564a] LIVE_SERVICE — one employment verification provided during a live contact (start: authorized requester asks for employment verification; end: permitted information is provided or the request is referred during the contact) — from statement: Conduct verifications of employment.
+[18564b] DISCRETE — one written employment verification completed (start: authorized verification request is received; end: verification is completed and sent to the requester) — from statement: Conduct verifications of employment.
+[20901a] DISCRETE — one account balanced for a period (start: period close, ledgers and statements available; end: account balanced and differences resolved) — from statement: Balance cash and payroll accounts.
+[23954a] DISCRETE — one payroll tax return filed (start: period's payroll tax data ready; end: return filed with the tax authority) — from statement: Prepare and file payroll tax returns.
+
+=== PAIRS ===
+PAIR 20901a / 2528b
+[20901a] DISCRETE — one account balanced for a period (start: period close, ledgers and statements available; end: account balanced and differences resolved) — from statement: Balance cash and payroll accounts.
+[2528b] DISCRETE — one payroll bank reconciliation (start: bank statement received; end: reconciliation completed and differences explained) — from statement: Prepare and balance period-end reports, and reconcile issued payrolls to bank statements.
+Original flag reasoning: Both balance a payroll account against bank records at period end, with differences resolved.

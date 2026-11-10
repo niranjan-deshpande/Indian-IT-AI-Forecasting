@@ -1,0 +1,604 @@
+[
+ {
+  "task_id": "21462",
+  "split_reasoning": "Assigning duties and responsibilities is one activity with a common output: a project work assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign project duties and responsibilities to project personnel.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment produces a work allocation that team members can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assignment to a person or team is a practical unit communicated and relied on as a whole.",
+    "work_item": "one project work assignment",
+    "start": "a project duty or responsibility needs an owner",
+    "end": "the assignment is recorded or communicated to the responsible personnel",
+    "checked_by": "assigned personnel and the project manager",
+    "overlap_reasoning": "Work assignments can form part of activity scheduling or staffing in a project plan, but also cover individual responsibilities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466",
+     "21473"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21463",
+  "split_reasoning": "Determining requirements and objectives through stakeholder communication is one interactive activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Discuss project requirements and objectives with key stakeholders.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on eliciting and discussing needs in live interaction rather than producing a specified document.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The discussions inform project plans and needs assessments, but those statements also cover subsequent analysis and documentation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466",
+     "21467"
+    ]
+   }
+  ],
+  "notes": "Requirements may also be gathered in writing; the statement emphasizes communication rather than a particular written output."
+ },
+ {
+  "task_id": "21464",
+  "split_reasoning": "Identifying and resolving problems through discussions with project personnel is one interactive activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with project personnel to identify and resolve project problems.",
+    "time_share": 1.0,
+    "type_reasoning": "The work described is a live discussion to diagnose and agree on responses to problems.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Problem discussions may occur in project meetings or lead to plan changes, but neither is required for every discussion.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21476",
+     "21480"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21465",
+  "split_reasoning": "Creating a project status presentation is one deliverable regardless of its audience.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a project status presentation for customers or project personnel.",
+    "time_share": 1.0,
+    "type_reasoning": "Each presentation is a distinct artifact prepared for an audience.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The presentation is prepared and delivered as a whole, not slide by slide.",
+    "work_item": "one project status presentation",
+    "start": "a status presentation is needed and project information is available",
+    "end": "the presentation is prepared for delivery",
+    "checked_by": "project manager and presentation audience",
+    "overlap_reasoning": "A presentation can be a project document or a way to report status, but those statements cover other document types and reporting channels.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21475",
+     "21478"
+    ]
+   }
+  ],
+  "notes": "Delivery of the presentation is not specified as part of this target."
+ },
+ {
+  "task_id": "21466",
+  "split_reasoning": "Developing or updating a project plan is one activity; the listed topics are components of the same plan.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or update a project plan covering the project's objectives, approach, schedule, funding, and staffing.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a plan or an updated plan version that the team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan version is the coherent document issued for use or review.",
+    "work_item": "one project plan or updated plan version",
+    "start": "a new plan or update is needed",
+    "end": "the plan version is issued for review or use",
+    "checked_by": "project sponsor, manager, and project team",
+    "overlap_reasoning": "Needs assessments, schedules, and approved modifications can feed into plan updates, but each also has work outside producing a plan version.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21467",
+     "21473",
+     "21476"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21467",
+  "split_reasoning": "Identifying resource, staffing, and financial needs is one assessment using project objectives and schedules as inputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess project resource, staffing, and financial needs against objectives and schedules.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assessment produces identified needs that inform planning or resourcing decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A needs assessment for a project or planning cycle is a usable output, rather than each individual resource estimate.",
+    "work_item": "one project needs assessment",
+    "start": "project objectives and schedules are available for review",
+    "end": "resource, staffing, and financial needs are identified and communicated or recorded",
+    "checked_by": "project manager and project sponsor",
+    "overlap_reasoning": "Identified needs may be incorporated into project plans or budget estimates, but the assessment is distinct from preparing those outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466",
+     "21474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21468",
+  "split_reasoning": "Identifying, reviewing, and selecting vendors or consultants are stages of the same sourcing decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify, review, or select vendors or consultants for a project need.",
+    "time_share": 1.0,
+    "type_reasoning": "The sourcing activity produces an assessed candidate list or selection for a particular need.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A sourcing decision for one project need is the item handed to decision-makers or procurement.",
+    "work_item": "one vendor or consultant sourcing assessment or selection",
+    "start": "a project need for an external vendor or consultant is identified",
+    "end": "candidates are assessed or a selection is communicated for the need",
+    "checked_by": "project sponsor or procurement team",
+    "overlap_reasoning": "Selecting a supplier can precede negotiation for resources, but selection and negotiation are different activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21472"
+    ]
+   }
+  ],
+  "notes": "Some assignments stop at a shortlist rather than a final selection."
+ },
+ {
+  "task_id": "21469",
+  "split_reasoning": "Cost monitoring is continuous but produces individual budget issues for investigation or escalation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate and flag a potential budget issue identified in project staff costs.",
+    "time_share": 1.0,
+    "type_reasoning": "Each identified issue produces a discrete finding that the project manager can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A budget issue is the actionable item arising from the ongoing review of costs.",
+    "work_item": "one potential budget issue investigated and flagged",
+    "start": "a cost entry or spending pattern suggests a budget issue",
+    "end": "the finding is recorded or communicated to the responsible person",
+    "checked_by": "project manager or finance team",
+    "overlap_reasoning": "Cost findings can feed cost tracking reports and status reports, but monitoring also includes investigating issues that may not become separate reports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21474",
+     "21478"
+    ]
+   }
+  ],
+  "notes": "Routine monitoring may find no issues; periodic reporting is covered by other statements."
+ },
+ {
+  "task_id": "21470",
+  "split_reasoning": "Continuous milestone and deliverable monitoring can be represented by individual tracked milestone or deliverable status updates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check and update the status of a project milestone or deliverable.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check produces a status update that the project team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A tracked milestone or deliverable is a distinct item whose current status can be recorded.",
+    "work_item": "one milestone or deliverable status checked and updated",
+    "start": "a milestone or deliverable is due for a status check",
+    "end": "its status and any identified issue are updated in the project tracking record",
+    "checked_by": "project manager and project team",
+    "overlap_reasoning": "Reviewing team updates and reporting status can contribute to milestone monitoring, while deliverable submission adds a separate handoff and quality check.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21478",
+     "21479",
+     "21481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21471",
+  "split_reasoning": "Monitoring performance can produce a documented assessment, while delivering feedback is a separate live interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess and document a project team member's performance for feedback.",
+    "time_share": 0.5,
+    "type_reasoning": "A documented assessment is a discrete output used to support feedback.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment of one team member for a review period or feedback occasion is a coherent item.",
+    "work_item": "one team member performance assessment",
+    "start": "performance information for a team member is available for review",
+    "end": "observations are recorded or prepared for feedback",
+    "checked_by": "project manager or personnel manager",
+    "overlap_reasoning": "Project updates may provide evidence for the assessment, but reviewing updates to meet deadlines has a different purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21479"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Give a project team member performance feedback.",
+    "time_share": 0.5,
+    "type_reasoning": "The value of feedback is in the live discussion with the team member.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A feedback discussion can address project problems, but problem-solving discussions need not be performance feedback.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21464"
+    ]
+   }
+  ],
+  "notes": "Feedback may be informal and not accompanied by a separate written assessment; shares are estimates."
+ },
+ {
+  "task_id": "21472",
+  "split_reasoning": "Negotiating with stakeholders or suppliers is one activity aimed at obtaining project resources or materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate with project stakeholders or suppliers for resources or materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Negotiation is a live interpersonal process of reaching agreement.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supplier selection may precede negotiation, but evaluating candidates and negotiating terms are not the same work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21468"
+    ]
+   }
+  ],
+  "notes": "Any formal contract or purchase order is outside the stated negotiation activity."
+ },
+ {
+  "task_id": "21473",
+  "split_reasoning": "Planning, scheduling, and coordinating activities are related steps in arranging project work to meet deadlines.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and coordinate project activities and their timing to meet deadlines.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces an actionable schedule or coordinated sequence of work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule or coordination update for a defined set of activities is the unit communicated to the team.",
+    "work_item": "one project activity schedule or coordination update",
+    "start": "activities and deadlines need to be scheduled or adjusted",
+    "end": "the sequence and timing are recorded or communicated to participants",
+    "checked_by": "project team and project manager",
+    "overlap_reasoning": "Activity schedules may be incorporated in project plans and may include assignments, but planning a whole project or assigning individual duties extends beyond this item.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21462",
+     "21466",
+     "21470"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21474",
+  "split_reasoning": "Budget estimates, progress reports, and cost tracking reports are different deliverables with different purposes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and submit a project budget estimate.",
+    "time_share": 0.3,
+    "type_reasoning": "A budget estimate is a distinct financial planning deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The estimate is submitted as a whole for a project or planning period.",
+    "work_item": "one project budget estimate",
+    "start": "a budget estimate is requested or due",
+    "end": "the completed estimate is submitted",
+    "checked_by": "project sponsor or finance team",
+    "overlap_reasoning": "Needs assessments and project plans can supply or incorporate budget figures, but they are broader than the submitted estimate.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466",
+     "21467",
+     "21475"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and submit a project progress report.",
+    "time_share": 0.4,
+    "type_reasoning": "A progress report is a discrete document submitted to project stakeholders.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each reporting period or request produces a report submitted as a whole.",
+    "work_item": "one project progress report",
+    "start": "a progress report is due or requested",
+    "end": "the completed report is submitted",
+    "checked_by": "project manager, sponsor, or client",
+    "overlap_reasoning": "A progress report can also be a project document or a status report to managers, but those statements cover additional documents and reporting forms.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21475",
+     "21478"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare and submit a project cost tracking report.",
+    "time_share": 0.3,
+    "type_reasoning": "A cost tracking report is a distinct financial reporting deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each cost report is submitted as a whole for a defined reporting period or request.",
+    "work_item": "one project cost tracking report",
+    "start": "a cost report is due or requested and cost data is available",
+    "end": "the completed cost tracking report is submitted",
+    "checked_by": "project manager, sponsor, or finance team",
+    "overlap_reasoning": "Cost monitoring supplies report findings, and the report may also serve as a project document or management status report.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21469",
+     "21475",
+     "21478"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the project's reporting cycle and budgeting practices."
+ },
+ {
+  "task_id": "21475",
+  "split_reasoning": "Producing and distributing project documents is one workflow applied to various document types.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Produce and distribute a project document to its intended recipients.",
+    "time_share": 1.0,
+    "type_reasoning": "Each document is a distinct artifact distributed for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed document is the unit sent to recipients.",
+    "work_item": "one project document produced and distributed",
+    "start": "a project document is needed",
+    "end": "the completed document is distributed to intended recipients",
+    "checked_by": "project manager and document recipients",
+    "overlap_reasoning": "Plans, presentations, reports, and client deliverables can be project documents, but this statement also covers other documentation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21465",
+     "21466",
+     "21474",
+     "21476",
+     "21481"
+    ]
+   }
+  ],
+  "notes": "Document types are unspecified; overlap depends on which artifacts are included in a particular workplace."
+ },
+ {
+  "task_id": "21476",
+  "split_reasoning": "Proposing a plan modification and reviewing or approving a proposed modification are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Propose a modification to a project plan.",
+    "time_share": 0.5,
+    "type_reasoning": "A proposed change is a discrete item submitted for consideration.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A change proposal is reviewed as a whole by the person or group authorized to decide.",
+    "work_item": "one proposed project plan modification",
+    "start": "a need to change the project plan is identified",
+    "end": "the proposed modification and its rationale are submitted for review",
+    "checked_by": "project manager, sponsor, or change authority",
+    "overlap_reasoning": "An approved proposal may lead to a plan update and may be distributed as a project document, but the proposal is a distinct decision input.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466",
+     "21475"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review or approve a proposed modification to a project plan.",
+    "time_share": 0.5,
+    "type_reasoning": "Each review produces a recommendation or decision on a proposed change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The proposed modification is the unit reviewed and decided upon.",
+    "work_item": "one proposed project plan modification reviewed or approved",
+    "start": "a proposed plan modification is received for review",
+    "end": "the review recommendation or approval decision is recorded and communicated",
+    "checked_by": "project manager, sponsor, or change authority",
+    "overlap_reasoning": "Reviewing a modification can lead to updating the plan, but a decision is distinct from issuing the updated plan.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21466"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the worker's authority to propose and approve changes."
+ },
+ {
+  "task_id": "21477",
+  "split_reasoning": "Recruiting candidates and making a hire are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recruit candidates for project personnel positions.",
+    "time_share": 0.6,
+    "type_reasoning": "Recruiting produces a pool or shortlist of candidates for a project role.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A candidate shortlist for one role is a coherent output handed to the hiring decision-maker.",
+    "work_item": "one candidate shortlist for a project role",
+    "start": "a project staffing vacancy or need is identified",
+    "end": "suitable candidates are identified and presented for selection",
+    "checked_by": "project manager or hiring manager",
+    "overlap_reasoning": "A staffing needs assessment can identify vacancies, but recruiting candidates goes beyond identifying the need.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21467"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Hire personnel for a project position.",
+    "time_share": 0.4,
+    "type_reasoning": "A hiring decision and communicated offer constitute a discrete staffing outcome.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One hiring decision for one position is the unit acted on by the candidate and personnel team.",
+    "work_item": "one project hiring decision and offer",
+    "start": "candidates for a project position are ready for selection",
+    "end": "a hiring decision is made and an offer is communicated",
+    "checked_by": "hiring manager, personnel team, and candidate",
+    "overlap_reasoning": "Hiring fulfills a staffing need but is not the same as assessing that need or assigning project duties.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21462",
+     "21467"
+    ]
+   }
+  ],
+  "notes": "Hiring authority and the involvement of a separate personnel team vary by organization."
+ },
+ {
+  "task_id": "21478",
+  "split_reasoning": "Project status is reported both in written updates and in live discussions with managers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Send managers a written update on project status.",
+    "time_share": 0.5,
+    "type_reasoning": "A written status update is a discrete communication that managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One update for a reporting period or request is sent and read as a whole.",
+    "work_item": "one written project status update to managers",
+    "start": "a manager requests an update or a reporting interval arrives",
+    "end": "the status update is sent to managers",
+    "checked_by": "receiving managers",
+    "overlap_reasoning": "A written update may take the form of a progress or cost report, presentation, or other project document, while this target also covers other status communications.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21465",
+     "21469",
+     "21470",
+     "21474",
+     "21475"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Brief managers live on project status.",
+    "time_share": 0.5,
+    "type_reasoning": "The briefing is a live exchange in which managers can discuss status and issues.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A briefing may occur in a project meeting or use a status presentation, but those statements also cover scheduling, facilitation, and preparation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21465",
+     "21480"
+    ]
+   }
+  ],
+  "notes": "The written and live shares vary by reporting practice."
+ },
+ {
+  "task_id": "21479",
+  "split_reasoning": "Requesting and reviewing a project update are steps in checking progress against deadlines.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Request and review a project update against deadlines.",
+    "time_share": 1.0,
+    "type_reasoning": "Each reviewed update produces an assessment of progress or a flagged deadline concern.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual team or workstream update is the item requested and reviewed as a whole.",
+    "work_item": "one project update reviewed against deadlines",
+    "start": "an update is requested or received from project personnel",
+    "end": "the update is reviewed and any deadline concern is recorded or communicated",
+    "checked_by": "project manager and responsible workstream lead",
+    "overlap_reasoning": "Reviewed updates feed milestone monitoring and status reporting, but requesting and reviewing an update is not the entire monitoring or reporting workflow.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21470",
+     "21471",
+     "21478"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21480",
+  "split_reasoning": "Scheduling a meeting and facilitating the live meeting are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Schedule a project meeting.",
+    "time_share": 0.4,
+    "type_reasoning": "Scheduling produces a meeting invitation or confirmed arrangement that participants rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One meeting arrangement is communicated to participants as a whole.",
+    "work_item": "one project meeting scheduled",
+    "start": "a project meeting is needed",
+    "end": "the time and participation details are arranged and invitations sent",
+    "checked_by": "meeting participants and project manager",
+    "overlap_reasoning": "A meeting can support project activity coordination, but scheduling the meeting is a distinct logistical output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21473"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Facilitate a project meeting.",
+    "time_share": 0.6,
+    "type_reasoning": "Facilitation is live interaction among meeting participants.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A facilitated meeting can include stakeholder requirements discussions, problem solving, or status briefings, but meetings also serve other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21463",
+     "21464",
+     "21478"
+    ]
+   }
+  ],
+  "notes": "Shares depend on meeting frequency and whether administrative staff handle scheduling."
+ },
+ {
+  "task_id": "21481",
+  "split_reasoning": "Checking quality and submitting a deliverable are parts of one handoff to the client.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a project deliverable against quality standards and submit it to the client.",
+    "time_share": 1.0,
+    "type_reasoning": "Each submission is a distinct deliverable handed over to the client.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The client receives and reviews the deliverable as a whole.",
+    "work_item": "one quality-checked project deliverable submitted to a client",
+    "start": "a project deliverable is ready for quality review and submission",
+    "end": "the checked deliverable is submitted to the client",
+    "checked_by": "client and project quality reviewer",
+    "overlap_reasoning": "Deliverable monitoring can establish readiness, and some deliverables are project documents, but submission adds a client handoff and quality check.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21470",
+     "21475"
+    ]
+   }
+  ],
+  "notes": "The target does not require coding production of the underlying deliverable as a whole project."
+ }
+]

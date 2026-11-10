@@ -1,0 +1,495 @@
+[
+ {
+  "task_id": "1267",
+  "split_reasoning": "Correcting an error and rechecking the result are steps in one bug-fix deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Correct a program error and recheck the program's results.",
+    "time_share": 1.0,
+    "type_reasoning": "Each correction produces a tested change to the program.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A reported defect and its fix are normally handled as one issue or change.",
+    "work_item": "one program defect corrected and rechecked",
+    "start": "a program error is identified or reported",
+    "end": "the correction is made and the affected behavior is rechecked",
+    "checked_by": "reviewing programmer or software tester",
+    "duplicates": [],
+    "overlaps_with": [
+     "1268",
+     "1270",
+     "1272",
+     "1273"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1268",
+  "split_reasoning": "Trial runs and assessment of their results are one testing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run a program or application trial and assess whether its instructions and output are correct.",
+    "time_share": 1.0,
+    "type_reasoning": "A trial produces results that can be reviewed and used to identify problems.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A test case or defined set of trial inputs is run and its results recorded as a unit.",
+    "work_item": "one program trial run with results assessed",
+    "start": "program build and trial inputs are available",
+    "end": "observed results are compared with expectations and findings recorded",
+    "checked_by": "programmer or software testing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "1267",
+     "1270",
+     "1273"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1269",
+  "split_reasoning": "Development documentation and comments embedded in code are distinct artifacts maintained in different places.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and write documentation of program development and revisions.",
+    "time_share": 0.65,
+    "type_reasoning": "The work produces a document or documentation update for other developers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A documentation update describing a program or revision is handed over as a whole.",
+    "work_item": "one program development or revision documentation update",
+    "start": "development details or revision information are available",
+    "end": "documentation is written or updated and made available",
+    "checked_by": "other programmers or technical lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1270",
+     "1272",
+     "1273"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Insert or update explanatory comments in program code.",
+    "time_share": 0.35,
+    "type_reasoning": "The work produces code comments that later maintainers can inspect and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Comments associated with a code change or program component are submitted with that code.",
+    "work_item": "one code change or component documented with inline comments",
+    "start": "code needing explanation is identified",
+    "end": "comments are inserted or revised and the code is saved or submitted",
+    "checked_by": "code reviewer or later maintainer",
+    "duplicates": [],
+    "overlaps_with": [
+     "1270",
+     "1272",
+     "1273"
+    ]
+   }
+  ],
+  "notes": "The shares depend on documentation practices and how much explanation is kept in code."
+ },
+ {
+  "task_id": "1270",
+  "split_reasoning": "Writing, updating, and maintaining programs are variants of delivering program changes for specified jobs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write or maintain a program or software component to perform a specified job.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a program component or change that can be reviewed and used.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feature or maintenance change is a practical unit for submission and review, rather than an entire software package.",
+    "work_item": "one program feature or maintenance change",
+    "start": "a programming requirement or maintenance request is received",
+    "end": "the code change is implemented and submitted for review or use",
+    "checked_by": "technical lead, reviewer, or downstream user",
+    "duplicates": [],
+    "overlaps_with": [
+     "1267",
+     "1268",
+     "1269",
+     "1272",
+     "1273",
+     "1276",
+     "1277",
+     "21049"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1271",
+  "split_reasoning": "Clarifying intent, identifying problems, and suggesting changes are purposes of the same consultation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult managerial, engineering, and technical personnel about program intent, problems, and possible changes.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the discussion with colleagues rather than a specified written deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1278",
+     "1280"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1272",
+  "split_reasoning": "Performing program revisions and directing other people to perform them are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Revise, repair, or expand an existing program for efficiency or new requirements.",
+    "time_share": 0.8,
+    "type_reasoning": "The work produces a change to an existing program.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A specific revision or enhancement is normally implemented and reviewed as a change.",
+    "work_item": "one revision or enhancement to an existing program",
+    "start": "an efficiency issue or new requirement is identified",
+    "end": "the program change is implemented and submitted for review or use",
+    "checked_by": "technical lead, reviewer, or downstream user",
+    "duplicates": [],
+    "overlaps_with": [
+     "1267",
+     "1269",
+     "1270",
+     "1273",
+     "1277"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct programmers carrying out revisions, repairs, or expansions of existing programs.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing the work consists of live supervision and coordination.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1279"
+    ]
+   }
+  ],
+  "notes": "The directing share varies with the programmer's supervisory responsibilities."
+ },
+ {
+  "task_id": "1273",
+  "split_reasoning": "Writing, analyzing, reviewing, and rewriting are related steps in producing or revising a program; charts and programming knowledge are inputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write or revise a program using workflow diagrams and programming knowledge.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces program code for review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A program component or change is the unit normally submitted, rather than the entire program.",
+    "work_item": "one program component or code revision",
+    "start": "a programming specification or workflow diagram is available",
+    "end": "the code is written or revised and submitted for review or use",
+    "checked_by": "code reviewer or technical lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1267",
+     "1268",
+     "1269",
+     "1270",
+     "1272",
+     "1276",
+     "1277"
+    ]
+   }
+  ],
+  "notes": "Review here is treated as part of writing or revising the program, not as a separate formal review of another programmer's submission."
+ },
+ {
+  "task_id": "1274",
+  "split_reasoning": "Writing or contributing to instructions and manuals produces the same kind of user-facing documentation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write or contribute to instructions or manuals for end users.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces written guidance that users or documentation staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A guide, section, or update is submitted as a coherent documentation deliverable.",
+    "work_item": "one user instruction or manual section",
+    "start": "a user guidance need or documentation assignment is identified",
+    "end": "the instruction or section is written and submitted or published",
+    "checked_by": "documentation editor or end users",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1275",
+  "split_reasoning": "Checking different system components is one diagnostic activity aimed at determining their response to program instructions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate whether system components respond correctly to a program's instructions.",
+    "time_share": 1.0,
+    "type_reasoning": "An investigation produces diagnostic findings that another worker can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A reported response problem or diagnostic question is investigated and its findings handed over as a unit.",
+    "work_item": "one program-to-system response investigation",
+    "start": "a response problem or diagnostic question is identified",
+    "end": "component responses are checked and findings recorded or communicated",
+    "checked_by": "programmer, system analyst, or technical support team",
+    "duplicates": [],
+    "overlaps_with": [
+     "1268",
+     "1278"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1276",
+  "split_reasoning": "Preparing workflow diagrams and converting them into coded instructions produce distinct artifacts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare detailed workflow charts or diagrams describing inputs, outputs, and logical operations.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces a diagram that can be reviewed and used for programming.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A diagram or coherent set of diagrams for a specified workflow is handed over as a design artifact.",
+    "work_item": "one workflow diagram or diagram set",
+    "start": "requirements for a workflow are available",
+    "end": "the diagram is completed and made available for review or coding",
+    "checked_by": "technical lead or implementing programmer",
+    "duplicates": [],
+    "overlaps_with": [
+     "1277"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Convert workflow charts and diagrams into coded instructions.",
+    "time_share": 0.6,
+    "type_reasoning": "The conversion produces program code that can be reviewed or executed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A component implementing a diagrammed workflow is a practical code-review unit.",
+    "work_item": "one coded component implementing a diagrammed workflow",
+    "start": "a workflow chart or diagram is ready for implementation",
+    "end": "the corresponding code is written and submitted for review or use",
+    "checked_by": "code reviewer or technical lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1270",
+     "1273",
+     "1277"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the complexity of the workflow and the amount of existing design material."
+ },
+ {
+  "task_id": "1277",
+  "split_reasoning": "Systems analysis and programming produce different deliverables, even when they support the same systems-software change.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze requirements or problems affecting the maintenance and control of systems software.",
+    "time_share": 0.35,
+    "type_reasoning": "The analysis produces findings or a proposed approach for a systems-software issue.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis of one defined issue or requirement is handed over for a decision or implementation.",
+    "work_item": "one systems-software issue or requirement analysis",
+    "start": "a systems-software issue or requirement is assigned",
+    "end": "findings and a proposed approach are recorded or communicated",
+    "checked_by": "systems programmer, analyst, or technical lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1276",
+     "1278"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Program changes that maintain or control the use of computer systems software.",
+    "time_share": 0.65,
+    "type_reasoning": "The work produces a systems-software code or script change.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined maintenance or control change is submitted as a reviewable unit.",
+    "work_item": "one systems-software maintenance or control change",
+    "start": "a systems-software programming requirement is assigned",
+    "end": "the change is implemented and submitted for review or deployment",
+    "checked_by": "systems programming lead or operations team",
+    "duplicates": [],
+    "overlaps_with": [
+     "1270",
+     "1272",
+     "1273",
+     "1276"
+    ]
+   }
+  ],
+  "notes": "The balance between analysis and programming varies by systems-programming role."
+ },
+ {
+  "task_id": "1278",
+  "split_reasoning": "Assistance with running programs can occur both during a live contact with an operator or analyst and afterwards during a separate investigation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with and assist an operator or analyst in resolving a program-running problem during a live contact.",
+    "time_share": 0.55,
+    "type_reasoning": "The operator or analyst receives help while participating in the live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One help contact addresses a particular running problem while the requester is present.",
+    "work_item": "one live assistance contact about a program-running problem",
+    "start": "the operator or analyst raises the problem during a call or conversation",
+    "end": "the immediate guidance or next step is agreed before the contact ends",
+    "checked_by": "the operator or analyst receiving assistance",
+    "duplicates": [],
+    "overlaps_with": [
+     "1271",
+     "1275",
+     "1277"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate a program-running problem after receiving a request from an operator or analyst and report findings.",
+    "time_share": 0.45,
+    "type_reasoning": "The follow-up investigation produces findings or guidance outside the live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A particular problem is investigated and its findings returned to the requester.",
+    "work_item": "one follow-up investigation of a program-running problem",
+    "start": "a problem is referred for investigation",
+    "end": "findings or recommended next steps are communicated to the operator or analyst",
+    "checked_by": "the operator or system analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     "1275",
+     "1277"
+    ]
+   }
+  ],
+  "notes": "The live and follow-up shares vary with how the organization handles operator support; code fixes are covered separately."
+ },
+ {
+  "task_id": "1279",
+  "split_reasoning": "Assigning and coordinating personnel is supervisory interaction, while reviewing their work produces a review outcome.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign and coordinate the work of programming personnel.",
+    "time_share": 0.55,
+    "type_reasoning": "The work centers on live direction and coordination of staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1272"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review work completed by programming personnel.",
+    "time_share": 0.45,
+    "type_reasoning": "A review produces an approval or feedback that the programmer can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A submitted code change or other work product is reviewed and returned as a unit.",
+    "work_item": "one programming work product reviewed",
+    "start": "a programmer submits work for review",
+    "end": "review feedback or approval is communicated",
+    "checked_by": "the submitting programmer or programming lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "1273"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the extent of the programmer's supervisory role."
+ },
+ {
+  "task_id": "1280",
+  "split_reasoning": "Collaboration with manufacturers and users is a means of developing a programming method, not a separate deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a new programming method in collaboration with manufacturers and other users.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a method or proposed approach that collaborators can evaluate and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined method or proposed change to a method is the unit shared with collaborators.",
+    "work_item": "one proposed programming method or method improvement",
+    "start": "a need or opportunity for a programming method is identified",
+    "end": "the proposed method is developed and shared with collaborators",
+    "checked_by": "collaborating programmers, users, or manufacturers",
+    "duplicates": [],
+    "overlaps_with": [
+     "1271"
+    ]
+   }
+  ],
+  "notes": "Live discussions are treated as part of producing the method; the task does not specify a formal documentation format."
+ },
+ {
+  "task_id": "1281",
+  "split_reasoning": "Programming and coding are subjects of the same subordinate-training activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train subordinates in programming and coding.",
+    "time_share": 1.0,
+    "type_reasoning": "The value of the work is in live instruction and coaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21049",
+  "split_reasoning": "Website development is treated as producing reviewable site components or changes rather than splitting by implementation tool.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a website page, feature, or other site component.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a website component that can be reviewed and deployed.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or feature is a reviewable handover unit within a larger website project.",
+    "work_item": "one website page or feature",
+    "start": "requirements or an assignment for a site component are received",
+    "end": "the component is implemented and submitted for review or deployment",
+    "checked_by": "web development lead, client, or testing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "1270"
+    ]
+   }
+  ],
+  "notes": "The appropriate handover unit varies with the size and organization of the website."
+ },
+ {
+  "task_id": "21050",
+  "split_reasoning": "Training users on program use and function is one instructional activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train users on how to use computer programs and understand their functions.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live teaching interaction with users.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Writing user manuals is covered separately by task 1274."
+ }
+]

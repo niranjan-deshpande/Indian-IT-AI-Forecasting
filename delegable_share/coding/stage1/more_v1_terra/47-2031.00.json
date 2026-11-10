@@ -1,0 +1,695 @@
+[
+ {
+  "task_id": "23430",
+  "split_reasoning": "Following safety rules during work and physically cleaning the work area are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow established safety rules and regulations while working.",
+    "time_share": 0.5,
+    "type_reasoning": "Following rules is a condition of the work rather than a separately handed-over deliverable.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Safety rules apply across the physical tasks, but no other statement specifically covers this compliance activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Clean and maintain a safe work area.",
+    "time_share": 0.5,
+    "type_reasoning": "Clearing debris and maintaining the work area require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hazardous-material removal can contribute to a safe work area but also involves specialized handling.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23457"
+    ]
+   }
+  ],
+  "notes": "The shares are judgmental; safety compliance is often embedded in other tasks rather than separately timed."
+ },
+ {
+  "task_id": "23431",
+  "split_reasoning": "Blueprints, sketches, and plans are alternative inputs to the same preparation of layout, dimensions, and material requirements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review construction plans to prepare a project layout and determine dimensions and required materials.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a layout and requirements that can be used for construction and material ordering.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A layout and requirements for a defined section of work are used together by the construction crew.",
+    "work_item": "one prepared layout and dimensions and materials list for a section of work",
+    "start": "plans and specifications for the work are received",
+    "end": "layout, dimensions, and material requirements are prepared for use",
+    "checked_by": "crew lead and carpenter ordering materials",
+    "overlap_reasoning": "Determining materials informs selection and ordering, while measuring and marking applies dimensions to actual materials.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23432",
+     "23436"
+    ]
+   }
+  ],
+  "notes": "Physical marking of materials is covered by task 23432."
+ },
+ {
+  "task_id": "23432",
+  "split_reasoning": "Measuring and marking are integrated steps in laying out cutting lines on materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Measure materials and mark their cutting lines.",
+    "time_share": 1.0,
+    "type_reasoning": "The carpenter physically measures and marks the material.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Plan review supplies dimensions and cutting uses the marked lines, but neither is the same marking activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23431",
+     "23433"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23433",
+  "split_reasoning": "Hand tools, machines, and power saws are alternative means of shaping or cutting material to size.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Cut or shape materials to specified measurements.",
+    "time_share": 1.0,
+    "type_reasoning": "Operating tools and handling the material require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cutting uses marked lines and can be part of building or repairing fixtures, but each statement also covers different work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23432",
+     "23439",
+     "23443",
+     "23455",
+     "23456"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23434",
+  "split_reasoning": "The listed structures and fixtures are examples of the same hands-on installation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install structures and fixtures such as windows, frames, flooring, trim, and hardware.",
+    "time_share": 1.0,
+    "type_reasoning": "Positioning and fastening structures and fixtures require hands-on work at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Rough installation and hardwood flooring are more specific installation tasks, while building or repairing fixtures and applying paneling can also include installation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23439",
+     "23447",
+     "23450",
+     "23451"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23435",
+  "split_reasoning": "Using a plumb bob or level is an alternative method of checking the same property of a structure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a structure for plumb, level, and alignment.",
+    "time_share": 1.0,
+    "type_reasoning": "The check requires positioning measuring tools on the physical structure.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Alignment checks may occur during installation or construction, but those tasks also include substantial assembly and fastening.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23434",
+     "23443",
+     "23447"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23436",
+  "split_reasoning": "Selecting materials and ordering them are connected steps in obtaining the required materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select and order the lumber or other materials required for a job.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces an order that a supplier and the construction crew rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A material order is submitted and fulfilled as a distinct request, even if it contains many items.",
+    "work_item": "one material order",
+    "start": "material requirements and job needs are available",
+    "end": "selected materials are ordered from the supplier",
+    "checked_by": "supplier and job supervisor",
+    "overlap_reasoning": "Reviewing plans can establish the quantities and types needed, but selecting a supplier and placing an order are additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23431"
+    ]
+   }
+  ],
+  "notes": "Physical inspection of stock may occur for some orders; the share depends on purchasing practice."
+ },
+ {
+  "task_id": "23437",
+  "split_reasoning": "Arranging different specialist trades is the same activity of assigning outside work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange for a subcontractor to perform specialist work on the job.",
+    "time_share": 1.0,
+    "type_reasoning": "The arrangement produces a subcontractor assignment and agreed work schedule that the parties rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each specialist assignment is arranged and communicated as a distinct commitment.",
+    "work_item": "one subcontractor work assignment arranged",
+    "start": "need for specialist work and its scope are identified",
+    "end": "subcontractor and job team have the agreed assignment and timing",
+    "checked_by": "job supervisor and subcontractor",
+    "overlap_reasoning": "Crew scheduling can coordinate timing with subcontractors but also covers scheduling the carpenter's own crew.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23445"
+    ]
+   }
+  ],
+  "notes": "Some arrangements may be informal and made primarily through live coordination."
+ },
+ {
+  "task_id": "23438",
+  "split_reasoning": "Maintaining job records and preparing progress reports produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record and maintain documentation of job actions.",
+    "time_share": 0.5,
+    "type_reasoning": "A completed job record entry is a discrete output used by the job team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A dated job record entry collects the relevant actions for a work period.",
+    "work_item": "one job record entry",
+    "start": "job actions and relevant details are available for recording",
+    "end": "entry is completed and saved in the job records",
+    "checked_by": "job supervisor or project manager",
+    "overlap_reasoning": "Task 23445 also explicitly covers maintaining job records.",
+    "duplicates": [
+     "23445"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and present a written progress report.",
+    "time_share": 0.5,
+    "type_reasoning": "Each written report is a distinct deliverable for the recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is handed over as a whole for a reporting period or requested update.",
+    "work_item": "one written progress report",
+    "start": "progress information for the reporting period is available",
+    "end": "report is completed and presented or sent to its recipient",
+    "checked_by": "job supervisor, project manager, or client",
+    "overlap_reasoning": "Job records may supply information for a report, but maintaining them does not itself produce the report.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23445"
+    ]
+   }
+  ],
+  "notes": "The time shares depend on reporting requirements."
+ },
+ {
+  "task_id": "23439",
+  "split_reasoning": "Building and repairing the listed wooden fixtures are hands-on construction activities using similar methods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build or repair wooden cabinets, doors, frameworks, floors, or other fixtures.",
+    "time_share": 1.0,
+    "type_reasoning": "Fabricating and repairing fixtures require hands-on use of tools and materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cutting, installation, assembly, and replacement can be steps in this work, while the more specific tasks also cover other structures or stages.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23433",
+     "23434",
+     "23443",
+     "23446",
+     "23447",
+     "23451"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23440",
+  "split_reasoning": "Scaffolding and ladders are alternative access equipment erected for above-ground work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Erect scaffolding or ladders for work above ground level.",
+    "time_share": 1.0,
+    "type_reasoning": "Setting up access equipment is hands-on site work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically describes erecting access equipment.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23441",
+  "split_reasoning": "The listed fasteners and materials are alternative means of anchoring and bracing structures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Anchor and brace forms and other structures in place.",
+    "time_share": 1.0,
+    "type_reasoning": "Installing braces and fasteners requires physical work at the structure.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Constructing concrete forms or installing temporary supports can include anchoring and bracing, but also includes other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23447",
+     "23455"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23442",
+  "split_reasoning": "Inspecting the listed building materials and finishes serves the same purpose of finding physical damage.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect building finishes and woodwork for broken or damaged areas.",
+    "time_share": 1.0,
+    "type_reasoning": "The inspection involves examining physical building surfaces and components on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Examining structural timbers for decay is a related inspection but focuses on structural supports and may lead to replacement.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23449"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23443",
+  "split_reasoning": "Assembling and fastening are integrated steps in making frameworks or props.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble and fasten materials to make frameworks or props.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires physically positioning and fastening materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Building frameworks, constructing forms, and making sleds can include this assembly, while each also covers other work or products.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23439",
+     "23455",
+     "23456"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23444",
+  "split_reasoning": "Timber, masonry, and concrete are alternative materials in the same drilling activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drill bolt holes in timber, masonry, or concrete.",
+    "time_share": 1.0,
+    "type_reasoning": "Drilling holes requires hands-on use of a power drill at the material.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Drilling can be part of anchoring or assembly, but those tasks also include positioning and fastening structures.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23441",
+     "23443"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23445",
+  "split_reasoning": "Maintaining job records and scheduling the work crew produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain job records.",
+    "time_share": 0.4,
+    "type_reasoning": "Each completed record entry is an output relied on by the job team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A dated entry records job information for a work period.",
+    "work_item": "one job record entry",
+    "start": "job information is available for recording",
+    "end": "entry is completed and saved in the job records",
+    "checked_by": "job supervisor or project manager",
+    "overlap_reasoning": "Task 23438 also explicitly covers maintaining records and documenting actions.",
+    "duplicates": [
+     "23438"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule the work crew.",
+    "time_share": 0.6,
+    "type_reasoning": "A crew schedule is a distinct plan that workers and supervisors use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The schedule for a work period is prepared and communicated as a whole.",
+    "work_item": "one crew schedule for a work period",
+    "start": "work requirements and crew availability are known",
+    "end": "schedule is set and communicated to the crew",
+    "checked_by": "crew members and job supervisor",
+    "overlap_reasoning": "Arranging subcontractors can require coordination with the crew schedule but is a separate assignment activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23437"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the carpenter's supervisory responsibilities."
+ },
+ {
+  "task_id": "23446",
+  "split_reasoning": "Removing defective parts and repairing or replacing them are integrated steps in a physical repair.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Remove damaged structural parts and repair or replace them.",
+    "time_share": 1.0,
+    "type_reasoning": "Removing and fitting structural parts requires hands-on work with tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Repairing wooden fixtures and replacing decayed timbers can include the same removal and replacement work but cover different scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23439",
+     "23449"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23447",
+  "split_reasoning": "The listed frames, subflooring, fixtures, and supports are examples of hands-on installation in construction or repair.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install rough frames, subflooring, fixtures, or temporary supports in a structure.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves physically positioning and fastening components on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General fixture installation includes some of this work, and bracing can be part of installing temporary supports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23434",
+     "23439",
+     "23441"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23448",
+  "split_reasoning": "Painting, using hand tools, and paneling are alternative methods of finishing surfaces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Finish woodwork or wallboard surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "Applying and working the finish requires hands-on work on the surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Applying decorative paneling can be a surface-finishing method, and patching wallboard can prepare a surface for finishing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23450",
+     "23452"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23449",
+  "split_reasoning": "Inspecting timbers for decay and replacing those found defective are distinct physical activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine structural timbers and supports for decay.",
+    "time_share": 0.35,
+    "type_reasoning": "The carpenter physically examines structural components on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General damage inspection includes woodwork, while this inspection specifically targets decay in structural timbers and supports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23442"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Replace decayed structural timbers when required.",
+    "time_share": 0.65,
+    "type_reasoning": "Removing and replacing timbers requires hands-on use of tools and fasteners.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Removing and replacing damaged structural parts includes some timber replacement but also covers other materials and repairs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23446"
+    ]
+   }
+  ],
+  "notes": "The shares depend on how often inspection finds timbers requiring replacement."
+ },
+ {
+  "task_id": "23450",
+  "split_reasoning": "The listed panel types are different materials installed through the same paneling activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply paneling to walls or ceilings.",
+    "time_share": 1.0,
+    "type_reasoning": "Fitting and fastening panels is hands-on installation work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General installation and surface finishing can include paneling, but both cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23434",
+     "23448"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23451",
+  "split_reasoning": "Installing building paper and laying the wood floor are connected stages of the same flooring installation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install moisture-protection paper and lay a wood floor.",
+    "time_share": 1.0,
+    "type_reasoning": "Covering the subfloor and fastening or cementing flooring are hands-on site work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General flooring installation and building or repairing floors include some of this work but are broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23434",
+     "23439"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23452",
+  "split_reasoning": "Filling and sanding are integrated steps in repairing a plaster or plasterboard defect.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Fill and sand cracks or other defects in plaster or plasterboard.",
+    "time_share": 1.0,
+    "type_reasoning": "Applying patching plaster and sanding the repair require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Patching can prepare wallboard for surface finishing, but finishing also includes other treatments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23448"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23453",
+  "split_reasoning": "Minor plumbing, welding, and concrete mixing are different kinds of hands-on work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform minor plumbing work.",
+    "time_share": 0.35,
+    "type_reasoning": "Minor plumbing requires hands-on work with pipes, fittings, or tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Arranging a plumbing subcontractor is separate from performing minor plumbing work.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Perform minor welding work.",
+    "time_share": 0.3,
+    "type_reasoning": "Welding requires hands-on operation of welding equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically covers welding.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Mix concrete for minor work.",
+    "time_share": 0.35,
+    "type_reasoning": "Handling and mixing concrete materials is physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Constructing forms supports concrete pouring but does not itself describe mixing concrete.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares are illustrative and depend on the job."
+ },
+ {
+  "task_id": "23454",
+  "split_reasoning": "Preparing an estimate for a client or employer is the same deliverable for different recipients.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a cost estimate for a client or employer.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a written estimate that the recipient uses for a decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An estimate for a defined scope is submitted and reviewed as a whole.",
+    "work_item": "one cost estimate for a defined scope of work",
+    "start": "scope, plans, and relevant cost information are available",
+    "end": "estimate is completed and submitted to the client or employer",
+    "checked_by": "client, estimator, or employer",
+    "overlap_reasoning": "Determining dimensions and materials from plans can supply inputs to an estimate but does not itself produce the cost estimate.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23431"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23455",
+  "split_reasoning": "Forms and chutes are related structures built for the same concrete-pouring work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Construct forms or chutes for pouring concrete.",
+    "time_share": 1.0,
+    "type_reasoning": "Building these structures requires hands-on cutting, assembly, and fastening.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cutting, assembling, and bracing can be stages of form construction but also occur in other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23433",
+     "23441",
+     "23443"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23456",
+  "split_reasoning": "The target describes one construction activity with a single kind of product, a hauling sled.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build a log-and-timber sled for hauling buildings or machinery.",
+    "time_share": 1.0,
+    "type_reasoning": "Fabricating and assembling a sled from logs and timbers is hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cutting and fastening materials can be steps in sled construction but also support many other products.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23433",
+     "23443"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23457",
+  "split_reasoning": "Working with and removing hazardous material are related hands-on handling activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Handle or remove hazardous material on a job.",
+    "time_share": 1.0,
+    "type_reasoning": "Handling or removing the material requires physical work and protective procedures.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Removal can contribute to maintaining a safe and clean work area, but it involves hazardous-material handling beyond general housekeeping.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23430"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23458",
+  "split_reasoning": "Directing others to dig is supervisory interaction, while digging holes and setting poles are hands-on stages of installing supports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dig post holes and set poles to support structures.",
+    "time_share": 0.8,
+    "type_reasoning": "Excavating holes and positioning poles require physical work at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Setting poles may involve bracing or installing temporary supports, but it also includes digging and positioning poles.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23441",
+     "23447"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct workers digging post holes.",
+    "time_share": 0.2,
+    "type_reasoning": "Directing the digging is live supervision whose value is in the interaction with workers.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Scheduling a crew assigns work times but does not cover live direction of the digging.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares depend on whether the carpenter digs personally or directs a crew."
+ }
+]

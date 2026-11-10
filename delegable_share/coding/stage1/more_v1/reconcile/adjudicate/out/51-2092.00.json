@@ -1,0 +1,6 @@
+[
+ {"task_id": "8469", "reasoning": "On assembly teams, who does what, and how, is settled in shift huddles and team discussion, usually within established standard work and a rotation board. It is not drafted as a deliverable that someone checks. Y's two discrete parts at 50% each overstate the written output, so X's interpersonal coding is preferred.", "choice": "X"},
+ {"task_id": "20158", "reasoning": "For team assemblers, preparing products for shipment means packing, sealing and staging them. Labels and shipping documents are normally produced by the shipping function or printed by the system. X's discrete shipping-information part is speculative, so Y's single physical part is preferred.", "choice": "Y"},
+ {"task_id": "20163", "reasoning": "Supervising assemblers and training employees are different activities, as step 1 recognizes, even though both are live. Y splits them and records each overlap with 8469, which follows the instructions more closely than X.", "choice": "Y"},
+ {"task_id": "20164", "reasoning": "Running production machinery and driving forklifts to move materials are different activities that overlap different statements. Both are physical. X's split follows the split rule, while Y treats forklifts as just an example of the same work.", "choice": "X"}
+]

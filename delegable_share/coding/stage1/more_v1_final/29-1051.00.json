@@ -1,0 +1,751 @@
+[
+ {
+  "task_id": 1808,
+  "split_reasoning": "One activity: checking a prescription before it is filled; prescriptions vary in complexity but the work is the same.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a prescription for accuracy, needed ingredients, and suitability for the patient.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review ends in a verified, clarified, or rejected prescription that the filling staff and patient rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Prescriptions arrive and are verified one at a time.",
+    "work_item": "one prescription reviewed and verified (or queried with the prescriber)",
+    "start": "prescription received in the queue",
+    "end": "prescription cleared for filling or returned with a query",
+    "checked_by": "dispensing staff, prescriber, patient, and the board of pharmacy",
+    "duplicates": [],
+    "overlaps_with": [
+     1809,
+     1816,
+     1823
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1809,
+  "split_reasoning": "Same activity in two places: advising a patient who is at the counter or on the phone, and answering written or non-urgent questions afterwards from patients or clinicians.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel a patient on interactions, side effects, dosage, and storage while they are at the counter or on the phone.",
+    "time_share": 0.7,
+    "type_reasoning": "The patient is waiting during the conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each counseling conversation is a single contact.",
+    "work_item": "one patient counseled at pickup or on a call",
+    "start": "patient presents with a medication question or prescription pickup",
+    "end": "patient's questions answered and the patient leaves or hangs up",
+    "checked_by": "the patient",
+    "duplicates": [],
+    "overlaps_with": [
+     1808,
+     1816
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a written or referred drug information question from a patient or clinician.",
+    "time_share": 0.3,
+    "type_reasoning": "Done after research with no one waiting; produces a written or returned answer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions come one at a time and each is answered as a whole.",
+    "work_item": "one drug information question answered",
+    "start": "question received",
+    "end": "answer sent to the asker",
+    "checked_by": "the clinician or patient who asked",
+    "duplicates": [],
+    "overlaps_with": [
+     1815
+    ]
+   }
+  ],
+  "notes": "The live share depends on retail versus hospital setting."
+ },
+ {
+  "task_id": 1810,
+  "split_reasoning": "One activity: reviewing prescription patterns for compliance and safety; it ends in a reviewed list or flagged cases.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review prescribing and dispensing data for patient compliance, overuse, or harmful interactions, and flag cases.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a flagged list or report that others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reviews are run on a schedule or per patient and handed over as a report.",
+    "work_item": "one drug utilization review report or flagged case list",
+    "start": "dispensing or prescribing data pulled for the review",
+    "end": "findings reported and flagged cases passed on",
+    "checked_by": "pharmacy manager, prescribers, insurers",
+    "duplicates": [],
+    "overlaps_with": [
+     1815
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1811,
+  "split_reasoning": "Two activities: placing orders at a computer or phone, and the hands-on receiving, storing, and stocking.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Order and purchase pharmaceutical and medical supplies and drugs.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a purchase order that suppliers and managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Orders are placed per supplier per ordering cycle.",
+    "work_item": "one supply order placed",
+    "start": "stock levels checked and need identified",
+    "end": "order submitted to the supplier",
+    "checked_by": "pharmacy manager, accounts",
+    "duplicates": [],
+    "overlaps_with": [
+     1812,
+     1822
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Receive, store, and handle stock properly.",
+    "time_share": 0.5,
+    "type_reasoning": "Hands-on shelving and handling.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1812
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1812",
+  "split_reasoning": "Patient and pharmacy records, financial records, and inventory or controlled-substance records have different inputs and uses; patient records may also be updated during a live encounter.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a patient or pharmacy record after a contact or from a queued request.",
+    "time_share": 0.35,
+    "type_reasoning": "A record update is completed for later use by pharmacy staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One patient's record update is the unit saved for subsequent care.",
+    "work_item": "one patient or pharmacy record updated",
+    "start": "information requiring a record update received",
+    "end": "update saved in the pharmacy record",
+    "checked_by": "pharmacy staff and auditors",
+    "overlap_reasoning": "Counseling and condition-management encounters may generate record information but are distinct from the subsequent update.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1813",
+     "1816"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Update a patient profile while the patient is present or on the line.",
+    "time_share": 0.15,
+    "type_reasoning": "The patient is participating in the contact while the profile is updated.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One profile update is completed within the patient contact.",
+    "work_item": "one patient profile update during a contact",
+    "start": "patient provides information for the profile",
+    "end": "information saved and confirmed during the contact",
+    "checked_by": "the patient and pharmacy staff",
+    "overlap_reasoning": "Medication counseling and condition management may supply the information, but the profile update is a distinct step.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1809",
+     "1813"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain pharmacy charge or billing records.",
+    "time_share": 0.15,
+    "type_reasoning": "Each record update is a discrete financial entry relied on downstream.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual charge or billing record is updated and saved as a unit.",
+    "work_item": "one charge or billing record updated",
+    "start": "charge information or correction received",
+    "end": "record updated and saved",
+    "checked_by": "pharmacy billing staff and auditors",
+    "overlap_reasoning": "Insurance issue resolution may lead to a billing update but includes separate contact and investigation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20405"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Maintain inventory, controlled-drug, poison, or radioactive-material records.",
+    "time_share": 0.35,
+    "type_reasoning": "Each recorded stock movement or reconciliation produces an auditable record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A stock transaction or reconciliation is recorded and checked as a whole.",
+    "work_item": "one inventory or regulated-stock record entry or reconciliation",
+    "start": "stock movement or reconciliation due",
+    "end": "record updated and discrepancies noted",
+    "checked_by": "pharmacy management and regulatory auditors",
+    "overlap_reasoning": "Physical stock handling and pharmacy management use these records but are not identical to maintaining them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1811",
+     "1822"
+    ]
+   }
+  ],
+  "notes": "Record types, live-update frequency, and shares vary substantially by setting."
+ },
+ {
+  "task_id": "1813",
+  "split_reasoning": "Two parts: the live session with the patient, and writing up the consult and follow-up.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel and coach a patient on managing a condition such as diabetes, asthma, or smoking cessation.",
+    "time_share": 0.7,
+    "type_reasoning": "Value is in the live session; the pharmacist's coaching itself is not checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1809,
+     20404
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Document the consult and follow-up plan.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a record that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One note per patient consult.",
+    "work_item": "one patient management consult documented",
+    "start": "consult ends",
+    "end": "note and follow-up plan recorded",
+    "checked_by": "prescriber, pharmacy manager, insurer",
+    "duplicates": [],
+    "overlaps_with": [
+     1812
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1814,
+  "split_reasoning": "One activity: advising a customer on a product choice.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a customer on choosing a medication brand, equipment, or supply.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is at the counter or aisle while it happens.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is a single contact.",
+    "work_item": "one customer advised on a product selection",
+    "start": "customer asks for advice",
+    "end": "customer picks a product or leaves",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     1809
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1815,
+  "split_reasoning": "Two activities: live collaboration with colleagues, and written review and advice on regimens.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet or confer with health care professionals to plan and review drug therapy.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in the live exchange.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1823
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review a drug regimen or its quality and write advice for the care team.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a written review the team acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each review covers one patient or regimen.",
+    "work_item": "one drug regimen review with written recommendation",
+    "start": "request or scheduled review begins",
+    "end": "recommendation sent to the team",
+    "checked_by": "prescriber, care team",
+    "duplicates": [],
+    "overlaps_with": [
+     1810,
+     1823
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1816",
+  "split_reasoning": "Compounding and physical dispensing, computer-based dispensing checks, live handover, and supervising staff are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compound prescribed medications by weighing, measuring, and mixing ingredients.",
+    "time_share": 0.2,
+    "type_reasoning": "Compounding requires hands-on preparation away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Sterile preparation is a specialized form of compounding also covered separately.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1819",
+     "1823"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Physically select, package, and label prescribed medication for dispensing.",
+    "time_share": 0.3,
+    "type_reasoning": "Preparing the medication requires hands-on handling and packaging.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Dispensing in hospitals and clinics includes similar physical work, while procedure planning is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1820",
+     "1823"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Complete the computer-based dispensing record and final dispensing check.",
+    "time_share": 0.25,
+    "type_reasoning": "The work produces a completed dispensing record or release decision for an individual prescription.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed dispensing transaction is the item retained and relied on by the pharmacy.",
+    "work_item": "one prescription dispensing transaction completed",
+    "start": "prescription and prepared medication ready for dispensing processing",
+    "end": "dispensing record completed and medication released for handover",
+    "checked_by": "pharmacy staff and auditors",
+    "overlap_reasoning": "Prescription suitability review and record maintenance are related steps but are separately described.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1808",
+     "1812",
+     "1823"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Hand a dispensed medication to a patient during a live encounter.",
+    "time_share": 0.1,
+    "type_reasoning": "The patient is present during the medication handover.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One prepared prescription is handed over within the patient contact.",
+    "work_item": "one dispensed prescription handed to a patient",
+    "start": "patient presents to collect a prepared prescription",
+    "end": "medication handed over to the patient",
+    "checked_by": "the patient",
+    "overlap_reasoning": "Medication counseling can accompany the handover but is separately described.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1809",
+     "1823"
+    ]
+   },
+   {
+    "part_id": "e",
+    "text": "Supervise staff who compound or dispense medications.",
+    "time_share": 0.15,
+    "type_reasoning": "Directing and supervising staff is an interpersonal activity.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General pharmacy management can include supervising these staff but also covers broader operations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1822"
+    ]
+   }
+  ],
+  "notes": "Shares vary greatly between community, hospital, and compounding pharmacies; clinical prescription review is coded under 1808."
+ },
+ {
+  "task_id": 1818,
+  "split_reasoning": "Referrals happen live during a patient contact and afterwards by letter or call to the provider.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a patient to another health professional or agency while speaking with them.",
+    "time_share": 0.7,
+    "type_reasoning": "Done during the live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each referral occurs within a single contact.",
+    "work_item": "one patient referred during a counseling contact",
+    "start": "pharmacist identifies a need beyond pharmacy",
+    "end": "patient told where to go and agrees",
+    "checked_by": "the patient",
+    "duplicates": [],
+    "overlaps_with": [
+     1809
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a referral or notification to another provider or agency.",
+    "time_share": 0.3,
+    "type_reasoning": "Done afterwards in writing or by call, producing a referral the recipient relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One referral per patient.",
+    "work_item": "one referral communication sent",
+    "start": "decision to refer made",
+    "end": "referral sent to the provider or agency",
+    "checked_by": "receiving provider",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1819,
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare sterile solutions or infusions for surgery, emergency rooms, or home use.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on compounding in a clean room.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1816
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1820",
+  "split_reasoning": "One activity: writing and maintaining procedures for mixing, packaging, and labeling.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan, put in place, and update procedures for mixing, packaging, labeling, security, and disposal of pharmaceuticals.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces written procedures that staff follow and inspectors check.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each procedure is written or revised and approved as a whole.",
+    "work_item": "one written procedure created or revised",
+    "start": "need for a procedure or change identified",
+    "end": "procedure approved and issued to staff",
+    "checked_by": "pharmacy manager, inspectors",
+    "duplicates": [],
+    "overlaps_with": [
+     1822
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1821,
+  "split_reasoning": "Measuring the radiopharmaceutical is hands-on, while the dose calculation and record is a separate written output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assay radiopharmaceuticals and verify their disintegration rate.",
+    "time_share": 0.7,
+    "type_reasoning": "Hands-on measurement with equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Calculate and record the volume needed for the desired dose.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a dose record that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One calculation per dose.",
+    "work_item": "one radiopharmaceutical dose calculated and recorded",
+    "start": "assay result available",
+    "end": "volume calculated and entered in the dose record",
+    "checked_by": "physician, radiation safety officer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1822",
+  "split_reasoning": "Management combines staffing and supervision, administrative work, and non-pharmaceutical merchandise purchasing or sales.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview, supervise, and direct pharmacy staff.",
+    "time_share": 0.35,
+    "type_reasoning": "Hiring interviews and supervision principally involve live interactions with staff or candidates.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision of compounding and dispensing staff is also specifically described elsewhere.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1816"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete an administrative pharmacy-management task or report.",
+    "time_share": 0.35,
+    "type_reasoning": "Administrative work produces discrete records, schedules, or reports used in operations.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed administrative item is handed over or used as a whole.",
+    "work_item": "one pharmacy administrative report, schedule, or filing",
+    "start": "administrative requirement or reporting period identified",
+    "end": "item completed and filed or communicated",
+    "checked_by": "pharmacy management, staff, or regulators",
+    "overlap_reasoning": "Record maintenance and procedure development may be administrative duties but are also separately described in detail.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1812",
+     "1820"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Purchase non-pharmaceutical merchandise for the pharmacy.",
+    "time_share": 0.15,
+    "type_reasoning": "Purchasing produces an order for a supplier.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The supplier order is the item sent and subsequently received.",
+    "work_item": "one non-pharmaceutical merchandise order",
+    "start": "merchandise need identified",
+    "end": "order submitted to the supplier",
+    "checked_by": "supplier and pharmacy management",
+    "overlap_reasoning": "Supply purchasing is similar but the other statement focuses on drugs and pharmaceutical or medical supplies.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1811"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Sell non-pharmaceutical merchandise to a customer.",
+    "time_share": 0.15,
+    "type_reasoning": "The transaction is completed with the customer present or otherwise in live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's merchandise transaction is completed during the contact.",
+    "work_item": "one non-pharmaceutical merchandise sale",
+    "start": "customer presents merchandise for purchase",
+    "end": "payment taken and merchandise handed over",
+    "checked_by": "the customer and pharmacy management",
+    "overlap_reasoning": "Product-selection advice may precede a sale but does not itself constitute the sale.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1814"
+    ]
+   }
+  ],
+  "notes": "Management responsibilities and shares vary widely; non-live hiring paperwork is included in administrative work."
+ },
+ {
+  "task_id": "1823",
+  "split_reasoning": "A setting descriptor listing dispensing and consulting work in institutions; two kinds of item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify and dispense a medication order in a hospital, clinic, or HMO pharmacy.",
+    "time_share": 0.5,
+    "type_reasoning": "Each order produces a verified, dispensed medication that the ward relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Orders flow through the pharmacy queue one at a time.",
+    "work_item": "one medication order verified and dispensed",
+    "start": "order received",
+    "end": "medication released to the ward or patient",
+    "checked_by": "nurse, prescriber, patient",
+    "duplicates": [
+     1816
+    ],
+    "overlaps_with": [
+     1808
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a team member's question or advise on a specialty drug therapy.",
+    "time_share": 0.5,
+    "type_reasoning": "Each consult produces advice the team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Consults come one at a time and are answered as a whole.",
+    "work_item": "one consult on drug therapy answered",
+    "start": "consult request received",
+    "end": "advice given and noted",
+    "checked_by": "requesting clinician",
+    "duplicates": [],
+    "overlaps_with": [
+     1815,
+     1809
+    ]
+   }
+  ],
+  "notes": "Part a largely repeats the dispensing statement; marked as a duplicate of it."
+ },
+ {
+  "task_id": 1824,
+  "split_reasoning": "Testing the drug is hands-on lab work, while recording the finding is a separate output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test a medication's identity, strength, or purity.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on lab testing.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1820
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record the test result and release or quarantine the batch.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a quality record that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One record per batch or lot tested.",
+    "work_item": "one batch quality test result recorded",
+    "start": "test completed",
+    "end": "result recorded and batch released or held",
+    "checked_by": "pharmacy manager, quality assurance, inspectors",
+    "duplicates": [],
+    "overlaps_with": [
+     1812
+    ]
+   }
+  ],
+  "notes": "Mostly relevant to compounding and hospital settings."
+ },
+ {
+  "task_id": 1825,
+  "split_reasoning": "One activity: teaching interns.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach pharmacy student interns.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 1826,
+  "split_reasoning": "One activity: writing educational material.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write educational information for pharmacists, doctors, or patients.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a document that readers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each handout, bulletin, or article is published as a whole.",
+    "work_item": "one educational handout, bulletin, or article",
+    "start": "topic chosen or requested",
+    "end": "piece published or distributed",
+    "checked_by": "editor or pharmacy manager, readers",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20404",
+  "split_reasoning": "One activity: teaching people health practices.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train people to use blood pressure devices or diabetes monitors and promote health.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     1809,
+     1813
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 20405,
+  "split_reasoning": "One activity: settling billing issues with insurers, by phone or portal, usually from a queue of rejected claims.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact an insurer to resolve a billing issue such as a rejected claim.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in the back office with no patient waiting; produces a resolved claim.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each issue is a claim or case resolved separately.",
+    "work_item": "one billing issue resolved with an insurer",
+    "start": "claim rejection or billing problem identified",
+    "end": "claim resolved or payment confirmed",
+    "checked_by": "pharmacy manager, patient, insurer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20406",
+  "split_reasoning": "Routine database updates and troubleshooting faults are distinct activities with different inputs and outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a pharmacy information database.",
+    "time_share": 0.5,
+    "type_reasoning": "Each requested database update produces a saved change for users to rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requested database change or coherent batch of changes is reviewed as one update.",
+    "work_item": "one pharmacy database update",
+    "start": "database change requirement received",
+    "end": "change entered and verified",
+    "checked_by": "pharmacy users or system administrator",
+    "overlap_reasoning": "Maintaining individual pharmacy records can involve database entries, but database maintenance also includes system-level changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1812"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate and resolve or escalate a pharmacy information database problem.",
+    "time_share": 0.5,
+    "type_reasoning": "Each reported fault produces a fix or documented escalation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A single reported problem is the issue tracked through resolution or handoff.",
+    "work_item": "one pharmacy database issue investigated",
+    "start": "database problem reported or detected",
+    "end": "problem resolved or escalated with findings",
+    "checked_by": "pharmacy users or IT support",
+    "overlap_reasoning": "Record maintenance may reveal a database problem but does not itself encompass troubleshooting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "1812"
+    ]
+   }
+  ],
+  "notes": "The share of routine updates versus troubleshooting depends on local IT support."
+ }
+]

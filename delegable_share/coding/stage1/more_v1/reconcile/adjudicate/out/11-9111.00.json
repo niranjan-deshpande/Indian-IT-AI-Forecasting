@@ -1,0 +1,8 @@
+[
+  {"task_id": "48", "reasoning": "Recruitment and hiring for a vacancy are one workflow handed over as a filled post, so Y's 'one vacancy filled' is the right level; X's separate requisition step is finer than the handover unit. Both treat training as interpersonal.", "choice": "Y"},
+  {"task_id": "50", "reasoning": "Both split development from implementation. Rolling out a policy normally produces a written rollout memo or plan that department leaders act on and compliance tracks, so Y's DISCRETE implementation part fits the instructions better than X's purely interpersonal reading.", "choice": "Y"},
+  {"task_id": "51", "reasoning": "The statement names accounting explicitly; X drops it while Y codes all five fiscal activities with sensible work items. Y's coverage is complete.", "choice": "Y"},
+  {"task_id": "56", "reasoning": "Managing change in practice is largely leading staff through it in meetings and conversations, plus a written implementation plan. Y captures both; X's single DISCRETE 'plan or status update' misses the live leadership that is most of the time.", "choice": "Y"},
+  {"task_id": "58", "reasoning": "The statement covers planning, administering (including personnel administration, which produces decisions and instructions) and coordinating/training staff. X separates the documented administrative decisions from the live coordination and training; Y folds all administration into interpersonal and loses the checkable output.", "choice": "X"},
+  {"task_id": "62", "reasoning": "The statement says 'develop or expand and implement', so implementation is a distinct activity with its own output. X splits it accordingly; Y ignores implementation.", "choice": "X"}
+]

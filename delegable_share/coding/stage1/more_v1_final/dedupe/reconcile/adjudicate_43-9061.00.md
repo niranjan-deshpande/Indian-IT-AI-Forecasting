@@ -1,0 +1,64 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_43-9061.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[825a] LIVE_SERVICE — one in-person cash transaction (start: customer presents a payment or requests a disbursement; end: money is counted and exchanged and the transaction is confirmed) — from statement: Collect, count, and disburse money, do basic bookkeeping, and complete banking transactions.
+[825c] DISCRETE — one batch of bookkeeping entries recorded and reconciled (start: receipts, payment records, or other transaction information received; end: entries recorded and batch reconciled) — from statement: Collect, count, and disburse money, do basic bookkeeping, and complete banking transactions.
+[825d] DISCRETE — one electronic banking transaction submitted (start: authorized deposit, transfer, or payment instructions received; end: transaction submitted and confirmation recorded) — from statement: Collect, count, and disburse money, do basic bookkeeping, and complete banking transactions.
+[826a] LIVE_SERVICE — one customer or employee enquiry, order or complaint handled in a live contact (start: person asks a question or raises an issue; end: answer given, order taken or complaint logged and person satisfied or referred) — from statement: Communicate with customers, employees, and other individuals to answer questions, disseminate or explain information, take orders, and address complaints.
+[826b] DISCRETE — one written reply or information notice sent (start: question or need for information arises; end: message sent) — from statement: Communicate with customers, employees, and other individuals to answer questions, disseminate or explain information, take orders, and address complaints.
+[827a] LIVE_SERVICE — one incoming call answered, transferred or message taken (start: phone rings and clerk picks up; end: call transferred or message written and caller ends the call) — from statement: Answer telephones, direct calls, and take messages.
+[828a] DISCRETE — one batch of electronic records compiled and filed (start: records or transaction information received for filing; end: records organized and saved in the designated location) — from statement: Compile, copy, sort, and file records of office activities, business transactions, and other activities.
+[829a] DISCRETE — one completed business document ready to send (start: transaction details and document requirements received; end: document completed and ready for dispatch or approval) — from statement: Complete and mail bills, contracts, policies, invoices, or checks.
+[830b] DISCRETE — one electronic document or message processed using an office system (start: document, message, or processing instruction received; end: item processed and saved, sent, or routed) — from statement: Operate office machines, such as photocopiers and scanners, facsimile machines, voice mail systems, and personal computers.
+[831a] DISCRETE — one record or report with figures computed, entered and proofread (start: source data received; end: checked record or report handed over) — from statement: Compute, record, and proofread data and other information, such as records or reports.
+[832a] DISCRETE — one batch of electronic system records updated (start: changes or new information received; end: records updated and saved) — from statement: Maintain and update filing, inventory, mailing, and database systems, either manually or using a computer.
+[833b] DISCRETE — one piece of correspondence answered (start: letter or message received for response; end: response sent to the correspondent) — from statement: Open, sort, and route incoming mail, answer correspondence, and prepare outgoing mail.
+[834a] LIVE_SERVICE — one live request's records lookup completed (start: requester asks for information during the contact; end: information found or lookup result communicated to the requester) — from statement: Review files, records, and other documents to obtain information to respond to requests.
+[834b] DISCRETE — one request's records lookup completed (start: request for information received; end: relevant information supplied or lookup result recorded) — from statement: Review files, records, and other documents to obtain information to respond to requests.
+[836b] DISCRETE — one supply, material, or service order placed (start: need and authorization to order identified; end: order submitted to supplier and confirmation recorded) — from statement: Inventory and order materials, supplies, and services.
+[837a] DISCRETE — one staff work schedule prepared or revised (start: staff availability and coverage requirements received; end: schedule completed and shared for use or approval) — from statement: Complete work schedules, manage calendars, and arrange appointments.
+[837b] LIVE_SERVICE — one appointment arranged or changed during a contact (start: caller or visitor requests an appointment or change; end: calendar updated and appointment confirmed) — from statement: Complete work schedules, manage calendars, and arrange appointments.
+[837c] DISCRETE — one batch of calendar and appointment updates (start: written requests or availability changes received; end: calendar updated and necessary confirmations sent) — from statement: Complete work schedules, manage calendars, and arrange appointments.
+[838a] DISCRETE — one form or expense report prepared and submitted (start: information and receipts gathered; end: completed form or report submitted for approval or filing) — from statement: Process and prepare documents, such as business or government forms and expense reports.
+[839a] DISCRETE — one clerk's work item or batch reviewed (start: completed work or batch made available for review; end: review completed and corrections or approval communicated) — from statement: Monitor and direct the work of lower-level clerks.
+[840a] DISCRETE — one document typed, formatted and proofread (start: notes, draft or dictation received; end: finished document returned to the author) — from statement: Type, format, proofread, and edit correspondence and other documents, from notes or dictating machines, using computers or typewriters.
+[843b] DISCRETE — one meeting agenda (start: meeting scheduled; end: agenda distributed) — from statement: Prepare meeting agendas, attend meetings, and record and transcribe minutes.
+[843c] DISCRETE — one set of meeting minutes transcribed and distributed (start: meeting ends with notes taken; end: minutes distributed) — from statement: Prepare meeting agendas, attend meetings, and record and transcribe minutes.
+[844b] DISCRETE — one software or computer problem diagnosed and resolved or referred (start: problem reported or observed; end: fix verified and communicated or problem referred to support) — from statement: Troubleshoot problems involving office equipment, such as computer hardware and software.
+
+=== PAIRS ===
+PAIR 826b / 833b
+[826b] DISCRETE — one written reply or information notice sent (start: question or need for information arises; end: message sent) — from statement: Communicate with customers, employees, and other individuals to answer questions, disseminate or explain information, take orders, and address complaints.
+[833b] DISCRETE — one piece of correspondence answered (start: letter or message received for response; end: response sent to the correspondent) — from statement: Open, sort, and route incoming mail, answer correspondence, and prepare outgoing mail.
+Original flag reasoning: Both are composing and sending a written reply to a question or correspondence.

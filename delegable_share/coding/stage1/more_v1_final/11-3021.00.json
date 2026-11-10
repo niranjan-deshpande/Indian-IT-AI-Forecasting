@@ -1,0 +1,531 @@
+[
+ {
+  "task_id": "966",
+  "split_reasoning": "Backup and security administration and running the user help system are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep backup and security systems running by handling backup failures, security alerts and access issues.",
+    "time_share": 0.6,
+    "type_reasoning": "Ongoing administration that produces discrete handled issues others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each failed backup job, alert or access problem is investigated and closed on its own.",
+    "work_item": "one backup or security issue resolved and logged",
+    "start": "failed backup job, security alert or access request raised",
+    "end": "issue resolved and logged in the ops record",
+    "checked_by": "CIO, security auditor, affected users",
+    "duplicates": [],
+    "overlaps_with": [
+     "971"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Oversee the user help system by reviewing help desk performance and fixing process problems.",
+    "time_share": 0.4,
+    "type_reasoning": "The manager's output is a periodic review of the help function that leadership relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Help desk results are reviewed at a regular cadence and handed over as one review.",
+    "work_item": "one periodic help desk performance review with actions",
+    "start": "period's ticket and service data pulled",
+    "end": "review and agreed actions sent to the help desk team and management",
+    "checked_by": "CIO or IT director",
+    "duplicates": [],
+    "overlaps_with": [
+     "15198",
+     "968"
+    ]
+   }
+  ],
+  "notes": "Share between backup/security and help desk is a guess."
+ },
+ {
+  "task_id": "967",
+  "split_reasoning": "Talking with stakeholders and writing up the assessed needs are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet users, management, vendors and technicians to learn their computing needs.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in the live conversations; nothing checkable is produced by the meeting itself.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "975"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write up assessed computing needs and system requirements from the consultations.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a requirements document that project teams and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requirements are written per project or request and handed over as one document.",
+    "work_item": "one needs assessment / system requirements document",
+    "start": "consultations completed for a request",
+    "end": "requirements document issued to management and the project team",
+    "checked_by": "requesting manager, project lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "973",
+     "979"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "968",
+  "split_reasoning": "Directing the day's work is live supervision, while setting priorities and deadlines and developing standards produce written outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct the department's daily operations by guiding staff and handling day-to-day issues.",
+    "time_share": 0.5,
+    "type_reasoning": "Live supervision with nothing produced for checking.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "969"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze workflow and set work priorities and deadlines in a department work plan.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a prioritized plan with dates that staff and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are issued per planning period and handed over whole.",
+    "work_item": "one department priorities and deadlines plan",
+    "start": "workload and workflow reviewed for the period",
+    "end": "priorities and deadlines published to staff",
+    "checked_by": "IT director, department staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "978"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop a departmental standard or procedure.",
+    "time_share": 0.2,
+    "type_reasoning": "Each standard is a written document staff must follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Standards are written and approved one at a time.",
+    "work_item": "one department standard or procedure document",
+    "start": "need for a standard identified",
+    "end": "standard approved and issued to staff",
+    "checked_by": "IT director, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "976"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "969",
+  "split_reasoning": "Assigning work is a live handoff; reviewing finished work produces a checked deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign work to analysts, programmers and other staff.",
+    "time_share": 0.4,
+    "type_reasoning": "Assignment is a conversation or short directive with no separate checked output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "968"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review a staff member's finished work and send back feedback or approval.",
+    "time_share": 0.6,
+    "type_reasoning": "Each review yields an accept or rework decision the worker relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Work arrives as individual deliverables reviewed one by one.",
+    "work_item": "one piece of staff work reviewed and returned",
+    "start": "staff member submits work for review",
+    "end": "approval or revision feedback returned",
+    "checked_by": "the staff member; IT director for major items",
+    "duplicates": [],
+    "overlaps_with": [
+     "972"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "970",
+  "split_reasoning": "Single activity of self-directed learning.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep up with advances in technology.",
+    "time_share": 1.0,
+    "type_reasoning": "Reading and learning produce nothing others check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "971",
+  "split_reasoning": "One activity: building the resource plans covering security, strategy and recovery.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop an information resource plan or policy covering data security and control, strategic computing, or disaster recovery.",
+    "time_share": 1.0,
+    "type_reasoning": "Each plan is a written deliverable the organization relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans such as a DR plan or security control framework are developed and signed off one at a time.",
+    "work_item": "one plan (e.g. disaster recovery plan or data security control framework)",
+    "start": "requirement or review trigger identified",
+    "end": "plan approved and issued",
+    "checked_by": "CIO, executive management, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "966",
+     "973"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "972",
+  "split_reasoning": "One activity: reviewing and approving a change before it goes live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and approve a systems chart or program before it is implemented.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review ends in an approval or rejection others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Changes come up for implementation individually and each is signed off whole.",
+    "work_item": "one systems design or program release reviewed and approved",
+    "start": "design or program submitted for implementation approval",
+    "end": "approval granted or returned for rework",
+    "checked_by": "development team, IT director, QA/auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "969"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "973",
+  "split_reasoning": "One activity: assessing technology and recommending upgrades.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate the organization's technology use and needs and recommend improvements such as hardware and software upgrades.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a recommendation management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Evaluations are done per system or area and handed over as one recommendation.",
+    "work_item": "one technology evaluation with upgrade recommendation",
+    "start": "area or system chosen for evaluation",
+    "end": "recommendation delivered to management",
+    "checked_by": "CIO, executive management",
+    "duplicates": [],
+    "overlaps_with": [
+     "967",
+     "979"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "974",
+  "split_reasoning": "Budget control splits into periodic monitoring and approving individual expenditures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review the operational budget against actual spend each period and act on variances.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a variance review finance relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done monthly as one review.",
+    "work_item": "one monthly budget variance review",
+    "start": "period's actual spend report available",
+    "end": "variances explained and actions recorded or sent to finance",
+    "checked_by": "finance, CIO",
+    "duplicates": [],
+    "overlaps_with": [
+     "980"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Approve or decline expenditure requests.",
+    "time_share": 0.5,
+    "type_reasoning": "Each request ends in a decision others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests arrive and are decided one at a time.",
+    "work_item": "one expenditure request approved or declined",
+    "start": "request submitted",
+    "end": "decision recorded and communicated",
+    "checked_by": "finance, requester",
+    "duplicates": [],
+    "overlaps_with": [
+     "981"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "975",
+  "split_reasoning": "One activity: meetings with internal and external parties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet department heads, managers, supervisors and vendors to win cooperation and resolve problems.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live interaction; no separate output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "967"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "976",
+  "split_reasoning": "Writing policies and explaining them to others are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop organizational goals, policies and procedures for the IT function.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces written policy documents.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Policies are written and approved one at a time.",
+    "work_item": "one policy, procedure or goal statement",
+    "start": "need for policy identified",
+    "end": "policy approved and published",
+    "checked_by": "executive management, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "968"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interpret organizational goals and policies for staff and others.",
+    "time_share": 0.4,
+    "type_reasoning": "Live explanation with nothing checkable produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "977",
+  "split_reasoning": "Recruiting and hiring, training, and supervising staff are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recruit candidates and participate in hiring decisions for computer-related staff.",
+    "time_share": 0.4,
+    "type_reasoning": "Recruiting and selection for a vacancy produce a hiring recommendation or decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selection decision for a vacancy is the handoff to the hiring process.",
+    "work_item": "one staffing selection decision or recommendation",
+    "start": "vacancy and staffing requirements are identified",
+    "end": "candidate selection or hiring recommendation is communicated",
+    "checked_by": "human resources and the approving manager",
+    "overlap_reasoning": "No other listed statement specifically covers recruiting or hiring.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train computer-related staff.",
+    "time_share": 0.25,
+    "type_reasoning": "The target describes instruction whose value lies in the live interaction with staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Training can occur during supervision, but the other statements do not specifically describe staff training.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Supervise computer-related staff.",
+    "time_share": 0.35,
+    "type_reasoning": "Supervision is primarily ongoing live direction and coaching of staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision includes daily direction and may involve assigning or reviewing work, while those statements also specify their own outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "968",
+     "969"
+    ]
+   }
+  ],
+  "notes": "Preparing training materials or formal performance records would be separate outputs if required."
+ },
+ {
+  "task_id": "978",
+  "split_reasoning": "One activity: reviewing a project plan to coordinate activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a project plan and coordinate project activity accordingly.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review yields feedback or coordination decisions on a plan.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are reviewed project by project.",
+    "work_item": "one project plan reviewed with feedback",
+    "start": "project plan submitted",
+    "end": "feedback and coordination decisions issued",
+    "checked_by": "project manager, IT director",
+    "duplicates": [],
+    "overlaps_with": [
+     "980",
+     "968"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "979",
+  "split_reasoning": "One activity: judging a proposal's feasibility.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a data processing proposal for feasibility and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Each evaluation yields a feasibility finding management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proposals arrive and are evaluated individually.",
+    "work_item": "one proposal evaluated for feasibility",
+    "start": "proposal received",
+    "end": "feasibility assessment delivered",
+    "checked_by": "CIO, sponsoring manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "973",
+     "967"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "980",
+  "split_reasoning": "Writing one's own reports and reviewing others' reports are separate work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare an operational or project progress report for management.",
+    "time_share": 0.6,
+    "type_reasoning": "Each report is a deliverable management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports go out on a schedule one at a time.",
+    "work_item": "one operational or progress report",
+    "start": "reporting period data gathered",
+    "end": "report sent to management",
+    "checked_by": "CIO, executive management",
+    "duplicates": [],
+    "overlaps_with": [
+     "974"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review a report prepared by staff before it goes out.",
+    "time_share": 0.4,
+    "type_reasoning": "Review returns an approved or corrected report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each staff report is reviewed whole.",
+    "work_item": "one staff report reviewed and approved",
+    "start": "staff report submitted",
+    "end": "report approved or returned with changes",
+    "checked_by": "the author, management",
+    "duplicates": [],
+    "overlaps_with": [
+     "969"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "981",
+  "split_reasoning": "One activity: buying equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Purchase needed equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Each purchase produces an order others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Purchases are made order by order.",
+    "work_item": "one equipment purchase order",
+    "start": "approved need for equipment",
+    "end": "order placed and confirmed with vendor",
+    "checked_by": "finance, requesting team",
+    "duplicates": [],
+    "overlaps_with": [
+     "974"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "15198",
+  "split_reasoning": "Support is given both live with a user waiting and afterwards from queued tickets.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help a user with a computer problem while they are on the phone or at the desk.",
+    "time_share": 0.4,
+    "type_reasoning": "The user waits while the problem is worked.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each request is handled within one contact.",
+    "work_item": "one computer problem fixed during a live contact",
+    "start": "user describes the problem",
+    "end": "user confirms it works",
+    "checked_by": "the user",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Resolve computer problems from queued support tickets.",
+    "time_share": 0.6,
+    "type_reasoning": "Done from written tickets with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each ticket is resolved and closed.",
+    "work_item": "one support ticket resolved",
+    "start": "ticket received",
+    "end": "fix confirmed and ticket closed",
+    "checked_by": "the user, help desk lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   }
+  ],
+  "notes": "Unusual for a manager; shares are a guess."
+ }
+]

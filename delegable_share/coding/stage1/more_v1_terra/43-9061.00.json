@@ -1,0 +1,796 @@
+[
+ {
+  "task_id": "825",
+  "split_reasoning": "Handling money, maintaining books, and conducting banking transactions are distinct activities, with money handling and banking occurring both in person and at a computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect, count, or disburse money while serving a customer at the desk.",
+    "time_share": 0.2,
+    "type_reasoning": "The transaction is completed while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A single payment or disbursement is completed and confirmed during the contact.",
+    "work_item": "one in-person cash transaction",
+    "start": "customer presents a payment or requests a disbursement",
+    "end": "money is counted and exchanged and the transaction is confirmed",
+    "checked_by": "customer and cashier's supervisor",
+    "overlap_reasoning": "Customer communication can occur during the transaction, but the other statement also covers unrelated inquiries.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Count and reconcile cash or prepare cash disbursements away from customers.",
+    "time_share": 0.2,
+    "type_reasoning": "The work requires hands-on handling of money away from a live customer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Recording financial data may accompany this work, but the other statement covers data work more broadly.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Record and reconcile routine bookkeeping entries.",
+    "time_share": 0.3,
+    "type_reasoning": "Bookkeeping produces financial records that others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of entries and its reconciliation can be reviewed as a whole.",
+    "work_item": "one batch of bookkeeping entries recorded and reconciled",
+    "start": "receipts, payment records, or other transaction information received",
+    "end": "entries recorded and batch reconciled",
+    "checked_by": "bookkeeper, accountant, or supervisor",
+    "overlap_reasoning": "Financial entries share data recording and system updating with other tasks, which also cover nonfinancial records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831",
+     "832"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Complete banking transactions electronically.",
+    "time_share": 0.15,
+    "type_reasoning": "Each electronic banking transaction produces a confirmation or record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A deposit or payment submission is a distinct transaction relied on by the office.",
+    "work_item": "one electronic banking transaction submitted",
+    "start": "authorized deposit, transfer, or payment instructions received",
+    "end": "transaction submitted and confirmation recorded",
+    "checked_by": "accountant or supervisor",
+    "overlap_reasoning": "Bookkeeping records can include the transaction, but data recording is broader than banking.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831"
+    ]
+   },
+   {
+    "part_id": "e",
+    "text": "Make deposits or conduct other banking business in person.",
+    "time_share": 0.15,
+    "type_reasoning": "Taking money or documents to a bank requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "A bank trip is also an errand, although the errands statement covers many other destinations and purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "835"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the office handles cash and uses in-person banking."
+ },
+ {
+  "task_id": "826",
+  "split_reasoning": "The same communication tasks occur both in live contacts and in written requests handled without the requester waiting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer questions, explain information, take orders, or address complaints during a live contact.",
+    "time_share": 0.75,
+    "type_reasoning": "The customer, employee, or other requester participates while the clerk responds.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One inquiry, order, or complaint is handled as a unit within a call or visit.",
+    "work_item": "one live inquiry, order, or complaint handled",
+    "start": "person states a question, order, or complaint",
+    "end": "response or next step is communicated during the contact",
+    "checked_by": "requester and, when needed, supervisor",
+    "overlap_reasoning": "Calls, information lookup, appointment requests, and live payments can form part of these contacts, but the other statements also cover separate work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "825",
+     "827",
+     "834",
+     "837"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond to written questions, orders, or complaints.",
+    "time_share": 0.25,
+    "type_reasoning": "The clerk produces a response or processed request without the requester waiting in a live conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written request is answered or processed as an individual item.",
+    "work_item": "one written inquiry, order, or complaint handled",
+    "start": "written request received",
+    "end": "response sent or order processed and requester notified",
+    "checked_by": "requester and, when needed, supervisor",
+    "overlap_reasoning": "Correspondence and information lookup may be involved, although those tasks also cover other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "833",
+     "834"
+    ]
+   }
+  ],
+  "notes": "Channel shares vary by office."
+ },
+ {
+  "task_id": "827",
+  "split_reasoning": "Answering, routing, and taking a message are alternative outcomes of handling an incoming telephone call.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an incoming call and direct it or take a message.",
+    "time_share": 1.0,
+    "type_reasoning": "The caller is on the line while the call is routed or the message is taken.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each incoming call is handled and either transferred or concluded with a message.",
+    "work_item": "one incoming call answered and routed or a message taken",
+    "start": "incoming call rings",
+    "end": "call transferred or message taken and call ended",
+    "checked_by": "caller and intended recipient",
+    "overlap_reasoning": "Some calls involve answering questions or delivering a message, but those statements also cover other contacts and delivery methods.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826",
+     "835"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "828",
+  "split_reasoning": "Compiling and filing electronic records differs from physically copying, sorting, and filing paper records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile, copy, sort, and file electronic office records.",
+    "time_share": 0.55,
+    "type_reasoning": "The work produces an organized electronic record or batch that others can retrieve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A received batch is compiled and filed as a manageable unit.",
+    "work_item": "one batch of electronic records compiled and filed",
+    "start": "records or transaction information received for filing",
+    "end": "records organized and saved in the designated location",
+    "checked_by": "supervisor or staff retrieving the records",
+    "overlap_reasoning": "Updating filing systems and recording data can include this work, but those statements also cover other system maintenance and data processing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831",
+     "832"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Copy, sort, and file paper office records.",
+    "time_share": 0.45,
+    "type_reasoning": "Handling, sorting, and placing paper records requires physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Paper filing and photocopying overlap with system maintenance and machine operation, each of which also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "830",
+     "832"
+    ]
+   }
+  ],
+  "notes": "The paper-to-electronic share varies by office."
+ },
+ {
+  "task_id": "829",
+  "split_reasoning": "Completing business documents and physically preparing them for mailing are different computer-based and hands-on activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete bills, contracts, policies, invoices, or checks for sending.",
+    "time_share": 0.7,
+    "type_reasoning": "Each completed document is a distinct item used by its recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed bill, contract, policy, invoice, or check is the item sent or approved.",
+    "work_item": "one completed business document ready to send",
+    "start": "transaction details and document requirements received",
+    "end": "document completed and ready for dispatch or approval",
+    "checked_by": "recipient and authorizing staff",
+    "overlap_reasoning": "Document preparation and data entry include some of the same work but also cover other documents and records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831",
+     "838",
+     "840"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare completed bills, contracts, policies, invoices, or checks for postal mailing.",
+    "time_share": 0.3,
+    "type_reasoning": "Printing, enclosing, addressing, and dispatching paper mail require hands-on handling.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Preparing outgoing mail covers the same mailing steps but also includes other correspondence.",
+    "duplicates": [],
+    "overlaps_with": [
+     "833"
+    ]
+   }
+  ],
+  "notes": "Some offices send these documents electronically rather than by post."
+ },
+ {
+  "task_id": "830",
+  "split_reasoning": "Operating physical office machines and using computer or voicemail systems involve different work settings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate photocopiers, scanners, or fax machines to process office documents.",
+    "time_share": 0.55,
+    "type_reasoning": "Loading originals, operating machines, and handling output are hands-on tasks.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Copying and preparing mail may use these machines, while those statements also cover filing and mail handling.",
+    "duplicates": [],
+    "overlaps_with": [
+     "828",
+     "833"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Use a computer or voicemail system to process an assigned office item.",
+    "time_share": 0.45,
+    "type_reasoning": "The system is used to produce or route an identifiable electronic item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The processed document or message is the item handed to another person or system.",
+    "work_item": "one electronic document or message processed using an office system",
+    "start": "document, message, or processing instruction received",
+    "end": "item processed and saved, sent, or routed",
+    "checked_by": "recipient or supervisor",
+    "overlap_reasoning": "Computer and voicemail operation can support several other tasks, but the machine-operation statement is broader than any one of them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "827",
+     "831",
+     "832",
+     "840"
+    ]
+   }
+  ],
+  "notes": "Machine operation is described broadly; the actual output depends on the assignment."
+ },
+ {
+  "task_id": "831",
+  "split_reasoning": "Computing and recording information and proofreading completed data are distinct outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute and record data for office records or reports.",
+    "time_share": 0.65,
+    "type_reasoning": "The work produces a completed data record or batch.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of related entries is recorded and handed on or made available as a unit.",
+    "work_item": "one batch of data computed and recorded",
+    "start": "source data or transaction information received",
+    "end": "calculations and entries completed in the record or report",
+    "checked_by": "supervisor or downstream record user",
+    "overlap_reasoning": "Bookkeeping, filing, system updates, and document preparation can all include data recording, but each also includes other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "825",
+     "828",
+     "829",
+     "832",
+     "838"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Proofread data and information in records or reports.",
+    "time_share": 0.35,
+    "type_reasoning": "Each review produces a checked or corrected record or report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record or report is reviewed and returned or marked complete as a whole.",
+    "work_item": "one record or report proofread for data errors",
+    "start": "completed record or report received for review",
+    "end": "errors corrected or marked and review completed",
+    "checked_by": "document owner or supervisor",
+    "overlap_reasoning": "Document proofreading also covers checks of correspondence and other text, not only data.",
+    "duplicates": [],
+    "overlaps_with": [
+     "840"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "832",
+  "split_reasoning": "Electronic system updates and manual maintenance of physical files or lists are performed in different ways.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update electronic filing, inventory, mailing, or database records.",
+    "time_share": 0.75,
+    "type_reasoning": "Each update produces an amended system record that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Related changes are commonly processed as a batch of system updates.",
+    "work_item": "one batch of electronic system records updated",
+    "start": "changes or new information received",
+    "end": "records updated and saved",
+    "checked_by": "system users or supervisor",
+    "overlap_reasoning": "Filing, data entry, and inventory work may generate these updates, but each statement also covers other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "828",
+     "831",
+     "836"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain and update paper filing systems or manual inventory and mailing lists.",
+    "time_share": 0.25,
+    "type_reasoning": "Updating and organizing physical files and lists requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Sorting and filing paper records and counting inventory can be part of system maintenance but are not its whole scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "828",
+     "836",
+     "841"
+    ]
+   }
+  ],
+  "notes": "Manual systems may be uncommon in some offices."
+ },
+ {
+  "task_id": "833",
+  "split_reasoning": "Handling incoming and outgoing physical mail is distinct from writing responses to correspondence.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Open, sort, and route incoming physical mail.",
+    "time_share": 0.35,
+    "type_reasoning": "Opening and distributing physical mail requires hands-on handling.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Routing mail can include delivering messages or documents, while errands and message delivery extend beyond mail.",
+    "duplicates": [],
+    "overlaps_with": [
+     "835"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer incoming correspondence.",
+    "time_share": 0.4,
+    "type_reasoning": "The clerk produces a written response for the sender.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each incoming letter or message is answered and sent as a unit.",
+    "work_item": "one piece of correspondence answered",
+    "start": "letter or message received for response",
+    "end": "response sent to the correspondent",
+    "checked_by": "correspondent or supervisor",
+    "overlap_reasoning": "Written inquiries and document typing can be part of answering correspondence, but those tasks cover other requests and documents too.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826",
+     "840"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare outgoing physical mail for dispatch.",
+    "time_share": 0.25,
+    "type_reasoning": "Enclosing, addressing, and dispatching paper mail requires physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Mailing completed business documents is a subset of outgoing mail preparation but includes document completion as well.",
+    "duplicates": [],
+    "overlaps_with": [
+     "829"
+    ]
+   }
+  ],
+  "notes": "Electronic correspondence is included in the response part; physical mail shares vary by office."
+ },
+ {
+  "task_id": "834",
+  "split_reasoning": "Records are consulted both while a requester waits and later in response to written or queued requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review records for information while a requester waits on the phone or at the desk.",
+    "time_share": 0.45,
+    "type_reasoning": "The lookup occurs inside a live service contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The lookup for one request is completed and its result communicated during the contact.",
+    "work_item": "one live request's records lookup completed",
+    "start": "requester asks for information during the contact",
+    "end": "information found or lookup result communicated to the requester",
+    "checked_by": "requester",
+    "overlap_reasoning": "Answering live questions includes some such lookups, but also covers answers that do not require reviewing records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review files and records to obtain information for a queued or written request.",
+    "time_share": 0.55,
+    "type_reasoning": "The lookup is completed without a requester waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The information gathered for one request is handed to the requester or responding colleague.",
+    "work_item": "one request's records lookup completed",
+    "start": "request for information received",
+    "end": "relevant information supplied or lookup result recorded",
+    "checked_by": "requester or colleague preparing the response",
+    "overlap_reasoning": "Written responses can use the lookup, but answering correspondence also includes composing and sending the response.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826",
+     "833"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether requests usually arrive live or in writing."
+ },
+ {
+  "task_id": "835",
+  "split_reasoning": "Delivering messages and running other errands are different purposes but both require movement away from the workstation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver messages in person to their intended recipients.",
+    "time_share": 0.4,
+    "type_reasoning": "The work requires physically carrying or delivering a message.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Messages may originate from telephone calls or incoming mail, but those statements also cover receiving and routing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "827",
+     "833"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Run office errands, such as carrying documents or making a trip to a bank or supplier.",
+    "time_share": 0.6,
+    "type_reasoning": "Errands require travel or hands-on work away from the workstation.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Some banking and mail delivery work involves errands, but each statement also covers other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "825",
+     "833"
+    ]
+   }
+  ],
+  "notes": "Electronic message forwarding is not assumed to be the main meaning of delivering messages here."
+ },
+ {
+  "task_id": "836",
+  "split_reasoning": "Physically checking stock and placing orders are distinct activities, one hands-on and one generally computer-based.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inventory office materials and supplies.",
+    "time_share": 0.45,
+    "type_reasoning": "Checking stock typically requires physically counting or inspecting supplies.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Physical counts can update an inventory system and involve counting materials, but those statements also cover other items and updates.",
+    "duplicates": [],
+    "overlaps_with": [
+     "832",
+     "841"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Order office materials, supplies, or services.",
+    "time_share": 0.55,
+    "type_reasoning": "An order produces a distinct request or purchase order for a supplier.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A purchase order or equivalent request is submitted and tracked as a unit.",
+    "work_item": "one supply, material, or service order placed",
+    "start": "need and authorization to order identified",
+    "end": "order submitted to supplier and confirmation recorded",
+    "checked_by": "supplier and approving manager",
+    "overlap_reasoning": "Preparing an order can involve document processing and inventory-system updates, but those statements also cover other records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "832",
+     "838"
+    ]
+   }
+  ],
+  "notes": "Some orders are placed by telephone; the share assumes written or electronic ordering is predominant."
+ },
+ {
+  "task_id": "837",
+  "split_reasoning": "Preparing work schedules differs from calendar and appointment changes, which occur both during live contacts and from later written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or revise staff work schedules.",
+    "time_share": 0.35,
+    "type_reasoning": "A schedule is a distinct document relied on by staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a work period is prepared and distributed as a whole.",
+    "work_item": "one staff work schedule prepared or revised",
+    "start": "staff availability and coverage requirements received",
+    "end": "schedule completed and shared for use or approval",
+    "checked_by": "supervisor and scheduled staff",
+    "overlap_reasoning": "Directing clerks may use a schedule, but supervision also includes ongoing guidance and monitoring.",
+    "duplicates": [],
+    "overlaps_with": [
+     "839"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Arrange or change an appointment while a caller or visitor waits.",
+    "time_share": 0.35,
+    "type_reasoning": "The booking is made during a live service contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One appointment is entered or changed and confirmed during the contact.",
+    "work_item": "one appointment arranged or changed during a contact",
+    "start": "caller or visitor requests an appointment or change",
+    "end": "calendar updated and appointment confirmed",
+    "checked_by": "requester and calendar owner",
+    "overlap_reasoning": "Appointment contacts can include answering questions, but the communication task also covers unrelated inquiries and complaints.",
+    "duplicates": [],
+    "overlaps_with": [
+     "826"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Update calendars and arrange appointments from written requests or staff changes.",
+    "time_share": 0.3,
+    "type_reasoning": "Calendar updates are completed without a requester waiting live.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of changes can be processed and confirmed together.",
+    "work_item": "one batch of calendar and appointment updates",
+    "start": "written requests or availability changes received",
+    "end": "calendar updated and necessary confirmations sent",
+    "checked_by": "calendar owner and appointment requesters",
+    "overlap_reasoning": "A written appointment request can be correspondence, but correspondence also includes many other subjects.",
+    "duplicates": [],
+    "overlaps_with": [
+     "833"
+    ]
+   }
+  ],
+  "notes": "The relative shares depend on the office's scheduling arrangements."
+ },
+ {
+  "task_id": "838",
+  "split_reasoning": "Business forms, government forms, and expense reports are alternative documents processed through the same general preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and process a business or government form or an expense report.",
+    "time_share": 1.0,
+    "type_reasoning": "Each prepared document is submitted or passed to another person for use or approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual form or expense report is the item reviewed and processed.",
+    "work_item": "one form or expense report prepared and submitted",
+    "start": "source information and document requirements received",
+    "end": "document completed and submitted or routed for approval",
+    "checked_by": "approver, receiving agency, or finance staff",
+    "overlap_reasoning": "Some business documents, purchase orders, and data entries are also covered by other tasks, but each statement extends beyond this document-processing activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "829",
+     "831",
+     "836",
+     "840"
+    ]
+   }
+  ],
+  "notes": "Complexity varies considerably by document."
+ },
+ {
+  "task_id": "839",
+  "split_reasoning": "Monitoring completed clerical work and directing clerks through live supervision are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a lower-level clerk's work for completion or problems.",
+    "time_share": 0.45,
+    "type_reasoning": "The review produces a checked item or feedback the clerk can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One submitted work item or batch can be reviewed and returned as a unit.",
+    "work_item": "one clerk's work item or batch reviewed",
+    "start": "completed work or batch made available for review",
+    "end": "review completed and corrections or approval communicated",
+    "checked_by": "lower-level clerk and supervising manager",
+    "overlap_reasoning": "Reviewing data or documents can include proofreading, but supervision also covers other checks and the proofreading tasks are not limited to subordinates.",
+    "duplicates": [],
+    "overlaps_with": [
+     "831",
+     "840"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct and guide lower-level clerks in their work.",
+    "time_share": 0.55,
+    "type_reasoning": "The value is in live supervision and guidance rather than a separate checkable deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Directing work may involve schedules and instruction, but those statements cover preparing schedules and formal training separately.",
+    "duplicates": [],
+    "overlaps_with": [
+     "837",
+     "842"
+    ]
+   }
+  ],
+  "notes": "The proportion of formal review versus live direction varies by office."
+ },
+ {
+  "task_id": "840",
+  "split_reasoning": "Typing, formatting, proofreading, and editing are integrated steps in preparing a document from notes or dictation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Type, format, proofread, and edit correspondence or another document from notes or dictation.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a finished document for an author or recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed document is returned or sent as a whole.",
+    "work_item": "one document typed, formatted, and checked",
+    "start": "notes, dictation, or draft received",
+    "end": "formatted and proofread document returned or sent",
+    "checked_by": "author, supervisor, or recipient",
+    "overlap_reasoning": "Business document preparation, correspondence, data proofreading, and supervisory review can share document-editing steps but each has a broader or different purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "829",
+     "831",
+     "833",
+     "838",
+     "839",
+     "843"
+    ]
+   }
+  ],
+  "notes": "Transcribing meeting minutes overlaps when the source is meeting notes or a recording."
+ },
+ {
+  "task_id": "841",
+  "split_reasoning": "Counting, weighing, measuring, and organizing are alternative hands-on ways of handling materials for a given assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count, weigh, measure, or organize materials as required.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires physically handling materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Stock inventories can involve counting and organizing materials, while this task also covers materials handled for other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "832",
+     "836"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "842",
+  "split_reasoning": "Training staff in different work activities is one live instructional activity; the subjects are alternatives rather than separate deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train staff to perform office work, such as using computer applications.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live instruction and practice with the trainee.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervising clerks may include informal instruction, but supervision also covers directing and reviewing their work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "839"
+    ]
+   }
+  ],
+  "notes": "Preparation of standalone training materials is not specified."
+ },
+ {
+  "task_id": "843",
+  "split_reasoning": "Preparing agendas, attending meetings, and producing minutes are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and distribute a meeting agenda.",
+    "time_share": 0.3,
+    "type_reasoning": "The agenda is a distinct document used by meeting participants.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One agenda is prepared for one meeting and distributed as a whole.",
+    "work_item": "one meeting agenda prepared",
+    "start": "meeting purpose and proposed agenda items received",
+    "end": "agenda completed and distributed or submitted for approval",
+    "checked_by": "meeting organizer and participants",
+    "overlap_reasoning": "Typing and formatting an agenda can overlap with general document preparation, which covers many other documents.",
+    "duplicates": [],
+    "overlaps_with": [
+     "840"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Attend the meeting to follow its proceedings.",
+    "time_share": 0.3,
+    "type_reasoning": "Attendance itself is live participation; the separately coded minutes are its checkable output.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes meeting attendance itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Record and transcribe meeting minutes.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces minutes that participants use as the meeting record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Minutes for one meeting are compiled and circulated or submitted for approval as a whole.",
+    "work_item": "one set of meeting minutes",
+    "start": "meeting proceedings begin and notes or recording are captured",
+    "end": "minutes transcribed and circulated or submitted for approval",
+    "checked_by": "meeting chair and participants",
+    "overlap_reasoning": "Transcribing and editing minutes shares work with general document typing, but that statement covers other documents too.",
+    "duplicates": [],
+    "overlaps_with": [
+     "840"
+    ]
+   }
+  ],
+  "notes": "Time spent recording notes during the meeting is included in the minutes item, not in attendance."
+ },
+ {
+  "task_id": "844",
+  "split_reasoning": "Troubleshooting can require hands-on inspection or adjustment of equipment as well as computer-based diagnosis and configuration.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect and troubleshoot physical office equipment and connections.",
+    "time_share": 0.4,
+    "type_reasoning": "Checking equipment, cables, paper paths, or consumables requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Machine operation may reveal or involve minor equipment problems, but routine operation is broader than troubleshooting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "830"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Diagnose and resolve software or computer configuration problems.",
+    "time_share": 0.6,
+    "type_reasoning": "Each problem produces a documented or communicated resolution or referral.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One reported problem is diagnosed and resolved or referred as a unit.",
+    "work_item": "one software or computer problem diagnosed and resolved or referred",
+    "start": "problem reported or observed",
+    "end": "fix verified and communicated or problem referred to support",
+    "checked_by": "affected user or technical support",
+    "overlap_reasoning": "Using office systems can involve troubleshooting, but ordinary machine operation also covers routine processing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "830"
+    ]
+   }
+  ],
+  "notes": "Some problems involve both physical and computer-based work; shares depend on the equipment supported."
+ }
+]

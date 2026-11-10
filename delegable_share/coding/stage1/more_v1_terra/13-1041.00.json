@@ -1,0 +1,365 @@
+[
+ {
+  "task_id": "21446",
+  "split_reasoning": "Warnings may be given directly to a violator during a live contact or sent afterward as written notices.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Warn a violator directly about an infraction or potential penalty.",
+    "time_share": 0.5,
+    "type_reasoning": "The warning is delivered through a live interaction with the person concerned.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Reporting a violation to an agency is a separate action from warning the violator.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Send a written warning about an infraction or potential penalty.",
+    "time_share": 0.5,
+    "type_reasoning": "Each written warning is a document the recipient can rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A warning notice is issued for a particular violation or set of related violations.",
+    "work_item": "one written warning notice",
+    "start": "violation identified and details available for notification",
+    "end": "warning notice sent to the violator",
+    "checked_by": "the recipient and compliance supervisor",
+    "overlap_reasoning": "A warning to the violator is distinct from a report to an agency or a licensing-decision letter.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The balance between direct and written warnings depends on the enforcement program."
+ },
+ {
+  "task_id": "21447",
+  "split_reasoning": "Applications, records, and other documents are alternative inputs to the same eligibility or liability evaluation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate submitted applications and other records to gather information about an eligibility or liability issue.",
+    "time_share": 1.0,
+    "type_reasoning": "Each evaluation produces findings used in a particular case.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The case-level evaluation, rather than each document read, is the unit passed to the decision-maker.",
+    "work_item": "one case's application or records evaluated",
+    "start": "application or case records received for review",
+    "end": "relevant eligibility or liability findings recorded or passed to the decision-maker",
+    "checked_by": "licensing or compliance decision-maker",
+    "overlap_reasoning": "Test results and inspection records can be inputs to this evaluation, but scoring tests and visiting establishments are separate activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21455",
+     "21456"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21448",
+  "split_reasoning": "Regulatory advice is provided both during live contacts and in responses prepared afterward or from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a licensee or other person about licensing, permit, or passport regulations during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The officer provides guidance while the person seeking it is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One inquiry is addressed within a call or visit.",
+    "work_item": "one live regulatory advice inquiry handled",
+    "start": "person asks about a licensing, permit, or passport requirement",
+    "end": "guidance is given during the contact",
+    "checked_by": "the person seeking guidance",
+    "overlap_reasoning": "Gathering facts for a licensing decision and communicating a decision are distinct from advising on regulations.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare written regulatory guidance for a licensee or other individual or group.",
+    "time_share": 0.4,
+    "type_reasoning": "A written response is a distinct deliverable provided without the recipient waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complete response to an inquiry is the item sent to the requester.",
+    "work_item": "one written regulatory advice response",
+    "start": "written inquiry or request for follow-up guidance received",
+    "end": "guidance sent to the requester",
+    "checked_by": "the requester and, for sensitive advice, a supervisor",
+    "overlap_reasoning": "A decision or appeals letter may explain regulations, but it also communicates a specific decision or process.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21457"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the program's use of phone, counter, and written inquiries."
+ },
+ {
+  "task_id": "21449",
+  "split_reasoning": "Activities, evaluations, recommendations, and decisions are subjects of the same report-preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a report of compliance activities, evaluations, recommendations, or decisions.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a distinct document used by colleagues or decision-makers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed report, whether about a case or a reporting period, is the item submitted.",
+    "work_item": "one compliance report",
+    "start": "case findings or activity information assembled for reporting",
+    "end": "report completed and submitted",
+    "checked_by": "compliance supervisor or receiving agency",
+    "overlap_reasoning": "A report of violations to an agency can also be a report of activities or findings, although each statement covers other reports.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21450"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21450",
+  "split_reasoning": "Reporting different law or regulation violations to different authorities is one activity with the same kind of output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Report a law or regulation violation to the appropriate board or agency.",
+    "time_share": 1.0,
+    "type_reasoning": "Each referral or report provides a distinct account for an authority to act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report concerning a violation or related set of violations is sent as a whole to the receiving authority.",
+    "work_item": "one violation report submitted to a board or agency",
+    "start": "violation identified and information available for reporting",
+    "end": "report or referral submitted to the appropriate authority",
+    "checked_by": "receiving board or agency and compliance supervisor",
+    "overlap_reasoning": "Violation reports can also be activity or evaluation reports, but neither statement is limited to the other's scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21449"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21451",
+  "split_reasoning": "Conferring with and interviewing different sources are alternative ways to obtain or clarify facts for licensing decisions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with or interview an official, specialist, or applicant to clarify facts relevant to a licensing decision.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the live fact-gathering interaction rather than a separately specified written product.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Evaluating documents and advising people about regulations are different activities from interviewing sources for facts.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Any subsequent written record or report is not separately specified in this target."
+ },
+ {
+  "task_id": "21452",
+  "split_reasoning": "Licenses can be issued while a qualified applicant waits or processed afterward in a back-office queue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue a license to a qualified individual during a live contact.",
+    "time_share": 0.4,
+    "type_reasoning": "The license is issued while the applicant is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each qualifying applicant receives a license as a completed transaction.",
+    "work_item": "one license issued during an applicant contact",
+    "start": "applicant's eligibility is established during the contact",
+    "end": "license is issued and issuance confirmed to the applicant",
+    "checked_by": "the applicant and licensing authority",
+    "overlap_reasoning": "Evaluating eligibility, collecting fees, and writing decision correspondence are separate steps in the licensing workflow.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Issue a license to a qualified individual through back-office processing.",
+    "time_share": 0.6,
+    "type_reasoning": "The license is processed and issued without the applicant waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The issued license is the individual authorization delivered to the applicant.",
+    "work_item": "one license issued through back-office processing",
+    "start": "approved applicant's case is ready for issuance",
+    "end": "license is issued and sent or made available to the applicant",
+    "checked_by": "the applicant and licensing authority",
+    "overlap_reasoning": "Eligibility evaluation and decision correspondence are related but have different outputs.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live and back-office shares vary by license type and issuing system."
+ },
+ {
+  "task_id": "21453",
+  "split_reasoning": "License fees are collected both during live applicant contacts and from payments processed afterward or received by mail.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect a license fee while an applicant is present or on the line.",
+    "time_share": 0.6,
+    "type_reasoning": "The payment transaction occurs while the applicant waits in a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One fee payment is accepted and confirmed as a transaction.",
+    "work_item": "one license fee payment collected during a live contact",
+    "start": "fee is due and the applicant offers payment",
+    "end": "payment is recorded and receipt or confirmation provided",
+    "checked_by": "the applicant and licensing agency cashier or finance staff",
+    "overlap_reasoning": "Issuing a license and collecting its fee are separate workflow steps.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Process a license fee payment received outside a live applicant contact.",
+    "time_share": 0.4,
+    "type_reasoning": "A mailed or otherwise queued payment is recorded without the applicant waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each payment is applied to an applicant's licensing account as a completed transaction.",
+    "work_item": "one queued license fee payment processed",
+    "start": "payment and identifying information received for processing",
+    "end": "payment recorded against the applicant's account and receipt issued as required",
+    "checked_by": "licensing agency finance staff and the applicant",
+    "overlap_reasoning": "The payment transaction is distinct from the issuance of the license.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Payment channels and the extent to which officers themselves process fees vary by agency."
+ },
+ {
+  "task_id": "21454",
+  "split_reasoning": "Oral, written, road, and flight tests are alternative formats for administering a licensing test; scoring and rating are covered separately.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Administer a licensing test to an applicant.",
+    "time_share": 1.0,
+    "type_reasoning": "The officer conducts or proctors the test while the applicant participates in person or another live setting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One applicant's test session is administered as a whole and its responses or test record are handed on for scoring.",
+    "work_item": "one licensing test session administered",
+    "start": "applicant presents for the scheduled test",
+    "end": "test session ends and responses or test record are collected",
+    "checked_by": "the applicant and the officer or team responsible for scoring",
+    "overlap_reasoning": "Observing an applicant and scoring performance can occur during administration, but rating ability is a separate output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21456"
+    ]
+   }
+  ],
+  "notes": "Some written tests may be delivered through automated systems rather than directly administered by an officer."
+ },
+ {
+  "task_id": "21455",
+  "split_reasoning": "Checking displayed permits and checking licensing standards are both components of an on-site establishment inspection.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Visit an establishment to verify displayed licenses or permits and compliance with licensing standards.",
+    "time_share": 1.0,
+    "type_reasoning": "The inspection requires the officer to visit and examine conditions at the establishment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Inspecting licensing records on site can overlap with evaluating records, but the visit also examines physical compliance conditions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21447"
+    ]
+   }
+  ],
+  "notes": "Preparing an inspection report is covered separately by the reporting statement."
+ },
+ {
+  "task_id": "21456",
+  "split_reasoning": "Scoring tests and observing practical equipment operation are different activities, and test scoring occurs both during live contacts and afterward.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Score a completed licensing test after the applicant's live session.",
+    "time_share": 0.45,
+    "type_reasoning": "The officer produces a score or rating from completed test material without the applicant waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One applicant's completed test is scored and passed on for the licensing decision.",
+    "work_item": "one completed licensing test scored",
+    "start": "completed test or response record received for scoring",
+    "end": "score or rating recorded and made available to the licensing decision-maker",
+    "checked_by": "licensing decision-maker and applicant",
+    "overlap_reasoning": "Test administration and case evaluation use or produce related information but are not identical to scoring.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21447",
+     "21454"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Score an applicant's test during a live testing contact.",
+    "time_share": 0.2,
+    "type_reasoning": "The score or rating is determined while the applicant remains in the live session.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One applicant's test is scored and the result is recorded or communicated during the session.",
+    "work_item": "one licensing test scored during the applicant's session",
+    "start": "applicant completes the test or a scorable portion during the session",
+    "end": "score or rating recorded and communicated as appropriate",
+    "checked_by": "the applicant and licensing decision-maker",
+    "overlap_reasoning": "Administering the test can overlap with live scoring, while the broader case evaluation may use the resulting score.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21447",
+     "21454"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Observe an applicant operating equipment and rate the applicant's ability.",
+    "time_share": 0.35,
+    "type_reasoning": "The officer assesses performance while the applicant is participating in a live practical test.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The rating for one applicant's practical performance is the assessment passed to the licensing process.",
+    "work_item": "one applicant's practical equipment operation rated",
+    "start": "applicant begins the observed equipment-operation test",
+    "end": "performance rating is recorded and communicated as appropriate",
+    "checked_by": "the applicant and licensing decision-maker",
+    "overlap_reasoning": "Observation can be part of administering a practical test, and the resulting rating may be used in evaluating the application.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21447",
+     "21454"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the mix of written and practical tests and whether scores are finalized during the session."
+ },
+ {
+  "task_id": "21457",
+  "split_reasoning": "Licensing decisions and appeals processes are alternative subjects of correspondence to concerned parties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare correspondence informing a concerned party of a licensing decision or appeals process.",
+    "time_share": 1.0,
+    "type_reasoning": "Each letter or other written communication is a distinct deliverable sent to a recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complete case-specific communication is the item sent and retained in the licensing record.",
+    "work_item": "one licensing decision or appeals communication",
+    "start": "decision or appeals information is available for communication",
+    "end": "correspondence is completed and sent to the concerned party",
+    "checked_by": "the recipient and licensing supervisor",
+    "overlap_reasoning": "A decision or appeals communication may also give regulatory guidance, but each statement covers communications outside the other's scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "21448"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

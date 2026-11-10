@@ -1,0 +1,596 @@
+[
+ {
+  "task_id": "694",
+  "split_reasoning": "One activity done at the sales floor with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet a customer and find out what they want or need.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in a live conversation with the customer present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each customer is greeted and questioned in one contact.",
+    "work_item": "one customer greeted and needs established",
+    "start": "customer enters or approaches",
+    "end": "customer's need identified and help begins",
+    "checked_by": "the customer; floor manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "701"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "695",
+  "split_reasoning": "Handling cash and deposit materials is physical work, while reconciling and recording register totals is a separate desk task.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and organize register contents and prepare or make deposits at opening or closing.",
+    "time_share": 0.7,
+    "type_reasoning": "Counting cash, sorting slips and handling deposits require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Handling register contents is distinct from processing individual customer payments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Reconcile register totals and record the opening or closing balance.",
+    "time_share": 0.3,
+    "type_reasoning": "A completed register reconciliation is a record used by store management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The register's opening or closing reconciliation is reviewed as one record.",
+    "work_item": "one register opening or closing reconciliation",
+    "start": "register counts and transaction totals are available",
+    "end": "balance and any discrepancy are recorded",
+    "checked_by": "store manager or cash office",
+    "overlap_reasoning": "The reconciliation is one kind of sales-related record, although sales records also include other information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "698"
+    ]
+   }
+  ],
+  "notes": "The division between physical handling and recording varies by store."
+ },
+ {
+  "task_id": "696",
+  "split_reasoning": "One activity: keeping up with store information.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep up to date on current sales, promotions and store policies on payment, exchanges and security.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces nothing anyone else checks.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "697",
+  "split_reasoning": "One activity at the register with the customer waiting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Ring up a customer's purchase, work out the total and take cash or card payment.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is waiting while the sale is rung up and paid.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each purchase is finished within one customer contact.",
+    "work_item": "one purchase totalled and paid at the register",
+    "start": "customer ready to pay",
+    "end": "payment accepted and receipt given",
+    "checked_by": "the customer; end-of-day register count",
+    "duplicates": [],
+    "overlaps_with": [
+     "704",
+     "709"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "698",
+  "split_reasoning": "One activity: keeping sales records, normally done after or between sales.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update the store's sales records, such as sales logs, special order logs and commission records.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in the back office with no customer waiting; the records are relied on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Records are updated in batches and checked per shift or day.",
+    "work_item": "one shift's sales records updated",
+    "start": "sales completed during the shift",
+    "end": "records entered and filed",
+    "checked_by": "store manager; accounting",
+    "duplicates": [],
+    "overlaps_with": [
+     "695",
+     "704",
+     "697"
+    ]
+   }
+  ],
+  "notes": "Some data entry happens automatically at the register."
+ },
+ {
+  "task_id": "699",
+  "split_reasoning": "Mostly continuous watching on the floor, with occasional incidents that need handling and reporting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stay alert on the sales floor for security risks and theft.",
+    "time_share": 0.85,
+    "type_reasoning": "Continuous vigilance produces nothing anyone checks.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Handle a security incident or suspected theft and report it to management or security.",
+    "time_share": 0.15,
+    "type_reasoning": "Each incident ends in a report or handover that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Incidents are rare and each is reported once.",
+    "work_item": "one security incident handled and reported",
+    "start": "risk or theft noticed",
+    "end": "incident reported to manager or security",
+    "checked_by": "store manager; loss prevention",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Share of incidents is a rough guess."
+ },
+ {
+  "task_id": "700",
+  "split_reasoning": "One activity: helping a customer choose and find merchandise, done with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend merchandise to a customer, help them choose and locate or obtain the item.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in conversation while the customer is shopping.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each customer's selection help is a single contact.",
+    "work_item": "one customer helped to choose and find merchandise",
+    "start": "customer's need identified",
+    "end": "customer picks an item or leaves",
+    "checked_by": "the customer; floor manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "694",
+     "701",
+     "702"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "701",
+  "split_reasoning": "One activity: answering customers' questions, in person or by phone, while they wait.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question about the store or its merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is waiting for the answer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered within one contact.",
+    "work_item": "one customer question answered",
+    "start": "customer asks",
+    "end": "customer has the answer",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "702"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "702",
+  "split_reasoning": "One activity: explaining merchandise to a customer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Describe merchandise and explain its use, operation and care to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Done live with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each explanation is within a single customer contact.",
+    "work_item": "one product explained to a customer",
+    "start": "customer shows interest in an item",
+    "end": "customer understands the product",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "706",
+     "701",
+     "700"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "703",
+  "split_reasoning": "Ticketing, arranging and displaying are all hands-on merchandising of the same stock; treated as one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Put price tickets on merchandise and arrange and display it on the floor.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work with stock away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "712"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "704",
+  "split_reasoning": "One activity: writing up a sale, normally at the desk with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a sales slip or sales contract for a customer's purchase.",
+    "time_share": 1.0,
+    "type_reasoning": "Written up while the customer is at the desk and signs or confirms.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each slip or contract is completed during one sale.",
+    "work_item": "one sales slip or contract prepared with the customer",
+    "start": "customer decides to buy",
+    "end": "slip or contract signed or handed over",
+    "checked_by": "the customer; store manager or finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "698",
+     "713"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "705",
+  "split_reasoning": "Special orders and calling other stores are alternative ways of getting a customer an item not on the floor.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Place a special order or call another store to find an item the customer wants.",
+    "time_share": 1.0,
+    "type_reasoning": "Usually done while the customer waits at the counter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each request is placed or located within the visit.",
+    "work_item": "one special order placed or item located for a customer",
+    "start": "customer wants an item not in stock",
+    "end": "order placed or item located and customer told",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   }
+  ],
+  "notes": "Follow-up calls after the customer leaves are possible but not split out."
+ },
+ {
+  "task_id": "706",
+  "split_reasoning": "One activity done live.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Demonstrate how a product works to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Done live with the customer watching.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each demonstration is part of one customer contact.",
+    "work_item": "one product demonstration",
+    "start": "customer asks to see or the salesperson offers a demonstration",
+    "end": "demonstration finished and customer's questions answered",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "702"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "707",
+  "split_reasoning": "One activity: cleaning.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean shelves, counters and tables.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "708",
+  "split_reasoning": "Returns and exchanges are the same activity handled at the counter with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take back merchandise from a customer and refund or exchange it.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is waiting while it is processed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each return or exchange is completed in one visit.",
+    "work_item": "one return or exchange processed",
+    "start": "customer presents item to return or exchange",
+    "end": "refund or replacement given and receipt issued",
+    "checked_by": "the customer; store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "697"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "709",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bag or package purchases and wrap gifts.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on packing away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "697"
+    ]
+   }
+  ],
+  "notes": "Done with the customer present but the work is manual, so coded PHYSICAL."
+ },
+ {
+  "task_id": "710",
+  "split_reasoning": "One activity done live with the customer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help a customer try on or fit merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in person with the customer, who waits for the help.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each fitting is one contact.",
+    "work_item": "one customer helped to try on or fit items",
+    "start": "customer asks to try items",
+    "end": "customer decides on fit",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   }
+  ],
+  "notes": "Partly physical; coded LIVE_SERVICE because the customer is present."
+ },
+ {
+  "task_id": "711",
+  "split_reasoning": "Counting stock is hands-on work; ordering new stock is done at a computer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count stock on the shelves and in the storeroom.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on counting away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Requisition new stock based on counts and sales.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a stock order that the buyer or stockroom relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Orders are sent in batches.",
+    "work_item": "one stock requisition sent",
+    "start": "stock counts reviewed",
+    "end": "requisition submitted",
+    "checked_by": "store manager or buyer; stockroom",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "712",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare merchandise for purchase or rental, for example by assembling, cleaning, or removing security devices.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work with goods.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "703"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "713",
+  "split_reasoning": "Offering and agreeing delivery, financing or contracts is done with the customer, while processing follow-up paperwork happens afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Offer and arrange delivery, insurance, financing or a service contract with the customer present.",
+    "time_share": 0.8,
+    "type_reasoning": "Agreed while the customer is at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each arrangement is agreed within one sale.",
+    "work_item": "one add-on (delivery, insurance, financing or service contract) arranged during a sale",
+    "start": "salesperson offers the option or customer asks",
+    "end": "customer signs or declines and the arrangement is entered",
+    "checked_by": "the customer; store manager or finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "704"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete delivery scheduling, financing or contract paperwork after the customer has gone.",
+    "time_share": 0.2,
+    "type_reasoning": "Done afterwards with no customer present.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Paperwork is submitted per sale.",
+    "work_item": "one set of delivery or financing paperwork submitted",
+    "start": "sale completed",
+    "end": "paperwork submitted to delivery or finance",
+    "checked_by": "delivery team; finance or insurer",
+    "duplicates": [],
+    "overlaps_with": [
+     "698"
+    ]
+   }
+  ],
+  "notes": "Split shares are a judgment."
+ },
+ {
+  "task_id": "714",
+  "split_reasoning": "One activity done with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect a trade-in item and quote an allowance to the customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits for the quote.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each trade-in is quoted within one contact.",
+    "work_item": "one trade-in allowance quoted",
+    "start": "customer offers an item for trade-in",
+    "end": "allowance quoted and accepted or declined",
+    "checked_by": "the customer; sales manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "715",
+  "split_reasoning": "One activity done with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate the cost of repairing or altering an item for a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits for the estimate.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each estimate is given within one contact.",
+    "work_item": "one repair or alteration estimate",
+    "start": "customer asks about repair or alteration",
+    "end": "estimate given to the customer",
+    "checked_by": "the customer; repair shop",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "716",
+  "split_reasoning": "Quantity and cost are components of one estimate, but estimates may be prepared either during or after customer contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate required merchandise quantity and cost while assisting a customer.",
+    "time_share": 0.7,
+    "type_reasoning": "The salesperson calculates and communicates the estimate while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's merchandise requirement is estimated and quoted during the contact.",
+    "work_item": "one merchandise quantity and cost estimate given during customer contact",
+    "start": "customer supplies dimensions or requirements",
+    "end": "estimated quantity and cost are communicated",
+    "checked_by": "customer",
+    "overlap_reasoning": "The estimate can support a merchandise recommendation or sale, but is distinct from selecting an item or processing payment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a merchandise quantity and cost estimate after receiving customer requirements.",
+    "time_share": 0.3,
+    "type_reasoning": "The calculation is completed from recorded measurements or plans after the contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One estimate is prepared and sent or returned for use in the sale.",
+    "work_item": "one merchandise quantity and cost estimate prepared after contact",
+    "start": "measurements or plans are received for estimating",
+    "end": "quantity and cost estimate is recorded or sent",
+    "checked_by": "customer or sales staff",
+    "overlap_reasoning": "The estimate may inform a recommendation or contract, but those tasks include other actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "704"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the complexity of the measurements and store workflow."
+ },
+ {
+  "task_id": "717",
+  "split_reasoning": "One activity done with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Rent merchandise to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The rental agreement is completed with the customer at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each rental is arranged in one contact.",
+    "work_item": "one rental transaction",
+    "start": "customer asks to rent an item",
+    "end": "agreement signed, payment taken and item handed over",
+    "checked_by": "the customer; store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "704"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

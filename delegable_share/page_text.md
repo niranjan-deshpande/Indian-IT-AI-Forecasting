@@ -93,7 +93,7 @@ Everything else comes from LLMs reading O\*NET. Two Claude models and one GPT mo
 
 ## Comparison occupations
 
-To check the measure, I also ran sixteen occupations picked by hand: five that should come out high (translators, proofreaders, technical writers, paralegals, tax preparers), five that should come out near zero (electricians, nurses, childcare workers, janitors, truck drivers), and six other white-collar jobs. The controls separate, and the IT and BPO occupations sit between them.
+To check the measure, I also ran sixteen occupations picked by hand: five that should come out high (translators, proofreaders, technical writers, paralegals, tax preparers), five that should come out near zero (electricians, nurses, childcare workers, janitors, truck drivers), and six other white-collar jobs. The controls separate, and the IT and BPO occupations sit between them. Fifty more occupations from across the economy fill in the same range, with the IT and BPO occupations above their average.
 
 ::: figure groups
 **Figure 5.** S for every occupation, as of {{today_long}}.

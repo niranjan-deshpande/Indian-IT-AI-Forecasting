@@ -1,0 +1,61 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_13-1082.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[21462a] DISCRETE — one project work assignment (start: a project duty or responsibility needs an owner; end: the assignment is recorded or communicated to the responsible personnel) — from statement: Assign duties or responsibilities to project personnel.
+[21463b] DISCRETE — one requirements and objectives document (start: stakeholder conversations complete; end: requirements confirmed by stakeholders) — from statement: Communicate with key stakeholders to determine project requirements and objectives.
+[21465a] DISCRETE — one status presentation deck (start: status review meeting scheduled and data gathered; end: deck ready and sent or presented) — from statement: Create project status presentations for delivery to customers or project personnel.
+[21466a] DISCRETE — one project plan or plan update (start: project starts or change requires an update; end: plan issued and approved) — from statement: Develop or update project plans including information such as objectives, technologies, schedules, funding, and staffing.
+[21467a] DISCRETE — one project needs assessment (start: objectives and schedule reviewed; end: needs list sent for approval) — from statement: Identify project needs such as resources, staff, or finances by reviewing project objectives and schedules.
+[21468a] DISCRETE — one vendor or consultant selection (start: need for outside provider identified; end: vendor selected and approved) — from statement: Identify, review, or select vendors or consultants to meet project needs.
+[21469a] DISCRETE — one periodic cost review against budget (start: period's cost data available; end: budget issues flagged to manager) — from statement: Monitor costs incurred by project staff to identify budget issues.
+[21470a] DISCRETE — one milestone and deliverable tracking update (start: reporting cycle starts; end: tracker updated and slippage flagged) — from statement: Monitor project milestones and deliverables.
+[21471a] DISCRETE — one team member performance assessment (start: performance information for a team member is available for review; end: observations are recorded or prepared for feedback) — from statement: Monitor the performance of project team members to provide performance feedback.
+[21473a] DISCRETE — one project schedule or schedule revision (start: activities to plan identified; end: schedule issued to team) — from statement: Plan, schedule, or coordinate project activities to meet deadlines.
+[21474a] DISCRETE — one budget estimate (start: scope known; end: estimate submitted) — from statement: Prepare and submit budget estimates, progress reports, or cost tracking reports.
+[21474b] DISCRETE — one progress report (start: reporting period ends; end: report submitted) — from statement: Prepare and submit budget estimates, progress reports, or cost tracking reports.
+[21474c] DISCRETE — one cost tracking report (start: period's costs compiled; end: report submitted) — from statement: Prepare and submit budget estimates, progress reports, or cost tracking reports.
+[21475a] DISCRETE — one project document produced and distributed (start: document need arises; end: document sent to recipients) — from statement: Produce and distribute project documents.
+[21476a] DISCRETE — one proposed project plan modification (start: a need to change the project plan is identified; end: the proposed modification and its rationale are submitted for review) — from statement: Propose, review, or approve modifications to project plans.
+[21476b] DISCRETE — one proposed project plan modification reviewed or approved (start: a proposed plan modification is received for review; end: the review recommendation or approval decision is recorded and communicated) — from statement: Propose, review, or approve modifications to project plans.
+[21477a] DISCRETE — one project hire (start: position approved; end: person hired) — from statement: Recruit or hire project personnel.
+[21478a] DISCRETE — one written project status update to managers (start: a manager requests an update or a reporting interval arrives; end: the status update is sent to managers) — from statement: Report project status, such as budget, resources, technical issues, or customer satisfaction, to managers.
+[21479a] DISCRETE — one round of project updates requested and reviewed (start: update requested; end: updates reviewed and risks flagged) — from statement: Request and review project updates to ensure deadlines are met.
+[21480a] DISCRETE — one meeting scheduled and invitation sent (start: meeting need identified; end: invitation sent) — from statement: Schedule or facilitate project meetings.
+[21481a] DISCRETE — one project deliverable checked and submitted (start: deliverable completed by team; end: client receives it) — from statement: Submit project deliverables to clients, ensuring adherence to quality standards.
+
+=== PAIRS ===
+PAIR 21474b / 21478a
+[21474b] DISCRETE — one progress report (start: reporting period ends; end: report submitted) — from statement: Prepare and submit budget estimates, progress reports, or cost tracking reports.
+[21478a] DISCRETE — one written project status update to managers (start: a manager requests an update or a reporting interval arrives; end: the status update is sent to managers) — from statement: Report project status, such as budget, resources, technical issues, or customer satisfaction, to managers.
+Original flag reasoning: A progress report submitted at the end of a reporting period and a written project status update sent to managers at a reporting interval are the same inputs, actions and output.

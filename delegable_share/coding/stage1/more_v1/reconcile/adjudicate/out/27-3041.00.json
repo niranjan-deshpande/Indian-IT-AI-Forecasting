@@ -1,0 +1,5 @@
+[
+ {"task_id": "1792", "reasoning": "The instructions list negotiating as INTERPERSONAL, and X codes the negotiation of author and freelancer terms that way. X also keeps the hiring decision as the checkable deliverable. Y treats the negotiation as a contract deliverable, but drafting the contract is not stated and is usually done by contracts or legal staff.", "choice": "X"},
+ {"task_id": "1793", "reasoning": "'Direct the policies' covers setting or revising editorial policy, which ends in a communicated policy that staff rely on. Directing departments is ongoing live management. X separates the two, while Y treats both as INTERPERSONAL and loses the policy output.", "choice": "X"},
+ {"task_id": "24025", "reasoning": "Headlines are very short items and stories, editorials and newsletters are long pieces, which is the 'very different kinds of item' case where the instructions say to split. X does this, with sensible work items.", "choice": "X"}
+]

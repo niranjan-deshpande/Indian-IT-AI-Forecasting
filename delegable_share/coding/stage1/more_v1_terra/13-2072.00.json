@@ -1,0 +1,500 @@
+[
+ {
+  "task_id": "3407",
+  "split_reasoning": "Approving loans and referring applications for someone else's approval produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Approve loan applications within authorized limits.",
+    "time_share": 0.65,
+    "type_reasoning": "Each approval produces a decision recorded for others to act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual application is the unit on which an approval is recorded.",
+    "work_item": "one loan application approved",
+    "start": "application and supporting assessment ready for a decision",
+    "end": "approval recorded and conveyed for processing",
+    "checked_by": "loan processing team and compliance reviewers",
+    "duplicates": [],
+    "overlaps_with": [
+     "3409"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Refer loan applications outside authorized limits to management for approval.",
+    "time_share": 0.35,
+    "type_reasoning": "Each referral produces an application package for a manager's decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Management receives and decides on an individual referred application.",
+    "work_item": "one loan application referred to management",
+    "start": "application identified as outside the officer's approval authority",
+    "end": "application and relevant information submitted to management",
+    "checked_by": "approving manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "3409",
+     "3416"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on approval limits and application mix."
+ },
+ {
+  "task_id": "3408",
+  "split_reasoning": "Obtaining application information and answering process questions are connected parts of the same applicant meeting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with an applicant to collect loan application information and answer process questions.",
+    "time_share": 1.0,
+    "type_reasoning": "The applicant participates in a live service interaction while information is collected and questions are answered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A single applicant meeting is the contact in which this information is obtained and questions are addressed.",
+    "work_item": "one applicant meeting to collect application information",
+    "start": "applicant begins the meeting or call",
+    "end": "information is collected and the applicant's process questions are addressed",
+    "checked_by": "applicant and loan processing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3410",
+     "3411",
+     "3412",
+     "3418"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3409",
+  "split_reasoning": "Financial status, credit, and property evaluations are inputs to one loan feasibility assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess an applicant's finances, credit, and property evaluations to determine loan feasibility.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces an assessment used in a loan decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment is prepared for an individual loan application.",
+    "work_item": "one loan feasibility assessment",
+    "start": "application and relevant financial, credit, and property information available for analysis",
+    "end": "feasibility assessment documented or conveyed to the decision-maker",
+    "checked_by": "approving loan officer, underwriter, or manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "3407",
+     "3411",
+     "3416"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3410",
+  "split_reasoning": "Loan types, credit options, and their terms are aspects of the same customer explanation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain available loan and credit options and their terms to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The explanation is normally given in a live customer conversation while the customer can ask questions.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The customer relies on the explanation given in one contact when considering options.",
+    "work_item": "one customer explanation of loan and credit options",
+    "start": "customer asks about or discusses financing options",
+    "end": "available options and relevant terms are explained and questions addressed",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3408",
+     "3418",
+     "3421"
+    ]
+   }
+  ],
+  "notes": "Some explanations may be provided in writing; the dominant live interaction is coded here."
+ },
+ {
+  "task_id": "3411",
+  "split_reasoning": "Compiling applicant financial information occurs both during applicant contacts and afterwards from records and requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain and compile applicant financial information during a live applicant contact.",
+    "time_share": 0.25,
+    "type_reasoning": "The applicant is present or on the line while documents and information are obtained and assembled.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The information collected for one application during the contact is relied on by the processing team.",
+    "work_item": "one application's financial information collected during an applicant contact",
+    "start": "applicant is asked for relevant financial information or documents",
+    "end": "available information is collected and placed with the application during the contact",
+    "checked_by": "loan processing team or underwriter",
+    "duplicates": [],
+    "overlaps_with": [
+     "3408",
+     "3412"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Obtain and compile credit histories, financial statements, and other applicant financial information outside a live contact.",
+    "time_share": 0.75,
+    "type_reasoning": "The officer assembles information from records, reporting sources, and submitted documents in the back office.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assembled financial information for one application is handed on for review.",
+    "work_item": "one application's compiled financial information",
+    "start": "application requires supporting financial or credit information",
+    "end": "available information is obtained and assembled in the application file",
+    "checked_by": "underwriter or credit analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     "3409",
+     "3412",
+     "3416"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much documentation is collected during meetings versus afterwards."
+ },
+ {
+  "task_id": "3412",
+  "split_reasoning": "Files are reviewed and updated both while customers are present and later in back-office work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and update a credit or loan file during a customer contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The file update is made while the customer is waiting in a live interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A file update for one customer is completed within the contact.",
+    "work_item": "one credit or loan file updated during a customer contact",
+    "start": "customer provides information or requests a file change",
+    "end": "relevant file information is reviewed and updated during the contact",
+    "checked_by": "customer and loan servicing or processing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "3408",
+     "3411"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review and update a credit or loan file outside a customer contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The file is reviewed and updated from documents or requests without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each file is the record reviewed and updated for downstream use.",
+    "work_item": "one credit or loan file reviewed and updated",
+    "start": "file is due for review or new information is received",
+    "end": "review and relevant updates are recorded in the file",
+    "checked_by": "loan servicing staff, underwriter, or auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     "3411",
+     "3413"
+    ]
+   }
+  ],
+  "notes": "The live and back-office shares vary by role and servicing workflow."
+ },
+ {
+  "task_id": "3413",
+  "split_reasoning": "Checking completeness and accuracy against policy is one agreement review.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a loan agreement for completeness, accuracy, and compliance with policy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review produces a checked agreement or identified corrections for processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The agreement is reviewed and passed on as a whole.",
+    "work_item": "one loan agreement reviewed",
+    "start": "loan agreement received for review",
+    "end": "agreement cleared or corrections returned for action",
+    "checked_by": "loan processing or closing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3412"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3414",
+  "split_reasoning": "Payment schedules are computed both during customer discussions and later for application or closing documentation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute a payment schedule while discussing a loan with a customer.",
+    "time_share": 0.45,
+    "type_reasoning": "The calculation is performed while the customer waits in a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A schedule for the loan terms being discussed is presented within the contact.",
+    "work_item": "one payment schedule computed during a customer contact",
+    "start": "loan amount and proposed terms are identified during the contact",
+    "end": "payment schedule is calculated and explained or provided to the customer",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "3410",
+     "3418"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compute a payment schedule outside a live customer contact.",
+    "time_share": 0.55,
+    "type_reasoning": "The schedule is prepared from loan terms for later use without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One schedule for a loan is the complete calculation passed on or included in the file.",
+    "work_item": "one loan payment schedule",
+    "start": "loan amount and terms available for calculation",
+    "end": "schedule calculated and provided or added to the loan file",
+    "checked_by": "customer or loan processing team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3412",
+     "3413"
+    ]
+   }
+  ],
+  "notes": "Shares vary with whether officers primarily advise applicants or prepare loan documents."
+ },
+ {
+  "task_id": "3415",
+  "split_reasoning": "Keeping current on loan and financial products is one continuing learning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep current on new loans and other financial products and services.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes maintaining knowledge rather than producing a specified item for others.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "3410",
+     "3421"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3416",
+  "split_reasoning": "Submitting applications for verification and recommendation is one handoff to credit analysts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Submit a loan application to credit analysts for verification and recommendation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each submission produces a package placed in the analysts' work queue.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual application is the unit sent to the analyst.",
+    "work_item": "one loan application submitted to credit analysts",
+    "start": "application is ready for analyst verification",
+    "end": "application and supporting information are submitted to the analyst",
+    "checked_by": "credit analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     "3407",
+     "3409",
+     "3411"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3417",
+  "split_reasoning": "Complaints are handled both during live customer contacts and from written or follow-up queues.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Handle and resolve a customer complaint during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The customer is on the line or present while the complaint is addressed and appropriate action is taken.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The complaint handling completed within the contact is the service the customer experiences.",
+    "work_item": "one complaint handled during a customer contact",
+    "start": "customer raises a complaint in a call or visit",
+    "end": "action or next steps are communicated before the contact ends",
+    "checked_by": "customer and complaint supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate and act on a customer complaint outside a live contact.",
+    "time_share": 0.4,
+    "type_reasoning": "Written complaints and follow-up investigations are handled without the customer waiting in the interaction.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complaint case and its documented response are handled as a single item.",
+    "work_item": "one complaint investigated and responded to",
+    "start": "written complaint or follow-up case received",
+    "end": "action and response documented and communicated or referred",
+    "checked_by": "customer and complaint supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The split depends on contact channels and whether resolution requires follow-up."
+ },
+ {
+  "task_id": "3418",
+  "split_reasoning": "Identifying financial goals and finding ways to reach them are connected parts of client guidance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Work with a client to identify financial goals and discuss ways to reach them.",
+    "time_share": 1.0,
+    "type_reasoning": "The guidance is provided through a live client service conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The client relies on the goals discussion and guidance provided in a contact.",
+    "work_item": "one client financial-goals discussion",
+    "start": "client begins discussing financial circumstances or goals",
+    "end": "goals and potential ways to reach them have been discussed",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "3408",
+     "3410",
+     "3414",
+     "3421"
+    ]
+   }
+  ],
+  "notes": "A separately prepared financial plan is not specified by the target."
+ },
+ {
+  "task_id": "3421",
+  "split_reasoning": "Marketing products and promoting bank services are the same prospect-facing promotional activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Promote bank products and services to individuals and firms.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on persuading prospective customers through direct promotion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3410",
+     "3418",
+     "3425"
+    ]
+   }
+  ],
+  "notes": "Separately produced marketing materials are not specified; some promotional contacts also include customer service."
+ },
+ {
+  "task_id": "3422",
+  "split_reasoning": "Supervising loan personnel is one ongoing people-management activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise loan personnel.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes supervision through live direction and interaction rather than a specified checkable output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Formal evaluations or staffing documents are not specified by the target."
+ },
+ {
+  "task_id": "3423",
+  "split_reasoning": "Credit policies, lines, procedures, and standards are related components of setting the institution's credit framework.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set credit policies, credit lines, procedures, and standards with senior managers.",
+    "time_share": 1.0,
+    "type_reasoning": "The collaborative work establishes documented credit rules or limits that staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An approved policy, procedure, standard, or limit change is the unit communicated for implementation.",
+    "work_item": "one credit policy, procedure, standard, or limit established or revised",
+    "start": "need for a new or changed credit rule or limit identified",
+    "end": "change agreed with senior managers and communicated for implementation",
+    "checked_by": "senior management, credit staff, and compliance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The target does not specify whether credit lines are institution-wide limits or individual customer facilities."
+ },
+ {
+  "task_id": "3425",
+  "split_reasoning": "Analyzing loan markets produces an assessment, while building referral networks depends on cultivating relationships.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze potential markets to identify prospects for loans.",
+    "time_share": 0.45,
+    "type_reasoning": "Market analysis produces findings or a prospect list used for outreach.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment of a market or prospect segment is a usable handoff for business development.",
+    "work_item": "one potential loan market or prospect segment assessed",
+    "start": "market or prospect segment selected for analysis",
+    "end": "findings or target prospects documented for outreach",
+    "checked_by": "loan officer or business development manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "3421"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop referral relationships to locate loan prospects.",
+    "time_share": 0.55,
+    "type_reasoning": "Building a referral network primarily involves live relationship-building and persuasion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3421"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the officer's prospecting responsibilities."
+ },
+ {
+  "task_id": "3426",
+  "split_reasoning": "Preparing delinquency reports for customers and forwarding irreconcilable accounts to collectors are distinct outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare reports for customers whose accounts are delinquent.",
+    "time_share": 0.6,
+    "type_reasoning": "Each report is a written account communication sent to a customer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The customer receives and relies on the report for an individual delinquent account.",
+    "work_item": "one delinquent-account report sent to a customer",
+    "start": "account identified as delinquent and information available",
+    "end": "report prepared and sent to the customer",
+    "checked_by": "customer and loan servicing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "3412"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Forward an irreconcilable account for collector action.",
+    "time_share": 0.4,
+    "type_reasoning": "The referral produces an account handoff for collections.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The individual account and supporting information are the unit transferred to collections.",
+    "work_item": "one irreconcilable account referred to collections",
+    "start": "account identified as requiring collector action",
+    "end": "account and relevant information forwarded to the collector",
+    "checked_by": "collections team",
+    "duplicates": [],
+    "overlaps_with": [
+     "3412"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the volume of delinquent accounts that require referral."
+ }
+]

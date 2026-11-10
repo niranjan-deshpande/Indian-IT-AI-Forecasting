@@ -1,0 +1,5 @@
+{"pairs": [
+{"reasoning": "A live sales or donation pitch call to a prospect is the same work as a live outbound solicitation call.", "a": "4618a", "b": "4619a"},
+{"reasoning": "Noting the prospect's details during the call and saving a record update during the call are the same live data entry.", "a": "4622a", "b": "4627a"},
+{"reasoning": "A post-call contact record and a record update outside a call from call notes are the same after-call recording of the same information.", "a": "4622b", "b": "4627b"}
+]}

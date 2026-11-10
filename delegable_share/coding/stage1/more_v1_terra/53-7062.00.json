@@ -1,0 +1,245 @@
+[
+ {
+  "task_id": "10778",
+  "split_reasoning": "Attaching tags and marking containers are alternative methods of physically identifying them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify containers by attaching tags or marking them with identifying information.",
+    "time_share": 1.0,
+    "type_reasoning": "Identifying the containers requires hands-on marking or tag attachment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "None of the other statements describes labeling or marking containers.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10779",
+  "split_reasoning": "Reading orders and receiving oral instructions are alternative inputs for determining the same work assignment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine work assignments and material or equipment needs from work orders or oral instructions.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker uses the instructions to understand the assignment, without producing a separate item for others to check.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "The other statements describe carrying out or recording work, not determining the assignment from instructions.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10780",
+  "split_reasoning": "Recording units handled is one clerical activity, whether done on a production sheet or a work ticket.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record the numbers of units handled or moved on a production sheet or work ticket.",
+    "time_share": 1.0,
+    "type_reasoning": "The completed production sheet or ticket is a discrete record used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed daily sheet or work ticket is the record handed over for production tracking.",
+    "work_item": "one production sheet or work ticket recording units handled",
+    "start": "unit counts for the work period or assignment are available",
+    "end": "counts are entered and the sheet or ticket is submitted",
+    "checked_by": "supervisor or production records staff",
+    "overlap_reasoning": "Moving the units and recording their counts are separate steps with different outputs.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10781",
+  "split_reasoning": "The statement describes one physical movement activity across different locations and using alternative equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Move freight, stock, or other materials between work, storage, loading, and transport locations by hand or using equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Moving materials by hand or operating material-moving equipment requires hands-on physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Moving materials can include movements made while sorting cargo, carrying supplies, guiding loads, or operating equipment, although those statements also cover distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10782",
+     "10787",
+     "10790",
+     "10792"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10782",
+  "split_reasoning": "Sorting cargo before loading or unloading is one physical preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort cargo before loading or unloading.",
+    "time_share": 1.0,
+    "type_reasoning": "Sorting cargo involves physically handling and grouping items.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Sorting can involve moving freight, but it also includes grouping cargo rather than simply transporting it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10783",
+  "split_reasoning": "Assembling containers and crates is the same hands-on construction activity for different container types.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble product containers or crates using hand tools and precut lumber.",
+    "time_share": 1.0,
+    "type_reasoning": "Assembly requires hands-on use of tools and materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Container assembly and packing are distinct activities, even when they occur in the same workflow.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10786",
+  "split_reasoning": "Packing and repacking are closely related physical activities that place contents into containers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pack containers or repack contents from damaged containers.",
+    "time_share": 1.0,
+    "type_reasoning": "Packing and repacking require physically handling contents and containers.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Packing can include padding contents, which overlaps with installing protection against transport damage, but each activity also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10788"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10787",
+  "split_reasoning": "Taking tools and supplies to the work area and returning them are parts of the same physical support activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry needed tools or supplies from storage or trucks and return them after use.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity consists of physically carrying tools and supplies.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Carrying supplies can also be described as moving materials, but this statement specifically includes tools and their return after use.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10788",
+  "split_reasoning": "Bracing, padding, and strapping are alternative protective methods for the same physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install bracing, padding, strapping, or other protection to prevent transported items from shifting or being damaged.",
+    "time_share": 1.0,
+    "type_reasoning": "Installing protective devices requires hands-on work with the items and protective materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Padding may be installed while packing, although protection also includes securing loads and packing also includes placing contents in containers.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10786"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10789",
+  "split_reasoning": "Maintaining equipment storage areas to protect inventory is one physical upkeep activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain equipment storage areas so that inventory is protected.",
+    "time_share": 1.0,
+    "type_reasoning": "Maintaining the storage areas entails hands-on upkeep and organization of the space.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements do not describe upkeep of equipment storage areas as such.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The statement does not specify the particular upkeep duties involved."
+ },
+ {
+  "task_id": "10790",
+  "split_reasoning": "Attaching lifting devices and guiding the resulting load are connected hands-on steps in handling a lifted cargo load.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attach slings, hooks, or other lifting devices to cargo and guide the load.",
+    "time_share": 1.0,
+    "type_reasoning": "Rigging cargo and guiding a load require hands-on physical work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Guiding a lifted load can form part of moving freight, while rigging and guiding are more specific activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10792",
+  "split_reasoning": "Adjusting controls to guide, position, or move equipment is one equipment-operation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adjust controls to guide, position, or move equipment such as cranes, booms, or cameras.",
+    "time_share": 1.0,
+    "type_reasoning": "Operating the equipment involves hands-on manipulation of its controls.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Equipment operation can overlap with moving freight, but it also includes positioning equipment for other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "10781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "10796",
+  "split_reasoning": "Connecting electrical equipment to power for testing is one hands-on setup activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Connect electrical equipment to power sources so it can be tested before use.",
+    "time_share": 1.0,
+    "type_reasoning": "Connecting equipment to a power source requires physical handling of the equipment and connection.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "None of the other statements describes connecting electrical equipment for testing.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

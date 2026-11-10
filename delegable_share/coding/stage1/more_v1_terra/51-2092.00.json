@@ -1,0 +1,288 @@
+[
+ {
+  "task_id": "8468",
+  "split_reasoning": "This describes rotating among production tasks rather than separate deliverables; the shared activity is hands-on work at successive production stations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Rotate among the hands-on tasks and stations required by the production process.",
+    "time_share": 1.0,
+    "type_reasoning": "Working at production stations primarily requires hands-on work with products, tools, or equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Rotated station work can include wiring assembly, inspection, packaging, cleaning, equipment maintenance, and machinery operation, but rotation is broader than any one of them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8472",
+     "20157",
+     "20158",
+     "20159",
+     "20162",
+     "20164"
+    ]
+   }
+  ],
+  "notes": "The statement describes a work arrangement as well as the work performed; the tasks included in a rotation vary by production line."
+ },
+ {
+  "task_id": "8469",
+  "split_reasoning": "Determining who does the work and determining how it is done produce different outputs, so assignments and procedures are separate parts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine work assignments for team members.",
+    "time_share": 0.5,
+    "type_reasoning": "Each assignment decision produces a set of responsibilities that team members rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A shift or production run's assignments are communicated and used as a set.",
+    "work_item": "one set of team work assignments",
+    "start": "production needs and available team members identified",
+    "end": "assignments determined and communicated to the team",
+    "checked_by": "team members and production supervisor",
+    "overlap_reasoning": "Supervising assemblers can include assigning work, but supervision also covers ongoing oversight.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20163"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Determine procedures for the team's production work.",
+    "time_share": 0.5,
+    "type_reasoning": "The chosen procedure is an output that the team relies on to carry out its work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a particular production operation is determined and communicated as a whole.",
+    "work_item": "one production work procedure determined",
+    "start": "production operation and requirements identified",
+    "end": "procedure determined and communicated to the team",
+    "checked_by": "team members and production supervisor",
+    "overlap_reasoning": "Training may convey a procedure, but deciding the procedure and teaching employees are different activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20163"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates; procedures may already be established at some facilities."
+ },
+ {
+  "task_id": "8472",
+  "split_reasoning": "Assisting in wiring assembly is one hands-on production activity, even though the specific assembly steps may vary.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist with the production of wiring assemblies.",
+    "time_share": 1.0,
+    "type_reasoning": "Producing wiring assemblies requires hands-on handling and assembly of wires and components.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Wiring assembly can be one of the production tasks covered by rotation and can involve production machinery, but neither statement is limited to wiring assemblies.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468",
+     "20164"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20157",
+  "split_reasoning": "Quality checks on products and parts are the same kind of inspection activity applied to different items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect and check products and parts for quality.",
+    "time_share": 1.0,
+    "type_reasoning": "Checks typically involve physically examining, handling, or measuring products and parts.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Inspection may be a rotated production task and may use specifications reviewed from work orders or blueprints, but those statements cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468",
+     "20160"
+    ]
+   }
+  ],
+  "notes": "Recording inspection results may accompany the check, but it is not separately specified."
+ },
+ {
+  "task_id": "20158",
+  "split_reasoning": "Physical packaging and preparing shipment information at a computer are different kinds of work; packaging is estimated to take the larger share.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Package finished products and physically prepare packages for shipment.",
+    "time_share": 0.75,
+    "type_reasoning": "Packing, securing, and staging finished products require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Packaging can be one of the tasks in a production rotation, but rotation also includes other tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare shipment information and labels for finished products.",
+    "time_share": 0.25,
+    "type_reasoning": "Shipment information is a discrete output prepared for the shipping process without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Shipping information and labels are prepared for a shipment as a whole.",
+    "work_item": "one shipment's labels and shipping information prepared",
+    "start": "finished products and shipment requirements identified",
+    "end": "shipping information completed and labels made available for the shipment",
+    "checked_by": "shipping team or carrier",
+    "overlap_reasoning": "The other statements do not describe preparing shipment information.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The computer-based share depends on whether assemblers or a separate shipping team prepare shipment paperwork."
+ },
+ {
+  "task_id": "20159",
+  "split_reasoning": "Shoveling, sweeping, and other cleaning methods all serve the same work-area cleaning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean production work areas.",
+    "time_share": 1.0,
+    "type_reasoning": "Cleaning work areas requires hands-on physical work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cleaning may be included in a rotation of production tasks, but rotation also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20160",
+  "split_reasoning": "Reviewing work orders and blueprints uses different inputs for the same purpose of establishing the specifications for a job.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a job's work order and blueprints to establish the specifications for production.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces job-specific requirements that the team relies on when performing the work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The work order and associated drawings are reviewed together for a particular job or production run.",
+    "work_item": "one job's work order and blueprints reviewed for production requirements",
+    "start": "work order and applicable blueprints received",
+    "end": "job requirements identified and made available to the production team",
+    "checked_by": "assemblers and production supervisor",
+    "overlap_reasoning": "Quality checks also use specifications to assess products, but reviewing job documents and inspecting products are not the same work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20157"
+    ]
+   }
+  ],
+  "notes": "The requirements may be conveyed verbally or through annotations rather than a separate formal document."
+ },
+ {
+  "task_id": "20161",
+  "split_reasoning": "Completing production reports is one activity with a recurring report as its output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete a report communicating team production levels to management.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed production report is a discrete document used by management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report for a shift or other reporting period is completed and submitted as a whole.",
+    "work_item": "one team production report",
+    "start": "production figures for the reporting period are available",
+    "end": "completed report submitted to management",
+    "checked_by": "production management",
+    "overlap_reasoning": "No other statement describes producing the team's production report.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20162",
+  "split_reasoning": "Maintaining equipment and machinery is one hands-on maintenance activity across different equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain production equipment and machinery.",
+    "time_share": 1.0,
+    "type_reasoning": "Equipment maintenance requires hands-on work with machines and tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Maintenance may be included in rotated production duties, but rotation also covers other tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20163",
+  "split_reasoning": "Supervising assemblers and training employees are different live activities, so they are split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise assemblers during production work.",
+    "time_share": 0.6,
+    "type_reasoning": "Supervision consists principally of live direction and oversight of employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision can include making work assignments, but it also includes ongoing oversight not covered by determining assignments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8469"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Train employees on job procedures.",
+    "time_share": 0.4,
+    "type_reasoning": "Training's value is in the live instruction and demonstration given to employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Training can communicate procedures that were determined separately, but determining a procedure and teaching it are different activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8469"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates and depend on staffing and the amount of training needed."
+ },
+ {
+  "task_id": "20164",
+  "split_reasoning": "Operating production machinery and driving equipment such as forklifts serve different activities, so they are split.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate production machinery and equipment.",
+    "time_share": 0.7,
+    "type_reasoning": "Operating production machinery involves hands-on control of equipment at the production site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Machine operation may be a rotated task and may be used in wiring assembly, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468",
+     "8472"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Operate forklifts or similar heavy equipment to move materials.",
+    "time_share": 0.3,
+    "type_reasoning": "Driving and operating heavy material-handling equipment is physical work at the production site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Forklift operation may be part of a production rotation, but rotation is not limited to moving materials.",
+    "duplicates": [],
+    "overlaps_with": [
+     "8468"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with the machinery and material-handling arrangements at the facility."
+ }
+]

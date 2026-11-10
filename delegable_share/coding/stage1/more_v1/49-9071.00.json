@@ -1,0 +1,83 @@
+[
+{"task_id":"3022","split_reasoning":"One activity: assembling, installing or repairing equipment; the items are alternatives.","parts":[
+{"part_id":"a","text":"Assemble, install or repair wiring, electrical components, pipe systems, plumbing, machinery or equipment.","time_share":1.0,"type_reasoning":"Hands-on work on equipment.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20672","19898"]}],
+"notes":""},
+{"task_id":"3023","split_reasoning":"One activity: working out what is wrong and how to fix it.","parts":[
+{"part_id":"a","text":"Diagnose a mechanical problem and decide how to correct it, consulting blueprints, repair manuals or parts catalogs.","time_share":1.0,"type_reasoning":"The diagnosis and chosen fix is a conclusion that the repair and requester rely on, reached partly from documents.","type":"DISCRETE","unit_reasoning":"Each fault is diagnosed separately and handed into the repair.","work_item":"one fault diagnosed with a repair approach decided","start":"problem reported or noticed","end":"cause identified and repair approach decided","checked_by":"maintenance supervisor or the person who reported the problem","duplicates":[],"overlaps_with":["3024","3028"]}],
+"notes":"Hands-on testing is covered by 3024; this part is the diagnostic reasoning and document lookup."},
+{"task_id":"3024","split_reasoning":"One activity: hands-on inspect, run and test to find malfunctions.","parts":[
+{"part_id":"a","text":"Inspect, operate and test machinery or equipment to find the malfunction.","time_share":1.0,"type_reasoning":"Hands-on work at the machine.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3023"]}],
+"notes":""},
+{"task_id":"3025","split_reasoning":"One activity: recording work done and its cost.","parts":[
+{"part_id":"a","text":"Record the type and cost of maintenance or repair work done.","time_share":1.0,"type_reasoning":"Each record is written for others to rely on.","type":"DISCRETE","unit_reasoning":"Recorded per job or work order when finished.","work_item":"one work order or maintenance log entry closed out","start":"repair or maintenance job finished","end":"type of work and cost entered in the log or work order","checked_by":"maintenance supervisor or facility manager; accounting","duplicates":[],"overlaps_with":["20678"]}],
+"notes":""},
+{"task_id":"3026","split_reasoning":"One activity: cleaning and lubricating, by hand.","parts":[
+{"part_id":"a","text":"Clean or lubricate shafts, bearings, gears or other machine parts.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20671"]}],
+"notes":""},
+{"task_id":"3028","split_reasoning":"One activity: planning a repair from drawings and manuals.","parts":[
+{"part_id":"a","text":"Plan and lay out repair work using diagrams, drawings, blueprints, manuals or schematics.","time_share":1.0,"type_reasoning":"Yields a plan that guides the repair and others rely on.","type":"DISCRETE","unit_reasoning":"One plan per repair job.","work_item":"one repair job planned and laid out","start":"repair task assigned and approach decided","end":"steps, parts and layout worked out and ready to start","checked_by":"maintenance supervisor; anyone sharing the job","duplicates":[],"overlaps_with":["3023"]}],
+"notes":"The plan is often informal and in the worker's head."},
+{"task_id":"3030","split_reasoning":"One activity: adjusting parts with hand tools.","parts":[
+{"part_id":"a","text":"Adjust functional parts of devices or control instruments using hand tools, levels, plumb bobs or straightedges.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3033"]}],
+"notes":""},
+{"task_id":"3031","split_reasoning":"One activity: painting or repairing building parts.","parts":[
+{"part_id":"a","text":"Paint or repair roofs, windows, doors, floors, woodwork, plaster, drywall or other building parts.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3037"]}],
+"notes":""},
+{"task_id":"3032","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Cut or join metal parts with cutting torches or welding equipment.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"3033","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Align and balance new equipment after installation.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3030","19898"]}],
+"notes":""},
+{"task_id":"3034","split_reasoning":"One activity: measuring used parts.","parts":[
+{"part_id":"a","text":"Inspect used parts and measure their dimensions with rules, calipers or micrometers.","time_share":1.0,"type_reasoning":"Hands-on measuring of parts.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"3035","split_reasoning":"One activity: machining parts.","parts":[
+{"part_id":"a","text":"Set up and operate machine tools to repair or make machine parts, jigs, fixtures or tools.","time_share":1.0,"type_reasoning":"Hands-on machine operation.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20679"]}],
+"notes":""},
+{"task_id":"3037","split_reasoning":"One activity: building or repairing wooden structures.","parts":[
+{"part_id":"a","text":"Fabricate or repair counters, benches, partitions, sheds or other wooden structures.","time_share":1.0,"type_reasoning":"Hands-on carpentry.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3031"]}],
+"notes":""},
+{"task_id":"19897","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Assemble boilers at installation sites with levels, plumb bobs, hammers, torches and other hand tools.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"19898","split_reasoning":"One activity: installing efficiency equipment.","parts":[
+{"part_id":"a","text":"Install equipment that improves energy or operational efficiency of buildings.","time_share":1.0,"type_reasoning":"Hands-on installation.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3022","19900"]}],
+"notes":""},
+{"task_id":"19899","split_reasoning":"One activity: routine boiler maintenance.","parts":[
+{"part_id":"a","text":"Perform routine boiler maintenance such as replacing burners or hoses and fitting parts.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20671"]}],
+"notes":""},
+{"task_id":"19900","split_reasoning":"One activity: applying insulation.","parts":[
+{"part_id":"a","text":"Position, attach or blow insulating material into buildings, pipes or other structures.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["19898"]}],
+"notes":""},
+{"task_id":"20670","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Dismantle machines or equipment to reach and remove defective parts using hoists, cranes and tools.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20672"]}],
+"notes":""},
+{"task_id":"20671","split_reasoning":"One activity: preventive maintenance, listing example actions.","parts":[
+{"part_id":"a","text":"Perform routine preventive maintenance such as checking drives, motors and belts, fluid levels and replacing filters.","time_share":1.0,"type_reasoning":"Hands-on rounds on equipment.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3026","19899"]}],
+"notes":""},
+{"task_id":"20672","split_reasoning":"One activity: repairing with tools and instruments.","parts":[
+{"part_id":"a","text":"Repair machines, equipment or structures with hand tools, hoists and measuring or testing instruments.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["3022","20670","20673"]}],
+"notes":""},
+{"task_id":"20673","split_reasoning":"One activity: maintaining or repairing specialised equipment at different venues.","parts":[
+{"part_id":"a","text":"Maintain or repair specialised equipment in cafeterias, laundries, hospitals, stores, offices or factories.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":["20672"]}],
+"notes":""},
+{"task_id":"20674","split_reasoning":"One activity: ordering from catalogs or suppliers.","parts":[
+{"part_id":"a","text":"Order parts, supplies or equipment from catalogs or suppliers.","time_share":1.0,"type_reasoning":"Each order is sent and relied on.","type":"DISCRETE","unit_reasoning":"Orders are placed one at a time per need.","work_item":"one parts or supplies order placed","start":"need for a part or supply identified","end":"order placed and confirmed with the supplier","checked_by":"supervisor or purchasing who approves and pays","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"20675","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Do general cleaning of buildings or properties.","time_share":1.0,"type_reasoning":"Hands-on.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"20676","split_reasoning":"Training and managing are both live person-to-person work; treated as one interpersonal activity.","parts":[
+{"part_id":"a","text":"Train or manage maintenance personnel or subcontractors.","time_share":1.0,"type_reasoning":"Value is in the live interaction; nothing a colleague checks is produced.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":[]}],
+"notes":"Assigning work or scheduling could produce written output; not split here."},
+{"task_id":"20677","split_reasoning":"One activity: outdoor grounds work, with landscaping and snow removal as examples.","parts":[
+{"part_id":"a","text":"Provide groundskeeping such as landscaping or snow removal.","time_share":1.0,"type_reasoning":"Hands-on outdoor work.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"20678","split_reasoning":"One activity: estimating repair cost.","parts":[
+{"part_id":"a","text":"Estimate the cost to repair machinery, equipment or building structures.","time_share":1.0,"type_reasoning":"Each estimate is given to a manager or customer who relies on it.","type":"DISCRETE","unit_reasoning":"One estimate per repair job.","work_item":"one repair cost estimate","start":"repair need assessed","end":"estimate given to the requester","checked_by":"supervisor, facility manager or customer","duplicates":[],"overlaps_with":["3025"]}],
+"notes":""},
+{"task_id":"20679","split_reasoning":"One activity: designing a tool or aid.","parts":[
+{"part_id":"a","text":"Design new equipment (tools, jigs, aids) to help repair or maintain machines or structures.","time_share":1.0,"type_reasoning":"Yields a design (sketch or drawing) that is built and used.","type":"DISCRETE","unit_reasoning":"Each aid is designed separately.","work_item":"one repair aid designed (sketch or drawing)","start":"need for a repair aid identified","end":"design completed and ready to build","checked_by":"maintenance supervisor; whoever builds and uses it","duplicates":[],"overlaps_with":["3035"]}],
+"notes":"Likely rare and informal."}
+]

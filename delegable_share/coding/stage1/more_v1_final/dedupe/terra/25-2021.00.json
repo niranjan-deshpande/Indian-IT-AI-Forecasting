@@ -1,0 +1,14 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both cover grading and returning a class assignment with the grades recorded; 6544c also covers tests.",
+   "a": "6542b",
+   "b": "6544c"
+  },
+  {
+   "reasoning": "Both cover writing weekly lesson plans for teaching, with 6557a also noting that they may be shown to a supervisor.",
+   "a": "6539a",
+   "b": "6557a"
+  }
+ ]
+}

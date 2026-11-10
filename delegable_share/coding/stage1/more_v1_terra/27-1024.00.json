@@ -1,0 +1,577 @@
+[
+ {
+  "task_id": "299",
+  "split_reasoning": "Concepts and sample layouts are related outputs of the same design-development activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a design concept and sample layout using layout and aesthetic principles.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a distinct design proposal for review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A concept with its sample layout is presented for a particular design assignment.",
+    "work_item": "one design concept with sample layout",
+    "start": "design brief or assignment received",
+    "end": "concept and sample layout submitted for review",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Designing specific graphics, entering layouts, and preparing sketches can all form part of a concept, but each also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "300",
+     "306",
+     "307",
+     "308"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "300",
+  "split_reasoning": "Arranging visual material and selecting type are coordinated decisions for one layout.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine the arrangement and size of illustrations and copy, including type style and size, for a layout.",
+    "time_share": 1.0,
+    "type_reasoning": "The decisions produce a layout specification or arranged layout that others can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complete arrangement for one layout is the reviewable output, rather than each individual type or sizing choice.",
+    "work_item": "one layout with visual and typographic arrangement determined",
+    "start": "content and layout requirements available",
+    "end": "arrangement and typography set out for review or production",
+    "checked_by": "creative supervisor or client",
+    "overlap_reasoning": "Concept development, layout entry, and final layout assembly may include these decisions but cover additional steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "302",
+     "306",
+     "307"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "301",
+  "split_reasoning": "Generating an image with software is one activity, regardless of the software or image subject.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Generate a new image using computer software.",
+    "time_share": 1.0,
+    "type_reasoning": "Each image is a distinct digital asset that can be reviewed or used in a design.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The image file is the usable output, rather than each editing operation.",
+    "work_item": "one computer-generated image",
+    "start": "image requirements or source materials received",
+    "end": "image saved and made available for review or use",
+    "checked_by": "creative supervisor, client, or downstream designer",
+    "overlap_reasoning": "Artwork, product graphics, sketches, and broadcast graphics can include software-generated images but are not limited to the same work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "303",
+     "306",
+     "308",
+     "313"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "302",
+  "split_reasoning": "Preparing a final layout can involve digital assembly or hands-on marking and paste-up, which are separate modes of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mark up and assemble a final layout digitally for print production.",
+    "time_share": 0.9,
+    "type_reasoning": "The digital assembly produces a final layout for a printer or production team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assembled layout is handed over as a unit for print preparation.",
+    "work_item": "one digitally assembled final layout for printing",
+    "start": "approved design elements and copy available",
+    "end": "final layout assembled and handed to print production",
+    "checked_by": "production designer or printer",
+    "overlap_reasoning": "Layout decisions, computer entry, and digital print preparation may be part of the same production process, but each covers distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "300",
+     "304",
+     "307",
+     "23970"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Mark up, paste, and physically assemble a final layout for a printer.",
+    "time_share": 0.1,
+    "type_reasoning": "Physical paste-up requires hands-on handling and assembly of layout materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Final-layout review may inspect the assembled result, while print instructions can accompany it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "304",
+     "310"
+    ]
+   }
+  ],
+  "notes": "The physical share is an estimate; manual paste-up is uncommon in many current workflows."
+ },
+ {
+  "task_id": "303",
+  "split_reasoning": "Data-based charts and graphs differ from illustrative artwork in their inputs and preparation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Draw and print a chart or graph using a computer.",
+    "time_share": 0.4,
+    "type_reasoning": "Each chart or graph is a distinct visual output made from supplied information.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A finished chart or graph is reviewed and used as a whole.",
+    "work_item": "one computer-drawn chart or graph",
+    "start": "data and visual requirements received",
+    "end": "chart or graph completed and printed or supplied for use",
+    "checked_by": "client, editor, or creative supervisor",
+    "overlap_reasoning": "Generating images with software and creating graphics for layouts can include charts, but also cover other kinds of images.",
+    "duplicates": [],
+    "overlaps_with": [
+     "301",
+     "306"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Draw and print an illustration or other artwork using a computer.",
+    "time_share": 0.6,
+    "type_reasoning": "Each illustration or artwork is a distinct asset for review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The finished artwork is the unit delivered, not each drawing operation.",
+    "work_item": "one computer-drawn illustration or artwork",
+    "start": "artwork brief or reference materials received",
+    "end": "artwork completed and printed or supplied for use",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Image generation, product graphics, and rough-sketch preparation can include similar artwork but have broader or different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "301",
+     "306",
+     "308"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the designer's mix of data graphics and illustration."
+ },
+ {
+  "task_id": "304",
+  "split_reasoning": "Reviewing a final layout and suggesting improvements are one quality-review activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a final layout and identify any improvements needed.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces feedback or approval that the layout's owner can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A final layout is reviewed as a whole and returned with any comments.",
+    "work_item": "one final layout reviewed with any suggested improvements",
+    "start": "final layout received for review",
+    "end": "review comments or approval communicated",
+    "checked_by": "designer, creative supervisor, or production team",
+    "overlap_reasoning": "Assembly and print-file preparation can include checks, but also involve producing or preparing the layout.",
+    "duplicates": [],
+    "overlaps_with": [
+     "302",
+     "23970"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "305",
+  "split_reasoning": "Conferring with clients to determine a layout is one collaborative discussion activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with a client to discuss and determine a layout design.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a collaborative design discussion whose value lies in the live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Discussing prepared sketches with clients also involves design discussion but is tied to reviewing specific preliminary artwork.",
+    "duplicates": [],
+    "overlaps_with": [
+     "308"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "306",
+  "split_reasoning": "Product illustrations, company logos, and website layouts are different design outputs with substantially different briefs and production work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop graphics or layouts for a product illustration.",
+    "time_share": 0.35,
+    "type_reasoning": "The work produces a distinct product-related visual for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One product illustration is a reviewable asset within a larger assignment.",
+    "work_item": "one product illustration or its layout",
+    "start": "product illustration brief and references received",
+    "end": "illustration or layout submitted for review",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Concept development, image generation, and computer-drawn artwork can include this illustration, but also cover other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "300",
+     "301",
+     "303"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a company logo.",
+    "time_share": 0.3,
+    "type_reasoning": "A logo design is a distinct graphic delivered for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A logo proposal for one company is reviewed as a whole, possibly with variations.",
+    "work_item": "one company logo design proposal",
+    "start": "company identity brief received",
+    "end": "logo design proposal submitted for review",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Concept development and software image generation may contribute to a logo but also include other design work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "301",
+     "308"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop graphics and layouts for a website.",
+    "time_share": 0.35,
+    "type_reasoning": "A page or screen layout is a distinct visual deliverable for a website project.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A page or screen design is a practical review and handoff unit within a website project.",
+    "work_item": "one website page or screen design",
+    "start": "page requirements and content received",
+    "end": "page design submitted for review or development",
+    "checked_by": "client, creative supervisor, or web development team",
+    "overlap_reasoning": "General layout design, image generation, and layout entry can form part of a website design but also cover other media.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "300",
+     "301",
+     "307"
+    ]
+   }
+  ],
+  "notes": "Shares vary considerably with the designer's client and project mix."
+ },
+ {
+  "task_id": "307",
+  "split_reasoning": "Entering information to create a layout is one computer-based production activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter information into a computer to create a layout for a client or supervisor.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a layout file for review or further work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed layout is handed over as a whole, rather than each entry being a separate item.",
+    "work_item": "one layout created by entering supplied information",
+    "start": "content and layout instructions received",
+    "end": "layout created and submitted to the client or supervisor",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Designing arrangements and assembling final layouts may include computer entry, while also covering design choices or production preparation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "300",
+     "302",
+     "306"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "308",
+  "split_reasoning": "Preparing and revising preliminary artwork differs from the live discussion of that artwork with clients or supervisors.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and revise preliminary illustrations or rough sketches of the material.",
+    "time_share": 0.8,
+    "type_reasoning": "Each set of preliminary artwork is a reviewable design output.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A sketch or preliminary illustration is submitted and revised as a whole for an assignment.",
+    "work_item": "one preliminary illustration or rough sketch",
+    "start": "brief and reference material received",
+    "end": "sketch prepared or revised and submitted for review",
+    "checked_by": "client or creative supervisor",
+    "overlap_reasoning": "Concept development and artwork generation can include preliminary sketches but also cover other deliverables.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299",
+     "301",
+     "303",
+     "306"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Discuss preliminary illustrations or sketches with a client or supervisor.",
+    "time_share": 0.2,
+    "type_reasoning": "The activity is a live creative discussion about feedback and changes.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General client discussions about layout can include sketch review, but also cover design discussions without a prepared sketch.",
+    "duplicates": [],
+    "overlaps_with": [
+     "305"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates; written feedback may reduce the live-discussion share."
+ },
+ {
+  "task_id": "309",
+  "split_reasoning": "Studying illustrations and photographs serves one activity: planning a presentation of the subject.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Study illustrations and photographs to plan how materials, products, or services will be presented.",
+    "time_share": 1.0,
+    "type_reasoning": "The study informs a project-specific presentation plan that guides subsequent design work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The planning for one design assignment is the useful output, rather than each reference image examined.",
+    "work_item": "one visual presentation plan informed by reference images",
+    "start": "project brief and reference images available",
+    "end": "presentation approach recorded or communicated for design work",
+    "checked_by": "creative supervisor or downstream designer",
+    "overlap_reasoning": "Concept development can incorporate this planning, but also includes creating a design and sample layout.",
+    "duplicates": [],
+    "overlaps_with": [
+     "299"
+    ]
+   }
+  ],
+  "notes": "The plan may be informal, such as annotated references or design notes."
+ },
+ {
+  "task_id": "310",
+  "split_reasoning": "Preparing notes and instructions for layout production is one handoff activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare instructions for workers assembling and preparing final layouts for printing.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces written production instructions that another worker relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The instruction set accompanying one layout or job is the handoff unit.",
+    "work_item": "one set of layout assembly and print-preparation instructions",
+    "start": "layout requirements and production specifications available",
+    "end": "instructions sent to the production workers",
+    "checked_by": "layout production staff or production supervisor",
+    "overlap_reasoning": "Layout assembly and digital print preparation can use these instructions, but are separate production activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "302",
+     "23970"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "312",
+  "split_reasoning": "Photographing a layout to make a print is one hands-on photographic process.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Photograph a layout and make a layout print for a supervisor or client.",
+    "time_share": 1.0,
+    "type_reasoning": "The task requires physically handling a camera and layout to capture the image.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements do not describe photographing layouts to produce review prints.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "This task may be uncommon where layouts are shared directly as digital files."
+ },
+ {
+  "task_id": "313",
+  "split_reasoning": "Still and animated broadcast graphics are different outputs with substantially different production processes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Produce a still graphic for a live or recorded television news broadcast.",
+    "time_share": 0.4,
+    "type_reasoning": "A completed still graphic is a distinct broadcast asset.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One graphic is delivered to the broadcast team for use in a segment.",
+    "work_item": "one still news broadcast graphic",
+    "start": "news graphic request and source content received",
+    "end": "finished graphic delivered to the broadcast team",
+    "checked_by": "news producer or broadcast graphics supervisor",
+    "overlap_reasoning": "Software image generation and chart or artwork creation can produce broadcast assets, but also cover other uses.",
+    "duplicates": [],
+    "overlaps_with": [
+     "301",
+     "303"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Produce an animated graphic for a live or recorded television news broadcast.",
+    "time_share": 0.6,
+    "type_reasoning": "A completed animation is a distinct timed broadcast asset.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One animation is delivered as a usable asset for a segment.",
+    "work_item": "one animated news broadcast graphic",
+    "start": "animation request and source content received",
+    "end": "finished animation delivered to the broadcast team",
+    "checked_by": "news producer or broadcast graphics supervisor",
+    "overlap_reasoning": "Software image generation may contribute visual elements to an animation but also covers non-broadcast images.",
+    "duplicates": [],
+    "overlaps_with": [
+     "301"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the newsroom's mix of still and motion graphics."
+ },
+ {
+  "task_id": "15228",
+  "split_reasoning": "Images, photographs, and previous work are different archive contents managed through the same maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Organize and maintain an archive of images, photographs, and previous design work.",
+    "time_share": 1.0,
+    "type_reasoning": "Archive maintenance produces discrete organized additions or updates that colleagues can retrieve and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A project's group of assets is commonly archived together with its identifying information.",
+    "work_item": "one project asset collection added or updated in the archive",
+    "start": "project assets or archive update identified",
+    "end": "assets organized, labeled, and saved in the archive",
+    "checked_by": "design team or archive user",
+    "overlap_reasoning": "Other statements create assets, but do not describe maintaining their archive.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Some workplaces archive individual assets rather than project collections."
+ },
+ {
+  "task_id": "15229",
+  "split_reasoning": "Researching software and design concepts are both ways of keeping professional knowledge current.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research new software and design concepts to stay current.",
+    "time_share": 1.0,
+    "type_reasoning": "As stated, the research is professional learning and does not require a deliverable others check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Project-specific audience research and study of reference images serve different purposes.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A specific software evaluation or research report would be a separate deliverable if assigned."
+ },
+ {
+  "task_id": "23970",
+  "split_reasoning": "Preparing digital files for printing is one production activity, even though it can involve several technical checks and adjustments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a digital design file for printing.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a print-ready file that a printer or production team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One print job's file is prepared and handed over as a unit.",
+    "work_item": "one print-ready digital file",
+    "start": "approved design file and printer specifications received",
+    "end": "file checked, prepared, and sent to print production",
+    "checked_by": "printer or print production staff",
+    "overlap_reasoning": "Final layout assembly and review may include some print preparation or checking, but also cover layout construction and design review.",
+    "duplicates": [],
+    "overlaps_with": [
+     "302",
+     "304",
+     "310"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23971",
+  "split_reasoning": "Researching a project's target audience is one project-specific research activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research the target audience for a design project.",
+    "time_share": 1.0,
+    "type_reasoning": "The research produces project-specific findings that inform the design team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings for one project brief are gathered and communicated as a unit.",
+    "work_item": "one project's target-audience research summary",
+    "start": "project brief and audience research question received",
+    "end": "audience findings recorded or shared with the project team",
+    "checked_by": "creative lead, client, or project team",
+    "overlap_reasoning": "General research into design concepts and study of reference images have different subjects and purposes.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The findings may be a short informal summary rather than a formal report."
+ },
+ {
+  "task_id": "23972",
+  "split_reasoning": "Writing original client copy and editing existing copy have different inputs and production work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write copy for a client.",
+    "time_share": 0.55,
+    "type_reasoning": "Writing produces a distinct draft for the client or design team to review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A piece of copy for one specified use is submitted as a whole.",
+    "work_item": "one piece of client copy drafted",
+    "start": "copy brief and relevant information received",
+    "end": "draft copy submitted for review",
+    "checked_by": "client, editor, or creative supervisor",
+    "overlap_reasoning": "Layout tasks may place copy, but do not themselves describe writing it.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Edit existing copy for a client.",
+    "time_share": 0.45,
+    "type_reasoning": "Editing produces a revised piece of copy for review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The supplied copy is revised and returned as a complete piece.",
+    "work_item": "one piece of client copy edited",
+    "start": "existing copy and editing instructions received",
+    "end": "revised copy returned or submitted for approval",
+    "checked_by": "client, author, or creative supervisor",
+    "overlap_reasoning": "Reviewing a final layout may reveal copy issues, but is a broader visual-layout review rather than copy editing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "304"
+    ]
+   }
+  ],
+  "notes": "The writing and editing shares depend on whether clients supply their own copy."
+ }
+]

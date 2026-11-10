@@ -1,0 +1,619 @@
+[
+ {
+  "task_id": "46",
+  "split_reasoning": "Directing and supervising staff in live interactions differs from documenting an individual employee's evaluation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and supervise staff in their work activities.",
+    "time_share": 0.65,
+    "type_reasoning": "Supervision consists primarily of live direction, coaching, and discussion with staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "52",
+     "53",
+     "58"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Evaluate and document an employee's work performance.",
+    "time_share": 0.35,
+    "type_reasoning": "The evaluation produces a record relied on for personnel decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual employee evaluation is reviewed and retained as a whole.",
+    "work_item": "one employee performance evaluation",
+    "start": "evaluation period ends or review is requested",
+    "end": "evaluation is completed and submitted to the personnel process",
+    "checked_by": "employee, management, and human resources",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary with the manager's span of control and evaluation cycle."
+ },
+ {
+  "task_id": "47",
+  "split_reasoning": "Objectives and evaluative or operational criteria are normally developed together as the framework for managing a unit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set objectives and criteria for evaluating and operating a managed unit.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a documented set of objectives and criteria for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A unit's objectives and criteria are typically submitted and reviewed together for a planning period.",
+    "work_item": "one unit's objectives and operating criteria",
+    "start": "planning cycle begins or unit priorities require revision",
+    "end": "objectives and criteria are documented and communicated for use",
+    "checked_by": "senior management and unit leaders",
+    "duplicates": [],
+    "overlaps_with": [
+     "50",
+     "54",
+     "58"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "48",
+  "split_reasoning": "Recruitment, hiring decisions, and personnel training are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange recruitment for a vacant position.",
+    "time_share": 0.3,
+    "type_reasoning": "Recruitment produces a position requisition and recruitment request used by hiring staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recruitment is ordinarily initiated and tracked for an individual vacancy or requisition.",
+    "work_item": "one vacancy recruitment request",
+    "start": "staffing vacancy or need is identified",
+    "end": "requisition and recruitment requirements are submitted",
+    "checked_by": "human resources and the approving manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "54",
+     "58"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interview and assess candidates and make a hiring selection.",
+    "time_share": 0.4,
+    "type_reasoning": "The selection produces a hiring decision and supporting record used by human resources.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selection for a vacancy is handed to human resources as a single hiring decision.",
+    "work_item": "one hiring selection for a vacancy",
+    "start": "candidate applications are available for assessment",
+    "end": "selection and required approvals are forwarded to human resources",
+    "checked_by": "human resources and the approving manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Conduct or arrange training for personnel.",
+    "time_share": 0.3,
+    "type_reasoning": "The training itself is delivered through live instruction and interaction with staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "58",
+     "63"
+    ]
+   }
+  ],
+  "notes": "Shares depend on vacancies and whether training is delivered personally or delegated."
+ },
+ {
+  "task_id": "49",
+  "split_reasoning": "Developing a record-management system and maintaining an existing system are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a computerized record-management system or a defined addition to it.",
+    "time_share": 0.55,
+    "type_reasoning": "Development produces a configured system component or specification that users and technical staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined system component or change is reviewed and released as a unit rather than treating the entire system program as one item.",
+    "work_item": "one record-system component or change specification",
+    "start": "record-management requirement is identified",
+    "end": "component or specification is completed and handed over for implementation or use",
+    "checked_by": "system users, information technology staff, and management",
+    "duplicates": [],
+    "overlaps_with": [
+     "56"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain a computerized record-management system and its reporting capability.",
+    "time_share": 0.45,
+    "type_reasoning": "Maintenance requests lead to discrete system corrections or updates.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each requested correction or update can be tracked and accepted separately.",
+    "work_item": "one record-system maintenance change",
+    "start": "system problem or update requirement is reported",
+    "end": "change is completed and communicated to affected users",
+    "checked_by": "system users and information technology staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The manager may specify or coordinate technical work rather than perform the programming."
+ },
+ {
+  "task_id": "50",
+  "split_reasoning": "Developing a policy or procedure and implementing it are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or revise an organizational policy or procedure.",
+    "time_share": 0.6,
+    "type_reasoning": "Development produces a policy or procedure document for approval and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual policy or procedure is reviewed and approved as a whole.",
+    "work_item": "one policy or procedure document",
+    "start": "need for a new or revised policy or procedure is identified",
+    "end": "document is submitted for approval",
+    "checked_by": "facility leadership and compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "47",
+     "60"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an approved organizational policy or procedure.",
+    "time_share": 0.4,
+    "type_reasoning": "Implementation produces a rollout instruction or implementation plan used by affected staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The implementation instructions for one approved policy are communicated and tracked together.",
+    "work_item": "one policy implementation instruction or rollout plan",
+    "start": "policy or procedure is approved for implementation",
+    "end": "implementation instructions are issued to responsible staff",
+    "checked_by": "department leaders and compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "56",
+     "58"
+    ]
+   }
+  ],
+  "notes": "Live staff training associated with implementation may be covered separately by training tasks."
+ },
+ {
+  "task_id": "51",
+  "split_reasoning": "Accounting, budgeting, expenditure authorization, rate setting, and financial reporting coordination produce different financial items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct or oversee accounting for facility operations.",
+    "time_share": 0.2,
+    "type_reasoning": "Accounting produces discrete reviewed financial records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A period's accounts or reconciliation are reviewed and closed together.",
+    "work_item": "one accounting-period reconciliation",
+    "start": "period transactions and account records are available",
+    "end": "reconciliation is reviewed and filed or forwarded",
+    "checked_by": "finance staff and auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "61"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Plan a budget for facility operations.",
+    "time_share": 0.25,
+    "type_reasoning": "Budget planning produces a financial plan for approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A unit or facility budget for a planning period is submitted as a whole.",
+    "work_item": "one operating budget proposal",
+    "start": "budget planning cycle begins",
+    "end": "budget proposal is submitted for approval",
+    "checked_by": "finance leadership and facility management",
+    "duplicates": [],
+    "overlaps_with": [
+     "61"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Review and authorize expenditures.",
+    "time_share": 0.2,
+    "type_reasoning": "Each authorization produces an approval or rejection that purchasing and finance staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An expenditure request is reviewed and decided individually.",
+    "work_item": "one expenditure authorization decision",
+    "start": "expenditure request is received",
+    "end": "decision is recorded and communicated",
+    "checked_by": "requesting staff, purchasing, and finance",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Establish or revise rates for services.",
+    "time_share": 0.15,
+    "type_reasoning": "Rate setting produces a schedule or recommendation used for charging and financial planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposed rate or related set of rates is reviewed and approved together.",
+    "work_item": "one service rate or rate schedule proposal",
+    "start": "rate review or new service pricing is requested",
+    "end": "proposed rate or schedule is submitted for approval",
+    "checked_by": "finance leadership and billing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "61"
+    ]
+   },
+   {
+    "part_id": "e",
+    "text": "Coordinate financial reporting for the facility.",
+    "time_share": 0.2,
+    "type_reasoning": "Coordination results in a completed financial report assembled for management or other recipients.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each scheduled or requested financial report is delivered as a whole.",
+    "work_item": "one coordinated financial report",
+    "start": "reporting period ends or report is requested",
+    "end": "report is assembled and submitted",
+    "checked_by": "finance leadership, management, and auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     "57",
+     "61"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate and depend on the finance functions delegated to specialist staff."
+ },
+ {
+  "task_id": "52",
+  "split_reasoning": "Scheduling and assigning staff are normally combined in one staffing plan for a period.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set staff schedules and assignments using workload, space, and equipment availability.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a schedule that staff and managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A unit's schedule for a shift cycle or other planning period is issued and used as a whole.",
+    "work_item": "one unit staffing schedule and assignment plan",
+    "start": "staff availability and workload requirements are gathered",
+    "end": "schedule and assignments are issued to staff",
+    "checked_by": "unit staff and department leadership",
+    "duplicates": [],
+    "overlaps_with": [
+     "46",
+     "54",
+     "58"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "53",
+  "split_reasoning": "Attending board meetings and coordinating between departments are live communication activities serving the same continuing liaison function.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain communication among governing boards, medical staff, and department heads through meetings and coordination.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on live discussion and coordination rather than a specified document or other deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "46",
+     "58",
+     "59"
+    ]
+   }
+  ],
+  "notes": "Formal board papers or minutes, if assigned, are not specified in this target."
+ },
+ {
+  "task_id": "54",
+  "split_reasoning": "Monitoring resource use and assessing additional needs form one continuing activity that produces discrete resource assessments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess use of services, beds, facilities, and staff and identify additional resource needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Monitoring results in an assessment or recommendation that management can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A periodic or triggered resource assessment brings the relevant utilization findings and needs together.",
+    "work_item": "one resource utilization and needs assessment",
+    "start": "utilization information becomes available or a resource concern is identified",
+    "end": "assessment and any resource recommendations are communicated",
+    "checked_by": "facility leadership and department managers",
+    "duplicates": [],
+    "overlaps_with": [
+     "48",
+     "52",
+     "61"
+    ]
+   }
+  ],
+  "notes": "The assessment may be a brief escalation rather than a formal periodic report."
+ },
+ {
+  "task_id": "55",
+  "split_reasoning": "The listed subjects are different inputs to the same activity of staying informed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stay informed about medical, technological, regulatory, insurance, and financing developments.",
+    "time_share": 1.0,
+    "type_reasoning": "Maintaining personal awareness does not itself produce a specified item for others to check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Actions taken in response to developments are covered by other tasks."
+ },
+ {
+  "task_id": "56",
+  "split_reasoning": "The examples are different kinds of organizational change managed through the same change-management activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Manage a defined change in health care delivery, such as restructuring work or introducing technology.",
+    "time_share": 1.0,
+    "type_reasoning": "Managing a change produces a plan or implementation update that responsible leaders use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined change plan or update can be reviewed and handed over without treating the entire transformation program as one item.",
+    "work_item": "one change implementation plan or status update",
+    "start": "a defined delivery-system change is proposed or requires review",
+    "end": "plan or update is communicated to responsible leaders",
+    "checked_by": "facility leadership and affected department heads",
+    "duplicates": [],
+    "overlaps_with": [
+     "49",
+     "50",
+     "58",
+     "62"
+    ]
+   }
+  ],
+  "notes": "Live change discussions may accompany the documented plan or update."
+ },
+ {
+  "task_id": "57",
+  "split_reasoning": "Programs, services, and quality initiatives are alternative subjects for the same activity of preparing management reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare an activity report on program, service, or quality-initiative status and implementation plans.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a report that management reviews and uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each requested or periodic report is submitted as a whole.",
+    "work_item": "one activity and implementation status report",
+    "start": "reporting period ends or management requests an update",
+    "end": "completed report is sent to management",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "51",
+     "58",
+     "62"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "58",
+  "split_reasoning": "Planning and administering programs produce different items, while staff coordination is a live interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a health care program or service.",
+    "time_share": 0.35,
+    "type_reasoning": "Planning produces a documented program or service plan for approval and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined program or service plan is submitted and reviewed as a unit.",
+    "work_item": "one program or service plan",
+    "start": "program or service planning need is identified",
+    "end": "plan is submitted to the responsible leadership",
+    "checked_by": "facility leadership and affected department heads",
+    "duplicates": [],
+    "overlaps_with": [
+     "47",
+     "62"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement and administer a health care program or service.",
+    "time_share": 0.4,
+    "type_reasoning": "Administration generates discrete implementation instructions or decisions for staff to carry out.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined operational instruction or decision is issued and acted on separately from the overall program.",
+    "work_item": "one program implementation instruction or operational decision",
+    "start": "an implementation step or operational issue requires action",
+    "end": "instruction or decision is communicated to responsible staff",
+    "checked_by": "program staff and facility leadership",
+    "duplicates": [],
+    "overlaps_with": [
+     "50",
+     "56",
+     "57",
+     "62"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Coordinate and train personnel involved in facility programs and services.",
+    "time_share": 0.25,
+    "type_reasoning": "Coordination and training are carried out through live discussion and instruction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "46",
+     "48",
+     "53",
+     "63"
+    ]
+   }
+  ],
+  "notes": "Shares depend on program maturity and how much personnel administration is delegated."
+ },
+ {
+  "task_id": "59",
+  "split_reasoning": "The listed purposes are alternative subjects for consulting with outside groups in live interactions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with medical, business, and community groups about services, community needs, coordination, and health programs.",
+    "time_share": 1.0,
+    "type_reasoning": "The target's value is in discussion, relationship building, and coordination with the groups.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "53",
+     "62"
+    ]
+   }
+  ],
+  "notes": "A separately requested proposal or report arising from consultation is not specified here."
+ },
+ {
+  "task_id": "60",
+  "split_reasoning": "Inspecting facilities requires hands-on observation away from a computer, while documenting modification recommendations is a separate output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect facilities and equipment for emergency readiness and access, safety, and sanitation compliance.",
+    "time_share": 0.6,
+    "type_reasoning": "The inspection requires physical presence and examination of the facility.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Recommend building or equipment modifications based on inspection findings.",
+    "time_share": 0.4,
+    "type_reasoning": "The recommendations produce a document or request that facility leaders and maintenance staff can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recommendations from a particular inspection are normally submitted together.",
+    "work_item": "one facility inspection modification recommendation",
+    "start": "inspection findings are available",
+    "end": "recommendations are submitted to responsible management or maintenance staff",
+    "checked_by": "facility leadership, maintenance, and compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "50"
+    ]
+   }
+  ],
+  "notes": "Shares vary with facility size and the severity of findings."
+ },
+ {
+  "task_id": "61",
+  "split_reasoning": "Planning, cash and risk management, and service utilization are different uses for the same activity of analyzing facility data.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze facility activity and data to support planning, financial and risk management, or service utilization.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis produces findings or recommendations used by management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis answering a defined management question is communicated and reviewed as a whole.",
+    "work_item": "one facility activity analysis",
+    "start": "management question is identified and relevant data are available",
+    "end": "findings and recommendations are communicated",
+    "checked_by": "facility leadership and relevant finance or service managers",
+    "duplicates": [],
+    "overlaps_with": [
+     "51",
+     "54"
+    ]
+   }
+  ],
+  "notes": "The scope and format vary by the management question."
+ },
+ {
+  "task_id": "62",
+  "split_reasoning": "Developing or expanding a program and implementing an approved program are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or propose an expansion of a medical program or health service.",
+    "time_share": 0.6,
+    "type_reasoning": "Development produces a proposal for leadership and partners to assess.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined program or expansion proposal is submitted for a decision as a whole.",
+    "work_item": "one medical program or service expansion proposal",
+    "start": "program or service need is identified",
+    "end": "proposal is submitted to decision makers",
+    "checked_by": "facility leadership and relevant clinical or community partners",
+    "duplicates": [],
+    "overlaps_with": [
+     "58",
+     "59"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an approved medical program or health service.",
+    "time_share": 0.4,
+    "type_reasoning": "Implementation produces defined instructions or plans for responsible staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A launch or implementation plan for a defined program component is reviewed and issued as a whole.",
+    "work_item": "one program or service implementation plan",
+    "start": "program or expansion is approved for implementation",
+    "end": "implementation plan is issued to responsible staff",
+    "checked_by": "program leadership and implementing departments",
+    "duplicates": [],
+    "overlaps_with": [
+     "56",
+     "57",
+     "58"
+    ]
+   }
+  ],
+  "notes": "Research, rehabilitation, and community health are alternative program subjects."
+ },
+ {
+  "task_id": "63",
+  "split_reasoning": "Developing instructional materials and delivering educational programs are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop instructional materials for staff or community education.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces materials that instructors and learners use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A lesson's or session's instructional package is reviewed and distributed as a whole.",
+    "work_item": "one instructional materials package",
+    "start": "educational topic and audience are identified",
+    "end": "materials are completed and made available for instruction",
+    "checked_by": "education lead, instructors, and learners",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Conduct in-service or community-based educational sessions.",
+    "time_share": 0.6,
+    "type_reasoning": "Education is delivered through live teaching and interaction with participants.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "48",
+     "58"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether existing materials can be reused."
+ }
+]

@@ -1,0 +1,403 @@
+[
+ {
+  "task_id": "7536",
+  "split_reasoning": "Studying economic and statistical data is one analytical activity across different specialties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze economic and statistical data in an area of specialization.",
+    "time_share": 1.0,
+    "type_reasoning": "An analysis produces findings that colleagues or clients can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One analysis of a defined question or dataset is a usable unit of work, rather than an entire research program.",
+    "work_item": "one economic data analysis with findings",
+    "start": "an economic question and relevant data are identified",
+    "end": "analysis results are documented or shared",
+    "checked_by": "research colleagues or the requesting organization",
+    "overlap_reasoning": "Other tasks use data analysis as part of broader reporting, forecasting, impact studies, or research, but also include outputs beyond this analysis.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7538",
+     "7543",
+     "20052",
+     "20053"
+    ]
+   }
+  ],
+  "notes": "The form of the analysis output varies by workplace."
+ },
+ {
+  "task_id": "7537",
+  "split_reasoning": "Economic advice is given both in live consultations and in written responses prepared outside a live contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with an organization in a live discussion about economic relationships.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live professional consultation and exchange of advice.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Formulating recommendations or explaining policy effects can be part of a consultation, but those tasks also cover work outside consultations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7539",
+     "21106"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare written economic advice for an organization.",
+    "time_share": 0.4,
+    "type_reasoning": "A written response is a distinct deliverable the recipient can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One response addresses a defined request and is sent to the organization as a whole.",
+    "work_item": "one written response providing economic advice",
+    "start": "an organization's request for advice is received",
+    "end": "written advice is sent to the requester",
+    "checked_by": "the requesting organization",
+    "overlap_reasoning": "Written advice may include recommendations or policy explanations, though those tasks also cover other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7539",
+     "21106"
+    ]
+   }
+  ],
+  "notes": "The live and written shares are estimates and vary by employer."
+ },
+ {
+  "task_id": "7538",
+  "split_reasoning": "Compiling, analyzing, and reporting data are stages of one analytical reporting workflow; mathematical and statistical techniques are alternative means.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and analyze economic data and report findings explaining phenomena or forecasting market trends.",
+    "time_share": 1.0,
+    "type_reasoning": "The workflow produces a distinct set of reported analytical findings.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report on a defined economic question or forecast is the item delivered to its users.",
+    "work_item": "one economic analysis or market forecast report",
+    "start": "a reporting or forecasting question and relevant data are identified",
+    "end": "the analysis and findings are reported to their intended users",
+    "checked_by": "research reviewers, managers, or clients",
+    "overlap_reasoning": "Data study, resource forecasting, policy impact studies, and research reports can use the same analyses but each has a different or broader scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7536",
+     "7543",
+     "20052",
+     "20053"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7539",
+  "split_reasoning": "Recommendations, policies, and plans are alternative forms of a proposed response to an economic issue.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Formulate recommendations, policies, or plans addressing an economic problem or interpreting a market.",
+    "time_share": 1.0,
+    "type_reasoning": "The task produces a proposal or set of recommendations for decision-makers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal addressing one defined issue is reviewed and used as a whole.",
+    "work_item": "one economic recommendation or policy proposal",
+    "start": "an economic problem or market question is assigned",
+    "end": "the proposed recommendations, policy, or plan are submitted",
+    "checked_by": "the requesting manager, client, or policy decision-maker",
+    "overlap_reasoning": "Advice, economic guidelines, hearing recommendations, and policy impact studies can inform or contain proposals, but each also covers distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7537",
+     "7540",
+     "7541",
+     "20052"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7540",
+  "split_reasoning": "Developing guidelines or standards and preparing economic points of view produce different kinds of document.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop economic guidelines or standards for forecasting or policy work.",
+    "time_share": 0.5,
+    "type_reasoning": "A guideline or standard is a distinct document used by other workers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A complete guideline or standard is the unit submitted for review and use.",
+    "work_item": "one economic guideline or standard",
+    "start": "a need for a guideline or standard is identified",
+    "end": "the guideline or standard is drafted and submitted for adoption or use",
+    "checked_by": "policy managers and analysts who apply it",
+    "overlap_reasoning": "Policy plans and recommendations may draw on or include guidelines, but are not necessarily the same document.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7539"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare an economic point of view for use in forecasting or policy formulation.",
+    "time_share": 0.5,
+    "type_reasoning": "A documented position provides a distinct input to forecasting or policy decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One position on a defined issue is prepared and communicated as a whole.",
+    "work_item": "one economic position paper or briefing",
+    "start": "an issue requiring an economic position is identified",
+    "end": "the position is documented and provided to its users",
+    "checked_by": "forecasting staff or policy decision-makers",
+    "overlap_reasoning": "A position may incorporate recommendations or research findings, while those tasks also produce other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7539",
+     "20053"
+    ]
+   }
+  ],
+  "notes": "The shares are estimates; some workplaces combine a position and guideline in one document."
+ },
+ {
+  "task_id": "7541",
+  "split_reasoning": "The estimated effects and recommendations are both presented as part of the same live hearing testimony.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Testify at a regulatory or legislative hearing about policy effects and cost-benefit-based recommendations.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on live testimony and presentation to hearing participants.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Policy impact studies and recommendations can support the testimony, while litigation testimony takes place in a different proceeding.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7539",
+     "20051",
+     "20052"
+    ]
+   }
+  ],
+  "notes": "A separately prepared written submission is not specified in the target."
+ },
+ {
+  "task_id": "7542",
+  "split_reasoning": "Supervising research projects and student study projects is the same kind of supervisory activity applied to different projects.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise research projects and students' study projects.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision primarily consists of directing and discussing work with researchers or students.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision may involve reviewing documents, but document review also occurs independently and is not the whole of supervision.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23988"
+    ]
+   }
+  ],
+  "notes": "Formal written reviews, where required, may be covered by the separate document-review task."
+ },
+ {
+  "task_id": "7543",
+  "split_reasoning": "Renewable and non-renewable resources are different subjects for the same forecasting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Forecast the supply, production, consumption, or depletion of natural resources.",
+    "time_share": 1.0,
+    "type_reasoning": "Each forecasting assignment produces estimates that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A forecast for a defined resource and period is delivered or updated as a whole.",
+    "work_item": "one resource supply, consumption, or depletion forecast",
+    "start": "a resource, forecast horizon, and forecasting requirements are identified",
+    "end": "forecast estimates and assumptions are documented and delivered",
+    "checked_by": "resource analysts, planners, or the requesting organization",
+    "overlap_reasoning": "Resource forecasts use economic data analysis and may be reported as part of broader analytical work, but the other statements also cover non-resource topics.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7536",
+     "7538"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7544",
+  "split_reasoning": "Theories, principles, and methods are subjects taught through the same activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach economic theories, principles, and methods.",
+    "time_share": 1.0,
+    "type_reasoning": "Teaching is a live instructional interaction whose value is in the instruction itself.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Teaching and supervising student projects are related but are distinct instructional and supervisory activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7542"
+    ]
+   }
+  ],
+  "notes": "Preparation of course materials is not separately specified."
+ },
+ {
+  "task_id": "20051",
+  "split_reasoning": "Writing a litigation report and giving live expert testimony are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write an economic expert report for litigation or expert testimony.",
+    "time_share": 0.7,
+    "type_reasoning": "An expert report is a distinct written deliverable for a legal case.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report presenting the expert's analysis and opinions is provided to counsel as a whole.",
+    "work_item": "one economic expert report for litigation",
+    "start": "counsel requests an expert analysis and supplies case materials",
+    "end": "the completed report is delivered to counsel",
+    "checked_by": "retaining counsel and, when disclosed, opposing parties and the court",
+    "overlap_reasoning": "The report may draw on economic analysis and research, but those tasks also cover non-litigation work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7536",
+     "7538",
+     "20053"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Testify as an economic expert witness in litigation.",
+    "time_share": 0.3,
+    "type_reasoning": "Expert testimony is a live interaction with counsel and the tribunal.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Regulatory or legislative testimony is similar but occurs in different proceedings and covers different questions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7541"
+    ]
+   }
+  ],
+  "notes": "The shares are estimates and vary substantially by case."
+ },
+ {
+  "task_id": "20052",
+  "split_reasoning": "Legislation, taxes, services, and regulations are policy subjects studied through the same impact-analysis activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Study the socioeconomic impacts of a new or proposed public policy.",
+    "time_share": 1.0,
+    "type_reasoning": "A study produces findings about a defined policy's effects for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An impact analysis for one policy or proposal is a reviewable analytical output.",
+    "work_item": "one socioeconomic policy impact analysis",
+    "start": "a policy or proposal and impact questions are identified",
+    "end": "the estimated impacts and assumptions are documented and shared",
+    "checked_by": "policy analysts, decision-makers, or the study sponsor",
+    "overlap_reasoning": "Data analysis, research reporting, recommendations, and hearing testimony can use or present impact-study findings, but each also covers work beyond the study.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7536",
+     "7538",
+     "7539",
+     "7541",
+     "20053"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20053",
+  "split_reasoning": "Research and dissemination are stages of one workflow, with technical reports and journal articles as alternative publication forms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Research an economic issue and disseminate the findings in a technical report or journal article.",
+    "time_share": 1.0,
+    "type_reasoning": "The workflow produces a distinct research report or article for readers and reviewers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report or article is submitted or published as a whole, even when it draws on a larger research project.",
+    "work_item": "one economic research report or journal article",
+    "start": "a defined research question and publication or reporting assignment are established",
+    "end": "the completed report or article is submitted or disseminated",
+    "checked_by": "research supervisors, peer reviewers, editors, or report readers",
+    "overlap_reasoning": "Data analysis and policy studies can form part of research, and their results may also inform positions or litigation reports, but those tasks have additional scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7536",
+     "7538",
+     "7540",
+     "20051",
+     "20052"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21106",
+  "split_reasoning": "Explaining policy impacts to the public can take place in live presentations or through written explanations prepared outside a live interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain the economic impacts of policies to the public in a live presentation or discussion.",
+    "time_share": 0.5,
+    "type_reasoning": "The public-facing presentation or discussion is a live explanatory interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Consultations and hearing testimony may also explain impacts, but address different audiences or purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7537",
+     "7541"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a written public explanation of a policy's economic impacts.",
+    "time_share": 0.5,
+    "type_reasoning": "A written explanation is a distinct communication that the public can read and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One public-facing explanation of a defined policy is published or released as a whole.",
+    "work_item": "one public-facing policy impact explanation",
+    "start": "a policy and the impacts to explain are identified",
+    "end": "the explanation is cleared and published or distributed",
+    "checked_by": "communications staff, policy officials, and public readers",
+    "overlap_reasoning": "The explanation can draw on a policy impact study or written advice, but those outputs have different audiences or purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7537",
+     "20052"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the economist's public-facing role and communication channels."
+ },
+ {
+  "task_id": "23988",
+  "split_reasoning": "Reviewing documents written by others is one activity regardless of document subject.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a document written by someone else and provide feedback.",
+    "time_share": 1.0,
+    "type_reasoning": "A review produces comments or a reviewed document for the author or requester.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The document is reviewed and returned as a whole rather than page by page.",
+    "work_item": "one document reviewed with feedback",
+    "start": "a document is received for review",
+    "end": "comments or the reviewed document are returned",
+    "checked_by": "the document's author or the person requesting the review",
+    "overlap_reasoning": "Document review can occur during project supervision, but it also occurs independently of supervision.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7542"
+    ]
+   }
+  ],
+  "notes": "The target does not specify whether reviews focus on economic content, methods, or editorial quality."
+ }
+]

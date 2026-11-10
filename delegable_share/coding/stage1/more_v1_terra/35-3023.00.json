@@ -1,0 +1,739 @@
+[
+ {
+  "task_id": "23099",
+  "split_reasoning": "Orders, comments, and complaints are subjects of the same customer-facing communication activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Communicate with a customer about an order, comment, or complaint.",
+    "time_share": 1.0,
+    "type_reasoning": "The communication takes place with a customer in a live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer contact is the bounded interaction in which the worker addresses the subject.",
+    "work_item": "one customer contact about an order, comment, or complaint",
+    "start": "customer raises a question, comment, or complaint",
+    "end": "worker responds or directs the issue to the appropriate person",
+    "checked_by": "customer and, for escalated issues, supervisor",
+    "overlap_reasoning": "Order conversations can include taking an order or serving a customer, but this task also covers comments and complaints.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23104",
+     "23110",
+     "23119"
+    ]
+   }
+  ],
+  "notes": "Written feedback handling may occur in some establishments, but the usual counter-worker contact is live."
+ },
+ {
+  "task_id": "23100",
+  "split_reasoning": "Accepting payment and making change are steps in the same transaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accept a customer's payment and make change when needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Payment is processed while the customer is at the counter or drive-through.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The completed payment for one purchase is the transaction the customer and establishment rely on.",
+    "work_item": "one customer payment processed",
+    "start": "customer presents payment",
+    "end": "payment is recorded and any change is given",
+    "checked_by": "customer and shift supervisor",
+    "overlap_reasoning": "General customer service may include payment, while register balancing is a later reconciliation rather than the same transaction.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23103",
+     "23110"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23101",
+  "split_reasoning": "Cleaning equipment and washing serviceware are distinct hands-on activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Scrub and polish counters, steam tables, and fountain or other equipment.",
+    "time_share": 0.65,
+    "type_reasoning": "Cleaning and polishing require hands-on work at the equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The general cleaning statements also cover equipment and service areas, but include other cleaning work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23102",
+     "23107"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Clean glasses and dishes.",
+    "time_share": 0.35,
+    "type_reasoning": "Cleaning serviceware requires handling and washing physical items.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Other statements cover dishwashing, although they also include other cleaning duties or other types of serviceware.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23102",
+     "23112"
+    ]
+   }
+  ],
+  "notes": "The division of time depends on the equipment and dishwashing arrangements."
+ },
+ {
+  "task_id": "23102",
+  "split_reasoning": "Floor cleaning and dishwashing are different hands-on activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sweep and mop facilities to maintain sanitary conditions.",
+    "time_share": 0.5,
+    "type_reasoning": "Sweeping and mopping require hands-on work throughout the premises.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cleaning and organizing areas includes some of the same area-cleaning work but also includes organizing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23107"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Wash dishes to maintain sanitary conditions.",
+    "time_share": 0.5,
+    "type_reasoning": "Washing dishes requires hands-on handling of serviceware.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements include dishwashing but also cover equipment cleaning or additional serviceware.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23101",
+     "23112"
+    ]
+   }
+  ],
+  "notes": "Other sanitary cleaning duties may be included; the shares vary by establishment."
+ },
+ {
+  "task_id": "23103",
+  "split_reasoning": "Comparing receipts and payments to balance a register is one reconciliation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Balance a cash register's receipts and payments.",
+    "time_share": 1.0,
+    "type_reasoning": "Each register reconciliation produces a balance or discrepancy record for the shift.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A register or drawer is normally reconciled as a whole at a shift change or close.",
+    "work_item": "one register or cash-drawer reconciliation",
+    "start": "shift ends or register is assigned for reconciliation",
+    "end": "receipts and payments are balanced and any discrepancy is recorded or reported",
+    "checked_by": "shift supervisor or manager",
+    "overlap_reasoning": "Accepting customer payments generates transactions used in reconciliation, but is a separate step.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23100"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23104",
+  "split_reasoning": "Requesting and recording an order and computing its bill are steps of one live order-taking activity; the listed tools are alternatives.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take and record a customer's order and compute the bill.",
+    "time_share": 1.0,
+    "type_reasoning": "The order and bill are entered while the customer is waiting in the live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's recorded order and total are completed and conveyed together.",
+    "work_item": "one customer order recorded and bill computed",
+    "start": "customer is asked for or begins giving an order",
+    "end": "order is recorded and its total is computed",
+    "checked_by": "customer, kitchen staff, and cashier",
+    "overlap_reasoning": "Other statements cover order conversation, written order tickets, or general customer service, but not exactly this combination of order recording and bill computation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23099",
+     "23110",
+     "23119"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23105",
+  "split_reasoning": "The listed foods and service settings are alternatives within the same serving activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Serve food, beverages, or desserts to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker hands the order to the customer during the service encounter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A customer's food or beverage handoff is the completed unit of this serving step.",
+    "work_item": "one customer order served",
+    "start": "food or beverage is ready for handoff",
+    "end": "order is handed to the customer",
+    "checked_by": "customer and shift supervisor",
+    "overlap_reasoning": "General service, beverage service, and picking up and serving food can include the same handoff, but each covers additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23109",
+     "23110",
+     "23115",
+     "23123"
+    ]
+   }
+  ],
+  "notes": "Some settings involve carrying food to the customer before the handoff."
+ },
+ {
+  "task_id": "23106",
+  "split_reasoning": "Preparing daily food items and cooking simple foods and beverages are one food-preparation activity applied to different items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and cook daily food items and simple beverages using safe, sanitary practices.",
+    "time_share": 1.0,
+    "type_reasoning": "Food and beverage preparation requires hands-on work with ingredients and equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Other statements cover particular beverages, desserts, or special-diet meals also prepared under this broad task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23109",
+     "23115",
+     "23125"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23107",
+  "split_reasoning": "Cleaning and organizing are distinct activities, even though they occur in the same areas; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean eating, service, and kitchen areas.",
+    "time_share": 0.7,
+    "type_reasoning": "Cleaning requires hands-on work in the premises.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Other statements cover particular surfaces and general sanitary cleaning in these areas.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23101",
+     "23102",
+     "23121"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Organize eating, service, and kitchen areas.",
+    "time_share": 0.3,
+    "type_reasoning": "Organizing requires physically arranging supplies and equipment in the areas.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Setting up dining areas may include arranging the same space, but also includes meal setup and clearing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23121",
+     "23124"
+    ]
+   }
+  ],
+  "notes": "The time division depends on shift and establishment."
+ },
+ {
+  "task_id": "23108",
+  "split_reasoning": "Checking stock, ordering supplies, and physically restocking are distinct activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check food and supply levels to identify replenishment needs.",
+    "time_share": 0.25,
+    "type_reasoning": "Checking stock generally involves physically inspecting and counting items in storage and service areas.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Checking serving stations can identify food needing replenishment, but replenishment is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23117"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Order food and supplies needed to maintain inventory.",
+    "time_share": 0.25,
+    "type_reasoning": "Each order is a discrete request submitted to a supplier or internal purchasing team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A purchase or replenishment order is submitted and acted on as a whole.",
+    "work_item": "one food or supply replenishment order",
+    "start": "stock needs are identified",
+    "end": "order is submitted to the supplier or purchasing team",
+    "checked_by": "manager and supplier or purchasing team",
+    "overlap_reasoning": "Notifying kitchen staff about a shortage communicates a need but is not necessarily a supply order.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23114"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Restock food and supplies as needed.",
+    "time_share": 0.5,
+    "type_reasoning": "Restocking requires moving and placing physical items.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Replenishing food at serving stations is one specific kind of restocking.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23117"
+    ]
+   }
+  ],
+  "notes": "Inventory checks may also produce written counts; ordering authority and time shares vary by workplace."
+ },
+ {
+  "task_id": "23109",
+  "split_reasoning": "Brewing beverages and filling customer-requested containers are distinct activities, with the latter often done while the customer waits; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Brew coffee and tea for service.",
+    "time_share": 0.5,
+    "type_reasoning": "Brewing involves hands-on preparation using beverage equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The general food-preparation statement includes preparing simple beverages.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23106"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Fill a customer's container with a requested beverage during service.",
+    "time_share": 0.5,
+    "type_reasoning": "The beverage is typically dispensed while the customer waits at the counter or drive-through.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One requested beverage is filled and handed over as a unit.",
+    "work_item": "one requested beverage filled and handed to a customer",
+    "start": "customer's beverage request is received",
+    "end": "filled container is handed to the customer",
+    "checked_by": "customer",
+    "overlap_reasoning": "Serving beverages and preparing and serving cold drinks can include the same customer handoff.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23105",
+     "23110",
+     "23115"
+    ]
+   }
+  ],
+  "notes": "Some beverages are filled in a back preparation area rather than at the customer-facing station."
+ },
+ {
+  "task_id": "23110",
+  "split_reasoning": "The statement describes general live customer service rather than specifying separate activities to code.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Serve a customer at a fast-service or carry-out eating place.",
+    "time_share": 1.0,
+    "type_reasoning": "The service is performed during a live customer encounter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer service encounter is the natural unit of this broadly worded statement.",
+    "work_item": "one fast-food or carry-out customer served",
+    "start": "customer approaches the counter or drive-through",
+    "end": "requested service is completed and the customer leaves the contact",
+    "checked_by": "customer and shift supervisor",
+    "overlap_reasoning": "This broad service encounter can include order communication, order taking, payment, and handing over food or drinks, each of which is separately described elsewhere.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23099",
+     "23100",
+     "23104",
+     "23105",
+     "23109",
+     "23115",
+     "23119",
+     "23123"
+    ]
+   }
+  ],
+  "notes": "This broad statement overlaps several more specific workflow steps."
+ },
+ {
+  "task_id": "23111",
+  "split_reasoning": "Collecting dirty dishes and returning them to the kitchen are steps of one clearing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect dirty dishes and return them to the kitchen for washing.",
+    "time_share": 1.0,
+    "type_reasoning": "Collecting and transporting dishes require hands-on movement away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Clearing dining areas can include collecting dishes, but also covers other setup and clearing work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23121"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23112",
+  "split_reasoning": "Dishes, glassware, and silverware are different items handled through the same washing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wash dishes, glassware, and silverware after meals.",
+    "time_share": 1.0,
+    "type_reasoning": "Washing serviceware requires hands-on work with the items and washing equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The broader cleaning statements include washing some of the same dishes and glasses but also cover other cleaning duties.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23101",
+     "23102"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23113",
+  "split_reasoning": "The listed menu items are alternatives within the same wrapping activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wrap menu items for serving or takeout.",
+    "time_share": 1.0,
+    "type_reasoning": "Wrapping food is hands-on preparation, usually at a food-preparation or packing station.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Selecting and placing food in takeout bags can be part of the same packing process, but does not necessarily include wrapping.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23116"
+    ]
+   }
+  ],
+  "notes": "Wrapping at a customer-facing counter while the customer waits can be part of live service."
+ },
+ {
+  "task_id": "23114",
+  "split_reasoning": "Shortages and special orders are alternative subjects of the same kitchen-notification activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Notify kitchen personnel about shortages or special orders.",
+    "time_share": 1.0,
+    "type_reasoning": "These notifications are commonly conveyed directly to kitchen coworkers as brief live operational communications.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Order taking may transmit special-order details, and stock monitoring may identify shortages, but neither is the same notification activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23104",
+     "23108",
+     "23119",
+     "23123"
+    ]
+   }
+  ],
+  "notes": "Some establishments transmit special-order instructions on a written or electronic ticket, which would be a discrete item."
+ },
+ {
+  "task_id": "23115",
+  "split_reasoning": "Preparing and serving a drink or dessert is one customer-service activity, with machine use as the preparation method.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and serve a cold drink, frozen milk drink, or dessert using dispensing equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "The item is commonly prepared and handed over while the customer waits for it.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One requested drink or dessert is prepared and handed over as a unit.",
+    "work_item": "one machine-prepared drink or dessert served",
+    "start": "customer's requested item is received for preparation",
+    "end": "prepared item is handed to the customer",
+    "checked_by": "customer and shift supervisor",
+    "overlap_reasoning": "General beverage preparation and food service include some of the same preparation or handoff, but are broader than this machine-based task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23105",
+     "23106",
+     "23109",
+     "23110"
+    ]
+   }
+  ],
+  "notes": "At workplaces where preparation happens in a separate back area after the customer leaves the counter, that preparation is physical work."
+ },
+ {
+  "task_id": "23116",
+  "split_reasoning": "Selecting food and placing it on a dish, tray, or in a bag are steps of the same order-assembly activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select food from serving or storage areas and assemble it on dishes, trays, or in takeout bags.",
+    "time_share": 1.0,
+    "type_reasoning": "Selecting and assembling food require hands-on work at the serving or packing station.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Wrapping food and picking up food for service can be adjacent parts of order assembly and handoff, but are not identical to selecting and placing items.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23113",
+     "23123"
+    ]
+   }
+  ],
+  "notes": "Assembly at the counter while a customer waits can instead be live service."
+ },
+ {
+  "task_id": "23117",
+  "split_reasoning": "Replenishing different foods at serving stations is one restocking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Replenish food at serving stations.",
+    "time_share": 1.0,
+    "type_reasoning": "Replenishment requires moving and placing food at the stations.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The inventory statement includes restocking, of which serving-station replenishment is one type.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23108"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23118",
+  "split_reasoning": "Supervising employees and training employees are distinct personnel activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise employees during their work.",
+    "time_share": 0.6,
+    "type_reasoning": "The core activity is live direction and oversight of employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes employee supervision.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train employees to perform their work.",
+    "time_share": 0.4,
+    "type_reasoning": "The core activity is live instruction and demonstration to employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes employee training.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Other personnel activities may exist; the shares depend on the worker's role."
+ },
+ {
+  "task_id": "23119",
+  "split_reasoning": "Taking the order, writing its ticket, and giving a stub when needed are steps of one order-taking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a customer's order, write an order ticket, and provide a ticket stub when needed.",
+    "time_share": 1.0,
+    "type_reasoning": "The ticket is written and any stub given while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One order ticket and its optional stub are completed for a customer's order.",
+    "work_item": "one customer order ticket written and stub issued if needed",
+    "start": "customer begins giving an order",
+    "end": "ordered items are written on the ticket and any identifying stub is given to the customer",
+    "checked_by": "customer and kitchen or service staff",
+    "overlap_reasoning": "Other statements cover order communication, recording orders with bill computation, and general service; this one specifically includes tickets and stubs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23099",
+     "23104",
+     "23110",
+     "23114"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23120",
+  "split_reasoning": "Distributing food to servers is one handoff activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Distribute prepared food to servers.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically transfers prepared food to coworkers.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Serving food to customers is a separate handoff to a different recipient.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23121",
+  "split_reasoning": "Setting up dining areas before meals and clearing them afterwards are distinct activities; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up dining areas for meals.",
+    "time_share": 0.45,
+    "type_reasoning": "Setup requires physically arranging the dining area and its supplies.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Organizing areas and arranging tables can include some of the same setup work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23107",
+     "23124"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Clear dining areas after meals.",
+    "time_share": 0.55,
+    "type_reasoning": "Clearing requires physically removing used items and tidying the area.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Clearing can include collecting dirty dishes and cleaning the eating area, but also includes other clearing work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23107",
+     "23111"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the dining format."
+ },
+ {
+  "task_id": "23122",
+  "split_reasoning": "Adding relishes and garnishes are alternative applications of the same finishing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Add relishes and garnishes to food orders according to instructions.",
+    "time_share": 1.0,
+    "type_reasoning": "Finishing the food requires hands-on work with the order and ingredients.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically describes adding garnishes or relishes.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23123",
+  "split_reasoning": "Delivering orders to the kitchen and picking up and serving finished food are distinct workflow steps; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver customer orders to the kitchen.",
+    "time_share": 0.3,
+    "type_reasoning": "Delivering a physical order ticket to the kitchen requires moving it to kitchen staff.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Order tickets and special-order notifications may be inputs to this delivery, but those statements also cover taking orders or communicating instructions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23114",
+     "23119"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Pick up prepared food and serve it to the customer.",
+    "time_share": 0.7,
+    "type_reasoning": "The prepared order is picked up and handed over during customer service.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One prepared order is picked up and delivered to its customer as a handoff.",
+    "work_item": "one prepared customer order picked up and served",
+    "start": "kitchen indicates that the order is ready",
+    "end": "order is handed to the customer",
+    "checked_by": "customer and shift supervisor",
+    "overlap_reasoning": "General food serving and customer service include the handoff, while order assembly may include selecting the food beforehand.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23105",
+     "23110",
+     "23116"
+    ]
+   }
+  ],
+  "notes": "Kitchen orders may also be transmitted electronically rather than physically carried."
+ },
+ {
+  "task_id": "23124",
+  "split_reasoning": "Arranging tables and decorations are related elements of the same dining-area setup.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange tables and decorations according to instructions.",
+    "time_share": 1.0,
+    "type_reasoning": "Arranging furniture and decorations requires hands-on work in the dining area.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General area organization and dining-area setup can include arranging tables, but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23107",
+     "23121"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23125",
+  "split_reasoning": "Planning meals, preparing them, and delivering them are distinct activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a meal for an individual with special dietary needs.",
+    "time_share": 0.2,
+    "type_reasoning": "Meal planning produces a specific selection or plan that food preparers can follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A meal plan for one individual or meal is the unit handed to preparation staff.",
+    "work_item": "one special-diet meal plan",
+    "start": "individual's dietary requirements and meal request are available",
+    "end": "meal selection or preparation instructions are established",
+    "checked_by": "food preparer, supervisor, or individual receiving the meal",
+    "overlap_reasoning": "No other listed statement specifically describes planning meals for special dietary needs.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a meal for an individual with special dietary needs.",
+    "time_share": 0.6,
+    "type_reasoning": "Preparing the meal requires hands-on handling of ingredients and cooking equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General food preparation can include the same meal preparation but is not limited to special diets.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23106"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Deliver a prepared special-diet meal to its intended recipient.",
+    "time_share": 0.2,
+    "type_reasoning": "Delivery requires physically carrying the meal to the recipient.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General food serving can include handing the same meal to a customer, but this task is specific to special-diet meals.",
+    "duplicates": [],
+    "overlaps_with": [
+     "23105"
+    ]
+   }
+  ],
+  "notes": "Special-diet meal planning and delivery may be uncommon in some fast-food workplaces; delivery at a waiting customer's counter is live service."
+ }
+]

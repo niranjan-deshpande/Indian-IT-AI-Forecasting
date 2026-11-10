@@ -1,0 +1,8 @@
+[
+ {"task_id": "6535", "reasoning": "In elementary classrooms, rules are usually set with the class early in the year and then reinforced live every day. The written rule list is a small by-product, not a separate deliverable that takes 30% of the time. X's single interpersonal coding, with setup folded in, fits better.", "choice": "X"},
+ {"task_id": "6556", "reasoning": "The statement is about using equipment and aids during presentations. Preparing materials is covered by other statements (6537, 6557). Y creates a preparation deliverable the target does not describe, so X is preferred.", "choice": "X"},
+ {"task_id": "6567", "reasoning": "Planning assignments, supervising and evaluating are three different activities with different outputs. X folds assignment plans and evaluations into one 'X or Y' work item, which mixes two deliverables. Y gives each its own part.", "choice": "Y"},
+ {"task_id": "6569", "reasoning": "Library assistance is hands-on handling of materials. Hall, cafeteria and bus duty is live supervision of students. Y separates these and types each correctly, while X lumps student supervision in as physical work.", "choice": "Y"},
+ {"task_id": "6570", "reasoning": "Ordering, inventorying and storing or issuing produce different outputs. The inventory ends in a recorded count the school office relies on, which differs from simply putting supplies away or handing them out. X's three-way split keeps that record as its own deliverable.", "choice": "X"},
+ {"task_id": "6571", "reasoning": "Both parts of Y are the same kind of in-person physical help to the same students, so splitting them adds nothing. The instructions do not call for splitting alternatives within one activity, so X is preferred.", "choice": "X"}
+]

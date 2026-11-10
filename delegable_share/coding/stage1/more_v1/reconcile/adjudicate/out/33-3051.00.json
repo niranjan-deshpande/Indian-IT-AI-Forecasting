@@ -1,0 +1,6 @@
+[
+ {"task_id": "23051", "reasoning": "For patrol officers, identifying, pursuing and arresting a suspect is one continuous piece of field work. Desk-based identification from evidence is already covered by the investigation statements (23055, 23056). Y's single PHYSICAL part, with a note on that overlap, avoids inventing a separate 'suspect identification' deliverable.", "choice": "Y"},
+ {"task_id": "23057", "reasoning": "The statement explicitly includes noting and reporting what is observed, and that report is a record others rely on. Under the rule for partly physical work, Y's split into PHYSICAL patrol and a DISCRETE observation report is correct, and it flags the overlap with 23053 and 23061.", "choice": "Y"},
+ {"task_id": "23070", "reasoning": "Serving process is not finished until a return or proof of service is completed and filed, and that is the record the court relies on. Y separates the in-person delivery (PHYSICAL) from that paperwork (DISCRETE), following the rule for partly physical work.", "choice": "Y"},
+ {"task_id": "23074", "reasoning": "Patrol officers give referral information to citizens almost entirely in person during a call or contact. Y's 20% share for written referral responses has little basis in how this work is done, so X's single LIVE_SERVICE part is preferred.", "choice": "X"}
+]

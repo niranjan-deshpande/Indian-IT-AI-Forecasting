@@ -1,0 +1,775 @@
+[
+ {
+  "task_id": "235",
+  "split_reasoning": "Individual, family, and group interviews are alternative formats for assessing service needs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview clients to assess their circumstances and determine needed services.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment is conducted with clients in a live interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One assessment interview establishes the client's needs for subsequent service planning.",
+    "work_item": "one client or family needs assessment interview",
+    "start": "assessment interview begins",
+    "end": "needs and proposed service direction are discussed with the client",
+    "checked_by": "client and social worker developing the service plan",
+    "overlap_reasoning": "Student and parenting assessments can include the same interviewing work, while those statements also cover counseling and other actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "240",
+     "241"
+    ]
+   }
+  ],
+  "notes": "Separate case-record maintenance is covered by task 237."
+ },
+ {
+  "task_id": "236",
+  "split_reasoning": "The listed issues and client configurations are alternatives within the same counseling activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel individuals, families, groups, or communities about social and personal difficulties.",
+    "time_share": 1.0,
+    "type_reasoning": "The primary value is the live counseling interaction rather than a separate deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The student, parent, and group counseling statements cover subsets of this counseling as well as, in some cases, additional activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "240",
+     "244",
+     "256"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "237",
+  "split_reasoning": "Maintaining case histories and preparing reports produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update a client's case history record.",
+    "time_share": 0.6,
+    "type_reasoning": "Case notes are generally completed or updated after client contact for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual case-history update is entered into the client's file as a complete record of an event or development.",
+    "work_item": "one case history entry or update",
+    "start": "case event or information requiring documentation",
+    "end": "entry completed in the case file",
+    "checked_by": "supervisor and other authorized case workers",
+    "overlap_reasoning": "No other statement specifically describes maintaining the case record.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a report about a client's case.",
+    "time_share": 0.4,
+    "type_reasoning": "A report is a distinct written deliverable prepared for a recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report, rather than each underlying case note, is the item submitted for use or review.",
+    "work_item": "one case report",
+    "start": "report requested or due and relevant case information available",
+    "end": "completed report submitted or filed",
+    "checked_by": "supervisor or authorized receiving agency",
+    "overlap_reasoning": "Reports may support legal proceedings or foster-home evaluations, but those tasks also include other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "243",
+     "249"
+    ]
+   }
+  ],
+  "notes": "Shares vary with agency documentation requirements."
+ },
+ {
+  "task_id": "238",
+  "split_reasoning": "Student counseling, assessing the student's problems, and arranging services are distinct activities; service arrangements can be made both during and after contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel students whose behavior, progress, or impairment indicates a need for help.",
+    "time_share": 0.4,
+    "type_reasoning": "Counseling derives its value from the live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General counseling and parent or school consultation can involve related student problems but cover different client groups or actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "236",
+     "239",
+     "240",
+     "256"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Assess a student's problems during an interview.",
+    "time_share": 0.2,
+    "type_reasoning": "The student participates while the worker assesses the problem and discusses needs.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One student assessment interview identifies problems and informs the next service decision.",
+    "work_item": "one student problem assessment interview",
+    "start": "student assessment interview begins",
+    "end": "identified needs and next steps are discussed with the student",
+    "checked_by": "student and social worker planning services",
+    "overlap_reasoning": "General client interviewing and school consultations may contribute to the same assessment, but are not restricted to this student interview.",
+    "duplicates": [],
+    "overlaps_with": [
+     "235",
+     "239",
+     "241"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Arrange needed services while the student or family is present.",
+    "time_share": 0.15,
+    "type_reasoning": "The arrangement is made during a live contact while the user waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A specific service arrangement can be made and explained during the contact.",
+    "work_item": "one student service arrangement made during a contact",
+    "start": "student or family agrees on a needed service",
+    "end": "arrangement and next steps are confirmed to the student or family",
+    "checked_by": "student or family and receiving service provider",
+    "overlap_reasoning": "General service arrangement and referral tasks include these arrangements and others outside the student context.",
+    "duplicates": [],
+    "overlaps_with": [
+     "244",
+     "245",
+     "246"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Arrange needed student services after the contact.",
+    "time_share": 0.25,
+    "type_reasoning": "The worker completes the service arrangement outside the live student contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each completed arrangement is passed to a provider or communicated back to the family.",
+    "work_item": "one student service arrangement completed after contact",
+    "start": "student's service need identified",
+    "end": "provider arrangement completed and relevant parties notified",
+    "checked_by": "receiving provider and student or family",
+    "overlap_reasoning": "General service arrangement and referral tasks include these arrangements and other client services.",
+    "duplicates": [],
+    "overlaps_with": [
+     "244",
+     "245",
+     "246"
+    ]
+   }
+  ],
+  "notes": "Shares and the live-versus-after-contact split depend on school procedures."
+ },
+ {
+  "task_id": "239",
+  "split_reasoning": "Discussing causes and implementing solutions with school personnel and parents are connected purposes of the same consultation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult parents, teachers, and school personnel about student problems and solutions.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live consultation whose value lies in sharing information and coordinating action.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Student assessment and liaison work can involve the same consultations but also include other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "240",
+     "250"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "240",
+  "split_reasoning": "Counseling parents and interviewing the child and family to assess further action are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Counsel parents about child-rearing problems.",
+    "time_share": 0.6,
+    "type_reasoning": "The counseling value lies in the live interaction with parents.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General family counseling and consultation with parents about school problems can include similar discussions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "236",
+     "238",
+     "239"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interview the child and family to assess whether further action is needed.",
+    "time_share": 0.4,
+    "type_reasoning": "The assessment takes place in a live interview with the child and family.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One family assessment interview yields a determination of whether further action should be considered.",
+    "work_item": "one child and family assessment interview",
+    "start": "assessment interview begins",
+    "end": "concerns and proposed next steps are discussed with the family",
+    "checked_by": "family and social worker responsible for the case",
+    "overlap_reasoning": "General client interviewing and student assessment can include similar interviews but are not limited to parenting problems.",
+    "duplicates": [],
+    "overlaps_with": [
+     "235",
+     "238"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "241",
+  "split_reasoning": "Service planning and follow-up assessment are distinct outputs; each can involve live client contact and work completed afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or review a service plan with the client during a meeting.",
+    "time_share": 0.3,
+    "type_reasoning": "The plan is discussed and developed while the client participates in the contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A plan or review is agreed on as a whole during the meeting.",
+    "work_item": "one service plan developed or reviewed with a client",
+    "start": "client and worker begin the planning or review meeting",
+    "end": "service goals and actions are agreed or revised with the client",
+    "checked_by": "client and supervising social worker",
+    "overlap_reasoning": "Needs assessments and arranging services inform or implement a plan but also cover separate work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "235",
+     "238",
+     "244"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete or revise a service plan after consulting the client.",
+    "time_share": 0.3,
+    "type_reasoning": "The written plan is completed outside the live consultation and used by the case team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed plan is the document filed or submitted for approval.",
+    "work_item": "one completed or revised service plan",
+    "start": "client consultation and relevant assessment information available",
+    "end": "plan completed and filed or submitted for approval",
+    "checked_by": "supervisor, client, and service team",
+    "overlap_reasoning": "Case reports and service arrangements may use the plan but are different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "237",
+     "244"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Follow up with a client live to assess services received.",
+    "time_share": 0.2,
+    "type_reasoning": "The client is present while the worker checks the quantity and quality of services.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One follow-up contact assesses the services received by a client.",
+    "work_item": "one client service follow-up contact",
+    "start": "follow-up contact with the client begins",
+    "end": "services received and concerns are reviewed with the client",
+    "checked_by": "client and case worker responsible for the plan",
+    "overlap_reasoning": "General liaison with service providers can support follow-up but also serves other coordination purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "250"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Assess a client's services after contact using available service information.",
+    "time_share": 0.2,
+    "type_reasoning": "The follow-up assessment is completed outside a live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One documented follow-up assessment summarizes the services delivered and any concerns.",
+    "work_item": "one service follow-up assessment",
+    "start": "follow-up due and service information available",
+    "end": "assessment of service quantity and quality completed for the case",
+    "checked_by": "case supervisor and service-planning team",
+    "overlap_reasoning": "Case records can contain the follow-up result, while record maintenance covers other case information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "237"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; plan approval and follow-up practices vary by agency."
+ },
+ {
+  "task_id": "242",
+  "split_reasoning": "Employment, medical, and school records are alternative sources of supplementary information for the same collection activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain supplementary records needed to assist a client.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker assembles requested information for the case, generally outside a live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of records requested for a particular case need is the item made available to the case worker.",
+    "work_item": "one set of supplementary client records obtained",
+    "start": "need for supplementary information identified and authorization obtained where required",
+    "end": "requested available records received and added to the case materials",
+    "checked_by": "case worker or supervisor",
+    "overlap_reasoning": "Eligibility determinations and home evaluations can use collected records but also require separate analysis.",
+    "duplicates": [],
+    "overlaps_with": [
+     "249",
+     "254"
+    ]
+   }
+  ],
+  "notes": "Some requests may yield incomplete records or documented unavailability."
+ },
+ {
+  "task_id": "243",
+  "split_reasoning": "Assisting with a hearing and giving testimony are related live contributions to the same legal proceeding.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist at hearings and give testimony concerning child welfare and custody issues.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes participation and testimony in a live legal proceeding, not preparation of a separate document.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Case reports and liaison with courts may support hearings but also have uses outside them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "237",
+     "250"
+    ]
+   }
+  ],
+  "notes": "Written court reports, when required, are covered by report preparation rather than inferred here."
+ },
+ {
+  "task_id": "244",
+  "split_reasoning": "Directly providing support differs from finding and arranging services, and arrangements can be made during a client contact or afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide direct counseling or similar supportive services to clients.",
+    "time_share": 0.2,
+    "type_reasoning": "Direct counseling is a live supportive interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General counseling and group counseling cover similar direct services for a wider range of situations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "236",
+     "238",
+     "240",
+     "256"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Find or arrange a support service while the client is present.",
+    "time_share": 0.3,
+    "type_reasoning": "The worker identifies or arranges help during a live contact while the client waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One service arrangement is made and its next steps explained within the contact.",
+    "work_item": "one support service arrangement made during a client contact",
+    "start": "client and worker identify a support need",
+    "end": "service arrangement or next steps are confirmed to the client",
+    "checked_by": "client and receiving provider",
+    "overlap_reasoning": "Student service arrangements, referrals, and test arrangements can be particular forms of support arrangement.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "245",
+     "246"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Find or arrange a support service after client contact.",
+    "time_share": 0.5,
+    "type_reasoning": "The worker contacts providers and completes arrangements outside the live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each completed arrangement connects a client to a particular service or provider.",
+    "work_item": "one support service arrangement completed after contact",
+    "start": "client's support need identified",
+    "end": "service arrangement completed and client or relevant parties notified",
+    "checked_by": "client, receiving provider, and case supervisor",
+    "overlap_reasoning": "Student arrangements, referrals, and test arrangements can share this work but also cover distinct services or steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "245",
+     "246"
+    ]
+   }
+  ],
+  "notes": "Direct support may differ by role; shares are estimates."
+ },
+ {
+  "task_id": "245",
+  "split_reasoning": "Referrals are made both while clients are present and afterwards through written or provider-facing processes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refer a client to a community resource and explain how to access it during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The referral information is provided while the client is present and waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One referral to a resource, including access instructions, is completed during the contact.",
+    "work_item": "one community resource referral made during a client contact",
+    "start": "client's need for a community resource identified",
+    "end": "resource and application or access instructions provided to the client",
+    "checked_by": "client and, where contacted, receiving agency",
+    "overlap_reasoning": "Service arrangement and student service work can include referrals but also involve broader coordination.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "244"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete a community resource referral after client contact and provide access information.",
+    "time_share": 0.4,
+    "type_reasoning": "The referral and instructions are prepared or sent outside a live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed referral and its access instructions are sent as one case-specific item.",
+    "work_item": "one community resource referral completed after contact",
+    "start": "client's resource need identified",
+    "end": "referral and access information sent to the client or receiving agency",
+    "checked_by": "client and receiving agency",
+    "overlap_reasoning": "Service arrangement and student service tasks can include referrals but also cover additional coordination.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "244"
+    ]
+   }
+  ],
+  "notes": "The channel mix varies across agencies and resources."
+ },
+ {
+  "task_id": "246",
+  "split_reasoning": "Tests are arranged both during live client contacts and afterwards with testing providers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange a medical, psychiatric, or other test while the client is present.",
+    "time_share": 0.3,
+    "type_reasoning": "The arrangement is made during a live contact while the client waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One test arrangement and its next steps are confirmed in the contact.",
+    "work_item": "one test arrangement made during a client contact",
+    "start": "need for a test is discussed with the client",
+    "end": "test arrangement or next steps are confirmed to the client",
+    "checked_by": "client and testing provider",
+    "overlap_reasoning": "General support and student service arrangements can include arranging tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "244"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Arrange a medical, psychiatric, or other test after client contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The worker coordinates with a provider outside the live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed test arrangement is handed to the testing provider and communicated to the client.",
+    "work_item": "one test arrangement completed after contact",
+    "start": "test need identified and required consent obtained",
+    "end": "testing provider arrangement completed and client notified",
+    "checked_by": "testing provider and client",
+    "overlap_reasoning": "General support and student service arrangements can include arranging tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "238",
+     "244"
+    ]
+   }
+  ],
+  "notes": "Shares depend on provider scheduling and consent procedures."
+ },
+ {
+  "task_id": "249",
+  "split_reasoning": "Evaluating applicants and their home conditions is one assessment, but home inspection requires hands-on work away from a computer and the assessment is completed separately.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Visit and inspect an applicant's home as part of a foster or adoption assessment.",
+    "time_share": 0.35,
+    "type_reasoning": "Inspecting home conditions requires being physically present in the home.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Collecting records may supplement the evaluation but does not itself describe the home inspection.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Interview foster or adoption applicants about their personal characteristics and circumstances.",
+    "time_share": 0.3,
+    "type_reasoning": "The assessment interview is conducted live with the applicants.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One applicant interview supplies assessment information and permits discussion of concerns.",
+    "work_item": "one foster or adoption applicant assessment interview",
+    "start": "applicant interview begins",
+    "end": "relevant circumstances and assessment next steps are discussed",
+    "checked_by": "applicants and assessing social worker",
+    "overlap_reasoning": "General client interviewing concerns service needs, while this interview assesses suitability to foster or adopt.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Complete an assessment of foster or adoption applicants and their home.",
+    "time_share": 0.35,
+    "type_reasoning": "The worker synthesizes findings into an assessment for an approving authority outside the visit.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed home-study assessment is the unit used in an approval decision.",
+    "work_item": "one foster or adoption home-study assessment",
+    "start": "applicant information, interview findings, and home observations available",
+    "end": "assessment completed and submitted for review",
+    "checked_by": "licensing or adoption supervisor",
+    "overlap_reasoning": "Case reports and supplementary records can form part of the assessment but also serve other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "237",
+     "242"
+    ]
+   }
+  ],
+  "notes": "Home visits also involve conversation; the physical part captures inspecting the premises."
+ },
+ {
+  "task_id": "250",
+  "split_reasoning": "Liaison among the listed parties is one coordination activity using different contacts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Act as liaison among students, families, schools, and other services involved with a child.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes ongoing communication and coordination among people rather than a specified deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "School consultations, service follow-ups, legal contacts, and service arrangements can all involve liaison but include additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "239",
+     "241",
+     "243",
+     "244"
+    ]
+   }
+  ],
+  "notes": "Specific referrals or written case updates are coded under their respective tasks."
+ },
+ {
+  "task_id": "251",
+  "split_reasoning": "Foster homes, adoptive homes, institutions, and treatment centers are alternative placement destinations for the same placement activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange and complete a child's placement in an appropriate home or facility.",
+    "time_share": 1.0,
+    "type_reasoning": "The placement is a distinct case outcome coordinated with the receiving home or facility.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed placement is the unit accepted by the receiving party and relied on by the case team.",
+    "work_item": "one child placement arranged and confirmed",
+    "start": "placement need and authorization established",
+    "end": "receiving home or facility accepts the child and placement is confirmed",
+    "checked_by": "placement supervisor and receiving home or facility",
+    "overlap_reasoning": "Applicant evaluation, temporary-care recommendations, and service arrangements can support placement but are separate decisions or activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "244",
+     "249",
+     "253"
+    ]
+   }
+  ],
+  "notes": "Physical transport or accompanying a child is not explicitly specified."
+ },
+ {
+  "task_id": "252",
+  "split_reasoning": "Supervising other social workers is one continuing management activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise other social workers.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live supervision rather than a specified review document or other discrete output.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed task describes supervision of social workers.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Formal performance reviews or case approvals are not specified in the target."
+ },
+ {
+  "task_id": "253",
+  "split_reasoning": "Recommending temporary foster care and advising foster or adoptive parents are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make a recommendation for temporary foster care.",
+    "time_share": 0.4,
+    "type_reasoning": "The recommendation is a case-specific decision conveyed to an approving party.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One recommendation for a child's temporary care is reviewed as a whole.",
+    "work_item": "one temporary foster care recommendation",
+    "start": "child's circumstances and need for temporary care identified",
+    "end": "recommendation submitted to the decision-maker",
+    "checked_by": "supervisor, agency decision-maker, or court",
+    "overlap_reasoning": "The recommendation can inform a placement or legal proceeding but does not itself complete either one.",
+    "duplicates": [],
+    "overlaps_with": [
+     "243",
+     "251"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Advise foster or adoptive parents.",
+    "time_share": 0.6,
+    "type_reasoning": "The target describes advice through direct interaction with parents.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "General counseling and parenting counseling can include similar advice but cover broader populations or issues.",
+    "duplicates": [],
+    "overlaps_with": [
+     "236",
+     "240"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates."
+ },
+ {
+  "task_id": "254",
+  "split_reasoning": "Determining financial assistance eligibility is one decision, but it may be completed during a client contact or afterwards from documentation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine a client's financial assistance eligibility during a live contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The client is present while the worker evaluates eligibility and communicates the result.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One eligibility determination is made and explained within the contact.",
+    "work_item": "one financial assistance eligibility determination made during a contact",
+    "start": "client provides information for an eligibility check",
+    "end": "eligibility result and next steps are communicated to the client",
+    "checked_by": "client and assistance program staff",
+    "overlap_reasoning": "Resource referral may follow an eligibility check but is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "245"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Determine a client's financial assistance eligibility from information reviewed after contact.",
+    "time_share": 0.7,
+    "type_reasoning": "The worker evaluates the application and evidence outside a live client contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One documented determination is sent or recorded for the assistance program and client.",
+    "work_item": "one financial assistance eligibility determination completed after contact",
+    "start": "application and necessary evidence available for review",
+    "end": "eligibility decision documented and communicated",
+    "checked_by": "assistance program staff, supervisor, and client",
+    "overlap_reasoning": "Supplementary records can be inputs to eligibility decisions, and referrals can follow them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "242",
+     "245"
+    ]
+   }
+  ],
+  "notes": "Authority to make final eligibility decisions varies by program."
+ },
+ {
+  "task_id": "255",
+  "split_reasoning": "Social research is one activity producing a research finding or report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct a social research study and report its findings.",
+    "time_share": 1.0,
+    "type_reasoning": "Research produces findings that colleagues or stakeholders can use and review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed study report is the research output handed to its audience.",
+    "work_item": "one social research report",
+    "start": "research question and study assignment established",
+    "end": "findings analyzed and report submitted or shared",
+    "checked_by": "research supervisor or intended agency audience",
+    "overlap_reasoning": "Case reporting concerns individual client work rather than the social research output specified here.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The target does not specify the research method or scale."
+ },
+ {
+  "task_id": "256",
+  "split_reasoning": "Grief, stress, and chemical dependency are alternative subjects for the same group counseling activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Lead a supportive group counseling session.",
+    "time_share": 1.0,
+    "type_reasoning": "The work's value lies in facilitating the live group interaction.",
+    "overlap_reasoning": "General counseling includes group counseling but also individual, family, and community work.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "236",
+     "238",
+     "244"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "257",
+  "split_reasoning": "Committee service, community development, and lobbying are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Serve on policy-making committees.",
+    "time_share": 0.35,
+    "type_reasoning": "Committee participation is primarily live deliberation with other members.",
+    "overlap_reasoning": "Committee work can support lobbying or community development, but no other statement describes the same committee service.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Assist community members and organizations with community development.",
+    "time_share": 0.35,
+    "type_reasoning": "The target specifies assistance but no particular document or other output; coordination with community participants is the identifiable activity.",
+    "overlap_reasoning": "Liaison with services can involve community contacts, but is focused on helping particular children.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "250"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Lobby for solutions to problems affecting client groups.",
+    "time_share": 0.3,
+    "type_reasoning": "Lobbying is principally live advocacy and persuasion.",
+    "overlap_reasoning": "No other listed statement describes lobbying for client groups.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Community development and lobbying may also produce written proposals, but the target does not specify them."
+ }
+]

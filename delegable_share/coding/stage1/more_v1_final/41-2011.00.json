@@ -1,0 +1,687 @@
+[
+ {
+  "task_id": "2400",
+  "split_reasoning": "One activity at the register; cash, check, card and voucher are alternative payment methods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a customer's payment by cash, check, card, voucher or automatic debit.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is waiting while payment is taken.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each payment is completed within one transaction.",
+    "work_item": "one payment taken at the register",
+    "start": "total announced and customer offers payment",
+    "end": "payment accepted and recorded",
+    "checked_by": "the customer; end-of-shift drawer count",
+    "duplicates": [],
+    "overlaps_with": [
+     "2401",
+     "2405",
+     "2406",
+     "2412"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2401",
+  "split_reasoning": "Receipts, change and refunds are given during the transaction with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give a customer a receipt, change, credit or refund.",
+    "time_share": 1.0,
+    "type_reasoning": "Done while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each is part of one customer transaction.",
+    "work_item": "one receipt, change, credit or refund issued",
+    "start": "payment accepted or refund approved",
+    "end": "change, receipt or refund handed to the customer",
+    "checked_by": "the customer; drawer count",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400",
+     "2417"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2402",
+  "split_reasoning": "Counting the starting drawer and checking its change supply are parts of one opening check.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and check the cash drawer at the start of a shift.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier physically counts the money in the drawer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Sorting and counting currency can be part of the opening check, but the currency-handling statement also covers other occasions and wrapping.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2416"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2403",
+  "split_reasoning": "One live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet a customer entering or arriving at the checkout.",
+    "time_share": 1.0,
+    "type_reasoning": "A live contact with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each greeting is part of one customer contact.",
+    "work_item": "one customer greeted",
+    "start": "customer arrives",
+    "end": "greeting given and transaction begins",
+    "checked_by": "the customer; supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Very short item."
+ },
+ {
+  "task_id": "2405",
+  "split_reasoning": "One activity: pricing and totalling a customer's order; calculator, register and scanner are alternative tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Scan or look up prices and add up a customer's bill.",
+    "time_share": 1.0,
+    "type_reasoning": "Done while the customer is at the register.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each order is totalled within one transaction.",
+    "work_item": "one order priced and totalled",
+    "start": "first item scanned",
+    "end": "total announced",
+    "checked_by": "the customer; store",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400",
+     "2410",
+     "2412"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2406",
+  "split_reasoning": "Stamps, food stamps and coupons are alternative forms of tender in the same step.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue trading stamps and accept food stamps or coupons in a transaction.",
+    "time_share": 1.0,
+    "type_reasoning": "Done at the register with the customer present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each redemption is part of one transaction.",
+    "work_item": "one coupon or stamp redemption in a transaction",
+    "start": "customer presents coupon or stamps",
+    "end": "value applied and customer given any change or stamps",
+    "checked_by": "the customer; store",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2408",
+  "split_reasoning": "One live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question about the store's procedures or policies.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits for the answer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered in one contact.",
+    "work_item": "one customer question answered",
+    "start": "customer asks",
+    "end": "customer has the answer",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "18765",
+     "21072"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2409",
+  "split_reasoning": "One live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Cash a check for a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the customer at the counter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each check is cashed in one contact.",
+    "work_item": "one check cashed",
+    "start": "customer presents the check",
+    "end": "cash handed over",
+    "checked_by": "the customer; supervisor and drawer count",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2410",
+  "split_reasoning": "One live activity during checkout.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Weigh an item sold by weight and set its price.",
+    "time_share": 1.0,
+    "type_reasoning": "Done at the register while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each weighing is part of one transaction.",
+    "work_item": "one item weighed and priced",
+    "start": "item placed on scale",
+    "end": "price entered",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2405"
+    ]
+   }
+  ],
+  "notes": "Very short item."
+ },
+ {
+  "task_id": "2411",
+  "split_reasoning": "One end-of-shift activity done with no customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Total the payments received in a period and reconcile them with sales.",
+    "time_share": 1.0,
+    "type_reasoning": "Back-office work that produces a reconciliation that management relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One reconciliation per drawer per shift.",
+    "work_item": "one shift reconciliation of payments against sales",
+    "start": "shift ends",
+    "end": "drawer reconciled and any difference reported",
+    "checked_by": "supervisor; accounting",
+    "duplicates": [],
+    "overlaps_with": [
+     "2412",
+     "2414",
+     "2402"
+    ]
+   }
+  ],
+  "notes": "2411, 2412 and 2414 are close."
+ },
+ {
+  "task_id": "2412",
+  "split_reasoning": "Computing and recording a transaction total are steps in one output, but totals are recorded both during checkout and in back-office summaries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute and record a transaction total while serving a customer.",
+    "time_share": 0.7,
+    "type_reasoning": "The total is recorded in the register while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One transaction's total is recorded in the register.",
+    "work_item": "one customer transaction total recorded at checkout",
+    "start": "the transaction's items and amounts have been entered",
+    "end": "the total is calculated and recorded in the register",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Tabulating a customer bill includes calculating its total, but also includes identifying prices.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2405"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compute and record transaction totals from records outside a customer contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The cashier prepares a recorded total from transaction records without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A total for a specified group or period of transactions is recorded as one entry or summary.",
+    "work_item": "one transaction-total entry or summary",
+    "start": "the relevant transaction records are available",
+    "end": "the computed total is recorded",
+    "checked_by": "the cashier's supervisor or accounting staff",
+    "overlap_reasoning": "A transaction summary can supply figures for reconciliation or a balance sheet, which require additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2411",
+     "2414"
+    ]
+   }
+  ],
+  "notes": "The statement is ambiguous about whether totals are per transaction or for a period; shares are estimates."
+ },
+ {
+  "task_id": "2413",
+  "split_reasoning": "One live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sell a ticket or other item to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the customer at the counter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each sale is one transaction.",
+    "work_item": "one ticket or item sale",
+    "start": "customer asks to buy",
+    "end": "item handed over and payment taken",
+    "checked_by": "the customer; drawer count",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400",
+     "2405"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2414",
+  "split_reasoning": "One back-office activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a periodic balance sheet of the amounts taken and number of transactions.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a record that supervisors and accounting rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One sheet per period.",
+    "work_item": "one periodic balance sheet",
+    "start": "period ends",
+    "end": "balance sheet completed and handed in",
+    "checked_by": "supervisor; accounting",
+    "duplicates": [
+     "2412"
+    ],
+    "overlaps_with": [
+     "2411"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2415",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bag, box or wrap merchandise and prepare packages for shipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on packing away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "18767"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2416",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort, count and wrap coins and notes.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on handling of money away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2402"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2417",
+  "split_reasoning": "Returns and exchanges are the same activity handled at the register while the customer is present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process a customer's return or exchange.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer is at the counter.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each return is completed in one visit.",
+    "work_item": "one return or exchange processed",
+    "start": "customer presents item",
+    "end": "refund or replacement given",
+    "checked_by": "the customer; supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2401"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2419",
+  "split_reasoning": "One activity: calling for help over the paging system.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Page for information or assistance, such as a price check or manager, while a customer is waiting.",
+    "time_share": 1.0,
+    "type_reasoning": "Done during a transaction with the customer waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each page serves one customer's need.",
+    "work_item": "one assistance request paged",
+    "start": "need for help arises at the register",
+    "end": "help arrives or information received",
+    "checked_by": "the waiting customer; whoever responds",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Very short item."
+ },
+ {
+  "task_id": "2421",
+  "split_reasoning": "One back-office activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and keep non-monetary reports and records, such as voids, shift logs and transaction counts.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces records others rely on, done without customers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are prepared per period or event and handed in.",
+    "work_item": "one non-monetary report or record",
+    "start": "period or event ends",
+    "end": "report completed and filed or sent",
+    "checked_by": "supervisor; store management",
+    "duplicates": [],
+    "overlaps_with": [
+     "2414"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2422",
+  "split_reasoning": "Monitoring is continuous but produces two kinds of discrete item: cash top-ups and staffing changes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make sure a checkout station has enough cash by arranging a cash pickup or change delivery.",
+    "time_share": 0.5,
+    "type_reasoning": "Each action produces a cash adjustment someone relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each cash top-up or pickup is handled once.",
+    "work_item": "one cash top-up or pickup for a checkout",
+    "start": "station found short of cash or over limit",
+    "end": "cash supplied or removed and recorded",
+    "checked_by": "supervisor; cashier at that station",
+    "duplicates": [],
+    "overlaps_with": [
+     "2402"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Adjust staffing at checkouts by opening or closing lanes or calling for help.",
+    "time_share": 0.5,
+    "type_reasoning": "Each adjustment produces a staffing change others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each adjustment is made once.",
+    "work_item": "one staffing adjustment at the checkouts",
+    "start": "queues or staffing found inadequate",
+    "end": "lane opened or closed or staff added",
+    "checked_by": "store manager; customers in line",
+    "duplicates": [],
+    "overlaps_with": [
+     "18768"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "2423",
+  "split_reasoning": "Posting a charge can occur while a guest or patient waits or later from written records; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post a charge to a guest's or patient's account during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The account is updated while the guest or patient is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One charge is entered and confirmed within the contact.",
+    "work_item": "one account charge posted during a guest or patient contact",
+    "start": "the charge and account are identified during the contact",
+    "end": "the charge is posted and its inclusion confirmed",
+    "checked_by": "the guest or patient and the accounting or billing team",
+    "overlap_reasoning": "Posting an account charge is distinct from receiving payment or tabulating a cash-register bill.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Post a charge to a guest's or patient's account from a written request or record.",
+    "time_share": 0.4,
+    "type_reasoning": "The charge is entered outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One charge entry is posted to the specified account for downstream billing.",
+    "work_item": "one account charge posted from a record",
+    "start": "a charge record or posting request is received",
+    "end": "the charge is entered in the correct account",
+    "checked_by": "the accounting or billing team",
+    "overlap_reasoning": "The other statements do not specifically describe back-office account posting.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live and back-office shares vary substantially by establishment."
+ },
+ {
+  "task_id": "2424",
+  "split_reasoning": "One live activity at the end of a transaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Offer to carry a customer's purchases out.",
+    "time_share": 1.0,
+    "type_reasoning": "Offered and done with the customer present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each offer is part of one customer contact.",
+    "work_item": "one carry-out offered and given",
+    "start": "transaction completes",
+    "end": "items carried out or customer declines",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "18767"
+    ]
+   }
+  ],
+  "notes": "Partly physical; coded LIVE_SERVICE because it is customer service."
+ },
+ {
+  "task_id": "18765",
+  "split_reasoning": "Providing information and resolving complaints are distinct customer-service activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide information requested by a customer.",
+    "time_share": 0.55,
+    "type_reasoning": "The cashier provides the information during a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's information request is answered in the contact.",
+    "work_item": "one customer information request answered",
+    "start": "the customer requests information",
+    "end": "the information is provided or the customer is directed to someone who can help",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Policy questions, product-location requests, and phone calls can all involve providing information, but each statement has a different scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2408",
+     "21072",
+     "21073"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Help resolve a customer's complaint.",
+    "time_share": 0.45,
+    "type_reasoning": "The cashier discusses and attempts to resolve the complaint while the customer is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One complaint is addressed or referred during the contact.",
+    "work_item": "one customer complaint addressed",
+    "start": "the customer presents a complaint",
+    "end": "the cashier communicates a resolution or refers the complaint",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "A complaint may involve a return or a phone call, but those statements also cover other requests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2417",
+     "21073"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the store's service arrangements."
+ },
+ {
+  "task_id": "18766",
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep the checkout area clean and tidy and do general cleaning such as mopping and emptying bins.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18767",
+  "split_reasoning": "A mix of help duties, treated as one catch-all activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help with duties elsewhere in the store, such as watching fitting rooms or bagging and carrying out items.",
+    "time_share": 1.0,
+    "type_reasoning": "Mostly hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2424",
+     "2415"
+    ]
+   }
+  ],
+  "notes": "Catch-all statement; mixed activities."
+ },
+ {
+  "task_id": "18768",
+  "split_reasoning": "One activity: supervising and training, done in person.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise other staff and train them on the job.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live interaction; no separate output is checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2422"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21072",
+  "split_reasoning": "One live activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tell or show a customer where a product is.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the customer present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each request is answered in one contact.",
+    "work_item": "one customer directed to a product",
+    "start": "customer asks where an item is",
+    "end": "customer knows or is taken to the location",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2408"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21073",
+  "split_reasoning": "One live activity by phone.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an incoming phone call.",
+    "time_share": 1.0,
+    "type_reasoning": "The caller is on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is a single contact.",
+    "work_item": "one incoming call handled",
+    "start": "phone rings and is answered",
+    "end": "caller helped or transferred",
+    "checked_by": "the caller",
+    "duplicates": [],
+    "overlaps_with": [
+     "2408"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21074",
+  "split_reasoning": "One hands-on stocking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stock shelves, reshelve returned items and mark prices on items and shelves.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

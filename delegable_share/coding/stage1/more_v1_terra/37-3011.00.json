@@ -1,0 +1,488 @@
+[
+ {
+  "task_id": "9589",
+  "split_reasoning": "Mowing and edging are related ways of maintaining the finished appearance of a lawn.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mow or edge lawns using powered equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker operates equipment on the lawn.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9591",
+     "20761"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9590",
+  "split_reasoning": "Shoveling snow and spreading salt are distinct physical operations, even when performed on the same visit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Shovel snow from walks, driveways, or parking lots.",
+    "time_share": 0.8,
+    "type_reasoning": "Removing snow requires hands-on work outdoors.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9597"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Spread salt on walks, driveways, or parking lots.",
+    "time_share": 0.2,
+    "type_reasoning": "Applying salt requires physical work on the surfaces being treated.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9597"
+    ]
+   }
+  ],
+  "notes": "The shares depend on snowfall and site conditions."
+ },
+ {
+  "task_id": "9591",
+  "split_reasoning": "The listed methods are ways of caring for an established lawn.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain established lawns by treatments such as aerating, weeding, dethatching, mulching, or trimming their edges.",
+    "time_share": 1.0,
+    "type_reasoning": "These lawn treatments require hands-on work on the grounds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9589",
+     "9592",
+     "9600",
+     "9605",
+     "9610",
+     "20761"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9592",
+  "split_reasoning": "The statement describes use of alternative hand tools across groundskeeping work rather than separate named activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use hand tools to perform groundskeeping work.",
+    "time_share": 1.0,
+    "type_reasoning": "Using the listed tools requires hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9590",
+     "9591",
+     "9593",
+     "9595",
+     "9597",
+     "9599",
+     "9600",
+     "9602",
+     "9607",
+     "9610"
+    ]
+   }
+  ],
+  "notes": "This is a broad tool-use statement and may overlap with additional physical tasks depending on the tools used."
+ },
+ {
+  "task_id": "9593",
+  "split_reasoning": "Trees, shrubs, and hedges are alternative items receiving the same pruning or trimming work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prune or trim trees, shrubs, or hedges with hand or powered cutting tools.",
+    "time_share": 1.0,
+    "type_reasoning": "Pruning and trimming require hands-on work at the plants.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "20761"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9594",
+  "split_reasoning": "Gathering and removing litter are successive steps in the same cleanup activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Gather and remove litter from grounds.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires physically collecting and removing litter.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9597"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9595",
+  "split_reasoning": "Maintaining tools and equipment differs materially from maintaining or repairing site structures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain or repair groundskeeping tools and equipment.",
+    "time_share": 0.6,
+    "type_reasoning": "The work requires hands-on servicing or repair of equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain or repair grounds structures such as fences, benches, buildings, or greenhouses.",
+    "time_share": 0.4,
+    "type_reasoning": "The work requires hands-on maintenance or repair at the structure.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9597"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the site's equipment and structures."
+ },
+ {
+  "task_id": "9596",
+  "split_reasoning": "Mixing and applying a treatment are successive steps in treating vegetation, with different products and application tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix and apply fertilizer, herbicide, or insecticide to lawns, shrubs, or trees.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing and applying treatments requires hands-on work with materials and equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9605",
+     "9610"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9597",
+  "split_reasoning": "Upkeep of paved surfaces, fountains, and planted or memorial features can involve substantially different physical work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain sidewalks, driveways, parking lots, and similar paved features.",
+    "time_share": 0.5,
+    "type_reasoning": "Upkeep is performed physically on the grounds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9590",
+     "9592",
+     "9594",
+     "9595"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain fountains and similar water features.",
+    "time_share": 0.2,
+    "type_reasoning": "Cleaning and maintaining water features requires hands-on work at the feature.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9595"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain planters, burial sites, and similar grounds features.",
+    "time_share": 0.3,
+    "type_reasoning": "Upkeep requires physical work at the individual grounds features.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9594",
+     "9595",
+     "9599",
+     "9602"
+    ]
+   }
+  ],
+  "notes": "The statement does not specify upkeep methods; the shares and grouping of features vary by site."
+ },
+ {
+  "task_id": "9598",
+  "split_reasoning": "The listed plants and watering equipment are alternatives within the same watering activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Water lawns, trees, or plants using portable sprinklers, hoses, or watering cans.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically sets up or uses watering equipment on the grounds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9605",
+     "9610"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9599",
+  "split_reasoning": "Trimming or picking flowers and cleaning flower beds are different groundskeeping activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Trim or pick flowers.",
+    "time_share": 0.5,
+    "type_reasoning": "The worker handles and cuts flowers in person.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Clean flower beds.",
+    "time_share": 0.5,
+    "type_reasoning": "The worker physically removes unwanted material from beds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9597",
+     "9610"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the site and season."
+ },
+ {
+  "task_id": "9600",
+  "split_reasoning": "Collecting leaves and processing them into mulch or compost are distinct physical activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Rake leaves into piles for removal or processing.",
+    "time_share": 0.6,
+    "type_reasoning": "Raking requires hands-on work on the grounds.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Mulch or compost collected leaves.",
+    "time_share": 0.4,
+    "type_reasoning": "Processing and handling the leaves requires physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9591",
+     "9592",
+     "20761"
+    ]
+   }
+  ],
+  "notes": "Mulching and composting are treated as alternative ways of processing leaves; the shares vary seasonally."
+ },
+ {
+  "task_id": "9601",
+  "split_reasoning": "The statement describes one activity: using an existing design to locate the areas or positions for planting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Follow a landscaping design to locate where sod, grass, flowers, or foliage will go.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker uses the plan to locate planting areas on the physical site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9602",
+     "9610"
+    ]
+   }
+  ],
+  "notes": "This codes on-site layout from an existing design, not creation of a landscaping plan."
+ },
+ {
+  "task_id": "9602",
+  "split_reasoning": "The listed plant materials are alternatives, and protective mulching is part of completing the planting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plant seeds, bulbs, plants, grass, ground covers, trees, or shrubs and apply protective mulch.",
+    "time_share": 1.0,
+    "type_reasoning": "Planting and mulching require hands-on work in the ground.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9597",
+     "9601",
+     "9610"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "9605",
+  "split_reasoning": "The statement describes care of natural turf fields, including attention to the soil supporting the turf.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain natural turf fields and their underlying soil for grass growth and drainage.",
+    "time_share": 1.0,
+    "type_reasoning": "Field and soil care involves hands-on grounds maintenance.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9591",
+     "9596",
+     "9598",
+     "9607",
+     "9610"
+    ]
+   }
+  ],
+  "notes": "Specific field and soil treatments are not stated."
+ },
+ {
+  "task_id": "9607",
+  "split_reasoning": "Moving or spreading topsoil and covering seeded soil with straw involve different materials and purposes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Haul or spread topsoil.",
+    "time_share": 0.7,
+    "type_reasoning": "Moving and distributing soil requires physical work on site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9592",
+     "9605",
+     "9610",
+     "20761"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Spread straw over seeded soil to hold it in place.",
+    "time_share": 0.3,
+    "type_reasoning": "The worker physically distributes straw over the seeded area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9610"
+    ]
+   }
+  ],
+  "notes": "The shares depend on the mix of site preparation and erosion-control work."
+ },
+ {
+  "task_id": "9610",
+  "split_reasoning": "Planning a lawn or garden and physically cultivating it are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a lawn or garden.",
+    "time_share": 0.2,
+    "type_reasoning": "Planning can produce a layout or planting plan that guides subsequent work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for one lawn or garden is the usable output handed to those doing the work.",
+    "work_item": "one lawn or garden plan",
+    "start": "site and planning requirements identified",
+    "end": "layout or planting plan prepared for use",
+    "checked_by": "supervisor, property owner, or planting crew",
+    "duplicates": [],
+    "overlaps_with": [
+     "9601"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Cultivate lawns or gardens.",
+    "time_share": 0.8,
+    "type_reasoning": "Cultivation requires hands-on work with soil and plants.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9591",
+     "9592",
+     "9596",
+     "9598",
+     "9599",
+     "9602",
+     "9605",
+     "9607"
+    ]
+   }
+  ],
+  "notes": "Planning responsibilities and the share of time spent on them vary by employer."
+ },
+ {
+  "task_id": "9611",
+  "split_reasoning": "Attaching support wires to planted trees is one physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attach wires from planted trees to support stakes.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically attaches and adjusts the supports at each tree.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20761",
+  "split_reasoning": "The listed vehicles and powered equipment are alternative tools used in groundskeeping work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate vehicles or powered equipment used for groundskeeping.",
+    "time_share": 1.0,
+    "type_reasoning": "Operating the listed equipment requires physical work on site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "9589",
+     "9591",
+     "9593",
+     "9600",
+     "9607"
+    ]
+   }
+  ],
+  "notes": "This broad equipment-use statement can also overlap other tasks when powered equipment is used."
+ }
+]

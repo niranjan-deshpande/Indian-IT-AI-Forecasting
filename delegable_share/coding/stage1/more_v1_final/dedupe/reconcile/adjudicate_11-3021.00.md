@@ -1,0 +1,60 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_11-3021.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[966a] DISCRETE — one backup or security issue resolved and logged (start: failed backup job, security alert or access request raised; end: issue resolved and logged in the ops record) — from statement: Manage backup, security and user help systems.
+[966b] DISCRETE — one periodic help desk performance review with actions (start: period's ticket and service data pulled; end: review and agreed actions sent to the help desk team and management) — from statement: Manage backup, security and user help systems.
+[967b] DISCRETE — one needs assessment / system requirements document (start: consultations completed for a request; end: requirements document issued to management and the project team) — from statement: Consult with users, management, vendors, and technicians to assess computing needs and system requirements.
+[968b] DISCRETE — one department priorities and deadlines plan (start: workload and workflow reviewed for the period; end: priorities and deadlines published to staff) — from statement: Direct daily operations of department, analyzing workflow, establishing priorities, developing standards and setting deadlines.
+[968c] DISCRETE — one department standard or procedure document (start: need for a standard identified; end: standard approved and issued to staff) — from statement: Direct daily operations of department, analyzing workflow, establishing priorities, developing standards and setting deadlines.
+[969b] DISCRETE — one piece of staff work reviewed and returned (start: staff member submits work for review; end: approval or revision feedback returned) — from statement: Assign and review the work of systems analysts, programmers, and other computer-related workers.
+[971a] DISCRETE — one plan (e.g. disaster recovery plan or data security control framework) (start: requirement or review trigger identified; end: plan approved and issued) — from statement: Develop computer information resources, providing for data security and control, strategic computing, and disaster recovery.
+[972a] DISCRETE — one systems design or program release reviewed and approved (start: design or program submitted for implementation approval; end: approval granted or returned for rework) — from statement: Review and approve all systems charts and programs prior to their implementation.
+[973a] DISCRETE — one technology evaluation with upgrade recommendation (start: area or system chosen for evaluation; end: recommendation delivered to management) — from statement: Evaluate the organization's technology use and needs and recommend improvements, such as hardware and software upgrades.
+[974a] DISCRETE — one monthly budget variance review (start: period's actual spend report available; end: variances explained and actions recorded or sent to finance) — from statement: Control operational budget and expenditures.
+[974b] DISCRETE — one expenditure request approved or declined (start: request submitted; end: decision recorded and communicated) — from statement: Control operational budget and expenditures.
+[976a] DISCRETE — one policy, procedure or goal statement (start: need for policy identified; end: policy approved and published) — from statement: Develop and interpret organizational goals, policies, and procedures.
+[977a] DISCRETE — one staffing selection decision or recommendation (start: vacancy and staffing requirements are identified; end: candidate selection or hiring recommendation is communicated) — from statement: Recruit, hire, train and supervise staff, or participate in staffing decisions.
+[978a] DISCRETE — one project plan reviewed with feedback (start: project plan submitted; end: feedback and coordination decisions issued) — from statement: Review project plans to plan and coordinate project activity.
+[979a] DISCRETE — one proposal evaluated for feasibility (start: proposal received; end: feasibility assessment delivered) — from statement: Evaluate data processing proposals to assess project feasibility and requirements.
+[980a] DISCRETE — one operational or progress report (start: reporting period data gathered; end: report sent to management) — from statement: Prepare and review operational reports or project progress reports.
+[980b] DISCRETE — one staff report reviewed and approved (start: staff report submitted; end: report approved or returned with changes) — from statement: Prepare and review operational reports or project progress reports.
+[981a] DISCRETE — one equipment purchase order (start: approved need for equipment; end: order placed and confirmed with vendor) — from statement: Purchase necessary equipment.
+[15198a] LIVE_SERVICE — one computer problem fixed during a live contact (start: user describes the problem; end: user confirms it works) — from statement: Provide users with technical support for computer problems.
+[15198b] DISCRETE — one support ticket resolved (start: ticket received; end: fix confirmed and ticket closed) — from statement: Provide users with technical support for computer problems.
+
+=== PAIRS ===
+PAIR 968c / 976a
+[968c] DISCRETE — one department standard or procedure document (start: need for a standard identified; end: standard approved and issued to staff) — from statement: Direct daily operations of department, analyzing workflow, establishing priorities, developing standards and setting deadlines.
+[976a] DISCRETE — one policy, procedure or goal statement (start: need for policy identified; end: policy approved and published) — from statement: Develop and interpret organizational goals, policies, and procedures.
+Original flag reasoning: Both produce an approved, published standard/procedure document for staff from an identified need.

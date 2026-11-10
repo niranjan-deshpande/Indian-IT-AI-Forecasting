@@ -1,0 +1,67 @@
+[
+{"task_id":"46","split_reasoning":"Day-to-day direction is live supervision, while formal evaluation produces a written appraisal.","parts":[
+{"part_id":"a","text":"Direct and supervise the work of unit personnel.","time_share":0.7,"type_reasoning":"Live supervision with nothing separately checked.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["52","58"]},
+{"part_id":"b","text":"Evaluate a staff member's work performance in writing.","time_share":0.3,"type_reasoning":"Each appraisal is a document HR and the employee rely on.","type":"DISCRETE","unit_reasoning":"Appraisals are done per employee.","work_item":"one performance evaluation","start":"appraisal period closes for an employee","end":"evaluation signed and filed","checked_by":"employee, HR, senior management","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"47","split_reasoning":"One activity: setting objectives and criteria for a unit.","parts":[
+{"part_id":"a","text":"Set objectives and evaluative or operational criteria for the unit.","time_share":1.0,"type_reasoning":"Produces a written set of objectives and criteria others are measured against.","type":"DISCRETE","unit_reasoning":"Set for a unit at planning time and approved as a whole.","work_item":"one set of unit objectives and criteria","start":"planning cycle begins","end":"objectives and criteria approved and communicated","checked_by":"senior administration, unit staff","duplicates":[],"overlaps_with":["50","61"]}],
+"notes":""},
+{"task_id":"48","split_reasoning":"Hiring produces a filled post; training is a live activity.","parts":[
+{"part_id":"a","text":"Direct or conduct recruitment and hiring of personnel.","time_share":0.5,"type_reasoning":"Each vacancy ends in a hire.","type":"DISCRETE","unit_reasoning":"One process per vacancy.","work_item":"one vacancy filled","start":"vacancy approved","end":"offer accepted and hire recorded","checked_by":"HR, senior administration","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Direct or conduct training of personnel.","time_share":0.5,"type_reasoning":"Live teaching with no checked output.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["63"]}],
+"notes":""},
+{"task_id":"49","split_reasoning":"Building or changing a records system differs from producing reports from it.","parts":[
+{"part_id":"a","text":"Develop or maintain a computerized record management system for data such as personnel information.","time_share":0.5,"type_reasoning":"Each system change is delivered and relied on by users.","type":"DISCRETE","unit_reasoning":"Changes or setups are delivered one at a time.","work_item":"one records system setup or modification","start":"need for system change identified","end":"change in use and accepted by users","checked_by":"users, IT, administration","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Produce a report from the record system.","time_share":0.5,"type_reasoning":"Each report goes to a requester.","type":"DISCRETE","unit_reasoning":"Reports are produced and sent individually.","work_item":"one report produced from the system","start":"report requested or scheduled","end":"report delivered","checked_by":"management","duplicates":[],"overlaps_with":["57"]}],
+"notes":""},
+{"task_id":"50","split_reasoning":"Writing policies and rolling them out are different activities.","parts":[
+{"part_id":"a","text":"Develop an organizational policy or procedure for the facility or unit.","time_share":0.6,"type_reasoning":"Produces a written policy.","type":"DISCRETE","unit_reasoning":"Policies are written and approved one at a time.","work_item":"one policy or procedure","start":"need identified","end":"policy approved and issued","checked_by":"administration, compliance, governing board","duplicates":[],"overlaps_with":["47"]},
+{"part_id":"b","text":"Implement a policy by briefing and guiding staff.","time_share":0.4,"type_reasoning":"Live rollout with no separate output.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"51","split_reasoning":"Fiscal operations cover several outputs: budgets, expenditure approvals, rate setting and financial reports.","parts":[
+{"part_id":"a","text":"Plan and prepare the unit budget.","time_share":0.3,"type_reasoning":"Budget is a document finance approves.","type":"DISCRETE","unit_reasoning":"One budget per cycle.","work_item":"one annual or periodic budget plan","start":"budget cycle opens","end":"budget submitted and approved","checked_by":"finance, administration","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Authorize expenditures.","time_share":0.3,"type_reasoning":"Each request ends in a decision.","type":"DISCRETE","unit_reasoning":"Requests decided individually.","work_item":"one expenditure authorized or declined","start":"request submitted","end":"decision recorded","checked_by":"finance, requester","duplicates":[],"overlaps_with":[]},
+{"part_id":"c","text":"Establish or review rates for services.","time_share":0.1,"type_reasoning":"Produces a rate schedule.","type":"DISCRETE","unit_reasoning":"Rate reviews are done per service line.","work_item":"one rate schedule review","start":"cost and market data gathered","end":"rates approved","checked_by":"finance, board","duplicates":[],"overlaps_with":[]},
+{"part_id":"d","text":"Coordinate financial reporting.","time_share":0.3,"type_reasoning":"Each report goes to finance or the board.","type":"DISCRETE","unit_reasoning":"Reports issued per period.","work_item":"one financial report","start":"period closes","end":"report issued","checked_by":"finance, governing board","duplicates":[],"overlaps_with":["57","61"]}],
+"notes":"Shares are a guess."},
+{"task_id":"52","split_reasoning":"One activity: producing schedules.","parts":[
+{"part_id":"a","text":"Set staff work schedules and assignments according to workload, space and equipment.","time_share":1.0,"type_reasoning":"Each schedule is published for staff to follow.","type":"DISCRETE","unit_reasoning":"Schedules are issued per period.","work_item":"one schedule for a scheduling period","start":"workload and availability known","end":"schedule published","checked_by":"staff, senior management","duplicates":[],"overlaps_with":["46"]}],
+"notes":""},
+{"task_id":"53","split_reasoning":"One activity: attending meetings and coordinating.","parts":[
+{"part_id":"a","text":"Attend board meetings and coordinate between the board, medical staff and department heads.","time_share":1.0,"type_reasoning":"Value is in the meetings.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["59"]}],
+"notes":""},
+{"task_id":"54","split_reasoning":"One activity: reviewing resource use.","parts":[
+{"part_id":"a","text":"Monitor use of diagnostic services, beds, facilities and staff and assess need for more resources.","time_share":1.0,"type_reasoning":"Produces a utilization finding and request for management.","type":"DISCRETE","unit_reasoning":"Reviews are done periodically per resource.","work_item":"one utilization review with resource recommendation","start":"utilization data pulled","end":"findings and recommendation sent to management","checked_by":"administration","duplicates":[],"overlaps_with":["61"]}],
+"notes":""},
+{"task_id":"55","split_reasoning":"One activity: keeping informed.","parts":[
+{"part_id":"a","text":"Stay aware of developments in medicine, technology, regulation and financing.","time_share":1.0,"type_reasoning":"Nothing is produced for others.","type":"NO_DELIVERABLE","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"56","split_reasoning":"Planning a change differs from leading staff through it.","parts":[
+{"part_id":"a","text":"Lead staff through change such as restructuring and new technology.","time_share":0.6,"type_reasoning":"Live leadership with no checked output.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["58"]},
+{"part_id":"b","text":"Write a change implementation plan.","time_share":0.4,"type_reasoning":"Produces a plan others rely on.","type":"DISCRETE","unit_reasoning":"One plan per change initiative.","work_item":"one change implementation plan","start":"change initiative approved","end":"plan approved","checked_by":"administration","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"57","split_reasoning":"One activity: activity reports.","parts":[
+{"part_id":"a","text":"Prepare an activity report on program, service and quality initiative status.","time_share":1.0,"type_reasoning":"Each report is relied on by management.","type":"DISCRETE","unit_reasoning":"Reports go out per period.","work_item":"one activity report","start":"reporting period data gathered","end":"report sent to management","checked_by":"senior management","duplicates":[],"overlaps_with":["61","49"]}],
+"notes":""},
+{"task_id":"58","split_reasoning":"Planning a program differs from administering it day to day.","parts":[
+{"part_id":"a","text":"Plan a program or service for the facility.","time_share":0.4,"type_reasoning":"Produces a written plan.","type":"DISCRETE","unit_reasoning":"One plan per program.","work_item":"one program plan","start":"program need identified","end":"plan approved","checked_by":"administration","duplicates":[],"overlaps_with":["62"]},
+{"part_id":"b","text":"Administer programs by coordinating staff and training.","time_share":0.6,"type_reasoning":"Ongoing live coordination.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["46"]}],
+"notes":""},
+{"task_id":"59","split_reasoning":"One activity: consulting groups.","parts":[
+{"part_id":"a","text":"Consult with medical, business and community groups.","time_share":1.0,"type_reasoning":"Value is in the interaction.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["53"]}],
+"notes":""},
+{"task_id":"60","split_reasoning":"Walking the facility is physical; writing recommendations is computer work.","parts":[
+{"part_id":"a","text":"Inspect facilities on site.","time_share":0.6,"type_reasoning":"Requires being on site.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Write recommendations for building or equipment changes.","time_share":0.4,"type_reasoning":"Produces a report management acts on.","type":"DISCRETE","unit_reasoning":"One report per inspection.","work_item":"one inspection report with recommendations","start":"inspection complete","end":"report sent","checked_by":"administration, facilities, regulators","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"61","split_reasoning":"One activity: analyzing facility data.","parts":[
+{"part_id":"a","text":"Review and analyze facility data for planning, cash and risk management and utilization.","time_share":1.0,"type_reasoning":"Yields an analysis management relies on.","type":"DISCRETE","unit_reasoning":"Analyses done per question or period.","work_item":"one analysis with findings","start":"data gathered","end":"findings delivered","checked_by":"senior management","duplicates":[],"overlaps_with":["54","57","47"]}],
+"notes":""},
+{"task_id":"62","split_reasoning":"One activity: developing programs.","parts":[
+{"part_id":"a","text":"Develop or expand a medical program or health service.","time_share":1.0,"type_reasoning":"Produces a proposal or plan.","type":"DISCRETE","unit_reasoning":"Per program.","work_item":"one program proposal or expansion plan","start":"opportunity identified","end":"proposal approved","checked_by":"administration, board","duplicates":[],"overlaps_with":["58"]}],
+"notes":""},
+{"task_id":"63","split_reasoning":"Writing materials differs from teaching.","parts":[
+{"part_id":"a","text":"Develop instructional materials.","time_share":0.4,"type_reasoning":"Produces materials others use.","type":"DISCRETE","unit_reasoning":"Per course or module.","work_item":"one set of instructional materials","start":"training need identified","end":"materials finished and approved","checked_by":"trainees' managers, staff","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Conduct in-service and community education programs.","time_share":0.6,"type_reasoning":"Live teaching.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["48"]}],
+"notes":""}
+]

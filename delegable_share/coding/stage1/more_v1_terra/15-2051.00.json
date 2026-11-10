@@ -1,0 +1,396 @@
+[
+ {
+  "task_id": "21823",
+  "split_reasoning": "Analyzing, manipulating, and processing data are related steps in producing an analysis dataset and results.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze and process a large dataset using statistical software.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis produces data and results that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis run or defined analysis is a coherent output rather than an entire project.",
+    "work_item": "one dataset analyzed for a defined question",
+    "start": "dataset and analysis question available",
+    "end": "processed data and analysis results saved or shared",
+    "checked_by": "data science lead or downstream analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     "21826",
+     "21832"
+    ]
+   }
+  ],
+  "notes": "The boundary between general processing and dedicated data cleaning depends on the workflow."
+ },
+ {
+  "task_id": "21824",
+  "split_reasoning": "Feature selection is one activity applied to different prediction problems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply feature selection algorithms to a predictive model.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a selected feature set for model development.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A selected feature set for one modeling problem is a usable handoff.",
+    "work_item": "one selected feature set for a predictive model",
+    "start": "candidate features and prediction objective available",
+    "end": "selected features and selection results recorded",
+    "checked_by": "model developer or data science lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21827",
+     "21837"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21825",
+  "split_reasoning": "Sampling and complete enumeration are alternative ways to determine the survey population.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine the group to be surveyed using sampling or complete enumeration.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a defined group for survey collection.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selected group or enumeration plan is handed to the team conducting the survey.",
+    "work_item": "one survey population or sample defined",
+    "start": "survey objectives and population frame available",
+    "end": "survey group and selection method documented",
+    "checked_by": "survey lead or research team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21830"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21826",
+  "split_reasoning": "Cleaning and manipulating raw data are related steps in preparing a usable dataset.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and manipulate raw data using statistical software.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a prepared dataset for analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A prepared dataset for a defined analysis is the usable output.",
+    "work_item": "one cleaned and prepared dataset",
+    "start": "raw data and preparation requirements available",
+    "end": "cleaned data and preparation steps saved for use",
+    "checked_by": "downstream analyst or data science lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21823"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21827",
+  "split_reasoning": "The listed metrics are alternative measures used in the same model comparison activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare candidate models using statistical performance metrics.",
+    "time_share": 1.0,
+    "type_reasoning": "The comparison produces results that inform model selection.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A comparison of candidate models for one prediction problem is a coherent result.",
+    "work_item": "one model performance comparison",
+    "start": "candidate model results and evaluation data available",
+    "end": "metrics and comparison recorded or shared",
+    "checked_by": "model developer or data science lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21824",
+     "21837"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21828",
+  "split_reasoning": "Graphs, charts, and other visualizations are alternative formats for the same kind of analysis output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a visualization conveying data analysis results.",
+    "time_share": 1.0,
+    "type_reasoning": "Each visualization is a distinct artifact that others can inspect and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual chart or visualization is a reusable output for a report or presentation.",
+    "work_item": "one analysis visualization",
+    "start": "analysis results and communication purpose available",
+    "end": "visualization saved or shared for use",
+    "checked_by": "analyst, report author, or intended audience",
+    "duplicates": [],
+    "overlaps_with": [
+     "21829"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21829",
+  "split_reasoning": "Oral presentation and written presentation are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present modeling and analysis results orally to management or other end users.",
+    "time_share": 0.4,
+    "type_reasoning": "The work is a live presentation and discussion with its audience.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21828",
+     "21836"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Deliver a written presentation of modeling and analysis results to management or other end users.",
+    "time_share": 0.6,
+    "type_reasoning": "A written presentation is a distinct document that its audience relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report or written presentation is delivered and reviewed as a whole.",
+    "work_item": "one written presentation of analysis results",
+    "start": "modeling or analysis results ready to communicate",
+    "end": "written presentation sent to its audience",
+    "checked_by": "management or other end users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21828",
+     "21832",
+     "21836"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the organization's reporting practices."
+ },
+ {
+  "task_id": "21830",
+  "split_reasoning": "Surveys, opinion polls, and other instruments are alternative forms of data collection instrument.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a survey, poll, or other data collection instrument.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an instrument for a research team to administer.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The complete instrument, rather than an individual question, is reviewed and used as a whole.",
+    "work_item": "one data collection instrument",
+    "start": "research objectives and information requirements available",
+    "end": "instrument prepared for review or administration",
+    "checked_by": "research lead or survey team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21825"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21831",
+  "split_reasoning": "Identifying a business problem or management objective is one scoping activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify a business problem or management objective suitable for data analysis.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a defined analytical problem that guides subsequent work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One scoped problem or objective is the unit stakeholders and analysts can agree to use.",
+    "work_item": "one analytical problem or objective defined",
+    "start": "business context or stakeholder need raised",
+    "end": "problem or objective and its analytical relevance recorded or agreed",
+    "checked_by": "business stakeholder and data science lead",
+    "duplicates": [],
+    "overlaps_with": [
+     "21833"
+    ]
+   }
+  ],
+  "notes": "Scoping may include stakeholder conversations, but the coded output is the defined problem."
+ },
+ {
+  "task_id": "21832",
+  "split_reasoning": "Identifying relationships, trends, and influential factors is one interpretation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify relationships, trends, and factors that could affect research results.",
+    "time_share": 1.0,
+    "type_reasoning": "The interpretation produces findings that researchers or decision-makers can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of findings for one research question is a coherent analytical output.",
+    "work_item": "one set of interpreted research findings",
+    "start": "research data or analysis results available",
+    "end": "relevant relationships, trends, and influencing factors recorded or shared",
+    "checked_by": "research lead or downstream analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     "21823",
+     "21829"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21833",
+  "split_reasoning": "Budgeting, staffing, and marketing are examples of business problems addressed through the same solution-identification activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify solutions to a business problem using data analysis results.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces candidate solutions that stakeholders can evaluate.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of candidate solutions for one business problem is a coherent output.",
+    "work_item": "one set of data-informed business solution options",
+    "start": "business problem and relevant analysis results available",
+    "end": "solution options and their analytical basis recorded or shared",
+    "checked_by": "business stakeholder or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21831",
+     "21836"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21834",
+  "split_reasoning": "Engineering, science, and other fields are application domains for the same solution-development activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Propose a solution in engineering, science, or another field using mathematical theories and techniques.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a proposed solution and mathematical rationale for others to assess.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal addressing one defined problem is a reviewable output.",
+    "work_item": "one mathematically supported solution proposal",
+    "start": "problem and relevant constraints defined",
+    "end": "proposed solution and supporting rationale shared",
+    "checked_by": "technical lead, domain expert, or stakeholder",
+    "duplicates": [],
+    "overlaps_with": [
+     "21836"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21835",
+  "split_reasoning": "The listed sources are alternative inputs for staying current on analytic developments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read research sources to identify emerging analytic trends and technologies.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes keeping current rather than producing a specific item for others.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A commissioned literature review or written briefing would be a separate deliverable, not specified here."
+ },
+ {
+  "task_id": "21836",
+  "split_reasoning": "Recommendations may be communicated in live stakeholder discussions or delivered as written recommendations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend data-driven solutions to stakeholders in a live discussion.",
+    "time_share": 0.5,
+    "type_reasoning": "The work is the live interaction in which the recommendation is explained and discussed.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21829",
+     "21833",
+     "21834"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Provide a written recommendation for a data-driven solution to stakeholders.",
+    "time_share": 0.5,
+    "type_reasoning": "The written recommendation is a distinct output that stakeholders can review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation addressing one decision is typically reviewed as a whole.",
+    "work_item": "one written data-driven solution recommendation",
+    "start": "decision context and supporting analysis available",
+    "end": "recommendation and supporting rationale sent to stakeholders",
+    "checked_by": "stakeholders or management",
+    "duplicates": [],
+    "overlaps_with": [
+     "21829",
+     "21833",
+     "21834"
+    ]
+   }
+  ],
+  "notes": "The live and written shares vary by organization; identifying solutions and communicating recommendations can be intertwined."
+ },
+ {
+  "task_id": "21837",
+  "split_reasoning": "Testing, validation, and reformulation are related steps in an iterative model-improvement activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test, validate, and reformulate a predictive model to improve its accuracy.",
+    "time_share": 1.0,
+    "type_reasoning": "Each iteration produces a tested model version and validation results.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A model version with its validation results is a reviewable handoff rather than an entire modeling project.",
+    "work_item": "one predictive model version tested and validated",
+    "start": "candidate model and validation data available",
+    "end": "validation results and any model revisions recorded for review",
+    "checked_by": "data science lead or model validation team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21824",
+     "21827"
+    ]
+   }
+  ],
+  "notes": "Not every validation cycle leads to reformulation."
+ },
+ {
+  "task_id": "21838",
+  "split_reasoning": "Functions and applications are alternative forms of software written to conduct analyses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a function or application to conduct data analysis.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces executable analysis code that others can use or review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed function or bounded application component is a reviewable code deliverable.",
+    "work_item": "one analysis function or application component",
+    "start": "analysis requirement and development environment available",
+    "end": "code implemented and made available for review or use",
+    "checked_by": "code reviewer or downstream analyst",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A complete application may contain multiple separately reviewed components."
+ }
+]

@@ -1,0 +1,385 @@
+[
+ {
+  "task_id": "4240",
+  "split_reasoning": "Maintaining care records and discussing observations with a supervisor are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record patient care, condition, progress, and problems for reporting to the supervisor or case manager.",
+    "time_share": 0.7,
+    "type_reasoning": "Each care record is a distinct written handoff used by the care team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A visit's care record is completed and submitted as a whole.",
+    "work_item": "One patient visit care record",
+    "start": "Patient care and observations from a visit are available to record",
+    "end": "Care record is completed and submitted",
+    "checked_by": "Supervisor, case manager, or nurse",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Discuss patient observations and problems with the supervisor or case manager.",
+    "time_share": 0.3,
+    "type_reasoning": "The discussion is a live exchange with a colleague rather than a separate written deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The share devoted to verbal discussion varies with reporting procedures and patient needs."
+ },
+ {
+  "task_id": "4241",
+  "split_reasoning": "Assisting with transfers and helping with dressing and grooming are different hands-on care activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help patients move in and out of beds, baths, wheelchairs, or automobiles.",
+    "time_share": 0.6,
+    "type_reasoning": "Transfers require hands-on assistance away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4250",
+     "4252",
+     "18694"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Help patients dress and groom themselves.",
+    "time_share": 0.4,
+    "type_reasoning": "Dressing and grooming assistance is hands-on personal care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252",
+     "18694"
+    ]
+   }
+  ],
+  "notes": "Shares depend on patients' mobility and personal care needs."
+ },
+ {
+  "task_id": "4242",
+  "split_reasoning": "Emotional support and instruction address different needs, even though both involve live interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide emotional support to patients and their families.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the supportive interaction itself.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4244",
+     "4250",
+     "4252"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Instruct patients and families in caregiving, healthy meals, independent living, or adaptation to illness or disability.",
+    "time_share": 0.6,
+    "type_reasoning": "Instruction is delivered through live teaching and discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4246",
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the patient's and family's needs."
+ },
+ {
+  "task_id": "4244",
+  "split_reasoning": "Entertainment, conversation, and reading aloud are alternative ways of engaging patients for the same purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Engage patients through conversation, entertainment, or reading aloud to support mental health and alertness.",
+    "time_share": 1.0,
+    "type_reasoning": "The value lies in the live interaction with the patient.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4242",
+     "4250",
+     "4252"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4245",
+  "split_reasoning": "Planning meals, obtaining food, and preparing and serving meals are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan meals for patients or family members according to prescribed diets.",
+    "time_share": 0.15,
+    "type_reasoning": "Meal planning produces a menu or meal plan others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for a period of meals is a usable whole rather than a list of individual food choices.",
+    "work_item": "One diet-appropriate meal plan",
+    "start": "Dietary instructions and meal-planning needs are available",
+    "end": "Meal plan is prepared for use",
+    "checked_by": "Patient, family, or supervising care staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Purchase food for patients' or families' prescribed meals.",
+    "time_share": 0.25,
+    "type_reasoning": "Shopping involves obtaining and carrying physical supplies.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4249"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare and serve meals according to prescribed diets.",
+    "time_share": 0.6,
+    "type_reasoning": "Preparing and serving food requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Meal plans may be informal, and the shares depend on whether the aide also shops."
+ },
+ {
+  "task_id": "4246",
+  "split_reasoning": "Directing exercises and directing use of braces or artificial limbs are forms of patient instruction in prescribed activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct patients in prescribed exercises or the use of braces or artificial limbs.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live direction and instruction rather than a separate deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4242"
+    ]
+   }
+  ],
+  "notes": "Hands-on assistance may accompany instruction, depending on the patient's needs."
+ },
+ {
+  "task_id": "4247",
+  "split_reasoning": "Pulse, temperature, and respiration are measurements taken as part of the same vital-sign checking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check patients' pulse, temperature, and respiration.",
+    "time_share": 1.0,
+    "type_reasoning": "Taking vital signs requires hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Recording observations is covered separately by task 4240."
+ },
+ {
+  "task_id": "4248",
+  "split_reasoning": "Changing dressings is one hands-on care activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change patients' dressings.",
+    "time_share": 1.0,
+    "type_reasoning": "Changing a dressing requires hands-on patient care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4249",
+  "split_reasoning": "Obtaining supplies and running other errands are examples of the same client-requested errand activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain household supplies or run other errands requested by a client.",
+    "time_share": 1.0,
+    "type_reasoning": "Errands generally require travel and handling physical items away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4245",
+     "4250"
+    ]
+   }
+  ],
+  "notes": "The statement leaves the range of other requested duties unspecified."
+ },
+ {
+  "task_id": "4250",
+  "split_reasoning": "Transportation, assistance, and companionship are integrated aspects of accompanying a client on a trip.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accompany clients on trips outside the home, providing transportation, assistance, and companionship.",
+    "time_share": 1.0,
+    "type_reasoning": "Accompanying and assisting a client on a trip requires physical presence and movement.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4241",
+     "4242",
+     "4244",
+     "4249",
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Companionship is part of the trip rather than coded as a separate conversation."
+ },
+ {
+  "task_id": "4252",
+  "split_reasoning": "The statement describes broad child caregiving without specifying separable activities or their relative shares.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Care for children with disabilities or whose parents are sick or have disabilities.",
+    "time_share": 1.0,
+    "type_reasoning": "Child caregiving generally requires physical presence and hands-on assistance.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4241",
+     "4242",
+     "4244",
+     "4245",
+     "4247",
+     "4248",
+     "4250",
+     "18694",
+     "18695",
+     "20577"
+    ]
+   }
+  ],
+  "notes": "The mix of supervision, personal care, and other activities varies substantially by case; overlaps apply when those activities are performed for a child."
+ },
+ {
+  "task_id": "4253",
+  "split_reasoning": "Massage and applying other preparations or treatments are distinct hands-on treatments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Massage patients.",
+    "time_share": 0.4,
+    "type_reasoning": "Massage requires hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Apply preparations or treatments such as liniment, alcohol rubs, or heat-lamp stimulation.",
+    "time_share": 0.6,
+    "type_reasoning": "Applying these treatments requires physical work with the patient and treatment materials.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on the treatments prescribed and the aide's permitted duties."
+ },
+ {
+  "task_id": "18694",
+  "split_reasoning": "Linen and laundry work, cleaning, and personal care are distinct hands-on activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change bed linens and wash or iron laundry for patients.",
+    "time_share": 0.35,
+    "type_reasoning": "Handling linens and laundry requires physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Clean the patient's living area.",
+    "time_share": 0.3,
+    "type_reasoning": "Cleaning is hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Assist patients with personal care.",
+    "time_share": 0.35,
+    "type_reasoning": "Personal care assistance requires hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4241",
+     "4252",
+     "20577"
+    ]
+   }
+  ],
+  "notes": "Shares vary by care plan; personal care overlaps with the more specific dressing, grooming, and bathing statements."
+ },
+ {
+  "task_id": "18695",
+  "split_reasoning": "Administering prescribed oral medicine and ensuring it is taken are parts of the same medication assistance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Administer prescribed oral medication under authorized direction and ensure the patient takes it.",
+    "time_share": 1.0,
+    "type_reasoning": "Medication administration and observation involve physical care of the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Permitted medication duties depend on local rules and the aide's authorization."
+ },
+ {
+  "task_id": "20577",
+  "split_reasoning": "Bathing patients is one hands-on care activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bathe patients.",
+    "time_share": 1.0,
+    "type_reasoning": "Bathing requires hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252",
+     "18694"
+    ]
+   }
+  ],
+  "notes": "Assistance moving into or out of a bath is covered by task 4241."
+ }
+]

@@ -1,0 +1,68 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_29-1051.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[1808a] DISCRETE — one prescription reviewed and verified (or queried with the prescriber) (start: prescription received in the queue; end: prescription cleared for filling or returned with a query) — from statement: Review prescriptions to assure accuracy, to ascertain the needed ingredients, and to evaluate their suitability.
+[1809a] LIVE_SERVICE — one patient counseled at pickup or on a call (start: patient presents with a medication question or prescription pickup; end: patient's questions answered and the patient leaves or hangs up) — from statement: Provide information and advice regarding drug interactions, side effects, dosage, and proper medication storage.
+[1809b] DISCRETE — one drug information question answered (start: question received; end: answer sent to the asker) — from statement: Provide information and advice regarding drug interactions, side effects, dosage, and proper medication storage.
+[1810a] DISCRETE — one drug utilization review report or flagged case list (start: dispensing or prescribing data pulled for the review; end: findings reported and flagged cases passed on) — from statement: Analyze prescribing trends to monitor patient compliance and to prevent excessive usage or harmful interactions.
+[1811a] DISCRETE — one supply order placed (start: stock levels checked and need identified; end: order submitted to the supplier) — from statement: Order and purchase pharmaceutical supplies, medical supplies, or drugs, maintaining stock and storing and handling it properly.
+[1812a] DISCRETE — one patient or pharmacy record updated (start: information requiring a record update received; end: update saved in the pharmacy record) — from statement: Maintain records, such as pharmacy files, patient profiles, charge system files, inventories, control records for radioactive nuclei, or registries of poisons, narcotics, or controlled drugs.
+[1812b] LIVE_SERVICE — one patient profile update during a contact (start: patient provides information for the profile; end: information saved and confirmed during the contact) — from statement: Maintain records, such as pharmacy files, patient profiles, charge system files, inventories, control records for radioactive nuclei, or registries of poisons, narcotics, or controlled drugs.
+[1812c] DISCRETE — one charge or billing record updated (start: charge information or correction received; end: record updated and saved) — from statement: Maintain records, such as pharmacy files, patient profiles, charge system files, inventories, control records for radioactive nuclei, or registries of poisons, narcotics, or controlled drugs.
+[1812d] DISCRETE — one inventory or regulated-stock record entry or reconciliation (start: stock movement or reconciliation due; end: record updated and discrepancies noted) — from statement: Maintain records, such as pharmacy files, patient profiles, charge system files, inventories, control records for radioactive nuclei, or registries of poisons, narcotics, or controlled drugs.
+[1813b] DISCRETE — one patient management consult documented (start: consult ends; end: note and follow-up plan recorded) — from statement: Provide specialized services to help patients manage conditions, such as diabetes, asthma, smoking cessation, or high blood pressure.
+[1814a] LIVE_SERVICE — one customer advised on a product selection (start: customer asks for advice; end: customer picks a product or leaves) — from statement: Advise customers on the selection of medication brands, medical equipment, or healthcare supplies.
+[1815b] DISCRETE — one drug regimen review with written recommendation (start: request or scheduled review begins; end: recommendation sent to the team) — from statement: Collaborate with other health care professionals to plan, monitor, review, or evaluate the quality or effectiveness of drugs or drug regimens, providing advice on drug applications or characteristics.
+[1816c] DISCRETE — one prescription dispensing transaction completed (start: prescription and prepared medication ready for dispensing processing; end: dispensing record completed and medication released for handover) — from statement: Compound and dispense medications as prescribed by doctors and dentists, by calculating, weighing, measuring, and mixing ingredients, or oversee these activities.
+[1816d] LIVE_SERVICE — one dispensed prescription handed to a patient (start: patient presents to collect a prepared prescription; end: medication handed over to the patient) — from statement: Compound and dispense medications as prescribed by doctors and dentists, by calculating, weighing, measuring, and mixing ingredients, or oversee these activities.
+[1818a] LIVE_SERVICE — one patient referred during a counseling contact (start: pharmacist identifies a need beyond pharmacy; end: patient told where to go and agrees) — from statement: Refer patients to other health professionals or agencies when appropriate.
+[1818b] DISCRETE — one referral communication sent (start: decision to refer made; end: referral sent to the provider or agency) — from statement: Refer patients to other health professionals or agencies when appropriate.
+[1820a] DISCRETE — one written procedure created or revised (start: need for a procedure or change identified; end: procedure approved and issued to staff) — from statement: Plan, implement, or maintain procedures for mixing, packaging, or labeling pharmaceuticals, according to policy and legal requirements, to ensure quality, security, and proper disposal.
+[1821b] DISCRETE — one radiopharmaceutical dose calculated and recorded (start: assay result available; end: volume calculated and entered in the dose record) — from statement: Assay radiopharmaceuticals, verify rates of disintegration, and calculate the volume required to produce the desired results, to ensure proper dosages.
+[1822b] DISCRETE — one pharmacy administrative report, schedule, or filing (start: administrative requirement or reporting period identified; end: item completed and filed or communicated) — from statement: Manage pharmacy operations, hiring or supervising staff, performing administrative duties, or buying or selling non-pharmaceutical merchandise.
+[1822c] DISCRETE — one non-pharmaceutical merchandise order (start: merchandise need identified; end: order submitted to the supplier) — from statement: Manage pharmacy operations, hiring or supervising staff, performing administrative duties, or buying or selling non-pharmaceutical merchandise.
+[1822d] LIVE_SERVICE — one non-pharmaceutical merchandise sale (start: customer presents merchandise for purchase; end: payment taken and merchandise handed over) — from statement: Manage pharmacy operations, hiring or supervising staff, performing administrative duties, or buying or selling non-pharmaceutical merchandise.
+[1823a] DISCRETE — one medication order verified and dispensed (start: order received; end: medication released to the ward or patient) — from statement: Work in hospitals or clinics or for Health Management Organizations (HMOs), dispensing prescriptions, serving as a medical team consultant, or specializing in specific drug therapy areas, such as oncology or nuclear pharmacotherapy.
+[1823b] DISCRETE — one consult on drug therapy answered (start: consult request received; end: advice given and noted) — from statement: Work in hospitals or clinics or for Health Management Organizations (HMOs), dispensing prescriptions, serving as a medical team consultant, or specializing in specific drug therapy areas, such as oncology or nuclear pharmacotherapy.
+[1824b] DISCRETE — one batch quality test result recorded (start: test completed; end: result recorded and batch released or held) — from statement: Assess the identity, strength, or purity of medications.
+[1826a] DISCRETE — one educational handout, bulletin, or article (start: topic chosen or requested; end: piece published or distributed) — from statement: Publish educational information for other pharmacists, doctors, or patients.
+[20405a] DISCRETE — one billing issue resolved with an insurer (start: claim rejection or billing problem identified; end: claim resolved or payment confirmed) — from statement: Contact insurance companies to resolve billing issues.
+[20406a] DISCRETE — one pharmacy database update (start: database change requirement received; end: change entered and verified) — from statement: Update or troubleshoot pharmacy information databases.
+[20406b] DISCRETE — one pharmacy database issue investigated (start: database problem reported or detected; end: problem resolved or escalated with findings) — from statement: Update or troubleshoot pharmacy information databases.
+
+=== PAIRS ===
+PAIR 1809b / 1823b
+[1809b] DISCRETE — one drug information question answered (start: question received; end: answer sent to the asker) — from statement: Provide information and advice regarding drug interactions, side effects, dosage, and proper medication storage.
+[1823b] DISCRETE — one consult on drug therapy answered (start: consult request received; end: advice given and noted) — from statement: Work in hospitals or clinics or for Health Management Organizations (HMOs), dispensing prescriptions, serving as a medical team consultant, or specializing in specific drug therapy areas, such as oncology or nuclear pharmacotherapy.
+Original flag reasoning: Answering a drug information question and answering a drug therapy consult both take a clinical question and return written pharmacist advice.

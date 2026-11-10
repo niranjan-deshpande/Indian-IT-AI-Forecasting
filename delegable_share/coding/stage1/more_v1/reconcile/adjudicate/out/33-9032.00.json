@@ -1,0 +1,7 @@
+[
+  {"task_id": "2133", "reasoning": "The statement says 'monitor and authorize': checking a waiting person is live, but much of the time guards watch entrance traffic (in person or on cameras) with no one waiting and flag suspicious movements. Y captures both; X folds monitoring into the live check.", "choice": "Y"},
+  {"task_id": "2137", "reasoning": "Taking a message and answering a question are outcomes of the same live activity, handling an after-hours call, and the call is the natural unit. Y's single part follows the rule against splitting alternatives for one deliverable.", "choice": "Y"},
+  {"task_id": "2138", "reasoning": "Both split correctly into a verbal warning (INTERPERSONAL) and apprehension or eviction (PHYSICAL). Warnings are far more frequent than physical removals, so X's 0.8/0.2 shares are more realistic than Y's even split.", "choice": "X"},
+  {"task_id": "2139", "reasoning": "Operating walk-through detectors, wands and x-ray belts and searching bags is hands-on checkpoint work rather than a service conversation in which work is done for a waiting customer. Y's PHYSICAL classification fits better.", "choice": "Y"},
+  {"task_id": "2143", "reasoning": "The instructions say to split an activity that is partly at a computer and partly physical. X does this (building-management screen versus local controls at the equipment); Y codes it all as discrete.", "choice": "X"}
+]

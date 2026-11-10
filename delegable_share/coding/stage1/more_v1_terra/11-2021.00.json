@@ -1,0 +1,576 @@
+[
+ {
+  "task_id": "950",
+  "split_reasoning": "Balancing business objectives and customer satisfaction is part of developing one pricing strategy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a pricing strategy that balances firm objectives and customer satisfaction.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a pricing recommendation or plan for a product or offering.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A pricing strategy for an offering is reviewed and adopted as a whole.",
+    "work_item": "one pricing strategy for a product, line, or service",
+    "start": "pricing strategy requested or due for review",
+    "end": "pricing recommendation submitted for approval or implementation",
+    "checked_by": "business leadership and pricing or sales teams",
+    "overlap_reasoning": "Pricing can contribute to broader marketing and profitability strategies, but those tasks cover more than pricing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "951",
+     "958"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "951",
+  "split_reasoning": "Identifying, developing, and evaluating strategy are related stages of producing or reviewing a marketing strategy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop or evaluate a marketing strategy using business objectives, market characteristics, and cost and markup factors.",
+    "time_share": 1.0,
+    "type_reasoning": "The work results in a strategy or evaluation that decision-makers can review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A strategy for a defined business, product, or market is the unit presented for decision.",
+    "work_item": "one marketing strategy or strategy evaluation",
+    "start": "strategy development or review commissioned",
+    "end": "strategy or evaluation presented to decision-makers",
+    "checked_by": "marketing leadership and business management",
+    "overlap_reasoning": "Pricing, profitability planning, environmental integration, and marketing activity planning may feed into the strategy but have distinct scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "950",
+     "958",
+     "19504",
+     "20709"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "952",
+  "split_reasoning": "Budgets, expenditures, and financial projections are inputs or components of the same product-development financial evaluation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate the financial aspects of a product-development proposal or project.",
+    "time_share": 1.0,
+    "type_reasoning": "Each evaluation produces financial findings or projections for a decision-maker.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The financial evaluation of a defined proposal or project is reviewed as a whole.",
+    "work_item": "one product-development financial evaluation",
+    "start": "proposal or project financial information supplied for evaluation",
+    "end": "financial assessment and projections submitted",
+    "checked_by": "product leadership, finance, and business management",
+    "overlap_reasoning": "An environmental marketing business case may include financial analysis, but it has a different decision scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19503"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "954",
+  "split_reasoning": "Directing hiring, training, performance evaluations, and daily work are distinct management activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct hiring of marketing or sales staff.",
+    "time_share": 0.25,
+    "type_reasoning": "The target concerns directing people involved in hiring rather than preparing a specified hiring document.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement covers staff hiring.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Direct training of marketing or sales staff.",
+    "time_share": 0.2,
+    "type_reasoning": "The work is directing and guiding staff training through interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement covers staff training.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Direct performance evaluations of marketing or sales staff.",
+    "time_share": 0.2,
+    "type_reasoning": "The target describes directing the evaluation process rather than producing a specified evaluation.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement covers staff performance evaluations.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Oversee the daily activities of marketing or sales staff.",
+    "time_share": 0.35,
+    "type_reasoning": "Daily oversight consists of supervising and guiding people rather than producing a defined deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Directing marketing activities can involve staff oversight, but also includes coordinating marketing work beyond daily supervision.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20709"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; directing evaluations is distinguished from writing individual evaluations."
+ },
+ {
+  "task_id": "955",
+  "split_reasoning": "Negotiating contracts is a live interaction, while developing distribution networks or strategies involves a separate planning output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate distribution contracts with vendors or distributors.",
+    "time_share": 0.5,
+    "type_reasoning": "The target is the negotiation with counterparties, whose value lies in the live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement covers negotiating distribution contracts.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a distribution strategy or plan for establishing a distribution network.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a plan for how products will reach markets.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A distribution plan for an offering or market is a coherent decision document.",
+    "work_item": "one distribution strategy or network plan",
+    "start": "distribution need or market opportunity identified",
+    "end": "distribution plan presented for approval or execution",
+    "checked_by": "business leadership and distribution teams",
+    "overlap_reasoning": "Distribution planning can form part of a broader marketing strategy, but neither task is limited to the other's scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "951"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; establishing a network may also involve relationship-building beyond the plan and negotiations."
+ },
+ {
+  "task_id": "956",
+  "split_reasoning": "Consulting on design, color, and packaging is one kind of interaction about product specifications.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with product-development personnel about product specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is the live consultation rather than production of a specification document.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Consultations may address environmentally preferable modifications, but the recommendation task is broader than the consultation itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19505"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "957",
+  "split_reasoning": "Products and services are alternative subjects for the same list-compilation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile a list describing product or service offerings.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a list that others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The compiled list is the complete output handed to its users.",
+    "work_item": "one compiled product or service offering list",
+    "start": "list requested or offering information gathered for compilation",
+    "end": "completed list made available to users",
+    "checked_by": "marketing and sales staff",
+    "overlap_reasoning": "No other listed statement describes compiling offering lists.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "958",
+  "split_reasoning": "Sales forecasting and strategic planning produce different outputs; business developments and trends are inputs to those outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a sales forecast using business developments and market trends.",
+    "time_share": 0.45,
+    "type_reasoning": "A forecast is a distinct output used in sales and profitability decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A forecast for a defined offering and period is reviewed as a whole.",
+    "work_item": "one sales forecast for a product, line, or service",
+    "start": "forecast period or planning need established",
+    "end": "forecast submitted to the planning team",
+    "checked_by": "sales, finance, and business management",
+    "overlap_reasoning": "Market research findings can inform a forecast, while research studies cover different questions and outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "963"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a strategic plan for the sales and profitability of a product, line, or service.",
+    "time_share": 0.55,
+    "type_reasoning": "The work produces a plan for decisions about sales and profitability.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The plan for a defined offering or line is the unit presented to management.",
+    "work_item": "one sales and profitability strategic plan",
+    "start": "planning cycle or profitability issue identified",
+    "end": "plan presented for management decision",
+    "checked_by": "business and marketing leadership",
+    "overlap_reasoning": "Pricing and marketing strategies can contribute to this plan, but each also covers decisions outside it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "950",
+     "951"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates and depend on the planning cycle."
+ },
+ {
+  "task_id": "959",
+  "split_reasoning": "Selecting products and accessories for shows is one selection activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select products or accessories to display at a trade or special production show.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection produces a defined set of display items for show organizers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selection for one show is communicated and used as a whole.",
+    "work_item": "one show's product and accessory display selection",
+    "start": "show display requirements identified",
+    "end": "selected items communicated to the show preparation team",
+    "checked_by": "show organizers and marketing leadership",
+    "overlap_reasoning": "Show coordination may use the selection, but also covers other promotional arrangements.",
+    "duplicates": [],
+    "overlaps_with": [
+     "961"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "960",
+  "split_reasoning": "Copyright and royalty issues are alternative subjects of the same legal consultation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with legal staff about a marketing-related legal problem.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes consultation with legal staff rather than preparation of a legal deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other listed statement describes consulting legal staff on these problems.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "961",
+  "split_reasoning": "Coordinating a promotion or show produces an arrangement for others, while participating in it is live promotional interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate a promotional activity or trade-show participation with relevant teams.",
+    "time_share": 0.6,
+    "type_reasoning": "Coordination produces an agreed activity plan or set of arrangements used by participating teams.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The arrangements for one promotional activity or show are a coherent handoff to participants.",
+    "work_item": "one coordinated promotional activity or show plan",
+    "start": "activity or show identified for coordination",
+    "end": "arrangements and responsibilities communicated to participating teams",
+    "checked_by": "marketing leadership and participating teams",
+    "overlap_reasoning": "Show product selection and broader marketing activity planning can contribute to these arrangements but have different scopes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "959",
+     "20709"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Participate in a promotional activity or trade show to market offerings.",
+    "time_share": 0.4,
+    "type_reasoning": "Participation centers on live promotional interaction with attendees and collaborators.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Directing marketing activities may include promotion, but does not describe the same participation in an event.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20709"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; physical setup is not specified in the target."
+ },
+ {
+  "task_id": "962",
+  "split_reasoning": "Advice may be delivered in live discussions or as written guidance, which are different forms of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise business or other groups in live discussions about factors affecting buying or selling.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live advisory discussion with the group.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Market analysis can support advice, but forecasting and strategic planning have separate outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "958"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Provide written advice to business or other groups about factors affecting buying or selling.",
+    "time_share": 0.4,
+    "type_reasoning": "Written advice is a distinct output that the recipient can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Advice addressing one group's request or issue is sent as a whole.",
+    "work_item": "one written advisory response or briefing",
+    "start": "request or need for advice identified",
+    "end": "written advice sent to the group",
+    "checked_by": "the recipient group",
+    "overlap_reasoning": "Market analysis can support advice, but forecasting and strategic planning have separate outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "958"
+    ]
+   }
+  ],
+  "notes": "Shares and the frequency of written advice depend on the role."
+ },
+ {
+  "task_id": "963",
+  "split_reasoning": "Initiating a research study and analyzing study findings are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Initiate a market research study by defining and commissioning the research need.",
+    "time_share": 0.4,
+    "type_reasoning": "Initiation produces a research request or brief for the people conducting the study.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A study brief is handed over as the basis for one research assignment.",
+    "work_item": "one market research study brief or request",
+    "start": "research need identified",
+    "end": "study request or brief given to the research team",
+    "checked_by": "research team and marketing leadership",
+    "overlap_reasoning": "A commercial survey can be one type of commissioned study, but conducting it is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "965"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze the findings of a market research study.",
+    "time_share": 0.6,
+    "type_reasoning": "The analysis produces findings or implications for marketing decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Findings from one study are interpreted and communicated together.",
+    "work_item": "one market research findings analysis",
+    "start": "study findings received",
+    "end": "analysis and implications communicated to decision-makers",
+    "checked_by": "marketing leadership and other research users",
+    "overlap_reasoning": "Survey findings may be analyzed here, and the analysis may inform forecasts, but those tasks cover different work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "958",
+     "965"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; the same manager may not initiate and analyze every study."
+ },
+ {
+  "task_id": "964",
+  "split_reasoning": "The target describes one consultation about expected demand.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult buying personnel about products or services expected to be in demand.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live exchange of advice with buying personnel.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A demand discussion can include sustainable products, but the environmental consultation also covers sustainability advice beyond demand.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19502"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "965",
+  "split_reasoning": "Economic and commercial surveys are alternative methods for identifying potential markets.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Conduct an economic or commercial survey to identify potential markets.",
+    "time_share": 1.0,
+    "type_reasoning": "A survey produces a set of findings about potential markets for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed survey and its findings form the handoff, rather than each individual response.",
+    "work_item": "one completed market-identification survey and findings",
+    "start": "survey objective and target market question established",
+    "end": "survey findings compiled and communicated",
+    "checked_by": "marketing leadership and research users",
+    "overlap_reasoning": "Market research initiation and findings analysis may include surveys, but also cover studies and analysis beyond conducting a survey.",
+    "duplicates": [],
+    "overlaps_with": [
+     "963"
+    ]
+   }
+  ],
+  "notes": "Fieldwork methods vary; the target does not specify hands-on physical survey collection."
+ },
+ {
+  "task_id": "19502",
+  "split_reasoning": "The target describes one consultation about environmentally sound or sustainable products.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult buying personnel about environmentally sound or sustainable products.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is a live exchange of advice with buying personnel.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A consultation may cover both sustainability and expected demand, but each task also covers advice outside that intersection.",
+    "duplicates": [],
+    "overlaps_with": [
+     "964"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19503",
+  "split_reasoning": "Developing a business case for an environmental marketing strategy is one deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a business case for an environmental marketing strategy.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a business case for a management decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A business case for one proposed strategy is submitted and considered as a whole.",
+    "work_item": "one environmental marketing strategy business case",
+    "start": "proposed strategy or business-case request identified",
+    "end": "business case submitted to decision-makers",
+    "checked_by": "business and marketing leadership, with finance",
+    "overlap_reasoning": "A case may include financial evaluation and support environmental strategy development, but is not identical to either activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "952",
+     "19504"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19504",
+  "split_reasoning": "Strategies, policies, and activities are alternative places to incorporate environmental information into marketing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Integrate environmental information into a product or company marketing strategy, policy, or activity plan.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a revised marketing document or plan incorporating environmental information.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One revised strategy, policy, or activity plan is the unit passed to its owners.",
+    "work_item": "one marketing strategy, policy, or activity plan updated with environmental information",
+    "start": "marketing plan or policy identified for environmental integration",
+    "end": "updated plan or policy submitted to its owners",
+    "checked_by": "marketing leadership and relevant environmental or product teams",
+    "overlap_reasoning": "General strategy and activity planning may include environmental information, and a business case may support it, but each task also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "951",
+     "19503",
+     "20709"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19505",
+  "split_reasoning": "Products, packaging, processes, and other characteristics are alternative subjects for sustainability recommendations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend modifications to improve the environmental soundness or sustainability of products.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces recommendations for product or production decision-makers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of recommendations for a defined product or issue is considered together.",
+    "work_item": "one set of product sustainability modification recommendations",
+    "start": "product or sustainability issue identified for review",
+    "end": "recommendations communicated to responsible decision-makers",
+    "checked_by": "product-development, production, and business leadership",
+    "overlap_reasoning": "Product specification consultations may discuss such modifications, but the consultation and recommendation are not the same output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "956"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20709",
+  "split_reasoning": "Formulating marketing activities or policies produces plans, while directing or coordinating people carrying them out is a separate management activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Formulate marketing activities or policies to promote products or services.",
+    "time_share": 0.55,
+    "type_reasoning": "Formulation produces a proposed activity plan or policy for review and execution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined marketing activity plan or policy is presented as a whole.",
+    "work_item": "one marketing activity plan or policy",
+    "start": "promotional objective or policy need identified",
+    "end": "plan or policy submitted for approval or execution",
+    "checked_by": "marketing leadership and advertising or promotion managers",
+    "overlap_reasoning": "Broader strategy, individual promotional arrangements, and environmental integration may contribute to the plan but each has additional scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "951",
+     "961",
+     "19504"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct or coordinate marketing activities with advertising or promotion managers.",
+    "time_share": 0.45,
+    "type_reasoning": "This part centers on ongoing management and coordination through interactions with other managers.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Daily staff oversight and coordinating specific promotions can share interactions with this work, but are not identical in scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "954",
+     "961"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; coordination that produces a specific event plan is also covered by task 961."
+ }
+]

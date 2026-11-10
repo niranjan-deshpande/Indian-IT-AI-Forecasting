@@ -1,0 +1,514 @@
+[
+ {
+  "task_id": "933",
+  "split_reasoning": "Directing production, pricing, sales, and distribution is the same broad coordination activity across business functions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and coordinate business or departmental production, pricing, sales, or distribution activities.",
+    "time_share": 1.0,
+    "type_reasoning": "The core work is live direction and coordination with subordinate managers rather than a single handed-over deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "947",
+     "20700",
+     "20706",
+     "20708"
+    ]
+   }
+  ],
+  "notes": "Some direction may also be communicated in writing."
+ },
+ {
+  "task_id": "944",
+  "split_reasoning": "Serving customers, stocking shelves, and physically counting inventory are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet or assist customers on the sales floor.",
+    "time_share": 0.4,
+    "type_reasoning": "The work takes place in a live interaction while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer interaction is a natural unit of assistance.",
+    "work_item": "one customer assisted on the sales floor",
+    "start": "customer is greeted or asks for help",
+    "end": "assistance is provided and the interaction ends",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Stock shelves on the sales floor.",
+    "time_share": 0.35,
+    "type_reasoning": "Moving and placing merchandise requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Count merchandise as part of a physical inventory.",
+    "time_share": 0.25,
+    "type_reasoning": "The central activity is physically checking and counting merchandise.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20708"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the manager's involvement in floor operations; inventory counting may include recording counts."
+ },
+ {
+  "task_id": "945",
+  "split_reasoning": "Developing a marketing strategy and implementing a campaign or promotion produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a product-marketing strategy.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a strategy that guides marketing decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A strategy for a product or product group is reviewed and used as a whole.",
+    "work_item": "one product-marketing strategy",
+    "start": "need for a product-marketing strategy identified",
+    "end": "strategy documented and submitted or communicated for use",
+    "checked_by": "senior management and marketing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "20706"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Implement an advertising campaign or sales promotion under a product-marketing strategy.",
+    "time_share": 0.5,
+    "type_reasoning": "Implementation results in a distinct campaign or promotion put into operation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A campaign or promotion is launched and tracked as a distinct initiative.",
+    "work_item": "one marketing campaign or sales promotion launched",
+    "start": "campaign or promotion approved for implementation",
+    "end": "campaign or promotion placed in operation",
+    "checked_by": "marketing staff and senior management",
+    "duplicates": [],
+    "overlaps_with": [
+     "947",
+     "20706"
+    ]
+   }
+  ],
+  "notes": "Shares vary with whether the manager primarily develops strategy or oversees implementation."
+ },
+ {
+  "task_id": "947",
+  "split_reasoning": "One activity: directing support departments through subordinate managers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct non-merchandising departments such as advertising or purchasing.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live supervision and direction of department heads.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "933",
+     "20700"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "948",
+  "split_reasoning": "Joins recommending sites with overseeing remodeling; one is an analysis deliverable, the other is supervision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a location for a new facility.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a recommendation that executives decide on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One recommendation is made per facility decision.",
+    "work_item": "one site recommendation for a new facility",
+    "start": "need for new facility identified",
+    "end": "recommendation presented to decision makers",
+    "checked_by": "owner, board or executive team",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Oversee remodeling or renovation of an existing facility with contractors.",
+    "time_share": 0.6,
+    "type_reasoning": "Mostly directing and checking contractors in live conversation and site visits.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "949",
+  "split_reasoning": "A store layout and an individual merchandise display are different design deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a store layout.",
+    "time_share": 0.6,
+    "type_reasoning": "The work produces a layout plan used to arrange a store.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A layout plan for a store or defined area is reviewed and implemented as a whole.",
+    "work_item": "one store layout plan",
+    "start": "store or area identified for layout planning",
+    "end": "layout plan communicated for approval or implementation",
+    "checked_by": "store management and implementation staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Design a merchandise display.",
+    "time_share": 0.4,
+    "type_reasoning": "The work produces a design for a particular display.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A display design is handed over for setup as one unit.",
+    "work_item": "one merchandise display design",
+    "start": "display need or promotion identified",
+    "end": "display design communicated for setup",
+    "checked_by": "store management and display staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "945",
+     "20706"
+    ]
+   }
+  ],
+  "notes": "Shares vary by store and season."
+ },
+ {
+  "task_id": "19501",
+  "split_reasoning": "Joins implementing programs (live directing and physical setup) and overseeing them; produce one program plan and ongoing oversight through reports.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up an environmental or sustainability program plan or policy for recycling, conservation or waste.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a plan others implement and an official relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One program plan is written and approved.",
+    "work_item": "one environmental program plan or procedure",
+    "start": "issue or requirement identified",
+    "end": "program approved and communicated",
+    "checked_by": "senior executive; regulators",
+    "duplicates": [],
+    "overlaps_with": [
+     "20704"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Oversee running of the program with staff and review its results.",
+    "time_share": 0.6,
+    "type_reasoning": "Oversight is done through live direction and review conversations.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20699",
+  "split_reasoning": "One activity: reviewing performance reports and finding improvements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review financial statements and performance reports to measure goal achievement and identify cost reductions or improvements.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces conclusions and action items others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reviews happen per reporting period, each ending in findings.",
+    "work_item": "one periodic performance review of financial and activity reports",
+    "start": "period's reports received",
+    "end": "findings and actions communicated to managers",
+    "checked_by": "owner, board or senior executive",
+    "duplicates": [],
+    "overlaps_with": [
+     "20703"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20700",
+  "split_reasoning": "One activity: directing administrative support staff; value is in direction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct administrative activities that support production or service delivery.",
+    "time_share": 1.0,
+    "type_reasoning": "Directing others is live interaction without a separate product.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "933",
+     "947"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20701",
+  "split_reasoning": "One activity: building schedules and assigning duties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare staff work schedules and assign duties.",
+    "time_share": 1.0,
+    "type_reasoning": "Each schedule is published and staff rely on it.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule is produced per period and handed to staff.",
+    "work_item": "one staff work schedule with assignments",
+    "start": "staffing needs and availability known",
+    "end": "schedule published to staff",
+    "checked_by": "staff and supervisors",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20702",
+  "split_reasoning": "One activity: monitoring supplier performance against budget.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a supplier's performance and costs against agreed terms and budget and act on shortfalls.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review ends in a finding or action regarding the supplier.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Suppliers are reviewed one at a time per review cycle.",
+    "work_item": "one supplier performance review",
+    "start": "review period ends or issue arises",
+    "end": "findings recorded and supplier addressed",
+    "checked_by": "senior executive or finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "20703"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20703",
+  "split_reasoning": "Joins budgeting with investments and efficiency; one deliverable is the budget, the other is oversight decisions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or approve an operating budget and funding plan.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a budget that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A budget is made per period and approved as a whole.",
+    "work_item": "one budget or funding plan",
+    "start": "budget cycle begins",
+    "end": "budget approved",
+    "checked_by": "board or owner; finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "20699"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct financial staff on investments and efficiency measures.",
+    "time_share": 0.5,
+    "type_reasoning": "Direction through live conversations with staff.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20704",
+  "split_reasoning": "One activity: setting policies and goals with others, mostly in meetings and followed by a written policy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with officials and staff to set departmental goals and policies.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in the live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Write up and implement a departmental policy or procedure.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a written policy others follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One policy or procedure document is issued at a time.",
+    "work_item": "one policy or procedure issued",
+    "start": "decision to adopt or change policy",
+    "end": "policy issued to staff",
+    "checked_by": "board or organization officials",
+    "duplicates": [],
+    "overlaps_with": [
+     "19501"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20705",
+  "split_reasoning": "Joins selection, training and evaluation, which are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select staff by reviewing applicants and making hiring decisions.",
+    "time_share": 0.4,
+    "type_reasoning": "Each hire ends in a decision others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each hire is filled one at a time from opening to offer.",
+    "work_item": "one hiring decision for an opening",
+    "start": "opening approved",
+    "end": "candidate selected and offer made",
+    "checked_by": "HR; senior executive",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train staff.",
+    "time_share": 0.25,
+    "type_reasoning": "Training is live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Evaluate a staff member's performance and write the review.",
+    "time_share": 0.35,
+    "type_reasoning": "Each evaluation yields a written review placed in the file.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One review per employee per cycle.",
+    "work_item": "one performance evaluation",
+    "start": "review cycle starts",
+    "end": "evaluation delivered and filed",
+    "checked_by": "HR; the employee",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20706",
+  "split_reasoning": "One activity: planning and directing cross-department promotions, through coordination.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a sales promotion and coordinate it with other department managers.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a promotion plan others execute.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One plan per promotion.",
+    "work_item": "one promotion plan",
+    "start": "promotion idea or goal set",
+    "end": "plan agreed with department managers",
+    "checked_by": "senior executive; department managers",
+    "duplicates": [],
+    "overlaps_with": [
+     "945"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct the promotion while it is running with department managers.",
+    "time_share": 0.5,
+    "type_reasoning": "Live coordination with colleagues.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "945"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20707",
+  "split_reasoning": "One activity: setting prices or credit terms from demand forecasts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set prices or credit terms for goods or services based on demand forecasts.",
+    "time_share": 1.0,
+    "type_reasoning": "Each decision is a price or terms list used by sales and customers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Prices are set per product line or period and issued as a whole.",
+    "work_item": "one price or credit-terms decision for a product or service",
+    "start": "forecast and cost data reviewed",
+    "end": "prices or terms approved and communicated",
+    "checked_by": "owner or senior executive; sales",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20708",
+  "split_reasoning": "Planning goods movements and resolving movement problems are distinct outputs of ongoing management.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate a plan for goods moving into or out of a production facility.",
+    "time_share": 0.55,
+    "type_reasoning": "Ongoing management produces movement plans or schedules used by operating teams.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A movement plan for a defined period or operating need is communicated as a unit.",
+    "work_item": "one goods-movement plan or schedule",
+    "start": "production, inventory, and shipment needs identified",
+    "end": "movement arrangements communicated to responsible teams",
+    "checked_by": "production, warehouse, and logistics staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "933",
+     "20700"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Resolve an identified goods-movement problem affecting facility operations.",
+    "time_share": 0.45,
+    "type_reasoning": "Monitoring movement produces discrete issues that require a decision or coordination response.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One identified movement problem is investigated and its resolution communicated as a unit.",
+    "work_item": "one goods-movement issue resolved",
+    "start": "delay, inefficiency, or other movement issue identified",
+    "end": "corrective arrangement decided and communicated",
+    "checked_by": "logistics and production managers",
+    "duplicates": [],
+    "overlaps_with": [
+     "933",
+     "19501",
+     "20702"
+    ]
+   }
+  ],
+  "notes": "The balance between scheduled planning and exception handling depends on the operation."
+ }
+]

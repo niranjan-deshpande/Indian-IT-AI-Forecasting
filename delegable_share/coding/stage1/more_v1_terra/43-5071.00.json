@@ -1,0 +1,256 @@
+[
+ {
+  "task_id": "4737",
+  "split_reasoning": "Work orders, bills of lading, and shipping orders are alternative documents prepared to route materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a routing document for a shipment or movement of materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed document is a deliverable used to route materials.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A document is prepared and handed over as a whole for a particular movement.",
+    "work_item": "one completed routing document",
+    "start": "shipment or material movement details received",
+    "end": "routing document completed and issued",
+    "checked_by": "shipping staff, carrier, or receiving department",
+    "overlap_reasoning": "No other statement duplicates document preparation; recording shipment data can include information also entered on routing documents.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4739"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4739",
+  "split_reasoning": "The listed shipment details are different data recorded for the same recordkeeping activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record shipment details for reporting, accounting, or recordkeeping.",
+    "time_share": 1.0,
+    "type_reasoning": "Each shipment produces a record that other staff can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The shipment record is the usable output rather than each individual data entry.",
+    "work_item": "one shipment data record",
+    "start": "shipment details become available for entry",
+    "end": "shipment data recorded and saved or filed",
+    "checked_by": "shipping staff, accounting staff, or supervisor",
+    "overlap_reasoning": "No other statement duplicates shipment recordkeeping; routing documents may contain the same data, and verification may identify discrepancies that are recorded.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4737",
+     "20276"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4740",
+  "split_reasoning": "Making arrangements and issuing instructions are closely related ways of coordinating a shipment with a carrier.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact a carrier representative to arrange or instruct shipment or delivery of materials.",
+    "time_share": 1.0,
+    "type_reasoning": "The contact produces a shipment arrangement or instruction that the carrier can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The arrangement or instruction for a shipment is the outcome handed to the carrier, whether communicated by phone or in writing.",
+    "work_item": "one carrier arrangement or shipping instruction",
+    "start": "shipment requirements are ready for carrier coordination",
+    "end": "arrangement confirmed or instruction communicated to the carrier",
+    "checked_by": "carrier representative and shipping staff",
+    "overlap_reasoning": "No other statement duplicates carrier coordination, and choosing a shipping method is a separate decision from communicating arrangements.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Carrier contact is treated as coordination with a service provider rather than service to a waiting customer."
+ },
+ {
+  "task_id": "4741",
+  "split_reasoning": "Conferring and corresponding are alternative means of addressing a shipment problem with an establishment representative.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact an establishment representative to address a damage, shortage, or specification problem.",
+    "time_share": 1.0,
+    "type_reasoning": "The communication produces a requested or agreed corrective action that others can follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The unit is the communication addressing one problem, not the entire shipment workflow.",
+    "work_item": "one shipment problem addressed with an establishment representative",
+    "start": "shipment problem identified and ready to raise",
+    "end": "problem communicated and corrective action requested or agreed",
+    "checked_by": "establishment representative and shipping supervisor",
+    "overlap_reasoning": "No other statement duplicates this communication; examining a shipment can include checking the discrepancies discussed with the representative.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20276"
+    ]
+   }
+  ],
+  "notes": "The communication may be by phone or in writing; the target does not establish that it is customer service while a customer waits."
+ },
+ {
+  "task_id": "4742",
+  "split_reasoning": "Requisitioning supplies and physically storing them are distinct activities, one administrative and the other hands-on.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Requisition shipping materials and supplies to replenish stock.",
+    "time_share": 0.4,
+    "type_reasoning": "A requisition is a discrete request used by purchasing or stockroom staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requisition for a set of needed supplies is submitted as one request.",
+    "work_item": "one shipping-supply requisition",
+    "start": "need for shipping supplies identified",
+    "end": "requisition completed and submitted",
+    "checked_by": "purchasing staff or supervisor",
+    "overlap_reasoning": "No other listed statement duplicates or substantially overlaps supply requisitioning.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Store shipping materials and supplies in their designated stock locations.",
+    "time_share": 0.6,
+    "type_reasoning": "Putting supplies away requires hands-on movement and placement.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement duplicates or substantially overlaps storing shipping supplies.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Time shares are approximate and depend on replenishment frequency and stockroom practices."
+ },
+ {
+  "task_id": "4744",
+  "split_reasoning": "Space and charge calculations are variations of the same computation using available shipment information and rates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute available space or shipping, storage, or demurrage charges.",
+    "time_share": 1.0,
+    "type_reasoning": "Each calculation produces a figure used in shipment planning or accounting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The calculation for a shipment or specified storage period is the usable output, rather than each arithmetic operation.",
+    "work_item": "one shipment space or charge calculation",
+    "start": "relevant shipment quantities, space data, or rate information available",
+    "end": "calculated amount recorded or communicated",
+    "checked_by": "shipping staff, accounting staff, or supervisor",
+    "overlap_reasoning": "No other statement duplicates all these calculations; calculating shipping charges can overlap determining rates or methods.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20279"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19834",
+  "split_reasoning": "Comparing routes and methods are alternative inputs to the same environmental assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare shipping routes or methods to identify the option with the least environmental impact.",
+    "time_share": 1.0,
+    "type_reasoning": "Each comparison produces an assessment or recommendation that can inform a shipping decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The comparison for a particular shipment or routing decision is the usable output.",
+    "work_item": "one environmental comparison of shipping options",
+    "start": "shipping need and candidate routes or methods identified",
+    "end": "relative impacts compared and lower-impact option identified",
+    "checked_by": "shipping planner or supervisor",
+    "overlap_reasoning": "No other statement duplicates the environmental comparison; selecting shipping methods or routes can include this comparison alongside other considerations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20279"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20276",
+  "split_reasoning": "Examining contents and comparing them with records are integrated steps in physically verifying a shipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine shipment contents against manifests, invoices, or orders for accuracy.",
+    "time_share": 1.0,
+    "type_reasoning": "The verification requires hands-on examination of shipment contents away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement duplicates physical verification; discrepancies found can also be recorded or investigated when addressing shipment problems.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4739",
+     "4741"
+    ]
+   }
+  ],
+  "notes": "Separate shipment data entry is covered by task 4739."
+ },
+ {
+  "task_id": "20277",
+  "split_reasoning": "Packing, sealing, labeling, and applying postage are integrated hands-on steps in preparing materials for shipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pack, seal, label, or apply postage to materials for shipping.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing the materials requires physical handling and use of packing or postage equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement duplicates or substantially overlaps physically preparing packages.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20278",
+  "split_reasoning": "Delivering and routing materials with the listed equipment are alternative ways of physically moving them to departments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver or route materials to departments using handling and sorting equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Moving and sorting materials for departmental delivery requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement duplicates or substantially overlaps physical departmental delivery.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20279",
+  "split_reasoning": "Methods, routes, and rates are related aspects of determining how materials will be shipped.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine the shipping method, route, or rate for materials to be shipped.",
+    "time_share": 1.0,
+    "type_reasoning": "The decision produces shipping details that downstream staff can use to arrange transport.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The shipping determination for a shipment is the usable output handed to staff arranging or documenting transport.",
+    "work_item": "one shipping method, route, or rate determination",
+    "start": "shipment requirements and available shipping options received",
+    "end": "method, route, or rate determined and recorded or communicated",
+    "checked_by": "shipping staff or supervisor",
+    "overlap_reasoning": "No other statement duplicates the full determination; rate calculations and environmental comparisons can form part of it but also serve other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "4744",
+     "19834"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

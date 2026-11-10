@@ -1,0 +1,514 @@
+[
+ {
+  "task_id": "1764",
+  "split_reasoning": "Answering requests and referring them are different outputs, and each can be done either during a live contact or afterwards in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a media representative's information request during a live contact.",
+    "time_share": 0.25,
+    "type_reasoning": "The representative receives the information while on the phone or otherwise in conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One request is answered as a whole within the contact.",
+    "work_item": "one media information request answered live",
+    "start": "media representative asks for information",
+    "end": "information is provided to the representative",
+    "checked_by": "media representative and PR manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and send a written answer to a media information request.",
+    "time_share": 0.45,
+    "type_reasoning": "A written response is prepared and sent outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The response to one request is the item sent to the journalist.",
+    "work_item": "one written response to a media information request",
+    "start": "information request received",
+    "end": "response sent to the media representative",
+    "checked_by": "media representative and PR manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809",
+     "20554"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Refer a media representative to an appropriate spokesperson or source during a live contact.",
+    "time_share": 0.1,
+    "type_reasoning": "The referral is made while the representative is in conversation with the specialist.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "A referral for one request is completed within the contact.",
+    "work_item": "one live media referral",
+    "start": "media representative presents a request",
+    "end": "appropriate spokesperson or source is identified to the representative",
+    "checked_by": "media representative and designated source",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Designate an appropriate spokesperson or source for a written media request.",
+    "time_share": 0.2,
+    "type_reasoning": "The referral is made outside a live contact and communicated in writing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each request results in a referral that the journalist and source can act on.",
+    "work_item": "one written media referral",
+    "start": "media request requiring another source is received",
+    "end": "referral is communicated to the journalist or designated source",
+    "checked_by": "media representative and designated source",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the organization's media-contact practices."
+ },
+ {
+  "task_id": "1765",
+  "split_reasoning": "Establishing and maintaining relationships are stages of the same relationship-building activity across different groups.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build and maintain cooperative relationships with representatives of relevant groups.",
+    "time_share": 1.0,
+    "type_reasoning": "The work centers on relationship-building interactions rather than a distinct checked deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1767",
+  "split_reasoning": "Conferring with production or support personnel is one coordination activity regardless of the promotion being produced.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with production or support personnel about producing advertisements or promotions.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes coordination through live discussion, not production of the advertisement itself.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1771"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1768",
+  "split_reasoning": "The listed appearances, lectures, contests, and exhibits are alternative events to arrange for the same promotional purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange a public appearance or promotional event for a client.",
+    "time_share": 1.0,
+    "type_reasoning": "The arrangements produce a confirmed event schedule and logistics that participants rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The arrangements for one event are handed over as a coordinated set, rather than as individual bookings.",
+    "work_item": "one public appearance or event arranged",
+    "start": "client's event objective and requirements are received",
+    "end": "event details are confirmed and communicated to participants",
+    "checked_by": "client, venue, and event participants",
+    "duplicates": [],
+    "overlaps_with": [
+     "20555"
+    ]
+   }
+  ],
+  "notes": "On-site event operation is not separately specified in the target."
+ },
+ {
+  "task_id": "1769",
+  "split_reasoning": "Studying organizational objectives and needs is an input to developing one public relations strategy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a public relations strategy based on an organization's objectives, policies, and needs.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a strategy for the organization or client to review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A strategy document or proposal is the deliverable reviewed as a whole.",
+    "work_item": "one public relations strategy",
+    "start": "organizational objectives, policies, and needs are provided for review",
+    "end": "strategy is submitted to the client or management",
+    "checked_by": "client or organizational management",
+    "duplicates": [],
+    "overlaps_with": [
+     "19810",
+     "19811",
+     "20555"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1770",
+  "split_reasoning": "Identifying trends and providing advice are purposes of the same discussion with other managers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with managers about trends, group concerns, or business decisions.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is a live managerial consultation, with value in the discussion and advice.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1771",
+  "split_reasoning": "Consulting agency or internal staff is one campaign-coordination activity across media types.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with advertising agency or internal staff to arrange a promotional campaign.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live consultation and coordination, rather than a separately specified campaign document.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1767",
+     "19810",
+     "20555"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1772",
+  "split_reasoning": "Coaching representatives to communicate with either the public or employees is the same instructional activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coach client representatives in effective public or employee communication.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live instruction, practice, and feedback to the representative.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1773",
+  "split_reasoning": "Preparing a speech and delivering it are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a speech to further public relations objectives.",
+    "time_share": 0.7,
+    "type_reasoning": "Speech preparation produces a text or set of speaking notes for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed speech is the unit reviewed and handed to a speaker.",
+    "work_item": "one prepared speech",
+    "start": "speaking objective and audience are established",
+    "end": "speech text or notes are completed and supplied to the speaker",
+    "checked_by": "speaker, client, or communications manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Deliver a speech to further public relations objectives.",
+    "time_share": 0.3,
+    "type_reasoning": "Delivering the speech is a live interaction with an audience.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on whether the specialist writes speeches for others or also delivers them."
+ },
+ {
+  "task_id": "1774",
+  "split_reasoning": "Buying advertising space and buying airtime are alternative forms of the same placement purchase.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Purchase advertising space or airtime for a client's promotion.",
+    "time_share": 1.0,
+    "type_reasoning": "Each purchase results in a confirmed advertising placement or order.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An order for a placement is the item confirmed with the media seller and relied on by the campaign team.",
+    "work_item": "one advertising placement order",
+    "start": "placement requirements and budget are established",
+    "end": "order is placed and the placement is confirmed",
+    "checked_by": "client or campaign manager and media seller",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1775",
+  "split_reasoning": "Planning research and conducting and reporting a study produce different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan market or public opinion research.",
+    "time_share": 0.3,
+    "type_reasoning": "The plan specifies the proposed research for client or management review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A research plan is reviewed as one proposal before the study proceeds.",
+    "work_item": "one research plan",
+    "start": "research objective or question is received",
+    "end": "proposed research approach is submitted",
+    "checked_by": "client or management",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Conduct market or public opinion research and communicate its results.",
+    "time_share": 0.7,
+    "type_reasoning": "The study produces findings communicated to the client or management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A findings report is the completed item handed over, rather than each individual survey response.",
+    "work_item": "one research findings report",
+    "start": "research question and approach are established",
+    "end": "findings are analyzed and communicated to the client or management",
+    "checked_by": "client or management",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Data collection may be performed by research staff or vendors; shares vary by study."
+ },
+ {
+  "task_id": "19809",
+  "split_reasoning": "Coordinating a public response is one activity, regardless of the environmental incident or conflict involved.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate a public response to an environmental management incident or conflict.",
+    "time_share": 1.0,
+    "type_reasoning": "The coordination produces an agreed public response that can be released or used by spokespeople.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One coordinated response to a particular issue is the item cleared and communicated, not the entire incident.",
+    "work_item": "one coordinated public response to an environmental issue",
+    "start": "incident or conflict requiring a public response is identified",
+    "end": "response is agreed with responsible parties and communicated for release or use",
+    "checked_by": "communications management, environmental management, and designated spokespeople",
+    "duplicates": [],
+    "overlaps_with": [
+     "1764",
+     "20554",
+     "23951"
+    ]
+   }
+  ],
+  "notes": "A response may include several channels; the unit is one coordinated response rather than the full incident."
+ },
+ {
+  "task_id": "19810",
+  "split_reasoning": "Developing a campaign is one activity across different environmental technologies and services.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a marketing campaign for an environmental technology or service.",
+    "time_share": 1.0,
+    "type_reasoning": "Campaign development produces a proposal or plan for client or management review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The campaign plan is the deliverable submitted for approval, not each subsequent advertisement.",
+    "work_item": "one environmental marketing campaign plan",
+    "start": "campaign objectives and product or service information are received",
+    "end": "campaign plan is submitted for review or approval",
+    "checked_by": "client or marketing management",
+    "duplicates": [],
+    "overlaps_with": [
+     "1769",
+     "1771",
+     "19811",
+     "20555"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19811",
+  "split_reasoning": "Developing a communication plan and creating communication materials are different deliverables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a plan for communicating organizational activities benefiting the environment, public safety, or other social issues.",
+    "time_share": 0.4,
+    "type_reasoning": "The plan is a distinct document that guides subsequent communications.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One communication plan is submitted and reviewed as a whole.",
+    "work_item": "one social-issue communication plan",
+    "start": "organizational activity and communication objective are identified",
+    "end": "plan is submitted for review or approval",
+    "checked_by": "communications management and the relevant program team",
+    "duplicates": [],
+    "overlaps_with": [
+     "1769",
+     "19810",
+     "20555"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop materials communicating organizational activities benefiting the environment, public safety, or other social issues.",
+    "time_share": 0.6,
+    "type_reasoning": "Each material is a distinct communication delivered for review or publication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual communication piece is the item approved and distributed.",
+    "work_item": "one social-issue communication piece",
+    "start": "communication brief and source information are received",
+    "end": "material is completed and submitted for approval or distribution",
+    "checked_by": "communications management and the relevant program team",
+    "duplicates": [],
+    "overlaps_with": [
+     "20554",
+     "20557",
+     "23951"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the mix of planning and material production."
+ },
+ {
+  "task_id": "20554",
+  "split_reasoning": "Press releases and other media communications are alternative pieces prepared for the same promotional purpose.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a press release or other media communication promoting a client.",
+    "time_share": 1.0,
+    "type_reasoning": "Each communication is a written deliverable reviewed or used by the client and media.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One release or other communication is reviewed and distributed as a whole.",
+    "work_item": "one press release or other promotional media communication",
+    "start": "announcement or promotional brief and source information are received",
+    "end": "communication is completed and submitted for approval or distribution",
+    "checked_by": "client or communications manager and media recipients",
+    "duplicates": [],
+    "overlaps_with": [
+     "1764",
+     "19809",
+     "19811"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20555",
+  "split_reasoning": "Planning a perception-management program and directing others' development or communication of it are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a program to maintain favorable public or stockholder perceptions of an organization.",
+    "time_share": 0.6,
+    "type_reasoning": "Planning produces a program plan for management to review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The program plan is the item submitted for approval, rather than the full implementation.",
+    "work_item": "one public or stockholder perception program plan",
+    "start": "organizational perception objective and relevant information are received",
+    "end": "program plan is submitted to management",
+    "checked_by": "communications and organizational management",
+    "duplicates": [],
+    "overlaps_with": [
+     "1768",
+     "1769",
+     "19810",
+     "19811"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct others developing or communicating a program to maintain favorable perceptions of an organization.",
+    "time_share": 0.4,
+    "type_reasoning": "Directing others is supervisory and coordination work centered on live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1771"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the role emphasizes program planning or directing implementation."
+ },
+ {
+  "task_id": "20557",
+  "split_reasoning": "Preparing and editing are alternative contributions to an organizational publication, regardless of its audience.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or edit an organizational publication for an internal or external audience.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a publication or issue for organizational review and distribution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A newsletter issue or report is the publication handed over and checked as a whole.",
+    "work_item": "one prepared or edited organizational publication",
+    "start": "publication assignment and source content are received",
+    "end": "completed publication is submitted for approval or distribution",
+    "checked_by": "communications manager, content owners, and intended readers",
+    "duplicates": [],
+    "overlaps_with": [
+     "19811"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23951",
+  "split_reasoning": "Website content and social media posts commonly differ substantially in length, format, and update cycle.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post or update content on the company website.",
+    "time_share": 0.45,
+    "type_reasoning": "A page or page update is prepared and published for readers to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One page or substantive page update is the unit reviewed and published.",
+    "work_item": "one website page or content update published",
+    "start": "approved content or update request is received",
+    "end": "page or update is published and checked",
+    "checked_by": "communications manager, content owner, and website visitors",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809",
+     "19811"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Post or update content on company social media outlets.",
+    "time_share": 0.55,
+    "type_reasoning": "Each social post or update is a distinct published communication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A post is the item reviewed, scheduled or published, and seen by the audience.",
+    "work_item": "one social media post or content update",
+    "start": "content brief or update request is received",
+    "end": "post or update is published or scheduled",
+    "checked_by": "communications manager and social media audience",
+    "duplicates": [],
+    "overlaps_with": [
+     "19809",
+     "19811"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the organization's website and social media publishing volume."
+ }
+]

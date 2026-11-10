@@ -1,0 +1,92 @@
+[
+{"task_id":"23430","split_reasoning":"Two different things are joined: following safety rules (a standing discipline) and keeping the site clean (hands-on tidying).","parts":[
+{"part_id":"a","text":"Follow safety rules and regulations on the job site (PPE, fall protection, tool guarding).","time_share":0.4,"type_reasoning":"A background discipline that produces nothing a colleague checks as a deliverable.","type":"NO_DELIVERABLE","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Sweep up, clear debris and keep the work area clean and orderly.","time_share":0.6,"type_reasoning":"Hands-on physical tidying away from a computer.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":"Safety share is a judgment; it is largely embedded in other tasks."},
+{"task_id":"23431","split_reasoning":"One activity: reading plans and turning them into a layout and materials needs.","parts":[
+{"part_id":"a","text":"Study blueprints, sketches or plans to lay out the job and work out dimensions and materials required.","time_share":1.0,"type_reasoning":"Produces a layout and a quantity/materials take-off that the crew and purchaser rely on.","type":"DISCRETE","unit_reasoning":"Done once per job or per phase of a job, and the layout and materials list are handed on as a whole.","work_item":"one job (or phase) laid out with dimensions and materials list","start":"plans or sketches received for the job","end":"layout marked out and materials list ready","checked_by":"foreman or general contractor, and the crew using the layout","duplicates":[],"overlaps_with":["23436","23454","23432"]}],
+"notes":"The physical marking out on site overlaps with 23432."},
+{"task_id":"23432","split_reasoning":"One activity, measuring and marking, done by hand.","parts":[
+{"part_id":"a","text":"Measure and mark cutting lines on materials with ruler, pencil, chalk and marking gauge.","time_share":1.0,"type_reasoning":"Hands-on work on the material at the bench or site.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23433","23431"]}],
+"notes":""},
+{"task_id":"23433","split_reasoning":"One activity: cutting and shaping to size, by different tools.","parts":[
+{"part_id":"a","text":"Cut or shape materials to specified measurements with hand tools, machines or power saws.","time_share":1.0,"type_reasoning":"Hands-on machine and tool work.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23432"]}],
+"notes":""},
+{"task_id":"23434","split_reasoning":"One activity, installing finish components, with varied components as examples.","parts":[
+{"part_id":"a","text":"Install windows, frames, flooring, trim or hardware with hand or power tools.","time_share":1.0,"type_reasoning":"Hands-on installation at the building.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23447","23451","23450"]}],
+"notes":""},
+{"task_id":"23435","split_reasoning":"One activity: checking plumb and level.","parts":[
+{"part_id":"a","text":"Check that a structure is plumb and level using a plumb bob and level, and correct it.","time_share":1.0,"type_reasoning":"Hands-on check in place on the structure.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23434","23447"]}],
+"notes":""},
+{"task_id":"23436","split_reasoning":"One activity: choosing and ordering materials; the selecting and ordering are one purchase.","parts":[
+{"part_id":"a","text":"Select lumber and other materials needed for the job and place the order with the supplier.","time_share":1.0,"type_reasoning":"Each order is a request sent to a supplier that the crew relies on arriving.","type":"DISCRETE","unit_reasoning":"Materials are ordered per job or delivery and handed to the supplier as one order.","work_item":"one materials order placed with a supplier","start":"materials list for the job or phase available","end":"order confirmed with supplier and delivery scheduled","checked_by":"foreman or contractor who pays; the crew who receives it","duplicates":[],"overlaps_with":["23431"]}],
+"notes":""},
+{"task_id":"23437","split_reasoning":"One activity: arranging specialist trades to come in.","parts":[
+{"part_id":"a","text":"Arrange for subcontractors (e.g. heating, electrical) to do specialist work and fit it into the schedule.","time_share":1.0,"type_reasoning":"Each arrangement is a booking/handoff that the subcontractor and project rely on.","type":"DISCRETE","unit_reasoning":"Each trade is engaged and scheduled separately, a unit that is handed over.","work_item":"one subcontractor engaged and scheduled for a specialist scope","start":"need for specialist work identified","end":"subcontractor confirmed with scope and date","checked_by":"foreman or contractor, and the subcontractor","duplicates":[],"overlaps_with":["23445"]}],
+"notes":""},
+{"task_id":"23438","split_reasoning":"Two outputs joined: keeping running records of actions, and writing progress reports.","parts":[
+{"part_id":"a","text":"Keep records documenting the actions and work done on the job.","time_share":0.5,"type_reasoning":"Records are written up for others to rely on later.","type":"DISCRETE","unit_reasoning":"Records are made per day or per job and handed over as a whole log entry.","work_item":"one job record entry (daily log of work done)","start":"end of the work day or task","end":"entry written in the job record","checked_by":"foreman or contractor","duplicates":["23445"],"overlaps_with":[]},
+{"part_id":"b","text":"Write a progress report on the job for the employer or client.","time_share":0.5,"type_reasoning":"A written report is sent and relied on.","type":"DISCRETE","unit_reasoning":"Reports go out periodically or at milestones, one at a time.","work_item":"one written progress report","start":"reporting period or milestone reached","end":"report delivered to employer or client","checked_by":"employer, general contractor or client","duplicates":[],"overlaps_with":[]}],
+"notes":"Part a is essentially the same record-keeping as 23445's first half."},
+{"task_id":"23439","split_reasoning":"One activity: building or repairing wooden fixtures, with different fixtures and tools as examples.","parts":[
+{"part_id":"a","text":"Build or repair cabinets, doors, frameworks, floors or other wooden fixtures with woodworking machines and hand or power tools.","time_share":1.0,"type_reasoning":"Hands-on woodworking in the shop or on site.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23443","23446","23433"]}],
+"notes":""},
+{"task_id":"23440","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Erect scaffolding or ladders for working above ground level.","time_share":1.0,"type_reasoning":"Hands-on physical set-up.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"23441","split_reasoning":"One activity: anchoring and bracing, with different fasteners as alternatives.","parts":[
+{"part_id":"a","text":"Anchor and brace forms and other structures in place with nails, bolts, rods, cables, planks, wedges and timbers.","time_share":1.0,"type_reasoning":"Hands-on physical work on site.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23455"]}],
+"notes":""},
+{"task_id":"23442","split_reasoning":"One activity: inspecting finishes for damage.","parts":[
+{"part_id":"a","text":"Inspect tile, wall coverings, siding, glass and woodwork for broken or damaged areas.","time_share":1.0,"type_reasoning":"Hands-on, in-person visual inspection of the building; usually leads straight to repair rather than a written product.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23449","23446"]}],
+"notes":"If a written inspection report is normally produced, this could be DISCRETE."},
+{"task_id":"23443","split_reasoning":"One activity: assembling frameworks or props.","parts":[
+{"part_id":"a","text":"Assemble and fasten materials into frameworks or props with screws, nails, dowels or glue.","time_share":1.0,"type_reasoning":"Hands-on assembly.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23439"]}],
+"notes":""},
+{"task_id":"23444","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Bore boltholes in timber, masonry or concrete walls with a power drill.","time_share":1.0,"type_reasoning":"Hands-on drilling.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"23445","split_reasoning":"Two activities joined: keeping job records and scheduling the crew.","parts":[
+{"part_id":"a","text":"Maintain job records.","time_share":0.5,"type_reasoning":"Written records relied on by others.","type":"DISCRETE","unit_reasoning":"Entries made per day or job.","work_item":"one job record entry (daily log of work done)","start":"end of the work day or task","end":"entry written in the job record","checked_by":"foreman or contractor","duplicates":["23438"],"overlaps_with":[]},
+{"part_id":"b","text":"Schedule the work crew's assignments and times.","time_share":0.5,"type_reasoning":"Produces a schedule the crew follows.","type":"DISCRETE","unit_reasoning":"A schedule or assignment sheet is made for a day or week and handed to the crew.","work_item":"one crew schedule (daily or weekly assignments)","start":"jobs and crew availability known","end":"schedule communicated to the crew","checked_by":"crew members and the foreman or contractor","duplicates":[],"overlaps_with":["23437"]}],
+"notes":"Part a duplicates the records half of 23438."},
+{"task_id":"23446","split_reasoning":"One activity: removing and replacing damaged sections.","parts":[
+{"part_id":"a","text":"Remove damaged or defective parts or sections of structures and repair or replace them with hand tools.","time_share":1.0,"type_reasoning":"Hands-on repair.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23449","23439"]}],
+"notes":""},
+{"task_id":"23447","split_reasoning":"One activity: installing rough framing items during construction.","parts":[
+{"part_id":"a","text":"Install rough door and window frames, subflooring, fixtures or temporary supports.","time_share":1.0,"type_reasoning":"Hands-on installation.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23434"]}],
+"notes":""},
+{"task_id":"23448","split_reasoning":"One activity: finishing surfaces, with paint, tools or paneling as alternatives.","parts":[
+{"part_id":"a","text":"Finish woodwork or wallboard surfaces in buildings with paint, hand tools or paneling.","time_share":1.0,"type_reasoning":"Hands-on finishing work.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23450","23452"]}],
+"notes":""},
+{"task_id":"23449","split_reasoning":"One activity: examine timbers and replace decayed ones.","parts":[
+{"part_id":"a","text":"Examine structural timbers and supports for decay and replace them with hand tools, nuts and bolts.","time_share":1.0,"type_reasoning":"Hands-on inspection and replacement.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23446","23442"]}],
+"notes":""},
+{"task_id":"23450","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Apply shock-absorbing, sound-deadening or decorative paneling to ceilings or walls.","time_share":1.0,"type_reasoning":"Hands-on installation.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23448","23434"]}],
+"notes":""},
+{"task_id":"23451","split_reasoning":"One activity: underlayment and laying hardwood floors.","parts":[
+{"part_id":"a","text":"Cover subfloors with building paper and lay hardwood, parquet or strip floors by nailing or cementing.","time_share":1.0,"type_reasoning":"Hands-on flooring work.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23434"]}],
+"notes":""},
+{"task_id":"23452","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Fill cracks and defects in plaster or plasterboard and sand the patch.","time_share":1.0,"type_reasoning":"Hands-on patching and sanding.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23448"]}],
+"notes":""},
+{"task_id":"23453","split_reasoning":"Three different minor trades listed with 'or', but all are small physical tasks; treated as one physical bucket.","parts":[
+{"part_id":"a","text":"Perform minor plumbing, welding or concrete mixing work.","time_share":1.0,"type_reasoning":"All hands-on physical work.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"23454","split_reasoning":"One activity: producing an estimate.","parts":[
+{"part_id":"a","text":"Prepare a cost estimate for a client or employer.","time_share":1.0,"type_reasoning":"Each estimate is a document the client relies on.","type":"DISCRETE","unit_reasoning":"Estimates are done one job at a time and handed over whole.","work_item":"one job cost estimate","start":"scope of work and plans received","end":"estimate delivered to client or employer","checked_by":"client or employer; contractor owner","duplicates":[],"overlaps_with":["23431"]}],
+"notes":""},
+{"task_id":"23455","split_reasoning":"One activity: building concrete forms or chutes.","parts":[
+{"part_id":"a","text":"Construct forms or chutes for pouring concrete.","time_share":1.0,"type_reasoning":"Hands-on construction.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23441"]}],
+"notes":""},
+{"task_id":"23456","split_reasoning":"One activity.","parts":[
+{"part_id":"a","text":"Build sleds from logs and timbers for hauling camp buildings and machinery.","time_share":1.0,"type_reasoning":"Hands-on construction.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":"Rare, niche task."},
+{"task_id":"23457","split_reasoning":"One activity, working with or removing hazardous material.","parts":[
+{"part_id":"a","text":"Work with or remove hazardous material.","time_share":1.0,"type_reasoning":"Hands-on physical work.","type":"PHYSICAL","duplicates":[],"overlaps_with":["23430"]}],
+"notes":""},
+{"task_id":"23458","split_reasoning":"One activity: digging or directing the digging of holes and setting poles.","parts":[
+{"part_id":"a","text":"Dig post holes (or direct their digging) and set poles to support structures.","time_share":1.0,"type_reasoning":"Hands-on outdoor physical work.","type":"PHYSICAL","duplicates":[],"overlaps_with":[]}],
+"notes":""}
+]

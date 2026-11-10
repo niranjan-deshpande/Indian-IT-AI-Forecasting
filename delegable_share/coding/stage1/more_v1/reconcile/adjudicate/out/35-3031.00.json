@@ -1,0 +1,10 @@
+[
+{"task_id": "2277", "reasoning": "Servers usually jot or memorize the order at the table and then key it into a POS terminal away from the table with no patron waiting, so the work happens in two places. X follows Example D. Y's claim that the statement fully duplicates 2278 overlooks the entry step at the terminal.", "choice": "X"},
+{"task_id": "2279", "reasoning": "The check-in itself is a short live exchange, but fixing a problem often means hands-on work away from the table, such as fetching a replacement dish or drink. The instructions say to split partly physical activities, as X does.", "choice": "X"},
+{"task_id": "2280", "reasoning": "Carrying plates to tables and preparing specialty dishes tableside (flambes, carving, salads) are different activities, though both are physical. X separates them, following the split rule.", "choice": "X"},
+{"task_id": "2286", "reasoning": "Chilling wine bottles is a minor step of the same beverage-preparation activity and does not need a part of its own. Both parts would be PHYSICAL anyway, so X's single part is cleaner.", "choice": "X"},
+{"task_id": "2289", "reasoning": "Brewing coffee is the same kind of simple pantry preparation as plating salads and portioning desserts, done at the same station. Splitting it out, as X does, adds nothing.", "choice": "Y"},
+{"task_id": "2293", "reasoning": "Escorting guests means walking them through the dining room, which is in-person physical work away from any computer; no transaction or record is made. PHYSICAL fits, and it treats seating the same way as in 18746.", "choice": "Y"},
+{"task_id": "18744", "reasoning": "Rolling silverware and setting up stations and dining areas are all pre-shift side work with one purpose, readying the floor, and all are physical. One PHYSICAL part is enough.", "choice": "Y"},
+{"task_id": "18746", "reasoning": "Phone reservations and to-go orders are live calls, greeting and thanking guests produces nothing checkable, and seating is physical escort work. X types each correctly, consistent with 2293, while Y treats greeting and seating as LIVE_SERVICE with no real work item.", "choice": "X"}
+]

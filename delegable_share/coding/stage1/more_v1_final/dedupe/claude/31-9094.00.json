@@ -1,0 +1,4 @@
+{"pairs": [{"reasoning": "Transcribing one dictated report and capturing and transcribing one dictation both yield a transcript ready for review.", "a": "9413a", "b": "20254a"},
+{"reasoning": "Producing a medical report from dictation is the same work as transcribing one dictated report.", "a": "9413a", "b": "9421a"},
+{"reasoning": "Updating an electronic patient record with new information is the same action as updating an electronic medical record.", "a": "9423b", "b": "9426d"},
+{"reasoning": "Medical record data entry and updating an electronic medical record are the same input, action and output.", "a": "9420a", "b": "9423b"}]}

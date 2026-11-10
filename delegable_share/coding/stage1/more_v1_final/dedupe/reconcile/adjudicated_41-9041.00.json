@@ -1,0 +1,2 @@
+[{"a": "4622a", "b": "4627a", "reasoning": "Noting a prospect's details during a call and saving a contact or order record update during a call are the same live data entry with the same output.", "duplicate": true},
+ {"a": "4622b", "b": "4627b", "reasoning": "Completing a post-call contact record and updating a contact record outside the call from call notes are the same after-call recording of the same information.", "duplicate": true}]

@@ -1,0 +1,5 @@
+[
+ {"task_id": "7382", "reasoning": "Defining data requirements, gathering data and validating it are stages in producing one deliverable: a validated dataset for a model. The instructions say not to split stages or means of the same deliverable, and the requirements list is rarely signed off on its own. X follows this.", "choice": "X"},
+ {"task_id": "7389", "reasoning": "Building a project's time and cost network is a one-off deliverable. Using it to control and review the project produces repeated update-and-review items over the project's life. Y's single unit ends when the network is handed over and so drops the control work. X captures both.", "choice": "X"},
+ {"task_id": "7390", "reasoning": "In this statement, accounting, filing, office, logistics and production-scheduling systems are examples of the same kind of deliverable: a designed method or system that the business adopts. They are not different activities. Pulling production schedules out as an operational scheduling job, as X does, misreads the statement, so Y is preferred.", "choice": "Y"}
+]

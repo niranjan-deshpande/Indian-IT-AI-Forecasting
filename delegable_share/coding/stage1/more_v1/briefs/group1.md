@@ -1,0 +1,357 @@
+You are a coder in a research pipeline. Follow the instructions below exactly.
+
+Use only the information in this file. Do not read any other files and do not
+search the web. Below are 3 occupations. Code each occupation's TARGETS
+independently, in the order given; do not go back and adjust earlier answers to
+make them consistent with later ones, and do not let one occupation's coding
+shape another's.
+
+For each occupation, write ONE JSON array to its own file:
+  Payroll and Timekeeping Clerks (43-3051.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/43-3051.00.json
+  Bill and Account Collectors (43-3011.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/43-3011.00.json
+  Medical Transcriptionists (31-9094.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/31-9094.00.json
+with one element per target, in the order given. Each element is the output
+object described in the instructions, with "task_id" added as its first key.
+Write nothing else to those files. Then reply "done <n> items" per occupation,
+plus at most three sentences on anything you found ambiguous.
+
+
+=== INSTRUCTIONS ===
+You are building a coding schema for occupational tasks. Another team will
+later estimate how long each piece of work takes and how it is checked, so
+your job is only to say what the units of work ARE.
+
+Describe the work as experienced people in this occupation do it today,
+without AI. Do not consider what AI could or could not do.
+
+You will see the occupation's full task list for context, and one TARGET
+statement to code. Code only the target.
+
+STEP 1 — SPLIT. Decide whether the target should be split into parts. Split
+when it joins different activities ("write training materials, or train
+users"), or when it covers very different kinds of item (quick replies and
+long investigations). Give each part a share of the target's working time;
+shares sum to 1. If no split is needed, there is one part with share 1.
+
+Do NOT split when "or"/"and" only lists alternative methods, tools, or
+inputs for the same deliverable. "Check records, call the client, or consult
+the policy manual to settle a billing question" is one activity (settling
+the question) done by different means.
+
+DO split when the same activity is normally done in two different places:
+partly while a customer or user is still on the line or at the desk, and
+partly afterwards from written requests or in the back office (see step 4
+and Example D).
+
+STEP 2 — CLASSIFY each part as exactly one of:
+  - DISCRETE: produces distinct deliverables, one after another.
+    Example: answer a user's emailed question about software.
+  - ONGOING: a continuing activity with no single deliverable, but which
+    produces discrete items (alerts handled, reports written). Name them in
+    step 3.
+  - LIVE_SERVICE: work done in a live conversation (phone, chat, walk-up)
+    with a customer or user, while they wait. This covers the conversation
+    itself AND any work done during it while the customer is still there:
+    looking up an account, entering an order, taking a payment, issuing a
+    refund, booking an appointment.
+    Example: take a customer's call about a billing error.
+    Example: enter a change-of-address order while the customer is on the
+    phone.
+  - INTERPERSONAL: the value is in the live interaction itself, and nothing
+    a colleague could check is produced (meetings, teaching, negotiating,
+    supervising, persuading).
+    Example: meet with staff to set requirements.
+  - PHYSICAL: needs hands-on work away from a computer.
+    Example: install cables.
+  - NO_DELIVERABLE: produces nothing anyone else checks or relies on
+    (keeping up with developments, reading manuals to stay current).
+
+  If one activity is partly physical and partly at a computer, split it in
+  step 1.
+
+STEP 3 — ONGOING parts: replace the activity with the discrete items it
+produces (e.g. "one alert investigated", "one weekly capacity report").
+If there are several kinds, make each kind its own part with its own share
+of time, and classify each as DISCRETE.
+
+STEP 4 — WORK ITEM. For every DISCRETE or LIVE_SERVICE part, name the work
+item: one deliverable, in today's workflow, that a worker finishes and that
+someone else would check or rely on as a whole. Give:
+  - work_item: one line ("one support ticket")
+  - start: where it starts ("customer's first message")
+  - end: where it ends ("customer confirms the fix, ticket closed")
+  - checked_by: who checks or relies on it (supervisor, client, end user,
+    downstream team, auditor)
+  Pick the level at which work is handed over today: the thing that goes
+  into a queue, gets a ticket, gets signed off, or is sent. Not a single
+  keystroke-level step, and not a whole project.
+
+  Many task lists describe one workflow in several statements (talk to the
+  customer; record the interaction; check the fix was made; refer what you
+  can't solve). When the target describes one step of such a workflow, the
+  work item is that step's own output (e.g. "one interaction record written
+  after a call"), not the whole workflow. The other statements cover the
+  other steps.
+
+  Then ask WHERE that step is normally done. If the customer or user is
+  still on the line or at the desk while it is done, the part is
+  LIVE_SERVICE, and its start and end lie inside the contact (e.g. "one
+  refund entered during a customer call": from "customer agrees to the
+  remedy" to "refund confirmed to the customer"). If it is normally done
+  after the contact ends (wrap-up, back office, a queue of written
+  requests), it is DISCRETE. If both happen in substantial shares, split
+  into two parts by where the work is done (Example D).
+
+STEP 5 — OVERLAP. Compare each part with the other statements.
+  - duplicates: IDs of statements that describe the SAME work item (same
+    inputs, actions and output), so that coding both would count the same
+    work twice. Use this only when one of the two would be redundant.
+  - overlaps_with: IDs of statements that share some of the work but each
+    also covers work the other does not.
+  Leave a list empty if there are none. Code the part fully either way.
+
+Before each decision, write one sentence of reasoning. Put the reasoning
+before the value in the JSON.
+
+Output JSON only:
+{
+  "split_reasoning": "...",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "the part of the statement, rewritten as a standalone task",
+      "time_share": 1.0,
+      "type_reasoning": "...",
+      "type": "DISCRETE | LIVE_SERVICE | INTERPERSONAL | PHYSICAL | NO_DELIVERABLE",
+      "unit_reasoning": "... (omit for non-coded types)",
+      "work_item": "...",
+      "start": "...",
+      "end": "...",
+      "checked_by": "...",
+      "duplicates": ["task_id", ...],
+      "overlaps_with": ["task_id", ...]
+    }
+  ],
+  "notes": "anything ambiguous a human reviewer should look at"
+}
+
+=== WORKED EXAMPLES (other occupations) ===
+Drawn from occupations outside both the pilot and the BPO set (examples swapped 2026-11-10;
+the earlier ones came from BPO occupations and would have leaked into the BPO run).
+
+### Example A — DISCRETE, granularity choice
+Executive Secretaries and Executive Administrative Assistants (43-6014.00, task 2797) — "Review
+work done by others to check for correct spelling and grammar, ensure that company format
+policies are followed, and recommend revisions."
+
+```json
+{
+  "split_reasoning": "One activity: checking documents others wrote; documents vary in length but the kind of work is the same.",
+  "parts": [{
+    "part_id": "a",
+    "text": "Check a document written by someone else for spelling, grammar and house format, and mark the revisions needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check produces a marked-up document that the author relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents arrive one at a time and go back to the author as a whole, not page by page.",
+    "work_item": "one document checked and returned with revisions (e.g. a letter, memo or report)",
+    "start": "document received for checking",
+    "end": "marked-up document returned to the author",
+    "checked_by": "the author, and the executive who signs it",
+    "duplicates": [],
+    "overlaps_with": []
+  }],
+  "notes": ""
+}
+```
+
+### Example B — ONGOING recast into items
+Market Research Analysts and Marketing Specialists (13-1161.00, task 5442) — "Monitor industry
+statistics and follow trends in trade literature."
+
+```json
+{
+  "split_reasoning": "Monitoring is continuous, but it produces two different kinds of item: notes on each new release of figures, and periodic trend reports.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Review a new release of industry statistics and send the team a note on the changes that matter.",
+      "time_share": 0.5,
+      "type_reasoning": "Each release ends in a short note that colleagues read and act on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Releases arrive on a schedule and each one is reviewed and reported on once.",
+      "work_item": "one statistics release reviewed and summarised",
+      "start": "new release of industry figures published",
+      "end": "note on the notable changes sent to the team",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Write a periodic trend report drawing on industry statistics and trade literature.",
+      "time_share": 0.5,
+      "type_reasoning": "Produces a report that managers read and plan from.",
+      "type": "DISCRETE",
+      "unit_reasoning": "The report is what is handed over and signed off.",
+      "work_item": "one trend report (monthly or quarterly)",
+      "start": "period's statistics and articles gathered",
+      "end": "report with implications sent to marketing management",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "Time shares are a judgment; they depend on how often figures are released."
+}
+```
+
+### Example C — COMPOUND with an interpersonal part
+Human Resources Specialists (13-1071.00, task 18867) — "Provide management with information or
+training related to interviewing, performance appraisals, counseling techniques, or
+documentation of performance issues."
+
+```json
+{
+  "split_reasoning": "Two different activities joined by 'or': training managers, and answering a manager's question about a specific case.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Train managers on interviewing, appraisals or documenting performance issues.",
+      "time_share": 0.4,
+      "type_reasoning": "The value is in the live session; nothing a colleague would check is produced.",
+      "type": "INTERPERSONAL",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Answer a manager's question about handling a specific case, usually by email.",
+      "time_share": 0.6,
+      "type_reasoning": "Each question produces written guidance the manager relies on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Questions arrive one at a time, by email or the HR ticket queue.",
+      "work_item": "one manager's question answered with written guidance",
+      "start": "question received",
+      "end": "guidance sent and question closed",
+      "checked_by": "the manager who asked; HR lead for sensitive cases",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "If training materials are written as part of this, they belong to a separate statement."
+}
+```
+
+### Example D — one activity done in two places (live and afterwards)
+Receptionists and Information Clerks (43-4171.00, task 751) — "Schedule
+appointments and maintain and update appointment calendars."
+
+```json
+{
+  "split_reasoning": "One activity, keeping the calendar, but done in two places: live with a caller or visitor who is waiting, and afterwards from written requests and staff changes.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Book, move, or cancel an appointment while the caller or visitor is on the line or at the desk.",
+      "time_share": 0.7,
+      "type_reasoning": "The person is waiting while the booking is made, so this is work done during a live contact.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each request is booked and confirmed within one call or visit.",
+      "work_item": "one appointment booked or changed during a call or visit",
+      "start": "caller or visitor asks for an appointment",
+      "end": "slot confirmed to the person and entered in the calendar",
+      "checked_by": "the caller, and the staff member whose calendar it is",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Update calendars from emailed requests, cancellations, and changes in staff availability.",
+      "time_share": 0.3,
+      "type_reasoning": "Done from a queue of written requests with no one waiting, so each update is an ordinary deliverable.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Receptionists work through the day's written requests in a batch and send confirmations.",
+      "work_item": "one batch of calendar updates from the day's written requests",
+      "start": "requests or availability changes received by email or message",
+      "end": "calendars updated and confirmations sent",
+      "checked_by": "staff whose calendars these are",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "The live share depends on how much booking comes in by phone versus online or email."
+}
+```
+
+=== OCCUPATION: Payroll and Timekeeping Clerks (43-3051.00) ===
+Compile and record employee time and payroll data. May compute employees' time worked, production, and commission. May compute and post wages and deductions, or prepare paychecks.
+
+TASK LIST (context; every statement below is also a TARGET):
+[2515] Process and issue employee paychecks and statements of earnings and deductions.
+[2516] Compute wages and deductions, and enter data into computers.
+[2517] Compile employee time, production, and payroll data from time sheets and other records.
+[2518] Review time sheets, work charts, wage computation, and other information to detect and reconcile payroll discrepancies.
+[2519] Verify attendance, hours worked, and pay adjustments, and post information onto designated records.
+[2520] Record employee information, such as exemptions, transfers, and resignations, to maintain and update payroll records.
+[2521] Issue and record adjustments to pay related to previous errors or retroactive increases.
+[2522] Keep informed about changes in tax and deduction laws that apply to the payroll process.
+[2523] Provide information to employees and managers on payroll matters, tax issues, benefit plans, and collective agreement provisions.
+[2524] Complete time sheets showing employees' arrival and departure times.
+[2526] Distribute and collect timecards each pay period.
+[2527] Complete, verify, and process forms and documentation for administration of benefits, such as pension plans, and unemployment and medical insurance.
+[2528] Prepare and balance period-end reports, and reconcile issued payrolls to bank statements.
+[2529] Compile statistical reports, statements, and summaries related to pay and benefits accounts, and submit them to appropriate departments.
+[2530] Coordinate special programs, such as United Way campaigns, that involve payroll deductions.
+[18562] Process paperwork for new employees and enter employee information into the payroll system.
+[18563] Keep track of leave time, such as vacation, personal, and sick leave, for employees.
+[18564] Conduct verifications of employment.
+[20901] Balance cash and payroll accounts.
+[20902] Train employees on organizations' timekeeping systems.
+[23954] Prepare and file payroll tax returns.
+
+TARGETS: code all 21 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/43-3051.00.json.
+
+=== OCCUPATION: Bill and Account Collectors (43-3011.00) ===
+Locate and notify customers of delinquent accounts by mail, telephone, or personal visit to solicit payment. Duties include receiving payment and posting amount to customer's account, preparing statements to credit department if customer fails to respond, initiating repossession proceedings or service disconnection, and keeping records of collection and status of accounts.
+
+TASK LIST (context; every statement below is also a TARGET):
+[2472] Receive payments and post amounts paid to customer accounts.
+[2473] Locate and monitor overdue accounts, using computers and a variety of automated systems.
+[2474] Record information about financial status of customers and status of collection efforts.
+[2475] Locate and notify customers of delinquent accounts by mail, telephone, or personal visits to solicit payment.
+[2476] Confer with customers by telephone or in person to determine reasons for overdue payments and to review the terms of sales, service, or credit contracts.
+[2477] Advise customers of necessary actions and strategies for debt repayment.
+[2478] Persuade customers to pay amounts due on credit accounts, damage claims, or nonpayable checks, or to return merchandise.
+[2479] Sort and file correspondence and perform miscellaneous clerical duties, such as answering correspondence and writing reports.
+[2480] Perform various administrative functions for assigned accounts, such as recording address changes and purging the records of deceased customers.
+[2481] Arrange for debt repayment or establish repayment schedules, based on customers' financial situations.
+[2482] Negotiate credit extensions when necessary.
+[2483] Trace delinquent customers to new addresses by inquiring at post offices, telephone companies, credit bureaus, or through the questioning of neighbors.
+[2484] Notify credit departments, order merchandise repossession or service disconnection, and turn over account records to attorneys when customers fail to respond to collection attempts.
+[18559] Answer customer questions regarding problems with their accounts.
+[18560] Contact insurance companies to check on status of claims payments and write appeal letters for denial on claims.
+
+TARGETS: code all 15 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/43-3011.00.json.
+
+=== OCCUPATION: Medical Transcriptionists (31-9094.00) ===
+Transcribe medical reports recorded by physicians and other healthcare practitioners using various electronic devices, covering office visits, emergency room visits, diagnostic imaging studies, operations, chart reviews, and final summaries. Transcribe dictated reports and translate abbreviations into fully understandable form. Edit as necessary and return reports in either printed or electronic form for review and signature, or correction.
+
+TASK LIST (context; every statement below is also a TARGET):
+[9413] Transcribe dictation for a variety of medical reports, such as patient histories, physical examinations, emergency room visits, operations, chart reviews, consultation, or discharge summaries.
+[9414] Review and edit transcribed reports or dictated material for spelling, grammar, clarity, consistency, and proper medical terminology.
+[9415] Distinguish between homonyms and recognize inconsistencies and mistakes in medical terms, referring to dictionaries, drug references, and other sources on anatomy, physiology, and medicine.
+[9416] Return dictated reports in printed or electronic form for physician's review, signature, and corrections and for inclusion in patients' medical records.
+[9417] Translate medical jargon and abbreviations into their expanded forms to ensure the accuracy of patient and health care facility records.
+[9419] Identify mistakes in reports and check with doctors to obtain the correct information.
+[9420] Perform data entry and data retrieval services, providing data for inclusion in medical records and for transmission to physicians.
+[9421] Produce medical reports, correspondence, records, patient-care information, statistics, medical research, and administrative material.
+[9422] Answer inquiries concerning the progress of medical cases, within the limits of confidentiality laws.
+[9423] Set up and maintain medical files and databases, including records such as x-ray, lab, and procedure reports, medical histories, diagnostic workups, admission and discharge summaries, and clinical resumes.
+[9424] Perform a variety of clerical and office tasks, such as handling incoming and outgoing mail, completing and submitting insurance claims, typing, filing, or operating office machines.
+[9425] Decide which information should be included or excluded in reports.
+[9426] Receive patients, schedule appointments, and maintain patient records.
+[9427] Receive and screen telephone calls and visitors.
+[20254] Take dictation using shorthand, a stenotype machine, or headsets and transcribing machines.
+
+TARGETS: code all 15 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/31-9094.00.json.

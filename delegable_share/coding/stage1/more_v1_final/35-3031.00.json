@@ -1,0 +1,586 @@
+[
+ {
+  "task_id": 2275,
+  "split_reasoning": "One activity: checking a patron's ID.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check a patron's ID to confirm they are old enough to drink alcohol.",
+    "time_share": 1.0,
+    "type_reasoning": "The patron is at the table while the ID is checked.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each check is finished at the table in one exchange.",
+    "work_item": "one ID check at the table",
+    "start": "patron orders alcohol and server asks for ID",
+    "end": "ID accepted or order declined",
+    "checked_by": "manager and the licensing authority who rely on compliance",
+    "duplicates": [],
+    "overlaps_with": [
+     2278
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2276,
+  "split_reasoning": "One activity: taking payment, done at the table or till with the customer present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a customer's payment for the meal and return change or the card.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits while payment is taken.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each table's bill is settled in one transaction.",
+    "work_item": "one table's payment taken",
+    "start": "customer hands over cash or card for the check",
+    "end": "payment processed and change or receipt returned",
+    "checked_by": "manager at cash-out, and the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     2281
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2277",
+  "split_reasoning": "Orders are captured both while patrons are ordering and afterward when details are transmitted to the kitchen.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write, memorize, or enter a food order while the patrons are ordering.",
+    "time_share": 0.5,
+    "type_reasoning": "The order is captured during the live interaction with patrons.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One table's order is captured as a whole during the contact.",
+    "work_item": "one table's food order captured during ordering",
+    "start": "patrons begin giving their food selections",
+    "end": "selections are recorded or memorized and confirmed as needed",
+    "checked_by": "patrons and kitchen staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "2278"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write or enter a patron's food order for the kitchen after taking it at the table.",
+    "time_share": 0.5,
+    "type_reasoning": "The server transmits the order away from the live ordering conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The kitchen receives one table's transmitted order as a whole.",
+    "work_item": "one table's food order transmitted to the kitchen",
+    "start": "server leaves the table with the order",
+    "end": "order slip or computer order is submitted to the kitchen",
+    "checked_by": "kitchen staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares depend on whether orders are entered at the table or at a separate terminal."
+ },
+ {
+  "task_id": 2278,
+  "split_reasoning": "One activity: taking food and drink orders from patrons.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a table's food and drink order, including answering simple questions about it.",
+    "time_share": 1.0,
+    "type_reasoning": "The patrons are at the table throughout.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each table is ordered from once and confirmed.",
+    "work_item": "one table's order taken",
+    "start": "server arrives ready to take the order",
+    "end": "order repeated back and confirmed",
+    "checked_by": "patron, and the kitchen that receives it",
+    "duplicates": [],
+    "overlaps_with": [
+     2277,
+     2283
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2279",
+  "split_reasoning": "Checking and addressing concerns at the table differs from carrying out physical corrections away from the conversation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check on patrons' meals and address problems with them at the table.",
+    "time_share": 0.7,
+    "type_reasoning": "The server checks satisfaction and agrees on remedies during a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each table check results in feedback or an agreed response to a problem.",
+    "work_item": "one table check and immediate response to concerns",
+    "start": "server asks patrons about their meals",
+    "end": "feedback is received and any immediate response or remedy is communicated",
+    "checked_by": "patrons and restaurant management",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Carry out physical corrections to problems with a patron's meal.",
+    "time_share": 0.3,
+    "type_reasoning": "Corrections such as retrieving a replacement require hands-on work away from the conversation.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2280"
+    ]
+   }
+  ],
+  "notes": "The mix of immediate responses and physical corrections varies with the problems encountered."
+ },
+ {
+  "task_id": "2280",
+  "split_reasoning": "Delivering food and drinks differs from preparing specialty dishes at the table.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Serve food and beverages to patrons.",
+    "time_share": 0.85,
+    "type_reasoning": "Carrying and placing food and beverages requires hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2279",
+     "2295"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare specialty dishes at patrons' tables.",
+    "time_share": 0.15,
+    "type_reasoning": "Tableside preparation requires hands-on food handling.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2289",
+     "2291"
+    ]
+   }
+  ],
+  "notes": "The specialty-dish share varies substantially by establishment."
+ },
+ {
+  "task_id": 2281,
+  "split_reasoning": "One activity: producing the bill.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a check itemising a table's meal and adding tax.",
+    "time_share": 1.0,
+    "type_reasoning": "Done at the terminal between tables, producing a bill the customer relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One check is produced per table or party.",
+    "work_item": "one check prepared",
+    "start": "table asks for the bill or meal ends",
+    "end": "itemised check printed and brought to the table",
+    "checked_by": "customer, and manager at cash-out",
+    "duplicates": [],
+    "overlaps_with": [
+     2276
+    ]
+   }
+  ],
+  "notes": "Mostly automated by the point-of-sale system."
+ },
+ {
+  "task_id": 2283,
+  "split_reasoning": "One activity: helping patrons choose from the menu at the table.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Hand patrons menus, answer their questions and make recommendations.",
+    "time_share": 1.0,
+    "type_reasoning": "Conversation with patrons at the table.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each table is handled in one visit.",
+    "work_item": "one table given menus and advised",
+    "start": "patrons seated and server arrives with menus",
+    "end": "patrons ready to order",
+    "checked_by": "the patrons",
+    "duplicates": [],
+    "overlaps_with": [
+     2278,
+     2284,
+     2287
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2284,
+  "split_reasoning": "One activity: telling patrons the day's specials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tell a table the daily specials.",
+    "time_share": 1.0,
+    "type_reasoning": "Spoken to patrons at the table.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Specials are recited once per table.",
+    "work_item": "one table told the specials",
+    "start": "server greets the table",
+    "end": "specials recited and questions answered",
+    "checked_by": "the patrons",
+    "duplicates": [],
+    "overlaps_with": [
+     2283
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2285,
+  "split_reasoning": "One activity: wiping and clearing tables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean a table or counter after patrons have left.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18745
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2286",
+  "split_reasoning": "One activity: making drinks.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make hot, cold and mixed drinks and chill wine bottles.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work at the bar or service station.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2287,
+  "split_reasoning": "One activity: explaining dishes to patrons.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain to a patron how a dish is made, its ingredients and cooking method.",
+    "time_share": 1.0,
+    "type_reasoning": "Answered in conversation at the table.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered in the exchange.",
+    "work_item": "one patron's question about a dish answered",
+    "start": "patron asks about a dish",
+    "end": "patron satisfied and chooses",
+    "checked_by": "the patron",
+    "duplicates": [],
+    "overlaps_with": [
+     2283
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2288,
+  "split_reasoning": "One activity: laying tables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set tables with linens, silverware and glassware before meals.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     18744
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2289",
+  "split_reasoning": "One activity: simple food preparation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare cold dishes, salads, appetizers, portion desserts and brew coffee.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2291
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2290,
+  "split_reasoning": "One activity: restocking service areas.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Restock service areas with coffee, food, tableware and linens.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2292,
+     18744
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2291,
+  "split_reasoning": "One activity: finishing dishes visually.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Garnish and decorate dishes before serving.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2289,
+     2280
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2292,
+  "split_reasoning": "One activity: refilling condiment containers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Refill salt, pepper, sugar, cream, condiment and napkin containers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2290
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2293",
+  "split_reasoning": "Escorting customers to their tables is one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Escort customers to their tables.",
+    "time_share": 1.0,
+    "type_reasoning": "The work consists of physically leading customers through the dining area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "18746"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2294,
+  "split_reasoning": "One activity: advising on wine.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Describe wines and recommend one to a table.",
+    "time_share": 1.0,
+    "type_reasoning": "Conversation with customers at the table.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each table is advised once and the wine chosen.",
+    "work_item": "one table advised on wine",
+    "start": "customer asks about wine or server offers the list",
+    "end": "customer chooses a wine",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     2283,
+     2295
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2295,
+  "split_reasoning": "One activity: serving wine.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bring the chosen wine with glasses to the table and pour.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2294,
+     2280
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18744",
+  "split_reasoning": "One activity: pre-shift set-up.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Roll silverware and set up food stations and dining areas for the next shift or a large party.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2288,
+     2290
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18745,
+  "split_reasoning": "One activity: clearing used dishes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Remove used dishes and glasses from tables and take them to the kitchen.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2285
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18746",
+  "split_reasoning": "Taking reservations, taking to-go orders, greeting or thanking guests, and seating guests are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer the phone and take a dining reservation.",
+    "time_share": 0.25,
+    "type_reasoning": "The reservation is arranged during a live phone call.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One reservation is recorded and confirmed during the call.",
+    "work_item": "one phone reservation",
+    "start": "caller requests a reservation",
+    "end": "reservation details are recorded and confirmed to the caller",
+    "checked_by": "caller and host or hostess",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Answer the phone and take a to-go order.",
+    "time_share": 0.3,
+    "type_reasoning": "The order is taken while the caller is on the phone.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One caller's to-go order is captured and confirmed as a whole.",
+    "work_item": "one to-go order taken by phone",
+    "start": "caller requests a to-go order",
+    "end": "order details are captured and confirmed to the caller",
+    "checked_by": "caller and kitchen staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "2278"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Greet arriving guests and thank departing guests.",
+    "time_share": 0.2,
+    "type_reasoning": "The value is in the brief personal interaction rather than a separately checked output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Seat guests at their tables.",
+    "time_share": 0.25,
+    "type_reasoning": "Leading guests to their seats is physical work in the dining area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2293"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much host assistance the server provides."
+ },
+ {
+  "task_id": 18747,
+  "split_reasoning": "One activity: cleaning the dining area and facilities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sweep, mop, vacuum, tidy the server station, take out trash and clean bathrooms.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2285
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 18748,
+  "split_reasoning": "One activity: answering guests' questions about the area.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give a guest information about the local area, such as directions.",
+    "time_share": 1.0,
+    "type_reasoning": "Answered in conversation while the guest is there.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered in one exchange.",
+    "work_item": "one guest's local question answered",
+    "start": "guest asks",
+    "end": "guest has the information",
+    "checked_by": "the guest",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

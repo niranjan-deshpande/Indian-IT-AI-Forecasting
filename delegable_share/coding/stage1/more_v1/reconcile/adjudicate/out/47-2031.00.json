@@ -1,0 +1,5 @@
+[
+ {"task_id": "23449", "reasoning": "Checking timbers for decay and replacing them is one hands-on repair job done in the same visit. Both of Y's parts would be PHYSICAL anyway, so the split adds nothing and its time shares are guesses. X's single PHYSICAL part is adequate.", "choice": "X"},
+ {"task_id": "23453", "reasoning": "All three are occasional, minor hands-on tasks with the same type and no coded work item. Splitting them into three PHYSICAL parts with arbitrary shares adds no information, so X's single bucket is preferred.", "choice": "X"},
+ {"task_id": "23458", "reasoning": "'Or direct' only names who does the digging. Either way it is on-site physical work installing supports, and a carpenter directing a laborer at the hole is not a distinct supervisory activity. X's single PHYSICAL part fits; Y's INTERPERSONAL share is speculative.", "choice": "X"}
+]

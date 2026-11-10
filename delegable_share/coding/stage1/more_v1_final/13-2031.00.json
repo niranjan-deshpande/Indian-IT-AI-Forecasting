@@ -1,0 +1,321 @@
+[
+ {
+  "task_id": "3394",
+  "split_reasoning": "One activity: reviewing monthly reports to control spending.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze a department's monthly budget and accounting reports to control expenditures.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review yields findings the department and finance rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done per department per month.",
+    "work_item": "one department's monthly budget review",
+    "start": "monthly reports available",
+    "end": "variances and actions sent to the department",
+    "checked_by": "department manager, finance director",
+    "duplicates": [],
+    "overlaps_with": [
+     "3401",
+     "3405"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3395",
+  "split_reasoning": "One activity: directing report preparation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct preparation of a regular or special budget report.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are issued one at a time.",
+    "work_item": "one budget report",
+    "start": "report requested or due",
+    "end": "report issued",
+    "checked_by": "management, funding authority",
+    "duplicates": [],
+    "overlaps_with": [
+     "3399"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3396",
+  "split_reasoning": "Consulting is a live talk; adjusting the budget is a recorded change.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult with managers about program changes affecting the budget.",
+    "time_share": 0.5,
+    "type_reasoning": "Live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Make budget adjustments for program changes.",
+    "time_share": 0.5,
+    "type_reasoning": "Each adjustment is recorded and relied on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Adjustments are processed one by one.",
+    "work_item": "one budget adjustment recorded",
+    "start": "program change agreed",
+    "end": "adjustment entered and confirmed",
+    "checked_by": "manager, finance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3397",
+  "split_reasoning": "One activity: reconciling appropriations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Match program appropriations with broader program appropriations, including emergency funds.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a reconciled schedule.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per budget cycle.",
+    "work_item": "one appropriation reconciliation",
+    "start": "appropriations data in hand",
+    "end": "reconciliation completed",
+    "checked_by": "finance director",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3398",
+  "split_reasoning": "The same technical assistance is provided both during live requests and in response to written requests; the listed budget subjects do not require separate parts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide budget or cost-analysis advice to a manager or staff member during a live request.",
+    "time_share": 0.6,
+    "type_reasoning": "The requester is present while the analyst answers the question or provides technical assistance.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One request for advice is addressed within a live contact.",
+    "work_item": "one live budget assistance request answered",
+    "start": "manager or staff member asks for assistance during a contact",
+    "end": "advice or technical assistance is provided to the requester",
+    "checked_by": "the requesting manager or staff member",
+    "duplicates": [],
+    "overlaps_with": [
+     "3396",
+     "3403",
+     "3405"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond to a written request for budget or cost-analysis advice or technical assistance.",
+    "time_share": 0.4,
+    "type_reasoning": "A written request is handled outside a live contact and produces guidance for the requester.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The response to one request is the guidance handed back to the requester.",
+    "work_item": "one written budget assistance request answered",
+    "start": "written request for assistance is received",
+    "end": "guidance or technical response is sent",
+    "checked_by": "the requesting manager or staff member",
+    "duplicates": [],
+    "overlaps_with": [
+     "3403",
+     "3405"
+    ]
+   }
+  ],
+  "notes": "The live and written shares are estimates and vary by workplace."
+ },
+ {
+  "task_id": "3399",
+  "split_reasoning": "One activity: summarizing and recommending.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Summarize a budget and recommend approval or disapproval of a funds request.",
+    "time_share": 1.0,
+    "type_reasoning": "Yields a recommendation others decide from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per request.",
+    "work_item": "one funds request recommendation",
+    "start": "request received",
+    "end": "recommendation submitted",
+    "checked_by": "approving authority",
+    "duplicates": [],
+    "overlaps_with": [
+     "3402",
+     "3403",
+     "3395"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3400",
+  "split_reasoning": "One activity: finding efficiencies.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify ways to improve efficiency or increase profits and propose them.",
+    "time_share": 1.0,
+    "type_reasoning": "Yields proposals management considers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each idea is written up as a proposal.",
+    "work_item": "one efficiency proposal",
+    "start": "opportunity identified",
+    "end": "proposal sent to management",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "3403"
+    ]
+   }
+  ],
+  "notes": "May produce nothing in practice."
+ },
+ {
+  "task_id": "3401",
+  "split_reasoning": "One activity: trend analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review operating budgets for trends affecting budget needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a trend analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Per budget or period.",
+    "work_item": "one trend analysis",
+    "start": "budget data gathered",
+    "end": "findings delivered",
+    "checked_by": "finance director",
+    "duplicates": [],
+    "overlaps_with": [
+     "3394"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3402",
+  "split_reasoning": "One activity: reviewing estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine budget estimates for completeness, accuracy and compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "Each review returns a finding.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per submission.",
+    "work_item": "one budget submission reviewed",
+    "start": "estimate submitted",
+    "end": "approved or returned with corrections",
+    "checked_by": "submitting unit, finance director",
+    "duplicates": [],
+    "overlaps_with": [
+     "3399"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3403",
+  "split_reasoning": "One activity: cost-benefit analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a cost-benefit analysis comparing programs, reviewing requests or exploring financing.",
+    "time_share": 1.0,
+    "type_reasoning": "Yields an analysis for decision makers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per question.",
+    "work_item": "one cost-benefit analysis",
+    "start": "question posed",
+    "end": "analysis delivered",
+    "checked_by": "management",
+    "duplicates": [],
+    "overlaps_with": [
+     "3399",
+     "3405"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3404",
+  "split_reasoning": "One activity: turning directives into policy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interpret a budget directive and write the policy for carrying it out.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces written guidance.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per directive.",
+    "work_item": "one directive interpretation and policy",
+    "start": "directive received",
+    "end": "policy issued",
+    "checked_by": "finance director, departments",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3405",
+  "split_reasoning": "One activity: estimating resources needed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and analyze accounting records to determine the financial resources a program needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Yields a resource estimate.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One per program.",
+    "work_item": "one program resource estimate",
+    "start": "program defined",
+    "end": "estimate delivered",
+    "checked_by": "program manager, finance",
+    "duplicates": [],
+    "overlaps_with": [
+     "3394",
+     "3403"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3406",
+  "split_reasoning": "Clarifying and promoting proposed budgets are purposes of the same testimony before funding authorities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Testify before examining or funding authorities to clarify and promote proposed budgets.",
+    "time_share": 1.0,
+    "type_reasoning": "The target is live testimony and persuasion before authorities, rather than preparation of a separate budget document.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,514 @@
+[
+ {
+  "task_id": "2169",
+  "split_reasoning": "Turning and stirring are alternative ways to keep food cooking evenly.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Turn or stir food to ensure even cooking.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on attention to food and cooking equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Turning or stirring can be part of cooking dishes under the other cooking tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2170",
+     "2176",
+     "2183",
+     "2184"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2170",
+  "split_reasoning": "Seasoning and cooking are integrated steps in preparing a dish.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Season and cook food using recipes or culinary judgment.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing food at the cooking station is hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements cover particular preparation, cooking, testing, or temperature-control steps within some dishes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2169",
+     "2171",
+     "2172",
+     "2176",
+     "2183",
+     "2184",
+     "18723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2171",
+  "split_reasoning": "Tasting, smelling, and piercing are alternative methods of testing doneness.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe and test food to determine whether it is sufficiently cooked.",
+    "time_share": 1.0,
+    "type_reasoning": "Testing food in the kitchen requires sensory examination and sometimes handling utensils.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Doneness testing can occur during cooking, baking, or preparation of particular dishes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2170",
+     "2176",
+     "2183",
+     "2184",
+     "18723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2172",
+  "split_reasoning": "Weighing, measuring, and mixing are integrated steps in preparing ingredients.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Weigh, measure, and mix ingredients using recipes or culinary judgment.",
+    "time_share": 1.0,
+    "type_reasoning": "The task requires hands-on use of ingredients and kitchen equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Ingredient preparation can be part of seasoning and cooking dishes, baking, or preparing relishes and hors d'oeuvres.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2170",
+     "2183",
+     "2184"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2173",
+  "split_reasoning": "Portioning, arranging, garnishing, and handing off food are connected steps in serving a prepared dish.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Portion, arrange, garnish, and hand off prepared food to waiters or patrons.",
+    "time_share": 1.0,
+    "type_reasoning": "The task is primarily hands-on plating and service rather than a conversation with the patron.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Plating and handoff can be part of preparing relishes and hors d'oeuvres.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2184"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2175",
+  "split_reasoning": "Substituting for and assisting other cooks are alternative ways of providing kitchen help during busy or emergency periods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Substitute for or assist other cooks during emergencies or rush periods.",
+    "time_share": 1.0,
+    "type_reasoning": "The assistance normally involves hands-on kitchen work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Helping another cook can include the preparation, cooking, and serving work described elsewhere, but also covers relief work across stations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2169",
+     "2170",
+     "2171",
+     "2172",
+     "2173",
+     "2176",
+     "2177",
+     "2179",
+     "2182",
+     "2183",
+     "2184"
+    ]
+   }
+  ],
+  "notes": "The particular work performed depends on the station and the emergency."
+ },
+ {
+  "task_id": "2176",
+  "split_reasoning": "Baking, roasting, broiling, and steaming are alternative cooking methods applied to foods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bake, roast, broil, or steam meats, fish, vegetables, and other foods.",
+    "time_share": 1.0,
+    "type_reasoning": "Cooking requires hands-on handling of food and kitchen equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "These methods overlap broader cooking tasks and particular food-preparation tasks, without covering all of their work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2169",
+     "2170",
+     "2171",
+     "2175",
+     "2183",
+     "2184",
+     "18723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2177",
+  "split_reasoning": "Washing, peeling, cutting, and seeding are related preparation steps for fruits and vegetables.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wash, peel, cut, and seed fruits and vegetables for consumption.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on preparation with produce and kitchen utensils.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Produce preparation can be performed while helping another cook or making relishes and hors d'oeuvres.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2175",
+     "2184"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2178",
+  "split_reasoning": "Estimating consumption, ordering supplies, and physically retrieving stored food are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate expected food consumption for kitchen planning.",
+    "time_share": 0.3,
+    "type_reasoning": "The estimate is a planning output that others can use for purchasing or preparation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A forecast for a service period or ordering cycle is the practical planning unit.",
+    "work_item": "one food-consumption estimate for a planning period",
+    "start": "planning period and relevant demand information identified",
+    "end": "estimated food requirements recorded or communicated",
+    "checked_by": "kitchen manager or person ordering supplies",
+    "overlap_reasoning": "Estimating consumption informs ordering but is not the same output as any other listed task.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Requisition or purchase food and other supplies.",
+    "time_share": 0.4,
+    "type_reasoning": "The activity produces a supply request or order for another person or supplier to fulfill.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each requisition or purchase order is handed off as a whole.",
+    "work_item": "one supply requisition or purchase order",
+    "start": "supply needs identified",
+    "end": "requisition submitted or order placed",
+    "checked_by": "kitchen manager, purchasing staff, or supplier",
+    "overlap_reasoning": "Stock checks can inform orders, but checking and rotating stock is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18724"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Retrieve needed food from storage.",
+    "time_share": 0.3,
+    "type_reasoning": "Retrieving and carrying stored food is hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Retrieving food can involve selecting older stock, while stock rotation also occurs independently.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18724"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with the cook's purchasing responsibility and kitchen setup."
+ },
+ {
+  "task_id": "2179",
+  "split_reasoning": "Carving and trimming are related methods of preparing meat for service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carve and trim meats for hot or cold service or sandwiches.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on handling and cutting of meat.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Carving or trimming may be done while assisting another cook and can overlap meat-cutting, although the latter also includes butchering and boning before cooking.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2175",
+     "2182"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2180",
+  "split_reasoning": "Coordinating and supervising kitchen staff are related forms of live direction of their work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate and supervise the work of kitchen staff.",
+    "time_share": 1.0,
+    "type_reasoning": "The primary activity is live direction and coordination of people rather than production of a distinct checked item.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision may accompany assistance during a rush, but directing staff and performing their kitchen work are distinct.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2175"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2181",
+  "split_reasoning": "Consulting about costs and special-event needs is one menu-planning interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult supervisory staff about menu plans, costs, and special-event needs.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes a live planning consultation rather than a separately specified written output.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The consultation can contribute to menu planning, while the separate task also covers developing and pricing menu items.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2186"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2182",
+  "split_reasoning": "Butchering, dressing, cutting, and boning are related ways to prepare animal proteins before cooking.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Butcher or dress animals, poultry, or shellfish, or cut and bone meat before cooking.",
+    "time_share": 1.0,
+    "type_reasoning": "The task requires hands-on handling and cutting of animal proteins.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Some meat cutting overlaps carving and trimming, and may also be done when assisting another cook.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2175",
+     "2179"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2183",
+  "split_reasoning": "Breads, rolls, cakes, and pastries are different baked items produced through the same kind of activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bake breads, rolls, cakes, and pastries.",
+    "time_share": 1.0,
+    "type_reasoning": "Baking requires hands-on ingredient preparation and use of kitchen equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Baking can include measuring, mixing, testing, temperature control, and assistance covered in other statements.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2169",
+     "2170",
+     "2171",
+     "2172",
+     "2175",
+     "2176",
+     "18723"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2184",
+  "split_reasoning": "Relishes and hors d'oeuvres are related prepared foods made for service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare relishes and hors d'oeuvres.",
+    "time_share": 1.0,
+    "type_reasoning": "The task involves hands-on preparation and assembly of food.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Preparation can include ingredient handling, cooking, plating, and assistance described more generally elsewhere.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2169",
+     "2170",
+     "2171",
+     "2172",
+     "2173",
+     "2175",
+     "2176",
+     "2177"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2185",
+  "split_reasoning": "Operational recordkeeping and maintaining financial accounts produce different kinds of records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep kitchen operational records.",
+    "time_share": 0.5,
+    "type_reasoning": "Each completed record is available for kitchen staff or management to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed log or record for a reporting period is a practical handoff and review unit.",
+    "work_item": "one completed kitchen log or operational record",
+    "start": "information for the record becomes available",
+    "end": "record completed and filed or made available",
+    "checked_by": "kitchen manager or supervisor",
+    "overlap_reasoning": "Some records may document temperature or stock checks, but those tasks also include hands-on monitoring and handling.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18723",
+     "18724"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain kitchen financial accounts.",
+    "time_share": 0.5,
+    "type_reasoning": "Account entries or summaries are recorded outputs relied on by management or accounting staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An account update for a reporting period can be reviewed and passed to accounting as a whole.",
+    "work_item": "one kitchen account update for a reporting period",
+    "start": "receipts and other financial information for the period are available",
+    "end": "account updated and filed or submitted",
+    "checked_by": "restaurant manager or accounting staff",
+    "overlap_reasoning": "No other listed statement describes maintaining the accounts themselves.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The kinds of records and the time shares depend on the restaurant's division of administrative work."
+ },
+ {
+  "task_id": "2186",
+  "split_reasoning": "Planning and pricing are integrated decisions for a proposed menu item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a menu item and set its price.",
+    "time_share": 1.0,
+    "type_reasoning": "The task produces a proposed menu item and price that management can review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual item and its proposed price can be reviewed and added to a menu as a whole.",
+    "work_item": "one planned and priced menu item",
+    "start": "need or idea for a menu item identified",
+    "end": "item and proposed price recorded or submitted for approval",
+    "checked_by": "restaurant manager or menu approver",
+    "overlap_reasoning": "Consultation with supervisors may inform the plan, but the consultation and the resulting priced item are not identical.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2181"
+    ]
+   }
+  ],
+  "notes": "Some restaurants develop and approve items as a complete seasonal menu rather than individually."
+ },
+ {
+  "task_id": "18722",
+  "split_reasoning": "Inspecting food-preparation areas and cleaning them are distinct activities, even though they support the same sanitation goal.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect food-preparation equipment, work surfaces, and serving areas for sanitation.",
+    "time_share": 0.3,
+    "type_reasoning": "Inspection requires looking at and examining physical kitchen areas and equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement describes inspecting the cleanliness of preparation areas.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Clean food-preparation equipment, work surfaces, and serving areas.",
+    "time_share": 0.7,
+    "type_reasoning": "Cleaning is hands-on work with physical surfaces and equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement describes cleaning preparation areas.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Inspection and cleaning may alternate during a shift; the shares are approximate."
+ },
+ {
+  "task_id": "18723",
+  "split_reasoning": "Maintaining storage temperatures and regulating cooking equipment concern different physical settings and equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check and maintain appropriate temperatures for stored food.",
+    "time_share": 0.3,
+    "type_reasoning": "Checking stored food and storage equipment requires physical work in the kitchen or storage area.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Storage-temperature checks support freshness checks and may be recorded in operational logs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18724",
+     "2185"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Regulate cooking equipment to ensure food cooks at the correct temperature.",
+    "time_share": 0.7,
+    "type_reasoning": "Adjusting ovens, broilers, grills, and roasters is hands-on kitchen work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Temperature regulation accompanies cooking and baking, can support doneness testing, and may be recorded in a log.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2170",
+     "2171",
+     "2176",
+     "2183",
+     "2185"
+    ]
+   }
+  ],
+  "notes": "The target mentions stored food but names only cooking equipment; the storage portion assumes checking and adjusting storage equipment where applicable."
+ },
+ {
+  "task_id": "18724",
+  "split_reasoning": "Checking quality, tracking old and new items, and rotating stock are connected steps in maintaining food freshness.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check food and ingredient quality, identify older and newer items, and rotate stock.",
+    "time_share": 1.0,
+    "type_reasoning": "The work primarily requires physical inspection and handling of food in storage.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Stock rotation can coincide with retrieval, ordering decisions, storage-temperature checks, or operational recordkeeping, but none describes the entire freshness task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2178",
+     "2185",
+     "18723"
+    ]
+   }
+  ],
+  "notes": "Any separate inventory-system updates are not specified in the target."
+ }
+]

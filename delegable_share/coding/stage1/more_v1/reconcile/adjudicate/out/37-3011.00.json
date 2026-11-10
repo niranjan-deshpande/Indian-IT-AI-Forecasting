@@ -1,0 +1,23 @@
+[
+ {"task_id": "9590",
+  "reasoning": "Shoveling and salting are two steps of one snow-clearing job on the same surfaces, usually done in the same visit, so a split adds nothing. Both parts would be PHYSICAL anyway. Y's single part is the right call.",
+  "choice": "Y"},
+ {"task_id": "9595",
+  "reasoning": "Every part would be hands-on PHYSICAL repair work with no deliverable to code, so splitting tools from structures does not change anything downstream. X's single part matches the statement and avoids an arbitrary time split.",
+  "choice": "X"},
+ {"task_id": "9597",
+  "reasoning": "The statement is a catch-all list of upkeep on grounds features, all hands-on and PHYSICAL. Y's three-way split by feature type rests on invented time shares and adds nothing to the coding. X's single part is sufficient.",
+  "choice": "X"},
+ {"task_id": "9599",
+  "reasoning": "Trimming and picking flowers and cleaning beds are one bed-care job, usually done together on the same beds. All of it is PHYSICAL, so Y's split adds nothing.",
+  "choice": "X"},
+ {"task_id": "9600",
+  "reasoning": "Raking, mulching and composting leaves are steps of one leaf-handling job, and all are PHYSICAL. X's single part is adequate; Y's split changes no coding outcome.",
+  "choice": "X"},
+ {"task_id": "9607",
+  "reasoning": "Hauling or spreading topsoil and spreading straw are both material-spreading site work, all PHYSICAL. X's single part is adequate, and Y's split by material adds no coding information.",
+  "choice": "X"},
+ {"task_id": "9610",
+  "reasoning": "For groundskeeping workers, 'planning' a lawn or garden is informal and brief, and formal layouts come from landscape designs they follow (9601). X's DISCRETE plan document overstates what this occupation produces. Y's single PHYSICAL part reflects the work as done, and it flags the planning share in its notes.",
+  "choice": "Y"}
+]

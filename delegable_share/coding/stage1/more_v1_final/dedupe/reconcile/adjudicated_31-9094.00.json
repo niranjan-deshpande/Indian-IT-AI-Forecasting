@@ -1,0 +1,3 @@
+[{"a": "20254a", "b": "9413a", "reasoning": "Taking dictation via headset or transcribing machine and transcribing an assigned dictated report both take one dictation and produce a transcript ready for review, so they are the same work.", "duplicate": true},
+ {"a": "9413a", "b": "9421a", "reasoning": "Producing medical reports, correspondence, records, statistics, research and administrative material from many kinds of source information is broader than transcribing one dictated report, which is only one case of it.", "duplicate": false},
+ {"a": "9420a", "b": "9426d", "reasoning": "Both take new or changed patient information and end with it entered and saved in the medical record, the same inputs, action and output.", "duplicate": true}]

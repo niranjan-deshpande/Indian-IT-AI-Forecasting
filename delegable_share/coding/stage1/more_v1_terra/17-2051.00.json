@@ -1,0 +1,466 @@
+[
+ {
+  "task_id": "147",
+  "split_reasoning": "Load, grade, flow, and stress calculations are alternative engineering analyses used to establish design specifications.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate engineering requirements or factors to determine design specifications.",
+    "time_share": 1.0,
+    "type_reasoning": "The calculations produce a distinct set of design inputs for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A calculation package for a design element is reviewed and used as a whole.",
+    "work_item": "one engineering calculation package for a design element",
+    "start": "design problem and relevant inputs identified",
+    "end": "calculations and resulting specifications documented for use in design",
+    "checked_by": "design engineer and engineering reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "19607",
+     "19608",
+     "20491"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "148",
+  "split_reasoning": "Inspecting a site is hands-on fieldwork, while recording and communicating inspection findings is generally office work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect a project site for progress and conformance with specifications and standards.",
+    "time_share": 0.7,
+    "type_reasoning": "The inspection requires observing and checking conditions at the construction site.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "19610",
+     "20490"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Document the findings of a project-site inspection.",
+    "time_share": 0.3,
+    "type_reasoning": "An inspection record is a distinct output used by the project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The findings from one inspection are normally recorded and communicated together.",
+    "work_item": "one site inspection record",
+    "start": "site inspection completed and observations gathered",
+    "end": "findings and deficiencies recorded and communicated",
+    "checked_by": "project manager and construction team",
+    "duplicates": [],
+    "overlaps_with": [
+     "19610",
+     "20490"
+    ]
+   }
+  ],
+  "notes": "The field and documentation shares vary with the project and inspection."
+ },
+ {
+  "task_id": "150",
+  "split_reasoning": "Directing survey personnel and personally performing field survey work are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct survey personnel establishing construction layout or reference points.",
+    "time_share": 0.5,
+    "type_reasoning": "Directing the survey crew is live supervisory interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "20490"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Perform field surveying to establish construction layout, reference points, grades, or elevations.",
+    "time_share": 0.5,
+    "type_reasoning": "Surveying requires hands-on use of instruments and placement or checking of field markers.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The balance between directing and participating depends on the engineer's role."
+ },
+ {
+  "task_id": "151",
+  "split_reasoning": "Quantities and costs of materials, equipment, and labor are components of the same feasibility estimate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate quantities and costs of project resources to assess feasibility.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an estimate used in a project decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A feasibility estimate for a defined project or option is reviewed as a whole.",
+    "work_item": "one project feasibility cost estimate",
+    "start": "project scope and available design information received",
+    "end": "quantity and cost estimate documented for feasibility review",
+    "checked_by": "project manager, client, or feasibility team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "152",
+  "split_reasoning": "Preparing a public report and presenting it are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a public report on a civil engineering proposal, property matter, or environmental impact.",
+    "time_share": 0.8,
+    "type_reasoning": "Preparation produces a report that others review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report is submitted and reviewed as a whole.",
+    "work_item": "one public report prepared for submission",
+    "start": "report assignment and supporting information received",
+    "end": "report completed and submitted or released",
+    "checked_by": "project leadership, public agency, or public readers",
+    "duplicates": [],
+    "overlaps_with": [
+     "155"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Present a public report on a civil engineering matter.",
+    "time_share": 0.2,
+    "type_reasoning": "Presentation is a live communication activity whose value lies in the interaction with the audience.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Report preparation and presentation shares depend on the assignment."
+ },
+ {
+  "task_id": "153",
+  "split_reasoning": "Hands-on testing of soils or materials and documenting the interpreted test results are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform physical tests on soils or construction materials.",
+    "time_share": 0.7,
+    "type_reasoning": "Testing requires handling specimens and operating field or laboratory equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Evaluate and document soil or material test results for adequacy and strength.",
+    "time_share": 0.3,
+    "type_reasoning": "The evaluated results form a distinct record used in engineering decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Results from a test or related set of specimens are typically reported together.",
+    "work_item": "one soil or material test results record",
+    "start": "test measurements and specimen information available",
+    "end": "results and adequacy assessment documented and communicated",
+    "checked_by": "design engineer, project manager, or quality-control reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "147"
+    ]
+   }
+  ],
+  "notes": "Testing and reporting may be divided among engineers and technicians."
+ },
+ {
+  "task_id": "155",
+  "split_reasoning": "Traffic and environmental studies address different conditions, and each can involve both field data collection and office analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect traffic-pattern observations or measurements in the field.",
+    "time_share": 0.15,
+    "type_reasoning": "Field collection requires work at roads or other transportation sites.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze traffic patterns to identify engineering problems and assess project impacts.",
+    "time_share": 0.35,
+    "type_reasoning": "The analysis produces a study used in project planning or design.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A traffic study for a defined site or project is reviewed as a whole.",
+    "work_item": "one traffic-pattern study",
+    "start": "study scope and traffic data available",
+    "end": "findings and impact assessment documented and communicated",
+    "checked_by": "project team, client, or transportation agency",
+    "duplicates": [],
+    "overlaps_with": [
+     "20491",
+     "20492"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Collect observations or measurements of environmental conditions in the field.",
+    "time_share": 0.15,
+    "type_reasoning": "Field collection requires visiting and assessing site conditions.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Analyze environmental conditions to identify engineering problems and assess project impacts.",
+    "time_share": 0.35,
+    "type_reasoning": "The analysis produces a study used in project and environmental review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An environmental study for a defined site or project is reviewed as a whole.",
+    "work_item": "one environmental conditions and impact study",
+    "start": "study scope and environmental data available",
+    "end": "findings and impact assessment documented and communicated",
+    "checked_by": "project team, client, or environmental reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "152",
+     "19611",
+     "20492"
+    ]
+   }
+  ],
+  "notes": "Shares and field involvement vary; studies may also use data collected by others."
+ },
+ {
+  "task_id": "19607",
+  "split_reasoning": "Energy efficiency and environmental soundness are design objectives within the same structural design activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design an energy-efficient or environmentally sound civil structure.",
+    "time_share": 1.0,
+    "type_reasoning": "The design produces drawings and specifications that others review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined design package is handed over for review rather than treating the entire project as one item.",
+    "work_item": "one energy-efficient or environmentally sound structural design package",
+    "start": "design scope, requirements, and site information received",
+    "end": "design drawings and specifications submitted for review",
+    "checked_by": "engineering reviewer, client, and permitting authorities",
+    "duplicates": [],
+    "overlaps_with": [
+     "147",
+     "20491"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19608",
+  "split_reasoning": "Chemical, biological, and other toxic wastes are alternative inputs to the same system-design activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design an efficient system for disposal of toxic waste.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a system design that can be reviewed and implemented.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined system design package is the unit submitted for engineering review.",
+    "work_item": "one toxic-waste disposal system design package",
+    "start": "waste characteristics, site constraints, and requirements received",
+    "end": "system design and specifications submitted for review",
+    "checked_by": "engineering reviewer, client, and environmental regulator",
+    "duplicates": [],
+    "overlaps_with": [
+     "147",
+     "19609",
+     "19611"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19609",
+  "split_reasoning": "Developing a cleanup solution and directing its implementation are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop an engineering solution for an industrial accident or contaminated site.",
+    "time_share": 0.7,
+    "type_reasoning": "Development produces a remediation plan or design for review and implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A remediation solution for a defined site or problem is handed over as a plan or design package.",
+    "work_item": "one site remediation plan or design package",
+    "start": "site contamination information and cleanup requirements received",
+    "end": "proposed solution documented and submitted for review",
+    "checked_by": "project manager, client, and environmental regulator",
+    "duplicates": [],
+    "overlaps_with": [
+     "19608",
+     "19611"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct implementation of an engineering cleanup solution at a contaminated site.",
+    "time_share": 0.3,
+    "type_reasoning": "Implementation direction primarily involves coordinating and instructing the people carrying out the cleanup.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "19610",
+     "20490"
+    ]
+   }
+  ],
+  "notes": "Implementation may also involve hands-on fieldwork, depending on the engineer's role."
+ },
+ {
+  "task_id": "19610",
+  "split_reasoning": "Directing engineering work with attention to regulatory compliance is one supervisory activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct engineering activities to ensure compliance with applicable regulations.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on live direction and supervision of engineering personnel.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "148",
+     "19609",
+     "20490"
+    ]
+   }
+  ],
+  "notes": "Formal compliance reviews or filings may occur in some roles but are not specified in the target."
+ },
+ {
+  "task_id": "19611",
+  "split_reasoning": "Identifying environmental risks and developing responses are connected steps in producing a risk assessment and management strategy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess environmental risks and develop management strategies for a civil engineering project.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a documented assessment and response strategy for project decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A risk assessment for a defined project or design scope is reviewed as a whole.",
+    "work_item": "one project environmental risk assessment and management strategy",
+    "start": "project scope and environmental information available",
+    "end": "risks and proposed management measures documented for review",
+    "checked_by": "project manager, client, and environmental reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "155",
+     "19608",
+     "19609"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20489",
+  "split_reasoning": "Technical advice can be given in live discussion or delivered afterward as written guidance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise industrial or managerial personnel on engineering matters in a live discussion.",
+    "time_share": 0.6,
+    "type_reasoning": "The work is professional consultation in which the value is in the live exchange.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Provide written technical advice on design, construction, modifications, or repairs.",
+    "time_share": 0.4,
+    "type_reasoning": "Written advice is a distinct communication that the recipient relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A response to a defined technical question is sent and used as a whole.",
+    "work_item": "one written technical advice response",
+    "start": "technical question and relevant information received",
+    "end": "advice documented and sent to the requester",
+    "checked_by": "requesting industrial or managerial personnel",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The balance between live and written advice depends on the working relationship and issue."
+ },
+ {
+  "task_id": "20490",
+  "split_reasoning": "Managing and directing construction, operations, or maintenance are alternative contexts for the same site-management activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Manage and direct construction, operations, or maintenance personnel at a project site.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes supervision and coordination of people at the site.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "148",
+     "150",
+     "19609",
+     "19610"
+    ]
+   }
+  ],
+  "notes": "Site management can also involve inspections and records, but those are not the central activity stated here."
+ },
+ {
+  "task_id": "20491",
+  "split_reasoning": "Transportation and hydraulic systems are different applications of the same planning and design activity using design tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and design a transportation or hydraulic system or structure using design or drawing tools.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a design package for review and construction planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined system or structure design package is submitted for review as a whole.",
+    "work_item": "one transportation or hydraulic design package",
+    "start": "project requirements, site data, and design scope received",
+    "end": "design drawings and supporting specifications submitted for review",
+    "checked_by": "engineering reviewer, client, and relevant agency",
+    "duplicates": [],
+    "overlaps_with": [
+     "147",
+     "155",
+     "19607",
+     "20492"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20492",
+  "split_reasoning": "Survey reports, maps, drawings, imagery, and geologic data are alternative inputs to the same data-analysis activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze topographical or geologic data from surveys, maps, drawings, or imagery.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces interpreted information that a project team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An analysis of the available data for a defined site or engineering question is communicated as a whole.",
+    "work_item": "one site-data analysis or summary",
+    "start": "site-data sources and engineering question received",
+    "end": "relevant findings documented or communicated to the project team",
+    "checked_by": "design engineer or project manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "155",
+     "20491"
+    ]
+   }
+  ],
+  "notes": "The output may be a standalone summary or an annotated input to a design."
+ }
+]

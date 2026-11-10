@@ -1,0 +1,43 @@
+[
+ {"task_id": "954",
+  "reasoning": "X codes hiring and evaluations as INTERPERSONAL, but each ends in a hiring decision or a signed appraisal that HR and the employee rely on, so they are DISCRETE. Y gets the types right but lumps hires and appraisals, two very different kinds of item, into one work item. Revised to split hiring and evaluations into their own DISCRETE parts and keep training plus daily oversight as INTERPERSONAL.",
+  "choice": "revised",
+  "coding": {
+   "task_id": "954",
+   "split_reasoning": "Three different activities: filling a vacancy, appraising an employee, and training and supervising staff day to day.",
+   "parts": [
+    {"part_id": "a",
+     "text": "Direct the hiring of a marketing or sales staff member, from shortlisting to the hiring decision.",
+     "time_share": 0.2,
+     "type_reasoning": "Each vacancy ends in a hiring decision that HR acts on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Vacancies are filled one at a time and the decision is what is handed to HR.",
+     "work_item": "one vacancy filled with a hiring decision",
+     "start": "vacancy approved and candidates sourced",
+     "end": "candidate selected and offer approved to HR",
+     "checked_by": "HR and the manager's own manager",
+     "duplicates": [],
+     "overlaps_with": []},
+    {"part_id": "b",
+     "text": "Write and deliver a performance evaluation for a marketing or sales staff member.",
+     "time_share": 0.15,
+     "type_reasoning": "Each appraisal is a signed record that HR and the employee rely on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Appraisals are done one employee at a time and signed off individually.",
+     "work_item": "one employee performance evaluation",
+     "start": "review period ends",
+     "end": "evaluation discussed with employee, signed and filed with HR",
+     "checked_by": "HR and the employee",
+     "duplicates": [],
+     "overlaps_with": []},
+    {"part_id": "c",
+     "text": "Train marketing or sales staff and oversee their daily activities.",
+     "time_share": 0.65,
+     "type_reasoning": "The value is in live coaching and direction; nothing a colleague would check is produced.",
+     "type": "INTERPERSONAL",
+     "duplicates": [],
+     "overlaps_with": ["20709"]}
+   ],
+   "notes": "Time shares are a judgment; hiring volume varies widely with team size and turnover."
+  }}
+]

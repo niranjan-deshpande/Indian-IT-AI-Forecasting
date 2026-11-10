@@ -1,0 +1,11 @@
+[
+ {"task_id": "4621",
+  "reasoning": "In telemarketing the customer's details and payment are taken and the order entered while the customer is still on the line, since that is how the sale is closed. A substantial back-office share of order completion from notes is not typical. X's single LIVE_SERVICE part fits today's workflow.",
+  "choice": "X"},
+ {"task_id": "4623",
+  "reasoning": "For a high-volume telemarketer, tailoring the script to a person happens mostly inside the call as the prospect reveals needs. Writing prospect-specific scripts in advance is uncommon, and X's 40% share for it overstates that. Y's single LIVE_SERVICE part is closer to today's work and flags the offline reading in its notes.",
+  "choice": "Y"},
+ {"task_id": "4627",
+  "reasoning": "Record upkeep happens both during calls and in wrap-up or back-office updates afterwards, which is the Example D pattern, and X splits on that line. Y codes it all as one back-office batch and wrongly marks 4622 as a duplicate, when 4622 records prospect reactions and only overlaps.",
+  "choice": "X"}
+]

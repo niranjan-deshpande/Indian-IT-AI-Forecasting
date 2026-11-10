@@ -1,0 +1,608 @@
+[
+ {
+  "task_id": "507",
+  "split_reasoning": "Patient observation and response are hands-on care, while charting and reporting the findings produce a separate record.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe patients for changes in condition and take necessary immediate action.",
+    "time_share": 0.6,
+    "type_reasoning": "Observation and immediate response occur at the patient's bedside and may require hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "510",
+     "511",
+     "514",
+     "516"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Chart and report changes observed in a patient's condition.",
+    "time_share": 0.4,
+    "type_reasoning": "The nurse creates a record and communicates findings that the care team relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A chart entry and associated report convey one observed change to the care team.",
+    "work_item": "one documented and reported change in patient condition",
+    "start": "a change in condition is observed",
+    "end": "the finding is charted and reported to the appropriate clinician",
+    "checked_by": "the supervising nurse and other members of the care team",
+    "duplicates": [],
+    "overlaps_with": [
+     "508",
+     "510",
+     "516"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the patient's condition and documentation practices."
+ },
+ {
+  "task_id": 508,
+  "split_reasoning": "Giving the medication is hands-on at the bedside, while noting times and amounts on the chart is a separate recorded output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give prescribed medications or start intravenous fluids to patients.",
+    "time_share": 0.75,
+    "type_reasoning": "Hands-on administration at the bedside, away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     511,
+     517
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record the time and amount of each medication or IV fluid on the patient's chart.",
+    "time_share": 0.25,
+    "type_reasoning": "Produces a medication administration record that others rely on, written after or at the end of the pass.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are made per medication pass and form the legal record of what was given.",
+    "work_item": "one medication or IV administration documented on the patient's chart",
+    "start": "medication or fluid given",
+    "end": "time, dose and amount entered in the chart",
+    "checked_by": "supervising RN, pharmacy, next-shift nurse, auditors",
+    "duplicates": [],
+    "overlaps_with": [
+     507
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 509,
+  "split_reasoning": "One activity: responding to a patient's call and deciding how to help; no separate parts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a patient's call for help and decide how to assist.",
+    "time_share": 1.0,
+    "type_reasoning": "The patient is waiting and the response happens during the live contact at the call light or bedside.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is answered and resolved or handed on as one contact.",
+    "work_item": "one patient call answered and handled",
+    "start": "patient call light or call is received",
+    "end": "patient's need met or passed to the right person",
+    "checked_by": "the patient, and the charge nurse",
+    "duplicates": [],
+    "overlaps_with": [
+     511,
+     512
+    ]
+   }
+  ],
+  "notes": "Meeting the need may turn into physical care covered by other statements."
+ },
+ {
+  "task_id": 510,
+  "split_reasoning": "Measuring vital signs is hands-on with the patient, while recording them is a charted output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Measure patients' height, weight, temperature, blood pressure, pulse and respiration.",
+    "time_share": 0.7,
+    "type_reasoning": "Hands-on measurement at the bedside.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     511
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record a patient's vital signs in the chart.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces chart entries that clinicians rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Vitals are recorded as one set per patient per round.",
+    "work_item": "one set of vital signs recorded in the chart",
+    "start": "vital signs measured",
+    "end": "values entered in the patient's chart",
+    "checked_by": "supervising RN, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     507
+    ]
+   }
+  ],
+  "notes": "Recording is often done on a portable device in the room right after measuring."
+ },
+ {
+  "task_id": 511,
+  "split_reasoning": "One category, basic hands-on care procedures; the listed treatments are examples of the same kind of bedside work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform basic bedside care and treatments such as dressing wounds, treating bedsores, giving enemas, massage, or catheterization.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     510,
+     512,
+     517,
+     521
+    ]
+   }
+  ],
+  "notes": "Taking temperatures and blood pressures duplicates the vital-signs statement."
+ },
+ {
+  "task_id": 512,
+  "split_reasoning": "One category of hands-on personal assistance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help patients bathe, dress, keep up personal hygiene, move in bed, and stand or walk.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on assistance with the patient's body.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     511,
+     524
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 513,
+  "split_reasoning": "One activity: directing and overseeing aides.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise nurses' aides or assistants, assigning and overseeing their work.",
+    "time_share": 1.0,
+    "type_reasoning": "Value lies in live direction and oversight; nothing separate is produced for a colleague to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "514",
+  "split_reasoning": "Assessing needs, planning care, and implementing interventions are different activities, with hands-on and documented components.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess patients' needs as part of the healthcare team.",
+    "time_share": 0.3,
+    "type_reasoning": "Patient assessment includes direct observation and hands-on examination away from the computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "507",
+     "510",
+     "516"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Contribute to planning and modifying patient care with the healthcare team.",
+    "time_share": 0.3,
+    "type_reasoning": "The team's planning work produces a care plan or update that guides subsequent care.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A patient-specific care plan contribution or update is the unit incorporated into the team's plan.",
+    "work_item": "one patient care plan contribution or update",
+    "start": "patient needs or a need to modify care are identified",
+    "end": "the nurse's contribution is communicated and incorporated into the care plan",
+    "checked_by": "the supervising registered nurse and healthcare team",
+    "duplicates": [],
+    "overlaps_with": [
+     "507",
+     "516"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Implement patient care interventions as part of the healthcare team.",
+    "time_share": 0.4,
+    "type_reasoning": "Implementing nursing interventions commonly requires hands-on care with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "508",
+     "511",
+     "512",
+     "521",
+     "524"
+    ]
+   }
+  ],
+  "notes": "The nurse's contribution to the care plan depends on local practice and supervision; shares are estimates."
+ },
+ {
+  "task_id": 515,
+  "split_reasoning": "One activity: recording intake and output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a patient's food and fluid intake and output.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a chart record that clinicians use to monitor patients.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Totals are recorded per patient per shift or per day.",
+    "work_item": "one patient's intake and output record for a shift",
+    "start": "intake and output measured or collected during the shift",
+    "end": "totals entered in the chart",
+    "checked_by": "supervising RN, physician",
+    "duplicates": [],
+    "overlaps_with": [
+     507
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "516",
+  "split_reasoning": "Evaluating intervention outcomes is one activity; conferring with colleagues is a means of completing it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a patient's response to a nursing intervention, conferring with the healthcare team as needed.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces a clinical assessment communicated or recorded for the care team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment of one patient's response to an intervention is the finding others use to decide on further care.",
+    "work_item": "one nursing intervention outcome evaluation",
+    "start": "an intervention has been performed and outcome information is available",
+    "end": "the patient's response is evaluated and the finding is documented or communicated",
+    "checked_by": "the supervising nurse and healthcare team",
+    "duplicates": [],
+    "overlaps_with": [
+     "507",
+     "510",
+     "514",
+     "515"
+    ]
+   }
+  ],
+  "notes": "Direct measurements used in the evaluation are also covered by other task statements."
+ },
+ {
+  "task_id": 517,
+  "split_reasoning": "One category of hands-on equipment work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble and use equipment such as catheters, tracheotomy tubes, and oxygen suppliers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on equipment work with or for the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     511,
+     529
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "518",
+  "split_reasoning": "Collecting specimens and performing laboratory tests are distinct hands-on activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Collect patient specimens such as blood, urine, or sputum.",
+    "time_share": 0.6,
+    "type_reasoning": "Specimen collection requires hands-on work with patients and collection materials.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "519"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Perform routine laboratory tests on patient specimens.",
+    "time_share": 0.4,
+    "type_reasoning": "Routine specimen testing requires hands-on handling of samples and test equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on whether specimens are tested by the nurse or sent to a laboratory."
+ },
+ {
+  "task_id": 519,
+  "split_reasoning": "Two activities: physically readying the patient, and explaining the procedure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare patients physically for examinations, tests, or treatments (positioning, gowning, setup).",
+    "time_share": 0.5,
+    "type_reasoning": "Hands-on with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     529
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Explain the procedure to the patient.",
+    "time_share": 0.5,
+    "type_reasoning": "Value is in the live teaching; nothing a colleague checks is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Time shares are a guess."
+ },
+ {
+  "task_id": "520",
+  "split_reasoning": "One activity: checking trays against diets.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or inspect meal trays to ensure they match prescribed diets.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on checking of physical trays away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 521,
+  "split_reasoning": "One category of hands-on treatments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply compresses, ice bags, or hot water bottles to patients.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on treatment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     511
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "522",
+  "split_reasoning": "One category of hands-on housekeeping.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean patient rooms and make beds.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on cleaning work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "523",
+  "split_reasoning": "Physically inventorying supplies and submitting requisitions are distinct activities performed in different ways.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inventory supplies and instruments.",
+    "time_share": 0.5,
+    "type_reasoning": "Inventorying normally involves physically checking and counting stock.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Requisition needed supplies and instruments.",
+    "time_share": 0.5,
+    "type_reasoning": "A requisition is a discrete request submitted to the supply team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requisition groups the items requested for replenishment into one submission.",
+    "work_item": "one supply or instrument requisition",
+    "start": "a need for supplies or instruments is identified",
+    "end": "the requisition is submitted for fulfillment",
+    "checked_by": "the supply department and approving supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary with stock-check frequency and the facility's ordering process."
+ },
+ {
+  "task_id": "524",
+  "split_reasoning": "Home medical and personal care, household tasks, and family instruction are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide medical treatment and personal care to patients in private homes.",
+    "time_share": 0.6,
+    "type_reasoning": "Treatment and personal care require hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "508",
+     "511",
+     "512",
+     "514",
+     "521"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Cook and keep rooms orderly in patients' homes.",
+    "time_share": 0.2,
+    "type_reasoning": "Cooking and housekeeping require hands-on work in the home.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "520",
+     "522"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Support patients' comfort and spirits and instruct family members in simple nursing tasks.",
+    "time_share": 0.2,
+    "type_reasoning": "Emotional support and family instruction derive their value from live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "519"
+    ]
+   }
+  ],
+  "notes": "Physical comfort measures may also be part of personal care; shares vary by home-care assignment."
+ },
+ {
+  "task_id": 525,
+  "split_reasoning": "One category of hands-on equipment processing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sterilize equipment and supplies using germicides, sterilizer, or autoclave.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work with equipment.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 527,
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Wash and dress the body of a deceased patient.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "528",
+  "split_reasoning": "Appointments, recordkeeping, and other clerical work are distinct activities; appointment scheduling occurs both live and from written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make or change appointments while a patient is on the phone or at the desk.",
+    "time_share": 0.3,
+    "type_reasoning": "The patient waits in a live contact while the appointment is entered and confirmed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each appointment request is completed and confirmed within the contact.",
+    "work_item": "one appointment made or changed during a patient contact",
+    "start": "patient requests an appointment or change",
+    "end": "appointment is entered and confirmed to the patient",
+    "checked_by": "the patient and clinic staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Make or change appointments from written requests or staff scheduling changes.",
+    "time_share": 0.15,
+    "type_reasoning": "These appointment updates are processed without a patient waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each request results in an appointment entry or change and any needed confirmation.",
+    "work_item": "one appointment made or changed from a non-live request",
+    "start": "written request or scheduling change is received",
+    "end": "calendar is updated and confirmation is sent if needed",
+    "checked_by": "the patient and clinic staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Maintain office or clinic records.",
+    "time_share": 0.35,
+    "type_reasoning": "Recordkeeping produces individual updates that clinic staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record update is entered and made available as a discrete item in the office workflow.",
+    "work_item": "one office or clinic record updated",
+    "start": "information requiring a record update is received",
+    "end": "the record is updated and filed or saved",
+    "checked_by": "clinic staff and supervisors",
+    "duplicates": [],
+    "overlaps_with": [
+     "507",
+     "508",
+     "510",
+     "515"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Process other routine office or clinic clerical items, such as forms.",
+    "time_share": 0.2,
+    "type_reasoning": "Routine clerical processing produces completed items for use by office staff or patients.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A form or similar clerical item is processed and handed on as a whole.",
+    "work_item": "one routine clerical item processed",
+    "start": "form or other clerical item is received",
+    "end": "the item is completed and filed or forwarded",
+    "checked_by": "clinic office staff or the recipient",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The target does not specify the other clerical duties; forms are illustrative. Shares and channels vary by clinic."
+ },
+ {
+  "task_id": 529,
+  "split_reasoning": "One category of hands-on room setup.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up equipment and prepare medical treatment rooms.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on setup.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     517,
+     519
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

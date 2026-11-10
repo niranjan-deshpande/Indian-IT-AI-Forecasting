@@ -66,6 +66,29 @@ SCEN_LABEL = {  # long label, short label (narrow screens)
     "+12 months (pooled trend)": ("One year ahead (pooled trend)", "+12 months"),
 }
 SHORT_OCC = {
+    # more_v1 (second wave)
+    "Information Security Analysts": "Info security analysts",
+    "Payroll and Timekeeping Clerks": "Payroll clerks",
+    "Bill and Account Collectors": "Bill collectors",
+    "General and Operations Managers": "General managers",
+    "Project Management Specialists": "Project managers",
+    "Elementary School Teachers, Except Special Education": "Primary teachers",
+    "Police and Sheriff's Patrol Officers": "Police officers",
+    "Computer and Information Systems Managers": "IT managers",
+    "Medical and Health Services Managers": "Health services managers",
+    "Training and Development Specialists": "Training specialists",
+    "Operations Research Analysts": "Operations researchers",
+    "Child, Family, and School Social Workers": "Social workers",
+    "Public Relations Specialists": "PR specialists",
+    "Licensed Practical and Licensed Vocational Nurses": "Practical nurses",
+    "Fast Food and Counter Workers": "Fast food workers",
+    "Landscaping and Groundskeeping Workers": "Groundskeepers",
+    "First-Line Supervisors of Retail Sales Workers": "Retail supervisors",
+    "Shipping, Receiving, and Inventory Clerks": "Shipping clerks",
+    "Medical Secretaries and Administrative Assistants": "Medical secretaries",
+    "First-Line Supervisors of Office and Administrative Support Workers": "Office supervisors",
+    "Maintenance and Repair Workers, General": "Maintenance workers",
+    "Laborers and Freight, Stock, and Material Movers, Hand": "Hand movers",
     "Interpreters and Translators": "Translators",
     "Proofreaders and Copy Markers": "Proofreaders",
     "Technical Writers": "Technical writers",
@@ -315,19 +338,24 @@ def timeline_data(runs):
     return {"dates": dates, "series": series, "today": TODAY}
 
 
-GROUP_ORDER = [("negative", "Negative controls"), ("white_collar", "Other white-collar"), ("bpo", "IT and BPO"),
-               ("pilot", "Pilot"), ("positive", "Positive controls")]
-GROUP_COL = {"negative": "#7a7268", "white_collar": "#8f68a6", "bpo": "#235fa6", "pilot": "#2f8a57", "positive": "#b0702a"}
+GROUP_ORDER = [("negative", "Negative controls"), ("general", "Rest of the economy"), ("white_collar", "Other white-collar"),
+               ("bpo", "IT and BPO"), ("pilot", "Pilot"), ("positive", "Positive controls")]
+GROUP_COL = {"negative": "#7a7268", "general": "#4fa3c7", "white_collar": "#8f68a6", "bpo": "#235fa6", "pilot": "#2f8a57",
+             "positive": "#b0702a"}
 
 
-def group_of(pilot, bpo, comp):
+def group_of(pilot, bpo, extra):
+    """extra: further runs whose occupations are in comparison_tasks.csv or more_tasks.csv (control_group column)."""
     g = {o: "pilot" for o in pilot.occs}
     if bpo:
         g.update({o: "bpo" for o in bpo.occs})
-    if comp:
-        ct = pd.read_csv(DS / "data" / "comparison_tasks.csv")
-        m = dict(zip(ct.occupation_title, ct.control_group))
-        g.update({o: m[o] for o in comp.occs})
+    m = {}
+    for f in ("comparison_tasks.csv", "more_tasks.csv"):
+        if (DS / "data" / f).exists():
+            ct = pd.read_csv(DS / "data" / f)
+            m.update(dict(zip(ct.occupation_title, ct.control_group.replace({"bpo_extra": "bpo"}))))
+    for run in extra:
+        g.update({o: m[o] for o in run.occs})
     return g
 
 
@@ -1072,7 +1100,7 @@ function figGroups(id, d) {
   });
   draw(el, traces, { hovermode: "closest", height: 60 + 19 * ys.length, margin: { l: narrow ? 128 : 150, r: 12, t: 8, b: 36 },
     showlegend: false,
-    xaxis: axis({ range: [0, 45], ticksuffix: "%", dtick: 10 }),
+    xaxis: axis({ range: [0, 60], ticksuffix: "%", dtick: 10 }),
     yaxis: axis({ type: "category", categoryarray: ys, categoryorder: "array", autorange: "reversed", ticks: "", tickfont: small(11.5) }) });
   el.dataset.narrow = narrow;
 }
@@ -1125,9 +1153,8 @@ def main():
             bpo = Run(args[1])
         else:
             print(f"BPO run {args[1]}: {p.relative_to(REPO)} not found; showing the in-progress note")
-    comp = None
-    if len(args) > 2 and (DS / "coding" / "stage2" / args[2] / "delegable" / "items.csv").exists():
-        comp = Run(args[2])
+    extra = [Run(a) for a in args[2:] if (DS / "coding" / "stage2" / a / "delegable" / "items.csv").exists()]
+    comp = extra[0] if extra else None
 
     raw = TEXT.read_text(encoding="utf-8")
     fm, body = raw[3:].split("\n---", 1)
@@ -1152,8 +1179,8 @@ def main():
             "items": items_data(pilot), "scenarios": scenarios_data(pilot), "types": types_data(pilot),
             "coverage": coverage_data(pilot), "horizons": horizons_data(pilot), "timing": timing_data()}
     gentables = {"summary": lambda: gt_summary(pilot), "match": lambda: gt_match(pilot), "items": lambda: gt_items(pilot)}
-    runs_all = [pilot] + ([bpo] if bpo else []) + ([comp] if comp else [])
-    groups = group_of(pilot, bpo, comp)
+    runs_all = [pilot] + ([bpo] if bpo else []) + extra
+    groups = group_of(pilot, bpo, extra)
     data["groups"] = groups_data(runs_all, groups)
     data["group_timeline"] = group_timeline_data(runs_all, groups)
     data["timeline"] = timeline_data([pilot] + ([bpo] if bpo else []))
@@ -1171,7 +1198,7 @@ def main():
     unused = [k for k in notes if k not in doc.order]
     assert not unused, f"unused footnotes: {unused}"
     notes_html = "".join(f'<li id="note-{k}">{doc.inl(notes[k])}</li>' for k in doc.order)
-    runs = ", ".join(f"<code>{r.name}</code>" for r in [pilot, bpo, comp] if r)
+    runs = ", ".join(f"<code>{r.name}</code>" for r in [pilot, bpo] + extra if r)
     main_html += (f'<details class="app" id="notes"><summary>All notes</summary><div><ol class="notes">{notes_html}</ol></div></details>'
                   f'<p class="footer">Built from <code>delegable_share/page_text.md</code> and the CSVs of runs {runs} by '
                   '<code>delegable_share/scripts/build_page.py</code>.</p>')

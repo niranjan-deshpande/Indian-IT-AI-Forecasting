@@ -1,0 +1,629 @@
+[
+ {
+  "task_id": "966",
+  "split_reasoning": "Managing backup, security, and user help systems involves different operational services and produces different management outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Manage the operation of backup systems, including addressing backup exceptions.",
+    "time_share": 0.3,
+    "type_reasoning": "A backup exception can be investigated and resolved as a distinct operational item.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An exception is tracked through resolution and relied on by the operations team.",
+    "work_item": "one backup exception investigated and addressed",
+    "start": "backup failure or other exception is reported",
+    "end": "corrective action is recorded or assigned and the exception is resolved or escalated",
+    "checked_by": "IT operations staff and the systems manager",
+    "overlap_reasoning": "Developing recovery resources is related but broader than managing an operational backup exception.",
+    "duplicates": [],
+    "overlaps_with": [
+     "971"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Manage security systems, including addressing security exceptions.",
+    "time_share": 0.4,
+    "type_reasoning": "A security exception produces a distinct investigation and disposition.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The exception is handled as a case rather than as an individual monitoring action.",
+    "work_item": "one security exception investigated and addressed",
+    "start": "security alert or exception is reported",
+    "end": "disposition and any corrective action are recorded or escalated",
+    "checked_by": "security staff and the systems manager",
+    "overlap_reasoning": "Security resource development is related but is not the same as managing an operational exception.",
+    "duplicates": [],
+    "overlaps_with": [
+     "971"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Manage user help operations, including resolving escalated help-service issues.",
+    "time_share": 0.3,
+    "type_reasoning": "An escalated service issue has a distinct disposition relied on by help staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The escalated issue is the operational case handed to the manager.",
+    "work_item": "one escalated user-help issue addressed",
+    "start": "help-service issue or escalation is received",
+    "end": "resolution or further escalation is communicated to help staff",
+    "checked_by": "help desk staff and the affected user",
+    "overlap_reasoning": "Escalated user problems can involve technical support, while each statement also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "15198"
+    ]
+   }
+  ],
+  "notes": "The shares and mix of operational exceptions depend on how much direct oversight the manager delegates."
+ },
+ {
+  "task_id": "967",
+  "split_reasoning": "Consulting different stakeholders serves the same activity of assessing computing needs and requirements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Consult users, management, vendors, and technicians about computing needs and system requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes consultation, whose value lies in the live exchange of information.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "These consultations can inform technology evaluations and project feasibility reviews, but those statements also cover separate evaluations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "973",
+     "979"
+    ]
+   }
+  ],
+  "notes": "A separately prepared requirements document is not specified by the target."
+ },
+ {
+  "task_id": "968",
+  "split_reasoning": "Directing daily staff operations, setting operational priorities and deadlines, and developing standards are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct staff on daily departmental operations.",
+    "time_share": 0.3,
+    "type_reasoning": "Day-to-day direction is primarily live supervision and coordination.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Daily direction can include supervision and work assignments, but those statements also cover other staffing and review work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "969",
+     "977"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze departmental workflow and set operational priorities and deadlines.",
+    "time_share": 0.4,
+    "type_reasoning": "The analysis produces an operational work plan that staff use to organize their work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan for a work period is a usable handoff to the department.",
+    "work_item": "one departmental operational work plan",
+    "start": "current workload, deadlines, and staff capacity are reviewed",
+    "end": "priorities and deadlines are set and communicated to staff",
+    "checked_by": "department staff and management",
+    "overlap_reasoning": "Operational planning can inform project coordination and individual assignments, which have their own outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "969",
+     "978"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop standards for departmental operations.",
+    "time_share": 0.3,
+    "type_reasoning": "A documented operational standard is a distinct output staff can apply.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A standard is issued and used as a whole.",
+    "work_item": "one departmental operating standard",
+    "start": "need for a new or revised standard is identified",
+    "end": "standard is finalized and communicated to staff",
+    "checked_by": "department staff and management",
+    "overlap_reasoning": "Operating standards can take the form of organizational procedures, although the other statement also covers goals and interpretation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "976"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the department's management structure."
+ },
+ {
+  "task_id": "969",
+  "split_reasoning": "Assigning work and reviewing completed work are distinct activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign work to systems analysts, programmers, and other computer-related staff.",
+    "time_share": 0.4,
+    "type_reasoning": "An assignment gives a staff member a defined piece of work to carry out.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual work assignment is the handoff to the assigned worker.",
+    "work_item": "one staff work assignment",
+    "start": "work needing assignment and staff availability are identified",
+    "end": "assignment and expectations are communicated to the worker",
+    "checked_by": "the assigned worker and the manager",
+    "overlap_reasoning": "Assignments are part of daily direction and supervision, but the other statements cover broader management activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "968",
+     "977"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review work completed by systems analysts, programmers, and other computer-related staff.",
+    "time_share": 0.6,
+    "type_reasoning": "Each review produces feedback or an acceptance decision on a submitted work product.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The submitted work product is reviewed and returned or accepted as a whole.",
+    "work_item": "one staff work product reviewed",
+    "start": "staff member submits work for review",
+    "end": "feedback or acceptance is communicated to the worker",
+    "checked_by": "the staff member and downstream users of the work",
+    "overlap_reasoning": "Reviewing systems charts and programs is a subset of reviewing staff work, while each statement also covers other review items.",
+    "duplicates": [],
+    "overlaps_with": [
+     "972",
+     "977"
+    ]
+   }
+  ],
+  "notes": "Assignments may be communicated verbally or through a work-tracking system."
+ },
+ {
+  "task_id": "970",
+  "split_reasoning": "Staying current with technology is one continuing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep current with advances in technology.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes maintaining knowledge rather than producing a specified output for others.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Technology knowledge may inform evaluations, but the target does not itself describe an evaluation deliverable.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "971",
+  "split_reasoning": "Strategic computing, security controls, and disaster recovery call for different resource plans or arrangements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop strategic computing resources and plans for the organization.",
+    "time_share": 0.4,
+    "type_reasoning": "A strategic computing plan is a distinct output used for resource decisions.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The plan is reviewed and used as a whole.",
+    "work_item": "one strategic computing resource plan",
+    "start": "organizational computing needs and objectives are identified",
+    "end": "resource plan is documented and submitted for review",
+    "checked_by": "management and IT leadership",
+    "overlap_reasoning": "Technology evaluations and recommendations can feed the resource plan, but are not necessarily the same deliverable.",
+    "duplicates": [],
+    "overlaps_with": [
+     "973"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop data security and control arrangements for information resources.",
+    "time_share": 0.3,
+    "type_reasoning": "A security and control design is a distinct output for implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The control arrangement for a defined system or scope is handed to implementers as a whole.",
+    "work_item": "one data security and control design",
+    "start": "system scope, security needs, and control requirements are identified",
+    "end": "control design is documented and handed to the responsible team",
+    "checked_by": "security staff, system owners, and management",
+    "overlap_reasoning": "Managing security systems concerns ongoing operations, whereas this part develops control arrangements.",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Develop disaster recovery arrangements for information resources.",
+    "time_share": 0.3,
+    "type_reasoning": "A disaster recovery plan is a distinct output used by recovery teams.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The plan for a defined recovery scope is reviewed and maintained as a whole.",
+    "work_item": "one disaster recovery plan",
+    "start": "recovery scope and requirements are identified",
+    "end": "plan is documented and submitted to responsible teams",
+    "checked_by": "IT operations, management, and recovery personnel",
+    "overlap_reasoning": "Backup-system management supports recovery but also covers operational work outside plan development.",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   }
+  ],
+  "notes": "Actual resource development may include additional implementation work depending on the organization."
+ },
+ {
+  "task_id": "972",
+  "split_reasoning": "Reviewing charts and programs is the same approval activity applied to different submitted system artifacts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and approve systems charts or programs before implementation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each submitted artifact receives a review and an approval or revision decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The submitted chart or program is the item accepted or returned for changes.",
+    "work_item": "one systems chart or program reviewed for implementation",
+    "start": "chart or program is submitted for approval",
+    "end": "approval or required revisions are communicated",
+    "checked_by": "the submitting staff member and implementation team",
+    "overlap_reasoning": "This is a particular kind of staff work review, while the broader review statement covers other work products.",
+    "duplicates": [],
+    "overlaps_with": [
+     "969"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "973",
+  "split_reasoning": "Evaluating technology use and needs and recommending improvements form one assessment workflow.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate organizational technology use and needs and recommend improvements.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces recommendations that management can consider.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A scoped assessment and its recommendations are handed over together.",
+    "work_item": "one technology needs assessment with recommendations",
+    "start": "technology area or organizational need is selected for assessment",
+    "end": "findings and recommended improvements are communicated to management",
+    "checked_by": "management and IT leadership",
+    "overlap_reasoning": "Consultations, strategic resource plans, and feasibility evaluations can share inputs or findings but have distinct purposes and outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "967",
+     "971",
+     "979"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "974",
+  "split_reasoning": "Preparing or revising an operational budget and controlling individual expenditures are distinct activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or revise the department's operational budget.",
+    "time_share": 0.5,
+    "type_reasoning": "A budget is a distinct financial plan reviewed by management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The budget for a planning period is submitted and reviewed as a whole.",
+    "work_item": "one operational budget or budget revision",
+    "start": "budget period or need for revision is identified",
+    "end": "budget or revision is submitted for approval",
+    "checked_by": "finance and organizational management",
+    "overlap_reasoning": "Equipment purchases consume budget but are separate procurement actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "981"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review and control departmental expenditures against the operational budget.",
+    "time_share": 0.5,
+    "type_reasoning": "An expenditure review produces a decision or disposition on a spending request.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A spending request is reviewed and decided as an individual item.",
+    "work_item": "one expenditure request reviewed",
+    "start": "spending request or expenditure is presented for review",
+    "end": "approval, rejection, or follow-up is recorded or communicated",
+    "checked_by": "requesting staff and finance",
+    "overlap_reasoning": "An equipment purchase can include expenditure approval, but purchasing also includes procurement steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "981"
+    ]
+   }
+  ],
+  "notes": "Some organizations also require periodic budget variance reports."
+ },
+ {
+  "task_id": "975",
+  "split_reasoning": "Meetings with different parties share the same purpose of securing cooperation or resolving problems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with managers, supervisors, vendors, and others to secure cooperation and resolve problems.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on live discussion and coordination rather than a specified document or decision artifact.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Some meetings may also assess computing needs, while each statement includes meetings for other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "967"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "976",
+  "split_reasoning": "Developing goals or policies and interpreting existing goals or policies are distinct activities; interpretation can occur live or in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop organizational goals, policies, or procedures.",
+    "time_share": 0.6,
+    "type_reasoning": "A goal, policy, or procedure is a documented output for organizational use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposed or revised goal, policy, or procedure is submitted as a whole.",
+    "work_item": "one organizational goal, policy, or procedure drafted or revised",
+    "start": "need for a new or revised goal, policy, or procedure is identified",
+    "end": "draft is completed and submitted for approval",
+    "checked_by": "organizational management and affected staff",
+    "overlap_reasoning": "Departmental operating standards may also be organizational procedures, but both statements cover additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "968"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interpret organizational goals, policies, or procedures for someone during a live contact.",
+    "time_share": 0.2,
+    "type_reasoning": "The guidance is provided while the person seeking it is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One interpretation request is answered within the live contact.",
+    "work_item": "one policy or procedure interpretation provided during a live contact",
+    "start": "person asks how a goal, policy, or procedure applies",
+    "end": "interpretation is explained to the person",
+    "checked_by": "the person requesting guidance",
+    "overlap_reasoning": "No other listed statement specifically covers this interpretation request.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Respond to a written request to interpret organizational goals, policies, or procedures.",
+    "time_share": 0.2,
+    "type_reasoning": "A written interpretation is a distinct response prepared outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The response to one request is sent and relied on as a whole.",
+    "work_item": "one written policy or procedure interpretation",
+    "start": "written interpretation request is received",
+    "end": "written guidance is sent to the requester",
+    "checked_by": "the requester and, for sensitive cases, management",
+    "overlap_reasoning": "No other listed statement specifically covers this written interpretation.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The relative amount of live and written interpretation depends on the organization."
+ },
+ {
+  "task_id": "977",
+  "split_reasoning": "Recruiting and hiring, training, and supervising staff are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recruit candidates and participate in hiring decisions for computer-related staff.",
+    "time_share": 0.4,
+    "type_reasoning": "Recruiting and selection for a vacancy produce a hiring recommendation or decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The selection decision for a vacancy is the handoff to the hiring process.",
+    "work_item": "one staffing selection decision or recommendation",
+    "start": "vacancy and staffing requirements are identified",
+    "end": "candidate selection or hiring recommendation is communicated",
+    "checked_by": "human resources and the approving manager",
+    "overlap_reasoning": "No other listed statement specifically covers recruiting or hiring.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train computer-related staff.",
+    "time_share": 0.25,
+    "type_reasoning": "The target describes instruction whose value lies in the live interaction with staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Training can occur during supervision, but the other statements do not specifically describe staff training.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Supervise computer-related staff.",
+    "time_share": 0.35,
+    "type_reasoning": "Supervision is primarily ongoing live direction and coaching of staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision includes daily direction and may involve assigning or reviewing work, while those statements also specify their own outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "968",
+     "969"
+    ]
+   }
+  ],
+  "notes": "Preparing training materials or formal performance records would be separate outputs if required."
+ },
+ {
+  "task_id": "978",
+  "split_reasoning": "Reviewing project plans to plan and coordinate activity is one planning workflow.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review project plans and plan and coordinate project activity.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces a coordinated schedule or activity plan for project participants.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The coordinated activity plan is the usable handoff to the project team.",
+    "work_item": "one coordinated project activity plan",
+    "start": "project plans are received for review",
+    "end": "activities, dependencies, and coordination arrangements are communicated to the project team",
+    "checked_by": "project team and project management",
+    "overlap_reasoning": "Project coordination can share priorities with daily departmental planning and draw on feasibility reviews, but those cover different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "968",
+     "979"
+    ]
+   }
+  ],
+  "notes": "Coordination may also involve meetings not represented by the plan itself."
+ },
+ {
+  "task_id": "979",
+  "split_reasoning": "Assessing feasibility and requirements are complementary parts of evaluating one proposal.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Evaluate a data processing proposal for feasibility and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The evaluation produces a distinct assessment for a proposed project.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A proposal is evaluated and its assessment communicated as a whole.",
+    "work_item": "one data processing proposal feasibility assessment",
+    "start": "proposal is submitted for evaluation",
+    "end": "feasibility findings and requirements are documented or communicated",
+    "checked_by": "project sponsor, management, and project team",
+    "overlap_reasoning": "Consultations and technology assessments can provide inputs, and project planning can follow the evaluation, but they are not identical work items.",
+    "duplicates": [],
+    "overlaps_with": [
+     "967",
+     "973",
+     "978"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "980",
+  "split_reasoning": "Preparing a report and reviewing someone else's report are different activities; operational and progress reports are alternative report subjects.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare an operational report or project progress report.",
+    "time_share": 0.6,
+    "type_reasoning": "Each report is a distinct document sent to its readers.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report for a reporting period is prepared and submitted as a whole.",
+    "work_item": "one operational or project progress report prepared",
+    "start": "reporting period or request is established and source information is gathered",
+    "end": "completed report is submitted or distributed",
+    "checked_by": "management and report recipients",
+    "overlap_reasoning": "No other statement specifically covers preparing these reports.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Review an operational report or project progress report prepared by someone else.",
+    "time_share": 0.4,
+    "type_reasoning": "Each review produces feedback or approval on a submitted report.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The submitted report is reviewed and returned or approved as a whole.",
+    "work_item": "one operational or project progress report reviewed",
+    "start": "report is received for review",
+    "end": "feedback or approval is returned to the preparer",
+    "checked_by": "report preparer and management",
+    "overlap_reasoning": "A report written by a direct report may also be a staff work product, but the broader staff review statement covers other outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "969"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "981",
+  "split_reasoning": "Purchasing equipment is one procurement activity despite the different equipment or vendors involved.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Purchase equipment needed by the department.",
+    "time_share": 1.0,
+    "type_reasoning": "Each purchase produces an order or approved procurement request relied on by purchasing and the vendor.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The order or procurement request is the normal handoff for a defined purchase.",
+    "work_item": "one equipment purchase order or procurement request",
+    "start": "equipment need and purchase requirements are identified",
+    "end": "order is placed or approved procurement request is submitted",
+    "checked_by": "purchasing, finance, and the requesting department",
+    "overlap_reasoning": "Budget control can include approving this expenditure, but purchasing also includes selecting and ordering equipment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "974"
+    ]
+   }
+  ],
+  "notes": "The precise handoff depends on whether the manager places orders directly or submits requests to purchasing."
+ },
+ {
+  "task_id": "15198",
+  "split_reasoning": "Technical support can be provided during live user contact, from a written queue afterward, or through hands-on work at equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide technical support while a user is on the phone, in chat, or present.",
+    "time_share": 0.5,
+    "type_reasoning": "The user is waiting during troubleshooting and guidance.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One reported problem is addressed within the live contact.",
+    "work_item": "one computer problem addressed during a live user contact",
+    "start": "user describes the computer problem during the contact",
+    "end": "guidance or the outcome is communicated to the user before the contact ends",
+    "checked_by": "the user and, where recorded, the support team",
+    "overlap_reasoning": "Some escalated help-service issues involve direct user support, while managing the help system also covers broader operations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate and respond to a user's computer problem from a written request or support queue.",
+    "time_share": 0.35,
+    "type_reasoning": "The support case is handled outside a live contact and produces a response or resolution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The queued support case is the unit tracked and handed back to the user.",
+    "work_item": "one queued computer support case addressed",
+    "start": "written request or support ticket is received",
+    "end": "resolution or next action is recorded and communicated",
+    "checked_by": "the user and support team",
+    "overlap_reasoning": "An escalated help-service issue may be a support case, though help-system management also covers broader service issues.",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Provide hands-on troubleshooting or repair at a user's computer or related equipment.",
+    "time_share": 0.15,
+    "type_reasoning": "This portion requires physical handling of equipment away from ordinary computer-based work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Hands-on support can arise from an escalated help-service issue, but managing help operations covers more than physical troubleshooting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "966"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how much direct technical support and equipment work the manager performs."
+ }
+]

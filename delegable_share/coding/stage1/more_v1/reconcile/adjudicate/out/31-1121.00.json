@@ -1,0 +1,8 @@
+[
+ {"task_id": "4241", "reasoning": "Transfers (bed, bath, wheelchair, car) and help with dressing and grooming are different hands-on activities, even though both are physical. Y splits them as step 1 asks for different activities and records sensible overlaps. X lumps them together.", "choice": "Y"},
+ {"task_id": "4242", "reasoning": "Emotional support and teaching patients or families practical skills are different activities with different aims. Both are live interactions, and Y codes them as separate interpersonal parts, which follows the split rule more closely than X.", "choice": "Y"},
+ {"task_id": "4245", "reasoning": "Home health aides plan meals informally while shopping and cooking to a prescribed diet. They do not produce a written meal plan that someone checks, so X's discrete meal-plan part (and its typing of shopping) overstates the written work. Y's single physical coding reflects practice better.", "choice": "Y"},
+ {"task_id": "4247", "reasoning": "Recording observations is explicitly covered by statement 4240. Y's logging part therefore double-counts that work. X codes only the hands-on measurement and points to 4240.", "choice": "X"},
+ {"task_id": "4253", "reasoning": "Massage and applying liniment, rubs or heat lamps are interchangeable hands-on treatments given in the same session for the same purpose. The 'or' lists methods, not different activities, so X's single physical part is correct.", "choice": "X"},
+ {"task_id": "18694", "reasoning": "Linen and laundry work, cleaning the home and assisting with personal care are different activities, and personal care overlaps the bathing and dressing statements. Y's split keeps these apart and records the overlaps more precisely.", "choice": "Y"}
+]

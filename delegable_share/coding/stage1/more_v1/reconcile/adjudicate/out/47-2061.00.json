@@ -1,0 +1,8 @@
+[
+  {"task_id": "11459", "reasoning": "Digging, backfilling and compacting are stages of one hands-on earthwork activity, and every part is PHYSICAL either way. Splitting adds nothing to the coding, so X's single part is preferred.", "choice": "X"},
+  {"task_id": "11463", "reasoning": "Erecting and dismantling temporary structures are the same hands-on work in reverse, both PHYSICAL, so a split has no effect on coding. Y's single part is the cleaner reading.", "choice": "Y"},
+  {"task_id": "11464", "reasoning": "Setting and stripping concrete forms is one hands-on formwork activity, PHYSICAL in either coding. X's single part is sufficient.", "choice": "X"},
+  {"task_id": "11465", "reasoning": "Cleaning, lubricating and repairing tools and machinery are all hands-on equipment upkeep classified as PHYSICAL. Splitting changes nothing downstream, so X's single part is preferred.", "choice": "X"},
+  {"task_id": "11481", "reasoning": "Razing and salvaging are done together on a demolition job and are both PHYSICAL. X's single part is sufficient and keeps the relevant overlaps.", "choice": "X"},
+  {"task_id": "19838", "reasoning": "Waste handling, setting aside reusable materials and installing erosion controls are all hands-on site work coded PHYSICAL. Y's single part covers them without a split that has no effect on coding.", "choice": "Y"}
+]

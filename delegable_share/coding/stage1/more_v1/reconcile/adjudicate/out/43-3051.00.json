@@ -1,0 +1,6 @@
+[
+  {"task_id": "2526", "reasoning": "Where paper timecards are used, handing them out and collecting them is hands-on work on the floor, away from a computer. Where timekeeping is electronic, the same step is opening and gathering submissions in the system. Y's split covers both settings, while X codes the paper version as DISCRETE.", "choice": "Y"},
+  {"task_id": "2530", "reasoning": "Y's work item, a whole campaign coordinated, is a project rather than the handover-level unit the instructions ask for. X separates the live coordination with organisers from the per-employee deduction authorisations entered into payroll, which is the right granularity.", "choice": "X"},
+  {"task_id": "18563", "reasoning": "Leave tracking is an ongoing activity that produces two kinds of item: individual leave entries as requests come in, and the accrual and balance update each pay period. Under step 3 these should be separate DISCRETE parts, as X does.", "choice": "X"},
+  {"task_id": "18564", "reasoning": "Many verifications come in as written forms or through portals, but a substantial share are phone calls from lenders or landlords, answered while the caller waits. Example D calls for X's split by where the work is done.", "choice": "X"}
+]

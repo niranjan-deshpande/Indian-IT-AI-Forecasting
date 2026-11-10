@@ -1,0 +1,51 @@
+You are the final adjudicator. Use only this file: read no other file and do not search the web.
+Two independent checkers disagree (one flagged the pair, the other did not) about whether each pair below is a duplicate under these rules:
+
+You are checking a list of work items for duplicates. All items come from
+one occupation. Each item has an ID, a type, a description, and where it
+starts and ends.
+
+Two items are DUPLICATES if a worker doing one of them has thereby done the
+other: the same inputs, the same actions, the same output, in the same
+setting (live with a waiting customer, or afterwards). If both stayed in the
+list, the same work would be counted twice.
+
+They are NOT duplicates if:
+  - one is a step that comes before or after the other (taking a complaint
+    vs. resolving it vs. recording it);
+  - they produce different outputs (a test plan vs. a test procedure
+    document), even if the same person often does both;
+  - one is done live and the other afterwards;
+  - one is a narrower case that is only a small part of the other, unless
+    the narrower item covers most of the broader one's work.
+
+Be conservative. Only list a pair when one item is clearly redundant
+given the other. Most lists have few or no duplicates.
+
+For each pair, write one sentence of reasoning first.
+
+Output JSON only:
+{"pairs": [{"reasoning": "...", "a": "<item id>", "b": "<item id>"}]}
+
+Make the final call for each pair. Write ONE JSON array of {"a","b","reasoning","duplicate": true|false} to:
+  /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1_final/dedupe/reconcile/adjudicated_35-3023.00.json
+and nothing else to that file. Then reply "done <n> pairs".
+
+=== ALL ITEMS ===
+[23099a] LIVE_SERVICE — one customer contact about an order, comment or complaint (start: customer raises the question or complaint; end: customer satisfied or issue handed to a manager) — from statement: Communicate with customers regarding orders, comments, and complaints.
+[23100a] LIVE_SERVICE — one payment taken (start: customer hands over cash or card; end: payment processed and change or receipt given) — from statement: Accept payment from customers, and make change as necessary.
+[23103a] DISCRETE — one register balanced (start: shift or handover ends and drawer is counted; end: count reconciled and recorded, difference reported) — from statement: Balance receipts and payments in cash registers.
+[23104a] LIVE_SERVICE — one customer order entered and totalled (start: customer steps up to order; end: order confirmed and total quoted) — from statement: Request and record customer orders, and compute bills, using cash registers, multi-counting machines, or pencil and paper.
+[23105a] LIVE_SERVICE — one customer order served (start: food or beverage is ready for handoff; end: order is handed to the customer) — from statement: Serve food, beverages, or desserts to customers in such settings as take-out counters of restaurants or lunchrooms, business or industrial establishments, hotel rooms, and cars.
+[23108b] DISCRETE — one food or supply replenishment order (start: stock needs are identified; end: order is submitted to the supplier or purchasing team) — from statement: Monitor and order supplies or food items, and restock as necessary to maintain inventory.
+[23110a] LIVE_SERVICE — one customer served at the counter (start: customer arrives at the counter; end: customer leaves with the order) — from statement: Serve customers in eating places that specialize in fast service and inexpensive carry-out food.
+[23114a] DISCRETE — one shortage or special-order notice to the kitchen (start: worker spots the shortage or receives the special request; end: kitchen staff acknowledge it) — from statement: Notify kitchen personnel of shortages or special orders.
+[23119a] LIVE_SERVICE — one customer order ticketed (start: customer states the order; end: ticket written and stub given) — from statement: Take customers' orders and write ordered items on tickets, giving ticket stubs to customers when needed to identify filled orders.
+[23123b] LIVE_SERVICE — one prepared customer order picked up and served (start: kitchen indicates that the order is ready; end: order is handed to the customer) — from statement: Deliver orders to kitchens, and pick up and serve food when it is ready.
+[23125a] DISCRETE — one special-diet meal plan (start: individual's dietary requirements and meal request are available; end: meal selection or preparation instructions are established) — from statement: Plan, prepare, and deliver meals to individuals with special dietary needs.
+
+=== PAIRS ===
+PAIR 23104a / 23119a
+[23104a] LIVE_SERVICE — one customer order entered and totalled (start: customer steps up to order; end: order confirmed and total quoted) — from statement: Request and record customer orders, and compute bills, using cash registers, multi-counting machines, or pencil and paper.
+[23119a] LIVE_SERVICE — one customer order ticketed (start: customer states the order; end: ticket written and stub given) — from statement: Take customers' orders and write ordered items on tickets, giving ticket stubs to customers when needed to identify filled orders.
+Original flag reasoning: Taking and entering a customer's order and writing it on a ticket are the same live act of recording what the customer orders.

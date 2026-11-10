@@ -1,0 +1,747 @@
+[
+ {
+  "task_id": "23051",
+  "split_reasoning": "Identifying, pursuing and arresting are stages of one field activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify, chase and arrest suspects of criminal acts.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on field work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23055,
+     23059,
+     23065
+    ]
+   }
+  ],
+  "notes": "Identification overlaps with investigation work in 23055."
+ },
+ {
+  "task_id": 23052,
+  "split_reasoning": "Keeping order, responding and enforcing are field work; community relations is a different, interpersonal activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain order, respond to emergencies, protect people and property, and enforce motor vehicle and criminal laws.",
+    "time_share": 0.85,
+    "type_reasoning": "Hands-on patrol and response work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23059,
+     23066,
+     23057,
+     23060
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Build good community relations through contact with residents.",
+    "time_share": 0.15,
+    "type_reasoning": "Value is in the live contact; nothing checkable is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23074,
+     23080
+    ]
+   }
+  ],
+  "notes": "Very broad umbrella statement."
+ },
+ {
+  "task_id": 23053,
+  "split_reasoning": "One activity: writing up incidents and activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a report documenting an incident or activity from the facts gathered.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report is a document that supervisors, detectives and prosecutors rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Reports are written and submitted one per incident.",
+    "work_item": "one incident report",
+    "start": "officer finishes handling the incident and has the facts",
+    "end": "report submitted and approved by supervisor",
+    "checked_by": "supervisor, and later detectives or prosecutors",
+    "duplicates": [],
+    "overlaps_with": [
+     23067,
+     23077,
+     23063
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23054,
+  "split_reasoning": "One activity: first aid at a scene.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give first aid to accident survivors and injured people.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care at the scene.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23067
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23055,
+  "split_reasoning": "Investigation is done partly on scene and partly as follow-up casework afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate illegal or suspicious activity at the scene or in the field.",
+    "time_share": 0.7,
+    "type_reasoning": "Hands-on work in the field.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23057,
+     23063,
+     23051
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Follow up a reported offense afterwards by checking records, contacting people and recording findings.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces a follow-up record that others use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Follow-ups are done case by case.",
+    "work_item": "one follow-up investigation of a reported offense",
+    "start": "case assigned or offense reported for follow-up",
+    "end": "findings recorded and case passed on or closed",
+    "checked_by": "supervisor or detective",
+    "duplicates": [],
+    "overlaps_with": [
+     23053,
+     23056
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23056,
+  "split_reasoning": "One activity: deciding whether an incident involved a crime.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review the facts of an incident and decide whether a crime or statute violation occurred.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a determination that the report and any charges rest on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each incident gets one determination.",
+    "work_item": "one incident reviewed with a determination of offense or no offense",
+    "start": "facts of the incident gathered",
+    "end": "determination recorded (offense, no offense, charge type)",
+    "checked_by": "supervisor, prosecutor",
+    "duplicates": [],
+    "overlaps_with": [
+     23062,
+     23053,
+     23067
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23057",
+  "split_reasoning": "Patrol-area observation and field investigation differ from documenting what was observed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Monitor the patrol area and investigate suspicious persons, situations, hazards, or activity in the field.",
+    "time_share": 0.7,
+    "type_reasoning": "Observation and investigation occur while officers move through and respond within the patrol area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23052",
+     "23055",
+     "23059",
+     "23060",
+     "23066"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Note and report suspicious persons, situations, hazards, or activity found in the patrol area.",
+    "time_share": 0.3,
+    "type_reasoning": "The officer produces a record or notification that others can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report about a particular observation is the item passed on, not each individual note.",
+    "work_item": "one patrol observation reported",
+    "start": "suspicious activity or a hazard is observed",
+    "end": "observation recorded or reported to the appropriate recipient",
+    "checked_by": "supervisor, dispatcher, or responding officers",
+    "duplicates": [],
+    "overlaps_with": [
+     "23053",
+     "23061"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how often patrol observations require documentation."
+ },
+ {
+  "task_id": 23058,
+  "split_reasoning": "One activity: testifying in court.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Testify in court as a witness or to present evidence in traffic and criminal cases.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live appearance; no separate document is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Testimony is relied on by the court, but it is a live performance, so coded INTERPERSONAL."
+ },
+ {
+  "task_id": 23059,
+  "split_reasoning": "Patrolling, writing citations and making arrests are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Drive or patrol an area looking for law violators.",
+    "time_share": 0.65,
+    "type_reasoning": "Hands-on driving and observation.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23066,
+     23057,
+     23060
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write and issue a citation to a violator.",
+    "time_share": 0.2,
+    "type_reasoning": "Produces a citation that the court and the driver rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One citation per violation, filed to the court.",
+    "work_item": "one citation issued",
+    "start": "violation observed and violator stopped",
+    "end": "citation issued to violator and filed",
+    "checked_by": "the court and the officer's supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     23060
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Arrest a violator.",
+    "time_share": 0.15,
+    "type_reasoning": "Hands-on custody work in the field.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23051,
+     23065
+    ]
+   }
+  ],
+  "notes": "Citations are written at the roadside with the driver waiting, but the driver is not a customer, so DISCRETE rather than LIVE_SERVICE."
+ },
+ {
+  "task_id": 23060,
+  "split_reasoning": "One activity: watching traffic.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Watch traffic to see that motorists obey the rules and drive safely.",
+    "time_share": 1.0,
+    "type_reasoning": "Field observation from the road or patrol car.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23059,
+     23052
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23061,
+  "split_reasoning": "One activity: passing a complaint or emergency request to dispatch.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Relay a complaint or emergency request to the dispatcher.",
+    "time_share": 1.0,
+    "type_reasoning": "Each relay is a message the dispatcher acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Requests are relayed one at a time by radio or phone.",
+    "work_item": "one complaint or emergency request relayed to dispatch",
+    "start": "officer receives the complaint or request",
+    "end": "dispatcher confirms receipt",
+    "checked_by": "dispatcher",
+    "duplicates": [],
+    "overlaps_with": [
+     23064,
+     23069
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23062,
+  "split_reasoning": "One activity: checking the charges against the offense.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check that the charges made against an offender are the right ones.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces confirmed or corrected charges others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Done once per arrest or offender.",
+    "work_item": "one set of charges verified for an offender",
+    "start": "arrest made or charges drafted",
+    "end": "charges confirmed or corrected on the record",
+    "checked_by": "supervisor or prosecutor",
+    "duplicates": [],
+    "overlaps_with": [
+     23056,
+     23077
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23063,
+  "split_reasoning": "Documenting the scene and interviewing people are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Photograph or sketch a crime or accident scene.",
+    "time_share": 0.5,
+    "type_reasoning": "Hands-on work at the scene.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23067,
+     23055
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Interview principals and eyewitnesses and record their statements.",
+    "time_share": 0.5,
+    "type_reasoning": "Each interview produces a statement that investigators use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Statements are taken person by person.",
+    "work_item": "one witness or principal statement taken",
+    "start": "officer begins questioning the person",
+    "end": "statement recorded",
+    "checked_by": "supervisor, detective or prosecutor",
+    "duplicates": [],
+    "overlaps_with": [
+     23053,
+     23055,
+     23067
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23064,
+  "split_reasoning": "One activity: judging what response a call needs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess the information in a complaint or emergency request to decide what response it needs.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a decision on priority and units that others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each call is assessed once.",
+    "work_item": "one call assessed for response level",
+    "start": "call information received",
+    "end": "response level and units decided",
+    "checked_by": "dispatcher or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     23061,
+     23069
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23065,
+  "split_reasoning": "Finding and arresting a warrant subject is one field activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Locate people named in arrest warrants and take them into custody.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on field work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23051
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23066,
+  "split_reasoning": "On-foot, mounted and motorized patrol are alternative means of the same activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Patrol an area and respond promptly to calls for help.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on field work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23059,
+     23057,
+     23052
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23067,
+  "split_reasoning": "Investigating at the scene and writing the crash report are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate an accident scene to find the cause and whether a crime was involved.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on work at the scene.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23063,
+     23054
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write up the accident findings in a crash report.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a report others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report per accident.",
+    "work_item": "one crash report",
+    "start": "scene work finished",
+    "end": "report submitted and approved",
+    "checked_by": "supervisor, insurers, courts",
+    "duplicates": [],
+    "overlaps_with": [
+     23053,
+     23056
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23068,
+  "split_reasoning": "One activity: directing traffic.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct traffic and reroute it during emergencies.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work in the road.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23076
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23069,
+  "split_reasoning": "One activity: calling for other units.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tell patrol units to pick up violators or give help or medical aid.",
+    "time_share": 1.0,
+    "type_reasoning": "Each call is a message the responding unit acts on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One request per radio call.",
+    "work_item": "one request for units to pick up a violator or give aid",
+    "start": "need for custody pickup or aid identified",
+    "end": "responding unit acknowledges",
+    "checked_by": "responding unit and dispatcher",
+    "duplicates": [],
+    "overlaps_with": [
+     23061,
+     23064
+    ]
+   }
+  ],
+  "notes": "Short message; may be better folded into the dispatch relay item."
+ },
+ {
+  "task_id": "23070",
+  "split_reasoning": "Handing over papers is physical; filing proof of service is separate paperwork.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Deliver court papers to the people named in them.",
+    "time_share": 0.8,
+    "type_reasoning": "Hands-on delivery in person.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23075
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete and file proof that the papers were served.",
+    "time_share": 0.2,
+    "type_reasoning": "Produces a record the court relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One return per document served.",
+    "work_item": "one return of service filed",
+    "start": "papers served or attempt made",
+    "end": "return filed with the court",
+    "checked_by": "the court",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23071,
+  "split_reasoning": "One activity: screening people at a checkpoint.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Ask people entering a secured area their business and admit or redirect them.",
+    "time_share": 1.0,
+    "type_reasoning": "The person is waiting at the checkpoint while screened.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each entrant is screened and sent on in a single contact.",
+    "work_item": "one entrant screened at a checkpoint",
+    "start": "person approaches the entry point",
+    "end": "person admitted, redirected or refused",
+    "checked_by": "facility security or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     23072
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23072,
+  "split_reasoning": "Patrolling and guarding courthouses is one physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Patrol and guard courthouses and assigned areas, keep order and arrest violators.",
+    "time_share": 1.0,
+    "type_reasoning": "On-site physical security work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23071,
+     23066
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23073,
+  "split_reasoning": "One activity: moving prisoners.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transport or escort prisoners and defendants to courts, jails, attorneys and medical facilities.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on escort and driving.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23074",
+  "split_reasoning": "One activity: telling citizens about services and options.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tell a citizen about community services and suggest options for longer-term resolution.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the citizen in front of the officer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each citizen contact is handled within one conversation.",
+    "work_item": "one citizen referred to community services during a contact",
+    "start": "citizen raises a problem or officer sees the need",
+    "end": "citizen given information and referral",
+    "checked_by": "the citizen, and the supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     23052
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23075,
+  "split_reasoning": "Finding and seizing property under a court order is one field activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Find and seize property as ordered by a court.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on field work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23070
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23076,
+  "split_reasoning": "One activity: giving directions to motorists.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give motorists road information.",
+    "time_share": 1.0,
+    "type_reasoning": "The motorist is waiting at the car window while helped.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each request is answered in one contact.",
+    "work_item": "one motorist helped with road information",
+    "start": "motorist asks for help",
+    "end": "motorist given the information",
+    "checked_by": "the motorist",
+    "duplicates": [],
+    "overlaps_with": [
+     23068
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23077,
+  "split_reasoning": "Handling the prisoner at booking is physical; preparing the booking records is separate paperwork.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process a prisoner at booking (search, fingerprint, property).",
+    "time_share": 0.5,
+    "type_reasoning": "Hands-on handling away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and keep up the booking and status records through the pre-trial process.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces records the jail and court rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One booking file per prisoner.",
+    "work_item": "one prisoner booking record",
+    "start": "prisoner brought in for booking",
+    "end": "booking record complete and filed",
+    "checked_by": "jail supervisor and the court",
+    "duplicates": [],
+    "overlaps_with": [
+     23053,
+     23062
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23078,
+  "split_reasoning": "One activity: supervising staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise officers, deputies and jail staff.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in live direction of people.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23079,
+  "split_reasoning": "One field activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a person into protective custody.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on custody work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23051,
+     23073
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 23080,
+  "split_reasoning": "One activity: teaching community sessions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run community programs on topics such as drugs and violence.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live teaching; nothing checkable is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     23052
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

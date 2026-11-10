@@ -1,0 +1,43 @@
+[
+  {"task_id": "235", "reasoning": "The target ends in a determination of which services the client needs, and that determination is written into the case file for the supervisor and case team to act on. The interviews are the way the assessment is gathered, so Y's DISCRETE assessment (first interview to written assessment) is the right unit, not just the conversation.", "choice": "Y"},
+  {"task_id": "238", "reasoning": "Counselling the student is a live INTERPERSONAL activity, while diagnosing the problem and arranging services ends in a recorded assessment and arrangements that school staff and family rely on. X's further split into live and after-contact arranging pieces is finer than the handover level; Y's two-part split is cleaner.", "choice": "Y"},
+  {"task_id": "240", "reasoning": "Y is right to make counselling INTERPERSONAL and the child-and-family interview a DISCRETE screening decision recorded in the case file, which matches the treatment of 235. But this interview is a specific parenting-problem screening that falls within 235's general intake assessment without being the same item. It should be listed as an overlap, not a duplicate, so the part is not dropped. Revised from Y accordingly.", "choice": "revised", "coding": {
+    "task_id": "240",
+    "split_reasoning": "Counseling parents is a live activity; interviewing the child and family to decide on further action is an assessment with its own output.",
+    "parts": [
+      {
+        "part_id": "a",
+        "text": "Counsel parents who have child rearing problems.",
+        "time_share": 0.6,
+        "type_reasoning": "Value lies in the live counseling session; nothing a colleague would check is produced.",
+        "type": "INTERPERSONAL",
+        "duplicates": [],
+        "overlaps_with": ["236"]
+      },
+      {
+        "part_id": "b",
+        "text": "Interview the child and family and decide whether further action is required.",
+        "time_share": 0.4,
+        "type_reasoning": "Ends in a documented decision on next steps that the case team relies on.",
+        "type": "DISCRETE",
+        "unit_reasoning": "Each family is screened and the decision is recorded as a whole.",
+        "work_item": "one family screened with a decision on further action",
+        "start": "interview of child and family begins",
+        "end": "decision on further action recorded in the case file",
+        "checked_by": "supervisor and the case team",
+        "duplicates": [],
+        "overlaps_with": ["235", "241"]
+      }
+    ],
+    "notes": "Part b is a parenting-specific case of the general intake assessment in 235; listed as overlap rather than duplicate."
+  }},
+  {"task_id": "241", "reasoning": "Writing or reviewing a service plan and later following up on services are two separate deliverables, each signed off or recorded per case. The plan is agreed with the client in a meeting, but the client is not waiting for a service transaction, so Y's four-way live/after split is finer than needed. X is cleaner.", "choice": "X"},
+  {"task_id": "243", "reasoning": "In child-welfare cases, assisting with hearings normally includes preparing a court report or petition, a written deliverable the court and agency attorney rely on, as well as the live testimony. Y splits these two activities correctly.", "choice": "Y"},
+  {"task_id": "244", "reasoning": "'Provide, find or arrange' lists alternative ways of getting the same deliverable in place: a support service for the client. Direct counselling is already covered by the counselling statements, and arranging services mostly means calling providers after the client meeting. Y's single DISCRETE part fits the instructions.", "choice": "Y"},
+  {"task_id": "245", "reasoning": "Telling a client where to go and how to apply is usually done during the client meeting while the client is present, and formal referrals are also sent to agencies afterwards. Both happen in substantial shares, so Example D calls for Y's split by where the work is done.", "choice": "Y"},
+  {"task_id": "246", "reasoning": "Arranging medical or psychiatric tests mainly means coordinating with testing providers and getting consents after the client contact. The live share is minor, so X's single DISCRETE arrangement is adequate.", "choice": "X"},
+  {"task_id": "249", "reasoning": "A foster or adoption home study combines home visits, applicant interviews and a written assessment at a desk. The instructions call for splitting work done partly away from a computer, and Y does this, keeping the written home study as the DISCRETE deliverable.", "choice": "Y"},
+  {"task_id": "250", "reasoning": "Much liaison is individual phone, email or letter contact about a case, which produces messages and logged agreements others act on; the rest is live case conferences. X's split into DISCRETE contacts and INTERPERSONAL meetings captures this better than coding everything as INTERPERSONAL.", "choice": "X"},
+  {"task_id": "254", "reasoning": "Financial-assistance eligibility usually needs verified documents and is decided and recorded after the contact; any live screening during intake is a small preliminary. X's single DISCRETE determination is the appropriate unit.", "choice": "X"},
+  {"task_id": "257", "reasoning": "Committee service, community development and lobbying are different activities joined by 'and', so the instructions call for a split even though all three parts are INTERPERSONAL. X follows the rule.", "choice": "X"}
+]

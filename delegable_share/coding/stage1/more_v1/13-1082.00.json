@@ -1,0 +1,67 @@
+[
+{"task_id":"21462","split_reasoning":"One activity: assigning work to team members, usually in conversation with an update to the plan.","parts":[
+{"part_id":"a","text":"Assign duties or responsibilities to project personnel.","time_share":1.0,"type_reasoning":"Assigning is done in live conversation, though it leaves a task list entry; the value is in the direction itself.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["21473"]}],
+"notes":"Could be DISCRETE if assignments are made through ticket systems."},
+{"task_id":"21463","split_reasoning":"One activity: gathering requirements from stakeholders, followed by writing them down; split live elicitation from documenting.","parts":[
+{"part_id":"a","text":"Meet or talk with key stakeholders to learn their requirements and objectives.","time_share":0.6,"type_reasoning":"The value is in the live conversation.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Write up the project requirements and objectives gathered from stakeholders.","time_share":0.4,"type_reasoning":"Produces a requirements document stakeholders confirm.","type":"DISCRETE","unit_reasoning":"One requirements document or summary per project or phase.","work_item":"one requirements and objectives document","start":"stakeholder conversations complete","end":"requirements confirmed by stakeholders","checked_by":"stakeholders; project sponsor","duplicates":[],"overlaps_with":["21466"]}],
+"notes":""},
+{"task_id":"21464","split_reasoning":"One activity: talking with team to find and fix problems.","parts":[
+{"part_id":"a","text":"Confer with project personnel to identify and resolve problems.","time_share":1.0,"type_reasoning":"Done in live conversations; nothing separate is produced.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["21479"]}],
+"notes":""},
+{"task_id":"21465","split_reasoning":"One activity: building a status presentation; delivering it is covered by the reporting statements.","parts":[
+{"part_id":"a","text":"Create a project status presentation for customers or the team.","time_share":1.0,"type_reasoning":"Produces a slide deck others review.","type":"DISCRETE","unit_reasoning":"One deck is prepared per status meeting.","work_item":"one status presentation deck","start":"status review meeting scheduled and data gathered","end":"deck ready and sent or presented","checked_by":"project manager or customer","duplicates":[],"overlaps_with":["21478"]}],
+"notes":"Delivery of the presentation is live and is treated as part of the meeting."},
+{"task_id":"21466","split_reasoning":"One activity: writing or revising the project plan.","parts":[
+{"part_id":"a","text":"Develop or update the project plan covering objectives, technologies, schedule, funding and staffing.","time_share":1.0,"type_reasoning":"The plan is a document the team and sponsor rely on.","type":"DISCRETE","unit_reasoning":"One plan or one plan revision is issued as a whole.","work_item":"one project plan or plan update","start":"project starts or change requires an update","end":"plan issued and approved","checked_by":"project sponsor; client","duplicates":[],"overlaps_with":["21473","21476","21467"]}],
+"notes":""},
+{"task_id":"21467","split_reasoning":"One activity: analysing objectives and schedule to list needed resources.","parts":[
+{"part_id":"a","text":"Identify the resources, staff and funding a project needs from its objectives and schedule.","time_share":1.0,"type_reasoning":"Produces a needs list that others approve and act on.","type":"DISCRETE","unit_reasoning":"One needs assessment per project or phase.","work_item":"one project needs assessment","start":"objectives and schedule reviewed","end":"needs list sent for approval","checked_by":"project sponsor or finance","duplicates":[],"overlaps_with":["21466"]}],
+"notes":""},
+{"task_id":"21468","split_reasoning":"One activity: choosing vendors or consultants for a project need.","parts":[
+{"part_id":"a","text":"Identify, review and select a vendor or consultant for a project need.","time_share":1.0,"type_reasoning":"Each selection ends in a recommended or chosen vendor.","type":"DISCRETE","unit_reasoning":"Each vendor selection runs from need to choice.","work_item":"one vendor or consultant selection","start":"need for outside provider identified","end":"vendor selected and approved","checked_by":"project sponsor; procurement","duplicates":[],"overlaps_with":["21472"]}],
+"notes":""},
+{"task_id":"21469","split_reasoning":"One activity: checking spend against budget.","parts":[
+{"part_id":"a","text":"Review costs incurred by project staff against the budget to spot budget issues.","time_share":1.0,"type_reasoning":"Each review ends in flagged issues that others act on.","type":"DISCRETE","unit_reasoning":"Cost reviews are done each period.","work_item":"one periodic cost review against budget","start":"period's cost data available","end":"budget issues flagged to manager","checked_by":"project manager; finance","duplicates":[],"overlaps_with":["21474"]}],
+"notes":""},
+{"task_id":"21470","split_reasoning":"One activity: tracking milestones and deliverables.","parts":[
+{"part_id":"a","text":"Track project milestones and deliverables and flag slippage.","time_share":1.0,"type_reasoning":"Each tracking cycle produces an updated tracker and flagged items.","type":"DISCRETE","unit_reasoning":"Tracking is done per reporting cycle.","work_item":"one milestone and deliverable tracking update","start":"reporting cycle starts","end":"tracker updated and slippage flagged","checked_by":"project manager; sponsor","duplicates":[],"overlaps_with":["21479"]}],
+"notes":""},
+{"task_id":"21471","split_reasoning":"One activity: assessing team members and feeding back; split quiet review from live feedback.","parts":[
+{"part_id":"a","text":"Give performance feedback to a project team member.","time_share":1.0,"type_reasoning":"The value is in the live feedback conversation.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"21472","split_reasoning":"One activity: negotiating terms with parties.","parts":[
+{"part_id":"a","text":"Negotiate with stakeholders or suppliers to get resources or materials.","time_share":1.0,"type_reasoning":"The value is in live negotiation.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["21468"]}],
+"notes":""},
+{"task_id":"21473","split_reasoning":"One activity: planning and coordinating activities, mostly by building and managing the schedule.","parts":[
+{"part_id":"a","text":"Plan and schedule project activities to meet deadlines.","time_share":0.6,"type_reasoning":"Produces a schedule that the team follows.","type":"DISCRETE","unit_reasoning":"One schedule or schedule revision per planning cycle.","work_item":"one project schedule or schedule revision","start":"activities to plan identified","end":"schedule issued to team","checked_by":"project manager; team","duplicates":[],"overlaps_with":["21466","21462"]},
+{"part_id":"b","text":"Coordinate project activities day to day with team members.","time_share":0.4,"type_reasoning":"Live coordination.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":["21464"]}],
+"notes":""},
+{"task_id":"21474","split_reasoning":"Joins three reports, budget estimates, progress reports and cost tracking reports; these are different documents.","parts":[
+{"part_id":"a","text":"Prepare and submit a budget estimate.","time_share":0.3,"type_reasoning":"Estimate document is reviewed and approved.","type":"DISCRETE","unit_reasoning":"One estimate per project or change.","work_item":"one budget estimate","start":"scope known","end":"estimate submitted","checked_by":"finance; sponsor","duplicates":[],"overlaps_with":["21469"]},
+{"part_id":"b","text":"Prepare and submit a progress report.","time_share":0.4,"type_reasoning":"Report is read by managers.","type":"DISCRETE","unit_reasoning":"One report per period.","work_item":"one progress report","start":"reporting period ends","end":"report submitted","checked_by":"project manager; client","duplicates":["21478"],"overlaps_with":["21478"]},
+{"part_id":"c","text":"Prepare and submit a cost tracking report.","time_share":0.3,"type_reasoning":"Report is read by finance and sponsor.","type":"DISCRETE","unit_reasoning":"One report per period.","work_item":"one cost tracking report","start":"period's costs compiled","end":"report submitted","checked_by":"finance; sponsor","duplicates":[],"overlaps_with":["21469"]}],
+"notes":"Progress report overlaps heavily with 21478."},
+{"task_id":"21475","split_reasoning":"One activity: producing and sending project documents.","parts":[
+{"part_id":"a","text":"Produce and distribute a project document.","time_share":1.0,"type_reasoning":"Each document is handed to the team or client.","type":"DISCRETE","unit_reasoning":"Documents are produced and sent one at a time.","work_item":"one project document produced and distributed","start":"document need arises","end":"document sent to recipients","checked_by":"project manager; recipients","duplicates":[],"overlaps_with":["21466"]}],
+"notes":"Statement is very generic."},
+{"task_id":"21476","split_reasoning":"One activity: handling changes, proposing, reviewing or approving, each ending in a decision on a change request.","parts":[
+{"part_id":"a","text":"Propose, review or approve a modification to the project plan.","time_share":1.0,"type_reasoning":"Each change request ends in a decision recorded.","type":"DISCRETE","unit_reasoning":"Change requests are handled one at a time.","work_item":"one plan change request handled","start":"change proposed or received","end":"change approved or rejected and plan updated","checked_by":"sponsor; change board","duplicates":[],"overlaps_with":["21466"]}],
+"notes":""},
+{"task_id":"21477","split_reasoning":"One activity: filling a staffing need.","parts":[
+{"part_id":"a","text":"Recruit and hire a project team member.","time_share":1.0,"type_reasoning":"Each hire ends in an offer and a staffed role.","type":"DISCRETE","unit_reasoning":"Each position is filled individually.","work_item":"one project hire","start":"position approved","end":"person hired","checked_by":"HR; sponsor","duplicates":[],"overlaps_with":[]}],
+"notes":"Interviews are live; treated within the hiring unit."},
+{"task_id":"21478","split_reasoning":"One activity: reporting status to managers, as a report or briefing.","parts":[
+{"part_id":"a","text":"Report project status such as budget, resources, technical issues and customer satisfaction to managers.","time_share":1.0,"type_reasoning":"Each report is relied on by managers.","type":"DISCRETE","unit_reasoning":"Status is reported per cycle as one report.","work_item":"one project status report to management","start":"reporting cycle starts","end":"report delivered to managers","checked_by":"managers","duplicates":["21474"],"overlaps_with":["21465","21474"]}],
+"notes":""},
+{"task_id":"21479","split_reasoning":"One activity: asking for and checking updates.","parts":[
+{"part_id":"a","text":"Ask team members for updates and review them to confirm deadlines will be met.","time_share":1.0,"type_reasoning":"Each cycle produces a checked status that others rely on.","type":"DISCRETE","unit_reasoning":"Updates are collected per cycle.","work_item":"one round of project updates requested and reviewed","start":"update requested","end":"updates reviewed and risks flagged","checked_by":"project manager","duplicates":["21470"],"overlaps_with":["21470"]}],
+"notes":""},
+{"task_id":"21480","split_reasoning":"Joins scheduling meetings (a small deliverable) with facilitating them (live).","parts":[
+{"part_id":"a","text":"Schedule a project meeting.","time_share":0.2,"type_reasoning":"Produces an invitation attendees rely on.","type":"DISCRETE","unit_reasoning":"One invite per meeting.","work_item":"one meeting scheduled and invitation sent","start":"meeting need identified","end":"invitation sent","checked_by":"attendees","duplicates":[],"overlaps_with":[]},
+{"part_id":"b","text":"Facilitate a project meeting.","time_share":0.8,"type_reasoning":"Value is in the live meeting.","type":"INTERPERSONAL","duplicates":[],"overlaps_with":[]}],
+"notes":""},
+{"task_id":"21481","split_reasoning":"One activity: delivering finished work to the client after quality checks.","parts":[
+{"part_id":"a","text":"Check a deliverable meets quality standards and submit it to the client.","time_share":1.0,"type_reasoning":"Each deliverable is handed to the client who accepts it.","type":"DISCRETE","unit_reasoning":"Deliverables are submitted as a whole one at a time.","work_item":"one project deliverable checked and submitted","start":"deliverable completed by team","end":"client receives it","checked_by":"client","duplicates":[],"overlaps_with":["21470"]}],
+"notes":""}
+]

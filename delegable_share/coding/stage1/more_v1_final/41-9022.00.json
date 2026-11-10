@@ -1,0 +1,921 @@
+[
+ {
+  "task_id": "2440",
+  "split_reasoning": "One activity, presenting offers to a seller, whether in person or by call.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present purchase offers to sellers and relay their response.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live presentation and discussion with the seller; the offer document itself is prepared elsewhere.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2445,
+     2443
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2441",
+  "split_reasoning": "Conferring with escrow, lenders, inspectors and pest operators are different parties for one purpose, getting conditions met; one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with escrow, lender, inspector and pest control contacts so purchase conditions are met before closing.",
+    "time_share": 1.0,
+    "type_reasoning": "Done by calls and emails after the contract is signed, producing confirmed conditions the parties rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each purchase transaction is followed through its contingencies as one piece of work.",
+    "work_item": "one purchase transaction's pre-closing conditions tracked to completion",
+    "start": "purchase agreement accepted",
+    "end": "all conditions confirmed met and closing cleared",
+    "checked_by": "broker; buyer and seller; escrow",
+    "duplicates": [],
+    "overlaps_with": [
+     2444,
+     2451
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2442,
+  "split_reasoning": "One activity, a needs interview with a client.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a client to find out what kind of property they want.",
+    "time_share": 1.0,
+    "type_reasoning": "A live conversation with the client present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each client intake is one conversation that ends with agreed search criteria.",
+    "work_item": "one client needs interview",
+    "start": "client begins the consultation",
+    "end": "search criteria agreed and noted",
+    "checked_by": "the client",
+    "duplicates": [],
+    "overlaps_with": [
+     2449
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2443,
+  "split_reasoning": "Representation contracts, purchase agreements, closing statements, deeds and leases are all documents prepared from forms for a transaction; one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare transaction documents such as representation contracts, purchase agreements, closing statements, deeds and leases.",
+    "time_share": 1.0,
+    "type_reasoning": "Each document set is a written deliverable others sign and rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are prepared per transaction and sent for signature as a set.",
+    "work_item": "one document set for a transaction (contract, agreement or lease)",
+    "start": "deal terms agreed",
+    "end": "documents sent to parties for signature",
+    "checked_by": "broker; clients; escrow or attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     2444,
+     2470
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2444,
+  "split_reasoning": "Arranging the closing beforehand is back-office coordination, while overseeing the signing is a live meeting.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate the closing: confirm documents, funds and parties are ready.",
+    "time_share": 0.6,
+    "type_reasoning": "Done by calls and messages with no client present.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each closing is prepared as one package.",
+    "work_item": "one closing coordinated to readiness",
+    "start": "closing date set",
+    "end": "documents and funds confirmed ready for signing",
+    "checked_by": "escrow or title company; broker; clients",
+    "duplicates": [],
+    "overlaps_with": [
+     2441,
+     2443
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Oversee the signing of documents at closing.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in being at the table with the parties; nothing separate is produced.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Agents do not usually disburse funds; escrow does."
+ },
+ {
+  "task_id": 2445,
+  "split_reasoning": "One activity, negotiating between parties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Act as go-between in negotiations between a buyer and a seller, representing one side.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live negotiation.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2440,
+     2457
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2446",
+  "split_reasoning": "Advertising and listing on the MLS is desk marketing, while open houses are hosted live with walk-in visitors.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Market a property with advertisements and a multiple listing service entry.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces ads and listing entries that go live for the public.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each property is marketed as a package.",
+    "work_item": "one property's marketing package (ads and MLS entry)",
+    "start": "listing agreement signed",
+    "end": "ads published and MLS entry live",
+    "checked_by": "seller; broker",
+    "duplicates": [],
+    "overlaps_with": [
+     2462
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Host an open house for a listed property.",
+    "time_share": 0.4,
+    "type_reasoning": "Visitors are present and served live.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each open house is a single event with its own visitors.",
+    "work_item": "one open house hosted",
+    "start": "open house opens to visitors",
+    "end": "open house closes and visitor sign-ins collected",
+    "checked_by": "seller; broker",
+    "duplicates": [],
+    "overlaps_with": [
+     2450
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2447,
+  "split_reasoning": "One activity, comparing recent sales to set a price.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare a property with recently sold similar properties to determine its competitive market price.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a comparative analysis the client relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One analysis per property is handed to the client.",
+    "work_item": "one comparative market analysis",
+    "start": "property to price identified",
+    "end": "analysis and suggested price given to client",
+    "checked_by": "seller or buyer; broker",
+    "duplicates": [],
+    "overlaps_with": [
+     2467,
+     2458
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2448",
+  "split_reasoning": "One activity, setting up showings with the parties; mix of calls and texts, no clear live share.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up appointments to show homes to prospective buyers.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a confirmed appointment others rely on, arranged by messages and calls.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each showing is arranged and confirmed separately.",
+    "work_item": "one showing appointment arranged",
+    "start": "buyer asks to see a property",
+    "end": "time confirmed with buyer and listing side",
+    "checked_by": "the buyer; listing agent or seller",
+    "duplicates": [],
+    "overlaps_with": [
+     2450,
+     2457
+    ]
+   }
+  ],
+  "notes": "Some booking happens live by phone; not split."
+ },
+ {
+  "task_id": 2449,
+  "split_reasoning": "One activity, matching listings to buyer needs and budget.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Generate lists of properties matching a buyer's needs and finances.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a shortlist the buyer reviews.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One shortlist is sent per buyer search update.",
+    "work_item": "one property shortlist for a buyer",
+    "start": "buyer criteria and budget known",
+    "end": "shortlist sent to buyer",
+    "checked_by": "the buyer",
+    "duplicates": [],
+    "overlaps_with": [
+     2442,
+     2450
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2450",
+  "split_reasoning": "Showing properties and explaining their features are components of the same live presentation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Show a property to a client and explain its features.",
+    "time_share": 1.0,
+    "type_reasoning": "The agent presents the property and responds to the client during a live visit.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One property showing is a distinct client-facing service.",
+    "work_item": "one property shown to a client",
+    "start": "client arrives for the property viewing",
+    "end": "viewing and explanation of features are completed",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "2446",
+     "2448",
+     "2455"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2451,
+  "split_reasoning": "One activity, ordering and reviewing a title search.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange a title search to confirm a client's property title is clear.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an ordered search and result others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each transaction needs one title search.",
+    "work_item": "one title search ordered and result reviewed",
+    "start": "property under contract",
+    "end": "title result received and shared with parties",
+    "checked_by": "escrow or title company; buyer; lender",
+    "duplicates": [],
+    "overlaps_with": [
+     2441
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2452",
+  "split_reasoning": "Reviewing plans and recommending options are components of one client consultation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review new construction plans with a client and recommend options and features.",
+    "time_share": 1.0,
+    "type_reasoning": "The review and recommendations are provided during a live client interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One plan review consultation is a distinct service to the client.",
+    "work_item": "one new-construction plan review with a client",
+    "start": "client and agent begin reviewing the plans",
+    "end": "available options and recommendations have been discussed",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "2453",
+     "2458"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2453",
+  "split_reasoning": "Questions come live (phone, in person) and in writing (email, text) in substantial shares.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a client's questions about construction, financing, maintenance, repairs or appraisals while they are on the call or in person.",
+    "time_share": 0.4,
+    "type_reasoning": "The client waits for the answer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered within one contact.",
+    "work_item": "one client question answered live",
+    "start": "client asks question",
+    "end": "client has the answer",
+    "checked_by": "the client",
+    "duplicates": [],
+    "overlaps_with": [
+     2458
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a client's emailed or texted questions on the same topics.",
+    "time_share": 0.6,
+    "type_reasoning": "Done from written messages with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each message gets one written reply.",
+    "work_item": "one written client question answered",
+    "start": "message received",
+    "end": "reply sent",
+    "checked_by": "the client",
+    "duplicates": [],
+    "overlaps_with": [
+     2458
+    ]
+   }
+  ],
+  "notes": "Live share is a guess."
+ },
+ {
+  "task_id": 2454,
+  "split_reasoning": "Walking the premises is hands-on, while arranging repairs or notifying owners is desk work afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect the condition of premises.",
+    "time_share": 0.6,
+    "type_reasoning": "Hands-on site visit.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2464
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Arrange maintenance or notify owners of needed maintenance.",
+    "time_share": 0.4,
+    "type_reasoning": "Done by calls and messages after the visit.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each maintenance need becomes one request or notice.",
+    "work_item": "one maintenance request or owner notice",
+    "start": "inspection finds a maintenance need",
+    "end": "work arranged or owner notified",
+    "checked_by": "owner; contractor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2455",
+  "split_reasoning": "Accompanying and advising a buyer during a property visit are parts of the same live service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accompany a buyer on a property visit or inspection and advise on suitability and value.",
+    "time_share": 1.0,
+    "type_reasoning": "Advice is provided to the buyer during the live visit.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One accompanied property visit is a distinct client-facing service.",
+    "work_item": "one buyer accompanied on a property visit",
+    "start": "buyer and agent begin the visit or inspection",
+    "end": "visit and advice about the property are completed",
+    "checked_by": "buyer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2448",
+     "2450",
+     "2446",
+     "2458"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2456",
+  "split_reasoning": "Advice on presentation can be given live at the property or sent afterward as written recommendations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a seller live on making a home more appealing.",
+    "time_share": 0.7,
+    "type_reasoning": "The seller receives and discusses the recommendations during a live interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One consultation addresses the seller's presentation of a particular home.",
+    "work_item": "one live home-presentation consultation",
+    "start": "agent and seller begin discussing the home's presentation",
+    "end": "recommendations explained to the seller",
+    "checked_by": "seller",
+    "duplicates": [],
+    "overlaps_with": [
+     "2458"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a seller written recommendations for making a home more appealing.",
+    "time_share": 0.3,
+    "type_reasoning": "The recommendations are assembled and sent outside the live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of recommendations for one home is handed over together.",
+    "work_item": "one written home-presentation recommendation",
+    "start": "home's condition and seller's needs reviewed",
+    "end": "recommendations sent to the seller",
+    "checked_by": "seller",
+    "duplicates": [],
+    "overlaps_with": [
+     "2458"
+    ]
+   }
+  ],
+  "notes": "Written recommendations may be a follow-up to a live visit; shares vary."
+ },
+ {
+  "task_id": "2457",
+  "split_reasoning": "One activity, setting up meetings between parties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange meetings between buyers and sellers to settle transaction details.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a confirmed meeting others attend.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each meeting is arranged separately.",
+    "work_item": "one buyer-seller meeting arranged",
+    "start": "details needing discussion identified",
+    "end": "meeting time and place confirmed with both sides",
+    "checked_by": "buyer; seller",
+    "duplicates": [],
+    "overlaps_with": [
+     2445,
+     2448
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2458",
+  "split_reasoning": "Client advice is provided both in live consultations and in written responses or summaries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a client live about market conditions and transaction matters.",
+    "time_share": 0.7,
+    "type_reasoning": "The client receives advice during a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One consultation addresses the client's current questions or decisions.",
+    "work_item": "one live client advisory consultation",
+    "start": "client raises a market or transaction matter",
+    "end": "advice explained and discussed with the client",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "2447",
+     "2452",
+     "2453",
+     "2455",
+     "2456",
+     "2459"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a client written advice about market conditions and transaction matters.",
+    "time_share": 0.3,
+    "type_reasoning": "A written response or summary is prepared outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The written advice addressing a client's matter is sent as a whole.",
+    "work_item": "one written client advisory response",
+    "start": "client's question or need for advice identified",
+    "end": "written advice sent to the client",
+    "checked_by": "client",
+    "duplicates": [],
+    "overlaps_with": [
+     "2447",
+     "2453",
+     "2456",
+     "2459"
+    ]
+   }
+  ],
+  "notes": "Some legal or financing matters may require referral to a qualified specialist."
+ },
+ {
+  "task_id": 2459,
+  "split_reasoning": "One activity, comparing loan options for a client.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare mortgage options to help a client get financing at the best rates and terms.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a comparison the client relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One comparison per client financing need.",
+    "work_item": "one mortgage options comparison for a client",
+    "start": "client financing need known",
+    "end": "options and recommendation given to client",
+    "checked_by": "the client; lender",
+    "duplicates": [],
+    "overlaps_with": [
+     2469,
+     2458
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2460",
+  "split_reasoning": "Reading and attending meetings are all ways of keeping current; one activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read listings and trade literature and attend conventions, seminars and association meetings to stay informed about the market.",
+    "time_share": 1.0,
+    "type_reasoning": "Keeps the agent current; nothing is produced that anyone relies on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2461,
+  "split_reasoning": "One activity, checking a client's finances and credit for eligibility.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a client's financial and credit status to judge eligibility for financing.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an eligibility assessment others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One assessment per buyer.",
+    "work_item": "one buyer financial eligibility review",
+    "start": "buyer provides financial information",
+    "end": "eligibility assessment given or pre-approval requested",
+    "checked_by": "the lender; the buyer",
+    "duplicates": [],
+    "overlaps_with": [
+     2459
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2462,
+  "split_reasoning": "Written outreach and live calls or visits to owners are different in kind.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Send mailings or emails advertising services to property owners to solicit listings.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces outreach sent in batches.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Outreach goes out in campaigns.",
+    "work_item": "one solicitation mailing or email batch",
+    "start": "target owner list assembled",
+    "end": "campaign sent",
+    "checked_by": "broker",
+    "duplicates": [],
+    "overlaps_with": [
+     2446
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Phone or visit property owners to persuade them to list.",
+    "time_share": 0.6,
+    "type_reasoning": "The value is in the live persuasion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     21155
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2463,
+  "split_reasoning": "One activity, building referral relationships.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Build a network of attorneys, mortgage lenders and contractors to refer clients to.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the relationships built in person.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     21155
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2464,
+  "split_reasoning": "One activity, a pre-showing site visit.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Visit properties to assess them before showing them.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on site visit.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2454
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2465,
+  "split_reasoning": "One activity, arranging hookups with utilities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact utility companies to arrange service hookups at a client's property.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an arranged service start the client relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each property needs a set of utility requests.",
+    "work_item": "one property's utility hookups arranged",
+    "start": "client needs services at the property",
+    "end": "hookup dates confirmed",
+    "checked_by": "the client",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2466,
+  "split_reasoning": "One activity, leading seminars for agents.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Lead seminars and training sessions for sales agents.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live teaching.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2467",
+  "split_reasoning": "Appraisal normally combines an on-site property inspection with separate valuation and reporting work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect a property for a loan-value appraisal.",
+    "time_share": 0.35,
+    "type_reasoning": "The inspection requires examining the property in person.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "2464",
+     "2471"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Analyze property and market information and report an appraisal for lending.",
+    "time_share": 0.65,
+    "type_reasoning": "The analysis produces a valuation report for the lending decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One appraisal for one property is the report submitted to the requesting party.",
+    "work_item": "one property loan-value appraisal",
+    "start": "appraisal assignment and property information received",
+    "end": "valuation report completed and submitted",
+    "checked_by": "lender and appraisal reviewer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2447",
+     "2471"
+    ]
+   }
+  ],
+  "notes": "Formal lending appraisals generally require a licensed or certified appraiser; requirements vary by jurisdiction."
+ },
+ {
+  "task_id": "2468",
+  "split_reasoning": "Soliciting listings is a live outreach activity, while compiling them is desk work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact landlords to solicit rental listings.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the live outreach.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2462
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compile available rental listings.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a listing others use to find rentals.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One listing is compiled per rental property.",
+    "work_item": "one rental listing compiled",
+    "start": "landlord provides property details",
+    "end": "listing published or added to list",
+    "checked_by": "landlord; broker",
+    "duplicates": [],
+    "overlaps_with": [
+     2470
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 2469,
+  "split_reasoning": "One activity, obtaining a loan for a client.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Secure construction or purchase financing for a client through own firm or a mortgage company.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a financing application the lender decides on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One application per client financing need.",
+    "work_item": "one financing application submitted and followed to a decision",
+    "start": "client chooses a financing option",
+    "end": "financing approved or declined",
+    "checked_by": "lender; the client",
+    "duplicates": [],
+    "overlaps_with": [
+     2459,
+     2461
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2470",
+  "split_reasoning": "Leasing property encompasses distinct listing, client-showing, screening, and lease-preparation work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "List and market a property available for rent.",
+    "time_share": 0.2,
+    "type_reasoning": "A rental listing is a discrete promotional record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One property's rental listing is published as a whole.",
+    "work_item": "one rental property listing",
+    "start": "owner provides property and rental terms",
+    "end": "rental listing published",
+    "checked_by": "owner, broker, and prospective tenants",
+    "duplicates": [],
+    "overlaps_with": [
+     "2446",
+     "2468"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Show a rental property to a prospective tenant.",
+    "time_share": 0.3,
+    "type_reasoning": "The agent presents the property during a live interaction with the prospective tenant.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One rental showing is a distinct client-facing service.",
+    "work_item": "one rental property showing",
+    "start": "prospective tenant arrives for the showing",
+    "end": "viewing and questions are completed",
+    "checked_by": "prospective tenant and property owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "2446",
+     "2450",
+     "2455"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Process a prospective tenant's rental application for the owner.",
+    "time_share": 0.25,
+    "type_reasoning": "The application is reviewed and forwarded with relevant screening information.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One applicant's submission is the case considered by the owner.",
+    "work_item": "one rental application processed",
+    "start": "application and required information received",
+    "end": "application and screening findings forwarded for decision",
+    "checked_by": "property owner or property manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "d",
+    "text": "Prepare a lease for an accepted tenant and property owner.",
+    "time_share": 0.25,
+    "type_reasoning": "The prepared lease is a distinct document sent for execution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One lease agreement is reviewed and signed as a whole.",
+    "work_item": "one rental lease prepared",
+    "start": "tenant accepted and lease terms agreed",
+    "end": "lease sent to the parties for review and signature",
+    "checked_by": "tenant, owner, and broker",
+    "duplicates": [],
+    "overlaps_with": [
+     "2443"
+    ]
+   }
+  ],
+  "notes": "Leasing duties and shares vary by market; screening and document preparation are subject to local rules."
+ },
+ {
+  "task_id": 2471,
+  "split_reasoning": "Visiting land is hands-on, while evaluating its market is desk analysis.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Visit undeveloped areas to locate building sites.",
+    "time_share": 0.3,
+    "type_reasoning": "Hands-on site visit.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Appraise undeveloped land as building sites from local market conditions.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces an evaluation the client relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One evaluation per site.",
+    "work_item": "one site evaluation",
+    "start": "site identified",
+    "end": "evaluation delivered to client",
+    "checked_by": "client or developer",
+    "duplicates": [],
+    "overlaps_with": [
+     2467
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 21155,
+  "split_reasoning": "One activity, calls and notes to past clients for referrals.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact previous clients to seek referral business.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in maintaining the relationship through contact.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     2463,
+     2462
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

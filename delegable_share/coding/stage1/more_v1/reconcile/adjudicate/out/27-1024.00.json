@@ -1,0 +1,9 @@
+[
+{"task_id": "302", "reasoning": "Manual paste-up is essentially obsolete; today assembling and marking up the final layout for the printer is the same work as preparing digital print files (23970). X codes it as one print-ready package and flags the duplicate, rather than inventing a small physical part.", "choice": "X"},
+{"task_id": "303", "reasoning": "A data chart or graph and a drawn illustration are very different kinds of item, with different inputs and very different effort per piece. Y's split follows step 1, while X lumps them.", "choice": "Y"},
+{"task_id": "306", "reasoning": "A logo, a product illustration and a website page design differ greatly in brief, process and size, as X's own note concedes. Y splits them into separate items, which step 1 asks for when items are very different in kind.", "choice": "Y"},
+{"task_id": "309", "reasoning": "Studying reference images is preparatory thinking whose result appears in the concepts and layouts coded under other statements (299). No separate plan is normally handed over or checked, so NO_DELIVERABLE fits better than Y's thin 'presentation plan'.", "choice": "X"},
+{"task_id": "312", "reasoning": "Photographing a layout with a camera and making prints is hands-on work away from the computer. Under the instructions that makes it PHYSICAL, as Y codes it.", "choice": "Y"},
+{"task_id": "313", "reasoning": "Still news graphics such as lower thirds and maps are quick, while animated sequences take far more production work, so they are very different kinds of item. Y's split follows step 1 and keeps each item checkable by the producer.", "choice": "Y"},
+{"task_id": "23972", "reasoning": "For a graphic designer, writing or editing copy produces the same deliverable, final copy for a design job, whether starting from blank or from a client's draft. The difference is in the inputs, not the activity, so one part is enough.", "choice": "Y"}
+]

@@ -1,0 +1,394 @@
+[
+ {
+  "task_id": "21823",
+  "split_reasoning": "One activity: running analyses on large datasets with statistical software; the software and dataset vary but the deliverable is the same.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run an analysis on a large dataset using statistical software and summarise the results.",
+    "time_share": 1.0,
+    "type_reasoning": "Each analysis ends in results that a requester or colleague reads and relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Analyses are requested or scoped one question at a time and handed over with their results, not step by step.",
+    "work_item": "one analysis of a dataset answering a defined question",
+    "start": "question and data access in hand",
+    "end": "results (tables, numbers, short summary) delivered to the requester",
+    "checked_by": "requesting manager or stakeholder; reviewing colleague",
+    "duplicates": [],
+    "overlaps_with": [
+     "21826",
+     "21832",
+     "21838"
+    ]
+   }
+  ],
+  "notes": "Data processing here overlaps heavily with cleaning (21826) and code writing (21838)."
+ },
+ {
+  "task_id": "21824",
+  "split_reasoning": "One activity: choosing which input variables go into a predictive model, using selection algorithms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Run feature selection for a predictive model and settle the set of variables to keep.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a chosen feature set that the rest of the modelling relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Feature selection is done once per model and handed to the modelling step or reviewer as a whole.",
+    "work_item": "one model's feature set selected and documented",
+    "start": "candidate variables and outcome defined",
+    "end": "final feature list with brief justification recorded",
+    "checked_by": "modelling peer or model reviewer; downstream modelling step",
+    "duplicates": [],
+    "overlaps_with": [
+     "21827",
+     "21837"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21825",
+  "split_reasoning": "One activity: deciding who to survey, by sampling or by full enumeration; the two are alternative methods for the same deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a sampling plan, or decide on full enumeration, to determine which groups are surveyed.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a sampling design that the survey team uses.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A sampling plan is made per study and handed over whole.",
+    "work_item": "one sampling plan for a survey or study",
+    "start": "study population and objectives defined",
+    "end": "sampling plan (frame, method, sample size) approved or handed to fieldwork",
+    "checked_by": "research lead or survey manager; fieldwork team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21830"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21826",
+  "split_reasoning": "One activity: preparing raw data for use; cleaning and reshaping are steps of the same deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and reshape a raw dataset with statistical software so it is ready for analysis.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an analysis-ready dataset that the analyst or colleagues rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each dataset is cleaned and handed on as a whole.",
+    "work_item": "one raw dataset cleaned into an analysis-ready dataset",
+    "start": "raw data received",
+    "end": "clean dataset and cleaning notes handed to the analysis step",
+    "checked_by": "analyst or colleague using the data",
+    "duplicates": [],
+    "overlaps_with": [
+     "21823"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21827",
+  "split_reasoning": "One activity: comparing candidate models on performance metrics.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare candidate models using statistical performance metrics and pick the best.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a model comparison and choice that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A comparison is run per modelling problem and the result is reported as a whole.",
+    "work_item": "one model comparison with a recommended model",
+    "start": "candidate models trained",
+    "end": "comparison table and chosen model reported",
+    "checked_by": "modelling peer, reviewer or manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21837",
+     "21824"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21828",
+  "split_reasoning": "One activity: making visual outputs of analysis results; charts and dashboards differ in size but are the same kind of deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Create a chart, graph or dashboard to convey analysis results using specialised software.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a visual that readers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Visuals are produced and shared as finished pieces, one chart or dashboard at a time.",
+    "work_item": "one chart or dashboard",
+    "start": "results to be shown identified",
+    "end": "visual finished and shared in a report or deck",
+    "checked_by": "requesting manager or the report's audience",
+    "duplicates": [],
+    "overlaps_with": [
+     "21829"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21829",
+  "split_reasoning": "Two activities joined by 'oral or written': presenting live to an audience, and writing up results.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present results of modelling and analysis orally to management or end users.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the live presentation and discussion; nothing separate is checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21836"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write up the results of modelling and analysis as a report or slide deck for management or end users.",
+    "time_share": 0.6,
+    "type_reasoning": "Produces a written document that readers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report or deck is handed over whole.",
+    "work_item": "one results report or slide deck",
+    "start": "analysis results ready to communicate",
+    "end": "report or deck delivered to management or end users",
+    "checked_by": "manager; end users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21828",
+     "21836"
+    ]
+   }
+  ],
+  "notes": "Time shares are a judgment."
+ },
+ {
+  "task_id": "21830",
+  "split_reasoning": "One activity: designing a data collection instrument; survey, poll or other instrument are alternative forms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design a survey, poll or other data collection instrument.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an instrument that fieldwork and respondents use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each instrument is drafted, reviewed and signed off as a whole.",
+    "work_item": "one survey or data collection instrument",
+    "start": "information needs defined",
+    "end": "final instrument approved for fielding",
+    "checked_by": "research lead or client; fieldwork team",
+    "duplicates": [],
+    "overlaps_with": [
+     "21825"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21831",
+  "split_reasoning": "Two activities: discussing needs with stakeholders, and writing down a problem definition afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet stakeholders to understand their goals and where data analysis could help.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in the live conversation; nothing separate is checked.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "21836"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Write down a business problem or analytic objective that data analysis can address.",
+    "time_share": 0.5,
+    "type_reasoning": "Produces a problem statement the project is built on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each problem is scoped and agreed once, as a short document or ticket.",
+    "work_item": "one problem definition or project scope",
+    "start": "stakeholder need discussed",
+    "end": "problem statement agreed with the stakeholder",
+    "checked_by": "stakeholder; manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21833"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how formal scoping is."
+ },
+ {
+  "task_id": "21832",
+  "split_reasoning": "One activity: exploring data for relationships, trends and confounding factors.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explore data to find relationships, trends and factors that could affect research results, and report them.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in findings colleagues use to shape the research.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An exploration is done per research question and reported as a whole.",
+    "work_item": "one exploratory analysis with findings noted",
+    "start": "research question and dataset in hand",
+    "end": "findings on relationships and risks written up",
+    "checked_by": "research lead; colleagues relying on findings",
+    "duplicates": [],
+    "overlaps_with": [
+     "21823"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21833",
+  "split_reasoning": "One activity: turning analysis results into solutions for a business problem; budgeting, staffing, marketing are examples.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use analysis results to work out solutions to a business problem such as a budget, staffing or marketing decision.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a set of options that decision makers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Solutions are developed per business problem and handed over whole.",
+    "work_item": "one set of solution options for a business problem",
+    "start": "analysis results available",
+    "end": "solution options written up and passed to the decision maker",
+    "checked_by": "manager or business owner",
+    "duplicates": [],
+    "overlaps_with": [
+     "21836",
+     "21831"
+    ]
+   }
+  ],
+  "notes": "Close to 21836; kept as overlap since this one is working out solutions and 21836 is communicating them."
+ },
+ {
+  "task_id": "21834",
+  "split_reasoning": "One activity: proposing solutions to technical problems using mathematical methods.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop and propose a solution to an engineering or science problem using mathematical theory and techniques.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a proposal or model that others review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each problem leads to one proposal handed over as a whole.",
+    "work_item": "one proposed technical solution (write-up or model)",
+    "start": "problem posed by the engineering or science team",
+    "end": "proposal delivered with supporting analysis",
+    "checked_by": "engineers or scientists who requested it",
+    "duplicates": [],
+    "overlaps_with": [
+     "21833",
+     "21836"
+    ]
+   }
+  ],
+  "notes": "Not a typical share of most data scientists' time."
+ },
+ {
+  "task_id": "21835",
+  "split_reasoning": "One activity: reading research to keep up with trends.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read scientific articles and conference papers to keep up with emerging analytic methods and technologies.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces nothing anyone else checks or relies on.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21836",
+  "split_reasoning": "One activity: recommending data-driven solutions to stakeholders, usually in a memo or briefing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend a data-driven solution to key stakeholders, with supporting evidence.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a recommendation that stakeholders act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each recommendation is delivered once, as a memo or briefing, and accepted or not.",
+    "work_item": "one recommendation to stakeholders",
+    "start": "analysis and options ready",
+    "end": "recommendation delivered to stakeholders",
+    "checked_by": "stakeholders; manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "21833",
+     "21829"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21837",
+  "split_reasoning": "One activity: checking a model and revising it until predictions are accurate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test and validate a model and revise it so it predicts outcomes accurately.",
+    "time_share": 1.0,
+    "type_reasoning": "Ends in a validated, revised model that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each model goes through a validation cycle and is handed over as validated.",
+    "work_item": "one model validated and reformulated",
+    "start": "draft model built",
+    "end": "model validated and approved for use",
+    "checked_by": "model reviewer or manager; downstream users",
+    "duplicates": [],
+    "overlaps_with": [
+     "21827",
+     "21824"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21838",
+  "split_reasoning": "One activity: writing code for analyses; the language and size vary but the deliverable is working code.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a new function or application in a programming language to conduct an analysis.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces code that colleagues review and rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Code is handed over as a function, script or application after review, not line by line.",
+    "work_item": "one function, script or application",
+    "start": "analysis need or ticket",
+    "end": "code reviewed and merged or delivered",
+    "checked_by": "code reviewer or teammates using it",
+    "duplicates": [],
+    "overlaps_with": [
+     "21823"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

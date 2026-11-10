@@ -1,0 +1,606 @@
+[
+ {
+  "task_id": "2515",
+  "split_reasoning": "Processing and issuing paychecks and earnings statements are parts of the same pay-run output.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process and issue employee paychecks and statements of earnings and deductions.",
+    "time_share": 1.0,
+    "type_reasoning": "Each pay run produces payments and statements that employees rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The pay run is processed and released as a batch.",
+    "work_item": "one pay run issued with employee earnings statements",
+    "start": "approved payroll data is ready for payment processing",
+    "end": "payments and earnings statements are issued",
+    "checked_by": "employees and payroll supervisor",
+    "overlap_reasoning": "Calculation, reconciliation, and adjustments contribute to payroll but have their own outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2518",
+     "2521",
+     "2528"
+    ]
+   }
+  ],
+  "notes": "Pay may be issued electronically or by printed check."
+ },
+ {
+  "task_id": "2516",
+  "split_reasoning": "Computing wages and deductions and entering the results form one payroll calculation workflow.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate employee wages and deductions and enter them into the payroll system.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces payroll calculation entries for a pay period.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Payroll calculations are typically prepared and reviewed for a pay-period batch.",
+    "work_item": "one pay-period batch of wage and deduction calculations entered",
+    "start": "time, pay rates, and deduction information are available",
+    "end": "calculated wages and deductions are entered for payroll processing",
+    "checked_by": "payroll supervisor or payroll processor",
+    "overlap_reasoning": "Source-data compilation, record maintenance, adjustments, and payment issuance are related but distinct steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2515",
+     "2517",
+     "2518",
+     "2519",
+     "2520",
+     "2521"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2517",
+  "split_reasoning": "Time, production, and payroll records are inputs to the same compilation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile employee time, production, and payroll data from source records.",
+    "time_share": 1.0,
+    "type_reasoning": "The compilation produces a prepared set of inputs for payroll processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The data is assembled for a defined pay-period batch.",
+    "work_item": "one pay-period batch of compiled payroll source data",
+    "start": "time sheets and other source records become available",
+    "end": "compiled data is ready for payroll calculation",
+    "checked_by": "payroll processor or supervisor",
+    "overlap_reasoning": "Verification, calculations, and time-sheet completion share source data but are separate tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2518",
+     "2519",
+     "2524"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2518",
+  "split_reasoning": "Reviewing records and reconciling discrepancies are connected steps in checking payroll data.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review payroll source records and calculations and reconcile discrepancies found.",
+    "time_share": 1.0,
+    "type_reasoning": "The review produces checked payroll records with discrepancies resolved or identified for follow-up.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A pay-period batch of records is checked before payroll proceeds.",
+    "work_item": "one pay-period batch of payroll records reviewed and discrepancies reconciled",
+    "start": "time and payroll records are available for review",
+    "end": "review is completed and discrepancies are corrected or referred",
+    "checked_by": "payroll supervisor or payroll processor",
+    "overlap_reasoning": "Other statements cover compiling and posting data, computing wages, and issuing subsequent pay adjustments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2517",
+     "2519",
+     "2521",
+     "2528"
+    ]
+   }
+  ],
+  "notes": "Some discrepancies require later pay adjustments, coded under 2521."
+ },
+ {
+  "task_id": "2519",
+  "split_reasoning": "Verifying attendance, hours, and adjustments and posting them are steps in maintaining the same pay-period records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify attendance, hours worked, and pay adjustments and post the information to payroll records.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces verified and updated records for payroll processing.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Entries are verified and posted for a pay-period batch.",
+    "work_item": "one pay-period batch of verified attendance and pay entries posted",
+    "start": "attendance, hours, and adjustment information is received",
+    "end": "verified information is posted to designated records",
+    "checked_by": "payroll processor or supervisor",
+    "overlap_reasoning": "Compiling data, reviewing discrepancies, calculating pay, and issuing corrections share inputs but have different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2517",
+     "2518",
+     "2521",
+     "2524",
+     "18563"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2520",
+  "split_reasoning": "The listed employee changes are alternative inputs to maintaining payroll records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update payroll records for employee changes such as exemptions, transfers, and resignations.",
+    "time_share": 1.0,
+    "type_reasoning": "Each authorized change produces an updated employee payroll record.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual employee change is received, entered, and available for subsequent payroll processing.",
+    "work_item": "one employee payroll record change entered",
+    "start": "authorized employee change is received",
+    "end": "payroll record is updated",
+    "checked_by": "payroll processor, HR, or payroll supervisor",
+    "overlap_reasoning": "New-hire entry and benefit administration also update employee information but cover different transactions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2527",
+     "18562"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2521",
+  "split_reasoning": "Issuing and recording a correction or retroactive increase are steps of the same adjustment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue and record pay adjustments for previous errors or retroactive increases.",
+    "time_share": 1.0,
+    "type_reasoning": "Each adjustment produces a recorded pay correction or increase.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An employee's adjustment is calculated, entered, and issued as a distinct transaction.",
+    "work_item": "one employee pay adjustment issued and recorded",
+    "start": "an error or approved retroactive increase is identified",
+    "end": "adjustment is recorded and issued through payroll",
+    "checked_by": "employee and payroll supervisor",
+    "overlap_reasoning": "Discrepancy review, posting, calculation, and payment processing may lead to or include adjustment work but are broader activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2515",
+     "2516",
+     "2518",
+     "2519"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2522",
+  "split_reasoning": "Keeping current on tax and deduction law is one continuing learning activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep informed about changes in tax and deduction laws affecting payroll.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes staying current, not producing a deliverable for others.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Knowledge gained may inform tax returns and employee answers, but those are separate outputs.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2523",
+  "split_reasoning": "Payroll information is provided both in live conversations and in responses to written questions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an employee's or manager's payroll, tax, benefits, or agreement question during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The employee or manager waits while the clerk provides information in a live conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One question or related set of questions is handled within a call or visit.",
+    "work_item": "one live payroll information inquiry answered",
+    "start": "employee or manager asks a question during a call or visit",
+    "end": "information is provided or the inquiry is referred during the contact",
+    "checked_by": "the employee or manager",
+    "overlap_reasoning": "Benefits processing and employment verification may involve related information but produce different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2527",
+     "18564"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond in writing to an employee's or manager's payroll, tax, benefits, or agreement question.",
+    "time_share": 0.4,
+    "type_reasoning": "A written inquiry produces a response without the requester waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written inquiry receives an individual response.",
+    "work_item": "one written payroll information inquiry answered",
+    "start": "written question is received",
+    "end": "response is sent or inquiry is referred",
+    "checked_by": "the employee or manager",
+    "overlap_reasoning": "Benefits processing and employment verification may involve related information but produce different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2527",
+     "18564"
+    ]
+   }
+  ],
+  "notes": "The live and written shares are estimates and vary by workplace."
+ },
+ {
+  "task_id": "2524",
+  "split_reasoning": "Recording arrival and departure times is one time-sheet completion activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete employee time sheets with arrival and departure times.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces completed time sheets for payroll use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed employee time sheet for a pay period is the record handed to payroll.",
+    "work_item": "one employee time sheet completed for a pay period",
+    "start": "employee arrival and departure information is available",
+    "end": "time sheet is completed and submitted or made available for payroll",
+    "checked_by": "supervisor or payroll processor",
+    "overlap_reasoning": "Compiling and verifying time data use the completed sheet but are separate steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2517",
+     "2519",
+     "2526"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2526",
+  "split_reasoning": "Physical distribution and collection of cards differs from administering electronic timecard submissions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Distribute and collect physical employee timecards each pay period.",
+    "time_share": 0.5,
+    "type_reasoning": "Handing out and collecting physical cards requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Completing and compiling time records are separate from distributing and collecting cards.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2517",
+     "2524"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Make electronic timecards available and collect submitted timecards for a pay period.",
+    "time_share": 0.5,
+    "type_reasoning": "The electronic process produces a set of submitted timecards for payroll.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Timecards are gathered together for a pay-period processing batch.",
+    "work_item": "one pay-period batch of electronic timecards made available and collected",
+    "start": "timecards are opened or made available for the pay period",
+    "end": "submitted timecards are gathered for payroll processing",
+    "checked_by": "payroll processor or supervisor",
+    "overlap_reasoning": "Completing and compiling time records are separate from making cards available and collecting submissions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2517",
+     "2524"
+    ]
+   }
+  ],
+  "notes": "The physical and electronic shares vary considerably by workplace."
+ },
+ {
+  "task_id": "2527",
+  "split_reasoning": "Pension, unemployment, and medical insurance are different subjects for the same form-processing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete, verify, and process benefits administration forms and supporting documentation.",
+    "time_share": 1.0,
+    "type_reasoning": "Each benefits transaction produces a completed and processed documentation package.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A form and its supporting documents are handled together as one transaction.",
+    "work_item": "one benefits administration form package processed",
+    "start": "benefits form or supporting information is received",
+    "end": "verified package is submitted or recorded for administration",
+    "checked_by": "benefits administrator, insurer, or employee",
+    "overlap_reasoning": "Updating payroll records and answering benefits questions can use the same information but have distinct outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2520",
+     "2523",
+     "18562"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2528",
+  "split_reasoning": "Preparing period-end reports and reconciling issued payrolls to bank statements produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and balance period-end payroll reports.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a balanced report for review.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each period-end report is prepared and handed over as a whole.",
+    "work_item": "one balanced period-end payroll report",
+    "start": "period-end payroll data is available",
+    "end": "balanced report is completed and submitted",
+    "checked_by": "payroll supervisor or accounting",
+    "overlap_reasoning": "Statistical reporting and account balancing may use the same data but are not necessarily the same report.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2529",
+     "20901"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Reconcile issued payrolls to bank statements.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a reconciliation identifying and resolving differences.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A payroll bank reconciliation is completed for a statement period.",
+    "work_item": "one payroll bank-statement reconciliation",
+    "start": "bank statement and issued payroll records are available",
+    "end": "differences are resolved or documented and reconciliation is completed",
+    "checked_by": "accounting or payroll supervisor",
+    "overlap_reasoning": "Payroll account balancing and discrepancy review share reconciliation work but cover more than bank-statement matching.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2515",
+     "2518",
+     "20901"
+    ]
+   }
+  ],
+  "notes": "Time shares are estimates; some organizations combine the reconciliation and period-end reporting."
+ },
+ {
+  "task_id": "2529",
+  "split_reasoning": "Reports, statements, and summaries are alternative forms of the same pay and benefits reporting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and submit statistical reports, statements, or summaries about pay and benefits accounts.",
+    "time_share": 1.0,
+    "type_reasoning": "Each report or summary is a distinct output sent to a department.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A complete report or summary is the unit recipients review and use.",
+    "work_item": "one pay or benefits statistical report or summary submitted",
+    "start": "reporting request or reporting period and source data are available",
+    "end": "completed report or summary is submitted",
+    "checked_by": "receiving department or payroll supervisor",
+    "overlap_reasoning": "Some period-end payroll reports contain the same account information, though each statement also covers other reporting.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2528"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2530",
+  "split_reasoning": "Coordinating a special program involves live coordination as well as processing its payroll deduction enrollments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with program organizers and staff on a special payroll-deduction program.",
+    "time_share": 0.5,
+    "type_reasoning": "The coordination consists of live planning and communication among participants.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The other statements do not specifically cover coordinating special programs.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Process employee deduction authorizations for a special payroll-deduction program.",
+    "time_share": 0.5,
+    "type_reasoning": "An authorization produces an entered deduction that payroll relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each employee authorization is a distinct transaction entered into payroll.",
+    "work_item": "one special-program payroll deduction authorization processed",
+    "start": "employee deduction authorization is received",
+    "end": "deduction is entered or forwarded for payroll processing",
+    "checked_by": "payroll processor and employee",
+    "overlap_reasoning": "General deduction calculation and employee record maintenance may include these entries but also cover other payroll work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2516",
+     "2520"
+    ]
+   }
+  ],
+  "notes": "The balance between program coordination and transaction processing varies by program."
+ },
+ {
+  "task_id": "18562",
+  "split_reasoning": "Processing new-hire paperwork and entering payroll information form one onboarding transaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process new-employee paperwork and enter the employee's information into payroll.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a new employee payroll record supported by processed paperwork.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One new hire's paperwork and payroll setup are handled together.",
+    "work_item": "one new employee payroll setup completed",
+    "start": "new-hire paperwork is received",
+    "end": "paperwork is processed and employee payroll record is created",
+    "checked_by": "payroll supervisor or HR",
+    "overlap_reasoning": "Payroll record maintenance and benefits forms may use new-hire information but also cover other transactions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2520",
+     "2527"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18563",
+  "split_reasoning": "Vacation, personal, and sick leave are different inputs to the same leave-record maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Track employee vacation, personal, and sick leave in leave records.",
+    "time_share": 1.0,
+    "type_reasoning": "Ongoing tracking produces individual leave record updates.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each reported or approved leave transaction is recorded against an employee's balance.",
+    "work_item": "one employee leave transaction recorded",
+    "start": "leave usage or adjustment information is received",
+    "end": "employee leave record and balance are updated",
+    "checked_by": "employee, supervisor, or payroll processor",
+    "overlap_reasoning": "Attendance verification and time-sheet completion may use leave information but have different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2519",
+     "2524"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18564",
+  "split_reasoning": "Employment verifications are provided both during live contacts and in response to written requests.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify employment for an authorized requester during a live contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The requester waits while the clerk checks and provides permitted employment information.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One verification request is handled within the call or visit.",
+    "work_item": "one employment verification provided during a live contact",
+    "start": "authorized requester asks for employment verification",
+    "end": "permitted information is provided or the request is referred during the contact",
+    "checked_by": "authorized requester",
+    "overlap_reasoning": "General payroll information requests can overlap, but employment verification has a distinct requester and purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2523"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete a written employment verification request.",
+    "time_share": 0.7,
+    "type_reasoning": "A written request produces a verification response processed outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each authorized request is checked and returned as a separate verification.",
+    "work_item": "one written employment verification completed",
+    "start": "authorized verification request is received",
+    "end": "verification is completed and sent to the requester",
+    "checked_by": "authorized requester",
+    "overlap_reasoning": "General payroll information requests can overlap, but employment verification has a distinct requester and purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2523"
+    ]
+   }
+  ],
+  "notes": "Shares vary with employer policy and the verification channels used."
+ },
+ {
+  "task_id": "20901",
+  "split_reasoning": "Cash and payroll accounts are different accounts balanced through the same reconciliation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Balance cash and payroll accounts and identify or resolve differences.",
+    "time_share": 1.0,
+    "type_reasoning": "Each account reconciliation produces a balanced account or documented difference.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An account is reconciled for a defined accounting period.",
+    "work_item": "one cash or payroll account reconciliation",
+    "start": "account balances and supporting transactions are available",
+    "end": "account is balanced or differences are documented for follow-up",
+    "checked_by": "accounting or payroll supervisor",
+    "overlap_reasoning": "Period-end reporting and bank-statement reconciliation share some account-balancing work but also cover distinct outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2528"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20902",
+  "split_reasoning": "Training employees on the timekeeping system is one instructional activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train employees to use the organization's timekeeping system.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in the live instruction and interaction with employees.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Completing time sheets is work employees may learn in training, but it is not the training itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23954",
+  "split_reasoning": "Preparing and filing a payroll tax return are steps of one filing workflow.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and file payroll tax returns.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a completed return filed with a tax authority.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each jurisdictional return for a filing period is prepared and submitted as a whole.",
+    "work_item": "one payroll tax return prepared and filed",
+    "start": "filing period ends and payroll tax data is available",
+    "end": "return is completed and filed with the tax authority",
+    "checked_by": "tax authority and payroll or accounting supervisor",
+    "overlap_reasoning": "Payroll reports and account reconciliations may supply data for the return but are separate outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2528",
+     "2529",
+     "20901"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

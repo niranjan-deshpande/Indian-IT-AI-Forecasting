@@ -1,0 +1,435 @@
+[
+ {
+  "task_id": "7377",
+  "split_reasoning": "The listed elements are inputs and relationships within one model formulation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Formulate a mathematical or simulation model of an operational problem.",
+    "time_share": 1.0,
+    "type_reasoning": "The formulation produces a model that others can implement or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A model formulation for one defined problem is a recognizable handoff.",
+    "work_item": "one formulated mathematical or simulation model",
+    "start": "operational problem and relevant information are available",
+    "end": "model structure, parameters, objectives, and constraints are specified",
+    "checked_by": "modeling team and project lead",
+    "overlap_reasoning": "System decomposition and method specification can be incorporated into model formulation, while testing and experimental modeling are related but distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7380",
+     "7385",
+     "7386",
+     "7388"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7378",
+  "split_reasoning": "The target describes one collaborative activity supporting implementation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate with colleagues to support implementation of a chosen solution.",
+    "time_share": 1.0,
+    "type_reasoning": "The specified work is collaboration with colleagues rather than production of a particular implementation artifact.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Collaboration on implementing a chosen solution is distinct from the other listed analytical tasks.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Implementation artifacts, if assigned, are not specified in the target."
+ },
+ {
+  "task_id": "7379",
+  "split_reasoning": "Analyzing management information and defining the operational problem are steps in one problem-definition activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze management information to define an operational problem.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a defined problem for subsequent analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A problem definition is handed to a modeling team or manager as a coherent input.",
+    "work_item": "one operational problem definition",
+    "start": "management provides information about an operational issue",
+    "end": "the problem, scope, and relevant objectives are defined",
+    "checked_by": "project lead and management",
+    "overlap_reasoning": "Clarifying objectives with managers and describing problems in reports can share problem-definition work, but each also covers other activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7381",
+     "7384"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7380",
+  "split_reasoning": "Testing, validation, and any necessary reformulation form an iterative model-validation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Test and validate a model and reformulate it when needed.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a tested model and documented validation results.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A model validation cycle is a meaningful handoff to the team using or approving the model.",
+    "work_item": "one model validation and revision cycle",
+    "start": "a model is ready for testing",
+    "end": "test results and any model revisions are documented and returned to the team",
+    "checked_by": "modeling lead and model users",
+    "overlap_reasoning": "Reformulation shares model-building work with formulation and experimental modeling, but validation has its own tests and results.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7377",
+     "7388"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7381",
+  "split_reasoning": "Identifying problems and clarifying objectives are related purposes of the same collaboration with decision makers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Work with managers and decision makers to identify problems and clarify objectives.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on live collaboration with decision makers rather than a specified document or other deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The discussions can inform problem definition and selection of alternatives, but those tasks also require separate analysis.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7379",
+     "7383"
+    ]
+   }
+  ],
+  "notes": "Written problem definitions and analyses are covered by other statements."
+ },
+ {
+  "task_id": "7382",
+  "split_reasoning": "Specifying data requirements and assembling a validated dataset produce different handoffs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Define the data needed for an operational analysis.",
+    "time_share": 0.25,
+    "type_reasoning": "The requirements are a discrete specification used to obtain data.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A requirements specification for one analysis guides the data-collection work as a whole.",
+    "work_item": "one data requirements specification",
+    "start": "the analytical problem and intended model are identified",
+    "end": "required data fields, sources, and quality needs are specified",
+    "checked_by": "modeling lead and data providers",
+    "overlap_reasoning": "The requirements may be informed by observation of the current system, but the system assessment has a broader purpose.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7387"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Gather and validate information for an operational analysis.",
+    "time_share": 0.75,
+    "type_reasoning": "The work produces a collected and checked set of information for analysis.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A dataset prepared for a particular analysis is handed to modelers as a unit.",
+    "work_item": "one gathered and validated dataset",
+    "start": "data requirements and potential sources are available",
+    "end": "information is collected, checked, and made available for analysis",
+    "checked_by": "modeling team and project lead",
+    "overlap_reasoning": "Gathering information about the current system can be part of both this task and the system assessment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7387"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates and vary with data availability and quality."
+ },
+ {
+  "task_id": "7383",
+  "split_reasoning": "The target describes one comparative analysis of alternative courses of action.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyze alternative courses of action to identify the best outcome.",
+    "time_share": 1.0,
+    "type_reasoning": "The comparison produces findings that decision makers can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A comparison of alternatives for one decision is the unit delivered to the requesting team.",
+    "work_item": "one analysis comparing alternative plans",
+    "start": "alternatives and relevant information are available",
+    "end": "outcomes are compared and the preferred plan is identified",
+    "checked_by": "management and the project lead",
+    "overlap_reasoning": "Collaborative problem solving and management reports may include parts of the comparison, but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7381",
+     "7384"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7384",
+  "split_reasoning": "Defining and evaluating problems and recommending solutions are contents of one management report.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a management report evaluating a problem and recommending a solution.",
+    "time_share": 1.0,
+    "type_reasoning": "The report is a distinct written deliverable for management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed report is sent and reviewed as a whole.",
+    "work_item": "one management report on a problem and recommended solution",
+    "start": "problem information and analysis are available for reporting",
+    "end": "the completed report is submitted to management",
+    "checked_by": "management and the project lead",
+    "overlap_reasoning": "Report preparation can include problem definition and evaluation of alternatives, although those activities also produce analytical inputs outside the report.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7379",
+     "7383"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7385",
+  "split_reasoning": "Decomposing a system, quantifying components, and examining their relationships are steps in one system representation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Decompose and quantify a system and examine relationships among its components.",
+    "time_share": 1.0,
+    "type_reasoning": "The analysis produces a quantified representation that supports modeling.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A representation of one system or defined subsystem is a coherent analytical handoff.",
+    "work_item": "one quantified system decomposition",
+    "start": "a system is selected for analysis",
+    "end": "components, numerical values, and relationships are documented",
+    "checked_by": "modeling team and project lead",
+    "overlap_reasoning": "System decomposition can contribute directly to model formulation and to analysis of the current system, but each task has additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7377",
+     "7387"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7386",
+  "split_reasoning": "The target describes one activity: choosing and specifying methods for a model.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Specify computational or analytical methods to apply to a model.",
+    "time_share": 1.0,
+    "type_reasoning": "The specified method guides subsequent model computation or solution.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A method specification for one model is a usable handoff to the modeling team.",
+    "work_item": "one model solution-method specification",
+    "start": "model structure and analytical objectives are available",
+    "end": "the methods to be applied are specified for implementation",
+    "checked_by": "modeling lead and analysts implementing the method",
+    "overlap_reasoning": "Choosing a solution method can be part of formulating a model, but the formulation also defines the problem's mathematical structure.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7377"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7387",
+  "split_reasoning": "Observation and information gathering are inputs to one assessment of the current system and its component problems.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Observe and analyze the current system and its component problems.",
+    "time_share": 1.0,
+    "type_reasoning": "The assessment produces findings that colleagues can use in defining and modeling the problem.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An assessment of one system or defined operation can be handed over as a coherent set of findings.",
+    "work_item": "one current-system assessment",
+    "start": "a system is selected for study",
+    "end": "observations and analysis of component problems are documented",
+    "checked_by": "project lead and operational stakeholders",
+    "overlap_reasoning": "The assessment can share data gathering and system decomposition with other tasks, but it also includes direct observation of the operation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7382",
+     "7385"
+    ]
+   }
+  ],
+  "notes": "Observation may occur on site, but the target does not specify hands-on physical work."
+ },
+ {
+  "task_id": "7388",
+  "split_reasoning": "Designing, conducting, and evaluating an experiment are integrated stages of one experimental modeling study.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design, conduct, and evaluate an experimental operational modeling study when existing data are insufficient.",
+    "time_share": 1.0,
+    "type_reasoning": "The study produces an experimental model and evaluated results for use by the project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed experimental study is a coherent handoff rather than each individual trial.",
+    "work_item": "one experimental operational modeling study",
+    "start": "an operational problem lacks sufficient existing data for a model",
+    "end": "the experiment is completed and the model and results are evaluated and documented",
+    "checked_by": "modeling lead and operational decision makers",
+    "overlap_reasoning": "The study includes model development and evaluation, which share work with general model formulation and testing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7377",
+     "7380"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "7389",
+  "split_reasoning": "Developing a project network and applying it to subsequent project reviews produce different handoffs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a time and cost network for a large project.",
+    "time_share": 0.5,
+    "type_reasoning": "The network is a distinct planning artifact used by the project team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A network for one project is prepared and handed over as a complete planning tool.",
+    "work_item": "one project time and cost network",
+    "start": "project activities, dependencies, and estimates are available",
+    "end": "the network is developed and provided to the project team",
+    "checked_by": "project manager and planning team",
+    "overlap_reasoning": "A project network can inform a production schedule, but the two artifacts serve different planning purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7390"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Apply a project time and cost network to control and review project progress.",
+    "time_share": 0.5,
+    "type_reasoning": "Continuing project control produces discrete network updates and review findings.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One review cycle produces an updated view of the project for the manager to act on.",
+    "work_item": "one project network update and review",
+    "start": "new project progress or cost information becomes available",
+    "end": "the network is updated and review findings are provided to the project team",
+    "checked_by": "project manager and planning team",
+    "overlap_reasoning": "Project control is distinct from the other listed work items.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on project duration and review frequency."
+ },
+ {
+  "task_id": "7390",
+  "split_reasoning": "Developing business methods and procedures differs from preparing operational production schedules.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop business methods and procedures for an organizational system.",
+    "time_share": 0.7,
+    "type_reasoning": "The work produces a documented method or procedure for an organization to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A method or procedure for a defined process is reviewed and adopted as a unit.",
+    "work_item": "one developed business method or procedure",
+    "start": "a business process or system is identified for development or redesign",
+    "end": "the proposed method or procedure is documented and submitted",
+    "checked_by": "operations management and process owners",
+    "overlap_reasoning": "The other statements do not describe developing the same business procedure.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a production schedule.",
+    "time_share": 0.3,
+    "type_reasoning": "A schedule is a distinct operational planning deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a defined production period is issued to the people carrying it out.",
+    "work_item": "one production schedule",
+    "start": "production requirements, resources, and constraints are available",
+    "end": "the schedule is completed and issued for review or use",
+    "checked_by": "production manager and scheduling team",
+    "overlap_reasoning": "Project time networks can involve related scheduling work but are not the same as an operational production schedule.",
+    "duplicates": [],
+    "overlaps_with": [
+     "7389"
+    ]
+   }
+  ],
+  "notes": "Shares are estimates; the mix of procedure design and scheduling varies by position."
+ },
+ {
+  "task_id": "20952",
+  "split_reasoning": "The target describes one activity: presenting analytical results to end users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Present modeling and data-analysis results to management or other end users.",
+    "time_share": 1.0,
+    "type_reasoning": "The specified activity is the live communication of results to an audience.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "A management report may contain the same findings, but writing it and presenting results are distinct activities.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Preparation of a separately reviewed report or presentation deck is not specified in the target."
+ },
+ {
+  "task_id": "20953",
+  "split_reasoning": "The target describes one activity: teaching staff to use mathematical models.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Teach staff how to use mathematical models.",
+    "time_share": 1.0,
+    "type_reasoning": "The work is instruction through live interaction with staff.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Teaching model use is distinct from the other listed activities.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Development of training materials is not specified."
+ },
+ {
+  "task_id": "23986",
+  "split_reasoning": "The target describes one general activity of reviewing research literature.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review research literature relevant to operations research.",
+    "time_share": 1.0,
+    "type_reasoning": "No specific report or other output is stated, so the review is treated as keeping informed.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "The target does not specify a research output that duplicates another listed work item.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "A literature review prepared as a project deliverable would require a different classification."
+ }
+]

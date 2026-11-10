@@ -1,0 +1,411 @@
+[
+ {
+  "task_id": "3407",
+  "split_reasoning": "One activity: making the approve-or-refer decision on an application.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Approve a loan within the officer's authority, or refer it to management if it is above the limit.",
+    "time_share": 1.0,
+    "type_reasoning": "Each decision is a recorded outcome that the borrower and the bank rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Applications are decided one at a time.",
+    "work_item": "one loan application decided (approved or referred)",
+    "start": "completed application and analysis ready for decision",
+    "end": "approval issued or referral sent to management",
+    "checked_by": "management, credit risk and the borrower",
+    "duplicates": [],
+    "overlaps_with": [
+     3409,
+     3416
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3408,
+  "split_reasoning": "One activity: an application meeting with the applicant, which includes answering process questions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with an applicant to collect application information and answer questions about the process.",
+    "time_share": 1.0,
+    "type_reasoning": "Done while the applicant is present, in person or on the phone.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each meeting yields one set of application information.",
+    "work_item": "one applicant meeting taking application information",
+    "start": "applicant arrives or call begins",
+    "end": "application information captured and applicant told next steps",
+    "checked_by": "the applicant and the underwriter",
+    "duplicates": [],
+    "overlaps_with": [
+     3410,
+     3418
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3409,
+  "split_reasoning": "One activity: assessing whether a loan is feasible.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyse an applicant's finances, credit and property valuations to decide whether granting the loan is feasible.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an underwriting assessment that decision makers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One analysis per application.",
+    "work_item": "one loan application analysed with a feasibility conclusion",
+    "start": "application and supporting documents complete",
+    "end": "analysis and recommendation recorded",
+    "checked_by": "approving officer or credit committee",
+    "duplicates": [],
+    "overlaps_with": [
+     3407,
+     3411,
+     3416
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3410,
+  "split_reasoning": "One activity: explaining products and terms to a customer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain the loan types, credit options and terms available to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in conversation while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each explanation happens within one customer contact.",
+    "work_item": "one customer explanation of loan options and terms",
+    "start": "customer asks about loan options",
+    "end": "customer understands options and terms and decides what to do next",
+    "checked_by": "the customer",
+    "duplicates": [],
+    "overlaps_with": [
+     3408,
+     3418
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3411",
+  "split_reasoning": "One activity: gathering applicant documents into a file.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Obtain and compile credit histories, financial statements and other financial information for an applicant.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a compiled file that the analyst works from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One package per applicant.",
+    "work_item": "one applicant's financial documentation package compiled",
+    "start": "application received",
+    "end": "complete documentation package in the file",
+    "checked_by": "analyst or underwriter",
+    "duplicates": [],
+    "overlaps_with": [
+     3409,
+     3412
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3412",
+  "split_reasoning": "One activity: reviewing and updating files.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and update a credit or loan file.",
+    "time_share": 1.0,
+    "type_reasoning": "The updated file is relied on by colleagues and auditors.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Files are reviewed one at a time.",
+    "work_item": "one credit or loan file reviewed and updated",
+    "start": "file pulled for review",
+    "end": "file updated and refiled",
+    "checked_by": "supervisor or auditor",
+    "duplicates": [],
+    "overlaps_with": [
+     3411
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3413,
+  "split_reasoning": "One activity: checking an agreement against policy.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a loan agreement for completeness and accuracy against policy.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a cleared or corrected agreement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One agreement is checked per loan.",
+    "work_item": "one loan agreement reviewed and cleared or corrected",
+    "start": "agreement drafted",
+    "end": "agreement cleared for signing or returned for correction",
+    "checked_by": "approving officer, compliance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3414",
+  "split_reasoning": "One activity: calculating a repayment schedule.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute the payment schedule for a loan.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a schedule that goes into the loan documents and to the borrower.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One schedule per loan.",
+    "work_item": "one loan payment schedule",
+    "start": "loan terms agreed",
+    "end": "schedule attached to the loan documents",
+    "checked_by": "the borrower and loan servicing",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Quotes are sometimes computed live during a customer meeting; treated here as back-office work."
+ },
+ {
+  "task_id": 3415,
+  "split_reasoning": "One activity: keeping up with products.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stay up to date on new types of loans and financial products.",
+    "time_share": 1.0,
+    "type_reasoning": "Keeping current produces nothing others check.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3416,
+  "split_reasoning": "One activity: submitting an application for verification.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Submit an application to credit analysts for verification and recommendation.",
+    "time_share": 1.0,
+    "type_reasoning": "The submitted package enters the analysts' queue.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One package per application.",
+    "work_item": "one application submitted to credit analysis",
+    "start": "application package complete",
+    "end": "package sent to the analyst and acknowledged",
+    "checked_by": "credit analyst",
+    "duplicates": [],
+    "overlaps_with": [
+     3411,
+     3409
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3417,
+  "split_reasoning": "Two places: talking with a complaining customer, and later written resolution.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Handle a customer complaint while the customer is on the phone or at the desk.",
+    "time_share": 0.5,
+    "type_reasoning": "The customer is waiting during the conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each complaint is taken in one contact.",
+    "work_item": "one complaint handled in a customer contact",
+    "start": "customer states the complaint",
+    "end": "customer told the action and contact closed",
+    "checked_by": "the customer and the supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Investigate a complaint afterwards and carry out and confirm the fix.",
+    "time_share": 0.5,
+    "type_reasoning": "Done after the contact from records, with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each complaint is resolved and closed as one case.",
+    "work_item": "one complaint resolved and closed",
+    "start": "complaint logged after contact",
+    "end": "resolution confirmed to the customer and case closed",
+    "checked_by": "customer and supervisor or compliance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Split is a guess."
+ },
+ {
+  "task_id": 3418,
+  "split_reasoning": "One activity: advising clients on goals and ways to reach them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Work with a client to identify their financial goals and ways to reach them.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in conversation while the client is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each advisory conversation is one contact.",
+    "work_item": "one client advisory conversation",
+    "start": "client sits down or calls for advice",
+    "end": "goals and next steps agreed",
+    "checked_by": "the client",
+    "duplicates": [],
+    "overlaps_with": [
+     3410,
+     3408
+    ]
+   }
+  ],
+  "notes": "Could be INTERPERSONAL if viewed as relationship advice."
+ },
+ {
+  "task_id": "3421",
+  "split_reasoning": "Marketing products and promoting bank services are the same prospect-facing promotional activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Promote bank products and services to individuals and firms.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on persuading prospective customers through direct promotion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "3410",
+     "3418",
+     "3425"
+    ]
+   }
+  ],
+  "notes": "Separately produced marketing materials are not specified; some promotional contacts also include customer service."
+ },
+ {
+  "task_id": 3422,
+  "split_reasoning": "One activity: supervising staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise loan personnel.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervision is direction and coaching with no single output.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3423,
+  "split_reasoning": "One activity: setting credit rules with senior managers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set credit policies, credit lines, procedures and standards with senior managers.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a written policy or standard that staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each policy or standard is agreed and issued as one document.",
+    "work_item": "one credit policy, procedure or standard agreed and issued",
+    "start": "need for a new or changed policy raised",
+    "end": "policy approved and issued to staff",
+    "checked_by": "senior management and compliance",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Setting a credit line for a specific customer is a different, more frequent item; not split out."
+ },
+ {
+  "task_id": 3425,
+  "split_reasoning": "Two activities: analysing markets, and building referral relationships.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Analyse potential loan markets.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces an analysis that management or the officer uses to target prospects.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One analysis per market or segment.",
+    "work_item": "one loan market analysis",
+    "start": "market or segment chosen",
+    "end": "analysis delivered with target prospects",
+    "checked_by": "manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Develop referral networks to find loan prospects.",
+    "time_share": 0.6,
+    "type_reasoning": "Relationship building is value in the live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     3421
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 3426,
+  "split_reasoning": "Two outputs: delinquency notices to customers, and forwarding unresolved accounts to collectors.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and send a report to a customer whose account is delinquent.",
+    "time_share": 0.7,
+    "type_reasoning": "Each notice is sent to the customer and relied on by the bank.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Notices are prepared per account or per batch.",
+    "work_item": "one delinquency notice sent to a customer",
+    "start": "account found delinquent",
+    "end": "notice sent to the customer",
+    "checked_by": "the customer and the supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Forward an irreconcilable account to a collector.",
+    "time_share": 0.3,
+    "type_reasoning": "The referral is handed to the collections team.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One account is referred at a time.",
+    "work_item": "one account referred for collection",
+    "start": "efforts to resolve fail",
+    "end": "account file transferred to the collector",
+    "checked_by": "collections team",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

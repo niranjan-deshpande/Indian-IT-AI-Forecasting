@@ -1,0 +1,709 @@
+[
+ {
+  "item_id": "1269a",
+  "reasoning": "The worker reads a codebase and writes comments and revision documentation inside the repository, which shares the inputs of SWE-bench-style items. Those items judge functional code changes by hidden tests, whereas here the output is explanatory text judged by other programmers.",
+  "best": "swe_bench_verified",
+  "best_match": "partial",
+  "best_difference": "Output is documentation and code comments, not a functional fix checked by tests."
+ },
+ {
+  "item_id": "1277a",
+  "reasoning": "Maintaining systems software means analysing a change request, changing and configuring system-level software, testing it and installing it, which is close to Terminal-Bench's command-line administration and repair items. The difference is the change-control process and longer-lived production systems.",
+  "best": "terminal_bench_2",
+  "best_match": "partial",
+  "best_difference": "Real work runs through a change board on production systems software rather than a single self-contained machine task."
+ },
+ {
+  "item_id": "5320b",
+  "reasoning": "Running security and system tests uses security tools to probe a system, which Cybench shares. Cybench seeks a hidden flag, while this work verifies that controls function and reports results to the owner.",
+  "best": "cybench",
+  "best_match": "partial",
+  "best_difference": "Goal is to test and report on whether controls work, not to capture a hidden secret string."
+ },
+ {
+  "item_id": "4624a",
+  "reasoning": "Compiling a call list is extracting names and numbers from source documents into a structured table, which OfficeVal includes. The worker also has to locate and choose sources such as directories and purchased lists and load the list for callers.",
+  "best": "officeval",
+  "best_match": "partial",
+  "best_difference": "Requires sourcing and selecting contacts from directories or purchased lists, not just extracting from supplied files."
+ },
+ {
+  "item_id": "2479b",
+  "reasoning": "Sorting correspondence means reading each item and attaching it to the right account record, which is close to CRMArena-Pro's routing of incoming cases using company records. Here it is a batch of mail filed to accounts or folders rather than a single case routed to an agent.",
+  "best": "crmarena_pro",
+  "best_match": "partial",
+  "best_difference": "A batch of correspondence filed to account folders rather than one case routed to a service agent."
+ },
+ {
+  "item_id": "2482a",
+  "reasoning": "A credit extension is a customer-facing account change made under internal policy using account data, which matches tau-banking's compliant account changes in a financial setting. The work involves negotiating payment terms, often by phone, rather than applying a refund or dispute rule in chat.",
+  "best": "tau_banking",
+  "best_match": "partial",
+  "best_difference": "Involves negotiating payment terms with a debtor, often by phone, rather than resolving a dispute or refund by chat."
+ },
+ {
+  "item_id": "2484a",
+  "reasoning": "Escalating an account means updating its status, notifying another department and placing orders or referrals in business systems, the multi-step record work of WorkArena++. The collections setting requires choosing the right escalation path under policy and sending records outside the firm.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "Collections-specific escalation choices and referrals to outside parties such as attorneys, not ServiceNow tickets."
+ },
+ {
+  "item_id": "18559a",
+  "reasoning": "Answering a live account question means looking up account data and applying internal rules to explain or fix a problem, which tau-banking shares in a financial-account setting. The contact is by phone or at a desk about a debt account and often needs no account change.",
+  "best": "tau_banking",
+  "best_match": "partial",
+  "best_difference": "Phone or desk contact about a debt account rather than a fintech chat, often with no account change."
+ },
+ {
+  "item_id": "18559b",
+  "reasoning": "A written account question is answered by checking account data against rules, the same core actions as tau-banking. The reply is asynchronous and written, not a live chat with account changes.",
+  "best": "tau_banking",
+  "best_match": "partial",
+  "best_difference": "Asynchronous written reply rather than a live chat ending in an account change."
+ },
+ {
+  "item_id": "9419a",
+  "reasoning": "The work is spotting an error in a document, asking a colleague for the correct information and updating the file, which TheAgentCompany's message-colleague-and-update tasks share. The setting is a medical report checked by a physician rather than a software company.",
+  "best": "theagentcompany",
+  "best_match": "partial",
+  "best_difference": "Medical report errors resolved by querying a physician, not company files and chat colleagues."
+ },
+ {
+  "item_id": "9422b",
+  "reasoning": "Answering a case-progress inquiry requires checking the requester is entitled to the information under confidentiality rules and answering from records, which SOPBench's procedure-bound healthcare and records requests share. This is an asynchronous written reply rather than a tool-driven live transaction.",
+  "best": "sopbench",
+  "best_match": "partial",
+  "best_difference": "Asynchronous written reply about a medical case under confidentiality law, not a live procedural transaction."
+ },
+ {
+  "item_id": "9425a",
+  "reasoning": "Deciding what goes into a report is editorial judgment over source material, which GDPval's expert-judged document deliverables share at a broad level. The decision here is narrow and specific to medical transcription standards.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "A narrow editorial content decision on a medical report, not a full professional deliverable."
+ },
+ {
+  "item_id": "9426c",
+  "reasoning": "Scheduling or changing an appointment from a request follows a procedure and updates a scheduling system, which SOPBench covers for healthcare appointments. Here the request is written and processed without the patient present, with a response sent afterwards.",
+  "best": "sopbench",
+  "best_match": "partial",
+  "best_difference": "Written request processed asynchronously with a reply, not a live service interaction."
+ },
+ {
+  "item_id": "20254a",
+  "reasoning": "The core work is capturing spoken dictation and turning it into text, and no benchmark takes audio as input to produce a transcript. Document benchmarks start from written files.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "694a",
+  "reasoning": "Greeting a walk-in customer and finding out what they need is an in-person conversation with no system work. Customer-service benchmarks begin with a stated request and end with database changes.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "697a",
+  "reasoning": "Ringing up a purchase and taking cash or card at a register is a physical point-of-sale transaction. No benchmark covers tills, tender handling or in-person payment.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "700a",
+  "reasoning": "Recommending merchandise and helping a customer find it on the shop floor is in-person advice and physical locating. tau-bench retail handles existing orders by chat, not product selection in a store.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "716b",
+  "reasoning": "The estimate requires computing quantities from customer measurements, looking up prices and totalling them for the customer, close to TheAgentCompany's look-up-prices-and-total tasks. The quantity takeoff from plans or measurements is not part of that benchmark.",
+  "best": "theagentcompany",
+  "best_match": "partial",
+  "best_difference": "Quantities must be derived from customer measurements or plans before pricing."
+ },
+ {
+  "item_id": "2406a",
+  "reasoning": "Redeeming coupons or food stamps happens at a register with a customer present and physical tender. No benchmark covers point-of-sale transactions.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "2413a",
+  "reasoning": "Selling a ticket or item at a counter involves an in-person sale and taking payment into a drawer. No benchmark has the worker on the selling side of a point-of-sale transaction.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "2423b",
+  "reasoning": "Posting a charge means taking a given record and entering it against the correct account in a business application, the same kind of data-entry work as UI-CUBE's entering records from given data. The account-matching is a small step within that entry.",
+  "best": "ui_cube",
+  "best_match": "good",
+  "best_difference": ""
+ },
+ {
+  "item_id": "825d",
+  "reasoning": "Submitting an authorized deposit, transfer or payment through a banking site and recording confirmation shares the banking-portal steps in OSWorld 2.0 workflows. Those items are long end-to-end workflows, while this is one short transaction.",
+  "best": "osworld_2",
+  "best_match": "partial",
+  "best_difference": "A single short banking transaction rather than a long multi-application workflow."
+ },
+ {
+  "item_id": "829a",
+  "reasoning": "Completing bills, invoices, contracts or checks means filling business documents from transaction details to a standard, which OfficeVal's office-file requests share. The range of document types and template completion differ from its restructuring and extraction examples.",
+  "best": "officeval",
+  "best_match": "partial",
+  "best_difference": "Filling varied business documents from transaction details rather than restructuring or extracting from existing files."
+ },
+ {
+  "item_id": "944a",
+  "reasoning": "Assisting customers on a sales floor is in-person, physical and conversational. No benchmark covers walk-up in-store help.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "949a",
+  "reasoning": "A store layout plan is a professional planning deliverable reviewed by management, which GDPval covers broadly. The spatial design of a physical store is not represented.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "Spatial floor planning of a physical store, not a typical document or spreadsheet deliverable."
+ },
+ {
+  "item_id": "20705a",
+  "reasoning": "Reviewing applicant files and recommending a hire shares the document review and written judgment of GDPval requests. Interviews and the offer itself are live interactions no benchmark covers.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "Includes interviews and making an offer, beyond reviewing files and writing a recommendation."
+ },
+ {
+  "item_id": "21477a",
+  "reasoning": "Recruiting and hiring is a multi-week process of outreach, interviewing and negotiation with candidates. Benchmarks with HR content cover record tasks or onboarding after selection, not this process.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "6570a",
+  "reasoning": "Selecting and ordering supplies means working out needs and budget and placing orders in a purchasing system, which WorkArena++ includes. The teacher decides what to order for a classroom and uses school requisition or vendor systems.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "Needs are judged by the teacher for a classroom and orders go through school purchasing, not ServiceNow."
+ },
+ {
+  "item_id": "2024a",
+  "reasoning": "Interviewing a patient is a live structured conversation while recording information in a system, which EVA-Bench's calls with record updates share. Here the worker drives the questioning to collect clinical history rather than resolving a caller's request.",
+  "best": "eva_bench",
+  "best_match": "partial",
+  "best_difference": "Worker elicits clinical history in person rather than resolving a caller's service request."
+ },
+ {
+  "item_id": "2034b",
+  "reasoning": "Scheduling appointments from referrals and recall lists follows clinic procedures and updates a scheduling system, which SOPBench's healthcare appointment tasks share. Here it is a batch from written lists with no requester present, followed by patient notifications.",
+  "best": "sopbench",
+  "best_match": "partial",
+  "best_difference": "A batch of written requests processed without a live requester, plus patient notifications."
+ },
+ {
+  "item_id": "2178a",
+  "reasoning": "Estimating needs from stock and expected demand and then placing orders matches WorkArena++ items that work out a requirement and place orders. The stock check is physical and demand is estimated from kitchen experience.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "Needs come from a physical stock check and a demand estimate, not a dashboard."
+ },
+ {
+  "item_id": "23055b",
+  "reasoning": "A follow-up investigation means checking records, contacting people and writing up findings, which TheAgentCompany's record-lookup-and-message tasks share. The witness contacts and investigative judgment of a criminal case are not represented.",
+  "best": "theagentcompany",
+  "best_match": "partial",
+  "best_difference": "Criminal follow-up with witness contacts in police records systems, not a software company's tools."
+ },
+ {
+  "item_id": "23057b",
+  "reasoning": "Reporting an observation ends in creating a short incident record, like WorkArena's single create-an-incident actions. The worker must first observe and describe the situation in the field rather than receive given fields.",
+  "best": "workarena_l1",
+  "best_match": "partial",
+  "best_difference": "Content comes from the officer's own field observation, not given fields."
+ },
+ {
+  "item_id": "23059b",
+  "reasoning": "Writing a citation is filling a structured form from collected details, which shares UI-CUBE's form entry in business applications. The officer must determine the violation and gather the details at a roadside stop and serve the citation.",
+  "best": "ui_cube",
+  "best_match": "partial",
+  "best_difference": "Officer determines the violation and collects details in person before entry, then serves the citation."
+ },
+ {
+  "item_id": "23061a",
+  "reasoning": "Relaying a complaint means passing information accurately by radio or phone to a dispatcher. No benchmark tests a staff-to-staff handoff; EVA-Bench and tau-Voice have the worker serving a caller and changing records.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "23077b",
+  "reasoning": "Booking records are created and updated from information gathered during processing, the enterprise record entry UI-CUBE tests. The records are kept up through the pre-trial process in a custodial system, with data gathered in person.",
+  "best": "ui_cube",
+  "best_match": "partial",
+  "best_difference": "Data comes from processing a prisoner in person and the record is maintained through pre-trial status changes."
+ },
+ {
+  "item_id": "728a",
+  "reasoning": "Processing a renewal means reviewing a client's policy record, applying pricing rules and confirming with client and insurer, close to CRMArena-Pro's CRM requests such as checking a quote against policy. Renewals span two parties and several contacts over time.",
+  "best": "crmarena_pro",
+  "best_match": "partial",
+  "best_difference": "Renewal is coordinated with both client and insurer across several contacts, not one CRM request."
+ },
+ {
+  "item_id": "734a",
+  "reasoning": "Installing a bookkeeping system means installing and configuring software to a working state that meets requirements, which Terminal-Bench's install-and-configure items share. Here the configuration is business setup for a client and ends with client sign-off.",
+  "best": "terminal_bench_2",
+  "best_match": "partial",
+  "best_difference": "Business configuration of accounting software for a client with sign-off, not command-line server setup checked by tests."
+ },
+ {
+  "item_id": "300a",
+  "reasoning": "Arranging images and copy and choosing type shares the formatting and restructuring actions of OfficeVal's document requests. The work is a visual design judgment for an art director rather than conforming to a stated standard.",
+  "best": "officeval",
+  "best_match": "partial",
+  "best_difference": "Creative visual layout judged by an art director, not reformatting office files to a standard."
+ },
+ {
+  "item_id": "301a",
+  "reasoning": "Generating an original image in design software is creative production judged on taste. No benchmark tests creating original graphics; OSWorld image-editor items make narrow specified edits.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "303a",
+  "reasoning": "Drawing a chart from supplied data shares SpreadsheetBench 2's make-a-chart items, which check the chart result. Here the chart is a designed, print-ready graphic rather than a workbook chart.",
+  "best": "spreadsheetbench_2",
+  "best_match": "partial",
+  "best_difference": "A designed, print-ready graphic rather than a chart inside a workbook."
+ },
+ {
+  "item_id": "303b",
+  "reasoning": "Producing original illustration or artwork is creative visual work. No benchmark covers drawing artwork.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "306b",
+  "reasoning": "Designing a company logo proposal is original brand design from a brief. No benchmark covers creating visual identity work.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "313a",
+  "reasoning": "Producing a broadcast news graphic is visual design to broadcast standards on deadline. No benchmark covers creating graphics.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "3409a",
+  "reasoning": "Loan feasibility analysis means reviewing a folder of applicant documents, computing ratios and writing a recommendation judged by experts, the format of JobBench's file-based professional requests. The credit-specific analysis and lending standards are not represented.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "Applicant credit and property files analysed against lending standards rather than public-record files."
+ },
+ {
+  "item_id": "3412a",
+  "reasoning": "Reviewing and updating a loan file means reading its documents, checking them against a standard and updating them, which OfficeVal's checklist-judged document work shares. Loan files mix credit documents and loan-system records under lending rules.",
+  "best": "officeval",
+  "best_match": "partial",
+  "best_difference": "Loan file review under lending rules, with updates partly in a loan system."
+ },
+ {
+  "item_id": "3413a",
+  "reasoning": "Checking a loan agreement for completeness and accuracy against policy is document review judged by experts, which GDPval's compliance-style requests share. The check is a specific pre-signing policy review.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "A narrow pre-signing policy check of one agreement, not a full deliverable."
+ },
+ {
+  "item_id": "3425a",
+  "reasoning": "A loan market analysis means researching data and writing an analysis with target prospects, which GDPval's expert-judged analytical deliverables share. The prospect list and local lending-market focus differ.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "Deliverable includes target prospects for a local lending market."
+ },
+ {
+  "item_id": "3426b",
+  "reasoning": "Referring an account means moving the account file from the lender's system to a collector, matching UI-CUBE's moving records between applications. The worker first decides the account is irreconcilable and assembles the file.",
+  "best": "ui_cube",
+  "best_match": "partial",
+  "best_difference": "Worker decides the account is irreconcilable and assembles the file before transfer."
+ },
+ {
+  "item_id": "972a",
+  "reasoning": "Reviewing and approving a systems design or program is a judgment gate on someone else's work. Software benchmarks have the worker write code or tests, not approve or reject submissions.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "980a",
+  "reasoning": "An operational or progress report is a professional written deliverable assembled from period data and judged by executives, which GDPval covers. The worker must gather the data from internal systems rather than receive reference files.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "Data must be gathered from internal systems and project tools rather than supplied as reference files."
+ },
+ {
+  "item_id": "980b",
+  "reasoning": "The work is checking a staff report's substance against the underlying facts and deciding to approve or return it. JobBench has expert tasks that check others' analysis against data under expert criteria, the closest to substantive review; GDPval and OfficeVal produce or reformat documents rather than review them.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "The worker reviews and approves or returns someone else's operational report rather than producing an analysis."
+ },
+ {
+  "item_id": "58b",
+  "reasoning": "The item is a managerial operational decision written up and communicated to staff. GDPval includes management deliverables from a professional brief, which shares the decide-and-write action; messaging benchmarks lack the decision content.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "The decision depends on live facility context and managerial authority rather than a self-contained brief with reference files."
+ },
+ {
+  "item_id": "3398a",
+  "reasoning": "The worker answers a live budget question by looking up and applying financial data and rules. CRMArena-Pro answers requests from company data through tools, some conversationally, which is the closest shape; Finch has the calculation but no live requester, and phone benchmarks are transactional.",
+  "best": "crmarena_pro",
+  "best_match": "partial",
+  "best_difference": "The request is budget and cost-analysis advice rather than a CRM case, and the answer is advice rather than a chosen record."
+ },
+ {
+  "item_id": "95a",
+  "reasoning": "Scheduling classes means booking rooms, equipment and instructors and publishing the schedule to people. TheAgentCompany covers administrative coordination across shared files and team chat, the closest kind of work.",
+  "best": "theagentcompany",
+  "best_match": "partial",
+  "best_difference": "The core is constraint scheduling of rooms, equipment and instructors, which its examples do not test."
+ },
+ {
+  "item_id": "98b",
+  "reasoning": "The work is analysing feedback, test and performance data for a programme and writing up findings. JobBench has occupation-specific analysis of supplied data files judged against expert criteria, which is the same shape; GDPval and Finch are close alternatives.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "The analysis is a judgement of training effectiveness, which is not among its described tasks."
+ },
+ {
+  "item_id": "21447a",
+  "reasoning": "The work is reading an application and records against eligibility rules and recording a finding. GDPval includes compliance officers' requests with reference files, judged by experts; SOPBench and Terminal-Bench claim adjudication share rule application but in service or batch command-line form.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "The output is a recorded eligibility finding on one case rather than a full document deliverable."
+ },
+ {
+  "item_id": "21452b",
+  "reasoning": "Issuing a license is creating a record in a back-office system from an approved application and sending the document. UI-CUBE has entering given data into enterprise applications until the state matches, the closest action.",
+  "best": "ui_cube",
+  "best_match": "partial",
+  "best_difference": "It also requires producing and mailing a legally effective license document, which UI-CUBE does not cover."
+ },
+ {
+  "item_id": "21456a",
+  "reasoning": "The work is scoring a completed test against a key or rubric and recording the result. No benchmark tests marking applicant answers; data-entry benchmarks share only the recording step.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "7380a",
+  "reasoning": "Model validation means running tests on an analytical model, judging adequacy and reformulating it. METR tasks are self-contained technical tasks with code and scoring, such as fixing a model codebase, the nearest kind of work; JobBench's recompute-and-check is close too.",
+  "best": "metr_th",
+  "best_match": "partial",
+  "best_difference": "Validation involves judging assumptions and adequacy for a client problem, not passing an automatic scoring function."
+ },
+ {
+  "item_id": "1419b",
+  "reasoning": "The work is physically verifying that installed equipment meets specification and signing the acceptance record. No benchmark covers physical inspection and sign-off; document benchmarks share only the paperwork.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "19628a",
+  "reasoning": "The output is an integrated mechanical system design package with calculations and drawings for review. GDPval includes engineering deliverables built from a brief and judged by experts, the closest; no benchmark tests building-system design directly.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "It requires engineering calculations, drawings and code compliance for an integrated building system, beyond typical document deliverables."
+ },
+ {
+  "item_id": "20733b",
+  "reasoning": "The output is a mechanical design package meeting requirements. GDPval includes expert-judged engineering deliverables, the closest; no benchmark covers CAD design.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "Mechanical design packages need CAD models, drawings and engineering analysis rather than an office document."
+ },
+ {
+  "item_id": "20735a",
+  "reasoning": "The work is building a model of an alternative design or process for testing. JobBench has occupation-specific technical analysis from source files with expert criteria; METR has scripted technical tasks, but neither builds engineering models.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "It requires building an engineering simulation or CAD model rather than analysing supplied records."
+ },
+ {
+  "item_id": "23988a",
+  "reasoning": "The work is reading another person's document and returning substantive comments. JobBench includes checking others' analysis against data under expert criteria, closest to substantive review; OfficeVal annotation shares the mechanics but not the expert critique.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "The worker critiques someone else's economic document rather than performing the analysis."
+ },
+ {
+  "item_id": "245a",
+  "reasoning": "The worker identifies a client's need in a live contact and gives resource and access information. EVA-Bench has live calls where the worker finds out what the caller needs and gives accurate information from systems, the closest form.",
+  "best": "eva_bench",
+  "best_match": "partial",
+  "best_difference": "It is social-service referral advice from community resource knowledge rather than airline, HR or IT records changes."
+ },
+ {
+  "item_id": "251a",
+  "reasoning": "Child placement involves suitability judgement, coordination with caregivers and courts, and physical handover. No benchmark covers this; case-administration benchmarks share only the documentation.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "1764a",
+  "reasoning": "A reporter calls and the worker answers or routes them to a spokesperson before the call ends. EVA-Bench has live calls where the worker determines the request and responds accurately, including routing-type service, the closest form.",
+  "best": "eva_bench",
+  "best_match": "partial",
+  "best_difference": "It is a media inquiry answered from communications knowledge, with no system records changed."
+ },
+ {
+  "item_id": "515a",
+  "reasoning": "The work is totalling measured intake and output and entering them in a patient chart. UI-CUBE has entering given data into enterprise applications until the final state matches, the closest action.",
+  "best": "ui_cube",
+  "best_match": "partial",
+  "best_difference": "It is clinical charting with measurement at the bedside rather than business-system entry."
+ },
+ {
+  "item_id": "1810a",
+  "reasoning": "The work is analysing dispensing data for compliance, overuse and interactions and flagging cases. JobBench has expert analysis of supplied records judged against expert criteria, the closest; Spider 2.0 shares querying but not clinical judgement.",
+  "best": "jobbench",
+  "best_match": "partial",
+  "best_difference": "It requires clinical drug-utilisation judgement, which is not among its described tasks."
+ },
+ {
+  "item_id": "1812c",
+  "reasoning": "The work is updating a single charge or billing record in a system. WorkArena single actions are explicit record changes in an enterprise system, the same kind of action.",
+  "best": "workarena_l1",
+  "best_match": "partial",
+  "best_difference": "The record is in a pharmacy billing system and requires correct charge coding rather than a ServiceNow record."
+ },
+ {
+  "item_id": "1812d",
+  "reasoning": "The work is entering stock movements or reconciling regulated-drug inventory records and noting discrepancies. APEX-Accounting has reconciliations and entering transactions against a checklist, sharing the main actions.",
+  "best": "apex_accounting",
+  "best_match": "partial",
+  "best_difference": "It reconciles physical drug stock and regulated-substance logs rather than financial accounts."
+ },
+ {
+  "item_id": "1821b",
+  "reasoning": "The work is a short clinical dose calculation from an assay result, entered in a dose record. No benchmark tests clinical dosing calculations; exact-answer benchmarks are in bookkeeping or finance.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "1822b",
+  "reasoning": "The item is a pharmacy administrative report, schedule or filing. GDPval includes administrative and professional document deliverables from reference files, the closest kind of output.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "It is pharmacy-specific operational or regulatory paperwork tied to the store's own records."
+ },
+ {
+  "item_id": "1822c",
+  "reasoning": "The work is deciding what non-pharmaceutical merchandise to buy and submitting the order. WorkArena++ includes working out what to order and placing orders through a system, the same main actions.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "The order goes to an external supplier for retail merchandise rather than through a service catalogue."
+ },
+ {
+  "item_id": "1823b",
+  "reasoning": "The work is answering a clinician's specialty drug-therapy question with expert advice. GDPval includes expert-judged professional advice deliverables, the closest; no benchmark covers clinical consults.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "It is a short clinical consult answer to a team member, often given live, rather than a document deliverable."
+ },
+ {
+  "item_id": "1824b",
+  "reasoning": "The work is recording a quality-test result and releasing or quarantining a medication batch. No benchmark covers pharmaceutical quality disposition; record-entry benchmarks share only the data entry.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "20406a",
+  "reasoning": "The work is entering a specified change in a pharmacy database and verifying it. WorkArena single actions are explicit record changes in an enterprise system, the closest action.",
+  "best": "workarena_l1",
+  "best_match": "partial",
+  "best_difference": "The system is a pharmacy information database with clinical verification rather than ServiceNow."
+ },
+ {
+  "item_id": "2276a",
+  "reasoning": "The work is taking cash or card payment face to face and returning change or a receipt. No benchmark covers in-person point-of-sale payment.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "2277a",
+  "reasoning": "The work is capturing a table's spoken food order and confirming it. \u03c4-Voice has live spoken requests captured into a system, sharing the conversational capture, but no benchmark covers in-person order taking.",
+  "best": "tau_voice",
+  "best_match": "partial",
+  "best_difference": "It is in-person menu order taking without policy checks or account verification."
+ },
+ {
+  "item_id": "2294a",
+  "reasoning": "The work is describing wines and recommending one to diners in person. No benchmark covers in-person product advice from personal knowledge.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "18748a",
+  "reasoning": "The work is answering a guest's local-area question, usually from memory, in person. No benchmark covers informal live information exchange; web lookup benchmarks share only an optional search step.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "23108b",
+  "reasoning": "The work is deciding what food and supplies are needed and placing a replenishment order. WorkArena++ includes working out needs and placing orders through a system, the closest.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "Quantities come from stock counts and usage judgement, and the order goes to an external supplier."
+ },
+ {
+  "item_id": "669a",
+  "reasoning": "The work is calculating prices from costs and margin targets, getting approval and entering them. Finch has calculation across workbooks and expert-judged finance outputs, the closest to the margin analysis.",
+  "best": "finch",
+  "best_match": "partial",
+  "best_difference": "It ends in a pricing decision entered into a store system rather than a finance report."
+ },
+ {
+  "item_id": "2451a",
+  "reasoning": "The work is ordering a title search, receiving the result and sharing it with parties. OSWorld 2.0 has long office workflows submitting requests in portals, cross-checking results and communicating outcomes, the closest shape.",
+  "best": "osworld_2",
+  "best_match": "partial",
+  "best_difference": "It involves ordering from an external title company and coordinating buyers, lenders and escrow over days."
+ },
+ {
+  "item_id": "2453a",
+  "reasoning": "The work is answering a client's real-estate questions live from expert knowledge. No benchmark tests live expert advisory answers without a system transaction.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "2461a",
+  "reasoning": "The work is reviewing a buyer's financial documents and credit to judge financing eligibility. GDPval includes real-estate and finance professional assessments from supplied files, the closest; Vals Finance Agent uses company filings.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "The output is an eligibility judgement on personal finances rather than a document deliverable."
+ },
+ {
+  "item_id": "2468b",
+  "reasoning": "The work is writing up a rental listing from landlord details and posting it. GDPval includes real-estate professional requests producing written items from supplied details, the closest.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "It is a short listing published to a listing service rather than a full document deliverable."
+ },
+ {
+  "item_id": "2471b",
+  "reasoning": "The work is researching local market conditions and appraising undeveloped land for a client. GDPval includes real-estate professional evaluations judged by experts, the closest kind of deliverable.",
+  "best": "gdpval",
+  "best_match": "partial",
+  "best_difference": "It requires local market and site research and a land appraisal, beyond supplied reference files."
+ },
+ {
+  "item_id": "4741a",
+  "reasoning": "The work is corresponding with a supplier to agree a remedy for damage or shortage and closing the case. TheAgentCompany has messaging people, looking up records and updating files, the closest shape.",
+  "best": "theagentcompany",
+  "best_match": "partial",
+  "best_difference": "It is negotiation with an external establishment over a remedy rather than internal colleague coordination."
+ },
+ {
+  "item_id": "779a",
+  "reasoning": "The work is greeting a visitor, finding out their purpose and directing them to the right staff. EVA-Bench has live contacts where the worker determines what the caller wants and routes or responds, the closest form.",
+  "best": "eva_bench",
+  "best_match": "partial",
+  "best_difference": "It is an in-person walk-up with routing only, rather than a phone call that updates system records."
+ },
+ {
+  "item_id": "9713a",
+  "reasoning": "The work is building a staff schedule from coverage needs and availability and issuing it. SpreadsheetBench 2 has building and filling workbooks to a specification, the closest to preparing a roster.",
+  "best": "spreadsheetbench_2",
+  "best_match": "partial",
+  "best_difference": "The core is constraint scheduling and issuing to staff rather than formula or model correctness."
+ },
+ {
+  "item_id": "23431a",
+  "reasoning": "The work is reading plans, working out dimensions and materials, and physically laying out the job. No benchmark covers blueprint reading and physical layout.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "23436a",
+  "reasoning": "The work is selecting materials and placing an order with a supplier, including delivery. WorkArena++ includes working out what to order and placing orders through a system, the closest.",
+  "best": "workarena_pp",
+  "best_match": "partial",
+  "best_difference": "The order goes to an external lumber supplier with delivery scheduling rather than through a service catalogue."
+ },
+ {
+  "item_id": "20160a",
+  "reasoning": "The work is reading a work order and drawings before assembly and raising issues. No benchmark involves interpreting manufacturing drawings on the shop floor.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "20161a",
+  "reasoning": "The work is compiling the team's output figures into a production report for management. OfficeVal has extracting data into tables and preparing reports and spreadsheets from given data, the closest.",
+  "best": "officeval",
+  "best_match": "partial",
+  "best_difference": "The figures come from the team's own shift counts and the report is a standard production form."
+ },
+ {
+  "item_id": "23876b",
+  "reasoning": "The work is reporting a damaged stock item to a supervisor. WorkArena single actions include creating an incident record with given details, the closest reporting action.",
+  "best": "workarena_l1",
+  "best_match": "partial",
+  "best_difference": "The damage is found by physical inspection and the report is often verbal or a simple note."
+ },
+ {
+  "item_id": "23881a",
+  "reasoning": "The work is physically counting and inspecting delivered goods against the invoice. No benchmark covers physical receiving checks; data-matching benchmarks share only the comparison.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "23882a",
+  "reasoning": "The work is scanning items, totalling them and taking payment at a register. No benchmark covers in-person point-of-sale checkout.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ },
+ {
+  "item_id": "23885b",
+  "reasoning": "The work is turning completed stock counts into a reorder list. SpreadsheetBench 2 has calculating and filling workbooks from data, the closest.",
+  "best": "spreadsheetbench_2",
+  "best_match": "partial",
+  "best_difference": "It needs par-level and usage judgement on stock rather than formula correctness."
+ },
+ {
+  "item_id": "23886a",
+  "reasoning": "The work is physically retrieving and handing over requested items while the requester waits. No benchmark covers physical issue of goods.",
+  "best": "none",
+  "best_match": "none",
+  "best_difference": ""
+ }
+]

@@ -1,0 +1,6 @@
+[
+  {"task_id": "7536", "reasoning": "'Study data in an area of specialization' is largely keeping current with releases and literature, which produces nothing checked, plus some analysis written up for others. Y's split captures both; X treats all of it as a deliverable analysis, which duplicates 7538 more heavily.", "choice": "Y"},
+  {"task_id": "7540", "reasoning": "Guidelines, standards and points of view are all written economic papers on a topic, prepared and issued the same way. The difference is subject, not activity, so Y's single part is sufficient.", "choice": "Y"},
+  {"task_id": "7541", "reasoning": "Regulatory and legislative hearings normally require written testimony submitted in advance, and preparing it is a large share of the work; the live appearance is separate. Y's split reflects how testimony is done today.", "choice": "Y"},
+  {"task_id": "7544", "reasoning": "Teaching economics includes setting and grading assessments, which produce graded work that students and the department rely on. X separates that checkable part from the live teaching; Y codes everything as interpersonal.", "choice": "X"}
+]

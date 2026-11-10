@@ -103,12 +103,18 @@ def main():
         anchors = ([json.loads(l) for l in open(ROOT / m["anchors_file"]) if l.strip()]
                    if m.get("anchors_file") else None)
         before = spent()
-        for j, b in enumerate(m["coders"]["t"]["batches"]):
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(jb):
+            j, b = jb
             parsed, u = chat_json([{"role": "user", "content": body([by_id[x] for x in b], anchors) +
                                     '\n\nReturn a JSON object {"items": [...]}, one element per '
                                     "item in the order given."}], purpose=f"bench_times {run} t{j}")
             (d / "t" / f"batch{j}.json").write_text(json.dumps(parsed.get("items", []), indent=1))
-            print("batch", j, len(parsed.get("items", [])), u.get("completion_tokens"))
+            return j, len(parsed.get("items", [])), u
+        with ThreadPoolExecutor(6) as ex:
+            for j, n, u in ex.map(one, enumerate(m["coders"]["t"]["batches"])):
+                print("batch", j, n, u.get("completion_tokens"))
         print(f"this run ${spent() - before:.3f}; project total ${spent():.3f}")
     elif cmd == "collect":
         m, by_id = json.loads((d / "manifest.json").read_text()), json.loads((d / "items.json").read_text())

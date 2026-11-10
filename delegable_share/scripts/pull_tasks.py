@@ -82,6 +82,25 @@ COMPARISON = {
     "13-2011.00": "white_collar", "23-1011.00": "white_collar", "13-2041.00": "white_collar",
     "25-2031.00": "white_collar", "41-4012.00": "white_collar", "13-1111.00": "white_collar",
 }
+# Second wave (2026-11-10): more IT/BPO service lines, and high-employment occupations across the
+# economy. Same exclusions as COMPARISON.
+MORE = {
+    "15-1251.00": "bpo_extra", "15-1212.00": "bpo_extra", "41-9041.00": "bpo_extra", "43-3051.00": "bpo_extra",
+    "43-3011.00": "bpo_extra", "31-9094.00": "bpo_extra", "15-2051.00": "bpo_extra",
+    "41-2031.00": "general", "41-2011.00": "general", "43-9061.00": "general", "11-1021.00": "general",
+    "13-1082.00": "general", "25-2021.00": "general", "31-9092.00": "general", "47-2061.00": "general",
+    "35-2014.00": "general", "33-3051.00": "general", "41-3021.00": "general", "27-1024.00": "general",
+    "11-2021.00": "general", "13-2072.00": "general",
+    # 29 more high-employment occupations across all major SOC groups (user asked for ~50 in this wave)
+    "11-3021.00": "general", "11-9111.00": "general", "13-2031.00": "general", "13-1151.00": "general",
+    "13-1041.00": "general", "15-2031.00": "general", "17-2051.00": "general", "17-2141.00": "general",
+    "19-3011.00": "general", "21-1021.00": "general", "27-3031.00": "general", "27-3041.00": "general",
+    "29-2061.00": "general", "29-1051.00": "general", "31-1121.00": "general", "33-9032.00": "general",
+    "35-3031.00": "general", "35-3023.00": "general", "37-3011.00": "general", "41-1011.00": "general",
+    "41-9022.00": "general", "43-5071.00": "general", "43-6013.00": "general", "43-1011.00": "general",
+    "47-2031.00": "general", "49-9071.00": "general", "51-2092.00": "general", "53-7062.00": "general",
+    "53-7065.00": "general",
+}
 
 # --------------------------------------------------------------------------------------
 # Frequency (FT) method
@@ -457,12 +476,14 @@ def build():
     print(f"O*NET {ONET_VERSION} whole-database Eloundou match: " + json.dumps(stats))
 
     summaries = []
-    for name, codes in [("pilot", PILOT), ("bpo", BPO), ("comparison", list(COMPARISON))]:
+    for name, codes in [("pilot", PILOT), ("bpo", BPO), ("comparison", list(COMPARISON)), ("more", list(MORE))]:
         built = build_set(codes, occ, ts, ratings, dwas, el)
         if name == "bpo":
             built.insert(0, "in_pilot", built["onetsoc_code"].isin(PILOT))
         if name == "comparison":
             built.insert(0, "control_group", built["onetsoc_code"].map(COMPARISON))
+        if name == "more":
+            built.insert(0, "control_group", built["onetsoc_code"].map(MORE))
         out = DATA / f"{name}_tasks.csv"
         built.to_csv(out, index=False)
         print(f"wrote {out.relative_to(ROOT)}: {len(built)} rows; "

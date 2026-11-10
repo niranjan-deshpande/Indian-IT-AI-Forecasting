@@ -1,0 +1,821 @@
+[
+ {
+  "task_id": "2400",
+  "split_reasoning": "Cash, checks, cards, vouchers, and debits are alternative payment methods for the same checkout step.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive a customer's payment at checkout.",
+    "time_share": 1.0,
+    "type_reasoning": "Payment is received and processed while the customer waits at the register.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One payment step is completed for a customer's transaction, even if more than one payment method is used.",
+    "work_item": "one customer's payment received and processed",
+    "start": "the transaction total is presented to the customer",
+    "end": "payment is accepted and recorded at the register",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Selling items and redeeming vouchers can include accepting payment, but those statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2406",
+     "2413"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2401",
+  "split_reasoning": "Issuing receipts, returning change, and issuing refunds or credits are distinct outputs; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue a customer a receipt for a transaction.",
+    "time_share": 0.35,
+    "type_reasoning": "The receipt is provided during the customer's checkout.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The receipt for one transaction is the record handed to the customer.",
+    "work_item": "one transaction receipt issued",
+    "start": "the register completes the transaction",
+    "end": "the receipt is offered or given to the customer",
+    "checked_by": "the customer",
+    "overlap_reasoning": "The other statements do not specifically describe issuing the receipt.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Give a customer change due after payment.",
+    "time_share": 0.35,
+    "type_reasoning": "Change is counted and handed over while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The change due for one payment is handed over as a whole.",
+    "work_item": "one customer's change issued",
+    "start": "a cash payment exceeding the amount due is accepted",
+    "end": "the correct change is handed to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Receiving the cash payment precedes this step but is a separate output.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Issue a refund or credit due to a customer.",
+    "time_share": 0.3,
+    "type_reasoning": "The cashier issues the refund or credit while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One refund or credit is issued for an approved customer transaction.",
+    "work_item": "one customer refund or credit issued",
+    "start": "the amount and method of refund or credit are established",
+    "end": "the refund or credit is issued to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Processing merchandise returns can include issuing a refund or credit, but also covers exchanges and other return steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2417"
+    ]
+   }
+  ],
+  "notes": "The relative time spent issuing receipts, change, and refunds varies by establishment."
+ },
+ {
+  "task_id": "2402",
+  "split_reasoning": "Counting the starting drawer and checking its change supply are parts of one opening check.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and check the cash drawer at the start of a shift.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier physically counts the money in the drawer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Sorting and counting currency can be part of the opening check, but the currency-handling statement also covers other occasions and wrapping.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2416"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2403",
+  "split_reasoning": "Greeting customers is one kind of customer interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet a customer entering the establishment.",
+    "time_share": 1.0,
+    "type_reasoning": "The greeting is a live customer interaction rather than a separate written deliverable.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One greeting is completed during a customer's arrival.",
+    "work_item": "one entering customer greeted",
+    "start": "the customer enters the establishment",
+    "end": "the cashier finishes the greeting",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "The other statements concern assistance or transactions rather than the greeting itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2405",
+  "split_reasoning": "Identifying prices and tabulating the bill are steps in producing one customer total, using alternative tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify prices and tabulate a customer's bill.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier establishes the amount due while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The bill for one customer transaction is the total presented for payment.",
+    "work_item": "one customer bill priced and totaled",
+    "start": "goods, services, or admission are presented for purchase",
+    "end": "the amount due is calculated and presented",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Weighing goods and selling items may contribute to the bill, while transaction-total recording covers totals more broadly.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2410",
+     "2412",
+     "2413"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2406",
+  "split_reasoning": "Issuing trading stamps and redeeming food stamps or coupons are different checkout outputs; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue trading stamps earned by a customer.",
+    "time_share": 0.1,
+    "type_reasoning": "The stamps are issued during the customer's transaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The stamps earned on one transaction are issued together.",
+    "work_item": "one transaction's trading stamps issued",
+    "start": "the qualifying transaction amount is known",
+    "end": "the stamps are given or credited to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "No other statement specifically describes issuing trading stamps.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Redeem a customer's food stamps or coupons at checkout.",
+    "time_share": 0.9,
+    "type_reasoning": "The cashier validates and applies the customer's benefit or coupon while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The benefits and coupons presented for one transaction are applied to that transaction.",
+    "work_item": "one transaction's food stamps or coupons redeemed",
+    "start": "the customer presents food stamps or coupons",
+    "end": "eligible amounts are applied and the customer is told the result",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Redeeming a food benefit can overlap with receiving payment, although coupons may instead reduce the price.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400"
+    ]
+   }
+  ],
+  "notes": "Trading stamps are uncommon in many current workplaces; the share depends on the establishment."
+ },
+ {
+  "task_id": "2408",
+  "split_reasoning": "Answering questions and explaining procedures or policies are one customer-information activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question about store procedures or policies.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier gives information during a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's question is answered within the contact.",
+    "work_item": "one customer question answered",
+    "start": "the customer asks a question",
+    "end": "the cashier provides the information or directs the customer to the appropriate person",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "General customer assistance and phone calls can include policy questions, but also cover other interactions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18765",
+     "21073"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2409",
+  "split_reasoning": "Cashing a customer's check is one transaction regardless of the check's details.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Cash a check for a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The check is validated and cash is given to the customer during the visit.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One check is accepted or declined as a transaction.",
+    "work_item": "one customer's check cashed or declined",
+    "start": "the customer presents a check for cashing",
+    "end": "cash is given or the customer is told the check cannot be cashed",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Cashing a check is different from accepting a check as payment for a purchase.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2410",
+  "split_reasoning": "Weighing an item and determining its price are one price-determination step.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Weigh an item sold by weight and determine its price.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier weighs and prices the item while the customer waits at checkout.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The price determined for one weighed item or group of like items is entered into the transaction.",
+    "work_item": "one weighed item's price determined and entered",
+    "start": "the item is presented at checkout",
+    "end": "its weight-based price is determined and entered",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Weighing is one way to establish a price for a bill, while the billing statement also covers other goods and price methods.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2405"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2411",
+  "split_reasoning": "Calculating payments for a period and reconciling them with sales form one reconciliation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Reconcile payments received with sales for a period.",
+    "time_share": 1.0,
+    "type_reasoning": "The reconciliation is a completed record used to account for the cashier's sales and receipts.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A shift or other reporting period is reconciled and handed over as one record.",
+    "work_item": "one period's payment-to-sales reconciliation",
+    "start": "the period ends and payment and sales records are available",
+    "end": "totals are compared and discrepancies recorded or reported",
+    "checked_by": "the cashier's supervisor or accounting staff",
+    "overlap_reasoning": "Period balance sheets and recorded transaction totals can supply or include reconciliation figures, but are not necessarily the reconciliation itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2412",
+     "2414"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2412",
+  "split_reasoning": "Computing and recording a transaction total are steps in one output, but totals are recorded both during checkout and in back-office summaries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compute and record a transaction total while serving a customer.",
+    "time_share": 0.7,
+    "type_reasoning": "The total is recorded in the register while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One transaction's total is recorded in the register.",
+    "work_item": "one customer transaction total recorded at checkout",
+    "start": "the transaction's items and amounts have been entered",
+    "end": "the total is calculated and recorded in the register",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Tabulating a customer bill includes calculating its total, but also includes identifying prices.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2405"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Compute and record transaction totals from records outside a customer contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The cashier prepares a recorded total from transaction records without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A total for a specified group or period of transactions is recorded as one entry or summary.",
+    "work_item": "one transaction-total entry or summary",
+    "start": "the relevant transaction records are available",
+    "end": "the computed total is recorded",
+    "checked_by": "the cashier's supervisor or accounting staff",
+    "overlap_reasoning": "A transaction summary can supply figures for reconciliation or a balance sheet, which require additional work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2411",
+     "2414"
+    ]
+   }
+  ],
+  "notes": "The statement is ambiguous about whether totals are per transaction or for a period; shares are estimates."
+ },
+ {
+  "task_id": "2413",
+  "split_reasoning": "Tickets and other items are alternative things sold in the same customer-facing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sell tickets or other items to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The sale is conducted with the customer present or otherwise in live contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's sale is completed and the purchased items or tickets are provided.",
+    "work_item": "one customer sale completed",
+    "start": "the customer requests or presents items or tickets for purchase",
+    "end": "the sale is completed and the items or tickets are provided",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "A sale can include pricing and receiving payment, while those statements separately describe those steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2400",
+     "2405"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2414",
+  "split_reasoning": "Maintaining a periodic balance sheet of transaction amounts and counts is one reporting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare or update a periodic balance sheet of transaction amounts and counts.",
+    "time_share": 1.0,
+    "type_reasoning": "Each reporting period produces a balance sheet used by management or accounting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The period's balance sheet is the record reviewed as a whole.",
+    "work_item": "one periodic transaction balance sheet",
+    "start": "transaction counts and amounts for the period are available",
+    "end": "the balance sheet is updated and submitted or filed",
+    "checked_by": "the cashier's supervisor or accounting staff",
+    "overlap_reasoning": "Transaction totals and payment reconciliation may provide figures for the sheet, but each statement also covers a separate output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2411",
+     "2412"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2415",
+  "split_reasoning": "Bagging at checkout, gift-wrapping, and preparing shipments are different hands-on activities, with the first normally done while the customer waits; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bag or box a customer's merchandise at checkout.",
+    "time_share": 0.7,
+    "type_reasoning": "The merchandise is packed at the register while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The merchandise from one customer transaction is packed for the customer.",
+    "work_item": "one customer's checkout merchandise bagged or boxed",
+    "start": "the customer's merchandise is ready to pack",
+    "end": "the packed merchandise is handed or made available to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "The other-areas statement also describes bagging customers' items and would count this same checkout output.",
+    "duplicates": [
+     "18767"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Wrap or gift-wrap merchandise.",
+    "time_share": 0.15,
+    "type_reasoning": "Wrapping requires hands-on preparation of the merchandise and wrapping materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements do not specifically describe gift-wrapping.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare merchandise packages for shipment.",
+    "time_share": 0.15,
+    "type_reasoning": "Packing and preparing a shipment require hands-on work away from the register.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements do not specifically describe preparing shipments.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Gift-wrapping may also be done while a customer waits; the shares and location depend on the store."
+ },
+ {
+  "task_id": "2416",
+  "split_reasoning": "Sorting, counting, and wrapping currency and coins are related steps in preparing money for storage or transfer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort, count, and wrap currency and coins.",
+    "time_share": 1.0,
+    "type_reasoning": "This is hands-on handling and preparation of physical money.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Counting a starting drawer involves some of the same money handling, but this task also covers sorting and wrapping at other times.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2402"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2417",
+  "split_reasoning": "Returns and exchanges are closely related alternatives in processing a customer's merchandise request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Process a customer's merchandise return or exchange.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier checks and processes the request while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's return or exchange request is processed as a transaction.",
+    "work_item": "one merchandise return or exchange processed",
+    "start": "the customer presents merchandise and requests a return or exchange",
+    "end": "the return or exchange is recorded and its outcome confirmed to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "A return can include issuing a refund or credit, but exchanges and other return-processing steps go beyond that output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2401"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2419",
+  "split_reasoning": "Paging is one request for information or assistance, normally made during a checkout or other immediate store need.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Page for information or assistance needed at checkout.",
+    "time_share": 1.0,
+    "type_reasoning": "The page is typically made during a live customer interaction while assistance is needed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One page communicates one request for a response or assistance.",
+    "work_item": "one assistance or information request paged",
+    "start": "the cashier identifies a need for information or assistance",
+    "end": "the request is broadcast over the paging system",
+    "checked_by": "the staff member addressed and the waiting customer",
+    "overlap_reasoning": "Customer assistance can prompt a page, but answering or resolving the customer's issue is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Some pages concern store operations without a customer waiting; the live-service classification reflects the assumed typical checkout use."
+ },
+ {
+  "task_id": "2421",
+  "split_reasoning": "Compiling and maintaining non-monetary reports and records are related ways of producing or updating an operational record.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile or update a non-monetary operational report or record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed report or record update is retained for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One report or record update is filed or passed to the person who uses it.",
+    "work_item": "one non-monetary report or record update",
+    "start": "information to be recorded or reported is available",
+    "end": "the report or record is completed and filed or submitted",
+    "checked_by": "the cashier's supervisor or relevant store staff",
+    "overlap_reasoning": "The other reporting statements specifically concern monetary or transaction totals rather than non-monetary records.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The exact records depend on the establishment."
+ },
+ {
+  "task_id": "2422",
+  "split_reasoning": "Monitoring cash availability and monitoring staffing produce different operational responses; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and report or address a checkout station's cash shortage.",
+    "time_share": 0.5,
+    "type_reasoning": "Continuous monitoring produces discrete shortage reports or replenishment requests.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One identified station shortage is communicated or addressed as a single operational need.",
+    "work_item": "one checkout cash shortage identified and reported or addressed",
+    "start": "the cashier checks or receives information about a station's cash supply",
+    "end": "the shortage is resolved or a replenishment request is communicated",
+    "checked_by": "the checkout supervisor or cash office",
+    "overlap_reasoning": "Opening-drawer counts can reveal inadequate change, but also check the starting amount and are not ongoing station monitoring.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2402"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Identify and report or address a checkout staffing need.",
+    "time_share": 0.5,
+    "type_reasoning": "Continuous monitoring produces discrete staffing adjustments or requests.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One identified staffing need is communicated or addressed as an operational request.",
+    "work_item": "one checkout staffing need identified and reported or addressed",
+    "start": "the cashier observes station coverage or customer queues",
+    "end": "the staffing need is addressed or communicated to the responsible person",
+    "checked_by": "the checkout supervisor or assigned staff",
+    "overlap_reasoning": "Supervising staff can include responding to coverage needs, but also includes broader direction of employees.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18768"
+    ]
+   }
+  ],
+  "notes": "Whether cashiers may directly replenish cash or adjust staffing depends on their authority."
+ },
+ {
+  "task_id": "2423",
+  "split_reasoning": "Posting a charge can occur while a guest or patient waits or later from written records; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Post a charge to a guest's or patient's account during a live contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The account is updated while the guest or patient is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One charge is entered and confirmed within the contact.",
+    "work_item": "one account charge posted during a guest or patient contact",
+    "start": "the charge and account are identified during the contact",
+    "end": "the charge is posted and its inclusion confirmed",
+    "checked_by": "the guest or patient and the accounting or billing team",
+    "overlap_reasoning": "Posting an account charge is distinct from receiving payment or tabulating a cash-register bill.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Post a charge to a guest's or patient's account from a written request or record.",
+    "time_share": 0.4,
+    "type_reasoning": "The charge is entered outside a live customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One charge entry is posted to the specified account for downstream billing.",
+    "work_item": "one account charge posted from a record",
+    "start": "a charge record or posting request is received",
+    "end": "the charge is entered in the correct account",
+    "checked_by": "the accounting or billing team",
+    "overlap_reasoning": "The other statements do not specifically describe back-office account posting.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The live and back-office shares vary substantially by establishment."
+ },
+ {
+  "task_id": "2424",
+  "split_reasoning": "Offering carry-out service is one customer-facing step, distinct from carrying items out.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Offer a customer carry-out service after the transaction.",
+    "time_share": 1.0,
+    "type_reasoning": "The offer is made in a live interaction with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One offer is made to a customer at the end of a transaction.",
+    "work_item": "one carry-out service offer made",
+    "start": "the customer's transaction is completed",
+    "end": "the offer is made and the customer's response is received",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Carrying out items is a separate activity from offering the service.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18765",
+  "split_reasoning": "Providing information and resolving complaints are distinct customer-service activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide information requested by a customer.",
+    "time_share": 0.55,
+    "type_reasoning": "The cashier provides the information during a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's information request is answered in the contact.",
+    "work_item": "one customer information request answered",
+    "start": "the customer requests information",
+    "end": "the information is provided or the customer is directed to someone who can help",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "Policy questions, product-location requests, and phone calls can all involve providing information, but each statement has a different scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2408",
+     "21072",
+     "21073"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Help resolve a customer's complaint.",
+    "time_share": 0.45,
+    "type_reasoning": "The cashier discusses and attempts to resolve the complaint while the customer is present or on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One complaint is addressed or referred during the contact.",
+    "work_item": "one customer complaint addressed",
+    "start": "the customer presents a complaint",
+    "end": "the cashier communicates a resolution or refers the complaint",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "A complaint may involve a return or a phone call, but those statements also cover other requests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2417",
+     "21073"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the store's service arrangements."
+ },
+ {
+  "task_id": "18766",
+  "split_reasoning": "Keeping checkout areas orderly and performing general cleaning are related hands-on cleaning duties.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and tidy checkout areas and perform general cleaning duties.",
+    "time_share": 1.0,
+    "type_reasoning": "Mopping, emptying trash, and tidying require hands-on work away from the computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The other statements do not describe general cleaning.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18767",
+  "split_reasoning": "Monitoring fitting rooms, bagging items, and carrying items out are different duties; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Attend a fitting room and assist customers using it.",
+    "time_share": 0.3,
+    "type_reasoning": "The cashier interacts with customers as they enter or leave the fitting room.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's fitting-room visit is managed during the live interaction.",
+    "work_item": "one customer's fitting-room visit assisted",
+    "start": "the customer requests or approaches a fitting room",
+    "end": "the customer finishes the visit and any required item check is completed",
+    "checked_by": "the customer and store supervisor",
+    "overlap_reasoning": "The other statements do not specifically cover fitting-room attendance.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Bag a customer's items.",
+    "time_share": 0.4,
+    "type_reasoning": "Bagging is normally done at checkout while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The items from one customer's transaction are bagged together.",
+    "work_item": "one customer's items bagged",
+    "start": "the customer's items are ready to bag",
+    "end": "the bagged items are made available to the customer",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "The merchandise-bagging part of task 2415 describes the same output.",
+    "duplicates": [
+     "2415"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Carry a customer's items out of the store.",
+    "time_share": 0.3,
+    "type_reasoning": "Carry-out requires physically moving the customer's items away from the checkout.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Offering carry-out service is a separate step from actually carrying the items.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Fitting-room monitoring may also include unattended observation or physical tidying beyond customer visits."
+ },
+ {
+  "task_id": "18768",
+  "split_reasoning": "Supervising employees and providing on-the-job training are distinct interpersonal activities; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise other employees.",
+    "time_share": 0.6,
+    "type_reasoning": "The core work is directing and supporting employees through live interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Supervision can include responding to checkout staffing needs, but also covers broader employee direction.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2422"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Provide on-the-job training to other employees.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in live instruction and practice with the trainee.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other statement specifically describes employee training.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The shares vary with the cashier's supervisory responsibilities."
+ },
+ {
+  "task_id": "21072",
+  "split_reasoning": "Helping a customer find a product is one customer-assistance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help a customer find a product's location.",
+    "time_share": 1.0,
+    "type_reasoning": "The cashier provides directions or helps locate the product while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One product-location request is handled in the customer contact.",
+    "work_item": "one customer product-location request answered",
+    "start": "the customer asks where to find a product",
+    "end": "the customer is given directions, shown the location, or referred for help",
+    "checked_by": "the customer and cashier's supervisor",
+    "overlap_reasoning": "General customer information assistance can include product locations but also covers other information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "18765"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21073",
+  "split_reasoning": "Answering incoming calls is one live-contact activity, even though callers' reasons differ.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an incoming phone call and handle or direct the caller's request.",
+    "time_share": 1.0,
+    "type_reasoning": "The work takes place in a live phone conversation with the caller.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One incoming call is answered and the immediate request is handled or routed.",
+    "work_item": "one incoming call answered and handled or directed",
+    "start": "an incoming call rings",
+    "end": "the caller's immediate request is handled, transferred, or referred",
+    "checked_by": "the caller and cashier's supervisor",
+    "overlap_reasoning": "Calls may involve questions or complaints covered by customer-assistance statements, but can also involve other requests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2408",
+     "18765"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "21074",
+  "split_reasoning": "Stocking and reshelving goods are one shelf-replenishment activity, while marking prices is a different output; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stock shelves and sort and reshelve returned items.",
+    "time_share": 0.7,
+    "type_reasoning": "Moving, sorting, and placing merchandise on shelves are hands-on tasks.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Processing a return may precede reshelving an item, but is a separate customer transaction.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Mark prices on items and shelves.",
+    "time_share": 0.3,
+    "type_reasoning": "Applying or changing physical price marks and shelf labels is hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Identifying a price at checkout is different from marking items or shelves.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on how much shelf work the cashier's store assigns."
+ }
+]

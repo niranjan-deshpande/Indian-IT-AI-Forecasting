@@ -1,0 +1,330 @@
+[
+ {
+  "task_id": 4240,
+  "split_reasoning": "Two activities: writing the care record, and discussing observations with the supervisor.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write up a visit's care record covering the patient's condition, progress, or problems.",
+    "time_share": 0.7,
+    "type_reasoning": "Produces a written record the supervisor relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record is written per patient visit or shift.",
+    "work_item": "one visit care record written",
+    "start": "care visit or shift ends",
+    "end": "record submitted to the agency",
+    "checked_by": "supervising nurse or case manager",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Report and discuss observations with the supervisor or case manager.",
+    "time_share": 0.3,
+    "type_reasoning": "Value is in the live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4241",
+  "split_reasoning": "Assisting with transfers and helping with dressing and grooming are different hands-on care activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help patients move in and out of beds, baths, wheelchairs, or automobiles.",
+    "time_share": 0.6,
+    "type_reasoning": "Transfers require hands-on assistance away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4250",
+     "4252",
+     "18694"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Help patients dress and groom themselves.",
+    "time_share": 0.4,
+    "type_reasoning": "Dressing and grooming assistance is hands-on personal care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252",
+     "18694"
+    ]
+   }
+  ],
+  "notes": "Shares depend on patients' mobility and personal care needs."
+ },
+ {
+  "task_id": "4242",
+  "split_reasoning": "Emotional support and instruction address different needs, even though both involve live interaction.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Provide emotional support to patients and their families.",
+    "time_share": 0.4,
+    "type_reasoning": "The value is in the supportive interaction itself.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4244",
+     "4250",
+     "4252"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Instruct patients and families in caregiving, healthy meals, independent living, or adaptation to illness or disability.",
+    "time_share": 0.6,
+    "type_reasoning": "Instruction is delivered through live teaching and discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4246",
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the patient's and family's needs."
+ },
+ {
+  "task_id": 4244,
+  "split_reasoning": "One activity: keeping the patient company and engaged.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Entertain, talk with, or read aloud to patients.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the interaction itself.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4242
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4245",
+  "split_reasoning": "One category of hands-on meal work including shopping and cooking.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan, shop for, prepare, and serve meals according to prescribed diets.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4249
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 4246,
+  "split_reasoning": "One activity: coaching patients through exercises or device use.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct patients through simple prescribed exercises or in using braces or artificial limbs.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in live coaching; nothing separate is produced to check.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Could be read as hands-on PHYSICAL if the aide guides the patient's limbs."
+ },
+ {
+  "task_id": "4247",
+  "split_reasoning": "Pulse, temperature, and respiration are measurements taken as part of the same vital-sign checking activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check patients' pulse, temperature, and respiration.",
+    "time_share": 1.0,
+    "type_reasoning": "Taking vital signs requires hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   }
+  ],
+  "notes": "Recording observations is covered separately by task 4240."
+ },
+ {
+  "task_id": 4248,
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change patients' dressings.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 4249,
+  "split_reasoning": "One category of miscellaneous errands and chores.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Do tasks the client asks for, such as getting household supplies or running errands.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on errands away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4245,
+     4250
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 4250,
+  "split_reasoning": "One activity: going out with the client.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accompany clients to doctors' offices or other trips, providing transport, help, and company.",
+    "time_share": 1.0,
+    "type_reasoning": "Physical presence and help away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4249
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": 4252,
+  "split_reasoning": "One activity: hands-on childcare.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Care for children with disabilities or whose parents are sick or disabled.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "4253",
+  "split_reasoning": "One category of hands-on treatments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Massage patients or apply liniment, alcohol rubs, or heat-lamp treatments.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18694",
+  "split_reasoning": "Linen and laundry work, cleaning, and personal care are distinct hands-on activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Change bed linens and wash or iron laundry for patients.",
+    "time_share": 0.35,
+    "type_reasoning": "Handling linens and laundry requires physical work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Clean the patient's living area.",
+    "time_share": 0.3,
+    "type_reasoning": "Cleaning is hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4252"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Assist patients with personal care.",
+    "time_share": 0.35,
+    "type_reasoning": "Personal care assistance requires hands-on work with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "4241",
+     "4252",
+     "20577"
+    ]
+   }
+  ],
+  "notes": "Shares vary by care plan; personal care overlaps with the more specific dressing, grooming, and bathing statements."
+ },
+ {
+  "task_id": 18695,
+  "split_reasoning": "One activity: giving oral medicines and making sure the patient takes them.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give prescribed oral medications as directed and make sure the patient takes them.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on, in person with the patient.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4240
+    ]
+   }
+  ],
+  "notes": "Logging the dose is not stated here and is covered by the record-keeping statement."
+ },
+ {
+  "task_id": 20577,
+  "split_reasoning": "One hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bathe patients.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on care.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     4241,
+     18694
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

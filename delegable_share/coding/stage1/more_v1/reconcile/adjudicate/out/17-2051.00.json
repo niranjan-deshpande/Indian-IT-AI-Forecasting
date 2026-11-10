@@ -1,0 +1,43 @@
+[
+ {"task_id": "150",
+  "reasoning": "The instructions say to split an activity that is partly physical and partly at a computer. Y does that, with field surveying as PHYSICAL and the layout or control package as a DISCRETE deliverable the contractor builds from. X splits directing from participating, but both of X's parts happen in the field, and it misses the deliverable.",
+  "choice": "Y"},
+ {"task_id": "155",
+  "reasoning": "Traffic and environmental studies are alternative topics of the same deliverable, a study report, so Y's four-way split by topic is unnecessary. X, though, folds in field data collection, which is hands-on and should be split out under the physical/computer rule. Revised to two parts: field collection (PHYSICAL) and the study report (DISCRETE).",
+  "choice": "revised",
+  "coding": {
+   "task_id": "155",
+   "split_reasoning": "One kind of study, on traffic or environmental conditions, but it combines hands-on field data collection with desk analysis and write-up, so it is split by where the work is done.",
+   "parts": [
+    {"part_id": "a",
+     "text": "Collect traffic counts or environmental observations and measurements in the field for a study.",
+     "time_share": 0.25,
+     "type_reasoning": "Needs work at roads or sites with counters, instruments or sampling equipment, away from a computer.",
+     "type": "PHYSICAL",
+     "duplicates": [],
+     "overlaps_with": ["153"]},
+    {"part_id": "b",
+     "text": "Analyze traffic or environmental data to identify engineering problems and assess a project's likely impact, and write up the study.",
+     "time_share": 0.75,
+     "type_reasoning": "Each study ends in a report that the client, reviewing agency or project team relies on.",
+     "type": "DISCRETE",
+     "unit_reasoning": "Studies are scoped and delivered per project or site, and reviewed as a whole.",
+     "work_item": "one traffic or environmental impact study report",
+     "start": "study scope agreed and data available",
+     "end": "study report with findings and impact assessment delivered",
+     "checked_by": "senior engineer, client, or reviewing agency",
+     "duplicates": [],
+     "overlaps_with": ["19611", "152", "20492"]}
+   ],
+   "notes": "The field share varies; much traffic and environmental data is collected by technicians or bought in."
+  }},
+ {"task_id": "19609",
+  "reasoning": "Both codings agree the remediation plan is DISCRETE. For implementation, an engineer mostly directs remediation contractors rather than doing hands-on work, so Y's INTERPERSONAL fits better than X's PHYSICAL and matches how site direction is coded elsewhere in this occupation. Y also lists the overlaps more fully.",
+  "choice": "Y"},
+ {"task_id": "19610",
+  "reasoning": "'Ensuring compliance' normally produces compliance reviews or sign-offs on submittals and work packages, which regulators and clients rely on. Y keeps the day-to-day direction as INTERPERSONAL and separates out that checkable deliverable. X codes everything as INTERPERSONAL and loses it.",
+  "choice": "Y"},
+ {"task_id": "20490",
+  "reasoning": "The statement is about managing and directing people and activities at the site, which is INTERPERSONAL. The progress reports Y adds are mostly covered by 148, which monitors progress, so adding them here would risk counting that work twice. X is the cleaner reading.",
+  "choice": "X"}
+]

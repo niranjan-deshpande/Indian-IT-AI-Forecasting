@@ -1,0 +1,401 @@
+{
+ "15-1251.00": {
+  "collapse": [
+   [
+    "1273a",
+    "1276b"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "1270a",
+    "1273a"
+   ]
+  ]
+ },
+ "15-1212.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "5317b",
+    "5319b"
+   ]
+  ]
+ },
+ "41-9041.00": {
+  "collapse": [
+   [
+    "4618a",
+    "4619a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "4622a",
+    "4627a"
+   ],
+   [
+    "4622b",
+    "4627b"
+   ]
+  ]
+ },
+ "43-3051.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "20901a",
+    "2528b"
+   ]
+  ]
+ },
+ "43-3011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "31-9094.00": {
+  "collapse": [
+   [
+    "9423b",
+    "9426d"
+   ],
+   [
+    "9420a",
+    "9423b"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "20254a",
+    "9413a"
+   ],
+   [
+    "9413a",
+    "9421a"
+   ],
+   [
+    "9420a",
+    "9426d"
+   ]
+  ]
+ },
+ "15-2051.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "41-2031.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "41-2011.00": {
+  "collapse": [
+   [
+    "18765a",
+    "2408a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "2405a",
+    "2412a"
+   ]
+  ]
+ },
+ "43-9061.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "826b",
+    "833b"
+   ]
+  ]
+ },
+ "11-1021.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-1082.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "21474b",
+    "21478a"
+   ]
+  ]
+ },
+ "25-2021.00": {
+  "collapse": [
+   [
+    "6539a",
+    "6557a"
+   ],
+   [
+    "6542b",
+    "6544c"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "31-9092.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "47-2061.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "35-2014.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "33-3051.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "41-3021.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "27-1024.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "23970a",
+    "302a"
+   ]
+  ]
+ },
+ "11-2021.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-2072.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "11-3021.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "968c",
+    "976a"
+   ]
+  ]
+ },
+ "11-9111.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "58a",
+    "62a"
+   ]
+  ]
+ },
+ "13-2031.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-1151.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "13-1041.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "15-2031.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "17-2051.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "17-2141.00": {
+  "collapse": [
+   [
+    "1420b",
+    "20733a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "19-3011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "21-1021.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "27-3031.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "27-3041.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "29-2061.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "29-1051.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "1809b",
+    "1823b"
+   ]
+  ]
+ },
+ "31-1121.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "33-9032.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "35-3031.00": {
+  "collapse": [
+   [
+    "2277a",
+    "2278a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "35-3023.00": {
+  "collapse": [
+   [
+    "23105a",
+    "23123b"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "23104a",
+    "23119a"
+   ]
+  ]
+ },
+ "41-1011.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "41-9022.00": {
+  "collapse": [
+   [
+    "2468b",
+    "2470a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "43-5071.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "43-6013.00": {
+  "collapse": [
+   [
+    "776a",
+    "782a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": [
+   [
+    "20438b",
+    "775b"
+   ],
+   [
+    "20438a",
+    "775a"
+   ]
+  ]
+ },
+ "43-1011.00": {
+  "collapse": [
+   [
+    "9713a",
+    "9724a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "47-2031.00": {
+  "collapse": [
+   [
+    "23438a",
+    "23445a"
+   ]
+  ],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "49-9071.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "51-2092.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "53-7062.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ },
+ "53-7065.00": {
+  "collapse": [],
+  "log": [],
+  "to_adjudicate": []
+ }
+}

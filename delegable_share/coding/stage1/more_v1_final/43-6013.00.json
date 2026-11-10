@@ -1,0 +1,509 @@
+[
+ {
+  "task_id": "775",
+  "split_reasoning": "Same activity done in two places: live with a patient on the phone or at the desk, and afterwards from referrals, orders and confirmation calls.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Book, move or cancel an appointment while the patient is on the phone or at the desk.",
+    "time_share": 0.5,
+    "type_reasoning": "The patient is waiting while the booking is made.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each request is booked and confirmed within one contact.",
+    "work_item": "one appointment booked or changed during a patient call or visit",
+    "start": "patient asks for or agrees to an appointment",
+    "end": "slot confirmed to the patient and entered in the schedule",
+    "checked_by": "patient, clinician whose schedule it is",
+    "duplicates": [],
+    "overlaps_with": [
+     "20438",
+     "777"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule surgeries, consultations and diagnostic appointments from referrals and orders, and make confirmation contacts.",
+    "time_share": 0.5,
+    "type_reasoning": "Done from a queue of referrals and a confirmation list with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each referral or order becomes a scheduled and confirmed appointment.",
+    "work_item": "one appointment scheduled and confirmed from a referral or order",
+    "start": "referral or order received",
+    "end": "appointment entered and patient confirmation sent or reached",
+    "checked_by": "clinician, referring office, patient",
+    "duplicates": [
+     "20438"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Live share depends on how much booking is by phone versus referral."
+ },
+ {
+  "task_id": "776",
+  "split_reasoning": "One activity: producing written medical documents on a computer; document types are alternatives.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compile and type medical charts, reports or correspondence.",
+    "time_share": 1.0,
+    "type_reasoning": "Each item is a finished document others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are produced and filed or sent individually.",
+    "work_item": "one chart, report or letter compiled and entered",
+    "start": "source information or request for the document",
+    "end": "document completed and filed or sent",
+    "checked_by": "physician, patient record reviewers, recipient",
+    "duplicates": [
+     "782"
+    ],
+    "overlaps_with": [
+     "786",
+     "789",
+     "781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "777",
+  "split_reasoning": "One activity: answering a call and directing it.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer an incoming call and transfer or direct the caller to the right staff member.",
+    "time_share": 1.0,
+    "type_reasoning": "The caller waits on the line.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each call is handled within one contact.",
+    "work_item": "one incoming call answered and directed",
+    "start": "phone rings",
+    "end": "caller transferred or call resolved",
+    "checked_by": "caller, staff receiving the call",
+    "duplicates": [],
+    "overlaps_with": [
+     "779",
+     "775"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "778",
+  "split_reasoning": "One activity: passing incoming messages and documents to the right person.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive messages and documents such as lab results and route them to the right staff.",
+    "time_share": 1.0,
+    "type_reasoning": "Each item is handed on and relied on by staff, mostly with no patient present.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Items arrive and are routed one at a time or in a batch.",
+    "work_item": "one message or document received and routed",
+    "start": "message or result arrives",
+    "end": "delivered to the responsible staff member",
+    "checked_by": "clinician or staff member receiving it",
+    "duplicates": [],
+    "overlaps_with": [
+     "777",
+     "783"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "779",
+  "split_reasoning": "One activity: greeting and directing arrivals at the desk.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet a visitor, find out why they came and direct them to the right staff.",
+    "time_share": 1.0,
+    "type_reasoning": "The visitor is at the desk.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each arrival is handled within one contact.",
+    "work_item": "one visitor greeted and directed",
+    "start": "visitor arrives at the desk",
+    "end": "visitor sent or taken to the right person",
+    "checked_by": "visitor, staff expecting them",
+    "duplicates": [],
+    "overlaps_with": [
+     "777",
+     "780"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "780",
+  "split_reasoning": "One activity: interviewing the patient to fill in a form.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview a patient to complete intake, case history or insurance forms.",
+    "time_share": 1.0,
+    "type_reasoning": "Done with the patient present and waiting.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One form set is completed per patient visit.",
+    "work_item": "one patient's forms completed during an interview",
+    "start": "patient arrives or is called for intake",
+    "end": "completed and signed forms handed to staff",
+    "checked_by": "clinician, billing, patient",
+    "duplicates": [],
+    "overlaps_with": [
+     "788",
+     "779"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "781",
+  "split_reasoning": "Maintaining electronic files and physically maintaining paper records or a technical library use different modes of work; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Update and organize electronic medical records or correspondence files.",
+    "time_share": 0.7,
+    "type_reasoning": "Each electronic filing or maintenance request produces an updated record or file.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A record or filing request is the unit that can be checked and subsequently retrieved.",
+    "work_item": "one electronic record or file updated and organized",
+    "start": "new information or file-maintenance request received",
+    "end": "record or file updated and available for retrieval",
+    "checked_by": "clinical staff, medical records staff, or file users",
+    "overlap_reasoning": "Tasks 776 and 782 include creating material for records, while this task also covers organizing and maintaining existing files.",
+    "duplicates": [],
+    "overlaps_with": [
+     "776",
+     "782"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "File, organize, and maintain paper medical records, correspondence, or technical library materials.",
+    "time_share": 0.3,
+    "type_reasoning": "Paper filing and library upkeep require hands-on handling of physical materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Task 776 may produce documents that are later filed, but it does not describe the full physical maintenance activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "776"
+    ]
+   }
+  ],
+  "notes": "The electronic and paper shares depend on the practice's records system."
+ },
+ {
+  "task_id": "782",
+  "split_reasoning": "Mostly a list of tools for preparing documents; voicemail handling is a separate item type.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use word processing and spreadsheet software to prepare reports, invoices, letters, histories and records.",
+    "time_share": 0.85,
+    "type_reasoning": "Each output is a prepared document others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents are produced and sent or filed one by one.",
+    "work_item": "one document prepared in software (letter, report, invoice or record)",
+    "start": "request or source material",
+    "end": "document completed and sent or filed",
+    "checked_by": "physician, billing, recipient",
+    "duplicates": [
+     "776"
+    ],
+    "overlaps_with": [
+     "787",
+     "789",
+     "786"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Check voice mail messages and act on them.",
+    "time_share": 0.15,
+    "type_reasoning": "Each message checked produces an action or call back for someone else.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Voicemail is cleared in batches.",
+    "work_item": "one batch of voice mail messages handled",
+    "start": "voice mailbox checked",
+    "end": "messages logged, routed or returned",
+    "checked_by": "staff and callers",
+    "duplicates": [],
+    "overlaps_with": [
+     "778",
+     "777"
+    ]
+   }
+  ],
+  "notes": "Largely duplicates other statements because it names tools, not tasks."
+ },
+ {
+  "task_id": "783",
+  "split_reasoning": "Electronic or fax transmission and physical mailing are alternative delivery channels, but mailing requires hands-on preparation away from the computer; shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transmit correspondence or medical records electronically or by fax.",
+    "time_share": 0.8,
+    "type_reasoning": "Each transmission sends a defined document or records package to a recipient.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A transmission request is completed when the requested package is sent to the designated recipient.",
+    "work_item": "one correspondence or medical-records package transmitted",
+    "start": "document and authorized transmission request received",
+    "end": "package sent and transmission recorded or confirmed as required",
+    "checked_by": "recipient and sending office",
+    "overlap_reasoning": "Task 778 also routes documents to staff, but transmission here additionally covers external correspondence and medical records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "778"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and dispatch paper correspondence or medical records by mail.",
+    "time_share": 0.2,
+    "type_reasoning": "Preparing and dispatching paper mail requires physical handling of documents and envelopes.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Task 778 includes physical routing of documents, but mailing correspondence and records has a broader recipient and transmission scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "778"
+    ]
+   }
+  ],
+  "notes": "Some fax workflows involve physical handling; the share depends on office equipment and mail volume."
+ },
+ {
+  "task_id": "784",
+  "split_reasoning": "Ordering supplies, updating inventory records, and physically counting or stocking supplies are different activities; shares are estimates for the named examples.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Order office or clinical supplies.",
+    "time_share": 0.4,
+    "type_reasoning": "Each order produces a purchase request or order relied on by a supplier or purchasing staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A supply order is submitted and tracked as a whole.",
+    "work_item": "one supply order placed",
+    "start": "supply need identified",
+    "end": "order submitted to the supplier or purchasing department",
+    "checked_by": "purchasing staff, supervisor, or supplier",
+    "overlap_reasoning": "No other listed statement describes placing supply orders.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Update supply inventory records from counts and receipts.",
+    "time_share": 0.25,
+    "type_reasoning": "Each update produces inventory information used for replenishment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A count or receipt is recorded as a completed inventory update.",
+    "work_item": "one inventory record update",
+    "start": "supply count, receipt, or adjustment received",
+    "end": "inventory record updated",
+    "checked_by": "office manager or purchasing staff",
+    "overlap_reasoning": "No other listed statement describes maintaining supply inventory records.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Count, receive, and organize physical supplies.",
+    "time_share": 0.35,
+    "type_reasoning": "Counting and stocking require hands-on handling of supplies.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement describes physical supply inventory work.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The statement also allows other clerical functions that are not specified; shares describe the supply examples."
+ },
+ {
+  "task_id": "786",
+  "split_reasoning": "One activity: converting recorded dictation or messages into the record.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Transcribe recorded messages or clinician dictation into a patient's medical record.",
+    "time_share": 1.0,
+    "type_reasoning": "Each transcription is a record entry the clinician reviews and relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Dictations come as separate recordings, each transcribed and returned.",
+    "work_item": "one dictation or recorded message transcribed into the record",
+    "start": "recording received",
+    "end": "transcript entered in the record for review",
+    "checked_by": "dictating clinician",
+    "duplicates": [],
+    "overlaps_with": [
+     "776"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "787",
+  "split_reasoning": "Three different kinds of bookkeeping output: bills and statements, credits and collections, and the financial records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare and send patient bills and financial statements.",
+    "time_share": 0.4,
+    "type_reasoning": "Each statement run produces bills patients and billing rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Bills go out per patient account or in a statement run.",
+    "work_item": "one patient bill or statement prepared and sent",
+    "start": "charges ready for billing",
+    "end": "bill or statement sent",
+    "checked_by": "patient, practice manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "788"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Apply credits and follow up on overdue accounts.",
+    "time_share": 0.3,
+    "type_reasoning": "Each account follow-up ends in a payment, plan or note on the account.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Handled account by account, mostly after contact by letter or call-back.",
+    "work_item": "one account credited or collections follow-up completed",
+    "start": "credit due or account overdue",
+    "end": "credit applied or follow-up outcome logged",
+    "checked_by": "practice manager, patient",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Post payments and keep the financial records.",
+    "time_share": 0.3,
+    "type_reasoning": "Produces ledgers that accounting relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Postings are done in daily batches.",
+    "work_item": "one batch of payments and entries posted",
+    "start": "payments and charges collected",
+    "end": "posted and balanced in the records",
+    "checked_by": "practice manager, accountant",
+    "duplicates": [],
+    "overlaps_with": [
+     "782"
+    ]
+   }
+  ],
+  "notes": "Shares are a judgment."
+ },
+ {
+  "task_id": "788",
+  "split_reasoning": "One activity: preparing claim forms; insurer types are alternatives.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete insurance or other claim forms for a patient's care.",
+    "time_share": 1.0,
+    "type_reasoning": "Each claim is a submitted form that the insurer and billing rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Claims are filed one per visit or episode.",
+    "work_item": "one claim form completed and submitted",
+    "start": "visit or procedure documented and coded",
+    "end": "claim submitted to the payer",
+    "checked_by": "insurer, billing manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "780",
+     "787"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "789",
+  "split_reasoning": "Two kinds of document work: ordinary correspondence, and help with physicians' longer scholarly pieces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare correspondence for the practice or physician.",
+    "time_share": 0.6,
+    "type_reasoning": "Each letter is a finished item the physician signs.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Letters are drafted and sent one by one.",
+    "work_item": "one letter prepared for signature or sending",
+    "start": "request or instructions for the letter",
+    "end": "letter signed and sent",
+    "checked_by": "physician, recipient",
+    "duplicates": [
+     "776"
+    ],
+    "overlaps_with": [
+     "783"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Assist a physician or scientist in preparing a report, speech, article or conference paper.",
+    "time_share": 0.4,
+    "type_reasoning": "Produces a draft or formatted piece the author relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each piece is helped through as one document.",
+    "work_item": "one report, speech or article prepared or edited",
+    "start": "physician requests help or provides draft",
+    "end": "formatted piece returned to the author",
+    "checked_by": "the physician or scientist",
+    "duplicates": [],
+    "overlaps_with": [
+     "776"
+    ]
+   }
+  ],
+  "notes": "Part b is rare for most medical secretaries."
+ },
+ {
+  "task_id": "20438",
+  "split_reasoning": "Same activity done live with the patient and afterwards from physician orders.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Schedule a lab test or procedure while the patient is at the desk or on the phone.",
+    "time_share": 0.4,
+    "type_reasoning": "The patient waits while the slot is set.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Booked and confirmed within one contact.",
+    "work_item": "one test or procedure scheduled during a patient contact",
+    "start": "patient agrees to the ordered test",
+    "end": "time confirmed to the patient and entered",
+    "checked_by": "patient, ordering physician, testing department",
+    "duplicates": [
+     "775"
+    ],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Schedule tests or procedures from physician orders with the testing department and notify the patient.",
+    "time_share": 0.6,
+    "type_reasoning": "Done from orders in a queue, with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each order becomes a scheduled test with notice sent.",
+    "work_item": "one ordered test or procedure scheduled",
+    "start": "physician order received",
+    "end": "test booked and patient notified",
+    "checked_by": "ordering physician, testing department",
+    "duplicates": [
+     "775"
+    ],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Substantially the same work as 775 for diagnostic appointments."
+ }
+]

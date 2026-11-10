@@ -1,0 +1,19 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both cover entering and saving new or changed information in a medical record.",
+   "a": "9420a",
+   "b": "9423b"
+  },
+  {
+   "reasoning": "Both cover entering and saving new or changed patient data in a record.",
+   "a": "9420a",
+   "b": "9426d"
+  },
+  {
+   "reasoning": "Both cover updating an electronic patient record with new or changed information.",
+   "a": "9423b",
+   "b": "9426d"
+  }
+ ]
+}

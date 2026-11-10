@@ -1,0 +1,14 @@
+[
+ {"task_id": "3395",
+  "reasoning": "Directing report preparation still ends in a report that the analyst signs off and management relies on, so the handed-over unit is one budget report rather than an interaction with no checkable output. Y codes this correctly as DISCRETE; X's INTERPERSONAL drops a clear deliverable.",
+  "choice": "Y"},
+ {"task_id": "3396",
+  "reasoning": "The consultation itself is a live discussion, but its point is that a budget adjustment gets made and recorded, which finance and the manager rely on. X captures both the conversation and the checkable adjustment; Y codes the whole statement as INTERPERSONAL and loses the deliverable.",
+  "choice": "X"},
+ {"task_id": "3398",
+  "reasoning": "Technical assistance is one activity done in two places: live, while the requesting manager is in the meeting or on the call, and afterwards from written requests, which is the Example D pattern. Y splits on exactly that line and gives work items for both parts; X's 'coaching in meetings' as INTERPERSONAL understates that the live answer is advice the manager relies on.",
+  "choice": "Y"},
+ {"task_id": "3406",
+  "reasoning": "The statement describes the testimony itself, live persuasion and clarification before funding authorities, which is INTERPERSONAL. Preparing the budget summaries behind it is covered by other statements (3399, 3395), so Y's added preparation part reaches beyond the target.",
+  "choice": "X"}
+]

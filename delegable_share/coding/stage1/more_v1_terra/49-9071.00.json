@@ -1,0 +1,648 @@
+[
+ {
+  "task_id": "3022",
+  "split_reasoning": "Assembly, installation, and repair are distinct kinds of hands-on work, although they may occur in the same job.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble electrical components, pipe systems, plumbing, machinery, or equipment.",
+    "time_share": 0.2,
+    "type_reasoning": "Assembly requires handling and joining physical components.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Boiler assembly is a specific form of this work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19897"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Install wiring, electrical components, pipe systems, plumbing, machinery, or equipment.",
+    "time_share": 0.3,
+    "type_reasoning": "Installation requires hands-on work at the equipment or building.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Efficiency equipment installation is a subset of installation work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19898"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Repair wiring, electrical components, pipe systems, plumbing, machinery, or equipment.",
+    "time_share": 0.5,
+    "type_reasoning": "Repairs require hands-on work on the affected systems or equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Several other statements cover particular types of equipment repair or preventive maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19899",
+     "20671",
+     "20672",
+     "20673"
+    ]
+   }
+  ],
+  "notes": "Shares are approximate and depend on the workplace."
+ },
+ {
+  "task_id": "3023",
+  "split_reasoning": "Diagnosing a mechanical problem and determining its correction form one diagnostic activity; reference materials are alternative inputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Diagnose a mechanical problem and determine how to correct it, consulting technical references as needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Diagnosis normally involves examining or testing the physical equipment, with reference checks supporting that work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Equipment inspection and testing can be part of diagnosis, while repair planning can use its findings.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3024",
+     "3028"
+    ]
+   }
+  ],
+  "notes": "A desk-only diagnostic assignment would be a discrete deliverable, but hands-on diagnosis is assumed here."
+ },
+ {
+  "task_id": "3024",
+  "split_reasoning": "Inspection, operation, and testing are alternative or complementary ways to diagnose equipment malfunctions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect, operate, or test machinery or equipment to diagnose a malfunction.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves hands-on inspection or operation of equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This shares diagnostic work with mechanical troubleshooting and may include checks also performed during preventive maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3023",
+     "20671"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3025",
+  "split_reasoning": "Recording the type and cost of a maintenance or repair job is one documentation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record the type and cost of maintenance or repair work.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed entry produces a record that others can review or use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The maintenance or repair job is the normal unit against which work and costs are recorded.",
+    "work_item": "one maintenance or repair job record with type and cost",
+    "start": "job details and costs are available for recording",
+    "end": "job record is completed and saved or submitted",
+    "checked_by": "maintenance supervisor or administrative staff",
+    "overlap_reasoning": "Estimating future repair costs is distinct from recording the type and cost of work performed.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3026",
+  "split_reasoning": "Cleaning and lubricating machinery parts are related hands-on servicing actions performed on the same equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean or lubricate machinery shafts, bearings, gears, or other parts.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires direct access to and handling of machinery parts.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cleaning or lubrication can be part of broader preventive maintenance or specialized equipment maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20671",
+     "20673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3028",
+  "split_reasoning": "Planning and laying out a repair form one preparation activity using alternative technical references.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and lay out repair work using applicable technical drawings and manuals.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity produces a repair plan or layout that guides the work.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan or layout for one repair job is the practical unit handed to or relied on by the people performing it.",
+    "work_item": "one repair job plan or layout",
+    "start": "repair need and relevant technical information are available",
+    "end": "repair approach and layout are established for the job",
+    "checked_by": "maintenance worker or supervisor carrying out or overseeing the repair",
+    "overlap_reasoning": "Determining a mechanical correction can contribute to planning, but diagnosis and planning have different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3023"
+    ]
+   }
+  ],
+  "notes": "Some layouts are made directly on site; substantial physical marking or measurement would warrant separate coding if documented."
+ },
+ {
+  "task_id": "3030",
+  "split_reasoning": "Adjusting functional parts of devices or instruments is one activity using alternative hand tools and measuring aids.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Adjust functional parts of devices or control instruments using hand tools and measuring aids.",
+    "time_share": 1.0,
+    "type_reasoning": "Adjustment requires hands-on work at the device or instrument.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Adjustments can form part of equipment repair, preventive maintenance, or post-installation alignment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "3033",
+     "20671",
+     "20672",
+     "20673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3031",
+  "split_reasoning": "Painting and repairing building components are distinct hands-on activities, even when performed on the same structure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Paint building components such as doors, floors, woodwork, or drywall.",
+    "time_share": 0.4,
+    "type_reasoning": "Painting requires physical surface preparation and application.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Painting may accompany a structural repair but is not itself the repair described elsewhere.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Repair roofs, windows, doors, floors, woodwork, plaster, drywall, or other building components.",
+    "time_share": 0.6,
+    "type_reasoning": "Building repairs require hands-on work on the affected structure.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General structural repair and repair of wooden structures include some of the same work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3037",
+     "20672"
+    ]
+   }
+  ],
+  "notes": "The split between painting and repair varies by property and assignment."
+ },
+ {
+  "task_id": "3032",
+  "split_reasoning": "Cutting and joining metal are closely related uses of cutting or welding equipment within metalwork.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Use cutting torches or welding equipment to cut or join metal parts.",
+    "time_share": 1.0,
+    "type_reasoning": "Operating the equipment and manipulating metal parts are hands-on activities.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Metal cutting or joining may be a step in equipment repair, boiler assembly, or part fabrication.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3035",
+     "19897",
+     "20672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3033",
+  "split_reasoning": "Aligning and balancing newly installed equipment are related steps in preparing it for operation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Align and balance new equipment after installation.",
+    "time_share": 1.0,
+    "type_reasoning": "Alignment and balancing require hands-on adjustment and measurement at the equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This can include the functional adjustments described in the separate adjustment task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3030"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3034",
+  "split_reasoning": "Inspecting and measuring used parts to determine dimensional changes is one activity using alternative measuring instruments.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Inspect and measure used parts to determine changes in dimensional requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically handles and measures the parts.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Measurement of used parts can contribute to diagnosis or repair without being the whole of either activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3023",
+     "20672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "3035",
+  "split_reasoning": "Repairing existing parts and fabricating new parts are different machine-tool jobs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set up and operate machine tools to repair machine parts, jigs, fixtures, or tools.",
+    "time_share": 0.5,
+    "type_reasoning": "Machine setup and operation require hands-on work with tools and parts.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Machining repairs can form part of broader equipment repair.",
+    "duplicates": [],
+    "overlaps_with": [
+     "20672",
+     "20673"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Set up and operate machine tools to fabricate machine parts, jigs, fixtures, or tools.",
+    "time_share": 0.5,
+    "type_reasoning": "Fabrication requires physical setup and operation of machine tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Metal cutting or joining may be used during fabrication, while equipment design is a separate activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3032"
+    ]
+   }
+  ],
+  "notes": "The repair and fabrication shares are approximate."
+ },
+ {
+  "task_id": "3037",
+  "split_reasoning": "Fabricating a wooden structure and repairing an existing one are distinct jobs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Fabricate counters, benches, partitions, or other wooden structures.",
+    "time_share": 0.5,
+    "type_reasoning": "Fabrication requires hands-on carpentry and assembly.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically covers fabrication of wooden structures.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Repair counters, benches, partitions, or other wooden structures.",
+    "time_share": 0.5,
+    "type_reasoning": "Repair requires hands-on carpentry on the existing structure.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Woodwork repair is also covered by broader building and structural repair statements.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3031",
+     "20672"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the facilities maintained."
+ },
+ {
+  "task_id": "19897",
+  "split_reasoning": "Assembling boilers at installation sites is one hands-on activity using alternative tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assemble boilers at installation sites using appropriate hand tools and equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Boiler assembly requires handling, positioning, and joining physical components on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This is a specific equipment assembly activity and can involve metal joining.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "3032"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19898",
+  "split_reasoning": "Installing efficiency-improving equipment is one activity covering different kinds of equipment and buildings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install equipment that improves residential or commercial building energy or operational efficiency.",
+    "time_share": 1.0,
+    "type_reasoning": "Installation requires hands-on work at the building and equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This shares equipment installation work with the broader assembly and installation statement.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19899",
+  "split_reasoning": "Replacing parts and reinforcing weaknesses are examples of the same routine boiler maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform routine boiler maintenance, including replacing parts or reinforcing weaknesses.",
+    "time_share": 1.0,
+    "type_reasoning": "The maintenance actions require hands-on work on boiler components.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Boiler maintenance can include work covered by general repair, preventive maintenance, and specialized equipment maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "20671",
+     "20672",
+     "20673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19900",
+  "split_reasoning": "Positioning, attaching, and blowing insulation are methods of the same insulation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install insulating materials on buildings, pipes, or other structures to prevent energy loss.",
+    "time_share": 1.0,
+    "type_reasoning": "Insulation installation requires physical handling and application of materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically describes installing insulating material.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20670",
+  "split_reasoning": "Dismantling equipment to access and remove defective parts is one connected physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dismantle machines or devices to access and remove defective parts.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires physical handling of equipment, tools, and parts.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Dismantling can be a step within broader equipment repair or maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "19899",
+     "20671",
+     "20672",
+     "20673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20671",
+  "split_reasoning": "Inspecting components, checking fluids, and replacing filters are examples of routine preventive maintenance.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform routine preventive maintenance on equipment, including checks and replacement of consumable parts.",
+    "time_share": 1.0,
+    "type_reasoning": "Preventive maintenance involves hands-on checks, adjustments, and replacement of physical components.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Specific inspections, lubrication, adjustments, and boiler or specialized-equipment maintenance may be part of preventive maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "3024",
+     "3026",
+     "3030",
+     "19899",
+     "20670",
+     "20672",
+     "20673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20672",
+  "split_reasoning": "Repairing machines, equipment, or structures is one broad hands-on repair activity using different tools and inputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Repair machines, equipment, or structures using appropriate tools and testing devices.",
+    "time_share": 1.0,
+    "type_reasoning": "Repairs require physical work on machines, equipment, or structures.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Several statements describe specific repairs or physical steps that can be included in broader repair work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "3030",
+     "3031",
+     "3032",
+     "3034",
+     "3035",
+     "3037",
+     "19899",
+     "20670",
+     "20671",
+     "20673"
+    ]
+   }
+  ],
+  "notes": "The statement spans many repair jobs, but all are classified as physical work."
+ },
+ {
+  "task_id": "20673",
+  "split_reasoning": "Maintaining or repairing specialized equipment is one broad hands-on activity across different workplaces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Maintain or repair specialized equipment or machinery in facilities such as hospitals, stores, offices, or factories.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on servicing or repair of equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Specialized-equipment work can include general repairs, preventive maintenance, lubrication, adjustment, and boiler work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "3022",
+     "3026",
+     "3030",
+     "3035",
+     "19899",
+     "20670",
+     "20671",
+     "20672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20674",
+  "split_reasoning": "Ordering parts, supplies, or equipment is one purchasing activity with different possible items and suppliers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Order needed parts, supplies, or equipment from suppliers.",
+    "time_share": 1.0,
+    "type_reasoning": "Each order produces a purchasing request or supplier order that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The order is the unit submitted to a supplier or purchasing department.",
+    "work_item": "one parts, supplies, or equipment order",
+    "start": "needed items and quantities are identified",
+    "end": "order is submitted to the supplier or purchasing department",
+    "checked_by": "supplier and purchasing staff or maintenance supervisor",
+    "overlap_reasoning": "No other statement describes placing orders.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20675",
+  "split_reasoning": "General cleaning of buildings or properties is one physical activity across different locations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform general cleaning of buildings or properties.",
+    "time_share": 1.0,
+    "type_reasoning": "Cleaning requires hands-on work at the premises.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General property cleaning is distinct from cleaning machinery parts and from groundskeeping.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20676",
+  "split_reasoning": "Training personnel and managing personnel or subcontractors are distinct interpersonal activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train maintenance personnel or subcontractors.",
+    "time_share": 0.4,
+    "type_reasoning": "The target describes live instruction, whose value is in the interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other statement describes training personnel.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Manage maintenance personnel or subcontractors.",
+    "time_share": 0.6,
+    "type_reasoning": "The target describes supervision and coordination through interpersonal interaction.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "No other statement describes managing personnel or subcontractors.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares are approximate; separately assigned training materials or management records would require their own coding."
+ },
+ {
+  "task_id": "20677",
+  "split_reasoning": "Landscaping and snow removal are different groundskeeping activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform landscaping and other routine grounds maintenance.",
+    "time_share": 0.6,
+    "type_reasoning": "Grounds maintenance requires physical work outdoors.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General building or property cleaning is not the same activity as landscaping.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Remove snow from grounds and access areas.",
+    "time_share": 0.4,
+    "type_reasoning": "Snow removal requires physical work with shovels or equipment on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other statement specifically describes snow removal.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend strongly on climate and season."
+ },
+ {
+  "task_id": "20678",
+  "split_reasoning": "Estimating repair costs is one activity across different types of equipment and structures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate the cost of repairing machinery, equipment, or building structures.",
+    "time_share": 1.0,
+    "type_reasoning": "Each estimate produces a cost figure or breakdown used to decide or approve a repair.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A repair job estimate is the unit normally presented for a decision or approval.",
+    "work_item": "one repair cost estimate",
+    "start": "repair need and available scope information are received",
+    "end": "estimated labor and material costs are prepared and communicated",
+    "checked_by": "maintenance supervisor, property manager, or client",
+    "overlap_reasoning": "Recording actual maintenance costs is a separate documentation activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "20679",
+  "split_reasoning": "Designing equipment to aid maintenance or repair is one design activity, despite varied uses for the equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design new equipment to aid maintenance or repair work.",
+    "time_share": 1.0,
+    "type_reasoning": "The design produces a specification, drawing, or other plan that can be used to build the equipment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One equipment design is the unit handed off or relied on for fabrication and use.",
+    "work_item": "one maintenance-aid equipment design",
+    "start": "need for a maintenance or repair aid is identified",
+    "end": "design and necessary specifications are completed for fabrication or review",
+    "checked_by": "maintenance supervisor or the person fabricating the equipment",
+    "overlap_reasoning": "Fabricating a part or tool may follow a design, but is a separate physical activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ }
+]

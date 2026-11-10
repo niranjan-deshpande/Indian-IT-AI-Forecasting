@@ -1,0 +1,392 @@
+[
+ {
+  "task_id": "5313",
+  "split_reasoning": "Live user training and producing security-awareness communications are different activities, with estimated shares of 0.6 and 0.4.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Train users in security practices.",
+    "time_share": 0.6,
+    "type_reasoning": "The work is a live instructional interaction with users.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "None of the other statements describes delivering user training.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and distribute a security-awareness message for users.",
+    "time_share": 0.4,
+    "type_reasoning": "Each communication is a discrete item distributed to users.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An awareness message is prepared and sent as a whole.",
+    "work_item": "one security-awareness communication",
+    "start": "a security-awareness topic or need is identified",
+    "end": "the message is distributed to users",
+    "checked_by": "users and the security team",
+    "overlap_reasoning": "Documented security policies may inform awareness messages, but the messages and policy documentation are different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5322"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the organization's training and awareness program."
+ },
+ {
+  "task_id": "5314",
+  "split_reasoning": "Safeguarding files and planning for emergency data processing normally produce different plans, with estimated shares of 0.6 and 0.4.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop a plan to protect computer files against accidental or unauthorized modification, destruction, or disclosure.",
+    "time_share": 0.6,
+    "type_reasoning": "The activity produces a security plan for review and implementation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A plan covering a defined set of files or systems is handed over as a whole.",
+    "work_item": "one computer file protection plan",
+    "start": "the files, threats, and protection requirements are identified",
+    "end": "the plan is completed and submitted for review",
+    "checked_by": "security management and system owners",
+    "overlap_reasoning": "The plan can inform security policies and procedures, but developing the plan is not the same as documenting those measures.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5322"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Develop a plan for emergency data processing.",
+    "time_share": 0.4,
+    "type_reasoning": "The activity produces an emergency processing plan for review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An emergency plan for a defined system or operation is reviewed as a whole.",
+    "work_item": "one emergency data processing plan",
+    "start": "emergency processing requirements and affected systems are identified",
+    "end": "the plan is completed and submitted for review",
+    "checked_by": "security management and operations or continuity teams",
+    "overlap_reasoning": "Emergency procedures may be derived from the plan, but the plan and procedure documentation are different outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5322"
+    ]
+   }
+  ],
+  "notes": "Some organizations combine these plans; the shares are estimates."
+ },
+ {
+  "task_id": "5315",
+  "split_reasoning": "Access needs, violations, and programming changes are topics for the same activity of conferring with users.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with users about data access needs, security violations, or programming changes.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live discussion rather than a specified deliverable.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Discussing a security violation with its user can also be part of discussing procedures with a violator, but both statements cover other discussions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5323"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "5316",
+  "split_reasoning": "Monitoring virus reports serves one purpose: deciding whether protection systems need an update.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assess a current virus report and determine whether a protection update is needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Continuous monitoring is recast as individual virus reports assessed for an actionable update decision.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report or advisory is evaluated as a whole, resulting in a decision or recommendation for the team.",
+    "work_item": "one virus report assessed for a protection update",
+    "start": "a relevant virus report or advisory becomes available",
+    "end": "the update decision or recommendation is recorded or communicated",
+    "checked_by": "the security team responsible for virus protection",
+    "overlap_reasoning": "The other statements do not describe this review of external virus reports.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The decision may be informal in some organizations; implementing an update is not specified in the target."
+ },
+ {
+  "task_id": "5317",
+  "split_reasoning": "Changing security configuration for software or errors and changing an individual's access normally involve different requests and outputs, with estimated shares of 0.5 each.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Modify computer security configuration to incorporate software or correct an error.",
+    "time_share": 0.5,
+    "type_reasoning": "Each requested configuration change produces a discrete system update.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined configuration change is implemented and handed back to the requesting or operating team.",
+    "work_item": "one security configuration change",
+    "start": "a software-related change or security configuration error is identified",
+    "end": "the configuration is changed and the outcome communicated or recorded",
+    "checked_by": "the security or system operations team",
+    "overlap_reasoning": "Some configuration changes implement firewall or encryption measures, but this part also covers other security files and changes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5321"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Change an individual's access status in computer security files.",
+    "time_share": 0.5,
+    "type_reasoning": "An access change is normally processed from an authorized request or administrative instruction.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One individual's requested access change is completed and recorded as a whole.",
+    "work_item": "one individual access status change",
+    "start": "an authorized access change request or instruction is received",
+    "end": "the access status is updated and the change recorded or communicated",
+    "checked_by": "the access requester, system owner, and security team",
+    "overlap_reasoning": "Regulating file access can include the same access changes, while it also includes monitoring and other access decisions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5319"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether access administration or system configuration dominates the role."
+ },
+ {
+  "task_id": "5318",
+  "split_reasoning": "Coordinating implementation with internal personnel and vendors is one activity involving different participants.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Coordinate implementation of a computer system plan with internal personnel and outside vendors.",
+    "time_share": 1.0,
+    "type_reasoning": "The target centers on arranging and coordinating work through interactions with the people involved.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "The other statements do not describe coordinating implementation with both personnel and vendors.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "An organization may also maintain implementation schedules, but the target does not specify one."
+ },
+ {
+  "task_id": "5319",
+  "split_reasoning": "Monitoring file use and regulating access produce different work items, with estimated shares of 0.5 each.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a file-use alert or exception to safeguard information.",
+    "time_share": 0.5,
+    "type_reasoning": "Continuous monitoring is recast as discrete alerts or exceptions investigated.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual alert or exception is reviewed and its disposition recorded for the security team.",
+    "work_item": "one file-use alert or exception investigated",
+    "start": "monitoring identifies an unusual file-use event or exception",
+    "end": "the finding and disposition are recorded or escalated",
+    "checked_by": "the security operations team or supervisor",
+    "overlap_reasoning": "An investigation may identify a security procedure violation, but file-use monitoring also covers events that are not violations.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5323"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Regulate access to computer files to safeguard information.",
+    "time_share": 0.5,
+    "type_reasoning": "Access regulation produces discrete access decisions or changes processed outside a live user contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An access request or identified access issue is handled and recorded as one case.",
+    "work_item": "one file-access decision or change",
+    "start": "an access request or access issue is received or identified",
+    "end": "the access decision or change is recorded and communicated",
+    "checked_by": "the file owner and access administration team",
+    "overlap_reasoning": "Changing an individual's access status is a subset shared with security-file modification, while each statement also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5317"
+    ]
+   }
+  ],
+  "notes": "The relative shares of monitoring and access administration vary by organization."
+ },
+ {
+  "task_id": "5320",
+  "split_reasoning": "Risk assessments and system tests are different activities with different outputs, with estimated shares of 0.5 each.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Perform a security risk assessment of a data processing system.",
+    "time_share": 0.5,
+    "type_reasoning": "An assessment produces documented findings for system owners and security management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The assessment of a defined system or scope is reviewed as a whole.",
+    "work_item": "one system security risk assessment",
+    "start": "the system and assessment scope are identified",
+    "end": "the risk findings and recommended treatment are submitted",
+    "checked_by": "security management and the system owner",
+    "overlap_reasoning": "Testing can provide evidence for an assessment, but assessment and test execution have different scopes and outputs.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Execute a test of data processing functions or security measures.",
+    "time_share": 0.5,
+    "type_reasoning": "Each defined test produces results that others can review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A test or defined test run is completed and its results handed to the responsible team.",
+    "work_item": "one data processing or security test run",
+    "start": "a test scope and procedure are selected",
+    "end": "the test is executed and its results communicated or recorded",
+    "checked_by": "the security or system operations team",
+    "overlap_reasoning": "Recording the test results overlaps with documenting security tests, but executing tests and maintaining test documentation are not identical.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5322"
+    ]
+   }
+  ],
+  "notes": "Risk assessments and tests may be coordinated, and their time shares vary by assignment."
+ },
+ {
+  "task_id": "5321",
+  "split_reasoning": "Implementing encryption and configuring firewalls produce different technical changes, with estimated shares of 0.5 each.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Implement encryption for a data transmission.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a configured encrypted transmission that operations staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Encryption is configured and checked for a defined connection or transmission path.",
+    "work_item": "one encrypted transmission path configured",
+    "start": "a transmission path requiring protection is identified",
+    "end": "encryption is configured and the change is handed over or recorded",
+    "checked_by": "the system owner and security or operations team",
+    "overlap_reasoning": "Implementing encryption may require security-file changes, but those changes can also concern unrelated software, errors, or access status.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5317"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Configure a firewall to control unwanted digital traffic.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a firewall configuration or change used to control network traffic.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A defined firewall configuration or rule change is implemented and handed over as a whole.",
+    "work_item": "one firewall configuration or rule change",
+    "start": "a firewall protection requirement or change request is identified",
+    "end": "the configuration is implemented and the change is handed over or recorded",
+    "checked_by": "the network and security operations teams",
+    "overlap_reasoning": "Firewall configuration can involve modifying security files, but both statements also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5317"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the organization's network architecture and change workload."
+ },
+ {
+  "task_id": "5322",
+  "split_reasoning": "Policies, procedures, and test records are different kinds of documentation, with estimated shares of 0.3, 0.4, and 0.3.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Document a computer security or emergency measures policy.",
+    "time_share": 0.3,
+    "type_reasoning": "A policy document is a discrete output reviewed and used by the organization.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A policy covering a defined subject is submitted for review as a whole.",
+    "work_item": "one security or emergency measures policy document",
+    "start": "a policy need and its scope are identified",
+    "end": "the documented policy is submitted for review or publication",
+    "checked_by": "security management and policy approvers",
+    "overlap_reasoning": "Policies may draw on safeguarding and emergency plans, and may inform awareness communications, but these are separate outputs.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5313",
+     "5314"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Document a computer security or emergency measures procedure.",
+    "time_share": 0.4,
+    "type_reasoning": "A procedure is a discrete document that staff follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A procedure for a defined operation is reviewed and maintained as a whole.",
+    "work_item": "one security or emergency procedure document",
+    "start": "a procedure need and its scope are identified",
+    "end": "the procedure is documented and submitted for review or use",
+    "checked_by": "security management and the staff who follow the procedure",
+    "overlap_reasoning": "Procedures can be derived from security and emergency plans, but documenting a procedure is not the same as developing the plan.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5314"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Document a computer security or emergency measures test.",
+    "time_share": 0.3,
+    "type_reasoning": "A test record is a discrete output used to review what was tested and the result.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The documentation for a defined test is completed and retained or submitted as a whole.",
+    "work_item": "one security or emergency test record",
+    "start": "test details and results are available for documentation",
+    "end": "the test record is completed and stored or submitted",
+    "checked_by": "security management, system owners, or auditors",
+    "overlap_reasoning": "Recording results can also occur during test execution, but this statement covers documentation and the other covers performing tests.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5320"
+    ]
+   }
+  ],
+  "notes": "Documentation may be combined in a single document set; the shares are estimates."
+ },
+ {
+  "task_id": "5323",
+  "split_reasoning": "Reviewing violations and discussing procedures with violators are different activities, with estimated shares of 0.6 and 0.4.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review a violation of computer security procedures.",
+    "time_share": 0.6,
+    "type_reasoning": "A violation review produces a finding or disposition that the security team can use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each reported violation is reviewed as a case and its outcome recorded or communicated.",
+    "work_item": "one security procedure violation reviewed",
+    "start": "a suspected or reported procedure violation is received",
+    "end": "the review finding or disposition is recorded or communicated",
+    "checked_by": "security management or the responsible supervisor",
+    "overlap_reasoning": "File-use monitoring can identify or investigate violations, but it also covers other events and this review covers violations beyond file use.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5319"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Discuss security procedures with a violator to prevent repetition.",
+    "time_share": 0.4,
+    "type_reasoning": "The value of this step is in the live corrective discussion.",
+    "type": "INTERPERSONAL",
+    "overlap_reasoning": "Conferring with users about security violations can include this discussion, but the broader user discussions and corrective discussions each have additional scope.",
+    "duplicates": [],
+    "overlaps_with": [
+     "5315"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the nature of violations and the organization's escalation practices."
+ }
+]

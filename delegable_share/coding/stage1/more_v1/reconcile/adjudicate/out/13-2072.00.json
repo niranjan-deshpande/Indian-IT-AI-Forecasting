@@ -1,0 +1,7 @@
+[
+ {"task_id": "3407", "reasoning": "Approving and referring are two outcomes of the same decision on one application, not different activities. Y codes one DISCRETE item per application decided and records the overlaps with 3409 and 3416.", "choice": "Y"},
+ {"task_id": "3411", "reasoning": "Pulling credit reports, getting corporate statements and assembling the file is mainly back-office work after the applicant meeting. Documents collected during the meeting are covered by 3408. A single DISCRETE documentation package (Y) fits better than X's live/back-office split.", "choice": "Y"},
+ {"task_id": "3412", "reasoning": "Reviewing and updating credit and loan files is mainly back-office work, and changes made during a customer contact belong to the contact statements. Y's single DISCRETE coding is the right level.", "choice": "Y"},
+ {"task_id": "3414", "reasoning": "The payment schedule that is computed, checked and relied on is the one that goes into the loan documents. Quick payment quotes during a meeting are part of explaining loan options (3410). X's single DISCRETE coding, with a note about live quotes, avoids counting that work twice.", "choice": "X"},
+ {"task_id": "3421", "reasoning": "For loan officers, marketing bank products is mostly direct persuasion through calls, visits and networking; promotional materials are usually made by the bank's marketing function. Y's single INTERPERSONAL part fits the statement, and X's 30% share for proposals overstates written output that the statement does not mention.", "choice": "Y"}
+]

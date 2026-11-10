@@ -1,0 +1,608 @@
+[
+ {
+  "task_id": "11455",
+  "split_reasoning": "Cleaning and preparing a site are related ways of removing hazards from the work area.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and prepare a construction site to eliminate hazards.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves hands-on removal of hazards and preparation of the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Site cleanup can include waste management under green construction practices.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19838"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11456",
+  "split_reasoning": "Plans, instructions, and specifications are alternative inputs for determining the work to be done.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read plans, instructions, or specifications to determine construction work activities.",
+    "time_share": 1.0,
+    "type_reasoning": "Reading to understand the work does not itself produce a separate item for others to check or rely on.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "Other statements cover performing work informed by plans, not this reading activity itself.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "This excludes any separately assigned written work plan or layout."
+ },
+ {
+  "task_id": "11457",
+  "split_reasoning": "Directing traffic in different locations around a work zone is one site-control activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Control traffic passing near, through, or around a construction work zone.",
+    "time_share": 1.0,
+    "type_reasoning": "The laborer controls traffic on site using physical signals or traffic-control devices.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Traffic control may involve barricades, but erecting or dismantling those structures is a separate task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11463"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11458",
+  "split_reasoning": "The different movements and adjustments are purposes of the same signaling activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Signal equipment operators to guide machinery, equipment, or materials into position.",
+    "time_share": 1.0,
+    "type_reasoning": "The laborer gives on-site signals while equipment and materials are being moved or adjusted.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Signaling can accompany positioning components or distributing materials, but those tasks also include separate handling work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11460",
+     "11462"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11459",
+  "split_reasoning": "Excavating, backfilling, and compacting or grading are different stages of earthwork; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dig ditches or trenches using hand or powered tools.",
+    "time_share": 0.4,
+    "type_reasoning": "Excavation requires hands-on work with tools at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Digging can support pipe installation, which includes additional pipe-laying work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11469"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Backfill excavations using appropriate tools.",
+    "time_share": 0.3,
+    "type_reasoning": "Backfilling involves physically placing earth in excavations.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Backfilling can be part of pipe installation but is not the whole installation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11469"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Compact and level earth to grade specifications.",
+    "time_share": 0.3,
+    "type_reasoning": "The laborer physically operates tampers or uses hand tools to shape and compact earth.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This is distinct from the other listed tasks.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The balance among earthwork stages varies by project."
+ },
+ {
+  "task_id": "11460",
+  "split_reasoning": "Positioning, joining, aligning, and sealing are related operations in assembling structural components.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Position, join, align, or seal structural components such as wall sections or pipes.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on handling and assembly of components at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Pipe installation includes some of the same component positioning and joining, but also covers other installation work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11469"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11461",
+  "split_reasoning": "Measuring, marking, and recording dimensions are related steps in laying out a construction area.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Measure and mark openings or distances, recording dimensions as needed, to lay out a construction area.",
+    "time_share": 1.0,
+    "type_reasoning": "The layout is performed hands-on at the site with measuring and marking equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement covers the same layout activity.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Recording is treated as part of field layout rather than a separate computer-based task."
+ },
+ {
+  "task_id": "11462",
+  "split_reasoning": "Identifying, loading, unloading, and distributing materials and equipment are related steps in moving site supplies to their destinations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify, load, unload, and distribute building materials, machinery, or tools to the specified locations.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves physically handling and moving supplies and equipment on site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Equipment signaling can accompany movement of materials, but it is not the full handling and distribution task.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11458"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11463",
+  "split_reasoning": "Erecting temporary structures and dismantling them are distinct stages of site work; the shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Erect scaffolding, shoring, braces, traffic barricades, ramps, or other temporary structures.",
+    "time_share": 0.6,
+    "type_reasoning": "Erection requires hands-on assembly and positioning at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Erecting traffic barricades can be part of controlling traffic around a work zone.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11457"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Dismantle scaffolding, shoring, braces, traffic barricades, ramps, or other temporary structures.",
+    "time_share": 0.4,
+    "type_reasoning": "Dismantling requires hands-on removal and handling of temporary structures.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Removing traffic barricades can form part of changing work-zone traffic control.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11457"
+    ]
+   }
+  ],
+  "notes": "The time split depends on the structures and how often they are reused."
+ },
+ {
+  "task_id": "11464",
+  "split_reasoning": "Setting concrete forms and dismantling them occur at different stages and require different hands-on work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Position and secure forms for pouring concrete.",
+    "time_share": 0.6,
+    "type_reasoning": "The laborer physically positions and fastens forms using hand or power tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement specifically covers positioning concrete forms.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Dismantle forms used for pouring concrete.",
+    "time_share": 0.4,
+    "type_reasoning": "Removing forms requires hands-on work with tools at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement specifically covers dismantling concrete forms.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Time shares are approximate."
+ },
+ {
+  "task_id": "11465",
+  "split_reasoning": "Routine cleaning and lubrication are separated from repairing faulty equipment because they are different maintenance activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean or lubricate machinery, equipment, or tools.",
+    "time_share": 0.6,
+    "type_reasoning": "Routine upkeep requires hands-on cleaning or lubrication of equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Maintaining sampling devices can include this kind of routine equipment upkeep.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11468"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Repair machinery, equipment, or tools.",
+    "time_share": 0.4,
+    "type_reasoning": "Repair requires hands-on work on equipment or tools.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Maintaining sampling devices may include repairs, but is limited to those devices.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11468"
+    ]
+   }
+  ],
+  "notes": "Time shares vary with equipment condition and the laborer's assigned responsibilities."
+ },
+ {
+  "task_id": "11466",
+  "split_reasoning": "Jackhammers and drills are alternative tools for breaking up concrete or pavement.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Break up concrete or pavement using a jackhammer or drill.",
+    "time_share": 1.0,
+    "type_reasoning": "Operating the tools requires hands-on physical work at the surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Breaking concrete can be part of razing a building, but demolition also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11467",
+  "split_reasoning": "Smoothing and finishing fresh concrete are the same surface-finishing activity with different tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Smooth or finish freshly poured cement or concrete.",
+    "time_share": 1.0,
+    "type_reasoning": "Finishing requires hands-on use of tools on the fresh surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This follows concrete placement but is a separate finishing step from mixing, pouring, or spreading it.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11468",
+  "split_reasoning": "Operating sampling devices and maintaining them are distinct activities; their shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate air-monitoring or other sampling devices in confined or hazardous environments.",
+    "time_share": 0.7,
+    "type_reasoning": "The task requires on-site operation and handling of sampling devices.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed task covers operating environmental sampling devices.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain air-monitoring or other sampling devices used in confined or hazardous environments.",
+    "time_share": 0.3,
+    "type_reasoning": "Device maintenance involves hands-on upkeep and checks of the equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "General equipment cleaning, lubrication, or repair can include maintenance of these devices.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11465"
+    ]
+   }
+  ],
+  "notes": "The target does not specify a separate written sampling report."
+ },
+ {
+  "task_id": "11469",
+  "split_reasoning": "Sewer, water, and storm drain pipes are different items installed through the same general pipe-laying activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install sewer, water, or storm drain pipes using pipe-laying or guidance equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Pipe installation requires hands-on site work and operation of installation equipment.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Pipe installation can include positioning and joining components and associated trench work, but each statement also covers other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11459",
+     "11460"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11471",
+  "split_reasoning": "Assisting different kinds of craft worker is the same general supporting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist craft workers such as carpenters, plasterers, or masons with site work.",
+    "time_share": 1.0,
+    "type_reasoning": "The assistance consists of hands-on construction work performed alongside the craft worker.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Assistance can include material handling, concrete work, or surface work that other statements describe more specifically.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11462",
+     "11474",
+     "11477",
+     "11479"
+    ]
+   }
+  ],
+  "notes": "The exact duties depend on the craft worker and assignment."
+ },
+ {
+  "task_id": "11472",
+  "split_reasoning": "Pumps, compressors, and generators are alternative equipment tended to support site operations.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tend pumps, compressors, or generators that power equipment or heat or move materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Tending the equipment requires on-site operation and physical attention to machinery.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Tending a pump used to apply concrete or other materials may overlap with tending the application machine.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11473",
+  "split_reasoning": "Mopping, brushing, and spreading are alternative methods of applying surface treatments for cleaning or protection.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply paint, cleaning solution, or another compound to a surface by mopping, brushing, or spreading.",
+    "time_share": 1.0,
+    "type_reasoning": "The treatment is applied by hand at the surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This is distinct from spraying materials through hoses and from mixing compounds before application.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11474",
+  "split_reasoning": "Placing, consolidating, and protecting cast-in-place concrete or masonry are related operations on the structure.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Place, consolidate, or protect cast-in-place concrete or masonry structures.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on handling and treatment of concrete or masonry at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Placing concrete overlaps with pouring or spreading it, and may be performed while assisting a craft worker.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11471",
+     "11477"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11477",
+  "split_reasoning": "Mixing, pouring, and spreading are related steps in placing concrete rather than separate kinds of deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix, pour, or spread concrete using portable cement mixers.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves hands-on mixing and placement of concrete at the site.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Pouring and spreading overlap with placing cast-in-place concrete and may form part of craft-worker assistance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11471",
+     "11474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11478",
+  "split_reasoning": "Grinding, scraping, sanding, and polishing are alternative abrasive treatments of surfaces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Grind, scrape, sand, or polish surfaces using abrasive tools or machines.",
+    "time_share": 1.0,
+    "type_reasoning": "The laborer physically operates tools or machines on the surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed task describes this abrasive surface treatment.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11479",
+  "split_reasoning": "The different pumped materials are alternative inputs to the same machine-tending activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tend machines that pump construction materials through spray guns for application to walls or ceilings.",
+    "time_share": 1.0,
+    "type_reasoning": "The work involves on-site operation and tending of pumping machinery.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The work can overlap with tending pumps generally, spraying materials, or assisting plasterers.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11471",
+     "11472",
+     "11482"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11480",
+  "split_reasoning": "The ingredients and intended surface treatments are alternative inputs and uses for the same mixing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix ingredients to make compounds for covering or cleaning surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing the compounds requires hands-on mixing of materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Applying a compound is a separate step from mixing it.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11481",
+  "split_reasoning": "Razing buildings and salvaging useful materials are distinct activities, even when performed on the same site.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Raze buildings.",
+    "time_share": 0.7,
+    "type_reasoning": "Demolition requires physical work with tools or equipment at the building.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Building demolition can include breaking concrete or pavement, but that tool operation also occurs outside demolition.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11466"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Salvage useful materials from buildings.",
+    "time_share": 0.3,
+    "type_reasoning": "Salvage requires physically removing and handling reusable materials.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Salvage can include identifying materials for reuse under green construction practices, but also involves removal and handling.",
+    "duplicates": [],
+    "overlaps_with": [
+     "19838"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on the extent of salvage required."
+ },
+ {
+  "task_id": "11482",
+  "split_reasoning": "The listed materials and purposes are alternative inputs and uses for spraying a surface through hoses.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Spray materials through hoses to clean, coat, or seal surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "The laborer physically handles spraying equipment and applies material at the surface.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Spraying can be performed alongside or as part of tending a machine that pumps material through spray guns.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11483",
+  "split_reasoning": "Applying caulk by hand or with a gun uses alternative methods for the same sealing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply caulking compounds to prevent water or air entry.",
+    "time_share": 1.0,
+    "type_reasoning": "Caulking requires hands-on application at joints or openings.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "This is distinct from the other listed surface treatment and structural assembly tasks.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19838",
+  "split_reasoning": "Waste management, identifying reusable materials, and installing erosion controls are distinct green construction activities; shares are approximate.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Implement site waste management procedures required by green construction practices.",
+    "time_share": 0.4,
+    "type_reasoning": "The site activity involves physically sorting, handling, or removing waste.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Waste handling can overlap with cleaning and preparing the site.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11455"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Identify site materials suitable for reuse under green construction practices.",
+    "time_share": 0.2,
+    "type_reasoning": "The laborer examines and identifies materials at the site as part of physical materials handling.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Identifying reusable materials can form part of salvaging useful building materials.",
+    "duplicates": [],
+    "overlaps_with": [
+     "11481"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Install erosion or sedimentation control mechanisms required by green construction practices.",
+    "time_share": 0.4,
+    "type_reasoning": "Installing site controls requires hands-on construction work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "No other listed statement specifically covers installing erosion or sediment controls.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The examples are not exhaustive; time shares vary by site and certification requirements."
+ }
+]

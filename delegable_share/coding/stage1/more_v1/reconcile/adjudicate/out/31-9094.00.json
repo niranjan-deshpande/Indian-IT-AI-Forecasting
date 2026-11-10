@@ -1,0 +1,17 @@
+[
+ {"task_id": "9420",
+  "reasoning": "Entering supplied data into a record and pulling data out for a physician have different inputs and outputs, and different people rely on them. X splits them with a clear work item for each; Y's 'entry or retrieval request' merges two kinds of item.",
+  "choice": "X"},
+ {"task_id": "9421",
+  "reasoning": "The statement covers very different kinds of item: patient-care reports, short correspondence or administrative pieces, and statistics or research documents. Under step 1 these should be split. Y does so and gives each its own work item and reviewer, while X's 'one document produced' is too broad to time or check consistently.",
+  "choice": "Y"},
+ {"task_id": "9423",
+  "reasoning": "Setting up a records collection differs from routine maintenance, and paper filing is hands-on work that the physical/computer rule says to split out. X follows both rules. Y merges setup, electronic and paper work into one 'file or batch' item.",
+  "choice": "X"},
+ {"task_id": "9424",
+  "reasoning": "The statement lists genuinely different clerical activities, and some (mail handling, paper filing) are physical while others (typing, claims) are computer work. X splits them correctly. Y's 'one day's mail and filing batch' mixes physical and computer work and different deliverables.",
+  "choice": "X"},
+ {"task_id": "9426",
+  "reasoning": "Receiving patients, scheduling and keeping records are different activities. Scheduling is done both live and from written requests (Example D), and records can be electronic or paper (physical/computer rule). X applies all of these with sensible work items; Y collapses check-in and booking into one live item and leaves paper filing inside a DISCRETE batch.",
+  "choice": "X"}
+]

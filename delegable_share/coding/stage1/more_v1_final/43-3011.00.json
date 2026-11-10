@@ -1,0 +1,545 @@
+[
+ {
+  "task_id": "2472",
+  "split_reasoning": "Same activity done in two places: payments taken while the customer is on the line, and payments arriving by mail or electronically posted afterwards.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take a payment and post it to the account while the customer is on the phone or at the desk.",
+    "time_share": 0.4,
+    "type_reasoning": "The customer waits while the payment is taken.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each payment is completed within one contact.",
+    "work_item": "one payment taken and posted during a contact",
+    "start": "customer agrees to pay",
+    "end": "payment posted and confirmed to the customer",
+    "checked_by": "the customer, accounting",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Post payments received by mail or electronically to customer accounts.",
+    "time_share": 0.6,
+    "type_reasoning": "Done from a queue with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Payments are posted in batches.",
+    "work_item": "one batch of received payments posted",
+    "start": "payments received",
+    "end": "payments posted to accounts",
+    "checked_by": "accounting supervisor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on channel mix."
+ },
+ {
+  "task_id": "2473",
+  "split_reasoning": "Ongoing monitoring that produces prioritized worklists of overdue accounts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and prioritize overdue accounts using the collection systems to build a working list.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a worklist that collection effort relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A list is built or refreshed as a unit, usually daily.",
+    "work_item": "one worklist of overdue accounts prepared",
+    "start": "aging report or system queue available",
+    "end": "prioritized worklist ready for contact",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2475"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2474",
+  "split_reasoning": "Collection and financial information is recorded both during customer contacts and afterward in account notes; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a customer's financial information or collection status during a live contact.",
+    "time_share": 0.5,
+    "type_reasoning": "The information is entered while the customer remains in the conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The account note for the contact is the record colleagues subsequently use.",
+    "work_item": "one account note entered during a customer contact",
+    "start": "customer provides financial or collection-related information",
+    "end": "information is entered in the account while the contact continues",
+    "checked_by": "other collectors and collections supervisor",
+    "overlap_reasoning": "Several customer-contact tasks supply information recorded here, but have distinct purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2472",
+     "2473",
+     "2475",
+     "2476",
+     "2477",
+     "2478",
+     "2481",
+     "2482",
+     "18559"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record financial information and collection effort status after a contact or from written information.",
+    "time_share": 0.5,
+    "type_reasoning": "The account note is completed without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One completed account update is available to the next person handling the account.",
+    "work_item": "one account status note or update completed outside a contact",
+    "start": "contact ends or financial or collection information is received",
+    "end": "account record is updated with the relevant information",
+    "checked_by": "other collectors and collections supervisor",
+    "overlap_reasoning": "Account review, payment posting, and follow-up actions may supply information for the note, but are separate work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2472",
+     "2473",
+     "2475",
+     "2476",
+     "2477",
+     "2478",
+     "2481",
+     "2482",
+     "2484",
+     "18559",
+     "18560"
+    ]
+   }
+  ],
+  "notes": "The division between in-contact entry and wrap-up varies by system and employer."
+ },
+ {
+  "task_id": "2475",
+  "split_reasoning": "Notices are delivered both in live customer contacts and through written mail; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact a delinquent customer by telephone or personal visit and request payment.",
+    "time_share": 0.7,
+    "type_reasoning": "The notification and payment request occur in a live customer conversation.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One contact delivers the notice and request, whether or not payment is obtained.",
+    "work_item": "one live delinquency notification and payment request",
+    "start": "customer is reached by telephone or in person",
+    "end": "customer is notified and payment is requested",
+    "checked_by": "customer and collections supervisor",
+    "overlap_reasoning": "Tracing, discussing the account, persuasion, and recording contact details can accompany notification but also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474",
+     "2476",
+     "2477",
+     "2478",
+     "2481",
+     "2483"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Send a delinquency notice requesting payment to a customer.",
+    "time_share": 0.3,
+    "type_reasoning": "The notice is prepared and sent without a live customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A notice sent for one account is a distinct collection communication.",
+    "work_item": "one delinquency notice sent",
+    "start": "overdue account is selected for written notification",
+    "end": "notice requesting payment is sent to the customer",
+    "checked_by": "customer and collections supervisor",
+    "overlap_reasoning": "Tracing can provide the address, and the notice can be recorded as a collection effort; neither is identical to sending it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474",
+     "2478",
+     "2479",
+     "2483"
+    ]
+   }
+  ],
+  "notes": "Locating the customer is included as needed for notification; detailed tracing is separately described in task 2483."
+ },
+ {
+  "task_id": "2476",
+  "split_reasoning": "One activity: a conversation with a customer about overdue payment and contract terms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Talk with a customer by phone or in person to learn why a payment is overdue and review contract terms.",
+    "time_share": 1.0,
+    "type_reasoning": "A live conversation with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each conversation is one contact.",
+    "work_item": "one conversation with a customer about an overdue account",
+    "start": "customer on the line or present",
+    "end": "reason established and terms reviewed",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2475",
+     "2477",
+     "2478",
+     "2481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2477",
+  "split_reasoning": "One activity: advising a customer during a conversation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Advise a customer on actions and strategies for repaying their debt.",
+    "time_share": 1.0,
+    "type_reasoning": "Delivered live to the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Within one contact.",
+    "work_item": "one customer advised on repayment during a contact",
+    "start": "customer discusses debt",
+    "end": "customer understands actions to take",
+    "checked_by": "customer, supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2476",
+     "2481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2478",
+  "split_reasoning": "One activity: persuading customers to pay or return items.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Persuade a customer in conversation to pay amounts due or return merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "Done live with the customer and ends in a commitment that is recorded.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Within one call or visit.",
+    "work_item": "one persuasion conversation about payment or return",
+    "start": "customer reached",
+    "end": "customer commits or refuses",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2475",
+     "2476"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2479",
+  "split_reasoning": "Filing correspondence, answering it, and writing reports are different activities; physical and electronic filing are also split. Shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sort and file paper correspondence.",
+    "time_share": 0.2,
+    "type_reasoning": "Sorting and placing paper documents requires hands-on work away from the computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Filing is distinct from the other listed account and collection activities.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Sort and file electronic correspondence in the appropriate account or folder.",
+    "time_share": 0.2,
+    "type_reasoning": "Electronic filing produces an organized record that colleagues can retrieve.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of correspondence processed from the incoming queue is a practical handoff unit.",
+    "work_item": "one batch of electronic correspondence sorted and filed",
+    "start": "incoming correspondence is available for filing",
+    "end": "items are assigned to the appropriate accounts or folders",
+    "checked_by": "collectors and administrative staff",
+    "overlap_reasoning": "Filed correspondence may contain account information, but filing is not the same as recording collection status.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Answer written correspondence about collection accounts.",
+    "time_share": 0.35,
+    "type_reasoning": "Each written response is sent as a distinct communication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One incoming correspondence item normally receives one response.",
+    "work_item": "one written correspondence response",
+    "start": "correspondence requiring a response is received",
+    "end": "response is completed and sent",
+    "checked_by": "recipient and collections supervisor",
+    "overlap_reasoning": "Some correspondence answers account questions or requests payment, but this part also covers other administrative replies.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2475",
+     "18559"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Write an administrative or collections report.",
+    "time_share": 0.25,
+    "type_reasoning": "A completed report is a distinct deliverable for colleagues or management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The report is reviewed and circulated as a whole.",
+    "work_item": "one administrative or collections report",
+    "start": "report request or reporting period begins",
+    "end": "completed report is submitted to its recipient",
+    "checked_by": "collections supervisor or administrative manager",
+    "overlap_reasoning": "Reports may draw on account notes but are separate from recording individual account status.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474"
+    ]
+   }
+  ],
+  "notes": "Miscellaneous clerical duties are not enumerated; shares and the balance between paper and electronic filing vary by workplace."
+ },
+ {
+  "task_id": "2480",
+  "split_reasoning": "Account administration is done both during customer contacts and later from notices or records; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Make an administrative account change while a customer is on the line or at the desk.",
+    "time_share": 0.3,
+    "type_reasoning": "The customer waits while an account change, such as an address update, is entered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One requested account change is entered and confirmed during the contact.",
+    "work_item": "one administrative account update made during a contact",
+    "start": "customer requests or supplies information for an account change",
+    "end": "change is entered and confirmed to the customer",
+    "checked_by": "customer and account administration staff",
+    "overlap_reasoning": "General collection-status notes and account questions may occur in the same contact, but an administrative change is a distinct output.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474",
+     "18559"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Make administrative account changes from written requests or other records, including processing deceased-customer records.",
+    "time_share": 0.7,
+    "type_reasoning": "These changes are made without a customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One account update or purge action is processed and recorded as a whole.",
+    "work_item": "one administrative account update or purge action",
+    "start": "request, death notice, or other account-change information is received",
+    "end": "account is updated or the authorized purge action is completed",
+    "checked_by": "account administration staff or supervisor",
+    "overlap_reasoning": "Administrative changes may use information also recorded in collection notes or discovered during tracing.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474",
+     "2483"
+    ]
+   }
+  ],
+  "notes": "Deceased-account processing depends on verification and retention rules; the target does not specify the procedure."
+ },
+ {
+  "task_id": "2481",
+  "split_reasoning": "Repayment arrangements are established both during live customer contacts and from subsequent written requests or approvals; the shares are estimates.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange repayment or establish a schedule with a customer during a live contact.",
+    "time_share": 0.8,
+    "type_reasoning": "The customer participates while the arrangement is agreed and entered.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One agreed arrangement or schedule is the item both sides rely on.",
+    "work_item": "one repayment arrangement established during a customer contact",
+    "start": "customer and collector begin discussing repayment terms",
+    "end": "terms are agreed, entered, and communicated to the customer",
+    "checked_by": "customer and collections supervisor",
+    "overlap_reasoning": "Financial discussion, advice, persuasion, payment posting, and extension negotiation can accompany the arrangement but are distinct tasks.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2472",
+     "2474",
+     "2475",
+     "2476",
+     "2477",
+     "2478",
+     "2482"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Establish or update a repayment schedule from written customer information or an approved request.",
+    "time_share": 0.2,
+    "type_reasoning": "The schedule is prepared and communicated outside a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed schedule for an account is the unit communicated and relied on.",
+    "work_item": "one repayment schedule established or updated outside a contact",
+    "start": "written repayment information or an approved request is received",
+    "end": "schedule is entered and confirmation is sent as required",
+    "checked_by": "customer and collections supervisor",
+    "overlap_reasoning": "Account notes and credit-extension decisions may support a schedule but are not the schedule itself.",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474",
+     "2482"
+    ]
+   }
+  ],
+  "notes": "The relative frequency of written arrangements depends on the collector's workflow."
+ },
+ {
+  "task_id": "2482",
+  "split_reasoning": "One activity: negotiating an extension.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Negotiate a credit extension with a customer when needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Done in live conversation with an outcome entered on the account.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One extension per contact.",
+    "work_item": "one credit extension negotiated during a contact",
+    "start": "customer requests more time",
+    "end": "extension granted or refused and recorded",
+    "checked_by": "supervisor, customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2483",
+  "split_reasoning": "One activity: skip tracing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Trace a delinquent customer to a new address using post offices, telephone companies, credit bureaus or neighbors.",
+    "time_share": 1.0,
+    "type_reasoning": "Each trace gives a new address that collection relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One trace per customer.",
+    "work_item": "one customer traced",
+    "start": "mail returned or customer unreachable",
+    "end": "new address found or trace abandoned",
+    "checked_by": "collections supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2475"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "2484",
+  "split_reasoning": "One activity: escalating a non-responsive account; the different destinations are alternatives.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Escalate a non-responsive account by notifying credit, ordering repossession or disconnection, or sending records to attorneys.",
+    "time_share": 1.0,
+    "type_reasoning": "Each escalation is a referral package others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One referral per account.",
+    "work_item": "one account escalated",
+    "start": "collection attempts exhausted",
+    "end": "referral or order sent and account status updated",
+    "checked_by": "credit department, attorney",
+    "duplicates": [],
+    "overlaps_with": [
+     "2474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18559",
+  "split_reasoning": "Same activity in two places: live calls and later written inquiries.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question about an account problem while on the phone or at the desk.",
+    "time_share": 0.8,
+    "type_reasoning": "Customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One question per contact.",
+    "work_item": "one account question answered during a contact",
+    "start": "customer states problem",
+    "end": "problem explained or resolved",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "2476"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a customer's written account question.",
+    "time_share": 0.2,
+    "type_reasoning": "Done from a queue.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One reply per message.",
+    "work_item": "one written account question answered",
+    "start": "message received",
+    "end": "reply sent",
+    "checked_by": "customer, supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "2479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "18560",
+  "split_reasoning": "Two activities: checking claim status, and writing appeals.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Contact an insurer to check the status of a claim payment.",
+    "time_share": 0.5,
+    "type_reasoning": "Each check gives a status recorded on the account.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One check per claim; the insurer is not a waiting customer.",
+    "work_item": "one claim status checked",
+    "start": "claim identified for follow-up",
+    "end": "status obtained and recorded",
+    "checked_by": "supervisor, provider",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Write an appeal letter for a denied claim.",
+    "time_share": 0.5,
+    "type_reasoning": "The letter is a deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One letter per denial.",
+    "work_item": "one appeal letter",
+    "start": "denial received",
+    "end": "appeal sent",
+    "checked_by": "supervisor, insurer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Medical billing context rather than classic collections."
+ }
+]

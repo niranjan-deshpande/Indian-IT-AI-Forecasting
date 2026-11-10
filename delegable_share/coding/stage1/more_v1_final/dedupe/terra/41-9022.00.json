@@ -1,0 +1,9 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both compile and publish a rental listing from property information supplied by the owner.",
+   "a": "2468b",
+   "b": "2470a"
+  }
+ ]
+}

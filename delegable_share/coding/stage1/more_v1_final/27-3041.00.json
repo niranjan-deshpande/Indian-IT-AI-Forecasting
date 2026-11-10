@@ -1,0 +1,573 @@
+[
+ {
+  "task_id": "1776",
+  "split_reasoning": "Editing copy and supervising others doing it are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare, rewrite and edit a piece of copy to improve readability.",
+    "time_share": 0.8,
+    "type_reasoning": "Each piece is edited and handed on as a whole.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Copy arrives piece by piece and goes forward as one edited item.",
+    "work_item": "one piece of copy edited",
+    "start": "copy received for editing",
+    "end": "edited copy passed to the next stage",
+    "checked_by": "the author, senior editor or the publisher",
+    "duplicates": [],
+    "overlaps_with": [
+     "1786",
+     "24025",
+     "1777"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Supervise others who prepare and edit copy.",
+    "time_share": 0.2,
+    "type_reasoning": "Supervising is live guidance with no separate deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1789"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1777",
+  "split_reasoning": "One activity: proofreading.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Proofread copy and correct errors in spelling, punctuation and syntax.",
+    "time_share": 1.0,
+    "type_reasoning": "Each pass produces corrected copy that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofreading is done per article or proof and handed on whole.",
+    "work_item": "one piece of copy proofread and corrected",
+    "start": "copy or proof received",
+    "end": "corrected copy returned or passed on",
+    "checked_by": "senior editor, author",
+    "duplicates": [],
+    "overlaps_with": [
+     "1776",
+     "1781"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1778",
+  "split_reasoning": "One activity: planning page space.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Allocate print space for text, photos and illustrations by space limits and story significance.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a page plan that layout staff work from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Space is allocated per issue or edition, handed to layout as one plan.",
+    "work_item": "one issue's space allocation or page plan",
+    "start": "stories and art available for the issue",
+    "end": "page plan released to layout",
+    "checked_by": "layout staff, managing editor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1779"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1779",
+  "split_reasoning": "One activity: planning contents.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan the contents of a publication according to its style, policy and requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a content plan staff work from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Plans are made per issue or edition.",
+    "work_item": "one issue's content plan",
+    "start": "planning for the issue begins",
+    "end": "content plan agreed",
+    "checked_by": "publisher or editorial board",
+    "duplicates": [],
+    "overlaps_with": [
+     "1778",
+     "1782"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1780",
+  "split_reasoning": "One activity: fact checking.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Verify facts, dates and statistics against reference sources.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces a verified piece or a list of corrections others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Checks are done per article.",
+    "work_item": "one article fact-checked",
+    "start": "article received for checking",
+    "end": "verified, with corrections made or flagged",
+    "checked_by": "author, senior editor, publisher legal",
+    "duplicates": [],
+    "overlaps_with": [
+     "1776"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1781",
+  "split_reasoning": "One activity: approving proofs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review and approve proofs from the composing room before production.",
+    "time_share": 1.0,
+    "type_reasoning": "Each approval is a sign-off that production relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Proofs are reviewed per page set or issue.",
+    "work_item": "one set of proofs reviewed and approved",
+    "start": "proofs received from composing room",
+    "end": "approval or corrections returned",
+    "checked_by": "production manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "1777",
+     "1783"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1782",
+  "split_reasoning": "One activity: coming up with ideas.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Develop story or content ideas with audience appeal in mind.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces ideas or pitches that go into planning.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Ideas are put forward as a pitch list or story idea.",
+    "work_item": "one story idea developed into a pitch",
+    "start": "need for content identified",
+    "end": "idea accepted or rejected in planning",
+    "checked_by": "editorial team, publisher",
+    "duplicates": [],
+    "overlaps_with": [
+     "1779",
+     "1785"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1783",
+  "split_reasoning": "One activity: overseeing production; the output is an issue brought to print on time and budget.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Oversee production of a publication through artwork, layout, typesetting and printing, keeping to deadline and budget.",
+    "time_share": 1.0,
+    "type_reasoning": "Each issue produced is the item that goes out the door.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Production runs issue by issue.",
+    "work_item": "one issue taken through production to print",
+    "start": "copy and art handed to production",
+    "end": "issue printed and released",
+    "checked_by": "publisher",
+    "duplicates": [],
+    "overlaps_with": [
+     "1781",
+     "1788"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1784",
+  "split_reasoning": "One activity: discussing news coverage.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with management and editors on placement and emphasis of developing news stories.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live news meeting.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1778"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1785",
+  "split_reasoning": "One activity: assigning stories.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign topics, events and stories to writers or reporters.",
+    "time_share": 1.0,
+    "type_reasoning": "Each assignment is a message or entry the writer works from.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Assignments are given per story.",
+    "work_item": "one story assignment",
+    "start": "story identified for coverage",
+    "end": "assignment accepted by the writer",
+    "checked_by": "the writer and managing editor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1782",
+     "1789"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1786",
+  "split_reasoning": "Evaluating and editing a manuscript is different from conferring with its author.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read, evaluate and edit a submitted manuscript.",
+    "time_share": 0.7,
+    "type_reasoning": "Each manuscript gets an evaluation and edits that others rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Manuscripts arrive one at a time and are returned whole.",
+    "work_item": "one manuscript evaluated and edited",
+    "start": "manuscript received",
+    "end": "edited manuscript or evaluation returned",
+    "checked_by": "author, publisher",
+    "duplicates": [],
+    "overlaps_with": [
+     "1776",
+     "1790"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Confer with authors on changes to content, style, organization or publication.",
+    "time_share": 0.3,
+    "type_reasoning": "Value is in the live discussion.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1787",
+  "split_reasoning": "One activity: monitoring coverage, which yields periodic checks.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Check news sources and coverage and tell staff where gaps remain.",
+    "time_share": 1.0,
+    "type_reasoning": "Each daily check produces coverage adjustments others act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The check is done per shift or day.",
+    "work_item": "one daily coverage check",
+    "start": "shift or news cycle begins",
+    "end": "gaps flagged and assignments adjusted",
+    "checked_by": "managing editor, reporters",
+    "duplicates": [],
+    "overlaps_with": [
+     "1785",
+     "1791"
+    ]
+   }
+  ],
+  "notes": "Continuous monitoring; recast as a daily check."
+ },
+ {
+  "task_id": "1788",
+  "split_reasoning": "One activity: project meetings.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Meet with artists, typesetters, layout, marketing and production staff to discuss projects and resolve problems.",
+    "time_share": 1.0,
+    "type_reasoning": "Value is in the live meetings.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1783"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1789",
+  "split_reasoning": "One activity: supervising staff.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Supervise and coordinate the work of reporters and editors.",
+    "time_share": 1.0,
+    "type_reasoning": "Supervising is live guidance with no separate deliverable.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1785",
+     "1776"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1790",
+  "split_reasoning": "One activity: recommending on manuscripts.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend acceptance or revision of a manuscript to the publisher.",
+    "time_share": 1.0,
+    "type_reasoning": "Each recommendation is a decision the publisher relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Recommendations are made per manuscript.",
+    "work_item": "one manuscript recommendation",
+    "start": "manuscript evaluation complete",
+    "end": "recommendation delivered to publisher",
+    "checked_by": "publisher",
+    "duplicates": [],
+    "overlaps_with": [
+     "1786"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1791",
+  "split_reasoning": "One activity: choosing wire stories.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select wire service news items by significance and interest.",
+    "time_share": 1.0,
+    "type_reasoning": "Each selection set is what the publication carries.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Selection is done per edition or shift.",
+    "work_item": "one edition's wire selection",
+    "start": "wire items received for the edition",
+    "end": "selected items passed for editing and placement",
+    "checked_by": "managing editor",
+    "duplicates": [],
+    "overlaps_with": [
+     "1787"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1792",
+  "split_reasoning": "Interviewing candidates, making hiring decisions, and negotiating author or freelancer terms are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Interview candidates for writer and reporter positions.",
+    "time_share": 0.3,
+    "type_reasoning": "The interview is a live interaction with the candidate.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Select and hire writers or reporters.",
+    "time_share": 0.3,
+    "type_reasoning": "A hiring decision and request to proceed are relied on by recruiting or personnel staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The hiring decision is made for an individual candidate.",
+    "work_item": "one writer or reporter hiring decision",
+    "start": "candidate considered for an open position",
+    "end": "selection and hiring decision communicated for action",
+    "checked_by": "hiring manager and personnel staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Negotiate contracts, royalties, or payments with authors and freelancers.",
+    "time_share": 0.4,
+    "type_reasoning": "The stated activity is negotiating terms through live interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary substantially with hiring and commissioning activity; contract preparation is not separately stated."
+ },
+ {
+  "task_id": "1793",
+  "split_reasoning": "Setting publication policy and directing departments are distinct policy and management activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Set or revise a publishing establishment's editorial policy.",
+    "time_share": 0.4,
+    "type_reasoning": "A policy decision provides guidance that staff rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A policy or policy change can be communicated and applied as a unit.",
+    "work_item": "one editorial policy decision or revision",
+    "start": "policy need or proposed change identified",
+    "end": "policy decision communicated to affected staff",
+    "checked_by": "publisher, department heads, and editorial staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "1779"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Direct the departments of a publishing establishment.",
+    "time_share": 0.6,
+    "type_reasoning": "Departmental direction is principally continuing management interaction.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "1789"
+    ]
+   }
+  ],
+  "notes": "The scope and formality of policy decisions vary by establishment."
+ },
+ {
+  "task_id": "1794",
+  "split_reasoning": "One activity: obtaining permissions.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange copyright permissions for material.",
+    "time_share": 1.0,
+    "type_reasoning": "Each permission obtained is a record the publisher relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Permissions are requested per item.",
+    "work_item": "one copyright permission obtained",
+    "start": "permission need identified",
+    "end": "signed permission or license on file",
+    "checked_by": "publisher, legal",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "1795",
+  "split_reasoning": "One activity: indexing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read material to choose index entries, order them and mark locations.",
+    "time_share": 1.0,
+    "type_reasoning": "Produces an index that goes with the publication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One index is made per book or work.",
+    "work_item": "one index compiled",
+    "start": "final pages available for indexing",
+    "end": "index delivered",
+    "checked_by": "editor, publisher",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "24025",
+  "split_reasoning": "Headlines are short standalone outputs, while stories, articles, editorials, and newsletters are substantially longer pieces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Write a headline for publication.",
+    "time_share": 0.3,
+    "type_reasoning": "Each headline is a distinct text output used with published content.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A headline is written and approved for an individual piece or placement.",
+    "work_item": "one headline",
+    "start": "story or placement requiring a headline identified",
+    "end": "headline submitted or entered for publication",
+    "checked_by": "news or copy editor and production staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Write a story, article, editorial, or newsletter for publication.",
+    "time_share": 0.7,
+    "type_reasoning": "Each written piece is submitted or published as a distinct deliverable.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A story, article, editorial, or newsletter edition is handled as a whole.",
+    "work_item": "one written story, article, editorial, or newsletter",
+    "start": "topic or assignment identified",
+    "end": "draft submitted for review or publication",
+    "checked_by": "editor and publication audience",
+    "duplicates": [],
+    "overlaps_with": [
+     "1776"
+    ]
+   }
+  ],
+  "notes": "The headline share varies greatly by editorial role."
+ },
+ {
+  "task_id": "24026",
+  "split_reasoning": "Questions come in live by phone or at the desk and also in writing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a member of the public's question while they are on the phone or at the desk.",
+    "time_share": 0.3,
+    "type_reasoning": "The person waits for the answer during the contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Each question is answered within the contact.",
+    "work_item": "one public question answered during a call or visit",
+    "start": "caller or visitor asks the question",
+    "end": "answer given to the person",
+    "checked_by": "the person asking",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Answer a member of the public's emailed or written question.",
+    "time_share": 0.7,
+    "type_reasoning": "Written questions are answered afterwards with no one waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Questions are answered one by one.",
+    "work_item": "one written public question answered",
+    "start": "question received",
+    "end": "reply sent",
+    "checked_by": "the person asking, editor",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Live versus written share is a judgment."
+ }
+]

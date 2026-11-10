@@ -1,0 +1,379 @@
+You are a coder in a research pipeline. Follow the instructions below exactly.
+
+Use only the information in this file. Do not read any other files and do not
+search the web. Below are 3 occupations. Code each occupation's TARGETS
+independently, in the order given; do not go back and adjust earlier answers to
+make them consistent with later ones, and do not let one occupation's coding
+shape another's.
+
+For each occupation, write ONE JSON array to its own file:
+  Landscaping and Groundskeeping Workers (37-3011.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/37-3011.00.json
+  First-Line Supervisors of Retail Sales Workers (41-1011.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/41-1011.00.json
+  Real Estate Sales Agents (41-9022.00) -> /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/41-9022.00.json
+with one element per target, in the order given. Each element is the output
+object described in the instructions, with "task_id" added as its first key.
+Write nothing else to those files. Then reply "done <n> items" per occupation,
+plus at most three sentences on anything you found ambiguous.
+
+
+=== INSTRUCTIONS ===
+You are building a coding schema for occupational tasks. Another team will
+later estimate how long each piece of work takes and how it is checked, so
+your job is only to say what the units of work ARE.
+
+Describe the work as experienced people in this occupation do it today,
+without AI. Do not consider what AI could or could not do.
+
+You will see the occupation's full task list for context, and one TARGET
+statement to code. Code only the target.
+
+STEP 1 — SPLIT. Decide whether the target should be split into parts. Split
+when it joins different activities ("write training materials, or train
+users"), or when it covers very different kinds of item (quick replies and
+long investigations). Give each part a share of the target's working time;
+shares sum to 1. If no split is needed, there is one part with share 1.
+
+Do NOT split when "or"/"and" only lists alternative methods, tools, or
+inputs for the same deliverable. "Check records, call the client, or consult
+the policy manual to settle a billing question" is one activity (settling
+the question) done by different means.
+
+DO split when the same activity is normally done in two different places:
+partly while a customer or user is still on the line or at the desk, and
+partly afterwards from written requests or in the back office (see step 4
+and Example D).
+
+STEP 2 — CLASSIFY each part as exactly one of:
+  - DISCRETE: produces distinct deliverables, one after another.
+    Example: answer a user's emailed question about software.
+  - ONGOING: a continuing activity with no single deliverable, but which
+    produces discrete items (alerts handled, reports written). Name them in
+    step 3.
+  - LIVE_SERVICE: work done in a live conversation (phone, chat, walk-up)
+    with a customer or user, while they wait. This covers the conversation
+    itself AND any work done during it while the customer is still there:
+    looking up an account, entering an order, taking a payment, issuing a
+    refund, booking an appointment.
+    Example: take a customer's call about a billing error.
+    Example: enter a change-of-address order while the customer is on the
+    phone.
+  - INTERPERSONAL: the value is in the live interaction itself, and nothing
+    a colleague could check is produced (meetings, teaching, negotiating,
+    supervising, persuading).
+    Example: meet with staff to set requirements.
+  - PHYSICAL: needs hands-on work away from a computer.
+    Example: install cables.
+  - NO_DELIVERABLE: produces nothing anyone else checks or relies on
+    (keeping up with developments, reading manuals to stay current).
+
+  If one activity is partly physical and partly at a computer, split it in
+  step 1.
+
+STEP 3 — ONGOING parts: replace the activity with the discrete items it
+produces (e.g. "one alert investigated", "one weekly capacity report").
+If there are several kinds, make each kind its own part with its own share
+of time, and classify each as DISCRETE.
+
+STEP 4 — WORK ITEM. For every DISCRETE or LIVE_SERVICE part, name the work
+item: one deliverable, in today's workflow, that a worker finishes and that
+someone else would check or rely on as a whole. Give:
+  - work_item: one line ("one support ticket")
+  - start: where it starts ("customer's first message")
+  - end: where it ends ("customer confirms the fix, ticket closed")
+  - checked_by: who checks or relies on it (supervisor, client, end user,
+    downstream team, auditor)
+  Pick the level at which work is handed over today: the thing that goes
+  into a queue, gets a ticket, gets signed off, or is sent. Not a single
+  keystroke-level step, and not a whole project.
+
+  Many task lists describe one workflow in several statements (talk to the
+  customer; record the interaction; check the fix was made; refer what you
+  can't solve). When the target describes one step of such a workflow, the
+  work item is that step's own output (e.g. "one interaction record written
+  after a call"), not the whole workflow. The other statements cover the
+  other steps.
+
+  Then ask WHERE that step is normally done. If the customer or user is
+  still on the line or at the desk while it is done, the part is
+  LIVE_SERVICE, and its start and end lie inside the contact (e.g. "one
+  refund entered during a customer call": from "customer agrees to the
+  remedy" to "refund confirmed to the customer"). If it is normally done
+  after the contact ends (wrap-up, back office, a queue of written
+  requests), it is DISCRETE. If both happen in substantial shares, split
+  into two parts by where the work is done (Example D).
+
+STEP 5 — OVERLAP. Compare each part with the other statements.
+  - duplicates: IDs of statements that describe the SAME work item (same
+    inputs, actions and output), so that coding both would count the same
+    work twice. Use this only when one of the two would be redundant.
+  - overlaps_with: IDs of statements that share some of the work but each
+    also covers work the other does not.
+  Leave a list empty if there are none. Code the part fully either way.
+
+Before each decision, write one sentence of reasoning. Put the reasoning
+before the value in the JSON.
+
+Output JSON only:
+{
+  "split_reasoning": "...",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "the part of the statement, rewritten as a standalone task",
+      "time_share": 1.0,
+      "type_reasoning": "...",
+      "type": "DISCRETE | LIVE_SERVICE | INTERPERSONAL | PHYSICAL | NO_DELIVERABLE",
+      "unit_reasoning": "... (omit for non-coded types)",
+      "work_item": "...",
+      "start": "...",
+      "end": "...",
+      "checked_by": "...",
+      "duplicates": ["task_id", ...],
+      "overlaps_with": ["task_id", ...]
+    }
+  ],
+  "notes": "anything ambiguous a human reviewer should look at"
+}
+
+=== WORKED EXAMPLES (other occupations) ===
+Drawn from occupations outside both the pilot and the BPO set (examples swapped 2026-11-10;
+the earlier ones came from BPO occupations and would have leaked into the BPO run).
+
+### Example A — DISCRETE, granularity choice
+Executive Secretaries and Executive Administrative Assistants (43-6014.00, task 2797) — "Review
+work done by others to check for correct spelling and grammar, ensure that company format
+policies are followed, and recommend revisions."
+
+```json
+{
+  "split_reasoning": "One activity: checking documents others wrote; documents vary in length but the kind of work is the same.",
+  "parts": [{
+    "part_id": "a",
+    "text": "Check a document written by someone else for spelling, grammar and house format, and mark the revisions needed.",
+    "time_share": 1.0,
+    "type_reasoning": "Each check produces a marked-up document that the author relies on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Documents arrive one at a time and go back to the author as a whole, not page by page.",
+    "work_item": "one document checked and returned with revisions (e.g. a letter, memo or report)",
+    "start": "document received for checking",
+    "end": "marked-up document returned to the author",
+    "checked_by": "the author, and the executive who signs it",
+    "duplicates": [],
+    "overlaps_with": []
+  }],
+  "notes": ""
+}
+```
+
+### Example B — ONGOING recast into items
+Market Research Analysts and Marketing Specialists (13-1161.00, task 5442) — "Monitor industry
+statistics and follow trends in trade literature."
+
+```json
+{
+  "split_reasoning": "Monitoring is continuous, but it produces two different kinds of item: notes on each new release of figures, and periodic trend reports.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Review a new release of industry statistics and send the team a note on the changes that matter.",
+      "time_share": 0.5,
+      "type_reasoning": "Each release ends in a short note that colleagues read and act on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Releases arrive on a schedule and each one is reviewed and reported on once.",
+      "work_item": "one statistics release reviewed and summarised",
+      "start": "new release of industry figures published",
+      "end": "note on the notable changes sent to the team",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Write a periodic trend report drawing on industry statistics and trade literature.",
+      "time_share": 0.5,
+      "type_reasoning": "Produces a report that managers read and plan from.",
+      "type": "DISCRETE",
+      "unit_reasoning": "The report is what is handed over and signed off.",
+      "work_item": "one trend report (monthly or quarterly)",
+      "start": "period's statistics and articles gathered",
+      "end": "report with implications sent to marketing management",
+      "checked_by": "marketing manager",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "Time shares are a judgment; they depend on how often figures are released."
+}
+```
+
+### Example C — COMPOUND with an interpersonal part
+Human Resources Specialists (13-1071.00, task 18867) — "Provide management with information or
+training related to interviewing, performance appraisals, counseling techniques, or
+documentation of performance issues."
+
+```json
+{
+  "split_reasoning": "Two different activities joined by 'or': training managers, and answering a manager's question about a specific case.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Train managers on interviewing, appraisals or documenting performance issues.",
+      "time_share": 0.4,
+      "type_reasoning": "The value is in the live session; nothing a colleague would check is produced.",
+      "type": "INTERPERSONAL",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Answer a manager's question about handling a specific case, usually by email.",
+      "time_share": 0.6,
+      "type_reasoning": "Each question produces written guidance the manager relies on.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Questions arrive one at a time, by email or the HR ticket queue.",
+      "work_item": "one manager's question answered with written guidance",
+      "start": "question received",
+      "end": "guidance sent and question closed",
+      "checked_by": "the manager who asked; HR lead for sensitive cases",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "If training materials are written as part of this, they belong to a separate statement."
+}
+```
+
+### Example D — one activity done in two places (live and afterwards)
+Receptionists and Information Clerks (43-4171.00, task 751) — "Schedule
+appointments and maintain and update appointment calendars."
+
+```json
+{
+  "split_reasoning": "One activity, keeping the calendar, but done in two places: live with a caller or visitor who is waiting, and afterwards from written requests and staff changes.",
+  "parts": [
+    {
+      "part_id": "a",
+      "text": "Book, move, or cancel an appointment while the caller or visitor is on the line or at the desk.",
+      "time_share": 0.7,
+      "type_reasoning": "The person is waiting while the booking is made, so this is work done during a live contact.",
+      "type": "LIVE_SERVICE",
+      "unit_reasoning": "Each request is booked and confirmed within one call or visit.",
+      "work_item": "one appointment booked or changed during a call or visit",
+      "start": "caller or visitor asks for an appointment",
+      "end": "slot confirmed to the person and entered in the calendar",
+      "checked_by": "the caller, and the staff member whose calendar it is",
+      "duplicates": [],
+      "overlaps_with": []
+    },
+    {
+      "part_id": "b",
+      "text": "Update calendars from emailed requests, cancellations, and changes in staff availability.",
+      "time_share": 0.3,
+      "type_reasoning": "Done from a queue of written requests with no one waiting, so each update is an ordinary deliverable.",
+      "type": "DISCRETE",
+      "unit_reasoning": "Receptionists work through the day's written requests in a batch and send confirmations.",
+      "work_item": "one batch of calendar updates from the day's written requests",
+      "start": "requests or availability changes received by email or message",
+      "end": "calendars updated and confirmations sent",
+      "checked_by": "staff whose calendars these are",
+      "duplicates": [],
+      "overlaps_with": []
+    }
+  ],
+  "notes": "The live share depends on how much booking comes in by phone versus online or email."
+}
+```
+
+=== OCCUPATION: Landscaping and Groundskeeping Workers (37-3011.00) ===
+Landscape or maintain grounds of property using hand or power tools or equipment. Workers typically perform a variety of tasks, which may include any combination of the following: sod laying, mowing, trimming, planting, watering, fertilizing, digging, raking, sprinkler installation, and installation of mortarless segmental concrete masonry wall units.
+
+TASK LIST (context; every statement below is also a TARGET):
+[9589] Mow or edge lawns, using power mowers or edgers.
+[9590] Shovel snow from walks, driveways, or parking lots, and spread salt in those areas.
+[9591] Care for established lawns by mulching, aerating, weeding, grubbing, removing thatch, or trimming or edging around flower beds, walks, or walls.
+[9592] Use hand tools, such as shovels, rakes, pruning saws, saws, hedge or brush trimmers, or axes.
+[9593] Prune or trim trees, shrubs, or hedges, using shears, pruners, or chain saws.
+[9594] Gather and remove litter.
+[9595] Maintain or repair tools, equipment, or structures, such as buildings, greenhouses, fences, or benches, using hand or power tools.
+[9596] Mix and spray or spread fertilizers, herbicides, or insecticides onto grass, shrubs, or trees, using hand or automatic sprayers or spreaders.
+[9597] Provide proper upkeep of sidewalks, driveways, parking lots, fountains, planters, burial sites, or other grounds features.
+[9598] Water lawns, trees, or plants, using portable sprinkler systems, hoses, or watering cans.
+[9599] Trim or pick flowers and clean flower beds.
+[9600] Rake, mulch, and compost leaves.
+[9601] Follow planned landscaping designs to determine where to lay sod, sow grass, or plant flowers or foliage.
+[9602] Plant seeds, bulbs, foliage, flowering plants, grass, ground covers, trees, or shrubs, and apply mulch for protection, using gardening tools.
+[9605] Care for natural turf fields, making sure the underlying soil has the required composition to allow proper drainage and to support the grasses.
+[9607] Haul or spread topsoil, or spread straw over seeded soil to hold soil in place.
+[9610] Plan or cultivate lawns or gardens.
+[9611] Attach wires from planted trees to support stakes.
+[20761] Operate vehicles or powered equipment, such as mowers, tractors, twin-axle vehicles, snow blowers, chainsaws, electric clippers, sod cutters, or pruning saws.
+
+TARGETS: code all 19 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/37-3011.00.json.
+
+=== OCCUPATION: First-Line Supervisors of Retail Sales Workers (41-1011.00) ===
+Directly supervise and coordinate activities of retail sales workers in an establishment or department. Duties may include management functions, such as purchasing, budgeting, accounting, and personnel work, in addition to supervisory duties.
+
+TASK LIST (context; every statement below is also a TARGET):
+[657] Provide customer service by greeting and assisting customers and responding to customer inquiries and complaints.
+[658] Monitor sales activities to ensure that customers receive satisfactory service and quality goods.
+[659] Assign employees to specific duties.
+[660] Direct and supervise employees engaged in sales, inventory-taking, reconciling cash receipts, or in performing services for customers.
+[661] Inventory stock and reorder when inventory drops to a specified level.
+[662] Keep records of purchases, sales, and requisitions.
+[663] Enforce safety, health, and security rules.
+[664] Examine products purchased for resale or received for storage to assess the condition of each product or item.
+[665] Hire, train, and evaluate personnel in sales or marketing establishments, promoting or firing workers when appropriate.
+[666] Perform work activities of subordinates, such as cleaning and organizing shelves and displays and selling merchandise.
+[667] Establish and implement policies, goals, objectives, and procedures for the department.
+[668] Instruct staff on how to handle difficult and complicated sales.
+[669] Formulate pricing policies for merchandise, according to profitability requirements.
+[670] Estimate consumer demand and determine the types and amounts of goods to be sold.
+[671] Examine merchandise to ensure that it is correctly priced and displayed and that it functions as advertised.
+[672] Plan and prepare work schedules and keep records of employees' work schedules and time cards.
+[673] Review inventory and sales records to prepare reports for management and budget departments.
+[674] Plan and coordinate advertising campaigns and sales promotions and prepare merchandise displays and advertising copy.
+[675] Confer with company officials to develop methods and procedures to increase sales, expand markets, and promote business.
+[676] Establish credit policies and operating procedures.
+[677] Plan budgets and authorize payments and merchandise returns.
+
+TARGETS: code all 21 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/41-1011.00.json.
+
+=== OCCUPATION: Real Estate Sales Agents (41-9022.00) ===
+Rent, buy, or sell property for clients. Perform duties such as study property listings, interview prospective clients, accompany clients to property site, discuss conditions of sale, and draw up real estate contracts. Includes agents who represent buyer.
+
+TASK LIST (context; every statement below is also a TARGET):
+[2440] Present purchase offers to sellers for consideration.
+[2441] Confer with escrow companies, lenders, home inspectors, and pest control operators to ensure that terms and conditions of purchase agreements are met before closing dates.
+[2442] Interview clients to determine what kinds of properties they are seeking.
+[2443] Prepare documents such as representation contracts, purchase agreements, closing statements, deeds, and leases.
+[2444] Coordinate property closings, overseeing signing of documents and disbursement of funds.
+[2445] Act as an intermediary in negotiations between buyers and sellers, generally representing one or the other.
+[2446] Promote sales of properties through advertisements, open houses, and participation in multiple listing services.
+[2447] Compare a property with similar properties that have recently sold to determine its competitive market price.
+[2448] Coordinate appointments to show homes to prospective buyers.
+[2449] Generate lists of properties that are compatible with buyers' needs and financial resources.
+[2450] Display commercial, industrial, agricultural, and residential properties to clients and explain their features.
+[2451] Arrange for title searches to determine whether clients have clear property titles.
+[2452] Review plans for new construction with clients, enumerating and recommending available options and features.
+[2453] Answer clients' questions regarding construction work, financing, maintenance, repairs, and appraisals.
+[2454] Inspect condition of premises, and arrange for necessary maintenance or notify owners of maintenance needs.
+[2455] Accompany buyers during visits to and inspections of property, advising them on the suitability and value of the homes they are visiting.
+[2456] Advise sellers on how to make homes more appealing to potential buyers.
+[2457] Arrange meetings between buyers and sellers when details of transactions need to be negotiated.
+[2458] Advise clients on market conditions, prices, mortgages, legal requirements, and related matters.
+[2459] Evaluate mortgage options to help clients obtain financing at the best prevailing rates and terms.
+[2460] Review property listings, trade journals, and relevant literature, and attend conventions, seminars, and staff and association meetings, to remain knowledgeable about real estate markets.
+[2461] Investigate clients' financial and credit status to determine eligibility for financing.
+[2462] Contact property owners and advertise services to solicit property sales listings.
+[2463] Develop networks of attorneys, mortgage lenders, and contractors to whom clients may be referred.
+[2464] Visit properties to assess them before showing them to clients.
+[2465] Contact utility companies for service hookups to clients' property.
+[2466] Conduct seminars and training sessions for sales agents to improve sales techniques.
+[2467] Appraise properties to determine loan values.
+[2468] Solicit and compile listings of available rental properties.
+[2469] Secure construction or purchase financing with own firm or mortgage company.
+[2470] Rent or lease properties on behalf of clients.
+[2471] Locate and appraise undeveloped areas for building sites, based on evaluations of area market conditions.
+[21155] Contact previous clients for prospecting of referral business.
+
+TARGETS: code all 33 statements above, in that order, and write them to /Users/ndeshpande/Documents/2-misc/1-AI/SPAR---Andrei/delegable_share/coding/stage1/more_v1/41-9022.00.json.

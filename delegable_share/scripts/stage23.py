@@ -105,7 +105,12 @@ def main():
     elif cmd == "terra":
         m, by_id = json.loads((rd / "manifest.json").read_text()), json.loads((rd / "items.json").read_text())
         info, before = m["coders"]["t"], spent()
-        for j, b in enumerate(info["batches"]):
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(jb):
+            j, b = jb
+            if (rd / "t" / f"batch{j}.json").exists():  # resumable
+                return j, None, {}
             parsed, u = chat_json([{"role": "user", "content": body([by_id[x] for x in b],
                                                                      info["catalog_seed"]) +
                                     '\n\nReturn a JSON object {"items": [...]}, one element per '
@@ -113,7 +118,10 @@ def main():
                                     "in the instructions (feature fields, then match fields)."}],
                                   purpose=f"stage23 {run} t batch{j}")
             (rd / "t" / f"batch{j}.json").write_text(json.dumps(parsed.get("items", []), indent=1))
-            print("batch", j, len(parsed.get("items", [])), "items", u.get("completion_tokens"))
+            return j, len(parsed.get("items", [])), u
+        with ThreadPoolExecutor(6) as ex:
+            for j, n, u in ex.map(one, enumerate(info["batches"])):
+                print("batch", j, n, "items", u.get("completion_tokens"))
         print(f"this run ${spent() - before:.3f}; project total ${spent():.3f}")
 
     elif cmd in ("check", "matches"):

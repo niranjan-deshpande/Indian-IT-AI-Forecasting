@@ -1,0 +1,511 @@
+[
+ {
+  "task_id": "11455",
+  "split_reasoning": "One activity: clearing and preparing a site by hand.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean up and prepare a construction site to remove hazards.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on site work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "19838"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11456",
+  "split_reasoning": "One activity: reading plans and instructions to know what to do.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read plans, instructions and specifications to decide what work to do.",
+    "time_share": 1.0,
+    "type_reasoning": "A step within the physical work; no output anyone else checks.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "11461",
+     "11462"
+    ]
+   }
+  ],
+  "notes": "Laborers mostly get instructions from the foreman; this is a short supporting step."
+ },
+ {
+  "task_id": "11457",
+  "split_reasoning": "One activity: directing traffic at the work zone.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Control traffic passing in or near the work zone using signs, flags and barriers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on on-site work away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11463"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11458",
+  "split_reasoning": "One activity: giving hand signals to equipment operators.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Signal equipment operators to line up, move or adjust machinery, equipment or materials.",
+    "time_share": 1.0,
+    "type_reasoning": "On-site physical signalling away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11462"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11459",
+  "split_reasoning": "One activity: hand digging and grading earth.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dig trenches, backfill, and compact and level earth to grade with hand tools and tampers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on excavation work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11469"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11460",
+  "split_reasoning": "One activity: placing and fixing structural pieces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Position, join, align and seal structural components such as concrete wall sections or pipes.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on construction work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11469",
+     "11471"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11461",
+  "split_reasoning": "One activity: measuring and marking on site.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Measure, mark and note distances and openings to lay out work areas.",
+    "time_share": 1.0,
+    "type_reasoning": "Done on site with tape and marking tools, away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11456"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11462",
+  "split_reasoning": "One activity: moving and sorting materials and tools around the site.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Load, unload, identify and distribute building materials, machinery and tools to the right places.",
+    "time_share": 1.0,
+    "type_reasoning": "Manual handling work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11458"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11463",
+  "split_reasoning": "One activity: building and taking down temporary structures.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Erect or dismantle scaffolding, shoring, braces, barricades and ramps.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on construction work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11457"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11464",
+  "split_reasoning": "One activity: setting up and stripping concrete forms.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Position or take down forms for pouring concrete with saws, hammers, nails and bolts.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on carpentry-type work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11474"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11465",
+  "split_reasoning": "One activity: servicing machinery and tools by hand.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Lubricate, clean and repair machinery, equipment and tools.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11466",
+  "split_reasoning": "One activity: breaking concrete with powered tools.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate jackhammers or drills to break up concrete or pavement.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on tool work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11481"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11467",
+  "split_reasoning": "One activity: hand finishing concrete.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Smooth and finish freshly poured concrete with floats, trowels, screeds or power finishers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11474",
+     "11477"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11468",
+  "split_reasoning": "Two activities: running the monitoring device in the field, and logging what it reads.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate and maintain air monitoring or sampling devices in confined or hazardous spaces.",
+    "time_share": 0.8,
+    "type_reasoning": "Hands-on field work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "19838"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Log the readings from air monitoring and sampling devices for the safety lead.",
+    "time_share": 0.2,
+    "type_reasoning": "Logged readings are relied on by the safety lead to clear entry.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Readings are logged per entry or per shift as a record.",
+    "work_item": "one shift's air monitoring readings logged",
+    "start": "readings taken from the device",
+    "end": "log entries completed and passed to the safety lead",
+    "checked_by": "safety officer or foreman",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Many laborers only operate the device; the logging share is a guess."
+ },
+ {
+  "task_id": "11469",
+  "split_reasoning": "One activity: laying underground pipe.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Install sewer, water or storm drain pipe using pipe-laying machinery or laser guidance.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on construction work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11460",
+     "11459"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11471",
+  "split_reasoning": "One activity: helping skilled trades with their tasks.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assist carpenters, plasterers, masons and other craft workers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on support work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11460",
+     "11462"
+    ]
+   }
+  ],
+  "notes": "Broad; overlaps with many physical statements."
+ },
+ {
+  "task_id": "11472",
+  "split_reasoning": "One activity: running power and heating equipment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tend pumps, compressors and generators that power tools, machinery or heat and move materials such as asphalt.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on equipment tending.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11473",
+  "split_reasoning": "One activity: applying coatings or cleaners by hand.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mop, brush or spread paints, cleaning solutions and other compounds over surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11482",
+     "11480"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11474",
+  "split_reasoning": "One activity: placing and protecting cast-in-place concrete or masonry.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Place, consolidate and protect cast-in-place concrete or masonry structures.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11477",
+     "11467",
+     "11464"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11477",
+  "split_reasoning": "One activity: mixing and placing concrete with portable mixers.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix, pour and spread concrete using portable cement mixers.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11474",
+     "11480",
+     "11467"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11478",
+  "split_reasoning": "One activity: abrasive surface work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Grind, scrape, sand or polish concrete, stone or wood surfaces with abrasive tools.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on tool work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11479",
+  "split_reasoning": "One activity: running spray-application pumping machines.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Tend machines that pump concrete, grout, plaster or stucco through spray guns onto ceilings or walls.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on machine tending.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11482",
+     "11472"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11480",
+  "split_reasoning": "One activity: mixing compounds by hand or machine.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mix ingredients to make compounds for covering or cleaning surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11477",
+     "11473"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11481",
+  "split_reasoning": "One activity: demolishing structures and recovering materials.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Take down buildings and salvage useful materials.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on demolition work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11466",
+     "19838"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11482",
+  "split_reasoning": "One activity: spraying materials onto surfaces.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Spray water, sand, steam, paint, vinyl or stucco through hoses to clean, coat or seal surfaces.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11473",
+     "11479"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "11483",
+  "split_reasoning": "One activity: caulking by hand or gun.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply caulking with a hand tool or caulking gun to keep out water and air.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "19838",
+  "split_reasoning": "One activity: carrying out green-practice measures on site.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry out green construction practices on site: waste handling, setting aside materials for reuse, and installing erosion and sediment controls.",
+    "time_share": 1.0,
+    "type_reasoning": "Hands-on on-site work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "11455",
+     "11481"
+    ]
+   }
+  ],
+  "notes": "Any waste-tracking paperwork is minor and left out."
+ }
+]

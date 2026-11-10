@@ -6,6 +6,7 @@ the repo-root .env (OPENAI_API_KEY) and is never printed.
 """
 import datetime
 import json
+import threading
 import pathlib
 import urllib.request
 
@@ -32,6 +33,9 @@ def spent():
     return sum(json.loads(l)["usd"] for l in LEDGER.read_text().splitlines() if l.strip())
 
 
+_LOCK = threading.Lock()
+
+
 def chat_json(messages, purpose, model=DEFAULT_MODEL, timeout=600):
     """Send a chat completion that must return a JSON object. Returns (parsed, usage)."""
     if spent() >= PROJECT_CAP_USD:
@@ -47,7 +51,7 @@ def chat_json(messages, purpose, model=DEFAULT_MODEL, timeout=600):
     pin, pout = PRICES.get(model, (5.0, 25.0))  # unknown model: assume expensive
     usd = (u.get("prompt_tokens", 0) * pin + u.get("completion_tokens", 0) * pout) / 1e6
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    with open(LEDGER, "a") as f:
+    with _LOCK, open(LEDGER, "a") as f:
         f.write(json.dumps({"time": datetime.datetime.now().isoformat(timespec="seconds"),
                             "model": resp.get("model", model), "purpose": purpose,
                             "prompt_tokens": u.get("prompt_tokens"),

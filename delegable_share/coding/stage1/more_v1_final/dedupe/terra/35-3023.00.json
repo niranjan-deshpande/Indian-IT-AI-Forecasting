@@ -1,0 +1,9 @@
+{
+ "pairs": [
+  {
+   "reasoning": "Both cover picking up a ready customer order and handing it to the customer.",
+   "a": "23105a",
+   "b": "23123b"
+  }
+ ]
+}

@@ -38,7 +38,7 @@ def main():
     outdir = ROOT / "coding" / "stage1" / f"{tag}_terra"
     outdir.mkdir(parents=True, exist_ok=True)
     before = spent()
-    with ThreadPoolExecutor(3) as ex:
+    with ThreadPoolExecutor(6) as ex:
         for code, n, u in ex.map(lambda b: run(b, outdir), manifest["batches"]):
             print(code, n, "items", u)
     (outdir / "RUN.json").write_text(json.dumps({"model": DEFAULT_MODEL, "tag": tag}, indent=1))

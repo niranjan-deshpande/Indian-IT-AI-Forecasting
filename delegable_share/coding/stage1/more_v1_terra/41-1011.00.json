@@ -1,0 +1,644 @@
+[
+ {
+  "task_id": "657",
+  "split_reasoning": "Greeting, assisting, and responding to inquiries or complaints are related live-service activities, but written inquiries and complaints are also handled outside live contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet and assist a customer or respond to an inquiry or complaint during a live contact.",
+    "time_share": 0.9,
+    "type_reasoning": "The supervisor serves a customer who is present or on the phone.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The customer contact is the unit in which assistance or a response is delivered.",
+    "work_item": "One customer service contact",
+    "start": "Customer approaches or calls",
+    "end": "Assistance or response is given and the contact ends",
+    "checked_by": "Customer and store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "666"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Respond to a customer's written inquiry or complaint.",
+    "time_share": 0.1,
+    "type_reasoning": "A written request is handled without the customer waiting in a live conversation.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each written inquiry or complaint receives a response as a whole.",
+    "work_item": "One written customer inquiry or complaint answered",
+    "start": "Written request or complaint is received",
+    "end": "Response is sent to the customer",
+    "checked_by": "Customer and store manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "The share of written requests varies by retailer."
+ },
+ {
+  "task_id": "658",
+  "split_reasoning": "Monitoring is continuous, so it is represented by the individual service or merchandise issues identified and addressed.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Identify and address a service or merchandise-quality issue while monitoring sales activity.",
+    "time_share": 1.0,
+    "type_reasoning": "Each identified issue has an outcome that staff or customers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An identified issue and the action taken on it form a manageable unit of monitoring work.",
+    "work_item": "One service or merchandise-quality issue identified and addressed",
+    "start": "Issue is noticed during sales monitoring",
+    "end": "Issue is corrected or referred for action",
+    "checked_by": "Store manager, sales staff, or customer",
+    "duplicates": [],
+    "overlaps_with": [
+     "660",
+     "671"
+    ]
+   }
+  ],
+  "notes": "Routine monitoring may find no issue and may not produce a separate record."
+ },
+ {
+  "task_id": "659",
+  "split_reasoning": "Assigning employees to duties is one activity, regardless of the duties assigned.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Assign employees to specific duties for a shift or work period.",
+    "time_share": 1.0,
+    "type_reasoning": "The assignment produces a set of duties that employees follow.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A shift's assignments are communicated and used as a whole.",
+    "work_item": "One shift's employee duty assignments",
+    "start": "Staffing and work needs for the shift are known",
+    "end": "Assignments are communicated to employees",
+    "checked_by": "Assigned employees and store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "660",
+     "672"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "660",
+  "split_reasoning": "Directing and supervising employees is one continuing supervisory activity across the listed kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Direct and supervise employees performing sales, inventory, cash reconciliation, or customer-service work.",
+    "time_share": 1.0,
+    "type_reasoning": "The activity principally consists of live direction and supervision of employees.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "658",
+     "659",
+     "663",
+     "665",
+     "668"
+    ]
+   }
+  ],
+  "notes": "Formal schedules, evaluations, and duty assignments are covered by other statements."
+ },
+ {
+  "task_id": "661",
+  "split_reasoning": "Counting stock requires hands-on inventory work, while placing a replenishment order is a separate deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and check stock on hand against inventory records.",
+    "time_share": 0.6,
+    "type_reasoning": "Stocktaking requires hands-on work with merchandise away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "664",
+     "673"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Reorder stock when its quantity falls to the specified level.",
+    "time_share": 0.4,
+    "type_reasoning": "Each replenishment order is a distinct request sent for fulfillment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The supplier or purchasing team processes an order as a whole.",
+    "work_item": "One stock replenishment order",
+    "start": "Stock is found to be at or below its reorder level",
+    "end": "Order is submitted to the supplier or purchasing team",
+    "checked_by": "Supplier or purchasing team and store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "662",
+     "670"
+    ]
+   }
+  ],
+  "notes": "Time shares depend on counting practices and ordering systems."
+ },
+ {
+  "task_id": "662",
+  "split_reasoning": "Purchase, sales, and requisition records are different inputs to the same recordkeeping activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record a purchase, sale, or requisition in the store's records.",
+    "time_share": 1.0,
+    "type_reasoning": "Each transaction produces a record used by the store or accounting staff.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A transaction record is entered and subsequently retrieved or reconciled as a whole.",
+    "work_item": "One purchase, sales, or requisition record",
+    "start": "Transaction details or source document are available",
+    "end": "Transaction is entered or updated in the records",
+    "checked_by": "Store management or accounting staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "661",
+     "673"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "663",
+  "split_reasoning": "Enforcing safety, health, and security rules is one continuing supervisory activity across the listed rule categories.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enforce safety, health, and security rules among store employees.",
+    "time_share": 1.0,
+    "type_reasoning": "Enforcement principally involves directing and correcting employee behavior in person.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "660"
+    ]
+   }
+  ],
+  "notes": "Formal incident reports or physical hazard remediation are not specified in the target."
+ },
+ {
+  "task_id": "664",
+  "split_reasoning": "Products purchased for resale and products received for storage are inputs to the same physical condition check.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine received products to assess their physical condition.",
+    "time_share": 1.0,
+    "type_reasoning": "Assessing condition normally requires handling and inspecting merchandise.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "661",
+     "671"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "665",
+  "split_reasoning": "Hiring, training, evaluation, and promotion or dismissal are different personnel activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Select and hire personnel for the sales establishment.",
+    "time_share": 0.35,
+    "type_reasoning": "Hiring produces a selection and offer that the candidate and employer rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A completed hiring decision and offer for one vacancy form a handoff.",
+    "work_item": "One vacancy filled with a hiring decision and offer",
+    "start": "Vacancy is approved and candidates are available for consideration",
+    "end": "Candidate is selected and an offer is communicated",
+    "checked_by": "Hiring manager, human resources, and candidate",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Train sales personnel in their work.",
+    "time_share": 0.3,
+    "type_reasoning": "Training is principally delivered through live instruction and practice with employees.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "660",
+     "668"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Evaluate an employee's work performance.",
+    "time_share": 0.2,
+    "type_reasoning": "A performance evaluation produces an assessment used by the employee and management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual employee's completed review is the unit communicated and retained.",
+    "work_item": "One employee performance evaluation",
+    "start": "Review period or evaluation request begins",
+    "end": "Assessment is completed and communicated",
+    "checked_by": "Employee, store manager, and human resources",
+    "duplicates": [],
+    "overlaps_with": [
+     "660"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Decide and process an appropriate employee promotion or dismissal.",
+    "time_share": 0.15,
+    "type_reasoning": "The decision produces an employment action that management and human resources rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each promotion or dismissal is decided and processed for an individual employee.",
+    "work_item": "One employee promotion or dismissal action",
+    "start": "Employee is considered for promotion or dismissal",
+    "end": "Decision is approved, communicated, and submitted for processing",
+    "checked_by": "Store manager, human resources, and employee",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares vary considerably with turnover and review cycles."
+ },
+ {
+  "task_id": "666",
+  "split_reasoning": "Cleaning and organizing merchandise is physical work, whereas selling merchandise involves live customer service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and organize shelves and merchandise displays.",
+    "time_share": 0.6,
+    "type_reasoning": "Cleaning and arranging shelves and displays require hands-on work.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "674"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Sell merchandise to a customer while the customer is present.",
+    "time_share": 0.4,
+    "type_reasoning": "Selling is performed during a live interaction with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's purchase or sales interaction is completed within the contact.",
+    "work_item": "One customer merchandise sale",
+    "start": "Customer seeks or is offered assistance with merchandise",
+    "end": "Sale is completed or the customer leaves without purchasing",
+    "checked_by": "Customer and store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "657"
+    ]
+   }
+  ],
+  "notes": "The examples are not an exhaustive list of subordinate work."
+ },
+ {
+  "task_id": "667",
+  "split_reasoning": "Setting department goals and establishing operational policies or procedures produce different management outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Establish and communicate department goals and objectives.",
+    "time_share": 0.4,
+    "type_reasoning": "The resulting goals guide departmental work and can be reviewed by management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A set of objectives for a planning period is communicated and used as a whole.",
+    "work_item": "One set of department goals and objectives",
+    "start": "Department priorities or planning period are identified",
+    "end": "Goals are established and communicated to staff",
+    "checked_by": "Store management and department staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "675"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Establish and implement a department policy or procedure.",
+    "time_share": 0.6,
+    "type_reasoning": "An implemented policy or procedure is a distinct instruction that staff and managers rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each policy or procedure can be approved and communicated separately.",
+    "work_item": "One department policy or procedure established and communicated",
+    "start": "Need for a policy or procedure is identified",
+    "end": "Instruction is approved and communicated for use",
+    "checked_by": "Store management and department staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "669",
+     "675",
+     "676"
+    ]
+   }
+  ],
+  "notes": "Ongoing enforcement of established rules is covered separately."
+ },
+ {
+  "task_id": "668",
+  "split_reasoning": "Instructing staff about difficult sales is one activity, regardless of the particular sales problem.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Instruct staff on handling a difficult or complicated sale.",
+    "time_share": 1.0,
+    "type_reasoning": "The value is in live coaching and guidance to the employee.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "660",
+     "665"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "669",
+  "split_reasoning": "Formulating merchandise pricing policies is one activity guided by profitability requirements.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Formulate a merchandise pricing policy that meets profitability requirements.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces pricing rules that management and staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A pricing policy for a merchandise category or period can be approved and applied as a whole.",
+    "work_item": "One merchandise pricing policy",
+    "start": "Profitability requirements and relevant merchandise information are available",
+    "end": "Pricing rules are formulated and submitted or communicated for use",
+    "checked_by": "Store management and pricing or sales staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "667"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "670",
+  "split_reasoning": "Estimating demand and selecting types and quantities of goods are linked steps in producing an assortment decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate demand and determine the types and quantities of goods to sell.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces an assortment and quantity plan used for purchasing or stocking.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A category or period assortment plan is reviewed and acted on as a whole.",
+    "work_item": "One merchandise assortment and quantity plan",
+    "start": "Planning period or merchandise category is identified and demand information is available",
+    "end": "Recommended goods and quantities are determined and communicated",
+    "checked_by": "Store management and purchasing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "661"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "671",
+  "split_reasoning": "Price, display, and functionality are aspects of the same hands-on merchandise examination.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine merchandise for correct pricing, display, and advertised functionality.",
+    "time_share": 1.0,
+    "type_reasoning": "Checking displayed merchandise and its operation normally requires physical inspection and handling.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "658",
+     "664"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "672",
+  "split_reasoning": "Preparing future work schedules and maintaining records of actual schedules and time cards produce different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and prepare employee work schedules.",
+    "time_share": 0.6,
+    "type_reasoning": "A completed schedule is a distinct plan employees and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A schedule for a defined work period is published and used as a whole.",
+    "work_item": "One employee work schedule for a scheduling period",
+    "start": "Staffing requirements and employee availability are known",
+    "end": "Schedule is finalized and communicated",
+    "checked_by": "Employees and store manager",
+    "duplicates": [],
+    "overlaps_with": [
+     "659"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Maintain employee schedule and time-card records.",
+    "time_share": 0.4,
+    "type_reasoning": "Updated time and schedule records are used for payroll and management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An employee's record for a pay period is reviewed and passed to payroll as a whole.",
+    "work_item": "One employee's schedule and time-card record for a pay period",
+    "start": "Time entries and schedule changes for the period are available",
+    "end": "Record is updated and submitted or made available for payroll",
+    "checked_by": "Payroll staff, employee, and store manager",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "673",
+  "split_reasoning": "Reviewing inventory and sales records are inputs to the same report-preparation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Review inventory and sales records and prepare a report for management and budget staff.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces a report that management and budget staff use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each report is prepared and delivered as a whole.",
+    "work_item": "One inventory and sales report",
+    "start": "Reporting request or period begins and records are available",
+    "end": "Completed report is sent to management and budget staff",
+    "checked_by": "Management and budget department",
+    "duplicates": [],
+    "overlaps_with": [
+     "661",
+     "662"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "674",
+  "split_reasoning": "Campaign planning, physical display preparation, and writing advertising copy are different activities with different outputs.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan and coordinate an advertising campaign or sales promotion.",
+    "time_share": 0.5,
+    "type_reasoning": "The work produces a campaign or promotion plan that others implement.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One campaign or promotion plan is coordinated and communicated as a whole.",
+    "work_item": "One advertising campaign or sales promotion plan",
+    "start": "Campaign or promotion objective is identified",
+    "end": "Plan and implementation arrangements are communicated",
+    "checked_by": "Store management and marketing or sales staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "675"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a merchandise display.",
+    "time_share": 0.3,
+    "type_reasoning": "Preparing a display requires hands-on arrangement of merchandise and fixtures.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "666"
+    ]
+   },
+   {
+    "part_id": "c",
+    "text": "Prepare advertising copy for a campaign or promotion.",
+    "time_share": 0.2,
+    "type_reasoning": "The copy is a distinct written deliverable for approval or publication.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An individual advertisement or promotional message is reviewed and used as a whole.",
+    "work_item": "One piece of advertising copy",
+    "start": "Advertising or promotion requirements are available",
+    "end": "Copy is submitted for approval or publication",
+    "checked_by": "Store management or marketing staff",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on whether the retailer prepares promotions and displays locally."
+ },
+ {
+  "task_id": "675",
+  "split_reasoning": "Conferring with officials about sales, markets, and promotion is one live collaborative activity with related objectives.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Confer with company officials about methods and procedures to increase sales, expand markets, and promote business.",
+    "time_share": 1.0,
+    "type_reasoning": "The target describes live discussion and collaborative development with company officials.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "667",
+     "674"
+    ]
+   }
+  ],
+  "notes": "A separately written policy or campaign plan is covered by other statements."
+ },
+ {
+  "task_id": "676",
+  "split_reasoning": "Credit policies and their operating procedures are related components of one credit-policy deliverable.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Establish credit policies and operating procedures.",
+    "time_share": 1.0,
+    "type_reasoning": "The work produces credit rules and procedures that staff and management rely on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A credit policy and associated procedures are established and communicated as a package.",
+    "work_item": "One credit policy and operating procedure package",
+    "start": "Need for new or revised credit rules is identified",
+    "end": "Policy and procedures are approved and communicated for use",
+    "checked_by": "Store management, credit staff, and relevant compliance staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "667"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "677",
+  "split_reasoning": "Budget planning, payment authorization, and return authorization are different outputs; return approvals occur both with customers waiting and in back-office processing.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Plan a store or department budget.",
+    "time_share": 0.45,
+    "type_reasoning": "A budget is a distinct plan reviewed and used by management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A budget for a defined period is submitted and reviewed as a whole.",
+    "work_item": "One store or department budget",
+    "start": "Budget period and planning requirements are established",
+    "end": "Budget is prepared and submitted for approval",
+    "checked_by": "Store management and budget department",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Authorize a payment.",
+    "time_share": 0.25,
+    "type_reasoning": "A payment authorization is a distinct approval used by the person processing payment.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each payment request is approved or declined for processing.",
+    "work_item": "One payment authorization",
+    "start": "Payment request and supporting details are received",
+    "end": "Payment is approved or declined and the decision is communicated",
+    "checked_by": "Accounting or payment-processing staff",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "c",
+    "text": "Authorize a merchandise return while the customer waits.",
+    "time_share": 0.2,
+    "type_reasoning": "The approval is given during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The return approval is completed within the customer's visit or call.",
+    "work_item": "One merchandise return authorized during a customer contact",
+    "start": "Return is presented for supervisor approval",
+    "end": "Approval or refusal is communicated while the customer waits",
+    "checked_by": "Customer and employee processing the return",
+    "duplicates": [],
+    "overlaps_with": [
+     "657"
+    ]
+   },
+   {
+    "part_id": "d",
+    "text": "Authorize a merchandise return from a written or back-office request.",
+    "time_share": 0.1,
+    "type_reasoning": "The return decision is made without the customer waiting in a live contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "Each return request receives a separate authorization decision.",
+    "work_item": "One back-office merchandise return authorization",
+    "start": "Return request and supporting details are received",
+    "end": "Decision is recorded and communicated for processing",
+    "checked_by": "Returns-processing staff and store management",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Return channels and the relative time spent on payment approvals vary by retailer."
+ }
+]

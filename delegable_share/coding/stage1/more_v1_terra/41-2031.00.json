@@ -1,0 +1,715 @@
+[
+ {
+  "task_id": "694",
+  "split_reasoning": "Greeting and identifying needs are consecutive steps in the same customer contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Greet a customer and establish what they want or need.",
+    "time_share": 1.0,
+    "type_reasoning": "The work takes place in a live interaction with the customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The initial needs assessment is a distinct step within a customer visit.",
+    "work_item": "one customer greeting and initial needs assessment",
+    "start": "customer approaches or is approached",
+    "end": "the customer's initial need is established",
+    "checked_by": "the customer and salesperson assisting them",
+    "overlap_reasoning": "Identifying needs can inform recommendations, but does not itself provide them.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "695",
+  "split_reasoning": "Handling cash and deposit materials is physical work, while reconciling and recording register totals is a separate desk task.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and organize register contents and prepare or make deposits at opening or closing.",
+    "time_share": 0.7,
+    "type_reasoning": "Counting cash, sorting slips and handling deposits require hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Handling register contents is distinct from processing individual customer payments.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Reconcile register totals and record the opening or closing balance.",
+    "time_share": 0.3,
+    "type_reasoning": "A completed register reconciliation is a record used by store management.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The register's opening or closing reconciliation is reviewed as one record.",
+    "work_item": "one register opening or closing reconciliation",
+    "start": "register counts and transaction totals are available",
+    "end": "balance and any discrepancy are recorded",
+    "checked_by": "store manager or cash office",
+    "overlap_reasoning": "The reconciliation is one kind of sales-related record, although sales records also include other information.",
+    "duplicates": [],
+    "overlaps_with": [
+     "698"
+    ]
+   }
+  ],
+  "notes": "The division between physical handling and recording varies by store."
+ },
+ {
+  "task_id": "696",
+  "split_reasoning": "Sales, policy and security information are subjects of the same continuing knowledge-maintenance activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Keep current on store promotions, payment and exchange policies, and security practices.",
+    "time_share": 1.0,
+    "type_reasoning": "Keeping knowledge current does not itself produce a separate item for someone to check.",
+    "type": "NO_DELIVERABLE",
+    "overlap_reasoning": "This knowledge supports customer service and security work but is not the same work as performing those tasks.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "697",
+  "split_reasoning": "Calculating the total and processing payment are steps in the same live checkout.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate a customer's purchase total and process payment.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits while the total is calculated and payment is processed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One purchase payment is completed and confirmed as a whole at checkout.",
+    "work_item": "one customer purchase totaled and paid",
+    "start": "customer presents merchandise for payment",
+    "end": "payment is accepted and the total confirmed",
+    "checked_by": "customer and store cash office",
+    "overlap_reasoning": "Checkout may generate sales records or slips, but those statements also cover record preparation beyond taking payment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "698",
+     "704"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "698",
+  "split_reasoning": "Sales records are maintained both during customer transactions and afterward in store records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Enter sales details into store records while assisting a customer.",
+    "time_share": 0.4,
+    "type_reasoning": "The sales details are entered while the customer remains present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The record for one sale is entered as part of the customer contact.",
+    "work_item": "one sale recorded during a customer transaction",
+    "start": "sale details become available during the transaction",
+    "end": "required details are entered in the sales record",
+    "checked_by": "store management and downstream sales staff",
+    "overlap_reasoning": "Payment processing and sales-slip preparation can include some of the same entries, but also have other purposes.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "704"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Update and maintain sales records after customer transactions.",
+    "time_share": 0.6,
+    "type_reasoning": "These updates are completed outside the customer contact and retained for store use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A batch of sales-record updates is completed and available for review together.",
+    "work_item": "one batch of sales records updated",
+    "start": "completed sales information is available for recording",
+    "end": "records are updated and filed",
+    "checked_by": "store manager or accounting staff",
+    "overlap_reasoning": "Register reconciliations and sales slips are specific records that may feed the broader sales records.",
+    "duplicates": [],
+    "overlaps_with": [
+     "695",
+     "704"
+    ]
+   }
+  ],
+  "notes": "Shares depend on the store's point-of-sale system and recordkeeping procedures."
+ },
+ {
+  "task_id": "699",
+  "split_reasoning": "Security monitoring leads to distinct risk investigations, while physically responding to incidents is a different activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Investigate a suspected security risk or theft and alert the appropriate staff.",
+    "time_share": 0.7,
+    "type_reasoning": "Each suspected incident yields a finding or alert that security staff or management can act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A suspected incident is assessed and communicated as one item.",
+    "work_item": "one suspected security incident assessed and communicated",
+    "start": "a possible risk or theft is noticed",
+    "end": "the concern is resolved or reported to the appropriate staff",
+    "checked_by": "store manager or loss-prevention staff",
+    "overlap_reasoning": "Knowing security practices supports this work but does not duplicate handling an incident.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Take appropriate on-site action to prevent or handle a security incident.",
+    "time_share": 0.3,
+    "type_reasoning": "On-site actions such as securing merchandise require physical presence and handling.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "The response is distinct from maintaining knowledge of security procedures.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Incident frequency and permitted responses vary by store; staff may be instructed to observe and report rather than intervene."
+ },
+ {
+  "task_id": "700",
+  "split_reasoning": "Recommending, selecting and locating merchandise are means of helping a customer find a suitable item.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend and help a customer select or find merchandise suited to their needs.",
+    "time_share": 1.0,
+    "type_reasoning": "The selection and locating work is performed with a waiting customer.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Assistance for a customer's merchandise need is completed within the contact.",
+    "work_item": "one customer assisted with selecting or locating merchandise",
+    "start": "customer's merchandise need is identified",
+    "end": "suitable merchandise is located or options are presented",
+    "checked_by": "customer",
+    "overlap_reasoning": "Needs assessment, product explanations and special orders can support selection but also occur as distinct steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "694",
+     "702",
+     "705"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "701",
+  "split_reasoning": "Questions about the store and merchandise are subjects of the same customer-answering activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's question about the store or its merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "The answer is normally given in a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer inquiry is answered within the contact.",
+    "work_item": "one customer question answered",
+    "start": "customer asks a question",
+    "end": "answer is given to the customer",
+    "checked_by": "customer",
+    "overlap_reasoning": "Merchandise questions can involve explanations or recommendations, but store questions extend beyond those activities.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "702"
+    ]
+   }
+  ],
+  "notes": "Some stores also receive written inquiries; the target does not specify their volume."
+ },
+ {
+  "task_id": "702",
+  "split_reasoning": "Describing merchandise and explaining its use, operation or care are aspects of one customer explanation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Explain merchandise features, use, operation or care to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The explanation is provided during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "An explanation of the relevant merchandise is given to the customer as one service step.",
+    "work_item": "one merchandise explanation given to a customer",
+    "start": "customer needs information about merchandise",
+    "end": "relevant features or instructions have been explained",
+    "checked_by": "customer",
+    "overlap_reasoning": "Explanations can answer questions, support recommendations or accompany demonstrations, but each statement also covers distinct work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "701",
+     "706"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "703",
+  "split_reasoning": "Ticketing and arranging merchandise are related physical steps in preparing a display.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Ticket and arrange merchandise in sales displays.",
+    "time_share": 1.0,
+    "type_reasoning": "Attaching tickets and arranging merchandise require hands-on work on the sales floor.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Display preparation is distinct from preparing a particular customer's purchase.",
+    "duplicates": [],
+    "overlaps_with": [
+     "712"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "704",
+  "split_reasoning": "Sales slips and contracts can be prepared while the customer waits or completed afterward.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare a sales slip or contract during a customer transaction.",
+    "time_share": 0.7,
+    "type_reasoning": "The document is prepared while the customer is present for the sale.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One slip or contract is presented or confirmed as a whole during the transaction.",
+    "work_item": "one sales slip or contract prepared during a customer contact",
+    "start": "sale terms and customer details are available",
+    "end": "slip or contract is completed and presented or confirmed",
+    "checked_by": "customer and store sales staff",
+    "overlap_reasoning": "A slip may capture payment and sales-record details, but those tasks also cover other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "698",
+     "713"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete a sales slip or contract after the customer contact.",
+    "time_share": 0.3,
+    "type_reasoning": "The document is completed from transaction details after the customer has left.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The completed document is filed or sent as one transaction record.",
+    "work_item": "one sales slip or contract completed after customer contact",
+    "start": "sale terms and customer details are available for completion",
+    "end": "completed document is filed or sent",
+    "checked_by": "store sales or accounting staff and, when sent, the customer",
+    "overlap_reasoning": "The document may form part of sales records or include terms for services, but those tasks are broader.",
+    "duplicates": [],
+    "overlaps_with": [
+     "698",
+     "713"
+    ]
+   }
+  ],
+  "notes": "The live and after-contact shares vary substantially by merchandise and store process."
+ },
+ {
+  "task_id": "705",
+  "split_reasoning": "Finding or ordering an item may be done while the customer waits or followed up after the contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Find or place a special order for an item while the customer waits.",
+    "time_share": 0.6,
+    "type_reasoning": "The salesperson checks availability or enters the order during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One requested item is located or ordered and the result conveyed to the customer.",
+    "work_item": "one item lookup or special order handled during customer contact",
+    "start": "customer requests an unavailable or special-order item",
+    "end": "availability or order details are confirmed to the customer",
+    "checked_by": "customer and fulfilling store or supplier",
+    "overlap_reasoning": "Locating merchandise overlaps with general selection assistance, but this task specifically includes other-store searches and special orders.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Follow up on a customer's item request with other stores or place a special order after contact.",
+    "time_share": 0.4,
+    "type_reasoning": "The lookup or order is completed after the customer contact rather than while the customer waits.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One item request is researched or ordered and its result communicated.",
+    "work_item": "one item request followed up or ordered after contact",
+    "start": "customer's item request is recorded for follow-up",
+    "end": "item is located or ordered and the result is communicated",
+    "checked_by": "customer and fulfilling store or supplier",
+    "overlap_reasoning": "Follow-up locating supports selection assistance but is not the whole customer selection activity.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether availability and ordering can be resolved during the visit."
+ },
+ {
+  "task_id": "706",
+  "split_reasoning": "Demonstrating use or operation is one activity regardless of the merchandise.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Demonstrate how merchandise is used or operated to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The demonstration is provided in a live customer interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One merchandise demonstration is performed for a customer.",
+    "work_item": "one merchandise demonstration for a customer",
+    "start": "customer requests or is offered a demonstration",
+    "end": "relevant operation or use has been demonstrated",
+    "checked_by": "customer",
+    "overlap_reasoning": "A demonstration can include a verbal explanation, but explaining merchandise does not always involve a demonstration.",
+    "duplicates": [],
+    "overlaps_with": [
+     "702"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "707",
+  "split_reasoning": "Shelves, counters and tables are surfaces cleaned by the same physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean store shelves, counters and tables.",
+    "time_share": 1.0,
+    "type_reasoning": "Cleaning store fixtures requires hands-on work away from a computer.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Cleaning fixtures is distinct from arranging or preparing merchandise.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "708",
+  "split_reasoning": "Accepting a return and exchanging merchandise are related customer-service outcomes of a return request.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Accept a customer's return or exchange merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "The return or exchange is handled while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One return or exchange is processed and its outcome confirmed to the customer.",
+    "work_item": "one customer return or exchange processed",
+    "start": "customer presents merchandise for return or exchange",
+    "end": "return or exchange is processed and confirmed",
+    "checked_by": "customer and store management",
+    "overlap_reasoning": "A return may include a payment reversal and a sales record, but it is not the same as an ordinary purchase payment or general record maintenance.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "698"
+    ]
+   }
+  ],
+  "notes": "The classification assumes the usual in-store customer contact."
+ },
+ {
+  "task_id": "709",
+  "split_reasoning": "Bagging purchases at checkout is live customer service, while separate gift-wrapping work may be performed away from the customer.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bag or package a customer's purchases at checkout.",
+    "time_share": 0.8,
+    "type_reasoning": "Packaging is done during checkout while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The purchases from one transaction are packaged and handed to the customer.",
+    "work_item": "one customer's purchases bagged or packaged at checkout",
+    "start": "purchases are ready to be packaged",
+    "end": "packaged purchases are handed to the customer",
+    "checked_by": "customer",
+    "overlap_reasoning": "Packaging is one possible way to prepare merchandise for purchase, but that broader task can include other preparation.",
+    "duplicates": [],
+    "overlaps_with": [
+     "712"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Wrap gift purchases away from the checkout interaction.",
+    "time_share": 0.2,
+    "type_reasoning": "Gift wrapping away from the customer requires hands-on work.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Gift wrapping can be part of preparing purchased merchandise, but merchandise preparation also includes other work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "712"
+    ]
+   }
+  ],
+  "notes": "Some gift wrapping is done while the customer waits; the split depends on store practice."
+ },
+ {
+  "task_id": "710",
+  "split_reasoning": "Trying on and fitting are related forms of live assistance with merchandise.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Help a customer try on or fit merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "The assistance is provided in person while the customer tries or fits the item.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "Assistance with one customer's fitting need is completed within the visit.",
+    "work_item": "one customer assisted with trying on or fitting merchandise",
+    "start": "customer requests or accepts fitting assistance",
+    "end": "fit is checked and assistance is completed",
+    "checked_by": "customer",
+    "overlap_reasoning": "Fitting can support merchandise selection, but selection also includes recommending and locating items.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "711",
+  "split_reasoning": "Physically counting stock and submitting replenishment requests are different kinds of work.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count and check merchandise stock.",
+    "time_share": 0.6,
+    "type_reasoning": "Checking stock requires physical inspection and counting of merchandise.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Stock counts may support locating items, but inventory work covers the stock as a whole rather than one customer request.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "705"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare and submit a requisition for new stock.",
+    "time_share": 0.4,
+    "type_reasoning": "The requisition is a discrete request relied on by the replenishment team or supplier.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A stock requisition is submitted and processed as one document or order.",
+    "work_item": "one stock replenishment requisition",
+    "start": "stock shortage or replenishment need is identified",
+    "end": "requisition is submitted",
+    "checked_by": "store manager or purchasing team",
+    "overlap_reasoning": "Routine replenishment differs from a special order placed for a particular customer, though both request merchandise.",
+    "duplicates": [],
+    "overlaps_with": [
+     "705"
+    ]
+   }
+  ],
+  "notes": "Shares depend on inventory systems and replenishment procedures."
+ },
+ {
+  "task_id": "712",
+  "split_reasoning": "Preparing merchandise for purchase or rental is one physical preparation activity with alternative transaction purposes.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Prepare merchandise for a customer to purchase or rent.",
+    "time_share": 1.0,
+    "type_reasoning": "Preparing the merchandise requires hands-on handling of the item.",
+    "type": "PHYSICAL",
+    "overlap_reasoning": "Preparation may include packaging or handling merchandise also involved in rental, but those statements cover additional transaction steps.",
+    "duplicates": [],
+    "overlaps_with": [
+     "703",
+     "709",
+     "717"
+    ]
+   }
+  ],
+  "notes": "The exact preparation varies by merchandise and may sometimes occur while the customer waits."
+ },
+ {
+  "task_id": "713",
+  "split_reasoning": "Arranging ancillary services may occur during a customer contact or through subsequent paperwork and coordination.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Sell or arrange delivery, insurance, financing or a service contract while assisting the customer.",
+    "time_share": 0.6,
+    "type_reasoning": "The options and arrangements are handled with the customer during a live transaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One ancillary service arrangement is agreed and entered during the customer contact.",
+    "work_item": "one ancillary service arrangement made during customer contact",
+    "start": "customer considers an ancillary service",
+    "end": "chosen arrangement is entered and confirmed to the customer",
+    "checked_by": "customer and service or financing provider",
+    "overlap_reasoning": "Sales contracts can document an arrangement, but arranging the service also includes offering and selecting it.",
+    "duplicates": [],
+    "overlaps_with": [
+     "704"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Complete and coordinate an ancillary service arrangement after the customer contact.",
+    "time_share": 0.4,
+    "type_reasoning": "Follow-up paperwork and provider coordination are completed outside the customer contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One agreed arrangement is sent to the provider or scheduling team for fulfillment.",
+    "work_item": "one ancillary service arrangement submitted for fulfillment",
+    "start": "customer has selected an ancillary service",
+    "end": "required details are submitted to the provider or scheduling team",
+    "checked_by": "service or financing provider and store management",
+    "overlap_reasoning": "The submission may include a sales contract, but contracts and provider coordination are not identical work.",
+    "duplicates": [],
+    "overlaps_with": [
+     "704"
+    ]
+   }
+  ],
+  "notes": "Shares vary by product, provider and whether approval or scheduling is immediate."
+ },
+ {
+  "task_id": "714",
+  "split_reasoning": "Estimating and quoting an allowance are steps in the same trade-in valuation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate and quote a trade-in allowance to a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The valuation and quote are normally presented during a live sales interaction.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One trade-in item or proposed trade-in is valued and quoted to the customer.",
+    "work_item": "one trade-in allowance estimated and quoted",
+    "start": "customer offers an item for trade-in",
+    "end": "allowance is estimated and quoted to the customer",
+    "checked_by": "customer and sales manager",
+    "overlap_reasoning": "A trade-in allowance can become part of a sales contract but is a distinct estimate.",
+    "duplicates": [],
+    "overlaps_with": [
+     "704"
+    ]
+   }
+  ],
+  "notes": "Detailed vehicle appraisals may involve a separate physical inspection or later approval."
+ },
+ {
+  "task_id": "715",
+  "split_reasoning": "Repair or alteration estimates may be supplied while the customer waits or after further assessment.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate repair or alteration cost while assisting the customer.",
+    "time_share": 0.6,
+    "type_reasoning": "The estimate is prepared and conveyed while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One requested repair or alteration is estimated during the contact.",
+    "work_item": "one repair or alteration estimate given during customer contact",
+    "start": "customer requests an estimate",
+    "end": "estimated cost is communicated",
+    "checked_by": "customer and repair or alteration staff",
+    "overlap_reasoning": "The estimate is distinct from explaining merchandise or completing a sales contract.",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a repair or alteration cost estimate after the customer contact.",
+    "time_share": 0.4,
+    "type_reasoning": "The estimate is completed after assessment or consultation without the customer waiting.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One estimate is sent or recorded for the customer to consider.",
+    "work_item": "one repair or alteration estimate prepared after contact",
+    "start": "item details and requested work are available for assessment",
+    "end": "estimated cost is recorded or sent to the customer",
+    "checked_by": "customer and repair or alteration staff",
+    "overlap_reasoning": "The estimate is a distinct output from a sales contract or service arrangement.",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": "Shares depend on the complexity of the work and access to specialist staff."
+ },
+ {
+  "task_id": "716",
+  "split_reasoning": "Quantity and cost are components of one estimate, but estimates may be prepared either during or after customer contact.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Estimate required merchandise quantity and cost while assisting a customer.",
+    "time_share": 0.7,
+    "type_reasoning": "The salesperson calculates and communicates the estimate while the customer waits.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One customer's merchandise requirement is estimated and quoted during the contact.",
+    "work_item": "one merchandise quantity and cost estimate given during customer contact",
+    "start": "customer supplies dimensions or requirements",
+    "end": "estimated quantity and cost are communicated",
+    "checked_by": "customer",
+    "overlap_reasoning": "The estimate can support a merchandise recommendation or sale, but is distinct from selecting an item or processing payment.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "697"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Prepare a merchandise quantity and cost estimate after receiving customer requirements.",
+    "time_share": 0.3,
+    "type_reasoning": "The calculation is completed from recorded measurements or plans after the contact.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One estimate is prepared and sent or returned for use in the sale.",
+    "work_item": "one merchandise quantity and cost estimate prepared after contact",
+    "start": "measurements or plans are received for estimating",
+    "end": "quantity and cost estimate is recorded or sent",
+    "checked_by": "customer or sales staff",
+    "overlap_reasoning": "The estimate may inform a recommendation or contract, but those tasks include other actions.",
+    "duplicates": [],
+    "overlaps_with": [
+     "700",
+     "704"
+    ]
+   }
+  ],
+  "notes": "Shares vary with the complexity of the measurements and store workflow."
+ },
+ {
+  "task_id": "717",
+  "split_reasoning": "Renting merchandise is one customer transaction, regardless of the item rented.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Arrange a merchandise rental for a customer.",
+    "time_share": 1.0,
+    "type_reasoning": "The rental is arranged and confirmed while the customer is present.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One rental transaction is completed for a customer.",
+    "work_item": "one merchandise rental arranged",
+    "start": "customer requests a rental",
+    "end": "rental terms are agreed and the transaction is recorded",
+    "checked_by": "customer and store staff",
+    "overlap_reasoning": "A rental may involve a contract, payment and item preparation, but each of those statements also covers work outside rentals.",
+    "duplicates": [],
+    "overlaps_with": [
+     "697",
+     "704",
+     "712"
+    ]
+   }
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,4 @@
+[
+{"task_id": "21831", "reasoning": "Identifying problems worth analysing is done largely in meetings with stakeholders, which matches the instructions' 'meet with staff to set requirements' INTERPERSONAL example, and it ends in a written scope or ticket. X separates the two; Y folds the substantial meeting time into a written deliverable.", "choice": "X"},
+{"task_id": "21836", "reasoning": "The handed-over item is the recommendation itself, usually a memo or deck with supporting evidence that stakeholders accept or reject. Live delivery of results is already covered by the presentations statement (21829), so X's interpersonal half would mostly double count it.", "choice": "Y"}
+]

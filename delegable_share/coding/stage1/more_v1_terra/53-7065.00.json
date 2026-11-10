@@ -1,0 +1,736 @@
+[
+ {
+  "task_id": "23871",
+  "split_reasoning": "Completing an order receipt is one documentation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Complete a receipt documenting an order.",
+    "time_share": 1.0,
+    "type_reasoning": "Each completed receipt is a record used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The receipt for one order is the record handed over or retained.",
+    "work_item": "one completed order receipt",
+    "start": "order details are available for recording",
+    "end": "receipt is completed and filed or forwarded",
+    "checked_by": "order-processing staff or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23895"
+    ]
+   }
+  ],
+  "notes": "Receipt practices vary by workplace."
+ },
+ {
+  "task_id": "23872",
+  "split_reasoning": "Obtaining merchandise from storage is one hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Retrieve merchandise from bins or shelves.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically locates and removes merchandise.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23886"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23873",
+  "split_reasoning": "Reading order details is one preparatory activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Read an order to identify the merchandise and quantities required.",
+    "time_share": 1.0,
+    "type_reasoning": "Reading establishes what to pick but does not itself produce a separate item for another person to check.",
+    "type": "NO_DELIVERABLE",
+    "duplicates": [],
+    "overlaps_with": [
+     "23872",
+     "23886"
+    ]
+   }
+  ],
+  "notes": "Picking and issuing the merchandise are covered by other statements."
+ },
+ {
+  "task_id": "23874",
+  "split_reasoning": "Packing and unpacking stock are hands-on handling of items for storage.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Pack or unpack items for stocking in storage areas.",
+    "time_share": 1.0,
+    "type_reasoning": "The work consists of physically handling items and packaging.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23875",
+     "23880",
+     "23900"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23875",
+  "split_reasoning": "Putting stock in orderly, accessible locations is one physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Place items in orderly and accessible storage locations.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically moves and arranges stock.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23874",
+     "23880",
+     "23898"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23876",
+  "split_reasoning": "Hands-on inspection and reporting identified damage are different steps.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Examine stock items for wear or defects.",
+    "time_share": 0.75,
+    "type_reasoning": "Inspection normally involves physically handling or examining stock.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23891",
+     "23893"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Report damaged stock to a supervisor.",
+    "time_share": 0.25,
+    "type_reasoning": "A damage report communicates an identified issue for a supervisor to act on.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A report about an identified damaged item or group of items is the handoff.",
+    "work_item": "one stock damage report",
+    "start": "wear or damage is identified",
+    "end": "damage details are reported to the supervisor",
+    "checked_by": "supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23893",
+     "23894"
+    ]
+   }
+  ],
+  "notes": "Shares depend on how often defects are found and how they are reported."
+ },
+ {
+  "task_id": "23877",
+  "split_reasoning": "Answering questions and advising on selection are parts of the same customer conversation.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Answer a customer's merchandise questions and advise on selection.",
+    "time_share": 1.0,
+    "type_reasoning": "The advice is provided during a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The customer relies on the answer and advice provided in one contact.",
+    "work_item": "one customer merchandise inquiry answered",
+    "start": "customer asks about merchandise",
+    "end": "questions are answered or selection advice is given",
+    "checked_by": "customer",
+    "duplicates": [],
+    "overlaps_with": []
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23878",
+  "split_reasoning": "Receiving and counting stock is hands-on work, while recording its data is a separate clerical step.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive and count incoming stock items.",
+    "time_share": 0.7,
+    "type_reasoning": "Receiving and counting require physical handling of stock.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23881",
+     "23900"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Record received stock quantities and related data.",
+    "time_share": 0.3,
+    "type_reasoning": "The manual or computer entry creates a stock record used by others.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The record for one receipt or shipment is the completed handoff.",
+    "work_item": "one received-stock record",
+    "start": "received items and counts are available",
+    "end": "receipt data is entered and saved or filed",
+    "checked_by": "inventory staff or receiving supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23881"
+    ]
+   }
+  ],
+  "notes": "The shares vary with shipment size and recording procedures."
+ },
+ {
+  "task_id": "23879",
+  "split_reasoning": "Looking up prices and attaching or changing tags serve one physical pricing activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Apply or change merchandise price tags using the price list.",
+    "time_share": 1.0,
+    "type_reasoning": "The main work is physically marking or attaching tags to merchandise.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23884",
+     "23896"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23880",
+  "split_reasoning": "Stocking different fixtures is the same physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Stock fixtures with new or transferred merchandise.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically moves and places merchandise on fixtures.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23874",
+     "23875",
+     "23900"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23881",
+  "split_reasoning": "Comparing an invoice with the actual shipment is one receiving verification activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Compare a merchandise invoice with the items received.",
+    "time_share": 1.0,
+    "type_reasoning": "The check requires examining and counting the physical shipment against its invoice.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23878",
+     "23900"
+    ]
+   }
+  ],
+  "notes": "Any separate discrepancy documentation depends on workplace procedure."
+ },
+ {
+  "task_id": "23882",
+  "split_reasoning": "Itemizing purchases and accepting payment form one live checkout service.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Ring up a customer's merchandise and accept payment.",
+    "time_share": 1.0,
+    "type_reasoning": "The customer waits at checkout while the transaction is completed.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "One completed checkout transaction is the unit relied on by the customer and store.",
+    "work_item": "one customer checkout transaction",
+    "start": "customer presents merchandise at checkout",
+    "end": "purchases are totaled and payment is accepted",
+    "checked_by": "customer and store supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23890",
+     "23896"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23883",
+  "split_reasoning": "Transporting packages to a vehicle is one hands-on activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Carry or transport packages to customers' vehicles.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires moving packages away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23886"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23884",
+  "split_reasoning": "The listed labels and tools are alternative means of marking stock.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Mark stock items with identification labels or other markings.",
+    "time_share": 1.0,
+    "type_reasoning": "The worker physically applies identification to stock items.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23879"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23885",
+  "split_reasoning": "A physical stock count and a back-office review of inventory records are different ways the replenishment need is identified.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Count or examine merchandise on hand to identify shortages.",
+    "time_share": 0.75,
+    "type_reasoning": "This involves physically checking merchandise and its location.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23878",
+     "23880",
+     "23897"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Review stock information and identify items needing replenishment or reorder.",
+    "time_share": 0.25,
+    "type_reasoning": "The review produces a list or notification used to replenish or order stock.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A replenishment list for a review period or stock area is the handoff.",
+    "work_item": "one replenishment or reorder list",
+    "start": "stock counts or inventory information are available",
+    "end": "items needing replenishment or reorder are identified and communicated",
+    "checked_by": "inventory or purchasing staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23897"
+    ]
+   }
+  ],
+  "notes": "The record-review share varies by inventory system and workplace."
+ },
+ {
+  "task_id": "23886",
+  "split_reasoning": "Items may be issued to a waiting customer or coworker, or fulfilled physically from a requisition without the recipient present.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Issue requested materials or products while a customer or coworker waits.",
+    "time_share": 0.4,
+    "type_reasoning": "The issuance is completed during a live service contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The items issued against one request are handed directly to the recipient.",
+    "work_item": "one requisition issued during a live contact",
+    "start": "customer or coworker presents a requisition or request",
+    "end": "requested available items are handed over",
+    "checked_by": "recipient and stockroom supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23872",
+     "23900"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Pick and issue materials or products from queued requisitions without the recipient present.",
+    "time_share": 0.6,
+    "type_reasoning": "The work requires physically retrieving and staging or distributing items.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23872",
+     "23900"
+    ]
+   }
+  ],
+  "notes": "Shares depend on whether the workplace serves a counter or processes queued requisitions."
+ },
+ {
+  "task_id": "23887",
+  "split_reasoning": "Giving direction and physically assisting another worker are different activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Give work direction to other stockroom or warehouse workers.",
+    "time_share": 0.5,
+    "type_reasoning": "The value is in the live direction provided to coworkers.",
+    "type": "INTERPERSONAL",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Help other workers handle stock or perform other physical warehouse work.",
+    "time_share": 0.5,
+    "type_reasoning": "This assistance consists of hands-on work alongside coworkers.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23872",
+     "23875",
+     "23880",
+     "23900"
+    ]
+   }
+  ],
+  "notes": "The balance between direction and hands-on assistance varies by role."
+ },
+ {
+  "task_id": "23888",
+  "split_reasoning": "Cleaning the listed fixtures and areas is one physical activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean display cases, shelves, and aisles.",
+    "time_share": 1.0,
+    "type_reasoning": "Cleaning requires hands-on work in the display area.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23892"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23889",
+  "split_reasoning": "Designing signs and displays is distinct from physically setting them up.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Design an advertising sign or merchandise display.",
+    "time_share": 0.3,
+    "type_reasoning": "The design provides a layout or sign content that can be used for setup.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One sign or display design is the unit used for installation or review.",
+    "work_item": "one advertising sign or display design",
+    "start": "promotion or display requirement is received",
+    "end": "design or layout is ready for setup",
+    "checked_by": "store manager or merchandising lead",
+    "duplicates": [],
+    "overlaps_with": []
+   },
+   {
+    "part_id": "b",
+    "text": "Set up advertising signs and merchandise displays.",
+    "time_share": 0.7,
+    "type_reasoning": "Setup requires physically arranging merchandise and installing signs.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23880"
+    ]
+   }
+  ],
+  "notes": "Some workplaces provide the design rather than having stockers create it."
+ },
+ {
+  "task_id": "23890",
+  "split_reasoning": "Bagging purchases can occur during a live checkout or as back-office packing for later collection.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Bag or carton purchases while the customer waits at checkout.",
+    "time_share": 0.8,
+    "type_reasoning": "Packing takes place during the customer's live checkout contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The packed purchases for one customer are handed over together.",
+    "work_item": "one customer's purchases packed during checkout",
+    "start": "customer's merchandise is presented for packing",
+    "end": "purchases are packed and handed to the customer",
+    "checked_by": "customer and checkout supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23882"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Pack customer purchases in bags or cartons for later collection or dispatch.",
+    "time_share": 0.2,
+    "type_reasoning": "The worker physically packs purchases without a customer waiting in the contact.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23886"
+    ]
+   }
+  ],
+  "notes": "The split varies with the store's checkout and order-fulfillment arrangements."
+ },
+ {
+  "task_id": "23891",
+  "split_reasoning": "Disposing of or returning defective items are alternative physical dispositions of stock.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Dispose of damaged or defective items or physically prepare them for vendor return.",
+    "time_share": 1.0,
+    "type_reasoning": "The task requires physically removing, disposing of, or packing the items.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23876",
+     "23893"
+    ]
+   }
+  ],
+  "notes": "Separate vendor-return paperwork is not specified in the target."
+ },
+ {
+  "task_id": "23892",
+  "split_reasoning": "Cleaning and maintaining the listed supplies, equipment, and areas are hands-on upkeep activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Clean and maintain supplies, tools, equipment, and storage areas for safety compliance.",
+    "time_share": 1.0,
+    "type_reasoning": "The work requires hands-on cleaning and upkeep away from a computer.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23888"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23893",
+  "split_reasoning": "Recommending disposal of different categories of stock is one decision and reporting activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Recommend disposal of excess, defective, or obsolete stock.",
+    "time_share": 1.0,
+    "type_reasoning": "The recommendation is communicated to someone who can decide on disposal.",
+    "type": "DISCRETE",
+    "unit_reasoning": "A recommendation concerning an identified item or group of stock is the decision handoff.",
+    "work_item": "one stock disposal recommendation",
+    "start": "stock is identified as excess, defective, or obsolete",
+    "end": "recommendation is communicated to the decision-maker",
+    "checked_by": "inventory manager or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23876",
+     "23891"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23894",
+  "split_reasoning": "Recording use and recording damage are the same kind of stock or equipment recordkeeping.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record the use of or damage to stock or stock-handling equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Each entry creates a record that colleagues can review and use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "An entry for one use event or damage incident is the completed record.",
+    "work_item": "one stock or equipment use or damage record",
+    "start": "use or damage information becomes available",
+    "end": "record is completed and saved or filed",
+    "checked_by": "supervisor or inventory and equipment staff",
+    "duplicates": [],
+    "overlaps_with": [
+     "23876"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23895",
+  "split_reasoning": "Keeping records of outgoing orders is one documentation activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Record details of outgoing orders.",
+    "time_share": 1.0,
+    "type_reasoning": "Each order record is retained for downstream use and checking.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The record for one outgoing order is the unit entered and retained.",
+    "work_item": "one outgoing order record",
+    "start": "outgoing order details are available",
+    "end": "order record is completed and saved or filed",
+    "checked_by": "shipping staff or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23871"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23896",
+  "split_reasoning": "Prices may be calculated for a waiting customer or separately for pricing and stock records.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Calculate the price of items while a customer waits.",
+    "time_share": 0.4,
+    "type_reasoning": "The calculation is performed within a live customer contact.",
+    "type": "LIVE_SERVICE",
+    "unit_reasoning": "The calculated price for the customer's items is communicated during the contact.",
+    "work_item": "one customer price calculation",
+    "start": "customer requests a price or presents items",
+    "end": "calculated price is communicated to the customer",
+    "checked_by": "customer and checkout supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23877",
+     "23882"
+    ]
+   },
+   {
+    "part_id": "b",
+    "text": "Calculate prices for items or groups of items away from a live customer contact.",
+    "time_share": 0.6,
+    "type_reasoning": "The calculated price is a discrete result used for pricing or stock records.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One calculation for an item or group is the result passed on or recorded.",
+    "work_item": "one item or group price calculation",
+    "start": "item details and applicable pricing information are available",
+    "end": "calculated price is recorded or communicated",
+    "checked_by": "pricing staff or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23879"
+    ]
+   }
+  ],
+  "notes": "The live and back-office shares depend on store practices."
+ },
+ {
+  "task_id": "23897",
+  "split_reasoning": "The listed factors are inputs to the same merchandise requisition activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Requisition merchandise from a supplier based on stock, demand, space, and promotions.",
+    "time_share": 1.0,
+    "type_reasoning": "Each requisition is a discrete order request sent for fulfillment or approval.",
+    "type": "DISCRETE",
+    "unit_reasoning": "One supplier requisition is the request handed over.",
+    "work_item": "one merchandise requisition",
+    "start": "need for merchandise is identified",
+    "end": "requisition is completed and submitted",
+    "checked_by": "purchasing staff, supervisor, or supplier",
+    "duplicates": [],
+    "overlaps_with": [
+     "23885"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23898",
+  "split_reasoning": "Choosing storage methods, identification, and location forms one storage-planning decision.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Determine how and where stock should be identified and stored.",
+    "time_share": 1.0,
+    "type_reasoning": "The decision provides storage instructions or assignments for others to use.",
+    "type": "DISCRETE",
+    "unit_reasoning": "The storage assignment for an item or group of similar items is the usable handoff.",
+    "work_item": "one stock storage and identification assignment",
+    "start": "item characteristics and storage constraints are available",
+    "end": "storage method, identification, and location are determined and communicated",
+    "checked_by": "warehouse staff or supervisor",
+    "duplicates": [],
+    "overlaps_with": [
+     "23875",
+     "23884"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23899",
+  "split_reasoning": "Operating forklifts or similar equipment is one hands-on equipment activity.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Operate forklifts or similar stock-handling equipment.",
+    "time_share": 1.0,
+    "type_reasoning": "Equipment operation requires physical presence and control of machinery.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23872",
+     "23875",
+     "23880",
+     "23900"
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "task_id": "23900",
+  "split_reasoning": "Receiving, unloading, unpacking, and issuing sales-floor merchandise are related physical handling activities.",
+  "parts": [
+   {
+    "part_id": "a",
+    "text": "Receive, unload, open, unpack, or issue merchandise for the sales floor.",
+    "time_share": 1.0,
+    "type_reasoning": "These activities require physically handling merchandise and shipments.",
+    "type": "PHYSICAL",
+    "duplicates": [],
+    "overlaps_with": [
+     "23874",
+     "23878",
+     "23880",
+     "23881",
+     "23886",
+     "23899"
+    ]
+   }
+  ],
+  "notes": "The listed activities may occur as different steps of the same merchandise flow."
+ }
+]

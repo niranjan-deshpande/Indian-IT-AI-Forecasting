@@ -1,0 +1,6 @@
+[
+  {"task_id": "5314", "reasoning": "Both purposes are served by the same activity, writing a security/contingency plan that management approves as a whole, and many organizations produce them together. The subjects differ but the kind of work and deliverable do not, so X's single part is adequate.", "choice": "X"},
+  {"task_id": "5317", "reasoning": "Individual access status changes are high-volume, quick ticketed requests, while incorporating new software or correcting errors in security files are larger configuration changes. These are very different kinds of item, so Y's split follows the instructions better.", "choice": "Y"},
+  {"task_id": "5321", "reasoning": "Encryption and firewall setup are the same kind of work: a security-control configuration change requested, deployed and verified. Y keeps one part with a sensible work item; X's split is by tool rather than by activity.", "choice": "Y"},
+  {"task_id": "5322", "reasoning": "Writing policies, procedures and test documentation is one documentation activity whose output is a document filed or approved as a whole. X's three-way split separates near-identical items (policy vs procedure); Y's single part is the cleaner reading.", "choice": "Y"}
+]

@@ -55,11 +55,17 @@ def main():
     elif cmd == "terra":
         (d / "terra").mkdir(parents=True, exist_ok=True)
         before = spent()
-        for code, rows in occ.items():
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(kv):
+            code, rows = kv
             parsed, _ = chat_json([{"role": "user", "content": body(rows)}],
                                   purpose=f"stage1b {tag} {code}")
             (d / "terra" / f"{code}.json").write_text(json.dumps(parsed, indent=1))
-            print(code, len(parsed.get("pairs", [])), "pairs")
+            return code, len(parsed.get("pairs", []))
+        with ThreadPoolExecutor(6) as ex:
+            for code, n in ex.map(one, occ.items()):
+                print(code, n, "pairs")
         print(f"this run ${spent() - before:.3f}; project total ${spent():.3f}")
     elif cmd == "report":
         out = [f"# Stage 1b duplicates — {tag}", "",

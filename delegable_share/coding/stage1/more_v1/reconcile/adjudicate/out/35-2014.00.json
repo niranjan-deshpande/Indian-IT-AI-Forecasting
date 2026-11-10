@@ -1,0 +1,6 @@
+[
+  {"task_id": "2178", "reasoning": "Estimating consumption is the first step of placing an order: the cook checks stock against expected covers and the order or requisition is what gets handed over. Fetching food from storage is a separate physical errand. Y's two-part split is at the right handover level, whereas X makes the estimate a deliverable of its own.", "choice": "Y"},
+  {"task_id": "2185", "reasoning": "In a restaurant kitchen the cook's records and accounts are one set of logs (inventory, waste, costs), written up and handed in together per day or week. Splitting operational records from financial accounts is artificial here, so X's single DISCRETE part fits.", "choice": "X"},
+  {"task_id": "18722", "reasoning": "Inspecting and cleaning prep areas form one continuous hands-on sanitation routine, and both parts would be PHYSICAL anyway. X's single part is adequate.", "choice": "X"},
+  {"task_id": "18723", "reasoning": "The statement names only cooking equipment (ovens, broilers, grills, roasters), so Y's storage-temperature part rests on an assumption, and both parts would be PHYSICAL anyway. X's single PHYSICAL part matches the target.", "choice": "X"}
+]

@@ -1,0 +1,406 @@
+{
+ "15-1251.00": {
+  "agreed": [
+   [
+    "1273a",
+    "1276b"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "1270a",
+    "b": "1273a",
+    "flagged_by": "claude",
+    "reasoning": "Both are writing a program or module from a specification through to reviewed, accepted code.",
+    "text": "[1270a] DISCRETE \u2014 one program, module or update delivered (start: specification or request received; end: code reviewed, accepted and released) \u2014 from statement: Write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.\n[1273a] DISCRETE \u2014 one program or module written and reviewed (start: design or specification received; end: code complete and passed review) \u2014 from statement: Write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic."
+   }
+  ]
+ },
+ "15-1212.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "5317b",
+    "b": "5319b",
+    "flagged_by": "claude",
+    "reasoning": "Changing one individual's access permission after a request is the same action and output as changing one individual access status.",
+    "text": "[5317b] DISCRETE \u2014 one individual access status change (start: an authorized access change request or instruction is received; end: the access status is updated and the change recorded or communicated) \u2014 from statement: Modify computer security files to incorporate new software, correct errors, or change individual access status.\n[5319b] DISCRETE \u2014 one access permission change (start: access request or finding received; end: permission changed and confirmed) \u2014 from statement: Monitor use of data files and regulate access to safeguard information in computer files."
+   }
+  ]
+ },
+ "41-9041.00": {
+  "agreed": [
+   [
+    "4618a",
+    "4619a"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "4622a",
+    "b": "4627a",
+    "flagged_by": "claude",
+    "reasoning": "Noting the prospect's details during the call and saving a record update during the call are the same live data entry.",
+    "text": "[4622a] LIVE_SERVICE \u2014 one prospect's details noted during a call (start: prospect gives information or reacts; end: notes entered before call ends) \u2014 from statement: Record names, addresses, purchases, and reactions of prospects contacted.\n[4627a] LIVE_SERVICE \u2014 one contact, account, or order record updated during a call (start: customer provides or confirms information requiring a record update; end: record update is saved before the call ends) \u2014 from statement: Maintain records of contacts, accounts, and orders."
+   },
+   {
+    "a": "4622b",
+    "b": "4627b",
+    "flagged_by": "claude",
+    "reasoning": "A post-call contact record and a record update outside a call from call notes are the same after-call recording of the same information.",
+    "text": "[4622b] DISCRETE \u2014 one post-call contact record (start: call ends; end: record completed in the system) \u2014 from statement: Record names, addresses, purchases, and reactions of prospects contacted.\n[4627b] DISCRETE \u2014 one contact, account, or order record updated outside a call (start: call notes or other information requiring an update are available; end: record changes are saved) \u2014 from statement: Maintain records of contacts, accounts, and orders."
+   }
+  ]
+ },
+ "43-3051.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "20901a",
+    "b": "2528b",
+    "flagged_by": "claude",
+    "reasoning": "Both balance a payroll account against bank records at period end, with differences resolved.",
+    "text": "[20901a] DISCRETE \u2014 one account balanced for a period (start: period close, ledgers and statements available; end: account balanced and differences resolved) \u2014 from statement: Balance cash and payroll accounts.\n[2528b] DISCRETE \u2014 one payroll bank reconciliation (start: bank statement received; end: reconciliation completed and differences explained) \u2014 from statement: Prepare and balance period-end reports, and reconcile issued payrolls to bank statements."
+   }
+  ]
+ },
+ "43-3011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "31-9094.00": {
+  "agreed": [
+   [
+    "9423b",
+    "9426d"
+   ],
+   [
+    "9420a",
+    "9423b"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "20254a",
+    "b": "9413a",
+    "flagged_by": "claude",
+    "reasoning": "Transcribing one dictated report and capturing and transcribing one dictation both yield a transcript ready for review.",
+    "text": "[20254a] DISCRETE \u2014 one dictation captured and transcribed (start: dictation begins; end: transcript ready for review) \u2014 from statement: Take dictation using shorthand, a stenotype machine, or headsets and transcribing machines.\n[9413a] DISCRETE \u2014 one dictated report transcribed (start: dictation assigned; end: draft report ready for physician review) \u2014 from statement: Transcribe dictation for a variety of medical reports, such as patient histories, physical examinations, emergency room visits, operations, chart reviews, consultation, or discharge summaries."
+   },
+   {
+    "a": "9413a",
+    "b": "9421a",
+    "flagged_by": "claude",
+    "reasoning": "Producing a medical report from dictation is the same work as transcribing one dictated report.",
+    "text": "[9413a] DISCRETE \u2014 one dictated report transcribed (start: dictation assigned; end: draft report ready for physician review) \u2014 from statement: Transcribe dictation for a variety of medical reports, such as patient histories, physical examinations, emergency room visits, operations, chart reviews, consultation, or discharge summaries.\n[9421a] DISCRETE \u2014 one medical report or patient-care document (start: dictation or source information received; end: document prepared and submitted for review or filing) \u2014 from statement: Produce medical reports, correspondence, records, patient-care information, statistics, medical research, and administrative material."
+   },
+   {
+    "a": "9420a",
+    "b": "9426d",
+    "flagged_by": "terra",
+    "reasoning": "Both cover entering and saving new or changed patient data in a record.",
+    "text": "[9420a] DISCRETE \u2014 one medical record data update (start: source information received for entry; end: data entered and saved or submitted to the record) \u2014 from statement: Perform data entry and data retrieval services, providing data for inclusion in medical records and for transmission to physicians.\n[9426d] DISCRETE \u2014 one electronic patient record updated (start: new or changed patient information received; end: record updated and saved) \u2014 from statement: Receive patients, schedule appointments, and maintain patient records."
+   }
+  ]
+ },
+ "15-2051.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "41-2031.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "41-2011.00": {
+  "agreed": [
+   [
+    "18765a",
+    "2408a"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "2405a",
+    "b": "2412a",
+    "flagged_by": "claude",
+    "reasoning": "Both are the live act of totalling a customer's items at the register and announcing/recording the total, with the same inputs and output.",
+    "text": "[2405a] LIVE_SERVICE \u2014 one order priced and totalled (start: first item scanned; end: total announced) \u2014 from statement: Establish or identify prices of goods, services, or admission, and tabulate bills, using calculators, cash registers, or optical price scanners.\n[2412a] LIVE_SERVICE \u2014 one customer transaction total recorded at checkout (start: the transaction's items and amounts have been entered; end: the total is calculated and recorded in the register) \u2014 from statement: Compute and record totals of transactions."
+   }
+  ]
+ },
+ "43-9061.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "826b",
+    "b": "833b",
+    "flagged_by": "claude",
+    "reasoning": "Both are composing and sending a written reply to a question or correspondence.",
+    "text": "[826b] DISCRETE \u2014 one written reply or information notice sent (start: question or need for information arises; end: message sent) \u2014 from statement: Communicate with customers, employees, and other individuals to answer questions, disseminate or explain information, take orders, and address complaints.\n[833b] DISCRETE \u2014 one piece of correspondence answered (start: letter or message received for response; end: response sent to the correspondent) \u2014 from statement: Open, sort, and route incoming mail, answer correspondence, and prepare outgoing mail."
+   }
+  ]
+ },
+ "11-1021.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-1082.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "21474b",
+    "b": "21478a",
+    "flagged_by": "claude",
+    "reasoning": "A progress report submitted at the end of a reporting period and a written project status update sent to managers at a reporting interval are the same inputs, actions and output.",
+    "text": "[21474b] DISCRETE \u2014 one progress report (start: reporting period ends; end: report submitted) \u2014 from statement: Prepare and submit budget estimates, progress reports, or cost tracking reports.\n[21478a] DISCRETE \u2014 one written project status update to managers (start: a manager requests an update or a reporting interval arrives; end: the status update is sent to managers) \u2014 from statement: Report project status, such as budget, resources, technical issues, or customer satisfaction, to managers."
+   }
+  ]
+ },
+ "25-2021.00": {
+  "agreed": [
+   [
+    "6539a",
+    "6557a"
+   ],
+   [
+    "6542b",
+    "6544c"
+   ]
+  ],
+  "disputed": []
+ },
+ "31-9092.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "47-2061.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "35-2014.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "33-3051.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "41-3021.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "27-1024.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "23970a",
+    "b": "302a",
+    "flagged_by": "claude",
+    "reasoning": "Both prepare the approved final layout as print-ready files and deliver them to the printer.",
+    "text": "[23970a] DISCRETE \u2014 one print-ready file package for a job (start: design approved for print; end: files delivered to the printer) \u2014 from statement: Prepare digital files for printing.\n[302a] DISCRETE \u2014 one final layout assembled and marked up for printing (start: layout approved for production; end: print-ready layout with markup delivered to the printer) \u2014 from statement: Mark up, paste, and assemble final layouts to prepare layouts for printer."
+   }
+  ]
+ },
+ "11-2021.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-2072.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "11-3021.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "968c",
+    "b": "976a",
+    "flagged_by": "claude",
+    "reasoning": "Both produce an approved, published standard/procedure document for staff from an identified need.",
+    "text": "[968c] DISCRETE \u2014 one department standard or procedure document (start: need for a standard identified; end: standard approved and issued to staff) \u2014 from statement: Direct daily operations of department, analyzing workflow, establishing priorities, developing standards and setting deadlines.\n[976a] DISCRETE \u2014 one policy, procedure or goal statement (start: need for policy identified; end: policy approved and published) \u2014 from statement: Develop and interpret organizational goals, policies, and procedures."
+   }
+  ]
+ },
+ "11-9111.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "58a",
+    "b": "62a",
+    "flagged_by": "claude",
+    "reasoning": "Both are a plan for a program or service developed from an identified need and submitted to leadership, and the expansion proposal is essentially a case of the program plan.",
+    "text": "[58a] DISCRETE \u2014 one program or service plan (start: program or service planning need is identified; end: plan is submitted to the responsible leadership) \u2014 from statement: Plan, implement, and administer programs and services in a health care or medical facility, including personnel administration, training, and coordination of medical, nursing and physical plant staff.\n[62a] DISCRETE \u2014 one medical program or service expansion proposal (start: program or service need is identified; end: proposal is submitted to decision makers) \u2014 from statement: Develop or expand and implement medical programs or health services that promote research, rehabilitation, and community health."
+   }
+  ]
+ },
+ "13-2031.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-1151.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "13-1041.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "15-2031.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "17-2051.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "17-2141.00": {
+  "agreed": [
+   [
+    "1420b",
+    "20733a"
+   ]
+  ],
+  "disputed": []
+ },
+ "19-3011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "21-1021.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "27-3031.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "27-3041.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "29-2061.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "29-1051.00": {
+  "agreed": [],
+  "disputed": [
+   {
+    "a": "1809b",
+    "b": "1823b",
+    "flagged_by": "claude",
+    "reasoning": "Answering a drug information question and answering a drug therapy consult both take a clinical question and return written pharmacist advice.",
+    "text": "[1809b] DISCRETE \u2014 one drug information question answered (start: question received; end: answer sent to the asker) \u2014 from statement: Provide information and advice regarding drug interactions, side effects, dosage, and proper medication storage.\n[1823b] DISCRETE \u2014 one consult on drug therapy answered (start: consult request received; end: advice given and noted) \u2014 from statement: Work in hospitals or clinics or for Health Management Organizations (HMOs), dispensing prescriptions, serving as a medical team consultant, or specializing in specific drug therapy areas, such as oncology or nuclear pharmacotherapy."
+   }
+  ]
+ },
+ "31-1121.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "33-9032.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "35-3031.00": {
+  "agreed": [
+   [
+    "2277a",
+    "2278a"
+   ]
+  ],
+  "disputed": []
+ },
+ "35-3023.00": {
+  "agreed": [
+   [
+    "23105a",
+    "23123b"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "23104a",
+    "b": "23119a",
+    "flagged_by": "claude",
+    "reasoning": "Taking and entering a customer's order and writing it on a ticket are the same live act of recording what the customer orders.",
+    "text": "[23104a] LIVE_SERVICE \u2014 one customer order entered and totalled (start: customer steps up to order; end: order confirmed and total quoted) \u2014 from statement: Request and record customer orders, and compute bills, using cash registers, multi-counting machines, or pencil and paper.\n[23119a] LIVE_SERVICE \u2014 one customer order ticketed (start: customer states the order; end: ticket written and stub given) \u2014 from statement: Take customers' orders and write ordered items on tickets, giving ticket stubs to customers when needed to identify filled orders."
+   }
+  ]
+ },
+ "41-1011.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "41-9022.00": {
+  "agreed": [
+   [
+    "2468b",
+    "2470a"
+   ]
+  ],
+  "disputed": []
+ },
+ "43-5071.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "43-6013.00": {
+  "agreed": [
+   [
+    "776a",
+    "782a"
+   ]
+  ],
+  "disputed": [
+   {
+    "a": "20438b",
+    "b": "775b",
+    "flagged_by": "claude",
+    "reasoning": "Scheduling and confirming an appointment from a referral or order and scheduling an ordered test or procedure after a physician order are the same work and output.",
+    "text": "[20438b] DISCRETE \u2014 one ordered test or procedure scheduled (start: physician order received; end: test booked and patient notified) \u2014 from statement: Schedule tests or procedures for patients, such as lab work or x-rays, based on physician orders.\n[775b] DISCRETE \u2014 one appointment scheduled and confirmed from a referral or order (start: referral or order received; end: appointment entered and patient confirmation sent or reached) \u2014 from statement: Schedule and confirm patient diagnostic appointments, surgeries, or medical consultations."
+   },
+   {
+    "a": "20438a",
+    "b": "775a",
+    "flagged_by": "claude",
+    "reasoning": "Booking an appointment during a patient contact and scheduling an ordered test during a patient contact are the same live booking and confirmation.",
+    "text": "[20438a] LIVE_SERVICE \u2014 one test or procedure scheduled during a patient contact (start: patient agrees to the ordered test; end: time confirmed to the patient and entered) \u2014 from statement: Schedule tests or procedures for patients, such as lab work or x-rays, based on physician orders.\n[775a] LIVE_SERVICE \u2014 one appointment booked or changed during a patient call or visit (start: patient asks for or agrees to an appointment; end: slot confirmed to the patient and entered in the schedule) \u2014 from statement: Schedule and confirm patient diagnostic appointments, surgeries, or medical consultations."
+   }
+  ]
+ },
+ "43-1011.00": {
+  "agreed": [
+   [
+    "9713a",
+    "9724a"
+   ]
+  ],
+  "disputed": []
+ },
+ "47-2031.00": {
+  "agreed": [
+   [
+    "23438a",
+    "23445a"
+   ]
+  ],
+  "disputed": []
+ },
+ "49-9071.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "51-2092.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "53-7062.00": {
+  "agreed": [],
+  "disputed": []
+ },
+ "53-7065.00": {
+  "agreed": [],
+  "disputed": []
+ }
+}
